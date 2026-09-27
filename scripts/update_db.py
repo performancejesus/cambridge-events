@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from pipeline import ingest, venues  # noqa: E402
+from pipeline import extract, ingest, recurring, venues  # noqa: E402
 from pipeline.db import connect  # noqa: E402
 
 
@@ -25,6 +25,8 @@ def main() -> None:
     else:
         stats = ingest.load_run(con, ROOT / "data" / "raw")
         run_id = stats["run_id"]
+    recurring.seed(con)                     # флаги билетов ежегодных событий нужны для статусов
+    stats |= extract.keyword_news(con)       # Cambridge BID: только заголовки, без LLM
     stats |= venues.build(con)
     stats |= ingest.dedupe(con, run_id)
     stats |= ingest.refresh(con, run_id)

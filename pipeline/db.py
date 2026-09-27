@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS venues (
     venue_id  INTEGER PRIMARY KEY,
     name      TEXT NOT NULL,
     address   TEXT, postcode TEXT, lat REAL, lon REAL,
-    zone      TEXT,                      -- центр | до 30 мин | до часа | дальше
+    zone      TEXT,                      -- центр | до 30 мин | до часа | Кембриджшир, дальше часа | out_of_zone
     origin    TEXT                       -- events | manual | postcodes.io
 );
 CREATE TABLE IF NOT EXISTS venue_aliases (
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS events (
     venue_name   TEXT, address TEXT, postcode TEXT, lat REAL, lon REAL, zone TEXT,
     price_from   REAL,                   -- 0 = бесплатно
     price_text   TEXT,
-    status       TEXT NOT NULL,          -- announced | on_sale | sold_out | postponed | cancelled | disappeared | past
+    status       TEXT NOT NULL,          -- scheduled | announced | on_sale | sold_out | postponed | cancelled | disappeared | past
     on_sale_date TEXT,
     source_type  TEXT NOT NULL DEFAULT 'feed',   -- feed | article | recurring
     url          TEXT,                   -- основная ссылка на первоисточник
@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS articles (
     published   TEXT,
     summary     TEXT,
     first_seen_at TEXT NOT NULL,
-    extract_status TEXT NOT NULL DEFAULT 'pending',  -- pending | useful | empty | error | skipped
+    extract_status TEXT NOT NULL DEFAULT 'pending',  -- pending | useful | empty | error | keyword | skipped
     extracted_at TEXT,
     model       TEXT,
     result_json TEXT                                 -- ответ модели (структура, не текст статьи)
@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS venue_news (
     stage       TEXT NOT NULL,           -- coming_soon | opened | closed
     date        TEXT,                    -- ожидаемая или фактическая
     source_id   TEXT NOT NULL,
-    source_type TEXT NOT NULL,           -- article | store_list
+    source_type TEXT NOT NULL,           -- article | store_list | rss_title (без LLM, требует проверки)
     url         TEXT,
     article_id  INTEGER REFERENCES articles(article_id),
     note        TEXT,
@@ -144,7 +144,8 @@ CREATE TABLE IF NOT EXISTS recurring_events (
     check_method  TEXT NOT NULL,         -- page | news | manual
     patterns      TEXT,                  -- JSON: ключевые слова для поиска в событиях/статьях
     last_checked_at TEXT,
-    found_date    TEXT,                  -- дата текущего цикла (YYYY-MM-DD)
+    found_date    TEXT,                  -- начало текущего цикла (YYYY-MM-DD)
+    found_date_end TEXT,                 -- окончание (многодневные: Straw Bear, Folk Festival)
     found_source  TEXT,
     event_id      INTEGER REFERENCES events(event_id),
     note          TEXT
@@ -156,6 +157,21 @@ CREATE TABLE IF NOT EXISTS detail_pages (
     source_id  TEXT NOT NULL,
     fetched_at TEXT NOT NULL,
     fields     TEXT                      -- JSON RawEvent-полей или NULL, если JSON-LD нет
+);
+
+-- Кэш postcodes.io: координаты и административная принадлежность (для зоны «Кембриджшир, дальше часа»).
+CREATE TABLE IF NOT EXISTS postcodes (
+    postcode       TEXT PRIMARY KEY,     -- как вернул postcodes.io («CB2 1RB»)
+    lat REAL, lon REAL,
+    admin_county   TEXT,                 -- Cambridgeshire | Suffolk | … (у Питерборо — NULL)
+    admin_district TEXT,                 -- Peterborough | Fenland | …
+    fetched_at     TEXT NOT NULL
+);
+
+-- Простые настройки/состояние скриптов (архив Foodies и т.п.).
+CREATE TABLE IF NOT EXISTS state (
+    key   TEXT PRIMARY KEY,
+    value TEXT
 );
 
 -- Расход Claude API.
@@ -170,9 +186,24 @@ CREATE TABLE IF NOT EXISTS llm_usage (
 """
 
 
+# Колонки, добавленные после создания базы: (таблица, колонка, тип).
+MIGRATIONS = [
+    ("recurring_events", "found_date_end", "TEXT"),
+    ("recurring_events", "tickets", "INTEGER"),       # 1 — билеты/регистрация (событие announced), 0 — scheduled
+    ("recurring_events", "page_date", "TEXT"),        # end — единственная дата на странице означает окончание
+    ("recurring_events", "manual_start", "TEXT"),     # дата, внесённая владельцем проекта (важнее найденной)
+    ("recurring_events", "manual_end", "TEXT"),
+    ("recurring_events", "venue", "TEXT"),            # место проведения — для зоны события
+    ("recurring_events", "postcode", "TEXT"),
+]
+
+
 def connect(path: Path = DB_PATH) -> sqlite3.Connection:
     path.parent.mkdir(parents=True, exist_ok=True)
     con = sqlite3.connect(path)
     con.row_factory = sqlite3.Row
     con.executescript(SCHEMA)
+    for table, col, typ in MIGRATIONS:
+        if col not in {r["name"] for r in con.execute(f"PRAGMA table_info({table})")}:
+            con.execute(f"ALTER TABLE {table} ADD COLUMN {col} {typ}")
     return con

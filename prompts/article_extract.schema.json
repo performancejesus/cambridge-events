@@ -14,9 +14,10 @@
         "postcode": {"type": "string"},
         "price_text": {"type": "string"},
         "is_free": {"type": "string", "enum": ["yes", "no", "unknown"]},
+        "tickets": {"type": "string", "enum": ["on_sale", "not_yet_on_sale", "not_required", "unknown"]},
         "summary_ru": {"type": "string"}
       },
-      "required": ["name", "date_start", "time_start", "date_end", "venue", "address", "postcode", "price_text", "is_free", "summary_ru"],
+      "required": ["name", "date_start", "time_start", "date_end", "venue", "address", "postcode", "price_text", "is_free", "tickets", "summary_ru"],
       "additionalProperties": false
     }},
     "venue_news": {"type": "array", "items": {

@@ -46,7 +46,7 @@ python scripts/check_recurring.py         # ежегодные события: �
 python scripts/extract_articles.py --dry-run          # оценка стоимости извлечения из статей
 python scripts/extract_articles.py --max-cost 2.00    # извлечение через Claude (Haiku), нужен ANTHROPIC_API_KEY
 python scripts/update_db.py --no-load     # события из статей → общая дедупликация
-python scripts/foodies_archive.py [--start-page N] [--extract]   # разовый архив Foodies за 12 месяцев
+python scripts/foodies_archive.py [--extract] [--status]  # архив Foodies за 12 месяцев: одна страница в день
 python scripts/stage3_report.py           # docs/stage3_report.md
 ```
 
@@ -57,5 +57,10 @@ python scripts/stage3_report.py           # docs/stage3_report.md
   нечёткое сравнение), сведение полей, жизненный цикл `announced → on_sale → sold_out/postponed/cancelled → past`.
 - `pipeline/venues.py`, `pipeline/geo.py` — справочник площадок (`data/venues_seed.json` + события), postcodes.io, зоны.
 - `pipeline/extract.py` + `prompts/article_extract.md` + `prompts/article_extract.schema.json` — извлечение из статей.
-- `pipeline/recurring.py` + `data/recurring_events.json` — ежегодные события.
+- `pipeline/recurring.py` + `data/recurring_events.json` — ежегодные события (даты начала и окончания; `tickets` —
+  нужны ли билеты; `manual_start`/`manual_end` — дата, внесённая вручную, например начало Folk Festival).
+- Статусы: `scheduled` (без билетов) · `announced` (билеты ожидаются) → `on_sale` → `sold_out` / `postponed` / `cancelled` → `past`.
+- Зоны: `центр` · `до 30 мин` · `до часа` · `Кембриджшир, дальше часа` (районы Peterborough и Fenland) · `out_of_zone`.
+- Cambridge BID (S097): статьи в Claude не передаются; заголовки RSS с словами opening/opens/new/closing →
+  `venue_news` «требует проверки».
 - Ключ Claude API — только в окружении или в `.env` (файл в `.gitignore`).

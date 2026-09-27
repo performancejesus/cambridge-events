@@ -1,16 +1,24 @@
-"""Геокодирование через postcodes.io и расчёт зоны."""
+"""Геокодирование через postcodes.io (с кэшем в таблице postcodes) и расчёт зоны по разделу «География» брифа."""
 
 from __future__ import annotations
 
 import math
 import re
+import sqlite3
+from datetime import datetime, timezone
 
 import httpx
 
 API = "https://api.postcodes.io/postcodes"
 CENTRE = (52.2053, 0.1218)  # Market Square
-# Зона по расстоянию по прямой от центра — грубая замена времени в пути.
+# Зона по расстоянию по прямой от центра — грубая замена времени в пути (решение после этапа 3).
 ZONES = ((3.0, "центр"), (25.0, "до 30 мин"), (60.0, "до часа"))
+COUNTY_FAR = "Кембриджшир, дальше часа"
+OUT_OF_ZONE = "out_of_zone"
+# Районы графства, которые бриф относит к «дальше часа» (Питерборо, Fenland: Wisbech, March…). По прямой они
+# ближе 60 км (Питерборо — 48 км, Wisbech — 51 км, самая северная точка графства — 58 км), поэтому без этого
+# правила метка «Кембриджшир, дальше часа» не досталась бы никому.
+FAR_DISTRICTS = {"Peterborough", "Fenland"}
 POSTCODE_RE = re.compile(r"^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$")
 
 
@@ -21,23 +29,54 @@ def km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     return 12742 * math.asin(math.sqrt(a))
 
 
-def zone(lat: float | None, lon: float | None) -> str | None:
+def in_cambridgeshire(county: str | None, district: str | None) -> bool:
+    return county == "Cambridgeshire" or district == "Peterborough"
+
+
+def zone(lat: float | None, lon: float | None, county: str | None = None, district: str | None = None) -> str | None:
+    """центр / до 30 мин / до часа / Кембриджшир, дальше часа / out_of_zone; None — координат нет."""
     if lat is None or lon is None:
         return None
     d = km(CENTRE[0], CENTRE[1], lat, lon)
-    return next((z for limit, z in ZONES if d <= limit), "дальше")
+    cambs = in_cambridgeshire(county, district)
+    if cambs and district in FAR_DISTRICTS and d > ZONES[1][0]:
+        return COUNTY_FAR
+    band = next((z for limit, z in ZONES if d <= limit), None)
+    if band:
+        return band
+    return COUNTY_FAR if cambs else OUT_OF_ZONE
 
 
-def lookup(postcodes: list[str]) -> dict[str, tuple[float, float]]:
-    """Полные postcode → (lat, lon). Пачками по 100, неизвестные пропускаются."""
-    full = sorted({p.upper().strip() for p in postcodes if p and POSTCODE_RE.match(p.upper().strip())})
-    out: dict[str, tuple[float, float]] = {}
-    with httpx.Client(timeout=30, headers={"User-Agent": "CambridgeEventsBot/0.1"}) as c:
-        for i in range(0, len(full), 100):
-            r = c.post(API, json={"postcodes": full[i:i + 100]})
-            r.raise_for_status()
-            for item in r.json()["result"]:
-                res = item["result"]
-                if res:
-                    out[item["query"]] = (res["latitude"], res["longitude"])
-    return out
+def _key(pc: str) -> str:
+    return pc.upper().replace(" ", "")
+
+
+def lookup(con: sqlite3.Connection, postcodes: list[str]) -> dict[str, sqlite3.Row]:
+    """Postcode (без пробелов, в верхнем регистре) → строка кэша postcodes. Недостающие — из postcodes.io пачками по 100."""
+    want = {_key(p) for p in postcodes if p and POSTCODE_RE.match(p.upper().strip())}
+    cached = {_key(r["postcode"]): r for r in con.execute("SELECT * FROM postcodes")}
+    missing = sorted(want - cached.keys())
+    if missing:
+        now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        with httpx.Client(timeout=30, headers={"User-Agent": "CambridgeEventsBot/0.1"}) as c:
+            for i in range(0, len(missing), 100):
+                r = c.post(API, json={"postcodes": missing[i:i + 100]})
+                r.raise_for_status()
+                for item in r.json()["result"]:
+                    res = item["result"]
+                    if res:
+                        con.execute("INSERT OR REPLACE INTO postcodes VALUES (?,?,?,?,?,?)",
+                                    (res["postcode"], res["latitude"], res["longitude"], res["admin_county"],
+                                     res["admin_district"], now))
+        cached = {_key(r["postcode"]): r for r in con.execute("SELECT * FROM postcodes")}
+    return {k: cached[k] for k in want if k in cached}
+
+
+def zone_for_postcode(con: sqlite3.Connection, postcode: str | None) -> tuple[float, float, str | None] | None:
+    """(lat, lon, зона) по postcode из кэша (без сетевого запроса); None — postcode неизвестен."""
+    if not postcode:
+        return None
+    r = con.execute("SELECT * FROM postcodes WHERE replace(upper(postcode),' ','')=?", (_key(postcode),)).fetchone()
+    if not r:
+        return None
+    return r["lat"], r["lon"], zone(r["lat"], r["lon"], r["admin_county"], r["admin_district"])

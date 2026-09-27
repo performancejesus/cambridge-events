@@ -9,6 +9,9 @@ Read the article and fill the JSON schema:
    family activities, runs and races. Resolve relative dates ("this Saturday", "next month") using the
    article's publication date. Skip events that already took place before the publication date, private
    events, council meetings, court hearings and events without any date.
+   `tickets` — `on_sale` if tickets or booking are available now, `not_yet_on_sale` if tickets are needed but
+   sales have not opened yet, `not_required` if no ticket or booking is needed (free drop-in, street fair,
+   parade), `unknown` otherwise.
    `summary_ru` — one or two sentences in Russian in your own words (do not copy the article's sentences).
 2. `venue_news` — openings, upcoming openings ("coming soon", "set to open", planning or licence granted for a
    new venue), and closures of restaurants, cafés, bars, pubs, shops and other businesses open to the public.

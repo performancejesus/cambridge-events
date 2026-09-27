@@ -8,11 +8,14 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from . import venues
-from .geo import lookup, zone
+from .geo import lookup, zone_for_postcode
 from .normalize import minutes, norm_title, norm_venue, parse_price, split_datetime, title_similarity
 
 # Источники-продавцы билетов: событие у них = продажа открыта.
 TICKETING = {"S006", "S007", "S008", "S011", "S021", "S072", "S091"}
+# Событие платное/по билетам, но билеты продаются не у нас в источниках (футбол, ADC, пивной фестиваль):
+# пока продажа не замечена — announced. Остальные события без билетов и цены — scheduled.
+TICKETS_ELSEWHERE = {"S018", "S032", "S042"}
 # Чьи поля предпочитать при сведении (официальные площадки и организаторы — раньше агрегаторов).
 SOURCE_RANK = ["S042", "S011", "S072", "S018", "S032", "S033", "S038", "S047", "S021", "S091", "S005",
                "S006", "S007", "S008"]
@@ -20,7 +23,7 @@ SOURCE_RANK = ["S042", "S011", "S072", "S018", "S032", "S033", "S038", "S047", "
 PARTIAL_LISTING = {"S006", "S007", "S008"}
 HISTORY_DAYS = 60            # старше — в события не превращаем (в сыром виде храним)
 MATCH_MIN, MATCH_MIN_NO_VENUE = 0.8, 0.9
-STATUS_PRIORITY = ["cancelled", "postponed", "disappeared", "past", "sold_out", "on_sale", "announced"]
+STATUS_PRIORITY = ["cancelled", "postponed", "disappeared", "past", "sold_out", "on_sale", "announced", "scheduled"]
 
 
 def rank(source_id: str) -> int:
@@ -135,7 +138,9 @@ def dedupe(con: sqlite3.Connection, run_id: str) -> dict:
 
 # --- 3. сведение полей и жизненный цикл ---
 
-def _status(raws: list, updates: set[str], price_from, end_date: str, today: str) -> tuple[str, str | None]:
+def _status(raws: list, updates: set[str], price_from, end_date: str, today: str,
+            tickets_expected: bool) -> tuple[str, str | None]:
+    """announced — билеты ожидаются, но продажа не открыта; scheduled — событие без билетов (лекции, ярмарки)."""
     st = {r["status"] for r in raws}
     if "cancelled" in st or "cancelled" in updates:
         return "cancelled", None
@@ -148,18 +153,39 @@ def _status(raws: list, updates: set[str], price_from, end_date: str, today: str
     ticketing = [r for r in raws if r["source_id"] in TICKETING]
     if ticketing and all(r["status"] == "sold_out" for r in ticketing):
         return "sold_out", ticketing[0]["source_id"]
-    if ticketing or (price_from or 0) > 0 or "on_sale" in updates:
+    if ticketing or (price_from or 0) > 0 or "on_sale" in updates or "on_sale" in st:
         return "on_sale", (ticketing[0]["source_id"] if ticketing else None)
-    return "announced", None
+    if price_from == 0 or "no_tickets" in st:
+        return "scheduled", None
+    if tickets_expected:
+        return "announced", None
+    return "scheduled", None
+
+
+def _tickets_expected(con, e, raws: list, today: str) -> bool:
+    if e["on_sale_date"] and e["on_sale_date"] > today:
+        return True
+    if any(r["source_id"] in TICKETS_ELSEWHERE or r["status"] == "tickets_expected" for r in raws):
+        return True
+    rec = con.execute("SELECT tickets FROM recurring_events WHERE event_id=?", (e["event_id"],)).fetchone()
+    return bool(rec and rec["tickets"])
 
 
 def refresh(con: sqlite3.Connection, run_id: str) -> dict:
     today = date.today().isoformat()
     stats = {"status_changes": 0}
+    # postcodes.io — один раз на все postcode событий и площадок (кэш в таблице postcodes)
+    before = con.execute("SELECT count(*) FROM postcodes").fetchone()[0]
+    lookup(con, [r[0] for r in con.execute("""SELECT postcode FROM raw_items WHERE kind='event' AND postcode IS NOT NULL
+        UNION SELECT postcode FROM events WHERE postcode IS NOT NULL""")])
+    stats["geocoded_postcodes"] = con.execute("SELECT count(*) FROM postcodes").fetchone()[0] - before
     for e in con.execute("SELECT * FROM events").fetchall():
         raws = sorted(con.execute("SELECT * FROM raw_items WHERE event_id=?", (e["event_id"],)).fetchall(),
                       key=lambda r: rank(r["source_id"]))
-        updates = {x[0] for x in con.execute("SELECT kind FROM event_updates WHERE event_id=?", (e["event_id"],))}
+        # старт продаж из статей: с прошедшей/неизвестной датой — продажа открыта, с будущей — ещё ожидается
+        updates = {u["kind"] for u in con.execute("SELECT kind, on_sale_date FROM event_updates WHERE event_id=?",
+                                                   (e["event_id"],))
+                   if not (u["kind"] == "on_sale" and (u["on_sale_date"] or "") > today)}
         if not raws and e["source_type"] == "feed":
             continue
         first = raws[0] if raws else None
@@ -171,22 +197,27 @@ def refresh(con: sqlite3.Connection, run_id: str) -> dict:
         venue_id = v["venue_id"] if v else None
         if not postcode and v:
             postcode, address = v["postcode"], v["address"]
-        lat = lon = None
-        if v and v["postcode"] and postcode and v["postcode"].replace(" ", "") == postcode.replace(" ", ""):
-            lat, lon = v["lat"], v["lon"]
+        lat, lon, zn = zone_for_postcode(con, postcode) or (None, None, None)
         prices = [parse_price(r["price"], r["summary"], r["title"]) for r in raws]
         prices = [p for p in prices if p is not None]
         price_from = min(prices) if prices else e["price_from"]
         price_text = next((r["price"] for r in raws if r["price"]), e["price_text"])
         end_date = e["date_end"] or e["date_start"]
-        status, src = _status(raws, updates, price_from, end_date, today) if raws else (e["status"], None)
+        if raws:
+            status, src = _status(raws, updates, price_from, end_date, today, _tickets_expected(con, e, raws, today))
+        elif end_date < today:  # ежегодные и прочие события без записей источников
+            status, src = ("past" if e["status"] not in ("cancelled", "postponed") else e["status"]), None
+        elif e["status"] in ("announced", "scheduled"):
+            status, src = ("announced" if _tickets_expected(con, e, raws, today) else "scheduled"), None
+        else:
+            status, src = e["status"], None
         if e["status"] == "past" and status == "disappeared":
             status = "past"
         con.execute("""UPDATE events SET title=?, venue_id=?, venue_name=?, address=?, postcode=?, lat=coalesce(?, lat),
             lon=coalesce(?, lon), zone=coalesce(?, zone), price_from=?, price_text=?, url=?, last_seen_at=?,
             status=? WHERE event_id=?""",
                     (first["title"] if first else e["title"], venue_id, venue, address, postcode, lat, lon,
-                     zone(lat, lon), price_from, price_text, first["url"] if first and first["url"] else e["url"],
+                     zn, price_from, price_text, first["url"] if first and first["url"] else e["url"],
                      max(r["last_seen_at"] for r in raws) if raws else e["last_seen_at"], status, e["event_id"]))
         if not con.execute("SELECT 1 FROM status_history WHERE event_id=?", (e["event_id"],)).fetchone():
             con.execute("INSERT INTO status_history(event_id, status, changed_at, source_id, note) VALUES (?,?,?,?,?)",
@@ -197,13 +228,6 @@ def refresh(con: sqlite3.Connection, run_id: str) -> dict:
                         (e["event_id"], status, run_id, src, f"было: {e['status']}"))
             if status == "on_sale" and e["status"] == "announced" and e["first_seen_at"] != run_id:
                 con.execute("UPDATE events SET on_sale_date=? WHERE event_id=?", (run_id[:10], e["event_id"]))
-    # координаты для событий с postcode, которых нет в справочнике
-    need = [r[0] for r in con.execute("SELECT DISTINCT postcode FROM events WHERE lat IS NULL AND postcode IS NOT NULL")]
-    geo = lookup(need) if need else {}
-    for pc, (lat, lon) in geo.items():
-        con.execute("UPDATE events SET lat=?, lon=?, zone=? WHERE lat IS NULL AND upper(replace(postcode,' ',''))=?",
-                    (lat, lon, zone(lat, lon), pc.replace(" ", "")))
-    stats["geocoded_postcodes"] = len(geo)
     return stats
 
 

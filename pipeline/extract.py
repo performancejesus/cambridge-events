@@ -24,8 +24,12 @@ PRICE_IN, PRICE_OUT = 1.00 / 1e6, 5.00 / 1e6   # $ за токен, Haiku 4.5
 PROMPT = (ROOT / "prompts" / "article_extract.md").read_text()
 SCHEMA = json.loads((ROOT / "prompts" / "article_extract.schema.json").read_text())
 MAX_CHARS = 8000
-# Источники, чьи статьи не передаём в модель без решения владельца (robots.txt сайта закрыт для ИИ-краулеров).
+# Источники, чьи статьи не передаём в модель (robots.txt сайта закрыт для ИИ-краулеров — уважаем волю владельца).
+# Для них — только фильтр заголовков RSS по ключевым словам (keyword_news), без LLM.
 NO_LLM_SOURCES = {"S097"}
+# Поле tickets из ответа модели → raw_items.status (см. ingest._status: on_sale / announced / scheduled).
+TICKET_STATUS = {"on_sale": "on_sale", "not_yet_on_sale": "tickets_expected", "not_required": "no_tickets"}
+KEYWORD_RE = re.compile(r"\b(opening|opens|new|closing)\b", re.I)
 # Источники статей для извлечения.
 ARTICLE_SOURCES = {"S002", "S003", "S004", "S005", "S050", "S087", "S092", "S093"}
 
@@ -83,12 +87,13 @@ def store(con: sqlite3.Connection, art: sqlite3.Row, data: dict) -> dict:
             continue
         start = f"{e['date_start']}T{e['time_start']}" if e["time_start"] else e["date_start"]
         price = "Free" if e["is_free"] == "yes" and not e["price_text"] else (e["price_text"] or None)
+        status = TICKET_STATUS.get(e.get("tickets", "unknown"))
         con.execute("""INSERT OR IGNORE INTO raw_items(source_id, item_key, kind, title, url, start, "end", all_day,
-            venue, address, postcode, price, summary, first_seen_at, last_seen_at)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            venue, address, postcode, price, status, summary, first_seen_at, last_seen_at)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                     (art["source_id"], f"article:{art['article_id']}:{i}", "event", e["name"], art["url"], start,
                      e["date_end"] or None, int(not e["time_start"]), e["venue"] or None, e["address"] or None,
-                     e["postcode"] or None, price, e["summary_ru"], seen, seen))
+                     e["postcode"] or None, price, status, e["summary_ru"], seen, seen))
         n["events"] += 1
     for v in data["venue_news"]:
         cur = con.execute("""INSERT OR IGNORE INTO venue_news(name, type, address, postcode, stage, date, source_id,
@@ -126,6 +131,25 @@ def process(con: sqlite3.Connection, http: PoliteClient, client, art: sqlite3.Ro
     con.execute("UPDATE articles SET extract_status=?, extracted_at=?, model=?, result_json=? WHERE article_id=?",
                 ("useful" if useful else "empty", now(), MODEL, json.dumps(data, ensure_ascii=False), art["article_id"]))
     return counts | {"cost": cost}
+
+
+def keyword_news(con: sqlite3.Connection) -> dict:
+    """Заголовки RSS источников без LLM → venue_news «требует проверки»; остальные статьи больше не обрабатываются."""
+    n = {"keyword_matched": 0, "keyword_skipped": 0}
+    q = f"SELECT * FROM articles WHERE extract_status='pending' AND source_id IN ({','.join('?' * len(NO_LLM_SOURCES))})"
+    for art in con.execute(q, sorted(NO_LLM_SOURCES)).fetchall():
+        m = KEYWORD_RE.search(art["title"])
+        if m:
+            stage = "closed" if m.group(1).lower() == "closing" else "opened"
+            con.execute("""INSERT OR IGNORE INTO venue_news(name, type, stage, date, source_id, source_type, url,
+                article_id, note, first_seen_at) VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                        (art["title"], "другое", stage, (art["published"] or "")[:10] or None, art["source_id"],
+                         "rss_title", art["url"], art["article_id"],
+                         f"требует проверки: заголовок RSS без LLM (слово «{m.group(1)}»)", now()))
+        con.execute("UPDATE articles SET extract_status=?, extracted_at=?, model=NULL WHERE article_id=?",
+                    ("keyword" if m else "skipped", now(), art["article_id"]))
+        n["keyword_matched" if m else "keyword_skipped"] += 1
+    return n
 
 
 def estimate(con: sqlite3.Connection, n_articles: int | None = None, avg_text_chars: int = 5000) -> dict:

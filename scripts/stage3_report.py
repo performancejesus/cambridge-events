@@ -54,6 +54,9 @@ def main() -> None:
           f"с координатами и зоной: {pct(one(con, f'SELECT count(*) FROM events WHERE zone IS NOT NULL AND {fe}', TODAY), fut)}.",
           f"- talks.cam: postcode у {pct(one(con, 'SELECT count(*) FROM events e WHERE postcode IS NOT NULL AND EXISTS (SELECT 1 FROM event_sources s WHERE s.event_id=e.event_id AND s.source_id=?) AND ' + fe, 'S047', TODAY), one(con, 'SELECT count(*) FROM events e WHERE EXISTS (SELECT 1 FROM event_sources s WHERE s.event_id=e.event_id AND s.source_id=?) AND ' + fe, 'S047', TODAY))} будущих событий (было 6% в сырых данных).",
           "- Зоны будущих событий: " + ", ".join(f"{z or 'не определена'} — {n}" for z, n in con.execute(f"SELECT zone, count(*) FROM events WHERE {fe} GROUP BY zone ORDER BY 2 DESC", (TODAY,))) + ".",
+          "- Зона не определена (по источникам): " + (", ".join(f"{s} — {n}" for s, n in con.execute(f"""SELECT coalesce((SELECT group_concat(DISTINCT source_id)
+              FROM event_sources WHERE event_id=e.event_id), e.source_type), count(*) FROM events e WHERE zone IS NULL AND {fe}
+              GROUP BY 1 ORDER BY 2 DESC""", (TODAY,))) or "—") + ".",
           f"- Цена известна у {pct(one(con, f'SELECT count(*) FROM events WHERE price_from IS NOT NULL AND {fe}', TODAY), fut)} будущих событий; "
           f"бесплатных (price_from = 0): {one(con, f'SELECT count(*) FROM events WHERE price_from = 0 AND {fe}', TODAY)}.", ""]
 
@@ -72,10 +75,11 @@ def main() -> None:
     L += ["", f"Коллекторов в прогоне: {len(run)}, упало: {len(failed)}" + (" — " + "; ".join(f"{k}: {v['error'][:120]}" for k, v in failed.items()) if failed else "") + ".", ""]
 
     L += ["## Статьи и извлечение через Claude API", ""]
-    L += ["| Источник | Статей | pending | useful | empty | error |", "|---|---|---|---|---|---|"]
-    for sid, n, p, u, e, er in con.execute("""SELECT source_id, count(*), sum(extract_status='pending'), sum(extract_status='useful'),
-            sum(extract_status='empty'), sum(extract_status='error') FROM articles GROUP BY source_id ORDER BY source_id"""):
-        L.append(f"| {sid} | {n} | {p} | {u} | {e} | {er} |")
+    L += ["| Источник | Статей | pending | useful | empty | error | без LLM: keyword / skipped |", "|---|---|---|---|---|---|---|"]
+    for sid, n, p, u, e, er, kw, sk in con.execute("""SELECT source_id, count(*), sum(extract_status='pending'), sum(extract_status='useful'),
+            sum(extract_status='empty'), sum(extract_status='error'), sum(extract_status='keyword'), sum(extract_status='skipped')
+            FROM articles GROUP BY source_id ORDER BY source_id"""):
+        L.append(f"| {sid} | {n} | {p} | {u} | {e} | {er} | {f'{kw} / {sk}' if kw or sk else '—'} |")
     cost = one(con, "SELECT coalesce(sum(cost_usd),0) FROM llm_usage")
     calls = one(con, "SELECT count(*) FROM llm_usage")
     est = extract.estimate(con, len(extract.pending(con)))
@@ -87,13 +91,22 @@ def main() -> None:
           f"отмен/переносов/старта продаж: {one(con, 'SELECT count(*) FROM event_updates')}.", ""]
 
     L += ["## Новое в городе (venue_news)", "",
-          f"- Всего записей: {one(con, 'SELECT count(*) FROM venue_news')}; по спискам ТЦ: {one(con, 'SELECT count(*) FROM venue_news WHERE source_type=?', 'store_list')}.",
+          f"- Всего записей: {one(con, 'SELECT count(*) FROM venue_news')}; из статей: {one(con, 'SELECT count(*) FROM venue_news WHERE source_type=?', 'article')}; "
+          f"по спискам ТЦ: {one(con, 'SELECT count(*) FROM venue_news WHERE source_type=?', 'store_list')}; "
+          f"заголовки Cambridge BID без LLM (требуют проверки): {one(con, 'SELECT count(*) FROM venue_news WHERE source_type=?', 'rss_title')}.",
+          "- Архив Foodies (одна страница в день): " + (lambda r: r[0] if r else "не начат")(con.execute("SELECT value FROM state WHERE key='foodies_archive'").fetchone()) + ".",
           "- Магазинов в списках ТЦ: " + ", ".join(f"{s} — {n}" for s, n in con.execute("SELECT source_id, count(*) FROM raw_items WHERE kind='store' AND disappeared_at IS NULL GROUP BY 1")) + ".", ""]
 
-    L += ["## Ежегодные события", "", "| ID | Событие | Месяц | Статус | Дата | Где найдено |", "|---|---|---|---|---|---|"]
+    L += ["## Ежегодные события", "", "| ID | Событие | Месяц | Билеты | Статус | Даты | Где найдено |", "|---|---|---|---|---|---|---|"]
     for r in con.execute("SELECT * FROM recurring_events ORDER BY rec_id"):
-        st = "дата найдена" if r["found_date"] else ("вручную" if r["check_method"] == "manual" else "ожидаем")
-        L.append(f"| {r['rec_id']} | {r['name']} | {r['expected_month']} | {st} | {r['found_date'] or '—'} | {(r['found_source'] or '—')[:80]} |")
+        if r["found_date"]:
+            st = "вручную: дата внесена" if r["found_source"] == "вручную" else "дата найдена"
+        elif r["found_date_end"]:
+            st = "ждём начало (вручную)"
+        else:
+            st = "вручную" if r["check_method"] == "manual" else "ожидаем"
+        dates = f"{r['found_date'] or '…'} – {r['found_date_end']}" if r["found_date_end"] else (r["found_date"] or "—")
+        L.append(f"| {r['rec_id']} | {r['name']} | {r['expected_month']} | {'да' if r['tickets'] else 'нет'} | {st} | {dates} | {(r['found_source'] or '—')[:80]} |")
 
     L += ["", "## Контрольные примеры", "", "| Пример | Статус | Детали |", "|---|---|---|"]
 
@@ -112,7 +125,8 @@ def main() -> None:
         rec = con.execute("SELECT * FROM recurring_events WHERE name LIKE ?", (pat,)).fetchone()
         if rows:
             e = rows[-1]
-            det = f"{e['date_start']}, статус {e['status']}, источник: {e['source_type']}"
+            det = (f"{e['date_start']}" + (f" – {e['date_end']}" if e["date_end"] and e["date_end"] != e["date_start"] else "")
+                   + f", статус {e['status']}, зона: {e['zone'] or '—'}, источник: {e['source_type']}")
             mark = "✅"
         elif rec:
             det = f"ежегодное {rec['rec_id']}: " + ("вносится вручную" if rec["check_method"] == "manual" else "дата пока не объявлена — ожидаем")

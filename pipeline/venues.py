@@ -7,7 +7,7 @@ import sqlite3
 from collections import Counter, defaultdict
 
 from .db import ROOT
-from .geo import lookup, zone
+from .geo import lookup, zone_for_postcode
 from .normalize import norm_venue
 
 SEED = ROOT / "data" / "venues_seed.json"
@@ -54,12 +54,15 @@ def build(con: sqlite3.Connection) -> dict:
         _add_venue(con, names[a].most_common(1)[0][0], addrs[(a, pc)], pc, "events", [a])
         known.add(a)
         added += 1
-    # координаты и зоны
-    missing = [r["postcode"] for r in con.execute("SELECT postcode FROM venues WHERE lat IS NULL AND postcode IS NOT NULL")]
-    geo = lookup(missing) if missing else {}
-    for pc, (lat, lon) in geo.items():
-        con.execute("UPDATE venues SET lat=?, lon=?, zone=? WHERE upper(postcode)=?", (lat, lon, zone(lat, lon), pc))
-    return {"venues_added": added, "venues_geocoded": len(geo)}
+    # координаты и зоны (зона пересчитывается у всех: правила могли измениться)
+    lookup(con, [r["postcode"] for r in con.execute("SELECT postcode FROM venues WHERE postcode IS NOT NULL")])
+    geocoded = 0
+    for v in con.execute("SELECT venue_id, postcode, lat FROM venues WHERE postcode IS NOT NULL").fetchall():
+        g = zone_for_postcode(con, v["postcode"])
+        if g:
+            geocoded += v["lat"] is None
+            con.execute("UPDATE venues SET lat=?, lon=?, zone=? WHERE venue_id=?", g + (v["venue_id"],))
+    return {"venues_added": added, "venues_geocoded": geocoded}
 
 
 def resolve(con: sqlite3.Connection, *names: str | None) -> sqlite3.Row | None:

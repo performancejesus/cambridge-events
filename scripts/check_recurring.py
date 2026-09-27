@@ -1,7 +1,8 @@
 """Еженедельная проверка ежегодных событий (таблица recurring_events).
 
 Для каждого: есть ли уже событие в базе → официальная страница (если robots.txt разрешает) → статьи.
-Найденная дата без события → событие со статусом announced.
+Найденная дата без события → событие: announced (ожидаются билеты) или scheduled (без билетов).
+Дату, которой нет на сайте, владелец вносит в data/recurring_events.json (manual_start / manual_end).
 Запуск: python scripts/check_recurring.py [--no-fetch]
 """
 
@@ -34,7 +35,8 @@ def main() -> None:
         http.close()
     con.commit()
     for r in report:
-        print(f"{r['rec_id']} {r['name'][:38]:38} мес.{r['month']:6} {r['status']:13} {r['found_date'] or '':11} {str(r['source'] or '')[:70]}")
+        dates = f"{r['found_date'] or '…'}–{r['found_date_end']}" if r["found_date_end"] else (r["found_date"] or "")
+        print(f"{r['rec_id']} {r['name'][:38]:38} мес.{r['month']:6} {r['status']:22} {dates:22} {str(r['source'] or '')[:70]}")
 
 
 if __name__ == "__main__":
