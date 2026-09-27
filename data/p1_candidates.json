@@ -22,7 +22,7 @@
   "S041": ["https://www.cambridgeartstheatre.com", "https://www.cambridgeartstheatre.com/whats-on"],
   "S042": ["https://www.adctheatre.com", "https://www.adctheatre.com/whats-on/", "https://www.camdram.net/venues/adc-theatre/diary.ics", "https://www.camdram.net/venues/adc-theatre/diary.json"],
   "S045": ["https://www.picturehouses.com/cinema/arts-picturehouse-cambridge"],
-  "S047": ["https://talks.cam.ac.uk", "https://talks.cam.ac.uk/document/documentation/", "https://talks.cam.ac.uk/show/ics/5606", "https://talks.cam.ac.uk/show/rss/5606", "https://talks.cam.ac.uk/show/xml/5606"],
+  "S047": ["https://talks.cam.ac.uk", "https://talks.cam.ac.uk/document/documentation/", "https://talks.cam.ac.uk/show/ics/5606", "https://talks.cam.ac.uk/show/ics/5462", "https://talks.cam.ac.uk/show/ics/5358", "https://talks.cam.ac.uk/show/ics/5769", "https://talks.cam.ac.uk/show/ics/23088"],
   "S048": ["https://www.admin.cam.ac.uk/whatson/", "https://www.cam.ac.uk/whats-on", "https://webservices.admin.cam.ac.uk/events/api/programmes/11/calendar/events.ics?resultSetSize=20000", "https://webservices.admin.cam.ac.uk/events/api/programmes/11/calendar/events.rss"],
   "S050": ["https://fitzmuseum.cam.ac.uk", "https://fitzmuseum.cam.ac.uk/events", "https://fitzmuseum.cam.ac.uk/feeds/exhibitions"],
   "S051": ["https://www.kettlesyard.cam.ac.uk", "https://www.kettlesyard.cam.ac.uk/whats-on/", "https://www.kettlesyard.cam.ac.uk/feed/", "https://www.kettlesyard.co.uk", "https://www.kettlesyard.co.uk/events/", "https://www.kettlesyard.co.uk/feed/"],
@@ -36,5 +36,8 @@
   "S081": ["https://www.thriplowdaffodils.org.uk"],
   "S082": ["https://act4addenbrookes.org.uk", "https://act4addenbrookes.org.uk/dragonboat/"],
   "S087": ["https://cambridgefoodies.me.uk", "https://cambridgefoodies.me.uk/feed/"],
-  "S089": ["https://www.townandgown10k.com/", "https://www.musculardystrophyuk.org/get-involved/events/bidwells-cambridge-10k-2026/"]
+  "S089": ["https://www.townandgown10k.com/", "https://www.musculardystrophyuk.org/get-involved/events/bidwells-cambridge-10k-2026/"],
+  "S008": ["https://www.eventbrite.co.uk", "https://www.eventbrite.co.uk/d/united-kingdom--cambridge/all-events/"],
+  "S090": ["https://www.designmynight.com/cambridge", "https://www.designmynight.com/cambridge/whats-on"],
+  "S091": ["https://www.cambridgelivetickets.co.uk", "https://www.cambridgelivetickets.co.uk/events", "https://www.cambridgelivetickets.co.uk/events/georgie-carroll-nurse-georgie-carroll-infectious"]
 }

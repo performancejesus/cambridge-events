@@ -45,4 +45,5 @@ SQLite (`events.db`) по схеме из реестра. Дедупликаци
 - Whittlesea Straw Bear Festival — январь 2027
 - Thriplow Daffodil Weekend — март 2027
 - Публичные лекции с talks.cam.ac.uk
+- Cambridge Oktoberfest, Jesus Green — 25–26 сентября 2026
 - Открытия заведений на Mill Road (Catte Latte, Hungarian Soul — уже прошли, но должны ловиться как «новое в городе» в архиве)

@@ -27,6 +27,7 @@ DST = ROOT / "data" / "cambridge_event_sources_v0.4.xlsx"
 PROBE = ROOT / "data" / "probe_results.json"
 OVERRIDES = ROOT / "data" / "p1_overrides.json"
 REPORT = ROOT / "docs" / "stage1_report.md"
+CONTROLS = ROOT / "data" / "control_events.json"
 
 YELLOW = PatternFill("solid", fgColor="FFFFF2CC")
 RED = PatternFill("solid", fgColor="FFF4CCCC")
@@ -109,11 +110,20 @@ def summarize(probe: dict) -> dict:
 
 def main() -> None:
     probes = load_json(PROBE)
-    overrides = {k: v for k, v in load_json(OVERRIDES).items() if not k.startswith("_")}
+    raw_overrides = load_json(OVERRIDES)
+    overrides = {k: v for k, v in raw_overrides.items() if not k.startswith("_")}
+    new_rows = raw_overrides.get("_new_rows", [])
     today = date.today().isoformat()
 
     wb = openpyxl.load_workbook(SRC)
     ws = wb["Источники"]
+    for r in new_rows:  # новые источники — в конец таблицы, в порядке столбцов v0.3
+        ws.append([r.get(k) for k in ("id", "category", "name", "type", "url", "covers", "zone", "method",
+                                      "frequency", "priority", "verified", "notes")])
+    for row in wb["Сводка"].iter_rows(min_row=2):  # формулы v0.3 считают строки 2–90
+        for c in row:
+            if isinstance(c.value, str) and c.value.startswith("="):
+                c.value = c.value.replace("$90", "$500")
 
     new_cols = ["Endpoint для сбора", "robots.txt", "Проверено"]
     first_new = ws.max_column + 1
@@ -133,9 +143,11 @@ def main() -> None:
     rows_report = []
     for row in ws.iter_rows(min_row=2):
         sid, name, url, method, prio, verified, notes = (row[0].value, row[2].value, row[4], row[7], row[9].value, row[10], row[11])
+        ov = overrides.get(sid, {})
+        if ov.get("priority"):
+            row[9].value = prio = ov["priority"]
         if prio != 1:
             continue
-        ov = overrides.get(sid, {})
         s = summarize(probes.get(sid, {})) if sid in probes else None
 
         new_url = ov.get("url")
@@ -195,10 +207,26 @@ def main() -> None:
     rep.freeze_panes = "C2"
     rep.auto_filter.ref = f"A1:G{rep.max_row}"
 
+    if "Контрольные события" in wb.sheetnames:
+        del wb["Контрольные события"]
+    ctl = wb.create_sheet("Контрольные события", index=wb.sheetnames.index("Проверка P1") + 1)
+    ctl.append(["ID", "Событие", "Когда", "Где искать", "Ключевые слова"])
+    for c in ctl[1]:
+        c.fill, c.font = HEADER_FILL, HEADER_FONT
+    for ev in load_json(CONTROLS) or []:
+        ctl.append([ev["id"], ev["name"], ev["when"], ev["expect"], ", ".join(ev["patterns"]) or ev.get("source", "")])
+    for col, width in zip("ABCDE", (6, 44, 22, 60, 36)):
+        ctl.column_dimensions[col].width = width
+    for row in ctl.iter_rows(min_row=2):
+        for c in row:
+            c.alignment = Alignment(wrap_text=True, vertical="top")
+
     ws_help = wb["Как пользоваться"]
     ws_help.cell(row=1, column=1, value=str(ws_help["A1"].value).replace("v0.3, сентябрь 2026", "v0.4, сентябрь 2026"))
     ws_help.append([f"v0.4 ({today}): проверены источники приоритета 1 — см. лист «Проверка P1»; новые столбцы "
                     "«Endpoint для сбора», «robots.txt», «Проверено». «URL проверен = нет» — URL не отвечает (красный)."])
+    ws_help.append(["v0.4, правки после этапа 1: Eventbrite (S008) поднят до приоритета 1; добавлены S090 DesignMyNight и "
+                    "S091 Cambridge Live Tickets; лист «Контрольные события» (источник — data/control_events.json)."])
 
     wb.save(DST)
 

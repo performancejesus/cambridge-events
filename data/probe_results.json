@@ -1390,7 +1390,7 @@
     ]
   },
   "S047": {
-    "checked_at": "2026-09-27T17:16:51+00:00",
+    "checked_at": "2026-09-27T18:08:43+00:00",
     "urls": [
       {
         "url": "https://talks.cam.ac.uk",
@@ -1444,23 +1444,40 @@
         "ical_events": 15
       },
       {
-        "url": "https://talks.cam.ac.uk/show/rss/5606",
+        "url": "https://talks.cam.ac.uk/show/ics/5462",
         "robots": "разрешено",
         "status": 200,
-        "final_url": "https://talks.cam.ac.uk/show/rss/5606/",
-        "content_type": "application/rss+xml; charset=utf-8",
-        "kind": "feed",
-        "feed_title": "Featured talks - Talks.cam",
-        "feed_entries": 15,
-        "feed_latest": "Tue, 22 Sep 2026 11:43:40 +0100"
+        "final_url": "https://talks.cam.ac.uk/show/ics/5462/",
+        "content_type": "text/calendar; charset=utf-8",
+        "kind": "ical",
+        "ical_events": 8
       },
       {
-        "url": "https://talks.cam.ac.uk/show/xml/5606",
+        "url": "https://talks.cam.ac.uk/show/ics/5358",
         "robots": "разрешено",
         "status": 200,
-        "final_url": "https://talks.cam.ac.uk/show/xml/5606/",
-        "content_type": "text/xml; charset=utf-8",
-        "kind": "xml"
+        "final_url": "https://talks.cam.ac.uk/show/ics/5358/",
+        "content_type": "text/calendar; charset=utf-8",
+        "kind": "ical",
+        "ical_events": 8
+      },
+      {
+        "url": "https://talks.cam.ac.uk/show/ics/5769",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://talks.cam.ac.uk/show/ics/5769/",
+        "content_type": "text/calendar; charset=utf-8",
+        "kind": "ical",
+        "ical_events": 7
+      },
+      {
+        "url": "https://talks.cam.ac.uk/show/ics/23088",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://talks.cam.ac.uk/show/ics/23088/",
+        "content_type": "text/calendar; charset=utf-8",
+        "kind": "ical",
+        "ical_events": 55
       }
     ]
   },
@@ -2109,6 +2126,166 @@
       {
         "url": "https://www.musculardystrophyuk.org/get-involved/events/bidwells-cambridge-10k-2026/",
         "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S008": {
+    "checked_at": "2026-09-27T18:08:24+00:00",
+    "urls": [
+      {
+        "url": "https://www.eventbrite.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.eventbrite.co.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "eventbrite"
+        ],
+        "title": "Eventbrite - Discover the Best Local Events & Things to Do"
+      },
+      {
+        "url": "https://www.eventbrite.co.uk/d/united-kingdom--cambridge/all-events/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.eventbrite.co.uk/d/united-kingdom--cambridge/all-events/",
+        "content_type": "text/html",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ItemList",
+          "ListItem",
+          "Place",
+          "PostalAddress"
+        ],
+        "jsonld_events": 20,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "eventbrite"
+        ],
+        "title": "Discover All Events & Activities in Cambridge, United Kingdom | Eventbrite"
+      }
+    ]
+  },
+  "S090": {
+    "checked_at": "2026-09-27T18:08:31+00:00",
+    "urls": [
+      {
+        "url": "https://www.designmynight.com/cambridge",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.designmynight.com/cambridge",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ImageObject",
+          "Organization",
+          "QuantitativeValue"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Cambridge: Incredible Bars, Restaurants, Pubs + Experiences | DesignMyNight"
+      },
+      {
+        "url": "https://www.designmynight.com/cambridge/whats-on",
+        "robots": "запрещено"
+      }
+    ]
+  },
+  "S091": {
+    "checked_at": "2026-09-27T18:09:06+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridgelivetickets.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgelivetickets.co.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Home - Cambridge Live Tickets"
+      },
+      {
+        "url": "https://www.cambridgelivetickets.co.uk/events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgelivetickets.co.uk/events",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Event Listings - Cambridge Live Tickets"
+      },
+      {
+        "url": "https://www.cambridgelivetickets.co.uk/events/georgie-carroll-nurse-georgie-carroll-infectious",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgelivetickets.co.uk/events/georgie-carroll-nurse-georgie-carroll-infectious",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "Event",
+          "Organization",
+          "Place",
+          "PostalAddress"
+        ],
+        "jsonld_events": 1,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Georgie Carroll: Nurse Georgie Carroll: Infectious - Cambridge Live Tickets"
       }
     ]
   }

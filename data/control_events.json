@@ -1,0 +1,10 @@
+[
+ {"id": "C1", "name": "Домашние матчи Cambridge United", "when": "весь сезон", "patterns": ["Cambridge United"], "expect": "S018 (fixtur.es), будущие домашние матчи"},
+ {"id": "C2", "name": "Mill Road Winter Fair", "when": "2026-12-05", "patterns": ["Mill Road Winter Fair", "Winter Fair"], "expect": "S038 (сайт ярмарки), Cambridge 105, Cambridge News", "require": ["Mill Road"]},
+ {"id": "C3", "name": "Town and Gown 10k", "when": "октябрь 2026", "patterns": ["Town and Gown 10", "Town & Gown 10", "Bidwells Cambridge 10k", "Cambridge 10k"], "expect": "через Cambridge News (S004) и Cambridge 105 (S005) — сайт закрыт для ботов"},
+ {"id": "C4", "name": "Whittlesea Straw Bear Festival", "when": "январь 2027", "patterns": ["Straw Bear"], "expect": "Cambridge 105, Visit Cambridge, новости"},
+ {"id": "C5", "name": "Thriplow Daffodil Weekend", "when": "март 2027", "patterns": ["Thriplow", "Daffodil Weekend"], "expect": "Cambridge 105"},
+ {"id": "C6", "name": "Публичные лекции talks.cam", "when": "постоянно", "patterns": [], "source": "S047", "expect": "S047, списки Major Public Lectures, Darwin College и др."},
+ {"id": "C7", "name": "Открытия на Mill Road: Catte Latte, Hungarian Soul", "when": "уже прошли (архив)", "patterns": ["Catte Latte", "Hungarian Soul"], "expect": "Cambridge Foodies — поток «новое в городе»"},
+ {"id": "C8", "name": "Cambridge Oktoberfest, Jesus Green", "when": "2026-09-25 – 2026-09-26", "patterns": ["Oktoberfest"], "expect": "Eventbrite / Skiddle / Ents24 / Cambridge 105 / новости, если ещё видно", "require": ["Jesus Green", "Cambridge Oktoberfest", "Oktoberfest Cambridge"]}
+]

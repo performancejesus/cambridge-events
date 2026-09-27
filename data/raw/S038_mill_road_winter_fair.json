@@ -1,0 +1,24 @@
+[
+ {
+  "source_id": "S038",
+  "title": "Mill Road Winter Fair 2026",
+  "url": "https://www.millroadwinterfair.org/",
+  "kind": "event",
+  "external_id": "mrwf-2026",
+  "start": "2026-12-05T10:30",
+  "end": "2026-12-05T16:30",
+  "all_day": false,
+  "venue": "Mill Road",
+  "address": "Mill Road, Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "The 2026 Fair will be on Saturday 5th December, 10.30am to 4.30pm",
+  "published": null,
+  "fetched_at": "2026-09-27T18:21:59+00:00"
+ }
+]
