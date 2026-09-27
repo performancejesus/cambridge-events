@@ -39,5 +39,11 @@
   "S089": ["https://www.townandgown10k.com/", "https://www.musculardystrophyuk.org/get-involved/events/bidwells-cambridge-10k-2026/"],
   "S008": ["https://www.eventbrite.co.uk", "https://www.eventbrite.co.uk/d/united-kingdom--cambridge/all-events/"],
   "S090": ["https://www.designmynight.com/cambridge", "https://www.designmynight.com/cambridge/whats-on"],
-  "S091": ["https://www.cambridgelivetickets.co.uk", "https://www.cambridgelivetickets.co.uk/events", "https://www.cambridgelivetickets.co.uk/events/georgie-carroll-nurse-georgie-carroll-infectious"]
+  "S091": ["https://www.cambridgelivetickets.co.uk", "https://www.cambridgelivetickets.co.uk/events", "https://www.cambridgelivetickets.co.uk/events/georgie-carroll-nurse-georgie-carroll-infectious"],
+  "S092": ["https://www.cambridgeindependent.co.uk/rss-feeds/", "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_business_feed.xml", "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_news_feed.xml"],
+  "S093": ["https://www.cambridge-news.co.uk/all-about/food-and-drink", "https://www.cambridge-news.co.uk/all-about/food-and-drink?service=rss", "https://www.cambridge-news.co.uk/all-about/shopping?service=rss"],
+  "S094": ["https://www.grandarcade.co.uk/", "https://www.grandarcade.co.uk/stores/"],
+  "S095": ["https://www.thelionyard.co.uk/", "https://www.thelionyard.co.uk/stores/"],
+  "S096": ["https://graftoncentre.co.uk/", "https://graftoncentre.co.uk/stores/"],
+  "S097": ["https://www.cambridgebid.co.uk/news", "https://www.cambridgebid.co.uk/news?format=rss"]
 }

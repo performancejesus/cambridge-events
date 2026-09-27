@@ -36,3 +36,26 @@ python scripts/stage2_report.py             # docs/stage2_report.md: счётч�
 - `collectors/parsers.py` — iCal, JSON-LD `schema.org/Event`, RSS/Atom; `collectors/generic.py` — типовые коллекторы.
 - `collectors/sources/` — один модуль на источник.
 - Результат: `data/raw/<ID>_<модуль>.json` (сырые события) и `data/raw/_run.json` (сводка прогона).
+
+## Этап 3 — база, дедупликация, извлечение из статей
+
+```bash
+python scripts/run_collectors.py          # сбор (страницы событий — только новые, известные раз в 7 дней)
+python scripts/update_db.py               # data/raw → data/events.db: история, дедупликация, площадки, статусы
+python scripts/check_recurring.py         # ежегодные события: дата текущего цикла (раз в неделю)
+python scripts/extract_articles.py --dry-run          # оценка стоимости извлечения из статей
+python scripts/extract_articles.py --max-cost 2.00    # извлечение через Claude (Haiku), нужен ANTHROPIC_API_KEY
+python scripts/update_db.py --no-load     # события из статей → общая дедупликация
+python scripts/foodies_archive.py [--start-page N] [--extract]   # разовый архив Foodies за 12 месяцев
+python scripts/stage3_report.py           # docs/stage3_report.md
+```
+
+- `pipeline/db.py` — схема `events.db`: `raw_items` (записи источников, не удаляются), `events` (уникальные события),
+  `event_sources`, `status_history`, `venues`/`venue_aliases`, `articles`, `venue_news`, `event_updates`,
+  `recurring_events`, `detail_pages` (кэш страниц событий), `llm_usage` (расход Claude API).
+- `pipeline/ingest.py` — загрузка прогона, пометка `disappeared`, дедупликация (название + дата + площадка,
+  нечёткое сравнение), сведение полей, жизненный цикл `announced → on_sale → sold_out/postponed/cancelled → past`.
+- `pipeline/venues.py`, `pipeline/geo.py` — справочник площадок (`data/venues_seed.json` + события), postcodes.io, зоны.
+- `pipeline/extract.py` + `prompts/article_extract.md` + `prompts/article_extract.schema.json` — извлечение из статей.
+- `pipeline/recurring.py` + `data/recurring_events.json` — ежегодные события.
+- Ключ Claude API — только в окружении или в `.env` (файл в `.gitignore`).

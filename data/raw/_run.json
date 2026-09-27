@@ -2,29 +2,29 @@
  "S005": {
   "name": "Cambridge 105",
   "module": "cambridge105",
-  "started_at": "2026-09-27T18:09:18+00:00",
+  "started_at": "2026-09-27T18:56:27+00:00",
   "ok": true,
   "events": 22,
   "articles": 30,
   "requests": 3,
-  "seconds": 8.7
+  "seconds": 8.2
  },
  "S047": {
   "name": "talks.cam",
   "module": "talks_cam",
-  "started_at": "2026-09-27T18:20:58+00:00",
+  "started_at": "2026-09-27T18:56:35+00:00",
   "ok": true,
   "events": 62,
   "articles": 0,
   "requests": 6,
-  "seconds": 53.9
+  "seconds": 53.7
  },
  "S042": {
   "name": "ADC Theatre (Camdram)",
   "module": "adc_camdram",
-  "started_at": "2026-09-27T18:10:21+00:00",
+  "started_at": "2026-09-27T18:57:29+00:00",
   "ok": true,
-  "events": 28,
+  "events": 27,
   "articles": 0,
   "requests": 2,
   "seconds": 3.4
@@ -32,7 +32,7 @@
  "S018": {
   "name": "Cambridge United (fixtur.es)",
   "module": "cambridge_united",
-  "started_at": "2026-09-27T18:10:24+00:00",
+  "started_at": "2026-09-27T18:57:32+00:00",
   "ok": true,
   "events": 188,
   "articles": 0,
@@ -42,97 +42,98 @@
  "S032": {
   "name": "Cambridge Beer Festival",
   "module": "beer_festival",
-  "started_at": "2026-09-27T18:10:27+00:00",
+  "started_at": "2026-09-27T19:10:12+00:00",
   "ok": true,
   "events": 2,
   "articles": 0,
-  "requests": 2,
-  "seconds": 3.6
+  "stores": 0,
+  "requests": 3,
+  "seconds": 13.7
  },
  "S003": {
   "name": "Cambridge Independent",
   "module": "cambridge_independent",
-  "started_at": "2026-09-27T18:10:31+00:00",
+  "started_at": "2026-09-27T18:57:38+00:00",
   "ok": true,
   "events": 0,
   "articles": 20,
   "requests": 2,
-  "seconds": 3.0
+  "seconds": 2.9
  },
  "S004": {
   "name": "Cambridge News",
   "module": "cambridge_news",
-  "started_at": "2026-09-27T18:10:34+00:00",
+  "started_at": "2026-09-27T18:57:41+00:00",
   "ok": true,
   "events": 0,
   "articles": 35,
   "requests": 3,
-  "seconds": 5.0
+  "seconds": 4.7
  },
  "S002": {
   "name": "What's On In Cambridge",
   "module": "whatsonincambridge",
-  "started_at": "2026-09-27T18:10:39+00:00",
+  "started_at": "2026-09-27T18:57:46+00:00",
   "ok": true,
   "events": 0,
   "articles": 10,
   "requests": 2,
-  "seconds": 7.1
+  "seconds": 4.1
  },
  "S087": {
   "name": "The Cambridge Foodies",
   "module": "foodies",
-  "started_at": "2026-09-27T18:10:46+00:00",
+  "started_at": "2026-09-27T18:57:50+00:00",
   "ok": true,
   "events": 0,
   "articles": 10,
-  "requests": 2,
-  "seconds": 3.7
+  "requests": 5,
+  "seconds": 123.9
  },
  "S050": {
   "name": "Fitzwilliam Museum",
   "module": "fitzwilliam",
-  "started_at": "2026-09-27T18:10:50+00:00",
+  "started_at": "2026-09-27T18:59:54+00:00",
   "ok": true,
   "events": 0,
   "articles": 20,
   "requests": 2,
-  "seconds": 3.2
+  "seconds": 3.3
  },
  "S038": {
   "name": "Mill Road Winter Fair",
   "module": "mill_road_winter_fair",
-  "started_at": "2026-09-27T18:21:52+00:00",
+  "started_at": "2026-09-27T18:59:57+00:00",
   "ok": true,
   "events": 1,
   "articles": 0,
   "requests": 3,
-  "seconds": 7.0
+  "seconds": 8.5
  },
  "S006": {
   "name": "Ents24",
   "module": "ents24",
-  "started_at": "2026-09-27T18:10:57+00:00",
+  "started_at": "2026-09-27T19:00:06+00:00",
   "ok": true,
   "events": 37,
   "articles": 0,
   "requests": 2,
-  "seconds": 3.8
+  "seconds": 3.4
  },
  "S007": {
   "name": "Skiddle",
   "module": "skiddle",
-  "started_at": "2026-09-27T18:11:00+00:00",
+  "started_at": "2026-09-27T19:00:09+00:00",
   "ok": true,
   "events": 49,
   "articles": 0,
   "requests": 2,
-  "seconds": 2.4
+  "seconds": 3.0
  },
  "S021": {
   "name": "Newmarket Racecourses",
   "module": "newmarket",
-  "started_at": "2026-09-27T18:11:03+00:00",
+  "started_at": "2026-09-27T19:00:12+00:00",
   "ok": true,
   "events": 14,
   "articles": 0,
@@ -142,66 +143,144 @@
  "S011": {
   "name": "Cambridge Corn Exchange",
   "module": "corn_exchange",
-  "started_at": "2026-09-27T18:11:06+00:00",
+  "started_at": "2026-09-27T19:15:18+00:00",
   "ok": true,
   "events": 74,
   "articles": 0,
+  "stores": 0,
   "stats": {
    "links": 74,
+   "cached": 74,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 80,
-  "seconds": 217.0
+  "requests": 6,
+  "seconds": 22.2
  },
  "S033": {
   "name": "Strawberry Fair",
   "module": "strawberry_fair",
-  "started_at": "2026-09-27T18:21:59+00:00",
+  "started_at": "2026-09-27T19:03:56+00:00",
   "ok": true,
   "events": 1,
   "articles": 0,
   "requests": 2,
-  "seconds": 3.1
+  "seconds": 3.0
  },
  "S072": {
   "name": "Cambridge City Events",
   "module": "camcityevents",
-  "started_at": "2026-09-27T18:14:46+00:00",
+  "started_at": "2026-09-27T19:03:59+00:00",
   "ok": true,
   "events": 4,
   "articles": 0,
   "stats": {
    "links": 4,
+   "cached": 0,
+   "fetched": 4,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
   "requests": 7,
-  "seconds": 17.9
+  "seconds": 17.6
  },
  "S008": {
   "name": "Eventbrite",
   "module": "eventbrite",
-  "started_at": "2026-09-27T18:15:04+00:00",
+  "started_at": "2026-09-27T19:15:40+00:00",
   "ok": true,
   "events": 99,
   "articles": 0,
-  "requests": 6,
-  "seconds": 19.3
+  "stores": 0,
+  "stats": {
+   "links": 99,
+   "cached": 0,
+   "fetched": 99,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 107,
+  "seconds": 228.9
  },
  "S091": {
   "name": "Cambridge Live Tickets",
   "module": "cambridge_live_tickets",
-  "started_at": "2026-09-27T18:15:23+00:00",
+  "started_at": "2026-09-27T19:04:36+00:00",
   "ok": true,
-  "events": 93,
+  "events": 92,
   "articles": 0,
   "stats": {
-   "links": 93,
+   "links": 92,
+   "cached": 0,
+   "fetched": 92,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 99,
-  "seconds": 260.8
+  "requests": 98,
+  "seconds": 267.8
+ },
+ "S092": {
+  "name": "Cambridge Independent — News/Business",
+  "module": "cambridge_independent_business",
+  "started_at": "2026-09-27T19:09:04+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 36,
+  "requests": 2,
+  "seconds": 3.1
+ },
+ "S093": {
+  "name": "Cambridge News — Food & Drink/Shopping",
+  "module": "cambridge_news_business",
+  "started_at": "2026-09-27T19:09:07+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 8,
+  "requests": 2,
+  "seconds": 2.9
+ },
+ "S094": {
+  "name": "Grand Arcade — магазины",
+  "module": "grand_arcade",
+  "started_at": "2026-09-27T19:09:10+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 0,
+  "requests": 2,
+  "seconds": 3.1,
+  "stores": 55
+ },
+ "S095": {
+  "name": "Lion Yard — магазины",
+  "module": "lion_yard",
+  "started_at": "2026-09-27T19:09:13+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 0,
+  "requests": 2,
+  "seconds": 3.2,
+  "stores": 36
+ },
+ "S096": {
+  "name": "The Grafton — магазины",
+  "module": "grafton",
+  "started_at": "2026-09-27T19:10:26+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 0,
+  "stores": 7,
+  "requests": 2,
+  "seconds": 2.9
+ },
+ "S097": {
+  "name": "Cambridge BID — новости",
+  "module": "cambridge_bid",
+  "started_at": "2026-09-27T19:09:19+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 20,
+  "requests": 2,
+  "seconds": 3.0
  }
 }

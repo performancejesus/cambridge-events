@@ -1,28 +1,6 @@
 [
  {
   "source_id": "S042",
-  "title": "We Will Rock You",
-  "url": "https://www.camdram.net/shows/2026-we-will-rock-you",
-  "kind": "event",
-  "external_id": "camdram-performance-10642",
-  "start": "2026-09-27T18:45:00+00:00",
-  "end": "2026-10-03",
-  "all_day": false,
-  "venue": "ADC Theatre",
-  "address": "Park Street, Cambridge CB5 8AS",
-  "postcode": "CB5 8AS",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "19:45, Sun 27th September – Sat 3rd October 2026",
-  "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
- },
- {
-  "source_id": "S042",
   "title": "CAST 2026: King Lear",
   "url": "https://www.camdram.net/shows/cast-2026-king-lear",
   "kind": "event",
@@ -41,7 +19,7 @@
   "categories": [],
   "summary": "19:45, Tue 6th – Sat 10th October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -63,7 +41,7 @@
   "categories": [],
   "summary": "23:00, Wed 7th – Sat 10th October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -85,7 +63,7 @@
   "categories": [],
   "summary": "13:45, Thu 8th October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -107,7 +85,7 @@
   "categories": [],
   "summary": "14:30, Sat 10th October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -129,7 +107,7 @@
   "categories": [],
   "summary": "19:30, Wed 14th – Sat 17th October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -151,7 +129,7 @@
   "categories": [],
   "summary": "21:00, Wed 14th October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -173,7 +151,7 @@
   "categories": [],
   "summary": "21:00, Thu 15th – Sat 17th October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -195,7 +173,7 @@
   "categories": [],
   "summary": "19:45, Tue 27th – Sat 31st October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -217,7 +195,7 @@
   "categories": [],
   "summary": "23:00, Tue 27th October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -239,7 +217,7 @@
   "categories": [],
   "summary": "23:00, Fri 30th October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -261,7 +239,7 @@
   "categories": [],
   "summary": "14:30, Sat 31st October 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -283,7 +261,7 @@
   "categories": [],
   "summary": "19:45, Tue 3rd – Sat 7th November 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -305,7 +283,7 @@
   "categories": [],
   "summary": "23:00, Wed 4th – Fri 6th November 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -327,7 +305,7 @@
   "categories": [],
   "summary": "19:45, Tue 10th – Sat 14th November 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -349,7 +327,7 @@
   "categories": [],
   "summary": "23:00, Wed 11th – Fri 13th November 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -371,7 +349,7 @@
   "categories": [],
   "summary": "19:45, Tue 17th – Sat 21st November 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -393,7 +371,7 @@
   "categories": [],
   "summary": "23:00, Wed 18th – Sat 21st November 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -415,7 +393,7 @@
   "categories": [],
   "summary": "19:45, Wed 25th November – Sat 5th December 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -437,7 +415,7 @@
   "categories": [],
   "summary": "23:00, Fri 27th November 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -459,7 +437,7 @@
   "categories": [],
   "summary": "23:00, Thu 3rd – Fri 4th December 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -481,7 +459,7 @@
   "categories": [],
   "summary": "19:45, Tue 8th – Sat 12th December 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -503,7 +481,7 @@
   "categories": [],
   "summary": "14:30, Sat 12th December 2026",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -525,7 +503,7 @@
   "categories": [],
   "summary": "19:45, Tue 12th – Sat 16th January 2027",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -547,7 +525,7 @@
   "categories": [],
   "summary": "14:30, Sat 16th January 2027",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -569,7 +547,7 @@
   "categories": [],
   "summary": "19:45, Tue 19th – Sat 23rd January 2027",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -591,7 +569,7 @@
   "categories": [],
   "summary": "19:45, Tue 26th – Sat 30th January 2027",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  },
  {
   "source_id": "S042",
@@ -613,6 +591,6 @@
   "categories": [],
   "summary": "14:30, Sat 30th January 2027",
   "published": null,
-  "fetched_at": "2026-09-27T18:10:24+00:00"
+  "fetched_at": "2026-09-27T18:57:32+00:00"
  }
 ]

@@ -63,12 +63,17 @@ class PoliteClient:
         if base not in self._robots:
             rp = RobotFileParser()
             r = self._raw_get(base + "/robots.txt")
+            for pause in BACKOFF[:2]:  # 429/5xx на robots.txt — повторить позже (RFC 9309)
+                if r.status != 429 and r.status < 500:
+                    break
+                time.sleep(pause)
+                r = self._raw_get(base + "/robots.txt")
             if r.status == 200:
                 rp.parse(r.text.splitlines())
-            elif r.status in (401, 403):
-                rp.disallow_all = True
+            elif r.status in (401, 403, 429) or r.status >= 500:
+                rp.disallow_all = True  # правила неизвестны — считаем, что запрещено
             else:
-                rp.allow_all = True
+                rp.allow_all = True  # 404 и т.п.: robots.txt нет
             self._robots[base] = rp
         return self._robots[base]
 
@@ -113,7 +118,13 @@ class PoliteClient:
         if not self.allowed(url):
             raise Disallowed(url)
         for attempt in range(len(BACKOFF) + 1):
-            r = self._raw_get(url)
+            try:
+                r = self._raw_get(url)
+            except FetchError:
+                if attempt:  # сетевой сбой — один повтор через 10 с
+                    raise
+                time.sleep(10)
+                r = self._raw_get(url)
             if r.status not in (429, 503) or attempt == len(BACKOFF):
                 break
             retry_after = r.headers.get("retry-after", "")

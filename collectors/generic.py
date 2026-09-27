@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import html
 import re
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urljoin
 
 from .base import Collector, RawEvent
@@ -81,8 +83,58 @@ class JsonLdListCollector(Collector):
         return out
 
 
-class JsonLdDetailCollector(Collector):
-    """Ссылки на события собираются со страниц списка, JSON-LD берётся со страницы каждого события."""
+PAGE_PRICE_RE = re.compile(r"£\s?\d+(?:\.\d{2})?(?:\s*[-–]\s*£\s?\d+(?:\.\d{2})?)?")
+
+
+def page_price(page_html: str) -> str | None:
+    """Цена текстом со страницы события («£38.50 - £71.50»), если в JSON-LD её нет."""
+    text = re.sub(r"<script.*?</script>|<style.*?</style>", " ", page_html, flags=re.S)
+    text = re.sub(r"<[^>]+>", " ", text)
+    m = PAGE_PRICE_RE.search(text)
+    if m:
+        return m.group(0)
+    return "Free" if re.search(r"\bfree (entry|admission|event)\b", text, re.I) else None
+
+
+class DetailCache:
+    """Страницы событий с кэшем: cache (url → (fetched_at, поля)) заполняет и сохраняет вызывающий код."""
+
+    refresh_days: int = 7
+
+    def start_details(self) -> None:
+        self.fresh_pages: dict[str, dict | None] = {}
+        self._fresh_after = (datetime.now(timezone.utc) - timedelta(days=self.refresh_days)).isoformat()
+        self.stats = {"links": 0, "cached": 0, "fetched": 0, "fetch_errors": 0, "no_jsonld": 0}
+
+    def detail(self, http: PoliteClient, link: str) -> dict | None:
+        """Поля события со страницы (JSON-LD + цена текстом); None — страница недоступна или без JSON-LD."""
+        self.stats["links"] += 1
+        cache = getattr(self, "cache", {})
+        if link in cache and cache[link][0] >= self._fresh_after:
+            self.stats["cached"] += 1
+            kw = cache[link][1]
+        else:
+            try:
+                page = http.get(link).text
+            except (FetchError, Disallowed):
+                self.stats["fetch_errors"] += 1
+                return None
+            self.stats["fetched"] += 1
+            found = jsonld_events(page)
+            kw = found[0] if found else None  # первое событие страницы — само событие; остальное — «похожие»
+            if kw and not kw.get("price"):
+                kw["price"] = page_price(page)
+            self.fresh_pages[link] = kw
+        if not kw:
+            self.stats["no_jsonld"] += 1
+        return kw
+
+
+class JsonLdDetailCollector(DetailCache, Collector):
+    """Ссылки на события собираются со страниц списка, JSON-LD берётся со страницы каждого события.
+
+    Инкрементальный режим — см. DetailCache: свежие страницы (моложе refresh_days) повторно не запрашиваются.
+    """
 
     list_url: str = ""
     page_param: str | None = "page"
@@ -108,17 +160,35 @@ class JsonLdDetailCollector(Collector):
             if not self.page_param:
                 break
         out = []
-        self.stats = {"links": len(links), "fetch_errors": 0, "no_jsonld": 0}
+        self.start_details()
         for link in links[: self.max_events]:
-            try:
-                found = jsonld_events(http.get(link).text)
-            except (FetchError, Disallowed):
-                self.stats["fetch_errors"] += 1
-                continue
-            if not found:
-                self.stats["no_jsonld"] += 1
-            for kw in found[:1]:  # первое событие страницы — само событие; остальное — «похожие»
-                kw["url"] = kw.get("url") or link
-                kw["external_id"] = link
-                out.append(self.event(**kw))
+            kw = self.detail(http, link)
+            if kw:
+                out.append(self.event(**dict(kw, url=kw.get("url") or link, external_id=link)))
+        return out
+
+
+class StoreListCollector(Collector):
+    """Список арендаторов ТЦ со страницы /stores/: одна запись kind="store" на магазин."""
+
+    list_url: str = ""
+    link_re: str = ""   # группа 1 — URL страницы магазина
+    centre: str = ""
+    address: str = ""
+
+    def collect(self, http: PoliteClient) -> list[RawEvent]:
+        page = http.get(self.list_url).text
+        names: dict[str, str] = {}
+        for m in re.finditer(self.link_re, page):
+            url, tail = m.group(1), m.group(0)
+            dn = re.search(r'data-name="([^"]+)"', tail)
+            text = re.sub(r"\s+", " ", m.group(2) if m.lastindex and m.lastindex >= 2 else "").strip()
+            name = (dn.group(1) if dn else text) or names.get(url, "")
+            if url not in names or (name and not names[url]):
+                names[url] = name
+        out = []
+        for url, name in names.items():
+            name = html.unescape(name) or url.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title()
+            out.append(self.event(kind="store", title=name, url=url, external_id=url, venue=self.centre,
+                                  address=self.address))
         return out

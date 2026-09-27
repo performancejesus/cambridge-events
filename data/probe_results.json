@@ -2288,5 +2288,407 @@
         "title": "Georgie Carroll: Nurse Georgie Carroll: Infectious - Cambridge Live Tickets"
       }
     ]
+  },
+  "S092": {
+    "checked_at": "2026-09-27T18:54:55+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridgeindependent.co.uk/rss-feeds/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgeindependent.co.uk/rss-feeds/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [
+          "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_business_feed.xml",
+          "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_education_feed.xml",
+          "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_lifestyle_feed.xml",
+          "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_news_feed.xml",
+          "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_property_feed.xml",
+          "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_sport_feed.xml",
+          "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_whatson_feed.xml",
+          "https://www.cambridgeindependent.co.uk/rss-feeds/"
+        ],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "RSS Feeds from Cambridge - Cambridge Independent"
+      },
+      {
+        "url": "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_business_feed.xml",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_business_feed.xml",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Cambridge Business",
+        "feed_entries": 20,
+        "feed_latest": "Sun, 27 Sep 2026 06:00:00 GMT"
+      },
+      {
+        "url": "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_news_feed.xml",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgeindependent.co.uk/_api/rss/cambridge_independent_news_feed.xml",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Cambridge News",
+        "feed_entries": 20,
+        "feed_latest": "Sun, 27 Sep 2026 11:05:51 GMT"
+      }
+    ]
+  },
+  "S093": {
+    "checked_at": "2026-09-27T18:55:02+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridge-news.co.uk/all-about/food-and-drink",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridge-news.co.uk/all-about/food-and-drink",
+        "content_type": "text/html;charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Food and drink - Cambridgeshire Live"
+      },
+      {
+        "url": "https://www.cambridge-news.co.uk/all-about/food-and-drink?service=rss",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridge-news.co.uk/all-about/food-and-drink?service=rss",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Cambridgeshire Live - Food and drink",
+        "feed_entries": 4,
+        "feed_latest": "Sun, 27 Sep 2026 13:00:00 +0000"
+      },
+      {
+        "url": "https://www.cambridge-news.co.uk/all-about/shopping?service=rss",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridge-news.co.uk/all-about/shopping?service=rss",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Cambridgeshire Live - Shopping",
+        "feed_entries": 4,
+        "feed_latest": "Wed, 23 Sep 2026 17:00:00 +0000"
+      }
+    ]
+  },
+  "S094": {
+    "checked_at": "2026-09-27T18:55:09+00:00",
+    "urls": [
+      {
+        "url": "https://www.grandarcade.co.uk/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.grandarcade.co.uk/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json",
+            "url": "https://www.grandarcade.co.uk/wp-json/wp/v2/pages/91"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ListItem",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WPML ver:4.9.6 stt:1;",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.grandarcade.co.uk/wp-json/",
+        "mentions": [],
+        "title": "Grand Arcade - Home"
+      },
+      {
+        "url": "https://www.grandarcade.co.uk/stores/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.grandarcade.co.uk/stores/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json",
+            "url": "https://www.grandarcade.co.uk/wp-json/wp/v2/pages/259"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "EntryPoint",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WPML ver:4.9.6 stt:1;",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.grandarcade.co.uk/wp-json/",
+        "mentions": [],
+        "title": "Grand Arcade - Stores"
+      }
+    ]
+  },
+  "S095": {
+    "checked_at": "2026-09-27T18:55:15+00:00",
+    "urls": [
+      {
+        "url": "https://www.thelionyard.co.uk/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.thelionyard.co.uk/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.thelionyard.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thelionyard.co.uk%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.thelionyard.co.uk/wp-json/wp/v2/pages/4"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.thelionyard.co.uk/wp-json/",
+        "mentions": [],
+        "title": "The Lion Yard Shopping Centre | Lion Yard, Cambridge"
+      },
+      {
+        "url": "https://www.thelionyard.co.uk/stores/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.thelionyard.co.uk/stores/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.thelionyard.co.uk/./stores/feed/"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.thelionyard.co.uk/wp-json/wp/v2/categories/6"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "SearchAction",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.thelionyard.co.uk/wp-json/",
+        "mentions": [],
+        "title": "Stores Archives | Lion Yard"
+      }
+    ]
+  },
+  "S096": {
+    "checked_at": "2026-09-27T18:55:20+00:00",
+    "urls": [
+      {
+        "url": "https://graftoncentre.co.uk/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://graftoncentre.co.uk/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://graftoncentre.co.uk/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://graftoncentre.co.uk/comments/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://graftoncentre.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgraftoncentre.co.uk%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://graftoncentre.co.uk/wp-json/wp/v2/pages/4453"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ListItem",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://graftoncentre.co.uk/wp-json/",
+        "mentions": [],
+        "title": "Home - The Grafton"
+      },
+      {
+        "url": "https://graftoncentre.co.uk/stores/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://graftoncentre.co.uk/stores/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://graftoncentre.co.uk/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://graftoncentre.co.uk/comments/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://graftoncentre.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgraftoncentre.co.uk%2Fstores%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://graftoncentre.co.uk/wp-json/wp/v2/pages/39"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ListItem",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://graftoncentre.co.uk/wp-json/",
+        "mentions": [],
+        "title": "Stores - The Grafton"
+      }
+    ]
+  },
+  "S097": {
+    "checked_at": "2026-09-27T18:55:25+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridgebid.co.uk/news",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgebid.co.uk/news",
+        "content_type": "text/html;charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.cambridgebid.co.uk/news?format=rss"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "LocalBusiness",
+          "Organization",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "News — Cambridge BID"
+      },
+      {
+        "url": "https://www.cambridgebid.co.uk/news?format=rss",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgebid.co.uk/news?format=rss",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "News - Cambridge BID",
+        "feed_entries": 20,
+        "feed_latest": "Fri, 04 Sep 2026 14:28:10 +0000"
+      }
+    ]
   }
 }

@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "is_useful": {"type": "boolean"},
+    "events": {"type": "array", "items": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"},
+        "date_start": {"type": "string"},
+        "time_start": {"type": "string"},
+        "date_end": {"type": "string"},
+        "venue": {"type": "string"},
+        "address": {"type": "string"},
+        "postcode": {"type": "string"},
+        "price_text": {"type": "string"},
+        "is_free": {"type": "string", "enum": ["yes", "no", "unknown"]},
+        "summary_ru": {"type": "string"}
+      },
+      "required": ["name", "date_start", "time_start", "date_end", "venue", "address", "postcode", "price_text", "is_free", "summary_ru"],
+      "additionalProperties": false
+    }},
+    "venue_news": {"type": "array", "items": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"},
+        "type": {"type": "string", "enum": ["ресторан", "кафе", "бар", "магазин", "другое"]},
+        "stage": {"type": "string", "enum": ["coming_soon", "opened", "closed"]},
+        "date": {"type": "string"},
+        "address": {"type": "string"},
+        "postcode": {"type": "string"},
+        "note_ru": {"type": "string"}
+      },
+      "required": ["name", "type", "stage", "date", "address", "postcode", "note_ru"],
+      "additionalProperties": false
+    }},
+    "cancellations": {"type": "array", "items": {
+      "type": "object",
+      "properties": {
+        "event_name": {"type": "string"},
+        "kind": {"type": "string", "enum": ["cancelled", "postponed"]},
+        "original_date": {"type": "string"},
+        "new_date": {"type": "string"},
+        "venue": {"type": "string"}
+      },
+      "required": ["event_name", "kind", "original_date", "new_date", "venue"],
+      "additionalProperties": false
+    }},
+    "ticket_sales": {"type": "array", "items": {
+      "type": "object",
+      "properties": {
+        "event_name": {"type": "string"},
+        "on_sale_date": {"type": "string"},
+        "event_date": {"type": "string"},
+        "venue": {"type": "string"}
+      },
+      "required": ["event_name", "on_sale_date", "event_date", "venue"],
+      "additionalProperties": false
+    }}
+  },
+  "required": ["is_useful", "events", "venue_news", "cancellations", "ticket_sales"],
+  "additionalProperties": false
+}
