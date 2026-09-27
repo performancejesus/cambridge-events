@@ -95,6 +95,7 @@
 - Не парсить Facebook, Instagram, Nextdoor.
 - Не копировать описания дословно: ссылка на первоисточник и короткий пересказ.
 - Ключи (Anthropic API и другие) — только в переменных окружения / `.env`, не в коде и не в git.
+- Ключ Anthropic API — в переменной окружения `EVENTS_ANTHROPIC_KEY` (имя `ANTHROPIC_API_KEY` в облачных средах зарезервировано и в сессию не передаётся). Клиент создаётся явно: `Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])`.
 - Перед подключением платных сервисов или любыми тратами — спросить меня. Расход Claude API на извлечение из статей и черновик — показывать в отчёте.
 - Python, простые зависимости: httpx, selectolax или BeautifulSoup, feedparser, icalendar. Playwright — только если без него никак.
 

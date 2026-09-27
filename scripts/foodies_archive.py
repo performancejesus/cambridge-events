@@ -111,10 +111,10 @@ def main() -> None:
     if args.extract:
         from extract_articles import load_dotenv
         load_dotenv()
-        if not os.environ.get("ANTHROPIC_API_KEY"):
-            sys.exit("Для --extract нужен ANTHROPIC_API_KEY в окружении.")
+        if not os.environ.get("EVENTS_ANTHROPIC_KEY"):
+            sys.exit("Для --extract нужен EVENTS_ANTHROPIC_KEY в окружении.")
         import anthropic
-        client = anthropic.Anthropic()
+        client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
     seen_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
     stats = {"page": st["next_page"], "posts": 0, "new": 0, "extracted": 0, "cost_usd": 0.0, "result": None}
     page = st["next_page"]

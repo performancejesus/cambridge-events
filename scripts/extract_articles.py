@@ -1,4 +1,4 @@
-"""Этап 3: извлечение из новых статей через Claude API (Haiku). Ключ — ANTHROPIC_API_KEY в окружении.
+"""Этап 3: извлечение из новых статей через Claude API (Haiku). Ключ — EVENTS_ANTHROPIC_KEY в окружении.
 
 Запуск: python scripts/extract_articles.py --dry-run        # оценка стоимости, без API
         python scripts/extract_articles.py --max-cost 2.00  # обработка с потолком расходов, $
@@ -39,13 +39,13 @@ def main() -> None:
     ap.add_argument("--limit", type=int)
     args = ap.parse_args()
     con = connect()
-    if args.dry_run or not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
+    if args.dry_run or not os.environ.get("EVENTS_ANTHROPIC_KEY"):
         if not args.dry_run:
-            print("ANTHROPIC_API_KEY не задан — только оценка стоимости.", file=sys.stderr)
+            print("EVENTS_ANTHROPIC_KEY не задан — только оценка стоимости.", file=sys.stderr)
         print(json.dumps(extract.estimate(con, len(extract.pending(con, args.limit))), ensure_ascii=False, indent=1))
         return
     import anthropic
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
     http = PoliteClient()
     spent, totals = 0.0, {"articles": 0, "events": 0, "venue_news": 0, "updates": 0, "errors": 0}
     for art in extract.pending(con, args.limit):

@@ -44,7 +44,7 @@ python scripts/run_collectors.py          # сбор (страницы собы�
 python scripts/update_db.py               # data/raw → data/events.db: история, дедупликация, площадки, статусы
 python scripts/check_recurring.py         # ежегодные события: дата текущего цикла (раз в неделю)
 python scripts/extract_articles.py --dry-run          # оценка стоимости извлечения из статей
-python scripts/extract_articles.py --max-cost 2.00    # извлечение через Claude (Haiku), нужен ANTHROPIC_API_KEY
+python scripts/extract_articles.py --max-cost 2.00    # извлечение через Claude (Haiku), нужен EVENTS_ANTHROPIC_KEY
 python scripts/update_db.py --no-load     # события из статей → общая дедупликация
 python scripts/foodies_archive.py [--extract] [--status]  # архив Foodies за 12 месяцев: одна страница в день
 python scripts/stage3_report.py           # docs/stage3_report.md
