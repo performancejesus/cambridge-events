@@ -44,6 +44,7 @@ EVENT_TYPES = {
 
 _last_hit: dict[str, float] = {}
 _robots: dict[str, RobotFileParser | None] = {}
+_robots_blocked: set[str] = set()  # хосты, отдавшие 401/403 на сам robots.txt
 
 
 def polite_get(client: httpx.Client, url: str) -> httpx.Response:
@@ -68,6 +69,7 @@ def robots_for(client: httpx.Client, url: str) -> RobotFileParser | None:
                 rp.parse(r.text.splitlines())
             elif r.status_code in (401, 403):
                 rp.disallow_all = True
+                _robots_blocked.add(base)
             else:
                 rp.allow_all = True
             _robots[base] = rp
@@ -193,6 +195,8 @@ def probe_url(client: httpx.Client, url: str) -> dict:
     else:
         allowed = rp.can_fetch(USER_AGENT, url)
         res["robots"] = "разрешено" if allowed else "запрещено"
+        if not allowed and f"{urlparse(url).scheme}://{urlparse(url).netloc}" in _robots_blocked:
+            res["robots"] = "robots.txt: 403"  # сервер отказал нашему клиенту, а не запретил путь
         if not allowed:
             return res
     try:
@@ -212,7 +216,7 @@ def main(ids: list[str]) -> None:
     results = json.loads(OUT.read_text()) if OUT.exists() and ids else {}
     todo = ids or list(candidates)
     with httpx.Client(headers={"User-Agent": USER_AGENT, "Accept-Language": "en-GB,en;q=0.8"},
-                      follow_redirects=True, timeout=TIMEOUT) as client:
+                      follow_redirects=True, timeout=TIMEOUT, http2=True) as client:
         for sid in todo:
             urls = candidates.get(sid, [])
             print(f"{sid}: {len(urls)} URL", file=sys.stderr)

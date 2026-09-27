@@ -62,7 +62,10 @@ def summarize(probe: dict) -> dict:
             methods.append(("API", url))
         elif kind == "html":
             for f in u.get("alternate_links", []):
-                methods.append(("iCal" if "calendar" in f["type"] else "RSS", f["url"]))
+                if "calendar" in f["type"]:
+                    methods.append(("iCal", f["url"]))
+                elif ("rss" in f["type"] or "atom" in f["type"]) and "/comments/feed" not in f["url"]:
+                    methods.append(("RSS", f["url"]))  # JSON-альтернативы (oEmbed, wp/v2/pages) — не фиды событий
             for link in u.get("ical_links", []):
                 methods.append(("iCal", link))
             if u.get("jsonld_events"):
@@ -93,7 +96,7 @@ def summarize(probe: dict) -> dict:
     for u in blocked:
         problems.append(f"{u['url']} — запрещено robots.txt")
     for u in failed:
-        problems.append(f"{u['url']} — {u.get('status') or u.get('error', 'нет ответа')}")
+        problems.append(f"{u['url']} — {u.get('status') or u.get('error') or u.get('robots') or 'нет ответа'}")
 
     return {
         "live": bool(live),
