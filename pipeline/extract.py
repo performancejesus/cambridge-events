@@ -29,7 +29,10 @@ MAX_CHARS = 8000
 NO_LLM_SOURCES = {"S097"}
 # Поле tickets из ответа модели → raw_items.status (см. ingest._status: on_sale / announced / scheduled).
 TICKET_STATUS = {"on_sale": "on_sale", "not_yet_on_sale": "tickets_expected", "not_required": "no_tickets"}
-KEYWORD_RE = re.compile(r"\b(opening|opens|new|closing)\b", re.I)
+# Cambridge BID: слово «new» слишком общее (решение после этапа 3, часть 2) — только явные открытия/закрытия.
+KEYWORD_RE = re.compile(r"\b(now open|coming soon|opening|opens|closing|closes|closed)\b", re.I)
+KEYWORD_STAGE = {"coming soon": "coming_soon", "closing": "closed", "closes": "closed", "closed": "closed"}
+ADDRESS_HINT = re.compile(r"\d|\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b|\b(Road|Street|Lane|Square|Parade|Place)\b")
 # Источники статей для извлечения.
 ARTICLE_SOURCES = {"S002", "S003", "S004", "S005", "S050", "S087", "S092", "S093"}
 
@@ -45,16 +48,19 @@ def pending(con: sqlite3.Connection, limit: int | None = None) -> list[sqlite3.R
     return con.execute(q, sorted(ARTICLE_SOURCES - NO_LLM_SOURCES)).fetchall()
 
 
-def article_text(http: PoliteClient, url: str, fallback: str) -> str:
-    """Основной текст статьи: абзацы <article> (или всей страницы). При запрете robots.txt — только RSS."""
+def article_text(http: PoliteClient, url: str, fallback: str) -> tuple[str, str]:
+    """(текст, откуда): абзацы <article> со страницы — 'page'; при запрете robots.txt или ошибке — анонс из RSS ('rss').
+
+    Короткие строки берутся, если похожи на адрес (номер дома, postcode, Road/Street): адрес заведения часто
+    стоит отдельной строкой в конце статьи."""
     try:
         tree = HTMLParser(http.get(url).text)
     except (Disallowed, FetchError):
-        return fallback
+        return fallback, "rss"
     root = tree.css_first("article") or tree.body
-    paras = [p.text(separator=" ", strip=True) for p in (root.css("p") if root else [])]
-    text = "\n".join(p for p in paras if len(p) > 40)
-    return (text or fallback)[:MAX_CHARS]
+    paras = [p.text(separator=" ", strip=True) for p in (root.css("p, li") if root else [])]
+    text = "\n".join(p for p in paras if len(p) > 40 or (len(p) > 5 and ADDRESS_HINT.search(p)))
+    return (text[:MAX_CHARS], "page") if text else (fallback, "rss")
 
 
 def call_model(client, title: str, published: str | None, text: str) -> tuple[dict, int, int]:
@@ -96,10 +102,15 @@ def store(con: sqlite3.Connection, art: sqlite3.Row, data: dict) -> dict:
                      e["postcode"] or None, price, status, e["summary_ru"], seen, seen))
         n["events"] += 1
     for v in data["venue_news"]:
-        cur = con.execute("""INSERT OR IGNORE INTO venue_news(name, type, address, postcode, stage, date, source_id,
-            source_type, url, article_id, note, first_seen_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
-                          (v["name"], v["type"], v["address"] or None, v["postcode"] or None, v["stage"], v["date"] or None,
-                           art["source_id"], "article", art["url"], art["article_id"], v["note_ru"], seen))
+        if not v["name"].strip():
+            continue
+        # дата только полная (YYYY-MM-DD) и только с основанием: «2025» → «2025-01-01» не выдумываем
+        date = v["date"] if re.fullmatch(r"\d{4}-\d{2}-\d{2}", v["date"] or "") and v.get("date_basis") != "unknown" else ""
+        date_basis = v.get("date_basis") if date else None
+        cur = con.execute("""INSERT OR IGNORE INTO venue_news(name, type, address, postcode, stage, date, date_basis,
+            source_id, source_type, url, article_id, note, first_seen_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                          (v["name"], v["type"], v["address"] or None, v["postcode"] or None, v["stage"], date or None,
+                           date_basis, art["source_id"], "article", art["url"], art["article_id"], v["note_ru"], seen))
         n["venue_news"] += cur.rowcount
     for c in data["cancellations"]:
         con.execute("""INSERT INTO event_updates(kind, event_name, date, new_date, event_id, article_id, source_id, url,
@@ -119,28 +130,44 @@ def store(con: sqlite3.Connection, art: sqlite3.Row, data: dict) -> dict:
     return n
 
 
-def process(con: sqlite3.Connection, http: PoliteClient, client, art: sqlite3.Row, text: str | None = None) -> dict:
+def process(con: sqlite3.Connection, http: PoliteClient, client, art: sqlite3.Row, text: str | None = None,
+            text_source: str = "feed") -> dict:
     fallback = f"{art['title']}\n\n{art['summary'] or ''}"
-    text = text or article_text(http, art["url"], fallback)
+    if not text:
+        text, text_source = article_text(http, art["url"], fallback)
     data, tin, tout = call_model(client, art["title"], art["published"], text)
     cost = tin * PRICE_IN + tout * PRICE_OUT
     con.execute("INSERT INTO llm_usage(called_at, purpose, model, article_id, input_tokens, output_tokens, cost_usd) VALUES (?,?,?,?,?,?,?)",
                 (now(), "article_extract", MODEL, art["article_id"], tin, tout, cost))
     counts = store(con, art, data)
     useful = data["is_useful"] and any(counts.values())
-    con.execute("UPDATE articles SET extract_status=?, extracted_at=?, model=?, result_json=? WHERE article_id=?",
-                ("useful" if useful else "empty", now(), MODEL, json.dumps(data, ensure_ascii=False), art["article_id"]))
+    con.execute("UPDATE articles SET extract_status=?, extracted_at=?, model=?, result_json=?, text_source=? WHERE article_id=?",
+                ("useful" if useful else "empty", now(), MODEL, json.dumps(data, ensure_ascii=False), text_source,
+                 art["article_id"]))
     return counts | {"cost": cost}
 
 
 def keyword_news(con: sqlite3.Connection) -> dict:
-    """Заголовки RSS источников без LLM → venue_news «требует проверки»; остальные статьи больше не обрабатываются."""
-    n = {"keyword_matched": 0, "keyword_skipped": 0}
-    q = f"SELECT * FROM articles WHERE extract_status='pending' AND source_id IN ({','.join('?' * len(NO_LLM_SOURCES))})"
+    """Заголовки RSS источников без LLM → venue_news «требует проверки»; остальные статьи больше не обрабатываются.
+
+    Заголовки, помеченные по прошлому фильтру, пересматриваются: запись venue_news, которой фильтр больше
+    не соответствует, удаляется (так ушли ложные срабатывания на «new»)."""
+    n = {"keyword_matched": 0, "keyword_skipped": 0, "keyword_dropped": 0}
+    src = ",".join("?" * len(NO_LLM_SOURCES))
+    for art in con.execute(f"SELECT * FROM articles WHERE extract_status='keyword' AND source_id IN ({src})",
+                           sorted(NO_LLM_SOURCES)).fetchall():
+        if not KEYWORD_RE.search(art["title"]):
+            con.execute("DELETE FROM venue_news WHERE article_id=? AND source_type='rss_title'", (art["article_id"],))
+            con.execute("UPDATE articles SET extract_status='skipped' WHERE article_id=?", (art["article_id"],))
+            n["keyword_dropped"] += 1
+    q = f"""SELECT * FROM articles WHERE source_id IN ({src}) AND (extract_status='pending'
+            OR (extract_status='skipped' AND article_id NOT IN (SELECT article_id FROM venue_news WHERE article_id IS NOT NULL)))"""
     for art in con.execute(q, sorted(NO_LLM_SOURCES)).fetchall():
         m = KEYWORD_RE.search(art["title"])
+        if not m and art["extract_status"] == "skipped":
+            continue
         if m:
-            stage = "closed" if m.group(1).lower() == "closing" else "opened"
+            stage = KEYWORD_STAGE.get(m.group(1).lower(), "opened")
             con.execute("""INSERT OR IGNORE INTO venue_news(name, type, stage, date, source_id, source_type, url,
                 article_id, note, first_seen_at) VALUES (?,?,?,?,?,?,?,?,?,?)""",
                         (art["title"], "другое", stage, (art["published"] or "")[:10] or None, art["source_id"],

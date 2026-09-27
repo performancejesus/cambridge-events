@@ -1,0 +1,635 @@
+{
+ "result": {
+  "intro_en": "October opens with a packed Corn Exchange, Cambridge United playing twice at the Abbey Stadium, and two new free shows at the Fitzwilliam to wander round on a rainy afternoon. Out in the villages there's folk music, dowsing at an Iron Age hillfort and a 40th-birthday concert from the Sampson Orchestra — plenty of reasons to get out of the centre this fortnight.",
+  "intro_ru": "Октябрь начинается с плотной афиши Corn Exchange, двух домашних матчей Cambridge United на Abbey Stadium и двух новых бесплатных выставок в Fitzwilliam Museum, куда можно зайти в дождливый день. А за городом — фолк-концерты, лозоходство на городище железного века и юбилейный концерт Sampson Orchestra: за эти две недели есть повод выбраться из центра.",
+  "sections": [
+   {
+    "rubric": "weekend",
+    "items": [
+     {
+      "ids": [
+       "E1"
+      ],
+      "title_en": "We Will Rock You",
+      "title_ru": "We Will Rock You",
+      "where_en": "ADC Theatre, Cambridge",
+      "where_ru": "ADC Theatre, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Student production of the jukebox musical wraps up its run at the ADC this Saturday.",
+      "blurb_ru": "Студенческая постановка мюзикла на песни группы Queen завершает показы в ADC в эту субботу."
+     },
+     {
+      "ids": [
+       "E34"
+      ],
+      "title_en": "Gianmarco Soresi: The Misery Loves Tour",
+      "title_ru": "Gianmarco Soresi: The Misery Loves Tour",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£38.50–£44",
+      "price_ru": "£38.50–£44",
+      "blurb_en": "American stand-up comedian bringing his UK tour to the Corn Exchange for one night.",
+      "blurb_ru": "Американский стендап-комик привозит своё британское турне в Corn Exchange на один вечер."
+     },
+     {
+      "ids": [
+       "E238"
+      ],
+      "title_en": "The Sampson Orchestra of Cambridge — 40th Anniversary",
+      "title_ru": "The Sampson Orchestra of Cambridge — 40-летие",
+      "where_en": "West Road Concert Hall, Cambridge",
+      "where_ru": "West Road Concert Hall, Кембридж",
+      "price_en": "£5–£20",
+      "price_ru": "£5–£20",
+      "blurb_en": "The local orchestra marks four decades with Elgar's Cockaigne Overture and Ireland's Piano Concerto, soloist Christos Fountos.",
+      "blurb_ru": "Местный оркестр отмечает сорокалетие увертюрой Элгара «Cockaigne» и фортепианным концертом Ирландa с солистом Христосом Фунтосом."
+     },
+     {
+      "ids": [
+       "E344"
+      ],
+      "title_en": "Vintage Kilo Sale",
+      "title_ru": "Vintage Kilo Sale",
+      "where_en": "St Paul's Church and Community Centre, Cambridge",
+      "where_ru": "St Paul's Church and Community Centre, Кембридж",
+      "price_en": "£2 entry, then £20 per kilo",
+      "price_ru": "£2 вход, далее £20 за килограмм",
+      "blurb_en": "Grab a bag and pick through rails of second-hand clothes, paid for by weight rather than by item.",
+      "blurb_ru": "Роются в вешалках с винтажной одеждой и платят не за вещь, а за вес — по £20 за килограмм."
+     },
+     {
+      "ids": [
+       "E353"
+      ],
+      "title_en": "Cambridge Women, Town and Gown",
+      "title_ru": "Женщины Кембриджа: город и университет",
+      "where_en": "The Round Church, Cambridge",
+      "where_ru": "The Round Church, Кембридж",
+      "price_en": "£21.43",
+      "price_ru": "£21.43",
+      "blurb_en": "A talk on the history of Cambridge women navigating both town and university life.",
+      "blurb_ru": "Лекция об истории кембриджских женщин, которым приходилось жить на стыке города и университета."
+     }
+    ]
+   },
+   {
+    "rubric": "free",
+    "items": [
+     {
+      "ids": [
+       "E447"
+      ],
+      "title_en": "Frank Bowling: Seeking the Sublime",
+      "title_ru": "Frank Bowling: в поисках возвышенного",
+      "where_en": "Fitzwilliam Museum, Cambridge",
+      "where_ru": "Fitzwilliam Museum, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A sweep through nearly seventy years of Frank Bowling's work, from his figurative 1960s paintings to recent abstraction.",
+      "blurb_ru": "Ретроспектива почти за семьдесят лет творчества Фрэнка Боулинга — от фигуративной живописи 1960-х до недавней абстракции."
+     },
+     {
+      "ids": [
+       "E448"
+      ],
+      "title_en": "A Mughal Songbook: Art, Music and Empire",
+      "title_ru": "Могольский песенник: искусство, музыка и империя",
+      "where_en": "Fitzwilliam Museum, Cambridge",
+      "where_ru": "Fitzwilliam Museum, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A rare manuscript of 77 Persian and Urdu songs from the Mughal era, shown alongside illustrations and sound.",
+      "blurb_ru": "Редкая рукопись с 77 песнями на персидском и урду эпохи Моголов, показанная вместе с иллюстрациями и звуком."
+     },
+     {
+      "ids": [
+       "E327"
+      ],
+      "title_en": "The History and Archaeology of Wimpole Park and Garden",
+      "title_ru": "История и археология парка и сада Wimpole",
+      "where_en": "Histon Methodist Church, Histon",
+      "where_ru": "Histon Methodist Church, Histon",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "Angus Wainwright talks through what's buried beneath Wimpole's grounds.",
+      "blurb_ru": "Ангус Уэйнрайт рассказывает о том, что скрыто под землёй в поместье Wimpole."
+     },
+     {
+      "ids": [
+       "E352"
+      ],
+      "title_en": "Makani Dabkeh and Drumming Circle",
+      "title_ru": "Makani: дабке и барабанный круг",
+      "where_en": "Ring Fort Road, Cambridge",
+      "where_ru": "Ring Fort Road, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A community session of Dabkeh, a traditional Levantine folk dance, with drumming.",
+      "blurb_ru": "Общественное занятие традиционным левантийским танцем дабке под барабаны."
+     },
+     {
+      "ids": [
+       "E359"
+      ],
+      "title_en": "Pop-up Speakeasy Jazz Club",
+      "title_ru": "Джазовый спикизи-клуб",
+      "where_en": "The Tram Depot, Cambridge",
+      "where_ru": "The Tram Depot, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "An informal night of jazz from Cambridge's amateur musicians, come and go as you please.",
+      "blurb_ru": "Неформальный джазовый вечер с местными музыкантами-любителями — можно заглянуть и уйти в любой момент."
+     },
+     {
+      "ids": [
+       "E346"
+      ],
+      "title_en": "Eco Retrofit Open House, Sedgwick Street",
+      "title_ru": "День открытых дверей: эко-ретрофит на Sedgwick Street",
+      "where_en": "Sedgwick Street, Cambridge",
+      "where_ru": "Sedgwick Street, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A chance to look round a Victorian semi transformed into a quirky, highly insulated eco home.",
+      "blurb_ru": "Возможность посмотреть, как викторианский дом на две семьи превратили в необычный, хорошо утеплённый эко-дом."
+     }
+    ]
+   },
+   {
+    "rubric": "kids",
+    "items": [
+     {
+      "ids": [
+       "E241"
+      ],
+      "title_en": "Meet the Cows",
+      "title_ru": "Знакомство с коровами",
+      "where_en": "Wandlebury Country Park, near Babraham",
+      "where_ru": "Wandlebury Country Park, близ Babraham",
+      "price_en": "donations welcome (suggested £3)",
+      "price_ru": "донейшн (рекомендуется £3)",
+      "blurb_en": "A gentle guided walk to meet the park's Belted Galloway cows and learn how grazing helps the meadows.",
+      "blurb_ru": "Неспешная прогулка с гидом к коровам породы Belted Galloway и рассказом о том, как выпас помогает лугам."
+     },
+     {
+      "ids": [
+       "E347"
+      ],
+      "title_en": "NCT Cambridge Autumn Nearly New Sale",
+      "title_ru": "Осенняя распродажа NCT в Кембридже",
+      "where_en": "Cambridge Regional College, Cambridge",
+      "where_ru": "Cambridge Regional College, Кембридж",
+      "price_en": "free entry",
+      "price_ru": "бесплатный вход",
+      "blurb_en": "Bargain baby and children's clothes and toys, run by NCT volunteers.",
+      "blurb_ru": "Распродажа детской одежды и игрушек по низким ценам, организованная волонтёрами NCT."
+     },
+     {
+      "ids": [
+       "E356"
+      ],
+      "title_en": "Halloween Pottery Fundraiser",
+      "title_ru": "Хеллоуинская роспись керамики: сбор средств",
+      "where_en": "Glazed Creations, Royston",
+      "where_ru": "Glazed Creations, Royston",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A Halloween-themed pottery painting session raising money for NCT's family support work.",
+      "blurb_ru": "Роспись керамики на хеллоуинскую тему в поддержку работы NCT с семьями."
+     },
+     {
+      "ids": [
+       "E368"
+      ],
+      "title_en": "Sculpt & Paint Pottery Class",
+      "title_ru": "Мастер-класс по лепке и росписи керамики",
+      "where_en": "Longstanton, near Cambridge",
+      "where_ru": "Longstanton, близ Кембриджа",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A relaxed hands-on session sculpting and painting pottery, suitable for the whole family.",
+      "blurb_ru": "Спокойное занятие по лепке и росписи керамики, подходит для всей семьи."
+     }
+    ]
+   },
+   {
+    "rubric": "sport",
+    "items": [
+     {
+      "ids": [
+       "E196"
+      ],
+      "title_en": "Sun Chariot Day",
+      "title_ru": "Sun Chariot Day",
+      "where_en": "Newmarket Racecourses, Newmarket",
+      "where_ru": "Newmarket Racecourses, Ньюмаркет",
+      "price_en": "£18",
+      "price_ru": "£18",
+      "blurb_en": "A day of flat racing at Newmarket.",
+      "blurb_ru": "День скачек на ипподроме Ньюмаркета."
+     },
+     {
+      "ids": [
+       "E197"
+      ],
+      "title_en": "Dubai Future Champions Festival",
+      "title_ru": "Dubai Future Champions Festival",
+      "where_en": "Newmarket Racecourses, Newmarket",
+      "where_ru": "Newmarket Racecourses, Ньюмаркет",
+      "price_en": "£15",
+      "price_ru": "£15",
+      "blurb_en": "A racing festival at Newmarket spotlighting the sport's rising talent.",
+      "blurb_ru": "Скаковой фестиваль в Ньюмаркете, посвящённый молодым перспективным лошадям и жокеям."
+     },
+     {
+      "ids": [
+       "E110"
+      ],
+      "title_en": "Cambridge United vs Northampton Town (EFL Trophy)",
+      "title_ru": "Cambridge United — Northampton Town (EFL Trophy)",
+      "where_en": "Abbey Stadium, Cambridge",
+      "where_ru": "Abbey Stadium, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Home EFL Trophy tie for Cambridge United.",
+      "blurb_ru": "Домашний матч Cambridge United в розыгрыше EFL Trophy."
+     },
+     {
+      "ids": [
+       "E111"
+      ],
+      "title_en": "Cambridge United vs Blackpool",
+      "title_ru": "Cambridge United — Blackpool",
+      "where_en": "Abbey Stadium, Cambridge",
+      "where_ru": "Abbey Stadium, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Home league match against Blackpool.",
+      "blurb_ru": "Домашний матч чемпионата против Blackpool."
+     }
+    ]
+   },
+   {
+    "rubric": "out_of_town",
+    "items": [
+     {
+      "ids": [
+       "E235"
+      ],
+      "title_en": "The Charlotte Carrivick Band",
+      "title_ru": "The Charlotte Carrivick Band",
+      "where_en": "Stapleford Granary, Stapleford",
+      "where_ru": "Stapleford Granary, Stapleford",
+      "price_en": "£12–£24",
+      "price_ru": "£12–£24",
+      "blurb_en": "A flat-picking guitarist and her band play original songs rooted in bluegrass and old stories.",
+      "blurb_ru": "Гитаристка, играющая в технике flat-picking, и её группа исполняют собственные песни в духе блюграсс и старых историй."
+     },
+     {
+      "ids": [
+       "E236"
+      ],
+      "title_en": "Dowsing at Wandlebury Park",
+      "title_ru": "Лозоходство в парке Wandlebury",
+      "where_en": "Wandlebury Country Park, near Babraham",
+      "where_ru": "Wandlebury Country Park, близ Babraham",
+      "price_en": "£30–£35",
+      "price_ru": "£30–£35",
+      "blurb_en": "A day trying archaeological dowsing around the old manor house foundations at the Iron Age hillfort.",
+      "blurb_ru": "День лозоходства вокруг фундаментов старого поместья на месте городища железного века."
+     },
+     {
+      "ids": [
+       "E239"
+      ],
+      "title_en": "Richie Ros",
+      "title_ru": "Richie Ros",
+      "where_en": "Cottenham Community Centre, Cottenham",
+      "where_ru": "Cottenham Community Centre, Cottenham",
+      "price_en": "£10",
+      "price_ru": "£10",
+      "blurb_en": "An Irish singer-songwriter performing folk-tinged original songs.",
+      "blurb_ru": "Ирландский автор-исполнитель играет собственные песни в фолк-манере."
+     },
+     {
+      "ids": [
+       "E243"
+      ],
+      "title_en": "Curious about Hans Christian Andersen?",
+      "title_ru": "А вы знаете Ганса Христиана Андерсена?",
+      "where_en": "Stapleford Granary, Stapleford",
+      "where_ru": "Stapleford Granary, Stapleford",
+      "price_en": "£9–£11",
+      "price_ru": "£9–£11",
+      "blurb_en": "Chamber music and storytelling set inside a life-size paper theatre — a nice one for families.",
+      "blurb_ru": "Камерная музыка и рассказ историй внутри бумажного театра в натуральную величину — хороший вариант для семей."
+     },
+     {
+      "ids": [
+       "E274"
+      ],
+      "title_en": "The Fillers + The Blokes",
+      "title_ru": "The Fillers + The Blokes",
+      "where_en": "The Maltings, Ely",
+      "where_ru": "The Maltings, Эли",
+      "price_en": "£22",
+      "price_ru": "£22",
+      "blurb_en": "A tribute double bill covering The Killers and The Strokes.",
+      "blurb_ru": "Двойной трибьют-концерт: каверы на The Killers и The Strokes."
+     },
+     {
+      "ids": [
+       "E363"
+      ],
+      "title_en": "The Janzen Boys",
+      "title_ru": "The Janzen Boys",
+      "where_en": "Eversden Village Hall, Great Eversden",
+      "where_ru": "Eversden Village Hall, Great Eversden",
+      "price_en": "£16.96",
+      "price_ru": "£16.96",
+      "blurb_en": "A Canadian father-and-sons folk trio known for tight three-part harmonies.",
+      "blurb_ru": "Канадское фолк-трио из отца и сыновей, известное слаженным трёхголосием."
+     }
+    ]
+   },
+   {
+    "rubric": "new_announcements",
+    "items": [
+     {
+      "ids": [
+       "A424"
+      ],
+      "title_en": "Whittlesea Straw Bear Festival",
+      "title_ru": "Whittlesea Straw Bear Festival",
+      "where_en": "Market Place, Whittlesey",
+      "where_ru": "Market Place, Whittlesey",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Dates are set for the annual straw bear festival in January 2027.",
+      "blurb_ru": "Определены даты ежегодного фестиваля соломенного медведя в январе 2027 года."
+     },
+     {
+      "ids": [
+       "A425"
+      ],
+      "title_en": "Thriplow Daffodil Weekend",
+      "title_ru": "Daffodil Weekend в Thriplow",
+      "where_en": "Thriplow",
+      "where_ru": "Thriplow",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "The village's spring daffodil weekend now has a date next March.",
+      "blurb_ru": "У весеннего фестиваля нарциссов в деревне уже есть дата на март следующего года."
+     },
+     {
+      "ids": [
+       "A426"
+      ],
+      "title_en": "Cambridge Festival",
+      "title_ru": "Cambridge Festival",
+      "where_en": "various venues, Cambridge",
+      "where_ru": "разные площадки, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Dates confirmed for the university's annual public festival of research and ideas.",
+      "blurb_ru": "Подтверждены даты ежегодного публичного фестиваля науки и идей университета."
+     },
+     {
+      "ids": [
+       "A131"
+      ],
+      "title_en": "Cambridge Beer Festival 2027",
+      "title_ru": "Cambridge Beer Festival 2027",
+      "where_en": "Jesus Green, Cambridge",
+      "where_ru": "Jesus Green, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Save the date: over 180 real ales and 80 ciders return to Jesus Green next May.",
+      "blurb_ru": "Уже можно отметить в календаре: в мае на Jesus Green снова более 180 сортов эля и 80 сидров."
+     },
+     {
+      "ids": [
+       "A103"
+      ],
+      "title_en": "Fireworks Night",
+      "title_ru": "Ночь фейерверков",
+      "where_en": "Midsummer Common, Cambridge",
+      "where_ru": "Midsummer Common, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "Cambridge's long-running free fireworks night returns to Midsummer Common in November.",
+      "blurb_ru": "Давняя традиция — бесплатный вечер фейерверков — вернётся на Midsummer Common в ноябре."
+     },
+     {
+      "ids": [
+       "A133"
+      ],
+      "title_en": "Mill Road Winter Fair 2026",
+      "title_ru": "Mill Road Winter Fair 2026",
+      "where_en": "Mill Road, Cambridge",
+      "where_ru": "Mill Road, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "The date is set for this year's Mill Road Winter Fair in early December.",
+      "blurb_ru": "Известна дата зимней ярмарки на Mill Road — начало декабря."
+     }
+    ]
+   },
+   {
+    "rubric": "tickets",
+    "items": [
+     {
+      "ids": [
+       "E39",
+       "T2",
+       "E440",
+       "E442"
+      ],
+      "title_en": "A Tribute to Syd Barrett: 80th Anniversary Celebrations",
+      "title_ru": "A Tribute to Syd Barrett: 80-летие",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£55–£132",
+      "price_ru": "£55–£132",
+      "blurb_en": "Tickets went on sale for a concert marking Syd Barrett's 80th birthday, at the venue where he gave his last live show in 1972, with Kula Shaker and Soft Machine among the acts, in aid of mental health charities.",
+      "blurb_ru": "В продажу поступили билеты на концерт в честь 80-летия Сида Барретта — там же, где он в 1972 году дал своё последнее выступление; среди участников Kula Shaker и Soft Machine, сборы пойдут на благотворительность в поддержку психического здоровья."
+     },
+     {
+      "ids": [
+       "T3"
+      ],
+      "title_en": "The Big Retreat Cambridgeshire 2027",
+      "title_ru": "The Big Retreat Cambridgeshire 2027",
+      "where_en": "Abbots Ripton Estate, near Huntingdon",
+      "where_ru": "Abbots Ripton Estate, около Huntingdon",
+      "price_en": "day tickets from £79, weekend tickets from £269",
+      "price_ru": "дневные билеты от £79, билеты на выходные от £269",
+      "blurb_en": "Tickets are on sale for next August's wellbeing festival of yoga, pilates, live music and workshops.",
+      "blurb_ru": "В продаже билеты на фестиваль благополучия следующего августа — йога, пилатес, живая музыка и мастер-классы."
+     },
+     {
+      "ids": [
+       "T4",
+       "A209"
+      ],
+      "title_en": "Simply Red",
+      "title_ru": "Simply Red",
+      "where_en": "Newmarket Racecourses, Newmarket",
+      "where_ru": "Newmarket Racecourses, Ньюмаркет",
+      "price_en": "from £45",
+      "price_ru": "от £45",
+      "blurb_en": "Tickets are on sale for Simply Red's Summer Funk '27 tour date at Newmarket racecourse next August.",
+      "blurb_ru": "В продаже билеты на выступление Simply Red в рамках тура Summer Funk '27 на ипподроме Ньюмаркета в августе будущего года."
+     }
+    ]
+   },
+   {
+    "rubric": "new_in_town",
+    "items": [
+     {
+      "ids": [
+       "V72"
+      ],
+      "title_en": "UNIQLO",
+      "title_ru": "UNIQLO",
+      "where_en": "Grand Arcade, St Andrew's Street, Cambridge",
+      "where_ru": "Grand Arcade, St Andrew's Street, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "The Japanese clothing giant's first Cambridge store has opened across two floors of the Grand Arcade, with a university-themed capsule collection.",
+      "blurb_ru": "Первый магазин японского бренда одежды в Кембридже открылся на двух этажах Grand Arcade, с эксклюзивной коллекцией совместно с университетом."
+     },
+     {
+      "ids": [
+       "V53",
+       "V75"
+      ],
+      "title_en": "Greggs",
+      "title_ru": "Greggs",
+      "where_en": "Cambridge Leisure Park, Clifton Way, Cambridge",
+      "where_ru": "Cambridge Leisure Park, Clifton Way, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Greggs is moving into the former Rocker's Steakhouse unit at Cambridge Leisure Park, its second branch within a ten-minute walk of Station Square.",
+      "blurb_ru": "Greggs открывается на месте закрывшегося Rocker's Steakhouse в Cambridge Leisure Park — это уже вторая точка сети в десяти минутах ходьбы от Station Square."
+     },
+     {
+      "ids": [
+       "V55"
+      ],
+      "title_en": "Tea Apothecary",
+      "title_ru": "Tea Apothecary",
+      "where_en": "Magdalene Street, Cambridge",
+      "where_ru": "Magdalene Street, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "A new café has opened on Magdalene Street.",
+      "blurb_ru": "На Magdalene Street открылось новое кафе."
+     },
+     {
+      "ids": [
+       "V56",
+       "V57"
+      ],
+      "title_en": "Carmen's Pizza",
+      "title_ru": "Carmen's Pizza",
+      "where_en": "The Blue Moon, Norfolk Street, Cambridge",
+      "where_ru": "The Blue Moon, Norfolk Street, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Carmen's Pizza has taken over from Oscar's Lockdown Pizza at the Blue Moon pub, keeping the dough recipe but adding Latin American and Mediterranean touches.",
+      "blurb_ru": "Carmen's Pizza сменила Oscar's Lockdown Pizza в пабе The Blue Moon — рецепт теста тот же, но добавились латиноамериканские и средиземноморские нотки."
+     },
+     {
+      "ids": [
+       "V69"
+      ],
+      "title_en": "Hickory's Smokehouse",
+      "title_ru": "Hickory's Smokehouse",
+      "where_en": "Milton Arms, Cambridge",
+      "where_ru": "Milton Arms, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "A slow-smoked barbecue chain is opening its first Cambridge branch, replacing the Hungry Horse at the Milton Arms.",
+      "blurb_ru": "Сеть барбекю на медленном копчении открывает первую точку в Кембридже — на месте Hungry Horse в Milton Arms."
+     },
+     {
+      "ids": [
+       "V50"
+      ],
+      "title_en": "Tenpin",
+      "title_ru": "Tenpin",
+      "where_en": "Queensgate, Peterborough",
+      "where_ru": "Queensgate, Питерборо",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "A new 20-lane bowling alley is coming to the Queensgate centre, with a bar, café, interactive darts, pool, karaoke rooms and an arcade.",
+      "blurb_ru": "В торговом центре Queensgate откроется новый боулинг на 20 дорожек с баром, кафе, интерактивными дартс, бильярдом, комнатами для караоке и аркадой."
+     }
+    ]
+   }
+  ],
+  "editor_notes_en": [
+   "Merged E39/T2/E440/E442 — all describe the same Syd Barrett 80th anniversary concert at the Corn Exchange on 10 Oct, just from different sources; used the fullest (E39/T2) version for title and price.",
+   "Merged T4/A209 (Simply Red at Newmarket) — same announcement from two sources; price_text (£50) and price_from (£45) disagree, flagged rather than guessed at.",
+   "Merged V53 (Greggs opening) and V75 (Rocker's Steakhouse closing) since they're the same unit at Cambridge Leisure Park changing hands.",
+   "Merged V56 (Carmen's Pizza opening) and V57 (Oscar's Lockdown Pizza closing) — same site at the Blue Moon.",
+   "No candidates fit the 'cancelled' rubric this issue, and none of the E-items sit in the 'Кембриджшир, дальше часа' zone, so 'county' is omitted too.",
+   "Tickets rubric is thin (3 items) — few genuinely new on-sale announcements this fortnight beyond the Syd Barrett cluster and Simply Red.",
+   "Dropped as professional/business events: Agile Cambridge, the LinkedIn selling course, Flow Cytometry courses, RAREsummit26, the SIFT-MS Symposium, and the architects' speed-networking night.",
+   "Dropped talks.cam physics seminars (quantum gravity, axion dark matter, etc.) as too specialised for a general local audience.",
+   "Dropped 'Waterstones Book Events' as a generic listing rather than a single event, though the individual Pelé Cox and Rachel Harrison evenings (E340, E342) were considered and cut for space.",
+   "Held over several recent, newsier openings (Catte Latte cat café, Tripots hot pot, Gorilla + Lamb) from new_in_town for space — worth a second look next issue if still fresh.",
+   "E344 (Vintage Kilo Sale) price looks odd: £2 is just entry, clothes are then charged at £20/kg — spelled out in the blurb.",
+   "E353 and E363 have oddly precise prices (£21.43, £16.96) likely from currency conversion or booking fees — left as given per the data."
+  ],
+  "editor_notes_ru": [
+   "Объединил E39/T2/E440/E442 — это один и тот же концерт памяти 80-летия Сида Барретта в Corn Exchange 10 октября из разных источников; за основу взял вариант с наиболее полными данными (E39/T2).",
+   "Объединил T4/A209 (Simply Red в Ньюмаркете) — одно и то же анонс из двух источников; price_text (£50) и price_from (£45) расходятся, отметил это, а не стал угадывать.",
+   "Объединил V53 (открытие Greggs) и V75 (закрытие Rocker's Steakhouse) — это одно и то же помещение в Cambridge Leisure Park, сменившее владельца.",
+   "Объединил V56 (открытие Carmen's Pizza) и V57 (закрытие Oscar's Lockdown Pizza) — один и тот же адрес в пабе The Blue Moon.",
+   "В этом выпуске нет кандидатов для рубрики «отменено», а среди событий-E нет ни одного из зоны «Кембриджшир, дальше часа», поэтому рубрику county тоже не даю.",
+   "Рубрика tickets получилась короткой (3 позиции) — за эти две недели не так много действительно новых объявлений о продаже билетов, кроме кластера про Сида Барретта и Simply Red.",
+   "Убрал как профессиональные/деловые мероприятия: Agile Cambridge, курс по продажам на LinkedIn, курсы по флуоресцентной цитометрии, RAREsummit26, симпозиум SIFT-MS и нетворкинг-вечер архитекторов.",
+   "Убрал научные семинары talks.cam (квантовая гравитация, аксионная тёмная материя и др.) как слишком узкоспециализированные для общего читателя.",
+   "Убрал «Waterstones Book Events» как общий список, а не отдельное событие, хотя конкретные вечера с Pelé Cox и Rachel Harrison (E340, E342) рассматривал — не хватило места.",
+   "Оставил про запас несколько недавних открытий (кото-кафе Catte Latte, хот-пот Tripots, Gorilla + Lamb) из new_in_town — не хватило места, но стоит вернуться к ним в следующем выпуске.",
+   "У E344 (Vintage Kilo Sale) цена выглядит странно: £2 — это только вход, а одежда потом продаётся по £20/кг — пояснил это в тексте.",
+   "У E353 и E363 неровные цены (£21.43, £16.96), похоже, из-за конвертации валюты или комиссии за бронирование — оставил как есть по данным."
+  ],
+  "manual_fixes": [
+   [
+    "intro (RU): model typo «плотной afishas в Corn Exchange» corrected by hand to «плотной афиши Corn Exchange»",
+    "вступление (RU): опечатка модели «плотной afishas в Corn Exchange» исправлена вручную на «плотной афиши Corn Exchange»"
+   ]
+  ],
+  "review_notes": [
+   [
+    "We Will Rock You (E1): “student production” and “Queen songs” are not in the source data (the model's own knowledge) — check",
+    "We Will Rock You (E1): «студенческая постановка» и «песни Queen» — не из данных, а из знаний модели; проверить"
+   ],
+   [
+    "Gianmarco Soresi (E34): “American” is not in the source data (empty summary) — check",
+    "Gianmarco Soresi (E34): «американский» — не из данных (описания нет); проверить"
+   ],
+   [
+    "Sculpt & Paint Pottery Class, Longstanton (E368): “suitable for the whole family” is not in the data, so its place under “With kids” is a guess; the free price may be an Eventbrite placeholder",
+    "Лепка и роспись керамики, Longstanton (E368): «подходит для всей семьи» — не из данных, место в рубрике «С детьми» — догадка; цена 0 может быть заглушкой Eventbrite"
+   ],
+   [
+    "Cambridge United v Blackpool (E111): called a league match, but a news article (#441) describes a charity match on the same day — check which it is",
+    "Cambridge United — Blackpool (E111): назван матчем чемпионата, но в статье (#441) в тот же день — благотворительный матч; проверить, что это"
+   ],
+   [
+    "Cambridge Festival (A426): “festival of research and ideas” is the model's own knowledge — the record only has dates",
+    "Cambridge Festival (A426): «фестиваль науки и идей» — из знаний модели, в записи только даты"
+   ]
+  ]
+ },
+ "usage": {
+  "input_tokens": 33323,
+  "output_tokens": 38991,
+  "cost_usd": 0.456556
+ }
+}

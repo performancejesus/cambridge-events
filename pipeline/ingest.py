@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 from datetime import date, timedelta
 from pathlib import Path
@@ -23,6 +24,9 @@ SOURCE_RANK = ["S042", "S011", "S072", "S018", "S032", "S033", "S038", "S047", "
 PARTIAL_LISTING = {"S006", "S007", "S008"}
 HISTORY_DAYS = 60            # старше — в события не превращаем (в сыром виде храним)
 MATCH_MIN, MATCH_MIN_NO_VENUE = 0.8, 0.9
+# «Cambridge» без адреса (подборки «Various, Cambridge», экскурсии по частным домам с одной улицей):
+# зона «центр» условно, с пометкой address_unknown (решение после этапа 3, часть 2).
+CITY_ONLY_RE = re.compile(r"(^|,)\s*Cambridge\s*(,|$)", re.I)
 STATUS_PRIORITY = ["cancelled", "postponed", "disappeared", "past", "sold_out", "on_sale", "announced", "scheduled"]
 
 
@@ -198,6 +202,9 @@ def refresh(con: sqlite3.Connection, run_id: str) -> dict:
         if not postcode and v:
             postcode, address = v["postcode"], v["address"]
         lat, lon, zn = zone_for_postcode(con, postcode) or (None, None, None)
+        address_unknown = 0
+        if zn is None and e["lat"] is None and any(CITY_ONLY_RE.search(x or "") for x in (address, venue)):
+            zn, address_unknown = "центр", 1
         prices = [parse_price(r["price"], r["summary"], r["title"]) for r in raws]
         prices = [p for p in prices if p is not None]
         price_from = min(prices) if prices else e["price_from"]
@@ -214,10 +221,10 @@ def refresh(con: sqlite3.Connection, run_id: str) -> dict:
         if e["status"] == "past" and status == "disappeared":
             status = "past"
         con.execute("""UPDATE events SET title=?, venue_id=?, venue_name=?, address=?, postcode=?, lat=coalesce(?, lat),
-            lon=coalesce(?, lon), zone=coalesce(?, zone), price_from=?, price_text=?, url=?, last_seen_at=?,
-            status=? WHERE event_id=?""",
+            lon=coalesce(?, lon), zone=coalesce(?, zone), address_unknown=?, price_from=?, price_text=?, url=?,
+            last_seen_at=?, status=? WHERE event_id=?""",
                     (first["title"] if first else e["title"], venue_id, venue, address, postcode, lat, lon,
-                     zn, price_from, price_text, first["url"] if first and first["url"] else e["url"],
+                     zn, address_unknown, price_from, price_text, first["url"] if first and first["url"] else e["url"],
                      max(r["last_seen_at"] for r in raws) if raws else e["last_seen_at"], status, e["event_id"]))
         if not con.execute("SELECT 1 FROM status_history WHERE event_id=?", (e["event_id"],)).fetchone():
             con.execute("INSERT INTO status_history(event_id, status, changed_at, source_id, note) VALUES (?,?,?,?,?)",

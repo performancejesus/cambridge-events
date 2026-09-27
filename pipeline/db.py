@@ -195,6 +195,9 @@ MIGRATIONS = [
     ("recurring_events", "manual_end", "TEXT"),
     ("recurring_events", "venue", "TEXT"),            # место проведения — для зоны события
     ("recurring_events", "postcode", "TEXT"),
+    ("venue_news", "date_basis", "TEXT"),             # stated | publication_date (дата статьи о свежем открытии)
+    ("articles", "text_source", "TEXT"),              # page | rss | feed — что ушло в модель
+    ("events", "address_unknown", "INTEGER"),         # 1 — город Cambridge без адреса, зона «центр» условно
 ]
 
 

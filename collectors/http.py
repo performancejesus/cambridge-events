@@ -20,6 +20,8 @@ USER_AGENT = "CambridgeEventsBot/0.1 (+https://github.com/performancejesus/cambr
 DELAY_SECONDS = 2.0
 TIMEOUT = 30.0
 BACKOFF = (30, 60, 120)
+# Хосты, которые отвечают 429 уже при паузе в 2 с (WordPress.com): своя, более длинная пауза.
+HOST_DELAYS = {"cambridgefoodies.me.uk": 20.0}
 
 
 class Disallowed(Exception):
@@ -83,7 +85,7 @@ class PoliteClient:
     # --- запросы ---
     def _wait(self, host: str) -> None:
         rp = self._robots.get(f"https://{host}") or self._robots.get(f"http://{host}")
-        delay = max(self.delay, float((rp.crawl_delay(USER_AGENT) if rp else None) or 0))
+        delay = max(self.delay, HOST_DELAYS.get(host, 0.0), float((rp.crawl_delay(USER_AGENT) if rp else None) or 0))
         wait = delay - (time.monotonic() - self._last.get(host, 0))
         if wait > 0:
             time.sleep(wait)

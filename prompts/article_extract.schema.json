@@ -27,11 +27,12 @@
         "type": {"type": "string", "enum": ["ресторан", "кафе", "бар", "магазин", "другое"]},
         "stage": {"type": "string", "enum": ["coming_soon", "opened", "closed"]},
         "date": {"type": "string"},
+        "date_basis": {"type": "string", "enum": ["stated", "publication_date", "unknown"]},
         "address": {"type": "string"},
         "postcode": {"type": "string"},
         "note_ru": {"type": "string"}
       },
-      "required": ["name", "type", "stage", "date", "address", "postcode", "note_ru"],
+      "required": ["name", "type", "stage", "date", "date_basis", "address", "postcode", "note_ru"],
       "additionalProperties": false
     }},
     "cancellations": {"type": "array", "items": {

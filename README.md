@@ -61,6 +61,26 @@ python scripts/stage3_report.py           # docs/stage3_report.md
   нужны ли билеты; `manual_start`/`manual_end` — дата, внесённая вручную, например начало Folk Festival).
 - Статусы: `scheduled` (без билетов) · `announced` (билеты ожидаются) → `on_sale` → `sold_out` / `postponed` / `cancelled` → `past`.
 - Зоны: `центр` · `до 30 мин` · `до часа` · `Кембриджшир, дальше часа` (районы Peterborough и Fenland) · `out_of_zone`.
-- Cambridge BID (S097): статьи в Claude не передаются; заголовки RSS с словами opening/opens/new/closing →
-  `venue_news` «требует проверки».
+- Cambridge BID (S097): статьи в Claude не передаются; заголовки RSS со словами opening / opens / now open /
+  coming soon / closing / closes / closed → `venue_news` «требует проверки».
+- `python scripts/extract_articles.py --rerun-venue-news` — повторное извлечение статей, чьи записи `venue_news`
+  без номера дома/postcode или без даты (их записи заменяются новым результатом; `--articles 30,44` — выборочно).
 - Ключ Claude API — только в окружении или в `.env` (файл в `.gitignore`).
+
+## Этап 4 — черновик выпуска
+
+```bash
+python scripts/build_issue.py --issue 2026-10-01 --start 2026-09-28 --end 2026-10-11 --weekend 2026-10-03
+python scripts/build_issue.py ... --dry-run                      # только пулы кандидатов, без API
+python scripts/build_issue.py ... --from-json issues/issue_2026-10-01_model.json   # перерисовать без API
+```
+
+- `pipeline/issue.py` — пулы кандидатов из базы (события окна, серии одним пунктом, новые анонсы, старт продаж,
+  отмены, «новое в городе»), поиск несклеенных дублей, даты и рендер Markdown.
+- `prompts/issue.md` + `prompts/issue.schema.json` — отбор и тексты (Claude Sonnet 5): модель выбирает кандидатов
+  по id и пишет название, место, цену и 1–2 предложения на английском и русском; даты, время и ссылки — из базы.
+- `scripts/build_issue.py` — вызов модели, проверка ответа (id, повторы, соответствие рубрике, цена по данным,
+  латиница в русском тексте), блок «Для редактора». Ответ модели сохраняется в `issues/issue_<дата>_model.json`
+  (туда же — ручные правки `manual_fixes` и заметки ревью `review_notes`, они выводятся редактору).
+- Результат: `issues/issue_<дата>_en.md`, `issues/issue_<дата>_ru.md`.
+
