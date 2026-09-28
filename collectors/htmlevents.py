@@ -68,7 +68,9 @@ def find_when(text: str, today: date | None = None) -> tuple[date, date | None, 
 
 
 def page_text(node) -> str:
-    return re.sub(r"\s+", " ", node.text(separator=" | ", strip=True)) if node else ""
+    if not node:
+        return ""
+    return re.sub(r"(?:\s*\|\s*)+", " | ", re.sub(r"\s+", " ", node.text(separator=" | ", strip=True)))
 
 
 def meta(tree: HTMLParser, prop: str) -> str | None:

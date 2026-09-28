@@ -55,6 +55,9 @@ WINDOW_DAYS = 10            # период выпуска = дата отпра�
 KIDS_RE = re.compile(r"\b(family[- ]friendly|for (all the |the whole )?famil(y|ies)|famil(y|ies) (fun|day|event|show|"
                      r"activit\w*|workshop|ticket)s?|all the family|whole family|kids|children'?s?|toddlers?|babies|"
                      r"baby|half[- ]term|ages? \d|aged \d|years? \d+\s*[-–]\s*\d+|under[- ]?\d+s)\b", re.I)
+# Семейные категории, которыми источник сам размечает события (фильтры UCM «для кого», раздел Visit Cambridge,
+# раздел University What's On, Science Centre) — явная пометка, не догадка (этап 6).
+FAMILY_CATEGORIES = {"family", "families", "family events", "family friendly", "under 5s", "ages 5+"}
 MERGES = ROOT / "data" / "manual_merges.json"
 # Связанные события, которые в выпуске — один пункт (встреча с режиссёром + показ его фильма); проверено редактором.
 LINKS = ROOT / "data" / "issue_links.json"
@@ -119,16 +122,22 @@ def _summary(con, event_id: int) -> str:
     return " | ".join(u[:300] for u in uniq)[:600]
 
 
-def _categories(con, event_id: int) -> list[str]:
+def _categories(con, event_id: int, limit: int | None = 6) -> list[str]:
     cats = set()
     for (c,) in con.execute("SELECT categories FROM raw_items WHERE event_id=?", (event_id,)):
         cats.update(json.loads(c or "[]"))
-    return sorted(cats)[:6]
+    return sorted(cats)[:limit]
 
 
 def _merge_notes() -> dict[tuple[str, str], str]:
     rules = json.loads(MERGES.read_text()) if MERGES.exists() else []
     return {(r["keep"]["date"], r["keep"]["title"]): r["note"] for r in rules}
+
+
+def is_family(title: str, summary: str, cats: list[str]) -> bool:
+    """Дети или семьи явно названы в данных: слова в названии/описании/категориях или семейная категория источника."""
+    return bool(KIDS_RE.search(" ".join([title, summary or ""] + cats))) or any(
+        c.strip().lower() in FAMILY_CATEGORIES for c in cats)
 
 
 def _event_facts(con, e: sqlite3.Row) -> dict:
@@ -144,7 +153,7 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
         "price_text": e["price_text"], "price_from": e["price_from"], "status": status, "sources": srcs,
         "categories": cats, "summary": summary, "source_type": e["source_type"],
         "importance": e["importance_score"], "importance_reason": e["importance_reason"],
-        "kids_tag": bool(KIDS_RE.search(" ".join([e["title"], summary] + cats))),
+        "kids_tag": is_family(e["title"], summary, _categories(con, e["event_id"], None)),
         "free_tag": e["price_from"] == 0,
     }
     note = _merge_notes().get((e["date_start"], e["title"]))

@@ -1,0 +1,47 @@
+{
+ "_comment": "Этап 6 → 6b (Keenable): запросы о выездных событиях на открытых пространствах. Результаты поиска — кандидаты, не факты.",
+ "open_spaces": [
+  "Jesus Green events 2026",
+  "Midsummer Common events 2026",
+  "Parker's Piece events 2026",
+  "Christ's Pieces events 2026",
+  "Coldham's Common events 2026",
+  "Stourbridge Common events 2026",
+  "Cherry Hinton Hall events 2026",
+  "Sheep's Green events 2026",
+  "Lammas Land events 2026",
+  "Market Square, Cambridge events 2026",
+  "Jubilee Gardens, Ely events 2026",
+  "Cherry Hill Park, Ely events 2026",
+  "Riverside Park, Huntingdon events 2026",
+  "Riverside Park, St Neots events 2026",
+  "Priory Park, St Neots events 2026",
+  "The Quay, St Ives events 2026",
+  "The Embankment, Peterborough events 2026",
+  "Cathedral Square, Peterborough events 2026",
+  "Ferry Meadows events 2026",
+  "Midsummer Common funfair",
+  "Parker's Piece funfair",
+  "Jesus Green funfair",
+  "food festival Cambridge park 2026",
+  "Christmas market Ely 2026",
+  "St Ives Cambridgeshire fair 2026",
+  "Peterborough Embankment festival 2026"
+ ],
+ "churches": [
+  "King's College Chapel concert October 2026",
+  "St John's College Chapel concert 2026",
+  "Trinity College Chapel concert 2026",
+  "Great St Mary's Cambridge concert 2026",
+  "Round Church Cambridge event",
+  "St Botolph's Cambridge concert"
+ ],
+ "family_places": [
+  "Shepreth Wildlife Park events 2026",
+  "Hamerton Zoo Park events",
+  "Hinchingbrooke Country Park events 2026",
+  "Audley End House events 2026",
+  "Wimpole Home Farm events 2026",
+  "IWM Duxford events 2026"
+ ]
+}

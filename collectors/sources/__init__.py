@@ -7,7 +7,8 @@ from . import (adc_camdram, beer_festival, cambridge105, cambridge_bid, cambridg
                talks_cam, whatsonincambridge, towns_ents24, towns_skiddle, peterborough_united, wisbech_tc,
                peterborough_telegraph, saffron_hall, kettles_yard, newsquest,
                ucm, junction, botanic, visit_cambridge, uni_whatson, science_centre, cppf, tribe_sites,
-               milton_park, family_misc)
+               milton_park, family_misc, ely_cathedral, theatre_royal_bury, visit_ely,
+               p3_sources)
 
 ALL = [
     cambridge105.Cambridge105(), talks_cam.TalksCam(), adc_camdram.AdcCamdram(),
@@ -31,4 +32,10 @@ ALL = [
     # этап 6.2: семейные источники и места
     science_centre.ScienceCentre(), family_misc.Libraries(), cppf.CambridgePPF(), tribe_sites.MuseumOfCambridge(),
     milton_park.MiltonCountryPark(), family_misc.NenePark(), family_misc.ComputingHistory(),
+    # этап 6.3: церкви и соборы
+    ely_cathedral.ElyCathedral(),
+    # этап 6.4: отложенные P2
+    theatre_royal_bury.TheatreRoyalBury(), visit_ely.VisitEly(),
+    # этап 6.5: P3
+    p3_sources.HuntingdonRacecourse(), p3_sources.MumfordTheatre(),
 ]

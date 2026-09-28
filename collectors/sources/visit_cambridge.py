@@ -24,7 +24,7 @@ class VisitCambridge(HtmlDetailCollector):
 
     def parse_page(self, page: str, link: str) -> dict | None:
         tree = HTMLParser(page)
-        text = page_text(tree.css_first("main") or tree.body)
+        text = page_text(tree.body)   # h1 стоит вне <main>
         h1 = tree.css_first("h1")
         title = h1.text(strip=True) if h1 else meta(tree, "og:title")
         if not title or title not in text:
