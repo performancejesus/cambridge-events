@@ -51,16 +51,27 @@ def main() -> None:
     ru = (ROOT / "issues" / "issue_2026-10-01_v4_ru.md").read_text()
     m = re.search(r"\*\*Пунктов по рубрикам\*\*\n\n(.*?)\n\n", ru, re.S)
     cost = re.search(r"\*\*Расход Claude API на черновик\*\*\n\n- (.*?)\n", ru)
+    total_all = int(re.search(r"всего: (\d+)", m.group(1)).group(1)) if m else 0
+    hol_items = int(re.search(r"Каникулы: куда записать ребёнка: (\d+)", m.group(1)).group(1)) if m else 0
+    total_wo = total_all - hol_items
     hol = re.search(r"## Каникулы: куда записать ребёнка\n\n(.*?)(?=\n## )", ru, re.S)
-    hol_n = {k: len(re.findall(r"^\*\*", part, re.M)) for k, part in
-             zip(("october", "christmas"), re.split(r"^### Рождественские", hol.group(1), flags=re.M))} if hol else {}
+    hol_n = {}
+    if hol:
+        for part in re.split(r"^### ", hol.group(1), flags=re.M)[1:]:
+            key = "october" if part.startswith("Октябрьские") else "christmas" if part.startswith("Рождественские") else "both"
+            hol_n[key] = len(re.findall(r"^\*\*", part, re.M))
     L += ["## Выпуск v4 (1–11 октября)", "",
           "`issues/issue_2026-10-01_v4_en.md`, `_ru.md` — с блоком «Для редактора»; `_v4_reader_en.html`, "
           "`_v4_reader_ru.html` — читательские версии без него (одна колонка «как письмо», светлая и тёмная тема, "
           "кликабельные ссылки); ответ модели — `_v4_model.json`.", "",
           "Пунктов по рубрикам:", "", m.group(1) if m else "—", ""]
     if hol_n:
-        L += [f"В «Каникулах»: октябрьские — {hol_n.get('october', 0)}, рождественские — {hol_n.get('christmas', 0)}.", ""]
+        L += [f"В «Каникулах»: октябрьские — {hol_n.get('october', 0)} пунктов (17 программ: The Outdoors Project и его "
+              f"сессии в Milton Country Park — один пункт), рождественские — {hol_n.get('christmas', 0)}, на все каникулы — "
+              f"{hol_n.get('both', 0)} (University Holiday Playscheme, только для детей сотрудников и студентов университета; "
+              "сайт закрыт для бота — с пометкой «подробности на сайте»).",
+              f"Без «Каникул» в выпуске {total_wo} пунктов — больше цели 30–45: модель заполнила новые рубрики «Выставки» и "
+              "«За городом» и не сократила остальные; для рассылки стоит убрать 6–8 слабых пунктов (редакторское решение).", ""]
 
     am = json.loads((ROOT / "issues" / "issue_2026-10-01_v4_ai_measure.json").read_text())
     total = int(re.search(r"всего: (\d+)", m.group(1)).group(1)) if m else 0

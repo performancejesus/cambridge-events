@@ -302,7 +302,7 @@
   "requests": 2,
   "seconds": 2.8
  },
- "_run_id": "2026-09-28T17:31:44+00:00",
+ "_run_id": "2026-09-28T19:45:41+00:00",
  "S128": {
   "name": "Ents24 — города зоны",
   "module": "towns_ents24",
@@ -513,20 +513,20 @@
  "S012": {
   "name": "Cambridge Junction",
   "module": "junction",
-  "started_at": "2026-09-28T17:31:57+00:00",
+  "started_at": "2026-09-28T19:45:42+00:00",
   "ok": true,
   "events": 260,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 260,
-   "cached": 260,
-   "fetched": 0,
+   "cached": 0,
+   "fetched": 260,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 15,
-  "seconds": 37.9
+  "requests": 275,
+  "seconds": 691.3
  },
  "S001": {
   "name": "Visit Cambridge",

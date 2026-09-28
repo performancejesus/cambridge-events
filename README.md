@@ -163,3 +163,22 @@ python scripts/build_registry_v06.py               # data/cambridge_event_source
 - `data/pipeline_config.json` → `respect_ai_disallow` (по умолчанию false): источники с ИИ-запретом в robots.txt →
   режим «заголовок + ссылка, без модели» (`pipeline/ai_policy.py`).
 
+## Этап 6-v4 — выпуск v4 для читателей
+
+```bash
+python scripts/update_db.py                        # + evergreen, дубли внутри источника, kids_programmes
+python scripts/extract_articles.py --batch         # Cambridge BID снова через модель
+python scripts/build_issue.py --issue 2026-10-01 --version v4        # md (с «Для редактора») + reader HTML
+python scripts/build_issue.py --issue 2026-10-01 --version v4 --from-json issues/issue_2026-10-01_v4_model.json \
+       --add-rubrics holidays,out_of_town         # догенерировать пропущенные моделью рубрики
+python scripts/stage6v4_report.py                  # docs/stage6v4_report.md
+```
+
+- `data/kids_programmes.json` → таблица `kids_programmes` (`pipeline/kids.py`): детские программы на каникулы
+  (провайдер, возраст, даты, часы, цена, место, статус мест, для кого, проверено ли на сайте провайдера).
+- Рубрики выпуска: + «Выставки» (длительные, > 14 дней), «Каникулы: куда записать ребёнка» (октябрьские /
+  рождественские). Читательская версия — `issue.render_reader_html` (без блока «Для редактора»).
+- `data/pipeline_config.json` → `respect_ai_disallow`: `off` / `claude_user_only` / `any_ai_agent`; замер того, что
+  пропало бы из выпуска в каждом режиме, — в блоке «Для редактора» и `issues/<выпуск>_ai_measure.json`.
+- Цена в HTML-коллекторах — из поля «Price» блока события (у Junction прежний разбор цеплял рекламу членства).
+
