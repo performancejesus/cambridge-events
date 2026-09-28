@@ -110,7 +110,10 @@ class DetailCache:
         """Поля события со страницы (JSON-LD + цена текстом); None — страница недоступна или без JSON-LD."""
         self.stats["links"] += 1
         cache = getattr(self, "cache", {})
-        if link in cache and cache[link][0] >= self._fresh_after:
+        if link in self.fresh_pages:   # уже запрошена в этом прогоне
+            self.stats["cached"] += 1
+            kw = self.fresh_pages[link]
+        elif link in cache and cache[link][0] >= self._fresh_after:
             self.stats["cached"] += 1
             kw = cache[link][1]
         else:
@@ -120,13 +123,19 @@ class DetailCache:
                 self.stats["fetch_errors"] += 1
                 return None
             self.stats["fetched"] += 1
-            found = jsonld_events(page)
-            kw = found[0] if found else None  # первое событие страницы — само событие; остальное — «похожие»
-            if kw and not kw.get("price"):
-                kw["price"] = page_price(page)
+            kw = self.parse_page(page, link)
             self.fresh_pages[link] = kw
         if not kw:
             self.stats["no_jsonld"] += 1
+        return kw
+
+
+    def parse_page(self, page: str, link: str) -> dict | None:
+        """Поля события со страницы: по умолчанию JSON-LD (+ цена текстом). HTML-коллекторы переопределяют."""
+        found = jsonld_events(page)
+        kw = found[0] if found else None  # первое событие страницы — само событие; остальное — «похожие»
+        if kw and not kw.get("price"):
+            kw["price"] = page_price(page)
         return kw
 
 

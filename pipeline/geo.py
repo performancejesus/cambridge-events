@@ -25,10 +25,11 @@ FAR_DISTRICTS = {"Peterborough", "Fenland"}
 NEIGHBOUR_KM = 40.0
 NEIGHBOUR_MIN_SCORE = 7.0
 NEIGHBOUR_IF_IMPORTANT = "до часа, если важно"
-# Исключение из правила 40 км (этап 5b, на подтверждение): Бери-Сент-Эдмундс стоит ровно на границе (40,3–40,7 км
-# по прямой), а по A14 до него ~40 минут; в брифе его площадки — часть зоны (вместимость The Apex и Theatre Royal,
-# собственный коллектор Theatre Royal на этапе 6). По прямой Бери от Стивениджа (39,6–40,6 км) не отделить.
+# Исключения из правила 40 км (решение после этапа 5b). West Suffolk (Бери-Сент-Эдмундс, Ньюмаркет) — обычная зона
+# «до часа», хотя Бери на 40,3–40,7 км по прямой (по A14 ~40 минут). Stevenage — наоборот, всегда по правилу 40–60 км
+# (только события с оценкой ≥ 7), даже если площадка ближе 40 км. В бэклоге — время в пути вместо расстояния (OSRM).
 NEIGHBOUR_EXEMPT_DISTRICTS = {"West Suffolk"}
+NEIGHBOUR_ALWAYS_DISTRICTS = {"Stevenage"}
 POSTCODE_RE = re.compile(r"^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$")
 
 
@@ -52,7 +53,8 @@ def zone(lat: float | None, lon: float | None, county: str | None = None, distri
     if cambs and district in FAR_DISTRICTS and d > ZONES[1][0]:
         return COUNTY_FAR
     band = next((z for limit, z in ZONES if d <= limit), None)
-    if band and not cambs and d > NEIGHBOUR_KM and district not in NEIGHBOUR_EXEMPT_DISTRICTS:
+    if band and not cambs and ((d > NEIGHBOUR_KM and district not in NEIGHBOUR_EXEMPT_DISTRICTS)
+                               or district in NEIGHBOUR_ALWAYS_DISTRICTS):
         return NEIGHBOUR_IF_IMPORTANT
     if band:
         return band

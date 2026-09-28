@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT))
 
 from collectors.http import PoliteClient  # noqa: E402
 from collectors.sources import ALL  # noqa: E402
+from pipeline import ai_policy  # noqa: E402
 from pipeline.db import connect  # noqa: E402
 
 RAW = ROOT / "data" / "raw"
@@ -57,6 +58,11 @@ def main(ids: list[str]) -> None:
                              stores=sum(e.kind == "store" for e in events))
                 if getattr(c, "stats", None):
                     entry["stats"] = c.stats
+                # ИИ-запрет в robots.txt хоста статей (флаг respect_ai_disallow, pipeline/ai_policy.py)
+                art_url = next((e.url for e in events if e.kind == "article" and e.url), None)
+                if art_url:
+                    entry["ai_disallow"] = ai_policy.check(db, http, c.source_id, art_url)
+                    db.commit()
             except Exception as e:  # noqa: BLE001 — один упавший коллектор не останавливает прогон
                 entry.update(ok=False, error=f"{type(e).__name__}: {e}"[:500],
                              trace=traceback.format_exc(limit=3)[-1500:])

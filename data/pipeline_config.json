@@ -1,0 +1,4 @@
+{
+ "_note": "Настройки конвейера. respect_ai_disallow: true — источники, чей robots.txt закрывает сайт для ИИ-агентов Anthropic (anthropic-ai, ClaudeBot, Claude-User, Claude-Web, Claude-SearchBot), обрабатываются без модели: только заголовок и ссылка (как Cambridge BID). Список таких источников — таблица source_ai_policy, обновляется при каждом прогоне коллекторов. По умолчанию false до решения владельца (открытый вопрос в брифе).",
+ "respect_ai_disallow": false
+}

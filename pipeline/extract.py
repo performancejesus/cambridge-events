@@ -17,6 +17,7 @@ from selectolax.parser import HTMLParser
 
 from collectors.http import Disallowed, FetchError, PoliteClient
 
+from . import ai_policy
 from .db import ROOT
 from .normalize import norm_title, title_similarity
 
@@ -60,11 +61,12 @@ def now() -> str:
 
 def pending(con: sqlite3.Connection, limit: int | None = None) -> list[sqlite3.Row]:
     """Статьи, ждущие модель; Newsquest — только прошедшие дедупликацию и предфильтр (model='prefilter')."""
+    llm = sorted(ARTICLE_SOURCES - ai_policy.no_llm_sources(con, NO_LLM_SOURCES))
     q = f"""SELECT * FROM articles WHERE extract_status='pending'
-            AND source_id IN ({",".join("?" * len(ARTICLE_SOURCES - NO_LLM_SOURCES))})
+            AND source_id IN ({",".join("?" * len(llm))})
             AND (source_id NOT IN ({",".join("?" * len(NEWSQUEST))}) OR model='prefilter')
             ORDER BY published DESC""" + (f" LIMIT {int(limit)}" if limit else "")
-    return con.execute(q, sorted(ARTICLE_SOURCES - NO_LLM_SOURCES) + sorted(NEWSQUEST)).fetchall()
+    return con.execute(q, llm + sorted(NEWSQUEST)).fetchall()
 
 
 def article_text(http: PoliteClient, url: str, fallback: str) -> tuple[str, str]:
@@ -232,16 +234,17 @@ def keyword_news(con: sqlite3.Connection) -> dict:
     Заголовки, помеченные по прошлому фильтру, пересматриваются: запись venue_news, которой фильтр больше
     не соответствует, удаляется (так ушли ложные срабатывания на «new»)."""
     n = {"keyword_matched": 0, "keyword_skipped": 0, "keyword_dropped": 0}
-    src = ",".join("?" * len(NO_LLM_SOURCES))
+    no_llm = sorted(ai_policy.no_llm_sources(con, NO_LLM_SOURCES))   # BID + ИИ-запрет при respect_ai_disallow
+    src = ",".join("?" * len(no_llm))
     for art in con.execute(f"SELECT * FROM articles WHERE extract_status='keyword' AND source_id IN ({src})",
-                           sorted(NO_LLM_SOURCES)).fetchall():
+                           no_llm).fetchall():
         if not KEYWORD_RE.search(art["title"]):
             con.execute("DELETE FROM venue_news WHERE article_id=? AND source_type='rss_title'", (art["article_id"],))
             con.execute("UPDATE articles SET extract_status='skipped' WHERE article_id=?", (art["article_id"],))
             n["keyword_dropped"] += 1
     q = f"""SELECT * FROM articles WHERE source_id IN ({src}) AND (extract_status='pending'
             OR (extract_status='skipped' AND article_id NOT IN (SELECT article_id FROM venue_news WHERE article_id IS NOT NULL)))"""
-    for art in con.execute(q, sorted(NO_LLM_SOURCES)).fetchall():
+    for art in con.execute(q, no_llm).fetchall():
         m = KEYWORD_RE.search(art["title"])
         if not m and art["extract_status"] == "skipped":
             continue

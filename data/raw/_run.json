@@ -302,7 +302,7 @@
   "requests": 2,
   "seconds": 2.8
  },
- "_run_id": "2026-09-28T10:36:40+00:00",
+ "_run_id": "2026-09-28T17:04:13+00:00",
  "S128": {
   "name": "Ents24 — города зоны",
   "module": "towns_ents24",
@@ -462,5 +462,52 @@
   "stores": 0,
   "requests": 2,
   "seconds": 3.1
+ },
+ "S052": {
+  "name": "University of Cambridge Museums",
+  "module": "ucm",
+  "started_at": "2026-09-28T17:04:13+00:00",
+  "ok": true,
+  "events": 99,
+  "articles": 0,
+  "stores": 0,
+  "requests": 6,
+  "seconds": 13.4
+ },
+ "S069": {
+  "name": "Cambridge University Botanic Garden",
+  "module": "botanic",
+  "started_at": "2026-09-28T17:04:27+00:00",
+  "ok": true,
+  "events": 18,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 18,
+   "cached": 0,
+   "fetched": 18,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 22,
+  "seconds": 67.5
+ },
+ "S048": {
+  "name": "University of Cambridge — What's On",
+  "module": "uni_whatson",
+  "started_at": "2026-09-28T17:05:34+00:00",
+  "ok": true,
+  "events": 48,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 157,
+   "cached": 0,
+   "fetched": 157,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 164,
+  "seconds": 370.2
  }
 }

@@ -218,6 +218,15 @@ CREATE TABLE IF NOT EXISTS llm_usage (
     cost_usd    REAL
 );
 
+-- ИИ-запреты в robots.txt источников статей (pipeline/ai_policy.py)
+CREATE TABLE IF NOT EXISTS source_ai_policy (
+    source_id   TEXT PRIMARY KEY,
+    host        TEXT,
+    ai_disallow INTEGER,
+    agents      TEXT,                   -- ИИ-агенты Anthropic, которым закрыт доступ
+    checked_at  TEXT
+);
+
 -- пакеты Message Batches API (извлечение из статей): результат забирается, когда пакет обработан
 CREATE TABLE IF NOT EXISTS llm_batches (
     batch_id    TEXT PRIMARY KEY,
