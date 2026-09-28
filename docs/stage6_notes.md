@@ -1,3 +1,12 @@
+## Итог в цифрах
+
+- **Новых уникальных будущих событий в зоне: 650**, из них 156 — на ближайшие 14 дней. Крупнейшие источники: Junction 239, CPPF 106, UCM 87, Visit Cambridge 83, What's On 41, Theatre Royal Bury 30, Ely Cathedral 29.
+- **Семейные события на 14 дней: 5 → 29.**
+  - 19 из них начинаются в этом окне: Science Centre (STEMtots, выходные программы), UCM (Fossil Fun, Family Friendly Drop In, Studio Sunday), Botanic (Fun with Fungi, Fungi Field Day), Museum of Cambridge, библиотеки.
+  - 10 — длительные: городские квесты и «experiences» с Visit Cambridge, выставки с семейной пометкой. Для рубрики «С детьми» полезны прежде всего первые 19.
+  - «Fungi Field Day» и «Fungi Field Day 2026» не склеились: из-за «2026» в названии. Этот дубль будет виден в блоке «Для редактора».
+- Расход на этапе — в основном оценка известности 651 нового события (Sonnet, 14 вызовов, $0.96). Поиск площадок — $0.04, статьи Newsquest — $0.007.
+
 ## Что ещё сделано на этапе 6
 
 - **Решения после этапа 5b.** West Suffolk остаётся исключением (обычная зона «до часа»). Stevenage теперь всегда идёт по правилу 40–60 км, даже ближе 40 км (`geo.NEIGHBOUR_ALWAYS_DISTRICTS`). Четыре статьи Newsquest из очереди обработаны пакетом Batch API ($0.0074): 3 события и 1 обновление, среди них Gruffalo и Peppa Pig на Nene Valley Railway.

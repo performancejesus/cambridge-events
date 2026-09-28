@@ -141,3 +141,25 @@ python scripts/stage5b_report.py                      # docs/stage5b_report.md
   смешанные алфавиты проверяются в обе стороны; статус открытия не дублируется в названии; «За городом» — без
   оценок < 3 при наличии альтернатив; связанные события (`data/issue_links.json`) — один пункт.
 
+## Этап 6 — непокрытые P1, семейные источники, поля и церкви, отложенные P2, P3
+
+```bash
+python scripts/check_ai_robots.py                  # ИИ-запреты в robots.txt → source_ai_policy (то же — в run_collectors)
+python scripts/run_collectors.py S052 S069 S012 S001 S048 S054 S055 S131 S130 S132 S134 S071 S126 S113 S022 S043
+python scripts/update_db.py && python scripts/locate_venues.py && python scripts/score_importance.py
+python scripts/family_count.py                     # семейные события на 14 дней
+python scripts/stage6_report.py <копия базы до этапа>   # docs/stage6_report.md, docs/stage6_unique.json
+python scripts/build_registry_v06.py               # data/cambridge_event_sources_v0.6.xlsx, лист «Этап 6»
+```
+
+- `collectors/htmlevents.py` — общий коллектор HTML-страниц без JSON-LD (дата/время/цена из текста, кэш страниц).
+- Новые коллекторы: UCM (S052), Junction (S012), Botanic Garden (S069), Visit Cambridge (S001), University What's On
+  (S048), Science Centre (S054), библиотеки через Eventbrite (S055), CPPF (S131), Museum of Cambridge (S130), Milton
+  Country Park (S132), Centre for Computing History (S134), Ely Cathedral (S071), Theatre Royal Bury (S126), Visit Ely
+  (S113), Huntingdon Racecourse (S022), Mumford Theatre (S043). Решения по всем источникам — `data/p6_decisions.json`.
+- Семейный тег: слова в данных (KIDS_RE) или семейная категория, которой источник размечает события (`issue.FAMILY_CATEGORIES`).
+- `events.open_space` — события на лугах, в парках и на площадях (`pipeline/open_spaces.py`); запросы для этапа 6b —
+  `data/keenable_queries.json`.
+- `data/pipeline_config.json` → `respect_ai_disallow` (по умолчанию false): источники с ИИ-запретом в robots.txt →
+  режим «заголовок + ссылка, без модели» (`pipeline/ai_policy.py`).
+
