@@ -1,0 +1,25 @@
+{
+ "only_claude_user_blocked": [
+  "Olly Murs at Newmarket Nights",
+  "12-hour indoor triathlon"
+ ],
+ "only_training_blocked": [
+  "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+  "Rob Chapman: Syd Barrett – A Very Irregular Head",
+  "Meet the Director + Screening: Have You Got It Yet?",
+  "Open Eco Homes",
+  "Cambridge South Public Exhibition",
+  "The Big Retreat Cambridgeshire 2027"
+ ],
+ "lost_any_ai_agent": [
+  "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+  "Rob Chapman: Syd Barrett – A Very Irregular Head",
+  "Meet the Director + Screening: Have You Got It Yet?",
+  "Open Eco Homes",
+  "Cambridge South Public Exhibition",
+  "The Big Retreat Cambridgeshire 2027",
+  "Olly Murs at Newmarket Nights",
+  "12-hour indoor triathlon",
+  "UNIQLO"
+ ]
+}

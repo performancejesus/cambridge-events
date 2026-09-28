@@ -24,6 +24,7 @@ _WD = r"(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+)?"
 DATE = rf"{_WD}(\d{{1,2}})(?:st|nd|rd|th)?\s+{_MON}(?:,?\s+(20\d\d))?"
 RANGE_RE = re.compile(rf"{DATE}(?:\s*(?:-|–|—|to|until)\s*{DATE})?", re.I)
 TIME_RE = re.compile(r"\b(\d{1,2})(?:[:.](\d{2}))?\s*([ap])\.?m\b|\b([01]?\d|2[0-3]):([0-5]\d)\b", re.I)
+PRICE_FIELD_RE = re.compile(r"\bPrice\s*\|?\s*£\s*(\d+(?:\.\d{2})?(?:\s*[-–]\s*£?\s*\d+(?:\.\d{2})?)?)", re.I)
 POSTCODE_RE = re.compile(r"\b(CB|PE|SG|IP|CO|CM|MK|NR|LU)\d{1,2}[A-Z]?\s*\d[A-Z]{2}\b")
 
 
@@ -138,9 +139,14 @@ class HtmlDetailCollector(DetailCache, Collector):
         if not title:
             return None
         pc = POSTCODE_RE.search(scope)
+        # цена из поля «Price» блока события («Price | £ 29.50»); page_price по всей странице цепляет посторонние
+        # суммы (у Junction — «save £4.50 per ticket» из рекламы членства), поэтому он — только запасной вариант
+        pm = PRICE_FIELD_RE.search(scope)
+        nums = re.findall(r"\d+(?:\.\d{2})?", pm.group(1)) if pm else []
+        price = (f"£{nums[0]}" + (f" – £{nums[1]}" if len(nums) > 1 else "")) if nums else page_price(page)
         return dict(title=title, start=f"{start.isoformat()}T{t}" if t else start.isoformat(),
                     end=end.isoformat() if end else None, all_day=not t, venue=self.venue, address=self.address,
-                    postcode=self.postcode or (pc.group(0) if pc else None), price=page_price(page),
+                    postcode=self.postcode or (pc.group(0) if pc else None), price=price,
                     summary=(meta(tree, "og:description") or meta(tree, "description") or "")[:500] or None)
 
     def collect(self, http: PoliteClient) -> list[RawEvent]:

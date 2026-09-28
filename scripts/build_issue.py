@@ -308,7 +308,8 @@ def validate(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[st
     # правки по v3: состав (performer из оценки известности) должен дойти до текста пункта
     for sec in result["sections"]:
         for it in sec["items"]:
-            names = {pools.candidates[i].get("performer") for i in it["ids"]} - {None, ""}
+            names = {pools.candidates[i].get("performer") for i in it["ids"]
+                     if not {"S018", "S123"} & set(pools.candidates[i].get("sources") or [])} - {None, ""}   # не футбол
             text = f"{it['title_en']} {it['blurb_en']}".lower()
             for name in names:
                 if name.lower() not in text:
@@ -393,7 +394,8 @@ def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: l
     left = [c for cid, c in pools.candidates.items() if cid not in chosen]
     by_kind = Counter(c["kind"] for c in left)
     kinds_ru = {"event": "событий в окне", "announcement": "анонсов", "tickets": "стартов продаж",
-                "cancellation": "отмен", "venue_news": "записей «новое в городе»"}
+                "cancellation": "отмен", "venue_news": "записей «новое в городе»",
+                "programme": "детских программ"}
     out_en.append("candidates not chosen by the model: " + ", ".join(f"{k} — {v}" for k, v in by_kind.items()))
     out_ru.append("кандидатов не выбрано моделью: " + ", ".join(f"{kinds_ru[k]} — {v}" for k, v in by_kind.items()))
     for rub in w.rubrics():
@@ -466,6 +468,8 @@ def main() -> None:
     ap.add_argument("--version", default="", help="суффикс файлов: v2 → issue_<дата>_v2_en.md")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--from-json", help="не вызывать API, взять сохранённый ответ модели")
+    ap.add_argument("--add-rubrics", help="с --from-json: догенерировать эти рубрики (через запятую) и добавить в ответ "
+                                          "(модель пропустила рубрику — не пересобирать весь выпуск)")
     args = ap.parse_args()
     sent = date.fromisoformat(args.issue)
     w = issue.Window(sent, date.fromisoformat(args.start) if args.start else sent,
@@ -489,6 +493,27 @@ def main() -> None:
     if args.from_json:
         saved = json.loads(Path(args.from_json).read_text())
         result, usage = saved["result"], saved["usage"]
+        if args.add_rubrics:
+            import anthropic
+            client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
+            rubrics = [r.strip() for r in args.add_rubrics.split(",")]
+            used = [e for sec in result["sections"] for it in sec["items"] for cid in it["ids"]
+                    if cid in pools.candidates for e in pools.candidates[cid]["event_ids"]]
+            used_ids = {cid for sec in result["sections"] for it in sec["items"] for cid in it["ids"]}
+            prefixes = {pre for pre in PREFIX_RUBRICS if any(allowed(pre, r) for r in rubrics)}
+            part = payload | {"rubrics": rubrics, "write_intro": False, "already_used": used,
+                              "candidates": [c for c in payload["candidates"] if c["id"][0] in prefixes
+                                             and c["id"] not in used_ids
+                                             and not set(pools.candidates[c["id"]]["event_ids"]) & set(used)]}
+            schema = schema_for(w)
+            schema["properties"]["sections"]["items"]["properties"]["rubric"]["enum"] = rubrics
+            res, tin, tout = call_model(client, part, schema, con, f"issue {stem[6:]} add {args.add_rubrics}")
+            result["sections"] = [sec for sec in result["sections"] if sec["rubric"] not in rubrics] + res["sections"]
+            result["editor_notes_en"] += res["editor_notes_en"]
+            result["editor_notes_ru"] += res["editor_notes_ru"]
+            usage = {"input_tokens": usage["input_tokens"] + tin, "output_tokens": usage["output_tokens"] + tout,
+                     "cost_usd": usage["cost_usd"] + tin * PRICE_IN + tout * PRICE_OUT}
+            raw_path.write_text(json.dumps({"result": result, "usage": usage}, ensure_ascii=False, indent=1))
     else:
         import anthropic
         client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
