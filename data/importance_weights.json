@@ -1,16 +1,58 @@
 {
  "_note": "Веса сигналов важности (pipeline/importance.py). Оценка = base + сумма (вес × сигнал 0..1), не больше 10. Подстраивать здесь.",
  "base": 1.0,
- "capacity":   {"points": 3.0, "min": 50, "full_at": 15000},
- "price_max":  {"points": 1.0, "full_at": 60},
- "sources":    {"points": 1.0, "full_at": 3},
- "article":    {"points": 1.0},
- "sold_out":   {"points": 1.0},
- "recurring":  {"points": 2.5},
- "wikipedia":  {"points": 2.5, "min_views": 10, "full_at_views": 100000},
- "model_fame": {"points": 2.5},
+ "capacity": {
+  "points": 3.0,
+  "min": 50,
+  "full_at": 15000,
+  "neutral": 0.35,
+  "_neutral_note": "площадка без вместимости — сигнал 0.35 (≈ зал на 350 мест)"
+ },
+ "price_max": {
+  "points": 1.0,
+  "full_at": 60,
+  "neutral": 0.5,
+  "_note": "бесплатно или цена неизвестна — 0.5 (нейтрально); платные: 0.5 + 0.5 × min(1, цена/full_at)"
+ },
+ "sources": {
+  "points": 1.0,
+  "full_at": 3
+ },
+ "article": {
+  "points": 1.0
+ },
+ "sold_out": {
+  "points": 1.0
+ },
+ "recurring": {
+  "points": 2.5
+ },
+ "wikipedia": {
+  "points": 2.5,
+  "min_views": 10,
+  "full_at_views": 100000
+ },
+ "model_fame": {
+  "points": 2.5
+ },
  "football": {
-  "league": 2.5, "fa_cup": 3.0, "league_cup": 3.0, "efl_trophy": 1.0, "friendly": 0.5, "charity": 1.0,
-  "derby_bonus": 1.5, "top_flight_min_score": 8
+  "league": 2.5,
+  "fa_cup": 3.0,
+  "league_cup": 3.0,
+  "efl_trophy": 1.0,
+  "friendly": 0.5,
+  "charity": 1.0,
+  "derby_bonus": 1.5,
+  "top_flight_min_score": 8
+ },
+ "speaker_talk": {
+  "fame_multiplier": 1.6,
+  "_note": "лекции и выступления без билетов (entity_type speaker, бесплатно или цена неизвестна): известность выступающего (Wikipedia и модель) × 1.6"
+ },
+ "weekend": {
+  "min_score": 4.0,
+  "always_score": 7.0,
+  "min_items": 3,
+  "max_items": 5
  }
 }

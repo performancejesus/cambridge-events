@@ -235,6 +235,7 @@ MIGRATIONS = [
     ("events", "multi_venue", "INTEGER"),             # 1 — фестиваль на разных площадках («разные площадки, Кембридж»)
     ("events", "importance_score", "REAL"),           # 1–10, pipeline/importance.py
     ("events", "importance_reason", "TEXT"),
+    ("events", "importance_sig", "TEXT"),             # сигнатура входных данных оценки (пересчёт только при изменении)
     ("venues", "capacity", "INTEGER"),                # вместимость (вручную, data/venue_capacity.json)
     ("venues", "precision", "TEXT"),                  # postcode | place (населённый пункт) | city (только «Кембридж»)
 ]

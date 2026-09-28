@@ -1,34 +1,191 @@
 {
- "_note": "Вместимость площадок — вручную, по общедоступным данным, ПРИМЕРНО (порядок величины для оценки важности). Проверить и поправить. Ключ — название площадки в справочнике venues.",
- "Cambridge Corn Exchange": 1800,
- "Abbey Stadium": 8000,
- "Newmarket Racecourses (Rowley Mile)": 20000,
- "Midsummer Common": 20000,
- "Jesus Green": 10000,
- "Mill Road": 10000,
- "Cambridge Junction": 850,
- "The Arts Theatre": 660,
- "West Road Concert Hall": 480,
- "Lady Mitchell Hall": 440,
- "Ray Dolby Centre (Cavendish Laboratory)": 400,
- "Ray Dolby Auditorium": 400,
- "Ely Cathedral": 1000,
- "Kiki Cambridge": 400,
- "Vinyl": 300,
- "Cinnabar": 300,
- "ADC Theatre": 230,
- "The Portland Arms": 200,
- "Storey's Field Centre": 200,
- "Biffen Lecture Theatre (Department of Genetics)": 200,
- "Stapleford Granary": 150,
- "Graduate by Hilton Cambridge": 100,
- "Waterstones": 80,
- "Department of History and Philosophy of Science": 60,
- "Wesley Methodist Church": 300,
- "Cambridge Guildhall": 500,
- "Openspace": 60,
- "The Tram Depot": 80,
- "Abbey Lounge": 150,
- "Trinity College": null,
- "Fitzwilliam Museum": null
+ "_note": "Вместимость площадок для оценки важности (pipeline/importance.py). approx: true — число приблизительное, по общедоступным данным и памяти ассистента, НЕ проверено; после ручной проверки поставить approx: false. Ключ — название площадки в справочнике venues. Площадки без вместимости (музеи, колледжи, парки) — нейтральный сигнал.",
+ "_neutral": "нет в файле или capacity = null → нейтральный сигнал (data/importance_weights.json → capacity.neutral)",
+ "Cambridge Corn Exchange": {
+  "capacity": 1800,
+  "approx": true,
+  "note": "~1800 — из брифа"
+ },
+ "Abbey Stadium": {
+  "capacity": 8000,
+  "approx": true
+ },
+ "Newmarket Racecourses (Rowley Mile)": {
+  "capacity": 20000,
+  "approx": true
+ },
+ "Midsummer Common": {
+  "capacity": 20000,
+  "approx": true
+ },
+ "Jesus Green": {
+  "capacity": 10000,
+  "approx": true
+ },
+ "Mill Road": {
+  "capacity": 10000,
+  "approx": true
+ },
+ "Cambridge Junction": {
+  "capacity": 850,
+  "approx": true
+ },
+ "The Arts Theatre": {
+  "capacity": 660,
+  "approx": true
+ },
+ "West Road Concert Hall": {
+  "capacity": 480,
+  "approx": true
+ },
+ "Lady Mitchell Hall": {
+  "capacity": 440,
+  "approx": true
+ },
+ "Ray Dolby Centre (Cavendish Laboratory)": {
+  "capacity": 400,
+  "approx": true
+ },
+ "Ray Dolby Auditorium": {
+  "capacity": 400,
+  "approx": true
+ },
+ "Ely Cathedral": {
+  "capacity": 1000,
+  "approx": true
+ },
+ "Kiki Cambridge": {
+  "capacity": 400,
+  "approx": true
+ },
+ "Vinyl": {
+  "capacity": 300,
+  "approx": true
+ },
+ "Cinnabar": {
+  "capacity": 300,
+  "approx": true
+ },
+ "ADC Theatre": {
+  "capacity": 230,
+  "approx": true
+ },
+ "The Portland Arms": {
+  "capacity": 200,
+  "approx": true
+ },
+ "Storey's Field Centre": {
+  "capacity": 200,
+  "approx": true
+ },
+ "Biffen Lecture Theatre (Department of Genetics)": {
+  "capacity": 200,
+  "approx": true
+ },
+ "Stapleford Granary": {
+  "capacity": 150,
+  "approx": true
+ },
+ "Graduate by Hilton Cambridge": {
+  "capacity": 100,
+  "approx": true
+ },
+ "Waterstones": {
+  "capacity": 80,
+  "approx": true
+ },
+ "Department of History and Philosophy of Science": {
+  "capacity": 60,
+  "approx": true
+ },
+ "Wesley Methodist Church": {
+  "capacity": 300,
+  "approx": true
+ },
+ "Cambridge Guildhall": {
+  "capacity": 500,
+  "approx": true
+ },
+ "Openspace": {
+  "capacity": 60,
+  "approx": true
+ },
+ "The Tram Depot": {
+  "capacity": 80,
+  "approx": true
+ },
+ "Abbey Lounge": {
+  "capacity": 150,
+  "approx": true
+ },
+ "Trinity College": {
+  "capacity": null,
+  "approx": true,
+  "note": "вместимость не имеет смысла — нейтральный сигнал"
+ },
+ "Fitzwilliam Museum": {
+  "capacity": null,
+  "approx": true,
+  "note": "вместимость не имеет смысла — нейтральный сигнал"
+ },
+ "The Junction 1": {
+  "capacity": 850,
+  "approx": true
+ },
+ "Babbage Lecture Theatre": {
+  "capacity": 300,
+  "approx": true
+ },
+ "Maurice Wilkes Building": {
+  "capacity": 150,
+  "approx": true
+ },
+ "Great St Mary's Church": {
+  "capacity": 700,
+  "approx": true
+ },
+ "King's College Chapel": {
+  "capacity": 700,
+  "approx": true
+ },
+ "St Botolph's Church": {
+  "capacity": 150,
+  "approx": true
+ },
+ "The Parish Church of All Saints' Harston": {
+  "capacity": 150,
+  "approx": true
+ },
+ "The Round Church": {
+  "capacity": 100,
+  "approx": true
+ },
+ "Margaret Beaufort Institute of Theology": {
+  "capacity": 80,
+  "approx": true
+ },
+ "The Maltings Ely": {
+  "capacity": 250,
+  "approx": true
+ },
+ "The Maltings": {
+  "capacity": 250,
+  "approx": true
+ },
+ "The Auditorium": {
+  "capacity": 150,
+  "approx": true
+ },
+ "Cambridge Arts Picturehouse": {
+  "capacity": 250,
+  "approx": true
+ },
+ "Saffron Hall": {
+  "capacity": 740,
+  "approx": true
+ },
+ "Mumford Theatre": {
+  "capacity": 270,
+  "approx": true
+ }
 }

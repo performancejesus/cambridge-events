@@ -43,7 +43,10 @@ RUBRIC_TITLES = {
            "new_announcements": "Новые анонсы", "tickets": "Успейте купить билеты",
            "cancelled": "Отменено и перенесено", "new_in_town": "Новое в городе"},
 }
-HEADLINE_MIN = 7.0          # «Главное на выходные» и «Тема недели» (опорное событие) — оценка не ниже
+HEADLINE_MIN = 7.0          # «Тема недели» (опорное событие); на выходных — всегда в «Главном»
+_WE = json.loads((ROOT / "data" / "importance_weights.json").read_text())["weekend"]
+WEEKEND_MIN = _WE["min_score"]          # «Главное на выходные»: 3–5 лучших событий выходных, но не ниже 4
+WEEKEND_MAX = _WE["max_items"]
 LONG_BLURB_MIN = 8.0        # развёрнутое описание (2–3 предложения)
 ONE_LINE_MAX = 3.0          # одна строка без описания
 # «С детьми» — только если дети явно названы в данных (решение после этапа 4).
@@ -406,6 +409,10 @@ def render(result: dict, p: Pools, w: Window, lang: str, editor: dict) -> str:
         items = sorted(sections.get(rub) or [], key=lambda it: -importance_of(p, it))
         if rub == "theme" and not items:
             continue
+        if w.weekend_of(rub) and not items and not any(
+                rub in c.get("on_weekends", []) and (c.get("importance") or 0) >= WEEKEND_MIN
+                for c in p.candidates.values() if c["kind"] == "event"):
+            continue  # на этих выходных нет ничего с оценкой ≥ 4 — рубрику не выводим
         lines += [f"## {rubric_title(rub, w, lang, result.get(f'theme_title_{lang}', ''))}", ""]
         if rub == "theme" and result.get(f"theme_intro_{lang}"):
             lines += [result[f"theme_intro_{lang}"], ""]

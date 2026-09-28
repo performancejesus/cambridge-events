@@ -5,6 +5,11 @@
 кэш wiki_cache). Футбол: турнир по метке в календаре клуба ([FA], [LC], [EFLT], без метки — чемпионат), дерби,
 соперник из Премьер-лиги. Оценка известности моделью (Claude, кэш fame_cache) — один из сигналов, «неизвестно» = 0.
 Итог: base + сумма (вес × сигнал 0..1), не больше 10; веса — data/importance_weights.json.
+
+Решения после этапа 4b: Wikipedia и известность — только за того, кто на сцене (performer); трибьюты, шоу «по мотивам»
+и составы с одним известным именем — с потолком; у постановок классики известность пьесы не считается (считается
+труппа); бесплатно / цена неизвестна и площадка без вместимости — нейтральный сигнал, а не ноль; у лекций без билетов
+вес известности выступающего выше. Пересчёт — только для событий, у которых изменились входные данные (сигнатура).
 """
 
 from __future__ import annotations
@@ -17,6 +22,8 @@ import time
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import quote
 
+import hashlib
+
 import httpx
 
 from .db import ROOT
@@ -26,8 +33,9 @@ PRICE_IN, PRICE_OUT = 2.00 / 1e6, 10.00 / 1e6
 PROMPT = (ROOT / "prompts" / "importance.md").read_text()
 SCHEMA = json.loads((ROOT / "prompts" / "importance.schema.json").read_text())
 WEIGHTS = json.loads((ROOT / "data" / "importance_weights.json").read_text())
-CAPACITY = {k: v for k, v in json.loads((ROOT / "data" / "venue_capacity.json").read_text()).items()
-            if not k.startswith("_") and v}
+CAPACITY = {k: (v["capacity"] if isinstance(v, dict) else v)
+            for k, v in json.loads((ROOT / "data" / "venue_capacity.json").read_text()).items()
+            if not k.startswith("_") and (v["capacity"] if isinstance(v, dict) else v)}
 UA = "CambridgeEventsBot/0.1 (+https://github.com/performancejesus/cambridge-events)"
 BATCH = 50
 FOOTBALL_SOURCES = {"S018"}
@@ -57,7 +65,7 @@ def rate_with_model(con: sqlite3.Connection, client, events: list[sqlite3.Row]) 
     for i in range(0, len(todo), BATCH):
         batch = todo[i:i + BATCH]
         payload = [{"id": e["event_id"], "title": e["title"], "venue": e["venue_name"], "date": e["date_start"],
-                    "summary": _summary(con, e["event_id"])[:200]} for e in batch]
+                    "summary": _summary(con, e["event_id"])[:700]} for e in batch]
         with client.messages.stream(model=MODEL, max_tokens=32000, system=PROMPT,
                                     messages=[{"role": "user", "content": json.dumps(payload, ensure_ascii=False)}],
                                     output_config={"format": {"type": "json_schema", "schema": SCHEMA}, "effort": "low"}) as s:
@@ -82,8 +90,13 @@ def rate_with_model(con: sqlite3.Connection, client, events: list[sqlite3.Row]) 
 
 
 def _summary(con, event_id: int) -> str:
+    """Описания всех источников (у склеенных дублей состав может быть только в статье)."""
     rows = con.execute("SELECT summary FROM raw_items WHERE event_id=? AND summary IS NOT NULL", (event_id,)).fetchall()
-    return max((r["summary"] for r in rows), key=len, default="")
+    uniq = []
+    for s in sorted((r["summary"] for r in rows), key=len, reverse=True):
+        if not any(s[:80] in u for u in uniq):
+            uniq.append(s)
+    return " | ".join(u[:200] for u in uniq)
 
 
 # --- Wikipedia ---
@@ -151,21 +164,33 @@ def football(e: sqlite3.Row, sources: set[str]) -> dict | None:
     return {"competition": comp, "opponent": opponent, "derby": derby}
 
 
+def _signals(con, e) -> dict:
+    sources = {r[0] for r in con.execute("SELECT source_id FROM event_sources WHERE event_id=?", (e["event_id"],))}
+    has_article = con.execute("SELECT 1 FROM event_sources WHERE event_id=? AND article_id IS NOT NULL",
+                              (e["event_id"],)).fetchone() is not None
+    rec = con.execute("SELECT name FROM recurring_events WHERE event_id=?", (e["event_id"],)).fetchone()
+    return {"sources": sources, "has_article": has_article, "recurring": rec["name"] if rec else None}
+
+
 def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) -> tuple[float, str]:
     W = WEIGHTS
     parts: list[tuple[float, str]] = []
     add = lambda pts, text: parts.append((round(pts, 1), text)) if pts >= 0.05 else None
-    sources = {r[0] for r in con.execute("SELECT source_id FROM event_sources WHERE event_id=?", (e["event_id"],))}
-    has_article = con.execute("SELECT 1 FROM event_sources WHERE event_id=? AND article_id IS NOT NULL",
-                              (e["event_id"],)).fetchone() is not None
+    sig = _signals(con, e)
+    sources, has_article = sig["sources"], sig["has_article"]
 
     cap = CAPACITY.get(e["venue_ref"] or "") or CAPACITY.get(e["venue_name"] or "")
     if cap:
         add(W["capacity"]["points"] * _log_scale(cap, W["capacity"]["min"], W["capacity"]["full_at"]),
             f"{e['venue_ref'] or e['venue_name']} ~{cap} мест")
+    else:
+        add(W["capacity"]["points"] * W["capacity"]["neutral"], "вместимость неизвестна — нейтрально")
     pmax = _price_max(e["price_text"])
-    if pmax:
-        add(W["price_max"]["points"] * min(1.0, pmax / W["price_max"]["full_at"]), f"билеты до £{pmax:g}")
+    P = W["price_max"]
+    if pmax and (e["price_from"] or 0) > 0:
+        add(P["points"] * (P["neutral"] + (1 - P["neutral"]) * min(1.0, pmax / P["full_at"])), f"билеты до £{pmax:g}")
+    else:
+        add(P["points"] * P["neutral"], "бесплатно — нейтрально" if e["price_from"] == 0 else "цена неизвестна — нейтрально")
     n = len(sources)
     if n > 1:
         add(W["sources"]["points"] * min(1.0, (n - 1) / (W["sources"]["full_at"] - 1)), f"{n} источника" if n < 5 else f"{n} источников")
@@ -173,9 +198,8 @@ def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) 
         add(W["article"]["points"], "есть статья в новостях")
     if e["status"] == "sold_out":
         add(W["sold_out"]["points"], "билеты распроданы")
-    rec = con.execute("SELECT name FROM recurring_events WHERE event_id=?", (e["event_id"],)).fetchone()
-    if rec:
-        add(W["recurring"]["points"], f"ежегодный флагман ({rec['name']})")
+    if sig["recurring"]:
+        add(W["recurring"]["points"], f"ежегодный флагман ({sig['recurring']})")
 
     fb = football(e, sources)
     floor = 0.0
@@ -187,44 +211,73 @@ def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) 
         if fame and fame.get("opponent_top_flight"):
             floor = F["top_flight_min_score"]
             parts.append((0.0, "соперник из Премьер-лиги (оценка модели) → не ниже 8"))
-    else:
-        # трибьют, тематический вечер, знаменитость только как тема: известность оригинала переносится лишь
-        # частично — если о событии пишут новости (официальный концерт памяти Сида Барретта), иначе не переносится
-        wiki_k = 1.0
-        if fame and fame.get("draw_type") in ("tribute_or_themed", "subject_only"):
-            cap, wiki_k = (5, 0.5) if has_article else (3, 0.0)
-            fame = fame | {"fame": min(fame.get("fame") or 0, cap),
-                           "fame_reason": f"{fame.get('fame_reason', '')}; трибьют/тема — не выше {cap}"}
-            parts.append((0.0, "трибьют или тематический вечер: Wikipedia " +
-                          ("вполовину (есть статья в новостях)" if wiki_k else "не учитывается")))
-        if wiki_k and wiki_row and wiki_row["exists_"] and wiki_row["views_30d"]:
+    elif fame:
+        # известность — того, кто на сцене (performer), а не темы: пьесы, оригинала трибьюта, знаменитости-повода
+        draw = fame.get("draw_type")
+        who = fame.get("performer") or (fame.get("entity") if draw == "in_person" else "")
+        f = fame.get("performer_fame", fame.get("fame") if draw == "in_person" else 0) or 0
+        k = 1.0
+        if draw in ("tribute_or_themed", "subject_only"):
+            cap_f, k = (5, 0.5) if has_article else (3, 0.0)
+            f = min(f, cap_f)
+            parts.append((0.0, "трибьют / шоу по мотивам / одно известное имя в составе: Wikipedia " +
+                          ("вполовину (есть статья в новостях)" if k else "не учитывается") + f", модель не выше {cap_f}"))
+        elif draw == "original_work" and fame.get("entity") and fame.get("entity") != who:
+            parts.append((0.0, f"постановка: известность «{fame['entity']}» не считается, считается труппа"))
+        free_talk = fame.get("entity_type") == "speaker" and not (e["price_from"] or 0) > 0
+        mult = W["speaker_talk"]["fame_multiplier"] if free_talk and draw == "in_person" else 1.0
+        if mult > 1:
+            parts.append((0.0, f"лекция без билетов: известность выступающего × {mult:g}"))
+        if k and wiki_row and wiki_row["exists_"] and wiki_row["views_30d"]:
             views = wiki_row["views_30d"]
-            add(wiki_k * W["wikipedia"]["points"] * _log_scale(views, W["wikipedia"]["min_views"], W["wikipedia"]["full_at_views"]),
+            add(mult * k * W["wikipedia"]["points"] * _log_scale(views, W["wikipedia"]["min_views"], W["wikipedia"]["full_at_views"]),
                 f"Wikipedia «{wiki_row['resolved'].replace('_', ' ')}»: {views:,} просмотров за 30 дней".replace(",", " "))
-        if fame and fame.get("fame"):
-            f = max(1, min(10, fame["fame"]))
-            add(W["model_fame"]["points"] * (f - 1) / 9, f"модель: {f}/10 — {fame.get('fame_reason', '')}")
-        elif fame:
-            parts.append((0.0, f"модель: неизвестно — {fame.get('fame_reason', '')}"))
+        if f:
+            f = max(1, min(10, f))
+            same = who == fame.get("entity")
+            add(mult * W["model_fame"]["points"] * (f - 1) / 9,
+                f"модель: {who or '—'} {f}/10" + (f" — {fame.get('fame_reason', '')}" if same
+                                                  else f" (тема: {fame.get('entity')} — {fame.get('fame_reason', '')})"))
+        else:
+            parts.append((0.0, f"модель: {who or 'исполнитель'} неизвестен — {fame.get('fame_reason', '')}"))
 
     total = max(floor, min(10.0, W["base"] + sum(p for p, _ in parts)))
     reason = "; ".join(f"{t} (+{p:g})" if p else t for p, t in sorted(parts, key=lambda x: -x[0])) or "сигналов нет"
     return round(total, 1), reason
 
 
-def run(con: sqlite3.Connection, client=None) -> dict:
+def signature(con, e, fame: dict | None) -> str:
+    """Входные данные оценки: изменились — пересчитать (рабочий режим: не вся база каждый раз)."""
+    sig = _signals(con, e)
+    blob = json.dumps([e["title"], e["venue_id"], e["venue_name"], e["price_text"], e["price_from"], e["status"],
+                       sorted(sig["sources"]), sig["has_article"], sig["recurring"], fame, WEIGHTS,
+                       sorted(CAPACITY.items())], ensure_ascii=False, sort_keys=True, default=str)
+    return hashlib.sha1(blob.encode()).hexdigest()[:16]
+
+
+def run(con: sqlite3.Connection, client=None, full: bool = False) -> dict:
+    """Рабочий режим: модель — только для новых событий и событий с изменившимся названием (кэш fame_cache),
+    формула — только там, где изменилась сигнатура входных данных. full=True — пересчитать всё."""
     events = future_events(con)
     stats = rate_with_model(con, client, events) if client else {}
     fames = {r["event_id"]: json.loads(r["result"]) for r in con.execute("SELECT * FROM fame_cache")}
+    scored = 0
     # HTTP/2: по HTTP/1.1 Wikimedia отвечает 403 этому клиенту
     with httpx.Client(timeout=30, headers={"User-Agent": UA}, follow_redirects=True, http2=True) as http:
         for e in events:
             fame = fames.get(e["event_id"])
-            w = wiki(con, fame["wikipedia_title"], http) if fame and fame.get("wikipedia_title") else None
+            sig = signature(con, e, fame)
+            if not full and e["importance_sig"] == sig and e["importance_score"] is not None:
+                continue
+            title = fame and (fame.get("performer_wikipedia_title") if "performer_wikipedia_title" in fame
+                              else fame.get("wikipedia_title"))
+            w = wiki(con, title, http) if title else None
             s, reason = score(con, e, fame, w)
-            con.execute("UPDATE events SET importance_score=?, importance_reason=? WHERE event_id=?",
-                        (s, reason, e["event_id"]))
+            con.execute("UPDATE events SET importance_score=?, importance_reason=?, importance_sig=? WHERE event_id=?",
+                        (s, reason, sig, e["event_id"]))
+            scored += 1
     con.commit()
-    stats["scored"] = len(events)
+    stats["scored"] = scored
+    stats["unchanged"] = len(events) - scored
     stats["wiki_articles"] = con.execute("SELECT count(*) FROM wiki_cache WHERE exists_=1").fetchone()[0]
     return stats

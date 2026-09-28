@@ -52,6 +52,15 @@
        "subject_only",
        "none"
       ]
+     },
+     "performer": {
+      "type": "string"
+     },
+     "performer_fame": {
+      "type": "integer"
+     },
+     "performer_wikipedia_title": {
+      "type": "string"
      }
     },
     "required": [
@@ -62,7 +71,10 @@
      "fame",
      "fame_reason",
      "draw_type",
-     "opponent_top_flight"
+     "opponent_top_flight",
+     "performer",
+     "performer_fame",
+     "performer_wikipedia_title"
     ],
     "additionalProperties": false
    }

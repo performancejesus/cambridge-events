@@ -20,9 +20,10 @@ Rubrics (`rubric` values; the input lists the ones available):
   several events), group them here, at the top of the issue. At least one of them must have importance ≥ 7. Give the
   theme a short title (`theme_title_en`, `theme_title_ru`) and one or two sentences of introduction
   (`theme_intro_en`, `theme_intro_ru`). No theme → no `theme` section and empty theme fields.
-- `weekend_1`, `weekend_2`, … — "The weekend" for each weekend of the period (dates in the input): the best events on
-  that Saturday or Sunday, importance ≥ 7 only, 3–6 items; if fewer qualify, give fewer. The biggest events of the
-  period belong here or in `theme`, not only in `tickets`.
+- `weekend_1`, `weekend_2`, … — "The weekend" for each weekend of the period (dates in the input): the 3–5 best
+  events on that Saturday or Sunday by importance, none below 4. Every event with importance ≥ 7 on that weekend must
+  be here or in `theme`. If nothing on a weekend reaches 4, leave that rubric out. The biggest events of the period
+  belong here or in `theme`, not only in `tickets`.
 - `weekdays` — "Weekdays: concerts, theatre, comedy": notable concerts, plays, musicals, dance and stand-up on
   Monday–Friday in the period (`on_weekdays` true), 4–6 items, the most important first.
 - `free` — free events and exhibitions (`free_tag` true). Order does not matter, we sort by importance.
@@ -78,6 +79,9 @@ Fields of an item:
   text is the same item written naturally in Russian, not a word-for-word translation.
 - `knowledge_en`, `knowledge_ru` — statements in the blurb or title that come from your general knowledge, not from
   the data (empty lists if none).
+
+If the input has `write_intro: false` (the issue is generated in parts), leave `intro_*`, `theme_*` empty and fill only
+the rubrics listed in `rubrics`; `already_used` lists event ids placed in other parts — do not use them again.
 
 Also write:
 - `intro_en`, `intro_ru` — one or two sentences opening the issue (the highlights of both weeks).

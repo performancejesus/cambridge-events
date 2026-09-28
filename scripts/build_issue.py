@@ -44,10 +44,56 @@ def schema_for(w: issue.Window) -> dict:
     return s
 
 
+MAX_TOKENS = 128000
+# Группы рубрик для генерации частями (решение после этапа 4b: обрезанный ответ стоил $0.73)
+PART_GROUPS = [lambda w: ["theme"] + [r for r in w.rubrics() if r.startswith("weekend_")] + ["weekdays"],
+               lambda w: ["free", "kids", "sport", "out_of_town", "county"],
+               lambda w: ["new_announcements", "tickets", "cancelled", "new_in_town"]]
+TOKENS_PER_ITEM = 450         # видимый ответ на пункт: два языка, место, цена, факты из знаний модели
+THINKING_FACTOR = 4           # запас на рассуждения модели (effort medium)
+
+
+def expected_output(n_items: int = 40) -> int:
+    return (n_items * TOKENS_PER_ITEM + 3000) * THINKING_FACTOR
+
+
+def generate(client, payload: dict, w: issue.Window, pools: issue.Pools, con, purpose: str) -> tuple[dict, int, int]:
+    """Один вызов, если ожидаемый ответ с запасом помещается в MAX_TOKENS; иначе (или после обрыва по лимиту) —
+    по группам рубрик: каждая часть видит только своих кандидатов и id событий, уже занятых другими частями."""
+    if expected_output() < 0.8 * MAX_TOKENS:
+        try:
+            return call_model(client, payload, schema_for(w), con, purpose)
+        except RuntimeError as e:
+            if "max_tokens" not in str(e):
+                raise
+            print("ответ обрезан — генерирую по частям", file=sys.stderr)
+    merged = {"sections": [], "editor_notes_en": [], "editor_notes_ru": []}
+    tin = tout = 0
+    used: list[int] = []
+    for n, group in enumerate(PART_GROUPS):
+        rubrics = group(w)
+        prefixes = {pre for pre in PREFIX_RUBRICS if any(allowed(pre, r) for r in rubrics)}
+        part = payload | {"rubrics": rubrics, "write_intro": n == 0, "already_used": used,
+                          "candidates": [c for c in payload["candidates"] if c["id"][0] in prefixes
+                                         and not set(pools.candidates[c["id"]]["event_ids"]) & set(used)]}
+        schema = schema_for(w)
+        schema["properties"]["sections"]["items"]["properties"]["rubric"]["enum"] = rubrics
+        res, i, o = call_model(client, part, schema, con, f"{purpose} part {n + 1}")
+        tin, tout = tin + i, tout + o
+        if n == 0:
+            merged |= {k: v for k, v in res.items() if k.startswith(("intro_", "theme_"))}
+        merged["sections"] += res["sections"]
+        merged["editor_notes_en"] += res["editor_notes_en"]
+        merged["editor_notes_ru"] += res["editor_notes_ru"]
+        used += [e for sec in res["sections"] for it in sec["items"] for cid in it["ids"]
+                 if cid in pools.candidates for e in pools.candidates[cid]["event_ids"]]
+    return merged, tin, tout
+
+
 def call_model(client, payload: dict, schema: dict, con, purpose: str) -> tuple[dict, int, int]:
     with client.messages.stream(
         model=MODEL,
-        max_tokens=128000,
+        max_tokens=MAX_TOKENS,
         system=PROMPT,
         messages=[{"role": "user", "content": json.dumps(payload, ensure_ascii=False)}],
         output_config={"format": {"type": "json_schema", "schema": schema}, "effort": "medium"},
@@ -70,7 +116,7 @@ def fits(rubric: str, c: dict, w: issue.Window) -> bool:
     """Выходные — событие в эти выходные и оценка ≥ 7; «На неделе» — есть день пн–пт; «С детьми» и «Бесплатно» —
     по тегам из данных; «за городом» и «по графству» — по зоне."""
     if rubric.startswith("weekend_"):
-        return rubric in c.get("on_weekends", []) and (c.get("importance") or 0) >= issue.HEADLINE_MIN
+        return rubric in c.get("on_weekends", []) and (c.get("importance") or 0) >= issue.WEEKEND_MIN
     if rubric == "weekdays":
         return bool(c.get("on_weekdays"))
     if rubric == "kids":
@@ -163,11 +209,25 @@ def validate(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[st
             used_events.update(events)
             kept.append(it | {"ids": ids})
         sec["items"] = kept
+        if sec["rubric"].startswith("weekend_") and len(kept) > issue.WEEKEND_MAX:
+            kept.sort(key=lambda it: -issue.importance_of(pools, it))
+            for it in kept[issue.WEEKEND_MAX:]:
+                notes.append((f"“{it['title_en']}”: more than {issue.WEEKEND_MAX} items for the weekend — removed",
+                              f"«{it['title_ru']}»: на выходные больше {issue.WEEKEND_MAX} пунктов — убран"))
+            sec["items"] = kept[:issue.WEEKEND_MAX]
         # «Тема недели» держится на событии с оценкой ≥ 7
         if sec["rubric"] == "theme" and kept and max(issue.importance_of(pools, it) for it in kept) < issue.HEADLINE_MIN:
             notes.append(("theme of the week has no event with importance ≥ 7 — section removed",
                           "в «Теме недели» нет события с оценкой ≥ 7 — блок убран"))
             sec["items"] = []
+    # события ≥ 7 на выходных обязаны быть в «Главном» или в «Теме недели»
+    placed = {e for sec in result["sections"] if sec["rubric"] == "theme" or sec["rubric"].startswith("weekend_")
+              for it in sec["items"] for i in it["ids"] for e in pools.candidates[i]["event_ids"]}
+    for cid, c in pools.candidates.items():
+        if c["kind"] == "event" and c.get("on_weekends") and (c.get("importance") or 0) >= issue.HEADLINE_MIN \
+                and not set(c["event_ids"]) & placed:
+            notes.append((f"“{c['title']}” ({cid}, {c['importance']:g}) is on a weekend with importance ≥ 7 but not in “The weekend”",
+                          f"«{c['title']}» ({cid}, {c['importance']:g}) — на выходных, оценка ≥ 7, но не в «Главном»"))
     return notes
 
 
@@ -319,7 +379,7 @@ def main() -> None:
     else:
         import anthropic
         client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
-        result, tin, tout = call_model(client, payload, schema_for(w), con, f"issue {stem[6:]}")
+        result, tin, tout = generate(client, payload, w, pools, con, f"issue {stem[6:]}")
         usage = {"input_tokens": tin, "output_tokens": tout, "cost_usd": tin * PRICE_IN + tout * PRICE_OUT}
         raw_path.write_text(json.dumps({"result": result, "usage": usage}, ensure_ascii=False, indent=1))
     fix_notes = validate(result, pools, w) + check_russian(result, pools)

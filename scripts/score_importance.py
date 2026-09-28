@@ -2,6 +2,7 @@
 
 Запуск: python scripts/score_importance.py            # модель (Claude Sonnet, кэш) + Wikipedia + сигналы базы
         python scripts/score_importance.py --no-model # только сигналы базы и кэш
+        python scripts/score_importance.py --full     # пересчитать формулу для всех (после смены весов/правил)
 """
 
 from __future__ import annotations
@@ -27,7 +28,7 @@ def main() -> None:
         import anthropic
         client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
     con = connect()
-    print(json.dumps(importance.run(con, client), ensure_ascii=False, indent=1))
+    print(json.dumps(importance.run(con, client, full="--full" in sys.argv), ensure_ascii=False, indent=1))
 
 
 if __name__ == "__main__":
