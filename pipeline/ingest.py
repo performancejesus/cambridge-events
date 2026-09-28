@@ -10,7 +10,7 @@ from pathlib import Path
 
 from . import venues
 from .geo import lookup, zone_for_postcode
-from .normalize import minutes, norm_title, norm_venue, parse_price, split_datetime, title_similarity
+from .normalize import end_date, minutes, norm_title, norm_venue, parse_price, split_datetime, title_similarity
 
 # Источники-продавцы билетов: событие у них = продажа открыта.
 TICKETING = {"S006", "S007", "S008", "S011", "S021", "S072", "S091"}
@@ -27,6 +27,8 @@ MATCH_MIN, MATCH_MIN_NO_VENUE = 0.8, 0.9
 # «Cambridge» без адреса (подборки «Various, Cambridge», экскурсии по частным домам с одной улицей):
 # зона «центр» условно, с пометкой address_unknown (решение после этапа 3, часть 2).
 CITY_ONLY_RE = re.compile(r"(^|,)\s*Cambridge\s*(,|$)", re.I)
+# Фестивали на нескольких площадках (Cambridge Poetry Festival): «разные площадки, Кембридж», зона «центр».
+MULTI_VENUE_RE = re.compile(r"^\s*(various|multiple (locations|venues)|several venues|разные площадки)\b", re.I)
 STATUS_PRIORITY = ["cancelled", "postponed", "disappeared", "past", "sold_out", "on_sale", "announced", "scheduled"]
 
 
@@ -124,7 +126,9 @@ def dedupe(con: sqlite3.Connection, run_id: str) -> dict:
             eid = best["event_id"]
             stats["merged"] += 1
         else:
-            de, te = split_datetime(r["end"])
+            de, te = end_date(r["start"], r["end"]), split_datetime(r["end"])[1]
+            if de == d and te and te < "06:00":
+                te = None
             cur = con.execute("""INSERT INTO events(title, norm_title, date_start, time_start, date_end, time_end,
                 venue_name, postcode, status, source_type, url, first_seen_at, last_seen_at)
                 VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
@@ -137,6 +141,37 @@ def dedupe(con: sqlite3.Connection, run_id: str) -> dict:
         art = r["item_key"].split(":")[1] if r["item_key"].startswith("article:") else None
         con.execute("INSERT OR IGNORE INTO event_sources(event_id, source_id, url, raw_id, article_id) VALUES (?,?,?,?,?)",
                     (eid, r["source_id"], r["url"] or "", r["raw_id"], art))
+    return stats
+
+
+# --- 2b. ручные склейки (data/manual_merges.json): дубли, которые не видит автоматическое сравнение ---
+
+MERGES = Path(__file__).resolve().parent.parent / "data" / "manual_merges.json"
+
+
+def apply_merges(con: sqlite3.Connection) -> dict:
+    """Событие-дубль переносится в основное: записи источников, статьи, обновления; сам дубль удаляется."""
+    stats = {"manual_merged": 0}
+    find = lambda k: con.execute("SELECT event_id FROM events WHERE date_start=? AND title=?", (k["date"], k["title"])).fetchone()
+    for rule in json.loads(MERGES.read_text()) if MERGES.exists() else []:
+        keep = find(rule["keep"])
+        if not keep:
+            continue
+        for m in rule["merge"]:
+            dup = find(m)
+            if not dup or dup[0] == keep[0]:
+                continue
+            k, d = keep[0], dup[0]
+            con.execute("UPDATE raw_items SET event_id=? WHERE event_id=?", (k, d))
+            con.execute("""INSERT OR IGNORE INTO event_sources(event_id, source_id, url, raw_id, article_id)
+                SELECT ?, source_id, url, raw_id, article_id FROM event_sources WHERE event_id=?""", (k, d))
+            con.execute("DELETE FROM event_sources WHERE event_id=?", (d,))
+            for table in ("event_updates", "recurring_events"):
+                con.execute(f"UPDATE {table} SET event_id=? WHERE event_id=?", (k, d))
+            con.execute("DELETE FROM venue_lookups WHERE event_id=?", (d,))
+            con.execute("DELETE FROM status_history WHERE event_id=?", (d,))
+            con.execute("DELETE FROM events WHERE event_id=?", (d,))
+            stats["manual_merged"] += 1
     return stats
 
 
@@ -177,7 +212,7 @@ def _tickets_expected(con, e, raws: list, today: str) -> bool:
 
 def refresh(con: sqlite3.Connection, run_id: str) -> dict:
     today = date.today().isoformat()
-    stats = {"status_changes": 0}
+    stats = {"status_changes": 0, "date_end_fixed": 0}
     # postcodes.io — один раз на все postcode событий и площадок (кэш в таблице postcodes)
     before = con.execute("SELECT count(*) FROM postcodes").fetchone()[0]
     lookup(con, [r[0] for r in con.execute("""SELECT postcode FROM raw_items WHERE kind='event' AND postcode IS NOT NULL
@@ -203,16 +238,31 @@ def refresh(con: sqlite3.Connection, run_id: str) -> dict:
             postcode, address = v["postcode"], v["address"]
         lat, lon, zn = zone_for_postcode(con, postcode) or (None, None, None)
         address_unknown = 0
+        # площадка из справочника без postcode: населённый пункт (place) или только «Кембридж» (city)
+        if zn is None and v and v["zone"] and not v["postcode"]:
+            lat, lon, zn = v["lat"], v["lon"], v["zone"]
+            address_unknown = int(v["precision"] == "city")
+        multi_venue = int(bool(e["multi_venue"]) or bool(MULTI_VENUE_RE.match(venue or "")))
+        where = f"{venue or ''} {address or ''}"
+        if zn is None and multi_venue and re.search(r"\bCambridge\b", where):
+            zn, address_unknown = "центр", 1
         if zn is None and e["lat"] is None and any(CITY_ONLY_RE.search(x or "") for x in (address, venue)):
             zn, address_unknown = "центр", 1
         prices = [parse_price(r["price"], r["summary"], r["title"]) for r in raws]
         prices = [p for p in prices if p is not None]
         price_from = min(prices) if prices else e["price_from"]
         price_text = next((r["price"] for r in raws if r["price"]), e["price_text"])
-        end_date = e["date_end"] or e["date_start"]
+        # однодневные события, показанные как двухдневные (окончание после полуночи) — по всей базе
+        if first and first["end"] and e["date_end"]:
+            de = end_date(first["start"], first["end"])
+            if de and de < e["date_end"]:
+                con.execute("UPDATE events SET date_end=?, time_end=NULL WHERE event_id=?", (de, e["event_id"]))
+                stats["date_end_fixed"] += 1
+                e = dict(e) | {"date_end": de}
+        end_date_ = e["date_end"] or e["date_start"]
         if raws:
-            status, src = _status(raws, updates, price_from, end_date, today, _tickets_expected(con, e, raws, today))
-        elif end_date < today:  # ежегодные и прочие события без записей источников
+            status, src = _status(raws, updates, price_from, end_date_, today, _tickets_expected(con, e, raws, today))
+        elif end_date_ < today:  # ежегодные и прочие события без записей источников
             status, src = ("past" if e["status"] not in ("cancelled", "postponed") else e["status"]), None
         elif e["status"] in ("announced", "scheduled"):
             status, src = ("announced" if _tickets_expected(con, e, raws, today) else "scheduled"), None
@@ -221,10 +271,10 @@ def refresh(con: sqlite3.Connection, run_id: str) -> dict:
         if e["status"] == "past" and status == "disappeared":
             status = "past"
         con.execute("""UPDATE events SET title=?, venue_id=?, venue_name=?, address=?, postcode=?, lat=coalesce(?, lat),
-            lon=coalesce(?, lon), zone=coalesce(?, zone), address_unknown=?, price_from=?, price_text=?, url=?,
+            lon=coalesce(?, lon), zone=coalesce(?, zone), address_unknown=?, multi_venue=?, price_from=?, price_text=?, url=?,
             last_seen_at=?, status=? WHERE event_id=?""",
                     (first["title"] if first else e["title"], venue_id, venue, address, postcode, lat, lon,
-                     zn, address_unknown, price_from, price_text, first["url"] if first and first["url"] else e["url"],
+                     zn, address_unknown, multi_venue, price_from, price_text, first["url"] if first and first["url"] else e["url"],
                      max(r["last_seen_at"] for r in raws) if raws else e["last_seen_at"], status, e["event_id"]))
         if not con.execute("SELECT 1 FROM status_history WHERE event_id=?", (e["event_id"],)).fetchone():
             con.execute("INSERT INTO status_history(event_id, status, changed_at, source_id, note) VALUES (?,?,?,?,?)",

@@ -29,6 +29,7 @@ def main() -> None:
     stats |= extract.keyword_news(con)       # Cambridge BID: только заголовки, без LLM
     stats |= venues.build(con)
     stats |= ingest.dedupe(con, run_id)
+    stats |= ingest.apply_merges(con)        # data/manual_merges.json
     stats |= ingest.refresh(con, run_id)
     stats |= ingest.store_changes(con, run_id)
     con.commit()

@@ -1,7 +1,8 @@
-"""Этап 4: черновик выпуска. Кандидаты из events.db → отбор и тексты через Claude (scripts/build_issue.py) → Markdown.
+"""Этап 4 / 4b: черновик выпуска. Кандидаты из events.db → отбор и тексты через Claude (scripts/build_issue.py) → Markdown.
 
 Факты пункта (даты, время, ссылка) берутся из базы, а не из ответа модели; модель выбирает пункты по id кандидатов
-и пишет название, место, цену и 1–2 предложения своими словами на двух языках.
+и пишет название, место, цену и описание своими словами на двух языках. Порядок внутри рубрик — по оценке
+важности (importance_score); «Главное на выходные» — события с оценкой ≥ 7; «С детьми» и «Бесплатно» — по тегам.
 """
 
 from __future__ import annotations
@@ -13,6 +14,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 
+from .db import ROOT
 from .normalize import norm_title, norm_venue, title_similarity
 
 LISTED_ZONES = {"центр", "до 30 мин", "до часа", "Кембриджшир, дальше часа"}
@@ -26,23 +28,38 @@ NO_SALE_DATA = {"S018", "S042"}
 ANNOUNCE_DAYS = 21          # «объявлено недавно»: статья или старт продаж не старше стольких дней
 VENUE_NEWS_DAYS = 90
 
-RUBRICS = ["weekend", "free", "kids", "sport", "out_of_town", "county", "new_announcements", "tickets",
-           "cancelled", "new_in_town"]
+# Рубрики после «Темы недели» и «Главного на выходные» (их по одной на каждые выходные периода).
+FIXED_RUBRICS = ["weekdays", "free", "kids", "sport", "out_of_town", "county", "new_announcements", "tickets",
+                 "cancelled", "new_in_town"]
 RUBRIC_TITLES = {
-    "en": {"weekend": "The weekend: {weekend}", "free": "Free", "kids": "With kids", "sport": "Sport",
+    "en": {"theme": "Theme of the week: {theme}", "weekend": "The weekend: {weekend}",
+           "weekdays": "Weekdays: concerts, theatre, comedy", "free": "Free", "kids": "With kids", "sport": "Sport",
            "out_of_town": "Out of town (within an hour)", "county": "Around the county",
            "new_announcements": "Just announced", "tickets": "Get your tickets",
            "cancelled": "Cancelled and postponed", "new_in_town": "New in town"},
-    "ru": {"weekend": "Главное на выходные: {weekend}", "free": "Бесплатно", "kids": "С детьми", "sport": "Спорт",
+    "ru": {"theme": "Тема недели: {theme}", "weekend": "Главное на выходные {weekend}",
+           "weekdays": "На неделе: концерты, театр, комедия", "free": "Бесплатно", "kids": "С детьми", "sport": "Спорт",
            "out_of_town": "За городом (до часа)", "county": "По графству",
            "new_announcements": "Новые анонсы", "tickets": "Успейте купить билеты",
            "cancelled": "Отменено и перенесено", "new_in_town": "Новое в городе"},
 }
+HEADLINE_MIN = 7.0          # «Главное на выходные» и «Тема недели» (опорное событие) — оценка не ниже
+LONG_BLURB_MIN = 8.0        # развёрнутое описание (2–3 предложения)
+ONE_LINE_MAX = 3.0          # одна строка без описания
+# «С детьми» — только если дети явно названы в данных (решение после этапа 4).
+KIDS_RE = re.compile(r"\b(family[- ]friendly|for (all the |the whole )?famil(y|ies)|famil(y|ies) (fun|day|event|show|"
+                     r"activit\w*|workshop|ticket)s?|all the family|whole family|kids|children'?s?|toddlers?|babies|"
+                     r"baby|half[- ]term|ages? \d|aged \d|years? \d+\s*[-–]\s*\d+|under[- ]?\d+s)\b", re.I)
+MERGES = ROOT / "data" / "manual_merges.json"
 EMPTY_RUBRIC = {
     "en": {"county": "Nothing from Peterborough and the Fens in our sources this fortnight.",
-           "cancelled": "No cancellations or postponements reported in our sources this fortnight."},
+           "cancelled": "No cancellations or postponements reported in our sources this fortnight.",
+           "kids": "Nothing this fortnight where the listings actually mention children or families.",
+           "weekend": "A quieter weekend in the listings — the best of it is in the sections below."},
     "ru": {"county": "На этот раз в наших источниках нет событий из Питерборо и Fenland.",
-           "cancelled": "Об отменах и переносах за эти две недели источники не сообщали."},
+           "cancelled": "Об отменах и переносах за эти две недели источники не сообщали.",
+           "kids": "В этот раз в афишах нет событий, где прямо указаны дети или семьи.",
+           "weekend": "Спокойные выходные — что выбрать, смотрите в рубриках ниже."},
 }
 
 MONTHS_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -57,7 +74,20 @@ class Window:
     issue: date
     start: date
     end: date
-    weekend: tuple[date, date]
+    weekends: list[tuple[date, date]] = field(default_factory=list)
+
+    def __post_init__(self):
+        if not self.weekends:  # все выходные периода (суббота и воскресенье внутри окна)
+            x = self.start + timedelta(days=(5 - self.start.weekday()) % 7)
+            while x + timedelta(days=1) <= self.end:
+                self.weekends.append((x, x + timedelta(days=1)))
+                x += timedelta(days=7)
+
+    def rubrics(self) -> list[str]:
+        return ["theme"] + [f"weekend_{i + 1}" for i in range(len(self.weekends))] + FIXED_RUBRICS
+
+    def weekend_of(self, rubric: str) -> tuple[date, date] | None:
+        return self.weekends[int(rubric.split("_")[1]) - 1] if rubric.startswith("weekend_") else None
 
 
 @dataclass
@@ -80,9 +110,13 @@ def _sources(con, event_id: int) -> list[str]:
 
 
 def _summary(con, event_id: int) -> str:
-    rows = con.execute("SELECT summary, categories FROM raw_items WHERE event_id=? AND summary IS NOT NULL", (event_id,)).fetchall()
-    text = max((r["summary"] for r in rows), key=len, default="")
-    return text[:300]
+    """Описания всех источников события (у склеенных дублей — разные: состав концерта может быть только в статье)."""
+    rows = con.execute("SELECT summary FROM raw_items WHERE event_id=? AND summary IS NOT NULL", (event_id,)).fetchall()
+    uniq = []
+    for s in sorted((r["summary"] for r in rows), key=len, reverse=True):
+        if not any(s[:80] in u for u in uniq):
+            uniq.append(s)
+    return " | ".join(u[:300] for u in uniq)[:600]
 
 
 def _categories(con, event_id: int) -> list[str]:
@@ -92,24 +126,37 @@ def _categories(con, event_id: int) -> list[str]:
     return sorted(cats)[:6]
 
 
+def _merge_notes() -> dict[tuple[str, str], str]:
+    rules = json.loads(MERGES.read_text()) if MERGES.exists() else []
+    return {(r["keep"]["date"], r["keep"]["title"]): r["note"] for r in rules}
+
+
 def _event_facts(con, e: sqlite3.Row) -> dict:
     srcs = _sources(con, e["event_id"]) or (["recurring"] if e["source_type"] == "recurring" else [])
     status = e["status"]
     if status == "announced" and set(srcs) <= NO_SALE_DATA:
         status = "scheduled (no ticket data)"
-    return {
+    cats = _categories(con, e["event_id"])
+    summary = _summary(con, e["event_id"])
+    facts = {
         "title": e["title"], "venue": e["venue_name"], "address": e["address"], "postcode": e["postcode"],
-        "zone": e["zone"], "address_unknown": bool(e["address_unknown"]),
+        "zone": e["zone"], "address_unknown": bool(e["address_unknown"]), "multi_venue": bool(e["multi_venue"]),
         "price_text": e["price_text"], "price_from": e["price_from"], "status": status, "sources": srcs,
-        "categories": _categories(con, e["event_id"]), "summary": _summary(con, e["event_id"]),
-        "source_type": e["source_type"],
+        "categories": cats, "summary": summary, "source_type": e["source_type"],
+        "importance": e["importance_score"], "importance_reason": e["importance_reason"],
+        "kids_tag": bool(KIDS_RE.search(" ".join([e["title"], summary] + cats))),
+        "free_tag": e["price_from"] == 0,
     }
+    note = _merge_notes().get((e["date_start"], e["title"]))
+    if note:
+        facts["editor_note"] = note
+    return facts
 
 
 def _exclusion(e: sqlite3.Row) -> str | None:
     if TBC_RE.search(e["title"]):
         return "лекции talks.cam с «Title to be confirmed»"
-    if not e["venue_name"] or NO_VENUE_RE.match(e["venue_name"]):
+    if (not e["venue_name"] or NO_VENUE_RE.match(e["venue_name"])) and not e["multi_venue"]:
         return "нет площадки или адреса"
     if e["zone"] not in LISTED_ZONES:
         return "зона не определена (нет postcode)" if not e["zone"] else "вне зоны"
@@ -143,6 +190,11 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
         facts["event_ids"] = [g["event_id"] for g in group]
         facts["url"] = first["url"]
         facts["kind"] = "event"
+        facts["importance"] = max((g["importance_score"] or 0) for g in group) or None
+        days = {d(x[0]) + timedelta(days=i) for x in facts["dates"] for i in range((d(x[1]) - d(x[0])).days + 1)}
+        days = {x for x in days if w.start <= x <= w.end}
+        facts["on_weekends"] = [f"weekend_{i + 1}" for i, (sa, su) in enumerate(w.weekends) if {sa, su} & days]
+        facts["on_weekdays"] = any(x.weekday() < 5 for x in days)
         p.candidates[f"E{first['event_id']}"] = facts
     _find_duplicates(p, excluded_rows)
     _announcements(con, w, p)
@@ -256,7 +308,8 @@ def model_view(p: Pools) -> list[dict]:
     """Кандидаты для модели: только нужные поля, без пустых."""
     out = []
     for cid, c in p.candidates.items():
-        item = {"id": cid} | {k: v for k, v in c.items() if k not in ("url", "event_ids") and v not in (None, "", [], False)}
+        item = {"id": cid} | {k: v for k, v in c.items()
+                              if k not in ("url", "event_ids", "importance_reason") and v not in (None, "", [], False)}
         out.append(item)
     return out
 
@@ -298,7 +351,10 @@ def when(c: dict, w: Window, lang: str) -> str:
     times = {x[2] for x in c["dates"]}
     time = next(iter(times)) if len(times) == 1 and next(iter(times)) and next(iter(times)) != "11:59" else None
     other_year = last.year != w.issue.year
-    if first == last:
+    days = sorted({d(x[0]) for x in c["dates"]})
+    if 1 < len(days) <= 3 and all(d(x[0]) == d(x[1]) for x in c["dates"]):  # отдельные дни: «пн 5 и сб 10 окт.»
+        s = (" and " if lang == "en" else " и ").join(_day(x, lang, year=other_year) for x in days)
+    elif first == last:
         s = _day(first, lang, year=other_year)
     elif first < w.start:  # идёт давно: выставки
         s = ("until " if lang == "en" else "до ") + _day(last, lang, weekday=False, year=other_year)
@@ -319,30 +375,56 @@ def when(c: dict, w: Window, lang: str) -> str:
 
 # --- Markdown ---
 
+def _range(a: date, b: date, lang: str) -> str:
+    return (f"{a.day}–{b.day} {MONTHS_EN[b.month - 1]}" if lang == "en" else f"{a.day}–{b.day} {MONTHS_RU[b.month - 1]}")
+
+
+def rubric_title(rub: str, w: Window, lang: str, theme: str = "") -> str:
+    we = w.weekend_of(rub)
+    if we:
+        return RUBRIC_TITLES[lang]["weekend"].format(weekend=_range(*we, lang))
+    return RUBRIC_TITLES[lang][rub].format(theme=theme)
+
+
+def importance_of(p: Pools, it: dict) -> float:
+    return max((p.candidates[i].get("importance") or 0) for i in it["ids"])
+
+
 def render(result: dict, p: Pools, w: Window, lang: str, editor: dict) -> str:
-    ws = (f"{w.weekend[0].day}–{w.weekend[1].day} {MONTHS_EN[w.weekend[1].month - 1]}" if lang == "en"
-          else f"{w.weekend[0].day}–{w.weekend[1].day} {MONTHS_RU[w.weekend[1].month - 1]}")
-    period = (f"{_day(w.start, lang, weekday=False)} – {_day(w.end, lang, weekday=False)}")
+    weekends = (" and " if lang == "en" else " и ").join(_range(a, b, lang) for a, b in w.weekends)
+    period = f"{_day(w.start, lang, weekday=False)} – {_day(w.end, lang, weekday=False)}"
     if lang == "en":
         head = [f"# What's on in Cambridge — {w.issue.day} {MONTHS_EN[w.issue.month - 1]} {w.issue.year}", "",
-                f"*Events {period} · the weekend: {ws}*", ""]
+                f"*Events {period} · weekends: {weekends}*", ""]
     else:
         head = [f"# Что происходит в Кембридже — {w.issue.day} {MONTHS_RU[w.issue.month - 1]} {w.issue.year}", "",
-                f"*События {period} · выходные: {ws}*", ""]
+                f"*События {period} · выходные: {weekends}*", ""]
     lines = head + [result[f"intro_{lang}"], ""]
     sections = {s["rubric"]: s["items"] for s in result["sections"]}
-    for rub in RUBRICS:
-        lines += [f"## {RUBRIC_TITLES[lang][rub].format(weekend=ws)}", ""]
-        items = sections.get(rub) or []
+    more = "More" if lang == "en" else "Подробнее"
+    for rub in w.rubrics():
+        items = sorted(sections.get(rub) or [], key=lambda it: -importance_of(p, it))
+        if rub == "theme" and not items:
+            continue
+        lines += [f"## {rubric_title(rub, w, lang, result.get(f'theme_title_{lang}', ''))}", ""]
+        if rub == "theme" and result.get(f"theme_intro_{lang}"):
+            lines += [result[f"theme_intro_{lang}"], ""]
         if not items:
-            lines += [EMPTY_RUBRIC[lang].get(rub, "—" if lang == "en" else "—"), ""]
+            lines += [EMPTY_RUBRIC[lang].get("weekend" if w.weekend_of(rub) else rub, "—"), ""]
             continue
         for it in items:
             c = p.candidates[it["ids"][0]]
+            evs = [p.candidates[i] for i in it["ids"] if p.candidates[i]["kind"] == c["kind"] == "event"]
+            if len(evs) > 1:  # два дня одной выставки на разных площадках и т.п.
+                c = c | {"dates": sorted({x for e in evs for x in e["dates"]})}
             price = "" if c["kind"] == "venue_news" else it[f"price_{lang}"]
             meta = " · ".join(x for x in (when(c, w, lang), it[f"where_{lang}"], price) if x)
-            more = "More" if lang == "en" else "Подробнее"
-            lines += [f"**{it[f'title_{lang}']}** — {meta}  ", f"{it[f'blurb_{lang}']} [{more} →]({c['url']})", ""]
+            score = importance_of(p, it)
+            blurb = it[f"blurb_{lang}"].strip()
+            if c["kind"] == "event" and score and score <= ONE_LINE_MAX:
+                blurb = ""  # оценка ≤ 3 — одна строка без описания
+            lines += [f"**{it[f'title_{lang}']}** — {meta}  ",
+                      (f"{blurb} " if blurb else "") + f"[{more} →]({c['url']})", ""]
     lines += ["---", "", "## For the editor" if lang == "en" else "## Для редактора", ""]
     for title, entries in editor[lang]:
         lines += [f"**{title}**", ""]

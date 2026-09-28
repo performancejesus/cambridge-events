@@ -174,6 +174,40 @@ CREATE TABLE IF NOT EXISTS state (
     value TEXT
 );
 
+-- Населённые пункты postcodes.io /places (координаты для площадок без postcode).
+CREATE TABLE IF NOT EXISTS places (
+    query      TEXT PRIMARY KEY,
+    name       TEXT, lat REAL, lon REAL,
+    county     TEXT, district TEXT,
+    fetched_at TEXT NOT NULL
+);
+
+-- Поиск адреса площадки в тексте страницы события или статьи (pipeline/locate.py).
+CREATE TABLE IF NOT EXISTS venue_lookups (
+    event_id   INTEGER PRIMARY KEY REFERENCES events(event_id),
+    url        TEXT,
+    result     TEXT,                     -- JSON ответа модели
+    resolved   TEXT,                     -- postcode | place | city | none
+    checked_at TEXT NOT NULL
+);
+
+-- Внешние сигналы известности (Wikipedia), кэш.
+CREATE TABLE IF NOT EXISTS wiki_cache (
+    title      TEXT PRIMARY KEY,         -- запрошенное название статьи
+    exists_    INTEGER,
+    resolved   TEXT,                     -- итоговое название после редиректа
+    views_30d  INTEGER,
+    fetched_at TEXT NOT NULL
+);
+
+-- Оценка известности моделью (сигнал важности), кэш по событию.
+CREATE TABLE IF NOT EXISTS fame_cache (
+    event_id   INTEGER PRIMARY KEY REFERENCES events(event_id),
+    title      TEXT,                     -- название на момент оценки (сменилось — оценить заново)
+    result     TEXT NOT NULL,            -- JSON ответа модели
+    model      TEXT, rated_at TEXT NOT NULL
+);
+
 -- Расход Claude API.
 CREATE TABLE IF NOT EXISTS llm_usage (
     called_at   TEXT NOT NULL,
@@ -198,6 +232,11 @@ MIGRATIONS = [
     ("venue_news", "date_basis", "TEXT"),             # stated | publication_date (дата статьи о свежем открытии)
     ("articles", "text_source", "TEXT"),              # page | rss | feed — что ушло в модель
     ("events", "address_unknown", "INTEGER"),         # 1 — город Cambridge без адреса, зона «центр» условно
+    ("events", "multi_venue", "INTEGER"),             # 1 — фестиваль на разных площадках («разные площадки, Кембридж»)
+    ("events", "importance_score", "REAL"),           # 1–10, pipeline/importance.py
+    ("events", "importance_reason", "TEXT"),
+    ("venues", "capacity", "INTEGER"),                # вместимость (вручную, data/venue_capacity.json)
+    ("venues", "precision", "TEXT"),                  # postcode | place (населённый пункт) | city (только «Кембридж»)
 ]
 
 

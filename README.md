@@ -70,9 +70,9 @@ python scripts/stage3_report.py           # docs/stage3_report.md
 ## Этап 4 — черновик выпуска
 
 ```bash
-python scripts/build_issue.py --issue 2026-10-01 --start 2026-09-28 --end 2026-10-11 --weekend 2026-10-03
+python scripts/build_issue.py --issue 2026-10-01 --start 2026-09-28 --end 2026-10-11 --version v2
 python scripts/build_issue.py ... --dry-run                      # только пулы кандидатов, без API
-python scripts/build_issue.py ... --from-json issues/issue_2026-10-01_model.json   # перерисовать без API
+python scripts/build_issue.py ... --from-json issues/issue_2026-10-01_v2_model.json   # перерисовать без API
 ```
 
 - `pipeline/issue.py` — пулы кандидатов из базы (события окна, серии одним пунктом, новые анонсы, старт продаж,
@@ -83,4 +83,23 @@ python scripts/build_issue.py ... --from-json issues/issue_2026-10-01_model.json
   латиница в русском тексте), блок «Для редактора». Ответ модели сохраняется в `issues/issue_<дата>_model.json`
   (туда же — ручные правки `manual_fixes` и заметки ревью `review_notes`, они выводятся редактору).
 - Результат: `issues/issue_<дата>_en.md`, `issues/issue_<дата>_ru.md`.
+
+## Этап 4b — баги данных, важность, черновик v2
+
+```bash
+python scripts/update_db.py --no-load     # даты (окончание до 06:00 → однодневное), ручные склейки, зоны
+python scripts/locate_venues.py           # площадки без postcode: справочник → текст страницы (Haiku) → postcodes.io
+python scripts/score_importance.py        # importance_score / importance_reason (Sonnet + Wikipedia, кэш)
+python scripts/build_issue.py --issue 2026-10-01 --start 2026-09-28 --end 2026-10-11 --version v2
+```
+
+- Даты: `normalize.end_date` — окончание на следующий день до 06:00 = тот же день (Cambridge 105 «весь день»
+  00:00–23:59:59 UTC, ночные вечеринки); iCal `DTEND` с датой — исключающая граница.
+- `data/manual_merges.json` — ручные склейки дублей (матч United — Blackpool, концерт и выставка Syd Barrett).
+- `pipeline/locate.py` + `prompts/venue_locate.md` — адрес площадки из текста страницы события или статьи; найденные
+  площадки попадают в справочник (`venues.origin = located`, `precision`: postcode / place / city). Населённые
+  пункты — postcodes.io `/places` (кэш `places`). Фестивали на разных площадках — `events.multi_venue`.
+- `pipeline/importance.py` + `prompts/importance.md` — оценка важности: вместимость (`data/venue_capacity.json`,
+  примерно), цена, источники, статья, sold out, ежегодный флагман, Wikipedia (кэш `wiki_cache`), футбол по метке
+  турнира, известность по оценке модели (кэш `fame_cache`); веса — `data/importance_weights.json`.
 

@@ -1,10 +1,11 @@
-"""Этап 4: черновик выпуска — issue_<дата>_en.md и issue_<дата>_ru.md в issues/.
+"""Этап 4 / 4b: черновик выпуска — issue_<дата>[_<версия>]_en.md и _ru.md в issues/.
 
 Кандидаты берутся из events.db (pipeline/issue.py), отбор и тексты — Claude (Sonnet), промпт prompts/issue.md,
-схема ответа prompts/issue.schema.json. Ключ — EVENTS_ANTHROPIC_KEY.
+схема ответа prompts/issue.schema.json (рубрики — по выходным периода). Ключ — EVENTS_ANTHROPIC_KEY.
 
-  python scripts/build_issue.py --issue 2026-10-01 --start 2026-09-28 --end 2026-10-11 --weekend 2026-10-03
+  python scripts/build_issue.py --issue 2026-10-01 --start 2026-09-28 --end 2026-10-11 --version v2
   python scripts/build_issue.py ... --dry-run     # только пулы кандидатов и оценка объёма, без API
+  python scripts/build_issue.py ... --from-json issues/issue_2026-10-01_v2_model.json   # перерисовать без API
 """
 
 from __future__ import annotations
@@ -15,7 +16,7 @@ import os
 import re
 import sys
 from collections import Counter
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -28,19 +29,37 @@ MODEL = "claude-sonnet-5"
 PRICE_IN, PRICE_OUT = 2.00 / 1e6, 10.00 / 1e6   # $ за токен, Sonnet 5
 PROMPT = (ROOT / "prompts" / "issue.md").read_text()
 SCHEMA = json.loads((ROOT / "prompts" / "issue.schema.json").read_text())
-PREFIX_RUBRICS = {"E": {"weekend", "free", "kids", "sport", "out_of_town", "county"},
-                  "A": {"new_announcements", "tickets"}, "T": {"tickets"}, "C": {"cancelled"}, "V": {"new_in_town"}}
+EVENT_RUBRICS = {"theme", "weekdays", "free", "kids", "sport", "out_of_town", "county"}
+PREFIX_RUBRICS = {"E": EVENT_RUBRICS, "A": {"new_announcements", "tickets", "theme"}, "T": {"tickets", "theme"},
+                  "C": {"cancelled"}, "V": {"new_in_town"}}
 
 
-def call_model(client, payload: dict) -> tuple[dict, int, int]:
+def allowed(prefix: str, rubric: str) -> bool:
+    return rubric in PREFIX_RUBRICS.get(prefix, set()) or (prefix == "E" and rubric.startswith("weekend_"))
+
+
+def schema_for(w: issue.Window) -> dict:
+    s = json.loads(json.dumps(SCHEMA))
+    s["properties"]["sections"]["items"]["properties"]["rubric"]["enum"] = w.rubrics()
+    return s
+
+
+def call_model(client, payload: dict, schema: dict, con, purpose: str) -> tuple[dict, int, int]:
     with client.messages.stream(
         model=MODEL,
-        max_tokens=64000,
+        max_tokens=128000,
         system=PROMPT,
         messages=[{"role": "user", "content": json.dumps(payload, ensure_ascii=False)}],
-        output_config={"format": {"type": "json_schema", "schema": SCHEMA}, "effort": "high"},
+        output_config={"format": {"type": "json_schema", "schema": schema}, "effort": "medium"},
     ) as stream:
         msg = stream.get_final_message()
+    # расход записываем и тогда, когда ответ непригоден (обрезан или отказ)
+    tin, tout = msg.usage.input_tokens, msg.usage.output_tokens
+    con.execute("""INSERT INTO llm_usage(called_at, purpose, model, article_id, input_tokens, output_tokens, cost_usd)
+        VALUES (?,?,?,?,?,?,?)""", (datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                                    purpose + ("" if msg.stop_reason == "end_turn" else f" ({msg.stop_reason})"),
+                                    MODEL, None, tin, tout, tin * PRICE_IN + tout * PRICE_OUT))
+    con.commit()
     if msg.stop_reason in ("refusal", "max_tokens"):
         raise RuntimeError(f"stop_reason={msg.stop_reason}")
     body = next(b.text for b in msg.content if b.type == "text")
@@ -48,9 +67,16 @@ def call_model(client, payload: dict) -> tuple[dict, int, int]:
 
 
 def fits(rubric: str, c: dict, w: issue.Window) -> bool:
-    """Выходные — событие идёт в субботу или воскресенье; «за городом» и «по графству» — по зоне."""
-    if rubric == "weekend":
-        return any(issue.d(s) <= w.weekend[1] and issue.d(e) >= w.weekend[0] for s, e, _ in c["dates"])
+    """Выходные — событие в эти выходные и оценка ≥ 7; «На неделе» — есть день пн–пт; «С детьми» и «Бесплатно» —
+    по тегам из данных; «за городом» и «по графству» — по зоне."""
+    if rubric.startswith("weekend_"):
+        return rubric in c.get("on_weekends", []) and (c.get("importance") or 0) >= issue.HEADLINE_MIN
+    if rubric == "weekdays":
+        return bool(c.get("on_weekdays"))
+    if rubric == "kids":
+        return bool(c.get("kids_tag"))
+    if rubric == "free":
+        return bool(c.get("free_tag"))
     if rubric == "out_of_town":
         return c.get("zone") in issue.OUT_OF_TOWN
     if rubric == "county":
@@ -119,14 +145,14 @@ def validate(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[st
                 notes.append((f"unknown candidate ids {bad} in the model output — removed",
                               f"модель сослалась на несуществующие id {bad} — убраны"))
             # первым — кандидат, чей тип подходит рубрике (при объединении дублей модель может поставить другой)
-            ids.sort(key=lambda i: sec["rubric"] not in PREFIX_RUBRICS.get(i[0], set()))
+            ids.sort(key=lambda i: not allowed(i[0], sec["rubric"]))
             prefix = ids[0][0] if ids else ""
             events = {e for i in ids for e in pools.candidates[i]["event_ids"]}
             if not ids or any(i in used for i in ids) or events & used_events:
                 notes.append((f"“{it['title_en']}”: empty or repeated item — removed",
                               f"«{it['title_ru']}»: пустой или повторный пункт — убран"))
                 continue
-            if sec["rubric"] not in PREFIX_RUBRICS.get(prefix, set()) or not fits(sec["rubric"], pools.candidates[ids[0]], w):
+            if not allowed(prefix, sec["rubric"]) or not fits(sec["rubric"], pools.candidates[ids[0]], w):
                 notes.append((f"“{it['title_en']}” ({ids[0]}) does not fit rubric {sec['rubric']} — removed",
                               f"«{it['title_ru']}» ({ids[0]}) не подходит для рубрики {sec['rubric']} — убран"))
                 continue
@@ -137,6 +163,11 @@ def validate(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[st
             used_events.update(events)
             kept.append(it | {"ids": ids})
         sec["items"] = kept
+        # «Тема недели» держится на событии с оценкой ≥ 7
+        if sec["rubric"] == "theme" and kept and max(issue.importance_of(pools, it) for it in kept) < issue.HEADLINE_MIN:
+            notes.append(("theme of the week has no event with importance ≥ 7 — section removed",
+                          "в «Теме недели» нет события с оценкой ≥ 7 — блок убран"))
+            sec["items"] = []
     return notes
 
 
@@ -162,8 +193,8 @@ def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: l
             unv_en.append(f"{t} ({cid}): no ticket-sale data from ADC / Cambridge United — status to be checked at stage 5")
             unv_ru.append(f"{t} ({cid}): нет данных о продаже (ADC / Cambridge United) — статус уточнится на этапе 5")
         if c.get("address_unknown"):
-            unv_en.append(f"{t} ({cid}): only the city is known, zone «центр» assumed (address_unknown)")
-            unv_ru.append(f"{t} ({cid}): известен только город, зона «центр» условно (address_unknown)")
+            unv_en.append(f"{t} ({cid}): no postcode — zone «центр» assumed from the city (address_unknown)")
+            unv_ru.append(f"{t} ({cid}): нет postcode — зона «центр» условно, по городу (address_unknown)")
         if c.get("source_type") == "article" and c["kind"] != "venue_news" and len(c.get("sources", [])) == 1:
             unv_en.append(f"{t} ({cid}): found only in a news article, not in a listings source")
             unv_ru.append(f"{t} ({cid}): есть только в статье, в афишах не найдено")
@@ -194,22 +225,44 @@ def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: l
                 "cancellation": "отмен", "venue_news": "записей «новое в городе»"}
     out_en.append("candidates not chosen by the model: " + ", ".join(f"{k} — {v}" for k, v in by_kind.items()))
     out_ru.append("кандидатов не выбрано моделью: " + ", ".join(f"{kinds_ru[k]} — {v}" for k, v in by_kind.items()))
-    out_en.append("no general “weekdays” rubric in the brief: weekday concerts and shows at the Corn Exchange and "
-                  "elsewhere get in only via the rubrics above")
-    out_ru.append("в брифе нет общей рубрики «на неделе»: концерты и спектакли в будни попадают только через рубрики выше")
+    for rub in w.rubrics():
+        we = w.weekend_of(rub)
+        if we and counts.get(rub, 0) < 3:
+            best = sorted((c for c in pools.candidates.values() if c["kind"] == "event" and rub in c.get("on_weekends", [])),
+                          key=lambda c: -(c.get("importance") or 0))[:5]
+            lst = "; ".join(f"{c['title']} — {c.get('importance') or 0:g}" for c in best)
+            out_en.append(f"{issue.rubric_title(rub, w, 'en')}: fewer than 3 events with importance ≥ 7; best of that weekend: {lst}")
+            out_ru.append(f"{issue.rubric_title(rub, w, 'ru')}: меньше трёх событий с оценкой ≥ 7; лучшие в эти выходные: {lst}")
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            if issue.importance_of(pools, it) >= issue.LONG_BLURB_MIN and len(re.findall(r"[.!?](\s|$)", it["blurb_en"])) < 2:
+                fix_notes.append((f"“{it['title_en']}”: importance ≥ 8 but the description is one sentence (the brief asks for 2–3)",
+                                  f"«{it['title_ru']}»: оценка ≥ 8, а описание в одно предложение (по брифу — 2–3)"))
 
     cnt_en, cnt_ru = [], []
-    for rub in issue.RUBRICS:
+    for rub in w.rubrics():
         n = counts.get(rub, 0)
         flag = "" if 3 <= n <= 6 else (" ⚠️ below 3" if n < 3 else " ⚠️ above 6")
         flag_ru = "" if 3 <= n <= 6 else (" ⚠️ меньше 3" if n < 3 else " ⚠️ больше 6")
-        cnt_en.append(f"{issue.RUBRIC_TITLES['en'][rub].split(':')[0]}: {n}{flag}")
-        cnt_ru.append(f"{issue.RUBRIC_TITLES['ru'][rub].split(':')[0]}: {n}{flag_ru}")
+        label_en = "Theme of the week" if rub == "theme" else issue.rubric_title(rub, w, "en")
+        label_ru = "Тема недели" if rub == "theme" else issue.rubric_title(rub, w, "ru")
+        cnt_en.append(f"{label_en}: {n}{flag}")
+        cnt_ru.append(f"{label_ru}: {n}{flag_ru}")
     cnt_en.append(f"total: {total} (target 25–40)")
     cnt_ru.append(f"всего: {total} (цель 25–40)")
 
     cost = (f"{MODEL}: {usage['input_tokens']} input + {usage['output_tokens']} output tokens = "
             f"${usage['cost_usd']:.4f}")
+    know_en, know_ru, imp_en, imp_ru = [], [], [], []
+    for sec in result["sections"]:
+        for it in sorted(sec["items"], key=lambda it: -issue.importance_of(pools, it)):
+            know_en += [f"{it['title_en']}: {k}" for k in it.get("knowledge_en", [])]
+            know_ru += [f"{it['title_ru']}: {k}" for k in it.get("knowledge_ru", [])]
+            c = pools.candidates[it["ids"][0]]
+            score = issue.importance_of(pools, it)
+            if c["kind"] != "venue_news" and score:
+                imp_en.append(f"{score:g} — {it['title_en']} [{sec['rubric']}]: {c.get('importance_reason') or ''}")
+                imp_ru.append(f"{score:g} — {it['title_ru']} [{sec['rubric']}]: {c.get('importance_reason') or ''}")
     fixes_en = [f"output check: {en}" for en, _ in fix_notes]
     fixes_ru = [f"проверка ответа: {ru}" for _, ru in fix_notes]
     fixes_en += [f"review: {en}" for en, _ in review]
@@ -217,15 +270,19 @@ def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: l
     return {
         "en": [("Doubtful items and model notes", result["editor_notes_en"] + fixes_en),
                ("Possible duplicates the pipeline did not merge", dups_en),
+               ("Facts from the model's general knowledge (check)", know_en),
                ("Unverified status", unv_en),
                ("What didn't make it and why", out_en),
                ("Items per rubric", cnt_en),
+               ("Importance of the chosen items (score — reason)", imp_en),
                ("Claude API cost of this draft", [cost])],
         "ru": [("Сомнительные пункты и заметки модели", result["editor_notes_ru"] + fixes_ru),
                ("Возможные дубли, которые не склеились", dups_ru),
+               ("Факты из знаний модели (проверить)", know_ru),
                ("Непроверенный статус", unv_ru),
                ("Что не попало и почему", out_ru),
                ("Пунктов по рубрикам", cnt_ru),
+               ("Важность выбранных пунктов (оценка — причины)", imp_ru),
                ("Расход Claude API на черновик", [cost])],
     }
 
@@ -235,17 +292,17 @@ def main() -> None:
     ap.add_argument("--issue", required=True)
     ap.add_argument("--start", required=True)
     ap.add_argument("--end", required=True)
-    ap.add_argument("--weekend", required=True, help="суббота выходных «главного на выходные»")
+    ap.add_argument("--version", default="", help="суффикс файлов: v2 → issue_<дата>_v2_en.md")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--from-json", help="не вызывать API, взять сохранённый ответ модели")
     args = ap.parse_args()
-    sat = date.fromisoformat(args.weekend)
-    w = issue.Window(date.fromisoformat(args.issue), date.fromisoformat(args.start), date.fromisoformat(args.end),
-                     (sat, sat + timedelta(days=1)))
+    w = issue.Window(date.fromisoformat(args.issue), date.fromisoformat(args.start), date.fromisoformat(args.end))
+    stem = f"issue_{args.issue}" + (f"_{args.version}" if args.version else "")
     con = connect()
     pools = issue.build_pools(con, w)
     payload = {"issue_date": args.issue, "period": [args.start, args.end],
-               "weekend": [w.weekend[0].isoformat(), w.weekend[1].isoformat()],
+               "weekends": {f"weekend_{i + 1}": [a.isoformat(), b.isoformat()] for i, (a, b) in enumerate(w.weekends)},
+               "rubrics": w.rubrics(),
                "candidates": issue.model_view(pools)}
     out_dir = ROOT / "issues"
     out_dir.mkdir(exist_ok=True)
@@ -255,27 +312,22 @@ def main() -> None:
                      ensure_ascii=False), file=sys.stderr)
     if args.dry_run:
         return
-    raw_path = out_dir / f"issue_{args.issue}_model.json"
+    raw_path = out_dir / f"{stem}_model.json"
     if args.from_json:
         saved = json.loads(Path(args.from_json).read_text())
         result, usage = saved["result"], saved["usage"]
     else:
         import anthropic
         client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
-        result, tin, tout = call_model(client, payload)
-        cost = tin * PRICE_IN + tout * PRICE_OUT
-        usage = {"input_tokens": tin, "output_tokens": tout, "cost_usd": cost}
-        con.execute("""INSERT INTO llm_usage(called_at, purpose, model, article_id, input_tokens, output_tokens, cost_usd)
-            VALUES (?,?,?,?,?,?,?)""", (datetime.now(timezone.utc).isoformat(timespec="seconds"), f"issue {args.issue}",
-                                        MODEL, None, tin, tout, cost))
-        con.commit()
+        result, tin, tout = call_model(client, payload, schema_for(w), con, f"issue {stem[6:]}")
+        usage = {"input_tokens": tin, "output_tokens": tout, "cost_usd": tin * PRICE_IN + tout * PRICE_OUT}
         raw_path.write_text(json.dumps({"result": result, "usage": usage}, ensure_ascii=False, indent=1))
     fix_notes = validate(result, pools, w) + check_russian(result, pools)
     # ручные правки и заметки ревью, записанные в сохранённый ответ модели (issues/issue_<дата>_model.json)
     review = [tuple(x) for x in result.get("manual_fixes", []) + result.get("review_notes", [])]
     editor = editor_block(result, pools, w, fix_notes, review, usage)
     for lang in ("en", "ru"):
-        path = out_dir / f"issue_{args.issue}_{lang}.md"
+        path = out_dir / f"{stem}_{lang}.md"
         path.write_text(issue.render(result, pools, w, lang, editor))
         print(path.relative_to(ROOT))
     counts = {sec["rubric"]: len(sec["items"]) for sec in result["sections"]}

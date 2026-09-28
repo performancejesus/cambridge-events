@@ -5,7 +5,7 @@ from __future__ import annotations
 import html
 import json
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 import feedparser
 from icalendar import Calendar
@@ -56,7 +56,9 @@ def ical_events(content: bytes) -> list[dict]:
     out = []
     for ve in Calendar.from_ical(content).walk("VEVENT"):
         start, all_day = _ical_dt(ve.get("DTSTART"))
-        end, _ = _ical_dt(ve.get("DTEND"))
+        end, end_is_date = _ical_dt(ve.get("DTEND"))
+        if all_day and end_is_date and end:  # DTEND с датой — исключающая граница (RFC 5545): 3→4 окт. = 3 окт.
+            end = (date.fromisoformat(end) - timedelta(days=1)).isoformat()
         location = str(ve.get("LOCATION") or "") or None
         cats = ve.get("CATEGORIES")
         cat_list = []

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from difflib import SequenceMatcher
 from zoneinfo import ZoneInfo
 
@@ -92,6 +92,18 @@ def split_datetime(value: str | None) -> tuple[str | None, str | None]:
         dt = dt.astimezone(LONDON)
     t = dt.strftime("%H:%M")
     return dt.date().isoformat(), (None if t == "00:00" and "T00:00" in v else t)
+
+
+def end_date(start: str | None, end: str | None) -> str | None:
+    """Дата окончания с поправкой на однодневные события: окончание на следующий день до 06:00 (вечеринка
+    до утра, «весь день» 00:00–23:59:59 UTC у Cambridge 105 → 01:00–00:59 по Лондону) — тот же день."""
+    ds, _ = split_datetime(start)
+    de, te = split_datetime(end)
+    if not ds or not de:
+        return de
+    if te and te < "06:00" and date.fromisoformat(de) == date.fromisoformat(ds) + timedelta(days=1):
+        return ds
+    return de
 
 
 def minutes(t: str | None) -> int | None:

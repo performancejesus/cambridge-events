@@ -1,0 +1,12 @@
+[
+ {"keep": {"date": "2026-10-10", "title": "Cambridge United FC - Blackpool FC"},
+  "merge": [{"date": "2026-10-10", "title": "Charity Football Match: Cambridge United vs Blackpool"}],
+  "note": "Тот же матч: в календаре клуба (S018) — домашний матч без пометки кубка; в статье Cambridge Independent (26.09) сестра Сида Барретта говорит, что сборы от матча в этот день пойдут на благотворительность (психическое здоровье)."},
+ {"keep": {"date": "2026-10-10", "title": "A Tribute to Syd Barrett - Official 80th Anniversary Celebrations"},
+  "merge": [{"date": "2026-10-10", "title": "Syd Barrett 80th Birthday Tribute Concert"},
+            {"date": "2026-10-10", "title": "Clowns and Jugglers: The Songs of Syd Barrett - Live Concert"}],
+  "note": "Один концерт в Corn Exchange 10.10: Clowns and Jugglers — трибьют-альбом, его артисты выступают на этом концерте (рецензия Cambridge Independent)."},
+ {"keep": {"date": "2026-10-03", "title": "Syd Barrett Exhibition: Life, Art and Cultural Impact"},
+  "merge": [{"date": "2026-10-03", "title": "Syd Barrett Art Exhibition"}],
+  "note": "Одна выставка в Openspace 3–11.10, описана в двух статьях Cambridge Independent."}
+]

@@ -1,0 +1,75 @@
+{
+ "type": "object",
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "id": {
+      "type": "integer"
+     },
+     "entity": {
+      "type": "string"
+     },
+     "entity_type": {
+      "type": "string",
+      "enum": [
+       "music_artist",
+       "comedian",
+       "speaker",
+       "theatre",
+       "dance",
+       "classical",
+       "sports",
+       "festival",
+       "exhibition",
+       "family",
+       "community",
+       "business",
+       "other",
+       "none"
+      ]
+     },
+     "wikipedia_title": {
+      "type": "string"
+     },
+     "fame": {
+      "type": "integer"
+     },
+     "fame_reason": {
+      "type": "string"
+     },
+     "opponent_top_flight": {
+      "type": "boolean"
+     },
+     "draw_type": {
+      "type": "string",
+      "enum": [
+       "in_person",
+       "original_work",
+       "tribute_or_themed",
+       "subject_only",
+       "none"
+      ]
+     }
+    },
+    "required": [
+     "id",
+     "entity",
+     "entity_type",
+     "wikipedia_title",
+     "fame",
+     "fame_reason",
+     "draw_type",
+     "opponent_top_flight"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "items"
+ ],
+ "additionalProperties": false
+}

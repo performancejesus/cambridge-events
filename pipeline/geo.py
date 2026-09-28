@@ -72,6 +72,29 @@ def lookup(con: sqlite3.Connection, postcodes: list[str]) -> dict[str, sqlite3.R
     return {k: cached[k] for k in want if k in cached}
 
 
+PLACES_API = "https://api.postcodes.io/places"
+PLACE_TYPES = {"City", "Town", "Village", "Hamlet", "Suburban Area", "Other Settlement"}
+
+
+def place(con: sqlite3.Connection, name: str) -> sqlite3.Row | None:
+    """Населённый пункт по названию (postcodes.io /places, OS Open Names) — ближайший к Кембриджу; кэш в places."""
+    key = name.strip().lower()
+    row = con.execute("SELECT * FROM places WHERE query=?", (key,)).fetchone()
+    if row:
+        return row if row["lat"] is not None else None
+    with httpx.Client(timeout=30, headers={"User-Agent": "CambridgeEventsBot/0.1"}) as c:
+        r = c.get(PLACES_API, params={"q": name, "limit": 20})
+        r.raise_for_status()
+        found = [p for p in r.json().get("result") or [] if p.get("local_type") in PLACE_TYPES
+                 and p["name_1"].lower() == key]
+    best = min(found, key=lambda p: km(CENTRE[0], CENTRE[1], p["latitude"], p["longitude"]), default=None)
+    now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    con.execute("INSERT OR REPLACE INTO places VALUES (?,?,?,?,?,?,?)",
+                (key, best and best["name_1"], best and best["latitude"], best and best["longitude"],
+                 best and best["county_unitary"], best and best["district_borough"], now))
+    return con.execute("SELECT * FROM places WHERE query=? AND lat IS NOT NULL", (key,)).fetchone()
+
+
 def zone_for_postcode(con: sqlite3.Connection, postcode: str | None) -> tuple[float, float, str | None] | None:
     """(lat, lon, зона) по postcode из кэша (без сетевого запроса); None — postcode неизвестен."""
     if not postcode:

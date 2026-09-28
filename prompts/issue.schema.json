@@ -15,7 +15,10 @@
      "rubric": {
       "type": "string",
       "enum": [
-       "weekend",
+       "theme",
+       "weekend_1",
+       "weekend_2",
+       "weekdays",
        "free",
        "kids",
        "sport",
@@ -61,6 +64,18 @@
         },
         "blurb_ru": {
          "type": "string"
+        },
+        "knowledge_en": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
+        },
+        "knowledge_ru": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         }
         }
        },
        "required": [
@@ -72,7 +87,9 @@
         "price_en",
         "price_ru",
         "blurb_en",
-        "blurb_ru"
+        "blurb_ru",
+        "knowledge_en",
+        "knowledge_ru"
        ],
        "additionalProperties": false
       }
@@ -96,6 +113,18 @@
    "items": {
     "type": "string"
    }
+  },
+  "theme_title_en": {
+   "type": "string"
+  },
+  "theme_title_ru": {
+   "type": "string"
+  },
+  "theme_intro_en": {
+   "type": "string"
+  },
+  "theme_intro_ru": {
+   "type": "string"
   }
  },
  "required": [
@@ -103,7 +132,11 @@
   "intro_ru",
   "sections",
   "editor_notes_en",
-  "editor_notes_ru"
+  "editor_notes_ru",
+  "theme_title_en",
+  "theme_title_ru",
+  "theme_intro_en",
+  "theme_intro_ru"
  ],
  "additionalProperties": false
 }

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 from collections import Counter, defaultdict
 
@@ -78,8 +79,9 @@ def resolve(con: sqlite3.Connection, *names: str | None) -> sqlite3.Row | None:
                     row = con.execute("SELECT v.* FROM venue_aliases va JOIN venues v USING(venue_id) WHERE va.alias=?", (cand,)).fetchone()
                     if row:
                         return row
-            # «Seminar Room West RDC (A0.015)» — короткий синоним-аббревиатура (rdc, cms, hps) внутри строки
-            for w in a.split():
+            # «Seminar Room West RDC (A0.015)» — короткий синоним-аббревиатура (rdc, cms, hps) внутри строки;
+            # только слова, написанные заглавными: иначе «Arts Picturehouse» попадает в Arts Theatre (синоним «arts»)
+            for w in (x.lower() for x in re.findall(r"\b[A-Z]{3,4}\b", p)):
                 if 3 <= len(w) <= 4:
                     row = con.execute("SELECT v.* FROM venue_aliases va JOIN venues v USING(venue_id) WHERE va.alias=?", (w,)).fetchone()
                     if row:
