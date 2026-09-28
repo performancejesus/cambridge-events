@@ -38,11 +38,11 @@ CAPACITY = {k: (v["capacity"] if isinstance(v, dict) else v)
             if not k.startswith("_") and (v["capacity"] if isinstance(v, dict) else v)}
 UA = "CambridgeEventsBot/0.1 (+https://github.com/performancejesus/cambridge-events)"
 BATCH = 50
-FOOTBALL_SOURCES = {"S018"}
+FOOTBALL_SOURCES = {"S018", "S123"}
 CUP_TAGS = {"FA": "fa_cup", "LC": "league_cup", "EFLT": "efl_trophy"}
 CUP_RU = {"league": "чемпионат", "fa_cup": "Кубок Англии", "league_cup": "Кубок лиги", "efl_trophy": "EFL Trophy",
           "friendly": "товарищеский", "charity": "благотворительный"}
-DERBY = {"peterborough united"}
+DERBY = {"peterborough united", "cambridge united"}   # дерби Кембриджшира — с обеих сторон
 
 
 def now() -> str:
@@ -52,6 +52,7 @@ def now() -> str:
 def future_events(con: sqlite3.Connection) -> list[sqlite3.Row]:
     return con.execute("""SELECT e.*, v.name AS venue_ref FROM events e LEFT JOIN venues v USING(venue_id)
         WHERE coalesce(e.date_end, e.date_start) >= date('now') AND e.status NOT IN ('past', 'cancelled')
+          AND coalesce(e.zone, '') != 'out_of_zone'   -- вне зоны в выпуск не идут: не оцениваем (и не платим за модель)
         ORDER BY e.date_start""").fetchall()
 
 
@@ -169,7 +170,9 @@ def _signals(con, e) -> dict:
     has_article = con.execute("SELECT 1 FROM event_sources WHERE event_id=? AND article_id IS NOT NULL",
                               (e["event_id"],)).fetchone() is not None
     rec = con.execute("SELECT name FROM recurring_events WHERE event_id=?", (e["event_id"],)).fetchone()
-    return {"sources": sources, "has_article": has_article, "recurring": rec["name"] if rec else None}
+    few = con.execute("SELECT 1 FROM raw_items WHERE event_id=? AND status='few_left'", (e["event_id"],)).fetchone()
+    return {"sources": sources, "has_article": has_article, "recurring": rec["name"] if rec else None,
+            "few_left": few is not None}
 
 
 def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) -> tuple[float, str]:
@@ -198,6 +201,8 @@ def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) 
         add(W["article"]["points"], "есть статья в новостях")
     if e["status"] == "sold_out":
         add(W["sold_out"]["points"], "билеты распроданы")
+    elif sig["few_left"]:
+        add(W["few_left"]["points"], "мало билетов (площадка: Nearly full)")
     if sig["recurring"]:
         add(W["recurring"]["points"], f"ежегодный флагман ({sig['recurring']})")
 
@@ -207,7 +212,7 @@ def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) 
         F = W["football"]
         add(F[fb["competition"]], f"футбол: {CUP_RU[fb['competition']]}, соперник {fb['opponent']}")
         if fb["derby"]:
-            add(F["derby_bonus"], "дерби с Peterborough United")
+            add(F["derby_bonus"], "дерби Кембриджшира")
         if fame and fame.get("opponent_top_flight"):
             floor = F["top_flight_min_score"]
             parts.append((0.0, "соперник из Премьер-лиги (оценка модели) → не ниже 8"))
@@ -250,7 +255,7 @@ def signature(con, e, fame: dict | None) -> str:
     """Входные данные оценки: изменились — пересчитать (рабочий режим: не вся база каждый раз)."""
     sig = _signals(con, e)
     blob = json.dumps([e["title"], e["venue_id"], e["venue_name"], e["price_text"], e["price_from"], e["status"],
-                       sorted(sig["sources"]), sig["has_article"], sig["recurring"], fame, WEIGHTS,
+                       sorted(sig["sources"]), sig["has_article"], sig["recurring"], sig["few_left"], fame, WEIGHTS,
                        sorted(CAPACITY.items())], ensure_ascii=False, sort_keys=True, default=str)
     return hashlib.sha1(blob.encode()).hexdigest()[:16]
 

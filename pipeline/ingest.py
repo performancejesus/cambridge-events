@@ -13,15 +13,15 @@ from .geo import lookup, zone_for_postcode
 from .normalize import end_date, minutes, norm_title, norm_venue, parse_price, split_datetime, title_similarity
 
 # Источники-продавцы билетов: событие у них = продажа открыта.
-TICKETING = {"S006", "S007", "S008", "S011", "S021", "S072", "S091"}
+TICKETING = {"S006", "S007", "S008", "S011", "S017", "S021", "S072", "S091", "S128", "S129"}
 # Событие платное/по билетам, но билеты продаются не у нас в источниках (футбол, ADC, пивной фестиваль):
 # пока продажа не замечена — announced. Остальные события без билетов и цены — scheduled.
-TICKETS_ELSEWHERE = {"S018", "S032", "S042"}
+TICKETS_ELSEWHERE = {"S018", "S032", "S042", "S123"}
 # Чьи поля предпочитать при сведении (официальные площадки и организаторы — раньше агрегаторов).
-SOURCE_RANK = ["S042", "S011", "S072", "S018", "S032", "S033", "S038", "S047", "S021", "S091", "S005",
-               "S006", "S007", "S008"]
+SOURCE_RANK = ["S042", "S011", "S072", "S018", "S123", "S032", "S033", "S038", "S047", "S021", "S091", "S005",
+               "S006", "S007", "S128", "S129", "S008"]
 # Агрегаторы, у которых собирается только первая страница списка: её состав плавает, пропажа ≠ отмена.
-PARTIAL_LISTING = {"S006", "S007", "S008"}
+PARTIAL_LISTING = {"S006", "S007", "S008", "S128", "S129"}
 HISTORY_DAYS = 60            # старше — в события не превращаем (в сыром виде храним)
 MATCH_MIN, MATCH_MIN_NO_VENUE = 0.8, 0.9
 # «Cambridge» без адреса (подборки «Various, Cambridge», экскурсии по частным домам с одной улицей):
@@ -44,9 +44,12 @@ def item_key(d: dict) -> str:
 
 def load_run(con: sqlite3.Connection, raw_dir: Path) -> dict:
     run = json.loads((raw_dir / "_run.json").read_text())
-    run_id = min(r["started_at"] for r in run.values())
+    entries = {k: v for k, v in run.items() if not k.startswith("_")}
+    run_id = run.get("_run_id") or min(r["started_at"] for r in entries.values())
     stats = {"run_id": run_id, "new_raw": 0, "seen_raw": 0, "disappeared": 0, "new_articles": 0}
-    for sid, r in run.items():
+    for sid, r in entries.items():
+        if r["started_at"] < run_id:  # источник не запускался в этом прогоне — его старый файл не перечитываем
+            continue
         items = 0
         if r["ok"]:
             path = next(raw_dir.glob(f"{sid}_*.json"))
@@ -294,6 +297,9 @@ def store_changes(con: sqlite3.Connection, run_id: str) -> dict:
     """Новый магазин в списке ТЦ → venue_news. Первый прогон источника — только база для сравнения."""
     stats = {"new_stores": 0, "gone_stores": 0}
     for (sid,) in con.execute("SELECT DISTINCT source_id FROM raw_items WHERE kind='store'").fetchall():
+        # источник не запускался в этом прогоне (частичный запуск) — сравнивать не с чем, «пропавших» нет
+        if not con.execute("SELECT 1 FROM runs WHERE source_id=? AND run_id=? AND ok=1", (sid, run_id)).fetchone():
+            continue
         earlier = con.execute("SELECT count(*) FROM runs WHERE source_id=? AND ok=1 AND run_id < ?", (sid, run_id)).fetchone()[0]
         if not earlier:
             continue

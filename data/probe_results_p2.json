@@ -1,0 +1,3739 @@
+{
+  "S010": {
+    "checked_at": "2026-09-28T08:36:00+00:00",
+    "urls": [
+      {
+        "url": "https://www.peterboroughtoday.co.uk",
+        "robots": "разрешено",
+        "status": 403,
+        "final_url": "https://www.peterboroughtoday.co.uk"
+      },
+      {
+        "url": "https://www.peterboroughtoday.co.uk/rss",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.peterboroughtoday.co.uk/rss",
+        "content_type": "text/xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Peterborough Telegraph",
+        "feed_entries": 19,
+        "feed_latest": "Mon, 28 Sep 2026 08:18:43 GMT"
+      },
+      {
+        "url": "https://www.peterboroughtoday.co.uk/whats-on",
+        "robots": "разрешено",
+        "status": 403,
+        "final_url": "https://www.peterboroughtoday.co.uk/whats-on"
+      }
+    ]
+  },
+  "S013": {
+    "checked_at": "2026-09-28T08:36:07+00:00",
+    "urls": [
+      {
+        "url": "https://www.theportlandarms.co.uk",
+        "robots": "robots.txt: 403"
+      },
+      {
+        "url": "https://www.theportlandarms.co.uk/gigs",
+        "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S014": {
+    "checked_at": "2026-09-28T08:47:28+00:00",
+    "urls": [
+      {
+        "url": "https://www.storeysfieldcentre.org.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.storeysfieldcentre.org.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "Organization",
+          "SearchAction",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "eventbrite",
+          "seetickets",
+          "ticketsource"
+        ],
+        "title": "Storey’s Field Centre | Community Centre Eddington Cambridge"
+      },
+      {
+        "url": "https://www.storeysfieldcentre.org.uk/whats-on/",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.storeysfieldcentre.org.uk/whats-on/"
+      },
+      {
+        "url": "https://www.storeysfieldcentre.org.uk/events/?ical=1",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.storeysfieldcentre.org.uk/events/?ical=1"
+      },
+      {
+        "url": "https://www.storeysfieldcentre.org.uk/feed/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.storeysfieldcentre.org.uk/feed/",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Storey's Field Centre",
+        "feed_entries": 3,
+        "feed_latest": "Tue, 05 May 2026 13:43:30 +0000"
+      }
+    ]
+  },
+  "S015": {
+    "checked_at": "2026-09-28T08:36:17+00:00",
+    "urls": [
+      {
+        "url": "https://www.westroad.org",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.westroad.org",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "West Road Concert Hall"
+      },
+      {
+        "url": "https://www.westroad.org/whats-on",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.westroad.org/whats-on",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "What's on | West Road Concert Hall"
+      },
+      {
+        "url": "https://www.westroad.org/feed/",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.westroad.org/feed/"
+      }
+    ]
+  },
+  "S017": {
+    "checked_at": "2026-09-28T08:36:26+00:00",
+    "urls": [
+      {
+        "url": "https://saffronhall.com",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.saffronhall.com/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "Home - Saffron Hall"
+      },
+      {
+        "url": "https://saffronhall.com/whats-on/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.saffronhall.com/whats-on",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "What’s On - Saffron Hall"
+      },
+      {
+        "url": "https://saffronhall.com/feed/",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.saffronhall.com/feed"
+      }
+    ]
+  },
+  "S020": {
+    "checked_at": "2026-09-28T08:47:39+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridgerugby.co.uk",
+        "robots": "разрешено",
+        "status": 202,
+        "final_url": "https://www.cambridgerugby.co.uk"
+      },
+      {
+        "url": "https://www.cambridgerugby.co.uk/fixtures",
+        "robots": "разрешено",
+        "status": 202,
+        "final_url": "https://www.cambridgerugby.co.uk/fixtures"
+      }
+    ]
+  },
+  "S023": {
+    "checked_at": "2026-09-28T08:36:41+00:00",
+    "urls": [
+      {
+        "url": "https://www.cucbc.org",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cucbc.org",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.cucbc.org/rss.xml"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [
+          "https://www.cucbc.org/rss.xml"
+        ],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "CUCBC | Cambridge University Combined Boat Clubs"
+      },
+      {
+        "url": "https://www.cucbc.org/bumps",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cucbc.org/bumps",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "About the Bumps | CUCBC"
+      }
+    ]
+  },
+  "S027": {
+    "checked_at": "2026-09-28T08:36:46+00:00",
+    "urls": [
+      {
+        "url": "https://www.runthrough.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.runthrough.co.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ContactPoint",
+          "EntryPoint",
+          "Organization",
+          "PostalAddress",
+          "SearchAction",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "UK Running Events 2026–27 | 5K, 10K, Half & Full Marathons | RunThrough"
+      },
+      {
+        "url": "https://www.runthrough.co.uk/events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.runthrough.co.uk/events-timeline",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "Answer",
+          "BreadcrumbList",
+          "ContactPoint",
+          "EntryPoint",
+          "FAQPage",
+          "ItemList",
+          "ListItem",
+          "Offer",
+          "Organization",
+          "Place",
+          "PostalAddress",
+          "Question",
+          "SearchAction",
+          "SportsEvent",
+          "WebSite"
+        ],
+        "jsonld_events": 24,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Find A Race UK | Running Events Near Me | 5k, 10k, Half Marathon"
+      }
+    ]
+  },
+  "S029": {
+    "checked_at": "2026-09-28T08:36:51+00:00",
+    "urls": [
+      {
+        "url": "https://www.letsdothis.com",
+        "robots": "robots.txt: 403"
+      },
+      {
+        "url": "https://www.letsdothis.com/gb/running-events-in-cambridgeshire",
+        "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S034": {
+    "checked_at": "2026-09-28T08:36:51+00:00",
+    "urls": [
+      {
+        "url": "https://www.strawbear.org.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.strawbear.org.uk",
+        "content_type": "text/html",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "One.com Web Editor",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Whittlesea Straw Bear"
+      }
+    ]
+  },
+  "S035": {
+    "checked_at": "2026-09-28T08:36:55+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridgefilmfestival.org.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgefilmfestival.org.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "ListItem",
+          "Organization",
+          "WebPage"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "SEOmatic",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Homepage | Cambridge Film Festival"
+      },
+      {
+        "url": "https://www.cambridgefilmfestival.org.uk/feed/",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.cambridgefilmfestival.org.uk/feed/"
+      }
+    ]
+  },
+  "S036": {
+    "checked_at": "2026-09-28T08:37:01+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridgeliteraryfestival.com",
+        "robots": "разрешено",
+        "status": 403,
+        "final_url": "https://www.cambridgeliteraryfestival.com"
+      },
+      {
+        "url": "https://www.cambridgeliteraryfestival.com/events",
+        "robots": "разрешено",
+        "status": 403,
+        "final_url": "https://www.cambridgeliteraryfestival.com/events"
+      }
+    ]
+  },
+  "S044": {
+    "checked_at": "2026-09-28T08:37:06+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridgeshakespeare.com",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://cambridgeshakespeare.com/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "The UK's best-loved open-air Shakespeare Festival | The Cambridge Shakespeare Festival"
+      }
+    ]
+  },
+  "S046": {
+    "checked_at": "2026-09-28T08:37:09+00:00",
+    "urls": [
+      {
+        "url": "https://www.thelunacinema.com",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.thelunacinema.com"
+      },
+      {
+        "url": "https://www.cambridgefilmfestival.org.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgefilmfestival.org.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "ListItem",
+          "Organization",
+          "WebPage"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "SEOmatic",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Homepage | Cambridge Film Festival"
+      }
+    ]
+  },
+  "S049": {
+    "checked_at": "2026-09-28T08:37:14+00:00",
+    "urls": [
+      {
+        "url": "https://cus.org",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://cus.org",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://cus.org/feed"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://cus.org/comments/feed"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://cus.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcus.org%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://cus.org/wp-json/wp/v2/pages/21"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EducationalOrganization",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "OpeningHoursSpecification",
+          "Organization",
+          "Place",
+          "PostalAddress",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Site Kit by Google 1.187.0",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://cus.org/wp-json/",
+        "mentions": [],
+        "title": "The Cambridge Union - Debating Society & Members Club"
+      },
+      {
+        "url": "https://cus.org/events",
+        "robots": "разрешено",
+        "status": 429,
+        "final_url": "https://cus.org/events"
+      }
+    ]
+  },
+  "S053": {
+    "checked_at": "2026-09-28T08:37:18+00:00",
+    "urls": [
+      {
+        "url": "https://www.iwm.org.uk/visits/iwm-duxford",
+        "robots": "разрешено",
+        "status": 403,
+        "final_url": "https://www.iwm.org.uk/visits/iwm-duxford"
+      },
+      {
+        "url": "https://www.iwm.org.uk/visits/iwm-duxford/events",
+        "robots": "разрешено",
+        "status": 403,
+        "final_url": "https://www.iwm.org.uk/visits/iwm-duxford/events"
+      },
+      {
+        "url": "https://www.iwm.org.uk/events",
+        "robots": "разрешено",
+        "status": 403,
+        "final_url": "https://www.iwm.org.uk/events"
+      }
+    ]
+  },
+  "S054": {
+    "checked_at": "2026-09-28T08:37:25+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridgesciencecentre.org",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgesciencecentre.org",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.cambridgesciencecentre.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cambridgesciencecentre.org%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.cambridgesciencecentre.org/wp-json/wp/v2/pages/5"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ListItem",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 7.1",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.cambridgesciencecentre.org/wp-json/",
+        "mentions": [],
+        "title": "Home - Cambridge Science Centre"
+      },
+      {
+        "url": "https://www.cambridgesciencecentre.org/whats-on/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgesciencecentre.org/whats-on/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.cambridgesciencecentre.org/whats-on/feed/"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "PropertyValueSpecification",
+          "SearchAction",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 7.1",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.cambridgesciencecentre.org/wp-json/",
+        "mentions": [],
+        "title": "What's On Archive - Cambridge Science Centre"
+      }
+    ]
+  },
+  "S055": {
+    "checked_at": "2026-09-28T08:37:30+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambridgeshire.gov.uk/residents/libraries-leisure-culture/libraries",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambridgeshire.gov.uk/residents/libraries-leisure-culture/libraries",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Contensis",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "eventbrite"
+        ],
+        "title": "Libraries | Cambridgeshire County Council"
+      },
+      {
+        "url": "https://www.eventbrite.co.uk/o/cambridgeshire-libraries-8347213283",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.eventbrite.co.uk/o/cambridgeshire-libraries-8347213283"
+      }
+    ]
+  },
+  "S057": {
+    "checked_at": "2026-09-28T08:47:44+00:00",
+    "urls": [
+      {
+        "url": "https://eat-cambridge.co.uk/",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://eat-cambridge.co.uk/"
+      },
+      {
+        "url": "https://eat-cambridge.co.uk/feed/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://eat-cambridge.co.uk/feed/",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Eat Cambridge",
+        "feed_entries": 3,
+        "feed_latest": "Thu, 25 Apr 2024 12:25:32 +0000"
+      }
+    ]
+  },
+  "S058": {
+    "checked_at": "2026-09-28T08:37:39+00:00",
+    "urls": []
+  },
+  "S066": {
+    "checked_at": "2026-09-28T08:37:39+00:00",
+    "urls": [
+      {
+        "url": "https://www.heritageopendays.org.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.heritageopendays.org.uk",
+        "content_type": "text/html;charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Homepage"
+      },
+      {
+        "url": "https://www.heritageopendays.org.uk/visiting",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.heritageopendays.org.uk/whats-on.html",
+        "content_type": "text/html;charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "What's on?"
+      }
+    ]
+  },
+  "S067": {
+    "checked_at": "2026-09-28T08:37:45+00:00",
+    "urls": [
+      {
+        "url": "https://ngs.org.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://ngs.org.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WP Rocket 3.23.1.1",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Home - National Garden Scheme"
+      },
+      {
+        "url": "https://ngs.org.uk/gardens/find-a-garden/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://findagarden.ngs.org.uk/",
+        "content_type": "text/html",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Find a Garden | National Garden Scheme"
+      }
+    ]
+  },
+  "S071": {
+    "checked_at": "2026-09-28T08:37:52+00:00",
+    "urls": [
+      {
+        "url": "https://www.elycathedral.org",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.elycathedral.org",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "Ely Cathedral - Ely Cathedral"
+      },
+      {
+        "url": "https://www.elycathedral.org/whats-on",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.elycathedral.org/whats-on"
+      },
+      {
+        "url": "https://www.elycathedral.org/events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.elycathedral.org/events",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "Events - Ely Cathedral"
+      }
+    ]
+  },
+  "S075": {
+    "checked_at": "2026-09-28T08:38:02+00:00",
+    "urls": []
+  },
+  "S076": {
+    "checked_at": "2026-09-28T08:38:02+00:00",
+    "urls": [
+      {
+        "url": "https://www.millroadwinterfair.org/mill-road-fringe/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.millroadwinterfair.org/mill-road-fringe/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.millroadwinterfair.org/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.millroadwinterfair.org/comments/feed/"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.millroadwinterfair.org/wp-json/wp/v2/pages/3401"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.millroadwinterfair.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.millroadwinterfair.org%2Fmill-road-fringe%2F"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 6.3.12",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.millroadwinterfair.org/wp-json/",
+        "mentions": [],
+        "title": "Mill Road Fringe – Mill Road Winter Fair"
+      },
+      {
+        "url": "https://www.lovemillroad.org",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.lovemillroad.org.uk/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Readymag",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Love Mill Road"
+      }
+    ]
+  },
+  "S077": {
+    "checked_at": "2026-09-28T08:38:13+00:00",
+    "urls": []
+  },
+  "S078": {
+    "checked_at": "2026-09-28T08:38:13+00:00",
+    "urls": [
+      {
+        "url": "https://one.network",
+        "robots": "запрещено"
+      }
+    ]
+  },
+  "S079": {
+    "checked_at": "2026-09-28T08:38:13+00:00",
+    "urls": [
+      {
+        "url": "https://www.nationalrail.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.nationalrail.co.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "AggregateRating",
+          "MobileApplication",
+          "Organization",
+          "PostalAddress",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "The official source for trains in Great Britain | National Rail"
+      }
+    ]
+  },
+  "S083": {
+    "checked_at": "2026-09-28T08:47:50+00:00",
+    "urls": [
+      {
+        "url": "https://www.eventbrite.com/e/nihao-china-cambridge-dragon-boat-festival-2026-tickets-1985873566295",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.eventbrite.com/e/nihao-china-cambridge-dragon-boat-festival-2026-tickets-1985873566295",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Festival",
+          "ListItem",
+          "Organization",
+          "Place",
+          "PostalAddress",
+          "SpeakableSpecification",
+          "WebPage"
+        ],
+        "jsonld_events": 1,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "eventbrite"
+        ],
+        "title": "‘Nihao! China’ Cambridge Dragon Boat Festival 2026 Tickets, Saturday 20 June  •  11 AM - 5 PM | Eventbrite"
+      }
+    ]
+  },
+  "S084": {
+    "checked_at": "2026-09-28T08:47:53+00:00",
+    "urls": [
+      {
+        "url": "https://cambridgeshirecats.com/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://cambridgeshirecats.com/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://cambridgeshirecats.com/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://cambridgeshirecats.com/comments/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://cambridgeshirecats.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcambridgeshirecats.com%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://cambridgeshirecats.com/wp-json/wp/v2/pages/11"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 7.1.2",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://cambridgeshirecats.com/wp-json/",
+        "mentions": [],
+        "title": "CAMBRIDGESHIRE CATS – East Anglia's Only Premiership American Football Club"
+      },
+      {
+        "url": "https://cambridgeshirecats.com/feed/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://cambridgeshirecats.com/feed/",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "CAMBRIDGESHIRE CATS",
+        "feed_entries": 0,
+        "feed_latest": null
+      },
+      {
+        "url": "https://cambridgeshirecats.com/fixtures/",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://cambridgeshirecats.com/fixtures/"
+      }
+    ]
+  },
+  "S086": {
+    "checked_at": "2026-09-28T08:38:23+00:00",
+    "urls": [
+      {
+        "url": "https://act4addenbrookes.org.uk/events/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://act4addenbrookes.org.uk/events/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://act4addenbrookes.org.uk/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://act4addenbrookes.org.uk/comments/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://act4addenbrookes.org.uk/events/feed/"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "SearchAction",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 7.1.2",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://act4addenbrookes.org.uk/wp-json/",
+        "mentions": [],
+        "title": "Events - Addenbrooke's Charitable Trust"
+      },
+      {
+        "url": "https://act4addenbrookes.org.uk/feed/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://act4addenbrookes.org.uk/feed/",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Addenbrooke's Charitable Trust",
+        "feed_entries": 10,
+        "feed_latest": "Wed, 23 Sep 2026 15:38:15 +0000"
+      }
+    ]
+  },
+  "S088": {
+    "checked_at": "2026-09-28T08:38:29+00:00",
+    "urls": [
+      {
+        "url": "https://www.parkrun.org.uk/cambridge/",
+        "robots": "robots.txt: 403"
+      },
+      {
+        "url": "https://www.parkrun.org.uk/cambridge/news/",
+        "robots": "robots.txt: 403"
+      },
+      {
+        "url": "https://www.parkrun.org.uk/wimpoleestate/",
+        "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S098": {
+    "checked_at": "2026-09-28T08:38:30+00:00",
+    "urls": [
+      {
+        "url": "https://www.scambs.gov.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.scambs.gov.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Home - South Cambs District Council"
+      },
+      {
+        "url": "https://www.scambs.gov.uk/events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.scambs.gov.uk/events",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "South Cambs District Council: Events calendar"
+      }
+    ]
+  },
+  "S099": {
+    "checked_at": "2026-09-28T08:38:35+00:00",
+    "urls": [
+      {
+        "url": "https://www.eastcambs.gov.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://eastcambs.gov.uk/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "Article"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Drupal 10 (https://www.drupal.org)",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "East Cambridgeshire District Council | East Cambridgeshire District Council"
+      },
+      {
+        "url": "https://www.eastcambs.gov.uk/events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://eastcambs.gov.uk/events",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "Article"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Drupal 10 (https://www.drupal.org)",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Events | East Cambridgeshire District Council"
+      }
+    ]
+  },
+  "S100": {
+    "checked_at": "2026-09-28T08:48:02+00:00",
+    "urls": [
+      {
+        "url": "https://www.huntingdonshire.gov.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.huntingdonshire.gov.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Homepage of Huntingdonshire District Council - Huntingdonshire.gov.uk"
+      },
+      {
+        "url": "https://www.huntingdonshire.gov.uk/leisure/parks-nature-reserves-and-green-spaces/hinchingbrooke-country-park/events-and-activities",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.huntingdonshire.gov.uk/leisure/parks-nature-reserves-and-green-spaces/hinchingbrooke-country-park/events-and-activities",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ticketsource"
+        ],
+        "title": "Events and Activities at Hinchingbrooke Country Park - Huntingdonshire.gov.uk"
+      }
+    ]
+  },
+  "S101": {
+    "checked_at": "2026-09-28T08:38:48+00:00",
+    "urls": [
+      {
+        "url": "https://www.fenland.gov.uk",
+        "robots": "robots.txt: 403"
+      },
+      {
+        "url": "https://www.fenland.gov.uk/events",
+        "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S102": {
+    "checked_at": "2026-09-28T08:38:49+00:00",
+    "urls": [
+      {
+        "url": "https://www.peterborough.gov.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.peterborough.gov.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Contensis",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Peterborough City Council | Peterborough City Council"
+      },
+      {
+        "url": "https://www.peterborough.gov.uk/residents/events",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.peterborough.gov.uk/residents/events"
+      }
+    ]
+  },
+  "S103": {
+    "checked_at": "2026-09-28T08:48:07+00:00",
+    "urls": [
+      {
+        "url": "https://www.cityofelycouncil.org.uk",
+        "robots": "robots.txt: 403"
+      },
+      {
+        "url": "https://www.cityofelycouncil.org.uk/events-2/",
+        "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S104": {
+    "checked_at": "2026-09-28T08:48:08+00:00",
+    "urls": [
+      {
+        "url": "https://www.stivestowncouncil.gov.uk",
+        "robots": "robots.txt: 403"
+      },
+      {
+        "url": "https://www.stivestowncouncil.gov.uk/Whats_On_45757.aspx",
+        "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S105": {
+    "checked_at": "2026-09-28T08:39:10+00:00",
+    "urls": [
+      {
+        "url": "https://www.stneots-tc.gov.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.stneots-tc.gov.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.stneots-tc.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stneots-tc.gov.uk%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.stneots-tc.gov.uk/wp-json/wp/v2/pages/3"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "SearchAction",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.stneots-tc.gov.uk/wp-json/",
+        "mentions": [],
+        "title": "St Neots Town Council"
+      },
+      {
+        "url": "https://www.stneots-tc.gov.uk/events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.stneots-tc.gov.uk/events/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.stneots-tc.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.stneots-tc.gov.uk%2Fcouncil_events%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.stneots-tc.gov.uk/wp-json/wp/v2/pages/14"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.stneots-tc.gov.uk/wp-json/",
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Events | St Neots Town Council"
+      }
+    ]
+  },
+  "S106": {
+    "checked_at": "2026-09-28T08:48:08+00:00",
+    "urls": [
+      {
+        "url": "https://www.huntingdontown.gov.uk/council_events/",
+        "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S107": {
+    "checked_at": "2026-09-28T08:48:09+00:00",
+    "urls": [
+      {
+        "url": "https://www.ramseytowncouncil.gov.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ramseytowncouncil.gov.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Ramsey Town Council"
+      },
+      {
+        "url": "https://www.ramseytowncouncil.gov.uk/local-events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ramseytowncouncil.gov.uk/local-events",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [
+          "https://www.ramseytowncouncil.gov.uk/feeds/ical/638856?nodeid=3007"
+        ],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Local Council Events Calendar | Ramsey Town Council"
+      }
+    ]
+  },
+  "S108": {
+    "checked_at": "2026-09-28T08:48:15+00:00",
+    "urls": [
+      {
+        "url": "https://www.wisbechtowncouncil.gov.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.wisbechtowncouncil.gov.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Wisbech Town Council"
+      },
+      {
+        "url": "https://www.wisbechtowncouncil.gov.uk/events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.wisbechtowncouncil.gov.uk/events",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Events | Wisbech Town Council"
+      },
+      {
+        "url": "https://www.wisbechtowncouncil.gov.uk/local-events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.wisbechtowncouncil.gov.uk/local-events",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [
+          "https://www.wisbechtowncouncil.gov.uk/feeds/ical/638856?nodeid=2929"
+        ],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "CALENDAR OF EVENTS IN AND AROUND WISBECH | Wisbech Town Council"
+      }
+    ]
+  },
+  "S109": {
+    "checked_at": "2026-09-28T08:48:23+00:00",
+    "urls": [
+      {
+        "url": "https://www.marchtowncouncil.gov.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.marchtowncouncil.gov.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.marchtowncouncil.gov.uk/feed/"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.marchtowncouncil.gov.uk/wp-json/wp/v2/pages/6"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.marchtowncouncil.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.marchtowncouncil.gov.uk%2F"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.marchtowncouncil.gov.uk/wp-json/",
+        "mentions": [],
+        "title": "March Town Council | Aiming to encourage and support a prosperous, safe and healthy local community and a sustainable en"
+      },
+      {
+        "url": "https://www.marchtowncouncil.gov.uk/news-events/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.marchtowncouncil.gov.uk/news-events/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.marchtowncouncil.gov.uk/feed/"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.marchtowncouncil.gov.uk/wp-json/",
+        "mentions": [],
+        "title": "News and Events in March | March Town Council | Aiming to encourage and support a prosperous, safe and healthy local com"
+      },
+      {
+        "url": "https://www.marchtowncouncil.gov.uk/feed/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.marchtowncouncil.gov.uk/feed/",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "March Town Council",
+        "feed_entries": 10,
+        "feed_latest": "Fri, 25 Sep 2026 10:10:30 +0000"
+      }
+    ]
+  },
+  "S110": {
+    "checked_at": "2026-09-28T08:48:34+00:00",
+    "urls": [
+      {
+        "url": "https://www.chatteristowncouncil.info",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.chatteristowncouncil.info",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.chatteristowncouncil.info/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.chatteristowncouncil.info/comments/feed/"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "All in One SEO (AIOSEO) 5.0.2",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.chatteristowncouncil.info/wp-json/",
+        "mentions": [],
+        "title": "Chatteris Town Council"
+      },
+      {
+        "url": "https://www.chatteristowncouncil.info/category/news-and-events/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.chatteristowncouncil.info/category/news-and-events/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.chatteristowncouncil.info/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.chatteristowncouncil.info/comments/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.chatteristowncouncil.info/category/news-and-events/feed/"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.chatteristowncouncil.info/wp-json/wp/v2/categories/1"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "All in One SEO (AIOSEO) 5.0.2",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.chatteristowncouncil.info/wp-json/",
+        "mentions": [],
+        "title": "News and Events | Chatteris Town Council"
+      },
+      {
+        "url": "https://www.chatteristowncouncil.info/feed/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.chatteristowncouncil.info/feed/",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Chatteris Town Council",
+        "feed_entries": 10,
+        "feed_latest": "Fri, 18 Sep 2026 09:27:07 +0000"
+      }
+    ]
+  },
+  "S111": {
+    "checked_at": "2026-09-28T08:48:43+00:00",
+    "urls": [
+      {
+        "url": "https://www.whittleseytowncouncil.gov.uk/whittlesey-guide-events/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.whittleseytowncouncil.gov.uk/whittlesey-guide-events/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.whittleseytowncouncil.gov.uk/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.whittleseytowncouncil.gov.uk/comments/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.whittleseytowncouncil.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.whittleseytowncouncil.gov.uk%2Fwhittlesey-guide-events%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.whittleseytowncouncil.gov.uk/wp-json/wp/v2/pages/1935"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": true,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.whittleseytowncouncil.gov.uk/wp-json/",
+        "mentions": [],
+        "title": "Whittlesey Guide & Events - Whittlesey Town Council"
+      },
+      {
+        "url": "https://www.whittleseytowncouncil.gov.uk/calendar/",
+        "robots": "разрешено",
+        "error": "RemoteProtocolError: <ConnectionTerminated error_code:0, last_stream_id:2147483647, additional_data:None>"
+      },
+      {
+        "url": "https://www.whittleseytowncouncil.gov.uk/feed/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.whittleseytowncouncil.gov.uk/feed/",
+        "content_type": "application/rss+xml; charset=utf-8",
+        "kind": "feed",
+        "feed_title": "Whittlesey Town Council",
+        "feed_entries": 0,
+        "feed_latest": null
+      }
+    ]
+  },
+  "S112": {
+    "checked_at": "2026-09-28T08:48:50+00:00",
+    "urls": [
+      {
+        "url": "https://www.soham-tc.gov.uk/council_events/",
+        "robots": "robots.txt: 403"
+      },
+      {
+        "url": "https://www.soham-tc.gov.uk/council_events/?ical=1",
+        "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S113": {
+    "checked_at": "2026-09-28T08:39:46+00:00",
+    "urls": [
+      {
+        "url": "https://www.visitely.org.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.visitely.org.uk",
+        "content_type": "text/html",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.visitely.org.uk/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.visitely.org.uk/comments/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.visitely.org.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.visitely.org.uk%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.visitely.org.uk/wp-json/wp/v2/pages/14"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Site Kit by Google 1.188.0",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.visitely.org.uk/wp-json/",
+        "mentions": [],
+        "title": "Visit Ely - Visit Ely"
+      },
+      {
+        "url": "https://www.visitely.org.uk/whats-on",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.visitely.org.uk/whats-on/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.visitely.org.uk/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.visitely.org.uk/comments/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.visitely.org.uk/whats-on/feed/"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Site Kit by Google 1.188.0",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.visitely.org.uk/wp-json/",
+        "mentions": [],
+        "title": "What's On - Visit Ely"
+      },
+      {
+        "url": "https://www.visitely.org.uk/events",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.visitely.org.uk/events/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.visitely.org.uk/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.visitely.org.uk/comments/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.visitely.org.uk/category/events/feed/"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.visitely.org.uk/wp-json/wp/v2/categories/65"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "SearchAction",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Site Kit by Google 1.188.0",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.visitely.org.uk/wp-json/",
+        "mentions": [],
+        "title": "Events Archives - Visit Ely"
+      }
+    ]
+  },
+  "S114": {
+    "checked_at": "2026-09-28T08:40:01+00:00",
+    "urls": [
+      {
+        "url": "https://www.visitpeterborough.com",
+        "robots": "robots.txt: 403"
+      },
+      {
+        "url": "https://www.visitpeterborough.com/whats-on",
+        "robots": "robots.txt: 403"
+      }
+    ]
+  },
+  "S115": {
+    "checked_at": "2026-09-28T08:48:51+00:00",
+    "urls": [
+      {
+        "url": "https://www.discoverhuntingdonshire.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.discoverhuntingdonshire.co.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "cPortals 1.1 by Cuttlefish Multimedia Ltd",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Home | Huntingdonshire Discover"
+      },
+      {
+        "url": "https://www.discoverhuntingdonshire.co.uk/whats-on",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.discoverhuntingdonshire.co.uk/whats-on",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "cPortals 1.1 by Cuttlefish Multimedia Ltd",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "What's on? | Huntingdonshire Discover"
+      },
+      {
+        "url": "https://www.discoverhuntingdonshire.co.uk/events-calendar",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.discoverhuntingdonshire.co.uk/events-calendar",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "cPortals 1.1 by Cuttlefish Multimedia Ltd",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Events Calendar | Huntingdonshire Discover"
+      }
+    ]
+  },
+  "S116": {
+    "checked_at": "2026-09-28T08:40:07+00:00",
+    "urls": [
+      {
+        "url": "https://www.huntspost.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.huntspost.co.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ContactPoint",
+          "Organization",
+          "PostalAddress",
+          "WebPage"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Huntingdon and St Neots News, Sport & Things to do | The Hunts Post"
+      },
+      {
+        "url": "https://www.huntspost.co.uk/rss",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.huntspost.co.uk/rss/"
+      },
+      {
+        "url": "https://www.huntspost.co.uk/things-to-do",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.huntspost.co.uk/things-to-do/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "http://www.huntspost.co.uk/things-to-do/rss/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "http://www.huntspost.co.uk/things-to-do/rss/"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "WebPage"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Things to do in Huntingdon and St Neots | The Hunts Post"
+      }
+    ]
+  },
+  "S117": {
+    "checked_at": "2026-09-28T08:40:15+00:00",
+    "urls": [
+      {
+        "url": "https://www.cambstimes.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.cambstimes.co.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ContactPoint",
+          "Organization",
+          "PostalAddress",
+          "WebPage"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "March and Chatteris News, Sport & Things to do | Cambs Times"
+      },
+      {
+        "url": "https://www.cambstimes.co.uk/rss",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.cambstimes.co.uk/rss/"
+      }
+    ]
+  },
+  "S118": {
+    "checked_at": "2026-09-28T08:40:21+00:00",
+    "urls": [
+      {
+        "url": "https://www.wisbechstandard.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.wisbechstandard.co.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ContactPoint",
+          "Organization",
+          "PostalAddress",
+          "WebPage"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Wisbech News, Sport & Things to do | Wisbech Standard"
+      },
+      {
+        "url": "https://www.wisbechstandard.co.uk/rss",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.wisbechstandard.co.uk/rss/"
+      }
+    ]
+  },
+  "S119": {
+    "checked_at": "2026-09-28T08:40:26+00:00",
+    "urls": [
+      {
+        "url": "https://www.elystandard.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.elystandard.co.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ContactPoint",
+          "Organization",
+          "PostalAddress",
+          "WebPage"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal"
+        ],
+        "title": "Ely and Soham News, Sport & Things to do | Ely Standard"
+      },
+      {
+        "url": "https://www.elystandard.co.uk/rss",
+        "robots": "разрешено",
+        "status": 404,
+        "final_url": "https://www.elystandard.co.uk/rss/"
+      }
+    ]
+  },
+  "S120": {
+    "checked_at": "2026-09-28T08:48:59+00:00",
+    "urls": [
+      {
+        "url": "https://peterborough-cathedral.org.uk",
+        "robots": "разрешено",
+        "status": 202,
+        "final_url": "https://peterborough-cathedral.org.uk"
+      },
+      {
+        "url": "https://peterborough-cathedral.org.uk/all-events/",
+        "robots": "разрешено",
+        "status": 202,
+        "final_url": "https://peterborough-cathedral.org.uk/all-events/"
+      }
+    ]
+  },
+  "S121": {
+    "checked_at": "2026-09-28T08:49:04+00:00",
+    "urls": [
+      {
+        "url": "https://keytheatre-peterborough.com",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://keytheatre-peterborough.com",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json+oembed",
+            "url": "https://keytheatre-peterborough.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkeytheatre-peterborough.com%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://keytheatre-peterborough.com/wp-json/wp/v2/pages/18"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://keytheatre-peterborough.com/wp-json/",
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "Key Theatre, Peterborough"
+      },
+      {
+        "url": "https://keytheatre-peterborough.com/whats-on/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://keytheatre-peterborough.com/whats-on/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json+oembed",
+            "url": "https://keytheatre-peterborough.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkeytheatre-peterborough.com%2Fwhats-on%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://keytheatre-peterborough.com/wp-json/wp/v2/pages/166"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://keytheatre-peterborough.com/wp-json/",
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "What's on - Key Theatre, Peterborough"
+      }
+    ]
+  },
+  "S122": {
+    "checked_at": "2026-09-28T08:40:44+00:00",
+    "urls": [
+      {
+        "url": "https://www.newtheatre-peterborough.com",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://newtheatre-peterborough.com/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json+oembed",
+            "url": "https://newtheatre-peterborough.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnewtheatre-peterborough.com%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://newtheatre-peterborough.com/wp-json/wp/v2/pages/140"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://newtheatre-peterborough.com/wp-json/",
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "New Theatre, Peterborough"
+      },
+      {
+        "url": "https://www.newtheatre-peterborough.com/whats-on",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://newtheatre-peterborough.com/whats-on/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json+oembed",
+            "url": "https://newtheatre-peterborough.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnewtheatre-peterborough.com%2Fwhats-on%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://newtheatre-peterborough.com/wp-json/wp/v2/pages/45"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://newtheatre-peterborough.com/wp-json/",
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "What's On - New Theatre, Peterborough"
+      }
+    ]
+  },
+  "S123": {
+    "checked_at": "2026-09-28T08:49:09+00:00",
+    "urls": [
+      {
+        "url": "https://www.theposh.com",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.theposh.com",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "SportsTeam",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Drupal 11 (https://www.drupal.org)",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Peterborough United F.C."
+      },
+      {
+        "url": "https://fixtur.es/en/team/peterborough-united-fc/home",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://fixtur.es/en/team/peterborough-united-fc/home",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [
+          "https://outlook.live.com/owa/?rru=addsubscription&name=Peterborough+United+FC&url=webcal://ics.fixtur.es/v2/home/peterborough-united-fc.ics",
+          "https://www.google.com/calendar/render?cid=webcal://ics.fixtur.es/v2/home/peterborough-united-fc.ics",
+          "webcal://ics.fixtur.es/v2/home/peterborough-united-fc.ics"
+        ],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "ListItem",
+          "Place",
+          "SportsEvent",
+          "SportsTeam"
+        ],
+        "jsonld_events": 27,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "Peterborough United FC home fixtures for your digital calendar, free and updated automatically"
+      },
+      {
+        "url": "https://ics.fixtur.es/v2/home/peterborough-united-fc.ics",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://ics.fixtur.es/v2/home/peterborough-united-fc.ics",
+        "content_type": "text/calendar; charset=utf-8",
+        "kind": "ical",
+        "ical_events": 194
+      }
+    ]
+  },
+  "S124": {
+    "checked_at": "2026-09-28T08:49:18+00:00",
+    "urls": [
+      {
+        "url": "https://www.roystontown.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.roystontown.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.roystontown.uk/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.roystontown.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.roystontown.uk%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.roystontown.uk/wp-json/wp/v2/pages/5"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 7.1.2",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.roystontown.uk/wp-json/",
+        "mentions": [],
+        "title": "Home - Royston Town"
+      },
+      {
+        "url": "https://www.roystontown.uk/events/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.roystontown.uk/events/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.roystontown.uk/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.roystontown.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.roystontown.uk%2Fevents%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.roystontown.uk/wp-json/wp/v2/pages/5217"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "EntryPoint",
+          "ImageObject",
+          "Organization",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 7.1.2",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.roystontown.uk/wp-json/",
+        "mentions": [],
+        "title": "Events - Royston Town"
+      },
+      {
+        "url": "https://www.roystontown.uk/whats-on/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.roystontown.uk/whats-on/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.roystontown.uk/feed/"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "CollectionPage",
+          "EntryPoint",
+          "ImageObject",
+          "Organization",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 7.1.2",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.roystontown.uk/wp-json/",
+        "mentions": [],
+        "title": "What's On in Royston - Royston Town"
+      }
+    ]
+  },
+  "S125": {
+    "checked_at": "2026-09-28T08:49:29+00:00",
+    "urls": [
+      {
+        "url": "https://www.haverhillartscentre.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://haverhillartscentre.co.uk/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://haverhillartscentre.co.uk/haverhill-arts-centre-homepage/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://haverhillartscentre.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaverhillartscentre.co.uk%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://haverhillartscentre.co.uk/wp-json/wp/v2/pages/2"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "Article",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Site Kit by Google 1.188.0",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://haverhillartscentre.co.uk/wp-json/",
+        "mentions": [],
+        "title": "Haverhill Arts Centre - Live Music, Theatre and Cinema"
+      },
+      {
+        "url": "https://www.haverhillartscentre.co.uk/whats-on",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://haverhillartscentre.co.uk/whats-on/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/json+oembed",
+            "url": "https://haverhillartscentre.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaverhillartscentre.co.uk%2Fwhats-on%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://haverhillartscentre.co.uk/wp-json/wp/v2/pages/5"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "Article",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "Site Kit by Google 1.188.0",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://haverhillartscentre.co.uk/wp-json/",
+        "mentions": [],
+        "title": "What's On | Haverhill Arts Centre"
+      },
+      {
+        "url": "https://haverhill-tc.gov.uk/haverhill-town-council-events/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://haverhill-tc.gov.uk/haverhill-town-council-events/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://haverhill-tc.gov.uk/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://haverhill-tc.gov.uk/comments/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://haverhill-tc.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaverhill-tc.gov.uk%2Fhaverhill-town-council-events%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://haverhill-tc.gov.uk/wp-json/wp/v2/pages/14557"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "Article",
+          "GovernmentOrganization",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 7.1.2",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://haverhill-tc.gov.uk/wp-json/",
+        "mentions": [],
+        "title": "Haverhill Town Council Events - Haverhill Town Council"
+      }
+    ]
+  },
+  "S126": {
+    "checked_at": "2026-09-28T08:41:13+00:00",
+    "urls": [
+      {
+        "url": "https://www.theapex.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.theapex.co.uk",
+        "content_type": "text/html;charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "CommonSpot Build 11.0.0.670",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "Welcome to The Apex"
+      },
+      {
+        "url": "https://www.theapex.co.uk/whats-on",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.theapex.co.uk/whats-on/",
+        "content_type": "text/html;charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "CommonSpot Build 11.0.0.670",
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "spektrix"
+        ],
+        "title": "What's on"
+      },
+      {
+        "url": "https://www.theatreroyal.org",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://theatreroyal.org/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://theatreroyal.org/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://theatreroyal.org/comments/feed/"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://theatreroyal.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftheatreroyal.org%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://theatreroyal.org/wp-json/wp/v2/pages/11"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WP Rocket 3.23.3.3",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://theatreroyal.org/wp-json/",
+        "mentions": [
+          "ecal",
+          "spektrix"
+        ],
+        "title": "Theatre Royal Bury St Edmunds | Theatre, Comedy, Music"
+      },
+      {
+        "url": "https://www.visit-burystedmunds.co.uk",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://visit-burystedmunds.co.uk/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "GeoCoordinates",
+          "ImageObject",
+          "ListItem",
+          "LocalBusiness",
+          "OpeningHoursSpecification",
+          "PostalAddress",
+          "TouristDestination",
+          "WebPage"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "The Official Tourism Site For Bury St… | Bury St Edmunds & Beyond"
+      }
+    ]
+  },
+  "S127": {
+    "checked_at": "2026-09-28T08:41:27+00:00",
+    "urls": [
+      {
+        "url": "https://www.saffronwalden.gov.uk",
+        "robots": "разрешено",
+        "status": 403,
+        "final_url": "https://www.saffronwalden.gov.uk"
+      },
+      {
+        "url": "https://www.saffronwalden.gov.uk/events",
+        "robots": "разрешено",
+        "status": 403,
+        "final_url": "https://www.saffronwalden.gov.uk/events"
+      },
+      {
+        "url": "https://www.newmarket.gov.uk",
+        "robots": "недоступен",
+        "status": 200,
+        "final_url": "https://www.newmarket.gov.uk",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.newmarket.gov.uk/feed/"
+          },
+          {
+            "type": "application/rss+xml",
+            "url": "https://www.newmarket.gov.uk/comments/feed/"
+          },
+          {
+            "type": "text/calendar",
+            "url": "https://www.newmarket.gov.uk/events/?ical=1"
+          },
+          {
+            "type": "application/json+oembed",
+            "url": "https://www.newmarket.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.newmarket.gov.uk%2F"
+          },
+          {
+            "type": "application/json",
+            "url": "https://www.newmarket.gov.uk/wp-json/wp/v2/pages/7"
+          }
+        ],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PropertyValueSpecification",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": "WordPress 7.0.6",
+        "wordpress": true,
+        "tribe_events": false,
+        "wp_json": "https://www.newmarket.gov.uk/wp-json/",
+        "mentions": [],
+        "title": "Newmarket Town Council"
+      }
+    ]
+  },
+  "S006x": {
+    "checked_at": "2026-09-28T08:49:38+00:00",
+    "urls": [
+      {
+        "url": "https://www.ents24.com/whatson/peterborough",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/peterborough",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ComedyEvent",
+          "Event",
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PerformingGroup",
+          "PostalAddress"
+        ],
+        "jsonld_events": 38,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24",
+          "gigantic"
+        ],
+        "title": "What's on near Peterborough | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/ely",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/ely",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ComedyEvent",
+          "Event",
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PerformingGroup",
+          "PostalAddress"
+        ],
+        "jsonld_events": 26,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near Ely, Cambridgeshire | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/huntingdon",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/huntingdon",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ComedyEvent",
+          "Event",
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PerformingGroup",
+          "PostalAddress"
+        ],
+        "jsonld_events": 7,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near Huntingdon, Cambridgeshire | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/st-neots",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/st-neots",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ComedyEvent",
+          "Event",
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PerformingGroup",
+          "PostalAddress"
+        ],
+        "jsonld_events": 6,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near St Neots, Cambridgeshire | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/st-ives",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/st-ives",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ComedyEvent",
+          "Event",
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PerformingGroup",
+          "PostalAddress"
+        ],
+        "jsonld_events": 24,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near St Ives, Cornwall | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/wisbech",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/wisbech",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 2,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near Wisbech, Cambridgeshire | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/march",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/march",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 2,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near March, Cambridgeshire | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/bury-st-edmunds",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/bury-st-edmunds",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ComedyEvent",
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PerformingGroup",
+          "PostalAddress"
+        ],
+        "jsonld_events": 38,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near Bury St Edmunds, Suffolk | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/saffron-walden",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/saffron-walden",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ComedyEvent",
+          "Event",
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PerformingGroup",
+          "PostalAddress"
+        ],
+        "jsonld_events": 13,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near Saffron Walden, Essex | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/newmarket",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/newmarket",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 2,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near Newmarket, Suffolk | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/royston",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/royston",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "AggregateOffer",
+          "ComedyEvent",
+          "Event",
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PerformingGroup",
+          "PostalAddress"
+        ],
+        "jsonld_events": 7,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near Royston, Hertfordshire | Ents24"
+      },
+      {
+        "url": "https://www.ents24.com/whatson/haverhill",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.ents24.com/whatson/haverhill",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "ComedyEvent",
+          "Event",
+          "EventVenue",
+          "GeoCoordinates",
+          "MusicEvent",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PerformingGroup",
+          "PostalAddress"
+        ],
+        "jsonld_events": 11,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ents24"
+        ],
+        "title": "What's on near Haverhill, Suffolk | Ents24"
+      }
+    ]
+  },
+  "S007x": {
+    "checked_at": "2026-09-28T08:50:11+00:00",
+    "urls": [
+      {
+        "url": "https://www.skiddle.com/whats-on/Peterborough/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/Peterborough/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 51,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Peterborough Events 2026 - What's on in Peterborough"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/Ely/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/Ely/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "El Salvador Events 2026 - What's on in El Salvador"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/Huntingdon/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/Huntingdon/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 40,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near Huntingdon, Peterborough | What's On near Huntingdon, Peterborough Events Guide"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/St-Neots/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/St-Neots/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 19,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near St-Neot, Plymouth | What's On near St-Neot, Plymouth Events Guide"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/St-Ives/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/St-Ives/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 20,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near St-Ive, Plymouth | What's On near St-Ive, Plymouth Events Guide"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/Wisbech/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/Wisbech/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 25,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near Wisbech, Peterborough | What's On near Wisbech, Peterborough Events Guide"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/March/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/March/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 26,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near March, Peterborough | What's On near March, Peterborough Events Guide"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/Bury-St-Edmunds/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/Bury-St-Edmunds/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 18,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near Bury-St-Edmunds, Ipswich | What's On near Bury-St-Edmunds, Ipswich Events Guide"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/Saffron-Walden/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/Saffron-Walden/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 53,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near Saffron-Walden, Cambridge | What's On near Saffron-Walden, Cambridge Events Guide"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/Newmarket/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/Newmarket/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 37,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near Newmarket, Gloucester | What's On near Newmarket, Gloucester Events Guide"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/Royston/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/Royston/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 60,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near Royston, Stevenage | What's On near Royston, Stevenage Events Guide"
+      },
+      {
+        "url": "https://www.skiddle.com/whats-on/Haverhill/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.skiddle.com/whats-on/Haverhill/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [
+          "BreadcrumbList",
+          "Event",
+          "GeoCoordinates",
+          "ListItem",
+          "MusicGroup",
+          "Offer",
+          "Organization",
+          "PostalAddress"
+        ],
+        "jsonld_events": 55,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [
+          "ecal",
+          "skiddle"
+        ],
+        "title": "Events near Haverhill, Cambridge | What's On near Haverhill, Cambridge Events Guide"
+      }
+    ]
+  },
+  "S051": {
+    "checked_at": "2026-09-28T08:50:47+00:00",
+    "urls": [
+      {
+        "url": "https://www.kettlesyard.cam.ac.uk/whats-on/",
+        "robots": "разрешено",
+        "status": 200,
+        "final_url": "https://www.kettlesyard.cam.ac.uk/whats-on/",
+        "content_type": "text/html; charset=utf-8",
+        "kind": "html",
+        "alternate_links": [],
+        "ical_links": [],
+        "feed_links_in_page": [],
+        "jsonld_types": [],
+        "jsonld_events": 0,
+        "microdata_event": false,
+        "generator": null,
+        "wordpress": false,
+        "tribe_events": false,
+        "wp_json": null,
+        "mentions": [],
+        "title": "What's On – Kettle's Yard"
+      }
+    ]
+  }
+}

@@ -65,7 +65,7 @@ def main() -> None:
         L.append(f"| {s} | {n} |")
     L += ["", f"Записей в status_history: {one(con, 'SELECT count(*) FROM status_history')}.", ""]
 
-    run = json.loads((ROOT / "data" / "raw" / "_run.json").read_text())
+    run = {k: v for k, v in json.loads((ROOT / "data" / "raw" / "_run.json").read_text()).items() if not k.startswith("_")}
     L += ["## Инкрементальный сбор (последний прогон)", "", "| ID | Ссылок | Из кэша | Запрошено | Запросов всего |", "|---|---|---|---|---|"]
     for sid, r in run.items():
         if r.get("stats") and "cached" in r["stats"]:

@@ -32,7 +32,7 @@ def esc(t) -> str:
 
 
 def main() -> None:
-    run = json.loads((RAW / "_run.json").read_text())
+    run = {k: v for k, v in json.loads((RAW / "_run.json").read_text()).items() if not k.startswith("_")}
     events = load_events()
     lines = [f"# Этап 2 — прогон коллекторов ({TODAY})", "",
              "Сырые события: `data/raw/<ID>_<модуль>.json`, сводка прогона: `data/raw/_run.json`.", "",

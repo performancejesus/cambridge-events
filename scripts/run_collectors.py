@@ -27,6 +27,8 @@ def main(ids: list[str]) -> None:
     RAW.mkdir(parents=True, exist_ok=True)
     summary_path = RAW / "_run.json"
     summary = json.loads(summary_path.read_text()) if summary_path.exists() and ids else {}
+    # метка прогона: при запуске части коллекторов update_db загружает только их (а не старые записи _run.json)
+    summary["_run_id"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     http = PoliteClient()
     db = connect()
     try:

@@ -1,0 +1,461 @@
+{
+ "_comment": "Этап 5: кандидатные URL для источников приоритета 2 (реестр v0.4) и новых источников расширения географии (S098–S127). Первый URL — официальный сайт, остальные — страницы событий и возможные фиды. Первый проход — по известным адресам; живость проверяет scripts/probe_sources.py --set p2.",
+ "_names": {
+  "S098": [
+   "South Cambridgeshire District Council",
+   "Совет",
+   "Район South Cambridgeshire"
+  ],
+  "S099": [
+   "East Cambridgeshire District Council",
+   "Совет",
+   "Район East Cambridgeshire (Ely, Soham)"
+  ],
+  "S100": [
+   "Huntingdonshire District Council",
+   "Совет",
+   "Район Huntingdonshire"
+  ],
+  "S101": [
+   "Fenland District Council",
+   "Совет",
+   "Район Fenland (Wisbech, March, Whittlesey, Chatteris)"
+  ],
+  "S102": [
+   "Peterborough City Council",
+   "Совет",
+   "Питерборо"
+  ],
+  "S103": [
+   "Ely City Council",
+   "Городской совет",
+   "Ely"
+  ],
+  "S104": [
+   "St Ives Town Council",
+   "Городской совет",
+   "St Ives"
+  ],
+  "S105": [
+   "St Neots Town Council",
+   "Городской совет",
+   "St Neots"
+  ],
+  "S106": [
+   "Huntingdon Town Council",
+   "Городской совет",
+   "Huntingdon"
+  ],
+  "S107": [
+   "Ramsey Town Council",
+   "Городской совет",
+   "Ramsey"
+  ],
+  "S108": [
+   "Wisbech Town Council",
+   "Городской совет",
+   "Wisbech"
+  ],
+  "S109": [
+   "March Town Council",
+   "Городской совет",
+   "March"
+  ],
+  "S110": [
+   "Chatteris Town Council",
+   "Городской совет",
+   "Chatteris"
+  ],
+  "S111": [
+   "Whittlesey Town Council",
+   "Городской совет",
+   "Whittlesey"
+  ],
+  "S112": [
+   "Soham Town Council",
+   "Городской совет",
+   "Soham"
+  ],
+  "S113": [
+   "Visit Ely",
+   "Туризм",
+   "Ely"
+  ],
+  "S114": [
+   "Visit Peterborough",
+   "Туризм",
+   "Питерборо"
+  ],
+  "S115": [
+   "Visit Huntingdonshire",
+   "Туризм",
+   "Huntingdonshire"
+  ],
+  "S116": [
+   "Hunts Post",
+   "СМИ",
+   "Huntingdonshire"
+  ],
+  "S117": [
+   "Cambs Times",
+   "СМИ",
+   "Fenland: March, Whittlesey, Chatteris"
+  ],
+  "S118": [
+   "Wisbech Standard",
+   "СМИ",
+   "Wisbech"
+  ],
+  "S119": [
+   "Ely Standard",
+   "СМИ",
+   "Ely"
+  ],
+  "S120": [
+   "Peterborough Cathedral",
+   "Площадка",
+   "Питерборо"
+  ],
+  "S121": [
+   "Key Theatre (Peterborough)",
+   "Площадка",
+   "Питерборо"
+  ],
+  "S122": [
+   "New Theatre Peterborough",
+   "Площадка",
+   "Питерборо"
+  ],
+  "S123": [
+   "Peterborough United — домашние матчи",
+   "Клуб",
+   "Питерборо"
+  ],
+  "S124": [
+   "Royston — Town Council / события",
+   "Городской совет",
+   "Royston (Herts)"
+  ],
+  "S125": [
+   "Haverhill — Arts Centre / Town Council",
+   "Площадка",
+   "Haverhill (Suffolk)"
+  ],
+  "S126": [
+   "Bury St Edmunds — Apex / Theatre Royal / Visit Bury",
+   "Площадка",
+   "Бери-Сент-Эдмундс (Suffolk)"
+  ],
+  "S127": [
+   "Saffron Walden / Newmarket — Town Councils",
+   "Городской совет",
+   "Saffron Walden, Newmarket"
+  ],
+  "S006x": [
+   "Ents24 — города зоны (расширение S006)",
+   "Агрегатор",
+   "Питерборо, Ely, Huntingdon, St Neots, St Ives, Wisbech, March, Bury, Saffron Walden, Newmarket, Royston, Haverhill"
+  ],
+  "S007x": [
+   "Skiddle — города зоны (расширение S007)",
+   "Агрегатор",
+   "то же"
+  ],
+  "S128": [
+   "Ents24 — города зоны",
+   "Агрегатор",
+   "Питерборо, Ely, Huntingdon, St Neots, St Ives, Wisbech, March, Бери, Saffron Walden, Ньюмаркет, Royston, Haverhill"
+  ],
+  "S129": [
+   "Skiddle — города зоны",
+   "Агрегатор",
+   "те же 12 городов"
+  ]
+ },
+ "S010": [
+  "https://www.peterboroughtoday.co.uk",
+  "https://www.peterboroughtoday.co.uk/rss",
+  "https://www.peterboroughtoday.co.uk/whats-on"
+ ],
+ "S013": [
+  "https://www.theportlandarms.co.uk",
+  "https://www.theportlandarms.co.uk/gigs"
+ ],
+ "S014": [
+  "https://www.storeysfieldcentre.org.uk",
+  "https://www.storeysfieldcentre.org.uk/whats-on/",
+  "https://www.storeysfieldcentre.org.uk/events/?ical=1",
+  "https://www.storeysfieldcentre.org.uk/feed/"
+ ],
+ "S015": [
+  "https://www.westroad.org",
+  "https://www.westroad.org/whats-on",
+  "https://www.westroad.org/feed/"
+ ],
+ "S017": [
+  "https://saffronhall.com",
+  "https://saffronhall.com/whats-on/",
+  "https://saffronhall.com/feed/"
+ ],
+ "S020": [
+  "https://www.cambridgerugby.co.uk",
+  "https://www.cambridgerugby.co.uk/fixtures"
+ ],
+ "S023": [
+  "https://www.cucbc.org",
+  "https://www.cucbc.org/bumps"
+ ],
+ "S027": [
+  "https://www.runthrough.co.uk",
+  "https://www.runthrough.co.uk/events"
+ ],
+ "S029": [
+  "https://www.letsdothis.com",
+  "https://www.letsdothis.com/gb/running-events-in-cambridgeshire"
+ ],
+ "S034": [
+  "https://www.strawbear.org.uk"
+ ],
+ "S035": [
+  "https://www.cambridgefilmfestival.org.uk",
+  "https://www.cambridgefilmfestival.org.uk/feed/"
+ ],
+ "S036": [
+  "https://www.cambridgeliteraryfestival.com",
+  "https://www.cambridgeliteraryfestival.com/events"
+ ],
+ "S044": [
+  "https://www.cambridgeshakespeare.com"
+ ],
+ "S046": [
+  "https://www.thelunacinema.com",
+  "https://www.cambridgefilmfestival.org.uk"
+ ],
+ "S049": [
+  "https://cus.org",
+  "https://cus.org/events"
+ ],
+ "S053": [
+  "https://www.iwm.org.uk/visits/iwm-duxford",
+  "https://www.iwm.org.uk/visits/iwm-duxford/events",
+  "https://www.iwm.org.uk/events"
+ ],
+ "S054": [
+  "https://www.cambridgesciencecentre.org",
+  "https://www.cambridgesciencecentre.org/whats-on/"
+ ],
+ "S055": [
+  "https://www.cambridgeshire.gov.uk/residents/libraries-leisure-culture/libraries",
+  "https://www.eventbrite.co.uk/o/cambridgeshire-libraries-8347213283"
+ ],
+ "S057": [
+  "https://eat-cambridge.co.uk/",
+  "https://eat-cambridge.co.uk/feed/"
+ ],
+ "S058": [],
+ "S066": [
+  "https://www.heritageopendays.org.uk",
+  "https://www.heritageopendays.org.uk/visiting"
+ ],
+ "S067": [
+  "https://ngs.org.uk",
+  "https://ngs.org.uk/gardens/find-a-garden/"
+ ],
+ "S071": [
+  "https://www.elycathedral.org",
+  "https://www.elycathedral.org/whats-on",
+  "https://www.elycathedral.org/events"
+ ],
+ "S075": [],
+ "S076": [
+  "https://www.millroadwinterfair.org/mill-road-fringe/",
+  "https://www.lovemillroad.org"
+ ],
+ "S077": [],
+ "S078": [
+  "https://one.network"
+ ],
+ "S079": [
+  "https://www.nationalrail.co.uk"
+ ],
+ "S083": [
+  "https://www.eventbrite.com/e/nihao-china-cambridge-dragon-boat-festival-2026-tickets-1985873566295"
+ ],
+ "S084": [
+  "https://cambridgeshirecats.com/",
+  "https://cambridgeshirecats.com/feed/",
+  "https://cambridgeshirecats.com/fixtures/"
+ ],
+ "S086": [
+  "https://act4addenbrookes.org.uk/events/",
+  "https://act4addenbrookes.org.uk/feed/"
+ ],
+ "S088": [
+  "https://www.parkrun.org.uk/cambridge/",
+  "https://www.parkrun.org.uk/cambridge/news/",
+  "https://www.parkrun.org.uk/wimpoleestate/"
+ ],
+ "S098": [
+  "https://www.scambs.gov.uk",
+  "https://www.scambs.gov.uk/events"
+ ],
+ "S099": [
+  "https://www.eastcambs.gov.uk",
+  "https://www.eastcambs.gov.uk/events"
+ ],
+ "S100": [
+  "https://www.huntingdonshire.gov.uk",
+  "https://www.huntingdonshire.gov.uk/leisure/parks-nature-reserves-and-green-spaces/hinchingbrooke-country-park/events-and-activities"
+ ],
+ "S101": [
+  "https://www.fenland.gov.uk",
+  "https://www.fenland.gov.uk/events"
+ ],
+ "S102": [
+  "https://www.peterborough.gov.uk",
+  "https://www.peterborough.gov.uk/residents/events"
+ ],
+ "S103": [
+  "https://www.cityofelycouncil.org.uk",
+  "https://www.cityofelycouncil.org.uk/events-2/"
+ ],
+ "S104": [
+  "https://www.stivestowncouncil.gov.uk",
+  "https://www.stivestowncouncil.gov.uk/Whats_On_45757.aspx"
+ ],
+ "S105": [
+  "https://www.stneots-tc.gov.uk",
+  "https://www.stneots-tc.gov.uk/events"
+ ],
+ "S106": [
+  "https://www.huntingdontown.gov.uk/council_events/"
+ ],
+ "S107": [
+  "https://www.ramseytowncouncil.gov.uk",
+  "https://www.ramseytowncouncil.gov.uk/local-events"
+ ],
+ "S108": [
+  "https://www.wisbechtowncouncil.gov.uk",
+  "https://www.wisbechtowncouncil.gov.uk/events",
+  "https://www.wisbechtowncouncil.gov.uk/local-events"
+ ],
+ "S109": [
+  "https://www.marchtowncouncil.gov.uk",
+  "https://www.marchtowncouncil.gov.uk/news-events/",
+  "https://www.marchtowncouncil.gov.uk/feed/"
+ ],
+ "S110": [
+  "https://www.chatteristowncouncil.info",
+  "https://www.chatteristowncouncil.info/category/news-and-events/",
+  "https://www.chatteristowncouncil.info/feed/"
+ ],
+ "S111": [
+  "https://www.whittleseytowncouncil.gov.uk/whittlesey-guide-events/",
+  "https://www.whittleseytowncouncil.gov.uk/calendar/",
+  "https://www.whittleseytowncouncil.gov.uk/feed/"
+ ],
+ "S112": [
+  "https://www.soham-tc.gov.uk/council_events/",
+  "https://www.soham-tc.gov.uk/council_events/?ical=1"
+ ],
+ "S113": [
+  "https://www.visitely.org.uk",
+  "https://www.visitely.org.uk/whats-on",
+  "https://www.visitely.org.uk/events"
+ ],
+ "S114": [
+  "https://www.visitpeterborough.com",
+  "https://www.visitpeterborough.com/whats-on"
+ ],
+ "S115": [
+  "https://www.discoverhuntingdonshire.co.uk",
+  "https://www.discoverhuntingdonshire.co.uk/whats-on",
+  "https://www.discoverhuntingdonshire.co.uk/events-calendar"
+ ],
+ "S116": [
+  "https://www.huntspost.co.uk",
+  "https://www.huntspost.co.uk/rss",
+  "https://www.huntspost.co.uk/things-to-do"
+ ],
+ "S117": [
+  "https://www.cambstimes.co.uk",
+  "https://www.cambstimes.co.uk/rss"
+ ],
+ "S118": [
+  "https://www.wisbechstandard.co.uk",
+  "https://www.wisbechstandard.co.uk/rss"
+ ],
+ "S119": [
+  "https://www.elystandard.co.uk",
+  "https://www.elystandard.co.uk/rss"
+ ],
+ "S120": [
+  "https://peterborough-cathedral.org.uk",
+  "https://peterborough-cathedral.org.uk/all-events/"
+ ],
+ "S121": [
+  "https://keytheatre-peterborough.com",
+  "https://keytheatre-peterborough.com/whats-on/"
+ ],
+ "S122": [
+  "https://www.newtheatre-peterborough.com",
+  "https://www.newtheatre-peterborough.com/whats-on"
+ ],
+ "S123": [
+  "https://www.theposh.com",
+  "https://fixtur.es/en/team/peterborough-united-fc/home",
+  "https://ics.fixtur.es/v2/home/peterborough-united-fc.ics"
+ ],
+ "S124": [
+  "https://www.roystontown.uk",
+  "https://www.roystontown.uk/events/",
+  "https://www.roystontown.uk/whats-on/"
+ ],
+ "S125": [
+  "https://www.haverhillartscentre.co.uk",
+  "https://www.haverhillartscentre.co.uk/whats-on",
+  "https://haverhill-tc.gov.uk/haverhill-town-council-events/"
+ ],
+ "S126": [
+  "https://www.theapex.co.uk",
+  "https://www.theapex.co.uk/whats-on",
+  "https://www.theatreroyal.org",
+  "https://www.visit-burystedmunds.co.uk"
+ ],
+ "S127": [
+  "https://www.saffronwalden.gov.uk",
+  "https://www.saffronwalden.gov.uk/events",
+  "https://www.newmarket.gov.uk"
+ ],
+ "S006x": [
+  "https://www.ents24.com/whatson/peterborough",
+  "https://www.ents24.com/whatson/ely",
+  "https://www.ents24.com/whatson/huntingdon",
+  "https://www.ents24.com/whatson/st-neots",
+  "https://www.ents24.com/whatson/st-ives",
+  "https://www.ents24.com/whatson/wisbech",
+  "https://www.ents24.com/whatson/march",
+  "https://www.ents24.com/whatson/bury-st-edmunds",
+  "https://www.ents24.com/whatson/saffron-walden",
+  "https://www.ents24.com/whatson/newmarket",
+  "https://www.ents24.com/whatson/royston",
+  "https://www.ents24.com/whatson/haverhill"
+ ],
+ "S007x": [
+  "https://www.skiddle.com/whats-on/Peterborough/",
+  "https://www.skiddle.com/whats-on/Ely/",
+  "https://www.skiddle.com/whats-on/Huntingdon/",
+  "https://www.skiddle.com/whats-on/St-Neots/",
+  "https://www.skiddle.com/whats-on/St-Ives/",
+  "https://www.skiddle.com/whats-on/Wisbech/",
+  "https://www.skiddle.com/whats-on/March/",
+  "https://www.skiddle.com/whats-on/Bury-St-Edmunds/",
+  "https://www.skiddle.com/whats-on/Saffron-Walden/",
+  "https://www.skiddle.com/whats-on/Newmarket/",
+  "https://www.skiddle.com/whats-on/Royston/",
+  "https://www.skiddle.com/whats-on/Haverhill/"
+ ],
+ "S051": [
+  "https://www.kettlesyard.cam.ac.uk/whats-on/"
+ ]
+}

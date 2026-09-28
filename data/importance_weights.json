@@ -24,6 +24,10 @@
  "sold_out": {
   "points": 1.0
  },
+ "few_left": {
+  "points": 0.5,
+  "_note": "«мало билетов» у площадки (Saffron Hall: Nearly full / Limited availability)"
+ },
  "recurring": {
   "points": 2.5
  },

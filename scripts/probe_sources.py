@@ -9,6 +9,7 @@
 Результат: data/probe_results.json. Между запросами к одному хосту — пауза.
 
 Запуск: python scripts/probe_sources.py [S001 S047 ...]
+        python scripts/probe_sources.py --set p2 [S098 ...]   # этап 5: data/p2_candidates.json → data/probe_results_p2.json
 """
 
 from __future__ import annotations
@@ -212,6 +213,11 @@ def probe_url(client: httpx.Client, url: str) -> dict:
 
 
 def main(ids: list[str]) -> None:
+    global CANDIDATES, OUT
+    if ids[:1] == ["--set"]:
+        CANDIDATES = ROOT / "data" / f"{ids[1]}_candidates.json"
+        OUT = ROOT / "data" / f"probe_results_{ids[1]}.json"
+        ids = ids[2:]
     candidates = {k: v for k, v in json.loads(CANDIDATES.read_text()).items() if not k.startswith("_")}
     results = json.loads(OUT.read_text()) if OUT.exists() and ids else {}
     todo = ids or list(candidates)

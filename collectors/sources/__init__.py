@@ -4,7 +4,8 @@ from . import (adc_camdram, beer_festival, cambridge105, cambridge_bid, cambridg
                cambridge_independent_business, cambridge_live_tickets, cambridge_news_business, grafton, grand_arcade, lion_yard,
                cambridge_news, cambridge_united, camcityevents, corn_exchange, ents24, eventbrite,
                fitzwilliam, foodies, mill_road_winter_fair, newmarket, skiddle, strawberry_fair,
-               talks_cam, whatsonincambridge)
+               talks_cam, whatsonincambridge, towns_ents24, towns_skiddle, peterborough_united, wisbech_tc,
+               peterborough_telegraph, saffron_hall, kettles_yard, runthrough)
 
 ALL = [
     cambridge105.Cambridge105(), talks_cam.TalksCam(), adc_camdram.AdcCamdram(),
@@ -16,4 +17,8 @@ ALL = [
     eventbrite.Eventbrite(), cambridge_live_tickets.CambridgeLiveTickets(),
     cambridge_independent_business.CambridgeIndependentBusiness(), cambridge_news_business.CambridgeNewsBusiness(),
     grand_arcade.GrandArcade(), lion_yard.LionYard(), grafton.Grafton(), cambridge_bid.CambridgeBid(),
+    # этап 5: приоритет 2 и расширение географии
+    towns_ents24.TownsEnts24(), towns_skiddle.TownsSkiddle(), peterborough_united.PeterboroughUnited(),
+    wisbech_tc.WisbechTownCouncil(), peterborough_telegraph.PeterboroughTelegraph(),
+    saffron_hall.SaffronHall(), kettles_yard.KettlesYard(), runthrough.RunThrough(),
 ]

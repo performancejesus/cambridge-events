@@ -34,7 +34,7 @@ KEYWORD_RE = re.compile(r"\b(now open|coming soon|opening|opens|closing|closes|c
 KEYWORD_STAGE = {"coming soon": "coming_soon", "closing": "closed", "closes": "closed", "closed": "closed"}
 ADDRESS_HINT = re.compile(r"\d|\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b|\b(Road|Street|Lane|Square|Parade|Place)\b")
 # Источники статей для извлечения.
-ARTICLE_SOURCES = {"S002", "S003", "S004", "S005", "S050", "S087", "S092", "S093"}
+ARTICLE_SOURCES = {"S002", "S003", "S004", "S005", "S050", "S087", "S092", "S093", "S010"}
 
 
 def now() -> str:

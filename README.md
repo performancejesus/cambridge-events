@@ -103,3 +103,19 @@ python scripts/build_issue.py --issue 2026-10-01 --start 2026-09-28 --end 2026-1
   примерно), цена, источники, статья, sold out, ежегодный флагман, Wikipedia (кэш `wiki_cache`), футбол по метке
   турнира, известность по оценке модели (кэш `fame_cache`); веса — `data/importance_weights.json`.
 
+## Этап 5 — источники приоритета 2 и расширение географии
+
+```bash
+python scripts/probe_sources.py --set p2          # data/p2_candidates.json → data/probe_results_p2.json
+python scripts/run_collectors.py S128 S129 S123 S108 S010 S017 S051 S027   # новые коллекторы
+python scripts/update_db.py && python scripts/locate_venues.py && python scripts/score_importance.py
+python scripts/build_registry_v05.py              # data/cambridge_event_sources_v0.5.xlsx, лист «Проверка P2»
+python scripts/stage5_report.py                   # docs/stage5_report.md
+```
+
+- Новые коллекторы: S128/S129 (Ents24/Skiddle — 12 городов зоны), S123 Peterborough United (iCal), S108 Wisbech Town
+  Council (iCal без заседаний), S010 Peterborough Telegraph (RSS → извлечение), S017 Saffron Hall (HTML: наличие
+  билетов, отмены), S051 Kettle's Yard (HTML), S027 RunThrough (JSON-LD, фильтр по региону).
+- Решения по каждому источнику — `data/p2_decisions.json`.
+- Частичный запуск коллекторов: `_run.json` хранит `_run_id`; `update_db` загружает только источники этого запуска.
+

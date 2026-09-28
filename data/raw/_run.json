@@ -301,5 +301,122 @@
   "stores": 0,
   "requests": 2,
   "seconds": 2.8
+ },
+ "_run_id": "2026-09-28T09:46:33+00:00",
+ "S128": {
+  "name": "Ents24 — города зоны",
+  "module": "towns_ents24",
+  "started_at": "2026-09-28T08:53:26+00:00",
+  "ok": true,
+  "events": 161,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "https://www.ents24.com/whatson/peterborough": 38,
+   "https://www.ents24.com/whatson/ely": 26,
+   "https://www.ents24.com/whatson/huntingdon": 7,
+   "https://www.ents24.com/whatson/st-neots": 5,
+   "https://www.ents24.com/whatson/st-ives": 24,
+   "https://www.ents24.com/whatson/wisbech": 2,
+   "https://www.ents24.com/whatson/march": 0,
+   "https://www.ents24.com/whatson/bury-st-edmunds": 38,
+   "https://www.ents24.com/whatson/saffron-walden": 13,
+   "https://www.ents24.com/whatson/newmarket": 2,
+   "https://www.ents24.com/whatson/royston": 6,
+   "https://www.ents24.com/whatson/haverhill": 0
+  },
+  "requests": 13,
+  "seconds": 30.7
+ },
+ "S129": {
+  "name": "Skiddle — города зоны",
+  "module": "towns_skiddle",
+  "started_at": "2026-09-28T08:53:57+00:00",
+  "ok": true,
+  "events": 206,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "https://www.skiddle.com/whats-on/Peterborough/": 51,
+   "https://www.skiddle.com/whats-on/Ely/": 0,
+   "https://www.skiddle.com/whats-on/Huntingdon/": 5,
+   "https://www.skiddle.com/whats-on/St-Neots/": 19,
+   "https://www.skiddle.com/whats-on/St-Ives/": 3,
+   "https://www.skiddle.com/whats-on/Wisbech/": 7,
+   "https://www.skiddle.com/whats-on/March/": 1,
+   "https://www.skiddle.com/whats-on/Bury-St-Edmunds/": 17,
+   "https://www.skiddle.com/whats-on/Saffron-Walden/": 37,
+   "https://www.skiddle.com/whats-on/Newmarket/": 37,
+   "https://www.skiddle.com/whats-on/Royston/": 12,
+   "https://www.skiddle.com/whats-on/Haverhill/": 17
+  },
+  "requests": 13,
+  "seconds": 25.3
+ },
+ "S123": {
+  "name": "Peterborough United (fixtur.es)",
+  "module": "peterborough_united",
+  "started_at": "2026-09-28T08:54:22+00:00",
+  "ok": true,
+  "events": 194,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 3.2
+ },
+ "S108": {
+  "name": "Wisbech Town Council",
+  "module": "wisbech_tc",
+  "started_at": "2026-09-28T08:54:25+00:00",
+  "ok": true,
+  "events": 2,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 3.3
+ },
+ "S010": {
+  "name": "Peterborough Telegraph",
+  "module": "peterborough_telegraph",
+  "started_at": "2026-09-28T08:54:29+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 19,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 2.6
+ },
+ "S017": {
+  "name": "Saffron Hall",
+  "module": "saffron_hall",
+  "started_at": "2026-09-28T09:24:17+00:00",
+  "ok": true,
+  "events": 75,
+  "articles": 0,
+  "stores": 0,
+  "requests": 10,
+  "seconds": 26.6
+ },
+ "S051": {
+  "name": "Kettle's Yard",
+  "module": "kettles_yard",
+  "started_at": "2026-09-28T09:24:44+00:00",
+  "ok": true,
+  "events": 20,
+  "articles": 0,
+  "stores": 0,
+  "requests": 28,
+  "seconds": 73.6
+ },
+ "S027": {
+  "name": "RunThrough",
+  "module": "runthrough",
+  "started_at": "2026-09-28T09:46:33+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 2.7
  }
 }

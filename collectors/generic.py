@@ -192,3 +192,30 @@ class StoreListCollector(Collector):
             out.append(self.event(kind="store", title=name, url=url, external_id=url, venue=self.centre,
                                   address=self.address))
         return out
+
+
+class TownPagesJsonLd(JsonLdListCollector):
+    """Страницы агрегатора по городам зоны: все страницы обходятся независимо (пустая страница города — не конец
+    списка, недоступная — пропускается). stats — событий по городу."""
+
+    def collect(self, http: PoliteClient) -> list[RawEvent]:
+        seen, out = set(), []
+        self.stats = {}
+        for url in self.pages:
+            try:
+                found = jsonld_events(http.get(url).text)
+            except (FetchError, Disallowed) as e:
+                self.stats[url] = f"ошибка: {e}"[:80]
+                continue
+            n = 0
+            for kw in found:
+                key = (kw["url"] or kw["title"], kw["start"])
+                if key in seen:
+                    continue
+                seen.add(key)
+                kw["url"] = kw["url"] or url
+                if self.keep(kw):
+                    out.append(self.event(**kw))
+                    n += 1
+            self.stats[url] = n
+        return out

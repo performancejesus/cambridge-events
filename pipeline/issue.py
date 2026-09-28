@@ -22,9 +22,9 @@ OUT_OF_TOWN = {"до 30 мин", "до часа"}
 NO_VENUE_RE = re.compile(r"^\s*(various|multiple locations|location to be announced|tba|tbc|online)\b", re.I)
 TBC_RE = re.compile(r"title to be confirmed", re.I)
 # Матчи из загруженного целиком календаря сезона — не «новые анонсы» (бриф, этап 4).
-SEASON_CALENDAR = {"S018"}
+SEASON_CALENDAR = {"S018", "S123"}
 # Статусы ADC и Cambridge United без данных о продаже: в выпуске — обычные события, не «анонсы».
-NO_SALE_DATA = {"S018", "S042"}
+NO_SALE_DATA = {"S018", "S042", "S123"}
 ANNOUNCE_DAYS = 21          # «объявлено недавно»: статья или старт продаж не старше стольких дней
 VENUE_NEWS_DAYS = 90
 
