@@ -31,7 +31,7 @@ ALL = [
     uni_whatson.UniWhatsOn(),
     # этап 6.2: семейные источники и места
     science_centre.ScienceCentre(), family_misc.Libraries(), cppf.CambridgePPF(), tribe_sites.MuseumOfCambridge(),
-    milton_park.MiltonCountryPark(), family_misc.NenePark(), family_misc.ComputingHistory(),
+    milton_park.MiltonCountryPark(), family_misc.ComputingHistory(),   # Nene Park (S133) — 403, см. p6_decisions
     # этап 6.3: церкви и соборы
     ely_cathedral.ElyCathedral(),
     # этап 6.4: отложенные P2

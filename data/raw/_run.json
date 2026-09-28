@@ -302,7 +302,7 @@
   "requests": 2,
   "seconds": 2.8
  },
- "_run_id": "2026-09-28T17:04:13+00:00",
+ "_run_id": "2026-09-28T17:31:44+00:00",
  "S128": {
   "name": "Ents24 — города зоны",
   "module": "towns_ents24",
@@ -466,48 +466,243 @@
  "S052": {
   "name": "University of Cambridge Museums",
   "module": "ucm",
-  "started_at": "2026-09-28T17:04:13+00:00",
+  "started_at": "2026-09-28T17:31:44+00:00",
   "ok": true,
   "events": 99,
   "articles": 0,
   "stores": 0,
   "requests": 6,
-  "seconds": 13.4
+  "seconds": 12.3
  },
  "S069": {
   "name": "Cambridge University Botanic Garden",
   "module": "botanic",
-  "started_at": "2026-09-28T17:04:27+00:00",
+  "started_at": "2026-09-28T17:32:35+00:00",
   "ok": true,
   "events": 18,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 18,
-   "cached": 0,
-   "fetched": 18,
+   "cached": 18,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 22,
-  "seconds": 67.5
+  "requests": 4,
+  "seconds": 9.9
  },
  "S048": {
   "name": "University of Cambridge — What's On",
   "module": "uni_whatson",
-  "started_at": "2026-09-28T17:05:34+00:00",
+  "started_at": "2026-09-28T17:38:08+00:00",
   "ok": true,
   "events": 48,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 157,
-   "cached": 0,
-   "fetched": 157,
+   "cached": 157,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 164,
-  "seconds": 370.2
+  "requests": 7,
+  "seconds": 15.3
+ },
+ "S012": {
+  "name": "Cambridge Junction",
+  "module": "junction",
+  "started_at": "2026-09-28T17:31:57+00:00",
+  "ok": true,
+  "events": 260,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 260,
+   "cached": 260,
+   "fetched": 0,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 15,
+  "seconds": 37.9
+ },
+ "S001": {
+  "name": "Visit Cambridge",
+  "module": "visit_cambridge",
+  "started_at": "2026-09-28T17:32:45+00:00",
+  "ok": true,
+  "events": 98,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 102,
+   "cached": 5,
+   "fetched": 97,
+   "fetch_errors": 0,
+   "no_jsonld": 3
+  },
+  "requests": 116,
+  "seconds": 323.7
+ },
+ "S054": {
+  "name": "Cambridge Science Centre",
+  "module": "science_centre",
+  "started_at": "2026-09-28T17:38:24+00:00",
+  "ok": true,
+  "events": 9,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 9,
+   "cached": 0,
+   "fetched": 9,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 11,
+  "seconds": 22.8
+ },
+ "S055": {
+  "name": "Cambridgeshire Libraries (Eventbrite)",
+  "module": "family_misc",
+  "started_at": "2026-09-28T17:38:46+00:00",
+  "ok": true,
+  "events": 12,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 12,
+   "cached": 0,
+   "fetched": 12,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 14,
+  "seconds": 27.9
+ },
+ "S131": {
+  "name": "Cambridge Past, Present & Future",
+  "module": "cppf",
+  "started_at": "2026-09-28T17:39:14+00:00",
+  "ok": true,
+  "events": 108,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 5.7
+ },
+ "S130": {
+  "name": "Museum of Cambridge",
+  "module": "tribe_sites",
+  "started_at": "2026-09-28T17:39:20+00:00",
+  "ok": true,
+  "events": 7,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 4.2
+ },
+ "S132": {
+  "name": "Milton Country Park",
+  "module": "milton_park",
+  "started_at": "2026-09-28T17:39:24+00:00",
+  "ok": true,
+  "events": 7,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 3.6
+ },
+ "S133": {
+  "name": "Nene Park (Ferry Meadows)",
+  "module": "family_misc",
+  "started_at": "2026-09-28T17:39:28+00:00",
+  "ok": false,
+  "error": "FetchError: ConnectError: [Errno 104] Connection reset by peer",
+  "trace": "lib/python3.11/dist-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\nhttpcore.ConnectError: [Errno 104] Connection reset by peer\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/user/cambridge-events/collectors/http.py\", line 100, in _raw_get\n    r = self._client.get(url)\n        ^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/dist-packages/httpx/_client.py\", line 1053, in get\n    return self.request(\n           ^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/dist-packages/httpx/_client.py\", line 825, in request\n    return self.send(request, auth=auth, follow_redirects=follow_redirects)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nhttpx.ConnectError: [Errno 104] Connection reset by peer\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/user/cambridge-events/scripts/run_collectors.py\", line 48, in main\n    events = c.collect(http)\n             ^^^^^^^^^^^^^^^\n  File \"/home/user/cambridge-events/collectors/sources/family_misc.py\", line 44, in collect\n    out = super().collect(http)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/cambridge-events/collectors/generic.py\", line 70, in collect\n    found = jsonld_events(http.get(url).text)\n                          ^^^^^^^^^^^^^\ncollectors.http.FetchError: ConnectError: [Errno 104] Connection reset by peer\n",
+  "requests": 1,
+  "seconds": 11.7
+ },
+ "S134": {
+  "name": "Centre for Computing History",
+  "module": "family_misc",
+  "started_at": "2026-09-28T17:39:40+00:00",
+  "ok": true,
+  "events": 6,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 11.2
+ },
+ "S071": {
+  "name": "Ely Cathedral",
+  "module": "ely_cathedral",
+  "started_at": "2026-09-28T17:39:51+00:00",
+  "ok": true,
+  "events": 32,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 4.2
+ },
+ "S126": {
+  "name": "Theatre Royal Bury St Edmunds",
+  "module": "theatre_royal_bury",
+  "started_at": "2026-09-28T17:39:55+00:00",
+  "ok": true,
+  "events": 33,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 33,
+   "cached": 0,
+   "fetched": 33,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 35,
+  "seconds": 96.7
+ },
+ "S113": {
+  "name": "Visit Ely",
+  "module": "visit_ely",
+  "started_at": "2026-09-28T17:41:32+00:00",
+  "ok": true,
+  "events": 12,
+  "articles": 0,
+  "stores": 0,
+  "requests": 3,
+  "seconds": 6.3
+ },
+ "S022": {
+  "name": "Huntingdon Racecourse",
+  "module": "p3_sources",
+  "started_at": "2026-09-28T17:41:38+00:00",
+  "ok": true,
+  "events": 11,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 3.4
+ },
+ "S043": {
+  "name": "Mumford Theatre (Eventbrite)",
+  "module": "p3_sources",
+  "started_at": "2026-09-28T17:41:41+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 0,
+   "cached": 0,
+   "fetched": 0,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 1,
+  "seconds": 0.5
  }
 }
