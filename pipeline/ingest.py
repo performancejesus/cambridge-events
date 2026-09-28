@@ -164,18 +164,43 @@ def apply_merges(con: sqlite3.Connection) -> dict:
             dup = find(m)
             if not dup or dup[0] == keep[0]:
                 continue
-            k, d = keep[0], dup[0]
-            con.execute("UPDATE raw_items SET event_id=? WHERE event_id=?", (k, d))
-            con.execute("""INSERT OR IGNORE INTO event_sources(event_id, source_id, url, raw_id, article_id)
-                SELECT ?, source_id, url, raw_id, article_id FROM event_sources WHERE event_id=?""", (k, d))
-            con.execute("DELETE FROM event_sources WHERE event_id=?", (d,))
-            for table in ("event_updates", "recurring_events"):
-                con.execute(f"UPDATE {table} SET event_id=? WHERE event_id=?", (k, d))
-            con.execute("DELETE FROM venue_lookups WHERE event_id=?", (d,))
-            con.execute("DELETE FROM status_history WHERE event_id=?", (d,))
-            con.execute("DELETE FROM events WHERE event_id=?", (d,))
+            _merge_into(con, keep[0], dup[0])
             stats["manual_merged"] += 1
     return stats
+
+
+def _merge_into(con: sqlite3.Connection, k: int, d: int) -> None:
+    con.execute("UPDATE raw_items SET event_id=? WHERE event_id=?", (k, d))
+    con.execute("""INSERT OR IGNORE INTO event_sources(event_id, source_id, url, raw_id, article_id)
+        SELECT ?, source_id, url, raw_id, article_id FROM event_sources WHERE event_id=?""", (k, d))
+    con.execute("DELETE FROM event_sources WHERE event_id=?", (d,))
+    for table in ("event_updates", "recurring_events"):
+        con.execute(f"UPDATE {table} SET event_id=? WHERE event_id=?", (k, d))
+    con.execute("DELETE FROM venue_lookups WHERE event_id=?", (d,))
+    con.execute("DELETE FROM status_history WHERE event_id=?", (d,))
+    con.execute("DELETE FROM fame_cache WHERE event_id=?", (d,))   # оценка известности — у основного события
+    con.execute("DELETE FROM events WHERE event_id=?", (d,))
+
+
+def merge_same(con: sqlite3.Connection) -> dict:
+    """Дубли внутри источника (решение после этапа 6): один сайт публикует событие дважды («Fungi Field Day» и
+    «Fungi Field Day 2026» — год отбрасывается нормализацией), а dedupe не склеивает записи одного источника.
+    Будущие события с одинаковыми датой, временем, площадкой (postcode или название) и нормализованным названием —
+    одно событие."""
+    groups: dict[tuple, list[int]] = {}
+    for e in con.execute("""SELECT event_id, title, date_start, time_start, venue_name, postcode FROM events
+            WHERE coalesce(date_end, date_start) >= date('now') ORDER BY event_id""").fetchall():
+        nt = norm_title(e["title"])
+        if len(nt) < 5:
+            continue
+        key = (e["date_start"], e["time_start"], (e["postcode"] or "").replace(" ", "") or norm_venue(e["venue_name"]), nt)
+        groups.setdefault(key, []).append(e["event_id"])
+    n = 0
+    for ids in groups.values():
+        for d in ids[1:]:
+            _merge_into(con, ids[0], d)
+            n += 1
+    return {"same_merged": n}
 
 
 # --- 3. сведение полей и жизненный цикл ---

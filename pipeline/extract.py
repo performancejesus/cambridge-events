@@ -27,9 +27,11 @@ BATCH_DISCOUNT = 0.5                            # Message Batches API — пол
 PROMPT = (ROOT / "prompts" / "article_extract.md").read_text()
 SCHEMA = json.loads((ROOT / "prompts" / "article_extract.schema.json").read_text())
 MAX_CHARS = 8000
-# Источники, чьи статьи не передаём в модель (robots.txt сайта закрыт для ИИ-краулеров — уважаем волю владельца).
-# Для них — только фильтр заголовков RSS по ключевым словам (keyword_news), без LLM.
-NO_LLM_SOURCES = {"S097"}
+# Источники, чьи статьи никогда не передаём в модель (только заголовки RSS + фильтр по словам, keyword_news).
+# Сейчас пусто: Cambridge BID (S097) исключался на этапе 3 из-за неверного прочтения robots.txt — ИИ-агенты там
+# в общей группе с User-agent: *, запрета нет (решение после этапа 6). Источники с ИИ-запретом уходят сюда же
+# по флагу respect_ai_disallow (pipeline/ai_policy.py).
+NO_LLM_SOURCES: set[str] = set()
 # Поле tickets из ответа модели → raw_items.status (см. ingest._status: on_sale / announced / scheduled).
 TICKET_STATUS = {"on_sale": "on_sale", "not_yet_on_sale": "tickets_expected", "not_required": "no_tickets"}
 # Cambridge BID: слово «new» слишком общее (решение после этапа 3, часть 2) — только явные открытия/закрытия.
@@ -38,7 +40,7 @@ KEYWORD_STAGE = {"coming soon": "coming_soon", "closing": "closed", "closes": "c
 ADDRESS_HINT = re.compile(r"\d|\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b|\b(Road|Street|Lane|Square|Parade|Place)\b")
 # Источники статей для извлечения.
 ARTICLE_SOURCES = {"S002", "S003", "S004", "S005", "S050", "S087", "S092", "S093", "S010",
-                   "S116", "S117", "S118", "S119"}
+                   "S116", "S117", "S118", "S119", "S097"}
 # Газеты Newsquest (решение после этапа 5): до модели — дедупликация между газетами и предфильтр по словам.
 NEWSQUEST = {"S116", "S117", "S118", "S119"}
 PREFILTER_RE = re.compile(

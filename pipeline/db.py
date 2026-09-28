@@ -241,6 +241,7 @@ CREATE TABLE IF NOT EXISTS llm_batches (
 
 # Колонки, добавленные после создания базы: (таблица, колонка, тип).
 MIGRATIONS = [
+    ("events", "evergreen", "INTEGER"),               # постоянный продукт для туристов, не событие (pipeline/evergreen.py)
     ("events", "open_space", "TEXT"),               # луг / парк / площадь (pipeline/open_spaces.py, этап 6)
     ("recurring_events", "found_date_end", "TEXT"),
     ("recurring_events", "tickets", "INTEGER"),       # 1 — билеты/регистрация (событие announced), 0 — scheduled

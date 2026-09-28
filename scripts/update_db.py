@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from pipeline import extract, importance, ingest, open_spaces, recurring, venues  # noqa: E402
+from pipeline import evergreen, extract, importance, ingest, kids, open_spaces, recurring, venues  # noqa: E402
 from pipeline.db import connect  # noqa: E402
 
 
@@ -31,9 +31,12 @@ def main() -> None:
     stats |= venues.build(con)
     stats |= ingest.dedupe(con, run_id)
     stats |= ingest.apply_merges(con)        # data/manual_merges.json
+    stats |= ingest.merge_same(con)          # дубли внутри одного источника
     stats |= ingest.refresh(con, run_id)
     stats |= ingest.store_changes(con, run_id)
     stats |= open_spaces.tag(con)             # события на лугах, в парках, на площадях
+    stats |= evergreen.tag(con)               # постоянные продукты для туристов — не события
+    stats |= kids.load(con)                   # детские программы на каникулы (data/kids_programmes.json)
     stats |= importance.resolve_neighbours(con)   # 40–60 км вне графства: по уже известным оценкам (новые — после оценки)
     con.commit()
     print(json.dumps(stats, ensure_ascii=False, indent=1))

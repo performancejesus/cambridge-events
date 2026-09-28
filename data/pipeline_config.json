@@ -1,4 +1,4 @@
 {
- "_note": "Настройки конвейера. respect_ai_disallow: true — источники, чей robots.txt закрывает сайт для ИИ-агентов Anthropic (anthropic-ai, ClaudeBot, Claude-User, Claude-Web, Claude-SearchBot), обрабатываются без модели: только заголовок и ссылка (как Cambridge BID). Список таких источников — таблица source_ai_policy, обновляется при каждом прогоне коллекторов. По умолчанию false до решения владельца (открытый вопрос в брифе).",
- "respect_ai_disallow": false
+ "_note": "Настройки конвейера. respect_ai_disallow — режим для источников, чей robots.txt закрывает сайт для ИИ-агентов Anthropic: off — ничего не менять (по умолчанию до решения на этапе 8); claude_user_only — без модели только источники, закрывшие Claude-User (сейчас Newsquest S116–S119); any_ai_agent — без модели все источники с любым ИИ-запретом (anthropic-ai, ClaudeBot, Claude-User, Claude-Web, Claude-SearchBot). Без модели = только заголовок и ссылка, фильтр по ключевым словам (extract.keyword_news). Список источников — таблица source_ai_policy, обновляется при каждом прогоне коллекторов.",
+ "respect_ai_disallow": "off"
 }

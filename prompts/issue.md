@@ -9,11 +9,14 @@ our database. Every candidate has an `id`; its prefix says what it is:
 - `A…` — an event after the period that was announced recently (`evidence` says how we know);
 - `T…` — tickets for an event went on sale recently or will go on sale soon (`on_sale_date`);
 - `C…` — a cancelled or postponed event;
-- `V…` — an opening, upcoming opening or closure of a restaurant, café, bar or shop.
+- `V…` — an opening, upcoming opening or closure of a restaurant, café, bar or shop;
+- `K…` — a children's programme with booking for the school holidays (a camp, holiday club, course): not an event.
 
 Event candidates carry `importance` (1–10, computed from venue size, price, press coverage, Wikipedia, fame) with
 `importance_reason`, `on_weekends` (which weekend rubrics the event falls on), `on_weekdays`, `kids_tag` (children
-or families are named in the data) and `free_tag`. An `editor_note` is a fact checked by our editor — trust it. `linked` lists candidates that belong to the
+or families are named in the data) and `free_tag`, sometimes `performer` (who is on stage), `long_running` (runs for more than two weeks), `sale` (a sale or
+jumble sale) and `regular_series` (a weekly library session and the like — present it as regular sessions, one line,
+no dates of the whole series). An `editor_note` is a fact checked by our editor — trust it. `linked` lists candidates that belong to the
 same occasion (a director's talk and the screening of their film) — they go into one item together.
 
 Rubrics (`rubric` values; the input lists the ones available):
@@ -25,24 +28,36 @@ Rubrics (`rubric` values; the input lists the ones available):
   screening, an author talks about a book that is being staged, a tribute album's artists play the concert), say so
   and, if both are on the same day or form one visit, put both ids into one item ("screening + meet the director").
   Only links that the data states (summary, editor_note, `linked`); a guess goes to the editor notes instead.
+  Order the theme items by meaning, not importance: the central event of the occasion first (the concert), then the
+  related ones (exhibition, film, talks), and a surprising connection (a football match) last.
 - `weekend_1`, `weekend_2`, … — "The weekend" for each weekend of the period (dates in the input): the 3–5 best
   events on that Saturday or Sunday by importance, none below 4. Every event with importance ≥ 7 on that weekend must
   be here or in `theme`. If nothing on a weekend reaches 4, leave that rubric out. The biggest events of the period
-  belong here or in `theme`, not only in `tickets`.
+  belong here or in `theme`, not only in `tickets`. Not here: `long_running` events (exhibitions — they go to
+  `exhibitions` or `free`) and zone `Кембриджшир, дальше часа` below importance 8 (they go to `county`).
 - `weekdays` — "Weekdays: concerts, theatre, comedy": notable concerts, plays, musicals, dance and stand-up on
   Monday–Friday in the period (`on_weekdays` true), 4–6 items, the most important first.
+- `exhibitions` — "Exhibitions": `long_running` candidates, the notable ones, one short sentence each.
 - `free` — free events and exhibitions (`free_tag` true). Order does not matter, we sort by importance.
 - `kids` — only candidates with `kids_tag` true. Do not guess that something suits children. If fewer than three
   qualify, give fewer.
+- `holidays` — "School holidays: where to book your child": `K…` candidates only. It is printed in two parts, October
+  half term (booking now) and Christmas (who is already taking bookings) — we group by `holiday`, you just list the
+  items. Take every `K…` candidate whose provider is in the zone (a Christmas programme with `places: not_open` says
+  when booking opens, `booking_opens`). Say who it is for when it is not everyone: `audience: eligible` — families
+  eligible for free school meals (HAF); `audience: university` — only for children of University of Cambridge staff and
+  students; `verified: false` — add "details on the provider's website". Ages, days, hours and price only from the data;
+  unknown price — "price on booking" / «цена — при записи». Mention few places left when `places` says so.
 - `sport` — matches, races and other sport in the period.
-- `out_of_town` — events in the period in zone `до 30 мин` or `до часа`. Do not take events with importance below 3
-  when there are stronger ones (a themed brunch is not worth the drive when there is a concert at The Maltings).
-- `county` — events in zone `Кембриджшир, дальше часа` (Peterborough, the Fens). Only notable ones.
+- `out_of_town` — events in the period in zone `до 30 мин` or `до часа`, importance 4 or more, no `sale` items
+  (charity sales and jumble sales). Fewer items is better than weak ones.
+- `county` — events in zone `Кембриджшир, дальше часа` (Peterborough, the Fens), importance 4 or more, no `sale` items.
 - `new_announcements` — `A…` candidates: notable events announced recently, including dates of annual events.
 - `tickets` — `T…` candidates (and `A…` ones not used elsewhere) where sales opened recently or open soon.
 - `cancelled` — `C…` candidates only.
 - `new_in_town` — `V…` candidates: openings of restaurants, cafés, bars and shops; closures only if notable. Prefer
-  recent openings in and around Cambridge; skip places that are not open to the public.
+  recent openings in and around Cambridge; skip places that are not open to the public. This is one of the strongest
+  rubrics: give 5–6 items when there are enough good candidates.
 
 Rules:
 1. `E…` candidates go to `theme`, the weekend rubrics, `weekdays`, `free`, `kids`, `sport`, `out_of_town`, `county`;
@@ -50,7 +65,7 @@ Rules:
    is in the period); `C…` to `cancelled`; `V…` to `new_in_town`.
 2. Each event appears at most once in the whole issue. If an event has both an `E…` and a `T…` candidate, use one of
    them. An event that fits several rubrics goes where it is most useful.
-3. 3–6 items per rubric, 25–40 in total. Never pad with weak or irrelevant items and never invent items. A rubric with
+3. 3–6 items per rubric (`holidays` and `new_in_town` may be longer), 30–45 in total without `holidays`. Never pad with weak or irrelevant items and never invent items. A rubric with
    nothing suitable is simply left out — no "nothing this week" line.
 4. Skip: professional courses, business conferences and networking events priced for companies; listings that are
    not an event ("Things to do in Cambridge for Halloween", "Waterstones Book Events"); private events; lectures with
@@ -59,7 +74,9 @@ Rules:
    editor notes.
 6. Status `scheduled (no ticket data)` (ADC Theatre, Cambridge United) means we have no sales data: present these as
    normal events and do not say tickets are not on sale yet.
-7. Facts. Dates, times, prices, line-ups, venues and addresses come only from the candidate data. General knowledge
+7. Facts. Dates, times, prices, line-ups, venues and addresses come only from the candidate data. When the data
+   names who performs (`performer` or a line-up in the summary), name the headliners in the item — the line-up is
+   often the whole point of the event. General knowledge
    that cannot go out of date is allowed — the genre of a band, the country an artist comes from, what a well-known
    festival or institution is ("Pink Floyd's founder", "a Scottish pop duo", "the university's museum of art") — but
    list every such statement in the item's `knowledge_en` / `knowledge_ru` so the editor can check it. Nothing that

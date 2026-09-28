@@ -183,8 +183,11 @@ def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) 
     sig = _signals(con, e)
     sources, has_article = sig["sources"], sig["has_article"]
 
+    fb = football(e, sources)
     cap = CAPACITY.get(e["venue_ref"] or "") or CAPACITY.get(e["venue_name"] or "")
-    if cap:
+    if fb:   # правки по v3: у футбола вместимость стадиона не считается — только турнир, соперник, дерби, раунд
+        parts.append((0.0, "футбол: вместимость стадиона не учитывается"))
+    elif cap:
         add(W["capacity"]["points"] * _log_scale(cap, W["capacity"]["min"], W["capacity"]["full_at"]),
             f"{e['venue_ref'] or e['venue_name']} ~{cap} мест")
     else:
@@ -207,8 +210,7 @@ def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) 
     if sig["recurring"]:
         add(W["recurring"]["points"], f"ежегодный флагман ({sig['recurring']})")
 
-    fb = football(e, sources)
-    floor = 0.0
+    floor, ceiling = 0.0, 10.0
     if fb:
         F = W["football"]
         add(F[fb["competition"]], f"футбол: {CUP_RU[fb['competition']]}, соперник {fb['opponent']}")
@@ -217,6 +219,9 @@ def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) 
         if fame and fame.get("opponent_top_flight"):
             floor = F["top_flight_min_score"]
             parts.append((0.0, "соперник из Премьер-лиги (оценка модели) → не ниже 8"))
+        elif fb["competition"] == "league" and not fb["derby"]:
+            ceiling = F["league_max_score"]
+            parts.append((0.0, f"обычный матч лиги → не выше {ceiling:g}"))
     elif fame:
         # известность — того, кто на сцене (performer), а не темы: пьесы, оригинала трибьюта, знаменитости-повода
         draw = fame.get("draw_type")
@@ -247,7 +252,7 @@ def score(con: sqlite3.Connection, e: sqlite3.Row, fame: dict | None, wiki_row) 
         else:
             parts.append((0.0, f"модель: {who or 'исполнитель'} неизвестен — {fame.get('fame_reason', '')}"))
 
-    total = max(floor, min(10.0, W["base"] + sum(p for p, _ in parts)))
+    total = max(floor, min(ceiling, W["base"] + sum(p for p, _ in parts)))
     reason = "; ".join(f"{t} (+{p:g})" if p else t for p, t in sorted(parts, key=lambda x: -x[0])) or "сигналов нет"
     return round(total, 1), reason
 

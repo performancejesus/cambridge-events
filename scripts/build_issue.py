@@ -30,9 +30,9 @@ MODEL = "claude-sonnet-5"
 PRICE_IN, PRICE_OUT = 2.00 / 1e6, 10.00 / 1e6   # $ за токен, Sonnet 5
 PROMPT = (ROOT / "prompts" / "issue.md").read_text()
 SCHEMA = json.loads((ROOT / "prompts" / "issue.schema.json").read_text())
-EVENT_RUBRICS = {"theme", "weekdays", "free", "kids", "sport", "out_of_town", "county"}
+EVENT_RUBRICS = {"theme", "weekdays", "exhibitions", "free", "kids", "sport", "out_of_town", "county"}
 PREFIX_RUBRICS = {"E": EVENT_RUBRICS, "A": {"new_announcements", "tickets", "theme"}, "T": {"tickets", "theme"},
-                  "C": {"cancelled"}, "V": {"new_in_town"}}
+                  "C": {"cancelled"}, "V": {"new_in_town"}, "K": {"holidays"}}
 
 
 def allowed(prefix: str, rubric: str) -> bool:
@@ -48,7 +48,7 @@ def schema_for(w: issue.Window) -> dict:
 MAX_TOKENS = 128000
 # Группы рубрик для генерации частями (решение после этапа 4b: обрезанный ответ стоил $0.73)
 PART_GROUPS = [lambda w: ["theme"] + [r for r in w.rubrics() if r.startswith("weekend_")] + ["weekdays"],
-               lambda w: ["free", "kids", "sport", "out_of_town", "county"],
+               lambda w: ["exhibitions", "free", "kids", "holidays", "sport", "out_of_town", "county"],
                lambda w: ["new_announcements", "tickets", "cancelled", "new_in_town"]]
 TOKENS_PER_ITEM = 450         # видимый ответ на пункт: два языка, место, цена, факты из знаний модели
 THINKING_FACTOR = 4           # запас на рассуждения модели (effort medium)
@@ -116,18 +116,26 @@ def call_model(client, payload: dict, schema: dict, con, purpose: str) -> tuple[
 def fits(rubric: str, c: dict, w: issue.Window) -> bool:
     """Выходные — событие в эти выходные и оценка ≥ 7; «На неделе» — есть день пн–пт; «С детьми» и «Бесплатно» —
     по тегам из данных; «за городом» и «по графству» — по зоне."""
+    imp = c.get("importance") or 0
     if rubric.startswith("weekend_"):
-        return rubric in c.get("on_weekends", []) and (c.get("importance") or 0) >= issue.WEEKEND_MIN
+        # правки по v3: длительные выставки — не сюда; «Кембриджшир, дальше часа» — только от 8
+        if c.get("long_running") or (c.get("zone") == issue.geo_COUNTY_FAR and imp < issue.COUNTY_WEEKEND_MIN):
+            return False
+        return rubric in c.get("on_weekends", []) and imp >= issue.WEEKEND_MIN
     if rubric == "weekdays":
         return bool(c.get("on_weekdays"))
+    if rubric == "exhibitions":
+        return bool(c.get("long_running"))
+    if rubric == "holidays":
+        return c.get("kind") == "programme"
     if rubric == "kids":
         return bool(c.get("kids_tag"))
     if rubric == "free":
         return bool(c.get("free_tag"))
-    if rubric == "out_of_town":
-        return c.get("zone") in issue.OUT_OF_TOWN
+    if rubric == "out_of_town":   # правки по v3: не ниже 4, без распродаж и барахолок
+        return c.get("zone") in issue.OUT_OF_TOWN and imp >= issue.OUT_OF_TOWN_MIN and not c.get("sale")
     if rubric == "county":
-        return c.get("zone") == "Кембриджшир, дальше часа"
+        return c.get("zone") == issue.geo_COUNTY_FAR and imp >= issue.OUT_OF_TOWN_MIN and not c.get("sale")
     return True
 
 
@@ -139,16 +147,21 @@ def _nums(text: str) -> set[float]:
     return {round(float(x), 2) for x in NUM_RE.findall(text.replace(",", ""))}
 
 
-def check_price(it: dict, c: dict) -> tuple[str, str] | None:
-    """Цифры цены в тексте модели должны быть в данных (price_text, price_from, summary); иначе — цена из базы."""
-    known = _nums(c.get("price_text")) | _nums(c.get("summary")) | _nums(c.get("note"))
-    if c.get("price_from") is not None:
-        known.add(round(float(c["price_from"]), 2))
+def check_price(it: dict, cands: list[dict]) -> tuple[str, str] | None:
+    """Цифры цены в тексте модели должны быть в данных любого из кандидатов пункта (price_text, price_from, summary);
+    иначе — цена из данных (правки по v3: значение из данных, а не «цена не указана», если оно есть у любого id)."""
+    c = cands[0]
+    known = set()
+    for x in cands:
+        known |= _nums(x.get("price_text")) | _nums(x.get("summary")) | _nums(x.get("note"))
+        if x.get("price_from") is not None:
+            known.add(round(float(x["price_from"]), 2))
     known |= {round(x) for x in known}
     wrong = {x for x in _nums(it["price_en"]) | _nums(it["price_ru"]) if x not in known}
     if not wrong or c["kind"] == "venue_news":
         return None
-    en, ru = issue.price_from_data(c)
+    priced = next((x for x in cands if x.get("price_text") or x.get("price_from") is not None), c)
+    en, ru = issue.price_from_data(priced)
     it["price_en"], it["price_ru"] = en, ru
     return (f"“{it['title_en']}”: price in the model text did not match the data ({sorted(wrong)}) — replaced with “{en}”",
             f"«{it['title_ru']}»: цена в тексте модели не совпала с данными ({sorted(wrong)}) — заменена на «{ru}»")
@@ -243,25 +256,6 @@ def apply_links(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
     return notes
 
 
-def out_of_town_threshold(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
-    """«За городом»: пункты с оценкой < 3 убираются, если есть альтернативы — пункты с оценкой ≥ 3 в рубрике
-    или неиспользованные события за городом с оценкой ≥ 3 (правки по v2)."""
-    notes = []
-    used = {i for sec in result["sections"] for it in sec["items"] for i in it["ids"]}
-    spare = [c["title"] for cid, c in pools.candidates.items() if cid not in used and c["kind"] == "event"
-             and c.get("zone") in issue.OUT_OF_TOWN and (c.get("importance") or 0) >= issue.OUT_OF_TOWN_MIN]
-    for sec in result["sections"]:
-        if sec["rubric"] != "out_of_town":
-            continue
-        weak = [it for it in sec["items"] if issue.importance_of(pools, it) < issue.OUT_OF_TOWN_MIN]
-        if weak and (len(weak) < len(sec["items"]) or spare):
-            for it in weak:
-                sec["items"].remove(it)
-                notes.append((f"“{it['title_en']}”: importance below {issue.OUT_OF_TOWN_MIN:g} in “Out of town” while alternatives exist — removed",
-                              f"«{it['title_ru']}»: оценка ниже {issue.OUT_OF_TOWN_MIN:g} в «За городом» при наличии альтернатив — убран"))
-    return notes
-
-
 def validate(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[str, str]]:
     """Убирает неизвестные и повторные id, пункты не в своей рубрике; возвращает замечания (en, ru)."""
     notes, used, used_events = [], set(), set()
@@ -285,7 +279,7 @@ def validate(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[st
                 notes.append((f"“{it['title_en']}” ({ids[0]}) does not fit rubric {sec['rubric']} — removed",
                               f"«{it['title_ru']}» ({ids[0]}) не подходит для рубрики {sec['rubric']} — убран"))
                 continue
-            fixed = check_price(it, pools.candidates[ids[0]])
+            fixed = check_price(it, [pools.candidates[i] for i in ids])
             if fixed:
                 notes.append(fixed)
             used.update(ids)
@@ -308,10 +302,44 @@ def validate(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[st
               for it in sec["items"] for i in it["ids"] for e in pools.candidates[i]["event_ids"]}
     for cid, c in pools.candidates.items():
         if c["kind"] == "event" and c.get("on_weekends") and (c.get("importance") or 0) >= issue.HEADLINE_MIN \
-                and not set(c["event_ids"]) & placed:
+                and any(fits(r, c, w) for r in c["on_weekends"]) and not set(c["event_ids"]) & placed:
             notes.append((f"“{c['title']}” ({cid}, {c['importance']:g}) is on a weekend with importance ≥ 7 but not in “The weekend”",
                           f"«{c['title']}» ({cid}, {c['importance']:g}) — на выходных, оценка ≥ 7, но не в «Главном»"))
+    # правки по v3: состав (performer из оценки известности) должен дойти до текста пункта
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            names = {pools.candidates[i].get("performer") for i in it["ids"]} - {None, ""}
+            text = f"{it['title_en']} {it['blurb_en']}".lower()
+            for name in names:
+                if name.lower() not in text:
+                    notes.append((f"“{it['title_en']}”: the performer from the data ({name}) is not named in the text",
+                                  f"«{it['title_ru']}»: исполнитель из данных ({name}) не назван в тексте"))
     return notes
+
+
+CLAUDE_USER_BLOCKED = {"S116", "S117", "S118", "S119"}          # Newsquest: закрыт и Claude-User
+TRAINING_BLOCKED = {"S003", "S004", "S010", "S092", "S093"}     # закрыты боты обучения/поиска, Claude-User открыт
+
+
+def ai_measure(result: dict, pools: issue.Pools) -> dict:
+    """Замер для решения об ИИ-запретах (бриф, открытый вопрос): сколько пунктов выпуска пришло ТОЛЬКО из источников
+    с запретом Claude-User и сколько — только из источников с запретом ботов обучения/поиска; что исчезло бы
+    в режимах claude_user_only и any_ai_agent."""
+    only_cu, only_train, lost_any = [], [], []
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            srcs = set()
+            for i in it["ids"]:
+                srcs |= set(pools.candidates[i].get("sources") or [])
+            if not srcs:
+                continue
+            if srcs <= CLAUDE_USER_BLOCKED:
+                only_cu.append(it["title_en"])
+            elif srcs <= TRAINING_BLOCKED:
+                only_train.append(it["title_en"])
+            if srcs <= CLAUDE_USER_BLOCKED | TRAINING_BLOCKED:
+                lost_any.append(it["title_en"])
+    return {"only_claude_user_blocked": only_cu, "only_training_blocked": only_train, "lost_any_ai_agent": lost_any}
 
 
 def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: list[tuple[str, str]],
@@ -348,8 +376,8 @@ def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: l
             unv_en.append(f"{t} ({cid}): opening date unknown (article published {c.get('published') or '?'})")
             unv_ru.append(f"{t} ({cid}): дата открытия неизвестна (статья от {c.get('published') or '?'})")
     if pools.unverified_news:
-        unv_en.append(f"Cambridge BID: {pools.unverified_news} headline(s) matched the opening/closing keywords without LLM — not used, need a manual check")
-        unv_ru.append(f"Cambridge BID: заголовков по ключевым словам без LLM — {pools.unverified_news}; в выпуск не взяты, нужна ручная проверка")
+        unv_en.append(f"{pools.unverified_news} RSS headline(s) from sources processed without the model matched the opening/closing keywords — not used, need a manual check")
+        unv_ru.append(f"заголовков RSS по ключевым словам из источников без модели — {pools.unverified_news}; в выпуск не взяты, нужна ручная проверка")
 
     out_en, out_ru = [], []
     reasons_en = {"лекции talks.cam с «Title to be confirmed»": "talks.cam lectures with “Title to be confirmed”",
@@ -467,15 +495,37 @@ def main() -> None:
         result, tin, tout = generate(client, payload, w, pools, con, f"issue {stem[6:]}")
         usage = {"input_tokens": tin, "output_tokens": tout, "cost_usd": tin * PRICE_IN + tout * PRICE_OUT}
         raw_path.write_text(json.dumps({"result": result, "usage": usage}, ensure_ascii=False, indent=1))
-    fix_notes = apply_links(result, pools) + validate(result, pools, w) + out_of_town_threshold(result, pools) \
+    fix_notes = apply_links(result, pools) + validate(result, pools, w) \
         + strip_status(result, pools) + check_alphabets(result, pools)
     # ручные правки и заметки ревью, записанные в сохранённый ответ модели (issues/issue_<дата>_model.json)
     review = [tuple(x) for x in result.get("manual_fixes", []) + result.get("review_notes", [])]
     editor = editor_block(result, pools, w, fix_notes, review, usage)
+    m = ai_measure(result, pools)
+    measure = {"en": [f"only from sources that block Claude-User (Newsquest S116–S119; lost in claude_user_only): {len(m['only_claude_user_blocked'])}"
+                      + (f" — {'; '.join(m['only_claude_user_blocked'])}" if m['only_claude_user_blocked'] else ""),
+                      f"only from sources that block training/search bots (S003, S004, S010, S092, S093): {len(m['only_training_blocked'])}"
+                      + (f" — {'; '.join(m['only_training_blocked'])}" if m['only_training_blocked'] else ""),
+                      f"lost in any_ai_agent mode (only from any of these sources): {len(m['lost_any_ai_agent'])}"],
+               "ru": [f"только из источников с запретом Claude-User (Newsquest S116–S119; пропадут в режиме claude_user_only): {len(m['only_claude_user_blocked'])}"
+                      + (f" — {'; '.join(m['only_claude_user_blocked'])}" if m['only_claude_user_blocked'] else ""),
+                      f"только из источников с запретом ботов обучения/поиска (S003, S004, S010, S092, S093): {len(m['only_training_blocked'])}"
+                      + (f" — {'; '.join(m['only_training_blocked'])}" if m['only_training_blocked'] else ""),
+                      f"пропадут в режиме any_ai_agent (только из любого из этих источников): {len(m['lost_any_ai_agent'])}"]}
+    kd = json.loads((ROOT / "data" / "kids_programmes.json").read_text())
+    unv = [f"{p['provider']} — {p['title']}: {p.get('note', '')}" for p in kd["programmes"] if not p.get("verified")]
+    unv += [f"{n}: {why}" for n, _, why in kd["not_verified"]]
+    editor["en"].insert(-1, ("AI disallow in robots.txt: what this issue would lose", measure["en"]))
+    editor["ru"].insert(-1, ("ИИ-запреты в robots.txt: что пропало бы из выпуска", measure["ru"]))
+    editor["en"].insert(-1, ("Holiday programmes not verified on the provider site", unv))
+    editor["ru"].insert(-1, ("Детские программы, не проверенные на сайте провайдера", unv))
+    (out_dir / f"{stem}_ai_measure.json").write_text(json.dumps(m, ensure_ascii=False, indent=1))
     for lang in ("en", "ru"):
         path = out_dir / f"{stem}_{lang}.md"
         path.write_text(issue.render(result, pools, w, lang, editor))
         print(path.relative_to(ROOT))
+        reader = out_dir / f"{stem}_reader_{lang}.html"   # читательская версия без блока «Для редактора»
+        reader.write_text(issue.render_reader_html(result, pools, w, lang))
+        print(reader.relative_to(ROOT))
     counts = {sec["rubric"]: len(sec["items"]) for sec in result["sections"]}
     print(json.dumps({"items": counts, "total": sum(counts.values()), "cost_usd": round(usage["cost_usd"], 4)},
                      ensure_ascii=False))

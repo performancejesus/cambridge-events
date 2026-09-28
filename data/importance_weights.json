@@ -47,7 +47,8 @@
   "friendly": 0.5,
   "charity": 1.0,
   "derby_bonus": 1.5,
-  "top_flight_min_score": 8
+  "top_flight_min_score": 8,
+  "league_max_score": 6
  },
  "speaker_talk": {
   "fame_multiplier": 1.6,
