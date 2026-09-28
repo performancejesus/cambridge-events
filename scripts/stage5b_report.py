@@ -98,7 +98,8 @@ def newsquest(con) -> list[str]:
             reasons["криминал / суд / авария / продажа домов в заголовке" if r.startswith("в заголовке") else "нет ключевых слов"] += 1
     per_paper = Counter(a["source_id"] for a in arts)
     unique = len(arts) - st["duplicate"]
-    to_model = sum(st[k] for k in ("useful", "empty", "error", "pending"))
+    to_model = sum(st[k] for k in ("useful", "empty", "error"))
+    passed = to_model + st["pending"]
     cost = con.execute("""SELECT count(*), sum(cost_usd), sum(input_tokens), sum(output_tokens) FROM llm_usage
         WHERE purpose='article_extract_batch' AND article_id IN (SELECT article_id FROM articles WHERE source_id IN ({}))""".format(q),
                        src).fetchone()
@@ -122,8 +123,8 @@ def newsquest(con) -> list[str]:
          "| Шаг | Статей | Отсеяно |", "|---|---|---|",
          f"| Статьи RSS ({', '.join(f'{PAPERS[s]} {per_paper[s]}' for s in src)}) | {len(arts)} | — |",
          f"| 1. После дедупликации между газетами | {unique} | {st['duplicate']} (дубли) |",
-         f"| 2. После предфильтра | {to_model} | {st['filtered']} ({'; '.join(f'{k} — {v}' for k, v in reasons.items())}) |",
-         f"| 3. Отправлено в модель (Haiku, Batch API) | {to_model} | — |",
+         f"| 2. После предфильтра | {passed} | {st['filtered']} ({'; '.join(f'{k} — {v}' for k, v in reasons.items())}) |",
+         f"| 3. Отправлено в модель (Haiku, Batch API) | {to_model} | {st['pending']} ждут в очереди (вернулись после расширения списка слов) |",
          f"| Полезных (есть событие, открытие, отмена) | {st['useful']} | {st['empty']} пустых |", "",
          f"Извлечено: " + ", ".join(f"{k} — {v}" for k, v in got.items()) + ".", "",
          f"Расход: {cost[0]} запросов, {cost[2] or 0} + {cost[3] or 0} токенов = **${cost[1] or 0:.4f}** за статьи "

@@ -1,0 +1,792 @@
+{
+ "result": {
+  "intro_en": "This fortnight's big story is Syd Barrett's 80th birthday, marked around Cambridge with a tribute concert, an exhibition, a biographer's talk and even a football match with a personal connection to the family. Elsewhere the Corn Exchange is doing heavy lifting — Don Broco, Simon Amstell, Alison Moyet and Roachford & Hue and Cry all pass through — and the city gets its first UNIQLO and its first cat café.",
+  "intro_ru": "Главная тема этих двух недель — 80-летие Сида Барретта, которое Кембридж отмечает концертом-трибьютом, выставкой, лекцией биографа и даже футбольным матчем, у которого неожиданно личная связь с семьёй музыканта. Corn Exchange в эти недели работает на полную: Don Broco, Simon Amstell, Alison Moyet, Roachford & Hue and Cry — а в городе открылись первый UNIQLO и первое кот-кафе.",
+  "sections": [
+   {
+    "rubric": "theme",
+    "items": [
+     {
+      "ids": [
+       "E39"
+      ],
+      "title_en": "A Tribute to Syd Barrett: 80th Anniversary Celebrations",
+      "title_ru": "A Tribute to Syd Barrett: 80th Anniversary Celebrations",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£55–£132",
+      "price_ru": "£55–£132",
+      "blurb_en": "A concert marking what would have been Syd Barrett's 80th birthday, at the venue where he gave his final live performance in 1972. The line-up draws on the Clowns and Jugglers tribute album, with a light show from The Mad Alchemist.",
+      "blurb_ru": "Концерт в честь 80-летия Сида Барретта, в том самом зале, где он дал своё последнее живое выступление в 1972 году. Программа построена на трибьют-альбоме Clowns and Jugglers, со световым шоу от The Mad Alchemist.",
+      "knowledge_en": [
+       "Syd Barrett co-founded Pink Floyd"
+      ],
+      "knowledge_ru": [
+       "Сид Барретт — один из основателей Pink Floyd"
+      ]
+     },
+     {
+      "ids": [
+       "E435"
+      ],
+      "title_en": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+      "title_ru": "Выставка о Сиде Барретте: жизнь, искусство и влияние",
+      "where_en": "Openspace, 54a Cherry Hinton Road, Cambridge",
+      "where_ru": "Openspace, 54a Cherry Hinton Road, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Paintings, sketches and work by contemporary artists tracing Barrett's visual art alongside his music.",
+      "blurb_ru": "Картины, эскизы и работы современных художников, посвящённые визуальному творчеству Барретта наряду с музыкой.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E437"
+      ],
+      "title_en": "Talk by Rob Chapman: Syd Barrett – A Very Irregular Head",
+      "title_ru": "Лекция Rob Chapman: Syd Barrett – A Very Irregular Head",
+      "where_en": "Openspace, 54a Cherry Hinton Road, Cambridge",
+      "where_ru": "Openspace, 54a Cherry Hinton Road, Кембридж",
+      "price_en": "£10",
+      "price_ru": "£10",
+      "blurb_en": "A talk by Barrett's biographer, author of the book of the same name.",
+      "blurb_ru": "Лекция биографа Барретта, автора одноимённой книги.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E438",
+       "E439"
+      ],
+      "title_en": "Meet the Director: Roddy Bogawa + Have You Got It Yet? Screening",
+      "title_ru": "Встреча с режиссёром Roddy Bogawa + показ Have You Got It Yet?",
+      "where_en": "Openspace and Arts Picturehouse, Cambridge",
+      "where_ru": "Openspace и Arts Picturehouse, Кембридж",
+      "price_en": "£10 (talk); screening price not listed",
+      "price_ru": "£10 (лекция); цена показа не указана",
+      "blurb_en": "Director Roddy Bogawa talks about his documentary at 5pm, followed by a screening at the Picturehouse at 8.30pm the same day.",
+      "blurb_ru": "Режиссёр Roddy Bogawa выступит в 17:00, а в 20:30 того же дня в Picturehouse покажут его документальный фильм.",
+      "knowledge_en": [
+       "Roddy Bogawa directed the 2023 documentary Have You Got It Yet? The Story of Syd Barrett and Pink Floyd"
+      ],
+      "knowledge_ru": [
+       "Roddy Bogawa снял документальный фильм 2023 года Have You Got It Yet? The Story of Syd Barrett and Pink Floyd"
+      ]
+     },
+     {
+      "ids": [
+       "E111"
+      ],
+      "title_en": "Cambridge United v Blackpool",
+      "title_ru": "Cambridge United — Blackpool",
+      "where_en": "Abbey Stadium, Cambridge",
+      "where_ru": "Abbey Stadium, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "A home league match with a personal edge: proceeds from the day go to mental health charities, after Syd Barrett's sister spoke about the cause tied to his birthday. Kick-off is at 3pm.",
+      "blurb_ru": "Домашний матч с личным подтекстом: сборы от этого дня пойдут на благотворительность в поддержку психического здоровья — сестра Сида Барретта рассказала об этой связи с его днём рождения. Начало в 15:00.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ]
+   },
+   {
+    "rubric": "weekend_1",
+    "items": [
+     {
+      "ids": [
+       "E34"
+      ],
+      "title_en": "Gianmarco Soresi: The Misery Loves Tour",
+      "title_ru": "Gianmarco Soresi: The Misery Loves Tour",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£38.50–£44.00",
+      "price_ru": "£38.50–£44.00",
+      "blurb_en": "American stand-up Gianmarco Soresi brings his fast-talking, crowd-work-heavy show to the Corn Exchange.",
+      "blurb_ru": "Американский стендап-комик Gianmarco Soresi привозит в Corn Exchange своё быстрое, построенное на общении с залом шоу.",
+      "knowledge_en": [
+       "Gianmarco Soresi is an American stand-up comedian known for crowd-work videos online"
+      ],
+      "knowledge_ru": [
+       "Gianmarco Soresi — американский стендап-комик, известный видео с работой с залом"
+      ]
+     },
+     {
+      "ids": [
+       "E466"
+      ],
+      "title_en": "Peterborough United v Notts County",
+      "title_ru": "Peterborough United — Notts County",
+      "where_en": "London Road Stadium, Peterborough",
+      "where_ru": "London Road Stadium, Питерборо",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "League football at London Road, kicking off at 3pm on Saturday.",
+      "blurb_ru": "Матч на London Road, начало в субботу в 15:00.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E494"
+      ],
+      "title_en": "Gilbert O'Sullivan",
+      "title_ru": "Gilbert O'Sullivan",
+      "where_en": "The Apex, Bury St Edmunds",
+      "where_ru": "The Apex, Bury St Edmunds",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "The veteran singer-songwriter, famous for 1970s hits like 'Alone Again (Naturally)', plays Bury St Edmunds' Apex.",
+      "blurb_ru": "Ветеран сцены, известный хитами 1970-х вроде 'Alone Again (Naturally)', выступает в The Apex в Bury St Edmunds.",
+      "knowledge_en": [
+       "Gilbert O'Sullivan is an Irish-born singer-songwriter known for 1970s hits including 'Alone Again (Naturally)'"
+      ],
+      "knowledge_ru": [
+       "Gilbert O'Sullivan — ирландский по происхождению автор-исполнитель, известный хитами 1970-х, включая 'Alone Again (Naturally)'"
+      ]
+     },
+     {
+      "ids": [
+       "E886"
+      ],
+      "title_en": "Sunil Gupta: Life with a Camera, 1970 – Now",
+      "title_ru": "Sunil Gupta: Life with a Camera, 1970 – Now",
+      "where_en": "Kettle's Yard, Cambridge",
+      "where_ru": "Kettle's Yard, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "A career-spanning photography exhibition at Kettle's Yard, running into next year.",
+      "blurb_ru": "Обзорная фотовыставка в Kettle's Yard, продлится до следующего года.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ]
+   },
+   {
+    "rubric": "weekend_2",
+    "items": [
+     {
+      "ids": [
+       "E41"
+      ],
+      "title_en": "Roachford + Hue and Cry",
+      "title_ru": "Roachford + Hue and Cry",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£38–£113",
+      "price_ru": "£38–£113",
+      "blurb_en": "A co-headline tour pairing soul singer Roachford with Scottish pop duo Hue and Cry, both riding on their 1980s hits. Expect full bands and full sets from each act rather than a shortened support slot.",
+      "blurb_ru": "Совместный тур соул-исполнителя Roachford и шотландского поп-дуэта Hue and Cry, известных хитами 1980-х. Оба выступят с полными составами и полными сетами, а не в формате разогрева.",
+      "knowledge_en": [
+       "Hue and Cry are a Scottish pop duo formed by brothers Pat and Greg Kane",
+       "Roachford is a British soul singer known for the 1988 hit 'Cuddly Toy'"
+      ],
+      "knowledge_ru": [
+       "Hue and Cry — шотландский поп-дуэт, основанный братьями Пэтом и Грегом Кейнами",
+       "Roachford — британский соул-певец, известный хитом 'Cuddly Toy' 1988 года"
+      ]
+     },
+     {
+      "ids": [
+       "E502"
+      ],
+      "title_en": "Martin Kemp",
+      "title_ru": "Martin Kemp",
+      "where_en": "The Apex, Bury St Edmunds",
+      "where_ru": "The Apex, Bury St Edmunds",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "An evening with the Spandau Ballet bassist turned EastEnders actor, at the Apex in Bury St Edmunds.",
+      "blurb_ru": "Вечер с бас-гитаристом Spandau Ballet, впоследствии актёром EastEnders, в The Apex в Bury St Edmunds.",
+      "knowledge_en": [
+       "Martin Kemp was the bassist of Spandau Ballet and later an actor in EastEnders"
+      ],
+      "knowledge_ru": [
+       "Martin Kemp был басистом Spandau Ballet, а позже стал актёром в EastEnders"
+      ]
+     },
+     {
+      "ids": [
+       "E819"
+      ],
+      "title_en": "Shine with Jess Gillam and her Band",
+      "title_ru": "Shine with Jess Gillam and her Band",
+      "where_en": "Saffron Hall, Saffron Walden",
+      "where_ru": "Saffron Hall, Saffron Walden",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Saxophonist Jess Gillam, known for her energetic crossover performances and BBC Radio 3 show, plays Saffron Hall with her band.",
+      "blurb_ru": "Саксофонистка Jess Gillam, известная энергичными кроссовер-выступлениями и своей передачей на BBC Radio 3, выступает в Saffron Hall со своей группой.",
+      "knowledge_en": [
+       "Jess Gillam is a British saxophonist known for crossover classical performances and her BBC Radio 3 programme"
+      ],
+      "knowledge_ru": [
+       "Jess Gillam — британская саксофонистка, известная кроссовер-выступлениями и своей программой на BBC Radio 3"
+      ]
+     },
+     {
+      "ids": [
+       "E3"
+      ],
+      "title_en": "The Footlights Tour Show 2026: Prize Cow (For My Best Son)",
+      "title_ru": "The Footlights Tour Show 2026: Prize Cow (For My Best Son)",
+      "where_en": "ADC Theatre, Cambridge",
+      "where_ru": "ADC Theatre, Кембридж",
+      "price_en": "£7.50–£12.00",
+      "price_ru": "£7.50–£12.00",
+      "blurb_en": "The Cambridge Footlights bring their 2026 touring sketch show home for a late-night run, 11pm Wed–Sat.",
+      "blurb_ru": "Cambridge Footlights привозят домой свой гастрольный скетч-шоу 2026 года — поздние показы в 23:00 со среды по субботу.",
+      "knowledge_en": [
+       "Cambridge Footlights is the university's student comedy troupe whose alumni include many well-known comedians"
+      ],
+      "knowledge_ru": [
+       "Cambridge Footlights — студенческая комик-труппа университета, среди выпускников которой много известных комиков"
+      ]
+     }
+    ]
+   },
+   {
+    "rubric": "weekdays",
+    "items": [
+     {
+      "ids": [
+       "E35"
+      ],
+      "title_en": "Don Broco",
+      "title_ru": "Don Broco",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£42.50–£48.00",
+      "price_ru": "£42.50–£48.00",
+      "blurb_en": "The Bedford rock quartet, known for blending post-hardcore with pop hooks, play the Corn Exchange as part of a run of regional theatre shows. Expect a heavier, more physical show than their festival slots.",
+      "blurb_ru": "Рок-квартет из Бедфорда, известный смешением пост-хардкора с поп-хуками, выступает в Corn Exchange в рамках тура по региональным театрам. Ожидается более тяжёлое и энергичное шоу, чем на фестивальных сетах.",
+      "knowledge_en": [
+       "Don Broco are an English rock band formed in Bedford in 2008"
+      ],
+      "knowledge_ru": [
+       "Don Broco — английская рок-группа, основанная в Бедфорде в 2008 году"
+      ]
+     },
+     {
+      "ids": [
+       "E37"
+      ],
+      "title_en": "Simon Amstell: I Love It Here",
+      "title_ru": "Simon Amstell: I Love It Here",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£23.00–£30.00",
+      "price_ru": "£23.00–£30.00",
+      "blurb_en": "Comedian and filmmaker Simon Amstell brings his new stand-up show to Cambridge after a sold-out London residency. Known for his self-deprecating, confessional style, expect material that's as much about therapy as about comedy.",
+      "blurb_ru": "Комик и режиссёр Simon Amstell привозит в Кембридж своё новое стендап-шоу после аншлаговой резиденции в Лондоне. Известный своей самоироничной, исповедальной манерой, он рассказывает столько же о терапии, сколько о комедии.",
+      "knowledge_en": [
+       "Simon Amstell is a British comedian and filmmaker, formerly a presenter of Popworld and Never Mind the Buzzcocks"
+      ],
+      "knowledge_ru": [
+       "Simon Amstell — британский комик и режиссёр, в прошлом ведущий Popworld и Never Mind the Buzzcocks"
+      ]
+     },
+     {
+      "ids": [
+       "E32"
+      ],
+      "title_en": "Joe Jackson: Hope and Fury Tour",
+      "title_ru": "Joe Jackson: Hope and Fury Tour",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£35.50–£52.50",
+      "price_ru": "£35.50–£52.50",
+      "blurb_en": "The English singer-songwriter tours songs from across his career alongside his new album Hope and Fury. Jackson made his name with sharp new wave pop in the late 1970s before moving between jazz, classical and pop.",
+      "blurb_ru": "Английский автор-исполнитель играет песни разных лет наряду с новым альбомом Hope and Fury. Джексон стал известен благодаря острому нью-вейв-попу конца 1970-х, а затем работал на стыке джаза, классики и попа.",
+      "knowledge_en": [
+       "Joe Jackson is an English singer-songwriter who emerged in the late-1970s new wave scene"
+      ],
+      "knowledge_ru": [
+       "Joe Jackson — английский автор-исполнитель, начавший карьеру в нью-вейв сцене конца 1970-х"
+      ]
+     },
+     {
+      "ids": [
+       "E38"
+      ],
+      "title_en": "Alison Moyet",
+      "title_ru": "Alison Moyet",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£38.50–£71.50",
+      "price_ru": "£38.50–£71.50",
+      "blurb_en": "Moyet's 2026 tour is built entirely around her Yazoo-era catalogue plus tracks from her more recent electronica albums. It's a rare chance to hear the Yazoo material live, since much of it is seldom performed outside her old duo's reunion tours.",
+      "blurb_ru": "Тур Moyet 2026 года целиком построен на репертуаре её эры Yazoo плюс треки с более поздних электронных альбомов. Это редкая возможность услышать материал Yazoo живьём — он редко звучит вне реюнион-туров её старого дуэта.",
+      "knowledge_en": [
+       "Alison Moyet was one half of the synth-pop duo Yazoo with Vince Clarke in the early 1980s"
+      ],
+      "knowledge_ru": [
+       "Alison Moyet была одной из половин синти-поп дуэта Yazoo вместе с Vince Clarke в начале 1980-х"
+      ]
+     },
+     {
+      "ids": [
+       "E33"
+      ],
+      "title_en": "Steve Hackett: Best of Genesis & Solo Gems",
+      "title_ru": "Steve Hackett: Best of Genesis & Solo Gems",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£52.50–£68.00",
+      "price_ru": "£52.50–£68.00",
+      "blurb_en": "The former Genesis guitarist returns to the Corn Exchange with a set spanning his old band's catalogue and his solo work. The venue last hosted his Genesis Revisited show 12 years ago, in 2013.",
+      "blurb_ru": "Бывший гитарист Genesis снова выступает в Corn Exchange с программой, охватывающей репертуар старой группы и его сольное творчество. В прошлый раз площадка принимала его шоу Genesis Revisited 12 лет назад, в 2013 году.",
+      "knowledge_en": [
+       "Steve Hackett was the lead guitarist of Genesis in the 1970s"
+      ],
+      "knowledge_ru": [
+       "Steve Hackett был ведущим гитаристом Genesis в 1970-х"
+      ]
+     }
+    ]
+   },
+   {
+    "rubric": "free",
+    "items": [
+     {
+      "ids": [
+       "E447"
+      ],
+      "title_en": "Frank Bowling: Seeking the Sublime",
+      "title_ru": "Frank Bowling: Seeking the Sublime",
+      "where_en": "Fitzwilliam Museum, Cambridge",
+      "where_ru": "Fitzwilliam Museum, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "Nearly seven decades of work by the British-Guyanese painter, from his 1960s figurative pieces to his later large-scale abstracts.",
+      "blurb_ru": "Почти семь десятилетий творчества британско-гайанского художника — от фигуративных работ 1960-х до поздних масштабных абстракций.",
+      "knowledge_en": [
+       "Frank Bowling is a British-Guyanese abstract painter"
+      ],
+      "knowledge_ru": [
+       "Frank Bowling — британско-гайанский художник-абстракционист"
+      ]
+     },
+     {
+      "ids": [
+       "E444",
+       "E445"
+      ],
+      "title_en": "Cambridge South public exhibition",
+      "title_ru": "Общественная выставка Cambridge South",
+      "where_en": "Shelford Rugby Club, Great Shelford, and Little Shelford Memorial Hall, Little Shelford",
+      "where_ru": "Shelford Rugby Club, Great Shelford, и Little Shelford Memorial Hall, Little Shelford",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "Two drop-in sessions on the development plans south of Cambridge, with the project team on hand to answer questions.",
+      "blurb_ru": "Две открытые сессии о планах развития территории южнее Кембриджа: команда проекта ответит на вопросы.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E448"
+      ],
+      "title_en": "A Mughal Songbook: Art, Music and Empire",
+      "title_ru": "A Mughal Songbook: Art, Music and Empire",
+      "where_en": "Fitzwilliam Museum, Cambridge",
+      "where_ru": "Fitzwilliam Museum, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A rare manuscript of Persian and Urdu songs from the Mughal era, shown with related art and sound.",
+      "blurb_ru": "Редкая рукопись с персидскими и урду-песнями эпохи Моголов, представленная вместе с искусством и звуком той эпохи.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ]
+   },
+   {
+    "rubric": "sport",
+    "items": [
+     {
+      "ids": [
+       "E110"
+      ],
+      "title_en": "Cambridge United v Northampton Town [EFLT]",
+      "title_ru": "Cambridge United — Northampton Town [EFLT]",
+      "where_en": "Abbey Stadium, Cambridge",
+      "where_ru": "Abbey Stadium, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "A home tie in the EFL Trophy group stage, kicking off at 7pm.",
+      "blurb_ru": "Домашний матч группового этапа EFL Trophy, начало в 19:00.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E467"
+      ],
+      "title_en": "Peterborough United v Ipswich Town U21 [EFLT]",
+      "title_ru": "Peterborough United — Ipswich Town U21 [EFLT]",
+      "where_en": "London Road Stadium, Peterborough",
+      "where_ru": "London Road Stadium, Питерборо",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Peterborough host Ipswich's under-21 side in the EFL Trophy, 7pm kick-off.",
+      "blurb_ru": "Peterborough принимает молодёжную команду Ipswich в матче EFL Trophy, начало в 19:00.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E197"
+      ],
+      "title_en": "Dubai Future Champions Festival",
+      "title_ru": "Dubai Future Champions Festival",
+      "where_en": "Newmarket Racecourses, Newmarket",
+      "where_ru": "Newmarket Racecourses, Ньюмаркет",
+      "price_en": "£15",
+      "price_ru": "£15",
+      "blurb_en": "A day of flat racing at Newmarket built around the season's up-and-coming horses.",
+      "blurb_ru": "День скачек на плоской дорожке в Ньюмаркете, посвящённый молодым перспективным лошадям сезона.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ]
+   },
+   {
+    "rubric": "out_of_town",
+    "items": [
+     {
+      "ids": [
+       "E814"
+      ],
+      "title_en": "City of Birmingham Symphony Orchestra",
+      "title_ru": "City of Birmingham Symphony Orchestra",
+      "where_en": "Saffron Hall, Saffron Walden",
+      "where_ru": "Saffron Hall, Saffron Walden",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "One of the UK's leading orchestras plays Saffron Hall on a Friday evening.",
+      "blurb_ru": "Один из ведущих оркестров Великобритании выступает в Saffron Hall в пятницу вечером.",
+      "knowledge_en": [
+       "City of Birmingham Symphony Orchestra is one of the UK's major symphony orchestras"
+      ],
+      "knowledge_ru": [
+       "City of Birmingham Symphony Orchestra — один из крупнейших симфонических оркестров Великобритании"
+      ]
+     },
+     {
+      "ids": [
+       "E907"
+      ],
+      "title_en": "Clothes, Cake and Coffee Charity Sale",
+      "title_ru": "Благотворительная распродажа одежды и выпечки",
+      "where_en": "The Thatch Barn, Yelling",
+      "where_ru": "The Thatch Barn, Yelling",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Secondhand clothes and home baking, with proceeds to Cancer Research UK and the local church.",
+      "blurb_ru": "Подержанная одежда и домашняя выпечка, сборы идут в пользу Cancer Research UK и местной церкви.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E492",
+       "E274"
+      ],
+      "title_en": "The Fillers (Killers tribute) + The Blokes",
+      "title_ru": "The Fillers (трибьют The Killers) + The Blokes",
+      "where_en": "The Maltings, Ely",
+      "where_ru": "The Maltings, Эли",
+      "price_en": "£22.00–£24.20",
+      "price_ru": "£22.00–£24.20",
+      "blurb_en": "A Killers tribute act with support from a Strokes tribute band.",
+      "blurb_ru": "Трибьют-группа The Killers при поддержке трибьют-группы The Strokes.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ]
+   },
+   {
+    "rubric": "county",
+    "items": [
+     {
+      "ids": [
+       "E495"
+      ],
+      "title_en": "Finlay Christie",
+      "title_ru": "Finlay Christie",
+      "where_en": "Key Theatre, Peterborough",
+      "where_ru": "Key Theatre, Питерборо",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Stand-up known from Live at the Apollo, on his f*ckboy-era-and-beyond hour.",
+      "blurb_ru": "Стендап-комик, известный по Live at the Apollo, с часом про свою «эпоху факбоя» и последующие поиски.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E679"
+      ],
+      "title_en": "Trance Central Peterborough: 1st Birthday with Lange",
+      "title_ru": "Trance Central Peterborough: первый день рождения с Lange",
+      "where_en": "Velvet Panache, Peterborough",
+      "where_ru": "Velvet Panache, Питерборо",
+      "price_en": "£10–£20",
+      "price_ru": "£10–£20",
+      "blurb_en": "A trance club night's first birthday, headlined by DJ Lange.",
+      "blurb_ru": "Первый день рождения трансовой клубной ночи, хедлайнер — DJ Lange.",
+      "knowledge_en": [
+       "Lange is a New Zealand trance DJ and producer"
+      ],
+      "knowledge_ru": [
+       "Lange — новозеландский трансовый DJ и продюсер"
+      ]
+     }
+    ]
+   },
+   {
+    "rubric": "new_announcements",
+    "items": [
+     {
+      "ids": [
+       "A906"
+      ],
+      "title_en": "Cambridge Film Festival",
+      "title_ru": "Cambridge Film Festival",
+      "where_en": "various venues, Cambridge",
+      "where_ru": "разные площадки, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "The city's annual film festival returns later this month, running across the Arts Picturehouse and other venues.",
+      "blurb_ru": "Ежегодный кинофестиваль города вернётся позже в этом месяце, показы пройдут в Arts Picturehouse и на других площадках.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "A103"
+      ],
+      "title_en": "Fireworks Night",
+      "title_ru": "Fireworks Night",
+      "where_en": "Midsummer Common, Cambridge",
+      "where_ru": "Midsummer Common, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "One of Cambridge's longest-running free traditions: an unticketed evening of fairground food and a fireworks display on Midsummer Common.",
+      "blurb_ru": "Одна из старейших бесплатных традиций Кембриджа: вечер без билетов с ярмарочной едой и фейерверком на Midsummer Common.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "A131"
+      ],
+      "title_en": "Cambridge Beer Festival 2027",
+      "title_ru": "Cambridge Beer Festival 2027",
+      "where_en": "Jesus Green, Cambridge",
+      "where_ru": "Jesus Green, Кембридж",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "Cambridge CAMRA's festival returns to Jesus Green next May with well over a hundred real ales alongside ciders, perries and international beer.",
+      "blurb_ru": "Фестиваль Cambridge CAMRA вернётся на Jesus Green в мае следующего года: больше сотни сортов настоящего эля, а также сидры, перри и зарубежное пиво.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ]
+   },
+   {
+    "rubric": "tickets",
+    "items": [
+     {
+      "ids": [
+       "A910",
+       "A209",
+       "T4"
+      ],
+      "title_en": "Simply Red at Newmarket Nights",
+      "title_ru": "Simply Red в рамках Newmarket Nights",
+      "where_en": "Newmarket Racecourse, Newmarket",
+      "where_ru": "Newmarket Racecourse, Ньюмаркет",
+      "price_en": "from £45",
+      "price_ru": "от £45",
+      "blurb_en": "Tickets are now on sale for Simply Red's outdoor show at Newmarket next August, part of the Newmarket Nights series that pairs live music with racing. It's their Summer Funk '27 tour.",
+      "blurb_ru": "В продаже билеты на открытый концерт Simply Red в Ньюмаркете в августе следующего года — часть серии Newmarket Nights, сочетающей живую музыку со скачками. Это их тур Summer Funk '27.",
+      "knowledge_en": [
+       "Simply Red are a British soul/pop band fronted by Mick Hucknall"
+      ],
+      "knowledge_ru": [
+       "Simply Red — британская соул-поп группа во главе с Mick Hucknall"
+      ]
+     },
+     {
+      "ids": [
+       "A909",
+       "T6"
+      ],
+      "title_en": "Olly Murs at Newmarket Nights",
+      "title_ru": "Olly Murs в рамках Newmarket Nights",
+      "where_en": "Newmarket Racecourse, Newmarket",
+      "where_ru": "Newmarket Racecourse, Ньюмаркет",
+      "price_en": "from £45",
+      "price_ru": "от £45",
+      "blurb_en": "Olly Murs headlines Newmarket Nights next June, the racecourse's summer series that combines evening racing with a big outdoor gig. Tickets are on sale, from £45.",
+      "blurb_ru": "Olly Murs хедлайнирует Newmarket Nights в июне следующего года — летнюю серию ипподрома, сочетающую вечерние скачки с большим концертом на открытом воздухе. Билеты уже в продаже, от £45.",
+      "knowledge_en": [
+       "Olly Murs is a British pop singer who found fame on The X Factor"
+      ],
+      "knowledge_ru": [
+       "Olly Murs — британский поп-певец, ставший известным благодаря The X Factor"
+      ]
+     },
+     {
+      "ids": [
+       "A443",
+       "T3"
+      ],
+      "title_en": "The Big Retreat Cambridgeshire 2027",
+      "title_ru": "The Big Retreat Cambridgeshire 2027",
+      "where_en": "Abbots Ripton Estate, Huntingdon",
+      "where_ru": "Abbots Ripton Estate, Huntingdon",
+      "price_en": "weekend tickets from £269, day tickets from £79",
+      "price_ru": "билеты на выходные от £269, дневные от £79",
+      "blurb_en": "A wellbeing festival of yoga, pilates, live music and workshops returns to Abbots Ripton next August.",
+      "blurb_ru": "Фестиваль благополучия с йогой, пилатесом, живой музыкой и мастер-классами вернётся в Abbots Ripton в августе следующего года.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ]
+   },
+   {
+    "rubric": "cancelled",
+    "items": [
+     {
+      "ids": [
+       "C815"
+      ],
+      "title_en": "MILOŠ & Ksenija Sidorova",
+      "title_ru": "MILOŠ & Ksenija Sidorova",
+      "where_en": "Saffron Hall, Saffron Walden",
+      "where_ru": "Saffron Hall, Saffron Walden",
+      "price_en": "price not listed",
+      "price_ru": "цена не указана",
+      "blurb_en": "This guitar-and-accordion duo's Saffron Hall concert has been cancelled.",
+      "blurb_ru": "Концерт этого дуэта гитары и аккордеона в Saffron Hall отменён.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ]
+   },
+   {
+    "rubric": "new_in_town",
+    "items": [
+     {
+      "ids": [
+       "V72",
+       "V76"
+      ],
+      "title_en": "UNIQLO",
+      "title_ru": "UNIQLO",
+      "where_en": "St Andrew's Street, Grand Arcade, Cambridge",
+      "where_ru": "St Andrew's Street, Grand Arcade, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "The Japanese clothing chain's first Cambridge store has opened across two floors of the Grand Arcade, with a range designed in collaboration with the University.",
+      "blurb_ru": "Первый магазин японской сети открылся в Кембридже на двух этажах Grand Arcade, с коллекцией, разработанной в сотрудничестве с университетом.",
+      "knowledge_en": [
+       "UNIQLO is a Japanese casual-wear retailer"
+      ],
+      "knowledge_ru": [
+       "UNIQLO — японская сеть магазинов повседневной одежды"
+      ]
+     },
+     {
+      "ids": [
+       "V61"
+      ],
+      "title_en": "Catte Latte",
+      "title_ru": "Catte Latte",
+      "where_en": "Mill Road, Cambridge",
+      "where_ru": "Mill Road, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Cambridge's first cat café, where an hour with the resident cats costs £14.49 on weekdays and £17.99 at weekends, drinks extra. Booking is required.",
+      "blurb_ru": "Первое в Кембридже кот-кафе: час с местными котами стоит £14.49 в будни и £17.99 в выходные, напитки отдельно. Нужна предварительная запись.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "V59"
+      ],
+      "title_en": "Tripots",
+      "title_ru": "Tripots",
+      "where_en": "Quayside, Cambridge",
+      "where_ru": "Quayside, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "A hot pot restaurant where each table cooks its own pot from a choice of ingredients, in a bright, modern room overlooking the river.",
+      "blurb_ru": "Ресторан хот-пота, где каждый стол готовит свой котёл из выбранных ингредиентов, в светлом современном зале с видом на реку.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ]
+   }
+  ],
+  "editor_notes_en": [
+   "Merged E438 and E439 into one theme item — director's talk and film screening on the same day, link confirmed by editor_note.",
+   "Dropped T2 (duplicate of E39) to avoid repeating the same concert twice.",
+   "Merged A910/A209/T4 (Simply Red) and A909/T6 (Olly Murs) — same Newmarket Nights announcements across feeds.",
+   "Merged A443/T3 (The Big Retreat) — same event.",
+   "E492 and E274 (both 'The Fillers' at The Maltings, Ely, same date) look like the same gig described by two feeds; merged.",
+   "Merged V72/V76 (UNIQLO) — duplicate opening announcements.",
+   "Dropped E233 ('Things to do for Halloween') and E234 ('Waterstones Book Events') — generic listings, not single events, per rule 4.",
+   "Kids rubric dropped entirely: only two kids-tagged candidates (NCT Nearly New Sale, Royston fundraiser), both minor (importance 2.5) — not worth a section.",
+   "County rubric is thin — only Finlay Christie and Trance Central's birthday night felt notable enough; the rest were small local club nights.",
+   "Trimmed several borderline weekend/free/out_of_town candidates (E196 Sun Chariot Day, E454 Open Eco Homes, E275 Locked In Tour, A424 Straw Bear Festival, Tea Apothecary) to keep the issue within the 25–40 item target — none were essential.",
+   "T5 (Around the World in 80 Days tickets) not used — no on_sale_date given, and the underlying event (E913) fell below the bar for weekend_2."
+  ],
+  "editor_notes_ru": [
+   "Объединил E438 и E439 в один пункт темы — выступление режиссёра и показ фильма в один день, связь подтверждена editor_note.",
+   "Убрал T2 (дубликат E39), чтобы не повторять один и тот же концерт дважды.",
+   "Объединил A910/A209/T4 (Simply Red) и A909/T6 (Olly Murs) — одни и те же анонсы Newmarket Nights из разных источников.",
+   "Объединил A443/T3 (The Big Retreat) — одно и то же событие.",
+   "E492 и E274 (оба 'The Fillers' в The Maltings, Эли, одна дата) похожи на один и тот же концерт, описанный двумя источниками; объединил.",
+   "Объединил V72/V76 (UNIQLO) — дублирующиеся анонсы открытия.",
+   "Убрал E233 ('Things to do for Halloween') и E234 ('Waterstones Book Events') — это общие подборки, а не отдельные события, по правилу 4.",
+   "Рубрику kids не стал делать вовсе: только два события с тегом kids (распродажа NCT, благотворительность в Royston), оба слабые (важность 2.5) — не набирается на раздел.",
+   "Рубрика county вышла тонкой — заметными показались только Finlay Christie и день рождения Trance Central, остальное — мелкие локальные клубные вечеринки.",
+   "Убрал несколько пограничных кандидатов (E196 Sun Chariot Day, E454 Open Eco Homes, E275 Locked In Tour, A424 Straw Bear Festival, Tea Apothecary), чтобы уложиться в целевые 25–40 пунктов — ничего критичного не потеряли.",
+   "T5 (билеты на Around the World in 80 Days) не использован — нет даты начала продаж, а само событие (E913) не набрало важности для weekend_2."
+  ],
+  "theme_title_en": "Syd Barrett at 80",
+  "theme_title_ru": "Сиду Барретту — 80 лет",
+  "theme_intro_en": "Cambridge's most famous psychedelic son would have turned 80 this month, and the city marks it with a concert, a film, a talk and an art show — plus, oddly, a football match.",
+  "theme_intro_ru": "Самому известному психоделическому уроженцу Кембриджа в этом месяце исполнилось бы 80 лет, и город отмечает это концертом, фильмом, лекцией и выставкой — а ещё, неожиданно, футбольным матчем.",
+  "manual_fixes": [
+   [
+    "Steve Hackett: “first visit since the 2013 tour” reworded to what the venue text says (“12 years since he brought Genesis Revisited to us”, 2013)",
+    "Steve Hackett: «первый визит после тура 2013 года» переписано по тексту площадки («12 лет назад он привозил к нам Genesis Revisited», 2013)"
+   ],
+   [
+    "Olly Murs: “tickets went on sale in September” replaced — the data have no on-sale date",
+    "Olly Murs: «билеты поступили в продажу в сентябре» заменено — даты старта продаж в данных нет"
+   ],
+   [
+    "Rob Chapman: name in the Russian title in Latin script (prompt rule)",
+    "Rob Chapman: имя в русском названии — латиницей (правило промпта)"
+   ],
+   [
+    "Cambridge South: two sessions of one exhibition (5 and 10 Oct, two venues) merged into one item, as in v2",
+    "Cambridge South: две сессии одной выставки (5 и 10 октября, две площадки) — один пункт, как в v2"
+   ]
+  ]
+ },
+ "usage": {
+  "input_tokens": 46139,
+  "output_tokens": 34879,
+  "cost_usd": 0.441068
+ }
+}

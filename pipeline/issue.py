@@ -436,7 +436,7 @@ def render(result: dict, p: Pools, w: Window, lang: str, editor: dict) -> str:
             c = p.candidates[it["ids"][0]]
             evs = [p.candidates[i] for i in it["ids"] if p.candidates[i]["kind"] == c["kind"] == "event"]
             if len(evs) > 1:  # два дня одной выставки на разных площадках и т.п.
-                c = c | {"dates": sorted({x for e in evs for x in e["dates"]})}
+                c = c | {"dates": sorted({x for e in evs for x in e["dates"]}, key=lambda x: tuple(y or "" for y in x))}
             price = "" if c["kind"] == "venue_news" else it[f"price_{lang}"]
             meta = " · ".join(x for x in (when(c, w, lang), it[f"where_{lang}"], price) if x)
             blurb = it[f"blurb_{lang}"].strip()

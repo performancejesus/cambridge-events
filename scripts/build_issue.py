@@ -333,8 +333,8 @@ def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: l
         c = pools.candidates[cid]
         t = c["title"]
         if c.get("status") == "scheduled (no ticket data)":
-            unv_en.append(f"{t} ({cid}): no ticket-sale data from ADC / Cambridge United — status to be checked at stage 5")
-            unv_ru.append(f"{t} ({cid}): нет данных о продаже (ADC / Cambridge United) — статус уточнится на этапе 5")
+            unv_en.append(f"{t} ({cid}): no ticket-sale data (ADC / Cambridge United / Peterborough United) — the source does not publish a status")
+            unv_ru.append(f"{t} ({cid}): нет данных о продаже (ADC / Cambridge United / Peterborough United) — статус у источника не публикуется")
         if c.get("address_unknown"):
             unv_en.append(f"{t} ({cid}): no postcode — zone «центр» assumed from the city (address_unknown)")
             unv_ru.append(f"{t} ({cid}): нет postcode — зона «центр» условно, по городу (address_unknown)")
