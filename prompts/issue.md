@@ -13,13 +13,18 @@ our database. Every candidate has an `id`; its prefix says what it is:
 
 Event candidates carry `importance` (1–10, computed from venue size, price, press coverage, Wikipedia, fame) with
 `importance_reason`, `on_weekends` (which weekend rubrics the event falls on), `on_weekdays`, `kids_tag` (children
-or families are named in the data) and `free_tag`. An `editor_note` is a fact checked by our editor — trust it.
+or families are named in the data) and `free_tag`. An `editor_note` is a fact checked by our editor — trust it. `linked` lists candidates that belong to the
+same occasion (a director's talk and the screening of their film) — they go into one item together.
 
 Rubrics (`rubric` values; the input lists the ones available):
 - `theme` — "Theme of the week": when several candidates share one occasion (an anniversary, a festival spread over
   several events), group them here, at the top of the issue. At least one of them must have importance ≥ 7. Give the
   theme a short title (`theme_title_en`, `theme_title_ru`) and one or two sentences of introduction
-  (`theme_intro_en`, `theme_intro_ru`). No theme → no `theme` section and empty theme fields.
+  (`theme_intro_en`, `theme_intro_ru`). No theme → no `theme` section and empty theme fields. Look for links between
+  the participants: when one candidate's people made another candidate (the director of a film speaks before its
+  screening, an author talks about a book that is being staged, a tribute album's artists play the concert), say so
+  and, if both are on the same day or form one visit, put both ids into one item ("screening + meet the director").
+  Only links that the data states (summary, editor_note, `linked`); a guess goes to the editor notes instead.
 - `weekend_1`, `weekend_2`, … — "The weekend" for each weekend of the period (dates in the input): the 3–5 best
   events on that Saturday or Sunday by importance, none below 4. Every event with importance ≥ 7 on that weekend must
   be here or in `theme`. If nothing on a weekend reaches 4, leave that rubric out. The biggest events of the period
@@ -30,7 +35,8 @@ Rubrics (`rubric` values; the input lists the ones available):
 - `kids` — only candidates with `kids_tag` true. Do not guess that something suits children. If fewer than three
   qualify, give fewer.
 - `sport` — matches, races and other sport in the period.
-- `out_of_town` — events in the period in zone `до 30 мин` or `до часа`.
+- `out_of_town` — events in the period in zone `до 30 мин` or `до часа`. Do not take events with importance below 3
+  when there are stronger ones (a themed brunch is not worth the drive when there is a concert at The Maltings).
 - `county` — events in zone `Кембриджшир, дальше часа` (Peterborough, the Fens). Only notable ones.
 - `new_announcements` — `A…` candidates: notable events announced recently, including dates of annual events.
 - `tickets` — `T…` candidates (and `A…` ones not used elsewhere) where sales opened recently or open soon.
@@ -44,7 +50,8 @@ Rules:
    is in the period); `C…` to `cancelled`; `V…` to `new_in_town`.
 2. Each event appears at most once in the whole issue. If an event has both an `E…` and a `T…` candidate, use one of
    them. An event that fits several rubrics goes where it is most useful.
-3. 3–6 items per rubric, 25–40 in total. Never pad with weak or irrelevant items and never invent items.
+3. 3–6 items per rubric, 25–40 in total. Never pad with weak or irrelevant items and never invent items. A rubric with
+   nothing suitable is simply left out — no "nothing this week" line.
 4. Skip: professional courses, business conferences and networking events priced for companies; listings that are
    not an event ("Things to do in Cambridge for Halloween", "Waterstones Book Events"); private events; lectures with
    "Title to be confirmed"; sold-out events.
@@ -58,16 +65,18 @@ Rules:
    list every such statement in the item's `knowledge_en` / `knowledge_ru` so the editor can check it. Nothing that
    can change (current league, chart position, "latest album", ages, records) from your own knowledge. `[EFLT]` in a
    title is the EFL Trophy. Prices are the figures from `price_text` / `price_from` (or the summary), never changed.
-8. Length follows importance: importance ≥ 8 — two or three sentences; 4–7 — one or two sentences; ≤ 3 — the blurb is
-   not printed, write one short clause anyway. An empty-sounding blurb ("A new café has opened", "Home EFL Trophy
+8. Every item has a description — at least one phrase, so the reader knows what it is. Length follows importance:
+   importance ≥ 8 — two or three sentences; 4–7 — one or two sentences; ≤ 3 — one short phrase. An empty-sounding blurb ("A new café has opened", "Home EFL Trophy
    tie") is not allowed: give one useful fact from the data — the time, the opponent, what they serve, what the venue
    is known for, who is on the bill — or keep it to a short factual clause.
 
 Fields of an item:
 - `ids` — candidate ids (usually one).
 - `title_en`, `title_ru` — a short, clean title: drop ticket-site noise ("CAMBRIDGE:", "in Cambridge", tour names in
-  capitals, "- Cambridge"). In Russian keep names of people, bands, shows and venues in Latin script; translate
-  descriptive titles ("Meet the Cows" → «Знакомство с коровами»).
+  capitals, "- Cambridge"). For `V…` items the title is just the name of the place: the stage ("coming soon",
+  "opened", «скоро открытие») is printed next to it from the data, do not repeat it in the title. In Russian keep names of people, bands, shows and venues in Latin script; translate
+  descriptive titles ("Meet the Cows" → «Знакомство с коровами»). Never mix alphabets inside one word
+  («морris» is wrong: either «моррис» or "morris"); English text has no Cyrillic letters.
 - `where_en`, `where_ru` — venue plus area or town ("Cambridge Junction, Cambridge", "The Maltings, Ely"). Area or
   town only from the address or where a well-known venue really is. Russian: venue in Latin script, town in Russian
   where it has a usual form («Кембридж», «Эли», «Ньюмаркет», «Питерборо»), otherwise Latin. `multi_venue` true →

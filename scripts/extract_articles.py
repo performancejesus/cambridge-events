@@ -2,6 +2,8 @@
 
 Запуск: python scripts/extract_articles.py --dry-run        # оценка стоимости, без API
         python scripts/extract_articles.py --max-cost 2.00  # обработка с потолком расходов, $
+        python scripts/extract_articles.py --batch          # через Message Batches API (−50 %), ждёт до часа;
+            # не дождался — результат заберёт следующий запуск (--collect — только забрать готовые пакеты)
         python scripts/extract_articles.py --rerun-venue-news --max-cost 0.50
             # повторно: статьи, чьи записи venue_news без номера дома/postcode или без даты
             # (их venue_news и event_updates заменяются новым результатом); --articles 30,44 — только эти статьи
@@ -44,6 +46,12 @@ def rerun_articles(con) -> list:
     return [con.execute("SELECT * FROM articles WHERE article_id=?", (i,)).fetchone() for i in ids]
 
 
+def waiting_in_batch(con, article_id: int) -> bool:
+    """Статья уже отправлена в пакет, результат которого ещё не забран."""
+    return any(str(article_id) in json.loads(b["text_sources"])
+               for b in con.execute("SELECT text_sources FROM llm_batches WHERE collected_at IS NULL"))
+
+
 def main() -> None:
     load_dotenv()
     ap = argparse.ArgumentParser()
@@ -52,6 +60,8 @@ def main() -> None:
     ap.add_argument("--limit", type=int)
     ap.add_argument("--rerun-venue-news", action="store_true")
     ap.add_argument("--articles", help="с --rerun-venue-news: только эти article_id через запятую")
+    ap.add_argument("--batch", action="store_true", help="Message Batches API (половина цены)")
+    ap.add_argument("--collect", action="store_true", help="только забрать результаты готовых пакетов")
     args = ap.parse_args()
     con = connect()
     if args.dry_run or not os.environ.get("EVENTS_ANTHROPIC_KEY"):
@@ -62,6 +72,19 @@ def main() -> None:
     import anthropic
     client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
     http = PoliteClient()
+    if args.batch or args.collect:
+        r = extract.collect_batches(con, client)          # пакеты, не забранные прошлым запуском
+        todo = [] if args.collect else [a for a in extract.pending(con, args.limit)
+                                        if not waiting_in_batch(con, a["article_id"])]
+        est = extract.estimate(con, len(todo))["total_usd"] * extract.BATCH_DISCOUNT
+        if todo and est > args.max_cost:
+            sys.exit(f"Оценка пакета ${est:.2f} выше потолка ${args.max_cost} — уменьшите --limit.")
+        if todo:
+            r2 = extract.process_batch(con, http, client, todo)
+            r = {k: r.get(k, 0) + r2.get(k, 0) for k in r2}
+        http.close()
+        print(json.dumps(r | {"cost_usd": round(r.pop("cost"), 4)}, ensure_ascii=False, indent=1))
+        return
     spent, totals = 0.0, {"articles": 0, "events": 0, "venue_news": 0, "updates": 0, "errors": 0}
     if args.rerun_venue_news and args.articles:
         todo = [con.execute("SELECT * FROM articles WHERE article_id=?", (int(i),)).fetchone() for i in args.articles.split(",")]

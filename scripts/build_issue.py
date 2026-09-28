@@ -3,7 +3,8 @@
 Кандидаты берутся из events.db (pipeline/issue.py), отбор и тексты — Claude (Sonnet), промпт prompts/issue.md,
 схема ответа prompts/issue.schema.json (рубрики — по выходным периода). Ключ — EVENTS_ANTHROPIC_KEY.
 
-  python scripts/build_issue.py --issue 2026-10-01 --start 2026-09-28 --end 2026-10-11 --version v2
+  python scripts/build_issue.py --issue 2026-10-01 --version v3     # период: дата отправки … +10 дней
+  python scripts/build_issue.py --issue 2026-10-01 --start 2026-10-01 --end 2026-10-11 --version v3
   python scripts/build_issue.py ... --dry-run     # только пулы кандидатов и оценка объёма, без API
   python scripts/build_issue.py ... --from-json issues/issue_2026-10-01_v2_model.json   # перерисовать без API
 """
@@ -16,7 +17,7 @@ import os
 import re
 import sys
 from collections import Counter
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -154,13 +155,17 @@ def check_price(it: dict, c: dict) -> tuple[str, str] | None:
 
 
 HOMOGLYPHS = str.maketrans("aeopcxyAEOPCXHBKMT", "аеорсхуАЕОРСХНВКМТ")
+TO_LATIN = str.maketrans("аеорсхуАЕОРСХНВКМТ", "aeopcxyAEOPCXHBKMT")
 MIXED_RE = re.compile(r"\b(?=\w*[а-яё])(?=\w*[a-z])\w+\b", re.I)
 LATIN_RE = re.compile(r"\b[a-z]{4,}\b")
+CYRILLIC_RE = re.compile(r"\b\w*[а-яё]\w*\b", re.I)
 
 
-def check_russian(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
-    """Русский текст: латинские буквы-двойники внутри русских слов («Ирландa») — исправить; латинские слова
-    в нижнем регистре, которых нет в данных кандидатов («afishas»), — показать редактору."""
+def check_alphabets(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """Смешанные алфавиты в обе стороны (правки по v2). Русский текст: латинские буквы-двойники внутри русских слов
+    («Ирландa») — исправить; остальные смешанные слова («морris») — редактору; латинские слова в нижнем регистре,
+    которых нет в данных кандидатов («afishas»), — редактору. Английский текст: кириллица внутри слов — двойники
+    исправить, остальное — редактору."""
     notes = []
     known = " ".join(json.dumps(c, ensure_ascii=False) for c in pools.candidates.values()).lower()
     fields = [(result, "intro_ru")] + [(it, f) for sec in result["sections"] for it in sec["items"]
@@ -172,10 +177,88 @@ def check_russian(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
                 obj[f] = obj[f].replace(word, fixed)
                 notes.append((f"Russian text: Latin letters inside the word «{fixed}» — fixed",
                               f"русский текст: латинские буквы в слове «{fixed}» — исправлено"))
+            else:
+                notes.append((f"Russian text: mixed Cyrillic and Latin in «{word}» — rewrite the word",
+                              f"русский текст: кириллица и латиница в одном слове «{word}» — переписать слово"))
         for word in LATIN_RE.findall(obj[f]):
             if word not in known:
                 notes.append((f"Russian text: the Latin word «{word}» is not in the source data — check the wording",
                               f"русский текст: латинское слово «{word}» не из данных — проверить формулировку"))
+    fields = [(result, "intro_en"), (result, "theme_title_en"), (result, "theme_intro_en")] + \
+        [(it, f) for sec in result["sections"] for it in sec["items"] for f in ("title_en", "where_en", "price_en", "blurb_en")]
+    for obj, f in fields:
+        for word in CYRILLIC_RE.findall(obj.get(f) or ""):
+            fixed = word.translate(TO_LATIN)
+            if re.fullmatch(r"[a-z]+", fixed, re.I) and re.search(r"[a-z]", word, re.I):
+                obj[f] = obj[f].replace(word, fixed)
+                notes.append((f"English text: Cyrillic letters inside the word “{fixed}” — fixed",
+                              f"английский текст: кириллические буквы в слове «{fixed}» — исправлено"))
+            else:
+                notes.append((f"English text: Cyrillic in “{word}” — rewrite",
+                              f"английский текст: кириллица в «{word}» — переписать"))
+    return notes
+
+
+# «Greggs (coming soon)» при строке «Скоро откроется» — статус уже в метаданных пункта (правки по v2)
+STATUS_IN_TITLE_RE = re.compile(
+    r"\s*(?:[(\[]\s*(?:coming soon|opening soon|now open|newly opened|just opened|opened|opens?|opening|closing|closed|"
+    r"closes|скоро открыти\w*|скоро откро\w*|открыти\w*|открыл\w*|открыва\w*|откро\w*|закрыти\w*|закрыл\w*|"
+    r"закрыва\w*|закро\w*)\b[^)\]]*[)\]]|\s+[—–-]\s+(?:coming soon|now open|opening soon|closed|скоро открытие|"
+    r"скоро откроется|открылось|открылся|открылась|закрылось|закрылся|закрылась))\s*$", re.I)
+
+
+def strip_status(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """Статус открытия/закрытия в названии пункта «Новое в городе» — убрать: он уже стоит в строке с датой."""
+    notes = []
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            if pools.candidates[it["ids"][0]]["kind"] != "venue_news":
+                continue
+            for lang in ("en", "ru"):
+                t = it[f"title_{lang}"]
+                clean = STATUS_IN_TITLE_RE.sub("", t).strip()
+                if clean and clean != t:
+                    it[f"title_{lang}"] = clean
+                    notes.append((f"“{t}”: status removed from the title (it is in the date line)",
+                                  f"«{t}»: статус убран из названия (он есть в строке с датой)"))
+    return notes
+
+
+def apply_links(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """Связанные события (data/issue_links.json) — один пункт: если модель дала их отдельными пунктами,
+    второй вливается в первый; если взяла только одно — второе добавляется в тот же пункт."""
+    notes = []
+    for ids, label in pools.links:
+        holders = [(sec, it) for sec in result["sections"] for it in sec["items"] if set(it["ids"]) & set(ids)]
+        if not holders:
+            continue
+        sec0, first = holders[0]
+        for sec, it in holders[1:]:
+            sec["items"].remove(it)
+        missing = [i for i in ids if i not in first["ids"]]
+        if len(holders) > 1 or missing:
+            first["ids"] += missing
+            notes.append((f"“{first['title_en']}”: linked events {ids} ({label}) put into one item — check the title and text",
+                          f"«{first['title_ru']}»: связанные события {ids} ({label}) сведены в один пункт — проверить название и текст"))
+    return notes
+
+
+def out_of_town_threshold(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """«За городом»: пункты с оценкой < 3 убираются, если есть альтернативы — пункты с оценкой ≥ 3 в рубрике
+    или неиспользованные события за городом с оценкой ≥ 3 (правки по v2)."""
+    notes = []
+    used = {i for sec in result["sections"] for it in sec["items"] for i in it["ids"]}
+    spare = [c["title"] for cid, c in pools.candidates.items() if cid not in used and c["kind"] == "event"
+             and c.get("zone") in issue.OUT_OF_TOWN and (c.get("importance") or 0) >= issue.OUT_OF_TOWN_MIN]
+    for sec in result["sections"]:
+        if sec["rubric"] != "out_of_town":
+            continue
+        weak = [it for it in sec["items"] if issue.importance_of(pools, it) < issue.OUT_OF_TOWN_MIN]
+        if weak and (len(weak) < len(sec["items"]) or spare):
+            for it in weak:
+                sec["items"].remove(it)
+                notes.append((f"“{it['title_en']}”: importance below {issue.OUT_OF_TOWN_MIN:g} in “Out of town” while alternatives exist — removed",
+                              f"«{it['title_ru']}»: оценка ниже {issue.OUT_OF_TOWN_MIN:g} в «За городом» при наличии альтернатив — убран"))
     return notes
 
 
@@ -350,17 +433,19 @@ def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: l
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--issue", required=True)
-    ap.add_argument("--start", required=True)
-    ap.add_argument("--end", required=True)
+    ap.add_argument("--start", help="по умолчанию — дата отправки (раньше нельзя: события уже прошли)")
+    ap.add_argument("--end", help=f"по умолчанию — дата отправки + {issue.WINDOW_DAYS} дней")
     ap.add_argument("--version", default="", help="суффикс файлов: v2 → issue_<дата>_v2_en.md")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--from-json", help="не вызывать API, взять сохранённый ответ модели")
     args = ap.parse_args()
-    w = issue.Window(date.fromisoformat(args.issue), date.fromisoformat(args.start), date.fromisoformat(args.end))
+    sent = date.fromisoformat(args.issue)
+    w = issue.Window(sent, date.fromisoformat(args.start) if args.start else sent,
+                     date.fromisoformat(args.end) if args.end else sent + timedelta(days=issue.WINDOW_DAYS))
     stem = f"issue_{args.issue}" + (f"_{args.version}" if args.version else "")
     con = connect()
     pools = issue.build_pools(con, w)
-    payload = {"issue_date": args.issue, "period": [args.start, args.end],
+    payload = {"issue_date": args.issue, "period": [w.start.isoformat(), w.end.isoformat()],
                "weekends": {f"weekend_{i + 1}": [a.isoformat(), b.isoformat()] for i, (a, b) in enumerate(w.weekends)},
                "rubrics": w.rubrics(),
                "candidates": issue.model_view(pools)}
@@ -382,7 +467,8 @@ def main() -> None:
         result, tin, tout = generate(client, payload, w, pools, con, f"issue {stem[6:]}")
         usage = {"input_tokens": tin, "output_tokens": tout, "cost_usd": tin * PRICE_IN + tout * PRICE_OUT}
         raw_path.write_text(json.dumps({"result": result, "usage": usage}, ensure_ascii=False, indent=1))
-    fix_notes = validate(result, pools, w) + check_russian(result, pools)
+    fix_notes = apply_links(result, pools) + validate(result, pools, w) + out_of_town_threshold(result, pools) \
+        + strip_status(result, pools) + check_alphabets(result, pools)
     # ручные правки и заметки ревью, записанные в сохранённый ответ модели (issues/issue_<дата>_model.json)
     review = [tuple(x) for x in result.get("manual_fixes", []) + result.get("review_notes", [])]
     editor = editor_block(result, pools, w, fix_notes, review, usage)

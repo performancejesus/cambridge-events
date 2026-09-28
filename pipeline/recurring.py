@@ -20,6 +20,9 @@ _SEP = r"\s*(?:,|-|–|&|and|to)\s*(?:[A-Z][a-z]+day\s+)?"
 # Серия дней одного месяца или два месяца: «5 December 2026», «Saturday 5th December 2026», «25–26 September 2026»,
 # «15th, 16th, 17th January 2027», «Wednesday 24 June to Sunday 28 June 2027», «30 July – 2 August 2027».
 DATE_RE = re.compile(rf"\b({_DAY}(?:{_SEP}{_DAY})*)(?:\s+({MONTHS}))?(?:{_SEP}({_DAY}))?\s+({MONTHS})\s*,?\s*(20\d\d)\b")
+# Месяц впереди, сокращённо: «Oct 22 - Nov 1 2026» (Cambridge Film Festival), «October 3rd–5th, 2026».
+_MON = r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?"
+MONTH_FIRST_RE = re.compile(rf"\b{_MON}\s+({_DAY})(?:\s*(?:-|–|to)\s*(?:{_MON}\s+)?({_DAY}))?\s*,?\s+(20\d\d)\b")
 
 
 def seed(con: sqlite3.Connection) -> None:
@@ -48,6 +51,14 @@ def dates_in(text: str, months: set[str], today: str) -> list[tuple[str, str | N
             else:
                 start = datetime.strptime(f"{nums[0]} {mon2} {year}", "%d %B %Y").date()
                 end = datetime.strptime(f"{nums[-1]} {mon2} {year}", "%d %B %Y").date() if len(nums) > 1 else None
+        except ValueError:
+            continue
+        if f"{start.month:02d}" in months and start.isoformat() >= today and start.year <= date.today().year + 1:
+            out.append((start.isoformat(), end.isoformat() if end and end > start else None))
+    for mon1, day1, mon2, day2, year in MONTH_FIRST_RE.findall(re.sub(r"\s+", " ", text)):
+        try:
+            start = datetime.strptime(f"{int(day1.rstrip('stndrh'))} {mon1} {year}", "%d %b %Y").date()
+            end = datetime.strptime(f"{int(day2.rstrip('stndrh'))} {mon2 or mon1} {year}", "%d %b %Y").date() if day2 else None
         except ValueError:
             continue
         if f"{start.month:02d}" in months and start.isoformat() >= today and start.year <= date.today().year + 1:

@@ -26,6 +26,7 @@ import hashlib
 
 import httpx
 
+from . import geo
 from .db import ROOT
 
 MODEL = "claude-sonnet-5"
@@ -260,6 +261,20 @@ def signature(con, e, fame: dict | None) -> str:
     return hashlib.sha1(blob.encode()).hexdigest()[:16]
 
 
+def resolve_neighbours(con: sqlite3.Connection) -> dict:
+    """Решение после этапа 5: события вне Кембриджшира в 40–60 км — «до часа» при оценке ≥ 7, иначе out_of_zone.
+
+    Метку NEIGHBOUR_IF_IMPORTANT ставит geo.zone при каждом обновлении базы, поэтому решение пересматривается
+    после каждой оценки (событие, чья оценка выросла, вернётся в зону)."""
+    rows = con.execute("SELECT event_id, importance_score FROM events WHERE zone=?", (geo.NEIGHBOUR_IF_IMPORTANT,)).fetchall()
+    kept = [r["event_id"] for r in rows if (r["importance_score"] or 0) >= geo.NEIGHBOUR_MIN_SCORE]
+    for r in rows:
+        con.execute("UPDATE events SET zone=? WHERE event_id=?",
+                    ("до часа" if r["event_id"] in kept else geo.OUT_OF_ZONE, r["event_id"]))
+    con.commit()
+    return {"neighbours_kept": len(kept), "neighbours_out_of_zone": len(rows) - len(kept)}
+
+
 def run(con: sqlite3.Connection, client=None, full: bool = False) -> dict:
     """Рабочий режим: модель — только для новых событий и событий с изменившимся названием (кэш fame_cache),
     формула — только там, где изменилась сигнатура входных данных. full=True — пересчитать всё."""
@@ -284,5 +299,6 @@ def run(con: sqlite3.Connection, client=None, full: bool = False) -> dict:
     con.commit()
     stats["scored"] = scored
     stats["unchanged"] = len(events) - scored
+    stats |= resolve_neighbours(con)
     stats["wiki_articles"] = con.execute("SELECT count(*) FROM wiki_cache WHERE exists_=1").fetchone()[0]
     return stats

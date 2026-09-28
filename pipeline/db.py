@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS articles (
     published   TEXT,
     summary     TEXT,
     first_seen_at TEXT NOT NULL,
-    extract_status TEXT NOT NULL DEFAULT 'pending',  -- pending | useful | empty | error | keyword | skipped
+    extract_status TEXT NOT NULL DEFAULT 'pending',  -- pending | useful | empty | error | keyword | skipped | duplicate | filtered (Newsquest, до модели)
     extracted_at TEXT,
     model       TEXT,
     result_json TEXT                                 -- ответ модели (структура, не текст статьи)
@@ -216,6 +216,16 @@ CREATE TABLE IF NOT EXISTS llm_usage (
     article_id  INTEGER,
     input_tokens INTEGER, output_tokens INTEGER,
     cost_usd    REAL
+);
+
+-- пакеты Message Batches API (извлечение из статей): результат забирается, когда пакет обработан
+CREATE TABLE IF NOT EXISTS llm_batches (
+    batch_id    TEXT PRIMARY KEY,
+    created_at  TEXT NOT NULL,
+    purpose     TEXT NOT NULL,
+    items       INTEGER,
+    text_sources TEXT,                  -- JSON article_id → page | rss
+    collected_at TEXT
 );
 """
 

@@ -21,5 +21,6 @@
  {"name": "Newmarket Racecourses (Rowley Mile)", "aliases": ["newmarket racecourses", "newmarket racecourse", "rowley mile"], "address": "Newmarket, Suffolk", "postcode": "CB8 0TF"},
  {"name": "Jesus Green", "aliases": ["jesus green"], "address": "Victoria Avenue, Cambridge", "postcode": "CB4 3AX"},
  {"name": "Midsummer Common", "aliases": ["midsummer common"], "address": "Cambridge", "postcode": "CB5 8DJ"},
- {"name": "Mill Road", "aliases": ["mill road"], "address": "Mill Road, Cambridge", "postcode": "CB1 2AZ"}
+ {"name": "Mill Road", "aliases": ["mill road"], "address": "Mill Road, Cambridge", "postcode": "CB1 2AZ"},
+ {"name": "The Maltings Ely", "aliases": ["maltings ely", "ely maltings", "the maltings, ely"], "address": "Ship Lane, Ely", "postcode": "CB7 4BB"}
 ]

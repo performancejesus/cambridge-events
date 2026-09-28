@@ -27,6 +27,7 @@ def main() -> None:
         run_id = stats["run_id"]
     recurring.seed(con)                     # флаги билетов ежегодных событий нужны для статусов
     stats |= extract.keyword_news(con)       # Cambridge BID: только заголовки, без LLM
+    stats |= extract.newsquest_prefilter(con)  # Newsquest: дубли между газетами и предфильтр — до модели
     stats |= venues.build(con)
     stats |= ingest.dedupe(con, run_id)
     stats |= ingest.apply_merges(con)        # data/manual_merges.json

@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import re
 import sqlite3
+import time
 from datetime import datetime, timezone
 
 from selectolax.parser import HTMLParser
@@ -21,6 +22,7 @@ from .normalize import norm_title, title_similarity
 
 MODEL = "claude-haiku-4-5"
 PRICE_IN, PRICE_OUT = 1.00 / 1e6, 5.00 / 1e6   # $ за токен, Haiku 4.5
+BATCH_DISCOUNT = 0.5                            # Message Batches API — половина цены
 PROMPT = (ROOT / "prompts" / "article_extract.md").read_text()
 SCHEMA = json.loads((ROOT / "prompts" / "article_extract.schema.json").read_text())
 MAX_CHARS = 8000
@@ -34,7 +36,22 @@ KEYWORD_RE = re.compile(r"\b(now open|coming soon|opening|opens|closing|closes|c
 KEYWORD_STAGE = {"coming soon": "coming_soon", "closing": "closed", "closes": "closed", "closed": "closed"}
 ADDRESS_HINT = re.compile(r"\d|\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b|\b(Road|Street|Lane|Square|Parade|Place)\b")
 # Источники статей для извлечения.
-ARTICLE_SOURCES = {"S002", "S003", "S004", "S005", "S050", "S087", "S092", "S093", "S010"}
+ARTICLE_SOURCES = {"S002", "S003", "S004", "S005", "S050", "S087", "S092", "S093", "S010",
+                   "S116", "S117", "S118", "S119"}
+# Газеты Newsquest (решение после этапа 5): до модели — дедупликация между газетами и предфильтр по словам.
+NEWSQUEST = {"S116", "S117", "S118", "S119"}
+PREFILTER_RE = re.compile(
+    r"\b(events?|festivals?|fairs?|f[eê]tes?|concerts?|gigs?|shows?|opening|opens|opened|reopen\w*|closing|closes|"
+    r"closure|markets?|tickets?|cancel(?:led|s)?|postponed|exhibitions?|theatre|pantomime|panto|musical|comedy|"
+    r"comedian|perform\w*|headline\w*|tour|screenings?|carnival|parade|fireworks|halloween|christmas|switch-on|"
+    r"open day|fun day|family day|workshops?|restaurant|caf[eé]s?|pubs?|bar|shop|store|takeaway|bakery|venue|"
+    r"attraction|visits?|stages?|staged|host\w*|returns|charity sale|to open|set to open|will open|welcomes?|"
+    r"half[- ]term|trails?|fun run|triathlon)\b", re.I)
+# Криминал, суды, аварии, продажа домов — в заголовке такой статьи событие почти никогда не главное.
+PREFILTER_NEG_RE = re.compile(
+    r"\b(court|jailed|sentenced|charged|arrested|police|crash|collision|died|death|killed|murder|assault\w*|"
+    r"stabb\w*|burglary|fraud|scam|missing|inquest|drugs?|banned|paedophile|indecent|recall|for sale|"
+    r"on the market|asking prices?|smash|steal|stole|theft)\b", re.I)
 
 
 def now() -> str:
@@ -42,10 +59,12 @@ def now() -> str:
 
 
 def pending(con: sqlite3.Connection, limit: int | None = None) -> list[sqlite3.Row]:
+    """Статьи, ждущие модель; Newsquest — только прошедшие дедупликацию и предфильтр (model='prefilter')."""
     q = f"""SELECT * FROM articles WHERE extract_status='pending'
             AND source_id IN ({",".join("?" * len(ARTICLE_SOURCES - NO_LLM_SOURCES))})
+            AND (source_id NOT IN ({",".join("?" * len(NEWSQUEST))}) OR model='prefilter')
             ORDER BY published DESC""" + (f" LIMIT {int(limit)}" if limit else "")
-    return con.execute(q, sorted(ARTICLE_SOURCES - NO_LLM_SOURCES)).fetchall()
+    return con.execute(q, sorted(ARTICLE_SOURCES - NO_LLM_SOURCES) + sorted(NEWSQUEST)).fetchall()
 
 
 def article_text(http: PoliteClient, url: str, fallback: str) -> tuple[str, str]:
@@ -63,18 +82,21 @@ def article_text(http: PoliteClient, url: str, fallback: str) -> tuple[str, str]
     return (text[:MAX_CHARS], "page") if text else (fallback, "rss")
 
 
-def call_model(client, title: str, published: str | None, text: str) -> tuple[dict, int, int]:
-    msg = client.messages.create(
-        model=MODEL,
-        max_tokens=4000,
-        system=PROMPT,
-        messages=[{"role": "user", "content": f"Publication date: {published or 'unknown'}\nTitle: {title}\n\n{text}"}],
-        output_config={"format": {"type": "json_schema", "schema": SCHEMA}},
-    )
+def request_params(title: str, published: str | None, text: str) -> dict:
+    return dict(model=MODEL, max_tokens=4000, system=PROMPT,
+                messages=[{"role": "user", "content": f"Publication date: {published or 'unknown'}\nTitle: {title}\n\n{text}"}],
+                output_config={"format": {"type": "json_schema", "schema": SCHEMA}})
+
+
+def parse_message(msg) -> dict:
     if msg.stop_reason in ("refusal", "max_tokens"):
         raise RuntimeError(f"stop_reason={msg.stop_reason}")
-    body = next(b.text for b in msg.content if b.type == "text")
-    return json.loads(body), msg.usage.input_tokens, msg.usage.output_tokens
+    return json.loads(next(b.text for b in msg.content if b.type == "text"))
+
+
+def call_model(client, title: str, published: str | None, text: str) -> tuple[dict, int, int]:
+    msg = client.messages.create(**request_params(title, published, text))
+    return parse_message(msg), msg.usage.input_tokens, msg.usage.output_tokens
 
 
 def _find_event(con, name: str, date: str) -> int | None:
@@ -130,21 +152,78 @@ def store(con: sqlite3.Connection, art: sqlite3.Row, data: dict) -> dict:
     return n
 
 
-def process(con: sqlite3.Connection, http: PoliteClient, client, art: sqlite3.Row, text: str | None = None,
-            text_source: str = "feed") -> dict:
-    fallback = f"{art['title']}\n\n{art['summary'] or ''}"
-    if not text:
-        text, text_source = article_text(http, art["url"], fallback)
-    data, tin, tout = call_model(client, art["title"], art["published"], text)
-    cost = tin * PRICE_IN + tout * PRICE_OUT
+def finish(con: sqlite3.Connection, art: sqlite3.Row, data: dict, tin: int, tout: int, text_source: str,
+           batch: bool = False) -> dict:
+    """Ответ модели → база и llm_usage. Batch API — половина цены."""
+    cost = (tin * PRICE_IN + tout * PRICE_OUT) * (BATCH_DISCOUNT if batch else 1)
     con.execute("INSERT INTO llm_usage(called_at, purpose, model, article_id, input_tokens, output_tokens, cost_usd) VALUES (?,?,?,?,?,?,?)",
-                (now(), "article_extract", MODEL, art["article_id"], tin, tout, cost))
+                (now(), "article_extract_batch" if batch else "article_extract", MODEL, art["article_id"], tin, tout, cost))
     counts = store(con, art, data)
     useful = data["is_useful"] and any(counts.values())
     con.execute("UPDATE articles SET extract_status=?, extracted_at=?, model=?, result_json=?, text_source=? WHERE article_id=?",
                 ("useful" if useful else "empty", now(), MODEL, json.dumps(data, ensure_ascii=False), text_source,
                  art["article_id"]))
     return counts | {"cost": cost}
+
+
+def process(con: sqlite3.Connection, http: PoliteClient, client, art: sqlite3.Row, text: str | None = None,
+            text_source: str = "feed") -> dict:
+    fallback = f"{art['title']}\n\n{art['summary'] or ''}"
+    if not text:
+        text, text_source = article_text(http, art["url"], fallback)
+    data, tin, tout = call_model(client, art["title"], art["published"], text)
+    return finish(con, art, data, tin, tout, text_source)
+
+
+def process_batch(con: sqlite3.Connection, http: PoliteClient, client, arts: list[sqlite3.Row],
+                  wait_seconds: int = 3600, poll: int = 30) -> dict:
+    """Те же статьи через Message Batches API (−50 %): тексты собираются заранее, пакет отправляется одним
+    запросом, результат забирается, когда пакет обработан (обычно минуты). Не дождались — статьи остаются pending,
+    номер пакета — в llm_batches, результат заберёт следующий запуск (collect_batches)."""
+    texts = {}
+    for art in arts:
+        texts[art["article_id"]] = article_text(http, art["url"], f"{art['title']}\n\n{art['summary'] or ''}")
+    requests = [{"custom_id": f"art-{a['article_id']}",
+                 "params": request_params(a["title"], a["published"], texts[a["article_id"]][0])} for a in arts]
+    batch = client.messages.batches.create(requests=requests)
+    con.execute("INSERT INTO llm_batches(batch_id, created_at, purpose, items, text_sources) VALUES (?,?,?,?,?)",
+                (batch.id, now(), "article_extract", len(arts),
+                 json.dumps({str(k): v[1] for k, v in texts.items()})))
+    con.commit()
+    deadline = time.monotonic() + wait_seconds
+    while client.messages.batches.retrieve(batch.id).processing_status != "ended" and time.monotonic() < deadline:
+        time.sleep(poll)
+    return collect_batches(con, client)
+
+
+def collect_batches(con: sqlite3.Connection, client) -> dict:
+    """Результаты завершённых пакетов, ещё не забранных (llm_batches.collected_at IS NULL)."""
+    totals = {"articles": 0, "events": 0, "venue_news": 0, "updates": 0, "errors": 0, "cost": 0.0, "batches_waiting": 0}
+    for b in con.execute("SELECT * FROM llm_batches WHERE collected_at IS NULL").fetchall():
+        if client.messages.batches.retrieve(b["batch_id"]).processing_status != "ended":
+            totals["batches_waiting"] += 1
+            continue
+        sources = json.loads(b["text_sources"])
+        for r in client.messages.batches.results(b["batch_id"]):
+            aid = int(r.custom_id.split("-", 1)[1])
+            art = con.execute("SELECT * FROM articles WHERE article_id=?", (aid,)).fetchone()
+            try:
+                if r.result.type != "succeeded":
+                    raise RuntimeError(f"batch result: {r.result.type}")
+                msg = r.result.message
+                c = finish(con, art, parse_message(msg), msg.usage.input_tokens, msg.usage.output_tokens,
+                           sources.get(str(aid), "page"), batch=True)
+            except (RuntimeError, json.JSONDecodeError) as e:
+                con.execute("UPDATE articles SET extract_status='error', result_json=? WHERE article_id=?",
+                            (json.dumps({"error": str(e)[:300]}), aid))
+                totals["errors"] += 1
+                continue
+            totals["articles"] += 1
+            for k, v in c.items():
+                totals[k] += v
+        con.execute("UPDATE llm_batches SET collected_at=? WHERE batch_id=?", (now(), b["batch_id"]))
+        con.commit()
+    return totals
 
 
 def keyword_news(con: sqlite3.Connection) -> dict:
@@ -176,6 +255,60 @@ def keyword_news(con: sqlite3.Connection) -> dict:
         con.execute("UPDATE articles SET extract_status=?, extracted_at=?, model=NULL WHERE article_id=?",
                     ("keyword" if m else "skipped", now(), art["article_id"]))
         n["keyword_matched" if m else "keyword_skipped"] += 1
+    return n
+
+
+def newsquest_key(url: str, title: str) -> tuple[str, str]:
+    """(номер материала или slug из URL, нормализованный заголовок): /news/26586199.olly-murs-…/ → 26586199."""
+    last = url.split("?")[0].rstrip("/").rsplit("/", 1)[-1]
+    num, _, slug = last.partition(".")
+    return (num if num.isdigit() else slug or last), norm_title(title)
+
+
+def newsquest_prefilter(con: sqlite3.Connection) -> dict:
+    """Новые статьи Newsquest до модели: 1) дубль уже виденного материала (тот же номер/slug в URL или тот же
+    нормализованный заголовок в любой из четырёх газет) → duplicate; 2) нет ключевого слова в заголовке и анонсе
+    или криминал/суд/авария в заголовке → filtered. Остальные остаются pending и идут в модель."""
+    src = sorted(NEWSQUEST)
+    q = ",".join("?" * len(src))
+    keys, titles = {}, {}
+    for a in con.execute(f"""SELECT article_id, url, title FROM articles WHERE source_id IN ({q})
+            AND NOT (extract_status='pending' AND model IS NULL) ORDER BY article_id""", src):
+        k, t = newsquest_key(a["url"], a["title"])
+        keys.setdefault(k, a["article_id"])
+        titles.setdefault(t, a["article_id"])
+    n = {"newsquest_new": 0, "newsquest_duplicate": 0, "newsquest_filtered": 0, "newsquest_to_model": 0,
+         "newsquest_refiltered": 0}
+    # отсеянные прошлым списком слов пересматриваются: список расширяется (так вернулись «Gruffalo and Peppa Pig»)
+    for a in con.execute(f"""SELECT * FROM articles WHERE source_id IN ({q}) AND extract_status='filtered'
+            AND result_json LIKE '%нет ключевых слов%'""", src).fetchall():
+        if PREFILTER_RE.search(f"{a['title']} {a['summary'] or ''}") and not PREFILTER_NEG_RE.search(a["title"]):
+            con.execute("UPDATE articles SET extract_status='pending', model='prefilter', result_json=NULL WHERE article_id=?",
+                        (a["article_id"],))
+            n["newsquest_refiltered"] += 1
+    for a in con.execute(f"""SELECT * FROM articles WHERE source_id IN ({q}) AND extract_status='pending'
+            AND model IS NULL ORDER BY article_id""", src).fetchall():
+        n["newsquest_new"] += 1
+        k, t = newsquest_key(a["url"], a["title"])
+        first = keys.get(k) or titles.get(t)
+        if first:
+            status, note = "duplicate", {"duplicate_of": first}
+        elif not PREFILTER_RE.search(f"{a['title']} {a['summary'] or ''}"):
+            status, note = "filtered", {"prefilter": "нет ключевых слов"}
+        elif m := PREFILTER_NEG_RE.search(a["title"]):
+            status, note = "filtered", {"prefilter": f"в заголовке «{m.group(1)}»"}
+        else:
+            status, note = None, None
+        keys.setdefault(k, a["article_id"])
+        titles.setdefault(t, a["article_id"])
+        if status:
+            con.execute("UPDATE articles SET extract_status=?, extracted_at=?, result_json=? WHERE article_id=?",
+                        (status, now(), json.dumps(note, ensure_ascii=False), a["article_id"]))
+            n[f"newsquest_{status}"] += 1
+        else:
+            # отметка «прошла предфильтр»: pending с model='prefilter' — ждёт модель, повторно не фильтруется
+            con.execute("UPDATE articles SET model='prefilter' WHERE article_id=?", (a["article_id"],))
+            n["newsquest_to_model"] += 1
     return n
 
 

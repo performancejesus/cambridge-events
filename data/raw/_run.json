@@ -302,7 +302,7 @@
   "requests": 2,
   "seconds": 2.8
  },
- "_run_id": "2026-09-28T09:46:33+00:00",
+ "_run_id": "2026-09-28T10:36:40+00:00",
  "S128": {
   "name": "Ents24 — города зоны",
   "module": "towns_ents24",
@@ -418,5 +418,49 @@
   "stores": 0,
   "requests": 2,
   "seconds": 2.7
+ },
+ "S116": {
+  "name": "Hunts Post",
+  "module": "newsquest",
+  "started_at": "2026-09-28T10:36:40+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 50,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 3.0
+ },
+ "S117": {
+  "name": "Cambs Times",
+  "module": "newsquest",
+  "started_at": "2026-09-28T10:36:43+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 50,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 3.1
+ },
+ "S118": {
+  "name": "Wisbech Standard",
+  "module": "newsquest",
+  "started_at": "2026-09-28T10:36:47+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 50,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 3.1
+ },
+ "S119": {
+  "name": "Ely Standard",
+  "module": "newsquest",
+  "started_at": "2026-09-28T10:36:50+00:00",
+  "ok": true,
+  "events": 0,
+  "articles": 50,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 3.1
  }
 }

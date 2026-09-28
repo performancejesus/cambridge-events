@@ -19,6 +19,16 @@ OUT_OF_ZONE = "out_of_zone"
 # ближе 60 км (Питерборо — 48 км, Wisbech — 51 км, самая северная точка графства — 58 км), поэтому без этого
 # правила метка «Кембриджшир, дальше часа» не досталась бы никому.
 FAR_DISTRICTS = {"Peterborough", "Fenland"}
+# Решение после этапа 5: вне Кембриджшира до 40 км по прямой — обычная зона; 40–60 км — «до часа» только для важных
+# событий (оценка ≥ 7), иначе out_of_zone. Важность известна только после оценки, поэтому geo.zone ставит метку
+# NEIGHBOUR_IF_IMPORTANT, а importance.resolve_neighbours после оценки заменяет её на «до часа» или out_of_zone.
+NEIGHBOUR_KM = 40.0
+NEIGHBOUR_MIN_SCORE = 7.0
+NEIGHBOUR_IF_IMPORTANT = "до часа, если важно"
+# Исключение из правила 40 км (этап 5b, на подтверждение): Бери-Сент-Эдмундс стоит ровно на границе (40,3–40,7 км
+# по прямой), а по A14 до него ~40 минут; в брифе его площадки — часть зоны (вместимость The Apex и Theatre Royal,
+# собственный коллектор Theatre Royal на этапе 6). По прямой Бери от Стивениджа (39,6–40,6 км) не отделить.
+NEIGHBOUR_EXEMPT_DISTRICTS = {"West Suffolk"}
 POSTCODE_RE = re.compile(r"^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$")
 
 
@@ -34,7 +44,7 @@ def in_cambridgeshire(county: str | None, district: str | None) -> bool:
 
 
 def zone(lat: float | None, lon: float | None, county: str | None = None, district: str | None = None) -> str | None:
-    """центр / до 30 мин / до часа / Кембриджшир, дальше часа / out_of_zone; None — координат нет."""
+    """центр / до 30 мин / до часа / Кембриджшир, дальше часа / до часа, если важно / out_of_zone; None — координат нет."""
     if lat is None or lon is None:
         return None
     d = km(CENTRE[0], CENTRE[1], lat, lon)
@@ -42,6 +52,8 @@ def zone(lat: float | None, lon: float | None, county: str | None = None, distri
     if cambs and district in FAR_DISTRICTS and d > ZONES[1][0]:
         return COUNTY_FAR
     band = next((z for limit, z in ZONES if d <= limit), None)
+    if band and not cambs and d > NEIGHBOUR_KM and district not in NEIGHBOUR_EXEMPT_DISTRICTS:
+        return NEIGHBOUR_IF_IMPORTANT
     if band:
         return band
     return COUNTY_FAR if cambs else OUT_OF_ZONE

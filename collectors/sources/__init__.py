@@ -5,7 +5,7 @@ from . import (adc_camdram, beer_festival, cambridge105, cambridge_bid, cambridg
                cambridge_news, cambridge_united, camcityevents, corn_exchange, ents24, eventbrite,
                fitzwilliam, foodies, mill_road_winter_fair, newmarket, skiddle, strawberry_fair,
                talks_cam, whatsonincambridge, towns_ents24, towns_skiddle, peterborough_united, wisbech_tc,
-               peterborough_telegraph, saffron_hall, kettles_yard, runthrough)
+               peterborough_telegraph, saffron_hall, kettles_yard, newsquest)
 
 ALL = [
     cambridge105.Cambridge105(), talks_cam.TalksCam(), adc_camdram.AdcCamdram(),
@@ -20,5 +20,7 @@ ALL = [
     # этап 5: приоритет 2 и расширение географии
     towns_ents24.TownsEnts24(), towns_skiddle.TownsSkiddle(), peterborough_united.PeterboroughUnited(),
     wisbech_tc.WisbechTownCouncil(), peterborough_telegraph.PeterboroughTelegraph(),
-    saffron_hall.SaffronHall(), kettles_yard.KettlesYard(), runthrough.RunThrough(),
+    saffron_hall.SaffronHall(), kettles_yard.KettlesYard(),
+    # решения после этапа 5: газеты Newsquest (RunThrough S027 отключён — национальный список, в регионе 0 событий)
+    newsquest.HuntsPost(), newsquest.CambsTimes(), newsquest.WisbechStandard(), newsquest.ElyStandard(),
 ]

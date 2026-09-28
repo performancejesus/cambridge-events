@@ -8,7 +8,7 @@ import sqlite3
 from collections import Counter, defaultdict
 
 from .db import ROOT
-from .geo import lookup, zone_for_postcode
+from .geo import lookup, zone, zone_for_postcode
 from .normalize import norm_venue
 
 SEED = ROOT / "data" / "venues_seed.json"
@@ -63,6 +63,12 @@ def build(con: sqlite3.Connection) -> dict:
         if g:
             geocoded += v["lat"] is None
             con.execute("UPDATE venues SET lat=?, lon=?, zone=? WHERE venue_id=?", g + (v["venue_id"],))
+    # площадки, известные только по населённому пункту (locate: precision = place) — зона по графству и району места
+    for v in con.execute("SELECT venue_id, lat, lon FROM venues WHERE precision='place' AND lat IS NOT NULL").fetchall():
+        p = con.execute("SELECT county, district FROM places WHERE lat=? AND lon=?", (v["lat"], v["lon"])).fetchone()
+        if p:
+            district = "Peterborough" if p["county"] == "Peterborough" else p["district"]
+            con.execute("UPDATE venues SET zone=? WHERE venue_id=?", (zone(v["lat"], v["lon"], p["county"], district), v["venue_id"]))
     return {"venues_added": added, "venues_geocoded": geocoded}
 
 

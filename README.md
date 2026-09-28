@@ -107,7 +107,7 @@ python scripts/build_issue.py --issue 2026-10-01 --start 2026-09-28 --end 2026-1
 
 ```bash
 python scripts/probe_sources.py --set p2          # data/p2_candidates.json → data/probe_results_p2.json
-python scripts/run_collectors.py S128 S129 S123 S108 S010 S017 S051 S027   # новые коллекторы
+python scripts/run_collectors.py S128 S129 S123 S108 S010 S017 S051   # новые коллекторы
 python scripts/update_db.py && python scripts/locate_venues.py && python scripts/score_importance.py
 python scripts/build_registry_v05.py              # data/cambridge_event_sources_v0.5.xlsx, лист «Проверка P2»
 python scripts/stage5_report.py                   # docs/stage5_report.md
@@ -115,7 +115,29 @@ python scripts/stage5_report.py                   # docs/stage5_report.md
 
 - Новые коллекторы: S128/S129 (Ents24/Skiddle — 12 городов зоны), S123 Peterborough United (iCal), S108 Wisbech Town
   Council (iCal без заседаний), S010 Peterborough Telegraph (RSS → извлечение), S017 Saffron Hall (HTML: наличие
-  билетов, отмены), S051 Kettle's Yard (HTML), S027 RunThrough (JSON-LD, фильтр по региону).
+  билетов, отмены), S051 Kettle's Yard (HTML). S027 RunThrough отключён после этапа 5 (в регионе 0 событий).
 - Решения по каждому источнику — `data/p2_decisions.json`.
 - Частичный запуск коллекторов: `_run.json` хранит `_run_id`; `update_db` загружает только источники этого запуска.
+
+## Этап 5b — решения после этапа 5, черновик v3
+
+```bash
+python scripts/run_collectors.py S116 S117 S118 S119   # газеты Newsquest (RSS)
+python scripts/update_db.py                           # + дедупликация между газетами и предфильтр (без модели)
+python scripts/extract_articles.py --batch --max-cost 0.30   # Haiku через Message Batches API (−50 %)
+python scripts/check_recurring.py                     # ежегодные: + Cambridge Film Festival, Cats, parkrun
+python scripts/locate_venues.py && python scripts/score_importance.py   # + правило 40–60 км
+python scripts/build_issue.py --issue 2026-10-01 --version v3   # период: дата отправки … +10 дней
+python scripts/stage5b_report.py                      # docs/stage5b_report.md
+```
+
+- География вне графства: до 40 км по прямой — как раньше; 40–60 км — «до часа» только при оценке ≥ 7, иначе
+  `out_of_zone` (`geo.zone` → метка «до часа, если важно» → `importance.resolve_neighbours` после оценки).
+  West Suffolk (Бери) — исключение, на подтверждение (`geo.NEIGHBOUR_EXEMPT_DISTRICTS`).
+- Newsquest: `extract.newsquest_prefilter` — дубли (номер материала в URL, нормализованный заголовок) →
+  `duplicate`, нет ключевых слов или криминал в заголовке → `filtered`; остальные ждут модель. Пакеты Batch API —
+  таблица `llm_batches`; не дождались результата — `extract_articles.py --collect` заберёт позже.
+- Выпуск (правки по v2): окно начинается с даты отправки; описание у каждого пункта; пустые рубрики не выводятся;
+  смешанные алфавиты проверяются в обе стороны; статус открытия не дублируется в названии; «За городом» — без
+  оценок < 3 при наличии альтернатив; связанные события (`data/issue_links.json`) — один пункт.
 

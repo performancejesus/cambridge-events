@@ -187,5 +187,65 @@
  "Mumford Theatre": {
   "capacity": 270,
   "approx": true
+ },
+ "The Apex": {
+  "capacity": 600,
+  "approx": true,
+  "note": "Bury St Edmunds: ~600 сидячих, стоячих больше; здесь — Martin Kemp (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "Theatre Royal": {
+  "capacity": 350,
+  "approx": true,
+  "note": "Theatre Royal Bury St Edmunds (Regency-театр), ~350 (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "St Edmundsbury Cathedral": {
+  "capacity": 800,
+  "approx": true,
+  "note": "Bury St Edmunds, концерты ~800 (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "Haverhill Arts Centre": {
+  "capacity": 220,
+  "approx": true,
+  "note": "~220 (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "London Road Stadium (Peterborough United)": {
+  "capacity": 15000,
+  "approx": true,
+  "note": "стадион Peterborough United, ~15 000 (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "Peterborough New Theatre": {
+  "capacity": 1150,
+  "approx": true,
+  "note": "~1150 (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "Key Theatre": {
+  "capacity": 400,
+  "approx": true,
+  "note": "Peterborough, ~400 (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "The Cresset": {
+  "capacity": 1000,
+  "approx": true,
+  "note": "Peterborough, главный зал ~1000 стоя (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "Peterborough Cathedral": {
+  "capacity": 1000,
+  "approx": true,
+  "note": "концерты ~1000 (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "The Met Lounge": {
+  "capacity": 200,
+  "approx": true,
+  "note": "Peterborough, бар с залом, ~200 (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "The Ark Newmarket": {
+  "capacity": 250,
+  "approx": true,
+  "note": "Newmarket, ~250 (решение после этапа 5; число по памяти ассистента — проверить)"
+ },
+ "July Course": {
+  "capacity": 20000,
+  "approx": true,
+  "note": "Newmarket, концерты Newmarket Nights ~20 000 (решение после этапа 5; по памяти ассистента — проверить)"
  }
 }
