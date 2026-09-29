@@ -302,7 +302,7 @@
   "requests": 2,
   "seconds": 2.8
  },
- "_run_id": "2026-09-28T19:45:41+00:00",
+ "_run_id": "2026-09-28T21:42:25+00:00",
  "S128": {
   "name": "Ents24 — города зоны",
   "module": "towns_ents24",
@@ -704,5 +704,16 @@
   },
   "requests": 1,
   "seconds": 0.5
+ },
+ "S148": {
+  "name": "Keenable — поиск (этап 6b)",
+  "module": "keenable",
+  "started_at": "2026-09-28T21:42:25+00:00",
+  "ok": true,
+  "events": 49,
+  "articles": 0,
+  "stores": 0,
+  "requests": 0,
+  "seconds": 0
  }
 }

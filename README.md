@@ -182,3 +182,30 @@ python scripts/stage6v4_report.py                  # docs/stage6v4_report.md
   пропало бы из выпуска в каждом режиме, — в блоке «Для редактора» и `issues/<выпуск>_ai_measure.json`.
 - Цена в HTML-коллекторах — из поля «Price» блока события (у Junction прежний разбор цеплял рекламу членства).
 
+
+## Этап 6b — аудит пропусков через Keenable, выпуск v5
+
+```bash
+python scripts/keenable_search.py                 # 100 запросов аудита + 29 о детских программах (кэш keenable_cache)
+python scripts/gap_audit.py extract               # выдача → Haiku по заголовку и сниппету (сайты с ИИ-запретом — без модели)
+python scripts/gap_audit.py match                 # сравнение с базой, склейка пропусков (search_gaps)
+python scripts/gap_audit.py verify                # проверка пропуска на странице: название и дата рядом (robots.txt, без модели)
+python scripts/newspaper_primary.py               # газетные пункты → поиск первоисточника (п. 5 брифа)
+python scripts/kids_providers.py list && python scripts/kids_providers.py check   # провайдеры детских программ для 6c
+python scripts/load_search_findings.py && python scripts/update_db.py            # подтверждённые находки → S148
+python scripts/score_importance.py
+python scripts/build_issue.py --issue 2026-10-01 --version v5   # md + reader HTML + editor HTML
+python scripts/stage6b_report.py                  # docs/stage6b_report.md
+```
+
+- `pipeline/keenable.py` — клиент Keenable (`/v1/search`, заголовок `X-API-Key`, ключ `KEENABLE_API_KEY`), кэш и учёт запросов.
+  `/v1/fetch` не используется: страницы читает наш бот (`collectors/http.py`) с учётом robots.txt; тексты — `data/cache/` (не в git).
+- `pipeline/domains.py` — robots.txt доменов выдачи (наш бот и ИИ-агенты Anthropic) и связь домена с реестром.
+- S148 «Keenable — поиск»: подтверждённые на странице события и открытия, а также ссылки на первоисточник для пунктов,
+  которые были только в газетах с ИИ-запретом. В `ingest.rank` газеты с ИИ-запретом идут после S148 — основная ссылка
+  события ведёт на первоисточник.
+- `data/kids_providers.json` — провайдеры детских программ и лагерей (тип, каникулы, robots.txt) — вход этапа 6c.
+- Выпуск v5 (правки по v4): основная часть ≤ 45 пунктов (`build_issue.trim`), «Каникулы» — без модели, одна строка на
+  программу (`issue.holiday_groups`), состав участников из всех склеенных записей (`pipeline/lineup.py`, Haiku, кэш),
+  забеги и триатлоны — «Спорт → Поучаствовать», а не «Успейте купить билеты», пустые описания убираются,
+  «По графству» — от 5. Редакторская версия `_v5_editor_{ru,en}.html` — все кандидаты каждой рубрики под катом с причиной.

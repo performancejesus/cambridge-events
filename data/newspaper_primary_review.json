@@ -1,0 +1,8 @@
+{
+ "_comment": "Этап 6b, п. 5: ручная проверка оценок модели (scripts/newspaper_primary.py). Ключ — item_key; best_type заменяет оценку модели, note — почему.",
+ "event:1418": {"best_type": "none", "note": "nvr.org.uk — календарь железной дороги, Peppa Pig 2027 на нём не назван: не подтверждено"},
+ "event:909": {"best_type": "aggregator", "note": "discovernewmarket.co.uk называет Olly Murs, но другую дату (18 августа вместо 25 июня 2027) — найден, дата расходится"},
+ "event:445": {"best_type": "other_media", "note": "streamlinefeed.co.ke — перепечатка новостей, не агрегатор афиш"},
+ "event:912": {"best_type": "aggregator", "note": "ibizabible.co.uk — зеркало листинга Skiddle; сам Skiddle (S007/S129) событие пока не отдаёт"},
+ "news:52": {"best_type": "primary", "note": "сайт паба есть, но даты открытия на нём нет — первоисточник подтверждает место, не новость"}
+}

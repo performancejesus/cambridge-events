@@ -11,7 +11,7 @@ import sqlite3
 from datetime import datetime, timezone
 
 from .db import ROOT
-from .geo import lookup, zone_for_postcode
+from .geo import NEIGHBOUR_IF_IMPORTANT, lookup, place, zone, zone_for_postcode
 
 DATA = ROOT / "data" / "kids_programmes.json"
 SCHEMA = """CREATE TABLE IF NOT EXISTS kids_programmes (
@@ -35,13 +35,29 @@ def load(con: sqlite3.Connection) -> dict:
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     con.execute("DELETE FROM kids_programmes")
     for p in progs:
-        g = zone_for_postcode(con, p.get("postcode"))
+        g = zone_for_postcode(con, p.get("postcode")) or _town_zone(con, p.get("address"))
         con.execute("INSERT INTO kids_programmes VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     (p["id"], p["holiday"], p["provider"], p["title"], p.get("ages"), p.get("date_start"),
                      p.get("date_end"), p.get("hours"), p.get("price"), p.get("venue"), p.get("address"),
                      p.get("postcode"), g[2] if g else None, p.get("booking_opens"), p.get("places"),
                      p.get("audience"), p["url"], int(bool(p.get("verified"))), p.get("note"), now))
     return {"kids_programmes": len(progs)}
+
+
+def _town_zone(con: sqlite3.Connection, address: str | None) -> tuple | None:
+    """Без postcode — зона по населённому пункту из адреса (последняя часть: «Brampton Road, Huntingdon» → Huntingdon)."""
+    town = (address or "").split(",")[-1].strip()
+    if not town or town.lower() == "cambridgeshire":
+        return None
+    if town.lower() == "cambridge":
+        return None, None, "центр"
+    pl = place(con, town)
+    if not pl:
+        return None
+    # у унитарного Питерборо postcodes.io /places отдаёт его как county — для правила FAR_DISTRICTS нужен district
+    district = pl["district"] or (pl["county"] if "Peterborough" in (pl["county"] or "") else None)
+    z = zone(pl["lat"], pl["lon"], pl["county"], "Peterborough" if district and "Peterborough" in district else district)
+    return pl["lat"], pl["lon"], "до часа" if z == NEIGHBOUR_IF_IMPORTANT else z
 
 
 def holidays() -> dict:

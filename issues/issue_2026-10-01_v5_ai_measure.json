@@ -1,0 +1,24 @@
+{
+ "only_claude_user_blocked": [
+  "Olly Murs at Newmarket Nights"
+ ],
+ "only_training_blocked": [
+  "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+  "Cambridge Carbon Footprint's Open Eco Homes",
+  "Cambridge South Public Exhibition",
+  "The Big Retreat Cambridgeshire 2027"
+ ],
+ "lost_any_ai_agent": [
+  "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+  "Cambridge Carbon Footprint's Open Eco Homes",
+  "Cambridge South Public Exhibition",
+  "Olly Murs at Newmarket Nights",
+  "The Big Retreat Cambridgeshire 2027",
+  "UNIQLO"
+ ],
+ "without_search_links": {
+  "only_claude_user_blocked": 1,
+  "only_training_blocked": 6,
+  "lost_any_ai_agent": 8
+ }
+}

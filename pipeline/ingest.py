@@ -21,7 +21,7 @@ TICKETS_ELSEWHERE = {"S018", "S032", "S042", "S123"}
 SOURCE_RANK = ["S042", "S011", "S072", "S018", "S123", "S032", "S033", "S038", "S047", "S021", "S091", "S005",
                "S006", "S007", "S128", "S129", "S008"]
 # Агрегаторы, у которых собирается только первая страница списка: её состав плавает, пропажа ≠ отмена.
-PARTIAL_LISTING = {"S006", "S007", "S008", "S128", "S129"}
+PARTIAL_LISTING = {"S006", "S007", "S008", "S128", "S129", "S148"}   # S148 — находки поиска Keenable (этап 6b)
 HISTORY_DAYS = 60            # старше — в события не превращаем (в сыром виде храним)
 MATCH_MIN, MATCH_MIN_NO_VENUE = 0.8, 0.9
 # «Cambridge» без адреса (подборки «Various, Cambridge», экскурсии по частным домам с одной улицей):
@@ -32,8 +32,15 @@ MULTI_VENUE_RE = re.compile(r"^\s*(various|multiple (locations|venues)|several v
 STATUS_PRIORITY = ["cancelled", "postponed", "disappeared", "past", "sold_out", "on_sale", "announced", "scheduled"]
 
 
+# Этап 6b: ссылка и название события — с первоисточника; газеты с ИИ-запретом — в последнюю очередь, находки поиска
+# Keenable (S148, ссылка на страницу площадки/организатора) — перед ними.
+NEWSPAPERS = {"S003", "S004", "S010", "S092", "S093", "S116", "S117", "S118", "S119"}
+
+
 def rank(source_id: str) -> int:
-    return SOURCE_RANK.index(source_id) if source_id in SOURCE_RANK else len(SOURCE_RANK)
+    if source_id in SOURCE_RANK:
+        return SOURCE_RANK.index(source_id)
+    return len(SOURCE_RANK) + (2 if source_id in NEWSPAPERS else 1 if source_id == "S148" else 0)
 
 
 def item_key(d: dict) -> str:

@@ -103,9 +103,12 @@ def place(con: sqlite3.Connection, name: str) -> sqlite3.Row | None:
                  and p["name_1"].lower() == key]
     best = min(found, key=lambda p: km(CENTRE[0], CENTRE[1], p["latitude"], p["longitude"]), default=None)
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    # унитарный Питерборо: /places отдаёт его в county_unitary, district_borough пуст — для правил графства нужен district
+    district = best and (best["district_borough"] or
+                         ("Peterborough" if "Peterborough" in (best["county_unitary"] or "") else None))
     con.execute("INSERT OR REPLACE INTO places VALUES (?,?,?,?,?,?,?)",
                 (key, best and best["name_1"], best and best["latitude"], best and best["longitude"],
-                 best and best["county_unitary"], best and best["district_borough"], now))
+                 best and best["county_unitary"], district, now))
     return con.execute("SELECT * FROM places WHERE query=? AND lat IS NOT NULL", (key,)).fetchone()
 
 

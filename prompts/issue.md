@@ -10,11 +10,12 @@ our database. Every candidate has an `id`; its prefix says what it is:
 - `T…` — tickets for an event went on sale recently or will go on sale soon (`on_sale_date`);
 - `C…` — a cancelled or postponed event;
 - `V…` — an opening, upcoming opening or closure of a restaurant, café, bar or shop;
-- `K…` — a children's programme with booking for the school holidays (a camp, holiday club, course): not an event.
 
 Event candidates carry `importance` (1–10, computed from venue size, price, press coverage, Wikipedia, fame) with
 `importance_reason`, `on_weekends` (which weekend rubrics the event falls on), `on_weekdays`, `kids_tag` (children
-or families are named in the data) and `free_tag`, sometimes `performer` (who is on stage), `long_running` (runs for more than two weeks), `sale` (a sale or
+or families are named in the data) and `free_tag`, sometimes `performer` (the best-known act), `lineup` (everyone named on the bill in any of the merged
+records), `participant` (a run, triathlon or challenge where people register to take part), `thin_data` (the data has no
+substantive fact beyond the title), `long_running` (runs for more than two weeks), `sale` (a sale or
 jumble sale) and `regular_series` (a weekly library session and the like — present it as regular sessions, one line,
 no dates of the whole series). An `editor_note` is a fact checked by our editor — trust it. `linked` lists candidates that belong to the
 same occasion (a director's talk and the screening of their film) — they go into one item together.
@@ -41,19 +42,15 @@ Rubrics (`rubric` values; the input lists the ones available):
 - `free` — free events and exhibitions (`free_tag` true). Order does not matter, we sort by importance.
 - `kids` — only candidates with `kids_tag` true. Do not guess that something suits children. If fewer than three
   qualify, give fewer.
-- `holidays` — "School holidays: where to book your child": `K…` candidates only. It is printed in two parts, October
-  half term (booking now) and Christmas (who is already taking bookings) — we group by `holiday`, you just list the
-  items. Take every `K…` candidate whose provider is in the zone (a Christmas programme with `places: not_open` says
-  when booking opens, `booking_opens`). Say who it is for when it is not everyone: `audience: eligible` — families
-  eligible for free school meals (HAF); `audience: university` — only for children of University of Cambridge staff and
-  students; `verified: false` — add "details on the provider's website". Ages, days, hours and price only from the data;
-  unknown price — "price on booking" / «цена — при записи». Mention few places left when `places` says so.
-- `sport` — matches, races and other sport in the period.
+- `sport` — matches, races and other sport in the period. `participant` events (runs, triathlons, charity challenges
+  where you register to take part) belong here — we print them under "Take part".
 - `out_of_town` — events in the period in zone `до 30 мин` or `до часа`, importance 4 or more, no `sale` items
   (charity sales and jumble sales). Fewer items is better than weak ones.
-- `county` — events in zone `Кембриджшир, дальше часа` (Peterborough, the Fens), importance 4 or more, no `sale` items.
+- `county` — events in zone `Кембриджшир, дальше часа` (Peterborough, the Fens), importance 5 or more, no `sale` items.
+  Do not make an ordinary league match the only item of this rubric — leave the rubric out instead.
 - `new_announcements` — `A…` candidates: notable events announced recently, including dates of annual events.
-- `tickets` — `T…` candidates (and `A…` ones not used elsewhere) where sales opened recently or open soon.
+- `tickets` — `T…` candidates (and `A…` ones not used elsewhere) where sales opened recently or open soon. Only tickets
+  for an audience: registrations for runs, triathlons and challenges (`participant`) never go here.
 - `cancelled` — `C…` candidates only.
 - `new_in_town` — `V…` candidates: openings of restaurants, cafés, bars and shops; closures only if notable. Prefer
   recent openings in and around Cambridge; skip places that are not open to the public. This is one of the strongest
@@ -65,7 +62,9 @@ Rules:
    is in the period); `C…` to `cancelled`; `V…` to `new_in_town`.
 2. Each event appears at most once in the whole issue. If an event has both an `E…` and a `T…` candidate, use one of
    them. An event that fits several rubrics goes where it is most useful.
-3. 3–6 items per rubric (`holidays` and `new_in_town` may be longer), 30–45 in total without `holidays`. Never pad with weak or irrelevant items and never invent items. A rubric with
+3. 3–6 items per rubric (`new_in_town` may have 6), 30–40 items in the whole issue — never more than 42: the issue is
+   read in five minutes. Cut the weakest items by importance rather than whole rubrics. Never pad with weak or
+   irrelevant items and never invent items. A rubric with
    nothing suitable is simply left out — no "nothing this week" line.
 4. Skip: professional courses, business conferences and networking events priced for companies; listings that are
    not an event ("Things to do in Cambridge for Halloween", "Waterstones Book Events"); private events; lectures with
@@ -75,17 +74,19 @@ Rules:
 6. Status `scheduled (no ticket data)` (ADC Theatre, Cambridge United) means we have no sales data: present these as
    normal events and do not say tickets are not on sale yet.
 7. Facts. Dates, times, prices, line-ups, venues and addresses come only from the candidate data. When the data
-   names who performs (`performer` or a line-up in the summary), name the headliners in the item — the line-up is
-   often the whole point of the event. General knowledge
+   names who performs, name them in the item: every name in `lineup` (up to five) plus `performer` — the line-up is
+   often the whole point of the event, and we check the text against it. General knowledge
    that cannot go out of date is allowed — the genre of a band, the country an artist comes from, what a well-known
    festival or institution is ("Pink Floyd's founder", "a Scottish pop duo", "the university's museum of art") — but
    list every such statement in the item's `knowledge_en` / `knowledge_ru` so the editor can check it. Nothing that
    can change (current league, chart position, "latest album", ages, records) from your own knowledge. `[EFLT]` in a
    title is the EFL Trophy. Prices are the figures from `price_text` / `price_from` (or the summary), never changed.
 8. Every item has a description — at least one phrase, so the reader knows what it is. Length follows importance:
-   importance ≥ 8 — two or three sentences; 4–7 — one or two sentences; ≤ 3 — one short phrase. An empty-sounding blurb ("A new café has opened", "Home EFL Trophy
-   tie") is not allowed: give one useful fact from the data — the time, the opponent, what they serve, what the venue
-   is known for, who is on the bill — or keep it to a short factual clause.
+   importance ≥ 8 — two or three sentences; 4–7 — one or two sentences; ≤ 3 — one short phrase. Empty descriptions are
+   really forbidden: "A new café has opened on Magdalene Street", "Race day at Newmarket", "Home league match" are
+   rejected by our check and the item is dropped. Give a fact from the data — who is on the bill, the main race of the
+   day, the opponent, what they serve, what the venue is known for. If the data has no such fact (`thin_data`), do not
+   take the item.
 
 Fields of an item:
 - `ids` — candidate ids (usually one).

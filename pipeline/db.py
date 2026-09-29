@@ -264,7 +264,7 @@ MIGRATIONS = [
 
 def connect(path: Path = DB_PATH) -> sqlite3.Connection:
     path.parent.mkdir(parents=True, exist_ok=True)
-    con = sqlite3.connect(path)
+    con = sqlite3.connect(path, timeout=60)   # параллельные скрипты этапа 6b пишут в одну базу
     con.row_factory = sqlite3.Row
     con.executescript(SCHEMA)
     for table, col, typ in MIGRATIONS:

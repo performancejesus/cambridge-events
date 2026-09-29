@@ -1,0 +1,39 @@
+{
+ "_comment": "Этап 6b: ручная проверка подтверждённых пропусков (search_gaps.gap_id) перед загрузкой в базу (S148). reject — не загружать, с причиной. fix — исправить поля находки (первоисточник найден дополнительным запросом Keenable и проверен на странице).",
+ "reject": {
+  "61": "Daniel Hyde — руководитель хора King's; его имя стоит рядом с каждой датой листинга, 11 октября играет Paul Greally",
+  "82": "то же: Daniel Hyde, 18 октября играет David Newsholme",
+  "105": "то же: Daniel Hyde, 25 октября играет Hamish Wagstaff",
+  "63": "«Concerts at King's» — раздел сайта, не событие",
+  "117": "«Ely Maltings» — площадка, не событие",
+  "34": "еженедельный рынок — не событие",
+  "86": "автобусный тур «Day Trip to Cambridge» — туристический продукт (evergreen)",
+  "131": "то же, туристический продукт",
+  "1": "«Independent café» — без названия заведения",
+  "12": "надувной аквапарк — сезонный, работал летом"
+ },
+ "fix": {
+  "37": {
+   "name": "Bidwells Cambridge Town & Gown 10K",
+   "venue": "Midsummer Common",
+   "town": "Cambridge",
+   "postcode": "CB5 8DJ",
+   "time": null,
+   "url": "https://bidwells.co.uk/insights-reports-events/bidwells-cambridge-town-gown-10k-2026",
+   "note": "это Town & Gown 10K (контрольный пример брифа, R14): 4 октября 2026, Midsummer Common — страница Bidwells (титульный спонсор)"
+  },
+  "35": {
+   "venue": "Granta Park",
+   "town": "Great Abington",
+   "postcode": "CB21 6GP",
+   "url": "https://greatabington.school/abington-festival-of-running-2024",
+   "note": "организатор — PTFA школы Great Abington; 10k, 5k и 2k в Granta Park"
+  },
+  "51": {
+   "url": "https://findarace.com/events/great-eastern-run",
+   "venue": "Peterborough city centre",
+   "town": "Peterborough",
+   "note": "страница события на findarace (организатор — через платформу записи, закрытую для бота); было — общий листинг «5k runs, October»"
+  }
+ }
+}

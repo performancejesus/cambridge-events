@@ -1,0 +1,174 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "results"
+ ],
+ "properties": {
+  "results": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "idx",
+     "area",
+     "page_type",
+     "provider",
+     "items"
+    ],
+    "properties": {
+     "idx": {
+      "type": "integer"
+     },
+     "area": {
+      "type": "string",
+      "enum": [
+       "in_area",
+       "elsewhere",
+       "unclear"
+      ]
+     },
+     "page_type": {
+      "type": "string",
+      "enum": [
+       "event_page",
+       "listing",
+       "venue_or_org",
+       "news_article",
+       "directory",
+       "other"
+      ]
+     },
+     "provider": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "items": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "additionalProperties": false,
+       "required": [
+        "kind",
+        "name",
+        "date_start",
+        "date_end",
+        "time",
+        "venue",
+        "town",
+        "price",
+        "category",
+        "provider",
+        "ages",
+        "holidays"
+       ],
+       "properties": {
+        "kind": {
+         "type": "string",
+         "enum": [
+          "event",
+          "opening",
+          "closure",
+          "cancellation",
+          "programme"
+         ]
+        },
+        "name": {
+         "type": "string"
+        },
+        "date_start": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "date_end": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "time": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "venue": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "town": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "price": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "category": {
+         "type": "string",
+         "enum": [
+          "concert",
+          "theatre",
+          "comedy",
+          "family",
+          "talk",
+          "exhibition",
+          "film",
+          "market_fair",
+          "festival",
+          "food_drink",
+          "sport",
+          "nightlife",
+          "heritage_outdoor",
+          "church_music",
+          "other",
+          "none"
+         ]
+        },
+        "provider": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "ages": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "holidays": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "enum": [
+           "october_half_term",
+           "christmas",
+           "february_half_term",
+           "easter",
+           "may_half_term",
+           "summer",
+           "term_time",
+           "unknown"
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

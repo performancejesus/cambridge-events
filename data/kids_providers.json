@@ -1,0 +1,1437 @@
+{
+ "_comment": "Этап 6b → 6c: провайдеры детских программ и лагерей из поиска Keenable (29 запросов, группа kids_providers). Кандидаты для коллекторов этапа 6c: тип, какие каникулы упоминаются, robots.txt. in_kids_programmes — уже есть в срезе 6-v4.",
+ "providers": [
+  {
+   "host": "butterfliesforestschool.co.uk",
+   "provider": "Butterflies Forest School",
+   "also": [],
+   "type": "лесная школа",
+   "holidays": [
+    "october_half_term",
+    "christmas",
+    "february_half_term",
+    "easter",
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [
+    "Wilburton"
+   ],
+   "ages": [],
+   "urls": [
+    "https://butterfliesforestschool.co.uk/sessions"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "comeandplay-holidayclub.co.uk",
+   "provider": "COME and PLAY HOLIDAY CLUB",
+   "also": [],
+   "type": "каникулярный клуб",
+   "holidays": [
+    "october_half_term",
+    "christmas",
+    "february_half_term",
+    "easter",
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://comeandplay-holidayclub.co.uk"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "culford.co.uk",
+   "provider": "Culford",
+   "also": [],
+   "type": "частная школа (Бери)",
+   "holidays": [
+    "october_half_term",
+    "christmas",
+    "february_half_term",
+    "easter",
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [
+    "Bury St Edmunds"
+   ],
+   "ages": [
+    "5-16"
+   ],
+   "urls": [
+    "https://culford.co.uk/commercial/sports-and-tennis-centre/holiday-clubs"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "1 программ(ы) на октябрь/Рождество на странице"
+  },
+  {
+   "host": "firefliesforestschool.co.uk",
+   "provider": "Fireflies Forest School",
+   "also": [],
+   "type": "лесная школа",
+   "holidays": [
+    "october_half_term",
+    "christmas",
+    "february_half_term",
+    "easter",
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [],
+   "ages": [
+    "0-5",
+    "5-13"
+   ],
+   "urls": [
+    "https://firefliesforestschool.co.uk/about-us",
+    "https://firefliesforestschool.co.uk/summer-holiday-club-2026"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "mikestennis.com",
+   "provider": "Mike's Tennis Academy",
+   "also": [],
+   "type": "теннис",
+   "holidays": [
+    "october_half_term",
+    "christmas",
+    "february_half_term",
+    "easter",
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://mikestennis.com/holiday-camps"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "ошибка загрузки: HTTP 202 https://mikestennis.com/holiday-camps"
+  },
+  {
+   "host": "cambridgeltc.com",
+   "provider": "Cambridge Lawn Tennis Club",
+   "also": [],
+   "type": "теннис",
+   "holidays": [
+    "october_half_term",
+    "christmas",
+    "february_half_term",
+    "easter",
+    "may_half_term"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "4-5",
+    "6-8"
+   ],
+   "urls": [
+    "https://cambridgeltc.com/coaching/half-term-tennis-camp"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "ошибка загрузки: ConnectError: [Errno 104] Connection reset by peer"
+  },
+  {
+   "host": "clubhubuk.co.uk",
+   "provider": "Active Play Education",
+   "also": [
+    "Barracudas",
+    "Perform Cambridge"
+   ],
+   "type": "агрегатор каникулярных клубов (Club Hub UK)",
+   "holidays": [
+    "october_half_term",
+    "easter",
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [
+    "Cambridge",
+    "Ely"
+   ],
+   "ages": [
+    "4 - 12",
+    "4-10",
+    "4-14"
+   ],
+   "urls": [
+    "https://clubhubuk.co.uk/clubs/active-play-education-easter-holiday-club-ely",
+    "https://clubhubuk.co.uk/clubs/barracudas-cambridge-long-road-school-holiday-camp",
+    "https://clubhubuk.co.uk/clubs/barracudas-cambridge-october-half-term-camp-long-road-sixth-form-college"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "cambridgecityfc.com",
+   "provider": "Cambridge City FC",
+   "also": [],
+   "type": "футбольный клуб",
+   "holidays": [
+    "october_half_term",
+    "february_half_term",
+    "easter",
+    "may_half_term"
+   ],
+   "towns": [
+    "Cambridge",
+    "Sawston"
+   ],
+   "ages": [
+    "7-14",
+    "7-14 years",
+    "7-15"
+   ],
+   "urls": [
+    "https://cambridgecityfc.com/event-details/easter-half-term-camp",
+    "https://cambridgecityfc.com/event-details/february-half-term-camp-1",
+    "https://cambridgecityfc.com/event-details/may-half-term-camp-1"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "s4swimschool.uk",
+   "provider": "S4 Swim School",
+   "also": [],
+   "type": "плавание",
+   "holidays": [
+    "october_half_term",
+    "easter",
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://s4swimschool.uk/swim-intensives"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "dramaticmoments.co.uk",
+   "provider": "Dramatic Moments",
+   "also": [],
+   "type": "театр/драма",
+   "holidays": [
+    "christmas",
+    "summer",
+    "term_time"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "6-18"
+   ],
+   "urls": [
+    "https://dramaticmoments.co.uk"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "premier-education.com",
+   "provider": "Premier Education",
+   "also": [],
+   "type": "национальный оператор лагерей",
+   "holidays": [
+    "february_half_term",
+    "easter",
+    "term_time"
+   ],
+   "towns": [
+    "Ely",
+    "Red Lodge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://premier-education.com/parents/venue/courses/16104-930709?back=1&school=Fringford%20C%20of%20E",
+    "https://www.premier-education.com/parents/venue/courses/24179/"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "hoop.co.uk",
+   "provider": "Dramatic Moments",
+   "also": [],
+   "type": "агрегатор детских занятий (Hoop)",
+   "holidays": [
+    "christmas",
+    "summer"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://hoop.co.uk/dramatic-moments"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "gymfinitykids.com",
+   "provider": "Gymfinity Kids",
+   "also": [],
+   "type": "гимнастика",
+   "holidays": [
+    "easter",
+    "may_half_term"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "4-5",
+    "5-7",
+    "6-7"
+   ],
+   "urls": [
+    "https://gymfinitykids.com/cambridge-easter-schedule-2026",
+    "https://gymfinitykids.com/cambridge-spring-schedule-2",
+    "https://gymfinitykids.com/club/cambridge/beehive"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "kingscamps.org",
+   "provider": "Kings Camps",
+   "also": [],
+   "type": "национальный оператор лагерей",
+   "holidays": [
+    "easter",
+    "summer"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://kingscamps.org/venue/cambridge-kings-college-school",
+    "https://kingscamps.org/venue/cambridge-perse-school",
+    "https://www.kingscamps.org/venue/cambridge-kings-college-school/"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "nenepark.org.uk",
+   "provider": "Nene Park",
+   "also": [],
+   "type": "парк (Питерборо)",
+   "holidays": [
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [
+    "Peterborough"
+   ],
+   "ages": [
+    "8-13"
+   ],
+   "urls": [
+    "https://nenepark.org.uk/holiday-club"
+   ],
+   "robots": "закрыт для бота",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "theyoungactorscompany.com",
+   "provider": "The Young Actors Company",
+   "also": [],
+   "type": "театр/драма",
+   "holidays": [
+    "easter",
+    "summer"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://theyoungactorscompany.com/easter-school",
+    "https://theyoungactorscompany.com/holiday-courses"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "pitchgurus.co",
+   "provider": "University of Cambridge",
+   "also": [],
+   "type": "площадка бронирования спортобъектов",
+   "holidays": [
+    "october_half_term",
+    "summer"
+   ],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://pitchgurus.co/organisation/university-of-cambridge"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "vivacity.org",
+   "provider": "Vivacity",
+   "also": [],
+   "type": "оператор досуговых центров (Питерборо)",
+   "holidays": [
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [
+    "Peterborough"
+   ],
+   "ages": [
+    "4-11"
+   ],
+   "urls": [
+    "https://vivacity.org/sport-events/club-viva/club-viva-may-ht-2026",
+    "https://vivacity.org/sport-events/club-viva/healthy-happy-holidays-summer-2026",
+    "https://vivacity.org/things-to-do/short-breaks-send-holiday-clubs"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "cambridgegymnastics.co.uk",
+   "provider": "Cambridge Gymnastics Academy",
+   "also": [],
+   "type": "гимнастика",
+   "holidays": [
+    "october_half_term"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://cambridgegymnastics.co.uk/class_category/recreational",
+    "https://cambridgegymnastics.co.uk/term-dates"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "childcare.admin.cam.ac.uk",
+   "provider": "Childcare Services",
+   "also": [
+    "University of Cambridge Holiday Playscheme"
+   ],
+   "type": "университет — только дети сотрудников и студентов",
+   "holidays": [
+    "summer"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://childcare.admin.cam.ac.uk/day-playscheme",
+    "https://childcare.admin.cam.ac.uk/playschemes",
+    "https://www.childcare.admin.cam.ac.uk/multi-sports-holiday-camp"
+   ],
+   "robots": "закрыт для бота",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "chorusmusictherapy.co.uk",
+   "provider": "Chorus Music Therapy",
+   "also": [],
+   "type": "музыка",
+   "holidays": [
+    "easter"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "4-8 years old"
+   ],
+   "urls": [
+    "https://chorusmusictherapy.co.uk/easter-music-camp"
+   ],
+   "robots": "закрыт для бота",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "kaplaclubs.co.uk",
+   "provider": "Kapla Clubs UK",
+   "also": [],
+   "type": "конструирование (Kapla)",
+   "holidays": [
+    "summer"
+   ],
+   "towns": [
+    "Meldreth"
+   ],
+   "ages": [
+    "5-12"
+   ],
+   "urls": [
+    "https://kaplaclubs.co.uk/holiday-clubs"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "kettlesyard.cam.ac.uk",
+   "provider": "Kettle's Yard",
+   "also": [],
+   "type": "музей",
+   "holidays": [
+    "october_half_term"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "7-11"
+   ],
+   "urls": [
+    "https://kettlesyard.cam.ac.uk/whats-on/holiday-workshop-dance-style-and-pattern-creative-thinking-caps-on-with-sin-cru",
+    "https://kettlesyard.cam.ac.uk/whats-on/holiday-workshop-organic-shapes-and-natural-forms"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "ошибка загрузки: ProxyError: 502 Bad Gateway"
+  },
+  {
+   "host": "kcs.cambs.sch.uk",
+   "provider": "King's College School Cambridge",
+   "also": [],
+   "type": "частная школа",
+   "holidays": [
+    "summer"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "Reception to Year 8"
+   ],
+   "urls": [
+    "https://kcs.cambs.sch.uk/admissions/timing-of-the-school-day-and-holiday-camps"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "activities.bookpebble.co.uk",
+   "provider": "Primary Sports Stars",
+   "also": [],
+   "type": "платформа записи (Pebble)",
+   "holidays": [
+    "october_half_term"
+   ],
+   "towns": [
+    "Bury St Edmunds"
+   ],
+   "ages": [
+    "4 - 16yrs"
+   ],
+   "urls": [
+    "https://activities.bookpebble.co.uk/activity/cheerful-champs-mildenhall-holiday-club-st-marys-mildenhall-october-26-bury-st-edmunds-5d5fcf7d-22d5-47ef-8e6e-444bd5ecf538",
+    "https://activities.bookpebble.co.uk/activity/primary-sports-stars-cambridge-south-linton-infants-gymnastics-club-years-12-cambridge-e8018e24-de83-43d6-9ddb-76b14f48f3fb"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "1 программ(ы) на октябрь/Рождество на странице"
+  },
+  {
+   "host": "cambridge.thelittlegym.co.uk",
+   "provider": "The Little Gym",
+   "also": [],
+   "type": "гимнастика",
+   "holidays": [
+    "summer"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "3+"
+   ],
+   "urls": [
+    "https://cambridge.thelittlegym.co.uk/day-camps"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "sportscentre.perse.co.uk",
+   "provider": "The Perse Sports Centre",
+   "also": [],
+   "type": "частная школа — спорт-центр",
+   "holidays": [
+    "may_half_term"
+   ],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://sportscentre.perse.co.uk/may-half-term-crash-course",
+    "https://sportscentre.perse.co.uk/summer-courses",
+    "https://sportscentre.perse.co.uk/swimming-crash-course"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "persesummerschool.co.uk",
+   "provider": "The Perse Summer School",
+   "also": [],
+   "type": "частная школа — летняя школа",
+   "holidays": [
+    "easter"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://persesummerschool.co.uk/easter-camp"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "tsasports.co.uk",
+   "provider": "Tsa Sports",
+   "also": [],
+   "type": "спортивные лагеря",
+   "holidays": [
+    "october_half_term"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://tsasports.co.uk/courses"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "sport.cam.ac.uk",
+   "provider": "University of Cambridge Sport",
+   "also": [],
+   "type": "спорт университета",
+   "holidays": [
+    "february_half_term"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "Years 3-9"
+   ],
+   "urls": [
+    "https://sport.cam.ac.uk/childrens-athletic-camps"
+   ],
+   "robots": "закрыт для бота",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "haverhill-tc.gov.uk",
+   "provider": "West Suffolk Council",
+   "also": [],
+   "type": "совет",
+   "holidays": [
+    "christmas"
+   ],
+   "towns": [
+    "Bury St Edmunds"
+   ],
+   "ages": [],
+   "urls": [
+    "https://haverhill-tc.gov.uk/wp-content/uploads/WSC-HAF-timetable-Winter-2025.pdf"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false,
+   "check": "на странице нет дат на эти каникулы"
+  },
+  {
+   "host": "wild-at-art-workshops.classforkids.io",
+   "provider": "Wild @ Art",
+   "also": [],
+   "type": "искусство",
+   "holidays": [
+    "easter"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "5-11"
+   ],
+   "urls": [
+    "https://wild-at-art-workshops.classforkids.io/camps"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "a1funclub.co.uk",
+   "provider": "A1 Fun Club",
+   "also": [],
+   "type": "каникулярный клуб",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://a1funclub.co.uk/pages/about-us"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "activeplayeducation.co.uk",
+   "provider": "Active Play Education",
+   "also": [],
+   "type": "оператор каникулярных клубов",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://www.activeplayeducation.co.uk/activities/ely-st-marys---holiday-club"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "adventure-camps.co.uk",
+   "provider": "Adventure Camps",
+   "also": [],
+   "type": "оператор лагерей",
+   "holidays": [],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://adventure-camps.co.uk/adventure-camps-this-holiday-season",
+    "https://adventure-camps.co.uk/holiday-camps-update"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "aquastarsorg.co.uk",
+   "provider": "Aquastars",
+   "also": [],
+   "type": "плавание",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://aquastarsorg.co.uk/welcome"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "barracudas.co.uk",
+   "provider": "Barracudas",
+   "also": [],
+   "type": "национальный оператор лагерей",
+   "holidays": [],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "8 to 14 years old"
+   ],
+   "urls": [
+    "http://barracudas.co.uk/camps/minecraft-cambridge-long-road",
+    "http://barracudas.co.uk/camps/roblox-cambridge-st-faiths",
+    "https://barracudas.co.uk/camps/cambridge-st-faiths"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "canddrc.org.uk",
+   "provider": "Cambridge and District Riding Club",
+   "also": [],
+   "type": "верховая езда",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://canddrc.org.uk"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "cambridgekidsclub.com",
+   "provider": "Cambridge Kids Club",
+   "also": [],
+   "type": "каникулярный клуб",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://cambridgekidsclub.com/playscheme/ckc-wacky"
+   ],
+   "robots": "закрыт для бота",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "cambridgekungfu.com",
+   "provider": "Cambridge Kung Fu",
+   "also": [],
+   "type": "единоборства",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://cambridgekungfu.com/events-and-updates"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "clubspark.lta.org.uk",
+   "provider": "Cambridge Lawn Tennis Club",
+   "also": [
+    "Cocks and Hens Cambridge Tennis"
+   ],
+   "type": "теннис (платформа LTA)",
+   "holidays": [],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://clubspark.lta.org.uk/CocksandHensTennisCambridge/Coaching",
+    "https://clubspark.lta.org.uk/TennisForKids/Course/4ee0b97b-7c99-42e1-a82b-956df70adcac"
+   ],
+   "robots": "закрыт для бота",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "cambridgeshire.gov.uk",
+   "provider": "Cambridgeshire Council",
+   "also": [],
+   "type": "совет (HAF, Family Information Directory)",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://cambridgeshire.gov.uk/council/communities/support-with-the-cost-of-living/help-with-family-life",
+    "https://cambridgeshire.gov.uk/council/communities/support-with-the-cost-of-living/holiday-activities-and-food-programme",
+    "https://cambridgeshire.gov.uk/council/communities/support-with-the-cost-of-living/holiday-activities-and-food-programme/haf-provider-directory"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "classforkids.io",
+   "provider": "classforkids.io",
+   "also": [],
+   "type": "платформа записи (Class For Kids)",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://classforkids.io/en-GB/classes/Bridge%20Green",
+    "https://classforkids.io/en-GB/classes/Fen%20Ditton"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "clipnclimbcambridge.co.uk",
+   "provider": "Clip 'n Climb Cambridge",
+   "also": [],
+   "type": "скалодром",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://clipnclimbcambridge.co.uk/news-articles/haf-programme-christmas-holiday-fun",
+    "https://clipnclimbcambridge.co.uk/news-articles/kids-eat-free-this-half-term"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "davidlloyd.co.uk",
+   "provider": "David Lloyd Clubs",
+   "also": [],
+   "type": "фитнес-клуб (детские лагеря)",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://davidlloyd.co.uk/clubs/bury-st-edmunds/club-facilities/kids-club"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "dreamweavergymnastics.com",
+   "provider": "Dreamweaver Gymnastics",
+   "also": [],
+   "type": "гимнастика",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://dreamweavergymnastics.com"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "eliteswimmingacademy.co.uk",
+   "provider": "Elite Swimming Academy",
+   "also": [],
+   "type": "плавание",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://eliteswimmingacademy.co.uk"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "formationsdance.co.uk",
+   "provider": "Formations Dance Company",
+   "also": [],
+   "type": "танцы",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://formationsdance.co.uk"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "funtimeschildcare.com",
+   "provider": "Fun Times Cambridgeshire",
+   "also": [],
+   "type": "каникулярный клуб",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://funtimeschildcare.com/holiday-club/"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "gkfit.co.uk",
+   "provider": "GK Fit Ltd",
+   "also": [],
+   "type": "спортивные лагеря",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://gkfit.co.uk/daytime"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "kidsclubely.co.uk",
+   "provider": "Kids Club Ely",
+   "also": [
+    "Kidsclubely"
+   ],
+   "type": "каникулярный клуб",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://kidsclubely.co.uk/opening-times-and-fees",
+    "https://www.kidsclubely.co.uk/",
+    "https://www.kidsclubely.co.uk/kids-club-ely"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "monachriding.co.uk",
+   "provider": "Monach Farm Horse Riding Stables",
+   "also": [],
+   "type": "верховая езда",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://monachriding.co.uk",
+    "https://monachriding.co.uk/riding-lessons"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "nationaltrust.org.uk",
+   "provider": "National Trust",
+   "also": [],
+   "type": "National Trust",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/visiting-anglesey-abbey-with-family"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "newboroughkidzclub.co.uk",
+   "provider": "Newborough Kidz Club",
+   "also": [],
+   "type": "каникулярный клуб",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://newboroughkidzclub.co.uk"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "better.org.uk",
+   "provider": "Parkside Pools And Gym",
+   "also": [],
+   "type": "оператор бассейнов и спортцентров (GLL/Better)",
+   "holidays": [],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "8+"
+   ],
+   "urls": [
+    "https://better.org.uk/leisure-centre/cambridge/parksidepools/holiday-activities"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "peterborough.gov.uk",
+   "provider": "peterborough.gov.uk",
+   "also": [],
+   "type": "совет (HAF)",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "http://peterborough.gov.uk/haf"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "horseridinguk.co.uk",
+   "provider": "Sawston Riding School",
+   "also": [],
+   "type": "верховая езда (справочник)",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://horseridinguk.co.uk/horse-riding/sawston-riding-school"
+   ],
+   "robots": "закрыт для бота",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "scec.co.uk",
+   "provider": "South Cambridgeshire Equestrian Centre",
+   "also": [],
+   "type": "верховая езда",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://scec.co.uk/south-cambridgeshire-riding-school"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "stardustdanceacademy.com",
+   "provider": "Stardust Dance Academy",
+   "also": [],
+   "type": "танцы",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "http://stardustdanceacademy.com",
+    "https://stardustdanceacademy.com",
+    "https://stardustdanceacademy.com/dance-classes/cambridge"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "stephenperse.com",
+   "provider": "Stephen Perse",
+   "also": [],
+   "type": "частная школа",
+   "holidays": [],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "Years 1 to 10"
+   ],
+   "urls": [
+    "https://www.stephenperse.com/about-us/holiday-programme"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "strikeacademy.classforkids.io",
+   "provider": "Strike Academy",
+   "also": [],
+   "type": "футбол",
+   "holidays": [],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "5-14.5 years"
+   ],
+   "urls": [
+    "https://strikeacademy.classforkids.io/camp/64"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "thefootballfunfactory.co.uk",
+   "provider": "The Football Fun Factory",
+   "also": [],
+   "type": "футбол",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://thefootballfunfactory.co.uk/locations/bury-st-edmunds"
+   ],
+   "robots": "закрыт для бота",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "theleys.net",
+   "provider": "The Leys",
+   "also": [],
+   "type": "частная школа",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://theleys.net/leys-leisure/holiday-swimming"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "theatretrain.co.uk",
+   "provider": "Theatretrain",
+   "also": [],
+   "type": "театр/драма",
+   "holidays": [],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [],
+   "urls": [
+    "https://theatretrain.co.uk/cambridge-south/holiday-school"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "tjkids.co.uk",
+   "provider": "TJKids",
+   "also": [],
+   "type": "каникулярный клуб",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://tjkids.co.uk"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "020.co.uk",
+   "provider": "020.co.uk",
+   "also": [],
+   "type": "справочник",
+   "holidays": [
+    "october_half_term",
+    "february_half_term",
+    "easter",
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [
+    "Huntingdon"
+   ],
+   "ages": [
+    "4.5-14 years"
+   ],
+   "urls": [
+    "https://020.co.uk/c/childrens-holiday-clubs-and-sports-camps/cambs/london.shtml"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "visitsouthcambs.co.uk",
+   "provider": "Cambridge City FC",
+   "also": [
+    "Icklewoods Forest School"
+   ],
+   "type": "туристический сайт",
+   "holidays": [
+    "may_half_term",
+    "summer"
+   ],
+   "towns": [
+    "Ickleton",
+    "Sawston"
+   ],
+   "ages": [
+    "5-14",
+    "7-14"
+   ],
+   "urls": [
+    "https://visitsouthcambs.co.uk/events/icklewoods-forest-school-holiday-club",
+    "https://visitsouthcambs.co.uk/events/may-half-term-football-camp"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "eequ.org",
+   "provider": "Farmlings Forest School",
+   "also": [
+    "Genius Tuition",
+    "Ipswich Town Foundation",
+    "Premier Education"
+   ],
+   "type": "справочник (Suffolk)",
+   "holidays": [
+    "easter",
+    "summer"
+   ],
+   "towns": [
+    "Bury St Edmunds"
+   ],
+   "ages": [
+    "5-11+",
+    "6 - 12 years",
+    "8+"
+   ],
+   "urls": [
+    "https://eequ.org/book/football-holiday-camp-bury-st-edmunds-with-ipswich-town-foundation-17733",
+    "https://eequ.org/book/genius-bury-st-edmunds-holiday-club-with-genius-tuition-14190",
+    "https://eequ.org/book/holiday-club-with-farmlings-forest-school-15977"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": true
+  },
+  {
+   "host": "visitcambridge.org",
+   "provider": "Barracudas Activity Day Camps",
+   "also": [
+    "Kettle's Yard"
+   ],
+   "type": "туристический сайт",
+   "holidays": [
+    "october_half_term"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "ages": [
+    "11-16",
+    "7-11"
+   ],
+   "urls": [
+    "https://visitcambridge.org/event/holiday-workshop-cardboard-kettles-yard",
+    "https://visitcambridge.org/event/holiday-workshop-drawing-kettles-yard",
+    "https://visitcambridge.org/place/barracudas-activity-day-camps"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "all4kidsuk.com",
+   "provider": "all4kidsuk.com",
+   "also": [],
+   "type": "справочник",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://all4kidsuk.com/after-school-activities-childrens/essex/saffron-walden",
+    "https://all4kidsuk.com/cricket-coaching-childrens/cambridgeshire",
+    "https://all4kidsuk.com/football-coaching-childrens/cambridgeshire"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "dayoutwiththekids.co.uk",
+   "provider": "dayoutwiththekids.co.uk",
+   "also": [],
+   "type": "справочник",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://dayoutwiththekids.co.uk/things-to-do/east/cambridgeshire/castle-camps/sports-and-activities/horse-riding-stables"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "familiesonline.co.uk",
+   "provider": "familiesonline.co.uk",
+   "also": [],
+   "type": "справочник",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://familiesonline.co.uk/cambridgeshire/whats-on-for-families-in-cambridgeshire-in-summer-holidays-2026"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "mumsguideto.co.uk",
+   "provider": "mumsguideto.co.uk",
+   "also": [],
+   "type": "справочник",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://mumsguideto.co.uk/huntingdon/holiday-clubs.php?subcatid=89&subcatname=Clubs-camps-playschemes"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "netmums.com",
+   "provider": "netmums.com",
+   "also": [],
+   "type": "справочник",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://netmums.com/local/l/gymfinity-kids-cambridge"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  },
+  {
+   "host": "ukcollegeholidays.co.uk",
+   "provider": "ukcollegeholidays.co.uk",
+   "also": [],
+   "type": "справочник",
+   "holidays": [],
+   "towns": [],
+   "ages": [],
+   "urls": [
+    "https://ukcollegeholidays.co.uk/cambridge-college-term-dates"
+   ],
+   "robots": "открыт",
+   "in_kids_programmes": false
+  }
+ ],
+ "checked_candidates": [
+  {
+   "holiday": "october_half_term",
+   "title": "October Half Term Holiday Club",
+   "ages": "5-12",
+   "date_start": null,
+   "date_end": null,
+   "hours": null,
+   "price": null,
+   "venue": "Culford Sports and Tennis Centre",
+   "address": "Bury St Edmunds",
+   "postcode": "IP28 6TX",
+   "places": "unknown",
+   "evidence": "Page mentions 'October Half Term Holiday Club: Ages 5-12' and 'Swimming' but provides no specific dates, hours, pricing, or availability information",
+   "provider": "Culford",
+   "url": "https://culford.co.uk/commercial/sports-and-tennis-centre/holiday-clubs",
+   "host": "culford.co.uk"
+  },
+  {
+   "holiday": "october_half_term",
+   "title": "Cheerful Champs Mildenhall Holiday Club",
+   "ages": null,
+   "date_start": "26 October 2026",
+   "date_end": null,
+   "hours": null,
+   "price": null,
+   "venue": "St Marys Mildenhall",
+   "address": null,
+   "postcode": null,
+   "places": "unknown",
+   "evidence": "URL title and page header indicate 'HOLIDAY CLUB - St Marys Mildenhall - October 26' with activity name 'Cheerful Champs Mildenhall Holiday Club'. Page content is incomplete/truncated with only HTML styling visible, so specific details about end date, hours, price, ages, and availability cannot be determined.",
+   "provider": "Primary Sports Stars",
+   "url": "https://activities.bookpebble.co.uk/activity/cheerful-champs-mildenhall-holiday-club-st-marys-mildenhall-october-26-bury-st-edmunds-5d5fcf7d-22d5-47ef-8e6e-444bd5ecf538",
+   "host": "activities.bookpebble.co.uk"
+  }
+ ],
+ "check_cost": {
+  "input_tokens": 61357,
+  "output_tokens": 421,
+  "cost_usd": 0.0635
+ }
+}
