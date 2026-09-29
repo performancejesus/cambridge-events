@@ -209,3 +209,29 @@ python scripts/stage6b_report.py                  # docs/stage6b_report.md
   программу (`issue.holiday_groups`), состав участников из всех склеенных записей (`pipeline/lineup.py`, Haiku, кэш),
   забеги и триатлоны — «Спорт → Поучаствовать», а не «Успейте купить билеты», пустые описания убираются,
   «По графству» — от 5. Редакторская версия `_v5_editor_{ru,en}.html` — все кандидаты каждой рубрики под катом с причиной.
+
+## Этап 6c — детские программы, зрительский спорт, кино и лекции, выпуск v6
+
+```bash
+python scripts/recheck_blocked.py                 # robots.txt 4xx по RFC 9309 → перепроверка закрытых источников и провайдеров
+python scripts/run_collectors.py S149 S150 S151 S152 S105 S153 S019 S154 S020 S155 S045 S144 S163 S164
+python scripts/split_roundups.py                  # подборки «Things to do…» → отдельные ссылки, проверка на страницах (S165)
+python scripts/kids_collect.py                    # 76 сайтов детских провайдеров → kids_programmes (Haiku, кэш страниц)
+python scripts/kids_collect.py --reminders        # за 6 недель до каникул: сколько программ и у кого данных нет
+python scripts/update_db.py && python scripts/locate_venues.py && python scripts/score_importance.py
+python scripts/enrich_pages.py --issue 2026-10-01 # страницы событий без фактов или цены — одна загрузка у первоисточника
+python scripts/build_issue.py --issue 2026-10-01 --version v6    # md, reader и editor HTML, _dropped.csv
+python scripts/build_registry_v07.py              # реестр v0.7: листы «Этап 6c» и «Не разобрано»
+```
+
+- `collectors/http.py`, `pipeline/domains.py` — robots.txt: 4xx (кроме 429) = правил нет; 429, 5xx, обрыв = запрет.
+  Страница с 403 или заглушкой → `unparsed_sources` («Не разобрано», `pipeline/unparsed.py`).
+- `collectors/sources/stage6c.py` — коллекторы этапа; `collectors/llmlist.py` — видимый текст страницы → список событий
+  (Haiku, кэш по содержимому) для сайтов клубов без структурированных данных.
+- `pipeline/school_holidays.py` — все школьные каникулы Cambridgeshire (term dates совета) → `recurring_events` (H-…).
+- `pipeline/kids_collect.py` — коллектор провайдеров, зоны без postcode (адрес → справочник площадок → город в названии
+  → город провайдера), тексты строк «Каникул» (en/ru), напоминания.
+- `pipeline/roundups.py` — признаки подборки; такие записи в выпуск не идут.
+- `pipeline/enrich.py` — `event_pages`: фрагмент страницы события и цена (газеты и сайты с ИИ-запретом не загружаются).
+- Выпуск: рубрики «В кино», «Лекции и встречи», «Спорт → Также играют» (матчи подключённых клубов без модели),
+  «Каникулы» с «Успейте записаться» и «Куда сходить с детьми в каникулы»; правки по v5 — см. `docs/stage6c_report.md`.

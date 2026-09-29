@@ -352,6 +352,71 @@ def content_words(text: str, title: str) -> int:
     return len([x for x in re.findall(r"\w+", text.lower()) if len(x) > 3 and x not in tw])
 
 
+SPECTATOR_SOURCES = {"S018", "S123", "S019", "S154", "S020", "S155", "S021", "S022"}
+TOWN_RU = {"Cambridge": "Кембридж", "Peterborough": "Питерборо", "Newmarket": "Ньюмаркет", "Huntingdon": "Хантингдон",
+           "Ely": "Эли", "St Neots": "Сент-Нитс", "St Ives": "Сент-Айвс"}
+
+
+def current_not_verified(con, kd: dict) -> list[tuple[str, str, str]]:
+    """Непроверенные провайдеры ручного среза 6-v4 — с текущим статусом этапа 6c: у кого коллектор собрал программы —
+    не выводим; у кого страница закрыта — причина из «Не разобрано» (а не прежнее «robots.txt отвечает 403»)."""
+    from pipeline import domains
+    have = {r[0] for r in con.execute("SELECT DISTINCT provider_host FROM kids_programmes WHERE source='collector'")}
+    out = []
+    for n, u, why in kd["not_verified"]:
+        h = domains.host(u)
+        if h in have:
+            continue
+        r = con.execute("SELECT problem, detail FROM unparsed_sources WHERE key=? AND coalesce(status,'') != 'resolved'",
+                        (f"P:{h}",)).fetchone()
+        if r:
+            from pipeline.unparsed import PROBLEM_RU
+            why = f"{PROBLEM_RU.get(r[0], r[0])} ({r[1]}) — лист «Не разобрано»"
+        out.append((n, u, why))
+    return out
+
+
+def also_playing(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[str, str]]:
+    """Правки после v5 («Зрительский спорт — дыра»): все матчи и скачки окна из подключённых клубов и ипподромов, которых
+    нет в других рубриках, — одной строкой в «Спорт → Также играют» (соперник, дата и время, стадион, цена). Без модели."""
+    used = {i for sec in result["sections"] for it in sec["items"] for i in it["ids"]}
+    used_ev = {e for i in used if i in pools.candidates for e in pools.candidates[i]["event_ids"]}
+    sport = next((sec for sec in result["sections"] if sec["rubric"] == "sport"), None)
+    if sport is None:
+        sport = {"rubric": "sport", "items": []}
+        result["sections"].append(sport)
+    for it in sport["items"]:   # цена строк «Также играют» — по данным («£0–£11», а не «£0.00 to £11.00»)
+        c = pools.candidates.get(it["ids"][0]) or {}
+        if set(c.get("sources") or []) & issue.ALSO_PLAYING and re.search(r"\bto\b", it.get("price_ru") or ""):
+            v = re.sub(r"\.00\b", "", it["price_en"])
+            it["price_en"], it["price_ru"] = re.sub(r"\s+to\s+", "–", v), re.sub(r"\s+to\s+", "–", v)
+    added = []
+    for cid, c in sorted(pools.candidates.items(), key=lambda kv: tuple(x or "" for x in (kv[1].get("dates") or [("",)])[0])):
+        if c["kind"] != "event" or cid in used or set(c["event_ids"]) & used_ev or c.get("participant"):
+            continue
+        if not set(c.get("sources") or []) & SPECTATOR_SOURCES or c.get("zone") not in issue.LISTED_ZONES:
+            continue
+        a, b = issue.d(c["dates"][0][0]), issue.d(c["dates"][0][1])
+        if b < w.start or a > w.end:
+            continue
+        addr = c.get("address") or ""
+        town = next((t for t in TOWN_RU if re.search(rf"\b{t}\b", addr)), None)
+        venue = c.get("venue") or ""
+        where_en = venue + (f", {town}" if town and town not in venue else "")
+        where_ru = venue + (f", {TOWN_RU[town]}" if town and town not in venue else "")
+        price_en, price_ru = issue.price_from_data(c)
+        if price_en == "price not listed":
+            price_en, price_ru = "prices on the website", "цены на сайте"
+        racing = bool(set(c.get("sources") or []) & {"S021", "S022"})   # скачки: название дня ничего не говорит читателю
+        sport["items"].append({"ids": [cid], "also": True, "title_en": c["title"] + (" — racing" if racing else ""),
+                               "title_ru": c["title"] + (" — скачки" if racing else ""),
+                               "where_en": where_en, "where_ru": where_ru, "price_en": price_en, "price_ru": price_ru,
+                               "blurb_en": "", "blurb_ru": "", "knowledge_en": [], "knowledge_ru": []})
+        added.append(c["title"])
+    return [(f"Also playing: {len(added)} fixture(s) from connected clubs added without the model ({'; '.join(added)})",
+             f"«Также играют»: без модели добавлено матчей и скачек — {len(added)} ({'; '.join(added)})")] if added else []
+
+
 def check_v4_rules(result: dict, pools: issue.Pools, removed: dict[str, str]) -> list[tuple[str, str]]:
     """Правки по v4: пустые описания, состав участников, «По графству». Убранное — в removed (id → причина)."""
     notes = []
@@ -381,8 +446,11 @@ def check_v4_rules(result: dict, pools: issue.Pools, removed: dict[str, str]) ->
                 names += [n for n in x.get("lineup", []) if n not in names]
             text_en = f"{it['title_en']} {it['blurb_en']}".lower()
             text_ru = f"{it['title_ru']} {it['blurb_ru']}".lower()
-            miss_en = [n for n in names[:5] if n.lower() not in text_en]
-            miss_ru = [n for n in names[:5] if n.lower() not in text_ru]
+            # имя уже есть в тексте — по полному имени или по фамилии (без «Professor», «Dr» и т.п.)
+            named = lambda n, t: n.lower() in t or re.sub(r"^(professor|prof\.?|dr\.?|sir|dame|rev\.?)\s+", "", n,
+                                                           flags=re.I).split()[-1].lower() in t
+            miss_en = [n for n in names[:5] if not named(n, text_en)]
+            miss_ru = [n for n in names[:5] if not named(n, text_ru)]
             if miss_en:
                 it["blurb_en"] = blurb_en.rstrip() + f" Also on the bill: {', '.join(miss_en)}."
             if miss_ru:
@@ -583,7 +651,7 @@ def editor_lists(result: dict, pools: issue.Pools, w: issue.Window, removed: dic
             for cid, c in pools.candidates.items() if c["kind"] == "holiday_event"]
     hol += [{"id": "—", "title": n, "url": u, "in": False, "why": {"en": f"not verified: {w_}", "ru": f"не проверено: {w_}"},
              "when": {"en": "", "ru": ""}, "venue": "", "zone": "", "price": {"en": "", "ru": ""}, "score": None,
-             "sources": ["web_search"]} for n, u, w_ in kd["not_verified"]]
+             "sources": ["web_search"]} for n, u, w_ in current_not_verified(con, kd)]
     hol += [{"id": "—", "title": n, "url": None, "in": False, "why": {"en": f"dropped: {w_}", "ru": f"отброшено: {w_}"},
              "when": {"en": "", "ru": ""}, "venue": "", "zone": "", "price": {"en": "", "ru": ""}, "score": None,
              "sources": ["web_search"]} for n, w_ in kd["excluded"]]
@@ -643,12 +711,18 @@ def knowledge_check(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
     «Факты из знаний модели (проверить)» (в v5 «в этом месяце исполнилось бы 80» — ошибка: Барретт родился 6 января)."""
     notes = []
     for sec in result["sections"]:
-        for it in sec["items"]:
+        for n, it in enumerate(sec["items"]):
             data = " ".join(json.dumps(pools.candidates[i], ensure_ascii=False) for i in it["ids"]).lower()
+            if sec["rubric"] == "theme":   # вступление темы проверяется по данным всех пунктов темы, один раз
+                data += " ".join(json.dumps(pools.candidates[i], ensure_ascii=False)
+                                 for x in sec["items"] for i in x["ids"]).lower()
             for lang, rx in (("en", RISK_EN), ("ru", RISK_RU)):
-                txt = " ".join(x for x in (it.get(f"title_{lang}"), it.get(f"blurb_{lang}"),
-                                           result.get(f"theme_intro_{lang}") if sec["rubric"] == "theme" else None) if x)
-                for sent in re.split(r"(?<=[.!?])\s+", txt):
+                # повторный запуск (сборка из сохранённого ответа) — прежние проверки заменяются
+                it[f"knowledge_{lang}"] = [k for k in it.get(f"knowledge_{lang}", [])
+                                           if not re.match(r"(проверка|check) \(", k)]
+                intro = result.get(f"theme_intro_{lang}") if sec["rubric"] == "theme" and n == 0 else None
+                txt = "\n".join(x for x in (it.get(f"title_{lang}"), it.get(f"blurb_{lang}"), intro) if x)
+                for sent in re.split(r"(?<=[.!?])\s+|\n", txt):
                     risky = [m.group(0) for m in rx.finditer(sent)]
                     years = [y for y in re.findall(r"\b(?:19|20)\d\d\b", sent) if y not in data]
                     words = [r for r in risky if r.lower() not in data]
@@ -787,6 +861,12 @@ def mandatory(pools: issue.Pools, result: dict, w: issue.Window) -> dict[str, li
                     key=lambda cid: -(pools.candidates[cid].get("importance") or 0))
         if th:
             need.setdefault("weekdays", []).append(th[0])
+    # правки по v5: подтверждённые открытия 6b (S148) в Кембридже с датой из текста — в «Новое в городе» (до 2)
+    s148 = sorted((cid for cid, c in pools.candidates.items() if c["kind"] == "venue_news" and "S148" in c.get("sources", [])
+                   and c.get("date_basis") == "stated" and c.get("date") and re.search(r"\bCambridge\b", c.get("address") or "")
+                   and fits("new_in_town", c, w) and free(cid)), key=lambda cid: pools.candidates[cid]["date"], reverse=True)
+    if s148 and counts.get("new_in_town", 0) < 6:
+        need.setdefault("new_in_town", []).extend(s148[:min(2, 6 - counts.get("new_in_town", 0))])
     for rub, mn in MIN_RUBRIC.items():
         have = counts.get(rub, 0) + len(need.get(rub, []))
         if have >= mn:
@@ -1095,6 +1175,9 @@ def main() -> None:
         saved["result_post"] = {"result": result, "removed": removed, "notes": fix_notes, "need": need}
         saved["usage"] = usage
         raw_path.write_text(json.dumps(saved, ensure_ascii=False, indent=1))
+    if not any(it.get("also") for sec in result["sections"] for it in sec["items"]):
+        fix_notes += also_playing(result, pools, w)
+    knowledge_check(result, pools)
     # ручные правки и заметки ревью, записанные в сохранённый ответ модели (issues/issue_<дата>_model.json)
     review = [tuple(x) for x in result.get("manual_fixes", []) + result.get("review_notes", [])]
     editor = editor_block(result, pools, w, fix_notes, review, usage)
@@ -1116,8 +1199,11 @@ def main() -> None:
                       f"без ссылок на первоисточники, найденных поиском (S148, этап 6b): claude_user_only — "
                       f"{len(m0['only_claude_user_blocked'])}, any_ai_agent — {len(m0['lost_any_ai_agent'])}"]}
     kd = json.loads((ROOT / "data" / "kids_programmes.json").read_text())
-    unv = [f"{p['provider']} — {p['title']}: {p.get('note', '')}" for p in kd["programmes"] if not p.get("verified")]
-    unv += [f"{n}: {why}" for n, _, why in kd["not_verified"]]
+    from pipeline import domains
+    have = {r[0] for r in con.execute("SELECT DISTINCT provider_host FROM kids_programmes WHERE source='collector'")}
+    unv = [f"{p['provider']} — {p['title']}: {p.get('note', '')}" for p in kd["programmes"]
+           if not p.get("verified") and domains.host(p["url"]) not in have]   # провайдер уже собран коллектором 6c
+    unv += [f"{n}: {why}" for n, _, why in current_not_verified(con, kd)]
     editor["en"].insert(-1, ("AI disallow in robots.txt: what this issue would lose", measure["en"]))
     editor["ru"].insert(-1, ("ИИ-запреты в robots.txt: что пропало бы из выпуска", measure["ru"]))
     editor["en"].insert(-1, ("Holiday programmes not verified on the provider site", unv))

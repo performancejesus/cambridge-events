@@ -101,7 +101,10 @@ REGISTER_RE = re.compile(r"\b(regist\w*|entr(y|ies)|participants?|runners|riders
 # «С детьми» — только если дети явно названы в данных (решение после этапа 4).
 KIDS_RE = re.compile(r"\b(family[- ]friendly|for (all the |the whole )?famil(y|ies)|famil(y|ies) (fun|day|event|show|"
                      r"activit\w*|workshop|ticket)s?|all the family|whole family|kids|children'?s?|toddlers?|babies|"
-                     r"baby|half[- ]term|ages? \d|aged \d|years? \d+\s*[-–]\s*\d+|under[- ]?\d+s)\b", re.I)
+                     r"baby|half[- ]term|ages? \d|aged \d|years? \d+\s*[-–]\s*\d+|under[- ]?\d+s|"
+                     # правки по v5: детские персонажи и книги — явный признак семейного события (The Gruffalo на NVR)
+                     r"gruffalo|peppa pig|paw patrol|room on the broom|stick man|hey duggee|bluey|julia donaldson|"
+                     r"santa specials?|meet (father christmas|santa))\b", re.I)
 # Семейные категории, которыми источник сам размечает события (фильтры UCM «для кого», раздел Visit Cambridge,
 # раздел University What's On, Science Centre) — явная пометка, не догадка (этап 6).
 FAMILY_CATEGORIES = {"family", "families", "family events", "family friendly", "under 5s", "ages 5+"}
@@ -529,7 +532,13 @@ ALSO_PLAYING = {"S019", "S154"}   # Cambridge City FC, Cambridge United Women
 ZONE_ORDER = ["центр", "до 30 мин", "до часа", geo_COUNTY_FAR]
 AGES_RU = [(r"^school age$", "школьники"), (r"^families$", "семьи"), (r"^children, by level$", "дети, по уровню"),
            (r"^primary and secondary$", "начальная и средняя школа"), (r"^Reception – (\d+)$", r"от Reception до \1 лет"),
-           (r"^(\d+)\s*[–-]\s*(\d+)(?: \((.*)\))?$", r"\1–\2 лет")]
+           (r"^(\d+)\s*(?:[–-]|to)\s*(\d+)(?: years?(?: old)?)?(?: \((.*)\))?$", r"\1–\2 лет"),
+           (r"^(?:school )?years? (\d+)\s*(?:[–-]|to)\s*(?:year )?(\d+)$", r"Year \1 – Year \2"),
+           (r"^reception(?: class)?\s*(?:[–-]|to)\s*(\d+)(?: years?(?: old)?)?$", r"от Reception до \1 лет"),
+           (r"^primary and secondary school children$", "начальная и средняя школа"),
+           (r"^(\d+)\+?(?: years?)?\+$", r"от \1 лет"),
+           (r"^(\d+)\s*[-–]\s*(\d+)\s*(?:yrs|year-olds|y/?o|years? old)$", r"\1–\2 лет"),
+           (r"^older children and teens$", "старшие дети и подростки")]
 AUDIENCE = {"eligible": {"en": "for families eligible for free school meals",
                          "ru": "для семей с правом на бесплатное школьное питание"},
             "university": {"en": "only for children of University of Cambridge staff and students",
@@ -575,12 +584,13 @@ def _ages(a: str | None, lang: str) -> str:
     if not a or lang == "en":
         return a or ""
     for pat, rep in AGES_RU:
-        if re.match(pat, a):
-            return re.sub(pat, rep, a)
+        if re.match(pat, a.strip(), flags=re.I):
+            return re.sub(pat, rep, a.strip(), flags=re.I)
     return a
 
 
-BOOKING_RU = [(r"^early[- ]", "в начале "), (r"^mid[- ]", "в середине "), (r"^late[- ]", "в конце ")]
+BOOKING_RU = [(r"^early[- ]", "в начале "), (r"^(?:mid|middle of)[- ]", "в середине "), (r"^late[- ]", "в конце "),
+              (r"^end of ", "в конце "), (r"^start of ", "в начале ")]
 MONTH_RU_PREP = {m: r for m, r in zip(["January", "February", "March", "April", "May", "June", "July", "August", "September",
                                        "October", "November", "December"],
                                       ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября",
@@ -612,10 +622,21 @@ FAMILY_IN_HOLIDAYS_MAX = 6
 
 def _programme_line(x: dict, w: Window, lang: str) -> dict:
     c = x["c"]
+    unknown = re.compile(r"^(цена — при записи|price on booking)$", re.I)
+    norm = lambda v: re.sub(r"\s+", " ", v or "").strip()
+    pairs = [(norm(wh), norm(pr)) for wh, pr in x["where"]]
+    pairs = [(("" if wh.lower() == pr.lower() or unknown.match(wh) else wh), pr) for wh, pr in pairs]
+    if lang == "ru":
+        pairs = [(wh, pr[:1].lower() + pr[1:] if re.match(r"[А-ЯЁ][а-яё]", pr) else pr) for wh, pr in pairs]
+    if any(pr and not unknown.match(pr) for _, pr in pairs):   # известная цена есть — «при записи» не повторяем
+        pairs = [(wh, "" if unknown.match(pr) else pr) for wh, pr in pairs]
+    x = x | {"where": list(dict.fromkeys(pairs))}
     places = list(dict.fromkeys(wh for wh, _ in x["where"] if wh))
     prices = list(dict.fromkeys(pr for _, pr in x["where"] if pr))
-    if len(prices) > 1:   # разные цены на разных площадках — цена при каждой площадке
-        place, price = "; ".join(f"{wh} ({pr})" for wh, pr in x["where"]), ""
+    if len(prices) > 1 and len(places) > 1:   # разные цены на разных площадках — цена при каждой площадке
+        place, price = "; ".join(f"{wh} ({pr})" if pr else wh for wh, pr in x["where"] if wh), ""
+    elif len(prices) > 1:
+        place, price = "; ".join(places), "; ".join(prices)
     else:
         place, price = "; ".join(places), (prices[0] if prices else "")
     ages = _ages(c["ages"], lang)
@@ -629,7 +650,14 @@ def _programme_line(x: dict, w: Window, lang: str) -> dict:
     if c.get("booking_deadline"):
         notes.append(("book by " if lang == "en" else "запись до ") + booking_text(c["booking_deadline"], lang))
     head = f"{x['provider']} — {x['title']}" + (f" ({ages})" if ages else "")
-    meta = " · ".join(v for v in [when(c, w, lang), place, price] + notes if v)
+    dates = sorted(x.get("dates") or [])
+    if len(dates) > 1:   # одна программа в разные дни (на разных площадках) — одна строка: весь период, «в разные дни»
+        c = c | {"dates": [(dates[0][0], max(b for _, b in dates), None)]}
+    dw = when(c, w, lang) + ((" (different days)" if lang == "en" else " (в разные дни)") if len(dates) > 1 else "")
+    if lang == "ru":
+        place = re.sub(r"^Multiple locations across ", "несколько площадок: ", place)
+        place = re.sub(r",? and ", " и ", place)
+    meta = " · ".join(v for v in [dw, place, price] + notes if v)
     return {"title": head, "meta": meta, "blurb": "", "url": c["url"], "compact": True, "ids": x["ids"]}
 
 
@@ -638,6 +666,12 @@ def _hurry(c: dict, w: Window) -> bool:
     bd = c.get("booking_deadline")
     soon = bool(bd and re.match(r"\d{4}-\d\d-\d\d", bd) and 0 <= (d(bd) - w.issue).days <= 14)
     return c["places"] == "few_left" or soon
+
+
+TOWNS_RU_EN = {"Кембридж": "Cambridge", "Эли": "Ely", "Хантингдон": "Huntingdon", "Питерборо": "Peterborough",
+               "Бери-Сент-Эдмундс": "Bury St Edmunds", "Саффрон-Уолден": "Saffron Walden", "Сент-Айвс": "St Ives",
+               "Сент-Нитс": "St Neots", "Сент-Неотс": "St Neots", "Ньюмаркет": "Newmarket", "Ройстон": "Royston",
+               "Уиттлси": "Whittlesey"}
 
 
 def holiday_groups(p: Pools, w: Window, lang: str) -> list[dict]:
@@ -650,10 +684,17 @@ def holiday_groups(p: Pools, w: Window, lang: str) -> list[dict]:
         c = p.candidates[cid]
         t = c.get("text") or {}
         title = t.get(f"title_{lang}") or c["title"]
+        title = title[:1].upper() + title[1:]
         key = ("hurry" if _hurry(c, w) else c["holiday"], c["provider"], title)
-        x = lines.setdefault(key, {"c": c, "ids": [], "where": [], "zone": 9, "provider": c["provider"], "title": title})
+        x = lines.setdefault(key, {"c": c, "ids": [], "where": [], "zone": 9, "provider": c["provider"], "title": title,
+                                   "dates": []})
         x["ids"].append(cid)
+        if c["dates"] and tuple(c["dates"][0][:2]) not in x["dates"]:
+            x["dates"].append(tuple(c["dates"][0][:2]))
         where, price = t.get(f"where_{lang}") or c["venue"] or "", t.get(f"price_{lang}") or c.get("price_text") or ""
+        if lang == "en":   # модель иногда пишет город по-русски и в английской строке
+            for ru, en in TOWNS_RU_EN.items():
+                where = where.replace(ru, en)
         if (where, price) not in x["where"]:
             x["where"].append((where, price))
         z = ZONE_ORDER.index(c["zone"]) if c["zone"] in ZONE_ORDER else 8
@@ -688,7 +729,7 @@ def holiday_groups(p: Pools, w: Window, lang: str) -> list[dict]:
             if price in ("price not listed", "цена не указана"):
                 price = "prices on the website" if lang == "en" else "цены на сайте"
             place = c.get("venue") or ", ".join((c.get("address") or "").split(",")[:2]).strip()
-            meta = " · ".join(x for x in (when(c, w, lang), (place + zone).strip(), price) if x)
+            meta = " · ".join(x for x in (when(c, w, lang), re.sub(r"\s+", " ", place + zone).strip(), price) if x)
             items.append({"title": c["title"], "meta": meta, "blurb": "", "url": c["url"], "compact": True,
                           "ids": [cid for cid, x in p.candidates.items() if x is c]})
         out.append({"title": "Where to go with children during the holidays" if lang == "en" else
@@ -854,15 +895,16 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                     title = f"{title} — {town}"
             # правки по v4: забеги и триатлоны с регистрацией участников — подраздел «Поучаствовать» в «Спорте»
             key = "take_part" if rub == "sport" and any(p.candidates[i].get("participant") for i in it["ids"]) else ""
-            if rub == "sport" and not key and set(c.get("sources") or []) & ALSO_PLAYING:
+            if rub == "sport" and not key and (it.get("also") or set(c.get("sources") or []) & ALSO_PLAYING):
                 key = "also"   # правки после v5: нелиговый и женский футбол — одной строкой в «Также играют»
             groups.setdefault(key, []).append({"title": title, "meta": meta,
                                                "blurb": it[f"blurb_{lang}"].strip(), "url": c["url"], "ids": it["ids"]})
         for key in sorted(groups, key=lambda k: ["", "also", "take_part"].index(k)):
             sub_title = {"take_part": ("Take part", "Поучаствовать"), "also": ("Also playing", "Также играют")}.get(key)
             items_ = groups[key]
-            if key == "also":
-                items_ = [x | {"compact": True, "title": x["title"], "meta": x["meta"]} for x in items_]
+            if key == "also":   # по дате
+                items_ = sorted((x | {"compact": True} for x in items_),
+                                key=lambda x: tuple(y or "" for y in (p.candidates[x["ids"][0]].get("dates") or [("",)])[0]))
             sec["groups"].append({"title": (sub_title[0] if lang == "en" else sub_title[1]) if sub_title else "",
                                   "items": items_})
         out["sections"].append(sec)
@@ -975,6 +1017,7 @@ summary { cursor:pointer; color:var(--muted); font:600 14px -apple-system, "Sego
 .cands .src, .cands .sc { color:var(--muted); }
 .stub h2 { color:var(--muted); }
 .tbl { overflow-x:auto; }
+select { max-width:100%; font:inherit; }
 table { border-collapse:collapse; font:12px/1.4 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; min-width:560px; }
 th, td { border-top:1px solid var(--line); padding:4px 6px; text-align:left; vertical-align:top; }
 .editor { font:14px/1.5 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
@@ -986,16 +1029,22 @@ th, td { border-top:1px solid var(--line); padding:4px 6px; text-align:left; ver
 @media (prefers-color-scheme: dark) { :root { --hl:#2f2a22; } }"""
 
 
+def _n_ru(n: int, one: str, few: str, many: str) -> str:
+    w = one if n % 10 == 1 and n % 100 != 11 else few if n % 10 in (2, 3, 4) and n % 100 not in (12, 13, 14) else many
+    return f"{n} {w}"
+
+
 def _cands_html(rows: list[dict], lang: str, placed_n: int, items_n: int | None = None) -> str:
     from html import escape as e
     if not rows:
         return ""
     merged = placed_n - items_n if items_n is not None and placed_n > items_n else 0
     if merged:   # правки по v5: при склейке — «6 событий → 5 пунктов (2 объединены)»
+        n_m = sum(1 for r in rows if r.get("in") and r.get("merged")) or merged + 1
         label = (f"All candidates of this rubric — {len(rows)}; in the issue: {placed_n} events → {items_n} items "
-                 f"({merged + 1} merged)" if lang == "en" else
-                 f"Все события рубрики — {len(rows)}; в выпуске: {placed_n} событий → {items_n} пунктов "
-                 f"({merged + 1} объединены)")
+                 f"({n_m} merged)" if lang == "en" else
+                 f"Все события рубрики — {len(rows)}; в выпуске: {_n_ru(placed_n, 'событие', 'события', 'событий')} → "
+                 f"{_n_ru(items_n, 'пункт', 'пункта', 'пунктов')} ({n_m} объединены)")
     else:
         label = (f"All candidates of this rubric — {len(rows)} (in the issue: {placed_n})" if lang == "en"
                  else f"Все события рубрики — {len(rows)} (в выпуске {placed_n})")
