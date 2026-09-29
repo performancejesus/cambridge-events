@@ -1,0 +1,114 @@
+{
+ "_comment": "Каникулы школ Cambridgeshire (совет, term dates). Академии и частные школы могут отличаться.",
+ "source": "https://www.cambridgeshire.gov.uk/residents/children-and-families/schools-learning/school-term-dates-closures/school-term-dates",
+ "holidays": [
+  {
+   "key": "october_half_term",
+   "year": "2025-26",
+   "start": "2025-10-27",
+   "end": "2025-10-31"
+  },
+  {
+   "key": "february_half_term",
+   "year": "2025-26",
+   "start": "2026-02-16",
+   "end": "2026-02-20"
+  },
+  {
+   "key": "may_half_term",
+   "year": "2025-26",
+   "start": "2026-05-25",
+   "end": "2026-05-29"
+  },
+  {
+   "key": "christmas",
+   "year": "2025-26",
+   "start": "2025-12-22",
+   "end": "2026-01-02"
+  },
+  {
+   "key": "easter",
+   "year": "2025-26",
+   "start": "2026-03-30",
+   "end": "2026-04-10"
+  },
+  {
+   "key": "summer",
+   "year": "2025-26",
+   "start": "2026-07-21",
+   "end": "2026-08-31"
+  },
+  {
+   "key": "october_half_term",
+   "year": "2026-27",
+   "start": "2026-10-26",
+   "end": "2026-10-30"
+  },
+  {
+   "key": "february_half_term",
+   "year": "2026-27",
+   "start": "2027-02-15",
+   "end": "2027-02-19"
+  },
+  {
+   "key": "may_half_term",
+   "year": "2026-27",
+   "start": "2027-05-31",
+   "end": "2027-06-04"
+  },
+  {
+   "key": "christmas",
+   "year": "2026-27",
+   "start": "2026-12-21",
+   "end": "2027-01-01"
+  },
+  {
+   "key": "easter",
+   "year": "2026-27",
+   "start": "2027-03-26",
+   "end": "2027-04-09"
+  },
+  {
+   "key": "summer",
+   "year": "2026-27",
+   "start": "2027-07-22",
+   "end": "2027-08-31"
+  },
+  {
+   "key": "october_half_term",
+   "year": "2027-28",
+   "start": "2027-10-25",
+   "end": "2027-10-29"
+  },
+  {
+   "key": "february_half_term",
+   "year": "2027-28",
+   "start": "2028-02-14",
+   "end": "2028-02-18"
+  },
+  {
+   "key": "may_half_term",
+   "year": "2027-28",
+   "start": "2028-05-29",
+   "end": "2028-06-02"
+  },
+  {
+   "key": "christmas",
+   "year": "2027-28",
+   "start": "2027-12-20",
+   "end": "2027-12-31"
+  },
+  {
+   "key": "easter",
+   "year": "2027-28",
+   "start": "2028-04-03",
+   "end": "2028-04-17"
+  },
+  {
+   "key": "summer",
+   "year": "2027-28",
+   "start": "2028-07-24",
+   "end": "2028-08-31"
+  }
+ ]
+}

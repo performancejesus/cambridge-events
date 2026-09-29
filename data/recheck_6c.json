@@ -1,0 +1,382 @@
+[
+ {
+  "key": "S013",
+  "name": "The Portland Arms",
+  "url": "https://www.theportlandarms.co.uk/",
+  "kind": "source",
+  "was": "Этап 5: не нужен — robots.txt отвечает 403; концерты есть на Ents24/Skiddle (S006/S007)",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S019",
+  "name": "Cambridge City FC",
+  "url": "https://www.cambridgecityfc.com/fixtures/",
+  "kind": "source",
+  "was": "не нужен — Cambridge City FC: 8-й уровень (Isthmian North, стадион в Sawston), матчи низкой значимости; сайт лиги без календаря в HTML, Football Web Pages — 403",
+  "result": "http_other",
+  "detail": "robots.txt: HTTP 200; страница: 404",
+  "text_words": 0
+ },
+ {
+  "key": "S020",
+  "name": "Cambridge Rugby Club",
+  "url": "https://www.cambridgerugbyclub.co.uk/fixtures",
+  "kind": "source",
+  "was": "Этап 5: закрыт — страница-проверка (HTTP 202, бот-защита); обходить не будем",
+  "result": "connection",
+  "detail": "robots.txt: HTTP -1",
+  "text_words": 0
+ },
+ {
+  "key": "S029",
+  "name": "Let's Do This — Cambridgeshire",
+  "url": "https://www.letsdothis.com/gb/running-events-in-cambridgeshire",
+  "kind": "source",
+  "was": "Этап 5: закрыт — robots.txt отвечает 403",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S036",
+  "name": "Cambridge Literary Festival",
+  "url": "https://www.cambridgeliteraryfestival.com/",
+  "kind": "source",
+  "was": "Этап 5: закрыт — 403 на сайт и /events",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 200; страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S041",
+  "name": "Cambridge Arts Theatre",
+  "url": "https://www.cambridgeartstheatre.com/whats-on",
+  "kind": "source",
+  "was": "е обходим; афишу Arts Theatre берём из Ents24. Домен: cambridgeartstheatre.com → artstheatre.co.uk Этап 6: покрыт — защита от ботов; афиша — через Ents24 (S006)",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 200; страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S053",
+  "name": "IWM Duxford",
+  "url": "https://www.iwm.org.uk/events/iwm-duxford",
+  "kind": "source",
+  "was": "Этап 5: закрыт — iwm.org.uk — 403 (бот-защита) на все страницы; в Ents24/Skiddle Duxford не найден",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 200; страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S063",
+  "name": "Resident Advisor / Skiddle — клубные события",
+  "url": "https://ra.co/events/uk/cambridge",
+  "kind": "source",
+  "was": "Этап 6: покрыт — Resident Advisor — 403; клубные события — Skiddle (S007, S129)",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 200; страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S070",
+  "name": "National Trust: Wimpole, Anglesey Abbey, Wicken Fen",
+  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events",
+  "kind": "source",
+  "was": "adware не обходим; вносить вручную по сезонам (Wimpole, Anglesey Abbey, Wicken Fen) Этап 6: вручную — National Trust — защита Radware; ручной сезонный календарь",
+  "result": "ok",
+  "detail": "robots.txt: HTTP 200; страница: 200",
+  "text_words": 13165
+ },
+ {
+  "key": "S088",
+  "name": "parkrun — Cambridge, Wimpole и др.",
+  "url": "https://www.parkrun.org.uk/cambridge/",
+  "kind": "source",
+  "was": "Этап 5: закрыт — parkrun.org.uk: robots.txt отвечает 403 — считаем запретом; регулярные забеги — статичный справочник вручную",
+  "result": "http_403",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S089",
+  "name": "Town and Gown 10k",
+  "url": "https://www.townandgown10k.com/",
+  "kind": "source",
+  "was": "востям Cambridge News и Cambridge 105, официальный сайт townandgown10k.com (MDUK) Этап 6: ежегодное — Cloudflare; через статьи и recurring_events (R14, вручную)",
+  "result": "http_403",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S100",
+  "name": "Huntingdonshire District Council",
+  "url": "https://www.ticketsource.co.uk/hinchingbrooke-country-park",
+  "kind": "source",
+  "was": "обытия только на TicketSource (robots.txt отвечает 403 — считаем запретом) и в Facebook (не парсим); страница совета без дат — проверить на этапе 6b через поиск",
+  "result": "http_403",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S101",
+  "name": "Fenland District Council",
+  "url": "https://www.fenland.gov.uk/events",
+  "kind": "source",
+  "was": "Этап 5: закрыт — robots.txt отвечает 403",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S103",
+  "name": "Ely City Council",
+  "url": "https://www.cityofelycouncil.org.uk/",
+  "kind": "source",
+  "was": "Этап 5: закрыт — cityofelycouncil.org.uk: robots.txt отвечает 403",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S104",
+  "name": "St Ives Town Council",
+  "url": "https://www.stivestowncouncil.gov.uk/",
+  "kind": "source",
+  "was": "Этап 5: закрыт — stivestowncouncil.gov.uk: robots.txt отвечает 403",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S106",
+  "name": "Huntingdon Town Council",
+  "url": "https://www.huntingdontown.gov.uk/council_events/",
+  "kind": "source",
+  "was": "Этап 5: закрыт — robots.txt отвечает 403",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S112",
+  "name": "Soham Town Council",
+  "url": "https://www.soham-tc.gov.uk/council_events/",
+  "kind": "source",
+  "was": "Этап 5: закрыт — soham-tc.gov.uk: robots.txt отвечает 403",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S114",
+  "name": "Visit Peterborough",
+  "url": "https://www.visitpeterborough.com/whats-on",
+  "kind": "source",
+  "was": "Этап 5: закрыт — robots.txt отвечает 403",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S120",
+  "name": "Peterborough Cathedral",
+  "url": "https://peterborough-cathedral.org.uk/whats-on/",
+  "kind": "source",
+  "was": "Этап 5: не нужен — HTTP 202 (бот-защита); концерты собора есть на Ents24/Skiddle (S128/S129)",
+  "result": "http_other",
+  "detail": "robots.txt: HTTP 200; страница: 404",
+  "text_words": 0
+ },
+ {
+  "key": "S127",
+  "name": "Saffron Walden / Newmarket — Town Councils",
+  "url": "https://www.saffronwalden.gov.uk/",
+  "kind": "source",
+  "was": "Этап 5: закрыт — saffronwalden.gov.uk — 403; newmarket.gov.uk — robots.txt недоступен",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 200; страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S133",
+  "name": "Nene Park / Ferry Meadows",
+  "url": "https://www.nenepark.org.uk/events/",
+  "kind": "source",
+  "was": "т начал обрывать соединение и отвечать 403 — защита от ботов, не обходим; коллектор написан (family_misc.NenePark), из прогона убран — повторить позже / этап 6b",
+  "result": "connection",
+  "detail": "robots.txt: HTTP -1",
+  "text_words": 0
+ },
+ {
+  "key": "S135",
+  "name": "Shepreth Wildlife Park",
+  "url": "https://www.sheprethwildlifepark.co.uk/",
+  "kind": "source",
+  "was": "Этап 6: закрыт — Shepreth Wildlife Park: сайт отвечает 403 / обрывает соединение — не обходим; этап 6b",
+  "result": "http_403",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "S142",
+  "name": "ChurchSuite",
+  "url": "https://churchsuite.com/",
+  "kind": "source",
+  "was": "п 6: закрыт — ChurchSuite: churchsuite.com за Cloudflare (403) — не обходим; календари отдельных приходов (<приход>.churchsuite.com) — если найдутся на этапе 6b",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 200; страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "P:cambridgekidsclub.com",
+  "name": "Cambridge Kids Club — holiday playscheme",
+  "url": "https://cambridgekidsclub.com/holiday-playschemes/",
+  "kind": "kids",
+  "was": "robots.txt отвечает 403",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "P:sport.cam.ac.uk",
+  "name": "Sport at Cambridge — children's athletics camps",
+  "url": "https://www.sport.cam.ac.uk/childrens-athletic-camps",
+  "kind": "kids",
+  "was": "robots.txt отвечает 403",
+  "result": "ok",
+  "detail": "robots.txt: HTTP 200; страница: 200",
+  "text_words": 1089
+ },
+ {
+  "key": "P:officialsoccerschools.co.uk",
+  "name": "Cambridge United soccer schools",
+  "url": "https://officialsoccerschools.co.uk/cambridgeunited/",
+  "kind": "kids",
+  "was": "robots.txt отвечает 403",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "P:cambridgegymnastics.co.uk",
+  "name": "Cambridge Gymnastics Academy — October half-term camp",
+  "url": "https://cambridgegymnastics.co.uk/camp/",
+  "kind": "kids",
+  "was": "сайт отдаёт заглушку (202, без содержимого) — похоже на защиту от ботов",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 202; страница: 202, заглушка",
+  "text_words": 0
+ },
+ {
+  "key": "P:multi-active.co.uk",
+  "name": "Multi-Active (Huntingdon & St Ives)",
+  "url": "https://www.multi-active.co.uk/cambridgeshire-school-holiday-clubs",
+  "kind": "kids",
+  "was": "ошибка сертификата TLS",
+  "result": "connection",
+  "detail": "robots.txt: HTTP -1",
+  "text_words": 0
+ },
+ {
+  "key": "P:kidsrusoosc.org",
+  "name": "Kids R Us holiday club",
+  "url": "https://kidsrusoosc.org/holiday-club/",
+  "kind": "kids",
+  "was": "соединение обрывается",
+  "result": "ok",
+  "detail": "robots.txt: HTTP 200; страница: 200",
+  "text_words": 5460
+ },
+ {
+  "key": "P:thefootballfunfactory.co.uk",
+  "name": "The Football Fun Factory (Kelsey Kerridge)",
+  "url": "https://thefootballfunfactory.co.uk/locations/cambridge-central/",
+  "kind": "kids",
+  "was": "соединение обрывается",
+  "result": "http_403",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "P:stagecoach.co.uk",
+  "name": "Stagecoach Cambridge — holiday workshops",
+  "url": "https://www.stagecoach.co.uk/cambridge",
+  "kind": "kids",
+  "was": "дат на странице нет",
+  "result": "ok",
+  "detail": "robots.txt: HTTP 200; страница: 200",
+  "text_words": 6493
+ },
+ {
+  "key": "P:levelupgym.co.uk",
+  "name": "Level Up — youth athletic programme",
+  "url": "https://levelupgym.co.uk/youth-athletic-programme",
+  "kind": "kids",
+  "was": "регулярная программа 10–18 лет; дат на эти каникулы на странице нет (были сессии в майские)",
+  "result": "ok",
+  "detail": "robots.txt: HTTP 200; страница: 200",
+  "text_words": 9847
+ },
+ {
+  "key": "P:childcare.admin.cam.ac.uk",
+  "name": "University of Cambridge Childcare Office — University Holiday Playscheme",
+  "url": "https://www.childcare.admin.cam.ac.uk/university-holiday-playscheme",
+  "kind": "kids",
+  "was": "robots.txt сайта отвечает 403 — не проверено; данные из поиска (работает в каникулы). Только для детей сотрудников и студентов университета",
+  "result": "ok",
+  "detail": "robots.txt: HTTP 200; страница: 200",
+  "text_words": 1075
+ },
+ {
+  "key": "P:activities.bookpebble.co.uk",
+  "name": "Primary Sports Stars — Cheerful Champs holiday club",
+  "url": "https://activities.bookpebble.co.uk/activity/cheerful-champs-mildenhall-holiday-club-st-marys-mildenhall-october-26-bury-st-edmunds-5d5fcf7d-22d5-47ef-8e6e-444bd5ecf538",
+  "kind": "kids",
+  "was": "найдено поиском Keenable (этап 6b); страница записи Pebble отдаёт только заголовок «October 26» — возраст, часы и цена не видны без JavaScript",
+  "result": "ok",
+  "detail": "robots.txt: HTTP 200; страница: 200",
+  "text_words": 2737
+ },
+ {
+  "key": "P:nenepark.org.uk",
+  "name": "Nene Park",
+  "url": "https://nenepark.org.uk/holiday-club",
+  "kind": "kids",
+  "was": "закрыт для бота",
+  "result": "http_403",
+  "detail": "robots.txt: HTTP 200; страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "P:chorusmusictherapy.co.uk",
+  "name": "Chorus Music Therapy",
+  "url": "https://chorusmusictherapy.co.uk/easter-music-camp",
+  "kind": "kids",
+  "was": "закрыт для бота",
+  "result": "ok",
+  "detail": "robots.txt: HTTP 200; страница: 200",
+  "text_words": 661
+ },
+ {
+  "key": "P:clubspark.lta.org.uk",
+  "name": "Cambridge Lawn Tennis Club",
+  "url": "https://clubspark.lta.org.uk/CocksandHensTennisCambridge/Coaching",
+  "kind": "kids",
+  "was": "закрыт для бота",
+  "result": "bot_challenge",
+  "detail": "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+  "text_words": 0
+ },
+ {
+  "key": "P:horseridinguk.co.uk",
+  "name": "Sawston Riding School",
+  "url": "https://horseridinguk.co.uk/horse-riding/sawston-riding-school",
+  "kind": "kids",
+  "was": "закрыт для бота",
+  "result": "ok",
+  "detail": "robots.txt: HTTP 200; страница: 200",
+  "text_words": 2920
+ }
+]

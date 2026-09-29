@@ -8,7 +8,7 @@ from . import (adc_camdram, beer_festival, cambridge105, cambridge_bid, cambridg
                peterborough_telegraph, saffron_hall, kettles_yard, newsquest,
                ucm, junction, botanic, visit_cambridge, uni_whatson, science_centre, cppf, tribe_sites,
                milton_park, family_misc, ely_cathedral, theatre_royal_bury, visit_ely,
-               p3_sources)
+               p3_sources, stage6c)
 
 ALL = [
     cambridge105.Cambridge105(), talks_cam.TalksCam(), adc_camdram.AdcCamdram(),
@@ -38,4 +38,9 @@ ALL = [
     theatre_royal_bury.TheatreRoyalBury(), visit_ely.VisitEly(),
     # этап 6.5: P3
     p3_sources.HuntingdonRacecourse(), p3_sources.MumfordTheatre(),
+    # этап 6c: коллекторы из решений после 6b и зрительский спорт
+    stage6c.KingsCollegeChoir(), stage6c.CmpConcerts(), stage6c.MusicLiveCambridge(), stage6c.FindARace(),
+    stage6c.StNeotsTownCouncil(), stage6c.RoystonMuseum(),
+    stage6c.CambridgeCityFC(), stage6c.CambridgeUnitedWomen(), stage6c.CambridgeRUFC(), stage6c.PeterboroughPhantoms(),
+    stage6c.ArtsPicturehouse(), stage6c.StJohnsCollege(), stage6c.HeongGallery(), stage6c.WomensArtCollection(),
 ]

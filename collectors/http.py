@@ -20,6 +20,9 @@ USER_AGENT = "CambridgeEventsBot/0.1 (+https://github.com/performancejesus/cambr
 DELAY_SECONDS = 2.0
 TIMEOUT = 30.0
 BACKOFF = (30, 60, 120)
+# Решение после этапов 1–2: сайты *.cam.ac.uk (Pantheon/varnish) отказывают Python-клиенту по отпечатку TLS, robots.txt
+# при этом разрешает — ходим через curl с тем же честным User-Agent. Применяется ко всем поддоменам по умолчанию.
+CURL_SUFFIXES = (".cam.ac.uk",)
 # Хосты, которые отвечают 429 уже при паузе в 2 с (WordPress.com): своя, более длинная пауза.
 HOST_DELAYS = {"cambridgefoodies.me.uk": 20.0}
 
@@ -53,6 +56,7 @@ class PoliteClient:
                                     headers={"User-Agent": USER_AGENT, "Accept-Language": "en-GB,en;q=0.8"})
         self._last: dict[str, float] = {}
         self._robots: dict[str, RobotFileParser] = {}
+        self.robots_status: dict[str, int] = {}   # код ответа robots.txt по хосту (для отчётов и «Не разобрано»)
         self.requests = 0
 
     def close(self) -> None:
@@ -64,18 +68,26 @@ class PoliteClient:
         base = f"{p.scheme}://{p.netloc}"
         if base not in self._robots:
             rp = RobotFileParser()
-            r = self._raw_get(base + "/robots.txt")
+            try:
+                r = self._raw_get(base + "/robots.txt")
+            except FetchError:   # обрыв соединения, TLS — полный запрет (RFC 9309, 2.3.1.4)
+                r = Response(base + "/robots.txt", -1, b"", {})
             for pause in BACKOFF[:2]:  # 429/5xx на robots.txt — повторить позже (RFC 9309)
                 if r.status != 429 and r.status < 500:
+                    break
+                if r.status == -1:
                     break
                 time.sleep(pause)
                 r = self._raw_get(base + "/robots.txt")
             if r.status == 200:
                 rp.parse(r.text.splitlines())
-            elif r.status in (401, 403, 429) or r.status >= 500:
-                rp.disallow_all = True  # правила неизвестны — считаем, что запрещено
+            elif r.status == 429 or r.status >= 500 or r.status == -1:
+                rp.disallow_all = True  # сервер недоступен — считаем, что запрещено (RFC 9309, 2.3.1.4)
             else:
-                rp.allow_all = True  # 404 и т.п.: robots.txt нет
+                # RFC 9309, 2.3.1.3: 4xx на robots.txt (в т.ч. 401/403) — «правил нет», страницы можно загружать.
+                # Если сама страница отвечает 403 или заглушкой — это защита от ботов: не обходим, лист «Не разобрано».
+                rp.allow_all = True
+            self.robots_status[base] = r.status
             self._robots[base] = rp
         return self._robots[base]
 
@@ -95,7 +107,7 @@ class PoliteClient:
         self._wait(host)
         try:
             self.requests += 1
-            if host in self.curl_hosts:
+            if host in self.curl_hosts or host.endswith(CURL_SUFFIXES):
                 return self._curl(url)
             r = self._client.get(url)
             return Response(str(r.url), r.status_code, r.content, dict(r.headers))

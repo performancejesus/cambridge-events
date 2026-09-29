@@ -53,10 +53,10 @@ def _check(h: str) -> tuple:
                 continue
     if status == 200:
         rp.parse(r.text.splitlines())
-    elif status in (401, 403, 429) or status >= 500 or status == -1:
-        rp.disallow_all = True
+    elif status == 429 or status >= 500 or status == -1:
+        rp.disallow_all = True      # недоступен или обрыв — полный запрет (RFC 9309, 2.3.1.4)
     else:
-        rp.allow_all = True
+        rp.allow_all = True         # 4xx (в т.ч. 403) — «правил нет» (RFC 9309, 2.3.1.3)
     root = f"https://{h}/"
     blocked = [a for a in AI_AGENTS if not rp.can_fetch(a, root)] if status == 200 else []
     return h, status, int(rp.can_fetch(USER_AGENT, root)), ",".join(blocked)

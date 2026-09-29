@@ -24,13 +24,20 @@
  "S042": {
   "name": "ADC Theatre (Camdram)",
   "module": "adc_camdram",
-  "started_at": "2026-09-27T19:47:34+00:00",
+  "started_at": "2026-09-29T10:44:18+00:00",
   "ok": true,
   "events": 27,
   "articles": 0,
   "stores": 0,
-  "requests": 2,
-  "seconds": 3.4
+  "stats": {
+   "links": 27,
+   "cached": 8,
+   "fetched": 19,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 27,
+  "seconds": 78.4
  },
  "S018": {
   "name": "Cambridge United (fixtur.es)",
@@ -302,7 +309,7 @@
   "requests": 2,
   "seconds": 2.8
  },
- "_run_id": "2026-09-28T21:42:25+00:00",
+ "_run_id": "2026-09-29T10:44:18+00:00",
  "S128": {
   "name": "Ents24 — города зоны",
   "module": "towns_ents24",
@@ -711,6 +718,241 @@
   "started_at": "2026-09-28T21:42:25+00:00",
   "ok": true,
   "events": 49,
+  "articles": 0,
+  "stores": 0,
+  "requests": 0,
+  "seconds": 0
+ },
+ "S149": {
+  "name": "King's College Choir — concerts",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:04:49+00:00",
+  "ok": true,
+  "events": 9,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 9,
+   "cached": 1,
+   "fetched": 8,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 14,
+  "seconds": 30.8
+ },
+ "S150": {
+  "name": "Cambridge Music (cmp.cam.ac.uk) — West Road, CUMS, college concerts",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:05:20+00:00",
+  "ok": true,
+  "events": 91,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 94,
+   "cached": 0,
+   "fetched": 94,
+   "fetch_errors": 0,
+   "no_jsonld": 2
+  },
+  "requests": 96,
+  "seconds": 369.4
+ },
+ "S151": {
+  "name": "Music Live Cambridge — концерты и открытые микрофоны в пабах",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:11:30+00:00",
+  "ok": true,
+  "events": 50,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 50,
+   "cached": 0,
+   "fetched": 50,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 52,
+  "seconds": 110.2
+ },
+ "S152": {
+  "name": "Find a Race — забеги и трейлы (40 км от Кембриджа)",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:13:20+00:00",
+  "ok": true,
+  "events": 114,
+  "articles": 0,
+  "stores": 0,
+  "requests": 5,
+  "seconds": 12.0
+ },
+ "S105": {
+  "name": "St Neots Town Council — события (рынки, Bands in the Park, лекции)",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:13:32+00:00",
+  "ok": true,
+  "events": 18,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 21,
+   "cached": 0,
+   "fetched": 21,
+   "fetch_errors": 0,
+   "no_jsonld": 3
+  },
+  "requests": 25,
+  "seconds": 80.0
+ },
+ "S153": {
+  "name": "Royston Museum — события (концерты, мастер-классы, лекции, детские занятия)",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:14:52+00:00",
+  "ok": true,
+  "events": 18,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 2.9
+ },
+ "S019": {
+  "name": "Cambridge City FC — домашние матчи (Isthmian League)",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:14:55+00:00",
+  "ok": true,
+  "events": 1,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "pages": 1,
+   "cached": 1,
+   "model_calls": 0,
+   "cost_usd": 0.0
+  },
+  "requests": 2,
+  "seconds": 3.8
+ },
+ "S154": {
+  "name": "Cambridge United Women — домашние матчи",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:14:58+00:00",
+  "ok": true,
+  "events": 8,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "pages": 1,
+   "cached": 1,
+   "model_calls": 0,
+   "cost_usd": 0.0
+  },
+  "requests": 2,
+  "seconds": 4.0
+ },
+ "S020": {
+  "name": "Cambridge RUFC — домашние матчи (National League 1, PDF лиги)",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:15:02+00:00",
+  "ok": true,
+  "events": 11,
+  "articles": 0,
+  "stores": 0,
+  "requests": 2,
+  "seconds": 4.2
+ },
+ "S155": {
+  "name": "Peterborough Phantoms — домашние матчи (хоккей, NIHL)",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:15:07+00:00",
+  "ok": true,
+  "events": 25,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "pages": 1,
+   "cached": 1,
+   "model_calls": 0,
+   "cost_usd": 0.0
+  },
+  "requests": 2,
+  "seconds": 4.5
+ },
+ "S045": {
+  "name": "Arts Picturehouse — спецпоказы и фильмы в прокате",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:30:48+00:00",
+  "ok": true,
+  "events": 5,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "pages": 1,
+   "cached": 1,
+   "model_calls": 0,
+   "cost_usd": 0.0
+  },
+  "requests": 2,
+  "seconds": 3.9
+ },
+ "S144": {
+  "name": "St John's College — лекции, концерты, выставки, хор",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:30:52+00:00",
+  "ok": true,
+  "events": 8,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "pages": 2,
+   "cached": 2,
+   "model_calls": 0,
+   "cost_usd": 0.0
+  },
+  "requests": 4,
+  "seconds": 7.2
+ },
+ "S163": {
+  "name": "Heong Gallery (Downing College) — выставки",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:30:59+00:00",
+  "ok": true,
+  "events": 1,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "pages": 1,
+   "cached": 1,
+   "model_calls": 0,
+   "cost_usd": 0.0
+  },
+  "requests": 2,
+  "seconds": 3.8
+ },
+ "S164": {
+  "name": "The Women's Art Collection (Murray Edwards College) — выставки и кураторские лекции",
+  "module": "stage6c",
+  "started_at": "2026-09-29T10:31:03+00:00",
+  "ok": true,
+  "events": 3,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "pages": 1,
+   "cached": 1,
+   "model_calls": 0,
+   "cost_usd": 0.0
+  },
+  "requests": 2,
+  "seconds": 4.3
+ },
+ "S165": {
+  "name": "Разбор подборок",
+  "module": "roundups",
+  "started_at": "2026-09-29T10:33:35+00:00",
+  "ok": true,
+  "events": 0,
   "articles": 0,
   "stores": 0,
   "requests": 0,

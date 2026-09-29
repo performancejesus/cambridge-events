@@ -1,0 +1,77 @@
+[
+ {
+  "source_id": "S164",
+  "title": "What Remains",
+  "url": "https://www.murrayedwards.cam.ac.uk/womens-art-collection/exhibition/what-remains",
+  "kind": "event",
+  "external_id": "2026-09-23|What Remains",
+  "start": "2026-09-23",
+  "end": "2027-02-28",
+  "all_day": true,
+  "venue": "The Women's Art Collection, Murray Edwards College",
+  "address": "Huntingdon Road, Cambridge",
+  "postcode": "CB3 0DF",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "exhibition"
+  ],
+  "summary": "exhibition",
+  "published": null,
+  "fetched_at": "2026-09-29T10:31:07+00:00"
+ },
+ {
+  "source_id": "S164",
+  "title": "Curator Talk: What Remains",
+  "url": "https://www.murrayedwards.cam.ac.uk/womens-art-collection/talk/curator-talk-what-remains-0",
+  "kind": "event",
+  "external_id": "2026-11-12|Curator Talk: What Remains",
+  "start": "2026-11-12",
+  "end": null,
+  "all_day": true,
+  "venue": "The Women's Art Collection, Murray Edwards College",
+  "address": "Huntingdon Road, Cambridge",
+  "postcode": "CB3 0DF",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "talk"
+  ],
+  "summary": "talk",
+  "published": null,
+  "fetched_at": "2026-09-29T10:31:07+00:00"
+ },
+ {
+  "source_id": "S164",
+  "title": "Curator Talk: What Remains",
+  "url": "https://www.murrayedwards.cam.ac.uk/womens-art-collection/talk/curator-talk-what-remains-0",
+  "kind": "event",
+  "external_id": "2027-02-09|Curator Talk: What Remains",
+  "start": "2027-02-09",
+  "end": null,
+  "all_day": true,
+  "venue": "The Women's Art Collection, Murray Edwards College",
+  "address": "Huntingdon Road, Cambridge",
+  "postcode": "CB3 0DF",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "talk"
+  ],
+  "summary": "talk",
+  "published": null,
+  "fetched_at": "2026-09-29T10:31:07+00:00"
+ }
+]

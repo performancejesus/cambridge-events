@@ -14,7 +14,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 
-from . import evergreen, kids, lineup
+from . import enrich, evergreen, kids, lineup, school_holidays
 from .db import ROOT
 from .normalize import norm_title, norm_venue, title_similarity
 
@@ -31,17 +31,19 @@ ANNOUNCE_DAYS = 21          # «объявлено недавно»: стать�
 VENUE_NEWS_DAYS = 60        # «Новое в городе» в первом выпуске — открытия за 2 месяца (правки по v3)
 
 # Рубрики после «Темы недели» и «Главного на выходные» (их по одной на каждые выходные периода).
-FIXED_RUBRICS = ["weekdays", "exhibitions", "free", "kids", "holidays", "sport", "out_of_town", "county",
-                 "new_announcements", "tickets", "cancelled", "new_in_town"]
+FIXED_RUBRICS = ["weekdays", "cinema", "talks", "exhibitions", "free", "kids", "holidays", "sport", "out_of_town",
+                 "county", "new_announcements", "tickets", "cancelled", "new_in_town"]
 RUBRIC_TITLES = {
     "en": {"theme": "Theme of the week: {theme}", "weekend": "The weekend: {weekend}",
-           "weekdays": "Weekdays: concerts, theatre, comedy", "exhibitions": "Exhibitions", "free": "Free",
+           "weekdays": "Weekdays: concerts, theatre, comedy", "cinema": "At the cinema", "talks": "Talks and meetings",
+           "exhibitions": "Exhibitions", "free": "Free",
            "kids": "With kids", "holidays": "School holidays: where to book your child", "sport": "Sport",
            "out_of_town": "Out of town (within an hour)", "county": "Around the county",
            "new_announcements": "Just announced", "tickets": "Get your tickets",
            "cancelled": "Cancelled and postponed", "new_in_town": "New in town"},
     "ru": {"theme": "Тема недели: {theme}", "weekend": "Главное на выходные {weekend}",
-           "weekdays": "На неделе: концерты, театр, комедия", "exhibitions": "Выставки", "free": "Бесплатно",
+           "weekdays": "На неделе: концерты, театр, комедия", "cinema": "В кино", "talks": "Лекции и встречи",
+           "exhibitions": "Выставки", "free": "Бесплатно",
            "kids": "С детьми", "holidays": "Каникулы: куда записать ребёнка", "sport": "Спорт",
            "out_of_town": "За городом (до часа)", "county": "По графству",
            "new_announcements": "Новые анонсы", "tickets": "Успейте купить билеты",
@@ -56,7 +58,30 @@ ONE_LINE_MAX = 3.0          # одна короткая фраза (правки
 OUT_OF_TOWN_MIN = 4.0       # «За городом» — не ниже 4 (правки по v3; было 3 после v2)
 COUNTY_MIN = 5.0            # «По графству» — не ниже 5 (правки по v4; было 4)
 MAX_MAIN_ITEMS = 45         # основная часть выпуска (всё, кроме «Каникул») — не больше 40–45 пунктов (правки по v4)
-COUNTY_WEEKEND_MIN = 8.0    # «Кембриджшир, дальше часа» в «Главном на выходные» — только от 8 (правки по v3)
+COUNTY_WEEKEND_MIN = 8.0    # «Кембриджшир, дальше часа» и «до часа» в «Главном на выходные» — только от 8 (правки по v3, v5)
+BIG_RACE_MIN = 7.0          # крупный забег с участниками — в «Главное» как событие для зрителей (решения после 6b)
+TICKETS_SOON_DAYS = (14, 42)  # «Успейте купить»: событие через 2–6 недель с высокой оценкой и небольшим залом
+FILM_RE = re.compile(r"\b(film|screening|cinema|documentary|movie|nt live|met opera|royal opera live|ballet live|"
+                     r"encore screening)\b", re.I)
+TALK_RE = re.compile(r"\b(lecture|talk|talks|in conversation|q ?& ?a|book launch|panel|discussion|symposium|reading|"
+                     r"seminar|meet the (author|director))\b", re.I)
+PUBLIC_RE = re.compile(r"\b(open to (all|the public|everyone)|all welcome|everyone welcome|free and open|public lecture|"
+                       r"members of the public|no booking required)\b", re.I)
+PUBLIC_LISTS = {"talks.cam: Major Public Lectures in Cambridge", "talks.cam: Darwin College Lecture Series",
+                "talks.cam: Cabinet of Natural History"}
+# узкие научные мероприятия (симпозиумы, конференции, постдок-дни) — не публичные лекции, если нет пометки «open to all»
+SPECIALIST_RE = re.compile(r"\b(symposium|conference|colloquium|postdoc|phd|workshop|seminar series|research day|"
+                           r"annual meeting|users? meeting|retreat)\b", re.I)
+THEATRE_RE = re.compile(r"\b(theatre|play|dance|ballet|musical|opera|panto(mime)?|shakespeare|drama|comedy of|"
+                        r"footlights|king lear|hamlet|macbeth)\b", re.I)
+# правки по v5: гражданские мероприятия (консультации, выставки проектов застройки) — пока не в выпуск
+CIVIC_RE = re.compile(r"\b(public exhibition|public consultation|consultation event|planning (application|proposals?)|"
+                      r"council meeting|drop-in (session|event) (on|about) (the )?(plans|proposals|development)|"
+                      r"community engagement event)\b", re.I)
+URGENCY_RE = re.compile(r"\b(few (tickets|seats|places) (left|remaining)|selling fast|last (few|remaining)|almost sold out|"
+                        r"limited (availability|tickets)|early[- ]bird (ends|closes|until)|final tickets)\b", re.I)
+PAID_ENTRY_RE = re.compile(r"\b(admission|entry fee|with (a |your )?(garden|museum|park|house) (ticket|admission)|"
+                           r"included in|normal entry|standard entry)\b", re.I)
 LONG_EXHIBITION_DAYS = 14   # идёт дольше 2 недель — не в «Главное на выходные», а в «Выставки» / «Бесплатно»
 # благотворительные распродажи и барахолки — не в «За городом» / «По графству» (правки по v3)
 SALE_RE = re.compile(r"\b(sale|jumble|car boot|nearly new|bric-?a-?brac|table top|flea market)\b", re.I)
@@ -80,6 +105,8 @@ KIDS_RE = re.compile(r"\b(family[- ]friendly|for (all the |the whole )?famil(y|i
 # Семейные категории, которыми источник сам размечает события (фильтры UCM «для кого», раздел Visit Cambridge,
 # раздел University What's On, Science Centre) — явная пометка, не догадка (этап 6).
 FAMILY_CATEGORIES = {"family", "families", "family events", "family friendly", "under 5s", "ages 5+"}
+CHAIN_RE = re.compile(r"\b(burger king|mcdonald'?s|kfc|subway|greggs|starbucks|costa|domino'?s|pizza hut|five guys|"
+                      r"taco bell|wendy'?s|popeyes|tim hortons|nando'?s|wingstop|jamaica blue|leon)\b", re.I)
 MERGES = ROOT / "data" / "manual_merges.json"
 # Связанные события, которые в выпуске — один пункт (встреча с режиссёром + показ его фильма); проверено редактором.
 LINKS = ROOT / "data" / "issue_links.json"
@@ -177,8 +204,22 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
         "categories": cats, "summary": summary, "source_type": e["source_type"],
         "importance": e["importance_score"], "importance_reason": e["importance_reason"],
         "kids_tag": is_family(e["title"], summary, _categories(con, e["event_id"], None)),
-        "free_tag": e["price_from"] == 0,
+        "free_tag": strictly_free(e["price_from"], e["price_text"]),
     }
+    allcats = _categories(con, e["event_id"], None)
+    text = " ".join([e["title"]] + allcats)
+    if FILM_RE.search(text) or "film" in [c.lower() for c in allcats] or set(srcs) & {"S045"}:
+        facts["film"] = True
+    if TALK_RE.search(e["title"]) or any(c.lower() in ("talk", "lecture", "lectures", "talks") for c in allcats) \
+            or (set(srcs) & {"S047"}):
+        facts["talk"] = True
+        # правки после v5: публичные — из публичных списков talks.cam, других источников или с пометкой «open to all»
+        only_talks = set(srcs) <= {"S047"}
+        facts["public_talk"] = (not only_talks) or bool(set(allcats) & PUBLIC_LISTS) or bool(PUBLIC_RE.search(summary or ""))
+        if SPECIALIST_RE.search(e["title"]) and not PUBLIC_RE.search(summary or ""):
+            facts["public_talk"] = False
+    if THEATRE_RE.search(text) or set(srcs) & {"S042", "S041"}:
+        facts["theatre"] = True
     fame = con.execute("SELECT result FROM fame_cache WHERE event_id=?", (e["event_id"],)).fetchone()
     if fame:
         performer = json.loads(fame["result"]).get("performer")
@@ -187,11 +228,17 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
     names = lineup.names(con, e["event_id"])
     if names:
         facts["lineup"] = names              # правки по v4: все названные участники из всех склеенных записей
-    if (PARTICIPATE_RE.search(e["title"]) or (PARTICIPATE_WEAK_RE.search(e["title"]) and (
+    if "participant" in [c.lower() for c in cats] or (PARTICIPATE_RE.search(e["title"]) or (PARTICIPATE_WEAK_RE.search(e["title"]) and (
             REGISTER_RE.search(summary or "") or "sport" in [c.lower() for c in cats]))) \
             and not NOT_PARTICIPATE_RE.search(e["title"]):
         facts["participant"] = True          # регистрация участников, не билеты для зрителей
-    if e["source_type"] != "recurring" and thin(e["title"], summary, facts.get("performer"), names):   # дата ежегодного события — сама факт
+    page = enrich.facts(con, e["event_id"])
+    if page and page.get("text"):
+        facts["page_facts"] = page["text"][:700]   # правки по v5: одна загрузка страницы у первоисточника
+        if not facts.get("price_text") and page.get("price"):
+            facts["page_price"] = page["price"]
+    if e["source_type"] != "recurring" and thin(e["title"], (summary or "") + " " + facts.get("page_facts", ""),
+                                                facts.get("performer"), names):   # дата ежегодного события — сама факт
         facts["thin_data"] = True            # в данных нет ни одного содержательного факта для описания
     if evergreen.regular_series(con, e["event_id"]):
         facts["regular_series"] = True
@@ -199,6 +246,14 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
     if note:
         facts["editor_note"] = note
     return facts
+
+
+def strictly_free(price_from, price_text: str | None) -> bool:
+    """Правки по v5: «бесплатно» — только если максимальная цена тоже £0 и это не «бесплатно при входном билете»."""
+    if price_from != 0:
+        return False
+    nums = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", (price_text or "").replace(",", ""))]
+    return not any(nums) and not PAID_ENTRY_RE.search(price_text or "")
 
 
 def thin(title: str, summary: str | None, performer: str | None, names: list[str]) -> bool:
@@ -216,6 +271,10 @@ def _exclusion(e: sqlite3.Row) -> str | None:
         return "лекции talks.cam с «Title to be confirmed»"
     if e["evergreen"]:
         return "постоянный продукт для туристов (evergreen), не событие"
+    if e["roundup"]:
+        return "подборка («Things to do…»), не событие — разобрана на отдельные события"
+    if CIVIC_RE.search(e["title"]):
+        return "гражданское мероприятие (консультация, выставка проекта) — пока не в выпуск"
     # площадки нет, но есть адрес (Visit Cambridge, Visit Ely) — место известно
     if (not e["venue_name"] or NO_VENUE_RE.match(e["venue_name"])) and not e["multi_venue"] and not e["address"]:
         return "нет площадки или адреса"
@@ -269,6 +328,7 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     _cancellations(con, w, p)
     _venue_news(con, w, p)
     _kids_programmes(con, w, p)
+    _holiday_family(con, w, p)
     return p
 
 
@@ -277,9 +337,12 @@ def _kids_programmes(con, w: Window, p: Pools) -> None:
     8 недель от даты выпуска (октябрьские — запись идёт; рождественские — кто уже открыл запись)."""
     if not con.execute("SELECT name FROM sqlite_master WHERE name='kids_programmes'").fetchone():
         return
+    from .kids_collect import text_of
     horizon = (w.issue + timedelta(weeks=13)).isoformat()
     texts = {x["id"]: x.get("text", {}) for x in json.loads(kids.DATA.read_text())["programmes"]}
-    for k in con.execute("SELECT * FROM kids_programmes ORDER BY prog_id").fetchall():
+    for k in con.execute("SELECT * FROM kids_programmes WHERE coalesce(kind, 'holiday') = 'holiday' ORDER BY prog_id").fetchall():
+        if k["source"] == "collector":
+            texts[k["prog_id"]] = text_of(con, k["prog_id"])
         if k["date_start"] and not (w.issue.isoformat() <= (k["date_end"] or k["date_start"]) and k["date_start"] <= horizon):
             continue
         p.candidates[k["prog_id"]] = {
@@ -287,7 +350,9 @@ def _kids_programmes(con, w: Window, p: Pools) -> None:
             "ages": k["ages"], "hours": k["hours"], "price_text": k["price"], "venue": k["venue"],
             "address": k["address"], "postcode": k["postcode"], "zone": k["zone"], "places": k["places"],
             "booking_opens": k["booking_opens"], "audience": k["audience"], "verified": bool(k["verified"]),
-            "note": k["note"], "url": k["url"], "event_ids": [], "sources": ["web_search"],
+            "note": k["note"], "url": k["url"], "event_ids": [],
+            "sources": ["kids_collector"] if k["source"] == "collector" else ["web_search"],
+            "booking_deadline": k["booking_deadline"], "collector": k["source"] == "collector",
             "text": texts.get(k["prog_id"], {}),
             "dates": [(k["date_start"], k["date_end"] or k["date_start"], None)] if k["date_start"] else []}
 
@@ -381,7 +446,47 @@ def _tickets(con, w: Window, p: Pools) -> None:
                   "event_ids": [e["event_id"]] if e else [],
                   "dates": [(e["date_start"], e["date_end"] or e["date_start"], e["time_start"])] if e else
                   [(u["date"], u["date"], None)] if u["date"] else []}
+        facts["urgency"] = urgency(con, e, facts, w)
         p.candidates[f"T{u['update_id']}"] = facts
+
+
+def urgency(con, e, facts: dict, w: Window) -> str | None:
+    """Правки по v5: «Успейте купить» — только при сигнале срочности: «мало билетов» на странице, заканчивается ранняя
+    цена, или событие через 2–6 недель с оценкой ≥ 7 в зале до 1000 мест. Иначе — это анонс («в продаже с …»)."""
+    if not e:
+        return None
+    if e["status"] == "sold_out":
+        return None
+    text = " ".join(x for x in (facts.get("summary"), facts.get("page_facts"), e["status"]) if x)
+    if URGENCY_RE.search(text):
+        return "на странице: мало билетов / ранняя цена заканчивается"
+    days = (d(e["date_start"]) - w.issue).days
+    cap = con.execute("SELECT capacity FROM venues WHERE venue_id=?", (e["venue_id"],)).fetchone() if e["venue_id"] else None
+    if TICKETS_SOON_DAYS[0] <= days <= TICKETS_SOON_DAYS[1] and (e["importance_score"] or 0) >= 7 and cap and cap[0] and cap[0] <= 1000:
+        return f"через {days} дн., оценка {e['importance_score']:g}, зал ~{cap[0]}"
+    return None
+
+
+def _holiday_family(con, w: Window, p: Pools) -> None:
+    """Правки по v5: семейные события в дни ближайших каникул (в т.ч. за окном выпуска) — подраздел «Каникулы → Куда
+    сходить с детьми в каникулы», рядом с лагерями. Любая зона из выпуска (пометка зоны — в строке)."""
+    for h in school_holidays.upcoming(w.issue):
+        start, end = d(h["start"]) - timedelta(days=2), d(h["end"]) + timedelta(days=2)   # с выходными вокруг
+        if (start - w.issue).days > 56:
+            continue
+        for e in con.execute("""SELECT * FROM events WHERE date_start <= ? AND coalesce(date_end, date_start) >= ?""",
+                             (end.isoformat(), start.isoformat())).fetchall():
+            if _exclusion(e) or e["status"] == "sold_out":
+                continue
+            facts = _event_facts(con, e)
+            if not facts["kids_tag"] or facts.get("regular_series"):
+                continue
+            span = (d(e["date_end"] or e["date_start"]) - d(e["date_start"])).days
+            if span > 21:
+                continue   # длительные выставки и сезонные аттракционы — не «сходить в каникулы»
+            facts |= {"kind": "holiday_event", "holiday": h["key"], "url": e["url"], "event_ids": [e["event_id"]],
+                      "dates": [(e["date_start"], e["date_end"] or e["date_start"], e["time_start"])]}
+            p.candidates[f"H{e['event_id']}"] = facts
 
 
 def _cancellations(con, w: Window, p: Pools) -> None:
@@ -406,6 +511,13 @@ def _venue_news(con, w: Window, p: Pools) -> None:
         if v["source_type"] == "rss_title":
             p.unverified_news += 1
             continue
+        if v["source_type"] == "search" and not v["date"]:
+            p.excluded["открытие найдено поиском, дата неизвестна"].append(v["name"])
+            continue
+        # решения после 6b: сетевые фастфуды за пределами Кембриджа в «Новое в городе» не брать
+        if CHAIN_RE.search(v["name"]) and not re.search(r"\bCambridge\b", v["address"] or ""):
+            p.excluded["сетевой фастфуд за пределами Кембриджа"].append(v["name"])
+            continue
         p.candidates[f"V{v['news_id']}"] = {
             "kind": "venue_news", "title": v["name"], "type": v["type"], "stage": v["stage"],
             "address": v["address"], "postcode": v["postcode"], "date": v["date"], "date_basis": v["date_basis"],
@@ -413,6 +525,7 @@ def _venue_news(con, w: Window, p: Pools) -> None:
             "source_type": v["source_type"], "url": v["url"], "event_ids": [], "dates": []}
 
 
+ALSO_PLAYING = {"S019", "S154"}   # Cambridge City FC, Cambridge United Women
 ZONE_ORDER = ["центр", "до 30 мин", "до часа", geo_COUNTY_FAR]
 AGES_RU = [(r"^school age$", "школьники"), (r"^families$", "семьи"), (r"^children, by level$", "дети, по уровню"),
            (r"^primary and secondary$", "начальная и средняя школа"), (r"^Reception – (\d+)$", r"от Reception до \1 лет"),
@@ -421,6 +534,21 @@ AUDIENCE = {"eligible": {"en": "for families eligible for free school meals",
                          "ru": "для семей с правом на бесплатное школьное питание"},
             "university": {"en": "only for children of University of Cambridge staff and students",
                            "ru": "только для детей сотрудников и студентов университета"}}
+
+
+def _date_conflict(c: dict) -> str | None:
+    """Даты программы не совпадают с каникулами, к которым она отнесена (больше чем на неделю) — противоречие на
+    странице провайдера (например, «October Half Term» с датой 26/11): в выпуск не берём, редактору — с причиной."""
+    hols = {}
+    for h in school_holidays.load():
+        hols.setdefault(h["key"], []).append(h)
+    if c.get("holiday") not in hols or not c.get("dates"):
+        return None
+    a, b = d(c["dates"][0][0]), d(c["dates"][0][1])
+    for h in hols[c["holiday"]]:
+        if a <= d(h["end"]) + timedelta(days=7) and b >= d(h["start"]) - timedelta(days=7):
+            return None
+    return f"дата на странице ({c['dates'][0][0]}) не совпадает с каникулами из названия — противоречие у провайдера"
 
 
 def holiday_selection(p: Pools) -> tuple[list[str], dict[str, str]]:
@@ -434,6 +562,8 @@ def holiday_selection(p: Pools) -> tuple[list[str], dict[str, str]]:
             why[cid] = "не проверено на сайте провайдера"
         elif c["places"] == "full":
             why[cid] = "мест нет"
+        elif _date_conflict(c):
+            why[cid] = _date_conflict(c)
         elif c["zone"] not in LISTED_ZONES and not (c["zone"] is None and c["audience"] == "eligible"):
             why[cid] = "вне зоны" if c["zone"] else "зона не определена (нет postcode)"
         else:
@@ -450,64 +580,130 @@ def _ages(a: str | None, lang: str) -> str:
     return a
 
 
+BOOKING_RU = [(r"^early[- ]", "в начале "), (r"^mid[- ]", "в середине "), (r"^late[- ]", "в конце ")]
+MONTH_RU_PREP = {m: r for m, r in zip(["January", "February", "March", "April", "May", "June", "July", "August", "September",
+                                       "October", "November", "December"],
+                                      ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября",
+                                       "октября", "ноября", "декабря"])}
+
+
+def booking_text(bo: str, lang: str) -> str:
+    """Дата открытия записи: ISO — как дата; «mid-November» → «в середине ноября» (правки по v5: без английских слов)."""
+    if re.match(r"\d{4}-\d\d-\d\d", bo):
+        return _day(d(bo), lang, weekday=False)
+    if lang == "en":
+        return bo
+    out = bo
+    for pat, rep in BOOKING_RU:
+        out = re.sub(pat, rep, out, flags=re.I)
+    for en, ru in MONTH_RU_PREP.items():
+        out = re.sub(rf"\b{en}\b", ru, out)
+    return out
+
+
+HOLIDAY_TITLES |= {"february_half_term": {"en": "February half term", "ru": "Февральские каникулы"},
+                   "easter": {"en": "Easter holidays", "ru": "Пасхальные каникулы"},
+                   "may_half_term": {"en": "May half term", "ru": "Майские каникулы"},
+                   "summer": {"en": "Summer holidays", "ru": "Летние каникулы"}}
+HOLIDAY_NOTES |= {k: {"en": "who is already taking bookings", "ru": "кто уже открыл запись"}
+                  for k in ("february_half_term", "easter", "may_half_term", "summer")}
+FAMILY_IN_HOLIDAYS_MAX = 6
+
+
+def _programme_line(x: dict, w: Window, lang: str) -> dict:
+    c = x["c"]
+    places = list(dict.fromkeys(wh for wh, _ in x["where"] if wh))
+    prices = list(dict.fromkeys(pr for _, pr in x["where"] if pr))
+    if len(prices) > 1:   # разные цены на разных площадках — цена при каждой площадке
+        place, price = "; ".join(f"{wh} ({pr})" for wh, pr in x["where"]), ""
+    else:
+        place, price = "; ".join(places), (prices[0] if prices else "")
+    ages = _ages(c["ages"], lang)
+    notes = []
+    if c["audience"] in AUDIENCE:
+        notes.append(AUDIENCE[c["audience"]][lang])
+    if c["places"] == "few_left":
+        notes.append("few places left" if lang == "en" else "мест мало")
+    if c["places"] == "not_open" and c.get("booking_opens"):
+        notes.append(("booking opens " if lang == "en" else "запись открывается: ") + booking_text(c["booking_opens"], lang))
+    if c.get("booking_deadline"):
+        notes.append(("book by " if lang == "en" else "запись до ") + booking_text(c["booking_deadline"], lang))
+    head = f"{x['provider']} — {x['title']}" + (f" ({ages})" if ages else "")
+    meta = " · ".join(v for v in [when(c, w, lang), place, price] + notes if v)
+    return {"title": head, "meta": meta, "blurb": "", "url": c["url"], "compact": True, "ids": x["ids"]}
+
+
+def _hurry(c: dict, w: Window) -> bool:
+    """«Успейте записаться»: мест мало или запись заканчивается в ближайшие 14 дней."""
+    bd = c.get("booking_deadline")
+    soon = bool(bd and re.match(r"\d{4}-\d\d-\d\d", bd) and 0 <= (d(bd) - w.issue).days <= 14)
+    return c["places"] == "few_left" or soon
+
+
 def holiday_groups(p: Pools, w: Window, lang: str) -> list[dict]:
-    """Подразделы «Каникул»: по каникулам, внутри — по зоне (Кембридж → до 30 мин → дальше). Одинаковые программы
-    одного провайдера на разных площадках — одной строкой со списком площадок."""
+    """Подразделы «Каникул»: «Успейте записаться» (мест мало, скоро дедлайн) → по каникулам, внутри — по зоне
+    (Кембридж → до 30 мин → дальше); одинаковые программы одного провайдера на разных площадках — одной строкой;
+    в конце — «Куда сходить с детьми в каникулы» (семейные события в дни каникул)."""
     chosen, _ = holiday_selection(p)
     lines: dict[tuple, dict] = {}
     for cid in chosen:
         c = p.candidates[cid]
         t = c.get("text") or {}
-        key = (c["holiday"], c["provider"], t.get(f"title_{lang}") or c["title"])
-        x = lines.setdefault(key, {"c": c, "ids": [], "where": [], "zone": 9})
+        title = t.get(f"title_{lang}") or c["title"]
+        key = ("hurry" if _hurry(c, w) else c["holiday"], c["provider"], title)
+        x = lines.setdefault(key, {"c": c, "ids": [], "where": [], "zone": 9, "provider": c["provider"], "title": title})
         x["ids"].append(cid)
-        where, price = t.get(f"where_{lang}") or c["venue"] or "", t.get(f"price_{lang}") or ""
+        where, price = t.get(f"where_{lang}") or c["venue"] or "", t.get(f"price_{lang}") or c.get("price_text") or ""
         if (where, price) not in x["where"]:
             x["where"].append((where, price))
         z = ZONE_ORDER.index(c["zone"]) if c["zone"] in ZONE_ORDER else 8
         x["zone"] = min(x["zone"], z)
     groups: dict[str, list] = {}
     for (hol, provider, title), x in sorted(lines.items(), key=lambda kv: (kv[1]["zone"], kv[0][1].lower())):
-        c = x["c"]
-        places = list(dict.fromkeys(wh for wh, _ in x["where"] if wh))
-        prices = list(dict.fromkeys(pr for _, pr in x["where"] if pr))
-        if len(prices) > 1:   # разные цены на разных площадках — цена при каждой площадке
-            place, price = "; ".join(f"{wh} ({pr})" for wh, pr in x["where"]), ""
-        else:
-            place, price = "; ".join(places), (prices[0] if prices else "")
-        ages = _ages(c["ages"], lang)
-        notes = []
-        if c["audience"] in AUDIENCE:
-            notes.append(AUDIENCE[c["audience"]][lang])
-        if c["places"] == "few_left":
-            notes.append("few places left" if lang == "en" else "мест мало")
-        if c["places"] == "not_open" and c.get("booking_opens"):
-            bo = c["booking_opens"]
-            bo = _day(d(bo), lang, weekday=False) if re.match(r"\d{4}-\d\d-\d\d", bo) else bo
-            notes.append(("booking opens " if lang == "en" else "запись открывается: ") + bo)
-        head = f"{provider} — {title}" + (f" ({ages})" if ages else "")
-        meta = " · ".join(v for v in [when(c, w, lang), place, price] + notes if v)
-        groups.setdefault(hol, []).append({"title": head, "meta": meta, "blurb": "", "url": c["url"], "compact": True,
-                                           "ids": x["ids"]})
+        groups.setdefault(hol, []).append(_programme_line(x, w, lang))
     out = []
-    for hol in ["october_half_term", "christmas", "both"]:
-        if hol not in groups:
-            continue
+    if "hurry" in groups:
+        out.append({"title": "Hurry — few places or booking closes soon" if lang == "en" else
+                    "Успейте записаться — мест мало или запись скоро закроется", "items": groups["hurry"]})
+    order = ["october_half_term", "christmas", "february_half_term", "easter", "may_half_term", "summer", "both"]
+    hols = {}
+    for h in school_holidays.upcoming(w.issue):   # ближайшие каникулы каждого вида (не следующего учебного года)
+        hols.setdefault(h["key"], h)
+    for hol in [k for k in order if k in groups]:
         if hol in HOLIDAY_TITLES:
-            h = kids.holidays()[hol]
+            h = hols.get(hol) or kids.holidays().get(hol)
             rng = f"{_day(d(h['start']), lang, weekday=False)} – {_day(d(h['end']), lang, weekday=False, year=d(h['end']).year != w.issue.year)}"
             title = f"{HOLIDAY_TITLES[hol][lang]}, {rng} — {HOLIDAY_NOTES[hol][lang]}"
         else:
             title = "Both holidays" if lang == "en" else "На все каникулы"
         out.append({"title": title, "items": groups[hol]})
+    fam = sorted((c for c in p.candidates.values() if c["kind"] == "holiday_event"),
+                 key=lambda c: -(c.get("importance") or 0))[:FAMILY_IN_HOLIDAYS_MAX]
+    if fam:
+        items = []
+        for c in sorted(fam, key=lambda c: c["dates"][0][0]):
+            zone = "" if c.get("zone") == "центр" else (f" ({c['zone']})" if lang == "ru" else
+                                                        f" ({ZONE_EN.get(c.get('zone'), c.get('zone'))})")
+            price = price_from_data(c)[0 if lang == "en" else 1]
+            if price in ("price not listed", "цена не указана"):
+                price = "prices on the website" if lang == "en" else "цены на сайте"
+            place = c.get("venue") or ", ".join((c.get("address") or "").split(",")[:2]).strip()
+            meta = " · ".join(x for x in (when(c, w, lang), (place + zone).strip(), price) if x)
+            items.append({"title": c["title"], "meta": meta, "blurb": "", "url": c["url"], "compact": True,
+                          "ids": [cid for cid, x in p.candidates.items() if x is c]})
+        out.append({"title": "Where to go with children during the holidays" if lang == "en" else
+                    "Куда сходить с детьми в каникулы", "items": items})
     return out
+
+
+ZONE_EN = {"до 30 мин": "within 30 min", "до часа": "within an hour", "Кембриджшир, дальше часа": "Cambridgeshire, over an hour"}
 
 
 def model_view(p: Pools) -> list[dict]:
     """Кандидаты для модели: только нужные поля, без пустых. «Каникулы» собираются без модели."""
     out = []
     for cid, c in p.candidates.items():
-        if c["kind"] == "programme":
+        if c["kind"] in ("programme", "holiday_event"):
             continue
         item = {"id": cid} | {k: v for k, v in c.items()
                               if k not in ("url", "event_ids", "importance_reason") and v not in (None, "", [], False)}
@@ -554,6 +750,15 @@ def when(c: dict, w: Window, lang: str) -> str:
         stage = {"en": {"opened": "Opened", "coming_soon": "Opening soon", "closed": "Closed"},
                  "ru": {"opened": "Открылось", "coming_soon": "Скоро откроется", "closed": "Закрылось"}}[lang][c["stage"]]
         dt = d(c["date"])
+        if dt and c.get("date_basis") == "publication_date":
+            # правки по v5: дата открытия = дата статьи — не «Открылось 17 августа», а месяц или «недавно»
+            if (w.issue - dt).days <= 21:
+                return {"en": {"opened": "Recently opened", "coming_soon": "Opening soon", "closed": "Recently closed"},
+                        "ru": {"opened": "Недавно открылось", "coming_soon": "Скоро откроется",
+                               "closed": "Недавно закрылось"}}[lang][c["stage"]]
+            mon = MONTHS_EN[dt.month - 1] if lang == "en" else ["январе", "феврале", "марте", "апреле", "мае", "июне", "июле",
+                                                                "августе", "сентябре", "октябре", "ноябре", "декабре"][dt.month - 1]
+            return f"{stage} in {mon}" if lang == "en" else f"{stage.lower().capitalize()} в {mon}"
         return f"{stage} {_day(dt, lang, weekday=False, year=dt.year != w.issue.year)}" if dt else stage
     if not c["dates"]:
         return ""
@@ -623,7 +828,12 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 out["sections"].append({"rubric": rub, "title": rubric_title(rub, w, lang), "intro": "", "groups": groups})
             continue
         items = sections.get(rub) or []
-        if rub != "theme":   # «Тема недели» — порядок по смыслу, как у модели (правки по v3); остальное — по важности
+        if rub == "weekdays":   # правки по v5: «На неделе» — по дате
+            items = sorted(items, key=lambda it: min((x[0], x[2] or "") for i in it["ids"]
+                                                     for x in (p.candidates[i]["dates"] or [("9999", "", None)])))
+        elif rub == "new_in_town":   # сначала Кембридж
+            items = sorted(items, key=lambda it: not re.search(r"\bCambridge\b", p.candidates[it["ids"][0]].get("address") or ""))
+        elif rub != "theme":   # «Тема недели» — порядок по смыслу, как у модели (правки по v3); остальное — по важности
             items = sorted(items, key=lambda it: -importance_of(p, it))
         if not items:
             continue  # пустые рубрики не выводим (правки по v2)
@@ -637,13 +847,24 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 c = c | {"dates": sorted({x for e in evs for x in e["dates"]}, key=lambda x: tuple(y or "" for y in x))}
             price = "" if c["kind"] == "venue_news" else it[f"price_{lang}"]
             meta = " · ".join(x for x in (when(c, w, lang), it[f"where_{lang}"], price) if x)
+            title = it[f"title_{lang}"]
+            if c["kind"] == "venue_news" and not re.search(r"\bCambridge\b", c.get("address") or ""):
+                town = (c.get("address") or "").split(",")[-1].strip()   # правки по v5: городок — в заголовке строки
+                if town and town.lower() not in title.lower():
+                    title = f"{title} — {town}"
             # правки по v4: забеги и триатлоны с регистрацией участников — подраздел «Поучаствовать» в «Спорте»
             key = "take_part" if rub == "sport" and any(p.candidates[i].get("participant") for i in it["ids"]) else ""
-            groups.setdefault(key, []).append({"title": it[f"title_{lang}"], "meta": meta,
+            if rub == "sport" and not key and set(c.get("sources") or []) & ALSO_PLAYING:
+                key = "also"   # правки после v5: нелиговый и женский футбол — одной строкой в «Также играют»
+            groups.setdefault(key, []).append({"title": title, "meta": meta,
                                                "blurb": it[f"blurb_{lang}"].strip(), "url": c["url"], "ids": it["ids"]})
-        for key in sorted(groups, key=lambda k: k == "take_part"):
-            sub_title = ("Take part" if lang == "en" else "Поучаствовать") if key == "take_part" else ""
-            sec["groups"].append({"title": sub_title, "items": groups[key]})
+        for key in sorted(groups, key=lambda k: ["", "also", "take_part"].index(k)):
+            sub_title = {"take_part": ("Take part", "Поучаствовать"), "also": ("Also playing", "Также играют")}.get(key)
+            items_ = groups[key]
+            if key == "also":
+                items_ = [x | {"compact": True, "title": x["title"], "meta": x["meta"]} for x in items_]
+            sec["groups"].append({"title": (sub_title[0] if lang == "en" else sub_title[1]) if sub_title else "",
+                                  "items": items_})
         out["sections"].append(sec)
     return out
 
@@ -753,6 +974,9 @@ summary { cursor:pointer; color:var(--muted); font:600 14px -apple-system, "Sego
 .cands .why { color:var(--accent); }
 .cands .src, .cands .sc { color:var(--muted); }
 .stub h2 { color:var(--muted); }
+.tbl { overflow-x:auto; }
+table { border-collapse:collapse; font:12px/1.4 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; min-width:560px; }
+th, td { border-top:1px solid var(--line); padding:4px 6px; text-align:left; vertical-align:top; }
 .editor { font:14px/1.5 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
 .editor h3 { margin:16px 0 4px; }
 .editor ul { padding-left:18px; margin:4px 0; }
@@ -762,12 +986,19 @@ summary { cursor:pointer; color:var(--muted); font:600 14px -apple-system, "Sego
 @media (prefers-color-scheme: dark) { :root { --hl:#2f2a22; } }"""
 
 
-def _cands_html(rows: list[dict], lang: str, placed_n: int) -> str:
+def _cands_html(rows: list[dict], lang: str, placed_n: int, items_n: int | None = None) -> str:
     from html import escape as e
     if not rows:
         return ""
-    label = (f"All candidates of this rubric — {len(rows)} (in the issue: {placed_n})" if lang == "en"
-             else f"Все события рубрики — {len(rows)} (в выпуске {placed_n})")
+    merged = placed_n - items_n if items_n is not None and placed_n > items_n else 0
+    if merged:   # правки по v5: при склейке — «6 событий → 5 пунктов (2 объединены)»
+        label = (f"All candidates of this rubric — {len(rows)}; in the issue: {placed_n} events → {items_n} items "
+                 f"({merged + 1} merged)" if lang == "en" else
+                 f"Все события рубрики — {len(rows)}; в выпуске: {placed_n} событий → {items_n} пунктов "
+                 f"({merged + 1} объединены)")
+    else:
+        label = (f"All candidates of this rubric — {len(rows)} (in the issue: {placed_n})" if lang == "en"
+                 else f"Все события рубрики — {len(rows)} (в выпуске {placed_n})")
     out = [f"<details><summary>{e(label)}</summary><ul class=\"cands\">"]
     for r in rows:
         title = f'<a href="{e(r["url"])}">{e(r["title"])}</a>' if r.get("url") else e(r["title"])
@@ -776,6 +1007,8 @@ def _cands_html(rows: list[dict], lang: str, placed_n: int) -> str:
         score = f'<span class="sc">★ {r["score"]:g}</span>' if r.get("score") else ""
         src = f'<span class="src">{e(", ".join(r["sources"]))}</span>' if r["sources"] else ""
         why = "" if r["in"] else f' — <span class="why">{e(r["why"][lang])}</span>'
+        if r["in"] and r.get("merged"):
+            why = ' — <span class="why">' + ("merged into one item" if lang == "en" else "объединено в один пункт") + "</span>"
         out.append(f'<li class="{"in" if r["in"] else ""}"><span class="mark">{"✓" if r["in"] else ""}</span>{title}'
                    f'{(" — " + e(meta)) if meta else ""} {score} {src}{why}</li>')
     out.append("</ul></details>")
@@ -798,6 +1031,7 @@ def render_editor_html(result: dict, p: Pools, w: Window, lang: str, editor: dic
         if not sec and not rows:
             continue
         placed = sum(r["in"] for r in rows)
+        items_n = sum(len(g["items"]) for g in sec["groups"]) if sec else 0
         if sec:
             body.append(f'<section><h2>{e(sec["title"])}</h2>')
             if sec["intro"]:
@@ -812,16 +1046,56 @@ def render_editor_html(result: dict, p: Pools, w: Window, lang: str, editor: dic
                 "Тема недели" if rub == "theme" else rubric_title(rub, w, lang)
             hidden = "not in the issue" if lang == "en" else "в выпуск не вошла"
             body.append(f'<section class="stub"><h2>{e(title)} — {hidden}</h2>')
-        body.append(_cands_html(rows, lang, placed))
+        body.append(_cands_html(rows, lang, placed, items_n if rub not in ("holidays",) else None))
         body.append("</section>")
     nowhere = lists.get("nowhere", [])
     body.append(f'<section><h2>{"Didn’t fit anywhere" if lang == "en" else "Не попало никуда"}</h2>')
     body.append(_cands_html(nowhere, lang, 0).replace(
         "Все события рубрики", "События окна вне рубрик").replace("All candidates of this rubric", "Events of the window outside all rubrics"))
     body.append("</section>")
+    body.append(_dropped_html(lists.get("dropped", []), lang))
+    body.append(_unparsed_html(lists.get("unparsed", []), lang))
     body.append(f'<section class="editor"><h2>{"For the editor" if lang == "en" else "Для редактора"}</h2>')
     for title, entries in editor[lang]:
         body.append(f"<h3>{e(title)}</h3><ul>" + "".join(f"<li>{e(x)}</li>" for x in (entries or ["—"])) + "</ul>")
     body.append("</section>")
     return READER_HTML.format(lang=lang, title=e(L["title"] + (" — editor" if lang == "en" else " — редактор")),
                               body="\n".join(body), extra_css=EDITOR_CSS)
+
+
+def _dropped_html(rows: list[dict], lang: str) -> str:
+    """Сводная таблица отсеянных пунктов выпуска с фильтром по причине (правки после v5); то же — в CSV."""
+    from html import escape as e
+    if not rows:
+        return ""
+    reasons = sorted({r["why"][lang] for r in rows})
+    opts = "".join(f'<option value="{e(x)}">{e(x)} — {sum(r["why"][lang] == x for r in rows)}</option>' for x in reasons)
+    head = ("Dropped items — summary" if lang == "en" else "Отсеянные пункты — сводная таблица")
+    th = ("Reason", "Event", "Date", "Venue (zone)", "Score", "Rubric") if lang == "en" else \
+        ("Причина", "Событие", "Дата", "Площадка (зона)", "Оценка", "Рубрика")
+    trs = "".join(f'<tr data-r="{e(r["why"][lang])}"><td>{e(r["why"][lang])}</td><td>'
+                  + (f'<a href="{e(r["url"])}">{e(r["title"])}</a>' if r.get("url") else e(r["title"]))
+                  + f'</td><td>{e(r["when"][lang])}</td><td>{e(r["venue"])}{" (" + e(r["zone"]) + ")" if r["zone"] else ""}</td>'
+                  f'<td>{r["score"] if r["score"] is not None else ""}</td><td>{e(r.get("rubric", ""))}</td></tr>' for r in rows)
+    label = "Filter by reason" if lang == "en" else "Фильтр по причине"
+    allr = "all" if lang == "en" else "все"
+    return (f'<section><h2>{head}</h2><details><summary>{len(rows)}</summary>'
+            f'<p><label>{label}: <select onchange="var v=this.value;document.querySelectorAll(\'#dropped tr[data-r]\')'
+            f'.forEach(function(t){{t.style.display=(!v||t.dataset.r===v)?\'\':\'none\'}})"><option value="">{allr}</option>{opts}'
+            f'</select></label></p><div class="tbl"><table id="dropped"><tr>{"".join(f"<th>{x}</th>" for x in th)}</tr>{trs}'
+            f'</table></div></details></section>')
+
+
+def _unparsed_html(rows: list[dict], lang: str) -> str:
+    """Лист «Не разобрано» — раздел редакторской версии."""
+    from html import escape as e
+    if not rows:
+        return ""
+    head = "Not parsed (sources we could not collect)" if lang == "en" else "Не разобрано (источники, которые не удалось собрать)"
+    th = ("ID", "Source", "Problem", "Since", "What we lose", "Action", "Checked") if lang == "en" else \
+        ("ID", "Источник", "Проблема", "С какой даты", "Что теряем", "Что делать", "Проверено")
+    trs = "".join(f'<tr><td>{e(r["key"])}</td><td><a href="{e(r["url"])}">{e(r["name"] or r["url"])}</a></td>'
+                  f'<td>{e(r["problem"])}</td><td>{e(r["since"] or "")}</td><td>{e(r["losing"] or "")}</td>'
+                  f'<td>{e(r["action"] or "")}</td><td>{e((r["last_checked"] or "")[:10])}</td></tr>' for r in rows)
+    return (f'<section><h2>{head}</h2><details><summary>{len(rows)}</summary><div class="tbl"><table>'
+            f'<tr>{"".join(f"<th>{x}</th>" for x in th)}</tr>{trs}</table></div></details></section>')

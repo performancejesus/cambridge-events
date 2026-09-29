@@ -259,6 +259,7 @@ MIGRATIONS = [
     ("events", "importance_sig", "TEXT"),             # сигнатура входных данных оценки (пересчёт только при изменении)
     ("venues", "capacity", "INTEGER"),                # вместимость (вручную, data/venue_capacity.json)
     ("venues", "precision", "TEXT"),                  # postcode | place (населённый пункт) | city (только «Кембридж»)
+    ("events", "roundup", "INTEGER"),                 # 1 — подборка («Things to do…»), не событие (pipeline/roundups.py, этап 6c)
 ]
 
 

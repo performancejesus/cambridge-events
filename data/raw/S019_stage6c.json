@@ -1,0 +1,27 @@
+[
+ {
+  "source_id": "S019",
+  "title": "Cambridge City v Alvechurch",
+  "url": "https://www.cambridgecityfc.com/event-details/cambridge-city-vs-alvechurch",
+  "kind": "event",
+  "external_id": "2026-10-03|Cambridge City v Alvechurch",
+  "start": "2026-10-03",
+  "end": null,
+  "all_day": true,
+  "venue": "FWD-IP Community Stadium",
+  "address": "West Way, Sawston",
+  "postcode": "CB22 3FG",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "sport",
+   "football"
+  ],
+  "summary": "v Alvechurch",
+  "published": null,
+  "fetched_at": "2026-09-29T10:14:58+00:00"
+ }
+]

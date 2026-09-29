@@ -4,3 +4,4 @@ feedparser
 icalendar
 openpyxl
 anthropic
+pypdf
