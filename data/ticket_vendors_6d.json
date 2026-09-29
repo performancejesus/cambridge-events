@@ -1,69 +1,49 @@
 {
- "window_events": 296,
+ "window_events": 298,
  "window_ids": [
-  1,
   2,
   3,
   4,
   5,
-  32,
-  33,
-  34,
-  35,
-  36,
+  6,
+  7,
+  8,
   37,
   38,
   39,
   40,
   41,
-  110,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
   111,
-  136,
   137,
   138,
-  196,
+  139,
+  142,
+  143,
+  144,
+  145,
   197,
-  211,
+  212,
   234,
-  235,
-  236,
   237,
-  238,
-  239,
   240,
   241,
   242,
   243,
-  274,
-  275,
+  244,
+  249,
+  250,
   278,
   279,
   280,
-  328,
-  329,
-  338,
-  339,
-  340,
-  341,
-  342,
-  343,
-  344,
-  345,
-  346,
-  347,
-  348,
-  349,
-  350,
-  351,
-  352,
-  353,
-  354,
+  283,
+  284,
   355,
-  356,
-  357,
-  358,
-  359,
-  360,
   361,
   362,
   363,
@@ -72,8 +52,26 @@
   366,
   367,
   368,
-  433,
-  434,
+  369,
+  370,
+  371,
+  372,
+  373,
+  375,
+  376,
+  377,
+  378,
+  379,
+  380,
+  381,
+  382,
+  383,
+  384,
+  385,
+  386,
+  387,
+  388,
+  423,
   435,
   437,
   438,
@@ -81,82 +79,56 @@
   447,
   448,
   454,
-  466,
-  467,
-  488,
-  489,
-  490,
-  491,
-  492,
-  494,
-  495,
-  496,
-  497,
+  468,
   499,
   500,
   502,
   503,
   504,
   505,
-  651,
-  656,
+  506,
+  507,
+  508,
+  509,
+  510,
   679,
   680,
   685,
-  813,
-  814,
-  816,
+  692,
   817,
   818,
   819,
+  820,
+  821,
+  822,
   886,
   887,
   888,
-  907,
+  889,
   913,
   917,
   918,
   920,
-  921,
   922,
   923,
-  925,
-  926,
   927,
   928,
-  931,
-  932,
-  933,
-  934,
   935,
-  936,
-  937,
-  938,
-  939,
-  940,
   941,
   943,
   944,
   945,
   946,
   947,
+  948,
+  949,
+  950,
+  951,
+  952,
+  953,
   998,
   999,
-  1001,
-  1002,
-  1003,
-  1004,
-  1005,
-  1006,
-  1007,
-  1008,
-  1009,
-  1010,
-  1011,
-  1012,
   1013,
-  1014,
-  1015,
   1016,
   1017,
   1018,
@@ -165,51 +137,63 @@
   1021,
   1022,
   1023,
-  1234,
+  1024,
+  1025,
+  1026,
+  1027,
+  1028,
+  1029,
+  1030,
+  1031,
+  1032,
+  1033,
+  1034,
+  1035,
+  1036,
+  1037,
+  1038,
   1245,
   1246,
   1248,
   1249,
-  1250,
-  1255,
-  1256,
-  1257,
-  1258,
-  1259,
-  1260,
-  1261,
-  1262,
-  1263,
-  1264,
   1265,
   1266,
   1267,
   1268,
   1269,
   1270,
+  1271,
+  1272,
+  1273,
+  1274,
+  1275,
+  1276,
+  1277,
+  1278,
+  1279,
+  1280,
+  1281,
+  1282,
+  1283,
   1284,
   1285,
   1286,
   1287,
   1288,
-  1290,
-  1291,
-  1292,
-  1293,
-  1294,
-  1295,
-  1296,
-  1297,
   1298,
   1299,
   1300,
   1301,
   1302,
   1303,
-  1347,
-  1348,
+  1304,
+  1305,
+  1306,
+  1307,
   1349,
   1350,
+  1351,
+  1352,
   1356,
   1357,
   1358,
@@ -223,37 +207,31 @@
   1366,
   1367,
   1368,
+  1369,
   1377,
-  1378,
-  1379,
   1380,
+  1381,
+  1382,
+  1383,
+  1384,
   1406,
   1407,
-  1408,
   1410,
-  1414,
   1415,
   1419,
   1421,
   1423,
-  1424,
   1425,
-  1457,
-  1458,
-  1459,
-  1460,
-  1461,
-  1462,
-  1463,
+  1426,
+  1427,
+  1428,
+  1450,
   1464,
   1465,
-  1572,
-  1573,
-  1574,
-  1575,
-  1576,
-  1577,
-  1578,
+  1466,
+  1467,
+  1468,
+  1469,
   1579,
   1580,
   1581,
@@ -261,20 +239,35 @@
   1583,
   1584,
   1585,
-  1614,
+  1586,
+  1587,
+  1588,
+  1589,
+  1590,
+  1591,
+  1592,
+  1593,
+  1594,
+  1595,
+  1596,
   1615,
-  1626,
-  1627,
   1628,
+  1629,
+  1630,
   1649,
   1650,
   1651,
   1652,
-  1735,
-  1736,
-  1737,
-  1738,
-  1739,
+  1653,
+  1654,
+  1655,
+  1656,
+  1657,
+  1658,
+  1659,
+  1660,
+  1661,
+  1662,
   1740,
   1741,
   1742,
@@ -284,51 +277,64 @@
   1746,
   1747,
   1748,
-  1760,
-  1870,
-  1871,
-  1872,
+  1749,
+  1750,
+  1751,
+  1752,
+  1753,
+  1754,
+  1755,
+  1756,
+  1757,
+  1764,
+  1765,
   1873,
-  1893,
+  1885,
   1894,
-  1918,
-  1919,
-  1920,
-  1921,
-  1922,
-  1923
+  1895,
+  1923,
+  1924,
+  1925,
+  2138,
+  2139,
+  2140,
+  2146
  ],
  "window_by_vendor": [
   [
    "не определён",
-   126
-  ],
-  [
-   "Eventbrite",
-   54
+   133
   ],
   [
    "Spektrix (касса площадки)",
-   44
+   52
   ],
   [
-   "Ticket Tailor",
-   16
+   "Eventbrite",
+   49
   ],
   [
    "Cambridge Live (касса Corn Exchange и Guildhall)",
-   11
+   12
   ],
   [
    "Skiddle",
-   10
-  ],
-  [
-   "DigiTickets",
    9
   ],
   [
-   "WeGotTickets",
+   "DigiTickets",
+   8
+  ],
+  [
+   "Ticket Tailor",
+   5
+  ],
+  [
+   "Find a Race",
+   5
+  ],
+  [
+   "своя касса (botanic.cam.ac.uk)",
    4
   ],
   [
@@ -336,11 +342,11 @@
    4
   ],
   [
-   "Find a Race",
-   4
+   "WeGotTickets",
+   3
   ],
   [
-   "The Jockey Club (своя касса)",
+   "своя касса (allevents.in)",
    3
   ],
   [
@@ -348,1178 +354,36 @@
    2
   ],
   [
-   "Planet Ice (своя касса)",
+   "The Jockey Club (своя касса)",
    2
   ],
   [
    "TicketSource",
-   1
+   2
+  ],
+  [
+   "Planet Ice (своя касса)",
+   2
   ],
   [
    "своя касса (rowanhumberstone.org.uk)",
    1
   ],
   [
-   "своя касса (stephnorwood.co.uk)",
+   "TryBooking",
    1
   ],
   [
-   "своя касса (botanic.cam.ac.uk)",
-   1
-  ],
-  [
-   "Fatsoma",
-   1
-  ],
-  [
-   "своя касса (allevents.in)",
-   1
-  ],
-  [
-   "своя касса (cambridgecityfc.com)",
+   "FIXR",
    1
   ]
  ],
  "items": {
-  "v5": [
-   {
-    "rubric": "theme",
-    "title": "A Tribute to Syd Barrett: 80th Anniversary Celebrations",
-    "event_ids": [
-     39
-    ],
-    "importance": 7.9,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "theme",
-    "title": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
-    "event_ids": [
-     435
-    ],
-    "importance": 2.6,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "theme",
-    "title": "Talk by Rob Chapman: Syd Barrett — A Very Irregular Head",
-    "event_ids": [
-     437
-    ],
-    "importance": 3.5,
-    "vendor": "WeGotTickets"
-   },
-   {
-    "rubric": "theme",
-    "title": "Meet the Director + Film Screening: Have You Got It Yet?",
-    "event_ids": [
-     438,
-     439
-    ],
-    "importance": 3.3,
-    "vendor": "WeGotTickets"
-   },
-   {
-    "rubric": "theme",
-    "title": "Cambridge United vs Blackpool",
-    "event_ids": [
-     111
-    ],
-    "importance": 5.5,
-    "vendor": "своя касса (cambridgeunited.com)"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Gianmarco Soresi: The Misery Loves Tour",
-    "event_ids": [
-     34
-    ],
-    "importance": 7.2,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Gilbert O'Sullivan",
-    "event_ids": [
-     494
-    ],
-    "importance": 6.6,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Tez Ilyas: Tez Things I Hate About You",
-    "event_ids": [
-     1008
-    ],
-    "importance": 6.1,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Roachford + Hue and Cry",
-    "event_ids": [
-     41
-    ],
-    "importance": 9.0,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Martin Kemp",
-    "event_ids": [
-     502
-    ],
-    "importance": 6.8,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Shine with Jess Gillam and her Band",
-    "event_ids": [
-     819
-    ],
-    "importance": 6.4,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Don Broco",
-    "event_ids": [
-     35
-    ],
-    "importance": 8.9,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Simon Amstell: I Love It Here",
-    "event_ids": [
-     37
-    ],
-    "importance": 8.4,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Joe Jackson: Hope and Fury Tour",
-    "event_ids": [
-     32
-    ],
-    "importance": 8.7,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Alison Moyet",
-    "event_ids": [
-     38
-    ],
-    "importance": 8.7,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "exhibitions",
-    "title": "Frank Bowling: Seeking the Sublime",
-    "event_ids": [
-     447
-    ],
-    "importance": 7.2,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "exhibitions",
-    "title": "Sunil Gupta: Life with a Camera, 1970–Now",
-    "event_ids": [
-     886
-    ],
-    "importance": 5.9,
-    "vendor": "DigiTickets"
-   },
-   {
-    "rubric": "exhibitions",
-    "title": "A Mughal Songbook: Art, Music and Empire",
-    "event_ids": [
-     448
-    ],
-    "importance": 4.5,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "free",
-    "title": "Museum Late: Frank Bowling",
-    "event_ids": [
-     1299
-    ],
-    "importance": 5.2,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "free",
-    "title": "Exhibition Tour: Sunil Gupta",
-    "event_ids": [
-     931
-    ],
-    "importance": 4.1,
-    "vendor": "DigiTickets"
-   },
-   {
-    "rubric": "free",
-    "title": "Cambridge Carbon Footprint's Open Eco Homes",
-    "event_ids": [
-     454
-    ],
-    "importance": 3.5,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "kids",
-    "title": "Fungi Field Day",
-    "event_ids": [
-     941
-    ],
-    "importance": 3.5,
-    "vendor": "Ticket Tailor"
-   },
-   {
-    "rubric": "kids",
-    "title": "Dance In The Dark",
-    "event_ids": [
-     1021
-    ],
-    "importance": 3.1,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "kids",
-    "title": "Get Curious, Get Creative, Get Scientific",
-    "event_ids": [
-     1350
-    ],
-    "importance": 2.5,
-    "vendor": "своя касса (cambridgesciencecentre.org)"
-   },
-   {
-    "rubric": "out_of_town",
-    "title": "City of Birmingham Symphony Orchestra",
-    "event_ids": [
-     814
-    ],
-    "importance": 6.5,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "out_of_town",
-    "title": "Cambridge South Public Exhibition",
-    "event_ids": [
-     444,
-     445
-    ],
-    "importance": 0,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Fireworks Night",
-    "event_ids": [
-     103
-    ],
-    "importance": 7.0,
-    "vendor": "своя касса (camcityevents.co.uk)"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Cambridge Film Festival",
-    "event_ids": [
-     906
-    ],
-    "importance": 4.8,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "tickets",
-    "title": "Simply Red at Newmarket Racecourse",
-    "event_ids": [
-     209,
-     910,
-     209
-    ],
-    "importance": 10.0,
-    "vendor": "The Jockey Club (своя касса)"
-   },
-   {
-    "rubric": "tickets",
-    "title": "Olly Murs at Newmarket Nights",
-    "event_ids": [
-     909,
-     909
-    ],
-    "importance": 10.0,
-    "vendor": "The Jockey Club (своя касса)"
-   },
-   {
-    "rubric": "tickets",
-    "title": "The Big Retreat Cambridgeshire 2027",
-    "event_ids": [
-     443
-    ],
-    "importance": 4.0,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "cancelled",
-    "title": "MILOŠ & Ksenija Sidorova",
-    "event_ids": [
-     815
-    ],
-    "importance": 0,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "sport",
-    "title": "Bidwells Cambridge Town & Gown 10K",
-    "event_ids": [
-     1575
-    ],
-    "importance": 7.0,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "sport",
-    "title": "Grafham Water Trail Races",
-    "event_ids": [
-     1581
-    ],
-    "importance": 3.3,
-    "vendor": "Find a Race"
-   },
-   {
-    "rubric": "sport",
-    "title": "Great Eastern Run",
-    "event_ids": [
-     1582
-    ],
-    "importance": 3.3,
-    "vendor": "Find a Race"
-   },
-   {
-    "rubric": "sport",
-    "title": "Abington Festival of Running",
-    "event_ids": [
-     1574
-    ],
-    "importance": 3.2,
-    "vendor": "Find a Race"
-   },
-   {
-    "rubric": "sport",
-    "title": "Cambridge United v Northampton Town [EFL Trophy]",
-    "event_ids": [
-     110
-    ],
-    "importance": 2.5,
-    "vendor": "своя касса (cambridgeunited.com)"
-   }
-  ],
-  "v6": [
-   {
-    "rubric": "theme",
-    "title": "A Tribute to Syd Barrett: Official 80th Anniversary Celebrations",
-    "event_ids": [
-     39
-    ],
-    "importance": 7.9,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "theme",
-    "title": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
-    "event_ids": [
-     435
-    ],
-    "importance": 2.6,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "theme",
-    "title": "Talk by Rob Chapman: Syd Barrett — A Very Irregular Head",
-    "event_ids": [
-     437
-    ],
-    "importance": 3.5,
-    "vendor": "WeGotTickets"
-   },
-   {
-    "rubric": "theme",
-    "title": "Roddy Bogawa: talk and outtakes, then Have You Got It Yet? screening",
-    "event_ids": [
-     438,
-     439
-    ],
-    "importance": 3.3,
-    "vendor": "WeGotTickets"
-   },
-   {
-    "rubric": "theme",
-    "title": "Cambridge United v Blackpool",
-    "event_ids": [
-     111
-    ],
-    "importance": 5.5,
-    "vendor": "своя касса (cambridgeunited.com)"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Bidwells Cambridge Town & Gown 10K",
-    "event_ids": [
-     1575
-    ],
-    "importance": 7.0,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Gianmarco Soresi: The Misery Loves Tour",
-    "event_ids": [
-     34
-    ],
-    "importance": 7.2,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Soundhunt: Evan Parker Quartet",
-    "event_ids": [
-     1010
-    ],
-    "importance": 6.3,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Roachford + Hue and Cry",
-    "event_ids": [
-     41
-    ],
-    "importance": 9.0,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Antony Szmierek",
-    "event_ids": [
-     1022
-    ],
-    "importance": 6.4,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Shine with Jess Gillam and her Band",
-    "event_ids": [
-     819
-    ],
-    "importance": 6.4,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Joe Jackson: Hope and Fury Tour",
-    "event_ids": [
-     32
-    ],
-    "importance": 8.7,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Don Broco",
-    "event_ids": [
-     35
-    ],
-    "importance": 8.9,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "London City Ballet: Firebird",
-    "event_ids": [
-     240
-    ],
-    "importance": 4.9,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Footlights Tour Show 2026: Prize Cow (For My Best Son)",
-    "event_ids": [
-     3
-    ],
-    "importance": 6.2,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "cinema",
-    "title": "Heart of the Beast",
-    "event_ids": [
-     1918
-    ],
-    "importance": 2.3,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "talks",
-    "title": "Anarchical Antiquity: lecture by Professor Josephine Crawley Quinn",
-    "event_ids": [
-     1923
-    ],
-    "importance": 6.0,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "talks",
-    "title": "Spotlight Talk: Women Weavers — Thread, Memory, Identity",
-    "event_ids": [
-     1296
-    ],
-    "importance": 2.5,
-    "vendor": "DigiTickets"
-   },
-   {
-    "rubric": "exhibitions",
-    "title": "Frank Bowling: Seeking the Sublime",
-    "event_ids": [
-     447
-    ],
-    "importance": 7.2,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "exhibitions",
-    "title": "Sunil Gupta: Life with a Camera, 1970 – Now",
-    "event_ids": [
-     886
-    ],
-    "importance": 5.9,
-    "vendor": "DigiTickets"
-   },
-   {
-    "rubric": "exhibitions",
-    "title": "A Mughal Songbook: Art, Music and Empire",
-    "event_ids": [
-     448
-    ],
-    "importance": 4.5,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "free",
-    "title": "Regular sessions in libraries",
-    "event_ids": [
-     1356,
-     1357,
-     1358,
-     1359,
-     1360,
-     1361,
-     1362,
-     1363,
-     1364,
-     1365,
-     1366,
-     1367
-    ],
-    "importance": 2.5,
-    "vendor": "Eventbrite"
-   },
-   {
-    "rubric": "free",
-    "title": "Organ recital: Paul Greally, Westminster Abbey",
-    "event_ids": [
-     1583
-    ],
-    "importance": 3.7,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "free",
-    "title": "Exhibition tour: Sunil Gupta, Life with a Camera",
-    "event_ids": [
-     931
-    ],
-    "importance": 4.1,
-    "vendor": "DigiTickets"
-   },
-   {
-    "rubric": "kids",
-    "title": "Dance In The Dark",
-    "event_ids": [
-     1021
-    ],
-    "importance": 3.1,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "kids",
-    "title": "STEMtots – Space Exploration",
-    "event_ids": [
-     1347
-    ],
-    "importance": 2.5,
-    "vendor": "своя касса (cambridgesciencecentre.org)"
-   },
-   {
-    "rubric": "kids",
-    "title": "Toddler Time: Toys & Games",
-    "event_ids": [
-     1626
-    ],
-    "importance": 2.5,
-    "vendor": "Ticket Tailor"
-   },
-   {
-    "rubric": "sport",
-    "title": "Cambridge City v Alvechurch",
-    "event_ids": [
-     1614
-    ],
-    "importance": 2.5,
-    "vendor": "своя касса (cambridgecityfc.com)"
-   },
-   {
-    "rubric": "sport",
-    "title": "Cambridge United v Northampton Town [EFLT]",
-    "event_ids": [
-     110
-    ],
-    "importance": 2.5,
-    "vendor": "своя касса (cambridgeunited.com)"
-   },
-   {
-    "rubric": "sport",
-    "title": "Abington Festival of Running (take part)",
-    "event_ids": [
-     1574
-    ],
-    "importance": 3.2,
-    "vendor": "Find a Race"
-   },
-   {
-    "rubric": "out_of_town",
-    "title": "Gilbert O'Sullivan",
-    "event_ids": [
-     494
-    ],
-    "importance": 6.6,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "out_of_town",
-    "title": "Dubai Future Champions Festival",
-    "event_ids": [
-     197
-    ],
-    "importance": 4.6,
-    "vendor": "The Jockey Club (своя касса)"
-   },
-   {
-    "rubric": "out_of_town",
-    "title": "City of Birmingham Symphony Orchestra",
-    "event_ids": [
-     814
-    ],
-    "importance": 6.5,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Mill Road Winter Fair 2026 — date confirmed",
-    "event_ids": [
-     133
-    ],
-    "importance": 6.8,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Fireworks Night",
-    "event_ids": [
-     103
-    ],
-    "importance": 7.0,
-    "vendor": "своя касса (camcityevents.co.uk)"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Simply Red at Newmarket Nights",
-    "event_ids": [
-     910,
-     209,
-     209
-    ],
-    "importance": 10.0,
-    "vendor": "The Jockey Club (своя касса)"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Olly Murs at Newmarket Nights",
-    "event_ids": [
-     909,
-     909
-    ],
-    "importance": 10.0,
-    "vendor": "The Jockey Club (своя касса)"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Cambridge Beer Festival 2027",
-    "event_ids": [
-     131
-    ],
-    "importance": 6.8,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "cancelled",
-    "title": "MILOŠ & Ksenija Sidorova",
-    "event_ids": [
-     815
-    ],
-    "importance": 0,
-    "vendor": "Spektrix (касса площадки)"
-   }
-  ],
-  "v7": [
-   {
-    "rubric": "theme",
-    "title": "A Tribute to Syd Barrett: Official 80th Anniversary Celebrations",
-    "event_ids": [
-     39
-    ],
-    "importance": 7.9,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "theme",
-    "title": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
-    "event_ids": [
-     435
-    ],
-    "importance": 2.6,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "theme",
-    "title": "Rob Chapman: Syd Barrett, A Very Irregular Head",
-    "event_ids": [
-     437
-    ],
-    "importance": 3.5,
-    "vendor": "WeGotTickets"
-   },
-   {
-    "rubric": "theme",
-    "title": "Meet the director + Have You Got It Yet? screening",
-    "event_ids": [
-     438,
-     439
-    ],
-    "importance": 3.3,
-    "vendor": "WeGotTickets"
-   },
-   {
-    "rubric": "theme",
-    "title": "Cambridge United v Blackpool",
-    "event_ids": [
-     111
-    ],
-    "importance": 5.5,
-    "vendor": "своя касса (cambridgeunited.com)"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Gianmarco Soresi: The Misery Loves Tour",
-    "event_ids": [
-     34
-    ],
-    "importance": 7.2,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Bidwells Cambridge Town & Gown 10K",
-    "event_ids": [
-     1575
-    ],
-    "importance": 7.0,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Tez Ilyas: Tez Things I Hate About You",
-    "event_ids": [
-     1008
-    ],
-    "importance": 6.1,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekend_1",
-    "title": "Soundhunt: Evan Parker Quartet",
-    "event_ids": [
-     1010
-    ],
-    "importance": 6.3,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Roachford + Hue and Cry",
-    "event_ids": [
-     41
-    ],
-    "importance": 9.0,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Antony Szmierek",
-    "event_ids": [
-     1022
-    ],
-    "importance": 6.4,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Shine with Jess Gillam and her Band",
-    "event_ids": [
-     819
-    ],
-    "importance": 6.4,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekend_2",
-    "title": "Shiny New Model Festival 2026",
-    "event_ids": [
-     1020
-    ],
-    "importance": 4.6,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Joe Jackson: Hope and Fury Tour",
-    "event_ids": [
-     32
-    ],
-    "importance": 8.7,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Flo & Joan: With Feeling",
-    "event_ids": [
-     1002
-    ],
-    "importance": 6.9,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "The Lemonheads",
-    "event_ids": [
-     1003
-    ],
-    "importance": 6.9,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "Don Broco",
-    "event_ids": [
-     35
-    ],
-    "importance": 8.9,
-    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "The Footlights Tour Show 2026: Prize Cow (for my best son)",
-    "event_ids": [
-     3
-    ],
-    "importance": 6.2,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "weekdays",
-    "title": "London City Ballet: Firebird",
-    "event_ids": [
-     240
-    ],
-    "importance": 4.9,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "talks",
-    "title": "Anarchical Antiquity — lecture by Professor Josephine Crawley Quinn",
-    "event_ids": [
-     1923
-    ],
-    "importance": 6.0,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "talks",
-    "title": "Spotlight Talk: Kettle's Yard Rugs",
-    "event_ids": [
-     1298
-    ],
-    "importance": 2.5,
-    "vendor": "DigiTickets"
-   },
-   {
-    "rubric": "exhibitions",
-    "title": "Frank Bowling: Seeking the Sublime",
-    "event_ids": [
-     447
-    ],
-    "importance": 7.2,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "exhibitions",
-    "title": "Sunil Gupta: Life with a Camera, 1970 – Now",
-    "event_ids": [
-     886
-    ],
-    "importance": 5.9,
-    "vendor": "DigiTickets"
-   },
-   {
-    "rubric": "free",
-    "title": "Organ recital: Paul Greally, Westminster Abbey",
-    "event_ids": [
-     1583
-    ],
-    "importance": 3.7,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "free",
-    "title": "Cambridge Carbon Footprint's Open Eco Homes",
-    "event_ids": [
-     454
-    ],
-    "importance": 3.5,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "free",
-    "title": "Meet the Cows",
-    "event_ids": [
-     241
-    ],
-    "importance": 3.0,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "free",
-    "title": "Regular sessions in libraries",
-    "event_ids": [
-     1356,
-     1357,
-     1358,
-     1359,
-     1360,
-     1361,
-     1362,
-     1363,
-     1364,
-     1365,
-     1366,
-     1367
-    ],
-    "importance": 2.5,
-    "vendor": "Eventbrite"
-   },
-   {
-    "rubric": "kids",
-    "title": "Dance In The Dark",
-    "event_ids": [
-     1021
-    ],
-    "importance": 3.1,
-    "vendor": "Spektrix (касса площадки)"
-   },
-   {
-    "rubric": "kids",
-    "title": "Fungi Field Day",
-    "event_ids": [
-     941
-    ],
-    "importance": 3.5,
-    "vendor": "Ticket Tailor"
-   },
-   {
-    "rubric": "sport",
-    "title": "Cambridge RUFC v Camborne",
-    "event_ids": [
-     1615
-    ],
-    "importance": 2.5,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "sport",
-    "title": "Cambridge United v Northampton Town [EFLT]",
-    "event_ids": [
-     110
-    ],
-    "importance": 2.5,
-    "vendor": "своя касса (cambridgeunited.com)"
-   },
-   {
-    "rubric": "sport",
-    "title": "Cambridge City v Alvechurch",
-    "event_ids": [
-     1614
-    ],
-    "importance": 2.5,
-    "vendor": "своя касса (cambridgecityfc.com)"
-   },
-   {
-    "rubric": "sport",
-    "title": "Peterborough Phantoms v Swindon Wildcats",
-    "event_ids": [
-     1893
-    ],
-    "importance": 2.5,
-    "vendor": "Planet Ice (своя касса)"
-   },
-   {
-    "rubric": "sport",
-    "title": "Peterborough Phantoms v Hull Seahawks",
-    "event_ids": [
-     1894
-    ],
-    "importance": 2.5,
-    "vendor": "Planet Ice (своя касса)"
-   },
-   {
-    "rubric": "sport",
-    "title": "AEPG Great Eastern Run",
-    "event_ids": [
-     1582
-    ],
-    "importance": 3.3,
-    "vendor": "Find a Race"
-   },
-   {
-    "rubric": "out_of_town",
-    "title": "Martin Kemp",
-    "event_ids": [
-     502
-    ],
-    "importance": 6.8,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "out_of_town",
-    "title": "Gilbert O'Sullivan",
-    "event_ids": [
-     494
-    ],
-    "importance": 6.6,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "out_of_town",
-    "title": "Russell Watson",
-    "event_ids": [
-     497
-    ],
-    "importance": 6.2,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "out_of_town",
-    "title": "Sun Chariot Day",
-    "event_ids": [
-     196
-    ],
-    "importance": 4.7,
-    "vendor": "The Jockey Club (своя касса)"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Mill Road Winter Fair 2026 — date confirmed",
-    "event_ids": [
-     133
-    ],
-    "importance": 6.8,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Fireworks Night",
-    "event_ids": [
-     103
-    ],
-    "importance": 7.0,
-    "vendor": "своя касса (camcityevents.co.uk)"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Cambridge Film Festival",
-    "event_ids": [
-     906
-    ],
-    "importance": 4.8,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Newmarket Nights 2027: Olly Murs and Simply Red announced",
-    "event_ids": [
-     909,
-     910
-    ],
-    "importance": 10.0,
-    "vendor": "The Jockey Club (своя касса)"
-   },
-   {
-    "rubric": "new_announcements",
-    "title": "Cambridge Beer Festival 2027",
-    "event_ids": [
-     131
-    ],
-    "importance": 6.8,
-    "vendor": "не определён"
-   },
-   {
-    "rubric": "cancelled",
-    "title": "MILOŠ & Ksenija Sidorova",
-    "event_ids": [
-     815
-    ],
-    "importance": 0,
-    "vendor": "Spektrix (касса площадки)"
-   }
-  ]
+  "v5": [],
+  "v6": [],
+  "v7": []
  },
  "events": {
-  "1": {
-   "event_id": 1,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.camdram.net/shows/2026-we-will-rock-you",
-   "checked_at": "2026-09-29T14:48:36+00:00",
-   "importance": 2.3
-  },
   "2": {
    "event_id": 2,
    "vendor": "Spektrix (касса площадки)",
@@ -1556,50 +420,29 @@
    "checked_at": "2026-09-29T14:49:02+00:00",
    "importance": 2.5
   },
-  "32": {
-   "event_id": 32,
-   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
-   "vendor_host": "cornex.co.uk",
-   "method": "кнопка покупки на свой сайт",
-   "page_url": "https://www.cornex.co.uk/events/joe-jackson-hope-and-fury-tour-2026",
-   "checked_at": "2026-09-29T14:49:05+00:00",
-   "importance": 8.7
+  "6": {
+   "event_id": 6,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.camdram.net/shows/2026-midnight-train-to-nowhere-the-adc",
+   "importance": 2.3
   },
-  "33": {
-   "event_id": 33,
-   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
-   "vendor_host": "cambridgelivetickets.co.uk",
-   "method": "переход по кнопке покупки → кнопка покупки на свой сайт",
-   "page_url": "https://www.cornex.co.uk/events/steve-hackett-best-of-genesis-solo-gems",
-   "checked_at": "2026-09-29T14:49:11+00:00",
-   "importance": 8.6
+  "7": {
+   "event_id": 7,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.camdram.net/shows/footlights-adc-smokers-michaelmas-2026",
+   "importance": 5.6
   },
-  "34": {
-   "event_id": 34,
-   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
-   "vendor_host": "cornex.co.uk",
-   "method": "кнопка покупки на свой сайт",
-   "page_url": "https://www.cornex.co.uk/events/gianmarco-soresi-the-misery-loves-tour",
-   "checked_at": "2026-09-29T14:49:11+00:00",
-   "importance": 7.2
-  },
-  "35": {
-   "event_id": 35,
-   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
-   "vendor_host": "cambridgelivetickets.co.uk",
-   "method": "переход по кнопке покупки → кнопка покупки на свой сайт",
-   "page_url": "https://www.cornex.co.uk/events/don-broco",
-   "checked_at": "2026-09-29T14:49:13+00:00",
-   "importance": 8.9
-  },
-  "36": {
-   "event_id": 36,
-   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
-   "vendor_host": "cambridgelivetickets.co.uk",
-   "method": "переход по кнопке покупки → кнопка покупки на свой сайт",
-   "page_url": "https://www.cornex.co.uk/events/kevin-bloody-wilson",
-   "checked_at": "2026-09-29T14:49:15+00:00",
-   "importance": 6.8
+  "8": {
+   "event_id": 8,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "adctheatre.com",
+   "method": "переход по кнопке покупки → кассовая система в коде страницы",
+   "page_url": "https://www.camdram.net/shows/2026-the-guy-who-didnt-like-musicals",
+   "importance": 2.3
   },
   "37": {
    "event_id": 37,
@@ -1646,23 +489,53 @@
    "checked_at": "2026-09-29T14:49:26+00:00",
    "importance": 9.0
   },
-  "103": {
-   "event_id": 103,
-   "vendor": "своя касса (camcityevents.co.uk)",
-   "vendor_host": "camcityevents.co.uk",
+  "42": {
+   "event_id": 42,
+   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
+   "vendor_host": "cornex.co.uk",
    "method": "кнопка покупки на свой сайт",
-   "page_url": "https://www.camcityevents.co.uk/events/fireworks-night-2026",
-   "checked_at": "2026-09-29T14:49:29+00:00",
-   "importance": 7.0
+   "page_url": "https://www.cornex.co.uk/events/alice-cooper-devil-on-my-shoulder-book-tour",
+   "importance": 9.1
   },
-  "110": {
-   "event_id": 110,
-   "vendor": "своя касса (cambridgeunited.com)",
-   "vendor_host": "cambridgeunited.com",
+  "43": {
+   "event_id": 43,
+   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
+   "vendor_host": "cambridgelivetickets.co.uk",
+   "method": "переход по кнопке покупки → кнопка покупки на свой сайт",
+   "page_url": "https://www.cornex.co.uk/events/legends-of-the-dancefloor-2",
+   "importance": 4.9
+  },
+  "44": {
+   "event_id": 44,
+   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
+   "vendor_host": "cornex.co.uk",
    "method": "кнопка покупки на свой сайт",
-   "page_url": "https://www.cambridgeunited.com/fixture/list/57",
-   "checked_at": "2026-09-29T14:49:32+00:00",
-   "importance": 2.5
+   "page_url": "https://www.cornex.co.uk/events/fin-taylor",
+   "importance": 5.8
+  },
+  "45": {
+   "event_id": 45,
+   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
+   "vendor_host": "cornex.co.uk",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.cornex.co.uk/events/the-big-pants-party",
+   "importance": 4.7
+  },
+  "46": {
+   "event_id": 46,
+   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
+   "vendor_host": "cornex.co.uk",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.cornex.co.uk/events/nish-kumar-angry-humour-from-a-really-nice-guy",
+   "importance": 8.4
+  },
+  "47": {
+   "event_id": 47,
+   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
+   "vendor_host": "cambridgelivetickets.co.uk",
+   "method": "переход по кнопке покупки → кнопка покупки на свой сайт",
+   "page_url": "https://www.cornex.co.uk/events/the-beat-dance-crazed-too-uk-tour",
+   "importance": 7.4
   },
   "111": {
    "event_id": 111,
@@ -1672,33 +545,6 @@
    "page_url": "https://www.cambridgeunited.com/fixture/list/57",
    "checked_at": "2026-09-29T14:49:34+00:00",
    "importance": 5.5
-  },
-  "131": {
-   "event_id": 131,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.cambridgebeerfestival.com/event/cambridge-beer-festival-2027/",
-   "checked_at": "2026-09-29T14:49:49+00:00",
-   "importance": 6.8
-  },
-  "133": {
-   "event_id": 133,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.millroadwinterfair.org/",
-   "checked_at": "2026-09-29T14:49:54+00:00",
-   "importance": 6.8
-  },
-  "136": {
-   "event_id": 136,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://talks.cam.ac.uk/talk/index/272767",
-   "checked_at": "2026-09-29T14:50:05+00:00",
-   "importance": 2.6
   },
   "137": {
    "event_id": 137,
@@ -1718,14 +564,45 @@
    "checked_at": "2026-09-29T14:50:27+00:00",
    "importance": 3.4
   },
-  "196": {
-   "event_id": 196,
-   "vendor": "The Jockey Club (своя касса)",
-   "vendor_host": "thejockeyclub.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/sun-chariot-day/",
-   "checked_at": "2026-09-29T14:50:27+00:00",
-   "importance": 4.7
+  "139": {
+   "event_id": 139,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://talks.cam.ac.uk/talk/index/273127",
+   "importance": 1.6
+  },
+  "142": {
+   "event_id": 142,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://talks.cam.ac.uk/talk/index/272982",
+   "importance": 3.5
+  },
+  "143": {
+   "event_id": 143,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://talks.cam.ac.uk/talk/index/244699",
+   "importance": 3.0
+  },
+  "144": {
+   "event_id": 144,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://talks.cam.ac.uk/talk/index/247258",
+   "importance": 2.6
+  },
+  "145": {
+   "event_id": 145,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://talks.cam.ac.uk/talk/index/272404",
+   "importance": 2.6
   },
   "197": {
    "event_id": 197,
@@ -1736,23 +613,13 @@
    "checked_at": "2026-09-29T14:50:27+00:00",
    "importance": 4.6
   },
-  "209": {
-   "event_id": 209,
-   "vendor": "The Jockey Club (своя касса)",
-   "vendor_host": "thejockeyclub.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/newmarket-nights/simply-red/",
-   "checked_at": "2026-09-29T14:50:27+00:00",
-   "importance": 10.0
-  },
-  "211": {
-   "event_id": 211,
+  "212": {
+   "event_id": 212,
    "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
    "vendor_host": "cambridgelivetickets.co.uk",
    "method": "кнопка покупки на свой сайт",
-   "page_url": "https://www.cambridgelivetickets.co.uk/events/tom-mcrae",
-   "checked_at": "2026-09-29T14:50:28+00:00",
-   "importance": 4.7
+   "page_url": "https://www.cambridgelivetickets.co.uk/events/miles-pillinger-quintet-the-sunday-jazz-sessions",
+   "importance": 2.6
   },
   "234": {
    "event_id": 234,
@@ -1763,24 +630,6 @@
    "checked_at": "2026-09-29T14:50:33+00:00",
    "importance": 3.4
   },
-  "235": {
-   "event_id": 235,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://cambridge105.co.uk/event/the-charlotte-carrivick-band-at-stapleford-granary/",
-   "checked_at": "2026-09-29T14:50:37+00:00",
-   "importance": 2.9
-  },
-  "236": {
-   "event_id": 236,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://cambridge105.co.uk/event/dowsing-at-wandlebury-park/",
-   "checked_at": "2026-09-29T14:50:42+00:00",
-   "importance": 3.3
-  },
   "237": {
    "event_id": 237,
    "vendor": "не определён",
@@ -1789,24 +638,6 @@
    "page_url": "https://cambridge105.co.uk/event/103157/",
    "checked_at": "2026-09-29T14:50:46+00:00",
    "importance": 2.5
-  },
-  "238": {
-   "event_id": 238,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://cambridge105.co.uk/event/the-sampson-orchestra-of-cambridge-40th-anniversary/",
-   "checked_at": "2026-09-29T14:50:50+00:00",
-   "importance": 3.2
-  },
-  "239": {
-   "event_id": 239,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://cambridge105.co.uk/event/richie-ros-at-cottenham-communty-centre/",
-   "checked_at": "2026-09-29T14:50:53+00:00",
-   "importance": 2.6
   },
   "240": {
    "event_id": 240,
@@ -1844,23 +675,29 @@
    "checked_at": "2026-09-29T14:51:13+00:00",
    "importance": 2.5
   },
-  "274": {
-   "event_id": 274,
-   "vendor": "Skiddle",
-   "vendor_host": "skiddle.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.skiddle.com/whats-on/Cambridge/The-Maltings-Ely/The-Fillers-plus-support-from-The-Blokes-The-Strokes-Tribute/41991356/",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 3.0
+  "244": {
+   "event_id": 244,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://cambridge105.co.uk/event/alice-cooper-in-conversation/",
+   "importance": 8.6
   },
-  "275": {
-   "event_id": 275,
-   "vendor": "Skiddle",
-   "vendor_host": "skiddle.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.skiddle.com/whats-on/Peterborough/The-Lounge-St-Ives/Locked-In-Tour-w-Alcemist-X-ESS-Yasmin-C--More--DNB/42604855/",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 3.4
+  "249": {
+   "event_id": 249,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/finlay-christie/",
+   "importance": 4.8
+  },
+  "250": {
+   "event_id": 250,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/cambridge-events/cambridge-corn-exchange/the-beat-starring-dave-wakeling/7405190",
+   "importance": 6.9
   },
   "278": {
    "event_id": 278,
@@ -1889,176 +726,21 @@
    "checked_at": "2026-09-29T14:51:13+00:00",
    "importance": 3.3
   },
-  "328": {
-   "event_id": 328,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
+  "283": {
+   "event_id": 283,
+   "vendor": "Skiddle",
+   "vendor_host": "skiddle.com",
    "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/agile-cambridge-2026-tickets-1968054456859",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 3.0
-  },
-  "329": {
-   "event_id": 329,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/biochemistry-postdoc-symposium-2026-tickets-1994659080003",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.5
-  },
-  "338": {
-   "event_id": 338,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/cambridge-overbury-music-night-2026-tickets-1992928630181",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.4
-  },
-  "339": {
-   "event_id": 339,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/high-notes-and-low-jokes-tickets-1987774899233",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 3.3
-  },
-  "340": {
-   "event_id": 340,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/women-in-poetry-with-pele-cox-in-cambridge-tickets-1997975491479",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.0
-  },
-  "341": {
-   "event_id": 341,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.com/e/fitness-pilates-tickets-1259777290789",
-   "checked_at": "2026-09-29T14:51:13+00:00",
+   "page_url": "https://www.skiddle.com/whats-on/Chelmsford/Rugby-Club-Bishops-Stortford/Halloween-charity-night/42700844/",
    "importance": 2.6
   },
-  "342": {
-   "event_id": 342,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
+  "284": {
+   "event_id": 284,
+   "vendor": "Skiddle",
+   "vendor_host": "skiddle.com",
    "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/an-evening-with-rachel-harrison-in-cambridge-tickets-1990631022976",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.3
-  },
-  "343": {
-   "event_id": 343,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.com/e/meadows-comedy-night-tickets-1996206150332",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 4.7
-  },
-  "344": {
-   "event_id": 344,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/cambridges-vintage-kilo-sale-tickets-1996234227311",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.5
-  },
-  "345": {
-   "event_id": 345,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/cars-and-coffee-cambridge-tickets-1977294716725",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.5
-  },
-  "346": {
-   "event_id": 346,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/mundane-victorian-semi-to-designer-deep-retrofit-eco-home-sedgwick-st-tickets-1998355761878",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.5
-  },
-  "347": {
-   "event_id": 347,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/nct-cambridge-autumn-nearly-new-sale-tickets-1995768527390",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.5
-  },
-  "348": {
-   "event_id": 348,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/piano-bar-de-luca-saturdays-tickets-1999257001510",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.6
-  },
-  "349": {
-   "event_id": 349,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/sunset-social-fundraiser-tickets-1991769193274",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.7
-  },
-  "350": {
-   "event_id": 350,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/the-mayors-home-with-wall-insulation-and-solar-pv-abbey-rd-tickets-1998370909184",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.5
-  },
-  "351": {
-   "event_id": 351,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.com/e/im-a-groomer-get-me-out-of-hair-tickets-1986342859965",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 3.0
-  },
-  "352": {
-   "event_id": 352,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.com/e/makani-dabkeh-and-drumming-circle-2026-tickets-1980866994504",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.5
-  },
-  "353": {
-   "event_id": 353,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/sex-and-the-city-cambridge-women-town-and-gown-n-tickets-1358088793139",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.6
-  },
-  "354": {
-   "event_id": 354,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/the-quirky-wedding-fayre-cambridgeshire-tickets-1859331192649",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.5
+   "page_url": "https://www.skiddle.com/whats-on/Cambridge/Newmarket-Football-Club/Oktoberfest-Newmarket-2026/42699326/",
+   "importance": 3.1
   },
   "355": {
    "event_id": 355,
@@ -2066,51 +748,6 @@
    "vendor_host": "eventbrite.co.uk",
    "method": "ссылка события ведёт к продавцу",
    "page_url": "https://www.eventbrite.co.uk/e/flow-cytometry-courses-october-2026-tickets-1862606489149",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 3.0
-  },
-  "356": {
-   "event_id": 356,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/royston-fundraising-event-halloween-pottery-tickets-1997140021566",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.5
-  },
-  "357": {
-   "event_id": 357,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/big-deal-comedy-new-act-night-tickets-1988831141482",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.6
-  },
-  "358": {
-   "event_id": 358,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/camrares-raresummit26-tickets-1981162447211",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 2.6
-  },
-  "359": {
-   "event_id": 359,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/pop-up-speakeasy-jazz-club-tram-depot-tickets-1997983241660",
-   "checked_at": "2026-09-29T14:51:13+00:00",
-   "importance": 1.7
-  },
-  "360": {
-   "event_id": 360,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.com/e/2026-european-sift-ms-symposium-tickets-1992630645902",
    "checked_at": "2026-09-29T14:51:13+00:00",
    "importance": 3.0
   },
@@ -2186,21 +823,165 @@
    "checked_at": "2026-09-29T14:51:13+00:00",
    "importance": 2.5
   },
-  "433": {
-   "event_id": 433,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.cambridgeindependent.co.uk/whats-on/sense-and-sensibility-digger-and-jonathan-glazer-season-wh-9483579/",
-   "importance": 3.3
+  "369": {
+   "event_id": 369,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/sylvia-plath-witchcraft-radical-poetry-tickets-1997561656688",
+   "importance": 3.6
   },
-  "434": {
-   "event_id": 434,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.cambridgeindependent.co.uk/whats-on/sense-and-sensibility-digger-and-jonathan-glazer-season-wh-9483579/",
-   "importance": 3.8
+  "370": {
+   "event_id": 370,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/in-conversation-with-simon-woolley-tickets-1989137317262",
+   "importance": 7.2
+  },
+  "371": {
+   "event_id": 371,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/the-scapegoat-the-brilliant-brief-life-of-the-duke-of-buckingham-tickets-1994669024748",
+   "importance": 5.2
+  },
+  "372": {
+   "event_id": 372,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/modern-slavery-intelligence-network-conference-2026-tickets-1987303054934",
+   "importance": 3.0
+  },
+  "373": {
+   "event_id": 373,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/people-leaders-lab-october-2026-tickets-1999017304570",
+   "importance": 2.6
+  },
+  "375": {
+   "event_id": 375,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/celia-webb-singing-workshop-tickets-1997897159185",
+   "importance": 2.5
+  },
+  "376": {
+   "event_id": 376,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/chasing-light-the-art-of-landscape-photography-cps26-tickets-1993596944126",
+   "importance": 2.2
+  },
+  "377": {
+   "event_id": 377,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/continuum-renewal-tickets-1996638950850",
+   "importance": 3.0
+  },
+  "378": {
+   "event_id": 378,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/deep-retrofit-of-1930s-semi-under-construction-greville-rd-tickets-1998479375610",
+   "importance": 2.5
+  },
+  "379": {
+   "event_id": 379,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/lights-and-shadows-a-crash-course-about-things-that-make-your-photos-tickets-1987333893172",
+   "importance": 1.9
+  },
+  "380": {
+   "event_id": 380,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/love-in-three-acts-exhibition-screening-artist-talk-tickets-2000709182021",
+   "importance": 2.5
+  },
+  "381": {
+   "event_id": 381,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/the-changing-seasons-in-cambridge-cps-26-talks-tickets-1988485063353",
+   "importance": 1.9
+  },
+  "382": {
+   "event_id": 382,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/the-joy-of-bird-photography-with-robin-lowry-cps-26-talks-tickets-1987050604849",
+   "importance": 1.9
+  },
+  "383": {
+   "event_id": 383,
+   "vendor": "The Jockey Club (своя касса)",
+   "vendor_host": "thejockeyclub.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/vintage-furniture-and-fashion-flea/",
+   "importance": 3.0
+  },
+  "384": {
+   "event_id": 384,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/witness-to-service-an-army-photographers-perspective-cps-26-talks-tickets-1987323385744",
+   "importance": 1.9
+  },
+  "385": {
+   "event_id": 385,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.com",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.com/e/a-celebration-of-arctic-monkeys-20th-anniversary-of-whatever-people-say-tickets-1987389864584",
+   "importance": 2.3
+  },
+  "386": {
+   "event_id": 386,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.com",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.com/e/indian-cultural-society-cambridge-durga-puja-2026-17th-and-18th-october-tickets-1999372232168",
+   "importance": 2.6
+  },
+  "387": {
+   "event_id": 387,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/creative-street-photography-talk-with-matt-hall-cps-26-talks-tickets-1987052982962",
+   "importance": 2.5
+  },
+  "388": {
+   "event_id": 388,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.com",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.com/e/the-worst-kept-secret-tour-cambridge-tickets-1989375354237",
+   "importance": 2.6
+  },
+  "423": {
+   "event_id": 423,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/90s-music-and-quiz-night-tickets-2000263178011",
+   "importance": 2.6
   },
   "435": {
    "event_id": 435,
@@ -2208,6 +989,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.cambridgeindependent.co.uk/whats-on/review-clowns-and-jugglers-the-songs-of-syd-barrett-9484238/",
+   "checked_at": "2026-09-29T15:10:29+00:00",
    "importance": 2.6
   },
   "437": {
@@ -2234,31 +1016,8 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.cambridgeindependent.co.uk/whats-on/syd-barrett-s-sister-rosemary-breen-the-interest-that-s-st-9484462/",
+   "checked_at": "2026-09-29T15:10:31+00:00",
    "importance": 3.3
-  },
-  "443": {
-   "event_id": 443,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.cambridgeindependent.co.uk/whats-on/in-pictures-ruby-wax-gail-porter-mr-motivator-and-more-le-9483768/",
-   "importance": 4.0
-  },
-  "444": {
-   "event_id": 444,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.cambridgeindependent.co.uk/news/4-000-homes-schools-shops-and-riverside-country-park-propo-9484381/",
-   "importance": 4.0
-  },
-  "445": {
-   "event_id": 445,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.cambridgeindependent.co.uk/news/4-000-homes-schools-shops-and-riverside-country-park-propo-9484381/",
-   "importance": 4.0
   },
   "447": {
    "event_id": 447,
@@ -2284,106 +1043,16 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.cambridgeindependent.co.uk/news/find-out-more-about-air-source-heat-pumps-at-cambridge-carbo-9484072/",
+   "checked_at": "2026-09-29T15:10:41+00:00",
    "importance": 3.5
   },
-  "466": {
-   "event_id": 466,
+  "468": {
+   "event_id": 468,
    "vendor": "не определён",
    "vendor_host": null,
    "method": "страница недоступна: FetchError",
    "page_url": "https://www.theposh.com/fixtures",
-   "checked_at": "2026-09-29T14:52:13+00:00",
    "importance": 4.0
-  },
-  "467": {
-   "event_id": 467,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "страница недоступна: FetchError",
-   "page_url": "https://www.theposh.com/fixtures",
-   "checked_at": "2026-09-29T14:52:15+00:00",
-   "importance": 2.5
-  },
-  "488": {
-   "event_id": 488,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.ents24.com/biggleswade-events/the-bigg-theatre/eban-brown-former-lead-singer-of-the-stylistics/7519676",
-   "checked_at": "2026-09-29T14:52:18+00:00",
-   "importance": 3.0
-  },
-  "489": {
-   "event_id": 489,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.ents24.com/ely-events/the-maltings/let-there-bdc/7410641",
-   "checked_at": "2026-09-29T14:52:21+00:00",
-   "importance": 2.5
-  },
-  "490": {
-   "event_id": 490,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.visitcambridge.org/event/kathryn-roberts-and-sean-lakeman-in-concert/",
-   "checked_at": "2026-09-29T14:52:49+00:00",
-   "importance": 3.6
-  },
-  "491": {
-   "event_id": 491,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.ents24.com/ely-events/the-maltings/ely-record-fair/7518823",
-   "checked_at": "2026-09-29T14:52:50+00:00",
-   "importance": 2.3
-  },
-  "492": {
-   "event_id": 492,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.ents24.com/ely-events/the-maltings/the-fillers/7432976",
-   "checked_at": "2026-09-29T14:52:52+00:00",
-   "importance": 2.5
-  },
-  "494": {
-   "event_id": 494,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/gilbert-osullivan/7464418",
-   "checked_at": "2026-09-29T14:52:55+00:00",
-   "importance": 6.6
-  },
-  "495": {
-   "event_id": 495,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.ents24.com/peterborough-events/key-theatre/finlay-christie/7497339",
-   "checked_at": "2026-09-29T14:52:57+00:00",
-   "importance": 3.4
-  },
-  "496": {
-   "event_id": 496,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.ents24.com/peterborough-events/key-theatre/trextasy/7493653",
-   "checked_at": "2026-09-29T14:52:59+00:00",
-   "importance": 2.9
-  },
-  "497": {
-   "event_id": 497,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/russell-watson/7403879",
-   "checked_at": "2026-09-29T14:53:01+00:00",
-   "importance": 6.2
   },
   "499": {
    "event_id": 499,
@@ -2439,23 +1108,45 @@
    "checked_at": "2026-09-29T14:53:15+00:00",
    "importance": 2.6
   },
-  "651": {
-   "event_id": 651,
-   "vendor": "Skiddle",
-   "vendor_host": "skiddle.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.skiddle.com/whats-on/Peterborough/Queen%27s-Head/Strictly-Soulful--Nicky-Blackmarket--Millz--RC-Origins/42640538/",
-   "checked_at": "2026-09-29T14:53:15+00:00",
-   "importance": 3.2
+  "506": {
+   "event_id": 506,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/ely-events/ely-folk-club/kathryn-roberts-and-sean-lakeman/7487145",
+   "importance": 3.1
   },
-  "656": {
-   "event_id": 656,
-   "vendor": "Skiddle",
-   "vendor_host": "skiddle.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.skiddle.com/whats-on/Peterborough/Old-Station-Quarter/RB-Bottomless-Brunch-at-Old-Station-Quarter-ft-DJ-Nick/42708491/",
-   "checked_at": "2026-09-29T14:53:15+00:00",
+  "507": {
+   "event_id": 507,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/biggleswade-events/the-bigg-theatre/george-and-the-drag-queen/7532702",
    "importance": 2.8
+  },
+  "508": {
+   "event_id": 508,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/huntingdon-events/commemoration-hall/tina-live/7384181",
+   "importance": 2.7
+  },
+  "509": {
+   "event_id": 509,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/letchworth-garden-city-events/the-letchworth-settlement/for-one-night-only-comedy-club/7539607",
+   "importance": 2.9
+  },
+  "510": {
+   "event_id": 510,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/huntingdon-events/upwood-village-hall/chris-while-and-julie-matthews/7480499",
+   "importance": 3.1
   },
   "679": {
    "event_id": 679,
@@ -2484,41 +1175,13 @@
    "checked_at": "2026-09-29T14:53:15+00:00",
    "importance": 2.3
   },
-  "813": {
-   "event_id": 813,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "saffronhall.com",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.saffronhall.com/whats-on/view/swchs-prospective-year-7-open-evening",
-   "checked_at": "2026-09-29T14:53:19+00:00",
-   "importance": 2.9
-  },
-  "814": {
-   "event_id": 814,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "saffronhall.com",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.saffronhall.com/whats-on/view/city-of-birmingham-symphony-orchestra-3",
-   "checked_at": "2026-09-29T14:53:23+00:00",
-   "importance": 6.5
-  },
-  "815": {
-   "event_id": 815,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "saffronhall.com",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.saffronhall.com/whats-on/view/miloš-ksenija-sidorova",
-   "checked_at": "2026-09-29T14:53:25+00:00",
-   "importance": 0
-  },
-  "816": {
-   "event_id": 816,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "saffronhall.com",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.saffronhall.com/whats-on/view/saffron-walden-symphony-orchestra-family-concert",
-   "checked_at": "2026-09-29T14:53:29+00:00",
-   "importance": 3.7
+  "692": {
+   "event_id": 692,
+   "vendor": "Skiddle",
+   "vendor_host": "skiddle.com",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.skiddle.com/whats-on/Peterborough/Velvet-Panache-Peterborough/Panic-At-The-Emo-at-Velvet-Panache-Peterborough/42718180/",
+   "importance": 2.6
   },
   "817": {
    "event_id": 817,
@@ -2547,6 +1210,30 @@
    "checked_at": "2026-09-29T14:53:40+00:00",
    "importance": 6.4
   },
+  "820": {
+   "event_id": 820,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "saffronhall.com",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.saffronhall.com/whats-on/view/swchs-sixth-form-open-evening-3",
+   "importance": 2.9
+  },
+  "821": {
+   "event_id": 821,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "saffronhall.com",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.saffronhall.com/whats-on/view/foyer-jazz-28",
+   "importance": 2.9
+  },
+  "822": {
+   "event_id": 822,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "saffronhall.com",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.saffronhall.com/whats-on/view/pasadena-roof-orchestra-3",
+   "importance": 5.3
+  },
   "886": {
    "event_id": 886,
    "vendor": "DigiTickets",
@@ -2574,40 +1261,13 @@
    "checked_at": "2026-09-29T14:53:51+00:00",
    "importance": 3.7
   },
-  "906": {
-   "event_id": 906,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.cambridgefilmfestival.org.uk/",
-   "checked_at": "2026-09-29T14:53:56+00:00",
-   "importance": 4.8
-  },
-  "907": {
-   "event_id": 907,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.eventbrite.co.uk/e/clothes-cake-and-coffee-tickets-1998348855220",
-   "checked_at": "2026-09-29T14:53:56+00:00",
-   "importance": 4.0
-  },
-  "909": {
-   "event_id": 909,
-   "vendor": "The Jockey Club (своя касса)",
-   "vendor_host": "thejockeyclub.co.uk",
-   "method": "ссылка на продавца на странице",
-   "page_url": "https://www.huntspost.co.uk/news/26586199.olly-murs-headline-2027-newmarket-nights-series/",
-   "importance": 10.0
-  },
-  "910": {
-   "event_id": 910,
-   "vendor": "The Jockey Club (своя касса)",
-   "vendor_host": "thejockeyclub.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://thejockeyclub.co.uk/newmarket/events-tickets/newmarket-nights/simply-red",
-   "checked_at": "2026-09-29T14:53:59+00:00",
-   "importance": 10.0
+  "889": {
+   "event_id": 889,
+   "vendor": "DigiTickets",
+   "vendor_host": "kettlesyard.digitickets.co.uk",
+   "method": "кнопка покупки на странице",
+   "page_url": "https://www.kettlesyard.cam.ac.uk/whats-on/susan-tomes-piano/",
+   "importance": 4.3
   },
   "913": {
    "event_id": 913,
@@ -2645,15 +1305,6 @@
    "checked_at": "2026-09-29T14:54:16+00:00",
    "importance": 2.5
   },
-  "921": {
-   "event_id": 921,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.visitcambridge.org/event/portraits-of-cambridge-a-town-in-transition/",
-   "checked_at": "2026-09-29T14:54:18+00:00",
-   "importance": 3.1
-  },
   "922": {
    "event_id": 922,
    "vendor": "не определён",
@@ -2672,24 +1323,6 @@
    "checked_at": "2026-09-29T14:54:27+00:00",
    "importance": 2.5
   },
-  "925": {
-   "event_id": 925,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.visitcambridge.org/event/cats-of-cambridge-exhibition-through-the-museum/",
-   "checked_at": "2026-09-29T14:54:27+00:00",
-   "importance": 2.5
-  },
-  "926": {
-   "event_id": 926,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.visitcambridge.org/event/cats-of-cambridge/",
-   "checked_at": "2026-09-29T14:54:30+00:00",
-   "importance": 2.6
-  },
   "927": {
    "event_id": 927,
    "vendor": "не определён",
@@ -2705,42 +1338,7 @@
    "vendor_host": "rowanhumberstone.org.uk",
    "method": "переход по кнопке покупки → кнопка покупки на свой сайт",
    "page_url": "https://www.visitcambridge.org/event/rowan-community-evening-classes/",
-   "importance": 2.5
-  },
-  "931": {
-   "event_id": 931,
-   "vendor": "DigiTickets",
-   "vendor_host": "kettlesyard.digitickets.co.uk",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.museums.cam.ac.uk/events/exhibition-tour-sunil-gupta-life-camera-1970-today",
-   "checked_at": "2026-09-29T14:54:59+00:00",
-   "importance": 4.1
-  },
-  "932": {
-   "event_id": 932,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "tickettailor.com",
-   "method": "переход по кнопке покупки → ссылка на продавца на странице",
-   "page_url": "https://www.visitcambridge.org/event/live-music-hot-numbers-gwydir-street-paul-clarvis-liam-noble-duo/",
-   "checked_at": "2026-09-29T14:55:04+00:00",
-   "importance": 3.1
-  },
-  "933": {
-   "event_id": 933,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "tickettailor.com",
-   "method": "переход по кнопке покупки → ссылка на продавца на странице",
-   "page_url": "https://www.visitcambridge.org/event/dj-sessions-hot-numbers-gwydir-st-hawkins-clarke-distant-world-album-listening-session-dj-set-by-dj-shed-74/",
-   "checked_at": "2026-09-29T14:55:07+00:00",
-   "importance": 2.9
-  },
-  "934": {
-   "event_id": 934,
-   "vendor": "WeGotTickets",
-   "vendor_host": "wegottickets.com",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.visitcambridge.org/event/commoners-comedy-october-2026/",
-   "checked_at": "2026-09-29T14:55:09+00:00",
+   "checked_at": "2026-09-29T15:10:52+00:00",
    "importance": 2.5
   },
   "935": {
@@ -2751,50 +1349,6 @@
    "page_url": "https://www.visitcambridge.org/event/abrasions-new-work-by-ian-rawlinson/",
    "checked_at": "2026-09-29T14:55:13+00:00",
    "importance": 2.5
-  },
-  "936": {
-   "event_id": 936,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "app.tickettailor.com",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.botanic.cam.ac.uk/whats-on/fun-with-fungi/",
-   "checked_at": "2026-09-29T14:55:17+00:00",
-   "importance": 3.5
-  },
-  "937": {
-   "event_id": 937,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.visitcambridge.org/event/nearly-new-bay-and-childrens-sale/",
-   "checked_at": "2026-09-29T14:55:18+00:00",
-   "importance": 2.5
-  },
-  "938": {
-   "event_id": 938,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/ballads-and-songs-sam-carter-sings-nic-jones/",
-   "checked_at": "2026-09-29T14:55:21+00:00",
-   "importance": 4.8
-  },
-  "939": {
-   "event_id": 939,
-   "vendor": "своя касса (stephnorwood.co.uk)",
-   "vendor_host": "stephnorwood.co.uk",
-   "method": "переход по кнопке покупки → кнопка покупки на свой сайт",
-   "page_url": "https://www.visitcambridge.org/event/blackwork-embroidery-caps-with-steph-norwood/",
-   "importance": 2.5
-  },
-  "940": {
-   "event_id": 940,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "tickettailor.com",
-   "method": "переход по кнопке покупки → ссылка на продавца на странице",
-   "page_url": "https://www.visitcambridge.org/event/hiro-ceramics-hot-numbers-trumpington-street/",
-   "checked_at": "2026-09-29T14:55:29+00:00",
-   "importance": 2.8
   },
   "941": {
    "event_id": 941,
@@ -2850,6 +1404,54 @@
    "checked_at": "2026-09-29T14:55:45+00:00",
    "importance": 3.0
   },
+  "948": {
+   "event_id": 948,
+   "vendor": "TryBooking",
+   "vendor_host": "trybooking.com",
+   "method": "кнопка покупки на странице",
+   "page_url": "https://www.visitcambridge.org/event/the-big-bike-film-night-2026-cambridge/",
+   "importance": 2.2
+  },
+  "949": {
+   "event_id": 949,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.visitcambridge.org/event/international-e-waste-day-saturday-17th-october-2026/",
+   "importance": 3.0
+  },
+  "950": {
+   "event_id": 950,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.visitcambridge.org/event/the-art-of-the-rag-rug-with-lu-mason-5/",
+   "importance": 3.0
+  },
+  "951": {
+   "event_id": 951,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.visitcambridge.org/event/stand-up-comedy-in-cambridge/",
+   "importance": 2.5
+  },
+  "952": {
+   "event_id": 952,
+   "vendor": "своя касса (botanic.cam.ac.uk)",
+   "vendor_host": "botanic.cam.ac.uk",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/",
+   "importance": 3.5
+  },
+  "953": {
+   "event_id": 953,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "кнопка покупки на странице",
+   "page_url": "https://www.visitcambridge.org/event/the-flowers-stand-silently-witnessing/",
+   "importance": 2.5
+  },
   "998": {
    "event_id": 998,
    "vendor": "Spektrix (касса площадки)",
@@ -2868,114 +1470,6 @@
    "checked_at": "2026-09-29T14:55:49+00:00",
    "importance": 3.2
   },
-  "1001": {
-   "event_id": 1001,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "tickettailor.com",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.junction.co.uk/events/producer-lab-led-by-roxanne-carney/",
-   "checked_at": "2026-09-29T14:55:51+00:00",
-   "importance": 3.2
-  },
-  "1002": {
-   "event_id": 1002,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/flo-joan-with-feeling/",
-   "checked_at": "2026-09-29T14:55:54+00:00",
-   "importance": 6.9
-  },
-  "1003": {
-   "event_id": 1003,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/the-lemonheads/",
-   "checked_at": "2026-09-29T14:55:56+00:00",
-   "importance": 6.9
-  },
-  "1004": {
-   "event_id": 1004,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/milo-edwards-catamaran/",
-   "checked_at": "2026-09-29T14:55:59+00:00",
-   "importance": 5.6
-  },
-  "1005": {
-   "event_id": 1005,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/robert-jon-the-wreck/",
-   "checked_at": "2026-09-29T14:56:01+00:00",
-   "importance": 6.0
-  },
-  "1006": {
-   "event_id": 1006,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/cambridge-pentacle-magic-club-presents-work-in-progress/",
-   "checked_at": "2026-09-29T14:56:04+00:00",
-   "importance": 3.0
-  },
-  "1007": {
-   "event_id": 1007,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/jazz-sabbath/",
-   "checked_at": "2026-09-29T14:56:07+00:00",
-   "importance": 4.4
-  },
-  "1008": {
-   "event_id": 1008,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/tez-ilyas-tez-things-i-hate-about-you/",
-   "checked_at": "2026-09-29T14:56:09+00:00",
-   "importance": 6.1
-  },
-  "1009": {
-   "event_id": 1009,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/tom-ward-post-millennium-tension/",
-   "checked_at": "2026-09-29T14:56:12+00:00",
-   "importance": 3.8
-  },
-  "1010": {
-   "event_id": 1010,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/soundhunt-evan-parker-quartet/",
-   "checked_at": "2026-09-29T14:56:14+00:00",
-   "importance": 6.3
-  },
-  "1011": {
-   "event_id": 1011,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/zephyrus-final-show-fundraiser-for-the-red-cross/",
-   "checked_at": "2026-09-29T14:56:17+00:00",
-   "importance": 3.5
-  },
-  "1012": {
-   "event_id": 1012,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/vittorio-angelone-you-cant-say-nothing-anymore/",
-   "checked_at": "2026-09-29T14:56:19+00:00",
-   "importance": 3.8
-  },
   "1013": {
    "event_id": 1013,
    "vendor": "Spektrix (касса площадки)",
@@ -2984,24 +1478,6 @@
    "page_url": "https://www.junction.co.uk/events/creative-cafe/",
    "checked_at": "2026-09-29T14:56:22+00:00",
    "importance": 3.0
-  },
-  "1014": {
-   "event_id": 1014,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/lime-garden/",
-   "checked_at": "2026-09-29T14:56:24+00:00",
-   "importance": 4.3
-  },
-  "1015": {
-   "event_id": 1015,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "junction.co.uk",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.junction.co.uk/events/the-amazons/",
-   "checked_at": "2026-09-29T14:56:27+00:00",
-   "importance": 6.3
   },
   "1016": {
    "event_id": 1016,
@@ -3075,14 +1551,125 @@
    "checked_at": "2026-09-29T14:56:47+00:00",
    "importance": 3.1
   },
-  "1234": {
-   "event_id": 1234,
-   "vendor": "The Jockey Club (своя касса)",
-   "vendor_host": "thejockeyclub.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://www.thejockeyclub.co.uk/huntingdon/events-tickets/afternoon-racing/",
-   "checked_at": "2026-09-29T14:56:47+00:00",
-   "importance": 2.6
+  "1024": {
+   "event_id": 1024,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/transvision-vamp/",
+   "importance": 7.1
+  },
+  "1025": {
+   "event_id": 1025,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/fire-fire/",
+   "importance": 3.2
+  },
+  "1026": {
+   "event_id": 1026,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/breabach/",
+   "importance": 5.2
+  },
+  "1027": {
+   "event_id": 1027,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/chantel-mcgregor/",
+   "importance": 5.4
+  },
+  "1028": {
+   "event_id": 1028,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/li-jin-hao-falling-from-a-moon/",
+   "importance": 3.2
+  },
+  "1029": {
+   "event_id": 1029,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/voices-that-shape-research/",
+   "importance": 3.0
+  },
+  "1030": {
+   "event_id": 1030,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/hayseed-dixie/",
+   "importance": 5.7
+  },
+  "1031": {
+   "event_id": 1031,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/the-comedy-store-2026/",
+   "importance": 5.7
+  },
+  "1032": {
+   "event_id": 1032,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/dan-tiernan-quartz-and-all/",
+   "importance": 3.8
+  },
+  "1033": {
+   "event_id": 1033,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/indie-fridays/",
+   "importance": 3.1
+  },
+  "1034": {
+   "event_id": 1034,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/celya-ab-we-must-stop-meeting-like-this/",
+   "importance": 3.5
+  },
+  "1035": {
+   "event_id": 1035,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/aidan-jones-chopins-nocturne/",
+   "importance": 3.2
+  },
+  "1036": {
+   "event_id": 1036,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/warning/",
+   "importance": 3.4
+  },
+  "1037": {
+   "event_id": 1037,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/school-of-comedy-sharing-beginners/",
+   "importance": 3.0
+  },
+  "1038": {
+   "event_id": 1038,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "junction.co.uk",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.junction.co.uk/events/hannah-sanders-ben-savage-with-jon-thorne/",
+   "importance": 4.3
   },
   "1245": {
    "event_id": 1245,
@@ -3118,105 +1705,6 @@
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=bebe0f56-5807-47ba-a35f-a2afc09929f6",
    "checked_at": "2026-09-29T14:57:26+00:00",
-   "importance": 2.5
-  },
-  "1250": {
-   "event_id": 1250,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=b2fef421-d69b-4f05-8d0a-e56ab33cefcd",
-   "checked_at": "2026-09-29T14:57:30+00:00",
-   "importance": 2.5
-  },
-  "1255": {
-   "event_id": 1255,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
-   "checked_at": "2026-09-29T14:57:33+00:00",
-   "importance": 2.5
-  },
-  "1256": {
-   "event_id": 1256,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
-   "checked_at": "2026-09-29T14:57:36+00:00",
-   "importance": 2.5
-  },
-  "1257": {
-   "event_id": 1257,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=86eef23d-15e8-4fee-9d08-fd45cba64ed4",
-   "checked_at": "2026-09-29T14:57:39+00:00",
-   "importance": 3.1
-  },
-  "1258": {
-   "event_id": 1258,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=3146e35c-988c-4c36-a0b8-7982e759a42a",
-   "checked_at": "2026-09-29T14:57:42+00:00",
-   "importance": 2.3
-  },
-  "1259": {
-   "event_id": 1259,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
-   "checked_at": "2026-09-29T14:57:45+00:00",
-   "importance": 2.5
-  },
-  "1260": {
-   "event_id": 1260,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=86eef23d-15e8-4fee-9d08-fd45cba64ed4",
-   "checked_at": "2026-09-29T14:57:48+00:00",
-   "importance": 3.1
-  },
-  "1261": {
-   "event_id": 1261,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=5482082a-f72a-48bc-9c07-febec1457e35",
-   "checked_at": "2026-09-29T14:57:50+00:00",
-   "importance": 2.4
-  },
-  "1262": {
-   "event_id": 1262,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
-   "checked_at": "2026-09-29T14:57:54+00:00",
-   "importance": 2.5
-  },
-  "1263": {
-   "event_id": 1263,
-   "vendor": "Eventbrite",
-   "vendor_host": "raresummit26.eventbrite.co.uk",
-   "method": "ссылка на продавца на странице",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=67051262-11ff-4b9a-be7b-5470517c2db0",
-   "checked_at": "2026-09-29T14:57:56+00:00",
-   "importance": 2.7
-  },
-  "1264": {
-   "event_id": 1264,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
-   "checked_at": "2026-09-29T14:57:59+00:00",
    "importance": 2.5
   },
   "1265": {
@@ -3273,6 +1761,110 @@
    "checked_at": "2026-09-29T14:58:18+00:00",
    "importance": 3.1
   },
+  "1271": {
+   "event_id": 1271,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=70480ab4-8013-49ae-a3c8-57f3bae09d9f",
+   "importance": 2.8
+  },
+  "1272": {
+   "event_id": 1272,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=d828f71d-7634-4505-97df-4245ed988106",
+   "importance": 2.9
+  },
+  "1273": {
+   "event_id": 1273,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=7633db8c-4f99-4b02-b922-5579f5c847fd",
+   "importance": 2.5
+  },
+  "1274": {
+   "event_id": 1274,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
+   "importance": 2.5
+  },
+  "1275": {
+   "event_id": 1275,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=80d632af-e15c-43b5-88c4-6c141ee7ef28",
+   "importance": 2.5
+  },
+  "1276": {
+   "event_id": 1276,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
+   "importance": 2.5
+  },
+  "1277": {
+   "event_id": 1277,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
+   "importance": 2.5
+  },
+  "1278": {
+   "event_id": 1278,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
+   "importance": 2.5
+  },
+  "1279": {
+   "event_id": 1279,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=13c2f5a9-7070-4fdf-9ad3-091ff7f16a93",
+   "importance": 3.4
+  },
+  "1280": {
+   "event_id": 1280,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=86eef23d-15e8-4fee-9d08-fd45cba64ed4",
+   "importance": 3.1
+  },
+  "1281": {
+   "event_id": 1281,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=0e452104-d4f5-4152-8e7f-533aae0daf6a",
+   "importance": 2.5
+  },
+  "1282": {
+   "event_id": 1282,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=441c2018-4da3-49a1-a41e-c5fd75f9d75b",
+   "importance": 3.3
+  },
+  "1283": {
+   "event_id": 1283,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=86eef23d-15e8-4fee-9d08-fd45cba64ed4",
+   "importance": 3.1
+  },
   "1284": {
    "event_id": 1284,
    "vendor": "не определён",
@@ -3317,78 +1909,6 @@
    "page_url": "https://www.museums.cam.ac.uk/events/polar-panoramas",
    "checked_at": "2026-09-29T14:58:30+00:00",
    "importance": 2.8
-  },
-  "1290": {
-   "event_id": 1290,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.museums.cam.ac.uk/events/meet-artist-debbie-yeboah",
-   "checked_at": "2026-09-29T14:58:34+00:00",
-   "importance": 2.6
-  },
-  "1291": {
-   "event_id": 1291,
-   "vendor": "Eventbrite",
-   "vendor_host": "blackhistoryofsciencewhipplemuseum.eventbrite.co.uk",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.museums.cam.ac.uk/events/black-history-science-tours-1",
-   "checked_at": "2026-09-29T14:58:36+00:00",
-   "importance": 1.6
-  },
-  "1292": {
-   "event_id": 1292,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.museums.cam.ac.uk/events/animal-tails-fossil-fun",
-   "checked_at": "2026-09-29T14:58:38+00:00",
-   "importance": 2.5
-  },
-  "1293": {
-   "event_id": 1293,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.museums.cam.ac.uk/events/darwin-dodos-guided-tour-museum-5",
-   "checked_at": "2026-09-29T14:58:41+00:00",
-   "importance": 2.5
-  },
-  "1294": {
-   "event_id": 1294,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.museums.cam.ac.uk/events/family-friendly-drop-11",
-   "checked_at": "2026-09-29T14:58:45+00:00",
-   "importance": 2.5
-  },
-  "1295": {
-   "event_id": 1295,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.museums.cam.ac.uk/events/lgbtq-tours-sedgwick-museum-earth-sciences-18",
-   "checked_at": "2026-09-29T14:58:47+00:00",
-   "importance": 2.5
-  },
-  "1296": {
-   "event_id": 1296,
-   "vendor": "DigiTickets",
-   "vendor_host": "kettlesyard.digitickets.co.uk",
-   "method": "переход по кнопке покупки → кнопка покупки на странице",
-   "page_url": "https://www.museums.cam.ac.uk/events/spotlight-talk-women-weavers-thread-memory-identity",
-   "checked_at": "2026-09-29T14:58:50+00:00",
-   "importance": 2.5
-  },
-  "1297": {
-   "event_id": 1297,
-   "vendor": "Eventbrite",
-   "vendor_host": "blackhistoryofsciencewhipplemuseum.eventbrite.co.uk",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.museums.cam.ac.uk/events/black-history-science-tours-2",
-   "checked_at": "2026-09-29T14:58:52+00:00",
-   "importance": 1.6
   },
   "1298": {
    "event_id": 1298,
@@ -3444,22 +1964,36 @@
    "checked_at": "2026-09-29T14:59:09+00:00",
    "importance": 2.5
   },
-  "1347": {
-   "event_id": 1347,
-   "vendor": "своя касса (cambridgesciencecentre.org)",
-   "vendor_host": "cambridgesciencecentre.org",
-   "method": "кнопка покупки на свой сайт",
-   "page_url": "https://www.cambridgesciencecentre.org/whats-on/stemtots-space-exploration/",
-   "checked_at": "2026-09-29T14:59:15+00:00",
+  "1304": {
+   "event_id": 1304,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.museums.cam.ac.uk/events/sedgwick-museum-staff-favourites-tours-70",
    "importance": 2.5
   },
-  "1348": {
-   "event_id": 1348,
-   "vendor": "своя касса (cambridgesciencecentre.org)",
-   "vendor_host": "cambridgesciencecentre.org",
+  "1305": {
+   "event_id": 1305,
+   "vendor": "своя касса (botanic.cam.ac.uk)",
+   "vendor_host": "botanic.cam.ac.uk",
    "method": "кнопка покупки на свой сайт",
-   "page_url": "https://www.cambridgesciencecentre.org/whats-on/discover-the-science-around-us-2/",
-   "checked_at": "2026-09-29T14:59:17+00:00",
+   "page_url": "https://www.botanic.cam.ac.uk/whats-on/welly-walks-october-2026/",
+   "importance": 3.0
+  },
+  "1306": {
+   "event_id": 1306,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "кнопка покупки на странице",
+   "page_url": "https://www.museums.cam.ac.uk/events/tea-talk-naja-hendriksen-meeting-contemporary-greenland",
+   "importance": 2.5
+  },
+  "1307": {
+   "event_id": 1307,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "кнопка покупки на странице",
+   "page_url": "https://www.museums.cam.ac.uk/events/pride-nature-lgbtq-tour-12",
    "importance": 2.5
   },
   "1349": {
@@ -3478,6 +2012,22 @@
    "method": "кнопка покупки на свой сайт",
    "page_url": "https://www.cambridgesciencecentre.org/whats-on/get-curious-get-creative-get-scientific/",
    "checked_at": "2026-09-29T14:59:21+00:00",
+   "importance": 2.5
+  },
+  "1351": {
+   "event_id": 1351,
+   "vendor": "своя касса (cambridgesciencecentre.org)",
+   "vendor_host": "cambridgesciencecentre.org",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.cambridgesciencecentre.org/whats-on/stemtots-mini-beasts/",
+   "importance": 2.5
+  },
+  "1352": {
+   "event_id": 1352,
+   "vendor": "своя касса (cambridgesciencecentre.org)",
+   "vendor_host": "cambridgesciencecentre.org",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.cambridgesciencecentre.org/whats-on/genius-challenges-and-future-solutions/",
    "importance": 2.5
   },
   "1356": {
@@ -3597,6 +2147,14 @@
    "checked_at": "2026-09-29T14:59:22+00:00",
    "importance": 2.5
   },
+  "1369": {
+   "event_id": 1369,
+   "vendor": "своя касса (botanic.cam.ac.uk)",
+   "vendor_host": "botanic.cam.ac.uk",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.botanic.cam.ac.uk/whats-on/living-links-trail/",
+   "importance": 2.5
+  },
   "1377": {
    "event_id": 1377,
    "vendor": "Spektrix (касса площадки)",
@@ -3604,24 +2162,6 @@
    "method": "кассовая система в коде страницы",
    "page_url": "https://www.elycathedral.org/events/friends-exhibition",
    "checked_at": "2026-09-29T14:59:26+00:00",
-   "importance": 3.1
-  },
-  "1378": {
-   "event_id": 1378,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "elycathedral.org",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://www.elycathedral.org/events/lunchtime-recital-english-piano-trio",
-   "checked_at": "2026-09-29T14:59:29+00:00",
-   "importance": 3.9
-  },
-  "1379": {
-   "event_id": 1379,
-   "vendor": "Eventbrite",
-   "vendor_host": "eventbrite.co.uk",
-   "method": "ссылка на продавца на странице",
-   "page_url": "https://www.elycathedral.org/events/silent-disco-2",
-   "checked_at": "2026-09-29T14:59:31+00:00",
    "importance": 3.1
   },
   "1380": {
@@ -3632,6 +2172,38 @@
    "page_url": "https://www.elycathedral.org/events/harvest-weekend",
    "checked_at": "2026-09-29T14:59:34+00:00",
    "importance": 3.1
+  },
+  "1381": {
+   "event_id": 1381,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "elycathedral.org",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.elycathedral.org/events/legacies-of-the-windrush",
+   "importance": 3.1
+  },
+  "1382": {
+   "event_id": 1382,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "elycathedral.org",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.elycathedral.org/events/luminatus-harmonies",
+   "importance": 3.6
+  },
+  "1383": {
+   "event_id": 1383,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "elycathedral.org",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.elycathedral.org/events/lunchtime-recital-john-wyatt-and-heather-toyn",
+   "importance": 3.6
+  },
+  "1384": {
+   "event_id": 1384,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "elycathedral.org",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://www.elycathedral.org/events/earth-in-our-hands",
+   "importance": 4.0
   },
   "1406": {
    "event_id": 1406,
@@ -3651,30 +2223,12 @@
    "checked_at": "2026-09-29T14:59:40+00:00",
    "importance": 2.5
   },
-  "1408": {
-   "event_id": 1408,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.visitely.org.uk/whats-on/uncategorized/art-exhibition-old-fire-engine-house-and-gallery/",
-   "checked_at": "2026-09-29T14:59:43+00:00",
-   "importance": 2.5
-  },
   "1410": {
    "event_id": 1410,
    "vendor": "не определён",
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.visitely.org.uk/whats-on/uncategorized/castles-anarchy-and-rebellion-in-ely/",
-   "checked_at": "2026-09-29T14:59:50+00:00",
-   "importance": 2.5
-  },
-  "1414": {
-   "event_id": 1414,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "tickettailor.com",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.visitely.org.uk/whats-on/uncategorized/a-little-book-of-autumn-pressed-botanicals-zine-folding-tea-%e7%a7%8b%e5%88%86-%c2%b7-autumn-equinox/",
    "checked_at": "2026-09-29T14:59:50+00:00",
    "importance": 2.5
   },
@@ -3714,15 +2268,6 @@
    "checked_at": "2026-09-29T15:00:11+00:00",
    "importance": 2.6
   },
-  "1424": {
-   "event_id": 1424,
-   "vendor": "Spektrix (касса площадки)",
-   "vendor_host": "theatreroyal.org",
-   "method": "кассовая система в коде страницы",
-   "page_url": "https://theatreroyal.org/events/it-walks-around-the-house-at-night/",
-   "checked_at": "2026-09-29T15:00:17+00:00",
-   "importance": 3.4
-  },
   "1425": {
    "event_id": 1425,
    "vendor": "Spektrix (касса площадки)",
@@ -3732,67 +2277,36 @@
    "checked_at": "2026-09-29T15:00:21+00:00",
    "importance": 2.8
   },
-  "1457": {
-   "event_id": 1457,
+  "1426": {
+   "event_id": 1426,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "theatreroyal.org",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://theatreroyal.org/events/lunchtime-concert-chris-ingham-trio-standard-time/",
+   "importance": 3.4
+  },
+  "1427": {
+   "event_id": 1427,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "theatreroyal.org",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://theatreroyal.org/events/touch-tour/",
+   "importance": 2.5
+  },
+  "1428": {
+   "event_id": 1428,
+   "vendor": "Spektrix (касса площадки)",
+   "vendor_host": "theatreroyal.org",
+   "method": "кассовая система в коде страницы",
+   "page_url": "https://theatreroyal.org/events/an-audience-with-philippa-gregory-royal-witch/",
+   "importance": 6.3
+  },
+  "1450": {
+   "event_id": 1450,
    "vendor": "не определён",
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
-   "page_url": "https://cambridgeppf.org/etn/healthy-walking-at-wandlebury-2/healthy-walking-at-wandlebury-15/",
-   "checked_at": "2026-09-29T15:00:23+00:00",
-   "importance": 2.5
-  },
-  "1458": {
-   "event_id": 1458,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://cambridgeppf.org/etn/outdoor-mini-retreat-24/",
-   "checked_at": "2026-09-29T15:00:26+00:00",
-   "importance": 2.5
-  },
-  "1459": {
-   "event_id": 1459,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://cambridgeppf.org/etn/calm-under-the-canopy-copy/",
-   "checked_at": "2026-09-29T15:00:30+00:00",
-   "importance": 2.5
-  },
-  "1460": {
-   "event_id": 1460,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "переход по кнопке покупки: Disallowed https://calendar.yahoo.com/?v=60&view=d&type=20&title=Hamlet",
-   "page_url": "https://cambridgeppf.org/etn/hamlet-by-in-situ-3/",
-   "checked_at": "2026-09-29T15:00:33+00:00",
-   "importance": 2.8
-  },
-  "1461": {
-   "event_id": 1461,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "переход по кнопке покупки: Disallowed https://calendar.yahoo.com/?v=60&view=d&type=20&title=Hinxto",
-   "page_url": "https://cambridgeppf.org/etn/hinxton-watermill-open-day-12/",
-   "checked_at": "2026-09-29T15:00:36+00:00",
-   "importance": 2.5
-  },
-  "1462": {
-   "event_id": 1462,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "переход по кнопке покупки: Disallowed https://calendar.yahoo.com/?v=60&view=d&type=20&title=Volunt",
-   "page_url": "https://cambridgeppf.org/etn/volunteer-work-party-26/",
-   "checked_at": "2026-09-29T15:00:39+00:00",
-   "importance": 2.5
-  },
-  "1463": {
-   "event_id": 1463,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "переход по кнопке покупки: Disallowed https://calendar.yahoo.com/?v=60&view=d&type=20&title=Woodla",
-   "page_url": "https://cambridgeppf.org/etn/woodlands-and-wildlife-4/",
-   "checked_at": "2026-09-29T15:00:42+00:00",
+   "page_url": "https://www.museumofcambridge.org.uk/event/folklore/",
    "importance": 2.5
   },
   "1464": {
@@ -3813,68 +2327,37 @@
    "checked_at": "2026-09-29T15:00:48+00:00",
    "importance": 2.5
   },
-  "1572": {
-   "event_id": 1572,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "buytickets.at",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.roystonmuseum.org.uk/what-s-on",
-   "checked_at": "2026-09-29T15:00:51+00:00",
-   "importance": 3.1
-  },
-  "1573": {
-   "event_id": 1573,
+  "1466": {
+   "event_id": 1466,
    "vendor": "не определён",
    "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://stedmundsline.org.uk/news",
-   "checked_at": "2026-09-29T15:00:54+00:00",
+   "method": "переход по кнопке покупки: Disallowed https://calendar.yahoo.com/?v=60&view=d&type=20&title=Volunt",
+   "page_url": "https://cambridgeppf.org/etn/volunteer-work-party-34/",
    "importance": 2.5
   },
-  "1574": {
-   "event_id": 1574,
-   "vendor": "Find a Race",
-   "vendor_host": "findarace.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://findarace.com/events/abington-festival-of-running",
-   "checked_at": "2026-09-29T15:00:54+00:00",
-   "importance": 3.2
-  },
-  "1575": {
-   "event_id": 1575,
+  "1467": {
+   "event_id": 1467,
    "vendor": "не определён",
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
-   "page_url": "https://runningeventsnearme.com/parkrun-events/wimpoleestate-juniors",
-   "checked_at": "2026-09-29T15:01:08+00:00",
-   "importance": 7.0
-  },
-  "1576": {
-   "event_id": 1576,
-   "vendor": "Fatsoma",
-   "vendor_host": "fatsoma.com",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://fatsoma.com/e/f6xfc6x5/y2gay-queer-dance-party",
-   "checked_at": "2026-09-29T15:01:08+00:00",
-   "importance": 2.6
-  },
-  "1577": {
-   "event_id": 1577,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "страница недоступна: FetchError",
-   "page_url": "https://supportcambridgeshire.org.uk/event_listing/support-cambridgeshire-open-day-2026",
-   "checked_at": "2026-09-29T15:01:11+00:00",
+   "page_url": "https://cambridgeppf.org/etn/healthy-walking-at-wandlebury-2/healthy-walking-at-wandlebury-17/",
    "importance": 2.5
   },
-  "1578": {
-   "event_id": 1578,
+  "1468": {
+   "event_id": 1468,
    "vendor": "не определён",
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com",
-   "checked_at": "2026-09-29T15:01:17+00:00",
-   "importance": 3.0
+   "page_url": "https://cambridgeppf.org/etn/halloweeen-hunt-2026/",
+   "importance": 2.5
+  },
+  "1469": {
+   "event_id": 1469,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://cambridgeppf.org/etn/leper-chapel-open-day-48/",
+   "importance": 2.5
   },
   "1579": {
    "event_id": 1579,
@@ -3936,16 +2419,96 @@
    "vendor_host": "allevents.in",
    "method": "кнопка покупки на свой сайт",
    "page_url": "https://allevents.in/ramsey-en/all",
+   "checked_at": "2026-09-29T15:10:59+00:00",
    "importance": 2.5
   },
-  "1614": {
-   "event_id": 1614,
-   "vendor": "своя касса (cambridgecityfc.com)",
-   "vendor_host": "cambridgecityfc.com",
+  "1586": {
+   "event_id": 1586,
+   "vendor": "FIXR",
+   "vendor_host": "fixr.co",
+   "method": "кнопка покупки на странице",
+   "page_url": "https://eventslist.co.uk/cambridge/events/fishies-cambridge-wevs-launch-night-ft-abba-live-tribute-2026-10-14",
+   "importance": 2.8
+  },
+  "1587": {
+   "event_id": 1587,
+   "vendor": "своя касса (allevents.in)",
+   "vendor_host": "allevents.in",
    "method": "кнопка покупки на свой сайт",
-   "page_url": "https://www.cambridgecityfc.com/event-details/cambridge-city-vs-alvechurch",
-   "checked_at": "2026-09-29T15:01:39+00:00",
+   "page_url": "https://allevents.in/wisbech/workshops",
    "importance": 2.5
+  },
+  "1588": {
+   "event_id": 1588,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://stivescivic.org.uk/event/ceremonial-cambridge-and-bomb-disposal",
+   "importance": 2.5
+  },
+  "1589": {
+   "event_id": 1589,
+   "vendor": "своя касса (allevents.in)",
+   "vendor_host": "allevents.in",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://allevents.in/st-neots/live-music",
+   "importance": 2.8
+  },
+  "1590": {
+   "event_id": 1590,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.waoc.org.uk/events/details/2026-10-17-coefen-parko",
+   "importance": 2.5
+  },
+  "1591": {
+   "event_id": 1591,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://enjoy.ly/uk/activity/13615696/wcb-comedy-at-the-great-hall-at-the-leys-with-hal-cruttenden-reginald-d-hunter-and-dan-antopolski-th",
+   "importance": 6.0
+  },
+  "1592": {
+   "event_id": 1592,
+   "vendor": "TicketSource",
+   "vendor_host": "ticketsource.com",
+   "method": "кнопка покупки на странице",
+   "page_url": "https://cambridgechorale.org.uk/concerts/cathedral-classics-2026",
+   "importance": 2.5
+  },
+  "1593": {
+   "event_id": 1593,
+   "vendor": "Find a Race",
+   "vendor_host": "findarace.com",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://findarace.com/events/phoenix-cambridgeshire-kiss-charity-run",
+   "importance": 3.3
+  },
+  "1594": {
+   "event_id": 1594,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://kingscollegechoir.com/concert/organ-recital-david-newsholme-canterbury-cathedral",
+   "importance": 3.7
+  },
+  "1595": {
+   "event_id": 1595,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://visitcambridge.org/event/cambridge-bead-fair-sun-18th-oct-2026-free-entry-and-refreshments",
+   "importance": 2.5
+  },
+  "1596": {
+   "event_id": 1596,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://roundchurchcambridge.org/el_events",
+   "importance": 1.9
   },
   "1615": {
    "event_id": 1615,
@@ -3953,24 +2516,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://nationalleaguerugby.com/national-league-rugby-fixtures-2026-27/",
-   "importance": 2.5
-  },
-  "1626": {
-   "event_id": 1626,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "tickettailor.com",
-   "method": "переход по кнопке покупки → кнопка покупки на странице",
-   "page_url": "https://www.stneots-tc.gov.uk/council_events/11582/",
-   "checked_at": "2026-09-29T15:02:00+00:00",
-   "importance": 2.5
-  },
-  "1627": {
-   "event_id": 1627,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://www.stneots-tc.gov.uk/council_events/ghost-walk-with-grace-chapman/?event_date=2026-10-07",
-   "checked_at": "2026-09-29T15:02:02+00:00",
+   "checked_at": "2026-09-29T15:11:03+00:00",
    "importance": 2.5
   },
   "1628": {
@@ -3980,6 +2526,22 @@
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.stneots-tc.gov.uk/council_events/farm-and-craft-market-4/?event_date=2026-10-10",
    "checked_at": "2026-09-29T15:02:05+00:00",
+   "importance": 2.5
+  },
+  "1629": {
+   "event_id": 1629,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.stneots-tc.gov.uk/council_events/ghost-walk-with-grace-chapman/?event_date=2026-10-14",
+   "importance": 2.5
+  },
+  "1630": {
+   "event_id": 1630,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.stneots-tc.gov.uk/council_events/whos-who-on-the-market-square-talk-by-local-historian-liz-davies/",
    "importance": 2.5
   },
   "1649": {
@@ -4018,50 +2580,85 @@
    "checked_at": "2026-09-29T15:02:27+00:00",
    "importance": 2.8
   },
-  "1735": {
-   "event_id": 1735,
+  "1653": {
+   "event_id": 1653,
    "vendor": "не определён",
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com/gigs/the-lemonheads-2026-10-01",
-   "checked_at": "2026-09-29T15:02:27+00:00",
-   "importance": 6.3
-  },
-  "1736": {
-   "event_id": 1736,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com/gigs/40th-anniversary-concert-season-1-west-road-concer",
-   "checked_at": "2026-09-29T15:02:29+00:00",
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/composers-concert-cambridge-university-lunchtime-concert/",
    "importance": 2.7
   },
-  "1737": {
-   "event_id": 1737,
+  "1654": {
+   "event_id": 1654,
    "vendor": "не определён",
    "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com/gigs/andy-bowie-quartet-20261004",
-   "checked_at": "2026-09-29T15:02:32+00:00",
-   "importance": 2.0
+   "method": "переход по кнопке покупки: Disallowed https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=RQS",
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/come-and-play-gamelan-society-3/",
+   "importance": 2.5
   },
-  "1738": {
-   "event_id": 1738,
+  "1655": {
+   "event_id": 1655,
    "vendor": "не определён",
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com/gigs/the-amazons",
-   "checked_at": "2026-09-29T15:02:34+00:00",
-   "importance": 5.7
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/indian-classical-music-masterclass-with-the-anirudh-varma-collective/",
+   "importance": 2.8
   },
-  "1739": {
-   "event_id": 1739,
+  "1656": {
+   "event_id": 1656,
    "vendor": "не определён",
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com/gigs/prokofiev-sonatas-1-5-sonata-no-4-op-29-west-road-",
-   "checked_at": "2026-09-29T15:02:36+00:00",
-   "importance": 2.7
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/live-on-wednesdays-cambridge-university-gig-night/",
+   "importance": 2.5
+  },
+  "1657": {
+   "event_id": 1657,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/songs-of-farewell-2/",
+   "importance": 2.5
+  },
+  "1658": {
+   "event_id": 1658,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/sir-granville-bantocks-80th-anniversary-concert/",
+   "importance": 2.5
+  },
+  "1659": {
+   "event_id": 1659,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "переход по кнопке покупки: FetchError HTTP 403 https://www.artstheatre.co.uk/whats-on/the-cambridg",
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/the-cambridge-greek-play-2026-ion-by-euripides/",
+   "importance": 2.3
+  },
+  "1660": {
+   "event_id": 1660,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/recital-isabelle-demers/",
+   "importance": 3.9
+  },
+  "1661": {
+   "event_id": 1661,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/organ-recital-by-david-newsholme-canterbury-cathedral/",
+   "importance": 2.8
+  },
+  "1662": {
+   "event_id": 1662,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/jake-bucktons-selwyn-vocal-recital/",
+   "importance": 2.5
   },
   "1740": {
    "event_id": 1740,
@@ -4144,41 +2741,93 @@
    "checked_at": "2026-09-29T15:02:57+00:00",
    "importance": 3.6
   },
-  "1760": {
-   "event_id": 1760,
+  "1749": {
+   "event_id": 1749,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/open-mic-night-the-boathouse-20261014",
+   "importance": 2.5
+  },
+  "1750": {
+   "event_id": 1750,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/breabach",
+   "importance": 4.8
+  },
+  "1751": {
+   "event_id": 1751,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/nerina-pallot-cambridge-tickets-at-storeys-field-c",
+   "importance": 4.6
+  },
+  "1752": {
+   "event_id": 1752,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/hayseed-dixie-2026-10-16",
+   "importance": 5.1
+  },
+  "1753": {
+   "event_id": 1753,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/michael-morrow-and-the-culprits-indietones-16th-oc",
+   "importance": 2.2
+  },
+  "1754": {
+   "event_id": 1754,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/the-five-hundred-uk-tour",
+   "importance": 2.5
+  },
+  "1755": {
+   "event_id": 1755,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/adult-dvd-2026-10-18",
+   "importance": 2.5
+  },
+  "1756": {
+   "event_id": 1756,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/blue-rose-code-cambridge-tickets-at-nci-club-on-18",
+   "importance": 3.3
+  },
+  "1757": {
+   "event_id": 1757,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/the-beat-dance-crazed-too-uk-tour",
+   "importance": 6.5
+  },
+  "1764": {
+   "event_id": 1764,
    "vendor": "Find a Race",
    "vendor_host": "findarace.com",
    "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://findarace.com/events/phoenix-cambridgeshire-elements-series/4th-october-2026",
-   "checked_at": "2026-09-29T15:02:57+00:00",
+   "page_url": "https://findarace.com/events/phoenix-bedfordshire-freaky-phoenix-friday",
+   "importance": 2.7
+  },
+  "1765": {
+   "event_id": 1765,
+   "vendor": "Find a Race",
+   "vendor_host": "findarace.com",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://findarace.com/events/phoenix-bedfordshire-skull-runner",
    "importance": 2.8
-  },
-  "1870": {
-   "event_id": 1870,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "buytickets.at",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.roystonmuseum.org.uk/what-s-on",
-   "checked_at": "2026-09-29T15:02:57+00:00",
-   "importance": 2.5
-  },
-  "1871": {
-   "event_id": 1871,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "buytickets.at",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.roystonmuseum.org.uk/what-s-on",
-   "checked_at": "2026-09-29T15:03:00+00:00",
-   "importance": 2.5
-  },
-  "1872": {
-   "event_id": 1872,
-   "vendor": "Ticket Tailor",
-   "vendor_host": "buytickets.at",
-   "method": "кнопка покупки на странице",
-   "page_url": "https://www.roystonmuseum.org.uk/what-s-on",
-   "checked_at": "2026-09-29T15:03:02+00:00",
-   "importance": 2.5
   },
   "1873": {
    "event_id": 1873,
@@ -4189,14 +2838,13 @@
    "checked_at": "2026-09-29T15:03:04+00:00",
    "importance": 2.6
   },
-  "1893": {
-   "event_id": 1893,
-   "vendor": "Planet Ice (своя касса)",
-   "vendor_host": "iceaccount.co.uk",
-   "method": "ссылка события ведёт к продавцу",
-   "page_url": "https://iceaccount.co.uk/peterborough-phantoms",
-   "checked_at": "2026-09-29T15:03:04+00:00",
-   "importance": 2.5
+  "1885": {
+   "event_id": 1885,
+   "vendor": "своя касса (cambridgeunited.com)",
+   "vendor_host": "cambridgeunited.com",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.cambridgeunited.com/fixture/list/844",
+   "importance": 3.6
   },
   "1894": {
    "event_id": 1894,
@@ -4207,50 +2855,13 @@
    "checked_at": "2026-09-29T15:03:04+00:00",
    "importance": 2.5
   },
-  "1918": {
-   "event_id": 1918,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "переход по кнопке покупки: Disallowed https://help.picturehouses.com/support/tickets/new",
-   "page_url": "https://www.picturehouses.com/movie-details/000/HO00018554/heart-of-the-beast?filter=",
-   "checked_at": "2026-09-29T15:03:07+00:00",
-   "importance": 2.3
-  },
-  "1919": {
-   "event_id": 1919,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "переход по кнопке покупки: Disallowed https://help.picturehouses.com/support/tickets/new",
-   "page_url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
-   "checked_at": "2026-09-29T15:03:10+00:00",
-   "importance": 2.3
-  },
-  "1920": {
-   "event_id": 1920,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "переход по кнопке покупки: Disallowed https://help.picturehouses.com/support/tickets/new",
-   "page_url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
-   "checked_at": "2026-09-29T15:03:13+00:00",
-   "importance": 2.3
-  },
-  "1921": {
-   "event_id": 1921,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "переход по кнопке покупки: Disallowed https://help.picturehouses.com/support/tickets/new",
-   "page_url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
-   "checked_at": "2026-09-29T15:03:15+00:00",
-   "importance": 2.3
-  },
-  "1922": {
-   "event_id": 1922,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "переход по кнопке покупки: Disallowed https://help.picturehouses.com/support/tickets/new",
-   "page_url": "https://www.picturehouses.com/movie-details/000/HO00018557/jet-lag-the-game-japanorama-finale?filter=",
-   "checked_at": "2026-09-29T15:03:18+00:00",
-   "importance": 2.3
+  "1895": {
+   "event_id": 1895,
+   "vendor": "Planet Ice (своя касса)",
+   "vendor_host": "iceaccount.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://iceaccount.co.uk/peterborough-phantoms",
+   "importance": 3.8
   },
   "1923": {
    "event_id": 1923,
@@ -4260,6 +2871,54 @@
    "page_url": "https://www.joh.cam.ac.uk/festival",
    "checked_at": "2026-09-29T15:03:21+00:00",
    "importance": 6.0
+  },
+  "1924": {
+   "event_id": 1924,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.joh.cam.ac.uk/festival",
+   "importance": 2.5
+  },
+  "1925": {
+   "event_id": 1925,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.sjcchoir.co.uk/event/recital-isabelle-demers/",
+   "importance": 3.3
+  },
+  "2138": {
+   "event_id": 2138,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/cambridge-art-class-tickets-1993449076851",
+   "importance": 2.7
+  },
+  "2139": {
+   "event_id": 2139,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/wild-on-the-water-wildlife-photography-by-punt-tickets-1998649130351",
+   "importance": 3.0
+  },
+  "2140": {
+   "event_id": 2140,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/cambridges-midcentury-home-market-tickets-1994139179968",
+   "importance": 2.5
+  },
+  "2146": {
+   "event_id": 2146,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.com",
+   "method": "кнопка покупки на странице",
+   "page_url": "https://www.visitcambridge.org/event/pick-n-mix-improvised-comedy-showcase/",
+   "importance": 2.5
   }
  }
 }

@@ -58,6 +58,13 @@
   "problems": []
  },
  {
+  "host": "cambridge.gov.uk",
+  "provider": "Cambridge City Council — занятия для детей и молодёжи",
+  "type": "совет (регулярные занятия)",
+  "programmes": 22,
+  "problems": []
+ },
+ {
   "host": "cambridge.thelittlegym.co.uk",
   "provider": "The Little Gym",
   "type": "гимнастика",
@@ -96,15 +103,17 @@
   "host": "cambridgekungfu.com",
   "provider": "Cambridge Kung Fu",
   "type": "единоборства",
-  "programmes": 1,
+  "programmes": 8,
   "problems": []
  },
  {
   "host": "cambridgeltc.com",
   "provider": "Cambridge Lawn Tennis Club",
   "type": "теннис",
-  "programmes": 3,
-  "problems": []
+  "programmes": 0,
+  "problems": [
+   "connection: robots.txt: HTTP -1"
+  ]
  },
  {
   "host": "cambridgeppf.org",
@@ -125,6 +134,13 @@
   "provider": "Cambridgeshire Council",
   "type": "совет (HAF, Family Information Directory)",
   "programmes": 8,
+  "problems": []
+ },
+ {
+  "host": "cambridgeunited.com",
+  "provider": "Cambridge United FC — holiday camps",
+  "type": "клуб (каникулярные лагеря)",
+  "programmes": 3,
   "problems": []
  },
  {
@@ -235,11 +251,8 @@
   "host": "firefliesforestschool.co.uk",
   "provider": "Fireflies Forest School",
   "type": "лесная школа",
-  "programmes": 0,
-  "problems": [
-   "connection: robots.txt: HTTP -1",
-   "connection: robots.txt: HTTP -1"
-  ]
+  "programmes": 4,
+  "problems": []
  },
  {
   "host": "formationsdance.co.uk",
@@ -254,7 +267,7 @@
   "type": "каникулярный клуб",
   "programmes": 0,
   "problems": [
-   "http_403: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+   "http_403: robots.txt: HTTP 200; страница: 403"
   ]
  },
  {
@@ -330,10 +343,8 @@
   "host": "kidsrusoosc.org",
   "provider": "Kids R Us holiday club",
   "type": "срез 6-v4 (не проверен)",
-  "programmes": 0,
-  "problems": [
-   "connection: robots.txt: HTTP -1"
-  ]
+  "programmes": 1,
+  "problems": []
  },
  {
   "host": "kingscamps.org",
@@ -392,8 +403,9 @@
   "host": "nenepark.org.uk",
   "provider": "Nene Park",
   "type": "парк (Питерборо)",
-  "programmes": 9,
+  "programmes": 0,
   "problems": [
+   "http_403: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
    "connection: robots.txt: HTTP -1"
   ]
  },
@@ -438,8 +450,10 @@
   "host": "s4swimschool.uk",
   "provider": "S4 Swim School",
   "type": "плавание",
-  "programmes": 13,
-  "problems": []
+  "programmes": 0,
+  "problems": [
+   "connection: robots.txt: HTTP -1"
+  ]
  },
  {
   "host": "scambs.gov.uk",

@@ -1,234 +1,250 @@
 {
+ "_run_id": "2026-09-29T15:25:18+00:00",
  "S005": {
   "name": "Cambridge 105",
   "module": "cambridge105",
-  "started_at": "2026-09-27T19:46:32+00:00",
+  "started_at": "2026-09-29T15:25:18+00:00",
   "ok": true,
-  "events": 22,
+  "events": 20,
   "articles": 30,
   "stores": 0,
+  "ai_disallow": [],
   "requests": 3,
-  "seconds": 8.2
+  "seconds": 8.3
  },
  "S047": {
   "name": "talks.cam",
   "module": "talks_cam",
-  "started_at": "2026-09-27T19:46:40+00:00",
+  "started_at": "2026-09-29T15:25:26+00:00",
   "ok": true,
   "events": 62,
   "articles": 0,
   "stores": 0,
   "requests": 6,
-  "seconds": 54.1
+  "seconds": 53.5
  },
  "S042": {
   "name": "ADC Theatre (Camdram)",
   "module": "adc_camdram",
-  "started_at": "2026-09-29T10:44:18+00:00",
+  "started_at": "2026-09-29T15:26:20+00:00",
   "ok": true,
   "events": 27,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 27,
-   "cached": 8,
-   "fetched": 19,
+   "cached": 27,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 27,
-  "seconds": 78.4
+  "requests": 2,
+  "seconds": 3.3
  },
  "S018": {
   "name": "Cambridge United (fixtur.es)",
   "module": "cambridge_united",
-  "started_at": "2026-09-27T19:47:37+00:00",
+  "started_at": "2026-09-29T15:26:23+00:00",
   "ok": true,
   "events": 188,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 3.1
+  "seconds": 3.2
  },
  "S032": {
   "name": "Cambridge Beer Festival",
   "module": "beer_festival",
-  "started_at": "2026-09-27T19:47:41+00:00",
+  "started_at": "2026-09-29T15:26:26+00:00",
   "ok": true,
   "events": 2,
   "articles": 0,
   "stores": 0,
   "requests": 3,
-  "seconds": 13.9
+  "seconds": 14.1
  },
  "S003": {
   "name": "Cambridge Independent",
   "module": "cambridge_independent",
-  "started_at": "2026-09-27T19:47:54+00:00",
+  "started_at": "2026-09-29T15:26:40+00:00",
   "ok": true,
   "events": 0,
   "articles": 20,
   "stores": 0,
+  "ai_disallow": [
+   "anthropic-ai",
+   "ClaudeBot",
+   "Claude-Web",
+   "Claude-SearchBot"
+  ],
   "requests": 2,
-  "seconds": 3.1
+  "seconds": 3.3
  },
  "S004": {
   "name": "Cambridge News",
   "module": "cambridge_news",
-  "started_at": "2026-09-27T19:47:58+00:00",
+  "started_at": "2026-09-29T15:26:43+00:00",
   "ok": true,
   "events": 0,
-  "articles": 35,
+  "articles": 31,
   "stores": 0,
+  "ai_disallow": [
+   "anthropic-ai",
+   "ClaudeBot",
+   "Claude-Web"
+  ],
   "requests": 3,
-  "seconds": 4.9
+  "seconds": 5.0
  },
  "S002": {
   "name": "What's On In Cambridge",
   "module": "whatsonincambridge",
-  "started_at": "2026-09-27T19:48:03+00:00",
+  "started_at": "2026-09-29T15:26:48+00:00",
   "ok": true,
   "events": 0,
   "articles": 10,
   "stores": 0,
+  "ai_disallow": [],
   "requests": 2,
-  "seconds": 4.3
+  "seconds": 4.6
  },
  "S087": {
   "name": "The Cambridge Foodies",
   "module": "foodies",
-  "started_at": "2026-09-27T19:48:07+00:00",
+  "started_at": "2026-09-29T15:26:53+00:00",
   "ok": true,
   "events": 0,
   "articles": 10,
   "stores": 0,
-  "requests": 2,
-  "seconds": 2.5
+  "ai_disallow": [],
+  "requests": 3,
+  "seconds": 55.6
  },
  "S050": {
   "name": "Fitzwilliam Museum",
   "module": "fitzwilliam",
-  "started_at": "2026-09-27T19:48:09+00:00",
+  "started_at": "2026-09-29T15:27:49+00:00",
   "ok": true,
   "events": 0,
   "articles": 20,
   "stores": 0,
+  "ai_disallow": [],
   "requests": 2,
-  "seconds": 3.2
+  "seconds": 3.5
  },
  "S038": {
   "name": "Mill Road Winter Fair",
   "module": "mill_road_winter_fair",
-  "started_at": "2026-09-27T19:48:13+00:00",
+  "started_at": "2026-09-29T15:27:52+00:00",
   "ok": true,
   "events": 1,
   "articles": 0,
   "stores": 0,
   "requests": 3,
-  "seconds": 6.8
+  "seconds": 7.0
  },
  "S006": {
   "name": "Ents24",
   "module": "ents24",
-  "started_at": "2026-09-27T19:48:19+00:00",
+  "started_at": "2026-09-29T15:27:59+00:00",
   "ok": true,
-  "events": 37,
+  "events": 36,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 3.3
+  "seconds": 4.6
  },
  "S007": {
   "name": "Skiddle",
   "module": "skiddle",
-  "started_at": "2026-09-27T19:48:23+00:00",
+  "started_at": "2026-09-29T15:28:04+00:00",
   "ok": true,
-  "events": 49,
+  "events": 68,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 2.5
+  "seconds": 3.6
  },
  "S021": {
   "name": "Newmarket Racecourses",
   "module": "newmarket",
-  "started_at": "2026-09-27T19:48:25+00:00",
+  "started_at": "2026-09-29T15:28:07+00:00",
   "ok": true,
-  "events": 14,
+  "events": 15,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 2.8
+  "seconds": 3.0
  },
  "S011": {
   "name": "Cambridge Corn Exchange",
   "module": "corn_exchange",
-  "started_at": "2026-09-27T19:48:28+00:00",
+  "started_at": "2026-09-29T15:28:10+00:00",
   "ok": true,
   "events": 74,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 74,
-   "cached": 74,
-   "fetched": 0,
+   "cached": 73,
+   "fetched": 1,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 6,
-  "seconds": 17.4
+  "requests": 7,
+  "seconds": 25.6
  },
  "S033": {
   "name": "Strawberry Fair",
   "module": "strawberry_fair",
-  "started_at": "2026-09-27T19:48:45+00:00",
+  "started_at": "2026-09-29T15:28:36+00:00",
   "ok": true,
   "events": 1,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 3.0
+  "seconds": 3.2
  },
  "S072": {
   "name": "Cambridge City Events",
   "module": "camcityevents",
-  "started_at": "2026-09-27T19:48:48+00:00",
+  "started_at": "2026-09-29T15:28:39+00:00",
   "ok": true,
-  "events": 4,
+  "events": 5,
   "articles": 0,
   "stores": 0,
   "stats": {
-   "links": 4,
+   "links": 5,
    "cached": 4,
-   "fetched": 0,
+   "fetched": 1,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 3,
-  "seconds": 7.3
+  "requests": 4,
+  "seconds": 11.0
  },
  "S008": {
   "name": "Eventbrite",
   "module": "eventbrite",
-  "started_at": "2026-09-27T19:48:56+00:00",
+  "started_at": "2026-09-29T15:28:50+00:00",
   "ok": true,
   "events": 99,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 99,
-   "cached": 99,
-   "fetched": 0,
+   "cached": 89,
+   "fetched": 10,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 6,
-  "seconds": 19.4
+  "requests": 17,
+  "seconds": 42.4
  },
  "S091": {
   "name": "Cambridge Live Tickets",
   "module": "cambridge_live_tickets",
-  "started_at": "2026-09-27T19:49:15+00:00",
+  "started_at": "2026-09-29T15:29:33+00:00",
   "ok": true,
   "events": 93,
   "articles": 0,
@@ -241,250 +257,301 @@
    "no_jsonld": 0
   },
   "requests": 7,
-  "seconds": 23.6
+  "seconds": 24.8
  },
  "S092": {
   "name": "Cambridge Independent — News/Business",
   "module": "cambridge_independent_business",
-  "started_at": "2026-09-27T19:49:39+00:00",
+  "started_at": "2026-09-29T15:29:57+00:00",
   "ok": true,
   "events": 0,
-  "articles": 36,
+  "articles": 39,
   "stores": 0,
+  "ai_disallow": [
+   "anthropic-ai",
+   "ClaudeBot",
+   "Claude-Web",
+   "Claude-SearchBot"
+  ],
   "requests": 2,
-  "seconds": 3.1
+  "seconds": 3.3
  },
  "S093": {
   "name": "Cambridge News — Food & Drink/Shopping",
   "module": "cambridge_news_business",
-  "started_at": "2026-09-27T19:49:42+00:00",
+  "started_at": "2026-09-29T15:30:01+00:00",
   "ok": true,
   "events": 0,
-  "articles": 8,
+  "articles": 6,
   "stores": 0,
+  "ai_disallow": [
+   "anthropic-ai",
+   "ClaudeBot",
+   "Claude-Web"
+  ],
   "requests": 2,
-  "seconds": 3.1
+  "seconds": 6.4
  },
  "S094": {
   "name": "Grand Arcade — магазины",
   "module": "grand_arcade",
-  "started_at": "2026-09-27T19:49:45+00:00",
+  "started_at": "2026-09-29T15:30:07+00:00",
   "ok": true,
   "events": 0,
   "articles": 0,
   "stores": 55,
   "requests": 2,
-  "seconds": 5.2
+  "seconds": 3.4
  },
  "S095": {
   "name": "Lion Yard — магазины",
   "module": "lion_yard",
-  "started_at": "2026-09-27T19:49:50+00:00",
+  "started_at": "2026-09-29T15:30:11+00:00",
   "ok": true,
   "events": 0,
   "articles": 0,
   "stores": 36,
   "requests": 2,
-  "seconds": 3.1
+  "seconds": 3.2
  },
  "S096": {
   "name": "The Grafton — магазины",
   "module": "grafton",
-  "started_at": "2026-09-27T19:49:53+00:00",
+  "started_at": "2026-09-29T15:30:14+00:00",
   "ok": true,
   "events": 0,
   "articles": 0,
   "stores": 7,
   "requests": 2,
-  "seconds": 2.8
+  "seconds": 2.9
  },
  "S097": {
   "name": "Cambridge BID — новости",
   "module": "cambridge_bid",
-  "started_at": "2026-09-27T19:49:56+00:00",
+  "started_at": "2026-09-29T15:30:17+00:00",
   "ok": true,
   "events": 0,
   "articles": 20,
   "stores": 0,
+  "ai_disallow": [],
   "requests": 2,
-  "seconds": 2.8
+  "seconds": 3.9
  },
- "_run_id": "2026-09-29T10:44:18+00:00",
  "S128": {
   "name": "Ents24 — города зоны",
   "module": "towns_ents24",
-  "started_at": "2026-09-28T08:53:26+00:00",
+  "started_at": "2026-09-29T15:30:21+00:00",
   "ok": true,
-  "events": 161,
+  "events": 162,
   "articles": 0,
   "stores": 0,
   "stats": {
    "https://www.ents24.com/whatson/peterborough": 38,
-   "https://www.ents24.com/whatson/ely": 26,
+   "https://www.ents24.com/whatson/ely": 27,
    "https://www.ents24.com/whatson/huntingdon": 7,
    "https://www.ents24.com/whatson/st-neots": 5,
-   "https://www.ents24.com/whatson/st-ives": 24,
+   "https://www.ents24.com/whatson/st-ives": 23,
    "https://www.ents24.com/whatson/wisbech": 2,
    "https://www.ents24.com/whatson/march": 0,
    "https://www.ents24.com/whatson/bury-st-edmunds": 38,
    "https://www.ents24.com/whatson/saffron-walden": 13,
-   "https://www.ents24.com/whatson/newmarket": 2,
+   "https://www.ents24.com/whatson/newmarket": 3,
    "https://www.ents24.com/whatson/royston": 6,
    "https://www.ents24.com/whatson/haverhill": 0
   },
-  "requests": 13,
-  "seconds": 30.7
+  "requests": 12,
+  "seconds": 29.7
  },
  "S129": {
   "name": "Skiddle — города зоны",
   "module": "towns_skiddle",
-  "started_at": "2026-09-28T08:53:57+00:00",
+  "started_at": "2026-09-29T15:30:50+00:00",
   "ok": true,
-  "events": 206,
+  "events": 289,
   "articles": 0,
   "stores": 0,
   "stats": {
-   "https://www.skiddle.com/whats-on/Peterborough/": 51,
+   "https://www.skiddle.com/whats-on/Peterborough/": 69,
    "https://www.skiddle.com/whats-on/Ely/": 0,
-   "https://www.skiddle.com/whats-on/Huntingdon/": 5,
+   "https://www.skiddle.com/whats-on/Huntingdon/": 31,
    "https://www.skiddle.com/whats-on/St-Neots/": 19,
-   "https://www.skiddle.com/whats-on/St-Ives/": 3,
-   "https://www.skiddle.com/whats-on/Wisbech/": 7,
-   "https://www.skiddle.com/whats-on/March/": 1,
-   "https://www.skiddle.com/whats-on/Bury-St-Edmunds/": 17,
-   "https://www.skiddle.com/whats-on/Saffron-Walden/": 37,
-   "https://www.skiddle.com/whats-on/Newmarket/": 37,
-   "https://www.skiddle.com/whats-on/Royston/": 12,
-   "https://www.skiddle.com/whats-on/Haverhill/": 17
+   "https://www.skiddle.com/whats-on/St-Ives/": 4,
+   "https://www.skiddle.com/whats-on/Wisbech/": 38,
+   "https://www.skiddle.com/whats-on/March/": 10,
+   "https://www.skiddle.com/whats-on/Bury-St-Edmunds/": 22,
+   "https://www.skiddle.com/whats-on/Saffron-Walden/": 6,
+   "https://www.skiddle.com/whats-on/Newmarket/": 2,
+   "https://www.skiddle.com/whats-on/Royston/": 77,
+   "https://www.skiddle.com/whats-on/Haverhill/": 11
   },
-  "requests": 13,
-  "seconds": 25.3
+  "requests": 12,
+  "seconds": 33.7
  },
  "S123": {
   "name": "Peterborough United (fixtur.es)",
   "module": "peterborough_united",
-  "started_at": "2026-09-28T08:54:22+00:00",
+  "started_at": "2026-09-29T15:31:24+00:00",
   "ok": true,
   "events": 194,
   "articles": 0,
   "stores": 0,
-  "requests": 2,
-  "seconds": 3.2
+  "requests": 1,
+  "seconds": 1.1
  },
  "S108": {
   "name": "Wisbech Town Council",
   "module": "wisbech_tc",
-  "started_at": "2026-09-28T08:54:25+00:00",
+  "started_at": "2026-09-29T15:31:25+00:00",
   "ok": true,
   "events": 2,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 3.3
+  "seconds": 3.4
  },
  "S010": {
   "name": "Peterborough Telegraph",
   "module": "peterborough_telegraph",
-  "started_at": "2026-09-28T08:54:29+00:00",
+  "started_at": "2026-09-29T15:31:28+00:00",
   "ok": true,
   "events": 0,
-  "articles": 19,
+  "articles": 47,
   "stores": 0,
+  "ai_disallow": [
+   "anthropic-ai",
+   "ClaudeBot",
+   "Claude-Web"
+  ],
   "requests": 2,
-  "seconds": 2.6
+  "seconds": 2.8
  },
  "S017": {
   "name": "Saffron Hall",
   "module": "saffron_hall",
-  "started_at": "2026-09-28T09:24:17+00:00",
+  "started_at": "2026-09-29T15:31:31+00:00",
   "ok": true,
   "events": 75,
   "articles": 0,
   "stores": 0,
   "requests": 10,
-  "seconds": 26.6
+  "seconds": 28.2
  },
  "S051": {
   "name": "Kettle's Yard",
   "module": "kettles_yard",
-  "started_at": "2026-09-28T09:24:44+00:00",
+  "started_at": "2026-09-29T15:31:59+00:00",
   "ok": true,
   "events": 20,
   "articles": 0,
   "stores": 0,
-  "requests": 28,
-  "seconds": 73.6
- },
- "S027": {
-  "name": "RunThrough",
-  "module": "runthrough",
-  "started_at": "2026-09-28T09:46:33+00:00",
-  "ok": true,
-  "events": 0,
-  "articles": 0,
-  "stores": 0,
-  "requests": 2,
-  "seconds": 2.7
+  "requests": 32,
+  "seconds": 99.7
  },
  "S116": {
   "name": "Hunts Post",
   "module": "newsquest",
-  "started_at": "2026-09-28T10:36:40+00:00",
+  "started_at": "2026-09-29T15:33:39+00:00",
   "ok": true,
   "events": 0,
   "articles": 50,
   "stores": 0,
+  "ai_disallow": [
+   "anthropic-ai",
+   "ClaudeBot",
+   "Claude-User",
+   "Claude-Web",
+   "Claude-SearchBot"
+  ],
   "requests": 2,
-  "seconds": 3.0
+  "seconds": 2.9
  },
  "S117": {
   "name": "Cambs Times",
   "module": "newsquest",
-  "started_at": "2026-09-28T10:36:43+00:00",
+  "started_at": "2026-09-29T15:33:42+00:00",
   "ok": true,
   "events": 0,
   "articles": 50,
   "stores": 0,
+  "ai_disallow": [
+   "anthropic-ai",
+   "ClaudeBot",
+   "Claude-User",
+   "Claude-Web",
+   "Claude-SearchBot"
+  ],
   "requests": 2,
-  "seconds": 3.1
+  "seconds": 2.8
  },
  "S118": {
   "name": "Wisbech Standard",
   "module": "newsquest",
-  "started_at": "2026-09-28T10:36:47+00:00",
+  "started_at": "2026-09-29T15:33:45+00:00",
   "ok": true,
   "events": 0,
   "articles": 50,
   "stores": 0,
+  "ai_disallow": [
+   "anthropic-ai",
+   "ClaudeBot",
+   "Claude-User",
+   "Claude-Web",
+   "Claude-SearchBot"
+  ],
   "requests": 2,
   "seconds": 3.1
  },
  "S119": {
   "name": "Ely Standard",
   "module": "newsquest",
-  "started_at": "2026-09-28T10:36:50+00:00",
+  "started_at": "2026-09-29T15:33:48+00:00",
   "ok": true,
   "events": 0,
   "articles": 50,
   "stores": 0,
+  "ai_disallow": [
+   "anthropic-ai",
+   "ClaudeBot",
+   "Claude-User",
+   "Claude-Web",
+   "Claude-SearchBot"
+  ],
   "requests": 2,
-  "seconds": 3.1
+  "seconds": 3.4
  },
  "S052": {
   "name": "University of Cambridge Museums",
   "module": "ucm",
-  "started_at": "2026-09-28T17:31:44+00:00",
+  "started_at": "2026-09-29T15:33:51+00:00",
   "ok": true,
   "events": 99,
   "articles": 0,
   "stores": 0,
   "requests": 6,
-  "seconds": 12.3
+  "seconds": 14.7
+ },
+ "S012": {
+  "name": "Cambridge Junction",
+  "module": "junction",
+  "started_at": "2026-09-29T15:34:06+00:00",
+  "ok": true,
+  "events": 262,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 262,
+   "cached": 259,
+   "fetched": 3,
+   "fetch_errors": 0,
+   "no_jsonld": 0
+  },
+  "requests": 19,
+  "seconds": 48.6
  },
  "S069": {
   "name": "Cambridge University Botanic Garden",
   "module": "botanic",
-  "started_at": "2026-09-28T17:32:35+00:00",
+  "started_at": "2026-09-29T15:34:55+00:00",
   "ok": true,
   "events": 18,
   "articles": 0,
@@ -497,12 +564,30 @@
    "no_jsonld": 0
   },
   "requests": 4,
-  "seconds": 9.9
+  "seconds": 11.2
+ },
+ "S001": {
+  "name": "Visit Cambridge",
+  "module": "visit_cambridge",
+  "started_at": "2026-09-29T15:35:06+00:00",
+  "ok": true,
+  "events": 98,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "links": 102,
+   "cached": 101,
+   "fetched": 1,
+   "fetch_errors": 0,
+   "no_jsonld": 3
+  },
+  "requests": 20,
+  "seconds": 61.5
  },
  "S048": {
   "name": "University of Cambridge — What's On",
   "module": "uni_whatson",
-  "started_at": "2026-09-28T17:38:08+00:00",
+  "started_at": "2026-09-29T15:36:07+00:00",
   "ok": true,
   "events": 48,
   "articles": 0,
@@ -515,189 +600,143 @@
    "no_jsonld": 0
   },
   "requests": 7,
-  "seconds": 15.3
- },
- "S012": {
-  "name": "Cambridge Junction",
-  "module": "junction",
-  "started_at": "2026-09-28T19:45:42+00:00",
-  "ok": true,
-  "events": 260,
-  "articles": 0,
-  "stores": 0,
-  "stats": {
-   "links": 260,
-   "cached": 0,
-   "fetched": 260,
-   "fetch_errors": 0,
-   "no_jsonld": 0
-  },
-  "requests": 275,
-  "seconds": 691.3
- },
- "S001": {
-  "name": "Visit Cambridge",
-  "module": "visit_cambridge",
-  "started_at": "2026-09-28T17:32:45+00:00",
-  "ok": true,
-  "events": 98,
-  "articles": 0,
-  "stores": 0,
-  "stats": {
-   "links": 102,
-   "cached": 5,
-   "fetched": 97,
-   "fetch_errors": 0,
-   "no_jsonld": 3
-  },
-  "requests": 116,
-  "seconds": 323.7
+  "seconds": 18.6
  },
  "S054": {
   "name": "Cambridge Science Centre",
   "module": "science_centre",
-  "started_at": "2026-09-28T17:38:24+00:00",
+  "started_at": "2026-09-29T15:36:26+00:00",
   "ok": true,
   "events": 9,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 9,
-   "cached": 0,
-   "fetched": 9,
+   "cached": 9,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 11,
-  "seconds": 22.8
+  "requests": 2,
+  "seconds": 3.2
  },
  "S055": {
   "name": "Cambridgeshire Libraries (Eventbrite)",
   "module": "family_misc",
-  "started_at": "2026-09-28T17:38:46+00:00",
+  "started_at": "2026-09-29T15:36:29+00:00",
   "ok": true,
   "events": 12,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 12,
-   "cached": 0,
-   "fetched": 12,
+   "cached": 12,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 14,
-  "seconds": 27.9
+  "requests": 1,
+  "seconds": 0.3
  },
  "S131": {
   "name": "Cambridge Past, Present & Future",
   "module": "cppf",
-  "started_at": "2026-09-28T17:39:14+00:00",
+  "started_at": "2026-09-29T15:36:30+00:00",
   "ok": true,
   "events": 108,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 5.7
+  "seconds": 5.1
  },
  "S130": {
   "name": "Museum of Cambridge",
   "module": "tribe_sites",
-  "started_at": "2026-09-28T17:39:20+00:00",
+  "started_at": "2026-09-29T15:36:35+00:00",
   "ok": true,
-  "events": 7,
+  "events": 8,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 4.2
+  "seconds": 4.7
  },
  "S132": {
   "name": "Milton Country Park",
   "module": "milton_park",
-  "started_at": "2026-09-28T17:39:24+00:00",
+  "started_at": "2026-09-29T15:36:39+00:00",
   "ok": true,
   "events": 7,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 3.6
- },
- "S133": {
-  "name": "Nene Park (Ferry Meadows)",
-  "module": "family_misc",
-  "started_at": "2026-09-28T17:39:28+00:00",
-  "ok": false,
-  "error": "FetchError: ConnectError: [Errno 104] Connection reset by peer",
-  "trace": "lib/python3.11/dist-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\nhttpcore.ConnectError: [Errno 104] Connection reset by peer\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/user/cambridge-events/collectors/http.py\", line 100, in _raw_get\n    r = self._client.get(url)\n        ^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/dist-packages/httpx/_client.py\", line 1053, in get\n    return self.request(\n           ^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/dist-packages/httpx/_client.py\", line 825, in request\n    return self.send(request, auth=auth, follow_redirects=follow_redirects)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nhttpx.ConnectError: [Errno 104] Connection reset by peer\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/user/cambridge-events/scripts/run_collectors.py\", line 48, in main\n    events = c.collect(http)\n             ^^^^^^^^^^^^^^^\n  File \"/home/user/cambridge-events/collectors/sources/family_misc.py\", line 44, in collect\n    out = super().collect(http)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/user/cambridge-events/collectors/generic.py\", line 70, in collect\n    found = jsonld_events(http.get(url).text)\n                          ^^^^^^^^^^^^^\ncollectors.http.FetchError: ConnectError: [Errno 104] Connection reset by peer\n",
-  "requests": 1,
-  "seconds": 11.7
+  "seconds": 5.3
  },
  "S134": {
   "name": "Centre for Computing History",
   "module": "family_misc",
-  "started_at": "2026-09-28T17:39:40+00:00",
+  "started_at": "2026-09-29T15:36:45+00:00",
   "ok": true,
   "events": 6,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 11.2
+  "seconds": 11.4
  },
  "S071": {
   "name": "Ely Cathedral",
   "module": "ely_cathedral",
-  "started_at": "2026-09-28T17:39:51+00:00",
+  "started_at": "2026-09-29T15:36:56+00:00",
   "ok": true,
   "events": 32,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 4.2
+  "seconds": 4.5
  },
  "S126": {
   "name": "Theatre Royal Bury St Edmunds",
   "module": "theatre_royal_bury",
-  "started_at": "2026-09-28T17:39:55+00:00",
+  "started_at": "2026-09-29T15:37:01+00:00",
   "ok": true,
   "events": 33,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 33,
-   "cached": 0,
-   "fetched": 33,
+   "cached": 33,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 35,
-  "seconds": 96.7
+  "requests": 2,
+  "seconds": 3.3
  },
  "S113": {
   "name": "Visit Ely",
   "module": "visit_ely",
-  "started_at": "2026-09-28T17:41:32+00:00",
+  "started_at": "2026-09-29T15:37:04+00:00",
   "ok": true,
   "events": 12,
   "articles": 0,
   "stores": 0,
   "requests": 3,
-  "seconds": 6.3
+  "seconds": 9.1
  },
  "S022": {
   "name": "Huntingdon Racecourse",
   "module": "p3_sources",
-  "started_at": "2026-09-28T17:41:38+00:00",
+  "started_at": "2026-09-29T15:37:13+00:00",
   "ok": true,
   "events": 11,
   "articles": 0,
   "stores": 0,
-  "requests": 2,
-  "seconds": 3.4
+  "requests": 1,
+  "seconds": 0.9
  },
  "S043": {
   "name": "Mumford Theatre (Eventbrite)",
   "module": "p3_sources",
-  "started_at": "2026-09-28T17:41:41+00:00",
+  "started_at": "2026-09-29T15:37:14+00:00",
   "ok": true,
   "events": 0,
   "articles": 0,
@@ -710,117 +749,106 @@
    "no_jsonld": 0
   },
   "requests": 1,
-  "seconds": 0.5
- },
- "S148": {
-  "name": "Keenable — поиск (этап 6b)",
-  "module": "keenable",
-  "started_at": "2026-09-28T21:42:25+00:00",
-  "ok": true,
-  "events": 49,
-  "articles": 0,
-  "stores": 0,
-  "requests": 0,
-  "seconds": 0
+  "seconds": 1.2
  },
  "S149": {
   "name": "King's College Choir — concerts",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:04:49+00:00",
+  "started_at": "2026-09-29T15:37:15+00:00",
   "ok": true,
   "events": 9,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 9,
-   "cached": 1,
-   "fetched": 8,
+   "cached": 9,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 14,
-  "seconds": 30.8
+  "requests": 6,
+  "seconds": 16.7
  },
  "S150": {
   "name": "Cambridge Music (cmp.cam.ac.uk) — West Road, CUMS, college concerts",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:05:20+00:00",
+  "started_at": "2026-09-29T15:37:32+00:00",
   "ok": true,
   "events": 91,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 94,
-   "cached": 0,
-   "fetched": 94,
+   "cached": 94,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 2
   },
-  "requests": 96,
-  "seconds": 369.4
+  "requests": 2,
+  "seconds": 11.5
  },
  "S151": {
   "name": "Music Live Cambridge — концерты и открытые микрофоны в пабах",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:11:30+00:00",
+  "started_at": "2026-09-29T15:37:43+00:00",
   "ok": true,
   "events": 50,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 50,
-   "cached": 0,
-   "fetched": 50,
+   "cached": 50,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 0
   },
-  "requests": 52,
-  "seconds": 110.2
+  "requests": 2,
+  "seconds": 2.8
  },
  "S152": {
   "name": "Find a Race — забеги и трейлы (40 км от Кембриджа)",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:13:20+00:00",
+  "started_at": "2026-09-29T15:37:46+00:00",
   "ok": true,
   "events": 114,
   "articles": 0,
   "stores": 0,
   "requests": 5,
-  "seconds": 12.0
+  "seconds": 10.6
  },
  "S105": {
   "name": "St Neots Town Council — события (рынки, Bands in the Park, лекции)",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:13:32+00:00",
+  "started_at": "2026-09-29T15:37:57+00:00",
   "ok": true,
   "events": 18,
   "articles": 0,
   "stores": 0,
   "stats": {
    "links": 21,
-   "cached": 0,
-   "fetched": 21,
+   "cached": 21,
+   "fetched": 0,
    "fetch_errors": 0,
    "no_jsonld": 3
   },
-  "requests": 25,
-  "seconds": 80.0
+  "requests": 4,
+  "seconds": 15.0
  },
  "S153": {
   "name": "Royston Museum — события (концерты, мастер-классы, лекции, детские занятия)",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:14:52+00:00",
+  "started_at": "2026-09-29T15:38:12+00:00",
   "ok": true,
-  "events": 18,
+  "events": 20,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 2.9
+  "seconds": 2.6
  },
  "S019": {
   "name": "Cambridge City FC — домашние матчи (Isthmian League)",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:14:55+00:00",
+  "started_at": "2026-09-29T15:38:14+00:00",
   "ok": true,
   "events": 1,
   "articles": 0,
@@ -832,12 +860,12 @@
    "cost_usd": 0.0
   },
   "requests": 2,
-  "seconds": 3.8
+  "seconds": 3.7
  },
  "S154": {
   "name": "Cambridge United Women — домашние матчи",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:14:58+00:00",
+  "started_at": "2026-09-29T15:38:18+00:00",
   "ok": true,
   "events": 8,
   "articles": 0,
@@ -849,23 +877,23 @@
    "cost_usd": 0.0
   },
   "requests": 2,
-  "seconds": 4.0
+  "seconds": 3.4
  },
  "S020": {
   "name": "Cambridge RUFC — домашние матчи (National League 1, PDF лиги)",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:15:02+00:00",
+  "started_at": "2026-09-29T15:38:21+00:00",
   "ok": true,
   "events": 11,
   "articles": 0,
   "stores": 0,
   "requests": 2,
-  "seconds": 4.2
+  "seconds": 4.3
  },
  "S155": {
   "name": "Peterborough Phantoms — домашние матчи (хоккей, NIHL)",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:15:07+00:00",
+  "started_at": "2026-09-29T15:38:26+00:00",
   "ok": true,
   "events": 25,
   "articles": 0,
@@ -877,46 +905,46 @@
    "cost_usd": 0.0
   },
   "requests": 2,
-  "seconds": 4.5
+  "seconds": 4.1
  },
  "S045": {
   "name": "Arts Picturehouse — спецпоказы и фильмы в прокате",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:30:48+00:00",
+  "started_at": "2026-09-29T15:38:30+00:00",
   "ok": true,
-  "events": 5,
+  "events": 4,
   "articles": 0,
   "stores": 0,
   "stats": {
    "pages": 1,
-   "cached": 1,
-   "model_calls": 0,
-   "cost_usd": 0.0
+   "cached": 0,
+   "model_calls": 1,
+   "cost_usd": 0.0075
   },
   "requests": 2,
-  "seconds": 3.9
+  "seconds": 7.8
  },
  "S144": {
   "name": "St John's College — лекции, концерты, выставки, хор",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:30:52+00:00",
+  "started_at": "2026-09-29T15:38:38+00:00",
   "ok": true,
   "events": 8,
   "articles": 0,
   "stores": 0,
   "stats": {
    "pages": 2,
-   "cached": 2,
-   "model_calls": 0,
-   "cost_usd": 0.0
+   "cached": 1,
+   "model_calls": 1,
+   "cost_usd": 0.005
   },
   "requests": 4,
-  "seconds": 7.2
+  "seconds": 12.1
  },
  "S163": {
   "name": "Heong Gallery (Downing College) — выставки",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:30:59+00:00",
+  "started_at": "2026-09-29T15:38:50+00:00",
   "ok": true,
   "events": 1,
   "articles": 0,
@@ -928,12 +956,12 @@
    "cost_usd": 0.0
   },
   "requests": 2,
-  "seconds": 3.8
+  "seconds": 4.1
  },
  "S164": {
   "name": "The Women's Art Collection (Murray Edwards College) — выставки и кураторские лекции",
   "module": "stage6c",
-  "started_at": "2026-09-29T10:31:03+00:00",
+  "started_at": "2026-09-29T15:38:54+00:00",
   "ok": true,
   "events": 3,
   "articles": 0,
@@ -945,17 +973,6 @@
    "cost_usd": 0.0
   },
   "requests": 2,
-  "seconds": 4.3
- },
- "S165": {
-  "name": "Разбор подборок",
-  "module": "roundups",
-  "started_at": "2026-09-29T10:33:35+00:00",
-  "ok": true,
-  "events": 0,
-  "articles": 0,
-  "stores": 0,
-  "requests": 0,
-  "seconds": 0
+  "seconds": 4.4
  }
 }

@@ -19,7 +19,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  },
  {
   "source_id": "S021",
@@ -41,7 +41,29 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
+ },
+ {
+  "source_id": "S021",
+  "title": "Vintage Furniture and Fashion Flea",
+  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/vintage-furniture-and-fashion-flea/",
+  "kind": "event",
+  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/vintage-furniture-and-fashion-flea/",
+  "start": "2026-10-17T12:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Newmarket",
+  "address": "Newmarket Racecourses, Newmarket, Suffolk",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  },
  {
   "source_id": "S021",
@@ -63,7 +85,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  },
  {
   "source_id": "S021",
@@ -85,7 +107,29 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
+ },
+ {
+  "source_id": "S021",
+  "title": "Space Safari Drone Light Show Cambridge",
+  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/space-safari-drone-light-show--cambridge/",
+  "kind": "event",
+  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/space-safari-drone-light-show--cambridge/",
+  "start": "2026-10-24T12:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Newmarket",
+  "address": "Newmarket Racecourses, Newmarket, Suffolk",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  },
  {
   "source_id": "S021",
@@ -107,7 +151,73 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
+ },
+ {
+  "source_id": "S021",
+  "title": "Quilt show",
+  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/quilt-show/",
+  "kind": "event",
+  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/quilt-show/",
+  "start": "2026-11-05T01:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Newmarket",
+  "address": "Newmarket Racecourses, Newmarket, Suffolk",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "fetched_at": "2026-09-29T15:28:10+00:00"
+ },
+ {
+  "source_id": "S021",
+  "title": "Newmarket Antiques Fair",
+  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/newmarket-antiques-fair/",
+  "kind": "event",
+  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/newmarket-antiques-fair/",
+  "start": "2026-11-15T01:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Newmarket",
+  "address": "Newmarket Racecourses, Newmarket, Suffolk",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "fetched_at": "2026-09-29T15:28:10+00:00"
+ },
+ {
+  "source_id": "S021",
+  "title": "Presents Galore",
+  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/presents-galore/",
+  "kind": "event",
+  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/presents-galore/",
+  "start": "2026-11-27T11:59",
+  "end": null,
+  "all_day": false,
+  "venue": "Newmarket",
+  "address": "Newmarket Racecourses, Newmarket, Suffolk",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  },
  {
   "source_id": "S021",
@@ -129,7 +239,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  },
  {
   "source_id": "S021",
@@ -151,7 +261,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  },
  {
   "source_id": "S021",
@@ -173,7 +283,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  },
  {
   "source_id": "S021",
@@ -195,7 +305,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  },
  {
   "source_id": "S021",
@@ -217,94 +327,6 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
- },
- {
-  "source_id": "S021",
-  "title": "Celebrate Christmas at Newmarket Racecourse",
-  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/19th-december-26---christmas-parties2246/",
-  "kind": "event",
-  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/19th-december-26---christmas-parties2246/",
-  "start": "2026-12-19T01:01",
-  "end": null,
-  "all_day": false,
-  "venue": "Newmarket",
-  "address": "Newmarket Racecourses, Newmarket, Suffolk",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
- },
- {
-  "source_id": "S021",
-  "title": "The Betfred Guineas Festival",
-  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/guineas-festival/",
-  "kind": "event",
-  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/guineas-festival/",
-  "start": "2027-04-30T11:59",
-  "end": null,
-  "all_day": false,
-  "venue": "Newmarket",
-  "address": "Newmarket Racecourses, Newmarket, Suffolk",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "GBP 15.00",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
- },
- {
-  "source_id": "S021",
-  "title": "The Debenhams July Festival",
-  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/july-festival/",
-  "kind": "event",
-  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/july-festival/",
-  "start": "2027-07-08T12:00",
-  "end": null,
-  "all_day": false,
-  "venue": "Newmarket",
-  "address": "Newmarket Racecourses, Newmarket, Suffolk",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
- },
- {
-  "source_id": "S021",
-  "title": "Simply Red",
-  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/newmarket-nights/simply-red/",
-  "kind": "event",
-  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/newmarket-nights/simply-red/",
-  "start": "2027-08-21T11:59",
-  "end": null,
-  "all_day": false,
-  "venue": "Newmarket",
-  "address": "Newmarket Racecourses, Newmarket, Suffolk",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "GBP 50.00",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "fetched_at": "2026-09-27T19:48:28+00:00"
+  "fetched_at": "2026-09-29T15:28:10+00:00"
  }
 ]

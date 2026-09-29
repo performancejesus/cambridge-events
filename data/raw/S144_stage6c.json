@@ -22,14 +22,14 @@
   ],
   "summary": "Lecture",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:55+00:00"
+  "fetched_at": "2026-09-29T15:38:46+00:00"
  },
  {
   "source_id": "S144",
-  "title": "Lunchtime Concert",
+  "title": "Lunchtime concert",
   "url": "https://www.joh.cam.ac.uk/festival",
   "kind": "event",
-  "external_id": "2026-10-13|Lunchtime Concert",
+  "external_id": "2026-10-13|Lunchtime concert",
   "start": "2026-10-13",
   "end": null,
   "all_day": true,
@@ -47,14 +47,14 @@
   ],
   "summary": "Music in College",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:55+00:00"
+  "fetched_at": "2026-09-29T15:38:46+00:00"
  },
  {
   "source_id": "S144",
-  "title": "SJCMS Chapel Late",
+  "title": "Music Society Chapel Late",
   "url": "https://www.joh.cam.ac.uk/festival",
   "kind": "event",
-  "external_id": "2026-11-07|SJCMS Chapel Late",
+  "external_id": "2026-11-07|Music Society Chapel Late",
   "start": "2026-11-07",
   "end": null,
   "all_day": true,
@@ -72,7 +72,7 @@
   ],
   "summary": "Music in College",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:55+00:00"
+  "fetched_at": "2026-09-29T15:38:46+00:00"
  },
  {
   "source_id": "S144",
@@ -97,7 +97,7 @@
   ],
   "summary": "Music in College",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:55+00:00"
+  "fetched_at": "2026-09-29T15:38:46+00:00"
  },
  {
   "source_id": "S144",
@@ -122,7 +122,7 @@
   ],
   "summary": "Music in College",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:55+00:00"
+  "fetched_at": "2026-09-29T15:38:46+00:00"
  },
  {
   "source_id": "S144",
@@ -147,7 +147,7 @@
   ],
   "summary": "concert",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:59+00:00"
+  "fetched_at": "2026-09-29T15:38:50+00:00"
  },
  {
   "source_id": "S144",
@@ -172,7 +172,7 @@
   ],
   "summary": "concert",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:59+00:00"
+  "fetched_at": "2026-09-29T15:38:50+00:00"
  },
  {
   "source_id": "S144",
@@ -197,6 +197,6 @@
   ],
   "summary": "concert",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:59+00:00"
+  "fetched_at": "2026-09-29T15:38:50+00:00"
  }
 ]

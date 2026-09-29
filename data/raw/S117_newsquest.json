@@ -1,6 +1,358 @@
 [
  {
   "source_id": "S117",
+  "title": "Boy, 14, missing from home in Cambs as police launch appeal",
+  "url": "https://www.cambstimes.co.uk/news/26591935.police-appeal-delton-14-missing-home-grafham/",
+  "kind": "article",
+  "external_id": "971e01f7d7dcbf831fc7aae6e885e2e3",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Police have launched an appeal to trace a 14-year-old boy missing from his home in Grafham, near Huntingdon.",
+  "published": "2026-09-29T15:01:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Andy Burnham announces VAT cut on energy bills 'from this Thursday' in keynote speech",
+  "url": "https://www.cambstimes.co.uk/news/26592043.andy-burnham-announces-vat-cut-energy-bills-from-thursday/",
+  "kind": "article",
+  "external_id": "66b4b49459eb75878c572cf2095fe00b",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Andy Burnham has announced that VAT will be removed from domestic energy bills from 'this Thursday', October 2026.",
+  "published": "2026-09-29T14:51:57Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Cambridgeshire first in UK to pilot AI-powered crime reporting tool",
+  "url": "https://www.cambstimes.co.uk/news/26591904.cambridgeshire-pilots-ai-tool-reporting-non-urgent-crime/",
+  "kind": "article",
+  "external_id": "83253574681cd2d52a7ed55c73d22315",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Cambridgeshire has become the first place in the UK to pilot AI-powered crime reporting technology.",
+  "published": "2026-09-29T14:34:43Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Officer stabbed as police arrest 17 during dawn raids targeting crime gang",
+  "url": "https://www.cambstimes.co.uk/news/26591750.police-arrest-17-dawn-raids-targeting-crime-gang/",
+  "kind": "article",
+  "external_id": "fa80bf39364d9b3d92c99b23d22e08c9",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Seventeen people have been arrested after police raids targeting an organised crime group across five areas, including Hertfordshire and Cambridgeshire.",
+  "published": "2026-09-29T14:16:24Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "High street newsagent and stationer to close Fenland store",
+  "url": "https://www.cambstimes.co.uk/news/26591565.tg-jones-close-wisbech-store-market-place-next-year/",
+  "kind": "article",
+  "external_id": "e731e1e3c0f41cd40b27eaeedf0f640a",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "TG Jones has confirmed its Wisbech store is set to close in January 2027.",
+  "published": "2026-09-29T13:58:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "10 Cambridgeshire pubs named among UK's best real ale venues",
+  "url": "https://www.cambstimes.co.uk/news/26588215.cambridgeshire-pubs-named-among-uks-best-real-ale-venues/",
+  "kind": "article",
+  "external_id": "075d658e6afbb6e54493d3b407dcf20a",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "CAMRA’s latest Good Beer Guide names dozens of Cambridgeshire pubs among the best places to enjoy real ale.",
+  "published": "2026-09-29T11:00:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Motorcyclist injured after crash with van on busy Cambs road",
+  "url": "https://www.cambstimes.co.uk/news/26589802.motorcyclist-injured-crash-van-pondersbridge/",
+  "kind": "article",
+  "external_id": "76c726896b5455faa5309079431608f6",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "A motorcyclist has been injured in a crash with a van on Oilmills Road, Pondersbridge, near Ramsey and Whittlesey.",
+  "published": "2026-09-29T09:30:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Man wanted in connection with rape last seen near Wisbech",
+  "url": "https://www.cambstimes.co.uk/news/26589580.man-wanted-connection-rape-last-seen-wisbech-area/",
+  "kind": "article",
+  "external_id": "e99128bec10782d722ae9cdde420c339",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Police have launched a search for a man wanted in connection with a rape who was last seen in the Wisbech area.",
+  "published": "2026-09-29T09:01:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Cambridgeshire bus routes set for changes as new network plans approved",
+  "url": "https://www.cambstimes.co.uk/news/26586608.cambridgeshire-bus-routes-change-public-feedback/",
+  "kind": "article",
+  "external_id": "07b582909994d5e8fc7edaed901fdc39",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Changes are on the way for bus routes in Cambridgeshire.",
+  "published": "2026-09-29T03:00:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Pensioners given major tax promise as Andy Burnham reveals new care plan",
+  "url": "https://www.cambstimes.co.uk/news/26592034.andy-burnhams-hmrc-personal-allowance-promise-pensioners/",
+  "kind": "article",
+  "external_id": "eddd878011e5e932b9bf6e30c0af342d",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Andy Burnham has pledged that low-income pensioners will not be dragged into paying Income Tax during this Parliament as he sets out his national care service plans.",
+  "published": "2026-09-29T14:50:47Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Andy Burnham announces end of DWP pensions triple lock to fund social care service",
+  "url": "https://www.cambstimes.co.uk/news/26592012.pensions-triple-lock-end-fund-new-social-care-service/",
+  "kind": "article",
+  "external_id": "ac15507f96d9af00da9be4153e93d4e3",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "The state pension triple lock could be scrapped as Andy Burnham discusses difficult choices around funding a national care service.",
+  "published": "2026-09-29T14:48:11Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Council to 'robustly' fight plan to house 26 asylum seekers in Fenland village",
+  "url": "https://www.cambstimes.co.uk/news/26588852.fenland-council-opposes-asylum-accommodation-leverington/",
+  "kind": "article",
+  "external_id": "142a3a176d2df66d03b86b07c21639ae",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Councillors have pledged to fight Government plans to house asylum seekers in Leverington, near Wisbech, fearing the move could lead to a wider district-wide accommodation programme.",
+  "published": "2026-09-28T16:33:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Race Across Cambridge sells out all 54 team spots for charity event",
+  "url": "https://www.cambstimes.co.uk/news/26585905.race-across-cambridge-sells-54-teams-2026/",
+  "kind": "article",
+  "external_id": "0adcf30c2c112b7d9a604d3f343462fb",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "The second edition of Race Across Cambridge, which takes place on October 1, has sold out.",
+  "published": "2026-09-28T14:21:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Plans for countryside traveller site rejected after more than 50 objections",
+  "url": "https://www.cambstimes.co.uk/news/26588023.plans-new-traveller-site-near-wisbech-turned/",
+  "kind": "article",
+  "external_id": "b41141e360c8c3c73f2f6db7c84e73ac",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Plans for new traveller site at Newton-in-the-Isle, near Wisbech, turned down after more than 50 objections.",
+  "published": "2026-09-28T13:59:08Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "NHS chiefs assure councillors Fenland hospital is not set for closure",
+  "url": "https://www.cambstimes.co.uk/news/26587621.no-plans-close-doddington-hospital-say-nhs-bosses/",
+  "kind": "article",
+  "external_id": "49dd50fa641b5453831765050c3cf1f7",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Health bosses have promised to keep Doddington Hospital open and its services running.",
+  "published": "2026-09-28T13:26:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Results of health study on controversial Whittlesey pit site to be published",
+  "url": "https://www.cambstimes.co.uk/news/26587316.health-study-saxon-pit-whittlesey-will-made-public/",
+  "kind": "article",
+  "external_id": "145370391b64a7a72846f02c4133c608",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "People living near Saxon Pit, Whittlesey, are being urged to attend public sessions next month to hear the findings of a major health assessment.",
+  "published": "2026-09-28T12:47:00Z",
+  "fetched_at": "2026-09-29T15:33:45+00:00"
+ },
+ {
+  "source_id": "S117",
   "title": "Men due in court after spaniel killed and woman injured in dog attack",
   "url": "https://www.cambstimes.co.uk/news/26586463.men-due-court-march-dog-attack-nene-parade/",
   "kind": "article",
@@ -19,7 +371,7 @@
   "categories": [],
   "summary": "Two men are due in court after a woman was injured and a pet killed during an early morning dog attack on Nene Parade in March.",
   "published": "2026-09-28T10:05:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -41,7 +393,7 @@
   "categories": [],
   "summary": "A new onshore wind farm planned south of Chatteris could generate enough electricity to power more than 100,000 homes.",
   "published": "2026-09-28T10:02:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -63,7 +415,7 @@
   "categories": [],
   "summary": "Olly Murs will perform at the July Course in 2027, as part of the Newmarket Nights series.",
   "published": "2026-09-28T09:50:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -85,7 +437,7 @@
   "categories": [],
   "summary": "An investigation is underway after a man suffered serious injuries in a crash on the A142 at Soham.",
   "published": "2026-09-28T09:35:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -105,9 +457,9 @@
   "status": null,
   "organizer": null,
   "categories": [],
-  "summary": "An investigation has been launched after police were called to a disturbance at The Hippodrome Wetherspoons hotel in March.",
+  "summary": "An investigation has been launched after police were called to a disturbance at JD Wetherspoon on Dartford Road in March.",
   "published": "2026-09-28T08:36:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -129,7 +481,7 @@
   "categories": [],
   "summary": "Cambridge University Hospitals (CUH) and Royal Papworth Hospital are joining forces to introduce a shared electronic patient record (EPR) system.",
   "published": "2026-09-28T04:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -151,7 +503,7 @@
   "categories": [],
   "summary": "A campaign has been launched to find more adoptive families for children in Cambridgeshire and Peterborough.",
   "published": "2026-09-28T03:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -173,7 +525,7 @@
   "categories": [],
   "summary": "A fresh dig is set to begin at a Roman villa in the Nene Valley, offering new insights into ancient life.",
   "published": "2026-09-27T14:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -195,7 +547,7 @@
   "categories": [],
   "summary": "A theatre production about the climate crisis is coming to Fenland.",
   "published": "2026-09-27T11:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -217,7 +569,7 @@
   "categories": [],
   "summary": "East Anglia’s Children’s Hospices in Milton has been praised for its \"exceptional care\" by the High Sheriff of Cambridgeshire during a recent visit.",
   "published": "2026-09-27T05:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -239,7 +591,7 @@
   "categories": [],
   "summary": "A deaf rescue dog is capturing hearts at Block Fen Animal Centre in Cambridgeshire.",
   "published": "2026-09-27T04:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -261,7 +613,7 @@
   "categories": [],
   "summary": "The March Society learned about the history of Royal Papworth Hospital at a meeting.",
   "published": "2026-09-27T04:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -283,7 +635,7 @@
   "categories": [],
   "summary": "The world's first Minecraft-themed hotel is set to open in the UK, bringing the iconic video game experience to life.",
   "published": "2026-09-27T16:43:55Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -305,7 +657,7 @@
   "categories": [],
   "summary": "Bradley Walsh is set to fill in for Simon Cowell during upcoming Britain’s Got Talent auditions while he has a back operation.",
   "published": "2026-09-27T16:41:46Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -327,7 +679,7 @@
   "categories": [],
   "summary": "Firefighting runs in the family for a Cambridgeshire crew who all helped tackle the Holme Fen wildfire, one of the county’s biggest incidents in years.",
   "published": "2026-09-26T13:33:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -349,7 +701,7 @@
   "categories": [],
   "summary": "Fifty-three students joined Neale-Wade Academy’s relaunched sixth form in March.",
   "published": "2026-09-26T13:02:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -371,7 +723,7 @@
   "categories": [],
   "summary": "Three classes from Thomas Eaton Primary Academy in in Wimblington enjoyed a school trip to Johnsons of Oldhurst.",
   "published": "2026-09-26T13:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -393,7 +745,7 @@
   "categories": [],
   "summary": "Chatteris Cricket Club's Fenland XI won the Fenland Invitation Trophy with a 132-run victory over Hemingford Park Cricket Club's Fenland Development XI.",
   "published": "2026-09-26T13:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -415,7 +767,7 @@
   "categories": [],
   "summary": "A Wisbech boxer has dedicated his return to the ring to a fan who became a friend and left a lasting impression.",
   "published": "2026-09-26T12:49:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -437,7 +789,7 @@
   "categories": [],
   "summary": "The Gruffalo and Peppa Pig will meet young fans in Wansford.",
   "published": "2026-09-26T11:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -459,7 +811,7 @@
   "categories": [],
   "summary": "A dog was found seemingly abandoned in a too-small cage in Newton-in-the-Isle.",
   "published": "2026-09-26T10:35:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -481,7 +833,7 @@
   "categories": [],
   "summary": "A householder can keep the gym, home office and store built beside their home without planning permission four years ago.",
   "published": "2026-09-26T10:31:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -503,7 +855,7 @@
   "categories": [],
   "summary": "A man banned from entering the UK was arrested after Class A drugs were reportedly found during a vehicle stop in Manea Road, March.",
   "published": "2026-09-26T10:02:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -525,7 +877,7 @@
   "categories": [],
   "summary": "A missing man with links to Cambridgeshire who may be \"confused and unpredictable\" without his medication remains unaccounted for.",
   "published": "2026-09-26T09:30:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -547,7 +899,7 @@
   "categories": [],
   "summary": "Cambridge came alive with colour, creativity, and crowds for the return of the Out of the Ordinary Festival.",
   "published": "2026-09-26T04:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -569,7 +921,7 @@
   "categories": [],
   "summary": "Archaeologists will begin a new dig at one of Britain’s most important Bronze Age sites next year, Flag Fen near Peterborough.",
   "published": "2026-09-26T03:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -591,7 +943,7 @@
   "categories": [],
   "summary": "Cambridgeshire Fire and Rescue Service won the Menopause Friendly Employer of the Year Award (Public Sector) at the Menopause and Menstruation Friendly Employer Awards.",
   "published": "2026-09-24T04:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -613,7 +965,7 @@
   "categories": [],
   "summary": "Further details have emerged after a new crematorium in Cambridgeshire was evacuated just weeks after it first opened to the public.",
   "published": "2026-09-25T12:17:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -635,7 +987,7 @@
   "categories": [],
   "summary": "Country music fans are in for a treat when a Nashville-inspired festival returns to Ely in 2027.",
   "published": "2026-09-25T12:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -657,7 +1009,7 @@
   "categories": [],
   "summary": "A long-standing gap on Wisbech High Street is set to be plugged by new shops and flats.",
   "published": "2026-09-25T11:42:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -679,7 +1031,7 @@
   "categories": [],
   "summary": "Lake View Bereavement Centre in Mepal, Cambridgeshire, has been evacuated just weeks after it opened to the public for the first time.",
   "published": "2026-09-25T11:19:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -701,7 +1053,7 @@
   "categories": [],
   "summary": "Wisbech Road in March remains shut after a crash between a car and a pedestrian.",
   "published": "2026-09-25T09:33:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -723,7 +1075,7 @@
   "categories": [],
   "summary": "Wisbech Road, in March, is closed this morning (Friday, September 25) due to a crash.",
   "published": "2026-09-25T08:42:06Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  },
  {
   "source_id": "S117",
@@ -745,358 +1097,6 @@
   "categories": [],
   "summary": "Obesity rates remain a major health challenge despite ongoing efforts to improve public health across Cambridgeshire.",
   "published": "2026-09-25T04:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Care Network Cambridgeshire celebrates 40 years after supporting 2,479 people in 2025",
-  "url": "https://www.cambstimes.co.uk/news/26551165.care-network-cambridgeshire-celebrates-40-years-support/",
-  "kind": "article",
-  "external_id": "a7e3e0eadee09ac73189e02625154d96",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Care Network Cambridgeshire is marking 40 years of helping people across the county.",
-  "published": "2026-09-25T03:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "'Do not eat' warnings issued as salmonella contamination causes chocolate recall",
-  "url": "https://www.cambstimes.co.uk/news/26580875.chocolate-recall-issued-amid-salmonella-contamination/",
-  "kind": "article",
-  "external_id": "fe75d0f1a8786746d7700716b55e3645",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Symptoms caused by salmonella usually include fever, diarrhoea and abdominal cramps.",
-  "published": "2026-09-25T08:23:31Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Tenpin to open 20-lane bowling and entertainment venue at Peterborough's Queensgate",
-  "url": "https://www.cambstimes.co.uk/news/26579122.new-20-lane-tenpin-bowling-venue-queensgate-peterborough/",
-  "kind": "article",
-  "external_id": "77ba0f1669a799fdea2f604bb904fbec",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Tenpin is set to open a 20-lane bowling venue at Queensgate in Peterborough.",
-  "published": "2026-09-24T16:18:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Man charged after alleged bomb hoax on train in Cambridgeshire",
-  "url": "https://www.cambstimes.co.uk/news/26579752.man-charged-waterbeach-cambridge-train-bomb-hoax/",
-  "kind": "article",
-  "external_id": "5d777028c4b2f9dc3635ad11bdb7b495",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "A man has been charged after allegedly making a false bomb report on a train running between Waterbeach and Cambridge North.",
-  "published": "2026-09-24T15:41:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Prison officer accused of smuggling cannabis and mobile phones",
-  "url": "https://www.cambstimes.co.uk/news/26579185.hmp-peterborough-officer-accused-smuggling-cannabis/",
-  "kind": "article",
-  "external_id": "8785493d8dfebff12e3ae3d8c0b27577",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "A prison officer is due to appear in court accused of smuggling mobile phones and cannabis into HMP Peterborough.",
-  "published": "2026-09-24T15:22:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Twelve people charged in connection with hundreds of fuel thefts",
-  "url": "https://www.cambstimes.co.uk/news/26578993.twelve-people-charged-fuel-thefts-cambridgeshire/",
-  "kind": "article",
-  "external_id": "609032a87487c5f71a3e661942bac233",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Twelve people have been charged in connection with a spate of fuel thefts across Cambridgeshire.",
-  "published": "2026-09-24T13:16:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Further details emerge after boy 'assaulted' at Cambridgeshire school",
-  "url": "https://www.cambstimes.co.uk/news/26578277.cromwell-community-college-trust-assault-student/",
-  "kind": "article",
-  "external_id": "3c29d73303e4e64396d16340d087a38e",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Further details have emerged after a student was allegedly assaulted at Cromwell Community College in Chatteris.",
-  "published": "2026-09-24T10:51:04Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Cambridgeshire fire service warns damaged or propped-open doors put lives at risk",
-  "url": "https://www.cambstimes.co.uk/news/26577756.damaged-doors-put-lives-risk-say-cambs-fire-service/",
-  "kind": "article",
-  "external_id": "d892bed7c9fe43caf4dd71638412afa9",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Damaged or propped-open fire doors could put lives at risk, Cambridgeshire Fire and Rescue Service has warned.",
-  "published": "2026-09-24T10:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Urgent search for 'vulnerable' missing man with links to Cambridgeshire",
-  "url": "https://www.cambstimes.co.uk/news/26577800.man-missing-stevenage-cambridgeshire/",
-  "kind": "article",
-  "external_id": "3ea670c6410057e60209d861080a66aa",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Police have shared a fresh photo of a missing man from Stevenage who has links to Cambridgeshire.",
-  "published": "2026-09-24T09:59:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Investigation launched after boy 'assaulted' at school in Cambridgeshire",
-  "url": "https://www.cambstimes.co.uk/news/26577473.boy-assaulted-cromwell-community-college-chatteris/",
-  "kind": "article",
-  "external_id": "dbbfe3f74194ee680110676a53ad2eda",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "An investigation has been launched after a student was allegedly assaulted at Cromwell Community College in Chatteris.",
-  "published": "2026-09-24T08:58:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "UNIQLO opens first Cambridge store at Grand Arcade",
-  "url": "https://www.cambstimes.co.uk/news/26576435.uniqlo-opens-first-cambridge-store-grand-arcade/",
-  "kind": "article",
-  "external_id": "e519c8a4d0797624d5c82cdf91ce237c",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "UNIQLO’s has opened at the Grand Arcade in Cambridge today (Thursday September 24).",
-  "published": "2026-09-24T08:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Cambs Chamber of Commerce urges Chancellor to tackle barriers to business growth",
-  "url": "https://www.cambstimes.co.uk/news/26567287.chancellor-urged-tackle-barriers-cambs-business-growth/",
-  "kind": "article",
-  "external_id": "ff7ed9a551fb52bf213ed2d556e85845",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "The Cambridgeshire Chamber of Commerce has urged the Chancellor to act ahead of the Autumn Budget.",
-  "published": "2026-09-24T04:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "£1.75m boost to tackle rough sleeping across Cambridgeshire and Peterborough",
-  "url": "https://www.cambstimes.co.uk/news/26567485.1-75m-funding-tackle-rough-sleeping-cambridgeshire/",
-  "kind": "article",
-  "external_id": "ebfe3a6911a19dfccd924ea0db8d0563",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "A £1.75 million funding boost will tackle rough sleeping across Cambridgeshire and Peterborough.",
-  "published": "2026-09-24T03:00:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Investigation launched after cash stolen in Taco Bell burglary",
-  "url": "https://www.cambstimes.co.uk/news/26576084.investigation-launched-burglary-wisbech-taco-bell/",
-  "kind": "article",
-  "external_id": "c9df88bc9a18893f0924efda786bac66",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "An investigation has been launched after cash was stolen in a burglary at Wisbech's Taco Bell.",
-  "published": "2026-09-23T14:46:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Huntingdonshire builder praised after iPhone alert detects crash near Chatteris",
-  "url": "https://www.cambstimes.co.uk/news/26575744.ramsey-builder-praised-helping-forty-foot-crash-scene/",
-  "kind": "article",
-  "external_id": "84052854f4894cd9e8b141b884704d44",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "A builder from Ramsey has been praised for helping at the scene of a crash on the Forty Foot near Chatteris.",
-  "published": "2026-09-23T14:30:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Neutering plea as Wisbech and Fenland battles one of nation's worst cat crises",
-  "url": "https://www.cambstimes.co.uk/news/26573078.calls-tackle-growing-feral-cat-crisis-fenland/",
-  "kind": "article",
-  "external_id": "42c2da6383fdb42506115159aac13f49",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "An animal rescue volunteer says Wisbech and Fenland face one of the country’s worst stray-cat crises and is urging owners to have their pets neutered.",
-  "published": "2026-09-23T13:41:00Z",
-  "fetched_at": "2026-09-28T10:36:47+00:00"
+  "fetched_at": "2026-09-29T15:33:45+00:00"
  }
 ]

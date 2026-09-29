@@ -73,6 +73,8 @@ Rubrics (`rubric` values; the input lists the ones available):
   including dates of annual events — an annual event with a confirmed date (`evidence` mentions the annual event, e.g.
   Mill Road Winter Fair) is the first candidate and must be included. Far-off concerts on sale now go here ("on sale
   since …"). 3–4 items when there are enough.
+- `page_urgency` (few_left, selling_fast, early_bird_ends, some_dates_sold_out) — a signal our recheck found on the
+  event page; we print it next to the date, you may mention it once in the blurb. `page_signal` is the text it came from.
 - `tickets` — only `T…` candidates with `urgency` (few tickets left, early price ending, a soon event in a small hall):
   say why it is urgent. Only tickets for an audience: registrations for runs, triathlons and challenges
   (`participant`) never go here. No urgent candidates — leave the rubric out.

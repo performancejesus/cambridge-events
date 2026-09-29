@@ -305,6 +305,16 @@ def refresh(con: sqlite3.Connection, run_id: str) -> dict:
             status, src = e["status"], None
         if e["status"] == "past" and status == "disappeared":
             status = "past"
+        # этап 7: статус со страницы события (последняя перепроверка, pipeline/status_check.py) — отмена, перенос,
+        # распродано важнее данных ленты; «в продаже» открывает продажу у анонса
+        page = con.execute("SELECT status, checked_at FROM page_status WHERE event_id=? AND result='ok'",
+                           (e["event_id"],)).fetchone() if con.execute(
+            "SELECT name FROM sqlite_master WHERE name='page_status'").fetchone() else None
+        if page and end_date_ >= today and status not in ("cancelled", "postponed"):
+            if page[0] in ("cancelled", "postponed", "sold_out"):
+                status, src = page[0], "page"
+            elif page[0] == "on_sale" and status in ("announced", "disappeared"):
+                status, src = "on_sale", "page"
         con.execute("""UPDATE events SET title=?, venue_id=?, venue_name=?, address=?, postcode=?, lat=coalesce(?, lat),
             lon=coalesce(?, lon), zone=coalesce(?, zone), address_unknown=?, multi_venue=?, price_from=?, price_text=?, url=?,
             last_seen_at=?, status=? WHERE event_id=?""",

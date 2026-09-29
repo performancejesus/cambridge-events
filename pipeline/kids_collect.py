@@ -84,6 +84,11 @@ def providers() -> list[dict]:
         x = out.setdefault(h, {"host": h, "name": name, "type": "срез 6-v4 (не проверен)", "urls": []})
         if url not in x["urls"]:
             x["urls"].append(url)
+    extra = ROOT / "data" / "kids_providers_extra.json"   # этап 7: сайт совета и лагеря Cambridge United
+    if extra.exists():
+        for p in json.loads(extra.read_text())["providers"]:
+            x = out.setdefault(p["host"], {"host": p["host"], "name": p["provider"], "type": p["type"], "urls": []})
+            x["urls"] = list(dict.fromkeys(p["urls"] + x["urls"]))
     for x in out.values():
         x["urls"] = x["urls"][:3]
     return sorted(out.values(), key=lambda x: x["host"])
@@ -210,7 +215,11 @@ def kid_zone(con: sqlite3.Connection, x: dict, provider_towns: list[str]) -> tup
 
 
 def provider_towns() -> dict[str, list[str]]:
-    return {p["host"]: p.get("towns") or [] for p in json.loads((ROOT / "data" / "kids_providers.json").read_text())["providers"]}
+    out = {p["host"]: p.get("towns") or [] for p in json.loads((ROOT / "data" / "kids_providers.json").read_text())["providers"]}
+    extra = ROOT / "data" / "kids_providers_extra.json"
+    if extra.exists():
+        out |= {p["host"]: p.get("towns") or [] for p in json.loads(extra.read_text())["providers"]}
+    return out
 
 
 def rezone(con: sqlite3.Connection) -> dict:

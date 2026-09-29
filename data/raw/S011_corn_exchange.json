@@ -1,28 +1,6 @@
 [
  {
   "source_id": "S011",
-  "title": "Georgie Carroll: Nurse Georgie Carroll: Infectious",
-  "url": "https://www.cornex.co.uk/events/georgie-carroll-nurse-georgie-carroll-infectious",
-  "kind": "event",
-  "external_id": "https://www.cornex.co.uk/events/georgie-carroll-nurse-georgie-carroll-infectious",
-  "start": "2026-09-28",
-  "end": null,
-  "all_day": true,
-  "venue": "Cambridge Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": "£25.50",
-  "status": "scheduled",
-  "organizer": "Cambridge Corn Exchange",
-  "categories": [],
-  "summary": "Georgie Carroll is back with her brand-new show, INFECTIOUS! An undeniable live comedy powerhouse and a natural storyteller, she’s razor sharp and riotous. Nurse turned comedian, Georgie Carroll is not only brilliantly funny, she is unstoppable on the comedy circuit having performed her smash hit a…",
-  "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
- },
- {
-  "source_id": "S011",
   "title": "My Royal Life: An Audience with Lucy Worsley",
   "url": "https://www.cornex.co.uk/events/my-royal-life-an-audience-with-lucy-worsley",
   "kind": "event",
@@ -41,7 +19,7 @@
   "categories": [],
   "summary": "Step into a glittering royal world with Lucy Worsley, beloved historian and bestselling author, who spent twenty years working as Chief Curator in some of Britain’s most marvellous palaces. Lucy wants to take you behind the scenes and into the history of the royal residences she came to know so wel…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:33+00:00"
  },
  {
   "source_id": "S011",
@@ -63,7 +41,7 @@
   "categories": [],
   "summary": "Get ready to scream like it’s 1999…Boyband in the Buff is the ultimate throwback concert with a cheeky twist - starring pop heartthrob Gareth Gates alongside a cast of seriously talented (and seriously ripped) performers.Stripped back to nothing but slick harmonies, killer choreography and undeniab…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:33+00:00"
  },
  {
   "source_id": "S011",
@@ -85,7 +63,7 @@
   "categories": [],
   "summary": "Joe Jackson and his band will perform in the Corn Exchange. This show will feature work from throughout Joe Jackson’s remarkable career, and also celebrate the release of his new album Hope and Fury, which will be released worldwide on 10 April 2026. Hope and Fury overflows with great tunes, clever…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:33+00:00"
  },
  {
   "source_id": "S011",
@@ -107,7 +85,7 @@
   "categories": [],
   "summary": "It has been 12 years since STEVE HACKETT brought his classic Genesis Revisited show to us. Back then, in 2013, his UK tour culminated in his acclaimed performance at London’s Royal Albert Hall and the following release of the live DVD of that performance.Since then, Steve’s timeless guitar work has…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:33+00:00"
  },
  {
   "source_id": "S011",
@@ -129,7 +107,29 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:33+00:00"
+ },
+ {
+  "source_id": "S011",
+  "title": "Corn Exchange Tour and AR Experience",
+  "url": "https://www.cornex.co.uk/events/corn-exchange-tour-and-ar-experience",
+  "kind": "event",
+  "external_id": "https://www.cornex.co.uk/events/corn-exchange-tour-and-ar-experience",
+  "start": "2026-10-05",
+  "end": null,
+  "all_day": true,
+  "venue": "Cambridge Corn Exchange",
+  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
+  "postcode": "CB2 3QB",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": "scheduled",
+  "organizer": "Cambridge Corn Exchange",
+  "categories": [],
+  "summary": "Step into the future with an interactive Augmented Reality showcase celebrating the 150th anniversary of the Corn Exchange. View some of the greatest artists to ever step foot on the Corn Exchange stage come to life and perform before your eyes. Watch vehicles come to life in a virtual car showcase…",
+  "published": null,
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -151,7 +151,7 @@
   "categories": [],
   "summary": "DON BROCO have built a reputation for doing things their own way. Since forming in Bedford in 2008, the quartet, Rob Damiani, Simon Delaney, Tom Doyle and Matt Donnelly, have carved out a distinctive sound that blends rock, metal, post-hardcore and electronica into something uniquely their own.With…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -173,7 +173,7 @@
   "categories": [],
   "summary": "He’s back, and he’s Fair Dinkum Funny!After 40+ years of touring the UK, selling millions of records, and releasing 21 classic albums, KEVIN BLOODY WILSON remains the gold standard for Aussie comedy —outrageous &amp; unfiltered. Kev’s still the cheekiest bloke on the planetHis PC free, DILLIGAF att…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -195,7 +195,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -217,7 +217,7 @@
   "categories": [],
   "summary": "Alison Moyet’s 2026 tour will consist exclusively of songs from the Yazoo catalogue and select tracks from her solo electronica albums ‘the minutes’ and ‘Other’.While a handful of Yazoo hits are staples of Alison’s live sets, much of the band’s material has rarely been performed outside of their tw…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -239,7 +239,7 @@
   "categories": [],
   "summary": "Syd Barrett, the pioneering songwriter, artist and founding member of Pink Floyd, is being celebrated for what would have been his 80th birthday at Cambridge Corn Exchange, where he gave his final live performance on 24 February 1972. On 10 October, audiences will experience a special concert featu…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -261,7 +261,7 @@
   "categories": [],
   "summary": "🎸 The Cambridge Rock ’n’ Roll Club🎸 SUNDAY 11TH OCTOBER 2026 - JOHNNY REDOn the third Friday of every month, head to the Abbey Lounge on Newmarket Road, Cambridge, CB5 8LN, for a fantastic afternoon of live rock ’n’ roll!🕝 2.30pm – 5.30pmEvery month features a different great rock ’n’ roll band or …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -283,7 +283,7 @@
   "categories": [],
   "summary": "80s icons Hue and Cry and Roachford have announced a co-headline UK tour for 2026, bringing a special show featuring full sets and full bands to Cambridge.Brothers Patrick and Gregory Kane formed Hue and Cry in 1984 and the duo made a huge impact with the release of their debut album ‘Seduced and A…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -305,7 +305,7 @@
   "categories": [],
   "summary": "Alice Cooper announces the release of his definitive autobiography, ‘Devil on my Shoulder’, published by Ebury Spotlight on 8th October 2026. This long-awaited autobiography finally lifts the lid on one of the greatest lives in music.Building on over sixty years of rock folklore, the evening will f…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -327,7 +327,7 @@
   "categories": [],
   "summary": "The Legends Brendan, James, Pasha, Vincent and Ian in their BRAND NEW Show:Vegas: After Hours – Where the Dance Floor Never Sleeps!Get ready for the ultimate night out- Vegas: After Hours brings five Strictly dance legends together for a spectacular new show that captures all the glitz, glamour, an…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -349,7 +349,7 @@
   "categories": [],
   "summary": "Men want to be him, Women want their boyfriends to stop showing them his videos. The King of the Internet Jungle is back where he belongs, doing stand-up in front of a live audience. After the whirlwind success of his chart-topping podcast Fin vs History and interview series Fin vs the Internet, it…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -371,7 +371,7 @@
   "categories": [],
   "summary": "An Unforgettable Night Out with FriendsGet ready for a night of big vocals, big energy and even bigger memories.The Big Pants Party is a high-energy live concert celebrating the songs that defined your friendships, the anthems you danced to, sang through heartbreak with, and blasted on unforgettabl…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -393,7 +393,7 @@
   "categories": [],
   "summary": "The world is in chaos. Inequality is widening, autocracy is rising and political parties are collapsing. In these divided times, what this country desperately needs is Angry Humour From a Really Nice Guy (in many ways it's actually the last thing this country needs, but it's what it's getting so to…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -415,7 +415,7 @@
   "categories": [],
   "summary": "Legendary 2-Tone group The bEAT, led by vocalist Dave Wakeling, have announced Dance Crazed Too - a 21 date UK tour.Formed in 1979, The bEAT made an instant splash with their debut 2-Tone single “Tears of a Clown,” hitting #6 in the UK charts and joining the ranks of The Specials and Madness.Across…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -437,7 +437,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -459,7 +459,7 @@
   "categories": [],
   "summary": "Dundalk’s finest The Mary Wallopers have announced details of their third album – produced by The Coral’s James Skelly and packed with their own songs - a new single and the band’s biggest headline tour to date.Paddywhackery follows up 2023’s hugely acclaimed Irish Rock’n’Roll. That album saw the b…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -481,7 +481,7 @@
   "categories": [],
   "summary": "Fresh from his latest television series and companion book, Michael Palin returns to the stage to share the story of one of his most ambitious journeys yet. With the help of stunning photography, behind-the-scenes footage and rarely seen moments from filming, Michael takes audiences beyond the tele…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -503,7 +503,7 @@
   "categories": [],
   "summary": "After almost 60 years of life on the road, music legend Leo Sayer returns to the UK for what could well be his final full UK tour. ‘I love performing for my fans and look forward to doing so for many more years, but this will be the last time I play so many dates across the country. I am not retiri…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -525,7 +525,7 @@
   "categories": [],
   "summary": "He’s the comedian who showered FIFA president Sepp Blatter with cash, handed Prime Minister Theresa May her P45, and created the smash-hit BBC comedy series Lee Nelson’s Well Good Show.Simon is now one of the most exciting stand-up comedians in the world to see live. His last tour, ‘Screwed Up’, wa…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -547,7 +547,7 @@
   "categories": [],
   "summary": "Ideas Man, noun : 'A person who is particularly good at thinking of new or original ideas.' That's what Mike Bubbins is. Not an admin man. Not an organised man. Not an especially dedicated man. This comedy tour, for instance, is a case in point. Mike has got loads of really funny stories. He's wond…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -569,7 +569,7 @@
   "categories": [],
   "summary": "Straight off the back of Taskmaster, A League Of Their Own, and Last One Laughing, Maisie Adam is back with her brand new show Whatsherface! Join the “tall, chaotic one with the weird hair”* as she returns with her trademark wit, firecracker gags, and probably a few angry outbursts along the way.*A…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -591,7 +591,7 @@
   "categories": [],
   "summary": "WHAT IF EVERYTHING YOU’VE BEEN TOLD IS A LIE?The Forbidden Realm of Conspiracies: Uncovered is a bold, immersive theatre experience that pulls you deep into the world of conspiracy theories, hidden narratives, and forbidden questions - brought to life with cinematic visuals, powerful sound, and liv…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -613,7 +613,7 @@
   "categories": [],
   "summary": "Direct from London’s West End. Over the last few years Science has led the way in getting our lives back to normal. Now, the UK’s favourite science team are back and more explosive than ever! Join our presenters as they dive deep into the world of science and look at how science shapes the modern w…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -635,7 +635,7 @@
   "categories": [],
   "summary": "Jonathan Pie, the Uk’s angriest news reporter returns for a brand-new Live Show touring the UK.Jonathan Pie is coming to terms with the horror of Keir Starmer’s Labour and the fact that he voted for it. Meanwhile, Reform are waiting in the wings and Elon Musk is pulling the strings. The far-right a…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -657,7 +657,7 @@
   "categories": [],
   "summary": "I definitely don't know what's going on. I'm not even sure I know what's happening anymore. BUT I cannot wait to come to your town and respect your traditions. I have been on tv over 5 times. May I divulge a secret? I have purchased a large metal ring. I will use it to keep all of the keys to the c…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -679,7 +679,7 @@
   "categories": [],
   "summary": "Dexys Midnight Runners are back! The much-loved band, led by singer Kevin Rowland, have announced details of a U.K &amp; Irish. tour starting in October of this year.Founded in Birmingham in 1978, Dexys Midnight Runners released three critically and commercially successful albums – Searching For Th…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -701,7 +701,7 @@
   "categories": [],
   "summary": "Behind a normal door, in an ordinary house, lies a museum that is anything but. For decades, Reece Shearsmith has been collecting terrible things. The screaming skull of Glamis Castle, the Highgate vampire, sea devils, witch hunters and a talking mongoose called Gef. Some of them he found. Some of …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -723,7 +723,7 @@
   "categories": [],
   "summary": "Musical maestro Jools Holland and his world-renowned Rhythm &amp; Blues Orchestra are delighted to announce their 2026 Autumn / Winter tour of 31 dates across the UK, visiting some of the country’s most iconic venues.Renowned for his exuberant live shows, Jools will once again be backed by the full…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -745,7 +745,7 @@
   "categories": [],
   "summary": "Step into the golden sands of Ancient Egypt with award-winning historian Bettany Hughes as she brings the land of the pharaohs vividly to life.With over 50 documentaries seen by 250 million viewers worldwide and bestselling books including The Seven Wonders of the Ancient World and Venus &amp; Aphr…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -767,7 +767,7 @@
   "categories": [],
   "summary": "Craig and Charlie Reid return in 2026 with a highly anticipated 13th studio album and a string of major live dates across the UK.Following the phenomenal success of their 14-month \"Dentures Out\" world tour, which concluded in August 2023, The Proclaimers are back!The pair have announced their retur…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -789,7 +789,7 @@
   "categories": [],
   "summary": "Renowned historian Mary Beard returns to the stage after her sold-out 2025 tour, stepping once more into the world of Ancient Rome — a civilisation whose stories still shape the way we see ourselves today.In this captivating live event, Mary takes you beyond the well-worn paths of emperors and batt…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -811,7 +811,7 @@
   "categories": [],
   "summary": "With two sell-out runs at the Edinburgh Fringe, 50 million+ views online and a Sunday Times best-selling book, you could say W*nkernomics is crushing it right now. They’d say they’re delivering key outcomes with impact in a fast-paced environment. Their hilarious new show is a must see: A Q&amp;A-s…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -833,7 +833,7 @@
   "categories": [],
   "summary": "Hi. I’m Romesh Ranganathan and I Will Change Your Life.Tired of trying quick fixes and papering over the cracks in your life? Then you haven’t tried my new quick fix. My latest tour show. It’s scientifically proven* to improve your self esteem. Simply standing next to my tour poster will boost your…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -855,7 +855,7 @@
   "categories": [],
   "summary": "Jack Savoretti announces his biggest tour to date, with a 29-date run across the UK and Europe.The tour will cap off a landmark year for Jack, following the release of his ninth studio album, We Will Always Be The Way We Were, out on 10 April 2026.Over the course of his career, Jack Savoretti has r…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -877,7 +877,7 @@
   "categories": [],
   "summary": "One of the UK’s most iconic voices to perform songs from Sinatra, Bennett Presley, and more swing and crooner greats. A true national treasure, the crooning, swing style not only suits Tony’s timeless singing voice, but also his natural charm as a raconteur and a showman in every sense.The perfect …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -899,7 +899,7 @@
   "categories": [],
   "summary": "The Anglia Comedy Allstars show returns to Cambridge Corn Exchange this November, with a ridiculous line-up featuring the hilarious Tom Allen, Fern Brady, Jack Skipper &amp; Darren Harriott!With his signature acerbic wit and riotous storytelling, Tom Allen has cemented himself as a household name a…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -921,7 +921,7 @@
   "categories": [],
   "summary": "What happens when space becomes the new economic frontier? Who controls the resources beyond our atmosphere? How will the coming space revolution transform life on Earth? Join acclaimed astronaut, test pilot, spacewalker, spaceship commander, and best-selling author Chris Hadfield for a gripping jo…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -943,7 +943,7 @@
   "categories": [],
   "summary": "Boundary-breaking and genre-defying, the London Symphonic Rock Orchestra return to the UK with a brand new set. Performing legendary anthems with breathtaking scale and intensity, fusing the majestic power of the symphony orchestra with the rebellious energy of rock.Since 2018, the London Symphonic…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -965,7 +965,7 @@
   "categories": [],
   "summary": "For nearly forty years Chris Packham has been the voice of nature in the UK. Through his groundbreaking work on The Really Wild Show, Springwatch, Inside Our Autistic Minds and Earth, Chris has devoted his remarkable life to engaging with the natural world - and urging us all to do the same. Join C…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -987,7 +987,7 @@
   "categories": [],
   "summary": "Susan Calman hasn’t been on tour in ten years, but now she’s back with a brand-new show. A decade older, but not necessarily wiser, Susan has found herself in some improbable situations over the years. Tall tales is a show about Cruising, driving tanks, cats and getting older. You might have seen h…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1009,7 +1009,7 @@
   "categories": [],
   "summary": "Bellowhead celebrate the 20th anniversary of their full-length debut album Burlesque in 2026. The 11-piece folk outfit made a watertight case for ‘big being beautiful’ with the release of Burlesque which features songs including London Town, Frog’s Legs and Dragon’s Teeth and Rigs of The Time. Show…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1031,7 +1031,7 @@
   "categories": [],
   "summary": "Del Amitri have announced the ‘Past To Present’ UK Tour 2026, a landmark nationwide run marking four decades of songs, stories and live shows. A celebration of a catalogue that has soundtracked generations, the tour includes a date at London’s Roundhouse, Manchester’s Bridgewater Hall in November, …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1053,7 +1053,7 @@
   "categories": [],
   "summary": "Prof Alice Roberts said “I’m thrilled to be bringing a new stage show to the UK in November exploring the story of us, from Cell to Civilisation.Blending archaeology, evolutionary biology and genetics and using theatrical sound, light and imagination to bring the science to life in a way that you’v…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1075,7 +1075,7 @@
   "categories": [],
   "summary": "Embrace are celebrating their 30th anniversary with a run of UK headline tour dates in November and the announcement of their ninth album Avalanche!",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1097,7 +1097,7 @@
   "categories": [],
   "summary": "Join us for a Thriller of an evening, as we celebrate the legendary music of the KING OF POP.This is the “Man in the Mirror” – The brand new must-see, electrifying tribute concert to Michael Jackson. Starring CJ, one of the world’s greatest Michael Jackson Tribute Artists and supported by a talente…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1119,7 +1119,7 @@
   "categories": [],
   "summary": "Indie-rock legends Ocean Colour Scene have announced a major UK tour for 2026, celebrating the 30th anniversary of their classic album Moseley Shoals.For the Moseley Shoals 30th anniversary tour, in addition to playing all the highlights from Moseley Shoals, Ocean Colour Scene will play a career-sp…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1141,7 +1141,7 @@
   "categories": [],
   "summary": "CAN YOU CATCH A SERIAL KILLER? THE UK’S FIRST INTERACTIVE SERIAL KILLER INVESTIGATIONJoin the investigation in 'Can You Catch a Serial Killer?' Follow real-life cases through dramatised crime scene mock-ups, criminal profiling, investigative techniques, forensic evidence, and simulated autopsies. Y…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1163,7 +1163,7 @@
   "categories": [],
   "summary": "Praising the Beloved: An Evening with Mesut KurtisAn evening of devotional music with internationally acclaimed artist Mesut Kurtis, presented as the flagship concert of The Cambridge Festival of Islamic Arts with the support of Yunus Emre Enstitüsü – London.Known for his distinctive interpretation…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1185,7 +1185,7 @@
   "categories": [],
   "summary": "The Amy Winehouse Band - Amy’s original band who were with her from the very start throughout her meteoric rise - have announced a major UK tour celebrating the 20th anniversary of her defining album, Back to Black.Released in 2006, Back to Black became the album that transformed Amy Winehouse from…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1207,7 +1207,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1229,7 +1229,7 @@
   "categories": [],
   "summary": "Multiplatinum rock band Barenaked Ladies announce a 2026 UK Tour – Yuletide Ride – the band’s first UK tour dates since 2023. Joining Barenaked Ladies in the UK will be their friend and touring colleague, Boothby Graffoe. Over the past 38 years, Barenaked Ladies have established themselves as a muc…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1251,7 +1251,7 @@
   "categories": [],
   "summary": "Catch comedy all-stars live in Cambridge for a spectacular festive show! NINA CONTIJOHN KEARNS TOUSSAINT DOUGLASSBRIDGET CHRISTIEJEN BRISTERBritish Comedy Award winning queen of ventriloquism Nina Conti headlines a huge holiday bill. Nina has stormed Live At The Apollo, Sunday Night at the Palladiu…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1273,7 +1273,7 @@
   "categories": [],
   "summary": "The Australian Pink Floyd have announced The Happiest Days Of Our Lives, a 30-date greatest hits tour spanning all corners of the UK for 2026. The band will take to the stage with a collection of greatest hits that resonate deeply with Pink Floyd fans worldwide. Featuring a new stage set and video …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1295,7 +1295,7 @@
   "categories": [],
   "summary": "The Royal Philharmonic OrchestraConducted by James MorganSoloist: Juliette PochinCelebrate the magic of Christmas with the Royal Philharmonic Orchestra in this fun-filled festive concert.Sing along to your favourite Christmas carols, from beloved traditional carols to modern classics, including The…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1317,7 +1317,7 @@
   "categories": [],
   "summary": "The bestselling author of Simple and Flavour, Yotam Ottolenghi, invites you to celebrate the release of his highly anticipated new cookbook Simple Too, an irresistible companion to the era-defining Simple.Yotam will be cooking live on stage, sharing the inspiration behind this beautifully crafted c…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1339,7 +1339,7 @@
   "categories": [],
   "summary": "This Christmas, experience the heart, humour and spirit of Ireland, with Christmas in Ireland.Be transported to a magical Christmas Eve inside a traditional Irish pub, where friends, old and new, gather to share songs, stories and memories of Christmases gone by. As snow falls outside, the air fill…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1361,7 +1361,7 @@
   "categories": [],
   "summary": "Described as ‘the gold standard’ of all winter records alongside Frost and Fire by The Watersons in a five star review from the Times, The Unthanks In Winter is a dream-like winter fantasia, embracing both the dark and the light in the most ritualistic of seasons. Moving in and out of focus, like a…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1383,7 +1383,7 @@
   "categories": [],
   "summary": "Classically Kate Bush will see the legendary singer-songwriter’s eternal, era-defining songs - including Cloudbusting, Hounds of Love, Babooshka, Wuthering Heights and Running Up That Hill (A Deal with God) - brought thrillingly to life by a live band and a 18-piece orchestra.Performed by The Hound…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1405,7 +1405,7 @@
   "categories": [],
   "summary": "Join James B Partridge for The Big Christmas Assembly 2026 - the nostalgic, feel-good festive singalong that brings your childhood Christmases flooding back. Packed with more festive classics, throwback mashups, and laugh-out-loud stories than you can throw a glitter-glue halo at. What began as pla…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1427,7 +1427,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1449,7 +1449,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1471,7 +1471,7 @@
   "categories": [],
   "summary": "Back for 2026, bigger and better, your Christmas starts here!Get ready to Step Into Christmas once again for the most magical, feel-good show of the year! After a sensational run, we’re back – bigger, brighter, and more festive than ever before. This spectacular Christmas concert is the ultimate wa…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1493,7 +1493,7 @@
   "categories": [],
   "summary": "After selling over 250,000 tickets on his critically acclaimed 2025/2026 UK &amp; Ire tour, Greg Davies is heading back out on the road in 2026/2027 to satisfy the overwhelming demand to witness the Full Fat Legend at the very top of his game. Star of shows such as Taskmaster, The Inbetweeners, The…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1515,7 +1515,7 @@
   "categories": [],
   "summary": "There’s nothing quite like Kate Rusby at Christmas. For more than two decades, Kate has enchanted audiences with her sparkling Christmas concerts — nights filled with warmth, wonder, laughter, and that unmistakable Rusby magic.Returning in December 2026, marking a remarkable 21 years of her annual …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1537,7 +1537,7 @@
   "categories": [],
   "summary": "Step into the shimmer and feel the rhythm with XMAS ON THE DANCEFLOOR, the ultimate festive dance spectacular for all ages! Featuring guest star and Strictly sensation Gorka Márquez alongside a stunning cast of world-class dancers, singers and the fabulous XMAS DOLLS. This dazzling new show brings …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1559,7 +1559,7 @@
   "categories": [],
   "summary": "Cambridge… dust off your platform boots, dig out those 70s outfits, and get ready to sing and dance the night away at the biggest Christmas ABBA party night of the year with Voulez-Vous: The Music of ABBA.Expect an evening of electrifying, non-stop entertainment, packed with nostalgia, sensational …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1581,7 +1581,7 @@
   "categories": [],
   "summary": "It’s the most wonderful time of the year: the 30-piece Down for the Count Swing Orchestra returns with its much-loved annual seasonal treat, Swing Into Christmas! Gather your loved ones for a joyful set of festive and non-festive classics as you’ve never experienced them before.This is a Christmas …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1603,7 +1603,7 @@
   "categories": [],
   "summary": "Delight in the timeless magic of classical ballet with breathtaking performances of The Nutcracker. The grace and musicality of Tchaikovsky’s iconic score highlights the elegance and artistry of every movement, a live orchestra capturing the full emotion for a truly memorable experience.The festive…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1625,6 +1625,6 @@
   "categories": [],
   "summary": "Delight in the timeless magic of classical ballet with breathtaking performances of Swan Lake. The graceful beauty of Tchaikovsky’s iconic score highlights the elegance and artistry of every movement, a live orchestra capturing the full emotion for a truly memorable experience.The romance and trage…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:45+00:00"
+  "fetched_at": "2026-09-29T15:28:36+00:00"
  }
 ]

@@ -1,0 +1,43 @@
+{
+ "_comment": "Этап 7 (пункт 4 этапа 6d): страницы Cambridge City Council о регулярных занятиях для детей и молодёжи и лагеря Cambridge United. Регулярные секции — kind=regular в kids_programmes; проверка раз в месяц и к началу триместра. Cambridge United Community Trust отдельного сайта с программами не имеет: Premier League Kicks описаны на странице совета, лагеря — на cambridgeunited.com/cufc-camps (soccer schools на officialsoccerschools.co.uk закрыты Cloudflare).",
+ "providers": [
+  {
+   "host": "cambridge.gov.uk",
+   "provider": "Cambridge City Council — занятия для детей и молодёжи",
+   "type": "совет (регулярные занятия)",
+   "urls": [
+    "https://www.cambridge.gov.uk/physical-activities-for-young-people",
+    "https://www.cambridge.gov.uk/physical-activities-for-families",
+    "https://www.cambridge.gov.uk/inclusive-physical-activities"
+   ],
+   "towns": [
+    "Cambridge"
+   ]
+  },
+  {
+   "host": "cambridgeunited.com",
+   "provider": "Cambridge United FC — holiday camps",
+   "type": "клуб (каникулярные лагеря)",
+   "urls": [
+    "https://www.cambridgeunited.com/cufc-camps"
+   ],
+   "towns": [
+    "Cambridge"
+   ]
+  }
+ ],
+ "also_checked": [
+  {
+   "url": "https://www.cambridge.gov.uk/included-programme",
+   "result": "программа карьерных траекторий для молодёжи из малообеспеченных семей (наставники, стажировки) — не занятия с записью; в kids_programmes не берём"
+  },
+  {
+   "url": "https://www.cambridge.gov.uk/summer-sport-and-fitness-activities",
+   "result": "404 — летняя страница снята до следующего лета"
+  },
+  {
+   "url": "https://www.cambridgeunited.com/foundation",
+   "result": "404"
+  }
+ ]
+}

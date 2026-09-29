@@ -22,32 +22,7 @@
   ],
   "summary": "special screening",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:52+00:00"
- },
- {
-  "source_id": "S045",
-  "title": "HEART OF THE BEAST",
-  "url": "https://www.picturehouses.com/movie-details/000/HO00018554/heart-of-the-beast?filter=",
-  "kind": "event",
-  "external_id": "now|HEART OF THE BEAST",
-  "start": "2026-09-29",
-  "end": "2026-10-05",
-  "all_day": true,
-  "venue": "Arts Picturehouse",
-  "address": "38-39 St Andrew's Street, Cambridge",
-  "postcode": "CB2 3AR",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "film",
-   "now playing"
-  ],
-  "summary": "в прокате",
-  "published": null,
-  "fetched_at": "2026-09-29T10:30:52+00:00"
+  "fetched_at": "2026-09-29T15:38:38+00:00"
  },
  {
   "source_id": "S045",
@@ -72,7 +47,7 @@
   ],
   "summary": "в прокате",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:52+00:00"
+  "fetched_at": "2026-09-29T15:38:38+00:00"
  },
  {
   "source_id": "S045",
@@ -97,7 +72,7 @@
   ],
   "summary": "в прокате",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:52+00:00"
+  "fetched_at": "2026-09-29T15:38:38+00:00"
  },
  {
   "source_id": "S045",
@@ -122,6 +97,6 @@
   ],
   "summary": "в прокате",
   "published": null,
-  "fetched_at": "2026-09-29T10:30:52+00:00"
+  "fetched_at": "2026-09-29T15:38:38+00:00"
  }
 ]

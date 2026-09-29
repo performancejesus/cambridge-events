@@ -19,7 +19,7 @@
   "categories": [],
   "summary": "🎸 The Cambridge Rock ’n’ Roll Club🎸 SUNDAY 11TH OCTOBER 2026 - JOHNNY REDOn the third Friday of every month, head to the Abbey Lounge on Newmarket Road, Cambridge, CB5 8LN, for a fantastic afternoon of live rock ’n’ roll!🕝 2.30pm – 5.30pmEvery month features a different great rock ’n’ roll band or …",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:56+00:00"
+  "fetched_at": "2026-09-29T15:28:48+00:00"
  },
  {
   "source_id": "S072",
@@ -41,7 +41,29 @@
   "categories": [],
   "summary": "Our Fireworks Night event is one of Cambridge’s longest-running and best-loved community traditions, bringing thousands of people together on Midsummer Common for a free, un-ticketed, and unforgettable evening of entertainment, food and spectacular fireworks. The fireworks display, provided by awar…",
   "published": null,
-  "fetched_at": "2026-09-27T19:48:56+00:00"
+  "fetched_at": "2026-09-29T15:28:48+00:00"
+ },
+ {
+  "source_id": "S072",
+  "title": "Cambridge Rock 'n Roll Club - \"SARAH MAI\"",
+  "url": "https://www.camcityevents.co.uk/events/cambridge-rock-n-roll-club-sarah-mai",
+  "kind": "event",
+  "external_id": "https://www.camcityevents.co.uk/events/cambridge-rock-n-roll-club-sarah-mai",
+  "start": "2026-11-15",
+  "end": null,
+  "all_day": true,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "£7.00",
+  "status": "scheduled",
+  "organizer": "City Events",
+  "categories": [],
+  "summary": "🎸 The Cambridge Rock ’n’ Roll Club 🎸On the third Sunday of every month, head to the Abbey Lounge on Newmarket Road, Cambridge, CB5 8LN, for a fantastic afternoon of live rock ’n’ roll!🕝 2.30pm – 5.30pmEvery month features a different great rock ’n’ roll band or artist, performing songs from the gol…",
+  "published": null,
+  "fetched_at": "2026-09-29T15:28:50+00:00"
  },
  {
   "source_id": "S072",
@@ -63,7 +85,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:56+00:00"
+  "fetched_at": "2026-09-29T15:28:50+00:00"
  },
  {
   "source_id": "S072",
@@ -85,6 +107,6 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-27T19:48:56+00:00"
+  "fetched_at": "2026-09-29T15:28:50+00:00"
  }
 ]

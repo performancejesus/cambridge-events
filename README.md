@@ -258,3 +258,27 @@ python scripts/build_issue.py ... --from-json issues/…_model.json --redo-post 
 - «Каникулы»: ближайшие — до 12 строк (не больше 2 одного типа) + «Ещё N программ →» на `kids_<каникулы>.html`
   (фильтр по возрасту и зоне) + «Ещё проверьте» для провайдеров за защитой; следующие — до 5 строк.
 - `pipeline/film_releases.py` (S167) — «В прокате с пятницы» из открытого календаря релизов UK.
+
+## Этап 7 — контур отмен и изменений, выпуск v8
+
+```bash
+python scripts/run_collectors.py && python scripts/update_db.py         # свежий сбор (≈22 мин, 66 коллекторов)
+python scripts/extract_articles.py --max-cost 1.00 && python scripts/update_db.py --no-load && python scripts/check_recurring.py
+python scripts/locate_venues.py && python scripts/score_importance.py
+python scripts/kids_collect.py                        # + страницы совета и лагеря Cambridge United (data/kids_providers_extra.json)
+python scripts/ticket_vendors.py --issue 2026-10-08  # страницы продавцов — для перепроверки
+python scripts/recheck_status.py --issue 2026-10-08  # статусы и сигналы срочности со страниц → page_status
+python scripts/update_db.py --no-load                 # статусы со страниц → events.status, status_history
+python -c "from pipeline.db import connect; from pipeline import ai_sources; print(ai_sources.refresh(connect()))"
+python scripts/enrich_pages.py --issue 2026-10-08 && python scripts/build_issue.py --issue 2026-10-08 --version v8
+```
+
+- `pipeline/status_check.py` — перепроверка страницы события: метки «Cancelled», «Sold out», «Limited availability»,
+  «Last few tickets», кнопки покупки; из свободного текста — только однозначные фразы («this event has been cancelled»).
+  Результат — `page_status`; `ingest.refresh` учитывает его при пересчёте статуса (отмена, перенос, распродано,
+  открытие продаж у анонса); `disappeared` — в выпуск не идёт, только редактору.
+- Сигналы срочности → кандидаты `T-p…` для «Успейте купить билеты» и пометка «мало билетов» у пункта.
+- `pipeline/ai_sources.py` — источники с ИИ-запретом определяются по robots.txt всех источников (`data/ai_sources.json`).
+- Постобработка выпуска: имена кириллицей → Haiku переписывает латиницей; пропуски без причины → один короткий
+  запрос за причинами; даты релизов — пятница.
+- `docs/stage8_options.md` — варианты хостинга, рассылки и публикации страниц (исследование).

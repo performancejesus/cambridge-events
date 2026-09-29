@@ -1,28 +1,6 @@
 [
  {
   "source_id": "S153",
-  "title": "Workshop: Crafted Connections presents Rosettes & Ribbons",
-  "url": "https://www.roystonmuseum.org.uk/what-s-on",
-  "kind": "event",
-  "external_id": "workshop-crafted-connections-presents-rosettes-ribbons#2026-09-30",
-  "start": "2026-09-30",
-  "end": null,
-  "all_day": true,
-  "venue": "Royston Museum",
-  "address": "Lower King Street, Royston",
-  "postcode": "SG8 5AL",
-  "lat": null,
-  "lon": null,
-  "price": "£15 / Booking required",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
- },
- {
-  "source_id": "S153",
   "title": "Music at the Museum",
   "url": "https://www.roystonmuseum.org.uk/what-s-on",
   "kind": "event",
@@ -41,7 +19,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -65,7 +43,7 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -89,7 +67,7 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -111,7 +89,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -133,7 +111,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -155,7 +133,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -177,7 +155,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -199,7 +177,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -223,7 +201,7 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -247,7 +225,7 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -269,7 +247,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -293,7 +271,7 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -315,7 +293,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -337,7 +315,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -359,7 +337,75 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
+ },
+ {
+  "source_id": "S153",
+  "title": "Festive Tots",
+  "url": "https://www.roystonmuseum.org.uk/what-s-on",
+  "kind": "event",
+  "external_id": "festive-tots#2026-12-02",
+  "start": "2026-12-02",
+  "end": null,
+  "all_day": true,
+  "venue": "Royston Museum",
+  "address": "Lower King Street, Royston",
+  "postcode": "SG8 5AL",
+  "lat": null,
+  "lon": null,
+  "price": "£6 per child",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "family"
+  ],
+  "summary": null,
+  "published": null,
+  "fetched_at": "2026-09-29T15:38:14+00:00"
+ },
+ {
+  "source_id": "S153",
+  "title": "Dive into Yin: Energise & Restore",
+  "url": "https://www.roystonmuseum.org.uk/what-s-on",
+  "kind": "event",
+  "external_id": "dive-into-yin-energise-restore#2026-12-02",
+  "start": "2026-12-02",
+  "end": null,
+  "all_day": true,
+  "venue": "Royston Museum",
+  "address": "Lower King Street, Royston",
+  "postcode": "SG8 5AL",
+  "lat": null,
+  "lon": null,
+  "price": "£18 / Booking Essential",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "fetched_at": "2026-09-29T15:38:14+00:00"
+ },
+ {
+  "source_id": "S153",
+  "title": "Eco Decorations",
+  "url": "https://www.roystonmuseum.org.uk/what-s-on",
+  "kind": "event",
+  "external_id": "eco-decorations#2026-12-05",
+  "start": "2026-12-05",
+  "end": null,
+  "all_day": true,
+  "venue": "Royston Museum",
+  "address": "Lower King Street, Royston",
+  "postcode": "SG8 5AL",
+  "lat": null,
+  "lon": null,
+  "price": "Free / Donations Welcome",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -381,7 +427,7 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  },
  {
   "source_id": "S153",
@@ -403,6 +449,6 @@
   "categories": [],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T10:14:55+00:00"
+  "fetched_at": "2026-09-29T15:38:14+00:00"
  }
 ]

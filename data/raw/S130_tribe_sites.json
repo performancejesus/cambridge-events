@@ -23,7 +23,7 @@
   ],
   "summary": "Little Feet, Big Impressions at the Museum of Cambridge! Join us for our programme of FREE storytelling and activities every two weeks for families with children aged 1-5. Be welcomed into the Museum’s purpose-built event space, the Enid Porter Room, with complementary tea and coffee, before enteri…",
   "published": null,
-  "fetched_at": "2026-09-28T17:39:24+00:00"
+  "fetched_at": "2026-09-29T15:36:39+00:00"
  },
  {
   "source_id": "S130",
@@ -49,7 +49,7 @@
   ],
   "summary": "Folklore is made up of stories, myths, legends, and the lessons that we pass down from generation to generation. It surrounds us, calls to us, invites us to listen closely. Folklore , the upcoming exhibition at the Museum of Cambridge, is an exploration of stories from Cambridge, Cambridgeshire, an…",
   "published": null,
-  "fetched_at": "2026-09-28T17:39:24+00:00"
+  "fetched_at": "2026-09-29T15:36:39+00:00"
  },
  {
   "source_id": "S130",
@@ -75,7 +75,33 @@
   ],
   "summary": "Little Feet, Big Impressions at the Museum of Cambridge! Join us for our programme of FREE storytelling and activities every two weeks for families with children aged 1-5. Be welcomed into the Museum’s purpose-built event space, the Enid Porter Room, with complementary tea and coffee, before enteri…",
   "published": null,
-  "fetched_at": "2026-09-28T17:39:24+00:00"
+  "fetched_at": "2026-09-29T15:36:39+00:00"
+ },
+ {
+  "source_id": "S130",
+  "title": "Museum Late: Folklore",
+  "url": "https://www.museumofcambridge.org.uk/event/museum-late-folklore/",
+  "kind": "event",
+  "external_id": "21963",
+  "start": "2026-10-30T17:30:00",
+  "end": "2026-10-30T20:30:00",
+  "all_day": false,
+  "venue": "The Museum of Cambridge",
+  "address": "2-3 Castle Street, Cambridge, CB3 0AQ",
+  "postcode": "CB3 0AQ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Activity",
+   "Exhibition",
+   "Museum"
+  ],
+  "summary": "Join us for Folklore after dark! Folklore , the newest exhibition at the Museum of Cambridge, is an exploration of stories from Cambridge, Cambridgeshire, and beyond. Featuring tales of people, magic, medicine, and the things that we still can’t quite explain. Explore the Folklore exhibition after …",
+  "published": null,
+  "fetched_at": "2026-09-29T15:36:39+00:00"
  },
  {
   "source_id": "S130",
@@ -101,7 +127,7 @@
   ],
   "summary": "Little Feet, Big Impressions at the Museum of Cambridge! Join us for our programme of FREE storytelling and activities every two weeks for families with children aged 1-5. Be welcomed into the Museum’s purpose-built event space, the Enid Porter Room, with complementary tea and coffee, before enteri…",
   "published": null,
-  "fetched_at": "2026-09-28T17:39:24+00:00"
+  "fetched_at": "2026-09-29T15:36:39+00:00"
  },
  {
   "source_id": "S130",
@@ -127,7 +153,7 @@
   ],
   "summary": "Little Feet, Big Impressions at the Museum of Cambridge! Join us for our programme of FREE storytelling and activities every two weeks for families with children aged 1-5. Be welcomed into the Museum’s purpose-built event space, the Enid Porter Room, with complementary tea and coffee, before enteri…",
   "published": null,
-  "fetched_at": "2026-09-28T17:39:24+00:00"
+  "fetched_at": "2026-09-29T15:36:39+00:00"
  },
  {
   "source_id": "S130",
@@ -153,7 +179,7 @@
   ],
   "summary": "Little Feet, Big Impressions at the Museum of Cambridge! Join us for our programme of FREE storytelling and activities every two weeks for families with children aged 1-5. Be welcomed into the Museum’s purpose-built event space, the Enid Porter Room, with complementary tea and coffee, before enteri…",
   "published": null,
-  "fetched_at": "2026-09-28T17:39:24+00:00"
+  "fetched_at": "2026-09-29T15:36:39+00:00"
  },
  {
   "source_id": "S130",
@@ -179,6 +205,6 @@
   ],
   "summary": "Little Feet, Big Impressions at the Museum of Cambridge! Join us for our programme of FREE storytelling and activities every two weeks for families with children aged 1-5. Be welcomed into the Museum’s purpose-built event space, the Enid Porter Room, with complementary tea and coffee, before enteri…",
   "published": null,
-  "fetched_at": "2026-09-28T17:39:24+00:00"
+  "fetched_at": "2026-09-29T15:36:39+00:00"
  }
 ]

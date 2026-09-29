@@ -226,6 +226,11 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
             facts["public_talk"] = False
     if THEATRE_RE.search(text) or set(srcs) & {"S042", "S041"}:
         facts["theatre"] = True
+    if con.execute("SELECT name FROM sqlite_master WHERE name='page_status'").fetchone():   # этап 7: сигнал со страницы
+        ps = con.execute("SELECT urgency FROM page_status WHERE event_id=? AND result='ok' "
+                         "AND urgency IN ('few_left','selling_fast','early_bird_ends')", (e["event_id"],)).fetchone()
+        if ps:
+            facts["page_urgency"] = ps[0]
     fame = con.execute("SELECT result FROM fame_cache WHERE event_id=?", (e["event_id"],)).fetchone()
     if fame:
         performer = json.loads(fame["result"]).get("performer")
@@ -350,20 +355,33 @@ RERELEASE_RU = [(r"(\d+)(?:st|nd|rd|th) anniversary", _years_ru), (r"(\d+) year 
 def release_lines(p: Pools, w: Window, lang: str) -> list[dict]:
     """«В прокате с пятницы, 2 октября: …» — одна строка на дату релиза (без привязки к кинотеатру), повторные прокаты —
     в той же строке после «снова на экранах»."""
-    by: dict[tuple, list] = {}
-    for r in p.releases:   # одна строка на неделю (календари расходятся: четверг 8-го или пятница 9-го)
-        by.setdefault(tuple(d(r["uk_date"]).isocalendar()[:2]), []).append(r)
+    # одна строка на группу соседних дат (календари расходятся на день: четверг 8-го или пятница 9-го);
+    # отдельная дата через несколько дней (премьера во вторник) — своя строка
+    def rdays(r):
+        return {d(r["uk_date"])} | ({d(r["note"].split(": ")[1])} if (r.get("note") or "").startswith("mediamole") else set())
+    groups: list[list] = []
+    for r in sorted(p.releases, key=lambda r: r["uk_date"]):
+        if groups and min(rdays(r)) - max(x for g in groups[-1] for x in rdays(g)) <= timedelta(days=1):
+            groups[-1].append(r)
+        else:
+            groups.append([r])
     out = []
-    for _, rs in sorted(by.items()):
+    for rs in groups:
         days = sorted({d(r["uk_date"]) for r in rs} | {d(n.split(": ")[1]) for r in rs for n in [r.get("note") or ""]
                                                          if n.startswith("mediamole")})
-        dt = days[0]
-        if len(days) == 1 and dt.weekday() == 4:
+        # решения после 6d: релизы в Великобритании — по пятницам; календари расходятся — берём пятницу; пятницы нет
+        # и дат несколько — «на этой / на следующей неделе»; одна дата не в пятницу (премьера в среду) — как есть
+        fridays = [x for x in days if x.weekday() == 4]
+        dt = fridays[0] if fridays else days[0]
+        if fridays:
             head = f"Out in cinemas from Friday {dt.day} {MONTHS_EN[dt.month - 1]}" if lang == "en" else \
                 f"В прокате с пятницы, {_day(dt, lang, weekday=False)}"
+        elif len(days) == 1:
+            head = f"Out in cinemas from {_day(dt, 'en')}" if lang == "en" else f"В прокате с {_day(dt, lang, weekday=False)}"
         else:
-            rng = _range(days[0], days[-1], lang)
-            head = f"Out in cinemas from {rng}" if lang == "en" else f"В прокате с {rng.replace('–', ' или ')}"
+            same_week = dt.isocalendar()[:2] == w.issue.isocalendar()[:2]
+            head = ("Out in cinemas this week" if same_week else "Out in cinemas next week") if lang == "en" else \
+                ("В прокате на этой неделе" if same_week else "В прокате на следующей неделе")
         new = [r["title"] for r in rs if r["kind"] == "new"]
         old = [r["title"] for r in rs if r["kind"] != "new"]
         if lang == "ru":
@@ -511,6 +529,25 @@ def _tickets(con, w: Window, p: Pools) -> None:
                   [(u["date"], u["date"], None)] if u["date"] else []}
         facts["urgency"] = urgency(con, e, facts, w)
         p.candidates[f"T{u['update_id']}"] = facts
+    # этап 7: сигналы срочности со страниц событий (перепроверка статусов) — события ближайших 6 недель в продаже
+    if not con.execute("SELECT name FROM sqlite_master WHERE name='page_status'").fetchone():
+        return
+    have = {e for c in p.candidates.values() if c["kind"] == "tickets" for e in c["event_ids"]}
+    horizon = (w.issue + timedelta(weeks=6)).isoformat()
+    for ps in con.execute("""SELECT ps.*, e.date_start FROM page_status ps JOIN events e USING(event_id)
+            WHERE ps.result='ok' AND ps.urgency IN ('few_left','selling_fast','early_bird_ends')
+            AND e.status NOT IN ('sold_out','cancelled','postponed','past')
+            AND e.date_start >= ? AND e.date_start <= ?""", (w.start.isoformat(), horizon)).fetchall():
+        if ps["event_id"] in have:
+            continue
+        e = con.execute("SELECT * FROM events WHERE event_id=?", (ps["event_id"],)).fetchone()
+        if _exclusion(e) or e["zone"] not in LISTED_ZONES:
+            continue
+        facts = _event_facts(con, e) | {"kind": "tickets", "url": ps["url"] or e["url"], "event_ids": [e["event_id"]],
+                                         "dates": [(e["date_start"], e["date_end"] or e["date_start"], e["time_start"])],
+                                         "page_signal": ps["evidence"]}
+        facts["urgency"] = urgency(con, e, facts, w)
+        p.candidates[f"T-p{e['event_id']}"] = facts
 
 
 def urgency(con, e, facts: dict, w: Window) -> str | None:
@@ -520,6 +557,15 @@ def urgency(con, e, facts: dict, w: Window) -> str | None:
         return None
     if e["status"] == "sold_out":
         return None
+    ps = con.execute("SELECT urgency, evidence FROM page_status WHERE event_id=? AND result='ok' "
+                     "AND urgency IN ('few_left','selling_fast','early_bird_ends')",
+                     (e["event_id"],)).fetchone() if con.execute(
+        "SELECT name FROM sqlite_master WHERE name='page_status'").fetchone() else None
+    if ps:   # этап 7: перепроверка страницы нашла сигнал
+        return {"few_left": "на странице: мало билетов", "selling_fast": "на странице: билеты быстро расходятся",
+                "early_bird_ends": "на странице: заканчивается ранняя цена",
+                "some_dates_sold_out": "на странице: часть дат распродана"}.get(ps["urgency"], ps["urgency"]) + \
+            f" («{ps['evidence'][:120]}»)"
     text = " ".join(x for x in (facts.get("summary"), facts.get("page_facts"), e["status"]) if x)
     if URGENCY_RE.search(text):
         return "на странице: мало билетов / ранняя цена заканчивается"
@@ -553,7 +599,9 @@ def _holiday_family(con, w: Window, p: Pools) -> None:
 
 
 def _cancellations(con, w: Window, p: Pools) -> None:
-    for e in con.execute("""SELECT * FROM events WHERE status IN ('cancelled','postponed','disappeared')
+    # этап 7: «пропало из источника» (disappeared) — не отмена: в «Что не попало» редактору («статус disappeared»),
+    # пока перепроверка страницы не подтвердит отмену
+    for e in con.execute("""SELECT * FROM events WHERE status IN ('cancelled','postponed')
             AND date_start >= ?""", (w.start.isoformat(),)).fetchall():
         facts = _event_facts(con, e) | {"kind": "cancellation", "url": e["url"], "event_ids": [e["event_id"]],
                                          "dates": [(e["date_start"], e["date_end"] or e["date_start"], e["time_start"])]}
@@ -980,6 +1028,12 @@ def importance_of(p: Pools, it: dict) -> float:
     return max((p.candidates[i].get("importance") or 0) for i in it["ids"])
 
 
+PAGE_URGENCY_MARK = {"few_left": {"en": "few tickets left", "ru": "мало билетов"},
+                     "selling_fast": {"en": "selling fast", "ru": "билеты быстро раскупают"},
+                     "early_bird_ends": {"en": "early-bird price ending", "ru": "заканчивается ранняя цена"}}
+# «some_dates_sold_out» (метка «Sold out» и кнопка покупки на одной странице) неоднозначно — только редактору
+
+
 def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
     """Выпуск как структура (для Markdown и читательского HTML): шапка, вступление, разделы → подразделы → пункты."""
     weekends = (" and " if lang == "en" else " и ").join(_range(a, b, lang) for a, b in w.weekends)
@@ -1018,7 +1072,9 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
             if len(evs) > 1:  # два дня одной выставки на разных площадках и т.п.
                 c = c | {"dates": sorted({x for e in evs for x in e["dates"]}, key=lambda x: tuple(y or "" for y in x))}
             price = "" if c["kind"] == "venue_news" else it[f"price_{lang}"]
-            meta = " · ".join(x for x in (when(c, w, lang), it[f"where_{lang}"], price) if x)
+            urg = next((p.candidates[i].get("page_urgency") for i in it["ids"] if p.candidates[i].get("page_urgency")), None)
+            mark = PAGE_URGENCY_MARK.get(urg, {}).get(lang, "") if c["kind"] != "cancellation" else ""
+            meta = " · ".join(x for x in (when(c, w, lang), it[f"where_{lang}"], price, mark) if x)
             title = it[f"title_{lang}"]
             if c["kind"] == "venue_news" and not re.search(r"\bCambridge\b", c.get("address") or ""):
                 town = (c.get("address") or "").split(",")[-1].strip()   # правки по v5: городок — в заголовке строки
