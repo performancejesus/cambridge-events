@@ -46,9 +46,10 @@ Rubrics (`rubric` values; the input lists the ones available):
   Monday–Friday in the period (`on_weekdays` true), 4–6 items. Variety: no more than 2 items from one venue, and at
   least one theatre or dance item (`theatre`) when a candidate with importance ≥ 4 exists (student theatre at the ADC
   counts). We print the rubric in date order.
-- `cinema` — "At the cinema": 3–6 short lines — new films this week and special screenings (Q&A, classics, live
-  broadcasts of theatre and opera, festivals), `film` candidates only. Not a list of showtimes. One film in several
-  cinemas — one line naming the cinemas; Cambridge cinemas first. One sentence each.
+- `cinema` — "At the cinema": special screenings (Q&A, classics, live broadcasts of theatre and opera, festivals) and
+  notable films at Cambridge cinemas, `film` candidates only. Not a list of showtimes. One film in several cinemas —
+  one line naming the cinemas; Cambridge cinemas first. One sentence each. The line "Out in cinemas from Friday: …"
+  (new UK releases of the week) is added by us from the release calendar — do not write it.
 - `talks` — "Talks and meetings": public lectures and talks (`public_talk` true) — university public lectures, college
   lecture series, museum talks, book events. Not specialist seminars. 3–6 items.
 - `exhibitions` — "Exhibitions": `long_running` candidates, the notable ones, one short sentence each.
@@ -88,8 +89,11 @@ Rules:
    is in the period); `C…` to `cancelled`; `V…` to `new_in_town`.
 2. Each event appears at most once in the whole issue. If an event has both an `E…` and a `T…` candidate, use one of
    them. An event that fits several rubrics goes where it is most useful.
-3. 3–6 items per rubric (`new_in_town` may have 6), 30–40 items in the whole issue — never more than 42: the issue is
-   read in five minutes. Cut the weakest items by importance rather than whole rubrics. Never pad with weak or
+3. Items per rubric (min–max): theme 3–6, each weekend 3–5, weekdays 4–6, cinema 0–4, talks 2–5, exhibitions 2–4,
+   free 3–4, kids 2–4, sport 0–4 (plus the short "Also playing" and "Take part" lines), out_of_town 3–4, county 0–3,
+   new_announcements 3–5, tickets 0–3, cancelled 0–3, new_in_town 5–6. Full items (with a description) in the whole
+   issue — never more than 45; short lines (Also playing, the library line) do not count. The issue is read in five
+   minutes. Cut the weakest items by importance rather than whole rubrics. Never pad with weak or
    irrelevant items and never invent items. A rubric with
    nothing suitable is simply left out — no "nothing this week" line.
 4. Skip: professional courses, business conferences and networking events priced for companies; listings that are
@@ -134,6 +138,13 @@ Fields of an item:
   text is the same item written naturally in Russian, not a word-for-word translation.
 - `knowledge_en`, `knowledge_ru` — statements in the blurb or title that come from your general knowledge, not from
   the data (empty lists if none).
+
+Field of a section:
+- `passed_over` — for every candidate that fits this rubric, has importance ≥ the lowest importance among the items you
+  chose for this rubric, and that you did not use anywhere in the issue: its id and one short reason in both languages
+  ("no fact for a description", "already two items from this venue", "not leisure", "duplicate of the theme", "a
+  better event on the same evening"). Be honest: if there was no real reason, write "no reason — could be included".
+  Empty list if there are none.
 
 If the input has `write_intro: false` (the issue is generated in parts), leave `intro_*`, `theme_*` empty and fill only
 the rubrics listed in `rubrics`; `already_used` lists event ids placed in other parts — do not use them again. If the

@@ -376,6 +376,41 @@ def current_not_verified(con, kd: dict) -> list[tuple[str, str, str]]:
     return out
 
 
+# «Причины отбора — явно»: заданное число пунктов по рубрикам (как в prompts/issue.md, правило 3)
+RUBRIC_LIMITS = {"theme": (3, 6), "weekend": (3, 5), "weekdays": (4, 6), "cinema": (0, 4), "talks": (2, 5),
+                 "exhibitions": (2, 4), "free": (3, 4), "kids": (2, 4), "sport": (0, 4), "out_of_town": (3, 4),
+                 "county": (0, 3), "new_announcements": (3, 5), "tickets": (0, 3), "cancelled": (0, 3),
+                 "new_in_town": (5, 6)}
+FULL_ITEMS_MAX = 45   # решения после 6c: полных пунктов (с описанием) не больше 40–45; компактные строки — отдельно
+
+
+def is_compact(it: dict, pools: issue.Pools) -> bool:
+    """Компактная строка: «Также играют», «Регулярно в библиотеках» (одна строка на много занятий)."""
+    return bool(it.get("also")) or len(it["ids"]) > 3 and all(
+        pools.candidates.get(i, {}).get("regular_series") or "librar" in (pools.candidates.get(i, {}).get("title") or "").lower()
+        for i in it["ids"])
+
+
+def rubric_sizes(result: dict, pools: issue.Pools, w: issue.Window) -> dict:
+    """Для отчёта и редактора: по рубрикам — задано (мин–макс), полных пунктов, компактных строк."""
+    rows, full_total, compact_total = {"en": [], "ru": []}, 0, 0
+    got = {sec["rubric"]: sec["items"] for sec in result["sections"]}
+    for rub in model_rubrics(w):
+        lo, hi = RUBRIC_LIMITS.get("weekend" if rub.startswith("weekend_") else rub, (0, 6))
+        its = got.get(rub, [])
+        full = sum(1 for it in its if not is_compact(it, pools))
+        comp = len(its) - full + (len(issue.release_lines(pools, w, "ru")) if rub == "cinema" else 0)
+        full_total, compact_total = full_total + full, compact_total + comp
+        mark = "" if lo <= full <= hi else " ⚠️"
+        tail_en = f" + {comp} short lines" if comp else ""
+        tail_ru = f" + {comp} компактных строк" if comp else ""
+        rows["en"].append(f"{issue.rubric_title(rub, w, 'en', '')}: set {lo}–{hi}, actual {full}{tail_en}{mark}")
+        rows["ru"].append(f"{issue.rubric_title(rub, w, 'ru', '')}: задано {lo}–{hi}, получилось {full}{tail_ru}{mark}")
+    rows["en"].append(f"total: {full_total} full items (max {FULL_ITEMS_MAX}) + {compact_total} short lines")
+    rows["ru"].append(f"всего: {full_total} полных пунктов (не больше {FULL_ITEMS_MAX}) + {compact_total} компактных строк")
+    return rows | {"full": full_total, "compact": compact_total}
+
+
 def also_playing(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[str, str]]:
     """Правки после v5 («Зрительский спорт — дыра»): все матчи и скачки окна из подключённых клубов и ипподромов, которых
     нет в других рубриках, — одной строкой в «Спорт → Также играют» (соперник, дата и время, стадион, цена). Без модели."""
@@ -415,6 +450,51 @@ def also_playing(result: dict, pools: issue.Pools, w: issue.Window) -> list[tupl
         added.append(c["title"])
     return [(f"Also playing: {len(added)} fixture(s) from connected clubs added without the model ({'; '.join(added)})",
              f"«Также играют»: без модели добавлено матчей и скачек — {len(added)} ({'; '.join(added)})")] if added else []
+
+
+PREFIX_RE = re.compile(r"^(?:участвовать|участие|take part|также играют|also playing)\s*:\s*", re.I)
+
+
+def mark_also(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """Решения после 6c: матчи и скачки подключённых клубов (кроме крупных, ≥ 6) — компактные строки «Также играют»,
+    они не считаются полными пунктами и не вытесняют полные пункты при сокращении; приставки в названиях — убрать."""
+    notes = []
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            for lang in ("en", "ru"):
+                it[f"title_{lang}"] = PREFIX_RE.sub("", it[f"title_{lang}"])
+            if sec["rubric"] != "sport":
+                continue
+            c = pools.candidates[it["ids"][0]]
+            if set(c.get("sources") or []) & SPECTATOR_SOURCES and not c.get("participant") \
+                    and (c.get("importance") or 0) < 6 and not it.get("also"):
+                it["also"] = True
+                notes.append((f"“{it['title_en']}”: club fixture — a short line under Also playing",
+                              f"«{it['title_ru']}»: матч клуба — компактной строкой в «Также играют»"))
+    return notes
+
+
+CYR_WORD_RE = re.compile(r"[А-ЯЁ][а-яё]+(?:-[А-ЯЁ][а-яё]+)?")
+
+
+def latin_names_ru(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """Правила v3/v4: имена людей и групп в русском тексте — латиницей. Имя из английского текста пункта (два слова
+    с заглавной, фамилия есть в данных), которого нет латиницей в русском тексте, — вероятно, транслитерировано."""
+    notes = []
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            data = " ".join(json.dumps(pools.candidates[i], ensure_ascii=False) for i in it["ids"])
+            en = f"{it['title_en']} {it['blurb_en']}"
+            ru = f"{it['title_ru']} {it['blurb_ru']}"
+            names = re.findall(r"\b([A-Z][a-z]+(?: [A-Z][a-z]+){1,2})\b", en)
+            bad = sorted({n for n in names if n.split()[-1] in data and n.split()[-1] not in ru
+                          and n.split()[0] not in ru and len(n.split()[-1]) > 3})
+            if bad:
+                notes.append((f"“{it['title_en']}”: names written in Cyrillic in the Russian text ({', '.join(bad)}) — "
+                              "keep them in Latin script",
+                              f"«{it['title_ru']}»: имена в русском тексте кириллицей ({', '.join(bad)}) — по правилам "
+                              "латиницей, проверить"))
+    return notes
 
 
 def check_v4_rules(result: dict, pools: issue.Pools, removed: dict[str, str]) -> list[tuple[str, str]]:
@@ -476,10 +556,14 @@ def trim(result: dict, pools: issue.Pools, removed: dict[str, str]) -> list[tupl
     важности в рубриках, где больше двух пунктов («Тема недели», «Главное» и «Новое в городе» не сокращаются)."""
     notes = []
     keep_whole = {"theme", "new_in_town", "cancelled"}
-    while sum(len(sec["items"]) for sec in result["sections"]) > issue.MAX_MAIN_ITEMS:
+    # решения после 6c: считаются только полные пункты; компактные строки («Также играют», библиотеки) — отдельно
+    full = lambda: sum(1 for sec in result["sections"] for it in sec["items"] if not is_compact(it, pools))
+    while full() > issue.MAX_MAIN_ITEMS:
+        n_full = lambda sec: sum(1 for it in sec["items"] if not is_compact(it, pools))
         pool = [(issue.importance_of(pools, it), sec, it) for sec in result["sections"]
                 if sec["rubric"] not in keep_whole and not sec["rubric"].startswith("weekend_") and len(sec["items"]) > 2
-                for it in sec["items"]]
+                and n_full(sec) > RUBRIC_LIMITS.get(sec["rubric"], (2, 0))[0]   # не ниже минимума рубрики
+                for it in sec["items"] if not is_compact(it, pools)]
         if not pool:
             break
         score, sec, it = min(pool, key=lambda x: x[0])
@@ -510,7 +594,7 @@ R = {  # причины: ключ → (en, ru)
     "participant": ("participant registration — Sport → Take part", "регистрация участников — «Спорт → Поучаствовать»"),
     "thin": ("no substantive fact in the data for a description", "в данных нет содержательного факта для описания"),
     "weaker": ("pushed out by stronger items", "вытеснен более сильными"),
-    "limit": ("rubric limit (not chosen by the model)", "лимит рубрики (модель не выбрала)"),
+    "limit": ("the model preferred a lower-scored item", "модель предпочла пункт с меньшей оценкой"),
     "not_shown": ("rubric not shown / nothing chosen", "рубрика не выведена / ничего не выбрано"),
     "dup": ("duplicate of an item in the issue", "дубль пункта из выпуска"),
     "not_public": ("specialist seminar, not a public lecture", "узкий семинар, не публичная лекция"),
@@ -573,8 +657,20 @@ def editor_lists(result: dict, pools: issue.Pools, w: issue.Window, removed: dic
     for a, b, _ in pools.duplicates:
         dup_of.setdefault(a, []).append(b)
         dup_of.setdefault(b, []).append(a)
-    min_score = {sec["rubric"]: min((issue.importance_of(pools, it) for it in sec["items"]), default=None)
+    min_score = {sec["rubric"]: min((issue.importance_of(pools, it) for it in sec["items"]
+                                     if not is_compact(it, pools)), default=None)
                  for sec in result["sections"] if sec["items"]}
+    min_score |= {k: v for k, v in (result.get("model_min") or {}).items() if k in min_score}   # выбор модели до сокращения
+    # «Причины отбора — явно» (правки по v5): фраза модели для каждого пропуска с оценкой не ниже самой слабой в рубрике
+    passed = {}
+    for sec in result["sections"]:
+        for x in sec.get("passed_over") or []:
+            passed.setdefault((sec["rubric"], x["id"]), (x["reason_en"], x["reason_ru"]))
+            passed.setdefault(("*", x["id"]), (x["reason_en"], x["reason_ru"]))
+            for e in (pools.candidates.get(x["id"]) or {}).get("event_ids", []):   # дубли одного события — та же причина
+                passed.setdefault(("ev", e), (x["reason_en"], x["reason_ru"]))
+    model_ids = set(result.get("model_ids") or [])
+    missing: list[str] = []
 
     def reason(rub: str, cid: str, c: dict) -> tuple[bool, tuple[str, str]]:
         where = placed.get(cid) or next((placed_events[e] for e in c["event_ids"] if e in placed_events), None)
@@ -613,7 +709,22 @@ def editor_lists(result: dict, pools: issue.Pools, w: issue.Window, removed: dic
             return False, R["thin"]
         if rub not in min_score:
             return False, R["not_shown"]
-        return False, R["weaker"] if min_score[rub] is not None and imp < min_score[rub] else R["limit"]
+        if min_score[rub] is not None and imp < min_score[rub]:
+            return False, R["weaker"]
+        why = passed.get((rub, cid)) or passed.get(("*", cid)) or next(
+            (passed[("ev", e)] for e in c["event_ids"] if ("ev", e) in passed), None) or next(
+            (passed[("*", d_)] for d_ in dup_of.get(cid, []) if ("*", d_) in passed), None)   # возможный дубль
+        if cid in model_ids:   # модель выбрала, убрала наша проверка ответа (рубрика, сокращение) — см. «Для редактора»
+            return False, ("chosen by the model, removed by the answer check (see For the editor)",
+                           "выбран моделью, убран проверкой ответа (см. «Для редактора»)")
+        if min_score[rub] is not None and imp == min_score[rub]:   # равная оценка — выбор модели, причина не обязательна
+            base = ("equal score — the model's choice", "равная оценка — выбор модели")
+            return False, ((f"{base[0]} — {why[0]}", f"{base[1]} — {why[1]}") if why else base)
+        if why:
+            return False, (f"{R['limit'][0]} — {why[0]}", f"{R['limit'][1]} — {why[1]}")
+        missing.append(f"{issue.rubric_title(rub, w, 'ru', '')}: {c['title']} ({imp:g})")
+        return False, (f"{R['limit'][0]} — no reason given (answer check)",
+                       f"{R['limit'][1]} — причина не указана (проверка ответа)")
 
     def row(cid: str, c: dict, inside: bool, why: tuple[str, str]) -> dict:
         price = issue.price_from_data(c) if c["kind"] not in ("venue_news", "programme") else ("", "")
@@ -643,7 +754,9 @@ def editor_lists(result: dict, pools: issue.Pools, w: issue.Window, removed: dic
     # «Каникулы»: все найденные программы, включая непроверенные и отброшенные
     chosen, why = issue.holiday_selection(pools)
     kd = json.loads((ROOT / "data" / "kids_programmes.json").read_text())
-    hol = [row(cid, c, cid in chosen, R["in"] if cid in chosen else (why[cid], why[cid]))
+    shown = {i for g in issue.holiday_groups(pools, w, "ru") for it in g["items"] for i in it["ids"]}
+    in_list = ("in the full list of programmes (line limit of the issue)", "в полном списке программ (лимит строк в письме)")
+    hol = [row(cid, c, cid in shown, R["in"] if cid in shown else in_list if cid in chosen else (why[cid], why[cid]))
            for cid, c in pools.candidates.items() if c["kind"] == "programme"]
     hol = [r | {"title": f"{pools.candidates[r['id']]['provider']} — {r['title']}"} for r in hol]
     fam_in = {i for g in issue.holiday_groups(pools, w, "ru") for it in g["items"] for i in it["ids"] if i.startswith("H")}
@@ -695,6 +808,7 @@ def editor_lists(result: dict, pools: issue.Pools, w: issue.Window, removed: dic
     from pipeline import unparsed
     unparsed.init(con)
     lists["unparsed"] = [dict(r) for r in con.execute("SELECT * FROM unparsed_sources WHERE status='open' ORDER BY key")]
+    lists["_missing_reasons"] = sorted(set(missing))
     return lists
 
 
@@ -766,7 +880,9 @@ def fill_prices(result: dict, pools: issue.Pools, con, http) -> list[tuple[str, 
     for sec in result["sections"]:
         for it in sec["items"]:
             c = pools.candidates[it["ids"][0]]
-            if c["kind"] == "venue_news":
+            if c["kind"] == "venue_news" or sec["rubric"] == "cancelled":
+                if sec["rubric"] == "cancelled":   # отменённое событие — без цены
+                    it["price_en"] = it["price_ru"] = ""
                 continue
             if not (it["price_en"].strip().lower() in NO_PRICE or "not listed" in it["price_en"].lower()):
                 continue
@@ -1080,6 +1196,8 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-api", action="store_true", help="без дополнительных запросов при постобработке")
     ap.add_argument("--from-json", help="не вызывать API, взять сохранённый ответ модели")
+    ap.add_argument("--redo-post", action="store_true", help="с --from-json: заново выполнить постобработку ответа "
+                                                             "модели (дописанные пункты, цены, сокращение)")
     ap.add_argument("--add-rubrics", help="с --from-json: догенерировать эти рубрики (через запятую) и добавить в ответ "
                                           "(модель пропустила рубрику — не пересобирать весь выпуск)")
     args = ap.parse_args()
@@ -1146,12 +1264,19 @@ def main() -> None:
         raw_path.write_text(json.dumps({"result": result, "usage": usage}, ensure_ascii=False, indent=1))
     removed: dict[str, str] = {}
     saved_post = json.loads(raw_path.read_text()).get("result_post") if raw_path.exists() and args.from_json \
-        and not args.add_rubrics else None
+        and not args.add_rubrics and not args.redo_post else None
     if saved_post:   # постобработка (дописанные пункты, расширенные описания, цены) уже сделана и сохранена
+        raw = json.loads(raw_path.read_text())["result"]
         result = saved_post["result"]
+        result.setdefault("model_ids", sorted({i for sec in raw["sections"] for it in sec["items"] for i in it["ids"]}))
         removed = saved_post["removed"]
         fix_notes = [tuple(x) for x in saved_post["notes"]]
     else:
+        # «Причины отбора — явно»: порог «модель предпочла пункт с меньшей оценкой» — по выбору самой модели, до сокращения
+        ok = lambda it: all(i in pools.candidates for i in it["ids"]) and not is_compact(it, pools)
+        result["model_min"] = {sec["rubric"]: min(issue.importance_of(pools, it) for it in sec["items"] if ok(it))
+                               for sec in result["sections"] if any(ok(it) for it in sec["items"])}
+        result["model_ids"] = sorted({i for sec in result["sections"] for it in sec["items"] for i in it["ids"]})
         result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "holidays"]   # «Каникулы» — без модели
         fix_notes = apply_links(result, pools) + validate(result, pools, w) \
             + strip_status(result, pools) + check_alphabets(result, pools) \
@@ -1161,13 +1286,14 @@ def main() -> None:
         if os.environ.get("EVENTS_ANTHROPIC_KEY") and not args.no_api:
             import anthropic
             client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
+        fix_notes += mark_also(result, pools)
         need = mandatory(pools, result, w)
         n2, tin2, tout2 = write_mandatory(client, payload, need, result, pools, w, con)
         fix_notes += n2 + trim(result, pools, removed)
         from collectors.http import PoliteClient
         fix_notes += fill_prices(result, pools, con, PoliteClient())
         n3, cost3 = expand_long(client, result, pools, con)
-        fix_notes += n3 + english_in_russian(result, pools)
+        fix_notes += n3 + english_in_russian(result, pools) + latin_names_ru(result, pools)
         knowledge_check(result, pools)
         usage = {"input_tokens": usage["input_tokens"] + tin2, "output_tokens": usage["output_tokens"] + tout2,
                  "cost_usd": usage["cost_usd"] + tin2 * PRICE_IN + tout2 * PRICE_OUT + cost3}
@@ -1175,8 +1301,7 @@ def main() -> None:
         saved["result_post"] = {"result": result, "removed": removed, "notes": fix_notes, "need": need}
         saved["usage"] = usage
         raw_path.write_text(json.dumps(saved, ensure_ascii=False, indent=1))
-    if not any(it.get("also") for sec in result["sections"] for it in sec["items"]):
-        fix_notes += also_playing(result, pools, w)
+    fix_notes += also_playing(result, pools, w)   # только матчи, которых ещё нет в выпуске
     knowledge_check(result, pools)
     # ручные правки и заметки ревью, записанные в сохранённый ответ модели (issues/issue_<дата>_model.json)
     review = [tuple(x) for x in result.get("manual_fixes", []) + result.get("review_notes", [])]
@@ -1210,6 +1335,13 @@ def main() -> None:
     editor["ru"].insert(-1, ("Детские программы, не проверенные на сайте провайдера", unv))
     (out_dir / f"{stem}_ai_measure.json").write_text(json.dumps(m, ensure_ascii=False, indent=1))
     lists = editor_lists(result, pools, w, removed, con)
+    miss = lists.pop("_missing_reasons")
+    sizes = rubric_sizes(result, pools, w)
+    editor["en"].insert(-1, ("Items per rubric: set (min–max) and actual", sizes["en"]))
+    editor["ru"].insert(-1, ("Число пунктов по рубрикам: задано (мин–макс) и получилось", sizes["ru"]))
+    if miss:   # проверка ответа: пропуск с оценкой не ниже самой слабой в рубрике — без фразы-причины
+        editor["en"].insert(-1, ("Passed over without a reason (answer check)", miss))
+        editor["ru"].insert(-1, ("Пропущены без причины (проверка ответа)", miss))
     import csv
     with open(out_dir / f"{stem}_dropped.csv", "w", newline="") as f:   # отсеянные пункты — таблица для редактора
         wr = csv.writer(f)
@@ -1227,6 +1359,14 @@ def main() -> None:
         ed = out_dir / f"{stem}_editor_{lang}.html"      # редакторская: + все кандидаты рубрик под катом
         ed.write_text(issue.render_editor_html(result, pools, w, lang, editor, lists))
         print(ed.relative_to(ROOT))
+    # решения после 6c: полный список программ на ближайшие каникулы — отдельная страница рядом с выпуском
+    from pipeline import kids_page
+    for hol, h in issue.nearest_holidays(w).items():
+        if (issue.d(h["start"]) - w.issue).days <= issue.HOLIDAY_NEAR_DAYS and hol in issue.programme_lines(pools, w, "ru"):
+            for lang in ("en", "ru"):
+                page = out_dir / issue.kids_page_name(hol, h, lang)
+                page.write_text(kids_page.render(pools, w, lang, hol, h))
+                print(page.relative_to(ROOT))
     counts = {sec["rubric"]: len(sec["items"]) for sec in result["sections"]}
     print(json.dumps({"items": counts, "total": sum(counts.values()), "cost_usd": round(usage["cost_usd"], 4)},
                      ensure_ascii=False))

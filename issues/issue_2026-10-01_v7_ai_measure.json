@@ -1,0 +1,17 @@
+{
+ "only_claude_user_blocked": [],
+ "only_training_blocked": [
+  "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+  "Cambridge Carbon Footprint's Open Eco Homes"
+ ],
+ "lost_any_ai_agent": [
+  "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+  "Cambridge Carbon Footprint's Open Eco Homes",
+  "Uniqlo"
+ ],
+ "without_search_links": {
+  "only_claude_user_blocked": 1,
+  "only_training_blocked": 4,
+  "lost_any_ai_agent": 6
+ }
+}

@@ -4,12 +4,12 @@ import re
 
 from ..generic import ICalCollector
 
-LISTS = {
-    5606: "Featured talks",
-    5462: "Major Public Lectures in Cambridge",
-    5358: "Darwin College Lecture Series",
-    5769: "Cabinet of Natural History",
-    23088: "CamTalks",
+LISTS = {   # аудит этапа 6d (scripts/talks_audit.py): публичные — 5462 и 5358; остальные — не публичные лекции
+    5606: "Featured talks",                       # подборка редакции talks.cam для главной страницы
+    5462: "Major Public Lectures in Cambridge",   # «open to the general public»; сейчас в ней только Darwin (Lent)
+    5358: "Darwin College Lecture Series",        # пятницы Lent term (январь–март)
+    5769: "Cabinet of Natural History",           # исследовательский семинар по истории естествознания
+    23088: "CamTalks",                            # «ex-directory» список, семинары
 }
 
 

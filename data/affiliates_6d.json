@@ -1,0 +1,399 @@
+{
+ "_comment": "Этап 6d: партнёрские программы продавцов билетов и платформ записи. Только исследование — ни в какие программы не регистрировались. Условия — с официальных страниц программ или сетей (проверено 2026-09-29); где условия видны только после регистрации или страница недоступна нашему инструменту — так и написано. commission_for_model — ставка для оценки дохода (доля от цены билета), null = программы нет или ставка неизвестна.",
+ "checked": "2026-09-29",
+ "vendors": [
+  {
+   "vendor": "Ticketmaster",
+   "hosts": [
+    "ticketmaster.co.uk",
+    "ticketmaster.com",
+    "ticketweb.co.uk",
+    "universe.com"
+   ],
+   "programme": "есть — Ticketmaster Global Affiliate Program",
+   "network": "Impact",
+   "commission": "в официальных материалах не указана: «local commission offering in the individual market contracts within Impact»; сторонние обзоры — 1% от цены билета (не проверено)",
+   "cookie": "не указан официально; сторонние обзоры — 1 день",
+   "payout": "не указан (Impact)",
+   "email": "не указано; условия — в договоре Impact после одобрения",
+   "disclosure": "не указано",
+   "source": "https://developer.ticketmaster.com/partners/distribution-partners/affiliate-sign-up/ (страница ticketmaster.co.uk/affiliates/ отвечает 403 нашему инструменту)",
+   "commission_for_model": 0.01,
+   "commission_basis": "цена билета (оценка по сторонним обзорам)"
+  },
+  {
+   "vendor": "See Tickets",
+   "hosts": [
+    "seetickets.com"
+   ],
+   "programme": "есть — See Tickets UK",
+   "network": "Awin (ID 7816)",
+   "commission": "West End — 5% от номинала без НДС; региональный театр — 2%; достопримечательности и прочие билеты — 1% (без сборов и доставки); не платится за fan-to-fan, пресейлы, события с нулевой комиссией, white-label сайты",
+   "cookie": "1 день",
+   "payout": "не видно без входа в Awin",
+   "email": "не видно без входа в Awin",
+   "disclosure": "не указано",
+   "source": "https://ui.awin.com/merchant-profile/7816/commission-groups",
+   "commission_for_model": 0.01,
+   "commission_basis": "номинал билета"
+  },
+  {
+   "vendor": "Eventbrite",
+   "hosts": [
+    "eventbrite.co.uk",
+    "eventbrite.com"
+   ],
+   "programme": "есть — Eventbrite Affiliate Program",
+   "network": "в условиях не указана (обзоры: impact.com)",
+   "commission": "в условиях не указана: ставка — в Insertion Order после одобрения; база — сервисный сбор Eventbrite",
+   "cookie": "7 дней («within seven (7) calendar days»)",
+   "payout": "не указан",
+   "email": "ограничено: «You may not use Licensed Materials in emails and newsletters unless we provide advance written approval»",
+   "disclosure": "обязательная фраза «As an Eventbrite Affiliate, I earn from qualifying ticket purchases…»; ориентир — правила FTC (США)",
+   "source": "https://www.eventbrite.com/help/en-us/articles/328394/eventbrite-affiliate-program-terms-and-conditions/",
+   "commission_for_model": null,
+   "commission_basis": "доля сервисного сбора; ставка неизвестна, email — только с письменного согласия"
+  },
+  {
+   "vendor": "Skiddle",
+   "hosts": [
+    "skiddle.com"
+   ],
+   "programme": "есть — Skiddle Ticket Affiliate Programme",
+   "network": "своя",
+   "commission": "от 30% выручки Skiddle (сбор 10–15% номинала): ≈10–50 p за билет на клубные вечера, до £4 на крупные события",
+   "cookie": "30 дней",
+   "payout": "порог £25, выплата в конце месяца после события",
+   "email": "разрешено: «Sell tickets from your website, newsletters, facebook group, etc»",
+   "disclosure": "не указано",
+   "source": "https://www.skiddle.com/affiliates/ ; https://help.promotioncentre.co.uk/en/articles/9362937-the-skiddle-ticket-affiliate-programme",
+   "commission_for_model": 0.035,
+   "commission_basis": "≈30% от сбора 10–15% = 3–4.5% номинала"
+  },
+  {
+   "vendor": "WeGotTickets",
+   "hosts": [
+    "wegottickets.com"
+   ],
+   "programme": "есть — WeGotTickets affiliates",
+   "network": "своя (RSS/XML-фиды)",
+   "commission": "не указана («Earn a commission for all sales from your referrals»); заявка через форму",
+   "cookie": "не указан",
+   "payout": "не указан",
+   "email": "не указано",
+   "disclosure": "не указано",
+   "source": "https://clients.wegottickets.com/affiliates.php",
+   "commission_for_model": null,
+   "commission_basis": "неизвестна"
+  },
+  {
+   "vendor": "Eventim",
+   "hosts": [
+    "eventim.co.uk"
+   ],
+   "programme": "есть — Eventim UK",
+   "network": "Awin (ID 15330)",
+   "commission": "1.5%",
+   "cookie": "30 дней",
+   "payout": "не видно без входа",
+   "email": "не видно без входа",
+   "disclosure": "не указано",
+   "source": "https://ui.awin.com/merchant-profile/15330",
+   "commission_for_model": 0.015,
+   "commission_basis": "цена билета"
+  },
+  {
+   "vendor": "Gigantic",
+   "hosts": [
+    "gigantic.com"
+   ],
+   "programme": "есть (своя страница «Work with us — affiliates»); программа в Paid On Results закрыта",
+   "network": "своя",
+   "commission": "не проверено: официальная страница отвечает 403 нашему инструменту",
+   "cookie": "не проверено",
+   "payout": "не проверено",
+   "email": "не проверено",
+   "disclosure": "не проверено",
+   "source": "https://workwithus.gigantic.com/work-with-us-affiliates (403)",
+   "commission_for_model": null,
+   "commission_basis": "неизвестна"
+  },
+  {
+   "vendor": "AXS",
+   "hosts": [
+    "axs.com"
+   ],
+   "programme": "не подтверждена: UK-программа в каталогах отмечена как истёкшая",
+   "network": "Impact (по каталогам)",
+   "commission": "—",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "официальной страницы программы нет; https://affi.io/m/axs-uk (каталог)",
+   "commission_for_model": null,
+   "commission_basis": "—"
+  },
+  {
+   "vendor": "DICE",
+   "hosts": [
+    "dice.fm"
+   ],
+   "programme": "публичной программы нет (страница Partners — для промоутеров и площадок)",
+   "network": "—",
+   "commission": "—",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "https://dice.fm/partners",
+   "commission_for_model": null,
+   "commission_basis": "—"
+  },
+  {
+   "vendor": "Fatsoma",
+   "hosts": [
+    "fatsoma.com"
+   ],
+   "programme": "нет публичной программы: «Reps» — представители, которых нанимает организатор события и сам назначает им комиссию",
+   "network": "—",
+   "commission": "задаёт организатор",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "https://business.fatsoma.com/ticketing/f/reps",
+   "commission_for_model": null,
+   "commission_basis": "—"
+  },
+  {
+   "vendor": "TicketSource",
+   "hosts": [
+    "ticketsource.co.uk"
+   ],
+   "programme": "нет публичной программы: организатор может помечать ссылки своих представителей (?ref=…) для учёта продаж",
+   "network": "—",
+   "commission": "задаёт организатор",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "https://www.ticketsource.co.uk/kb/marketing-and-promotion/reward-affiliates",
+   "commission_for_model": null,
+   "commission_basis": "—"
+  },
+  {
+   "vendor": "Ticket Tailor",
+   "hosts": [
+    "tickettailor.com",
+    "buytickets.at"
+   ],
+   "programme": "только реферальная программа за привлечение организаторов (20% сборов Ticket Tailor с приведённого организатора); за продажу билетов покупателям — нет",
+   "network": "PartnerStack",
+   "commission": "—",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "https://help.tickettailor.com/en/articles/6977069-how-does-the-referral-program-work",
+   "commission_for_model": null,
+   "commission_basis": "—"
+  },
+  {
+   "vendor": "The Jockey Club (Newmarket, Huntingdon)",
+   "hosts": [
+    "thejockeyclub.co.uk"
+   ],
+   "programme": "есть — Jockey Club Racecourses",
+   "network": "Awin (ID 7677)",
+   "commission": "«fluctuate by festival & fixture but can rise to as much as 10% on certain promotions»",
+   "cookie": "30 дней",
+   "payout": "не видно без входа",
+   "email": "не видно без входа",
+   "disclosure": "не указано",
+   "source": "https://ui.awin.com/merchant-profile/7677",
+   "commission_for_model": 0.05,
+   "commission_basis": "цена билета (середина диапазона до 10%, допущение)",
+   "match": [
+    "jockey club"
+   ]
+  },
+  {
+   "vendor": "National Trust",
+   "hosts": [
+    "nationaltrust.org.uk"
+   ],
+   "programme": "есть — но на членство, магазин и отдых (Awin: Memberships 3795, Shop 3974, Holidays 12045); билеты на события — не указаны",
+   "network": "Awin",
+   "commission": "по каталогам ≈5% (членство; не проверено)",
+   "cookie": "не проверено",
+   "payout": "—",
+   "email": "не проверено",
+   "disclosure": "—",
+   "source": "https://hub.awin.com/correct-linking-on-national-trust/ (страница программы 3795 — 404 нашему инструменту)",
+   "commission_for_model": null,
+   "commission_basis": "билеты на события не покрыты"
+  },
+  {
+   "vendor": "English Heritage",
+   "hosts": [
+    "english-heritage.org.uk"
+   ],
+   "programme": "есть — Membership (Awin 5928) и Shop (5926); билеты на события — не указаны",
+   "network": "Awin",
+   "commission": "членство: 10% (кэшбэк-сайты 5%)",
+   "cookie": "30 дней",
+   "payout": "—",
+   "email": "не видно; запрещены PPC по бренду и неавторизованные коды",
+   "disclosure": "—",
+   "source": "https://ui.awin.com/merchant-profile/5928",
+   "commission_for_model": null,
+   "commission_basis": "билеты на события не покрыты"
+  },
+  {
+   "vendor": "Find a Race",
+   "hosts": [
+    "findarace.com"
+   ],
+   "programme": "есть — Findarace Partner Program (портал партнёров)",
+   "network": "своя",
+   "commission": "на публичной странице не указана",
+   "cookie": "не указан",
+   "payout": "не указан",
+   "email": "не указано",
+   "disclosure": "не указано",
+   "source": "https://partners.findarace.com/",
+   "commission_for_model": null,
+   "commission_basis": "неизвестна"
+  },
+  {
+   "vendor": "Pebble",
+   "hosts": [
+    "bookpebble.co.uk"
+   ],
+   "programme": "только реферальная программа за привлечение провайдеров (разовая выплата после первой брони провайдера); за запись детей — нет",
+   "network": "своя",
+   "commission": "—",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "https://bookpebble.co.uk/referrals",
+   "commission_for_model": null,
+   "commission_basis": "—"
+  },
+  {
+   "vendor": "Bookwhen",
+   "hosts": [
+    "bookwhen.com"
+   ],
+   "programme": "только реферальная программа за привлечение организаторов (20% подписки 12 месяцев); за записи — нет",
+   "network": "своя",
+   "commission": "—",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "https://bookwhen.com/affiliates",
+   "commission_for_model": null,
+   "commission_basis": "—"
+  },
+  {
+   "vendor": "ClassForKids",
+   "hosts": [
+    "classforkids.io",
+    "classforkids.com"
+   ],
+   "programme": "по данным поиска — реферальная программа для клубов (привлечение организаторов); публичных условий нет",
+   "network": "—",
+   "commission": "—",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "https://www.classforkids.com/ (условий на сайте не найдено)",
+   "commission_for_model": null,
+   "commission_basis": "—"
+  },
+  {
+   "vendor": "DigiTickets",
+   "hosts": [
+    "digitickets.co.uk"
+   ],
+   "programme": "есть — партнёрская сеть DigiTickets для туристических сайтов (данные 2010 года; актуальность не подтверждена)",
+   "network": "своя",
+   "commission": "не опубликована («receive commission for each ticket that is booked through your website»); условия — по запросу",
+   "cookie": "не указан",
+   "payout": "не указан",
+   "email": "не указано",
+   "disclosure": "не указано",
+   "source": "https://www.digitickets.co.uk/news/detail/the-affiliate-network-continues-to-grow (10.07.2010); https://www.digitickets.co.uk/partners",
+   "commission_for_model": null,
+   "commission_basis": "неизвестна"
+  },
+  {
+   "vendor": "Кассы площадок (Spektrix, Cambridge Live, Ticketsolve, своя касса)",
+   "hosts": [],
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено",
+   "network": "—",
+   "commission": "—",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "поиск по названиям систем и площадок (Cambridge Arts Theatre, ADC, Corn Exchange) — программ не найдено",
+   "commission_for_model": null,
+   "commission_basis": "—",
+   "match": [
+    "spektrix",
+    "cambridge live",
+    "своя касса",
+    "ticketsolve",
+    "patronbase",
+    "tessitura",
+    "red61",
+    "audienceview"
+   ]
+  },
+  {
+   "vendor": "Клубы (eTicketing / SECUTIX), Planet Ice, IWM, университетские музеи",
+   "hosts": [
+    "eticketing.co.uk",
+    "iceaccount.co.uk",
+    "iwm.org.uk"
+   ],
+   "programme": "не найдено",
+   "network": "—",
+   "commission": "—",
+   "cookie": "—",
+   "payout": "—",
+   "email": "—",
+   "disclosure": "—",
+   "source": "поиск (IWM — только членство и спонсорство)",
+   "commission_for_model": null,
+   "commission_basis": "—",
+   "match": [
+    "etickting",
+    "eticketing",
+    "planet ice",
+    "iwm",
+    "university museums"
+   ]
+  }
+ ],
+ "asa_cap": {
+  "rule": "CAP Code 2.1: реклама должна быть очевидно распознаваемой; партнёрские ссылки — реклама, если есть вознаграждение",
+  "labels_ok": [
+   "Ad",
+   "#Ad"
+  ],
+  "labels_not_ok": [
+   "«affiliate» отдельно",
+   "#collab",
+   "«may earn an affiliate commission»"
+  ],
+  "placement": "до взаимодействия, заметно; сноска внизу обычно недостаточна; в редакционном тексте со смешанными ссылками — помечать сами партнёрские ссылки",
+  "email": "отдельных указаний по письмам на странице нет — применяем общее правило: метка «Ad» у каждой партнёрской ссылки",
+  "source": "https://www.asa.org.uk/advice-online/affiliate-marketing.html (обновлено 22.03.2023)"
+ }
+}

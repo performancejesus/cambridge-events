@@ -1,0 +1,36 @@
+{
+ "_comment": "Допущения для грубой оценки дохода от партнёрских ссылок (этап 6d). Меняйте значения и перезапускайте scripts/monetization.py. Сценарии — осторожный / базовый / оптимистичный.",
+ "subscribers": 1000,
+ "issues_per_month": 4.3,
+ "scenarios": {
+  "low": {
+   "ticket_clicks_per_subscriber_per_issue": 0.05,
+   "purchase_rate_after_click": 0.02,
+   "avg_order_gbp": 35,
+   "tickets_per_order": 2
+  },
+  "base": {
+   "ticket_clicks_per_subscriber_per_issue": 0.1,
+   "purchase_rate_after_click": 0.04,
+   "avg_order_gbp": 45,
+   "tickets_per_order": 2
+  },
+  "high": {
+   "ticket_clicks_per_subscriber_per_issue": 0.2,
+   "purchase_rate_after_click": 0.06,
+   "avg_order_gbp": 60,
+   "tickets_per_order": 2
+  }
+ },
+ "only_email_allowed": false,
+ "_notes": {
+  "ticket_clicks_per_subscriber_per_issue": "сколько переходов по ссылкам на покупку билета делает один подписчик за выпуск (0.10 = каждый десятый)",
+  "purchase_rate_after_click": "доля переходов, после которых покупают билет в пределах cookie",
+  "avg_order_gbp": "средний чек заказа (номинал без сборов)",
+  "commission": "берётся из data/affiliates_6d.json (commission_for_model) по продавцу; клики распределяются по продавцам пропорционально пунктам выпуска с учётом оценки важности",
+  "only_email_allowed": "true — считать только программы, где трафик из рассылок явно разрешён (сейчас это только Skiddle)",
+  "unknown_programme_commission": "ставка для продавцов, у которых программа есть, но ставка не опубликована (Eventbrite, WeGotTickets, Find a Race): 0.01 = 1% от цены билета; 0 — не учитывать",
+  "basis": "доход считается двумя способами: по пунктам последнего выпуска (что реально в письме) и по всем событиям окна (если бы клики распределялись как события)"
+ },
+ "unknown_programme_commission": 0.01
+}

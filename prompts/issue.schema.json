@@ -93,11 +93,35 @@
        ],
        "additionalProperties": false
       }
+     },
+     "passed_over": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "id": {
+         "type": "string"
+        },
+        "reason_en": {
+         "type": "string"
+        },
+        "reason_ru": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "id",
+        "reason_en",
+        "reason_ru"
+       ],
+       "additionalProperties": false
+      }
      }
     },
     "required": [
      "rubric",
-     "items"
+     "items",
+     "passed_over"
     ],
     "additionalProperties": false
    }

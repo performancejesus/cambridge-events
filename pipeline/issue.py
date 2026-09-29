@@ -67,8 +67,9 @@ TALK_RE = re.compile(r"\b(lecture|talk|talks|in conversation|q ?& ?a|book launch
                      r"seminar|meet the (author|director))\b", re.I)
 PUBLIC_RE = re.compile(r"\b(open to (all|the public|everyone)|all welcome|everyone welcome|free and open|public lecture|"
                        r"members of the public|no booking required)\b", re.I)
-PUBLIC_LISTS = {"talks.cam: Major Public Lectures in Cambridge", "talks.cam: Darwin College Lecture Series",
-                "talks.cam: Cabinet of Natural History"}
+# этап 6d (аудит talks.cam): публичные — только эти два списка; Cabinet of Natural History — исследовательский семинар,
+# Featured talks — подборка редакции talks.cam (сейчас в ней семинары Cabinet), CamTalks — закрытый от индекса список
+PUBLIC_LISTS = {"talks.cam: Major Public Lectures in Cambridge", "talks.cam: Darwin College Lecture Series"}
 # узкие научные мероприятия (симпозиумы, конференции, постдок-дни) — не публичные лекции, если нет пометки «open to all»
 SPECIALIST_RE = re.compile(r"\b(symposium|conference|colloquium|postdoc|phd|workshop|seminar series|research day|"
                            r"annual meeting|users? meeting|retreat)\b", re.I)
@@ -152,6 +153,8 @@ class Pools:
     sold_out: list[str] = field(default_factory=list)
     unverified_news: int = 0
     links: list[tuple[list[str], str]] = field(default_factory=list)  # связанные события → один пункт
+    blocked_kids: dict[str, list[str]] = field(default_factory=dict)   # каникулы → закрытые провайдеры («Ещё проверьте»)
+    releases: list[dict] = field(default_factory=list)   # решения после 6c: новые фильмы в прокате UK (календарь релизов)
 
 
 def d(s: str | None) -> date | None:
@@ -332,7 +335,64 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     _venue_news(con, w, p)
     _kids_programmes(con, w, p)
     _holiday_family(con, w, p)
+    _blocked_kids(con, p)
+    from . import film_releases
+    p.releases = film_releases.in_window(con, w.start, w.end)
     return p
+
+
+_years_ru = lambda m: _n_ru(int(m.group(1)), "год", "года", "лет")
+RERELEASE_RU = [(r"(\d+)(?:st|nd|rd|th) anniversary", _years_ru), (r"(\d+) year anniversary", _years_ru),
+                (r"4k restoration", "4K-реставрация"), (r"director.s cut", "режиссёрская версия"),
+                (r"4k re-?release", "4K"), (r"re-?release", "повторный прокат")]
+
+
+def release_lines(p: Pools, w: Window, lang: str) -> list[dict]:
+    """«В прокате с пятницы, 2 октября: …» — одна строка на дату релиза (без привязки к кинотеатру), повторные прокаты —
+    в той же строке после «снова на экранах»."""
+    by: dict[tuple, list] = {}
+    for r in p.releases:   # одна строка на неделю (календари расходятся: четверг 8-го или пятница 9-го)
+        by.setdefault(tuple(d(r["uk_date"]).isocalendar()[:2]), []).append(r)
+    out = []
+    for _, rs in sorted(by.items()):
+        days = sorted({d(r["uk_date"]) for r in rs} | {d(n.split(": ")[1]) for r in rs for n in [r.get("note") or ""]
+                                                         if n.startswith("mediamole")})
+        dt = days[0]
+        if len(days) == 1 and dt.weekday() == 4:
+            head = f"Out in cinemas from Friday {dt.day} {MONTHS_EN[dt.month - 1]}" if lang == "en" else \
+                f"В прокате с пятницы, {_day(dt, lang, weekday=False)}"
+        else:
+            rng = _range(days[0], days[-1], lang)
+            head = f"Out in cinemas from {rng}" if lang == "en" else f"В прокате с {rng.replace('–', ' или ')}"
+        new = [r["title"] for r in rs if r["kind"] == "new"]
+        old = [r["title"] for r in rs if r["kind"] != "new"]
+        if lang == "ru":
+            for pat, rep in RERELEASE_RU:
+                old = [re.sub(pat, rep, t, flags=re.I) for t in old]
+        meta = ", ".join(new) + (("; back on screen: " if lang == "en" else "; снова на экранах: ") + ", ".join(old)
+                                 if old else "")
+        out.append({"title": head, "meta": meta, "blurb": "", "url": None, "compact": True, "ids": [], "release": True})
+    return out
+
+
+def _blocked_kids(con, p: Pools) -> None:
+    """Решения после 6c: провайдеры за защитой (лист «Не разобрано»), у которых поиск 6b показал программы на эти
+    каникулы, — одной строкой «Ещё проверьте» без подробностей."""
+    if not con.execute("SELECT name FROM sqlite_master WHERE name='unparsed_sources'").fetchone():
+        return
+    from .kids_collect import ROOT as KROOT
+    blocked = {r[0][2:] for r in con.execute("SELECT key FROM unparsed_sources WHERE key LIKE 'P:%' "
+                                             "AND coalesce(status, '') != 'resolved'")}
+    have = {r[0] for r in con.execute("SELECT DISTINCT provider_host FROM kids_programmes WHERE source='collector'")}
+    for pr in json.loads((KROOT / "data" / "kids_providers.json").read_text())["providers"]:
+        if pr["host"] in blocked and pr["host"] not in have:
+            for hol in pr.get("holidays") or []:
+                p.blocked_kids.setdefault(hol, []).append(pr["provider"].split(" — ")[0])
+    # ручной срез 6-v4 искал программы именно на октябрьские каникулы (Cambridge Kids Club, soccer schools и др.)
+    from .domains import host as _host
+    for name, url, _ in json.loads(kids.DATA.read_text())["not_verified"]:
+        if _host(url) in blocked and _host(url) not in have:
+            p.blocked_kids.setdefault("october_half_term", []).append(name.split(" — ")[0])
 
 
 def _kids_programmes(con, w: Window, p: Pools) -> None:
@@ -678,6 +738,36 @@ def holiday_groups(p: Pools, w: Window, lang: str) -> list[dict]:
     """Подразделы «Каникул»: «Успейте записаться» (мест мало, скоро дедлайн) → по каникулам, внутри — по зоне
     (Кембридж → до 30 мин → дальше); одинаковые программы одного провайдера на разных площадках — одной строкой;
     в конце — «Куда сходить с детьми в каникулы» (семейные события в дни каникул)."""
+    groups = programme_lines(p, w, lang)
+    return limited_holiday_groups(p, w, lang, groups)
+
+
+PROG_TYPES = [("swimming", re.compile(r"\bswim|плаван", re.I)),
+              ("science", re.compile(r"\b(science|stem|coding|code|robot|lego|engineer|potions?)|научн", re.I)),
+              ("creative", re.compile(r"\b(art|craft|drama|theatre|musical|music|dance|paint|print|illustrat|comic|creative)\b|"
+                                      r"театр|танц|мастер-класс|рисов|мюзикл", re.I)),
+              ("nature", re.compile(r"\b(forest|bushcraft|outdoors?|nature|farm|riding|horse|pony|park)\b|лесн|природ|"
+                                    r"открытом воздухе", re.I)),
+              ("sport", re.compile(r"\b(sports?|football|tennis|netball|gym|gymnast\w*|athletics?|multi-?sport|"
+                                   r"multi-?activit\w*|climb\w*|kung fu|martial|cricket|rugby|hockey)\b|спорт|теннис|"
+                                   r"гимнаст|атлет|нетбол|футбол|мультиактив", re.I))]
+HOLIDAY_NEAR_DAYS = 42        # решения после 6c: «ближайшие каникулы» — до них 6 недель и меньше
+HOLIDAY_NEAR_MAX, HOLIDAY_NEXT_MAX, HOLIDAY_TYPE_MAX = 12, 5, 2
+
+
+def prog_type(x: dict) -> str:
+    c = x["c"]
+    text = " ".join(v for v in (x["title"], c.get("title"), c.get("provider")) if v)
+    return next((t for t, rx in PROG_TYPES if rx.search(text)), "other")
+
+
+def kids_page_name(hol: str, h: dict | None, lang: str) -> str:
+    year = (h or {}).get("start", "")[:4]
+    return f"kids_{hol}_{year}_{lang}.html"
+
+
+def programme_lines(p: Pools, w: Window, lang: str) -> dict[str, list[tuple[dict, dict]]]:
+    """Все проверенные программы в зоне — строки по каникулам (и «hurry»), без лимитов: [(данные, строка)]."""
     chosen, _ = holiday_selection(p)
     lines: dict[tuple, dict] = {}
     for cid in chosen:
@@ -701,23 +791,63 @@ def holiday_groups(p: Pools, w: Window, lang: str) -> list[dict]:
         x["zone"] = min(x["zone"], z)
     groups: dict[str, list] = {}
     for (hol, provider, title), x in sorted(lines.items(), key=lambda kv: (kv[1]["zone"], kv[0][1].lower())):
-        groups.setdefault(hol, []).append(_programme_line(x, w, lang))
-    out = []
-    if "hurry" in groups:
-        out.append({"title": "Hurry — few places or booking closes soon" if lang == "en" else
-                    "Успейте записаться — мест мало или запись скоро закроется", "items": groups["hurry"]})
-    order = ["october_half_term", "christmas", "february_half_term", "easter", "may_half_term", "summer", "both"]
+        groups.setdefault(hol, []).append((x, _programme_line(x, w, lang)))
+    return groups
+
+
+def nearest_holidays(w: Window) -> dict[str, dict]:
     hols = {}
     for h in school_holidays.upcoming(w.issue):   # ближайшие каникулы каждого вида (не следующего учебного года)
         hols.setdefault(h["key"], h)
+    return hols
+
+
+def limited_holiday_groups(p: Pools, w: Window, lang: str, groups: dict) -> list[dict]:
+    """Решения после 6c — лимиты «Каникул»: «Успейте записаться» — без лимита; ближайшие каникулы (до них ≤ 6 недель) —
+    до 12 строк: сначала Кембридж и «до 30 мин», не больше 2 строк одного типа (спорт, творчество, наука, природа,
+    плавание), остальные — строкой «Ещё N программ →» на полный список kids_<каникулы>.html и «Ещё проверьте» для
+    закрытых провайдеров; следующие каникулы — до 5 строк, только где запись открыта; «Куда сходить с детьми» — до 6."""
+    out = []
+    if "hurry" in groups:
+        out.append({"title": "Hurry — few places or booking closes soon" if lang == "en" else
+                    "Успейте записаться — мест мало или запись скоро закроется", "items": [ln for _, ln in groups["hurry"]]})
+    order = ["october_half_term", "christmas", "february_half_term", "easter", "may_half_term", "summer", "both"]
+    hols = nearest_holidays(w)
     for hol in [k for k in order if k in groups]:
+        h = hols.get(hol) or kids.holidays().get(hol)
+        near = bool(h) and (d(h["start"]) - w.issue).days <= HOLIDAY_NEAR_DAYS
+        pairs = groups[hol]
+        if near:
+            first = sorted(pairs, key=lambda xl: (xl[0]["zone"] > 1, xl[0]["zone"]))   # центр и «до 30 мин» — первыми
+            sel, per_type = [], {}
+            for x, ln in first:
+                t = prog_type(x)
+                if len(sel) < HOLIDAY_NEAR_MAX and per_type.get(t, 0) < HOLIDAY_TYPE_MAX:
+                    sel.append((x, ln))
+                    per_type[t] = per_type.get(t, 0) + 1
+        else:
+            sel = [(x, ln) for x, ln in pairs if x["c"]["places"] in ("open", "few_left")
+                   or re.search(r"early", x["c"].get("price_text") or "", re.I)][:HOLIDAY_NEXT_MAX]
+        items = [ln for _, ln in sel]
+        rest = len(pairs) - len(sel)
+        if near and rest > 0:
+            items.append({"title": (f"{rest} more programmes for these holidays →" if lang == "en" else
+                                    f"Ещё {rest} программ на эти каникулы →"),
+                          "meta": "", "blurb": "", "url": kids_page_name(hol, h, lang), "compact": True, "ids": [],
+                          "more": True})
+        if near and p.blocked_kids.get(hol):
+            names = ", ".join(sorted(set(p.blocked_kids[hol])))
+            items.append({"title": (f"Also check: {names}" if lang == "en" else f"Ещё проверьте: {names}"),
+                          "meta": ("they usually run holiday programmes — details on their websites" if lang == "en" else
+                                   "у них обычно есть программы на каникулы, подробности на сайтах"),
+                          "blurb": "", "url": None, "compact": True, "ids": [], "more": True})
         if hol in HOLIDAY_TITLES:
-            h = hols.get(hol) or kids.holidays().get(hol)
             rng = f"{_day(d(h['start']), lang, weekday=False)} – {_day(d(h['end']), lang, weekday=False, year=d(h['end']).year != w.issue.year)}"
             title = f"{HOLIDAY_TITLES[hol][lang]}, {rng} — {HOLIDAY_NOTES[hol][lang]}"
         else:
             title = "Both holidays" if lang == "en" else "На все каникулы"
-        out.append({"title": title, "items": groups[hol]})
+        if items:
+            out.append({"title": title, "items": items})
     fam = sorted((c for c in p.candidates.values() if c["kind"] == "holiday_event"),
                  key=lambda c: -(c.get("importance") or 0))[:FAMILY_IN_HOLIDAYS_MAX]
     if fam:
@@ -876,7 +1006,8 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
             items = sorted(items, key=lambda it: not re.search(r"\bCambridge\b", p.candidates[it["ids"][0]].get("address") or ""))
         elif rub != "theme":   # «Тема недели» — порядок по смыслу, как у модели (правки по v3); остальное — по важности
             items = sorted(items, key=lambda it: -importance_of(p, it))
-        if not items:
+        rel = release_lines(p, w, lang) if rub == "cinema" else []
+        if not items and not rel:
             continue  # пустые рубрики не выводим (правки по v2)
         sec = {"rubric": rub, "title": rubric_title(rub, w, lang, result.get(f"theme_title_{lang}", "")),
                "intro": result.get(f"theme_intro_{lang}", "") if rub == "theme" else "", "groups": []}
@@ -907,6 +1038,8 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                                 key=lambda x: tuple(y or "" for y in (p.candidates[x["ids"][0]].get("dates") or [("",)])[0]))
             sec["groups"].append({"title": (sub_title[0] if lang == "en" else sub_title[1]) if sub_title else "",
                                   "items": items_})
+        if rel:   # решения после 6c: новые фильмы недели — из календаря релизов, первой строкой рубрики
+            sec["groups"].insert(0, {"title": "", "items": rel})
         out["sections"].append(sec)
     return out
 
@@ -924,7 +1057,8 @@ def render(result: dict, p: Pools, w: Window, lang: str, editor: dict) -> str:
                 lines += [f"### {g['title']}", ""]
             for it in g["items"]:
                 if it.get("compact"):   # «Каникулы»: одна строка на программу
-                    lines += [f"- **[{it['title']}]({it['url']})** — {it['meta']}"]
+                    head = f"[{it['title']}]({it['url']})" if it.get("url") else it["title"]
+                    lines += [f"- **{head}**" + (f" — {it['meta']}" if it["meta"] else "")]
                     continue
                 lines += [f"**{it['title']}** — {it['meta']}  ",
                           (f"{it['blurb']} " if it["blurb"] else "") + f"[{more} →]({it['url']})", ""]
@@ -960,7 +1094,8 @@ def render_reader_html(result: dict, p: Pools, w: Window, lang: str) -> str:
 def item_html(it: dict, more: str) -> str:
     from html import escape as e
     if it.get("compact"):   # «Каникулы»: одна строка на программу
-        return f'<p class="line"><a href="{e(it["url"])}">{e(it["title"])}</a> — <span class="m2">{e(it["meta"])}</span></p>'
+        head = f'<a href="{e(it["url"])}">{e(it["title"])}</a>' if it.get("url") else f'<b>{e(it["title"])}</b>'
+        return f'<p class="line">{head}' + (f' — <span class="m2">{e(it["meta"])}</span>' if it["meta"] else "") + '</p>'
     return ('<article class="item">'
             f'<p class="t"><a href="{e(it["url"])}">{e(it["title"])}</a></p>'
             f'<p class="m">{e(it["meta"])}</p>'

@@ -1,0 +1,473 @@
+{
+ "window": {
+  "events": {
+   "n": 296,
+   "vendor_known": 0.574,
+   "with_programme": 0.284,
+   "with_programme_email_allowed": 0.034
+  },
+  "weighted_by_importance": {
+   "n": 296,
+   "vendor_known": 0.606,
+   "with_programme": 0.244,
+   "with_programme_email_allowed": 0.031
+  }
+ },
+ "window_by_vendor": [
+  [
+   "не определён",
+   126
+  ],
+  [
+   "Eventbrite",
+   54
+  ],
+  [
+   "Spektrix (касса площадки)",
+   44
+  ],
+  [
+   "Ticket Tailor",
+   16
+  ],
+  [
+   "Cambridge Live (касса Corn Exchange и Guildhall)",
+   11
+  ],
+  [
+   "Skiddle",
+   10
+  ],
+  [
+   "DigiTickets",
+   9
+  ],
+  [
+   "WeGotTickets",
+   4
+  ],
+  [
+   "своя касса (cambridgesciencecentre.org)",
+   4
+  ],
+  [
+   "Find a Race",
+   4
+  ],
+  [
+   "The Jockey Club (своя касса)",
+   3
+  ],
+  [
+   "своя касса (cambridgeunited.com)",
+   2
+  ],
+  [
+   "Planet Ice (своя касса)",
+   2
+  ],
+  [
+   "TicketSource",
+   1
+  ],
+  [
+   "своя касса (rowanhumberstone.org.uk)",
+   1
+  ],
+  [
+   "своя касса (stephnorwood.co.uk)",
+   1
+  ],
+  [
+   "своя касса (botanic.cam.ac.uk)",
+   1
+  ],
+  [
+   "Fatsoma",
+   1
+  ],
+  [
+   "своя касса (allevents.in)",
+   1
+  ],
+  [
+   "своя касса (cambridgecityfc.com)",
+   1
+  ]
+ ],
+ "items": {
+  "v5": {
+   "all": {
+    "n": 37,
+    "vendor_known": 0.703,
+    "with_programme": 0.243,
+    "with_programme_email_allowed": 0.0
+   },
+   "weighted_by_importance": {
+    "n": 37,
+    "vendor_known": 0.739,
+    "with_programme": 0.231,
+    "with_programme_email_allowed": 0.0
+   },
+   "by_vendor": [
+    [
+     "не определён",
+     11
+    ],
+    [
+     "Cambridge Live (касса Corn Exchange и Guildhall)",
+     7
+    ],
+    [
+     "Spektrix (касса площадки)",
+     5
+    ],
+    [
+     "Find a Race",
+     3
+    ],
+    [
+     "WeGotTickets",
+     2
+    ],
+    [
+     "своя касса (cambridgeunited.com)",
+     2
+    ],
+    [
+     "DigiTickets",
+     2
+    ],
+    [
+     "The Jockey Club (своя касса)",
+     2
+    ],
+    [
+     "Ticket Tailor",
+     1
+    ],
+    [
+     "своя касса (cambridgesciencecentre.org)",
+     1
+    ],
+    [
+     "своя касса (camcityevents.co.uk)",
+     1
+    ]
+   ]
+  },
+  "v6": {
+   "all": {
+    "n": 39,
+    "vendor_known": 0.718,
+    "with_programme": 0.256,
+    "with_programme_email_allowed": 0.0
+   },
+   "weighted_by_importance": {
+    "n": 39,
+    "vendor_known": 0.719,
+    "with_programme": 0.239,
+    "with_programme_email_allowed": 0.0
+   },
+   "by_vendor": [
+    [
+     "не определён",
+     11
+    ],
+    [
+     "Spektrix (касса площадки)",
+     7
+    ],
+    [
+     "Cambridge Live (касса Corn Exchange и Guildhall)",
+     5
+    ],
+    [
+     "DigiTickets",
+     3
+    ],
+    [
+     "The Jockey Club (своя касса)",
+     3
+    ],
+    [
+     "WeGotTickets",
+     2
+    ],
+    [
+     "своя касса (cambridgeunited.com)",
+     2
+    ],
+    [
+     "Eventbrite",
+     1
+    ],
+    [
+     "своя касса (cambridgesciencecentre.org)",
+     1
+    ],
+    [
+     "Ticket Tailor",
+     1
+    ],
+    [
+     "своя касса (cambridgecityfc.com)",
+     1
+    ],
+    [
+     "Find a Race",
+     1
+    ],
+    [
+     "своя касса (camcityevents.co.uk)",
+     1
+    ]
+   ]
+  },
+  "v7": {
+   "all": {
+    "n": 45,
+    "vendor_known": 0.667,
+    "with_programme": 0.178,
+    "with_programme_email_allowed": 0.0
+   },
+   "weighted_by_importance": {
+    "n": 45,
+    "vendor_known": 0.667,
+    "with_programme": 0.152,
+    "with_programme_email_allowed": 0.0
+   },
+   "by_vendor": [
+    [
+     "не определён",
+     15
+    ],
+    [
+     "Spektrix (касса площадки)",
+     10
+    ],
+    [
+     "Cambridge Live (касса Corn Exchange и Guildhall)",
+     5
+    ],
+    [
+     "WeGotTickets",
+     2
+    ],
+    [
+     "своя касса (cambridgeunited.com)",
+     2
+    ],
+    [
+     "DigiTickets",
+     2
+    ],
+    [
+     "Planet Ice (своя касса)",
+     2
+    ],
+    [
+     "The Jockey Club (своя касса)",
+     2
+    ],
+    [
+     "Eventbrite",
+     1
+    ],
+    [
+     "Ticket Tailor",
+     1
+    ],
+    [
+     "своя касса (cambridgecityfc.com)",
+     1
+    ],
+    [
+     "Find a Race",
+     1
+    ],
+    [
+     "своя касса (camcityevents.co.uk)",
+     1
+    ]
+   ]
+  }
+ },
+ "vendors_seen": [
+  {
+   "vendor": "Cambridge Live (касса Corn Exchange и Guildhall)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "DigiTickets",
+   "programme": "есть — партнёрская сеть DigiTickets для туристических сайтов (данные 2010 года; актуальность не подтверждена)"
+  },
+  {
+   "vendor": "Eventbrite",
+   "programme": "есть — Eventbrite Affiliate Program"
+  },
+  {
+   "vendor": "Fatsoma",
+   "programme": "нет публичной программы: «Reps» — представители, которых нанимает организатор события и сам назначает им комиссию"
+  },
+  {
+   "vendor": "Find a Race",
+   "programme": "есть — Findarace Partner Program (портал партнёров)"
+  },
+  {
+   "vendor": "Planet Ice (своя касса)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "Skiddle",
+   "programme": "есть — Skiddle Ticket Affiliate Programme"
+  },
+  {
+   "vendor": "Spektrix (касса площадки)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "The Jockey Club (своя касса)",
+   "programme": "есть — Jockey Club Racecourses"
+  },
+  {
+   "vendor": "Ticket Tailor",
+   "programme": "только реферальная программа за привлечение организаторов (20% сборов Ticket Tailor с приведённого организатора); за продажу билетов покупателям — нет"
+  },
+  {
+   "vendor": "TicketSource",
+   "programme": "нет публичной программы: организатор может помечать ссылки своих представителей (?ref=…) для учёта продаж"
+  },
+  {
+   "vendor": "WeGotTickets",
+   "programme": "есть — WeGotTickets affiliates"
+  },
+  {
+   "vendor": "не определён",
+   "programme": "не исследовано"
+  },
+  {
+   "vendor": "своя касса (allevents.in)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "своя касса (botanic.cam.ac.uk)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "своя касса (cambridgecityfc.com)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "своя касса (cambridgesciencecentre.org)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "своя касса (cambridgeunited.com)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "своя касса (camcityevents.co.uk)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "своя касса (rowanhumberstone.org.uk)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  },
+  {
+   "vendor": "своя касса (stephnorwood.co.uk)",
+   "programme": "нет: кассовые системы продают билеты от имени площадки; партнёрских программ для покупателей не найдено"
+  }
+ ],
+ "vendors_with_programme": 12,
+ "vendors_researched": 22,
+ "registry_sources_with_programme": [
+  "S007",
+  "S008",
+  "S021",
+  "S022",
+  "S055",
+  "S070",
+  "S083",
+  "S129",
+  "S138",
+  "S139",
+  "S148",
+  "S152"
+ ],
+ "effective_commission_share": {
+  "items": 0.004,
+  "window": 0.0037
+ },
+ "estimate": {
+  "based_on_items_of": "v7",
+  "params": {
+   "_comment": "Допущения для грубой оценки дохода от партнёрских ссылок (этап 6d). Меняйте значения и перезапускайте scripts/monetization.py. Сценарии — осторожный / базовый / оптимистичный.",
+   "subscribers": 1000,
+   "issues_per_month": 4.3,
+   "scenarios": {
+    "low": {
+     "ticket_clicks_per_subscriber_per_issue": 0.05,
+     "purchase_rate_after_click": 0.02,
+     "avg_order_gbp": 35,
+     "tickets_per_order": 2
+    },
+    "base": {
+     "ticket_clicks_per_subscriber_per_issue": 0.1,
+     "purchase_rate_after_click": 0.04,
+     "avg_order_gbp": 45,
+     "tickets_per_order": 2
+    },
+    "high": {
+     "ticket_clicks_per_subscriber_per_issue": 0.2,
+     "purchase_rate_after_click": 0.06,
+     "avg_order_gbp": 60,
+     "tickets_per_order": 2
+    }
+   },
+   "only_email_allowed": false,
+   "_notes": {
+    "ticket_clicks_per_subscriber_per_issue": "сколько переходов по ссылкам на покупку билета делает один подписчик за выпуск (0.10 = каждый десятый)",
+    "purchase_rate_after_click": "доля переходов, после которых покупают билет в пределах cookie",
+    "avg_order_gbp": "средний чек заказа (номинал без сборов)",
+    "commission": "берётся из data/affiliates_6d.json (commission_for_model) по продавцу; клики распределяются по продавцам пропорционально пунктам выпуска с учётом оценки важности",
+    "only_email_allowed": "true — считать только программы, где трафик из рассылок явно разрешён (сейчас это только Skiddle)",
+    "unknown_programme_commission": "ставка для продавцов, у которых программа есть, но ставка не опубликована (Eventbrite, WeGotTickets, Find a Race): 0.01 = 1% от цены билета; 0 — не учитывать",
+    "basis": "доход считается двумя способами: по пунктам последнего выпуска (что реально в письме) и по всем событиям окна (если бы клики распределялись как события)"
+   },
+   "unknown_programme_commission": 0.01
+  },
+  "result": {
+   "items_low": {
+    "clicks_per_month": 215,
+    "orders_per_month": 4.3,
+    "gbp_per_month_per_1000": 0.6
+   },
+   "items_base": {
+    "clicks_per_month": 430,
+    "orders_per_month": 17.2,
+    "gbp_per_month_per_1000": 3.1
+   },
+   "items_high": {
+    "clicks_per_month": 860,
+    "orders_per_month": 51.6,
+    "gbp_per_month_per_1000": 12.38
+   },
+   "window_low": {
+    "clicks_per_month": 215,
+    "orders_per_month": 4.3,
+    "gbp_per_month_per_1000": 0.56
+   },
+   "window_base": {
+    "clicks_per_month": 430,
+    "orders_per_month": 17.2,
+    "gbp_per_month_per_1000": 2.86
+   },
+   "window_high": {
+    "clicks_per_month": 860,
+    "orders_per_month": 51.6,
+    "gbp_per_month_per_1000": 11.46
+   }
+  }
+ }
+}
