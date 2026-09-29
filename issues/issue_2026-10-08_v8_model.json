@@ -1554,7 +1554,7 @@
        "price_en": "free",
        "price_ru": "бесплатно",
        "blurb_en": "A major survey of the New Delhi-born photographer's five-decade career.",
-       "blurb_ru": "Масштабная ретроспектива пятидесятилетней карьеры фотографа, родившегося в New Delhi.",
+       "blurb_ru": "Масштабная ретроспектива пятидесятилетней карьеры фотографа, родившегося в Нью-Дели.",
        "knowledge_en": [
         "check (born): A major survey of the New Delhi-born photographer's five-decade career."
        ],
@@ -1818,22 +1818,6 @@
        "where_ru": "Planet Ice Peterborough",
        "price_en": "prices on the website",
        "price_ru": "цены на сайте",
-       "blurb_en": "",
-       "blurb_ru": "",
-       "knowledge_en": [],
-       "knowledge_ru": []
-      },
-      {
-       "ids": [
-        "E383"
-       ],
-       "also": true,
-       "title_en": "Vintage Furniture and Fashion Flea — racing",
-       "title_ru": "Vintage Furniture and Fashion Flea — скачки",
-       "where_en": "Newmarket, Cambridge",
-       "where_ru": "Newmarket, Кембридж",
-       "price_en": "£3.55",
-       "price_ru": "£3.55",
        "blurb_en": "",
        "blurb_ru": "",
        "knowledge_en": [],
@@ -2364,7 +2348,13 @@
     "V72",
     "V76"
    ],
-   "reasons_filled": true
+   "reasons_filled": true,
+   "manual_fixes": [
+    [
+     "Sunil Gupta: “New Delhi” put back into Russian by hand (the name fix must not touch cities)",
+     "Sunil Gupta: «New Delhi» возвращено в «Нью-Дели» вручную (автоисправление имён не должно трогать города)"
+    ]
+   ]
   },
   "removed": {
    "E949": "сокращено по длине выпуска (оценка 3)",
