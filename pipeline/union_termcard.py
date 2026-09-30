@@ -160,10 +160,11 @@ def line_item(con, start, end, fee: str | None = None) -> tuple[dict | None, lis
         if r["kind"] not in ("debate", "speaker", "panel") or not [s for s in r["speakers"] if "student" not in s.lower()
                                                                    and "announced" not in s.lower() and s != "TBA"]:
             continue
-        if r["access"] == "open":
-            notes.append((f"Cambridge Union: “{r['title']}” ({r['date']}) is open to the public — a full item once cus.org lists it",
-                          f"Cambridge Union: «{r['title']}» ({r['date']}) — открыто для всех: полным пунктом, когда появится на cus.org"))
-            continue
+        if r["access"] == "open":   # модель по картинкам отмечает «open» щедро (проба Lent 2026: 20 из 41) — в строке
+            # остаётся, а полным пунктом событие выйдет, только когда cus.org подтвердит «Open To The Public»
+            notes.append((f"Cambridge Union: “{r['title']}” ({r['date']}) may be open to the public (termcard) — check cus.org",
+                          f"Cambridge Union: «{r['title']}» ({r['date']}) по termcard, возможно, открыто для всех — "
+                          "проверить на cus.org; полным пунктом — после подтверждения"))
         d = _d.fromisoformat(r["date"])
         names = [s for s in r["speakers"] if "student" not in s.lower() and "announced" not in s.lower() and s != "TBA"][:3]
         who = ", ".join(names)
