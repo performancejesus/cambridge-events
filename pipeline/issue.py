@@ -516,6 +516,14 @@ def _films(con, w: Window, p: Pools) -> None:
             "dates": [(f["uk_date"], f["uk_date"], None)], "event_ids": [], "url": url, "norm": f["norm"],
             "cinema_url": next((r[0] for r in con.execute("SELECT url FROM cinema_showings WHERE norm=? AND url IS NOT NULL "
                                                            "ORDER BY cinema='Light'", (f["norm"],))), None)}
+        # этап 7c (проверка 14): календари релизов расходятся (The Uprising: 8 и 9 октября) — берём пятницу, как в строках
+        row = con.execute("SELECT uk_date, note FROM film_releases WHERE title=?", (f["title"],)).fetchone()
+        if row:
+            alts = {row[0]} | ({row[1].split(": ")[1]} if (row[1] or "").startswith("mediamole") else set())
+            fri = sorted(x for x in alts if d(x).weekday() == 4)
+            if fri and d(f["uk_date"]).weekday() != 4:
+                p.candidates[f"F{i + 1}"]["uk_release"] = fri[0]
+                p.candidates[f"F{i + 1}"]["dates"] = [(fri[0], fri[0], None)]
         # правки по v9: семейный фильм (анимация, family — по описанию Wikipedia) — кандидат и в «С детьми»
         from tests.issue_rules.r32_family_films import is_family_film
         c = p.candidates[f"F{i + 1}"]

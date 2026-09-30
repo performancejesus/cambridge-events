@@ -24,7 +24,18 @@ from pathlib import Path
 BLOCK, FIX = "block", "fix"
 LEVEL_RU = {BLOCK: "блокирующая", FIX: "исправляющая"}
 STATUS_RU = {"pass": "прошла", "fixed": "исправлено", "block": "блокирует", "left": "осталось — редактору",
-             "warn": "замечание", "skip": "не проверялась"}
+             "warn": "замечание", "skip": "не проверялась", "lifted": "снято редактором"}
+OVERRIDES = Path(__file__).resolve().parents[2] / "data" / "check_overrides.json"
+
+
+def overrides(issue_date: str, version: str) -> list[dict]:
+    """Снятие плашки редактором (бриф: «в этапе 8 отправка без снятия плашки невозможна»): data/check_overrides.json —
+    [{issue_date, version, rule, contains, note, by, at}]. Находка правила с этим фрагментом текста считается
+    проверенной редактором; в таблице — «снято редактором» с заметкой. Сборщик сам записи сюда не добавляет."""
+    if not OVERRIDES.exists():
+        return []
+    return [o for o in json.loads(OVERRIDES.read_text()).get("overrides", [])
+            if o.get("issue_date") == issue_date and o.get("version") in (version, "*")]
 
 
 @dataclass
@@ -66,17 +77,26 @@ def run(ctx) -> list[Outcome]:
             f = Finding(violations=[f"проверка упала: {type(e).__name__}: {e}"] if m.LEVEL == BLOCK else [],
                         warnings=[] if m.LEVEL == BLOCK else [f"проверка упала: {type(e).__name__}: {e}"])
         fixed = [ru for _, ru in ctx.fix_log.get(m.RULE, [])]
+        lifted = []
+        if m.LEVEL == BLOCK:
+            for o in overrides(ctx.w.issue.isoformat(), ctx.version):
+                if o.get("rule") == m.RULE:
+                    hit = [v for v in f.violations if o["contains"] in v]
+                    lifted += [f"снято редактором ({o.get('by', '?')}, {o.get('at', '?')}: {o.get('note', '')}): {v}" for v in hit]
+                    f.violations = [v for v in f.violations if v not in hit]
         if f.skipped and not f.violations:
             status = "skip"
         elif f.violations:
             status = "block" if m.LEVEL == BLOCK else "left"
+        elif lifted:
+            status = "lifted"
         elif fixed:
             status = "fixed"
         elif f.warnings:
             status = "warn"
         else:
             status = "pass"
-        details = f.violations + f.warnings + ([f"не проверялась: {f.skipped}"] if f.skipped else [])
+        details = f.violations + lifted + f.warnings + ([f"не проверялась: {f.skipped}"] if f.skipped else [])
         out.append(Outcome(m.RULE, m.TITLE, m.LEVEL, status, details, fixed))
     return out
 

@@ -1,30 +1,30 @@
 {
  "issue": "2026-10-08",
  "checked": 225,
- "page_opened": 207,
- "status_readable": 140,
+ "page_opened": 209,
+ "status_readable": 138,
  "by_result": [
   [
    "ok",
-   207
+   209
   ],
   [
    "error",
-   13
+   12
   ],
   [
    "skipped (газета или нет ссылки)",
-   5
+   4
   ]
  ],
  "by_status": [
   [
    "on_sale",
-   137
+   135
   ],
   [
    "не читается",
-   67
+   71
   ],
   [
    "sold_out",
@@ -51,27 +51,15 @@
    50
   ],
   [
-   "пункт 2026-10-08_v8",
-   30
+   "пункт 2026-10-08_v9",
+   27
   ],
   [
    "пропало из источника",
-   5
+   8
   ]
  ],
- "differs_from_db": [
-  {
-   "event_id": 2162,
-   "url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/jeremy-bowen-truth-under-fire/7411994",
-   "status": "sold_out",
-   "urgency": "",
-   "evidence": "Sold Out",
-   "result": "ok",
-   "why": "следующие 6 недель (Успейте купить)",
-   "title": "Jeremy Bowen - Truth Under Fire",
-   "db_status": "on_sale"
-  }
- ],
+ "differs_from_db": [],
  "urgent": [
   {
    "event_id": 38,
@@ -320,10 +308,10 @@
   {
    "event_id": 40,
    "url": "https://www.cornex.co.uk/events/cambridge-rock-n-roll-club-johnny-red",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "кнопка: Buy Tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: FetchError",
    "why": "окно выпуска",
    "title": "Cambridge Rock 'n Roll Club - \"JOHNNY RED\"",
    "db_status": "on_sale"
@@ -648,17 +636,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 131,
-   "url": "https://www.cambridgebeerfestival.com/event/cambridge-beer-festival-2027/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-08_v8",
-   "title": "Cambridge Beer Festival 2027",
-   "db_status": "announced"
-  },
-  {
    "event_id": 163,
    "url": "https://talks.cam.ac.uk/talk/index/247260",
    "status": "",
@@ -698,7 +675,7 @@
    "urgency": "",
    "evidence": "Buy Tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Simply Red",
    "db_status": "on_sale"
   },
@@ -749,9 +726,9 @@
   {
    "event_id": 249,
    "url": "https://www.junction.co.uk/events/finlay-christie/",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Buy Tickets",
+   "evidence": "",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Finlay Christie",
@@ -1116,7 +1093,7 @@
    "urgency": "",
    "evidence": "",
    "result": "skipped (газета или нет ссылки)",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
    "db_status": "scheduled"
   },
@@ -1149,7 +1126,7 @@
    "urgency": "",
    "evidence": "",
    "result": "skipped (газета или нет ссылки)",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Have You Got It Yet? The Story of Syd Barrett and Pink Floyd - Film Screening",
    "db_status": "on_sale"
   },
@@ -1187,23 +1164,12 @@
    "db_status": "scheduled"
   },
   {
-   "event_id": 454,
-   "url": null,
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "skipped (газета или нет ссылки)",
-   "why": "пункт 2026-10-08_v8",
-   "title": "Cambridge Carbon Footprint's Open Eco Homes",
-   "db_status": "scheduled"
-  },
-  {
    "event_id": 468,
-   "url": "https://www.theposh.com/fixtures",
+   "url": "https://www.theposh.com/matches/fixtures",
    "status": "",
    "urgency": "",
    "evidence": "",
-   "result": "error: FetchError",
+   "result": "ok",
    "why": "окно выпуска",
    "title": "Peterborough United FC - Burton Albion FC",
    "db_status": "announced"
@@ -1402,7 +1368,7 @@
    "urgency": "",
    "evidence": "",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Maddy Prior & Peter Knight",
    "db_status": "on_sale"
   },
@@ -1556,7 +1522,7 @@
    "urgency": "",
    "evidence": "",
    "result": "skipped (газета или нет ссылки)",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Olly Murs at Newmarket Nights",
    "db_status": "on_sale"
   },
@@ -1567,7 +1533,7 @@
    "urgency": "",
    "evidence": "Buy Tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Simply Red at Newmarket Nights",
    "db_status": "scheduled"
   },
@@ -1600,7 +1566,7 @@
    "urgency": "",
    "evidence": "кнопка: Book Tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Fungi Field Day",
    "db_status": "scheduled"
   },
@@ -1627,25 +1593,14 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 948,
-   "url": "https://www.visitcambridge.org/event/the-big-bike-film-night-2026-cambridge/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-08_v8",
-   "title": "The Big Bike Film Night 2026 – Cambridge",
-   "db_status": "scheduled"
-  },
-  {
-   "event_id": 952,
-   "url": "https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/",
+   "event_id": 946,
+   "url": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-23",
    "status": "on_sale",
    "urgency": "",
-   "evidence": "Book Tickets",
+   "evidence": "Book Now",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
-   "title": "Apple Day 2026",
+   "why": "пункт 2026-10-08_v9",
+   "title": "Studio Sunday Relaxed Session",
    "db_status": "scheduled"
   },
   {
@@ -2067,17 +2022,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 1287,
-   "url": "https://www.museums.cam.ac.uk/events/whatever-weather-photography-competition",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-08_v8",
-   "title": "Whatever the Weather photography competition",
-   "db_status": "scheduled"
-  },
-  {
    "event_id": 1299,
    "url": "https://www.museums.cam.ac.uk/events/museum-late-frank-bowling-0",
    "status": "",
@@ -2095,7 +2039,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Rhymetime at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2106,7 +2050,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Storytime at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2117,7 +2061,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "LGBTQIA+ Board Games Social at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2128,7 +2072,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Improve Your English at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2139,7 +2083,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Sunday Scribes at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2150,7 +2094,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Queer Cafe at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2161,7 +2105,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Storytime at Barnwell Road Library (term time only)",
    "db_status": "scheduled"
   },
@@ -2172,7 +2116,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Children's Craft Drop-In at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2183,7 +2127,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Lego Club Drop-In at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2194,7 +2138,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Digital Drop-Ins at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2205,7 +2149,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "British Sign Language Meet-up at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2216,8 +2160,19 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Reading Aloud with Cherry at Cambridge Central Library",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 1369,
+   "url": "https://www.botanic.cam.ac.uk/whats-on/living-links-trail/",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "кнопка: Book Tickets",
+   "result": "ok",
+   "why": "пункт 2026-10-08_v9",
+   "title": "Living Links Trail",
    "db_status": "scheduled"
   },
   {
@@ -2292,7 +2247,7 @@
    "status": "",
    "urgency": "",
    "evidence": "",
-   "result": "error: FetchError",
+   "result": "ok",
    "why": "пропало из источника",
    "title": "Talk: A History of Violence: Death, Burial and Discovery at Wandlebury",
    "db_status": "disappeared"
@@ -2326,7 +2281,7 @@
    "urgency": "",
    "evidence": "",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Organ recital: Paul Greally, Westminster Abbey",
    "db_status": "scheduled"
   },
@@ -2375,17 +2330,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 1594,
-   "url": "https://kingscollegechoir.com/concert/organ-recital-david-newsholme-canterbury-cathedral/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-08_v8",
-   "title": "Organ recital: David Newsholme, Canterbury Cathedral",
-   "db_status": "scheduled"
-  },
-  {
    "event_id": 1600,
    "url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/noel-fitzpatrick-medicine-and-music/7378263",
    "status": "",
@@ -2403,7 +2347,7 @@
    "urgency": "",
    "evidence": "",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Cambridge RUFC v Camborne",
    "db_status": "scheduled"
   },
@@ -2524,7 +2468,7 @@
    "urgency": "",
    "evidence": "кнопка: Buy Tickets",
    "result": "ok",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Cambridge United Women v Dartford FC Women",
    "db_status": "scheduled"
   },
@@ -2535,7 +2479,7 @@
    "urgency": "",
    "evidence": "",
    "result": "error: Disallowed",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Peterborough Phantoms v Hull Seahawks",
    "db_status": "scheduled"
   },
@@ -2546,16 +2490,16 @@
    "urgency": "",
    "evidence": "",
    "result": "error: Disallowed",
-   "why": "пункт 2026-10-08_v8",
+   "why": "пункт 2026-10-08_v9",
    "title": "Peterborough Phantoms v Solway IHC",
    "db_status": "scheduled"
   },
   {
    "event_id": 1923,
-   "url": "https://www.joh.cam.ac.uk/festival",
-   "status": "",
+   "url": "https://www.joh.cam.ac.uk/about-us/events-and-services/inaugural-lecture-professor-josephine-crawley-quinn-professor-of-ancient-history",
+   "status": "on_sale",
    "urgency": "",
-   "evidence": "",
+   "evidence": "Book now",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Anarchical Antiquity – lecture by Professor Josephine Crawley Quinn",
@@ -2584,26 +2528,26 @@
    "db_status": "disappeared"
   },
   {
-   "event_id": 1931,
-   "url": "https://www.murrayedwards.cam.ac.uk/womens-art-collection/talk/curator-talk-what-remains-0",
-   "status": "on_sale",
+   "event_id": 1930,
+   "url": "https://www.sjcchoir.co.uk/event/christmas-concert-26/",
+   "status": "",
    "urgency": "",
-   "evidence": "Book tickets",
+   "evidence": "",
    "result": "ok",
    "why": "пропало из источника",
-   "title": "Curator Talk: What Remains",
+   "title": "Christmas Concert",
    "db_status": "disappeared"
   },
   {
-   "event_id": 1932,
-   "url": "https://www.murrayedwards.cam.ac.uk/womens-art-collection/talk/curator-talk-what-remains-0",
-   "status": "on_sale",
+   "event_id": 1964,
+   "url": "https://www.ents24.com/newmarket-events/newmarket-racecourse/olly-murs/7540370",
+   "status": "",
    "urgency": "",
-   "evidence": "Book tickets",
+   "evidence": "",
    "result": "ok",
-   "why": "пропало из источника",
-   "title": "Curator Talk: What Remains",
-   "db_status": "disappeared"
+   "why": "пункт 2026-10-08_v9",
+   "title": "Olly Murs",
+   "db_status": "on_sale"
   },
   {
    "event_id": 2138,
@@ -2658,7 +2602,7 @@
    "result": "ok",
    "why": "следующие 6 недель (Успейте купить)",
    "title": "Jeremy Bowen - Truth Under Fire",
-   "db_status": "on_sale"
+   "db_status": "sold_out"
   },
   {
    "event_id": 2172,
@@ -2703,6 +2647,50 @@
    "why": "окно выпуска",
    "title": "Robinson College — NGS garden opening",
    "db_status": "on_sale"
+  },
+  {
+   "event_id": 2250,
+   "url": "https://www.chu.cam.ac.uk/event/the-masters-book-club-5/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "The Master's Book Club",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2255,
+   "url": "https://www.clarehall.cam.ac.uk/events/clare-halls-ceramics-symposium/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Clare Hall's Ceramics Symposium",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2256,
+   "url": "https://www.clarehall.cam.ac.uk/events/the-betty-behrens-seminar-on-classics-of-historiography-michaelmas-2026/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "The Betty Behrens Seminar on Classics of Historiography – Michaelmas 2026",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2257,
+   "url": "https://www.lucy.cam.ac.uk/events/lucy-cavendish-colleges-foundation-day-panel-discussion",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Lucy Cavendish College's Foundation Day: Panel Discussion",
+   "db_status": "disappeared"
   }
  ]
 }

@@ -74,8 +74,8 @@ def kind_of(c: dict) -> str:
 
 def candidates(pools, used_events: set[int]) -> list[tuple[str, dict, str, str]]:
     """(id, кандидат, колледж, вид) — все подходящие кандидаты окна; used_events — события, уже стоящие полными пунктами."""
-    out, seen = [], set()
-    for cid, c in pools.candidates.items():
+    out, seen, seen_ev = [], set(), set()
+    for cid, c in sorted(pools.candidates.items(), key=lambda kv: -(kv[1].get("importance") or 0)):
         if c["kind"] != "event" or c.get("access") == "restricted" or c.get("zone") != "центр":
             continue
         col = college_of(c)
@@ -89,9 +89,10 @@ def candidates(pools, used_events: set[int]) -> list[tuple[str, dict, str, str]]
             continue
         sib = {e for s in c.get("siblings") or [] for e in s["event_ids"]}
         key = (c["dates"][0][0], re.sub(r"\W+", " ", c["title"].lower())[:30])
-        if key in seen or sib & used_events:
-            continue
+        if key in seen or sib & used_events or sib & seen_ev:
+            continue   # несклеенный дубль (орган в King's: S149 и cmp.cam.ac.uk) — одна строка
         seen.add(key)
+        seen_ev.update(c["event_ids"])
         out.append((cid, c, col, kind_of(c)))
     return out
 

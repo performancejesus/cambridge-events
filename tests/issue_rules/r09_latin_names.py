@@ -38,8 +38,8 @@ def check(ctx) -> Finding:
     for e in ctx.entries("ru", compact=False):
         names = names_of(e["cands"])
         all_names += names
-        for n in names:
-            if cyrillic_only(n, f"{e['title']} {e['blurb']}"):
+        for n in names:   # заголовок и описание — по отдельности: «Лекция Rob Chapman» + «Роб Чапмен» в описании — ошибка
+            if cyrillic_only(n, e["title"]) or cyrillic_only(n, e["blurb"]):
                 f.violations.append(f"«{e['title']}»: {n} — кириллицей")
     L = ctx.layout("ru")
     intros = [("вступление", L["intro"] or "")] + [("вступление темы", s["intro"]) for s in L["sections"] if s.get("intro")]

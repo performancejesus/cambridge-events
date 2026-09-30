@@ -29,7 +29,9 @@ def has_price(c: dict) -> bool:
 
 
 def is_free(c: dict) -> bool:
-    return issue.strictly_free(c.get("price_from"), c.get("price_text")) or (c.get("page_price") or "").lower() == "free"
+    return issue.strictly_free(c.get("price_from"), c.get("price_text")) or (c.get("page_price") or "").lower() == "free" \
+        or any(issue.strictly_free(s.get("price_from"), s.get("price_text")) or (s.get("price_text") or "").lower() == "free"
+               for s in c.get("siblings") or [])
 
 
 def check(ctx) -> Finding:

@@ -486,6 +486,8 @@ FULL_ITEMS_MAX = 45   # решения после 6c: полных пункто�
 
 def is_compact(it: dict, pools: issue.Pools) -> bool:
     """Компактная строка: «Также играют», «Регулярно в библиотеках» (одна строка на много занятий)."""
+    if it["ids"] and (pools.candidates.get(it["ids"][0]) or {}).get("kind") == "cancellation":
+        return True   # этап 7c: отмена — одна строка без описания (правки по v8), не полный пункт
     return bool(it.get("also") or it.get("line") or it.get("union")) or len(it["ids"]) > 3 and all(
         pools.candidates.get(i, {}).get("regular_series") or "librar" in (pools.candidates.get(i, {}).get("title") or "").lower()
         for i in it["ids"])
@@ -495,7 +497,7 @@ def rubric_sizes(result: dict, pools: issue.Pools, w: issue.Window) -> dict:
     """Для отчёта и редактора: по рубрикам — задано (мин–макс), полных пунктов, компактных строк."""
     rows, full_total, compact_total = {"en": [], "ru": []}, 0, 0
     got = {sec["rubric"]: sec["items"] for sec in result["sections"]}
-    for rub in model_rubrics(w):
+    for rub in [r for r in w.rubrics() if r != "holidays"]:   # этап 7c: с «В колледжах» (компактные строки)
         lo, hi = RUBRIC_LIMITS.get("weekend" if rub.startswith("weekend_") else rub, (0, 6))
         its = got.get(rub, [])
         full = sum(1 for it in its if not is_compact(it, pools))
@@ -638,7 +640,7 @@ def fix_names_ru(client, result: dict, pools: issue.Pools, con) -> tuple[list[tu
     for sec in result["sections"]:
         for it in sec["items"]:
             names = names_of([pools.candidates[i] for i in it["ids"] if i in pools.candidates])
-            bad = [n for n in names if cyrillic_only(n, f"{it['title_ru']} {it['blurb_ru']}")]
+            bad = [n for n in names if cyrillic_only(n, it["title_ru"]) or cyrillic_only(n, it["blurb_ru"])]
             if bad and not any(x is it for x, _ in todo):
                 todo.append((it, bad))
     todo += intros
@@ -742,12 +744,38 @@ def trim(result: dict, pools: issue.Pools, removed: dict[str, str]) -> list[tupl
     keep_whole = {"theme", "new_in_town", "cancelled"}
     # решения после 6c: считаются только полные пункты; компактные строки («Также играют», библиотеки) — отдельно
     full = lambda: sum(1 for sec in result["sections"] for it in sec["items"] if not is_compact(it, pools))
+    # этап 7c: сначала — максимум рубрики (в v10 «Новые анонсы» — 6 при максимуме 5): лишние — самые слабые, кроме
+    # обязательных ежегодных
+    for sec in result["sections"]:
+        hi = RUBRIC_LIMITS.get("weekend" if sec["rubric"].startswith("weekend_") else sec["rubric"], (0, 99))[1]
+        items = [it for it in sec["items"] if not is_compact(it, pools)]
+        extra = len(items) - hi if hi else 0
+        for it in sorted(items, key=lambda it: issue.importance_of(pools, it)):
+            if extra <= 0:
+                break
+            if any("ежегодного" in (pools.candidates.get(i, {}).get("evidence") or "") for i in it["ids"]):
+                continue
+            sec["items"].remove(it)
+            extra -= 1
+            for i in it["ids"]:
+                removed[i] = f"сокращено: в рубрике больше {hi} пунктов"
+            notes.append((f"“{it['title_en']}”: cut — rubric {sec['rubric']} above its maximum {hi}",
+                          f"«{it['title_ru']}»: сокращён — выпуск длиннее: в рубрике больше {hi} пунктов"))
     while full() > issue.MAX_MAIN_ITEMS:
         n_full = lambda sec: sum(1 for it in sec["items"] if not is_compact(it, pools))
+        # этап 7c: в v10 сокращение дошло до Jack Savoretti (8.3, «мало билетов»), Mill Road Winter Fair и Fireworks
+        # Night (обязательные ежегодные анонсы), пока в «Главном» оставались пункты с оценкой 4–5. Теперь: «Главное»
+        # сокращается до своего минимума (3), не сокращаются пункты с оценкой ≥ 7, обязательные анонсы ежегодных
+        # событий и «Успейте купить» с сигналом со страницы; если резать больше нечего — остаток видит проверка 20.
+        def protected(sec, it):
+            cs = [pools.candidates[i] for i in it["ids"] if i in pools.candidates]
+            return issue.importance_of(pools, it) >= 7 or any(
+                "ежегодного" in (c.get("evidence") or "") or c.get("page_urgency") or c.get("urgency") for c in cs)
         pool = [(issue.importance_of(pools, it), sec, it) for sec in result["sections"]
-                if sec["rubric"] not in keep_whole and not sec["rubric"].startswith("weekend_") and len(sec["items"]) > 2
-                and n_full(sec) > RUBRIC_LIMITS.get(sec["rubric"], (2, 0))[0]   # не ниже минимума рубрики
-                for it in sec["items"] if not is_compact(it, pools)]
+                if sec["rubric"] not in keep_whole and len(sec["items"]) > 2
+                and n_full(sec) > RUBRIC_LIMITS.get("weekend" if sec["rubric"].startswith("weekend_") else sec["rubric"],
+                                                    (2, 0))[0]   # не ниже минимума рубрики
+                for it in sec["items"] if not is_compact(it, pools) and not protected(sec, it)]
         if not pool:
             break
         score, sec, it = min(pool, key=lambda x: x[0])
@@ -1017,6 +1045,22 @@ RISK_RU = re.compile(r"(родил\w*|исполнил\w* бы|юбиле\w*|г�
                      r"единственн\w*|старейш\w*|крупнейш\w*|с (?:19|20)\d\d года|в (?:19|20)\d\d году|рекорд\w*)", re.I)
 
 
+REGNAL = re.compile(r"\b(?:Henry|Edward|Richard|Elizabeth|Charles|George|William|James|Mary|Anne|Victoria|Louis|"
+                    r"Генрих\w*|Эдуард\w*|Ричард\w*|Елизавет\w*|Карл\w*|Георг\w*|Вильгельм\w*|Яков\w*|Мари\w*|"
+                    r"Анн\w*|Людовик\w*)\s+[IVX]{1,4}\b|\b[IVX]{1,4}\s+(?:век\w*|century)|\b\d{1,2}(?:th|st|nd|rd)?[- ]century\b|"
+                    r"\b\d{1,2}-?(?:го|м)?\s+век\w*")
+_RU_EN_MONARCH = {"генрих": "henry", "эдуард": "edward", "ричард": "richard", "елизавет": "elizabeth", "карл": "charles",
+                  "георг": "george", "вильгельм": "william", "яков": "james", "людовик": "louis"}
+
+
+def _regnal_en(x: str) -> str:
+    low = x.lower()
+    for ru, en in _RU_EN_MONARCH.items():
+        if low.startswith(ru):
+            return f"{en} {x.split()[-1].lower()}"
+    return low
+
+
 def knowledge_check(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
     """Правки по v5: даты рождения, юбилеи, «первый/последний/единственный» и годы, которых нет в данных пункта, — в
     «Факты из знаний модели (проверить)» (в v5 «в этом месяце исполнилось бы 80» — ошибка: Барретт родился 6 января)."""
@@ -1034,6 +1078,16 @@ def knowledge_check(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
                 intro = result.get(f"theme_intro_{lang}") if sec["rubric"] == "theme" and n == 0 else None
                 txt = "\n".join(x for x in (it.get(f"title_{lang}"), it.get(f"blurb_{lang}"), intro) if x)
                 for sent in re.split(r"(?<=[.!?])\s+|\n", txt):
+                    # этап 7c (правки по v9: «Eleanor Cobham при дворе Генриха V»): монархи с номером и века — всегда
+                    # в «проверить», даже если так написано в источнике (страница Theatre Royal тоже пишет Henry V)
+                    for m in REGNAL.finditer(sent):
+                        claim = (f"проверка (историческая отсылка «{m.group(0)}» — сверить с фактами"
+                                 + (", в источнике так же" if m.group(0).lower() in data or _regnal_en(m.group(0)) in data
+                                    else "") + f"): {sent.strip()}") if lang == "ru" else \
+                            f"check (historical reference “{m.group(0)}”): {sent.strip()}"
+                        lst = it.setdefault(f"knowledge_{lang}", [])
+                        if claim not in lst:
+                            lst.append(claim)
                     risky = [m.group(0) for m in rx.finditer(sent)]
                     years = [y for y in re.findall(r"\b(?:19|20)\d\d\b", sent) if y not in data]
                     words = [r for r in risky if r.lower() not in data]
@@ -1050,19 +1104,27 @@ def weekdays_rules(result: dict, pools: issue.Pools, removed: dict[str, str]) ->
     """Правки по v5: «На неделе» — не больше 2 пунктов с одной площадки (лишние — самые слабые)."""
     from pipeline.normalize import norm_venue
     notes = []
+    # этап 7c (проверка 22): не только «На неделе» — в любой рубрике, кроме темы, «Главного», кино, «Нового в городе»,
+    # отмен и компактных строк (в v10 — три пункта Corn Exchange в «Успейте купить»)
+    diverse = {"weekdays", "tickets", "free", "talks", "exhibitions", "out_of_town", "county", "new_announcements"}
     for sec in result["sections"]:
-        if sec["rubric"] != "weekdays":
+        if sec["rubric"] not in diverse:
             continue
         by: dict[str, list] = {}
         for it in sorted(sec["items"], key=lambda it: -issue.importance_of(pools, it)):
-            by.setdefault(norm_venue(pools.candidates[it["ids"][0]].get("venue") or ""), []).append(it)
+            if is_compact(it, pools):
+                continue
+            v = norm_venue((pools.candidates[it["ids"][0]].get("venue") or "").replace("’", "'"))
+            if v:
+                by.setdefault(v, []).append(it)
+        label = issue.rubric_title(sec["rubric"], issue.Window(date.today(), date.today(), date.today()), "ru", "")
         for venue, its in by.items():
             for it in its[2:]:
                 sec["items"].remove(it)
                 for i in it["ids"]:
-                    removed[i] = "«На неделе»: не больше двух пунктов с одной площадки"
-                notes.append((f"“{it['title_en']}”: third item from the same venue in Weekdays — removed",
-                              f"«{it['title_ru']}»: третий пункт с одной площадки в «На неделе» — убран"))
+                    removed[i] = f"«{label}»: не больше двух пунктов с одной площадки"
+                notes.append((f"“{it['title_en']}”: third item from the same venue in {sec['rubric']} — removed",
+                              f"«{it['title_ru']}»: третий пункт с одной площадки в «{label}» — убран"))
     return notes
 
 
@@ -1638,6 +1700,7 @@ def main() -> None:
         fix_notes += check_tone(result, pools) + check_kids(result, pools) + check_alphabets(result, pools) \
             + film_notes(result, pools)
         fix_notes += issue_fixes.dedupe_names(result)   # после дописывания состава и исправления имён
+        fix_notes += issue_fixes.fix_towns(result)
         knowledge_check(result, pools)
         usage = {"input_tokens": usage["input_tokens"] + tin2, "output_tokens": usage["output_tokens"] + tout2,
                  "cost_usd": usage["cost_usd"] + tin2 * PRICE_IN + tout2 * PRICE_OUT + cost3 + cost4 + cost6}

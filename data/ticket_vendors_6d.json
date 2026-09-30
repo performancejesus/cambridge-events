@@ -1,5 +1,5 @@
 {
- "window_events": 309,
+ "window_events": 312,
  "window_ids": [
   2,
   3,
@@ -309,12 +309,15 @@
   2249,
   2254,
   2260,
-  2264
+  2264,
+  2329,
+  2330,
+  2334
  ],
  "window_by_vendor": [
   [
    "не определён",
-   142
+   145
   ],
   [
    "Spektrix (касса площадки)",
@@ -1959,7 +1962,7 @@
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.museums.cam.ac.uk/events/art-deception",
    "checked_at": "2026-09-29T14:58:20+00:00",
-   "importance": 1.6
+   "importance": 2.5
   },
   "1285": {
    "event_id": 1285,
@@ -3065,7 +3068,8 @@
    "vendor_host": "skiddle.com",
    "method": "ссылка события ведёт к продавцу",
    "page_url": "https://www.skiddle.com/whats-on/Peterborough/Buzz-Bingo-Peterborough/Oktoberfest---Buzz-Bingo-Peterborough/42750059/",
-   "importance": 2.6
+   "checked_at": "2026-09-30T09:03:56+00:00",
+   "importance": 3.1
   },
   "2189": {
    "event_id": 2189,
@@ -3073,6 +3077,7 @@
    "vendor_host": "eventbrite.co.uk",
    "method": "ссылка события ведёт к продавцу",
    "page_url": "https://www.eventbrite.co.uk/e/poetry-pints-tickets-2001578380818",
+   "checked_at": "2026-09-30T09:03:56+00:00",
    "importance": 2.6
   },
   "2190": {
@@ -3081,6 +3086,7 @@
    "vendor_host": "eventbrite.co.uk",
    "method": "ссылка события ведёт к продавцу",
    "page_url": "https://www.eventbrite.co.uk/e/speed-dating-in-cambridge-ages-40-59ish-tickets-1999781094085",
+   "checked_at": "2026-09-30T09:03:56+00:00",
    "importance": 2.7
   },
   "2193": {
@@ -3089,6 +3095,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://ngs.org.uk/gardens/robinson-college-cb3/",
+   "checked_at": "2026-09-30T09:04:05+00:00",
    "importance": 2.5
   },
   "2213": {
@@ -3097,6 +3104,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://cambridge.thelight.co.uk/queen-budapest",
+   "checked_at": "2026-09-30T09:04:08+00:00",
    "importance": 2.5
   },
   "2214": {
@@ -3105,6 +3113,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://cambridge.thelight.co.uk/hadestown-the-musical",
+   "checked_at": "2026-09-30T09:04:10+00:00",
    "importance": 2.5
   },
   "2217": {
@@ -3113,6 +3122,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.camdram.net/shows/2026-the-garden-of-love-showcase",
+   "checked_at": "2026-09-30T09:04:14+00:00",
    "importance": 2.5
   },
   "2218": {
@@ -3121,6 +3131,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.camdram.net/shows/2026-to-thine-own-self",
+   "checked_at": "2026-09-30T09:04:16+00:00",
    "importance": 2.5
   },
   "2219": {
@@ -3129,6 +3140,7 @@
    "vendor_host": null,
    "method": "переход по кнопке покупки: FetchError HTTP 403 https://www.artstheatre.co.uk/whats-on/the-cambridg",
    "page_url": "https://www.camdram.net/shows/the-cambridge-greek-play-2026",
+   "checked_at": "2026-09-30T09:04:21+00:00",
    "importance": 2.9
   },
   "2249": {
@@ -3137,6 +3149,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.chu.cam.ac.uk/event/water-nature-and-resilience-in-cambridgeshire-turning-challenges-into-action/",
+   "checked_at": "2026-09-30T09:04:28+00:00",
    "importance": 2.5
   },
   "2254": {
@@ -3145,6 +3158,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.clarehall.cam.ac.uk/events/family-supper-16-october/",
+   "checked_at": "2026-09-30T09:04:31+00:00",
    "importance": 2.5
   },
   "2260": {
@@ -3153,6 +3167,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.girton.cam.ac.uk/events/gcms-queen-victorias-consort",
+   "checked_at": "2026-09-30T09:04:36+00:00",
    "importance": 2.5
   },
   "2264": {
@@ -3161,6 +3176,31 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.hughes.cam.ac.uk/about/events/pop-up-plant-sale-3/",
+   "checked_at": "2026-09-30T09:04:42+00:00",
+   "importance": 2.5
+  },
+  "2329": {
+   "event_id": 2329,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.cmp.cam.ac.uk/events/event/item/come-and-play-samulnori-society-2/",
+   "importance": 2.5
+  },
+  "2330": {
+   "event_id": 2330,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://musiclivecambridge.com/gigs/eschalon-akkadian-overture-11th-oct-26-the-portlan",
+   "importance": 2.2
+  },
+  "2334": {
+   "event_id": 2334,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.clarehall.cam.ac.uk/events/clare-hall-colloquia-michaelmas-2026/",
    "importance": 2.5
   }
  }

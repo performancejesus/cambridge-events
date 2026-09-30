@@ -13,4 +13,6 @@ GLOSSARY = """Translation glossary (English → Russian), use it for titles and 
 - junior (in club and sport names) → для детей / для подростков по возрасту из данных, never «младший»;
 - performing arts, drama → театральная студия; dance → танцы; climbing, bouldering → скалолазание;
 - tennis camp → теннисный лагерь; football camp → футбольный лагерь; cricket → крикет; rugby → регби;
+- towns: Bury St Edmunds → Бери-Сент-Эдмундс, Saffron Walden → Саффрон-Уолден, St Ives → Сент-Айвс,
+  St Neots → Сент-Нитс, Huntingdon → Хантингдон, Peterborough → Питерборо, Ely → Эли, Newmarket → Ньюмаркет;
 - family fun day → семейный праздник; storytime, rhymetime → чтение вслух / стишки и песенки для малышей."""

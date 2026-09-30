@@ -23,10 +23,15 @@ def check(ctx) -> Finding:
         if c.get("kind") in ("event", "announcement", "tickets") and c.get("dates") and not c.get("regular_series"):
             spans = [(x[0], x[1]) for x in c["dates"] if x[0]]
             multi = any(a != b for a, b in spans) or len({a for a, _ in spans}) > 1
-            if multi and not RANGE.search(e["meta"].split(" · ")[0]):
-                f.violations.append(f"«{e['title']}»: событие на несколько дней показано одним днём ({e['meta'].split(' · ')[0]})")
+            when = next((x for x in e["meta"].split(" · ") if re.search(r"\d", x)), "")
+            if multi and not RANGE.search(when):
+                f.violations.append(f"«{e['title']}»: событие на несколько дней показано одним днём ({when})")
             if not multi and MULTI.search(e["blurb"]):
                 f.violations.append(f"«{e['title']}»: в описании «несколько дней», а дата одна")
+        if c.get("kind") == "film_release" and c.get("dates"):   # полный пункт о фильме: дата релиза — пятница
+            x = issue.d(c["dates"][0][0])
+            if x >= ctx.w.issue and x.weekday() != 4 and "пт" not in e["meta"]:
+                f.violations.append(f"«{e['title']}»: релиз не в пятницу ({e['meta'].split(' · ')[0]})")
         if e["rubric"] == "cinema" and e["compact"] and e["title"].startswith("В прокате с "):
             m = re.match(r"В прокате с (?:пятницы, )?(\d+) (\w+)", e["title"])
             if m and "пятницы" not in e["title"]:

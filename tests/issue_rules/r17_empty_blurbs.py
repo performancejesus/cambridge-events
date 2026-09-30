@@ -22,7 +22,14 @@ def generic(blurb_en: str, blurb_ru: str, title_en: str, kind: str) -> bool:
         return True
     if GENERIC_RE.match(blurb_en.strip()) or GENERIC_RU_RE.match(blurb_ru.strip()) or NEWS_GENERIC_RU.match(blurb_ru.strip()):
         return True
-    return kind != "venue_news" and content_words(blurb_en, title_en) < 3
+    if kind == "venue_news":   # v10: «Tea Apothecary открылось на Magdalene Street и подает чай посетителям» — пусто
+        stop = {"opened", "open", "opens", "opening", "serves", "serving", "visitors", "customers", "street", "road",
+                "cambridge", "new", "recently", "doors", "their", "with", "that", "this", "which", "offers", "offering",
+                "tea", "coffee", "food", "drinks", "cafe", "café", "restaurant", "shop", "store", "bar", "pub"}
+        words = [w for w in re.findall(r"[a-zà-ÿ']+", blurb_en.lower()) if len(w) > 3 and w not in stop
+                 and w not in title_en.lower()]
+        return len(words) < 3
+    return content_words(blurb_en, title_en) < 3
 
 
 def check(ctx) -> Finding:
@@ -30,7 +37,8 @@ def check(ctx) -> Finding:
     f = Finding()
     for rub, it in ctx.model_items():
         c = ctx.pools.candidates.get(it["ids"][0]) or {}
-        if rub == "cancelled" or it.get("also") or c.get("kind") in ("film_release",) or len(it["ids"]) > 3:
+        if rub == "cancelled" or it.get("also") or it.get("line") or it.get("union") or c.get("kind") in ("film_release",) \
+                or len(it["ids"]) > 3:   # компактные строки («Также играют», «В колледжах», Union) — без описания
             continue
         if generic(it.get("blurb_en") or "", it.get("blurb_ru") or "", it.get("title_en") or "", c.get("kind")):
             if issue.importance_of(ctx.pools, it) >= 6 and c.get("kind") != "venue_news":

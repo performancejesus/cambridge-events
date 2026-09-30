@@ -3,16 +3,14 @@
  "version": "v9",
  "send_allowed": false,
  "blocking": [
-  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Две недели, по краям которых — большие имена в Corn Exchange (Саймон Амстелл, Элис Купер, Ниш Кумар), а в середине — Кембридж вспоминает своего самого известного уроженца: Сиду Барретту в этом месяце исполнилось бы 80 лет, и город отмечает это трибьют-концертом, небольшой выставкой и даже футбольным матчем, о котором попросила его сестра.» (вступление): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
-  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Two weeks bookended by big names at the Corn Exchange – Simon Amstell, Alice Cooper, Nish Kumar – and, right in the middle, Cambridge remembers its most famous lost son: Syd Barrett would have turned 80 this month, and the city marks it with a tribute concert, a small exhibition and even a football match played in his sister's name.» (вступление): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
+  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Две недели, по краям которых — большие имена в Corn Exchange (Саймон Амстелл, Элис Купер, Ниш Кумар), а в середине — Кембридж вспоминает своего самого известного уроженца: Сиду Барретту в этом месяце исполнилось бы 80 лет, и город отмечает это трибьют-концер…",
+  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Two weeks bookended by big names at the Corn Exchange – Simon Amstell, Alice Cooper, Nish Kumar – and, right in the middle, Cambridge remembers its most famous lost son: Syd Barrett would have turned 80 this month, and the city marks it with a tribute concer…",
   "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Сид Барретт, один из основателей и автор песен Pink Floyd, вырос в Кембридже — в этом месяце ему исполнилось бы 80 лет.» (вступление темы): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
-  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Syd Barrett, the founding songwriter of Pink Floyd, grew up in Cambridge and would have turned 80 this month; the city marks the occasion with a tribute concert, a small exhibition, talks and one unexpected football match.» (вступление темы): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
-  "2. Пересказ источника (тема недели, вступления, пункты из статей): «вступление»: «Сиду Барретту в этом месяце исполнилось бы 80 лет» — искажено; в источнике: «editor_note: «80-летие Барретта отмечают в этом году (он родился 6 января 1946), не «в этом месяце»»»",
-  "2. Пересказ источника (тема недели, вступления, пункты из статей): «вступление»: «И футбольным матчем, о котором попросила его сестра» — искажено; в источнике: «editor_note: «Это её слова, клуб в календаре этого не пишет — в тексте подавать как «по словам сестры»»»",
-  "2. Пересказ источника (тема недели, вступления, пункты из статей): «вступление темы»: «В этом месяце ему исполнилось бы 80 лет» — искажено; в источнике: «editor_note: «80-летие Барретта отмечают в этом году ... не «в этом месяце»»»",
-  "7. Ссылки отвечают, нет относительных ссылок на отсутствующие файлы: https://www.theposh.com/fixtures — HTTP 404",
-  "7. Ссылки отвечают, нет относительных ссылок на отсутствующие файлы: https://www.skiddle.com/whats-on/Peterborough/The-White-Horse-Tilbrook/Kids-Halloween-Party/42673054/ — не проверить: 202",
-  "7. Ссылки отвечают, нет относительных ссылок на отсутствующие файлы: https://iceaccount.co.uk/peterborough-phantoms — не проверить: robots.txt не разрешает"
+  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Syd Barrett, the founding songwriter of Pink Floyd, grew up in Cambridge and would have turned 80 this month; the city marks the occasion with a tribute concert, a small exhibition, talks and one unexpected football match.» (вступление темы): «в этом месяце»…",
+  "2. Пересказ источника (тема недели, вступления, пункты из статей): «вступление»: «Сиду Барретту в этом месяце исполнилось бы 80 лет» — искажено; в источнике: «80-летие Барретта отмечают в этом году (он родился 6 января 1946), не «в этом месяце»»",
+  "2. Пересказ источника (тема недели, вступления, пункты из статей): «вступление»: «И футбольным матчем, о котором попросила его сестра» — искажено; в источнике: «Это её слова, клуб в календаре этого не пишет — в тексте подавать как «по словам сестры»»",
+  "2. Пересказ источника (тема недели, вступления, пункты из статей): «вступление темы»: «В этом месяце ему исполнилось бы 80 лет» — искажено; в источнике: «80-летие Барретта отмечают в этом году (он родился 6 января 1946), не «в этом месяце»»",
+  "7. Ссылки отвечают, нет относительных ссылок на отсутствующие файлы: https://www.theposh.com/fixtures — HTTP 404"
  ],
  "checks": [
   {
@@ -34,9 +32,9 @@
    "level": "block",
    "status": "block",
    "details": [
-    "«вступление»: «Сиду Барретту в этом месяце исполнилось бы 80 лет» — искажено; в источнике: «editor_note: «80-летие Барретта отмечают в этом году (он родился 6 января 1946), не «в этом месяце»»»",
-    "«вступление»: «И футбольным матчем, о котором попросила его сестра» — искажено; в источнике: «editor_note: «Это её слова, клуб в календаре этого не пишет — в тексте подавать как «по словам сестры»»»",
-    "«вступление темы»: «В этом месяце ему исполнилось бы 80 лет» — искажено; в источнике: «editor_note: «80-летие Барретта отмечают в этом году ... не «в этом месяце»»»"
+    "«вступление»: «Сиду Барретту в этом месяце исполнилось бы 80 лет» — искажено; в источнике: «80-летие Барретта отмечают в этом году (он родился 6 января 1946), не «в этом месяце»»",
+    "«вступление»: «И футбольным матчем, о котором попросила его сестра» — искажено; в источнике: «Это её слова, клуб в календаре этого не пишет — в тексте подавать как «по словам сестры»»",
+    "«вступление темы»: «В этом месяце ему исполнилось бы 80 лет» — искажено; в источнике: «80-летие Барретта отмечают в этом году (он родился 6 января 1946), не «в этом месяце»»"
    ],
    "fixed": []
   },
@@ -99,7 +97,16 @@
    "status": "left",
    "details": [
     "«Лекция Роба Чапмена о Сиде Барретте»: Rob Chapman — кириллицей",
+    "«Shine with Jess Gillam and her Band»: Jess Gillam — кириллицей",
+    "«WCB Comedy: Hal Cruttenden, Reginald D Hunter, Dan Antopolski»: Reginald D Hunter — кириллицей",
+    "«WCB Comedy: Hal Cruttenden, Reginald D Hunter, Dan Antopolski»: Hal Cruttenden — кириллицей",
+    "«WCB Comedy: Hal Cruttenden, Reginald D Hunter, Dan Antopolski»: Dan Antopolski — кириллицей",
+    "«In Conversation with Simon Woolley»: Simon Woolley — кириллицей",
+    "«Frank Bowling: Seeking the Sublime»: Frank Bowling — кириллицей",
+    "«Sunil Gupta: Life with a Camera, 1970 – Now»: Sunil Gupta — кириллицей",
     "«Органный концерт: Пол Грили»: Paul Greally — кириллицей",
+    "«Martin Kemp»: Martin Kemp — кириллицей",
+    "«An Audience With Philippa Gregory»: Philippa Gregory — кириллицей",
     "вступление: Nish Kumar — кириллицей",
     "вступление: Simon Amstell — кириллицей",
     "вступление: Alice Cooper — кириллицей"
@@ -112,7 +119,6 @@
    "level": "fix",
    "status": "left",
    "details": [
-    "«Shine with Jess Gillam and her Band»: копейки в ровной сумме (£20.00)",
     "«The bEAT + The Selecter»: «цены на сайте», хотя цена есть в данных (['£43.00'])",
     "«Simon Amstell: I Love It Here»: «цены на сайте», хотя цена есть в данных (£23.00 - £30.00)"
    ],
@@ -125,8 +131,7 @@
    "status": "left",
    "details": [
     "«The bEAT + The Selecter»: ссылка — агрегатор (https://musiclivecambridge.com/gigs/the-beat-dance-crazed-too-uk-tour), есть площадка / организатор (https://www.cornex.co.uk/events/the-beat-dance-crazed-too-uk-tour)",
-    "«День грибов»: ссылка — агрегатор (https://www.museums.cam.ac.uk/events/fungi-field-day-1), есть площадка / организатор (https://www.botanic.cam.ac.uk/whats-on/fungi-field-day/)",
-    "«The Magpies Magic Forest Trail»: ссылка — агрегатор (https://www.museums.cam.ac.uk/events/magpies-magic-forest-trail), есть площадка / организатор (https://www.botanic.cam.ac.uk/whats-on/the-magpies-magic-forest/)"
+    "«День грибов»: ссылка — агрегатор (https://www.museums.cam.ac.uk/events/fungi-field-day-1), есть площадка / организатор (https://www.botanic.cam.ac.uk/whats-on/fungi-field-day/)"
    ],
    "fixed": []
   },
@@ -294,10 +299,7 @@
    "details": [
     "«Tea Apothecary»: «Находится на Magdalene Street» (нет в источнике) — не в списке «проверить»",
     "«Transvision Vamp»: «Группа играет поп-рок хиты конца 1980-х» (нет в источнике) — не в списке «проверить»",
-    "«Forgotten Island»: «Действие происходит на Филиппинах в 1990-х» (искажено) — не в списке «проверить»",
     "«Studio Sunday: Relaxed Session»: «Под руководством художника» (нет в источнике) — не в списке «проверить»",
-    "«An Audience With Philippa Gregory»: «Роман о Eleanor Cobham при дворе Генриха V» (искажено) — не в списке «проверить»",
-    "«An Audience With Philippa Gregory»: «Eleanor Cobham при дворе Генриха V» (искажено) — не в списке «проверить»",
     "«An Audience With Philippa Gregory»: «Eleanor Cobham была первой женщиной в этой роли» (нет в источнике) — не в списке «проверить»",
     "«Maddy Prior & Peter Knight»: «Peter Knight — скрипач» (нет в источнике) — не в списке «проверить»"
    ],
@@ -339,7 +341,7 @@
    "level": "fix",
    "status": "left",
    "details": [
-    "рубрики нет, хотя кандидатов 20"
+    "рубрики нет, хотя кандидатов 18"
    ],
    "fixed": []
   },
