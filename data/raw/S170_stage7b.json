@@ -18,13 +18,13 @@
   "organizer": null,
   "categories": [
    "college",
-   "other"
+   "lecture"
   ],
-  "summary": "other",
+  "summary": "lecture",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:55:22+00:00"
+  "fetched_at": "2026-09-30T13:43:57+00:00"
  },
  {
   "source_id": "S170",
@@ -51,15 +51,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:55:22+00:00"
+  "fetched_at": "2026-09-30T13:43:57+00:00"
  },
  {
   "source_id": "S170",
-  "title": "Clare Hall Book Club",
-  "url": "https://www.clarehall.cam.ac.uk/events/clare-hall-book-club-32/",
+  "title": "Special Interest Groups (SIGs) 2026/27",
+  "url": "https://www.clarehall.cam.ac.uk/events/special-interest-groups-sigs-2026-2027/",
   "kind": "event",
-  "external_id": "2026-10-05|Clare Hall Book Club",
-  "start": "2026-10-05",
+  "external_id": "2026-10-01|Special Interest Groups (SIGs) 2026/27",
+  "start": "2026-10-01",
   "end": null,
   "all_day": true,
   "venue": "Clare Hall",
@@ -72,13 +72,40 @@
   "organizer": null,
   "categories": [
    "college",
-   "other"
+   "lecture"
   ],
-  "summary": "other",
+  "summary": "lecture",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:55:22+00:00"
+  "fetched_at": "2026-09-30T13:43:57+00:00"
+ },
+ {
+  "source_id": "S170",
+  "title": "Clare Hall Colloquia – Michaelmas 2026",
+  "url": "https://www.clarehall.cam.ac.uk/events/clare-hall-colloquia-michaelmas-2026/",
+  "kind": "event",
+  "external_id": "2026-10-13|Clare Hall Colloquia – Michaelmas 2026",
+  "start": "2026-10-13",
+  "end": null,
+  "all_day": true,
+  "venue": "Clare Hall",
+  "address": "Clare Hall, Herschel Road, Cambridge",
+  "postcode": "CB3 9AL",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:43:57+00:00"
  },
  {
   "source_id": "S170",
@@ -105,7 +132,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:55:22+00:00"
+  "fetched_at": "2026-09-30T13:43:57+00:00"
  },
  {
   "source_id": "S170",
@@ -132,60 +159,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:55:22+00:00"
- },
- {
-  "source_id": "S170",
-  "title": "Clare Hall's Ceramics Symposium",
-  "url": "https://www.clarehall.cam.ac.uk/events/clare-halls-ceramics-symposium/",
-  "kind": "event",
-  "external_id": "2026-10-24|Clare Hall's Ceramics Symposium",
-  "start": "2026-10-24",
-  "end": null,
-  "all_day": true,
-  "venue": "Clare Hall",
-  "address": "Clare Hall, Herschel Road, Cambridge",
-  "postcode": "CB3 9AL",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "college",
-   "lecture"
-  ],
-  "summary": "lecture",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:55:22+00:00"
- },
- {
-  "source_id": "S170",
-  "title": "The Betty Behrens Seminar on Classics of Historiography – Michaelmas 2026",
-  "url": "https://www.clarehall.cam.ac.uk/events/the-betty-behrens-seminar-on-classics-of-historiography-michaelmas-2026/",
-  "kind": "event",
-  "external_id": "2026-10-30|The Betty Behrens Seminar on Classics of Historiography – Michaelmas 2026",
-  "start": "2026-10-30",
-  "end": null,
-  "all_day": true,
-  "venue": "Clare Hall",
-  "address": "Clare Hall, Herschel Road, Cambridge",
-  "postcode": "CB3 9AL",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "college",
-   "lecture"
-  ],
-  "summary": "lecture",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:55:22+00:00"
+  "fetched_at": "2026-09-30T13:43:57+00:00"
  }
 ]

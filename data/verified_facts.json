@@ -1,0 +1,56 @@
+{
+ "_note": "Проверенные факты для тем недели и ежегодных событий (этап 7c). Заносит редактор; сборщик добавляет в таблицу verified_facts утверждения, найденные в тексте источника пункта. aliases — синонимы и падежные формы, по которым факт узнаётся в тексте выпуска. Удалять факты — только по решению редактора.",
+ "facts": [
+  {
+   "subject": "Syd Barrett",
+   "aliases": [
+    "Barrett",
+    "Syd",
+    "Барретт",
+    "Барретта",
+    "Барретту",
+    "Барреттом",
+    "Барретте",
+    "Сид Барретт",
+    "Сида Барретта",
+    "Сиду Барретту"
+   ],
+   "kind": "birth_date",
+   "value": "1946-01-06",
+   "statement": "Roger Keith «Syd» Barrett родился 6 января 1946 года в Кембридже (в октябре 2026 года — не день рождения; 80 лет ему исполнилось бы 6 января 2026 года)",
+   "source": "https://en.wikipedia.org/wiki/Syd_Barrett",
+   "checked_by": "редактор (бриф, правки по v5 и v9); сверено с Wikipedia 30.09.2026",
+   "checked_at": "2026-09-30"
+  },
+  {
+   "subject": "Syd Barrett",
+   "aliases": [
+    "Barrett",
+    "Syd",
+    "Барретт",
+    "Барретта",
+    "Барретту"
+   ],
+   "kind": "death_date",
+   "value": "2006-07-07",
+   "statement": "умер 7 июля 2006 года в Кембридже",
+   "source": "https://en.wikipedia.org/wiki/Syd_Barrett",
+   "checked_by": "сборщик: Wikipedia",
+   "checked_at": "2026-09-30"
+  },
+  {
+   "subject": "Cambridge United",
+   "aliases": [
+    "Cambridge United FC",
+    "Cambridge United F.C.",
+    "Кембридж Юнайтед"
+   ],
+   "kind": "league",
+   "value": "League One (2026/27)",
+   "statement": "в сезоне 2026/27 Cambridge United играют в League One (Sky Bet League One): на странице таблицы клуба активный турнир — League One, League Two — неактивный; соперники по календарю — Barnsley, Blackpool, Wycombe, Oxford United, Sheffield Wednesday",
+   "source": "https://www.cambridgeunited.com/table/57",
+   "checked_by": "сборщик: сайт клуба, 30.09.2026 (правки по v9: «матч Лиги Two» — ошибка из знаний модели)",
+   "checked_at": "2026-09-30"
+  }
+ ]
+}

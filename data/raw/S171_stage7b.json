@@ -1,10 +1,10 @@
 [
  {
   "source_id": "S171",
-  "title": "Lucy Cavendish College's Foundation Day: Panel Discussion",
-  "url": "https://www.lucy.cam.ac.uk/events/lucy-cavendish-colleges-foundation-day-panel-discussion",
+  "title": "Lucy Cavendish College's Foundation Day",
+  "url": "https://www.lucy.cam.ac.uk/events/lucy-cavendish-colleges-foundation-day",
   "kind": "event",
-  "external_id": "2026-11-10|Lucy Cavendish College's Foundation Day: Panel Discussion",
+  "external_id": "2026-11-10|Lucy Cavendish College's Foundation Day",
   "start": "2026-11-10",
   "end": null,
   "all_day": true,
@@ -24,6 +24,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:55:29+00:00"
+  "fetched_at": "2026-09-30T13:44:04+00:00"
  }
 ]

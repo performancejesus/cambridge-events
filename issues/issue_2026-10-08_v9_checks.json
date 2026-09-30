@@ -1,0 +1,355 @@
+{
+ "issue_date": "2026-10-08",
+ "version": "v9",
+ "send_allowed": false,
+ "blocking": [
+  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Две недели, по краям которых — большие имена в Corn Exchange (Саймон Амстелл, Элис Купер, Ниш Кумар), а в середине — Кембридж вспоминает своего самого известного уроженца: Сиду Барретту в этом месяце исполнилось бы 80 лет, и город отмечает это трибьют-концертом, небольшой выставкой и даже футбольным матчем, о котором попросила его сестра.» (вступление): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
+  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Two weeks bookended by big names at the Corn Exchange – Simon Amstell, Alice Cooper, Nish Kumar – and, right in the middle, Cambridge remembers its most famous lost son: Syd Barrett would have turned 80 this month, and the city marks it with a tribute concert, a small exhibition and even a football match played in his sister's name.» (вступление): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
+  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Сид Барретт, один из основателей и автор песен Pink Floyd, вырос в Кембридже — в этом месяце ему исполнилось бы 80 лет.» (вступление темы): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
+  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Syd Barrett, the founding songwriter of Pink Floyd, grew up in Cambridge and would have turned 80 this month; the city marks the occasion with a tribute concert, a small exhibition, talks and one unexpected football match.» (вступление темы): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
+  "2. Пересказ источника (тема недели, вступления, пункты из статей): «вступление»: «Сиду Барретту в этом месяце исполнилось бы 80 лет» — искажено; в источнике: «editor_note: «80-летие Барретта отмечают в этом году (он родился 6 января 1946), не «в этом месяце»»»",
+  "2. Пересказ источника (тема недели, вступления, пункты из статей): «вступление»: «И футбольным матчем, о котором попросила его сестра» — искажено; в источнике: «editor_note: «Это её слова, клуб в календаре этого не пишет — в тексте подавать как «по словам сестры»»»",
+  "2. Пересказ источника (тема недели, вступления, пункты из статей): «вступление темы»: «В этом месяце ему исполнилось бы 80 лет» — искажено; в источнике: «editor_note: «80-летие Барретта отмечают в этом году ... не «в этом месяце»»»",
+  "7. Ссылки отвечают, нет относительных ссылок на отсутствующие файлы: https://www.theposh.com/fixtures — HTTP 404",
+  "7. Ссылки отвечают, нет относительных ссылок на отсутствующие файлы: https://www.skiddle.com/whats-on/Peterborough/The-White-Horse-Tilbrook/Kids-Halloween-Party/42673054/ — не проверить: 202",
+  "7. Ссылки отвечают, нет относительных ссылок на отсутствующие файлы: https://iceaccount.co.uk/peterborough-phantoms — не проверить: robots.txt не разрешает"
+ ],
+ "checks": [
+  {
+   "rule": 1,
+   "title": "Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»)",
+   "level": "block",
+   "status": "block",
+   "details": [
+    "«Две недели, по краям которых — большие имена в Corn Exchange (Саймон Амстелл, Элис Купер, Ниш Кумар), а в середине — Кембридж вспоминает своего самого известного уроженца: Сиду Барретту в этом месяце исполнилось бы 80 лет, и город отмечает это трибьют-концертом, небольшой выставкой и даже футбольным матчем, о котором попросила его сестра.» (вступление): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
+    "«Two weeks bookended by big names at the Corn Exchange – Simon Amstell, Alice Cooper, Nish Kumar – and, right in the middle, Cambridge remembers its most famous lost son: Syd Barrett would have turned 80 this month, and the city marks it with a tribute concert, a small exhibition and even a football match played in his sister's name.» (вступление): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
+    "«Сид Барретт, один из основателей и автор песен Pink Floyd, вырос в Кембридже — в этом месяце ему исполнилось бы 80 лет.» (вступление темы): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)",
+    "«Syd Barrett, the founding songwriter of Pink Floyd, grew up in Cambridge and would have turned 80 this month; the city marks the occasion with a tribute concert, a small exhibition, talks and one unexpected football match.» (вступление темы): «в этом месяце» — ошибка: Syd Barrett родился 06.01.1946 (источник: https://en.wikipedia.org/wiki/Syd_Barrett)"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 2,
+   "title": "Пересказ источника (тема недели, вступления, пункты из статей)",
+   "level": "block",
+   "status": "block",
+   "details": [
+    "«вступление»: «Сиду Барретту в этом месяце исполнилось бы 80 лет» — искажено; в источнике: «editor_note: «80-летие Барретта отмечают в этом году (он родился 6 января 1946), не «в этом месяце»»»",
+    "«вступление»: «И футбольным матчем, о котором попросила его сестра» — искажено; в источнике: «editor_note: «Это её слова, клуб в календаре этого не пишет — в тексте подавать как «по словам сестры»»»",
+    "«вступление темы»: «В этом месяце ему исполнилось бы 80 лет» — искажено; в источнике: «editor_note: «80-летие Барретта отмечают в этом году ... не «в этом месяце»»»"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 3,
+   "title": "Прошедшие события",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 4,
+   "title": "Отменённые и распроданные — не в обычных рубриках",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 5,
+   "title": "Доступ restricted — не в выпуске, никогда в «Успейте»",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 6,
+   "title": "Дедлайн записи прошёл — программа не в письме",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 7,
+   "title": "Ссылки отвечают, нет относительных ссылок на отсутствующие файлы",
+   "level": "block",
+   "status": "block",
+   "details": [
+    "https://www.theposh.com/fixtures — HTTP 404",
+    "https://www.skiddle.com/whats-on/Peterborough/The-White-Horse-Tilbrook/Kids-Halloween-Party/42673054/ — не проверить: 202",
+    "https://iceaccount.co.uk/peterborough-phantoms — не проверить: robots.txt не разрешает"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 8,
+   "title": "Смешанные алфавиты в русском тексте",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 9,
+   "title": "Имена людей и групп — латиницей",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Лекция Роба Чапмена о Сиде Барретте»: Rob Chapman — кириллицей",
+    "«Органный концерт: Пол Грили»: Paul Greally — кириллицей",
+    "вступление: Nish Kumar — кириллицей",
+    "вступление: Simon Amstell — кириллицей",
+    "вступление: Alice Cooper — кириллицей"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 10,
+   "title": "Цена — из данных и из лучшего источника",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Shine with Jess Gillam and her Band»: копейки в ровной сумме (£20.00)",
+    "«The bEAT + The Selecter»: «цены на сайте», хотя цена есть в данных (['£43.00'])",
+    "«Simon Amstell: I Love It Here»: «цены на сайте», хотя цена есть в данных (£23.00 - £30.00)"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 11,
+   "title": "Ссылка — на первоисточник",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«The bEAT + The Selecter»: ссылка — агрегатор (https://musiclivecambridge.com/gigs/the-beat-dance-crazed-too-uk-tour), есть площадка / организатор (https://www.cornex.co.uk/events/the-beat-dance-crazed-too-uk-tour)",
+    "«День грибов»: ссылка — агрегатор (https://www.museums.cam.ac.uk/events/fungi-field-day-1), есть площадка / организатор (https://www.botanic.cam.ac.uk/whats-on/fungi-field-day/)",
+    "«The Magpies Magic Forest Trail»: ссылка — агрегатор (https://www.museums.cam.ac.uk/events/magpies-magic-forest-trail), есть площадка / организатор (https://www.botanic.cam.ac.uk/whats-on/the-magpies-magic-forest/)"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 12,
+   "title": "Тон без давления",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 13,
+   "title": "Отмены — одной строкой",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 14,
+   "title": "Многодневные события — диапазон; релизы — пятница",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 15,
+   "title": "Открытия: дата статьи — не дата открытия",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 16,
+   "title": "Детские события ночью — сверка времени",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 17,
+   "title": "Пустые описания (в том числе «Новое в городе»)",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Tea Apothecary»: «На Magdalene Street открылось новое чайное кафе.»"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 18,
+   "title": "Дубли имён («Также в программе: X», когда X уже в тексте)",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Anarchical Antiquity»: Professor Josephine Crawley Quinn уже назван в тексте"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 19,
+   "title": "Заголовки без приписок статуса и даты",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Fireworks Night — 5 ноября»",
+    "«Fireworks Night — 5 November»",
+    "«Simply Red на ипподроме Ньюмаркета — билеты уже в продаже»",
+    "«Simply Red at Newmarket Racecourse — on sale now»",
+    "«Olly Murs на Newmarket Nights — билеты уже в продаже»",
+    "«Olly Murs at Newmarket Nights — on sale now»"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 20,
+   "title": "Размер выпуска и рубрик (rubric_sizes)",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "free: 2 пунктов, минимум 3 (свободных подходящих кандидатов: 43)"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 21,
+   "title": "«Главное на выходные» и «По графству» — пороги зон",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 22,
+   "title": "Разнообразие площадок; театр в «На неделе»",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«На неделе»: нет театра или танца, кандидаты были (London City Ballet)"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 23,
+   "title": "Состав участников — полностью",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 24,
+   "title": "«Успейте купить» — с сигналом; ежегодные — в «Новых анонсах»",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Cambridge Beer Festival 2027»: ежегодное событие с подтверждённой датой не в «Новых анонсах»",
+    "«Mill Road Winter Fair 2026»: ежегодное событие с подтверждённой датой не в «Новых анонсах»"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 25,
+   "title": "Повторы между выпусками (issue_items, 4 недели)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 26,
+   "title": "«Каникулы»: лимиты, дни каникул, зона, глоссарий",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 27,
+   "title": "Подборки — не событие",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 28,
+   "title": "Пропуски с оценкой не ниже выбранного — с причиной",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "С детьми: Spirited Away (Subbed) (25th Anniversary) (2.8)"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 29,
+   "title": "Факты из знаний модели — в список «проверить» (правки по v9)",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Tea Apothecary»: «Находится на Magdalene Street» (нет в источнике) — не в списке «проверить»",
+    "«Transvision Vamp»: «Группа играет поп-рок хиты конца 1980-х» (нет в источнике) — не в списке «проверить»",
+    "«Forgotten Island»: «Действие происходит на Филиппинах в 1990-х» (искажено) — не в списке «проверить»",
+    "«Studio Sunday: Relaxed Session»: «Под руководством художника» (нет в источнике) — не в списке «проверить»",
+    "«An Audience With Philippa Gregory»: «Роман о Eleanor Cobham при дворе Генриха V» (искажено) — не в списке «проверить»",
+    "«An Audience With Philippa Gregory»: «Eleanor Cobham при дворе Генриха V» (искажено) — не в списке «проверить»",
+    "«An Audience With Philippa Gregory»: «Eleanor Cobham была первой женщиной в этой роли» (нет в источнике) — не в списке «проверить»",
+    "«Maddy Prior & Peter Knight»: «Peter Knight — скрипач» (нет в источнике) — не в списке «проверить»"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 30,
+   "title": "Лига футбольного клуба — только подтверждённая",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Cambridge United — Blackpool» (ru): лига «Лиги Two» не подтверждена",
+    "«Cambridge United — Blackpool» (en): лига «League Two» не подтверждена"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 31,
+   "title": "Подтверждённые открытия (S148) — в «Новом в городе» (правки по v9)",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Arbury Social» (открылось 2026-09-25) — не в «Новом в городе»",
+    "«Bridge Bagels» (открылось 2026-09-28) — не в «Новом в городе»"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 32,
+   "title": "Семейные фильмы — кандидаты в «С детьми» (правки по v9)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 33,
+   "title": "«В колледжах»: 3–6 строк, ≤ 2 от колледжа, без служб и дублей",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "рубрики нет, хотя кандидатов 20"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 34,
+   "title": "Cambridge Union: члены — одной строкой, открытые — пунктами",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  }
+ ]
+}

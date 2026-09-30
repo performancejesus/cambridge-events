@@ -19,7 +19,9 @@ SCHEMA = """CREATE TABLE IF NOT EXISTS event_pages (
 NEWS_HOSTS = {"cambridge-news.co.uk", "cambridgeindependent.co.uk", "peterboroughtoday.co.uk", "huntspost.co.uk",
               "cambstimes.co.uk", "wisbechstandard.co.uk", "elystandard.co.uk"}
 PRICE_RE = re.compile(r"£\s?\d+(?:\.\d{2})?(?:\s*(?:-|–|to)\s*£?\s?\d+(?:\.\d{2})?)?")
-FREE_RE = re.compile(r"\b(free (entry|admission|event|of charge)|admission (is )?free|entry (is )?free)\b", re.I)
+FREE_RE = re.compile(r"\b(free (entry|admission|event|of charge)|admission (is )?free|entry (is )?free|"
+                     # этап 7c (правки по v9: лекция St John's — «The lecture is free and open to all»)
+                     r"(?:is|are) free and open to (?:all|everyone|the public)|free,? (?:public )?(?:lecture|talk|recital) )", re.I)
 
 
 def init(con: sqlite3.Connection) -> None:

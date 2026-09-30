@@ -32,4 +32,11 @@ if __name__ == "__main__":
         st["candidates"] += 1
         res = enrich.fetch(con, http, c["event_ids"][0], c.get("url"), c["title"])
         st["ok" if res else "skipped_or_error"] += 1
+    # этап 7c (правки по v9): открытия, найденные поиском (S148, без статьи), — страница первоисточника для факта в
+    # описании (Arbury Social, Bridge Bagels); в event_pages под отрицательным id = −news_id
+    for cid, c in pools.candidates.items():
+        if c["kind"] == "venue_news" and c.get("source_type") == "search" and c.get("url"):
+            st["candidates"] += 1
+            res = enrich.fetch(con, http, -c["news_id"], c["url"], c["title"])
+            st["ok" if res else "skipped_or_error"] += 1
     print(json.dumps(st))

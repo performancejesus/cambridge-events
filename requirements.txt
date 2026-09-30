@@ -5,3 +5,5 @@ icalendar
 openpyxl
 anthropic
 pypdf
+pillow
+cffi

@@ -1,10 +1,10 @@
 [
  {
   "source_id": "S010",
-  "title": "British drivers are now paying an average of £713 for their car insurance",
-  "url": "https://www.peterboroughtoday.co.uk/read-this/british-drivers-are-now-paying-an-average-of-ps713-for-their-car-insurance-9230921",
+  "title": "HRH The Princess Royal celebrates lifesaving partnerships with Magpas Air Ambulance",
+  "url": "https://www.peterboroughtoday.co.uk/your-world/hrh-the-princess-royal-celebrates-lifesaving-partnerships-with-magpas-air-ambulance-9234680",
   "kind": "article",
-  "external_id": "9230921",
+  "external_id": "9234680",
   "start": null,
   "end": null,
   "all_day": false,
@@ -17,13 +17,200 @@
   "status": null,
   "organizer": null,
   "categories": [
-   "Read This"
+   "Your World"
   ],
-  "summary": "British drivers are now paying an average of £713 for their car insurance, according to industry data.",
-  "published": "2026-09-30T08:18:48Z",
+  "summary": "On 29th September, Magpas Air Ambulance welcomed HRH The Princess Royal to the charity’s headquarters in Alconbury Weald, Cambridgeshire, for a special event celebrating lifesaving partnerships.",
+  "published": "2026-09-30T13:10:31Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Remembering... Peterborough's City Cinema on Bridge Street",
+  "url": "https://www.peterboroughtoday.co.uk/news/people/remembering-peterboroughs-city-cinema-on-bridge-street-9234674",
+  "kind": "article",
+  "external_id": "9234674",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "People",
+   "News"
+  ],
+  "summary": "Popular movie house was one of the most ornate buildings in the city centre",
+  "published": "2026-09-30T13:08:14Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Regular bulky waste collections to begin in Peterborough",
+  "url": "https://www.peterboroughtoday.co.uk/news/people/regular-bulky-waste-collections-to-begin-in-peterborough-9234423",
+  "kind": "article",
+  "external_id": "9234423",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "People",
+   "News"
+  ],
+  "summary": "Free community bulky waste collections will be available for residents across Peterborough from this weekend.",
+  "published": "2026-09-30T12:43:31Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Police provide update after being called to ‘sudden death’ in Yaxley",
+  "url": "https://www.peterboroughtoday.co.uk/news/people/police-provide-update-after-being-called-to-sudden-death-in-yaxley-9234242",
+  "kind": "article",
+  "external_id": "9234242",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "People",
+   "News"
+  ],
+  "summary": "Police were called to an address in the village on September 29",
+  "published": "2026-09-30T12:28:33Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Plans to extend scheme tackling anti-social behaviour across Peterborough welcomed",
+  "url": "https://www.peterboroughtoday.co.uk/news/people/plans-to-extend-scheme-tackling-anti-social-behaviour-across-peterborough-welcomed-9233406",
+  "kind": "article",
+  "external_id": "9233406",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "People",
+   "News"
+  ],
+  "summary": "Proposals to extend a scheme which has seen anti-social behavior and fly-tipping drop in five residential areas of Peterborough have been welcomed by councillors.",
+  "published": "2026-09-30T12:10:22Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Date revealed for Peterborough Christmas lights switch on in Cathedral Square",
+  "url": "https://www.peterboroughtoday.co.uk/news/people/date-revealed-for-peterborough-christmas-lights-switch-on-in-cathedral-square-9233449",
+  "kind": "article",
+  "external_id": "9233449",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "People",
+   "News"
+  ],
+  "summary": "We may only be in the middle of autumn – but thoughts are already starting to turn to Christmas.",
+  "published": "2026-09-30T11:15:44Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "The Sainsbury's wine deal that could help you get Christmas sorted early",
+  "url": "https://www.peterboroughtoday.co.uk/recommended/sainsburys-wine-deal-25-off-wine-christmas-taste-the-difference-nectar-drinks-silentmode-9231973",
+  "kind": "article",
+  "external_id": "9231757",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Recommended"
+  ],
+  "summary": "Christmas may still be months away, but Sainsbury's current wine deal could be a good excuse to start building a festive drinks stash early.",
+  "published": "2026-09-30T11:11:53Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Cheapest Harry Styles Wembley tickets for Together Together tour 2027 available from just £72",
+  "url": "https://www.peterboroughtoday.co.uk/recommended/harry-styles-wembley-tickets-for-together-together-tour-2027-from-just-ps72-9232589",
+  "kind": "article",
+  "external_id": "9232385",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Recommended"
+  ],
+  "summary": "Harry Styles’ three Wembley Stadium 2027 shows have sold out but there’s still a way to get hold of tickets at fair prices",
+  "published": "2026-09-30T11:04:42Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -47,10 +234,251 @@
    "News"
   ],
   "summary": "A ‘dangerous’ rapist who raped a woman in a late-night attack near a filling station is among the crooks locked up for crimes in and around Peterborough in September.",
-  "published": "2026-09-30T08:14:48Z",
+  "published": "2026-09-30T10:32:33Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Ryanair cabin bag drops to just £7.64 and shoppers love the suitcase strap",
+  "url": "https://www.peterboroughtoday.co.uk/recommended/ryanair-cabin-bag-ryanair-hand-luggage-underseat-bag-travel-duffel-bag-ryanair-luggage-9222494",
+  "kind": "article",
+  "external_id": "9221282",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Recommended"
+  ],
+  "summary": "This 20-litre Ryanair-friendly cabin bag is now just £7.64, with shoppers praising its suitcase sleeve for making airport travel easier.",
+  "published": "2026-09-30T10:30:40Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Award-winning Peterborough United midfielder would be excited about playing for Robbie Savage",
+  "url": "https://www.peterboroughtoday.co.uk/sport/football/peterborough-united/award-winning-peterborough-united-midfielder-would-be-excited-about-playing-for-robbie-savage-9232834",
+  "kind": "article",
+  "external_id": "9232834",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Peterborough United",
+   "Football",
+   "Sport"
+  ],
+  "summary": "Midfielder Brandon Khela admits he would be ‘excited’ to play for Robbie Savage, should the former Premier League and Wales international be confirmed as Peterborough United manager.",
+  "published": "2026-09-30T10:22:41Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "WoW Bus Tour hits Peterborough to offer support on financial wellbeing",
+  "url": "https://www.peterboroughtoday.co.uk/your-world/wow-bus-tour-hits-peterborough-to-offer-support-on-financial-wellbeing-9232718",
+  "kind": "article",
+  "external_id": "9232718",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Your World"
+  ],
+  "summary": "Drivers, Engineers, and Support Teams for Peterborough’s biggest bus operator have jumped on board a specially modified bus to learn about how to improve their financial wellbeing, and that of their families.",
+  "published": "2026-09-30T10:14:18Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Dog swims to bring end to Peterborough Lido season",
+  "url": "https://www.peterboroughtoday.co.uk/news/people/dog-swims-to-bring-end-to-peterborough-lido-season-9232737",
+  "kind": "article",
+  "external_id": "9232737",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "People",
+   "News"
+  ],
+  "summary": "The ever popular dog swims will bring an end to the Peterborough Lido season – starting this weekend.",
+  "published": "2026-09-30T10:13:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Simba Sleep payday sale cuts award-winning mattresses by up to 30%",
+  "url": "https://www.peterboroughtoday.co.uk/recommended/simba-sleep-payday-sale-mattress-deals-9230757",
+  "kind": "article",
+  "external_id": "9224911",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Recommended"
+  ],
+  "summary": "Shoppers looking to upgrade their bedroom can save up to 30% on Simba mattresses and sleep essentials in the brand’s latest payday sale.",
+  "published": "2026-09-30T10:09:30Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "The Peterborough United manager search takes another turn",
+  "url": "https://www.peterboroughtoday.co.uk/sport/football/peterborough-united/the-peterborough-united-manager-search-takes-another-turn-9232624",
+  "kind": "article",
+  "external_id": "9232624",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Peterborough United",
+   "Football",
+   "Sport"
+  ],
+  "summary": "The Peterborough United manager search has taken another turn.",
+  "published": "2026-09-30T10:03:17Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Booze thief who stole from Peterborough Tesco and Sainsbury's jailed",
+  "url": "https://www.peterboroughtoday.co.uk/news/crime/booze-thief-who-stole-from-peterborough-tesco-and-sainsburys-jailed-9232171",
+  "kind": "article",
+  "external_id": "9232171",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Crime",
+   "News"
+  ],
+  "summary": "A man who stole alcohol from two Peterborough supermarkets has been jailed for a year – and ordered to pay nearly £300 in compensation.",
+  "published": "2026-09-30T09:26:47Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "A1 closures announced for Peterborough - starting on WEDNESDAY and lasting until December",
+  "url": "https://www.peterboroughtoday.co.uk/news/people/a1-closures-announced-for-peterborough-starting-on-wednesday-and-lasting-until-december-9208928",
+  "kind": "article",
+  "external_id": "9208928",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "People",
+   "News"
+  ],
+  "summary": "A series of night time closures have been announced for the A1 in Peterborough – starting on Wednesday.",
+  "published": "2026-09-30T09:21:01Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "British drivers are now paying an average of £713 for their car insurance",
+  "url": "https://www.peterboroughtoday.co.uk/read-this/british-drivers-are-now-paying-an-average-of-ps713-for-their-car-insurance-9230921",
+  "kind": "article",
+  "external_id": "9230921",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Read This"
+  ],
+  "summary": "British drivers are now paying an average of £713 for their car insurance, according to industry data.",
+  "published": "2026-09-30T08:18:48Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -77,7 +505,7 @@
   "published": "2026-09-30T08:02:21Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -105,7 +533,7 @@
   "published": "2026-09-30T08:00:12Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -131,7 +559,7 @@
   "published": "2026-09-30T07:52:48Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -159,7 +587,7 @@
   "published": "2026-09-30T07:47:31Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -185,7 +613,7 @@
   "published": "2026-09-30T07:40:29Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -212,7 +640,7 @@
   "published": "2026-09-30T07:22:54Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -238,7 +666,7 @@
   "published": "2026-09-30T07:22:02Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -264,7 +692,7 @@
   "published": "2026-09-30T07:10:47Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -291,7 +719,7 @@
   "published": "2026-09-30T07:06:44Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -317,7 +745,7 @@
   "published": "2026-09-30T06:45:04Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -344,7 +772,7 @@
   "published": "2026-09-30T06:17:41Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -370,7 +798,7 @@
   "published": "2026-09-30T05:32:26Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -396,7 +824,7 @@
   "published": "2026-09-30T05:00:52Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -422,7 +850,7 @@
   "published": "2026-09-30T04:10:13Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -449,7 +877,7 @@
   "published": "2026-09-30T00:57:50Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -476,7 +904,7 @@
   "published": "2026-09-30T00:57:28Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -502,7 +930,7 @@
   "published": "2026-09-29T16:58:28Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -530,7 +958,7 @@
   "published": "2026-09-29T16:24:50Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -558,7 +986,7 @@
   "published": "2026-09-29T15:29:16Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -585,7 +1013,7 @@
   "published": "2026-09-29T15:06:15Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -611,7 +1039,7 @@
   "published": "2026-09-29T14:54:33Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -637,7 +1065,7 @@
   "published": "2026-09-29T14:48:01Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -663,7 +1091,7 @@
   "published": "2026-09-29T14:43:13Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -689,7 +1117,7 @@
   "published": "2026-09-29T14:42:14Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -715,7 +1143,7 @@
   "published": "2026-09-29T14:33:32Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -742,7 +1170,7 @@
   "published": "2026-09-29T14:29:36Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -769,7 +1197,7 @@
   "published": "2026-09-29T14:28:46Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -796,7 +1224,7 @@
   "published": "2026-09-29T14:26:16Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -823,7 +1251,7 @@
   "published": "2026-09-29T14:21:03Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -849,7 +1277,7 @@
   "published": "2026-09-29T14:17:22Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -876,7 +1304,7 @@
   "published": "2026-09-29T13:54:05Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -903,7 +1331,7 @@
   "published": "2026-09-29T13:44:34Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -930,355 +1358,14 @@
   "published": "2026-09-29T13:36:36Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
-  "title": "GREAT SCOTT!: Dozens of DeLoreans descend on Peterborough for annual meet",
-  "url": "https://www.peterboroughtoday.co.uk/news/people/great-scott-dozens-of-deloreans-descend-on-peterborough-for-annual-meet-9221080",
+  "title": "Capes in winning shot put form again and an over 50 records his second fastest marathon time",
+  "url": "https://www.peterboroughtoday.co.uk/sport/other-sport/capes-in-winning-shot-put-form-again-and-an-over-50-records-his-second-fastest-marathon-time-9216639",
   "kind": "article",
-  "external_id": "9221080",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "People",
-   "News"
-  ],
-  "summary": "People visiting a Peterborough hotel at the weekend could be forgiven for thinking they had gone Back to the Future as they drove past.",
-  "published": "2026-09-29T13:07:55Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "New independent jewellers set to open its doors in Peterborough city centre",
-  "url": "https://www.peterboroughtoday.co.uk/business/new-independent-jewellers-set-to-open-its-doors-in-peterborough-city-centre-9220357",
-  "kind": "article",
-  "external_id": "9220357",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Business"
-  ],
-  "summary": "A new independent jewellers is set to open in Peterborough city centre.",
-  "published": "2026-09-29T11:59:46Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "New Head Teacher appointed at Thorpe Primary Academy",
-  "url": "https://www.peterboroughtoday.co.uk/your-world/new-head-teacher-appointed-at-thorpe-primary-academy-9220169",
-  "kind": "article",
-  "external_id": "9220169",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Your World"
-  ],
-  "summary": "Thorpe Primary Academy, part of Keys Academies Trust, has announced the appointment of Mrs Nikki Lamond as its new Head Teacher.",
-  "published": "2026-09-29T11:47:30Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Inspire Education Group named Training Provider of the Year at 2026 Apprenticeship Awards",
-  "url": "https://www.peterboroughtoday.co.uk/your-world/inspire-education-group-named-training-provider-of-the-year-for-second-year-running-at-2026-apprenticeship-awards-9220132",
-  "kind": "article",
-  "external_id": "9220132",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Your World"
-  ],
-  "summary": "\"Winning this award once was a huge achievement”",
-  "published": "2026-09-29T11:45:26Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Longueville Court’s Annual Dog Show brings the community together",
-  "url": "https://www.peterboroughtoday.co.uk/your-world/longueville-courts-annual-dog-show-brings-the-community-together-9220101",
-  "kind": "article",
-  "external_id": "9220101",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Your World"
-  ],
-  "summary": "“Our residents love us hosting a dog show each year”",
-  "published": "2026-09-29T11:43:05Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Laxton Junior School launches new holiday camp partnership for families",
-  "url": "https://www.peterboroughtoday.co.uk/your-world/laxton-junior-school-launches-new-holiday-camp-partnership-for-families-9220053",
-  "kind": "article",
-  "external_id": "9220053",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Your World"
-  ],
-  "summary": "Laxton Junior School has announced an exciting new partnership with Churchill Camps, bringing a programme of holiday activities to its Oundle campus throughout the academic year.",
-  "published": "2026-09-29T11:37:18Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Let's keep connected before winter sets in",
-  "url": "https://www.peterboroughtoday.co.uk/your-world/lets-keep-connected-before-winter-sets-in-9220040",
-  "kind": "article",
-  "external_id": "9220040",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Your World"
-  ],
-  "summary": "As Friendship Month draws to a close, I'd like to thank everyone who joined us at events hosted by Nene & Welland Oddfellows during September. It was lovely to welcome both familiar faces and people attending for the first time. Every conversation, shared activity and new introduction helped streng…",
-  "published": "2026-09-29T11:36:05Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Four nights by the beach for £99 as travel deal offers autumn stays for up to six",
-  "url": "https://www.peterboroughtoday.co.uk/recommended/parkdean-resorts-ps99-holidays-autumn-family-breaks-cornwall-caravan-holidays-cheap-uk-holidays-9218625",
-  "kind": "article",
-  "external_id": "9218625",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Recommended"
-  ],
-  "summary": "Cornwall’s Crantock Beach and Holywell Bay feature among the £99 finds, with selected caravan stays sleeping up to six and lasting four nights",
-  "published": "2026-09-29T10:58:55Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Cambridgeshire Police officer sacked for gross misconduct after misleading investigators",
-  "url": "https://www.peterboroughtoday.co.uk/news/crime/cambridgeshire-police-officer-sacked-for-gross-misconduct-after-misleading-investigators-9219254",
-  "kind": "article",
-  "external_id": "9219254",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Crime",
-   "News"
-  ],
-  "summary": "A Cambridgeshire Police officer has been sacked from the force for gross misconduct after misleading investigators.",
-  "published": "2026-09-29T10:23:55Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Romania and Atlantic Council propose Sovereign Infrastructure Index for NATO's Eastern Flank",
-  "url": "https://www.peterboroughtoday.co.uk/must-read/romania-nato-eastern-flank-infrastructure-investment-9218697",
-  "kind": "article",
-  "external_id": "9218697",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Must Read"
-  ],
-  "summary": "The Sovereign Infrastructure Index would record who can build each asset, who can restore it, how quickly, and under which jurisdiction.",
-  "published": "2026-09-29T09:42:19Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Peterborough man to be sentenced for his part in £2 million cigarette fraud gang",
-  "url": "https://www.peterboroughtoday.co.uk/news/crime/peterborough-man-to-be-sentenced-for-his-part-in-ps2-million-cigarette-fraud-gang-9218550",
-  "kind": "article",
-  "external_id": "9218550",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Crime",
-   "News"
-  ],
-  "summary": "A Peterborough man is set to be sentenced for his role in a £2 million cigarette fraud.",
-  "published": "2026-09-29T09:26:55Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Solo house deposit saving takes 21 years in London, study finds",
-  "url": "https://www.peterboroughtoday.co.uk/must-read/savings-time-uk-cities-9218434",
-  "kind": "article",
-  "external_id": "9218434",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Must Read"
-  ],
-  "summary": "Research has found that a person saving alone in London could face a 21-year wait to build a 10% house deposit.",
-  "published": "2026-09-29T09:19:32Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Banyan Group Residences showcases Phuket luxury homes to UK buyers",
-  "url": "https://www.peterboroughtoday.co.uk/must-read/banyan-group-residences-london-sales-event-9218015",
-  "kind": "article",
-  "external_id": "9218015",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Must Read"
-  ],
-  "summary": "The first sales events showcases three residences in Phuket, Thailand.",
-  "published": "2026-09-29T08:44:15Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "How to help young Haito Karate stars get to Bulgaria",
-  "url": "https://www.peterboroughtoday.co.uk/sport/other-sport/how-to-help-young-haito-karate-stars-get-to-bulgaria-9209594",
-  "kind": "article",
-  "external_id": "9209594",
+  "external_id": "9216639",
   "start": null,
   "end": null,
   "all_day": false,
@@ -1294,65 +1381,11 @@
    "Other Sport",
    "Sport"
   ],
-  "summary": "Five young karate stars are off to Bulgaria to compete in the Eastern European Open Championships & Martial Arts Festival in November.",
-  "published": "2026-09-28T15:47:34Z",
+  "summary": "PANVAC star Lawson Capes has been in winning form again.",
+  "published": "2026-09-29T06:49:04Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "It's 11 goals in two games for ICA Sports newcomer, revenge for Spalding and Stamford are up and running",
-  "url": "https://www.peterboroughtoday.co.uk/sport/football/its-11-goals-in-two-games-for-ica-sports-newcomer-revenge-for-spalding-and-stamford-are-up-and-running-9207761",
-  "kind": "article",
-  "external_id": "9207761",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Football",
-   "Sport"
-  ],
-  "summary": "Vilte Pilipcikaite has started her ICA Sports career in spectacular fashion.",
-  "published": "2026-09-28T13:33:48Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "The Federation was too strong for Peterborough bowls team",
-  "url": "https://www.peterboroughtoday.co.uk/sport/other-sport/the-federation-was-too-strong-for-peterborough-bowls-team-9204679",
-  "kind": "article",
-  "external_id": "9204679",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Other Sport",
-   "Sport"
-  ],
-  "summary": "Northants Bowling Federation retained the Cliff Watson Memorial Shield on Sunday with a convincing 129-78 win against host club Peterborough & District.",
-  "published": "2026-09-28T08:22:47Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  },
  {
   "source_id": "S010",
@@ -1379,6 +1412,6 @@
   "published": "2026-09-25T15:20:51Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:44:01+00:00"
+  "fetched_at": "2026-09-30T13:34:41+00:00"
  }
 ]

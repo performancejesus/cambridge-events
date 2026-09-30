@@ -87,7 +87,13 @@ def load_run(con: sqlite3.Connection, raw_dir: Path) -> dict:
                     stats["new_articles"] += cur.rowcount
             # пропало из источника до своей даты → отметка для ручной проверки
             # (кроме агрегаторов с неполным списком и событий сегодняшнего дня — они уходят из афиш сами)
-            if sid not in PARTIAL_LISTING:
+            live = con.execute("""SELECT count(*) FROM raw_items WHERE source_id=? AND kind='event' AND disappeared_at IS NULL
+                AND substr(start,1,10) >= ?""", (sid, tomorrow)).fetchone()[0]
+            if items == 0 and live >= 5:
+                # этап 7c: источник вдруг вернул 0 записей при ≥ 5 живых будущих (Junction и CPPF 30.09: страница списка
+                # на минуту отдала другое содержимое) — это сбой сбора, а не отмена всех событий: «пропало» не ставим
+                stats.setdefault("empty_run_skipped", []).append(sid)
+            elif sid not in PARTIAL_LISTING:
                 cur = con.execute("""UPDATE raw_items SET disappeared_at=? WHERE source_id=? AND kind='event'
                     AND item_key NOT LIKE 'article:%' AND last_seen_at < ? AND disappeared_at IS NULL
                     AND substr(start,1,10) >= ?""", (run_id, sid, run_id, tomorrow))

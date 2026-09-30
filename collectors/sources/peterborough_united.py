@@ -2,7 +2,7 @@
 
 from ..generic import ICalCollector
 
-FIXTURES = "https://www.theposh.com/fixtures"
+FIXTURES = "https://www.theposh.com/matches/fixtures"   # этап 7c: /fixtures отвечает 404 (нашла проверка ссылок)
 
 
 class PeterboroughUnited(ICalCollector):

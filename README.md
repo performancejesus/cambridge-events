@@ -308,3 +308,38 @@ python scripts/enrich_pages.py --issue 2026-10-08 && python scripts/build_issue.
   прокат, местный повод), описание из Wikipedia; 2–4 главных фильма — полными пунктами (кандидаты `F…`).
 - `pipeline/history.py` — история выпусков `issue_items`: уже показанное в прошлых выпусках не повторяется.
 - `pipeline/glossary.py` — общий глоссарий перевода для выпуска и «Каникул» (Junior gym → тренажёрный зал для подростков).
+
+## Этап 7c — обязательные проверки каждого выпуска, правки по v9, «В колледжах», Cambridge Union, выпуск v10
+
+```bash
+python scripts/run_collectors.py && python scripts/update_db.py     # свежий сбор (S144 — ссылка на страницу события и «Free»)
+python scripts/extract_articles.py --max-cost 1.00 && python scripts/update_db.py --no-load && python scripts/check_recurring.py
+python scripts/locate_venues.py && python scripts/score_importance.py
+python scripts/union_watch.py                         # Cambridge Union: Varsity RSS + termcard текущего триместра на Issuu
+python scripts/union_watch.py --termcard michaelmas_term_2025_the_cambridge_union --year 2025   # архивная termcard
+python scripts/build_registry_v10.py                  # реестр v0.10: S176 Varsity, S177 termcard на Issuu
+python scripts/recheck_status.py --issue 2026-10-08 && python scripts/update_db.py --no-load
+python scripts/enrich_pages.py --issue 2026-10-08     # + страницы открытий, найденных поиском (Arbury Social, Bridge Bagels)
+python scripts/build_issue.py --issue 2026-10-08 --version v10       # сборка + все проверки + плашка «НЕ ОТПРАВЛЯТЬ»
+python scripts/check_issue.py --issue 2026-10-08 --version v9        # проверки на готовом выпуске без пересборки
+python -m pytest tests -q                             # регрессионные тесты (Барретт, дубли имён, заголовки, лига)
+```
+
+- `tests/issue_rules/` — обязательные проверки, один файл на правило (`r01_…` – `r34_…`): `RULE`, `TITLE`, `LEVEL`
+  (`block` — красная плашка «НЕ ОТПРАВЛЯТЬ: …» вверху редакторской версии и `send_allowed: false` в
+  `issues/<выпуск>_checks.json`; `fix` — исправляется при сборке, проверка — что не осталось), `check(ctx)`.
+  Правила 1–28 — из брифа, 29–34 — правки по v9 и новые рубрики. Таблица «проверка → уровень → результат» — первым
+  блоком в «Для редактора». Проверки не удаляются и не отключаются без решения редактора.
+- `tests/issue_rules/claims.py` — сверка утверждений с текстами источников (тема недели, вступления и пункты из статей —
+  Sonnet, остальные — Haiku; кэш `claim_checks`): «искажено» в строгих пунктах блокирует (правило 2), «нет в
+  источнике» — в «Факты из знаний модели (проверить)» (правило 29). `links.py` — проверка ссылок нашим ботом (кэш
+  `link_checks`, сутки).
+- `pipeline/verified_facts.py` + `data/verified_facts.json` — таблица проверенных фактов (дата рождения Барретта, лига
+  Cambridge United 2026/27); модель видит их во входных данных, правило 1 сверяет с ними дни рождения и юбилеи.
+- `pipeline/issue_fixes.py` — исправления по v9: цена и ссылка из лучшего источника события и его несклеенных дублей
+  (`issue._siblings`: The bEAT на Corn Exchange и musiclivecambridge), приписки в заголовках, дубли имён кириллицей,
+  неподтверждённая лига, пустые описания «Нового в городе».
+- `pipeline/colleges.py` — рубрика «В колледжах» (3–6 компактных строк без модели, не больше 2 от колледжа).
+- `pipeline/union_termcard.py`, `scripts/union_watch.py` — termcard Cambridge Union на Issuu (изображения страниц →
+  один запрос к модели) и статьи Varsity → таблица кандидатов `union_termcard`; строка «В Cambridge Union на этой неделе
+  (для членов клуба): …» — только из termcard.

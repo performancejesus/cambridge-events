@@ -1,6 +1,78 @@
 [
  {
   "source_id": "S118",
+  "title": "Woman arrested after 'burglary' at Cambs puppy breeding facility",
+  "url": "https://www.wisbechstandard.co.uk/news/26594705.woman-arrested-burglary-mbr-acres-huntingdon/",
+  "kind": "article",
+  "external_id": "5ed4033ab4ea94dce3870c4c933693f1",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "A woman has been arrested following a break-in at beagle breeding facility MBR Acres in Huntingdon, Cambridgeshire.",
+  "published": "2026-09-30T12:17:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:36:59+00:00"
+ },
+ {
+  "source_id": "S118",
+  "title": "Red Arrows flying over Cambridgeshire this week — here's when and where to see them",
+  "url": "https://www.wisbechstandard.co.uk/news/26593941.red-arrows-set-fly-cambridgeshire-friday/",
+  "kind": "article",
+  "external_id": "1a9d5f4af1f771efbd10cfdf34a00181",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "The Red Arrows are set to fly over Cambridgeshire this week — here's how and where you can see them.",
+  "published": "2026-09-30T09:59:54Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:36:59+00:00"
+ },
+ {
+  "source_id": "S118",
+  "title": "Questions over £215k chief exec's appointment after Reform leaders dined at his hotel",
+  "url": "https://www.wisbechstandard.co.uk/news/26591945.questions-norfolk-council-chief-executive-appointment/",
+  "kind": "article",
+  "external_id": "bb2e44154ab8e5ad40e27591541d071f",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Further questions have been asked about the process which led to the appointment of Norfolk County Council’s chief executive.",
+  "published": "2026-09-30T10:11:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:36:59+00:00"
+ },
+ {
+  "source_id": "S118",
   "title": "Boy missing in Cambridgeshire found safe and well",
   "url": "https://www.wisbechstandard.co.uk/news/26591935.police-appeal-delton-14-missing-home-grafham/",
   "kind": "article",
@@ -21,7 +93,7 @@
   "published": "2026-09-29T15:01:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -45,7 +117,7 @@
   "published": "2026-09-29T14:51:57Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -69,7 +141,7 @@
   "published": "2026-09-29T14:34:43Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -93,7 +165,7 @@
   "published": "2026-09-29T14:16:24Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -117,7 +189,7 @@
   "published": "2026-09-29T13:58:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -141,7 +213,7 @@
   "published": "2026-09-29T11:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -165,7 +237,7 @@
   "published": "2026-09-29T09:01:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -189,7 +261,7 @@
   "published": "2026-09-29T03:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -213,7 +285,7 @@
   "published": "2026-09-29T14:50:47Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -237,7 +309,7 @@
   "published": "2026-09-29T14:48:11Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -261,7 +333,7 @@
   "published": "2026-09-28T16:33:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -285,7 +357,7 @@
   "published": "2026-09-28T13:59:08Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -309,7 +381,7 @@
   "published": "2026-09-28T13:26:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -333,7 +405,7 @@
   "published": "2026-09-28T12:47:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -357,7 +429,7 @@
   "published": "2026-09-28T10:05:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -381,7 +453,7 @@
   "published": "2026-09-28T10:02:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -405,7 +477,7 @@
   "published": "2026-09-28T09:50:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -429,7 +501,7 @@
   "published": "2026-09-28T08:36:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -453,7 +525,7 @@
   "published": "2026-09-28T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -477,7 +549,7 @@
   "published": "2026-09-28T03:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -501,7 +573,7 @@
   "published": "2026-09-27T14:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -525,7 +597,7 @@
   "published": "2026-09-27T11:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -549,7 +621,7 @@
   "published": "2026-09-27T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -573,7 +645,7 @@
   "published": "2026-09-27T16:41:46Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -597,7 +669,7 @@
   "published": "2026-09-26T13:33:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -621,7 +693,7 @@
   "published": "2026-09-26T12:49:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -645,7 +717,7 @@
   "published": "2026-09-26T11:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -669,7 +741,7 @@
   "published": "2026-09-26T10:35:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -693,7 +765,7 @@
   "published": "2026-09-26T10:31:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -717,7 +789,7 @@
   "published": "2026-09-26T10:02:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -741,7 +813,7 @@
   "published": "2026-09-26T09:30:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -765,7 +837,7 @@
   "published": "2026-09-26T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -789,7 +861,7 @@
   "published": "2026-09-26T03:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -813,7 +885,7 @@
   "published": "2026-09-24T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -837,7 +909,7 @@
   "published": "2026-09-25T12:17:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -861,7 +933,7 @@
   "published": "2026-09-25T11:42:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -885,7 +957,7 @@
   "published": "2026-09-25T11:19:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -909,7 +981,7 @@
   "published": "2026-09-25T09:33:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -933,7 +1005,7 @@
   "published": "2026-09-25T08:42:06Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -957,7 +1029,7 @@
   "published": "2026-09-25T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -981,7 +1053,7 @@
   "published": "2026-09-25T03:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -1005,7 +1077,7 @@
   "published": "2026-09-24T16:18:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -1029,7 +1101,7 @@
   "published": "2026-09-24T15:41:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -1053,7 +1125,7 @@
   "published": "2026-09-24T15:22:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -1077,7 +1149,7 @@
   "published": "2026-09-24T13:16:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -1101,7 +1173,7 @@
   "published": "2026-09-24T10:51:04Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  },
  {
   "source_id": "S118",
@@ -1125,78 +1197,6 @@
   "published": "2026-09-24T10:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
- },
- {
-  "source_id": "S118",
-  "title": "Urgent search for 'vulnerable' missing man with links to Cambridgeshire",
-  "url": "https://www.wisbechstandard.co.uk/news/26577800.man-missing-stevenage-cambridgeshire/",
-  "kind": "article",
-  "external_id": "3ea670c6410057e60209d861080a66aa",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Police have shared a fresh photo of a missing man from Stevenage who has links to Cambridgeshire.",
-  "published": "2026-09-24T09:59:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
- },
- {
-  "source_id": "S118",
-  "title": "Investigation launched after boy 'assaulted' at school in Cambridgeshire",
-  "url": "https://www.wisbechstandard.co.uk/news/26577473.boy-assaulted-cromwell-community-college-chatteris/",
-  "kind": "article",
-  "external_id": "dbbfe3f74194ee680110676a53ad2eda",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "An investigation has been launched after a student was allegedly assaulted at Cromwell Community College in Chatteris.",
-  "published": "2026-09-24T08:58:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
- },
- {
-  "source_id": "S118",
-  "title": "Cambs Chamber of Commerce urges Chancellor to tackle barriers to business growth",
-  "url": "https://www.wisbechstandard.co.uk/news/26567287.chancellor-urged-tackle-barriers-cambs-business-growth/",
-  "kind": "article",
-  "external_id": "ff7ed9a551fb52bf213ed2d556e85845",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "The Cambridgeshire Chamber of Commerce has urged the Chancellor to act ahead of the Autumn Budget.",
-  "published": "2026-09-24T04:00:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:47:15+00:00"
+  "fetched_at": "2026-09-30T13:36:59+00:00"
  }
 ]

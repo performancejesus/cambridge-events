@@ -49,6 +49,8 @@ def visible_text(html: str) -> tuple[str, dict[str, str]]:
         t = re.sub(r"\s+", " ", a.text(strip=True))
         if t and len(t) < 120:
             links.setdefault(t, a.attributes.get("href"))
+        elif t:   # этап 7c: карточка события целиком — ссылка (St John's): ключ — начало текста карточки
+            links.setdefault(t[:120], a.attributes.get("href"))
     tree.strip_tags(["script", "style", "noscript", "svg", "header", "footer", "nav", "form"])
     return re.sub(r"\s+", " ", (tree.body or tree.root).text(separator=" | ")).strip(), links
 
@@ -80,7 +82,7 @@ class LlmListCollector(Collector):
             html = http.get(url).text
             text, links = visible_text(html)
             text = text[:MAX_CHARS]
-            sha = hashlib.sha1((hint + text).encode()).hexdigest()
+            sha = hashlib.sha1((hint + text + getattr(self, "cache_salt", "")).encode()).hexdigest()
             self.stats["pages"] += 1
             row = con.execute("SELECT sha, result FROM llm_list_cache WHERE url=?", (url,)).fetchone()
             if row and row[0] == sha:

@@ -24,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:14+00:00"
+  "fetched_at": "2026-09-30T13:42:47+00:00"
  },
  {
   "source_id": "S168",
@@ -51,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:17+00:00"
+  "fetched_at": "2026-09-30T13:42:47+00:00"
  },
  {
   "source_id": "S168",
@@ -78,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:19+00:00"
+  "fetched_at": "2026-09-30T13:42:47+00:00"
  },
  {
   "source_id": "S168",
@@ -105,7 +105,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:21+00:00"
+  "fetched_at": "2026-09-30T13:42:47+00:00"
  },
  {
   "source_id": "S168",
@@ -132,7 +132,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:23+00:00"
+  "fetched_at": "2026-09-30T13:42:47+00:00"
  },
  {
   "source_id": "S168",
@@ -159,7 +159,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:25+00:00"
+  "fetched_at": "2026-09-30T13:42:47+00:00"
  },
  {
   "source_id": "S168",
@@ -186,7 +186,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:27+00:00"
+  "fetched_at": "2026-09-30T13:42:47+00:00"
  },
  {
   "source_id": "S168",
@@ -213,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:30+00:00"
+  "fetched_at": "2026-09-30T13:42:47+00:00"
  },
  {
   "source_id": "S168",
@@ -240,7 +240,34 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:32+00:00"
+  "fetched_at": "2026-09-30T13:42:47+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "Starcrossed",
+  "url": "https://www.camdram.net/shows/2026-starcrossed",
+  "kind": "event",
+  "external_id": "camdram-performance-10724",
+  "start": "2026-10-23T18:30:00+00:00",
+  "end": "2026-10-25",
+  "all_day": false,
+  "venue": "Pembroke New Cellars",
+  "address": "Pembroke College, Trumpington Street, Cambridge",
+  "postcode": "CB2 1RF",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "19:30, Fri 23rd – Sun 25th October 2026 ·  About Development API Privacy Policy FAQ Contact Us Log in with Tip: Press the 's' or forward-slash key to jump to search! No results found for \" \" Search is not available at the moment Home Diary Vacancies Societies Venues Events Roles Events Roles Show Admin Add a show Pembroke Players presents... Starcrossed By Ellie Dudley 19:30, Fri 23rd – Sun 25th October 2026 at Pembroke New Cellars Michaelmas Week 2 to Week 3 Content warning (may contain spoilers) Click to expand Click to close Flashing lights, brief kissing 'Starcrossed' is a romcom that follows Fate and Choice, two immortals respons",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -267,7 +294,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:34+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -294,7 +321,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:34+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -321,7 +348,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:36+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -348,7 +375,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:38+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -375,7 +402,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:40+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -402,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:43+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -429,7 +456,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:45+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -456,7 +483,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:47+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -483,7 +510,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:49+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -510,7 +537,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:51+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -537,7 +564,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:51+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -564,7 +591,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:54+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -591,7 +618,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:56+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -618,7 +645,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:56+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -645,7 +672,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:53:58+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -672,7 +699,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:54:00+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -699,7 +726,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:54:02+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -726,7 +753,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:54:04+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -753,7 +780,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:54:06+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -780,7 +807,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:54:09+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -807,7 +834,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:54:11+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -834,7 +861,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:54:13+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -861,7 +888,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:54:15+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  },
  {
   "source_id": "S168",
@@ -888,6 +915,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:54:17+00:00"
+  "fetched_at": "2026-09-30T13:42:49+00:00"
  }
 ]

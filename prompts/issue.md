@@ -42,6 +42,10 @@ Rubrics (`rubric` values; the input lists the ones available):
   related ones (exhibition, film, talks), and a surprising connection (a football match) last. Dates of birth,
   anniversaries and "first / last / only" claims come only from the data; if you use your own knowledge, list it in
   `knowledge_*`. A claim someone makes in an article (an `editor_note` says so) is attributed: "according to …".
+  `verified_facts` in the input are checked facts (birth dates, a club's league this season): use them and never
+  contradict them. A birthday or "would have turned N" is "this month" only if the verified birth date is in the month
+  of the issue; otherwise say "this year". Every such sentence is checked against `verified_facts` by code, and an
+  unverified one stops the issue from being sent.
 - `weekend_1`, `weekend_2`, … — "The weekend" for each weekend of the period (dates in the input): the 3–5 best
   events on that Saturday or Sunday by importance, none below 4. Every event with importance ≥ 7 on that weekend must
   be here or in `theme`. If nothing on a weekend reaches 4, leave that rubric out. The biggest events of the period

@@ -1,30 +1,6 @@
 [
  {
   "source_id": "S007",
-  "title": "Oh What a Night!",
-  "url": "https://www.skiddle.com/whats-on/Cambridge/West-Road-Concert-Hall/Oh-What-a-Night/41277425/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Cambridge/West-Road-Concert-Hall/Oh-What-a-Night/41277425/",
-  "start": "2026-12-04T19:00:00+00:00",
-  "end": "2026-12-04T22:00:00+00:00",
-  "all_day": false,
-  "venue": "West Road Concert Hall",
-  "address": "West Road, Cambridge, CB3 9DP",
-  "postcode": "CB3 9DP",
-  "lat": 52.20229,
-  "lon": 0.107346,
-  "price": "GBP 27.00",
-  "status": "scheduled",
-  "organizer": "Handshake Group",
-  "categories": [],
-  "summary": "OH WHAT A NIGHT! takes you back in time on a musical journey through the incredible career of Frankie Valli & The Four Seasons.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
- },
- {
-  "source_id": "S007",
   "title": "The Return to V7 Saxon Street - The Final Chapter",
   "url": "https://www.skiddle.com/whats-on/Milton-Keynes/Arena-MK/The-Return-to-V7-Saxon-Street---The-Final-Chapter/41485691/",
   "kind": "event",
@@ -45,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -61,7 +37,7 @@
   "postcode": "CB1 7GX",
   "lat": 52.1906821,
   "lon": 0.1359265,
-  "price": "GBP 35.00, GBP 40.00, GBP 120.00, GBP 50.00, GBP 60.00, GBP 25.00",
+  "price": "GBP 35.00, GBP 40.00, GBP 50.00, GBP 60.00, GBP 25.00, GBP 30.00",
   "status": "scheduled",
   "organizer": "Zombie Fest (Promoter)",
   "categories": [],
@@ -69,31 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
- },
- {
-  "source_id": "S007",
-  "title": "Ultimate Rave Bingo // Cambridge // Saturday 10th October",
-  "url": "https://www.skiddle.com/whats-on/Cambridge/Vinyl/Ultimate-Rave-Bingo--Cambridge--Saturday-10th-October/41600600/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Cambridge/Vinyl/Ultimate-Rave-Bingo--Cambridge--Saturday-10th-October/41600600/",
-  "start": "2026-10-10T17:30:00+01:00",
-  "end": "2026-10-10T22:30:00+01:00",
-  "all_day": false,
-  "venue": "Vinyl",
-  "address": "22 Sidney Street, Cambridge, CB2 3HG",
-  "postcode": "CB2 3HG",
-  "lat": 52.206186,
-  "lon": 0.120868,
-  "price": "GBP 15.00, GBP 18.00, GBP 135.00, GBP 155.00, GBP 165.00, GBP 0.00",
-  "status": "scheduled",
-  "organizer": "Surprisingly Adequate Events LTD",
-  "categories": [],
-  "summary": "This isn't just bingo. It's something completely different - designed with you in mind, and packed with surprises from start to finish.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -117,7 +69,55 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "Ultimate Rave Bingo // Cambridge // Saturday 19th December",
+  "url": "https://www.skiddle.com/whats-on/Cambridge/Vinyl/Ultimate-Rave-Bingo--Cambridge--Saturday-19th-December/41600644/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Cambridge/Vinyl/Ultimate-Rave-Bingo--Cambridge--Saturday-19th-December/41600644/",
+  "start": "2026-12-19T17:30:00+00:00",
+  "end": "2026-12-19T22:30:00+00:00",
+  "all_day": false,
+  "venue": "Vinyl",
+  "address": "22 Sidney Street, Cambridge, CB2 3HG",
+  "postcode": "CB2 3HG",
+  "lat": 52.206186,
+  "lon": 0.120868,
+  "price": "GBP 15.00, GBP 18.00, GBP 135.00, GBP 155.00, GBP 165.00, GBP 200.00",
+  "status": "scheduled",
+  "organizer": "Surprisingly Adequate Events LTD",
+  "categories": [],
+  "summary": "This isn't just bingo. It's something completely different - designed with you in mind, and packed with surprises from start to finish.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:31:54+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "HIGHWAY TO HELL'OWEEN 7 - Rock Tribute Triple Bill",
+  "url": "https://www.skiddle.com/whats-on/Peterborough/The-Parkway-Club/HIGHWAY-TO-HELLOWEEN-7---Rock-Tribute-Triple-Bill/41956606/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Peterborough/The-Parkway-Club/HIGHWAY-TO-HELLOWEEN-7---Rock-Tribute-Triple-Bill/41956606/",
+  "start": "2026-10-31T17:30:00+00:00",
+  "end": "2026-10-31T23:45:00+00:00",
+  "all_day": false,
+  "venue": "The Parkway Club",
+  "address": "Maskew Avenue, Peterborough, PE1 2AS",
+  "postcode": "PE1 2AS",
+  "lat": 52.595587,
+  "lon": -0.262583,
+  "price": "GBP 20.00, GBP 25.00",
+  "status": "scheduled",
+  "organizer": "LET THERE B/DC",
+  "categories": [],
+  "summary": "Highway to Hell'oween 7 rocks with three epic tributes: LET THERE B/DC, Ion Maiden, and Wizards of Oz. One night. Pure rock mayhem! Live and loud!",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -141,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -165,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -189,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -213,31 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
- },
- {
-  "source_id": "S007",
-  "title": "Army Inflatable Day in Shefford | October 26th",
-  "url": "https://www.skiddle.com/whats-on/Stevenage/Robert-Bloomfield-Academy/Army-Inflatable-Day-in-Shefford--October-26th/42442898/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Stevenage/Robert-Bloomfield-Academy/Army-Inflatable-Day-in-Shefford--October-26th/42442898/",
-  "start": "2026-10-26T07:30:00+00:00",
-  "end": "2026-10-26T21:00:00+00:00",
-  "all_day": false,
-  "venue": "Robert Bloomfield Academy",
-  "address": "Bloomfield Drive, Stevenage, SG17 5BU",
-  "postcode": "SG17 5BU",
-  "lat": 52.0360514,
-  "lon": -0.3408741,
-  "price": "GBP 10.00",
-  "status": "scheduled",
-  "organizer": "Bounce Camp",
-  "categories": [],
-  "summary": "Army Nerf inflatable event in Shefford on October 26th with foam dart games, obstacle inflatables and family sessions.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -261,16 +237,16 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
   "title": "SEN Kids Disability Discos",
-  "url": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447587/",
+  "url": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447588/",
   "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447587/",
-  "start": "2026-10-30T14:00:00+00:00",
-  "end": "2026-10-30T15:15:00+00:00",
+  "external_id": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447588/",
+  "start": "2026-12-21T14:00:00+00:00",
+  "end": "2026-12-21T15:15:00+00:00",
   "all_day": false,
   "venue": "Palm Beach",
   "address": "3 Commercial Way, Northampton, NN8 1ET",
@@ -285,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -309,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -333,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -357,31 +333,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
-  "title": "Whitney Houston Bottomless Brunch - Stevenage",
-  "url": "https://www.skiddle.com/whats-on/Stevenage/Cinnabar/Whitney-Houston-Bottomless-Brunch---Stevenage/42469572/",
+  "title": "Run Away Festival 2027 - Bank Hol Sat 29 & Sun 30 May - Essex",
+  "url": "https://www.skiddle.com/whats-on/Chelmsford/Chelmsford-Racecourse/Run-Away-Festival-2027---Bank-Hol-Sat-29--Sun-30-May---Essex/42462727/",
   "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Stevenage/Cinnabar/Whitney-Houston-Bottomless-Brunch---Stevenage/42469572/",
-  "start": "2026-10-17T15:30:00+01:00",
-  "end": "2026-10-17T17:30:00+01:00",
+  "external_id": "https://www.skiddle.com/whats-on/Chelmsford/Chelmsford-Racecourse/Run-Away-Festival-2027---Bank-Hol-Sat-29--Sun-30-May---Essex/42462727/",
+  "start": "2027-05-29T12:00:00+01:00",
+  "end": "2027-05-30T22:30:00+01:00",
   "all_day": false,
-  "venue": "Cinnabar",
-  "address": "56-58 High Street, Stevenage, SG1 3EF",
-  "postcode": "SG1 3EF",
-  "lat": 51.9127033,
-  "lon": -0.2091482,
-  "price": "GBP 44.95, GBP 51.95",
+  "venue": "Chelmsford Racecourse",
+  "address": "City Racecourse, Chelmsford, CM3 1QP",
+  "postcode": "CM3 1QP",
+  "lat": 51.8420471,
+  "lon": 0.5128143,
+  "price": "GBP 113.85, GBP 51.75, GBP 46.00, GBP 44.85, GBP 43.00, GBP 108.10, GBP 97.66, GBP 94.30, GBP 97.18, GBP 91.43, GBP 81.65, GBP 80.00, GBP 195.50, GBP 189.75, GBP 166.18, GBP 163.30",
   "status": "scheduled",
-  "organizer": "Cinnabar",
+  "organizer": "Run Away Festival",
   "categories": [],
-  "summary": "A powerful tribute to the legend herself! Sing along to iconic hits, celebrate unforgettable classics, and relive the magic of Whitney Houston!",
+  "summary": "29 + 30 May Bank Holiday @ Chelmsford Racecourse, Essex.",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -405,7 +381,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -429,7 +405,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -453,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -477,31 +453,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
- },
- {
-  "source_id": "S007",
-  "title": "Robbie Williams Bottomless Brunch - Stevenage",
-  "url": "https://www.skiddle.com/whats-on/Stevenage/Cinnabar/Robbie-Williams-Bottomless-Brunch---Stevenage/42469589/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Stevenage/Cinnabar/Robbie-Williams-Bottomless-Brunch---Stevenage/42469589/",
-  "start": "2026-12-19T15:30:00+00:00",
-  "end": "2026-12-19T17:30:00+00:00",
-  "all_day": false,
-  "venue": "Cinnabar",
-  "address": "56-58 High Street, Stevenage, SG1 3EF",
-  "postcode": "SG1 3EF",
-  "lat": 51.9127033,
-  "lon": -0.2091482,
-  "price": "GBP 44.95, GBP 51.95",
-  "status": "scheduled",
-  "organizer": "Cinnabar",
-  "categories": [],
-  "summary": "A tribute to the ultimate British pop icon! Sing along to his greatest hits and enjoy a brunch packed with energy, fun, and pure Robbie magic!",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -525,7 +477,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -549,7 +501,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -573,7 +525,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -597,7 +549,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -621,7 +573,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -645,7 +597,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -669,7 +621,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "Sunday SOUL Sessions _October",
+  "url": "https://www.skiddle.com/whats-on/Stevenage/The-Tranquil-Turtle/Sunday-SOUL-Sessions-October/42580381/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Stevenage/The-Tranquil-Turtle/Sunday-SOUL-Sessions-October/42580381/",
+  "start": "2026-10-04T12:00:00+01:00",
+  "end": "2026-10-04T18:00:00+01:00",
+  "all_day": false,
+  "venue": "The Tranquil Turtle",
+  "address": "Symonds Green Lane, Stevenage, SG1 2HP",
+  "postcode": "SG1 2HP",
+  "lat": 51.9098436,
+  "lon": -0.2265343,
+  "price": "GBP 6.00, GBP 7.50",
+  "status": "scheduled",
+  "organizer": "Brilliant Organisation",
+  "categories": [],
+  "summary": "October sees the long awaited return to the decks of TEE HARRIS. One of the innovators to modern dance scene mixing Jazzfunk & Soul for the dancefloor",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -693,7 +669,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -717,7 +693,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -741,7 +717,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -765,7 +741,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -789,7 +765,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -813,7 +789,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -837,7 +813,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -861,7 +837,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -885,7 +861,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -909,7 +885,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -933,7 +909,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -957,7 +933,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -981,7 +957,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1005,7 +981,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1029,7 +1005,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1053,7 +1029,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1077,7 +1053,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1101,7 +1077,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1125,7 +1101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1149,7 +1125,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1173,7 +1149,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "Autumn Family FUNDAY Fayre",
+  "url": "https://www.skiddle.com/whats-on/Colchester/Great-Bromley-Village-Hall/Autumn-Family-FUNDAY-Fayre/42675078/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Colchester/Great-Bromley-Village-Hall/Autumn-Family-FUNDAY-Fayre/42675078/",
+  "start": "2026-10-25T11:00:00+00:00",
+  "end": "2026-10-25T15:00:00+00:00",
+  "all_day": false,
+  "venue": "Great Bromley Village Hall",
+  "address": "Parsons Hill, Great Bromley, Colchester, Colchester, CO7 7JA",
+  "postcode": "CO7 7JA",
+  "lat": 51.8883913,
+  "lon": 1.0279813,
+  "price": "GBP 0.00",
+  "status": "scheduled",
+  "organizer": "Ivory Events",
+  "categories": [],
+  "summary": "Join us for a fun-filled Autumn Fayre at Great Bromley Village Hall on Sunday 25th October, from 11am-3pm.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1189,7 +1189,7 @@
   "postcode": "AL9 5HX",
   "lat": 51.7606481,
   "lon": -0.2092386,
-  "price": "GBP 35.00, GBP 25.00, GBP 47.50, GBP 12.50, GBP 10.00, GBP 20.00, GBP 45.00, GBP 65.00, GBP 40.00, GBP 13.50, GBP 37.50, GBP 129.00, GBP 119.00, GBP 54.50, GBP 75.00, GBP 55.00, GBP 85.00, GBP 42.50, GBP 44.50, GBP 29.50, GBP 59.50, GBP 67.50, GBP 95.00, GBP 75.50",
+  "price": "GBP 12.50, GBP 25.00, GBP 10.00, GBP 20.00, GBP 40.00, GBP 13.50, GBP 37.50, GBP 129.00, GBP 119.00, GBP 55.00, GBP 85.00, GBP 42.50, GBP 44.50, GBP 29.50, GBP 59.50, GBP 65.00, GBP 67.50, GBP 95.00, GBP 47.50, GBP 75.50",
   "status": "scheduled",
   "organizer": "Sound Live LImited",
   "categories": [],
@@ -1197,7 +1197,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1221,7 +1221,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1245,7 +1245,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1269,31 +1269,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
- },
- {
-  "source_id": "S007",
-  "title": "Goatfest 2027",
-  "url": "https://www.skiddle.com/whats-on/Stevenage/The-Great-Field-Bury-Lane-Codicote-SG4-8XY/Goatfest-2027/42698805/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Stevenage/The-Great-Field-Bury-Lane-Codicote-SG4-8XY/Goatfest-2027/42698805/",
-  "start": "2027-08-27T12:00:00+01:00",
-  "end": "2027-08-29T23:00:00+01:00",
-  "all_day": false,
-  "venue": "The Great Field Bury Lane Codicote SG4 8XY",
-  "address": "The Great Field, Bury Lane, Codicote, SG4 8XY, Stevenage, SG4 8XY",
-  "postcode": "SG4 8XY",
-  "lat": 51.854986,
-  "lon": -0.231666,
-  "price": "GBP 80.00, GBP 105.00, GBP 55.00, GBP 20.00, GBP 25.00, GBP 5.00, GBP 15.00",
-  "status": "scheduled",
-  "organizer": "GOATFEST LIMITED",
-  "categories": [],
-  "summary": "Goatfest 2027: 3 days of live music, DJs, street food, camping & fun in the Hertfordshire countryside. The GOAT of bank holiday weekends!",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1317,31 +1293,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
- },
- {
-  "source_id": "S007",
-  "title": "Breakfast with Santa",
-  "url": "https://www.skiddle.com/whats-on/Bedford/The-Compasses%2C-44-High-Street/Breakfast-with-Santa/42704668/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Bedford/The-Compasses%2C-44-High-Street/Breakfast-with-Santa/42704668/",
-  "start": "2026-12-06T09:30:00+00:00",
-  "end": "2026-12-06T11:30:00+00:00",
-  "all_day": false,
-  "venue": "The Compasses, 44 High Street",
-  "address": "44 High Street, Bedford, MK45 5DD",
-  "postcode": "MK45 5DD",
-  "lat": 52.0010175,
-  "lon": -0.4691541,
-  "price": "GBP 15.00",
-  "status": "scheduled",
-  "organizer": "Barley and Vine Events Limited",
-  "categories": [],
-  "summary": "Join us for a magical morning of pancakes with Santa! Enjoy festive fun, decorate your own pancakes and capture a special photo with Santa.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1365,7 +1317,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1389,7 +1341,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1413,7 +1365,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1437,7 +1389,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1461,7 +1413,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1485,7 +1437,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1509,7 +1461,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1533,7 +1485,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1557,7 +1509,55 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "Oktoberfest - Buzz Bingo Peterborough",
+  "url": "https://www.skiddle.com/whats-on/Peterborough/Buzz-Bingo-Peterborough/Oktoberfest---Buzz-Bingo-Peterborough/42750059/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Peterborough/Buzz-Bingo-Peterborough/Oktoberfest---Buzz-Bingo-Peterborough/42750059/",
+  "start": "2026-10-11T19:00:00+01:00",
+  "end": "2026-10-11T21:00:00+01:00",
+  "all_day": false,
+  "venue": "Buzz Bingo Peterborough",
+  "address": "Lime Kiln Close, Peterborough, PE3 9TA",
+  "postcode": "PE3 9TA",
+  "lat": 52.5819536,
+  "lon": -0.2562488,
+  "price": "GBP 10.00",
+  "status": "scheduled",
+  "organizer": "Buzz Group Limited",
+  "categories": [],
+  "summary": "Exclusive Offer when you book. Enjoy any main meal, a selected drink & your bingo for just £10!",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:31:54+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "Oktoberfest - Buzz Bingo Colchester",
+  "url": "https://www.skiddle.com/whats-on/Colchester/Buzz-Bingo-Colchester/Oktoberfest---Buzz-Bingo-Colchester/42775871/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Colchester/Buzz-Bingo-Colchester/Oktoberfest---Buzz-Bingo-Colchester/42775871/",
+  "start": "2026-10-11T19:00:00+01:00",
+  "end": "2026-10-11T21:00:00+01:00",
+  "all_day": false,
+  "venue": "Buzz Bingo Colchester",
+  "address": "48 Osborne Street, Colchester, CO2 7DP",
+  "postcode": "CO2 7DP",
+  "lat": 51.886682,
+  "lon": 0.901794,
+  "price": "GBP 10.00",
+  "status": "scheduled",
+  "organizer": "Buzz Group Limited",
+  "categories": [],
+  "summary": "Exclusive Offer when you book. Enjoy any main meal, a selected drink & your bingo for just £10!",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
@@ -1581,30 +1581,54 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  },
  {
   "source_id": "S007",
-  "title": "Ronan Keating & Blue",
-  "url": "https://www.skiddle.com/whats-on/Colchester/Colchester-Castle/Ronan-Keating--Blue/42799025/",
+  "title": "The Royal Christmas Ball at Brocket Hall",
+  "url": "https://www.skiddle.com/whats-on/St-Albans/Brocket-Hall/The-Royal-Christmas-Ball-at-Brocket-Hall/42809085/",
   "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Colchester/Colchester-Castle/Ronan-Keating--Blue/42799025/",
-  "start": "2027-08-21T14:00:00+01:00",
-  "end": "2027-08-21T23:00:00+01:00",
+  "external_id": "https://www.skiddle.com/whats-on/St-Albans/Brocket-Hall/The-Royal-Christmas-Ball-at-Brocket-Hall/42809085/",
+  "start": "2026-12-06T12:00:00+00:00",
+  "end": "2026-12-06T14:00:00+00:00",
   "all_day": false,
-  "venue": "Colchester Castle",
-  "address": "Castle Park, Colchester, CO1 1TJ",
-  "postcode": "CO1 1TJ",
-  "lat": 51.8907121,
-  "lon": 0.9031477,
-  "price": "GBP 55.00, GBP 10.00",
+  "venue": "Brocket Hall",
+  "address": "Brocket Hall, Hertfordshire AL8 7XG, St-Albans, AL8 7XG",
+  "postcode": "AL8 7XG",
+  "lat": 51.7939798,
+  "lon": -0.2196838,
+  "price": "GBP 50.00, GBP 20.00",
   "status": "scheduled",
-  "organizer": "Cuffe & Taylor",
+  "organizer": "Brocket Hall",
   "categories": [],
-  "summary": "Cuffe & Taylor & Supermodified presents Ronan Keating & Blue at Colchester Castle on 21st August 2027",
+  "summary": "A magical Royal Christmas Ball with a princess, royal dancing, Father Christmas, a little festive brunch, games and plenty of Christmas magic!",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:39:57+00:00"
+  "fetched_at": "2026-09-30T13:31:54+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "The Skin Affair",
+  "url": "https://www.skiddle.com/whats-on/Stevenage/Belle-And-Bee-Beauty/The-Skin-Affair/42821614/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Stevenage/Belle-And-Bee-Beauty/The-Skin-Affair/42821614/",
+  "start": "2026-11-03T17:30:00+00:00",
+  "end": "2026-11-03T20:30:00+00:00",
+  "all_day": false,
+  "venue": "Belle And Bee Beauty",
+  "address": "54 Church Street, Stevenage, SG7 5AF",
+  "postcode": "SG7 5AF",
+  "lat": 51.9912227,
+  "lon": -0.1911903,
+  "price": "GBP 12.00",
+  "status": "scheduled",
+  "organizer": "Belle and Bee Beauty",
+  "categories": [],
+  "summary": "Join our Skin Event! Live demos, free Dermalux & skin consultations, DIY facial bar, Prosecco, singer, goodie bags & amazing offers!",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:31:54+00:00"
  }
 ]

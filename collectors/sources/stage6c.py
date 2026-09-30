@@ -389,6 +389,50 @@ class StJohnsCollege(LlmListCollector):
               "'chorister experience' mornings. competition='concert'.")]
     venue, address, postcode = "St John's College", "St John's Street, Cambridge", "CB2 1TP"
     categories = ["college"]
+    cache_salt = "7c-detail-links"   # этап 7c: ссылка на страницу события, а не на общий список
+
+    def collect(self, http):
+        """Этап 7c (правки по v9: лекция St John's «цены на сайте», а на странице — «free and open to all»): у события
+        без цены — страница события и её «Book now» / «Find out more» на том же сайте; «free …» там → цена «Free»."""
+        from collectors.llmlist import visible_text
+        from pipeline.enrich import FREE_RE
+        from selectolax.parser import HTMLParser
+        out = super().collect(http)
+        # ссылка на страницу события: карточка списка — <a> целиком, её текст содержит название события
+        cards = []
+        for a in HTMLParser(http.get(self.pages[0][0]).text).css("a[href]"):
+            href = a.attributes.get("href") or ""
+            if "/events-and-services/" in href:
+                n, txt = a, ""
+                for _ in range(4):   # ссылка-накладка без текста: текст карточки — у ближайшего родителя
+                    txt = re.sub(r"\W+", " ", n.text(separator=" ")).strip()
+                    if txt or n.parent is None:
+                        break
+                    n = n.parent
+                cards.append((txt.lower(), href))
+        for ev in out:
+            if ev.url and ev.url.rstrip("/").endswith("/festival"):
+                key = re.sub(r"\W+", " ", ev.title).lower().strip()
+                href = next((h for t, h in cards if key and key in t), None)
+                if href:
+                    ev.url = href if href.startswith("http") else "https://www.joh.cam.ac.uk" + href
+        for ev in out:
+            if ev.price or not ev.url or ev.url.rstrip("/").endswith(("/festival", "/events")):
+                continue
+            try:
+                html = http.get(ev.url).text
+                text, links = visible_text(html)
+                more = next((u for pat in ("book now", "book|tickets") for t, u in links.items()
+                             if re.match(pat, t, re.I) and u and (u.startswith("/") or "joh.cam.ac.uk" in u
+                                                                   or "sjcchoir" in u)), None)
+                if not FREE_RE.search(text) and more:
+                    more = more if more.startswith("http") else re.match(r"https?://[^/]+", ev.url).group(0) + more
+                    text = visible_text(http.get(more).text)[0]
+                if FREE_RE.search(text):
+                    ev.price = "Free"
+            except Exception:  # noqa: BLE001 — нет страницы — цена остаётся неизвестной
+                continue
+        return out
 
     def keep(self, it):
         v = (it.get("venue") or "").lower()

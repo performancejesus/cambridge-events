@@ -2,18 +2,18 @@
  {
   "source_id": "S144",
   "title": "Anarchical Antiquity – lecture by Professor Josephine Crawley Quinn",
-  "url": "https://www.joh.cam.ac.uk/festival",
+  "url": "https://www.joh.cam.ac.uk/about-us/events-and-services/inaugural-lecture-professor-josephine-crawley-quinn-professor-of-ancient-history",
   "kind": "event",
   "external_id": "2026-10-08|Anarchical Antiquity – lecture by Professor Josephine Crawley Quinn",
-  "start": "2026-10-08T17:00",
+  "start": "2026-10-08",
   "end": null,
-  "all_day": false,
+  "all_day": true,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
   "lat": null,
   "lon": null,
-  "price": null,
+  "price": "Free",
   "status": null,
   "organizer": null,
   "categories": [
@@ -24,17 +24,17 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:52:14+00:00"
+  "fetched_at": "2026-09-30T14:02:23+00:00"
  },
  {
   "source_id": "S144",
   "title": "Lunchtime concert",
-  "url": "https://www.joh.cam.ac.uk/festival",
+  "url": "https://www.joh.cam.ac.uk/about-us/events-and-services/lunchtime-concert",
   "kind": "event",
   "external_id": "2026-10-13|Lunchtime concert",
-  "start": "2026-10-13T13:10",
+  "start": "2026-10-13",
   "end": null,
-  "all_day": false,
+  "all_day": true,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
@@ -51,23 +51,50 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:52:14+00:00"
+  "fetched_at": "2026-09-30T14:02:23+00:00"
+ },
+ {
+  "source_id": "S144",
+  "title": "St John's College Climate Crisis Lecture",
+  "url": "https://www.joh.cam.ac.uk/about-us/events-and-services/st-johns-college-climate-crisis-lecture",
+  "kind": "event",
+  "external_id": "2026-10-26|St John's College Climate Crisis Lecture",
+  "start": "2026-10-26",
+  "end": null,
+  "all_day": true,
+  "venue": "St John's College",
+  "address": "St John's Street, Cambridge",
+  "postcode": "CB2 1TP",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "Lecture"
+  ],
+  "summary": "Lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T14:02:23+00:00"
  },
  {
   "source_id": "S144",
   "title": "Music Society Chapel Late",
-  "url": "https://www.joh.cam.ac.uk/festival",
+  "url": "https://www.joh.cam.ac.uk/about-us/events-and-services/sjcms-chapel-late",
   "kind": "event",
   "external_id": "2026-11-07|Music Society Chapel Late",
-  "start": "2026-11-07T20:30",
+  "start": "2026-11-07",
   "end": null,
-  "all_day": false,
+  "all_day": true,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
   "lat": null,
   "lon": null,
-  "price": null,
+  "price": "Free",
   "status": null,
   "organizer": null,
   "categories": [
@@ -78,17 +105,17 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:52:14+00:00"
+  "fetched_at": "2026-09-30T14:02:23+00:00"
  },
  {
   "source_id": "S144",
   "title": "Quanta Piano Trio",
-  "url": "https://www.joh.cam.ac.uk/festival",
+  "url": "https://www.joh.cam.ac.uk/about-us/events-and-services/quanta-piano-trio",
   "kind": "event",
   "external_id": "2026-11-13|Quanta Piano Trio",
-  "start": "2026-11-13T19:30",
+  "start": "2026-11-13",
   "end": null,
-  "all_day": false,
+  "all_day": true,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
@@ -105,17 +132,17 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:52:14+00:00"
+  "fetched_at": "2026-09-30T14:02:23+00:00"
  },
  {
   "source_id": "S144",
   "title": "José Almarcha Flamenco Trio",
-  "url": "https://www.joh.cam.ac.uk/festival",
+  "url": "https://www.joh.cam.ac.uk/about-us/events-and-services/jose-almarcha-flamenco-trio",
   "kind": "event",
   "external_id": "2026-11-15|José Almarcha Flamenco Trio",
-  "start": "2026-11-15T18:00",
+  "start": "2026-11-15",
   "end": null,
-  "all_day": false,
+  "all_day": true,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
@@ -132,7 +159,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:52:14+00:00"
+  "fetched_at": "2026-09-30T14:02:23+00:00"
  },
  {
   "source_id": "S144",
@@ -159,7 +186,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:52:19+00:00"
+  "fetched_at": "2026-09-30T14:02:27+00:00"
  },
  {
   "source_id": "S144",
@@ -186,14 +213,14 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:52:19+00:00"
+  "fetched_at": "2026-09-30T14:02:27+00:00"
  },
  {
   "source_id": "S144",
-  "title": "Christmas Concert",
+  "title": "Christmas Concert – Save the date",
   "url": "https://www.sjcchoir.co.uk/event/christmas-concert-26/",
   "kind": "event",
-  "external_id": "2026-12-04|Christmas Concert",
+  "external_id": "2026-12-04|Christmas Concert – Save the date",
   "start": "2026-12-04",
   "end": null,
   "all_day": true,
@@ -213,6 +240,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:52:19+00:00"
+  "fetched_at": "2026-09-30T14:02:27+00:00"
  }
 ]

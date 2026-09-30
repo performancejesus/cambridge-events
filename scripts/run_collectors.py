@@ -63,7 +63,10 @@ def main(ids: list[str]) -> None:
                 if art_url:
                     entry["ai_disallow"] = ai_policy.check(db, http, c.source_id, art_url)
                     db.commit()
-            except Exception as e:  # noqa: BLE001 — один упавший коллектор не останавливает прогон
+            except (KeyboardInterrupt, SystemExit):
+                raise
+            except BaseException as e:  # noqa: BLE001 — один упавший коллектор не останавливает прогон
+                # (этап 7c: pypdf → cryptography без cffi падал с PanicException — это BaseException)
                 entry.update(ok=False, error=f"{type(e).__name__}: {e}"[:500],
                              trace=traceback.format_exc(limit=3)[-1500:])
             entry.update(requests=http.requests - before, seconds=round(time.monotonic() - t0, 1))

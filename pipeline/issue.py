@@ -31,11 +31,12 @@ ANNOUNCE_DAYS = 21          # «объявлено недавно»: стать�
 VENUE_NEWS_DAYS = 60        # «Новое в городе» в первом выпуске — открытия за 2 месяца (правки по v3)
 
 # Рубрики после «Темы недели» и «Главного на выходные» (их по одной на каждые выходные периода).
-FIXED_RUBRICS = ["weekdays", "cinema", "talks", "exhibitions", "free", "kids", "holidays", "sport", "out_of_town",
+FIXED_RUBRICS = ["weekdays", "cinema", "talks", "colleges", "exhibitions", "free", "kids", "holidays", "sport", "out_of_town",
                  "county", "new_announcements", "tickets", "cancelled", "new_in_town"]
 RUBRIC_TITLES = {
     "en": {"theme": "Theme of the week: {theme}", "weekend": "The weekend: {weekend}",
            "weekdays": "Weekdays: concerts, theatre, comedy", "cinema": "At the cinema", "talks": "Talks and meetings",
+           "colleges": "At the colleges",
            "exhibitions": "Exhibitions", "free": "Free",
            "kids": "With kids", "holidays": "School holidays: where to book your child", "sport": "Sport",
            "out_of_town": "Out of town (within an hour)", "county": "Around the county",
@@ -43,6 +44,7 @@ RUBRIC_TITLES = {
            "cancelled": "Cancelled and postponed", "new_in_town": "New in town"},
     "ru": {"theme": "Тема недели: {theme}", "weekend": "Главное на выходные {weekend}",
            "weekdays": "На неделе: концерты, театр, комедия", "cinema": "В кино", "talks": "Лекции и встречи",
+           "colleges": "В колледжах",
            "exhibitions": "Выставки", "free": "Бесплатно",
            "kids": "С детьми", "holidays": "Каникулы: куда записать ребёнка", "sport": "Спорт",
            "out_of_town": "За городом (до часа)", "county": "По графству",
@@ -404,7 +406,69 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     from . import film_releases
     p.releases = film_releases.in_window(con, w.start, w.end)
     _films(con, w, p)
+    _siblings(con, p)
     return p
+
+
+SIB_STOP = {"the", "and", "with", "tour", "live", "show", "night", "music", "concert", "comedy", "festival", "party", "club",
+            "special", "presents", "featuring", "band", "orchestra", "choir", "quartet", "trio", "cambridge", "event",
+            "evening", "tickets", "uk", "2026", "2027", "official", "celebration", "celebrations", "anniversary", "talk",
+            "talks", "class", "session", "sessions", "workshop", "lecture", "sunday", "saturday", "friday"}
+
+
+def _tokens(t: str) -> set[str]:
+    return {x for x in re.findall(r"[a-z0-9]+", (t or "").lower()) if len(x) >= 4 and x not in SIB_STOP}
+
+
+def _slug(u: str | None) -> str:
+    parts = [x for x in (u or "").rstrip("/").split("/") if x and not x.isdigit()]
+    return parts[-1].lower() if parts else ""
+
+
+def _siblings(con, p: Pools) -> None:
+    """Этап 7c (правки по v9: The bEAT + The Selecter): все ссылки источников события (all_urls) и несклеенные дубли той
+    же даты и площадки (siblings: общее отличительное слово названия или одинаковый адрес страницы) — чтобы ссылка вела
+    на первоисточник, а цена бралась из лучшего источника, а не из того, чья ссылка выбрана."""
+    rows = {}
+    for cid, c in p.candidates.items():
+        if not c.get("event_ids"):
+            continue
+        urls = []
+        for e in c["event_ids"]:
+            urls += [r[0] for r in con.execute("SELECT url FROM raw_items WHERE event_id=? AND url IS NOT NULL", (e,))]
+        c["all_urls"] = list(dict.fromkeys(([c["url"]] if c.get("url") else []) + urls))
+        if c["kind"] in ("event", "announcement", "tickets") and c.get("dates"):
+            rows[cid] = c
+    by: dict[tuple, list] = defaultdict(list)
+    for cid, c in rows.items():
+        by[(c["dates"][0][0], norm_venue((c.get("venue") or "").replace("’", "'")))].append(cid)
+    for (day, venue), ids in by.items():
+        if not venue or len(ids) < 2:
+            continue
+        for a in ids:
+            ca = rows[a]
+            sib = []
+            vt = _tokens(venue) | _tokens(ca.get("venue") or "")
+            ta = _tokens(ca["title"]) - vt
+            for b in ids:
+                cb = rows[b]
+                if b == a or set(cb["event_ids"]) & set(ca["event_ids"]):
+                    continue
+                if set(ca.get("sources") or []) & set(cb.get("sources") or []):
+                    continue   # один источник дважды одно событие не публикует: это разные сеансы или события
+                t1, t2 = ca["dates"][0][2], cb["dates"][0][2]
+                if t1 and t2 and t1 != t2:   # разные сеансы (Studio Sunday в 10:00 и в 13:00) — не дубли
+                    continue
+                tb = _tokens(cb["title"]) - vt
+                common = ta & tb
+                same_slug = any(len(_slug(x)) >= 12 and "-" in _slug(x) and _slug(x) == _slug(y) for x in ca["all_urls"] for y in cb["all_urls"])
+                if same_slug or (common and len(common) >= 0.5 * min(len(ta), len(tb))) \
+                        or title_similarity(norm_title(ca["title"]), norm_title(cb["title"])) >= 0.6:
+                    sib.append({"id": b, "event_ids": cb["event_ids"], "title": cb["title"], "urls": cb["all_urls"],
+                                "price_text": cb.get("price_text"), "price_from": cb.get("price_from"),
+                                "sources": cb.get("sources")})
+            if sib:
+                ca["siblings"] = sib
 
 
 def _drop_repeats(con, w: Window, p: Pools) -> None:
@@ -449,7 +513,14 @@ def _films(con, w: Window, p: Pools) -> None:
             "rerelease": f["kind"] != "new", "cinemas": f["cinemas"], "wide_release": f["wide"],
             "importance": f["score"], "importance_reason": "; ".join(f["score_reason"]),
             "wiki_description": f.get("wiki_description"), "wiki_extract": f.get("wiki_extract"),
-            "dates": [(f["uk_date"], f["uk_date"], None)], "event_ids": [], "url": url, "norm": f["norm"]}
+            "dates": [(f["uk_date"], f["uk_date"], None)], "event_ids": [], "url": url, "norm": f["norm"],
+            "cinema_url": next((r[0] for r in con.execute("SELECT url FROM cinema_showings WHERE norm=? AND url IS NOT NULL "
+                                                           "ORDER BY cinema='Light'", (f["norm"],))), None)}
+        # правки по v9: семейный фильм (анимация, family — по описанию Wikipedia) — кандидат и в «С детьми»
+        from tests.issue_rules.r32_family_films import is_family_film
+        c = p.candidates[f"F{i + 1}"]
+        if is_family_film(c):
+            c["kids_tag"] = c["for_kids"] = True
 
 
 def film_where(c: dict, lang: str) -> str:
@@ -773,6 +844,9 @@ def _venue_news(con, w: Window, p: Pools) -> None:
             "address": v["address"], "postcode": v["postcode"], "date": v["date"], "date_basis": v["date_basis"],
             "published": (v["published"] or "")[:10] or None, "note": v["note"], "sources": [v["source_id"]],
             "source_type": v["source_type"], "url": v["url"], "event_ids": [], "dates": [], "news_id": v["news_id"]}
+        page = enrich.facts(con, -v["news_id"])   # этап 7c: страница открытия, найденного поиском (enrich_pages)
+        if page and page.get("text"):
+            p.candidates[f"V{v['news_id']}"]["page_facts"] = page["text"][:700]
 
 
 ALSO_PLAYING = {"S019", "S154"}   # Cambridge City FC, Cambridge United Women
@@ -1080,7 +1154,11 @@ def limited_holiday_groups(p: Pools, w: Window, lang: str, groups: dict) -> list
                 price = "prices on the website" if lang == "en" else "цены на сайте"
             place = c.get("venue") or ", ".join((c.get("address") or "").split(",")[:2]).strip()
             meta = " · ".join(x for x in (when(c, w, lang), re.sub(r"\s+", " ", place + zone).strip(), price) if x)
-            items.append({"title": c["title"], "meta": meta, "blurb": "", "url": c["url"], "compact": True,
+            from tests.issue_rules.common import tier
+            from tests.issue_rules.r11_primary_link import best_url
+            b = best_url(c)   # этап 7c: ссылка на первоисточник (Botanic Garden, а не сводная афиша музеев)
+            items.append({"title": c["title"], "meta": meta, "blurb": "",
+                          "url": b if b and tier(b) < tier(c["url"]) else c["url"], "compact": True,
                           "ids": [cid for cid, x in p.candidates.items() if x is c]})
         out.append({"title": "Where to go with children during the holidays" if lang == "en" else
                     "Куда сходить с детьми в каникулы", "items": items})
@@ -1216,7 +1294,7 @@ def rubric_title(rub: str, w: Window, lang: str, theme: str = "") -> str:
 
 
 def importance_of(p: Pools, it: dict) -> float:
-    return max((p.candidates[i].get("importance") or 0) for i in it["ids"])
+    return max(((p.candidates[i].get("importance") or 0) for i in it["ids"] if i in p.candidates), default=0)
 
 
 def access_mark(c: dict, lang: str) -> tuple[str, str | None]:
@@ -1262,13 +1340,15 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 out["sections"].append({"rubric": rub, "title": rubric_title(rub, w, lang), "intro": "", "groups": groups})
             continue
         items = sections.get(rub) or []
-        if rub == "weekdays":   # правки по v5: «На неделе» — по дате
+        if rub == "colleges":   # этап 7c: по дате
+            items = sorted(items, key=lambda it: tuple(x or "" for x in (p.candidates[it["ids"][0]].get("dates") or [("",)])[0]))
+        elif rub == "weekdays":   # правки по v5: «На неделе» — по дате
             items = sorted(items, key=lambda it: min((x[0], x[2] or "") for i in it["ids"]
                                                      for x in (p.candidates[i]["dates"] or [("9999", "", None)])))
         elif rub == "new_in_town":   # сначала Кембридж
             items = sorted(items, key=lambda it: not re.search(r"\bCambridge\b", p.candidates[it["ids"][0]].get("address") or ""))
         elif rub != "theme":   # «Тема недели» — порядок по смыслу, как у модели (правки по v3); остальное — по важности
-            items = sorted(items, key=lambda it: -importance_of(p, it))
+            items = sorted(items, key=lambda it: (bool(it.get("union")), -importance_of(p, it) if it["ids"] else 0))
         featured = {p.candidates[i].get("norm") for it in items for i in it["ids"] if i.startswith("F")}
         rel = release_lines(p, w, lang, featured) if rub == "cinema" else []
         if not items and not rel:
@@ -1277,6 +1357,10 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                "intro": result.get(f"theme_intro_{lang}", "") if rub == "theme" else "", "groups": []}
         groups: dict[str, list] = {}
         for it in items:
+            if it.get("union"):   # этап 7c: строка «В Cambridge Union на этой неделе (для членов клуба): …»
+                groups.setdefault("", []).append({"title": it[f"title_{lang}"], "meta": it.get(f"meta_{lang}", ""),
+                                                  "blurb": "", "url": it.get("url"), "ids": [], "compact": True})
+                continue
             c = p.candidates[it["ids"][0]]
             evs = [p.candidates[i] for i in it["ids"] if p.candidates[i]["kind"] == c["kind"] == "event"]
             if len(evs) > 1:  # два дня одной выставки на разных площадках и т.п.
@@ -1290,6 +1374,8 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 price = {"postponed": ("postponed", "перенесено")}.get(c.get("status"), ("cancelled", "отменено"))[
                     0 if lang == "en" else 1]
             meta = " · ".join(x for x in (when(c, w, lang), where_, price, acc, mark) if x)
+            if it.get("line") and it.get("kind_ru") and lang == "ru":   # «В колледжах»: вид события — в строке
+                meta = f"{it['kind_ru']} · {meta}"
             title = it[f"title_{lang}"]
             if c["kind"] == "venue_news" and not re.search(r"\bCambridge\b", c.get("address") or ""):
                 town = (c.get("address") or "").split(",")[-1].strip()   # правки по v5: городок — в заголовке строки
@@ -1300,11 +1386,12 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
             if rub == "sport" and not key and (it.get("also") or set(c.get("sources") or []) & ALSO_PLAYING):
                 key = "also"   # правки после v5: нелиговый и женский футбол — одной строкой в «Также играют»
             blurb = "" if c["kind"] == "cancellation" else it[f"blurb_{lang}"].strip()
-            url = c["url"]
+            url = it.get("url") or c["url"]   # этап 7c: ссылка на первоисточник (issue_fixes.fix_links)
             if len(it["ids"]) > 1 and all(set(p.candidates[i].get("sources") or []) <= {"S055"} for i in it["ids"]):
                 url = LIBRARIES_URL   # правки по v8: «Регулярно в библиотеках» — страница всех событий библиотек
             groups.setdefault(key, []).append({"title": title, "meta": meta, "access_url": acc_url,
-                                               "blurb": blurb, "url": url, "ids": it["ids"]})
+                                               "blurb": blurb, "url": url, "ids": it["ids"],
+                                               **({"compact": True} if it.get("line") else {})})
         for key in sorted(groups, key=lambda k: ["", "also", "take_part"].index(k)):
             sub_title = {"take_part": ("Take part", "Поучаствовать"), "also": ("Also playing", "Также играют")}.get(key)
             items_ = groups[key]
@@ -1478,14 +1565,15 @@ def _cands_html(rows: list[dict], lang: str, placed_n: int, items_n: int | None 
     return "\n".join(out)
 
 
-def render_editor_html(result: dict, p: Pools, w: Window, lang: str, editor: dict, lists: dict) -> str:
+def render_editor_html(result: dict, p: Pools, w: Window, lang: str, editor: dict, lists: dict, plate: str = "") -> str:
     """Та же вёрстка, что у читательской версии, плюс под каждой рубрикой — все кандидаты (в выпуске отмечены, у
     остальных — причина), рубрика «Не попало никуда» и блок «Для редактора» в конце."""
     from html import escape as e
     L = layout(result, p, w, lang)
     more = "More" if lang == "en" else "Подробнее"
     badge = "editor's version" if lang == "en" else "редакторская версия"
-    body = [f'<h1>{e(L["title"])}<span class="badge">{badge}</span></h1>', f'<p class="sub">{e(L["subtitle"])}</p>',
+    # этап 7c: красная плашка «НЕ ОТПРАВЛЯТЬ: …» (блокирующие проверки tests/issue_rules) — самой первой строкой
+    body = [plate, f'<h1>{e(L["title"])}<span class="badge">{badge}</span></h1>', f'<p class="sub">{e(L["subtitle"])}</p>',
             f'<p class="intro">{e(L["intro"])}</p>']
     shown = {sec["rubric"]: sec for sec in L["sections"]}
     for rub in w.rubrics():
@@ -1523,7 +1611,12 @@ def render_editor_html(result: dict, p: Pools, w: Window, lang: str, editor: dic
         body.append(f"<h3>{e(title)}</h3><ul>" + "".join(f"<li>{e(x)}</li>" for x in (entries or ["—"])) + "</ul>")
     body.append("</section>")
     return READER_HTML.format(lang=lang, title=e(L["title"] + (" — editor" if lang == "en" else " — редактор")),
-                              body="\n".join(body), extra_css=EDITOR_CSS)
+                              body="\n".join(body), extra_css=EDITOR_CSS + "\n" + _plate_css())
+
+
+def _plate_css() -> str:
+    from tests.issue_rules import PLATE_CSS
+    return PLATE_CSS
 
 
 def _dropped_html(rows: list[dict], lang: str) -> str:

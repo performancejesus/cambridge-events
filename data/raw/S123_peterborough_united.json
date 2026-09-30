@@ -2,7 +2,7 @@
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cheltenham Town FC [LC] (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "FzrhZBjJd1UMVOHSfS4n3YLaJSo2BDn70AuNjWHJ@maak-agenda.nl",
   "start": "2020-09-05T14:00:00+00:00",
@@ -24,12 +24,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Fleetwood Town FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "D54d2OowkgrlrfxYKOVQ6f0wmtnEj6DM2JJs4IHH@maak-agenda.nl",
   "start": "2020-09-19T14:00:00+00:00",
@@ -51,12 +51,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Swindon Town FC (3-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "4mxG7OkXJmh7MZS078Kthmk8JkZ9X4CSlHMJeozS@maak-agenda.nl",
   "start": "2020-10-03T14:00:00+00:00",
@@ -78,12 +78,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Oxford United (2-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Mg9tJG8qg8aT3SVombyOECDtaBtrLNH6IICmBVtt@maak-agenda.nl",
   "start": "2020-10-17T14:00:00+00:00",
@@ -105,12 +105,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Burton Albion FC (2-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "kAVUaFGTvVYp6YwsHzuDQFYNuXsdWurjCnkze6Yk@maak-agenda.nl",
   "start": "2020-10-27T19:00:00+00:00",
@@ -132,12 +132,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Shrewsbury Town FC (5-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "qfeIpdry6W3XweHj5jRwX3NqsOy2npsvrsiDY8co@maak-agenda.nl",
   "start": "2020-10-31T15:00:00+00:00",
@@ -159,12 +159,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Blackpool FC (1-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "uV6sZiHZjmRfe5D0xwjHAtfEo3TVD9BlZgOFTrZY@maak-agenda.nl",
   "start": "2020-11-21T15:00:00+00:00",
@@ -186,12 +186,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Plymouth Argyle (1-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Lrx6em5F3RGzdEGJW6Dzec2T5cCQCxkhS3PzbGv5@maak-agenda.nl",
   "start": "2020-11-24T19:00:00+00:00",
@@ -213,12 +213,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Chorley FC [FA] (1-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "jRsbCVcCqwXslnqNmhcBCEcO4ZQpFPPnm6YAoZxu@maak-agenda.nl",
   "start": "2020-11-28T17:30:00+00:00",
@@ -240,12 +240,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Rochdale AFC (4-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "tNAQN7M2wjKmUQXxQLGQ2qfCUQbQMxpE6lGxeQBp@maak-agenda.nl",
   "start": "2020-12-12T15:00:00+00:00",
@@ -267,12 +267,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "⚠️ Postponed: Peterborough United FC - Ipswich Town",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Mcf0bsOaYiCHUFFZHplFcUAdKZC1w5gCwi2tPHS4@maak-agenda.nl",
   "start": "2020-12-19T15:00:00+00:00",
@@ -294,12 +294,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "⚠️ Postponed: Peterborough United FC - Charlton Athletic",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "nec1nCCUZUCxaJLcSsSNoGGKimroqJRXFBAnpAec@maak-agenda.nl",
   "start": "2020-12-29T18:30:00+00:00",
@@ -321,12 +321,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Milton Keynes Dons FC (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Zfg9mYUgfIhvFTv824ejek3E6gL3nruNTGXM197X@maak-agenda.nl",
   "start": "2021-01-16T15:00:00+00:00",
@@ -348,12 +348,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Charlton Athletic (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "CYut2zHOBBAh77YwfRmXo1wMLUaz8dzRPZkytaqY@maak-agenda.nl",
   "start": "2021-01-19T18:30:00+00:00",
@@ -375,12 +375,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bristol Rovers FC (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "VbQqqSslQfHvUCROsclIdsz2NzR5Pvu95KxzyRGM@maak-agenda.nl",
   "start": "2021-01-26T19:00:00+00:00",
@@ -402,12 +402,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Crewe Alexandra FC (2-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "NwijrvsWb6zoBlJH7DSqO75YYLs54M0PaJHh5h4R@maak-agenda.nl",
   "start": "2021-02-06T15:00:00+00:00",
@@ -429,12 +429,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Ipswich Town (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "eoHJinSYktFx5QzydJww3NG0GcLOnwMNNGcOeQf1@maak-agenda.nl",
   "start": "2021-02-09T19:00:00+00:00",
@@ -456,12 +456,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - AFC Wimbledon (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "EPGZYq4HmUdSzfnjB6BCNDCuYwycRxSP6lIcBmAS@maak-agenda.nl",
   "start": "2021-02-20T15:00:00+00:00",
@@ -483,12 +483,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wigan Athletic (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "arugm4JtuP3tbSVQTy7gRhXJXDbDs0x0wMX9cTvU@maak-agenda.nl",
   "start": "2021-02-27T15:00:00+00:00",
@@ -510,12 +510,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Hull City (1-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "fdSBmMLxg6AgijPuQUBR23cXMf3vPdLfN45k91rv@maak-agenda.nl",
   "start": "2021-03-09T19:00:00+00:00",
@@ -537,12 +537,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Portsmouth FC (1-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "sJYQdgERDT7mKLbpStIBO5czPrELHW8PoVNABMBB@maak-agenda.nl",
   "start": "2021-03-16T19:00:00+00:00",
@@ -564,12 +564,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Accrington Stanley FC (7-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "4OOC74MjCS0YMgCJTm76HQCrBa0iW3WAvyI4rRq1@maak-agenda.nl",
   "start": "2021-03-27T15:00:00+00:00",
@@ -591,12 +591,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Sunderland (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "6ACGmtZg5SYHU4ruxiYfUxjLq1U6GdmaYHIltPTR@maak-agenda.nl",
   "start": "2021-04-05T14:00:00+00:00",
@@ -618,12 +618,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Northampton Town FC (3-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ZPaQiwWGcAcLf7OeoDlFOEIkBOneSaosDqROrVNE@maak-agenda.nl",
   "start": "2021-04-16T18:45:00+00:00",
@@ -645,12 +645,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Gillingham FC (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ujMYNVKhLoR1KJkQkht0V3TJItOgaULB65sXoRKf@maak-agenda.nl",
   "start": "2021-04-20T18:45:00+00:00",
@@ -672,12 +672,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Doncaster Rovers FC (2-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "sgD6p6cN9HfGi3Qbs2RxHyYix09oyWaQhXhuHbs1@maak-agenda.nl",
   "start": "2021-04-27T18:45:00+00:00",
@@ -699,12 +699,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Doncaster Rovers FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "N8Mrvbvrm1mr2UAXvWFwzhL5H2pZIjGHyApzOfKe@maak-agenda.nl",
   "start": "2021-04-27T18:45:00+00:00",
@@ -726,12 +726,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Lincoln City FC (3-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "zBVX9X9YuWHvuFS51ePPYrQiyYEjNuDmGiMtTlFY@maak-agenda.nl",
   "start": "2021-05-01T14:00:00+00:00",
@@ -753,12 +753,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Plymouth Argyle [LC] (0-4)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "p3ia3H0qFKB6xuqAMKpXfdeiC9qDRoQg9I7jix2d@maak-agenda.nl",
   "start": "2021-08-10T18:45:00+00:00",
@@ -780,12 +780,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Derby County (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "J2TXip4HQDuoPdR09SaPd1xB3H3xB31JHgza6ULa@maak-agenda.nl",
   "start": "2021-08-14T11:30:00+00:00",
@@ -807,12 +807,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cardiff City (2-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "HvzxR4qrEqzxzEK0YhMRpxA7SgGX5s47hWK1Smhc@maak-agenda.nl",
   "start": "2021-08-17T18:45:00+00:00",
@@ -834,12 +834,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - West Bromwich Albion (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "dXQlXwgaLYN8UzqAM9iTqpVNXyUjiSscO4hjkvHT@maak-agenda.nl",
   "start": "2021-08-28T19:00:00+00:00",
@@ -861,12 +861,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Birmingham City (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "TPcZkRijDkMP2v0fLkqVrPXKYtfBy73UNEgPbHHu@maak-agenda.nl",
   "start": "2021-09-18T14:00:00+00:00",
@@ -888,12 +888,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - AFC Bournemouth (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "HfOPJA5A0q5f8y8dZ36sKoNsdtk6g79ByDvTZDJN@maak-agenda.nl",
   "start": "2021-09-29T18:45:00+00:00",
@@ -915,12 +915,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bristol City FC (2-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "BuPcJw9RBR69lMZGM1wBauTP1i1CakwDvrLwgsMP@maak-agenda.nl",
   "start": "2021-10-02T14:00:00+00:00",
@@ -942,12 +942,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Queens Park Rangers (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "sz6o4LyMP1NMl2GENWqFbMbQcZaeC47fU80OOet9@maak-agenda.nl",
   "start": "2021-10-23T14:00:00+00:00",
@@ -969,12 +969,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Huddersfield Town (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "9LnqppAfJmnHUI5glnj3x0smAOsKKtIFNSHefqXr@maak-agenda.nl",
   "start": "2021-11-02T19:45:00+00:00",
@@ -996,12 +996,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Fulham (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "WFQ7ghPPA5bex1xumfSKFBMFzXrLQv0Q94JnBLbb@maak-agenda.nl",
   "start": "2021-11-06T15:00:00+00:00",
@@ -1023,12 +1023,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Barnsley (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "LEI5cgq33OdY0SOswtk67bVN6j5ZQueNcrRfLVD6@maak-agenda.nl",
   "start": "2021-11-27T15:00:00+00:00",
@@ -1050,12 +1050,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Millwall FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "rvfFDLaKQJpBUXt1mMxq1h3IZXiYRUCQcu8rrt93@maak-agenda.nl",
   "start": "2021-12-11T15:00:00+00:00",
@@ -1077,12 +1077,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "⚠️ Postponed: Peterborough United FC - Reading FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "0v9ghfvEOSsw4zEAOpIDdT3UfKcPBUqd6XSt0iDx@maak-agenda.nl",
   "start": "2021-12-26T15:00:00+00:00",
@@ -1104,12 +1104,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bristol Rovers FC [FA] (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "KCnpezvm7PuH9KVroYoBV3vjJefTDyKhKhHJdPyc@maak-agenda.nl",
   "start": "2022-01-08T15:00:00+00:00",
@@ -1131,12 +1131,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Coventry City (1-4)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Z2oEPPtztSiOgLGijwfpr8zYBd92CA0tS1gUs0IS@maak-agenda.nl",
   "start": "2022-01-15T15:00:00+00:00",
@@ -1158,12 +1158,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Sheffield United (0-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "1oLpQRte8sT3VQTjhELiJ7Q6QJTyfZAaGRDTbgPh@maak-agenda.nl",
   "start": "2022-01-29T17:30:00+00:00",
@@ -1185,12 +1185,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Queens Park Rangers [FA] (2-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "iY92fG7nVGZo0VnH1VENv4Vo3Ul3hyEWkBHnZbxe@maak-agenda.nl",
   "start": "2022-02-05T15:00:00+00:00",
@@ -1212,12 +1212,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Preston North End FC (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "rdxI4j5ojFhw3DUAFKAwxXrDIxjmiT4OdxST0E1t@maak-agenda.nl",
   "start": "2022-02-12T15:00:00+00:00",
@@ -1239,12 +1239,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Reading FC (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "BpgcTm6okHYpvP6K3jezGZclUz66D1wuPg0Oyhbq@maak-agenda.nl",
   "start": "2022-02-16T19:45:00+00:00",
@@ -1266,12 +1266,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Hull City (0-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Hdn3UgS3nGsmRmxwKvRdPsqohlnsa8GlcksQWLbA@maak-agenda.nl",
   "start": "2022-02-26T15:00:00+00:00",
@@ -1293,12 +1293,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Manchester City [FA] (0-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "pjdL7FflRmdoR5UfAyNvf0zBYpBfZJ00YrmfB5Uf@maak-agenda.nl",
   "start": "2022-03-01T19:15:00+00:00",
@@ -1320,12 +1320,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Stoke City (2-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "QcHHMV1gg7qStyhoKivSbFvtP25gHs9GqnFPRw4I@maak-agenda.nl",
   "start": "2022-03-12T15:00:00+00:00",
@@ -1347,12 +1347,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Swansea City (2-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "oqcV448fr8uzEeOdFbMEXRvuqkFygK9ehdycZ8Bx@maak-agenda.nl",
   "start": "2022-03-16T19:45:00+00:00",
@@ -1374,12 +1374,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Middlesbrough (0-4)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "GEMqbZg0FDHJCYlNH6Jek8nUQ8G7jedsMqaP442b@maak-agenda.nl",
   "start": "2022-04-02T14:00:00+00:00",
@@ -1401,12 +1401,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Luton Town (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "AkJxhUzo1F5oVFiJnJdHULhvjWOAyo7pNfvzGzkv@maak-agenda.nl",
   "start": "2022-04-05T18:45:00+00:00",
@@ -1428,12 +1428,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Blackburn Rovers (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "M7iXO1ZRthen1ozfpESJ1OCUj5EXgk4Ki4IR5AtR@maak-agenda.nl",
   "start": "2022-04-15T14:00:00+00:00",
@@ -1455,12 +1455,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Nottingham Forest (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "J3GXxsHodiUmbQIen5XMuu9qrc6bQO5B4zMMMyCy@maak-agenda.nl",
   "start": "2022-04-23T14:00:00+00:00",
@@ -1482,12 +1482,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Blackpool FC (5-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "U9qAKj4P1wy8iTJZXuEFv9D8g880OclIQepDQGyR@maak-agenda.nl",
   "start": "2022-05-07T11:30:00+00:00",
@@ -1509,12 +1509,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Morecambe FC (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "0QWYGrfsWiI1CyiF6gewsFJQYgsewT7VFhIhCnYp@maak-agenda.nl",
   "start": "2022-08-06T14:00:00+00:00",
@@ -1536,12 +1536,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Sheffield Wednesday (2-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "bm1wYWMtCxF3WlTS6WHQwDQNiyrRoZFHSU3jATgS@maak-agenda.nl",
   "start": "2022-08-16T18:45:00+00:00",
@@ -1563,12 +1563,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Lincoln City FC (4-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Tjoiwobl1GAJV0XCcl8WAm1KOzeFz5lD0d6Yov6G@maak-agenda.nl",
   "start": "2022-08-20T14:00:00+00:00",
@@ -1590,12 +1590,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Fleetwood Town FC (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "09owbqKn39DqKcUMVcfQ8KsmlZBznrc2co4Vvkzm@maak-agenda.nl",
   "start": "2022-09-13T18:45:00+00:00",
@@ -1617,12 +1617,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Port Vale FC (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "d4H5nmtDa626BonmFMEewGwmsSzWcdRY0q7WY3mM@maak-agenda.nl",
   "start": "2022-09-24T14:00:00+00:00",
@@ -1644,12 +1644,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Burton Albion FC (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "eBYZVA5JqgiVKznUBG4cIYTGarjIUWbSqfzpwMzR@maak-agenda.nl",
   "start": "2022-10-08T14:00:00+00:00",
@@ -1671,12 +1671,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Forest Green Rovers FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "E48KD6nOJSr1hvYerzRJapJlQd8MHT6BEn5PMtkI@maak-agenda.nl",
   "start": "2022-10-11T18:45:00+00:00",
@@ -1698,12 +1698,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Forest Green Rovers FC (4-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "77qGkCkgmU6bpMAHZsq3xAOb0XBiW5xhpjmputD3@maak-agenda.nl",
   "start": "2022-10-11T18:45:00+00:00",
@@ -1725,12 +1725,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Accrington Stanley FC (3-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ztldEvy2LmVmfUmA34nCxMS5wN9ToSMSPv5GCA06@maak-agenda.nl",
   "start": "2022-10-25T18:45:00+00:00",
@@ -1752,12 +1752,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cambridge United FC (1-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "BArMTf9simQe1vF3TiMxThIM4EICwLFPkf3SfXob@maak-agenda.nl",
   "start": "2022-10-29T14:00:00+00:00",
@@ -1779,12 +1779,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Salford City FC [FA] (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "jfhPDA0Q4UbuGqswYA0BTQB2a86YYS2m28ZE1NWi@maak-agenda.nl",
   "start": "2022-11-05T15:00:00+00:00",
@@ -1806,12 +1806,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Barnsley (1-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Ne7ciOoxs4Nt53GbGFI8CuLocdCRnICxW0vjuolA@maak-agenda.nl",
   "start": "2022-12-02T19:45:00+00:00",
@@ -1833,12 +1833,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Milton Keynes Dons FC (2-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ver0B98l0NTX1fk3XKSe350RS8rKmKo0XGmU2R5O@maak-agenda.nl",
   "start": "2022-12-29T19:45:00+00:00",
@@ -1860,12 +1860,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wycombe Wanderers FC (0-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "d4EYWkyMyTrVPHcmqmj88sFmJzN0xm4G4Jhsh6FH@maak-agenda.nl",
   "start": "2023-01-01T15:00:00+00:00",
@@ -1887,12 +1887,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Portsmouth FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "7ydvTOJ2CS6T3rgrTBq4VGeEuTfaqaWnPjGSUXO9@maak-agenda.nl",
   "start": "2023-01-28T15:00:00+00:00",
@@ -1914,12 +1914,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bolton Wanderers FC (0-5)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "m0IYDJ6PhtSUpnuJhsR7iktbh6yh19DOiXrXgTIb@maak-agenda.nl",
   "start": "2023-02-11T15:00:00+00:00",
@@ -1941,12 +1941,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Plymouth Argyle (5-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "vXuZhzGUANvYkKqzXrjHCyKzgqk6hFwhOrncJKAJ@maak-agenda.nl",
   "start": "2023-02-25T15:00:00+00:00",
@@ -1968,12 +1968,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Charlton Athletic",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "OPdee4qIqi7E21uQoHiuE8lKEjppWvRhW2iHLmzs@maak-agenda.nl",
   "start": "2023-02-28T19:45:00+00:00",
@@ -1995,12 +1995,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Charlton Athletic (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "yribmgbk2TEPSCqMLMIJPKSHKFGdBQhwfFjHuWrq@maak-agenda.nl",
   "start": "2023-02-28T19:45:00+00:00",
@@ -2022,12 +2022,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Shrewsbury Town FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "UAwvoS7ch8veO5aP3fgUB34HnwNjBTZ8OTlKfNSe@maak-agenda.nl",
   "start": "2023-03-07T19:45:00+00:00",
@@ -2049,12 +2049,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cheltenham Town FC (0-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Jxaimu2nkyTQZSManaUtwj4ECn6IEKIWFTulkqnk@maak-agenda.nl",
   "start": "2023-03-11T15:00:00+00:00",
@@ -2076,12 +2076,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Derby County (2-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "PjNa9HBYT2uYYgWAsnXecONuAcL5rYFJgG0cYjYU@maak-agenda.nl",
   "start": "2023-03-25T15:00:00+00:00",
@@ -2103,12 +2103,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Oxford United (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "GCgzUYjtXGPI6fhBdsQAeTEFyKEW7Ghik3hvMXKT@maak-agenda.nl",
   "start": "2023-04-01T14:00:00+00:00",
@@ -2130,12 +2130,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Exeter City FC (3-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "qqcTb4xi3fME9sUROGb6wLQ2XnfJ5x2roJC0BjmP@maak-agenda.nl",
   "start": "2023-04-10T14:00:00+00:00",
@@ -2157,12 +2157,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Ipswich Town (0-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "rmqzAuUFud0XXSU7AhCO5raKuWEIT8IBJ7YS87Nt@maak-agenda.nl",
   "start": "2023-04-22T14:00:00+00:00",
@@ -2184,12 +2184,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bristol Rovers FC (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "SyyYpwLNhigtH99zUSxYFo52CciohnuOIGODljuc@maak-agenda.nl",
   "start": "2023-04-29T14:00:00+00:00",
@@ -2211,12 +2211,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Sheffield Wednesday (4-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "EmZ7YDae0lvP2Vv2kSyuAQZ9qurPyH005mlfKpFv@maak-agenda.nl",
   "start": "2023-05-12T19:00:00+00:00",
@@ -2238,12 +2238,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Swindon Town FC [LC] (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "sgVKsNweIMTOqLL6FopBWyFyeqLxgLYiORWhB9iX@maak-agenda.nl",
   "start": "2023-08-08T18:30:00+00:00",
@@ -2265,12 +2265,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Charlton Athletic (1-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "VFR0J0ukPG5FlvkvU1eANNYD2YW73qmX06VpaPo6@maak-agenda.nl",
   "start": "2023-08-12T14:00:00+00:00",
@@ -2292,12 +2292,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Derby County (2-4)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "319riEYElidqZZbEd0GPheVWx4KoAi4k3JE5C4sj@maak-agenda.nl",
   "start": "2023-08-26T14:00:00+00:00",
@@ -2319,12 +2319,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Leyton Orient FC (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "V9OiZsKzh0pvGZD165b1r8cANtiCFBqOCKEjKq5Y@maak-agenda.nl",
   "start": "2023-09-16T14:00:00+00:00",
@@ -2346,12 +2346,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cheltenham Town FC (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ReLEoTrWDbkRw2NGAjKbkKjTOzMf3SGU6lksBWQU@maak-agenda.nl",
   "start": "2023-09-19T18:45:00+00:00",
@@ -2373,12 +2373,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cheltenham Town FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "TiPbKXKPnSI39sltiWPLAAOa5YuZu20nE96Ljct3@maak-agenda.nl",
   "start": "2023-09-19T18:45:00+00:00",
@@ -2400,12 +2400,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bristol Rovers FC (2-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "doC6AcA5icGQvlHAOyTlZKkxKxhL8MNxQJsztFPg@maak-agenda.nl",
   "start": "2023-09-30T14:00:00+00:00",
@@ -2427,12 +2427,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Lincoln City FC (2-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "9ufb6dI0uZNlh6xDFTuANjpq5BX5tnFE4hGG8p62@maak-agenda.nl",
   "start": "2023-10-07T14:00:00+00:00",
@@ -2454,12 +2454,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wycombe Wanderers FC (2-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "A4l3ZF7fwZeZjb8hQkW2D73YjWjYiZNiHnyLdJbd@maak-agenda.nl",
   "start": "2023-10-21T14:00:00+00:00",
@@ -2481,12 +2481,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Salford City FC [FA] (2-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "UZe3PYVHyUvNnBKdkayK3jhYYdE32QZc1a3vqA8N@maak-agenda.nl",
   "start": "2023-11-04T15:00:00+00:00",
@@ -2508,12 +2508,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cambridge United FC (5-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "VCnBbE15ObhysWUMRUiB9D5t5oqCpaMmf9g1Ogl6@maak-agenda.nl",
   "start": "2023-11-11T12:00:00+00:00",
@@ -2535,12 +2535,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Burton Albion FC (4-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "iXYfmVg937TlNTFmqbPIPvO6rk72BIr2dsx6GuRA@maak-agenda.nl",
   "start": "2023-11-25T15:00:00+00:00",
@@ -2562,12 +2562,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Doncaster Rovers FC [FA] (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "NiB0aE22l7WAc865W6XxAU6hYimbZnhYMjFeTogu@maak-agenda.nl",
   "start": "2023-12-02T15:00:00+00:00",
@@ -2589,12 +2589,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Oxford United (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "XLVYbaUFMYGrgSqefwUSa6JgQep49PMsNP3S1Gp3@maak-agenda.nl",
   "start": "2023-12-09T15:00:00+00:00",
@@ -2616,12 +2616,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Reading FC (2-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "RJLhN49DefyUchYyDF71drLG7tDYw2SlSVbI8gSz@maak-agenda.nl",
   "start": "2023-12-26T15:00:00+00:00",
@@ -2643,12 +2643,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Barnsley (2-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "GIqHGsM7N08lcjrANnDSwCnNG0Umt51d3KqwP8c3@maak-agenda.nl",
   "start": "2023-12-29T19:45:00+00:00",
@@ -2670,12 +2670,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Leeds United [FA] (0-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "iJUiLZisI8YPYseEaHD6DIxRUBP5tkfh6ezkL5n0@maak-agenda.nl",
   "start": "2024-01-07T14:00:00+00:00",
@@ -2697,12 +2697,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Shrewsbury Town FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "WyhvJXQdO33aBw1rlwSiVUwXyMXlPBn4Gzu7az8k@maak-agenda.nl",
   "start": "2024-01-20T15:00:00+00:00",
@@ -2724,12 +2724,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wigan Athletic (2-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "z031ElozZegOjDCdaN7pAGTL9SEjFmrvg8bcUetY@maak-agenda.nl",
   "start": "2024-02-03T15:00:00+00:00",
@@ -2751,12 +2751,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Blackpool FC (1-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "rr8HxLWa34vFfHYuU1zB3tywr3x05xVqAraGIMoK@maak-agenda.nl",
   "start": "2024-02-17T15:00:00+00:00",
@@ -2778,12 +2778,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Exeter City FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "BVCM1vPZYve68P9QeI8sQ8366eHrDVGhCdyvxcW2@maak-agenda.nl",
   "start": "2024-03-02T15:00:00+00:00",
@@ -2805,12 +2805,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Northampton Town FC (5-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "kcxcvtz5oswkrDxm5WCXx9C5B89pMfIP4nw3BTVX@maak-agenda.nl",
   "start": "2024-03-05T19:45:00+00:00",
@@ -2832,12 +2832,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Stevenage FC (3-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "cSWBMd88Ggbx4hRTew1yZ30w6PZ0bFXumI6q8cLk@maak-agenda.nl",
   "start": "2024-03-13T20:00:00+00:00",
@@ -2859,12 +2859,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Portsmouth FC (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "AsBk1PHk63CP6qUxLwYDALdJULwYvUIodVwO1wbO@maak-agenda.nl",
   "start": "2024-03-16T15:00:00+00:00",
@@ -2886,12 +2886,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Carlisle United (1-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "knyGkBMIIE0v8HezyKniIR45pBZ2nccS8MSolbDj@maak-agenda.nl",
   "start": "2024-03-29T15:00:00+00:00",
@@ -2913,12 +2913,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Fleetwood Town FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "WfDO4XMhUYLSulBCF2vmgG6USPW8M6XzsPfSWQG1@maak-agenda.nl",
   "start": "2024-04-06T14:00:00+00:00",
@@ -2940,12 +2940,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Port Vale FC (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "0H2sn8J5lBAYXCLSkiqC3fz8gvRNsoWxXz5ApcQa@maak-agenda.nl",
   "start": "2024-04-10T18:45:00+00:00",
@@ -2967,12 +2967,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Port Vale FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "2clxRYrLwtWK1ivjcAgX6NeCk2ez75iP0225piyJ@maak-agenda.nl",
   "start": "2024-04-10T18:45:00+00:00",
@@ -2994,12 +2994,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Fleetwood Town FC (4-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "nkNCBbQCwff7q4vvkOA8xtzSjV7iUhB5gehptvei@maak-agenda.nl",
   "start": "2024-04-16T18:45:00+00:00",
@@ -3021,12 +3021,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bolton Wanderers FC (3-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "tUKXtol13eFfpxE8xMmzFSS4EHDbEkqXMCrcRIx6@maak-agenda.nl",
   "start": "2024-04-27T11:30:00+00:00",
@@ -3048,12 +3048,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Oxford United (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "aNc503AbeAlnxmenuZnz0wMR2qY7FuAEgHVxOM8q@maak-agenda.nl",
   "start": "2024-05-08T19:00:00+00:00",
@@ -3075,12 +3075,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Huddersfield Town (0-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "tlYCZf4OqXw5cKBEouZHJYa3HAYIBZB8khsdHH1f@maak-agenda.nl",
   "start": "2024-08-10T16:30:00+00:00",
@@ -3102,12 +3102,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wrexham AFC (0-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "QY1EUXQOOzdDZu5pSwTNgzgOM1id4CuJ7cirU7T6@maak-agenda.nl",
   "start": "2024-08-31T14:00:00+00:00",
@@ -3129,12 +3129,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Lincoln City FC (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ngRA9MFLFllxTnukE6GeplLAl5GEVkyvCreZAUwH@maak-agenda.nl",
   "start": "2024-09-14T14:00:00+00:00",
@@ -3156,12 +3156,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bristol Rovers FC (3-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "XDT9mP7j9zoKNV96oSgKekRCPPQOiL3L3xOdvmXk@maak-agenda.nl",
   "start": "2024-09-21T14:00:00+00:00",
@@ -3183,12 +3183,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Stevenage FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "F8l53vPAHrAy7rLSKoLVRNoR2AycHgOwEXqVlumi@maak-agenda.nl",
   "start": "2024-10-05T11:30:00+00:00",
@@ -3210,12 +3210,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Rotherham United FC (3-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "qV3ETBN1VNvLPbYO8zFFrASJj83ZfLOTXaDiOJqO@maak-agenda.nl",
   "start": "2024-10-12T14:00:00+00:00",
@@ -3237,12 +3237,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Blackpool FC (5-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "oVB8DhFCAbyNcBCbjxGqKStIosGV8dKvnxBVILQ2@maak-agenda.nl",
   "start": "2024-10-22T18:45:00+00:00",
@@ -3264,12 +3264,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cambridge United FC (6-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "rLWrUWn0mWpPngPLxT0EkHDgMZTzhpoYZIs1GYxC@maak-agenda.nl",
   "start": "2024-11-09T15:00:00+00:00",
@@ -3291,12 +3291,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Reading FC (1-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "DQSvIr5dMGMR4iAqibsTLfIAJlMSY4GF8Qmcew1e@maak-agenda.nl",
   "start": "2024-11-23T15:00:00+00:00",
@@ -3318,12 +3318,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Notts County FC [FA] (4-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "tgtdYxh7Fw3abAkMDNAwKv6ZQb8fzPAw37jaN4SG@maak-agenda.nl",
   "start": "2024-11-30T15:00:00+00:00",
@@ -3345,12 +3345,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Burton Albion FC (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "H2uaLV9ImHPEsuNnd9QH7Dhxk818VKrTXini7WeZ@maak-agenda.nl",
   "start": "2024-12-04T19:45:00+00:00",
@@ -3372,12 +3372,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Crawley Town FC (4-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "uBscrKKeuD61lklyB6oyfhrPhzsv2oo0ZKrhguyc@maak-agenda.nl",
   "start": "2024-12-14T15:00:00+00:00",
@@ -3399,12 +3399,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Mansfield Town FC (0-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "KVop65L2S5kbIf8XtGTDR8xlHAfA9us5cHqX0P0o@maak-agenda.nl",
   "start": "2024-12-26T15:00:00+00:00",
@@ -3426,12 +3426,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Barnsley (1-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "afVUYfxr8A03D1ScFFQwnWnvMHI1iqD6OTvF439W@maak-agenda.nl",
   "start": "2024-12-29T15:00:00+00:00",
@@ -3453,12 +3453,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Leyton Orient FC (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "SS9zbHRp7TbLs56khGuDiNNdzCdMGW8LsycuJwQs@maak-agenda.nl",
   "start": "2025-01-18T12:30:00+00:00",
@@ -3480,12 +3480,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Exeter City FC (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "1JwWWwXZnSHVBLrtToyTQOD9yNSxz33fKlAyvl6D@maak-agenda.nl",
   "start": "2025-01-21T19:45:00+00:00",
@@ -3507,12 +3507,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Exeter City FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "PBk8rUE6vn6KkiDlg1VCQBuPAt13VOU2bW34UG0F@maak-agenda.nl",
   "start": "2025-01-21T19:45:00+00:00",
@@ -3534,12 +3534,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wigan Athletic (1-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ldKjjVTYQaXmAWSFwIBxpPqvDIzaBXOcFf6OzngP@maak-agenda.nl",
   "start": "2025-01-28T19:45:00+00:00",
@@ -3561,12 +3561,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Birmingham City",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ZrolH69EwGJKxvMHc0z4Vc3ZZnkWcIM1YAKkOHRw@maak-agenda.nl",
   "start": "2025-02-08T15:00:00+00:00",
@@ -3588,12 +3588,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Shrewsbury Town FC (3-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "y4uEaVOhm5gTF2mCzycYGqY4l1Jefz9tuQ8yKCaN@maak-agenda.nl",
   "start": "2025-03-01T15:00:00+00:00",
@@ -3615,12 +3615,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wycombe Wanderers FC (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "DvBOZYoL6HTqVktud6DXCdSKRhEVCOzfqXAkfxCV@maak-agenda.nl",
   "start": "2025-03-08T15:00:00+00:00",
@@ -3642,12 +3642,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Charlton Athletic (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "UoJQjvSx3VeeM1EgZ5sz3XhKiMnStXbx471DlpBZ@maak-agenda.nl",
   "start": "2025-03-22T15:00:00+00:00",
@@ -3669,12 +3669,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Northampton Town FC (0-4)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "4PsstO9IXPVxOD6krGhEMpg9qu9KmZL7Le6XwEW9@maak-agenda.nl",
   "start": "2025-04-05T14:00:00+00:00",
@@ -3696,12 +3696,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Birmingham City (1-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "wBuGIUddjx2VLsCLL0RxYE94zXLmSmhFcwrrRJvH@maak-agenda.nl",
   "start": "2025-04-08T18:45:00+00:00",
@@ -3723,12 +3723,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Stockport County (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ByEOicRzF5tLBbV2NgXSimdPLxffNbEPFt4FL6Re@maak-agenda.nl",
   "start": "2025-04-18T14:00:00+00:00",
@@ -3750,12 +3750,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bolton Wanderers FC (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "oRFmJNWQzAoxpcSSwVv13bWq5XigGjp5wboBxpO3@maak-agenda.nl",
   "start": "2025-04-26T14:00:00+00:00",
@@ -3777,12 +3777,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Luton Town (0-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "JY958oCISwjIfqalsCVvQlISR4DYgblXed9Pvg8h@maak-agenda.nl",
   "start": "2025-08-09T11:30:00+00:00",
@@ -3804,12 +3804,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Barnsley (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "kmZi0P5SaEaFdnxYgVANmLfH6cuMz04FqJlOumAN@maak-agenda.nl",
   "start": "2025-08-19T18:45:00+00:00",
@@ -3831,12 +3831,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bradford City FC (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "jh0oAaXCvmVycQMtqqKfV6YpOFz4VAizin0L2zaC@maak-agenda.nl",
   "start": "2025-08-23T14:00:00+00:00",
@@ -3858,12 +3858,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wycombe Wanderers FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "MPZo7MFJ7HnChh4YFp62ik9y1QDrqzC1ASAI5bOJ@maak-agenda.nl",
   "start": "2025-09-13T14:00:00+00:00",
@@ -3885,12 +3885,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Lincoln City FC (0-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "4Ed5kjhEbo3D8qC2rHH2lmp2Mu3nxCITBznpVMWs@maak-agenda.nl",
   "start": "2025-09-27T14:00:00+00:00",
@@ -3912,12 +3912,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Stevenage FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "MbqamEea2LBSOAwJuVra7vcX974rc9pab3o8n5n6@maak-agenda.nl",
   "start": "2025-10-11T14:00:00+00:00",
@@ -3939,12 +3939,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Blackpool FC (1-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Qu0Vz1QDbStQlmnUe8TRskVYZpcZQoYzoRduUrMe@maak-agenda.nl",
   "start": "2025-10-25T14:00:00+00:00",
@@ -3966,12 +3966,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cardiff City [FA] (1-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Ggpp1n2mcfOd01nGfW5gBvhHX3VyHjIAjEj1w4xN@maak-agenda.nl",
   "start": "2025-11-01T15:00:00+00:00",
@@ -3993,12 +3993,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - AFC Wimbledon (5-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "8U1FA059Xyb5Wpe0hR4vSlVtFgXECuXs1YjXLjC3@maak-agenda.nl",
   "start": "2025-11-08T15:00:00+00:00",
@@ -4020,12 +4020,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Stockport County (3-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "LuGM9azAixxGvO8CbvpCMp0XiOt6JKZbpoLaN10O@maak-agenda.nl",
   "start": "2025-11-20T20:00:00+00:00",
@@ -4047,12 +4047,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Stevenage FC (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ZoDh0QE8XCy69uBSt50Dim2Gc3e3llQSy1VeTJmd@maak-agenda.nl",
   "start": "2025-11-25T19:45:00+00:00",
@@ -4074,12 +4074,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Barnsley [FA] (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "QCJKvp0Gb9onhNCrnwJFvJ5Vf3IWewW8NWBHCJRq@maak-agenda.nl",
   "start": "2025-12-06T15:00:00+00:00",
@@ -4101,12 +4101,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Northampton Town FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "XdzXXaQUkfj7AK2gk8w4hInYS1Tt8XAHoXV1UqY7@maak-agenda.nl",
   "start": "2025-12-13T15:00:00+00:00",
@@ -4128,12 +4128,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Leyton Orient FC (1-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "QFnGtfZ3SQboLnCV473wjDiTfDRKoFulhOws3FnC@maak-agenda.nl",
   "start": "2025-12-26T15:00:00+00:00",
@@ -4155,12 +4155,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Reading FC (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "8VsPk6kifuG6GMMs3DNGBCMX2YZPCikg37uVIgnk@maak-agenda.nl",
   "start": "2025-12-29T19:45:00+00:00",
@@ -4182,12 +4182,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bolton Wanderers FC (3-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "H6VkIvTzMMGqaAch9NKMqtQhQOkHaB7YcKxdwcIV@maak-agenda.nl",
   "start": "2026-01-10T15:00:00+00:00",
@@ -4209,12 +4209,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Plymouth Argyle (0-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Dl5UUjBX9fSdtdsojDtjVqObhqqFnQ2F4aXNg1Tr@maak-agenda.nl",
   "start": "2026-01-17T15:00:00+00:00",
@@ -4236,12 +4236,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Huddersfield Town (2-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "GKeHyxwl9J0WLjHtb0MEtNjERfvYCSdZCNH3ftKu@maak-agenda.nl",
   "start": "2026-01-31T15:00:00+00:00",
@@ -4263,12 +4263,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wigan Athletic (6-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "JBVz5sV26TmK1tLGGrjhOifw6rRRTYnMY5HYnm5w@maak-agenda.nl",
   "start": "2026-02-07T15:01:00+00:00",
@@ -4290,12 +4290,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Exeter City FC (3-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "pW4EZhXGd7y2CPiey0IeTlczfpbntveRdZ2GyBOx@maak-agenda.nl",
   "start": "2026-02-21T15:00:00+00:00",
@@ -4317,12 +4317,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Port Vale FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "HUuuUexnmQ7zT7jdFWO8IftlDB6paXi7RkHbenNF@maak-agenda.nl",
   "start": "2026-03-07T15:00:00+00:00",
@@ -4344,12 +4344,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Rotherham United FC (5-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "duNLk5CfGFKUZL3ZqPJbtdXCaNUZdBkiwRZyHjtm@maak-agenda.nl",
   "start": "2026-03-17T19:45:00+00:00",
@@ -4371,12 +4371,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cardiff City (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "L3T5iSYan9VFH58Ktn8biGbvx9biaQVxFaAmZKcM@maak-agenda.nl",
   "start": "2026-04-06T14:00:00+00:00",
@@ -4398,12 +4398,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Port Vale FC (1-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "O5QDt7cxLl007Vj2cyXEYuitIeAX17P7Rt3SCGUa@maak-agenda.nl",
   "start": "2026-04-16T18:45:00+00:00",
@@ -4425,12 +4425,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Burton Albion FC (1-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "57XcNZzMfxJseus0ZTNKjMvsMr63v1Tc6iOIgT3Z@maak-agenda.nl",
   "start": "2026-04-19T12:00:00+00:00",
@@ -4452,12 +4452,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Mansfield Town FC (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "NUrbvMZWoHzxQTvmJMIaRpuQm9DyOaVvsNfyN4KY@maak-agenda.nl",
   "start": "2026-04-28T18:45:00+00:00",
@@ -4479,12 +4479,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Doncaster Rovers FC (1-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ryAQa6C6AkSqtwKl1wO8zu4mjltyILsGoz7g9yM2@maak-agenda.nl",
   "start": "2026-05-02T14:00:00+00:00",
@@ -4506,12 +4506,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - West Bromwich Albion (0-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "NYAgxaAS0jIYu2HajK7Nbo4U6iPYJOXtXKvlUZA8@maak-agenda.nl",
   "start": "2026-08-01T14:00:00+00:00",
@@ -4533,12 +4533,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Mansfield Town FC (2-1)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Gs52gDUC8qXkaojaunwq78jUNYUk2de8LzaoRxpc@maak-agenda.nl",
   "start": "2026-08-22T14:00:00+00:00",
@@ -4560,12 +4560,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Stevenage FC (0-0)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "YHHGxajc0ZvtufNVh37SP6ZACom184GQKaPbIByY@maak-agenda.nl",
   "start": "2026-09-01T18:45:00+00:00",
@@ -4587,12 +4587,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Sheffield Wednesday (1-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "fkhXsS6cQHxI2YZ5mzvjdEDL7mvgfWv5H5QpVyd8@maak-agenda.nl",
   "start": "2026-09-05T11:30:00+00:00",
@@ -4614,12 +4614,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Barnsley [LC] (3-3)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "xqGY9drvVaQbUgJxVZCn3ZVMjWIQt1RToUPwatRT@maak-agenda.nl",
   "start": "2026-09-15T18:30:00+00:00",
@@ -4641,12 +4641,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Doncaster Rovers FC (0-2)",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "YDlQ9wvCKy4WNWGKsn3v731O9k6apYrlQTC4fTMx@maak-agenda.nl",
   "start": "2026-09-19T14:00:00+00:00",
@@ -4668,12 +4668,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Colchester United FC [EFLT]",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "p2H0k7Trb0Fp6f3oUz8df30xd6ptP6zg76pCZmdv@maak-agenda.nl",
   "start": "2026-09-22T18:00:00+00:00",
@@ -4695,12 +4695,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Notts County FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "0SERc52yObUkXhm1gHqbp6jLtSoiSUVXh66stAPn@maak-agenda.nl",
   "start": "2026-10-03T14:00:00+00:00",
@@ -4722,12 +4722,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Ipswich Town U21 [EFLT]",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "p7yP1Pr8UdbPnc3thfgGoYrBV0bKVgT66A0gnIOL@maak-agenda.nl",
   "start": "2026-10-06T18:00:00+00:00",
@@ -4749,12 +4749,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Burton Albion FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "5rg0zCmCKUjdwnorlWZIIB0IFJ9DUNy8s0WEcsPJ@maak-agenda.nl",
   "start": "2026-10-17T11:30:00+00:00",
@@ -4776,12 +4776,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Luton Town",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "6gSxjbK3Fp1rbJzH3yEd93Zq1nEAjWcshYY49iPg@maak-agenda.nl",
   "start": "2026-10-31T15:00:00+00:00",
@@ -4803,12 +4803,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Oxford United",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "IobuQvXudxaUBckIg3co3vvWFJZwilIGXndH8pPL@maak-agenda.nl",
   "start": "2026-11-14T15:00:00+00:00",
@@ -4830,12 +4830,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Cambridge United FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "JgtrfUOanT69JpCb81tTBVCnd070BSSvynBloyER@maak-agenda.nl",
   "start": "2026-11-28T12:30:00+00:00",
@@ -4857,12 +4857,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Barnsley",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "S1LweK5clpIN2niylqXV3ixszdX7sKrjhZMWHQdf@maak-agenda.nl",
   "start": "2026-12-12T15:00:00+00:00",
@@ -4884,12 +4884,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wycombe Wanderers FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "fbNBb7hH1DSaYeEILXCw3pRBYufN8CkQYQwxke4J@maak-agenda.nl",
   "start": "2026-12-26T15:00:00+00:00",
@@ -4911,12 +4911,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Wigan Athletic",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Yep1lGFtf3IVQm8zVrYlG006BNKROTmW5uHP5B8w@maak-agenda.nl",
   "start": "2027-01-09T15:00:00+00:00",
@@ -4938,12 +4938,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Huddersfield Town",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "6PGq646lEkfdMqTyeE0Xy3WKEpV6Fb0N0Yt7FNIg@maak-agenda.nl",
   "start": "2027-01-19T19:45:00+00:00",
@@ -4965,12 +4965,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bromley FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "IrGnFAPWuB4uMmTVWPKcP6HViWg1jvBPWCq9j0Yq@maak-agenda.nl",
   "start": "2027-01-23T15:00:00+00:00",
@@ -4992,12 +4992,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Blackpool FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "sYALMzoHN4mXKrDjngdJG23fCsJhupH1TfOg3Pk1@maak-agenda.nl",
   "start": "2027-02-06T15:00:00+00:00",
@@ -5019,12 +5019,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Milton Keynes Dons FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "t0kXgJ5SoP0MR488ZLS4cn5brxqeBkuaPVE2LE25@maak-agenda.nl",
   "start": "2027-02-20T15:00:00+00:00",
@@ -5046,12 +5046,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Bradford City FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "enaaGPJaOCNYTObeOxgcy82MGZhRS3OF70q3YGOY@maak-agenda.nl",
   "start": "2027-03-06T15:00:00+00:00",
@@ -5073,12 +5073,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Plymouth Argyle",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "HijW3oDOZ1xTqoh4uRLxuvxtevKlmyb09A4349L2@maak-agenda.nl",
   "start": "2027-03-20T15:00:00+00:00",
@@ -5100,12 +5100,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - AFC Wimbledon",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ik3zMiol7rHGYPoNalQbjelnZio5bllPoCgdacI6@maak-agenda.nl",
   "start": "2027-03-26T15:00:00+00:00",
@@ -5127,12 +5127,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Reading FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "Qjg9jYqeidI3OWBg7BNLL1uILVZQfKRIydbR5KQC@maak-agenda.nl",
   "start": "2027-04-03T14:00:00+00:00",
@@ -5154,12 +5154,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Stockport County",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "ClEpxvKma00ju57H2LAGCSDLfTjFHtaQJRosgPrl@maak-agenda.nl",
   "start": "2027-04-13T18:45:00+00:00",
@@ -5181,12 +5181,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Leicester City",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "jmJTPqfUUVHzIruvpQpCgUn5OaWBBFG5Hk8Va44a@maak-agenda.nl",
   "start": "2027-04-24T14:00:00+00:00",
@@ -5208,12 +5208,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  },
  {
   "source_id": "S123",
   "title": "Peterborough United FC - Leyton Orient FC",
-  "url": "https://www.theposh.com/fixtures",
+  "url": "https://www.theposh.com/matches/fixtures",
   "kind": "event",
   "external_id": "5mALYCDXTDNX4tFMTNbMgnW1jTb2LR6UZwzH3K2q@maak-agenda.nl",
   "start": "2027-05-08T11:30:00+00:00",
@@ -5235,6 +5235,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:43:55+00:00"
+  "fetched_at": "2026-09-30T14:10:55+00:00"
  }
 ]

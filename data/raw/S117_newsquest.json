@@ -1,6 +1,54 @@
 [
  {
   "source_id": "S117",
+  "title": "Woman arrested after 'burglary' at Cambs puppy breeding facility",
+  "url": "https://www.cambstimes.co.uk/news/26594705.woman-arrested-burglary-mbr-acres-huntingdon/",
+  "kind": "article",
+  "external_id": "5ed4033ab4ea94dce3870c4c933693f1",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "A woman has been arrested following a break-in at beagle breeding facility MBR Acres in Huntingdon, Cambridgeshire.",
+  "published": "2026-09-30T12:17:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:36:56+00:00"
+ },
+ {
+  "source_id": "S117",
+  "title": "Red Arrows flying over Cambridgeshire this week — here's when and where to see them",
+  "url": "https://www.cambstimes.co.uk/news/26593941.red-arrows-set-fly-cambridgeshire-friday/",
+  "kind": "article",
+  "external_id": "1a9d5f4af1f771efbd10cfdf34a00181",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "The Red Arrows are set to fly over Cambridgeshire this week — here's how and where you can see them.",
+  "published": "2026-09-30T09:59:54Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T13:36:56+00:00"
+ },
+ {
+  "source_id": "S117",
   "title": "Boy missing in Cambridgeshire found safe and well",
   "url": "https://www.cambstimes.co.uk/news/26591935.police-appeal-delton-14-missing-home-grafham/",
   "kind": "article",
@@ -21,7 +69,7 @@
   "published": "2026-09-29T15:01:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -45,7 +93,7 @@
   "published": "2026-09-29T14:51:57Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -69,7 +117,7 @@
   "published": "2026-09-29T14:34:43Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -93,7 +141,7 @@
   "published": "2026-09-29T14:16:24Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -117,7 +165,7 @@
   "published": "2026-09-29T13:58:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -141,7 +189,7 @@
   "published": "2026-09-29T11:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -165,7 +213,7 @@
   "published": "2026-09-29T09:30:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -189,7 +237,7 @@
   "published": "2026-09-29T09:01:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -213,7 +261,7 @@
   "published": "2026-09-29T03:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -237,7 +285,7 @@
   "published": "2026-09-29T14:50:47Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -261,7 +309,7 @@
   "published": "2026-09-29T14:48:11Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -285,7 +333,7 @@
   "published": "2026-09-28T16:33:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -309,7 +357,7 @@
   "published": "2026-09-28T14:21:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -333,7 +381,7 @@
   "published": "2026-09-28T13:59:08Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -357,7 +405,7 @@
   "published": "2026-09-28T13:26:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -381,7 +429,7 @@
   "published": "2026-09-28T12:47:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -405,7 +453,7 @@
   "published": "2026-09-28T10:05:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -429,7 +477,7 @@
   "published": "2026-09-28T10:02:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -453,7 +501,7 @@
   "published": "2026-09-28T09:50:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -477,7 +525,7 @@
   "published": "2026-09-28T09:35:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -501,7 +549,7 @@
   "published": "2026-09-28T08:36:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -525,7 +573,7 @@
   "published": "2026-09-28T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -549,7 +597,7 @@
   "published": "2026-09-28T03:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -573,7 +621,7 @@
   "published": "2026-09-27T14:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -597,7 +645,7 @@
   "published": "2026-09-27T11:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -621,7 +669,7 @@
   "published": "2026-09-27T05:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -645,7 +693,7 @@
   "published": "2026-09-27T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -669,7 +717,7 @@
   "published": "2026-09-27T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -693,7 +741,7 @@
   "published": "2026-09-27T16:43:55Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -717,7 +765,7 @@
   "published": "2026-09-27T16:41:46Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -741,7 +789,7 @@
   "published": "2026-09-26T13:33:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -765,7 +813,7 @@
   "published": "2026-09-26T13:02:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -789,7 +837,7 @@
   "published": "2026-09-26T13:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -813,7 +861,7 @@
   "published": "2026-09-26T13:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -837,7 +885,7 @@
   "published": "2026-09-26T12:49:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -861,7 +909,7 @@
   "published": "2026-09-26T11:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -885,7 +933,7 @@
   "published": "2026-09-26T10:35:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -909,7 +957,7 @@
   "published": "2026-09-26T10:31:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -933,7 +981,7 @@
   "published": "2026-09-26T10:02:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -957,7 +1005,7 @@
   "published": "2026-09-26T09:30:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -981,7 +1029,7 @@
   "published": "2026-09-26T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -1005,7 +1053,7 @@
   "published": "2026-09-26T03:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -1029,7 +1077,7 @@
   "published": "2026-09-24T04:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -1053,7 +1101,7 @@
   "published": "2026-09-25T12:17:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -1077,7 +1125,7 @@
   "published": "2026-09-25T12:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -1101,7 +1149,7 @@
   "published": "2026-09-25T11:42:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -1125,7 +1173,7 @@
   "published": "2026-09-25T11:19:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  },
  {
   "source_id": "S117",
@@ -1149,54 +1197,6 @@
   "published": "2026-09-25T09:33:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "Recap after crash involving pedestrian and car shuts busy road",
-  "url": "https://www.cambstimes.co.uk/news/26580974.wisbech-road-march-closed-police-crash/",
-  "kind": "article",
-  "external_id": "e569d82bcb1f4f988278aad42222e72f",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Wisbech Road, in March, is closed this morning (Friday, September 25) due to a crash.",
-  "published": "2026-09-25T08:42:06Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
- },
- {
-  "source_id": "S117",
-  "title": "28 per cent of Year 6 children in Cambridgeshire's poorest areas have obesity",
-  "url": "https://www.cambstimes.co.uk/news/26572186.cambridgeshire-childhood-obesity-rates-remain-high/",
-  "kind": "article",
-  "external_id": "d221d17ec36502f37f261f7a9990e756",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Obesity rates remain a major health challenge despite ongoing efforts to improve public health across Cambridgeshire.",
-  "published": "2026-09-25T04:00:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T08:47:13+00:00"
+  "fetched_at": "2026-09-30T13:36:56+00:00"
  }
 ]

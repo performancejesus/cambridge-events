@@ -2,11 +2,12 @@
 
 from __future__ import annotations
 
+import os
 import sqlite3
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = ROOT / "data" / "events.db"
+DB_PATH = Path(os.environ.get("EVENTS_DB") or ROOT / "data" / "events.db")   # этап 7c: EVENTS_DB — другая копия базы (проверки v9 на снимке до этапа)
 
 SCHEMA = """
 PRAGMA foreign_keys = ON;
