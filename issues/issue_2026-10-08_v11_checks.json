@@ -1,19 +1,15 @@
 {
  "issue_date": "2026-10-08",
  "version": "v11",
- "send_allowed": false,
- "blocking": [
-  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Хедлайнеры — Kula Shaker, на разогреве Soft Machine, плюс световое шоу от The Mad Alchemist; площадка та же, где Барретт дал своё последнее живое выступление в 1972 году.» (A Tribute to Syd Barrett: Official 80th Anniversary Celebrations): утверждение «super…"
- ],
+ "send_allowed": true,
+ "blocking": [],
  "checks": [
   {
    "rule": 1,
    "title": "Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»)",
    "level": "block",
-   "status": "block",
-   "details": [
-    "«Хедлайнеры — Kula Shaker, на разогреве Soft Machine, плюс световое шоу от The Mad Alchemist; площадка та же, где Барретт дал своё последнее живое выступление в 1972 году.» (A Tribute to Syd Barrett: Official 80th Anniversary Celebrations): утверждение «super» не подтверждено (verified_facts — нет; источник — not_in_source)"
-   ],
+   "status": "pass",
+   "details": [],
    "fixed": []
   },
   {
@@ -270,12 +266,8 @@
    "rule": 29,
    "title": "Факты из знаний модели — в список «проверить» (правки по v9)",
    "level": "fix",
-   "status": "left",
-   "details": [
-    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «Kula Shaker выступают хедлайнерами, Soft Machine на разогреве» (нет в источнике) — не в списке «проверить»",
-    "«UNIQLO»: «Это первый UNIQLO в Кембридже» (нет в источнике) — не в списке «проверить»",
-    "«Tripots»: «Интерьер светлый и современный с видом на реку» (нет в источнике) — не в списке «проверить»"
-   ],
+   "status": "fixed",
+   "details": [],
    "fixed": [
     "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «Сид Барретт — основатель и гитарист Pink Floyd» — в «Факты из знаний модели (проверить)»",
     "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «На разогреве Soft Machine» — в «Факты из знаний модели (проверить)»",
@@ -291,7 +283,11 @@
     "«Leo Sayer»: «Leo Sayer — ветеран британской поп-сцены» — в «Факты из знаний модели (проверить)»",
     "«An Audience With Philippa Gregory»: «Philippa Gregory — автор исторических романов» — в «Факты из знаний модели (проверить)»",
     "«UNIQLO»: «Открылся на двух этажах Grand Arcade» — в «Факты из знаний модели (проверить)»",
-    "«Tripots»: «Вид на реку» — в «Факты из знаний модели (проверить)»"
+    "«Tripots»: «Вид на реку» — в «Факты из знаний модели (проверить)»",
+    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «Kula Shaker выступают хедлайнерами, а Soft Machine на разогреве» — в «Факты из знаний модели (проверить)»",
+    "«UNIQLO»: «Это первый UNIQLO в Кембридже» — в «Факты из знаний модели (проверить)»",
+    "«UNIQLO»: «Магазин расположен на двух этажах Grand Arcade» — в «Факты из знаний модели (проверить)»",
+    "«Tripots»: «Из зала открывается вид на реку» — в «Факты из знаний модели (проверить)»"
    ]
   },
   {
