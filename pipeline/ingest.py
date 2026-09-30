@@ -197,6 +197,63 @@ def _merge_into(con: sqlite3.Connection, k: int, d: int) -> None:
     con.execute("DELETE FROM events WHERE event_id=?", (d,))
 
 
+MLC_SOURCE = "S151"
+MLC_STOP = {"the", "and", "with", "tour", "live", "show", "night", "music", "concert", "tickets", "ticket", "cambridge",
+            "event", "events", "2026", "2027", "presents", "featuring", "plus", "support", "special", "guests", "guest",
+            "evening", "band", "gig", "uk"}
+
+
+def _slug_tokens(u: str | None) -> set[str]:
+    parts = [x for x in (u or "").split("?")[0].rstrip("/").split("/") if x and not x.isdigit()]
+    return {t for t in re.split(r"[-_.+]", parts[-1].lower() if parts else "") if len(t) >= 4 and t not in MLC_STOP}
+
+
+def mlc_pairs(con: sqlite3.Connection) -> list[tuple[int, int, str]]:
+    """Пары (основное, дубль musiclivecambridge, пояснение): будущее событие, известное только по S151, и событие другого
+    источника той же даты и площадки, у которого адрес страницы (slug) или название делит с адресом S151 отличительное
+    слово. «The bEAT + The Selecter» (S151) и «The bEAT: DANCE CRAZED TOO UK TOUR» (Corn Exchange) — одно событие."""
+    out = []
+    for e in con.execute("""SELECT e.*, s.url AS mlc_url FROM events e JOIN event_sources s USING(event_id)
+            WHERE s.source_id=? AND coalesce(e.date_end, e.date_start) >= date('now')
+            AND NOT EXISTS (SELECT 1 FROM event_sources x WHERE x.event_id=e.event_id AND x.source_id!=?)""",
+                         (MLC_SOURCE, MLC_SOURCE)).fetchall():
+        toks = _slug_tokens(e["mlc_url"]) - set(norm_venue(e["venue_name"]).split())
+        if not toks:
+            continue
+        for o in con.execute("SELECT * FROM events WHERE date_start=? AND event_id!=? AND status NOT IN ('cancelled')",
+                             (e["date_start"], e["event_id"])).fetchall():
+            same_venue = (e["venue_id"] and e["venue_id"] == o["venue_id"]) or \
+                (e["postcode"] and (e["postcode"] or "").replace(" ", "") == (o["postcode"] or "").replace(" ", "")) or \
+                (norm_venue(e["venue_name"]) and norm_venue(e["venue_name"]) == norm_venue(o["venue_name"]))
+            if not same_venue:
+                continue
+            srcs = con.execute("SELECT source_id, url FROM event_sources WHERE event_id=?", (o["event_id"],)).fetchall()
+            if any(x[0] == MLC_SOURCE for x in srcs):
+                continue
+            other = set().union(*[_slug_tokens(x[1]) for x in srcs] + [_slug_tokens(o["url"])]) | \
+                {t for t in norm_title(o["title"]).split() if len(t) >= 4 and t not in MLC_STOP}
+            common = toks & other
+            if common:
+                out.append((o["event_id"], e["event_id"], f"{o['title']} ← {e['title']} ({e['date_start']}; {', '.join(sorted(common))})"))
+                break
+    return out
+
+
+def merge_mlc(con: sqlite3.Connection) -> dict:
+    """Этап 7d (разрешено владельцем проекта после 7c: «склеивать по slug + дата + площадка», снимок базы до изменения):
+    дубли musiclivecambridge переносятся в событие площадки. История выпусков, страницы и статусы — на основное."""
+    pairs = mlc_pairs(con)
+    for k, d_, _ in pairs:
+        for table in ("issue_items", "event_pages", "page_status", "ticket_vendors", "lineup_cache"):
+            try:
+                con.execute(f"UPDATE OR IGNORE {table} SET event_id=? WHERE event_id=?", (k, d_))
+                con.execute(f"DELETE FROM {table} WHERE event_id=?", (d_,))
+            except sqlite3.OperationalError:
+                pass   # таблицы ещё нет
+        _merge_into(con, k, d_)
+    return {"mlc_merged": len(pairs), "mlc_pairs": [x[2] for x in pairs]}
+
+
 def merge_same(con: sqlite3.Connection) -> dict:
     """Дубли внутри источника (решение после этапа 6): один сайт публикует событие дважды («Fungi Field Day» и
     «Fungi Field Day 2026» — год отбрасывается нормализацией), а dedupe не склеивает записи одного источника.

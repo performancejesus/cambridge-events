@@ -80,6 +80,61 @@ def test_league_two_not_confirmed():
     assert r30_football_league.confirmed(ctx, cands, "Матч League One")
 
 
+# --- этап 7d: правки по v10 ---
+
+def test_film_names_latin():
+    """«В кино» v10: «Пол Гринграсс», «Томасин Маккензи», «Джо Кой» — имена из описания Wikipedia — кириллицей."""
+    from tests.issue_rules.r09_latin_names import cyrillic_only, names_of
+    film = {"kind": "film_release", "title": "The Uprising",
+            "wiki_extract": "The Uprising is a 2026 film directed by Paul Greengrass, starring Andrew Garfield and "
+                            "Thomasin McKenzie. Voice cast includes Jo Koy."}
+    names = names_of([film])
+    text = "Пол Гринграсс поставил фильм; Andrew Garfield и Томасин Маккензи; среди голосов — Джо Кой."
+    bad = {n for n in names if cyrillic_only(n, text)}
+    assert bad == {"Paul Greengrass", "Thomasin McKenzie", "Jo Koy"}
+
+
+def test_opening_stage_conflict():
+    """Bridge Bagels v10: «Открылось 28 сентября», а в описании — «скоро откроется»."""
+    from pipeline.issue_fixes import stage_conflict
+    c = {"kind": "venue_news", "stage": "opened", "date": "2026-09-28", "date_basis": "stated"}
+    it = {"blurb_ru": "В Кембридже скоро откроется пекарня бейглов.", "blurb_en": "A bagel bakery is opening soon."}
+    assert stage_conflict(c, it)
+    assert not stage_conflict(c, {"blurb_ru": "Пекарня бейглов открылась на Bridge Street.", "blurb_en": ""})
+    w = issue.Window(date(2026, 10, 8), date(2026, 10, 8), date(2026, 10, 18))
+    soon = {"kind": "venue_news", "stage": "coming_soon", "date": "2026-09-28", "date_basis": "stated"}
+    assert issue.when(soon, w, "ru") == "Скоро откроется"   # прошедшая дата — не дата открытия
+
+
+def test_festival_reminder_and_announcement():
+    """Ежегодные фестивали: напоминание за 4–6 недель, анонс — при новой стадии, иначе не повторяем."""
+    w = issue.Window(date(2026, 10, 8), date(2026, 10, 8), date(2026, 10, 18))
+    row = lambda start, stage, since: {"date_start": start, "stage": stage, "stage_since": since}
+    assert issue.festival_stage(row("2026-11-05", "дата объявлена", "2026-08-01"), w)[0] == "reminder"
+    assert issue.festival_stage(row("2026-12-05", "дата объявлена", "2026-09-27T18:00"), w)[0] == "announced"
+    assert issue.festival_stage(row("2026-12-05", "в продаже", "2026-10-01"), w)[0] == "on_sale"
+    assert issue.festival_stage(row("2026-12-05", "дата объявлена", "2026-08-01"), w) is None
+
+
+def test_recurring_town_and_shared_page():
+    """7c: «Cambridge Christmas lights switch-on» совпало с огнями Висбеча; Stourbridge Fair взял дату «Гамлета»."""
+    import re
+    from pipeline.recurring import dates_near, in_town
+    wisbech = {"title": "CHRISTMAS LIGHTS SWITCH ON", "venue_name": None, "address": None, "zone": "Кембриджшир, дальше часа",
+               "url": "https://www.wisbechtowncouncil.gov.uk/local-events?month=2026-11"}
+    assert not in_town(wisbech, "Cambridge")
+    page = ("attend September 30, 2026 Leper Chapel. Hamlet by in situ: Wednesday 30 Sep. " + "x " * 400 +
+            "Stourbridge Fair which was the largest fair in Europe at one point")
+    rx = re.compile("Stourbridge Fair", re.I)
+    assert dates_near(page, rx, {"09"}, "2026-09-01") == []
+
+
+def test_mlc_slug_tokens():
+    from pipeline.ingest import _slug_tokens
+    assert "beat" in _slug_tokens("https://musiclivecambridge.com/events/the-beat-the-selecter/")
+    assert "cambridge" not in _slug_tokens("https://x/the-beat-cambridge/")
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

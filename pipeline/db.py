@@ -251,6 +251,11 @@ MIGRATIONS = [
     ("recurring_events", "manual_end", "TEXT"),
     ("recurring_events", "venue", "TEXT"),            # место проведения — для зоны события
     ("recurring_events", "postcode", "TEXT"),
+    ("recurring_events", "town", "TEXT"),             # этап 7d: событие только в этом городе (огни Кембриджа ≠ Висбеча)
+    ("recurring_events", "shared_page", "INTEGER"),   # 1 — на странице много событий: дата только рядом с названием
+    ("recurring_events", "festival", "INTEGER"),      # 1 — ежегодный фестиваль из списка этапа 7d (анонс + напоминание)
+    ("recurring_events", "stage", "TEXT"),            # ожидаем | дата объявлена | в продаже
+    ("recurring_events", "stage_since", "TEXT"),      # с какого времени этот статус (по истории события)
     ("venue_news", "date_basis", "TEXT"),             # stated | publication_date (дата статьи о свежем открытии)
     ("articles", "text_source", "TEXT"),              # page | rss | feed — что ушло в модель
     ("events", "address_unknown", "INTEGER"),         # 1 — город Cambridge без адреса, зона «центр» условно

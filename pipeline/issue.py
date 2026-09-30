@@ -503,6 +503,12 @@ def _drop_repeats(con, w: Window, p: Pools) -> None:
         if k in "AT":   # анонс уже был как анонс или старт продаж
             prev += [seen.get(o, {}).get(x) for o in "AT" for x in keys]
         prev = [x for x in prev if x]
+        fest = c.get("festival")
+        if prev and fest:   # этап 7d: у фестиваля новая стадия (продажа, напоминание) — показ после прошлого не повтор
+            start = min(d(x[0]) for x in c["dates"])
+            edge = start - timedelta(weeks=REMIND_WEEKS[1]) if fest["stage"] == "reminder" else d((fest["since"] or "")[:10] or None)
+            if edge and max(prev) < edge.isoformat():
+                continue
         if prev:   # C — только если эта же отмена уже была
             p.excluded[f"уже было в выпуске от {max(prev)} (история выпусков)"].append(c["title"])
             del p.candidates[cid]
@@ -714,6 +720,22 @@ def _find_duplicates(p: Pools, excluded_rows: list) -> None:
                 p.duplicates.append((id1, id2, f"{t1} / {t2}"))
 
 
+REMIND_WEEKS = (4, 6)   # этап 7d: напоминание о ежегодном фестивале за 4–6 недель
+
+
+def festival_stage(e, w: Window) -> tuple[str, str] | None:
+    """Этап 7d (бриф, п. 5): как только объявлены дата или продажа билетов — пункт в «Новых анонсах»; за 4–6 недель —
+    напоминание. (стадия, пояснение) или None, если в этом выпуске фестиваль не показываем."""
+    start = d(e["date_start"])
+    weeks = (start - w.issue).days / 7
+    if REMIND_WEEKS[0] <= weeks <= REMIND_WEEKS[1]:
+        return "reminder", f"напоминание: через {round(weeks)} нед."
+    since = (e["stage_since"] or "")[:10]
+    if since and since >= (w.issue - timedelta(days=ANNOUNCE_DAYS)).isoformat():
+        return ("on_sale", "билеты в продаже") if e["stage"] == "в продаже" else ("announced", f"дата объявлена {since}")
+    return None
+
+
 def _announcements(con, w: Window, p: Pools) -> None:
     """Первый выпуск: заметные события дальше окна, объявленные недавно по данным источников — статья о событии
     или старт продаж за последние ANNOUNCE_DAYS дней, найденная дата ежегодного события."""
@@ -739,9 +761,17 @@ def _announcements(con, w: Window, p: Pools) -> None:
     for e in con.execute("""SELECT e.*, u.on_sale_date FROM event_updates u JOIN events e USING(event_id)
             WHERE u.kind='on_sale' AND e.date_start > ? AND u.first_seen_at >= ?""", (after, since)).fetchall():
         add(e, f"старт продаж {e['on_sale_date'] or '?'}")
-    for e in con.execute("""SELECT e.*, r.name AS rec_name FROM recurring_events r JOIN events e USING(event_id)
-            WHERE e.date_start > ? AND r.found_date IS NOT NULL""", (after,)).fetchall():
-        add(e, f"дата ежегодного события ({e['rec_name']})")
+    cols = {r[1] for r in con.execute("PRAGMA table_info(recurring_events)")}
+    for e in con.execute(f"""SELECT e.*, r.name AS rec_name, r.rec_id,
+            {"r.festival, r.stage, r.stage_since" if "stage" in cols else "0 AS festival, NULL AS stage, NULL AS stage_since"}
+            FROM recurring_events r JOIN events e USING(event_id)
+            WHERE e.date_start > ? AND r.found_date IS NOT NULL AND r.patterns != '[]'""", (after,)).fetchall():
+        fest = festival_stage(e, w)
+        if e["festival"] and not fest:
+            continue   # этап 7d: фестиваль из списка — только при новом статусе или за 4–6 недель (не в каждом выпуске)
+        add(e, f"дата ежегодного события ({e['rec_name']})" + (f"; {fest[1]}" if fest else ""))
+        if fest and f"A{e['event_id']}" in p.candidates:
+            p.candidates[f"A{e['event_id']}"]["festival"] = {"rec_id": e["rec_id"], "stage": fest[0], "since": e["stage_since"]}
 
 
 def _tickets(con, w: Window, p: Pools) -> None:
@@ -1260,6 +1290,10 @@ def when(c: dict, w: Window, lang: str) -> str:
         stage = {"en": {"opened": "Opened", "coming_soon": "Opening soon", "closed": "Closed"},
                  "ru": {"opened": "Открылось", "coming_soon": "Скоро откроется", "closed": "Закрылось"}}[lang][c["stage"]]
         dt = d(c["date"])
+        if c["stage"] == "coming_soon":   # этап 7d (правки по v10): дата «скоро откроется» — не дата открытия
+            if dt and c.get("date_basis") == "stated" and dt >= w.issue:
+                return f"Opens {_day(dt, lang, weekday=False)}" if lang == "en" else f"Откроется {_day(dt, lang, weekday=False)}"
+            return stage
         if dt and c.get("date_basis") == "publication_date":
             # правки по v5: дата открытия = дата статьи — не «Открылось 17 августа», а месяц или «недавно»
             if (w.issue - dt).days <= 21:

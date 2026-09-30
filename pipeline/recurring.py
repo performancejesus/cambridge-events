@@ -28,15 +28,18 @@ MONTH_FIRST_RE = re.compile(rf"\b{_MON}\s+({_DAY})(?:\s*(?:-|–|to)\s*(?:{_MON}
 def seed(con: sqlite3.Connection) -> None:
     for r in json.loads(SEED.read_text()):
         con.execute("""INSERT INTO recurring_events(rec_id, name, expected_month, official_url, check_method, patterns, note,
-            tickets, page_date, manual_start, manual_end, venue, postcode) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
+            tickets, page_date, manual_start, manual_end, venue, postcode, town, shared_page, festival)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ON CONFLICT(rec_id) DO UPDATE SET name=excluded.name, expected_month=excluded.expected_month,
             official_url=excluded.official_url, check_method=excluded.check_method, patterns=excluded.patterns,
             note=excluded.note, tickets=excluded.tickets, page_date=excluded.page_date,
             manual_start=excluded.manual_start, manual_end=excluded.manual_end, venue=excluded.venue,
-            postcode=excluded.postcode""",
+            postcode=excluded.postcode, town=excluded.town, shared_page=excluded.shared_page,
+            festival=excluded.festival""",
                     (r["rec_id"], r["name"], r["month"], r["url"], r["method"], json.dumps(r["patterns"]), r.get("note"),
                      int(bool(r.get("tickets"))), r.get("page_date"), r.get("manual_start") or None,
-                     r.get("manual_end") or None, r.get("venue"), r.get("postcode")))
+                     r.get("manual_end") or None, r.get("venue"), r.get("postcode"), r.get("town"),
+                     int(bool(r.get("shared_page"))), int(bool(r.get("festival")))))
 
 
 def dates_in(text: str, months: set[str], today: str) -> list[tuple[str, str | None]]:
@@ -66,6 +69,48 @@ def dates_in(text: str, months: set[str], today: str) -> list[tuple[str, str | N
     return sorted(set(out))
 
 
+def dates_near(text: str, rx: re.Pattern, months: set[str], today: str, span: int = 300) -> list[tuple[str, str | None]]:
+    """Этап 7d: страница с календарём многих событий (CPPF): дата — только рядом с названием события (±span знаков).
+    В 7c у Stourbridge Fair взялась дата «Гамлета» 30.09 с той же страницы."""
+    text = re.sub(r"\s+", " ", text)
+    out = set()
+    for m in rx.finditer(text):
+        out |= set(dates_in(text[max(0, m.start() - span): m.end() + span], months, today))
+    return sorted(out)
+
+
+def in_town(e: sqlite3.Row, town: str | None) -> bool:
+    """Этап 7d: у ежегодного события города (огни, ярмарки Кембриджа) — событие должно быть в этом городе: в 7c
+    «Cambridge Christmas lights switch-on» совпало с огнями Висбеча (#810)."""
+    if not town:
+        return True
+    if town == "Cambridge" and e["zone"] and e["zone"] != "центр":
+        return False
+    text = " ".join(str(e[k] or "") for k in ("title", "venue_name", "address", "url"))
+    others = re.search(r"\b(Wisbech|Ely|St Ives|Huntingdon|March|Whittlesey|St Neots|Peterborough|Royston|Saffron Walden|"
+                       r"Newmarket|Haverhill|King'?s Lynn|Bury St Edmunds|Chatteris|Ramsey)\b", text, re.I)
+    return not others or bool(re.search(rf"\b{re.escape(town)}\b", e["title"] or "", re.I))
+
+
+def stage_of(con: sqlite3.Connection, r: sqlite3.Row) -> tuple[str, str | None]:
+    """Статус ежегодного события для таблицы и «Новых анонсов»: ожидаем | дата объявлена | в продаже, и с какого
+    времени (по истории события: первое появление даты, старт продаж или смена статуса на on_sale)."""
+    if not r["found_date"]:
+        return "ожидаем", None
+    e = con.execute("SELECT * FROM events WHERE event_id=?", (r["event_id"],)).fetchone() if r["event_id"] else None
+    since = (e["first_seen_at"] if e else r["last_checked_at"]) or None
+    if e and r["tickets"]:
+        paid = e["status"] == "on_sale" and not re.match(r"\s*free\b", e["price_text"] or "", re.I) and (
+            (e["price_from"] or 0) > 0 or e["price_text"])
+        upd = con.execute("SELECT min(first_seen_at) FROM event_updates WHERE event_id=? AND kind='on_sale'",
+                          (e["event_id"],)).fetchone()[0]
+        if paid or upd:
+            h = con.execute("SELECT min(changed_at) FROM status_history WHERE event_id=? AND status='on_sale'",
+                            (e["event_id"],)).fetchone()[0]
+            return "в продаже", upd or h or since
+    return "дата объявлена", since
+
+
 def _page_text(http: PoliteClient, url: str) -> str:
     html = http.get(url).text
     html = re.sub(r"<script.*?</script>|<style.*?</style>", " ", html, flags=re.S)
@@ -79,6 +124,10 @@ def check(con: sqlite3.Connection, http: PoliteClient, run_id: str, fetch_pages:
     for r in con.execute("SELECT * FROM recurring_events ORDER BY rec_id").fetchall():
         months = set(r["expected_month"].split(","))
         pats = json.loads(r["patterns"])
+        if not pats:   # этап 7d: строки каникул (H-…, pipeline/school_holidays) — не события; пустой шаблон совпадал с любым
+            con.execute("UPDATE recurring_events SET event_id=NULL, found_source=? WHERE rec_id=? AND event_id IS NOT NULL",
+                        (r["official_url"], r["rec_id"]))
+            continue
         rx = re.compile("|".join(re.escape(p) for p in pats), re.I)
         found = source = end = None
         eid = None
@@ -89,13 +138,14 @@ def check(con: sqlite3.Connection, http: PoliteClient, run_id: str, fetch_pages:
         for e in ([] if found else con.execute(
                 "SELECT * FROM events WHERE date_start BETWEEN ? AND ? AND status NOT IN ('cancelled') AND source_type!='recurring'",
                 (today, horizon))):
-            if rx.search(e["title"]) and e["date_start"][5:7] in months:
+            if rx.search(e["title"]) and e["date_start"][5:7] in months and in_town(e, r["town"]):
                 found, end, source, eid = e["date_start"], e["date_end"], f"событие #{e['event_id']}", e["event_id"]
                 break
         # 2) официальная страница (если robots.txt разрешает; защищённые сайты — method=manual)
         if not found and fetch_pages and r["check_method"] in ("page", "page_curl"):
             try:
-                ds = dates_in(_page_text(http, r["official_url"]), months, today)
+                page = _page_text(http, r["official_url"])
+                ds = dates_near(page, rx, months, today) if r["shared_page"] else dates_in(page, months, today)
                 if ds:
                     found, source = ds[0][0], r["official_url"]
                     end = ds[0][1]
@@ -136,11 +186,25 @@ def check(con: sqlite3.Connection, http: PoliteClient, run_id: str, fetch_pages:
             eid = cur.lastrowid
             con.execute("INSERT INTO status_history(event_id, status, changed_at, source_id, note) VALUES (?,?,?,?,?)",
                         (eid, status, run_id, None, f"ежегодное {r['rec_id']}: дата найдена ({source})"))
+        # этап 7d: найденное раньше больше не подтверждается (другой город, дата с чужого события страницы) — сбрасываем
+        stale = False
+        if not found and r["found_date"] and r["found_source"] != "вручную":
+            old = con.execute("SELECT * FROM events WHERE event_id=?", (r["event_id"],)).fetchone() if r["event_id"] else None
+            if old is None or not in_town(old, r["town"]) or (old["source_type"] == "recurring" and r["shared_page"]) \
+                    or not rx.search(old["title"] or r["name"]):
+                stale = True
+        if stale:
+            con.execute("""UPDATE recurring_events SET found_date=NULL, found_date_end=NULL, found_source=NULL, event_id=NULL
+                WHERE rec_id=?""", (r["rec_id"],))
         con.execute("""UPDATE recurring_events SET last_checked_at=?, found_date=coalesce(?, found_date),
             found_date_end=CASE WHEN ? IS NOT NULL THEN ? ELSE coalesce(?, found_date_end) END,
             found_source=coalesce(?, found_source), event_id=coalesce(?, event_id) WHERE rec_id=?""",
                     (run_id, found, found, end, only_end, source if found else None, eid, r["rec_id"]))
         row = con.execute("SELECT * FROM recurring_events WHERE rec_id=?", (r["rec_id"],)).fetchone()
+        stage, since = stage_of(con, row)
+        if stage != row["stage"] or not row["stage_since"]:
+            con.execute("UPDATE recurring_events SET stage=?, stage_since=? WHERE rec_id=?",
+                        (stage, since or run_id, r["rec_id"]))
         if row["found_date"]:
             status = "дата найдена" if row["found_source"] != "вручную" else "вручную: дата внесена"
         elif row["found_date_end"]:
@@ -149,5 +213,6 @@ def check(con: sqlite3.Connection, http: PoliteClient, run_id: str, fetch_pages:
             status = "вручную" if r["check_method"] == "manual" else "ожидаем"
         report.append({"rec_id": r["rec_id"], "name": r["name"], "month": r["expected_month"],
                        "found_date": row["found_date"], "found_date_end": row["found_date_end"],
-                       "source": source if found else (source or row["found_source"]), "status": status})
+                       "source": source if found else (source or row["found_source"]), "status": status,
+                       "stage": stage, "stage_since": since, "festival": bool(row["festival"]), "stale": stale})
     return report

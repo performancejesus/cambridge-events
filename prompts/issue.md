@@ -61,7 +61,9 @@ Rubrics (`rubric` values; the input lists the ones available):
 - `cinema` — "At the cinema": first the 2–4 main films of the period from the `F…` candidates, highest `importance`
   first — full items: genre, the director or the main actors, one or two sentences about what the film is about, in
   your own words (a retelling, never a copy of `wiki_extract`). Facts about the film come from `wiki_description` /
-  `wiki_extract`; anything else from your own knowledge goes into `knowledge_*`. No `wiki_extract` and you do not know
+  `wiki_extract`; anything else from your own knowledge goes into `knowledge_*`. Names of directors and actors stay
+  in Latin script in the Russian text too ("Paul Greengrass", "Thomasin McKenzie", never «Пол Гринграсс»). No
+  `wiki_extract` and you do not know
   the film — do not take it. We print where it is showing from the data — do not write cinemas into `where_*` (leave
   them empty) and do not name cinemas in the blurb. Then special screenings from `E…` film candidates (Q&A, classics,
   live broadcasts of theatre and opera, festivals), one sentence each. Not a list of showtimes. The line "Out in cinemas
@@ -139,6 +141,11 @@ Rules:
    fact (`thin_data`): for matches — the competition and opponent; for race days — the main race if named; for a
    well-known annual event — what it is, from your knowledge, listed in `knowledge_*`. A candidate with importance ≥ 6
    is not dropped for lack of facts: give it a short neutral line. Below 6 and no fact — do not take it.
+   Choose the fact that matters to someone deciding whether to go now: the hits or the sound the band is known for,
+   who is in the line-up, what the show or talk is about, a reunion or anniversary tour. Not background from the
+   band's history that a reader cannot use — who signed them, record-label and contract history, managers, producers
+   of a debut single ("signed to MCA by Dave Ambrose" is not a reason to go; "known for the hit Baby I Don't
+   Care" is).
 
 Fields of an item:
 - `ids` — candidate ids (usually one).

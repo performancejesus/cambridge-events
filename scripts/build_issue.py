@@ -45,7 +45,7 @@ def allowed(prefix: str, rubric: str) -> bool:
 
 def model_rubrics(w: issue.Window) -> list[str]:
     """Рубрики, которые пишет модель: «Каникулы» собираются без неё (правки по v4)."""
-    return [r for r in w.rubrics() if r not in ("holidays", "colleges")]   # 7c: «В колледжах» — тоже без модели
+    return [r for r in w.rubrics() if r not in ("holidays", "colleges", "museums")]   # 7c/7d: «В колледжах», «В музеях» — тоже без модели
 
 
 def schema_for(w: issue.Window) -> dict:
@@ -145,6 +145,9 @@ def fits(rubric: str, c: dict, w: issue.Window) -> bool:
     if rubric == "colleges":   # этап 7c: строки без модели (pipeline/colleges.py)
         from pipeline.colleges import college_of
         return c.get("kind") == "event" and bool(college_of(c))
+    if rubric == "museums":   # этап 7d: строки без модели (pipeline/museums.py)
+        from pipeline.museums import place_of
+        return c.get("kind") == "event" and bool(place_of(c))
     if rubric == "holidays":
         return c.get("kind") == "programme"
     if rubric == "kids":   # правки по v8: только события для детей (не распродажи и дни переработки)
@@ -478,6 +481,7 @@ def current_not_verified(con, kd: dict) -> list[tuple[str, str, str]]:
 # «Причины отбора — явно»: заданное число пунктов по рубрикам (как в prompts/issue.md, правило 3)
 RUBRIC_LIMITS = {"theme": (3, 6), "weekend": (3, 5), "weekdays": (4, 6), "cinema": (0, 4), "talks": (2, 5),
                  "colleges": (0, 0),   # этап 7c: только компактные строки (3–6, pipeline/colleges.py)
+                 "museums": (0, 0),    # этап 7d: только компактные строки (4–6, pipeline/museums.py)
                  "exhibitions": (2, 4), "free": (3, 4), "kids": (3, 4), "sport": (0, 4), "out_of_town": (3, 4),
                  "county": (0, 3), "new_announcements": (3, 5), "tickets": (0, 3), "cancelled": (0, 3),
                  "new_in_town": (5, 6)}
@@ -849,6 +853,9 @@ def base_fit(rub: str, c: dict) -> bool:
     if rub == "colleges":
         from pipeline.colleges import college_of
         return k == "event" and bool(college_of(c)) and c.get("zone") == "центр"
+    if rub == "museums":
+        from pipeline.museums import place_of
+        return k == "event" and bool(place_of(c)) and c.get("zone") in issue.LISTED_ZONES
     if rub == "free":
         return k == "event" and bool(c.get("free_tag"))
     if rub == "kids":
@@ -902,6 +909,15 @@ def editor_lists(result: dict, pools: issue.Pools, w: issue.Window, removed: dic
             why = (result.get("colleges_why") or {}).get(cid)
             if not why and (SKIP_RE.search(c["title"]) or NOT_HERE_VENUE_RE.search(c.get("venue") or "")):
                 why = "служба, выпускники, ADC или музей — не в эту рубрику"
+            why = why or ("доступ restricted" if c.get("access") == "restricted" else "дубль или не прошёл отбор рубрики")
+            return False, (why, why)
+        if rub == "museums":   # этап 7d: причины отбора рубрики «В музеях и усадьбах» (pipeline/museums.select)
+            from pipeline.museums import NEW_EXHIBITION_DAYS, SKIP_RE as M_SKIP
+            why = (result.get("museums_why") or {}).get(cid)
+            if not why and (M_SKIP.search(c["title"]) or c.get("regular_series")):
+                why = "регулярное или служебное занятие — не в эту рубрику"
+            if not why and c.get("long_running"):
+                why = f"выставка идёт давно (строка — только в первые {NEW_EXHIBITION_DAYS} дней открытия)"
             why = why or ("доступ restricted" if c.get("access") == "restricted" else "дубль или не прошёл отбор рубрики")
             return False, (why, why)
         if any(x in placed for x in dup_of.get(cid, [])):
@@ -1271,8 +1287,8 @@ def mandatory(pools: issue.Pools, result: dict, w: issue.Window) -> dict[str, li
     free = lambda cid: cid not in placed and not set(pools.candidates[cid]["event_ids"]) & placed_ev
     need: dict[str, list[str]] = {}
     for cid, c in pools.candidates.items():
-        if c["kind"] == "announcement" and "ежегодного" in (c.get("evidence") or "") and (c.get("importance") or 0) >= 6 \
-                and free(cid):
+        if c["kind"] == "announcement" and "ежегодного" in (c.get("evidence") or "") \
+                and ((c.get("importance") or 0) >= 6 or c.get("festival")) and free(cid):   # 7d: фестивали — всегда
             need.setdefault("new_announcements", []).append(cid)
     counts = {sec["rubric"]: len(sec["items"]) for sec in result["sections"]}
     wk = [sec for sec in result["sections"] if sec["rubric"] == "weekdays"]
@@ -1560,7 +1576,8 @@ FIX_RULES = [(8, r"латинские буквы в слове|кириллиц�
              (19, r"статус убран из названия|убраны из заголовка"), (20, r"сокращён — выпуск длиннее|обязателен по правкам"),
              (22, r"третий пункт с одной площадки"), (23, r"состав из данных не назван"),
              (28, r"причины пропуска дописаны"), (29, r"Факты из знаний модели"), (30, r"лига не подтверждена"),
-             (14, r"дата окончания со страницы"), (31, r"вытеснено подтверждённым открытием")]
+             (14, r"дата окончания со страницы"), (31, r"вытеснено подтверждённым открытием"),
+             (36, r"противоречие стадии открытия"), (1, r"переписано по источнику"), (35, r"грамматика:")]
 
 
 def fix_log(notes: list[tuple[str, str]]) -> dict[int, list[tuple[str, str]]]:
@@ -1693,7 +1710,7 @@ def main() -> None:
         fix_notes += issue_fixes.fix_prices_best(result, pools) + issue_fixes.fix_links(result, pools) \
             + issue_fixes.strip_title_tails(result) + issue_fixes.drop_unconfirmed_league(result, pools, con)
         n6, cost6 = issue_fixes.fix_empty_news(client, result, pools, con, removed)
-        fix_notes += n6
+        fix_notes += n6 + issue_fixes.fix_stage_conflicts(result, pools, removed)   # 7d: проверка 36
         n3, cost3 = expand_long(client, result, pools, con)
         n4, cost4 = fix_names_ru(client, result, pools, con)
         fix_notes += n3 + n4 + english_in_russian(result, pools) + latin_names_ru(result, pools)
@@ -1716,6 +1733,10 @@ def main() -> None:
     result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "colleges"]
     col_items, result["colleges_why"] = colleges.build_items(pools, result)
     result["sections"].append({"rubric": "colleges", "items": col_items})
+    from pipeline import museums   # этап 7d: «В музеях и усадьбах» — после колледжей, без дублей полных пунктов
+    result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "museums"]
+    mus_items, result["museums_why"] = museums.build_items(pools, result, w)
+    result["sections"].append({"rubric": "museums", "items": mus_items})
     fee = next((dict(x.split("=", 1) for x in (c.get("access_note") or "").split("|") if "=" in x).get("fee")
                 for c in pools.candidates.values() if "S049" in (c.get("sources") or [])), None) or "£370"
     u_item, u_notes = union_termcard.line_item(con, w.start, w.end, fee)
@@ -1745,6 +1766,18 @@ def main() -> None:
         ctx.claims, cost_claims = _claims.collect(ctx, api_client)
         usage["cost_usd"] += cost_claims
         fix_notes += issue_fixes.knowledge_from_claims(result, ctx.claims)
+        # этап 7d (правки по v10): неподтверждённые «одна из старейших / первый» — по тексту источника (проверка 1),
+        # затем сверка ещё раз; грамматика русских текстов — одним запросом (проверка 35)
+        n_sup, cost_sup = issue_fixes.fix_superlatives(api_client, ctx)
+        fix_notes += n_sup
+        usage["cost_usd"] += cost_sup
+        if n_sup:
+            ctx.claims, cost_claims2 = _claims.collect(ctx, api_client)
+            usage["cost_usd"] += cost_claims2
+        n_gr, cost_gr, result["grammar"] = issue_fixes.fix_grammar(api_client, result, pools, con)
+        fix_notes += n_gr
+        usage["cost_usd"] += cost_gr
+        ctx._layout = {}
     # ручные правки и заметки ревью, записанные в сохранённый ответ модели (issues/issue_<дата>_model.json)
     review = [tuple(x) for x in result.get("manual_fixes", []) + result.get("review_notes", [])]
     editor = editor_block(result, pools, w, fix_notes, review, usage)

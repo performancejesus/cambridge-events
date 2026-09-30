@@ -32,6 +32,7 @@ def main() -> None:
     stats |= ingest.dedupe(con, run_id)
     stats |= ingest.apply_merges(con)        # data/manual_merges.json
     stats |= ingest.merge_same(con)          # дубли внутри одного источника
+    stats |= ingest.merge_mlc(con)           # этап 7d: дубли musiclivecambridge (slug + дата + площадка)
     stats |= ingest.refresh(con, run_id)
     stats |= ingest.store_changes(con, run_id)
     stats |= open_spaces.tag(con)             # события на лугах, в парках, на площадях
