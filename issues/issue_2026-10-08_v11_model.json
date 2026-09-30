@@ -1185,9 +1185,9 @@
   "theme_intro_ru": "Сид Барретт, основатель, певец и гитарист Pink Floyd, родился и позже умер в Кембридже; в этом году исполняется 80 лет со дня его рождения, и город отмечает это концертом, выставкой, лекциями и показом фильма."
  },
  "usage": {
-  "input_tokens": 205882,
-  "output_tokens": 40225,
-  "cost_usd": 0.989294
+  "input_tokens": 215164,
+  "output_tokens": 40730,
+  "cost_usd": 1.3534950000000001
  },
  "result_post": {
   "result": {
@@ -1213,13 +1213,17 @@
         "Kula Shaker are an English rock band known for blending rock with Indian musical influences",
         "Soft Machine are a band from the Canterbury progressive rock scene",
         "check (in 1972): Kula Shaker headline with Soft Machine also on the bill, alongside a light show from The Mad Alchemist, and it's held at the Corn Exchange, where Barrett gave his final live performance in 1972.",
-        "check (born): Syd Barrett, Pink Floyd's founding singer and guitarist, was born and later died in Cambridge; this year marks 80 years since his birth, and the city marks it with a concert, an exhibition, talks and a film screening."
+        "check (born): Syd Barrett, Pink Floyd's founding singer and guitarist, was born and later died in Cambridge; this year marks 80 years since his birth, and the city marks it with a concert, an exhibition, talks and a film screening.",
+        "source check (not_in_source): Сид Барретт — основатель и гитарист Pink Floyd",
+        "source check (not_in_source): На разогреве Soft Machine"
        ],
        "knowledge_ru": [
         "Kula Shaker — английская рок-группа, известная сочетанием рока с индийскими музыкальными мотивами",
         "Soft Machine — группа кентерберийской сцены прогрессивного рока",
         "проверка (исполнилось бы): Концерт, приуроченный к году, когда Сиду Барретту, основателю и гитаристу Pink Floyd, исполнилось бы 80 лет.",
-        "проверка (последнее, в 1972 году): Хедлайнеры — Kula Shaker, на разогреве Soft Machine, плюс световое шоу от The Mad Alchemist; площадка та же, где Барретт дал своё последнее живое выступление в 1972 году."
+        "проверка (последнее, в 1972 году): Хедлайнеры — Kula Shaker, на разогреве Soft Machine, плюс световое шоу от The Mad Alchemist; площадка та же, где Барретт дал своё последнее живое выступление в 1972 году.",
+        "сверка (нет в источнике): Сид Барретт — основатель и гитарист Pink Floyd",
+        "сверка (нет в источнике): На разогреве Soft Machine"
        ]
       },
       {
@@ -1281,12 +1285,10 @@
        "blurb_en": "An ordinary League One home fixture with an unexpected link: according to Barrett's sister Rosemary Breen, proceeds from this match go to mental health charities — 10 October is also World Mental Health Day.",
        "blurb_ru": "Обычный домашний матч Cambridge United с неожиданной связью: по словам сестры Барретта Rosemary Breen, сборы с этого матча идут на благотворительность в поддержку психического здоровья — 10 октября также отмечается Всемирный день психического здоровья.",
        "knowledge_en": [
-        "World Mental Health Day is observed on 10 October",
-        "source check (not_in_source): Матч Cambridge United — Blackpool является обычным домашним матчем лиги One"
+        "World Mental Health Day is observed on 10 October"
        ],
        "knowledge_ru": [
-        "Всемирный день психического здоровья отмечается 10 октября",
-        "сверка (нет в источнике): Матч Cambridge United — Blackpool является обычным домашним матчем лиги One"
+        "Всемирный день психического здоровья отмечается 10 октября"
        ]
       }
      ],
@@ -1305,16 +1307,17 @@
        "where_ru": "Cambridge Corn Exchange, Кембридж",
        "price_en": "£38–£113",
        "price_ru": "£38–£113",
-       "blurb_en": "Two 80s favourites share one stage, each bringing their full band for a proper hits night. Hue and Cry, the duo of brothers Patrick and Gregory Kane, made their name in 1984 with the album Seduced and Abandoned, while Roachford rolls out his soul-pop classics from the same golden era.",
-       "blurb_ru": "Два любимца 80-х выходят на одну сцену, причём каждый со своим полным составом — будет настоящий вечер хитов. Hue and Cry, дуэт братьев Patrick и Gregory Kane, прославился в 1984 году альбомом Seduced and Abandoned, а Roachford привозит свои соул-поп классики той же золотой эпохи.",
+       "blurb_en": "Hue and Cry and Roachford share the bill with full bands, bringing back the sound of the 80s side by side. Patrick and Gregory Kane's group made its name with the album Seduced and Abandoned, while Roachford's soul-pop hits round out the night at Cambridge Corn Exchange.",
+       "blurb_ru": "Hue and Cry и Roachford выходят на одну сцену с полными составами, возвращая звучание 80-х. Группа братьев Patrick и Gregory Kane прославилась альбомом Seduced and Abandoned, а соул-поп хиты Roachford дополнят вечер в Cambridge Corn Exchange.",
        "knowledge_en": [
         "Roachford is known for his 1988 hit \"Cuddly Toy\"",
-        "source check (not_in_source): Оба исполнителя выступают со своими полными составами"
+        "Hue and Cry are a Scottish pop-soul duo formed in Glasgow.",
+        "Roachford is a British singer-songwriter known for soul-pop hits."
        ],
        "knowledge_ru": [
         "Roachford известен своим хитом 1988 года «Cuddly Toy»",
-        "проверка (в 1984 году): Hue and Cry, дуэт братьев Patrick и Gregory Kane, прославился в 1984 году альбомом Seduced and Abandoned, а Roachford привозит свои соул-поп классики той же золотой эпохи.",
-        "сверка (нет в источнике): Оба исполнителя выступают со своими полными составами"
+        "Hue and Cry — шотландский поп-соул дуэт, сформированный в Глазго.",
+        "Roachford — британский певец и автор песен, известный соул-поп хитами."
        ]
       },
       {
@@ -1356,11 +1359,11 @@
        "blurb_ru": "Саксофонистка Jess Gillam составила программу, охватывающую 900 лет музыки — от CPE Bach до наших дней, — исполняемую вместе с её собственным составом.",
        "knowledge_en": [
         "Jess Gillam is a British saxophonist and BBC Radio 3 presenter",
-        "source check (not_in_source): Программа исполняется с её собственным составом"
+        "source check (not_in_source): Выступление исполняется вместе с собственным составом Jess Gillam"
        ],
        "knowledge_ru": [
         "Jess Gillam — британская саксофонистка и ведущая BBC Radio 3",
-        "сверка (нет в источнике): Программа исполняется с её собственным составом"
+        "сверка (нет в источнике): Выступление исполняется вместе с собственным составом Jess Gillam"
        ]
       }
      ],
@@ -1385,17 +1388,15 @@
        "where_ru": "Cambridge Corn Exchange, Кембридж",
        "price_en": "£28",
        "price_ru": "£28",
-       "blurb_en": "Nish Kumar, the comedian who made his name fronting The Mash Report, brings a brand new stand-up show to Cambridge. Expect sharp, angry laughs about politics, inequality and the general state of the nation, delivered by someone who insists he's actually a really nice guy.",
-       "blurb_ru": "Nish Kumar, комик, прославившийся благодаря шоу The Mash Report, привозит в Cambridge новую стендап-программу. Ждите злого, но очень смешного разговора о политике, неравенстве и состоянии страны — всё это от человека, который уверяет, что на самом деле он очень милый.",
+       "blurb_en": "Nish Kumar brings a brand new stand-up show tackling politics, inequality and the state of the nation, with the sharp wit fans know from The Mash Report. Expect plenty to be angry about, delivered, as ever, by a genuinely nice guy.",
+       "blurb_ru": "Nish Kumar привозит новое стендап-шоу о политике, неравенстве и состоянии страны — с той же остротой, что знакома по The Mash Report. Поводов для злости хватит, но подаёт их, как всегда, очень приятный парень.",
        "knowledge_en": [
         "Nish Kumar is a British comedian known for hosting The Mash Report",
-        "Nish Kumar is known for hosting the satirical news show The Mash Report",
-        "source check (not_in_source): Nish Kumar прославился благодаря шоу The Mash Report"
+        "Nish Kumar is a British comedian best known for hosting the satirical news show The Mash Report."
        ],
        "knowledge_ru": [
         "Nish Kumar — британский комик, известный по ведению шоу The Mash Report",
-        "Nish Kumar известен по ведению сатирического новостного шоу The Mash Report",
-        "сверка (нет в источнике): Nish Kumar прославился благодаря шоу The Mash Report"
+        "Nish Kumar — британский комик, наиболее известный как ведущий сатирического шоу The Mash Report."
        ]
       },
       {
@@ -1445,13 +1446,15 @@
        "where_ru": "Cambridge Corn Exchange, Кембридж",
        "price_en": "£23–£30",
        "price_ru": "£23–£30",
-       "blurb_en": "Fresh off a sold-out five-week residency in London, comedian and filmmaker Simon Amstell brings his new show I Love It Here to Cambridge for a limited run. Expect the honest, funny and unexpectedly healing style that's made his live shows so popular.",
-       "blurb_ru": "После аншлагового пятинедельного резидентства в Лондоне комик и режиссёр Simon Amstell привозит в Cambridge своё новое шоу I Love It Here в рамках ограниченного тура. Ждите честного, смешного и на удивление исцеляющего стендапа, за который его так любят зрители.",
+       "blurb_en": "Simon Amstell returns with I Love It Here, a new show following his sold-out five-week residency in London earlier this year. Expect the comedian and filmmaker's trademark mix of honesty and humour at Cambridge Corn Exchange.",
+       "blurb_ru": "Simon Amstell привозит новое шоу I Love It Here после аншлагового пятинедельного резидентства в Лондоне ранее в этом году. В Cambridge Corn Exchange ждите фирменного сочетания честности и юмора от этого комика и режиссёра.",
        "knowledge_en": [
-        "Simon Amstell previously hosted Never Mind the Buzzcocks and has directed films"
+        "Simon Amstell previously hosted Never Mind the Buzzcocks and has directed films",
+        "Simon Amstell is a British comedian, writer and filmmaker known for hosting Never Mind the Buzzcocks."
        ],
        "knowledge_ru": [
-        "Simon Amstell ранее вёл Never Mind the Buzzcocks, также снимает фильмы"
+        "Simon Amstell ранее вёл Never Mind the Buzzcocks, также снимает фильмы",
+        "Simon Amstell — британский комик, сценарист и режиссёр, известный как ведущий Never Mind the Buzzcocks."
        ]
       },
       {
@@ -1464,18 +1467,33 @@
        "where_ru": "Cambridge Corn Exchange, Кембридж",
        "price_en": "£56–£89",
        "price_ru": "£56–£89",
-       "blurb_en": "Shock-rock pioneer Alice Cooper takes to the stage to talk through his new autobiography Devil on My Shoulder, published that same week by Ebury Spotlight. It's a rare chance to hear him reflect on over sixty years of rock folklore in his own words.",
-       "blurb_ru": "Пионер шок-рока Alice Cooper выходит на сцену, чтобы лично рассказать о своей новой автобиографии Devil on My Shoulder, которая выходит в издательстве Ebury Spotlight в ту же неделю. Редкая возможность услышать из первых уст о более чем шестидесяти годах рок-легенд.",
+       "blurb_en": "Alice Cooper takes the stage to talk through Devil on My Shoulder, his long-awaited autobiography published the same week by Ebury Spotlight. It's a chance to hear the shock-rock pioneer reflect firsthand on more than sixty years of music.",
+       "blurb_ru": "Alice Cooper выходит на сцену, чтобы рассказать о своей долгожданной автобиографии Devil on My Shoulder, которая выходит в издательстве Ebury Spotlight на той же неделе. Это возможность услышать от самого пионера шок-рока истории из более чем шестидесятилетней карьеры.",
        "knowledge_en": [
         "Alice Cooper is an American musician known as a pioneer of theatrical shock rock",
-        "Alice Cooper is widely regarded as a pioneer of shock rock",
+        "Alice Cooper is an American rock musician widely regarded as a pioneer of shock rock, known for his theatrical stage shows.",
         "source check (not_in_source): Alice Cooper — пионер шок-рока"
        ],
        "knowledge_ru": [
         "Alice Cooper — американский музыкант, один из основоположников театрального шок-рока",
-        "Alice Cooper считается одним из пионеров шок-рока",
+        "Alice Cooper — американский рок-музыкант, считающийся пионером шок-рока и известный своими театральными сценическими шоу.",
         "сверка (нет в источнике): Alice Cooper — пионер шок-рока"
        ]
+      },
+      {
+       "ids": [
+        "E240"
+       ],
+       "title_en": "London City Ballet",
+       "title_ru": "London City Ballet",
+       "where_en": "Cambridge Arts Theatre, Cambridge",
+       "where_ru": "Cambridge Arts Theatre, Кембридж",
+       "price_en": "from £20.50",
+       "price_ru": "от £20.50",
+       "blurb_en": "A revival of Glen Tetley's gothic Firebird, marking the centenary of the American choreographer, danced by London City Ballet.",
+       "blurb_ru": "Возобновление готической версии «Жар-птицы» Glen Tetley, приуроченное к столетию американского хореографа, в исполнении London City Ballet.",
+       "knowledge_en": [],
+       "knowledge_ru": []
       },
       {
        "ids": [
@@ -1489,25 +1507,6 @@
        "price_ru": "£37.50",
        "blurb_en": "The 80s band fronted by Wendy James, formed with guitarist Nick Christian Sayer, play the Junction.",
        "blurb_ru": "Группа из 80-х во главе с Wendy James, основанная вместе с гитаристом Nick Christian Sayer, выступает в Junction.",
-       "knowledge_en": [
-        "source check (not_in_source): Transvision Vamp — группа из 80-х"
-       ],
-       "knowledge_ru": [
-        "сверка (нет в источнике): Transvision Vamp — группа из 80-х"
-       ]
-      },
-      {
-       "ids": [
-        "E1030"
-       ],
-       "title_en": "Hayseed Dixie",
-       "title_ru": "Hayseed Dixie",
-       "where_en": "Cambridge Junction, Cambridge",
-       "where_ru": "Cambridge Junction, Кембридж",
-       "price_en": "£30.50",
-       "price_ru": "£30.50",
-       "blurb_en": "Bluegrass covers of hard rock songs in a self-created genre the band calls \"rockgrass\", with support from Sweet Electric.",
-       "blurb_ru": "Блюграсс-каверы на хард-рок в придуманном самой группой жанре «rockgrass», на разогреве — Sweet Electric.",
        "knowledge_en": [],
        "knowledge_ru": []
       }
@@ -1525,28 +1524,28 @@
       },
       {
        "id": "E1018",
-       "reason_en": "No reason — could be included",
-       "reason_ru": "Причины нет — можно было взять"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "E1027",
-       "reason_en": "Lower importance than all chosen items",
-       "reason_ru": "Меньшая важность, чем у всех выбранных событий"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "E1742",
-       "reason_en": "Lower importance than all chosen items; relocated small venue show",
-       "reason_ru": "Меньшая важность, чем у всех выбранных; перенесённое шоу в небольшом заведении"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "E2454",
-       "reason_en": "Not a live event — a cinema screening, and lower importance",
-       "reason_ru": "Не живое событие — кинопоказ, и меньшая важность"
+       "reason_en": "duplicate of theme (ballet) already covered by London City Ballet",
+       "reason_ru": "дубликат темы (балет), уже представленной London City Ballet"
       },
       {
        "id": "E7",
-       "reason_en": "Lower importance than all chosen items; student comedy show",
-       "reason_ru": "Меньшая важность, чем у всех выбранных; студенческое комедийное шоу"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       }
      ]
     },
@@ -1701,88 +1700,88 @@
      "passed_over": [
       {
        "id": "E1013",
-       "reason_en": "Not an exhibition — it's a drop-in social/coffee meetup.",
-       "reason_ru": "Это не выставка — встреча за кофе, а не выставочное мероприятie."
+       "reason_en": "Not an exhibition — it's a drop-in social/coffee meetup",
+       "reason_ru": "Это не выставка — это встреча за кофе, а не выставка"
       },
       {
        "id": "E1017",
-       "reason_en": "Not an exhibition — it's a dance/movement course.",
-       "reason_ru": "Это не выставка — курс танца и движения."
+       "reason_en": "Not an exhibition — it's a dance/movement class series",
+       "reason_ru": "Не выставка — это серия занятий танцем/движением"
       },
       {
        "id": "E1031",
-       "reason_en": "Not an exhibition — it's a stand-up comedy show.",
-       "reason_ru": "Это не выставка — стендап-шоу."
+       "reason_en": "Not an exhibition — it's a stand-up comedy show",
+       "reason_ru": "Не выставка — это шоу стендап-комедии"
       },
       {
        "id": "E1033",
-       "reason_en": "Not an exhibition — it's a club night.",
-       "reason_ru": "Это не выставка — клубная вечеринка."
+       "reason_en": "Not an exhibition — it's a club night",
+       "reason_ru": "Не выставка — это клубная вечеринка"
       },
       {
        "id": "E1271",
-       "reason_en": "No reason — could be included.",
-       "reason_ru": "Причины нет — можно было взять."
+       "reason_en": "Genuine exhibition but ranks below the chosen items in importance",
+       "reason_ru": "Настоящая выставка, но по значимости ниже отобранных пунктов"
       },
       {
        "id": "E1288",
-       "reason_en": "No reason — could be included.",
-       "reason_ru": "Причины нет — можно было взять."
+       "reason_en": "Genuine exhibition but ranks below the chosen items in importance",
+       "reason_ru": "Настоящая выставка, но по значимости ниже отобранных пунктов"
       },
       {
        "id": "E1300",
-       "reason_en": "Not an exhibition — it's a dance course for Parkinson's patients.",
-       "reason_ru": "Это не выставка — танцевальный курс для людей с болезнью Паркинсона."
+       "reason_en": "Not an exhibition — a Parkinson's dance course, duplicate theme of Museum Encounters",
+       "reason_ru": "Не выставка — курс танцев для людей с болезнью Паркинсона, дублирует тему Museum Encounters"
       },
       {
        "id": "E1302",
-       "reason_en": "Not an exhibition — it's a movement/wellbeing course.",
-       "reason_ru": "Это не выставка — курс движения и оздоровления."
+       "reason_en": "Not an exhibition — a movement/wellbeing course, not visual art",
+       "reason_ru": "Не выставка — курс движения/оздоровления, а не изобразительное искусство"
       },
       {
        "id": "E1381",
-       "reason_en": "No fact for a description — summary is empty.",
-       "reason_ru": "Нет фактов для описания — аннотация пустая."
+       "reason_en": "No fact for a description — summary is empty",
+       "reason_ru": "Нет фактов для описания — аннотация пустая"
       },
       {
        "id": "E1410",
-       "reason_en": "No fact for a description — summary just says 'exhibition'.",
-       "reason_ru": "Нет фактов для описания — в аннотации только слово 'выставка'."
+       "reason_en": "No fact for a description — summary just says 'exhibition'",
+       "reason_ru": "Нет фактов для описания — в аннотации только слово «выставка»"
       },
       {
        "id": "E1423",
-       "reason_en": "Not an exhibition — it's a theatre building tour.",
-       "reason_ru": "Это не выставка — экскурсия по зданию театра."
+       "reason_en": "Not an exhibition — it's a guided building tour of a theatre",
+       "reason_ru": "Не выставка — это экскурсия по зданию театра"
       },
       {
        "id": "E1425",
-       "reason_en": "Not an exhibition — it's a theatrical play.",
-       "reason_ru": "Это не выставка — театральная постановка."
+       "reason_en": "Not an exhibition — it's a theatre play performance",
+       "reason_ru": "Не выставка — это театральная постановка"
       },
       {
        "id": "E234",
-       "reason_en": "Not an exhibition — it's a series of author talks/book signings.",
-       "reason_ru": "Это не выставка — серия встреч с авторами и автограф-сессий."
+       "reason_en": "Not an exhibition — it's a series of book signings/talks",
+       "reason_ru": "Не выставка — это серия встреч с авторами и подписания книг"
       },
       {
        "id": "E454",
-       "reason_en": "Not an exhibition — it's an open-house eco-home tour event.",
-       "reason_ru": "Это не выставка — мероприятие с открытыми экодомами."
+       "reason_en": "Not an exhibition — it's an open-house home tour event",
+       "reason_ru": "Не выставка — это мероприятие с открытыми дверями частных домов"
       },
       {
        "id": "E918",
-       "reason_en": "No reason — could be included.",
-       "reason_ru": "Причины нет — можно было взять."
+       "reason_en": "Genuine exhibition but ranks below the chosen items in importance",
+       "reason_ru": "Настоящая выставка, но по значимости ниже отобранных пунктов"
       },
       {
        "id": "E998",
-       "reason_en": "Not an exhibition — it's a professional dance class.",
-       "reason_ru": "Это не выставка — профессиональный танцевальный класс."
+       "reason_en": "Not an exhibition — it's a professional dance class",
+       "reason_ru": "Не выставка — это профессиональный класс танцев"
       },
       {
        "id": "E999",
-       "reason_en": "Not an exhibition — it's a life drawing class.",
-       "reason_ru": "Это не выставка — класс рисования с натуры."
+       "reason_en": "Not an exhibition — it's a life drawing class",
+       "reason_ru": "Не выставка — это занятие по рисованию с натуры"
       }
      ]
     },
@@ -1879,13 +1878,13 @@
      "passed_over": [
       {
        "id": "E454",
-       "reason_en": "Not leisure — an educational eco-home open day rather than a leisure event.",
-       "reason_ru": "Не досуг — это образовательное мероприятие об экодомах, а не развлекательное."
+       "reason_en": "More of a community sustainability initiative than a leisure event",
+       "reason_ru": "Скорее общественная инициатива по устойчивому развитию, чем досуговое мероприятие"
       },
       {
        "id": "E918",
-       "reason_en": "Duplicate of the theme — already featured among exhibitions.",
-       "reason_ru": "Дублирует тему — уже представлено в разделе выставок."
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
       }
      ]
     },
@@ -1942,28 +1941,28 @@
      "passed_over": [
       {
        "id": "E1305",
-       "reason_en": "No reason — could be included.",
-       "reason_ru": "Причины нет — можно было взять."
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
       },
       {
        "id": "E678",
-       "reason_en": "Not for kids — event explicitly states 'NO kids'.",
-       "reason_ru": "Не для детей — в описании прямо указано 'без детей'."
+       "reason_en": "Explicitly not for kids — the event states 'NO kids'",
+       "reason_ru": "Явно не для детей — в описании указано «NO kids»"
       },
       {
        "id": "E946",
-       "reason_en": "Already two items from this venue (Kettle's Yard) on the same day.",
-       "reason_ru": "Уже два мероприятия из этого места (Kettle's Yard) в тот же день."
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
       },
       {
        "id": "E947",
-       "reason_en": "Duplicate of the similar Studio Sunday event already listed.",
-       "reason_ru": "Дублирует похожее мероприятие Studio Sunday, уже включённое в список."
+       "reason_en": "Duplicate of the relaxed Studio Sunday session already covering this event",
+       "reason_ru": "Дублирует уже учтённую спокойную сессию Studio Sunday"
       },
       {
        "id": "F8",
-       "reason_en": "No fact for a description — summary is empty.",
-       "reason_ru": "Нет фактов для описания — аннотация пустая."
+       "reason_en": "Subtitled screening, less suitable for young children who can't read subtitles",
+       "reason_ru": "Показ с субтитрами, менее подходит для маленьких детей, которые не умеют читать субтитры"
       }
      ]
     },
@@ -2072,23 +2071,23 @@
      "passed_over": [
       {
        "id": "E1269",
-       "reason_en": "Not sport — a classical music marathon event",
-       "reason_ru": "Не спорт — это марафон классической музыки"
+       "reason_en": "not sport",
+       "reason_ru": "не спорт"
       },
       {
        "id": "E1593",
-       "reason_en": "Duplicate of other same-series Phoenix charity running events already passed over",
-       "reason_ru": "Дублирует другие подобные благотворительные забеги серии Phoenix"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "E1764",
-       "reason_en": "Duplicate of other same-series Phoenix charity running events already passed over",
-       "reason_ru": "Дублирует другие подобные благотворительные забеги серии Phoenix"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "E1765",
-       "reason_en": "Duplicate of other same-series Phoenix charity running events already passed over",
-       "reason_ru": "Дублирует другие подобные благотворительные забеги серии Phoenix"
+       "reason_en": "duplicate of similar Phoenix running event (Freaky Phoenix Friday) same venue/weekend",
+       "reason_ru": "дубликат похожего забега Phoenix (Freaky Phoenix Friday) в том же месте/выходные"
       }
      ]
     },
@@ -2154,8 +2153,8 @@
      "passed_over": [
       {
        "id": "E818",
-       "reason_en": "Lower importance than weakest chosen item, and different audience (classical choral music vs. comedy/pop personalities)",
-       "reason_ru": "Меньшая важность, чем у самого слабого выбранного, плюс другая аудитория (классическая хоровая музыка против комедии/поп-звёзд)"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       }
      ]
     },
@@ -2189,12 +2188,8 @@
        "price_ru": "бесплатно",
        "blurb_en": "Cambridge's free, un-ticketed fireworks night returns to Midsummer Common on 5 November.",
        "blurb_ru": "Бесплатный вечер фейерверков без билетов возвращается на Midsummer Common 5 ноября.",
-       "knowledge_en": [
-        "source check (not_in_source): Fireworks Night состоится 5 ноября"
-       ],
-       "knowledge_ru": [
-        "сверка (нет в источнике): Fireworks Night состоится 5 ноября"
-       ]
+       "knowledge_en": [],
+       "knowledge_ru": []
       },
       {
        "ids": [
@@ -2206,15 +2201,17 @@
        "where_ru": "Newmarket Racecourse, Ньюмаркет",
        "price_en": "from £45",
        "price_ru": "от £45",
-       "blurb_en": "Mick Hucknall's Simply Red bring their Summer Funk '27 tour to Newmarket's July Course, following an evening of racing next August. Tickets are on sale now, so grab yours before they're gone.",
-       "blurb_ru": "Simply Red под руководством Mick Hucknall привозят свой тур Summer Funk '27 на July Course в Ньюмаркете, сразу после вечерних скачек в августе следующего года. Билеты уже в продаже, так что не тяните.",
+       "blurb_en": "Simply Red, fronted by Mick Hucknall, play Newmarket's July Course after an evening of racing next August. Tickets are already on sale for this open-air date on the Summer Funk '27 tour.",
+       "blurb_ru": "Simply Red с Mick Hucknall во главе выступят на July Course в Ньюмаркете после вечерних скачек в августе следующего года. Билеты на это выступление под открытым небом в рамках тура Summer Funk '27 уже в продаже.",
        "knowledge_en": [
         "Simply Red are fronted by Mick Hucknall",
-        "Mick Hucknall is the frontman of Simply Red"
+        "Simply Red are an English pop-soul band known for hits such as 'Holding Back the Years' and 'Stars'.",
+        "Newmarket is an English town famous for its horse racing tradition."
        ],
        "knowledge_ru": [
         "Simply Red — группа под руководством Mick Hucknall",
-        "Mick Hucknall — фронтмен группы Simply Red"
+        "Simply Red — английская поп-соул группа, известная такими хитами, как 'Holding Back the Years' и 'Stars'.",
+        "Ньюмаркет — английский город, известный своими скачками."
        ]
       },
       {
@@ -2227,10 +2224,14 @@
        "where_ru": "Newmarket Racecourse, Ньюмаркет",
        "price_en": "prices on the website",
        "price_ru": "цены на сайте",
-       "blurb_en": "Pop favourite Olly Murs headlines an open-air concert at Newmarket Racecourse next June, with an evening of live music paired to the track's racing action. Tickets have been on sale since 2 October.",
-       "blurb_ru": "Поп-любимец Olly Murs выступит на открытом воздухе на Newmarket Racecourse в июне следующего года — вечер живой музыки совмещён со скачками. Билеты в продаже с 2 октября.",
-       "knowledge_en": [],
-       "knowledge_ru": []
+       "blurb_en": "Olly Murs plays Newmarket Racecourse next June, pairing an evening of racing with a set from the pop singer. Tickets have been on sale since 2 October for the Friday 25 June show.",
+       "blurb_ru": "Olly Murs выступит на Newmarket Racecourse в июне следующего года — вечер скачек дополнит сет поп-певца. Билеты на концерт в пятницу, 25 июня, продаются уже с 2 октября.",
+       "knowledge_en": [
+        "Olly Murs was runner-up on The X Factor in 2009 and has since had multiple number one singles and albums."
+       ],
+       "knowledge_ru": [
+        "Olly Murs был вторым в шоу The X Factor в 2009 году и с тех пор выпустил несколько хитов и альбомов номер один."
+       ]
       },
       {
        "ids": [
@@ -2242,8 +2243,8 @@
        "where_ru": "Jesus Green, Кембридж",
        "price_en": "prices on the website",
        "price_ru": "цены на сайте",
-       "blurb_en": "The dates for next year's beer festival are now set: 24–29 May on Jesus Green, with the usual spread of 180-odd real ales and 80-odd ciders and perries alongside international beer, mead and wine. Worth a note in the calendar well ahead of the week itself.",
-       "blurb_ru": "Уже известны даты фестиваля пива на будущий год: 24–29 мая на Jesus Green, традиционно больше 180 сортов эля и около 80 сидров и перри, плюс зарубежное пиво, мёд и вино. Можно заранее отметить в календаре.",
+       "blurb_en": "The dates for next year's beer festival are in the diary: 24–29 May 2027 on Jesus Green, with the usual spread of 180-plus real ales alongside ciders, perries and international beers.",
+       "blurb_ru": "В календаре уже стоят даты следующего фестиваля пива: 24–29 мая 2027 года на Jesus Green, с традиционными 180+ сортами эля, а также сидрами, перри и зарубежным пивом.",
        "knowledge_en": [],
        "knowledge_ru": []
       }
@@ -2251,38 +2252,38 @@
      "passed_over": [
       {
        "id": "A1612",
-       "reason_en": "No summary/description available for this event",
-       "reason_ru": "Нет описания события — не за что зацепиться"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "A2507",
-       "reason_en": "Too far from Cambridge (over an hour away) and lower importance",
-       "reason_ru": "Слишком далеко от Кембриджа (больше часа езды) и меньшая важность"
+       "reason_en": "duplicate of the Christmas market theme already covered",
+       "reason_ru": "дубликат темы (рождественский рынок уже представлен)"
       },
       {
        "id": "A424",
-       "reason_en": "No description provided and located far outside Cambridge",
-       "reason_ru": "Нет описания, и находится далеко за пределами Кембриджа"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "A425",
-       "reason_en": "No description provided, low importance compared to chosen items",
-       "reason_ru": "Нет описания, низкая важность по сравнению с выбранными"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "A426",
-       "reason_en": "No description provided, too generic/low importance",
-       "reason_ru": "Нет описания, слишком общее событие с низкой важностью"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "A909",
-       "reason_en": "Duplicate of the already chosen Olly Murs at Newmarket concert",
-       "reason_ru": "Дублирует уже выбранный концерт Olly Murs в Ньюмаркете"
+       "reason_en": "duplicate of chosen item 'Olly Murs at Newmarket Racecourse'",
+       "reason_ru": "дубликат уже выбранного пункта «Olly Murs at Newmarket Racecourse»"
       },
       {
        "id": "A910",
-       "reason_en": "Exact duplicate of the already chosen Simply Red at Newmarket Nights entry",
-       "reason_ru": "Точный дубликат уже выбранного события Simply Red at Newmarket Nights"
+       "reason_en": "duplicate of chosen item 'Simply Red at Newmarket Nights'",
+       "reason_ru": "дубликат уже выбранного пункта «Simply Red at Newmarket Nights»"
       }
      ]
     },
@@ -2299,10 +2300,14 @@
        "where_ru": "Cambridge Corn Exchange, Кембридж",
        "price_en": "£38.50–£71.50",
        "price_ru": "£38.50–£71.50",
-       "blurb_en": "Alison Moyet's 2026 tour digs deep into her Yazoo years alongside tracks from her solo electronica albums the minutes and Other, moving beyond the usual greatest-hits set. Cambridge dates are showing limited availability, so don't wait too long.",
-       "blurb_ru": "Тур Alison Moyet 2026 года глубоко погружается в её период Yazoo, а также включает треки с сольных электронных альбомов the minutes и Other — куда больше, чем просто набор хитов. На площадке в Cambridge билетов осталось немного, так что лучше не откладывать.",
-       "knowledge_en": [],
-       "knowledge_ru": []
+       "blurb_en": "Alison Moyet's 2026 tour digs into the Yazoo catalogue alongside tracks from her solo electronica records the minutes and Other. Availability at Cambridge Corn Exchange is already limited, so this one's for the diehards.",
+       "blurb_ru": "Тур Alison Moyet 2026 года строится на каталоге Yazoo и треках с её сольных электронных альбомов the minutes и Other. В Cambridge Corn Exchange билетов остаётся немного, так что это шоу для преданных поклонников.",
+       "knowledge_en": [
+        "Alison Moyet was one half of the synth-pop duo Yazoo alongside Vince Clarke in the early 1980s."
+       ],
+       "knowledge_ru": [
+        "Alison Moyet была участницей синти-поп дуэта Yazoo вместе с Vince Clarke в начале 1980-х."
+       ]
       },
       {
        "ids": [
@@ -2317,9 +2322,12 @@
        "blurb_en": "The historical novelist discusses her new book Royal Witch; the venue's page shows only a few tickets left.",
        "blurb_ru": "Автор исторических романов рассказывает о своей новой книге Royal Witch; на странице площадки указано, что билетов осталось мало.",
        "knowledge_en": [
-        "check (only): The historical novelist discusses her new book Royal Witch; the venue's page shows only a few tickets left."
+        "check (only): The historical novelist discusses her new book Royal Witch; the venue's page shows only a few tickets left.",
+        "source check (not_in_source): Philippa Gregory — автор исторических романов"
        ],
-       "knowledge_ru": []
+       "knowledge_ru": [
+        "сверка (нет в источнике): Philippa Gregory — автор исторических романов"
+       ]
       },
       {
        "ids": [
@@ -2340,23 +2348,23 @@
      "passed_over": [
       {
        "id": "T-p1045",
-       "reason_en": "No reason — could be included",
-       "reason_ru": "Причины нет — можно было взять"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "T-p57",
-       "reason_en": "No reason — could be included",
-       "reason_ru": "Причины нет — можно было взять"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "T-p63",
-       "reason_en": "No reason — could be included",
-       "reason_ru": "Причины нет — можно было взять"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       },
       {
        "id": "T-p67",
-       "reason_en": "No reason — could be included",
-       "reason_ru": "Причины нет — можно было взять"
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       }
      ]
     },
@@ -2403,10 +2411,14 @@
        "where_ru": "Cambridge Corn Exchange, Кембридж",
        "price_en": "",
        "price_ru": "",
-       "blurb_en": "Astronaut, test pilot, spacewalker and bestselling author Chris Hadfield was due to bring his talk on the new space age to Cambridge on 14 November, exploring who controls resources beyond Earth's atmosphere. Unfortunately, this event has now been cancelled.",
-       "blurb_ru": "Астронавт, лётчик-испытатель, участник выходов в открытый космос и автор бестселлеров Chris Hadfield должен был выступить в Cambridge 14 ноября с рассказом о новой космической эре и о том, кто контролирует ресурсы за пределами атмосферы Земли. К сожалению, мероприятие отменено.",
-       "knowledge_en": [],
-       "knowledge_ru": []
+       "blurb_en": "Astronaut Chris Hadfield's talk on navigating the new space age, originally set for 14 November, has been cancelled. The event promised a look at who controls resources beyond Earth's atmosphere and how the coming space revolution could reshape life back home.",
+       "blurb_ru": "Лекция астронавта Chris Hadfield о навигации в новую космическую эпоху, изначально запланированная на 14 ноября, отменена. Мероприятие обещало разговор о том, кто контролирует ресурсы за пределами атмосферы Земли и как грядущая космическая революция изменит жизнь на планете.",
+       "knowledge_en": [
+        "Chris Hadfield is a retired Canadian astronaut known for commanding the International Space Station."
+       ],
+       "knowledge_ru": [
+        "Chris Hadfield — канадский астронавт в отставке, известный как командир Международной космической станции."
+       ]
       }
      ],
      "passed_over": []
@@ -2428,13 +2440,11 @@
        "blurb_ru": "Первый UNIQLO в Кембридже открылся на двух этажах Grand Arcade, с настенной росписью местного художника и эксклюзивной коллекцией, созданной совместно с Кембриджским университетом.",
        "knowledge_en": [
         "check (first): Cambridge's first UNIQLO has opened across two floors of the Grand Arcade, with a mural by a local artist and an exclusive collection made with the University of Cambridge.",
-        "source check (not_in_source): Это первый UNIQLO в Кембридже",
-        "source check (not_in_source): Магазин открылся на двух этажах Grand Arcade"
+        "source check (not_in_source): Открылся на двух этажах Grand Arcade"
        ],
        "knowledge_ru": [
         "проверка (Первый): Первый UNIQLO в Кембридже открылся на двух этажах Grand Arcade, с настенной росписью местного художника и эксклюзивной коллекцией, созданной совместно с Кембриджским университетом.",
-        "сверка (нет в источнике): Это первый UNIQLO в Кембридже",
-        "сверка (нет в источнике): Магазин открылся на двух этажах Grand Arcade"
+        "сверка (нет в источнике): Открылся на двух этажах Grand Arcade"
        ]
       },
       {
@@ -2465,10 +2475,10 @@
        "blurb_en": "A new hot pot restaurant where each table cooks its own pot from a choice of ingredients, in a bright, modern space with river views.",
        "blurb_ru": "Новый ресторан хот-пота, где за каждым столом сами готовят блюдо из выбранных ингредиентов, в светлом современном зале с видом на реку.",
        "knowledge_en": [
-        "source check (not_in_source): Интерьер светлый и современный с видом на реку"
+        "source check (not_in_source): Вид на реку"
        ],
        "knowledge_ru": [
-        "сверка (нет в источнике): Интерьер светлый и современный с видом на реку"
+        "сверка (нет в источнике): Вид на реку"
        ]
       },
       {
@@ -2711,8 +2721,8 @@
        "title_ru": "Fungi Field Day",
        "where_en": "Cambridge University Botanic Garden",
        "where_ru": "Cambridge University Botanic Garden",
-       "price_en": "free",
-       "price_ru": "бесплатно",
+       "price_en": "with admission",
+       "price_ru": "по входному билету",
        "blurb_en": "",
        "blurb_ru": "",
        "knowledge_en": [],
@@ -2957,9 +2967,9 @@
    "E1279": "сокращено по длине выпуска (оценка 3.4)",
    "E448": "сокращено по длине выпуска (оценка 4.5)",
    "E197": "сокращено по длине выпуска (оценка 4.6)",
-   "E240": "сокращено по длине выпуска (оценка 4.9)",
    "E822": "сокращено по длине выпуска (оценка 5.3)",
    "E3": "сокращено по длине выпуска (оценка 6.2)",
+   "E1030": "сокращено по длине выпуска (оценка 6.2)",
    "V85": "противоречие стадии открытия: стадия «открылось» (2026-09-28), а описание — «скоро откроется»"
   },
   "notes": [
@@ -3036,16 +3046,16 @@
     "«Dubai Future Champions Festival» (4.6, out_of_town): сокращён — выпуск длиннее 45 пунктов"
    ],
    [
-    "“London City Ballet” (4.9, weekdays): cut — the issue is longer than 45 items",
-    "«London City Ballet» (4.9, weekdays): сокращён — выпуск длиннее 45 пунктов"
-   ],
-   [
     "“Pasadena Roof Orchestra” (5.3, weekend_2): cut — the issue is longer than 45 items",
     "«Pasadena Roof Orchestra» (5.3, weekend_2): сокращён — выпуск длиннее 45 пунктов"
    ],
    [
     "“The Footlights Tour Show 2026: Prize Cow (for my best son)” (6.2, weekend_1): cut — the issue is longer than 45 items",
     "«The Footlights Tour Show 2026: Prize Cow (for my best son)» (6.2, weekend_1): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Hayseed Dixie” (6.2, weekdays): cut — the issue is longer than 45 items",
+    "«Hayseed Dixie» (6.2, weekdays): сокращён — выпуск длиннее 45 пунктов"
    ],
    [
     "“Mill Road Winter Fair 2026”: “free” not in the data — prices on the website",
@@ -3108,10 +3118,6 @@
     "«Знакомство с коровами»: имена переписаны латиницей (Belted Galloway)"
    ],
    [
-    "“intro”: names put back into Latin script (Simon Amstell, Josephine Crawley Quinn, Professor Josephine Crawley Quinn, Cambridge United Women)",
-    "«вступление»: имена переписаны латиницей (Simon Amstell, Josephine Crawley Quinn, Professor Josephine Crawley Quinn, Cambridge United Women)"
-   ],
-   [
     "“Roddy Bogawa: talk and outtakes, then the film”: English word “and” in the Russian text (blurb_ru)",
     "«Roddy Bogawa: беседа с показом неопубликованных кадров, затем фильм»: английское слово «and» в русском тексте (blurb_ru)"
    ],
@@ -3148,12 +3154,12 @@
     "«Также играют»: без модели добавлено матчей и скачек — 2 (Dubai Future Champions Festival; Peterborough Phantoms v Hull Seahawks)"
    ],
    [
-    "“Cambridge United v Blackpool”: claim not in the source moved to the check list",
-    "«Cambridge United — Blackpool»: «Матч Cambridge United — Blackpool является обычным домашним матчем лиги One» — в «Факты из знаний модели (проверить)»"
+    "“A Tribute to Syd Barrett: Official 80th Anniversary Celebrations”: claim not in the source moved to the check list",
+    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «Сид Барретт — основатель и гитарист Pink Floyd» — в «Факты из знаний модели (проверить)»"
    ],
    [
-    "“Roachford + Hue and Cry”: claim not in the source moved to the check list",
-    "«Roachford + Hue and Cry»: «Оба исполнителя выступают со своими полными составами» — в «Факты из знаний модели (проверить)»"
+    "“A Tribute to Syd Barrett: Official 80th Anniversary Celebrations”: claim not in the source moved to the check list",
+    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «На разогреве Soft Machine» — в «Факты из знаний модели (проверить)»"
    ],
    [
     "“Antony Szmierek”: claim not in the source moved to the check list",
@@ -3169,19 +3175,11 @@
    ],
    [
     "“Shine with Jess Gillam and her Band”: claim not in the source moved to the check list",
-    "«Shine with Jess Gillam and her Band»: «Программа исполняется с её собственным составом» — в «Факты из знаний модели (проверить)»"
-   ],
-   [
-    "“Nish Kumar: Angry Humour From a Really Nice Guy”: claim not in the source moved to the check list",
-    "«Nish Kumar: Angry Humour From a Really Nice Guy»: «Nish Kumar прославился благодаря шоу The Mash Report» — в «Факты из знаний модели (проверить)»"
+    "«Shine with Jess Gillam and her Band»: «Выступление исполняется вместе с собственным составом Jess Gillam» — в «Факты из знаний модели (проверить)»"
    ],
    [
     "“Alice Cooper: Devil on My Shoulder Book Tour”: claim not in the source moved to the check list",
     "«Alice Cooper: Devil on My Shoulder Book Tour»: «Alice Cooper — пионер шок-рока» — в «Факты из знаний модели (проверить)»"
-   ],
-   [
-    "“Transvision Vamp”: claim not in the source moved to the check list",
-    "«Transvision Vamp»: «Transvision Vamp — группа из 80-х» — в «Факты из знаний модели (проверить)»"
    ],
    [
     "“Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn”: claim not in the source moved to the check list",
@@ -3204,20 +3202,16 @@
     "«Leo Sayer»: «Leo Sayer — ветеран британской поп-сцены» — в «Факты из знаний модели (проверить)»"
    ],
    [
-    "“Fireworks Night”: claim not in the source moved to the check list",
-    "«Fireworks Night»: «Fireworks Night состоится 5 ноября» — в «Факты из знаний модели (проверить)»"
+    "“An Audience With Philippa Gregory”: claim not in the source moved to the check list",
+    "«An Audience With Philippa Gregory»: «Philippa Gregory — автор исторических романов» — в «Факты из знаний модели (проверить)»"
    ],
    [
     "“UNIQLO”: claim not in the source moved to the check list",
-    "«UNIQLO»: «Это первый UNIQLO в Кембридже» — в «Факты из знаний модели (проверить)»"
-   ],
-   [
-    "“UNIQLO”: claim not in the source moved to the check list",
-    "«UNIQLO»: «Магазин открылся на двух этажах Grand Arcade» — в «Факты из знаний модели (проверить)»"
+    "«UNIQLO»: «Открылся на двух этажах Grand Arcade» — в «Факты из знаний модели (проверить)»"
    ],
    [
     "“Tripots”: claim not in the source moved to the check list",
-    "«Tripots»: «Интерьер светлый и современный с видом на реку» — в «Факты из знаний модели (проверить)»"
+    "«Tripots»: «Вид на реку» — в «Факты из знаний модели (проверить)»"
    ],
    [
     "“Cambridge United — Blackpool”: grammar fixed (в с неожиданной связью → с неожиданной связью)",

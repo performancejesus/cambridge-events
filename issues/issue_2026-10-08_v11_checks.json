@@ -1,15 +1,19 @@
 {
  "issue_date": "2026-10-08",
  "version": "v11",
- "send_allowed": true,
- "blocking": [],
+ "send_allowed": false,
+ "blocking": [
+  "1. Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»): «Хедлайнеры — Kula Shaker, на разогреве Soft Machine, плюс световое шоу от The Mad Alchemist; площадка та же, где Барретт дал своё последнее живое выступление в 1972 году.» (A Tribute to Syd Barrett: Official 80th Anniversary Celebrations): утверждение «super…"
+ ],
  "checks": [
   {
    "rule": 1,
    "title": "Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»)",
    "level": "block",
-   "status": "pass",
-   "details": [],
+   "status": "block",
+   "details": [
+    "«Хедлайнеры — Kula Shaker, на разогреве Soft Machine, плюс световое шоу от The Mad Alchemist; площадка та же, где Барретт дал своё последнее живое выступление в 1972 году.» (A Tribute to Syd Barrett: Official 80th Anniversary Celebrations): утверждение «super» не подтверждено (verified_facts — нет; источник — not_in_source)"
+   ],
    "fixed": []
   },
   {
@@ -76,26 +80,19 @@
    "rule": 9,
    "title": "Имена людей и групп — латиницей",
    "level": "fix",
-   "status": "left",
-   "details": [
-    "вступление: Simon Amstell — кириллицей",
-    "вступление: Josephine Crawley Quinn — кириллицей",
-    "вступление: Professor Josephine Crawley Quinn — кириллицей"
-   ],
+   "status": "fixed",
+   "details": [],
    "fixed": [
     "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: имена переписаны латиницей (Corn Exchange)",
-    "«Знакомство с коровами»: имена переписаны латиницей (Belted Galloway)",
-    "«вступление»: имена переписаны латиницей (Simon Amstell, Josephine Crawley Quinn, Professor Josephine Crawley Quinn, Cambridge United Women)"
+    "«Знакомство с коровами»: имена переписаны латиницей (Belted Galloway)"
    ]
   },
   {
    "rule": 10,
    "title": "Цена — из данных и из лучшего источника",
    "level": "fix",
-   "status": "left",
-   "details": [
-    "«Fungi Field Day»: «бесплатно», а в данных цена Free with normal Garden admission"
-   ],
+   "status": "fixed",
+   "details": [],
    "fixed": [
     "«Olly Murs на Newmarket Racecourse»: цена в тексте модели не совпала с данными ([45.0]) — заменена на «цена не указана»",
     "«Mill Road Winter Fair 2026»: «бесплатно» нет в данных — цена из лучшего источника: цены на сайте"
@@ -198,9 +195,9 @@
     "«Andrew Chamblin Memorial Lecture 2026» (3.4, talks): сокращён — выпуск длиннее 45 пунктов",
     "«A Mughal Songbook: Art, Music and Empire» (4.5, exhibitions): сокращён — выпуск длиннее 45 пунктов",
     "«Dubai Future Champions Festival» (4.6, out_of_town): сокращён — выпуск длиннее 45 пунктов",
-    "«London City Ballet» (4.9, weekdays): сокращён — выпуск длиннее 45 пунктов",
     "«Pasadena Roof Orchestra» (5.3, weekend_2): сокращён — выпуск длиннее 45 пунктов",
-    "«The Footlights Tour Show 2026: Prize Cow (for my best son)» (6.2, weekend_1): сокращён — выпуск длиннее 45 пунктов"
+    "«The Footlights Tour Show 2026: Prize Cow (for my best son)» (6.2, weekend_1): сокращён — выпуск длиннее 45 пунктов",
+    "«Hayseed Dixie» (6.2, weekdays): сокращён — выпуск длиннее 45 пунктов"
    ]
   },
   {
@@ -215,10 +212,8 @@
    "rule": 22,
    "title": "Разнообразие площадок; театр в «На неделе»",
    "level": "fix",
-   "status": "left",
-   "details": [
-    "«На неделе»: нет театра или танца, кандидаты были (London City Ballet)"
-   ],
+   "status": "pass",
+   "details": [],
    "fixed": []
   },
   {
@@ -277,30 +272,26 @@
    "level": "fix",
    "status": "left",
    "details": [
-    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «Kula Shaker — хедлайнеры концерта» (нет в источнике) — не в списке «проверить»",
-    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «Soft Machine выступают на разогреве» (нет в источнике) — не в списке «проверить»",
-    "«Cambridge United — Blackpool»: «Матч Cambridge United — Blackpool — обычный домашний матч Лиги Один» (нет в источнике) — не в списке «проверить»",
-    "«Tripots»: «Из зала открывается вид на реку» (нет в источнике) — не в списке «проверить»"
+    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «Kula Shaker выступают хедлайнерами, Soft Machine на разогреве» (нет в источнике) — не в списке «проверить»",
+    "«UNIQLO»: «Это первый UNIQLO в Кембридже» (нет в источнике) — не в списке «проверить»",
+    "«Tripots»: «Интерьер светлый и современный с видом на реку» (нет в источнике) — не в списке «проверить»"
    ],
    "fixed": [
-    "«Cambridge United — Blackpool»: «Матч Cambridge United — Blackpool является обычным домашним матчем лиги One» — в «Факты из знаний модели (проверить)»",
-    "«Roachford + Hue and Cry»: «Оба исполнителя выступают со своими полными составами» — в «Факты из знаний модели (проверить)»",
+    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «Сид Барретт — основатель и гитарист Pink Floyd» — в «Факты из знаний модели (проверить)»",
+    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «На разогреве Soft Machine» — в «Факты из знаний модели (проверить)»",
     "«Antony Szmierek»: «Antony Szmierek — манчестерский исполнитель» — в «Факты из знаний модели (проверить)»",
     "«Antony Szmierek»: «Antony Szmierek начинал со спок-ворда и перешёл в поп» — в «Факты из знаний модели (проверить)»",
     "«Antony Szmierek»: «Antony Szmierek известен тем, что вплетает наблюдательные истории в танцевальные» — в «Факты из знаний модели (проверить)»",
-    "«Shine with Jess Gillam and her Band»: «Программа исполняется с её собственным составом» — в «Факты из знаний модели (проверить)»",
-    "«Nish Kumar: Angry Humour From a Really Nice Guy»: «Nish Kumar прославился благодаря шоу The Mash Report» — в «Факты из знаний модели (проверить)»",
+    "«Shine with Jess Gillam and her Band»: «Выступление исполняется вместе с собственным составом Jess Gillam» — в «Факты из знаний модели (проверить)»",
     "«Alice Cooper: Devil on My Shoulder Book Tour»: «Alice Cooper — пионер шок-рока» — в «Факты из знаний модели (проверить)»",
-    "«Transvision Vamp»: «Transvision Vamp — группа из 80-х» — в «Факты из знаний модели (проверить)»",
     "«Anarchical Antiquity — инаугурационная лекция профессора Josephine Crawley Quinn»: «Это инаугурационная лекция профессора Josephine Crawley Quinn» — в «Факты из знаний модели (проверить)»",
     "«Регулярно в библиотеках»: «Проводятся встречи для творчества и лего-клуба» — в «Факты из знаний модели (проверить)»",
     "«Регулярно в библиотеках»: «Проводятся встречи на языке жестов» — в «Факты из знаний модели (проверить)»",
     "«Органный концерт: Paul Greally, Westminster Abbey»: «Проходит в Westminster Abbey» — в «Факты из знаний модели (проверить)»",
     "«Leo Sayer»: «Leo Sayer — ветеран британской поп-сцены» — в «Факты из знаний модели (проверить)»",
-    "«Fireworks Night»: «Fireworks Night состоится 5 ноября» — в «Факты из знаний модели (проверить)»",
-    "«UNIQLO»: «Это первый UNIQLO в Кембридже» — в «Факты из знаний модели (проверить)»",
-    "«UNIQLO»: «Магазин открылся на двух этажах Grand Arcade» — в «Факты из знаний модели (проверить)»",
-    "«Tripots»: «Интерьер светлый и современный с видом на реку» — в «Факты из знаний модели (проверить)»"
+    "«An Audience With Philippa Gregory»: «Philippa Gregory — автор исторических романов» — в «Факты из знаний модели (проверить)»",
+    "«UNIQLO»: «Открылся на двух этажах Grand Arcade» — в «Факты из знаний модели (проверить)»",
+    "«Tripots»: «Вид на реку» — в «Факты из знаний модели (проверить)»"
    ]
   },
   {
@@ -317,10 +308,8 @@
    "rule": 31,
    "title": "Подтверждённые открытия (S148) — в «Новом в городе» (правки по v9)",
    "level": "fix",
-   "status": "left",
-   "details": [
-    "«Bridge Bagels» (открылось 2026-09-28) — не в «Новом в городе»"
-   ],
+   "status": "pass",
+   "details": [],
    "fixed": []
   },
   {
