@@ -13,11 +13,12 @@ RULE, TITLE, LEVEL = 31, "Подтверждённые открытия (S148) �
 
 
 def check(ctx) -> Finding:
+    from pipeline.issue_fixes import stage_conflict
     f = Finding()
     placed = {i for rub, it in ctx.model_items() if rub == "new_in_town" for i in it["ids"]}
     for cid, c in ctx.pools.candidates.items():
         if c["kind"] == "venue_news" and "S148" in (c.get("sources") or []) and c.get("date_basis") == "stated" \
                 and c.get("date") and c.get("stage") == "opened" and re.search(r"\bCambridge\b", c.get("address") or "") \
-                and cid not in placed:
+                and cid not in placed and not stage_conflict(c, {}):   # 7d: сайт места — «скоро откроется» (проверка 36)
             f.violations.append(f"«{c['title']}» (открылось {c['date']}) — не в «Новом в городе»")
     return f

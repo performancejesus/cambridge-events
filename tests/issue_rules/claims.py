@@ -64,8 +64,11 @@ def source_text(ctx, ids: list[str], limit: int = 2500, per_id: int = 1500) -> s
     for i in ids:
         mark = len(parts)
         c = ctx.pools.candidates.get(i) or {}
-        for k in ("title", "summary", "page_facts", "editor_note", "note", "wiki_extract", "price_text", "venue"):
+        for k in ("title", "summary", "page_facts", "editor_note", "note", "wiki_extract", "price_text", "venue",
+                  "performer", "lineup"):   # 7d: состав из данных — тоже источник («хедлайнеры — Kula Shaker» в v11)
             v = c.get(k)
+            if isinstance(v, list):
+                v = ", ".join(map(str, v))
             if v and str(v) not in "\n".join(parts):
                 parts.append(f"{k}: {v}")
         for e in c.get("event_ids") or []:

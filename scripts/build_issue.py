@@ -773,6 +773,9 @@ def trim(result: dict, pools: issue.Pools, removed: dict[str, str]) -> list[tupl
         # событий и «Успейте купить» с сигналом со страницы; если резать больше нечего — остаток видит проверка 20.
         def protected(sec, it):
             cs = [pools.candidates[i] for i in it["ids"] if i in pools.candidates]
+            if sec["rubric"] == "weekdays" and any(c.get("theatre") for c in cs) and sum(
+                    1 for x in sec["items"] for i in x["ids"] if (pools.candidates.get(i) or {}).get("theatre")) <= 1:
+                return True   # этап 7d: единственный театр/танец «На неделе» (проверка 22; в v11 сокращён London City Ballet)
             return issue.importance_of(pools, it) >= 7 or any(
                 "ежегодного" in (c.get("evidence") or "") or c.get("page_urgency") or c.get("urgency") for c in cs)
         pool = [(issue.importance_of(pools, it), sec, it) for sec in result["sections"]
@@ -1791,6 +1794,7 @@ def main() -> None:
         if n_sup:
             ctx.claims, cost_claims2 = _claims.collect(ctx, api_client)
             usage["cost_usd"] += cost_claims2
+            fix_notes += issue_fixes.knowledge_from_claims(result, ctx.claims)   # по новой сверке
         n_gr, cost_gr, result["grammar"] = issue_fixes.fix_grammar(api_client, result, pools, con)
         fix_notes += n_gr
         usage["cost_usd"] += cost_gr

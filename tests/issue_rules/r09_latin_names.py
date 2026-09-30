@@ -76,7 +76,9 @@ def cyrillic_only(name: str, text: str) -> bool:
     if not last or re.search(rf"\b{re.escape(last[-1])}\b", text, re.I):
         return False
     lat_only = re.sub(r"[А-Яа-яЁё]+", " ", text)
-    return (name_in_text(name, text) and not name_in_text(name, lat_only)) or full_name_cyr(name, text)
+    # этап 7d: имя кириллицей пишется с заглавной — «уместились» не «Amstell», «кино» не «Quinn» (ложные находки v11)
+    caps = re.sub(r"\b[а-яё][А-Яа-яЁё-]*", " ", text)
+    return (name_in_text(name, caps) and not name_in_text(name, lat_only)) or full_name_cyr(name, caps)
 
 
 def check(ctx) -> Finding:

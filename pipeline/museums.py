@@ -111,7 +111,8 @@ def select(cands, w):
     return sorted(chosen, key=lambda x: (x[1]["dates"][0][0], x[1]["dates"][0][2] or "")), why
 
 
-ADMISSION_RE = re.compile(r"included in (?:the )?admission|with admission|admission (?:applies|required)", re.I)
+ADMISSION_RE = re.compile(r"included in (?:the )?admission|with (?:\w+ ){0,3}admission|admission (?:applies|required)|"
+                          r"normal (?:\w+ )?admission", re.I)   # 7d: «Free with normal Garden admission» (Botanic Garden)
 
 
 def price_pair(c: dict) -> tuple[str, str]:
