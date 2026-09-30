@@ -1,0 +1,29 @@
+[
+ {
+  "source_id": "S171",
+  "title": "Lucy Cavendish College's Foundation Day: Panel Discussion",
+  "url": "https://www.lucy.cam.ac.uk/events/lucy-cavendish-colleges-foundation-day-panel-discussion",
+  "kind": "event",
+  "external_id": "2026-11-10|Lucy Cavendish College's Foundation Day: Panel Discussion",
+  "start": "2026-11-10",
+  "end": null,
+  "all_day": true,
+  "venue": "Lucy Cavendish College",
+  "address": "Lucy Cavendish College, Lady Margaret Road, Cambridge",
+  "postcode": "CB3 0BU",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "other"
+  ],
+  "summary": "other",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:55:29+00:00"
+ }
+]

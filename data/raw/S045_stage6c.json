@@ -22,7 +22,9 @@
   ],
   "summary": "special screening",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:38+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:06+00:00"
  },
  {
   "source_id": "S045",
@@ -30,8 +32,8 @@
   "url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
   "kind": "event",
   "external_id": "now|Hope",
-  "start": "2026-09-29",
-  "end": "2026-10-05",
+  "start": "2026-09-30",
+  "end": "2026-10-06",
   "all_day": true,
   "venue": "Arts Picturehouse",
   "address": "38-39 St Andrew's Street, Cambridge",
@@ -47,7 +49,9 @@
   ],
   "summary": "в прокате",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:38+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:06+00:00"
  },
  {
   "source_id": "S045",
@@ -55,8 +59,8 @@
   "url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
   "kind": "event",
   "external_id": "now|Sense and Sensibility",
-  "start": "2026-09-29",
-  "end": "2026-10-05",
+  "start": "2026-09-30",
+  "end": "2026-10-06",
   "all_day": true,
   "venue": "Arts Picturehouse",
   "address": "38-39 St Andrew's Street, Cambridge",
@@ -72,7 +76,9 @@
   ],
   "summary": "в прокате",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:38+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:06+00:00"
  },
  {
   "source_id": "S045",
@@ -80,8 +86,8 @@
   "url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
   "kind": "event",
   "external_id": "now|Her Private Hell",
-  "start": "2026-09-29",
-  "end": "2026-10-05",
+  "start": "2026-09-30",
+  "end": "2026-10-06",
   "all_day": true,
   "venue": "Arts Picturehouse",
   "address": "38-39 St Andrew's Street, Cambridge",
@@ -97,6 +103,8 @@
   ],
   "summary": "в прокате",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:38+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:06+00:00"
  }
 ]

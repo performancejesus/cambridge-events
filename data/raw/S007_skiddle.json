@@ -19,7 +19,9 @@
   "categories": [],
   "summary": "OH WHAT A NIGHT! takes you back in time on a musical journey through the incredible career of Frankie Valli & The Four Seasons.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -35,13 +37,15 @@
   "postcode": "MK1 1ST",
   "lat": 52.008534,
   "lon": -0.732831,
-  "price": "GBP 29.00, GBP 15.00, GBP 55.00, GBP 89.00, GBP 34.00, GBP 39.00",
+  "price": "GBP 15.00, GBP 29.00, GBP 89.00, GBP 55.00, GBP 39.00, GBP 34.00",
   "status": "scheduled",
   "organizer": "Global Ticketing Ltd",
   "categories": [],
   "summary": "We return one last time to the hallowed ground of V7 Saxon Street for the final dance - One last time. One last chance - ON SALE THIS THURSDAY 9am!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -57,13 +61,15 @@
   "postcode": "CB1 7GX",
   "lat": 52.1906821,
   "lon": 0.1359265,
-  "price": "GBP 25.00, GBP 50.00, GBP 120.00, GBP 60.00, GBP 35.00, GBP 40.00",
+  "price": "GBP 35.00, GBP 40.00, GBP 120.00, GBP 50.00, GBP 60.00, GBP 25.00",
   "status": "scheduled",
   "organizer": "Zombie Fest (Promoter)",
   "categories": [],
   "summary": "Zombie Fest 9 takes over Cambridge Junction on Saturday 31 October 2026, with over 70 acts across 6 stages at Cambridge's huge Halloween day rave!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -79,13 +85,15 @@
   "postcode": "CB2 3HG",
   "lat": 52.206186,
   "lon": 0.120868,
-  "price": "GBP 155.00, GBP 165.00, GBP 0.00, GBP 135.00, GBP 15.00, GBP 18.00",
+  "price": "GBP 15.00, GBP 18.00, GBP 135.00, GBP 155.00, GBP 165.00, GBP 0.00",
   "status": "scheduled",
   "organizer": "Surprisingly Adequate Events LTD",
   "categories": [],
   "summary": "This isn't just bingo. It's something completely different - designed with you in mind, and packed with surprises from start to finish.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -101,35 +109,15 @@
   "postcode": "CO1 1SP",
   "lat": 51.8899413,
   "lon": 0.8999414,
-  "price": "GBP 130.00, GBP 205.00, GBP 0.00, GBP 135.00, GBP 165.00, GBP 155.00, GBP 15.00, GBP 18.00",
+  "price": "GBP 15.00, GBP 18.00, GBP 135.00, GBP 155.00, GBP 130.00, GBP 165.00, GBP 205.00, GBP 0.00",
   "status": "scheduled",
   "organizer": "Surprisingly Adequate Events LTD",
   "categories": [],
   "summary": "This isn't just bingo. It's something completely different - designed with you in mind, and packed with surprises from start to finish.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
- },
- {
-  "source_id": "S007",
-  "title": "Ultimate Rave Bingo // Cambridge // Saturday 19th December",
-  "url": "https://www.skiddle.com/whats-on/Cambridge/Vinyl/Ultimate-Rave-Bingo--Cambridge--Saturday-19th-December/41600644/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Cambridge/Vinyl/Ultimate-Rave-Bingo--Cambridge--Saturday-19th-December/41600644/",
-  "start": "2026-12-19T17:30:00+00:00",
-  "end": "2026-12-19T22:30:00+00:00",
-  "all_day": false,
-  "venue": "Vinyl",
-  "address": "22 Sidney Street, Cambridge, CB2 3HG",
-  "postcode": "CB2 3HG",
-  "lat": 52.206186,
-  "lon": 0.120868,
-  "price": "GBP 155.00, GBP 200.00, GBP 18.00, GBP 135.00, GBP 165.00, GBP 15.00",
-  "status": "scheduled",
-  "organizer": "Surprisingly Adequate Events LTD",
-  "categories": [],
-  "summary": "This isn't just bingo. It's something completely different - designed with you in mind, and packed with surprises from start to finish.",
-  "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -145,13 +133,15 @@
   "postcode": "AL8 7XG",
   "lat": 51.7939798,
   "lon": -0.2196838,
-  "price": "GBP 0.00, GBP 20.00, GBP 40.00, GBP 10.00, GBP 18.00",
+  "price": "GBP 10.00, GBP 0.00, GBP 18.00, GBP 40.00, GBP 20.00",
   "status": "scheduled",
   "organizer": "Brocket Hall",
   "categories": [],
   "summary": "The Hertfordshire Firework Spectacular returns to Brocket Hall in 2026! 2024 and 2025 tickets completely sold out! Book now to avoid disappointment",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -167,13 +157,15 @@
   "postcode": "CB1 7GX",
   "lat": 52.1906821,
   "lon": 0.1359265,
-  "price": "GBP 0.00, GBP 12.50, GBP 14.50",
+  "price": "GBP 12.50, GBP 14.50, GBP 0.00",
   "status": "sold_out",
   "organizer": "E31 Events Limited",
   "categories": [],
   "summary": "Kids K-Pop Party is the ultimate event for all young K-Pop fans!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -195,7 +187,9 @@
   "categories": [],
   "summary": "Join the Emalexian Paranormal Investigation crew at The British Schools Museum for an epic night of investigation",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -217,7 +211,33 @@
   "categories": [],
   "summary": "A Christmas Carol return to Saffron Walden - Dickens' original 1853 performance text brought vividly to life in the historic Old Sun Inn by Mat Jones.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "Army Inflatable Day in Shefford | October 26th",
+  "url": "https://www.skiddle.com/whats-on/Stevenage/Robert-Bloomfield-Academy/Army-Inflatable-Day-in-Shefford--October-26th/42442898/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Stevenage/Robert-Bloomfield-Academy/Army-Inflatable-Day-in-Shefford--October-26th/42442898/",
+  "start": "2026-10-26T07:30:00+00:00",
+  "end": "2026-10-26T21:00:00+00:00",
+  "all_day": false,
+  "venue": "Robert Bloomfield Academy",
+  "address": "Bloomfield Drive, Stevenage, SG17 5BU",
+  "postcode": "SG17 5BU",
+  "lat": 52.0360514,
+  "lon": -0.3408741,
+  "price": "GBP 10.00",
+  "status": "scheduled",
+  "organizer": "Bounce Camp",
+  "categories": [],
+  "summary": "Army Nerf inflatable event in Shefford on October 26th with foam dart games, obstacle inflatables and family sessions.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -239,7 +259,33 @@
   "categories": [],
   "summary": "A Christmas Carol comes to the magnificent St. Mary's in Woburn - Dickens' original 1853 performance text brought vividly to life by Mat Jones.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "SEN Kids Disability Discos",
+  "url": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447587/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447587/",
+  "start": "2026-10-30T14:00:00+00:00",
+  "end": "2026-10-30T15:15:00+00:00",
+  "all_day": false,
+  "venue": "Palm Beach",
+  "address": "3 Commercial Way, Northampton, NN8 1ET",
+  "postcode": "NN8 1ET",
+  "lat": 52.3003079,
+  "lon": -0.6918945,
+  "price": "GBP 5.00, GBP 0.00",
+  "status": "scheduled",
+  "organizer": "Community Projects Base C.I.C",
+  "categories": [],
+  "summary": "A family-friendly disco event for children with disabilities, special needs or learning difficulties",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -261,7 +307,9 @@
   "categories": [],
   "summary": "A Christmas Carol comes to the ballroom at The University Arms - Dickens' original 1853 performance text brought vividly to life by Mat Jones.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -283,7 +331,9 @@
   "categories": [],
   "summary": "A Christmas Carol returns to Hitchin Town Hall - Dickens' original 1853 performance text brought vividly to life by Mat Jones.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -299,13 +349,15 @@
   "postcode": "EN6 4RY",
   "lat": 51.7068385,
   "lon": -0.1088653,
-  "price": "GBP 0.00, GBP 23.36, GBP 50.00, GBP 35.00, GBP 40.00, GBP 27.00",
+  "price": "GBP 23.36, GBP 27.00, GBP 0.00, GBP 35.00, GBP 40.00, GBP 50.00",
   "status": "scheduled",
   "organizer": "Garage Nation ltd",
   "categories": [],
   "summary": "Garage Nation returns to Sopers House for one more party for the year!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -321,13 +373,15 @@
   "postcode": "SG1 3EF",
   "lat": 51.9127033,
   "lon": -0.2091482,
-  "price": "GBP 51.95, GBP 44.95",
+  "price": "GBP 44.95, GBP 51.95",
   "status": "scheduled",
   "organizer": "Cinnabar",
   "categories": [],
   "summary": "A powerful tribute to the legend herself! Sing along to iconic hits, celebrate unforgettable classics, and relive the magic of Whitney Houston!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -343,13 +397,15 @@
   "postcode": "N18 3HF",
   "lat": 51.6081334,
   "lon": -0.0468987,
-  "price": "GBP 49.50, GBP 67.00, GBP 152.00, GBP 44.50, GBP 61.50, GBP 56.50, GBP 37.00, GBP 41.50",
+  "price": "GBP 37.00, GBP 41.50, GBP 44.50, GBP 49.50, GBP 56.50, GBP 61.50, GBP 67.00, GBP 152.00",
   "status": "scheduled",
   "organizer": "Louder UK Festivals",
   "categories": [],
   "summary": "A State of Trance returns to London for their first ever indoor Festival in the UK. Featuring Armin Van Buuren + more, celebrating 25 Years of ASOT",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -365,13 +421,15 @@
   "postcode": "SG1 3EF",
   "lat": 51.9127033,
   "lon": -0.2091482,
-  "price": "GBP 51.95, GBP 44.95",
+  "price": "GBP 44.95, GBP 51.95",
   "status": "scheduled",
   "organizer": "Cinnabar",
   "categories": [],
   "summary": "2 Courses + 90 Mins Of Bottomless Drinks, Reserved Table For 2 Hours, 2 Live Singers, The Most Iconic Spice Girls Singalong Hits.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -387,13 +445,15 @@
   "postcode": "SG1 3EF",
   "lat": 51.9127033,
   "lon": -0.2091482,
-  "price": "GBP 51.95, GBP 44.95",
+  "price": "GBP 44.95, GBP 51.95",
   "status": "scheduled",
   "organizer": "Cinnabar",
   "categories": [],
   "summary": "A soulful tribute to an iconic era! Sing along to legendary hits, celebrate unforgettable classics, and experience the vibe of Motown with live singer",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -409,13 +469,15 @@
   "postcode": "SG1 3EF",
   "lat": 51.9127033,
   "lon": -0.2091482,
-  "price": "GBP 51.95, GBP 44.95",
+  "price": "GBP 44.95, GBP 51.95",
   "status": "scheduled",
   "organizer": "Cinnabar",
   "categories": [],
   "summary": "An unforgettable ABBA experience! Sing along to iconic hits, dance with friends, and immerse yourself in the magic of Mamma Mia!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -431,13 +493,15 @@
   "postcode": "SG1 3EF",
   "lat": 51.9127033,
   "lon": -0.2091482,
-  "price": "GBP 51.95, GBP 44.95",
+  "price": "GBP 44.95, GBP 51.95",
   "status": "scheduled",
   "organizer": "Cinnabar",
   "categories": [],
   "summary": "A tribute to the ultimate British pop icon! Sing along to his greatest hits and enjoy a brunch packed with energy, fun, and pure Robbie magic!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -453,13 +517,15 @@
   "postcode": "N18 3HF",
   "lat": 51.60799,
   "lon": -0.046749,
-  "price": "GBP 127.00, GBP 89.95, GBP 102.00, GBP 49.95, GBP 54.95, GBP 44.95, GBP 33.96",
+  "price": "GBP 49.95, GBP 54.95, GBP 44.95, GBP 89.95, GBP 102.00, GBP 127.00, GBP 33.96",
   "status": "scheduled",
   "organizer": "Kaboodle",
   "categories": [],
   "summary": "After seven UK editions, Dutch-born and globally- renowned EDM mega-imprint Don't Let Daddy Know finally touch down in London.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -475,13 +541,15 @@
   "postcode": "CM17 0GJ",
   "lat": 51.7881069,
   "lon": 0.1458278,
-  "price": "GBP 7.50, GBP 10.00, GBP 5.00, GBP 2.50",
+  "price": "GBP 2.50, GBP 5.00, GBP 7.50, GBP 10.00",
   "status": "scheduled",
   "organizer": "Marrisa Holliland",
   "categories": [],
   "summary": "Come & dance the afternoon away with Frequency Machine DJ's & special guests. Crafts, dancing and spooky fun. Snack and soft drink stall available.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -503,7 +571,9 @@
   "categories": [],
   "summary": "Pop-Soul Singer Tunde of The Lighthouse Family will be performing live inside the incredible St Albans Cathedral this October!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -525,7 +595,9 @@
   "categories": [],
   "summary": "Join us this Autumn as the legendary DJ/Sax duo Laura & Santiago perform a headline gig inside the stunning Peterborough Cathedral for Ibiza Anthems",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -541,13 +613,15 @@
   "postcode": "N18 3HF",
   "lat": 51.60799,
   "lon": -0.046749,
-  "price": "GBP 61.95, GBP 152.00, GBP 53.95, GBP 127.00, GBP 51.95, GBP 66.95, GBP 46.95, GBP 41.95, GBP 56.95",
+  "price": "GBP 51.95, GBP 53.95, GBP 56.95, GBP 41.95, GBP 46.95, GBP 66.95, GBP 127.00, GBP 152.00, GBP 61.95",
   "status": "scheduled",
   "organizer": "Kaboodle",
   "categories": [],
   "summary": "After a two-year hiatus, elrow's iconic Horroween returns to Drumsheds on Saturday 31 October for its fourth London edition.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -563,13 +637,15 @@
   "postcode": "N18 3HF",
   "lat": 51.60799,
   "lon": -0.046749,
-  "price": "GBP 152.00, GBP 49.50, GBP 127.00, GBP 61.95, GBP 34.50, GBP 39.50, GBP 44.50",
+  "price": "GBP 34.50, GBP 39.50, GBP 44.50, GBP 49.50, GBP 61.95, GBP 127.00, GBP 152.00",
   "status": "scheduled",
   "organizer": "Kaboodle",
   "categories": [],
   "summary": "If it's nice, play it twice. After a sold-out debut last year, Max Dean returns to Drumsheds with NEXUP on Saturday 3 October.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -585,13 +661,15 @@
   "postcode": "N18 3HF",
   "lat": 51.60799,
   "lon": -0.046749,
-  "price": "GBP 57.00, GBP 102.00, GBP 127.00, GBP 87.00, GBP 37.00, GBP 52.00, GBP 42.00, GBP 47.00",
+  "price": "GBP 47.00, GBP 52.00, GBP 57.00, GBP 37.00, GBP 42.00, GBP 87.00, GBP 102.00, GBP 127.00",
   "status": "scheduled",
   "organizer": "Kaboodle",
   "categories": [],
   "summary": "Scottish techno powerhouse Terminal V are back by popular demand this October for a second edition at Drumsheds, across all. three. rooms.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -613,7 +691,9 @@
   "categories": [],
   "summary": "Bobby Davro Heads the Launch of Colchester Comedy at No Name Bar & Games.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -635,7 +715,9 @@
   "categories": [],
   "summary": "MERRY CHRISTMAS You will arrive lunch time where you will be greeted by Basil, Sybil and Manuel.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -651,13 +733,15 @@
   "postcode": "N18 3HF",
   "lat": 51.6081334,
   "lon": -0.0468987,
-  "price": "GBP 36.95, GBP 28.21, GBP 31.96, GBP 41.95, GBP 127.00, GBP 101.00, GBP 51.95, GBP 43.25, GBP 35.57, GBP 39.46, GBP 34.95, GBP 46.95",
+  "price": "GBP 36.95, GBP 41.95, GBP 46.95, GBP 51.95, GBP 34.95, GBP 101.00, GBP 127.00, GBP 28.21, GBP 31.96, GBP 35.57, GBP 39.46, GBP 43.25",
   "status": "scheduled",
   "organizer": "Louder UK Festivals",
   "categories": [],
   "summary": "Worried About Henry returns to Drumsheds on Saturday 7 November 2026 for another monumental indoor drum and bass festival, headlined by Wilkinson.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -679,7 +763,9 @@
   "categories": [],
   "summary": "Laughter Craft Comedy are very excited to be launching a comedy night in Knebworth We are bringing a line up full of TV and Award Winning Comedians",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -701,7 +787,9 @@
   "categories": [],
   "summary": "Comedy club hosted by Gary G Knightley, serving stand-up comedy with non-stop entertainment. Step right up & get ready to laugh until your cheeks hurt",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -723,7 +811,9 @@
   "categories": [],
   "summary": "Comedy club hosted by Gary G Knightley, serving stand-up comedy with non-stop entertainment. Step right up & get ready to laugh until your cheeks hurt",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -745,7 +835,9 @@
   "categories": [],
   "summary": "Comedy club hosted by Gary G Knightley, serving stand-up comedy with non-stop entertainment. Step right up & get ready to laugh until your cheeks hurt",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -767,7 +859,9 @@
   "categories": [],
   "summary": "Join us for a paranormal investigation at Ousebank House - Newport Pagnell",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -783,13 +877,15 @@
   "postcode": "CM15 8AS",
   "lat": 51.6199422,
   "lon": 0.3074475,
-  "price": "GBP 12.50, GBP 25.00, GBP 15.00, GBP 20.00",
+  "price": "GBP 20.00, GBP 12.50, GBP 25.00, GBP 15.00",
   "status": "scheduled",
   "organizer": "Square Balloon",
   "categories": [],
   "summary": "A fantastic night of live stand-up comedy, bringing top professional comedians to Brentwood.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -805,13 +901,15 @@
   "postcode": "MK1 1ST",
   "lat": 52.008534,
   "lon": -0.732831,
-  "price": "GBP 17.00, GBP 85.00, GBP 55.00, GBP 29.00, GBP 65.00, GBP 44.00, GBP 35.00, GBP 39.00",
+  "price": "GBP 29.00, GBP 35.00, GBP 39.00, GBP 44.00, GBP 55.00, GBP 65.00, GBP 85.00, GBP 17.00",
   "status": "scheduled",
   "organizer": "Main Account - Louder Entertainment Ltd",
   "categories": [],
   "summary": "After sell-outs in 2023, 2024 & 2025 - The annual WAH Halloween rave returns to Arena MK. Get the WAH App now for exclusive pre-sale access!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -827,13 +925,15 @@
   "postcode": "MK1 1ST",
   "lat": 52.008534,
   "lon": -0.732831,
-  "price": "GBP 105.00, GBP 55.00, GBP 29.00, GBP 85.00, GBP 35.00, GBP 44.00, GBP 39.00",
+  "price": "GBP 29.00, GBP 35.00, GBP 39.00, GBP 44.00, GBP 49.50, GBP 85.00, GBP 105.00",
   "status": "scheduled",
   "organizer": "Main Account - Louder Entertainment Ltd",
   "categories": [],
   "summary": "Eric Prydz returns to Milton Keynes for the 1st time in 10 years to takeover Arena MK this October.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -849,13 +949,15 @@
   "postcode": "SG14 1AB",
   "lat": 51.796545,
   "lon": -0.075214,
-  "price": "GBP 0.00, GBP 25.00, GBP 22.50, GBP 15.00, GBP 17.50, GBP 20.00",
+  "price": "GBP 15.00, GBP 17.50, GBP 20.00, GBP 22.50, GBP 25.00, GBP 0.00",
   "status": "scheduled",
   "organizer": "Live Republic Ltd",
   "categories": [],
   "summary": "Hertford, are you ready to experience the very best of R&B music? R&B MANIA comes to Dog and Whistle on Saturday, 5th December 2026!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -871,13 +973,15 @@
   "postcode": "MK41 7FY",
   "lat": 52.1466832,
   "lon": -0.4873486,
-  "price": "GBP 0.00, GBP 17.91, GBP 13.36, GBP 4.95, GBP 9.73, GBP 22.45",
+  "price": "GBP 22.45, GBP 17.91, GBP 13.36, GBP 9.73, GBP 4.95, GBP 0.00",
   "status": "scheduled",
   "organizer": "Garage Nation Ltd",
   "categories": [],
   "summary": "Garage Nation returns to Bedford for an October Indoor Festival!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -899,7 +1003,9 @@
   "categories": [],
   "summary": "Join our dynamic duo for another unforgettable 80s vs 90s LIVE night. They're back with even more energy!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -921,7 +1027,9 @@
   "categories": [],
   "summary": "Get ready to relive the noughties at our 2000s Party Night!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -943,7 +1051,9 @@
   "categories": [],
   "summary": "Get ready to sing, dance, and shout 'Bingo!' as we turn your favourite Christmas hits into a night of non-stop fun!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -959,13 +1069,15 @@
   "postcode": "SG1 3EF",
   "lat": 51.9127033,
   "lon": -0.2091482,
-  "price": "GBP 51.95, GBP 44.95",
+  "price": "GBP 44.95, GBP 51.95",
   "status": "scheduled",
   "organizer": "Cinnabar",
   "categories": [],
   "summary": "Yeehaw! Get your boots on and join us for the ultimate Country Bottomless Brunch! Delicious brunch, bottomless drinks and the biggest country hits!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -987,7 +1099,9 @@
   "categories": [],
   "summary": "Join Basil, Sybil and Manuel for a hilarious seasonal celebration featuring favourite moments from the TV series with a special Christmas twist.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1003,13 +1117,15 @@
   "postcode": "PE7 2AD",
   "lat": 52.5650522,
   "lon": -0.0979476,
-  "price": "GBP 5.00, GBP 20.00, GBP 10.00",
+  "price": "GBP 20.00, GBP 10.00, GBP 5.00",
   "status": "scheduled",
   "organizer": "Decoy Lakes",
   "categories": [],
   "summary": "An evening full of family fun ! A Hugh Bonfire to gather round , children's fairground rides, food stalls, licensed bars and the biggest Fireworks dis",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1031,7 +1147,9 @@
   "categories": [],
   "summary": "A spooktacular Children's Halloween Extravaganza! Bouncy castle, pumpkin painting, wand making, party games, disco, food & prizes. £15 per child.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1053,7 +1171,9 @@
   "categories": [],
   "summary": "Join us for a spooktacular Kids Halloween Party! Games, food, drink and a goodie bag included. Friday 30th October, 5:30-8:30pm. £10 per child.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1069,13 +1189,15 @@
   "postcode": "AL9 5HX",
   "lat": 51.7606481,
   "lon": -0.2092386,
-  "price": "GBP 29.50, GBP 44.50, GBP 12.50, GBP 10.00, GBP 20.00, GBP 59.50, GBP 65.00, GBP 42.50, GBP 85.00, GBP 40.00, GBP 95.00, GBP 119.00, GBP 75.50, GBP 37.50, GBP 129.00, GBP 47.50, GBP 35.00, GBP 75.00, GBP 13.50, GBP 25.00, GBP 54.50, GBP 55.00, GBP 67.50, GBP 45.00",
+  "price": "GBP 35.00, GBP 25.00, GBP 47.50, GBP 12.50, GBP 10.00, GBP 20.00, GBP 45.00, GBP 65.00, GBP 40.00, GBP 13.50, GBP 37.50, GBP 129.00, GBP 119.00, GBP 54.50, GBP 75.00, GBP 55.00, GBP 85.00, GBP 42.50, GBP 44.50, GBP 29.50, GBP 59.50, GBP 67.50, GBP 95.00, GBP 75.50",
   "status": "scheduled",
   "organizer": "Sound Live LImited",
   "categories": [],
   "summary": "The Great Fete returns for 2027 bigger and better to Hatfield House. After an absolutely incredible debut year... We can't wait to return...",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1091,13 +1213,15 @@
   "postcode": "CM9 6YH",
   "lat": 51.7196848,
   "lon": 0.670755,
-  "price": "GBP 9.00, GBP 40.50, GBP 22.50, GBP 10.80, GBP 14.40",
+  "price": "GBP 14.40, GBP 10.80, GBP 22.50, GBP 40.50, GBP 9.00",
   "status": "scheduled",
   "organizer": "Sian Howells",
   "categories": [],
   "summary": "Wrestleforce returns to West Maldon Community Centre for another two-hour extravaganza! Fun for all the family!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1119,7 +1243,9 @@
   "categories": [],
   "summary": "COBO : Comedy Shutdown proudly presents our Black History Month Special, hitting venues across the UK this October!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1141,7 +1267,9 @@
   "categories": [],
   "summary": "Gather your friends and family for an unforgettable evening of uproarious laughter and celebration.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1157,13 +1285,15 @@
   "postcode": "SG4 8XY",
   "lat": 51.854986,
   "lon": -0.231666,
-  "price": "GBP 15.00, GBP 5.00, GBP 25.00, GBP 20.00, GBP 55.00, GBP 80.00, GBP 105.00",
+  "price": "GBP 80.00, GBP 105.00, GBP 55.00, GBP 20.00, GBP 25.00, GBP 5.00, GBP 15.00",
   "status": "scheduled",
   "organizer": "GOATFEST LIMITED",
   "categories": [],
   "summary": "Goatfest 2027: 3 days of live music, DJs, street food, camping & fun in the Hertfordshire countryside. The GOAT of bank holiday weekends!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1185,29 +1315,33 @@
   "categories": [],
   "summary": "The ultimate Oktoberfest experience! Oompah band, live music and entertainment, traditional German bratwurst, and thousands of steins.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
   "title": "Breakfast with Santa",
-  "url": "https://www.skiddle.com/whats-on/Peterborough/The-White-Horse-Tilbrook/Breakfast-with-Santa/42701667/",
+  "url": "https://www.skiddle.com/whats-on/Bedford/The-Compasses%2C-44-High-Street/Breakfast-with-Santa/42704668/",
   "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Peterborough/The-White-Horse-Tilbrook/Breakfast-with-Santa/42701667/",
-  "start": "2026-12-13T09:30:00+00:00",
-  "end": "2026-12-13T11:30:00+00:00",
+  "external_id": "https://www.skiddle.com/whats-on/Bedford/The-Compasses%2C-44-High-Street/Breakfast-with-Santa/42704668/",
+  "start": "2026-12-06T09:30:00+00:00",
+  "end": "2026-12-06T11:30:00+00:00",
   "all_day": false,
-  "venue": "The White Horse Tilbrook",
-  "address": "high street, Peterborough, PE280JP",
-  "postcode": "PE28 0JP",
-  "lat": 52.3096832,
-  "lon": -0.4217097,
+  "venue": "The Compasses, 44 High Street",
+  "address": "44 High Street, Bedford, MK45 5DD",
+  "postcode": "MK45 5DD",
+  "lat": 52.0010175,
+  "lon": -0.4691541,
   "price": "GBP 15.00",
   "status": "scheduled",
   "organizer": "Barley and Vine Events Limited",
   "categories": [],
   "summary": "Join us for a magical morning of pancakes with Santa! Enjoy festive fun, decorate your own pancakes and capture a special photo with Santa.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1229,7 +1363,9 @@
   "categories": [],
   "summary": "Bottomless drinks, R&B anthems & good vibes all afternoon. Join us at Old Station Quarter for the ultimate R&B brunch!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1245,13 +1381,15 @@
   "postcode": "N18 3HF",
   "lat": 51.60799,
   "lon": -0.046749,
-  "price": "GBP 127.00, GBP 56.95, GBP 61.95, GBP 91.95, GBP 102.00, GBP 41.95, GBP 36.96, GBP 51.95",
+  "price": "GBP 51.95, GBP 56.95, GBP 61.95, GBP 36.96, GBP 41.95, GBP 91.95, GBP 102.00, GBP 127.00",
   "status": "scheduled",
   "organizer": "Kaboodle",
   "categories": [],
   "summary": "City Splash returns to Drumsheds on Saturday 21st November for its highly anticipated third edition.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1267,13 +1405,15 @@
   "postcode": "PE14 8PA",
   "lat": 52.61280908,
   "lon": 0.23422385,
-  "price": "GBP 40.00, GBP 14.00",
+  "price": "GBP 14.00, GBP 40.00",
   "status": "scheduled",
   "organizer": "Falling Starr Wrestling",
   "categories": [],
   "summary": "FSW is back in action THIS OCTOBER when we return to Outwell for an incredible night of Wrestling!",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1289,13 +1429,15 @@
   "postcode": "RM5 2BH",
   "lat": 51.5964368,
   "lon": 0.1517044,
-  "price": "GBP 97.50, GBP 150.00, GBP 195.00, GBP 45.00",
+  "price": "GBP 97.50, GBP 150.00, GBP 45.00, GBP 195.00",
   "status": "scheduled",
   "organizer": "MadeIn Events limited",
   "categories": [],
   "summary": "Welcome to our 6th Anniversary An evening full of Glamour , Dinner , Live Entertainment + Lots More",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1317,7 +1459,9 @@
   "categories": [],
   "summary": "The ultimate Oktoberfest experience! Oompah band, live music and entertainment, traditional German bratwurst, and thousands of steins.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1333,13 +1477,15 @@
   "postcode": "IG7 6BX",
   "lat": 51.640773,
   "lon": 0.091341,
-  "price": "GBP 0.00, GBP 7.00, GBP 12.00",
+  "price": "GBP 12.00, GBP 7.00, GBP 0.00",
   "status": "scheduled",
   "organizer": "Woolston Manor Golf Club (Sung Services Ltd)",
   "categories": [],
   "summary": "Join our yearly spectacular Firework display on Thursday 5th November at Woolston Manor Golf Club.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1355,13 +1501,15 @@
   "postcode": "PE28 2PH",
   "lat": 52.381072,
   "lon": -0.16606,
-  "price": "GBP 117.50, GBP 187.50, GBP 10.00, GBP 180.00, GBP 30.00",
+  "price": "GBP 30.00, GBP 180.00, GBP 117.50, GBP 187.50, GBP 10.00",
   "status": "scheduled",
   "organizer": "One More Events Ltd - T/A Timescape Festival",
   "categories": [],
   "summary": "Timescape returns for its three days & nights of non-stop music community festival. Spreading across five unique multi-genre stages.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1377,13 +1525,15 @@
   "postcode": "AL3 7PT",
   "lat": 51.8130878,
   "lon": -0.4076073,
-  "price": "GBP 135.00, GBP 29.00, GBP 39.00",
+  "price": "GBP 39.00, GBP 29.00, GBP 135.00",
   "status": "scheduled",
   "organizer": null,
   "categories": [],
   "summary": "Five monster trucks, stunt shows, trials, funfair, monster truck rides and two spectacular firework displays at Hertfordshire Showground.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1399,13 +1549,15 @@
   "postcode": "MK1 1ST",
   "lat": 52.008534,
   "lon": -0.732831,
-  "price": "GBP 53.86, GBP 24.77, GBP 22.27, GBP 22.50",
+  "price": "GBP 22.50, GBP 24.77, GBP 22.27, GBP 53.86",
   "status": "scheduled",
   "organizer": "Great Ape Events Ltd",
   "categories": [],
   "summary": "Nashdown brings the country indoors. Live country tribute acts, rodeo bulls, Nashville BBQ and line dancing at Arena MK, 5:30pm til 1am.",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1427,7 +1579,9 @@
   "categories": [],
   "summary": "Family event with live music and bonfire and fireworks,",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  },
  {
   "source_id": "S007",
@@ -1443,56 +1597,14 @@
   "postcode": "CO1 1TJ",
   "lat": 51.8907121,
   "lon": 0.9031477,
-  "price": "GBP 10.00, GBP 55.00",
+  "price": "GBP 55.00, GBP 10.00",
   "status": "scheduled",
   "organizer": "Cuffe & Taylor",
   "categories": [],
   "summary": "Cuffe & Taylor & Supermodified presents Ronan Keating & Blue at Colchester Castle on 21st August 2027",
   "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
- },
- {
-  "source_id": "S007",
-  "title": "The Great Christmas Adventure at Brocket Hall",
-  "url": "https://www.skiddle.com/whats-on/St-Albans/Brocket-Hall/The-Great-Christmas-Adventure-at-Brocket-Hall/42809083/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/St-Albans/Brocket-Hall/The-Great-Christmas-Adventure-at-Brocket-Hall/42809083/",
-  "start": "2026-12-20T15:00:00+00:00",
-  "end": "2026-12-20T16:30:00+00:00",
-  "all_day": false,
-  "venue": "Brocket Hall",
-  "address": "Brocket Hall, Hertfordshire AL8 7XG, St-Albans, AL8 7XG",
-  "postcode": "AL8 7XG",
-  "lat": 51.7939798,
-  "lon": -0.2196838,
-  "price": "GBP 60.00, GBP 20.00",
-  "status": "scheduled",
-  "organizer": "Brocket Hall",
-  "categories": [],
-  "summary": "A magical Christmas day at Brocket Hall with Santa, elves, teddy-making, gingerbread decorating, festive treats, games and dancing!",
-  "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
- },
- {
-  "source_id": "S007",
-  "title": "The Royal Christmas Ball at Brocket Hall",
-  "url": "https://www.skiddle.com/whats-on/St-Albans/Brocket-Hall/The-Royal-Christmas-Ball-at-Brocket-Hall/42809085/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/St-Albans/Brocket-Hall/The-Royal-Christmas-Ball-at-Brocket-Hall/42809085/",
-  "start": "2026-12-06T12:00:00+00:00",
-  "end": "2026-12-06T14:00:00+00:00",
-  "all_day": false,
-  "venue": "Brocket Hall",
-  "address": "Brocket Hall, Hertfordshire AL8 7XG, St-Albans, AL8 7XG",
-  "postcode": "AL8 7XG",
-  "lat": 51.7939798,
-  "lon": -0.2196838,
-  "price": "GBP 50.00, GBP 20.00",
-  "status": "scheduled",
-  "organizer": "Brocket Hall",
-  "categories": [],
-  "summary": "A magical Royal Christmas Ball with a princess, royal dancing, Father Christmas, a little festive brunch, games and plenty of Christmas magic!",
-  "published": null,
-  "fetched_at": "2026-09-29T15:28:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:39:57+00:00"
  }
 ]

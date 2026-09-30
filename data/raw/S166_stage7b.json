@@ -1,0 +1,29 @@
+[
+ {
+  "source_id": "S166",
+  "title": "Birkbeck Lectures 2026 – Material Histories in the Renaissance",
+  "url": "https://www.trin.cam.ac.uk/event/birkbeck-lectures-2026/",
+  "kind": "event",
+  "external_id": "2026-10-20|Birkbeck Lectures 2026 – Material Histories in the Renaissance",
+  "start": "2026-10-20",
+  "end": null,
+  "all_day": true,
+  "venue": "Trinity College",
+  "address": "Trinity College, Trinity Street, Cambridge",
+  "postcode": "CB2 1TQ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:56:30+00:00"
+ }
+]

@@ -21,7 +21,9 @@
   ],
   "summary": "A one-and-a-half storey building is proposed to be built behind the pub",
   "published": "2026-09-27T13:00:00Z",
-  "fetched_at": "2026-09-29T15:30:04+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:41:35+00:00"
  },
  {
   "source_id": "S093",
@@ -45,7 +47,9 @@
   ],
   "summary": "It would be located at the site of a former steakhouse restaurant",
   "published": "2026-09-27T11:00:00Z",
-  "fetched_at": "2026-09-29T15:30:04+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:41:35+00:00"
  },
  {
   "source_id": "S093",
@@ -70,7 +74,9 @@
   ],
   "summary": "The pub's owners describe it as a 'strength of community spirit'",
   "published": "2026-09-24T07:00:00Z",
-  "fetched_at": "2026-09-29T15:30:04+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:41:35+00:00"
  },
  {
   "source_id": "S093",
@@ -95,56 +101,8 @@
   ],
   "summary": "The new shop will be opening in the Grand Arcade",
   "published": "2026-09-23T17:00:00Z",
-  "fetched_at": "2026-09-29T15:30:07+00:00"
- },
- {
-  "source_id": "S093",
-  "title": "Entertainment giant to open new branch at city shopping centre",
-  "url": "https://www.cambridge-news.co.uk/whats-on/whats-on-news/entertainment-giant-open-new-branch-34655037",
-  "kind": "article",
-  "external_id": "https://www.cambridge-news.co.uk/whats-on/whats-on-news/entertainment-giant-open-new-branch-34655037",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Shopping",
-   "Peterborough"
-  ],
-  "summary": "It forms part of the shopping centre's continued leisure expansion",
-  "published": "2026-09-22T16:41:00Z",
-  "fetched_at": "2026-09-29T15:30:07+00:00"
- },
- {
-  "source_id": "S093",
-  "title": "City centre's only post office forced to close",
-  "url": "https://www.cambridge-news.co.uk/news/local-news/city-centres-only-post-office-34649519",
-  "kind": "article",
-  "external_id": "https://www.cambridge-news.co.uk/news/local-news/city-centres-only-post-office-34649519",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Shopping",
-   "Peterborough"
-  ],
-  "summary": "The post office is inside a shop which is set to close early next year",
-  "published": "2026-09-22T04:13:00Z",
-  "fetched_at": "2026-09-29T15:30:07+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:41:38+00:00"
  }
 ]

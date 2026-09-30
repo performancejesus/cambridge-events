@@ -1,7 +1,79 @@
 [
  {
   "source_id": "S119",
-  "title": "Boy, 14, missing from home in Cambs as police launch appeal",
+  "title": "East Anglia Clean & Green Awards judges reveal what makes a winning entry",
+  "url": "https://www.elystandard.co.uk/news/26591520.judges-reveal-want-2027-clean-green-awards/",
+  "kind": "article",
+  "external_id": "a4be72f1d72d036ffac8ad940fe3e273",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "The East Anglia Clean & Green Awards 2027 judges reveal what they seek in Project of the Year and Sustainability Strategy entries, closing November 8.",
+  "published": "2026-09-30T07:30:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
+ },
+ {
+  "source_id": "S119",
+  "title": "Dramatic photos show scene after lorry overturns near Soham",
+  "url": "https://www.elystandard.co.uk/news/26592529.photos-show-scene-lorry-overturns-a142-soham/",
+  "kind": "article",
+  "external_id": "73c847fe76c87fb945ec739443eb689e",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Dramatic photos show the scene after a lorry overturned on the A142 near Soham in East Cambridgeshire.",
+  "published": "2026-09-29T16:01:31Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
+ },
+ {
+  "source_id": "S119",
+  "title": "LIVE: Driver injured as lorry overturns on busy East Cambs road",
+  "url": "https://www.elystandard.co.uk/news/26592425.live-updates-lorry-overturns-a142-near-soham/",
+  "kind": "article",
+  "external_id": "db9930345afda29445476f0d3f6f4bed",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "We are hearing reports that a lorry has overturned on the A142 near Soham. Follow for live updates.",
+  "published": "2026-09-29T15:44:53Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
+ },
+ {
+  "source_id": "S119",
+  "title": "Boy missing in Cambridgeshire found safe and well",
   "url": "https://www.elystandard.co.uk/news/26591935.police-appeal-delton-14-missing-home-grafham/",
   "kind": "article",
   "external_id": "971e01f7d7dcbf831fc7aae6e885e2e3",
@@ -17,9 +89,11 @@
   "status": null,
   "organizer": null,
   "categories": [],
-  "summary": "Police have launched an appeal to trace a 14-year-old boy missing from his home in Grafham, near Huntingdon.",
+  "summary": "A boy who went missing in Cambridgeshire has been found.",
   "published": "2026-09-29T15:01:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -41,7 +115,9 @@
   "categories": [],
   "summary": "Andy Burnham has announced that VAT will be removed from domestic energy bills from 'this Thursday', October 2026.",
   "published": "2026-09-29T14:51:57Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -63,7 +139,9 @@
   "categories": [],
   "summary": "Cambridgeshire has become the first place in the UK to pilot AI-powered crime reporting technology.",
   "published": "2026-09-29T14:34:43Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -85,7 +163,9 @@
   "categories": [],
   "summary": "Seventeen people have been arrested after police raids targeting an organised crime group across five areas, including Hertfordshire and Cambridgeshire.",
   "published": "2026-09-29T14:16:24Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -107,7 +187,9 @@
   "categories": [],
   "summary": "A care home resident has shared a letter from the King with her MP during a special art exhibition at Hilton Park.",
   "published": "2026-09-29T13:18:37Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -129,7 +211,9 @@
   "categories": [],
   "summary": "CAMRA’s latest Good Beer Guide names dozens of Cambridgeshire pubs among the best places to enjoy real ale.",
   "published": "2026-09-29T11:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -151,7 +235,9 @@
   "categories": [],
   "summary": "A Cambridgeshire police officer has been dismissed without notice and placed on the barred list for dishonesty amounting to gross misconduct.",
   "published": "2026-09-29T10:32:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -173,7 +259,9 @@
   "categories": [],
   "summary": "A prolific criminal who punched and spat at his ex-partner in Ely has been jailed.",
   "published": "2026-09-29T04:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -195,7 +283,9 @@
   "categories": [],
   "summary": "Changes are on the way for bus routes in Cambridgeshire.",
   "published": "2026-09-29T03:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -217,11 +307,13 @@
   "categories": [],
   "summary": "Andy Burnham has pledged that low-income pensioners will not be dragged into paying Income Tax during this Parliament as he sets out his national care service plans.",
   "published": "2026-09-29T14:50:47Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
-  "title": "Andy Burnham announces end of DWP pensions triple lock to fund social care service",
+  "title": "Andy Burnham announces plans to end pension triple lock to fund social care service",
   "url": "https://www.elystandard.co.uk/news/26592012.pensions-triple-lock-end-fund-new-social-care-service/",
   "kind": "article",
   "external_id": "ac15507f96d9af00da9be4153e93d4e3",
@@ -239,7 +331,9 @@
   "categories": [],
   "summary": "The state pension triple lock could be scrapped as Andy Burnham discusses difficult choices around funding a national care service.",
   "published": "2026-09-29T14:48:11Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -261,7 +355,9 @@
   "categories": [],
   "summary": "Police have issued an update more than two years after two irreplaceable artefacts were stolen from Ely Museum.",
   "published": "2026-09-28T16:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -283,7 +379,9 @@
   "categories": [],
   "summary": "A Girl Guide from Ely shared details of a trip to Kenya.",
   "published": "2026-09-28T14:40:03Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -305,7 +403,9 @@
   "categories": [],
   "summary": "The second edition of Race Across Cambridge, which takes place on October 1, has sold out.",
   "published": "2026-09-28T14:21:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -327,7 +427,9 @@
   "categories": [],
   "summary": "Plans that would have seen a property in Soham converted into a nine-bedroom home of multiple occupancy (HMO) have been withdrawn.",
   "published": "2026-09-28T14:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -349,7 +451,9 @@
   "categories": [],
   "summary": "Olly Murs will perform at the July Course in 2027, as part of the Newmarket Nights series.",
   "published": "2026-09-28T09:50:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -371,7 +475,9 @@
   "categories": [],
   "summary": "Plans for a major onshore wind farm near Shippea Hill could generate enough electricity to power more than 200,000 homes.",
   "published": "2026-09-28T09:42:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -393,7 +499,9 @@
   "categories": [],
   "summary": "An investigation is underway after a man suffered serious injuries in a crash on the A142 at Soham.",
   "published": "2026-09-28T09:35:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -415,7 +523,9 @@
   "categories": [],
   "summary": "Cambridge University Hospitals (CUH) and Royal Papworth Hospital are joining forces to introduce a shared electronic patient record (EPR) system.",
   "published": "2026-09-28T04:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -437,7 +547,9 @@
   "categories": [],
   "summary": "A campaign has been launched to find more adoptive families for children in Cambridgeshire and Peterborough.",
   "published": "2026-09-28T03:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -459,7 +571,9 @@
   "categories": [],
   "summary": "A fresh dig is set to begin at a Roman villa in the Nene Valley, offering new insights into ancient life.",
   "published": "2026-09-27T14:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -481,7 +595,9 @@
   "categories": [],
   "summary": "East Anglia’s Children’s Hospices in Milton has been praised for its \"exceptional care\" by the High Sheriff of Cambridgeshire during a recent visit.",
   "published": "2026-09-27T05:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -503,7 +619,9 @@
   "categories": [],
   "summary": "John Pryke of Fordham writes his latest history walk column",
   "published": "2026-09-27T05:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -525,7 +643,9 @@
   "categories": [],
   "summary": "A deaf rescue dog is capturing hearts at Block Fen Animal Centre in Cambridgeshire.",
   "published": "2026-09-27T04:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -547,7 +667,9 @@
   "categories": [],
   "summary": "The world's first Minecraft-themed hotel is set to open in the UK, bringing the iconic video game experience to life.",
   "published": "2026-09-27T16:43:55Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -569,7 +691,9 @@
   "categories": [],
   "summary": "Bradley Walsh is set to fill in for Simon Cowell during upcoming Britain’s Got Talent auditions while he has a back operation.",
   "published": "2026-09-27T16:41:46Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -591,7 +715,9 @@
   "categories": [],
   "summary": "A bungalow has been evacuated as crews tackle a tractor fire in Kenny Hill near Mildenhall.",
   "published": "2026-09-26T16:14:39Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -613,7 +739,9 @@
   "categories": [],
   "summary": "Firefighting runs in the family for a Cambridgeshire crew who all helped tackle the Holme Fen wildfire, one of the county’s biggest incidents in years.",
   "published": "2026-09-26T13:33:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -635,7 +763,9 @@
   "categories": [],
   "summary": "A missing man with links to Cambridgeshire who may be \"confused and unpredictable\" without his medication remains unaccounted for.",
   "published": "2026-09-26T09:30:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -657,7 +787,9 @@
   "categories": [],
   "summary": "Cambridge came alive with colour, creativity, and crowds for the return of the Out of the Ordinary Festival.",
   "published": "2026-09-26T04:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -679,7 +811,9 @@
   "categories": [],
   "summary": "Cambridgeshire Fire and Rescue Service won the Menopause Friendly Employer of the Year Award (Public Sector) at the Menopause and Menstruation Friendly Employer Awards.",
   "published": "2026-09-24T04:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -701,7 +835,9 @@
   "categories": [],
   "summary": "A village which invested thousands into new bus shelters will only see them used by school buses after their routes were cut.",
   "published": "2026-09-25T15:37:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -723,7 +859,9 @@
   "categories": [],
   "summary": "Children in Ely are being diagnosed more quickly thanks to new medical equipment.",
   "published": "2026-09-25T15:33:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -745,7 +883,9 @@
   "categories": [],
   "summary": "A lorry driver who killed a \"loving family man\" after ploughing into the back of his van on the M11 near Duxford, Cambridgeshire, has been jailed.",
   "published": "2026-09-25T14:14:47Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -767,7 +907,9 @@
   "categories": [],
   "summary": "Scott Colling, managing director of The Ely Computer Centre, talks about one of the scams he sees regularly.",
   "published": "2026-09-25T14:39:56Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -789,7 +931,9 @@
   "categories": [],
   "summary": "Further details have emerged after a new crematorium in Cambridgeshire was evacuated just weeks after it first opened to the public.",
   "published": "2026-09-25T12:17:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -811,7 +955,9 @@
   "categories": [],
   "summary": "Country music fans are in for a treat when a Nashville-inspired festival returns to Ely in 2027.",
   "published": "2026-09-25T12:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -833,7 +979,9 @@
   "categories": [],
   "summary": "Lake View Bereavement Centre in Mepal, Cambridgeshire, has been evacuated just weeks after it opened to the public for the first time.",
   "published": "2026-09-25T11:19:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -855,7 +1003,9 @@
   "categories": [],
   "summary": "A three-bed detached bungalow in Ely boasting a \"contemporary design\" is on the market for more than £1million.",
   "published": "2026-09-25T11:17:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -877,7 +1027,9 @@
   "categories": [],
   "summary": "An amateur dramatic society will bring Phileas Fogg’s extraordinary wager to life at The Maltings in Ely.",
   "published": "2026-09-21T11:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -899,7 +1051,9 @@
   "categories": [],
   "summary": "Homeowners in East Cambridgeshire are cutting thousands from their asking prices to secure a sale.",
   "published": "2026-09-24T14:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -921,7 +1075,9 @@
   "categories": [],
   "summary": "Obesity rates remain a major health challenge despite ongoing efforts to improve public health across Cambridgeshire.",
   "published": "2026-09-25T04:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -943,7 +1099,9 @@
   "categories": [],
   "summary": "Care Network Cambridgeshire is marking 40 years of helping people across the county.",
   "published": "2026-09-25T03:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -965,7 +1123,9 @@
   "categories": [],
   "summary": "Symptoms caused by salmonella usually include fever, diarrhoea and abdominal cramps.",
   "published": "2026-09-25T08:23:31Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -987,7 +1147,9 @@
   "categories": [],
   "summary": "Tenpin is set to open a 20-lane bowling venue at Queensgate in Peterborough.",
   "published": "2026-09-24T16:18:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -1009,7 +1171,9 @@
   "categories": [],
   "summary": "A man has been charged after allegedly making a false bomb report on a train running between Waterbeach and Cambridge North.",
   "published": "2026-09-24T15:41:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  },
  {
   "source_id": "S119",
@@ -1031,72 +1195,8 @@
   "categories": [],
   "summary": "A prison officer is due to appear in court accused of smuggling mobile phones and cannabis into HMP Peterborough.",
   "published": "2026-09-24T15:22:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
- },
- {
-  "source_id": "S119",
-  "title": "Meet the new headteacher at Cambs primary school",
-  "url": "https://www.elystandard.co.uk/news/26574208.new-headteacher-appointed-bottisham-primary-school/",
-  "kind": "article",
-  "external_id": "068a140d5493ee2c85c3d9c966864008",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "A new headteacher has brought more than 21 years’ experience to Bottisham Community Primary School.",
-  "published": "2026-09-24T14:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
- },
- {
-  "source_id": "S119",
-  "title": "Twelve people charged in connection with hundreds of fuel thefts",
-  "url": "https://www.elystandard.co.uk/news/26578993.twelve-people-charged-fuel-thefts-cambridgeshire/",
-  "kind": "article",
-  "external_id": "609032a87487c5f71a3e661942bac233",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Twelve people have been charged in connection with a spate of fuel thefts across Cambridgeshire.",
-  "published": "2026-09-24T13:16:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
- },
- {
-  "source_id": "S119",
-  "title": "Cyclist rides from Cambridge to York in a day to fund cancer treatment for Ely mum",
-  "url": "https://www.elystandard.co.uk/news/26575321.200-mile-ride-one-day-help-ely-mums-vital-treatment/",
-  "kind": "article",
-  "external_id": "0116a2ebbfd7958e2066334a5f988cfd",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "A determined cyclist rode 200 miles from Cambridge to York in a day to raise money for an Ely mother battling stage 4 lung cancer.",
-  "published": "2026-09-24T11:00:00Z",
-  "fetched_at": "2026-09-29T15:33:51+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:47:18+00:00"
  }
 ]

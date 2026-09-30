@@ -1,0 +1,56 @@
+[
+ {
+  "source_id": "S175",
+  "title": "Pop-up plant sale",
+  "url": "https://www.hughes.cam.ac.uk/about/events/pop-up-plant-sale-3/",
+  "kind": "event",
+  "external_id": "2026-10-16|Pop-up plant sale",
+  "start": "2026-10-16T11:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Hughes Hall",
+  "address": "Hughes Hall, Wollaston Road, Cambridge",
+  "postcode": "CB1 2EW",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "other"
+  ],
+  "summary": "other",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:56:23+00:00"
+ },
+ {
+  "source_id": "S175",
+  "title": "Hughes Hall Researchers' Lightning Talks series",
+  "url": "https://www.hughes.cam.ac.uk/about/events/hughes-hall-researchers-lightning-talks/",
+  "kind": "event",
+  "external_id": "2026-10-26|Hughes Hall Researchers' Lightning Talks series",
+  "start": "2026-10-26T18:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Hughes Hall",
+  "address": "Hughes Hall, Wollaston Road, Cambridge",
+  "postcode": "CB1 2EW",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:56:23+00:00"
+ }
+]

@@ -19,7 +19,9 @@
   "categories": [],
   "summary": "CHRISTMAS LIGHTS SWITCH ON",
   "published": null,
-  "fetched_at": "2026-09-29T15:31:28+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:43:58+00:00"
  },
  {
   "source_id": "S108",
@@ -41,6 +43,8 @@
   "categories": [],
   "summary": "WISBECH CHRISTMAS FAYRE",
   "published": null,
-  "fetched_at": "2026-09-29T15:31:28+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:43:58+00:00"
  }
 ]

@@ -1,30 +1,6 @@
 [
  {
   "source_id": "S151",
-  "title": "Academy of Ancient Music – 1765: Times of Transition",
-  "url": "https://musiclivecambridge.com/gigs/academy-of-ancient-music-1765-times-of-transition",
-  "kind": "event",
-  "external_id": "/gigs/academy-of-ancient-music-1765-times-of-transition",
-  "start": "2026-09-30T19:30",
-  "end": "2026-09-30T21:30",
-  "all_day": false,
-  "venue": "West Road Concert Hall",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
- },
- {
-  "source_id": "S151",
   "title": "Flo & Joan: With Feeling",
   "url": "https://musiclivecambridge.com/gigs/flo-joan-with-feeling",
   "kind": "event",
@@ -45,7 +21,35 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Academy of Ancient Music – 1765: Times of Transition",
+  "url": "https://musiclivecambridge.com/gigs/academy-of-ancient-music-1765-times-of-transition",
+  "kind": "event",
+  "external_id": "/gigs/academy-of-ancient-music-1765-times-of-transition",
+  "start": "2026-09-30T19:30",
+  "end": "2026-09-30T21:30",
+  "all_day": false,
+  "venue": "West Road Concert Hall",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -69,7 +73,9 @@
   ],
   "summary": "Every Wednesday from 7.45pm",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -93,7 +99,9 @@
   ],
   "summary": "Playing songs from the new album Love Chant out now via Fire Records, plus all the hits",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -117,7 +125,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -141,7 +151,9 @@
   ],
   "summary": "Hope and Fury Tour 2026",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -165,7 +177,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -189,7 +203,9 @@
   ],
   "summary": "Best of Genesis and solo gems",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -213,7 +229,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -237,7 +255,9 @@
   ],
   "summary": "An exciting programme of early 20th-century English works",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -261,7 +281,9 @@
   ],
   "summary": "Local jazz quartet live here every Sunday",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -285,7 +307,9 @@
   ],
   "summary": "A live celebration of Nic Jones’ music, performed by BBC Folk Award winner Sam Carter",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -309,7 +333,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -333,7 +359,9 @@
   ],
   "summary": "Fundraiser for the Red Cross",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -357,7 +385,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -381,7 +411,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -405,7 +437,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -429,7 +463,9 @@
   ],
   "summary": "Performed by David Christophersen",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -453,7 +489,9 @@
   ],
   "summary": "Every Wednesday from 7.45pm",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -477,7 +515,9 @@
   ],
   "summary": "IMS Prussia Cove autumn tour 2026",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -501,7 +541,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -525,7 +567,9 @@
   ],
   "summary": "Relocated from The Six Six",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -549,7 +593,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -573,7 +619,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -597,7 +645,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -621,7 +671,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -645,7 +697,9 @@
   ],
   "summary": "Official 80th Anniversary Celebrations",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -669,7 +723,9 @@
   ],
   "summary": "An original powerhouse from Cambridge, with an undeniable groove and infectious energy",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -693,7 +749,9 @@
   ],
   "summary": "One of modern hard rock's most exciting breakouts in recent years",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -717,7 +775,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -741,7 +801,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -765,7 +827,9 @@
   ],
   "summary": "Local jazz quartet live here every Sunday",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -789,7 +853,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -813,7 +879,9 @@
   ],
   "summary": "Harmonies of Heaven and Earth - great European choral music",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -837,7 +905,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -861,7 +931,9 @@
   ],
   "summary": "Jazz reflections on the great American songbook",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -885,7 +957,9 @@
   ],
   "summary": "Every Wednesday from 7.45pm",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -909,7 +983,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -933,7 +1009,9 @@
   ],
   "summary": "Acclaimed guitar virtuoso and singer-songwriter",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -957,7 +1035,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -981,7 +1061,9 @@
   ],
   "summary": "Soulful lyrical songs woven with passionate sentiments",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -1005,7 +1087,9 @@
   ],
   "summary": "The creators of Rockgrass",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -1029,7 +1113,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -1053,7 +1139,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -1077,7 +1165,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -1101,7 +1191,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -1125,7 +1217,9 @@
   ],
   "summary": "Brilliant singer-songwriter returns to Cambridge following his Folk Festival appearance in 2024",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -1149,7 +1243,9 @@
   ],
   "summary": "Dance Crazed Too UK tour",
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -1173,7 +1269,9 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  },
  {
   "source_id": "S151",
@@ -1197,6 +1295,8 @@
   ],
   "summary": null,
   "published": null,
-  "fetched_at": "2026-09-29T15:37:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:50:59+00:00"
  }
 ]

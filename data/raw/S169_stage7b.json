@@ -1,0 +1,56 @@
+[
+ {
+  "source_id": "S169",
+  "title": "Water, Nature and Resilience in Cambridgeshire: Turning Challenges into Action",
+  "url": "https://www.chu.cam.ac.uk/event/water-nature-and-resilience-in-cambridgeshire-turning-challenges-into-action/",
+  "kind": "event",
+  "external_id": "2026-10-12|Water, Nature and Resilience in Cambridgeshire: Turning Challenges into Action",
+  "start": "2026-10-12",
+  "end": null,
+  "all_day": true,
+  "venue": "Churchill College",
+  "address": "Churchill College, Storey's Way, Cambridge",
+  "postcode": "CB3 0DS",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:55:08+00:00"
+ },
+ {
+  "source_id": "S169",
+  "title": "The Master's Book Club",
+  "url": "https://www.chu.cam.ac.uk/event/the-masters-book-club-5/",
+  "kind": "event",
+  "external_id": "2026-11-03|The Master's Book Club",
+  "start": "2026-11-03",
+  "end": null,
+  "all_day": true,
+  "venue": "Churchill College",
+  "address": "Churchill College, Storey's Way, Cambridge",
+  "postcode": "CB3 0DS",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "other"
+  ],
+  "summary": "other",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:55:08+00:00"
+ }
+]

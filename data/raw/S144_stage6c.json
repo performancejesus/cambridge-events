@@ -5,9 +5,9 @@
   "url": "https://www.joh.cam.ac.uk/festival",
   "kind": "event",
   "external_id": "2026-10-08|Anarchical Antiquity – lecture by Professor Josephine Crawley Quinn",
-  "start": "2026-10-08",
+  "start": "2026-10-08T17:00",
   "end": null,
-  "all_day": true,
+  "all_day": false,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
@@ -22,7 +22,9 @@
   ],
   "summary": "Lecture",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:14+00:00"
  },
  {
   "source_id": "S144",
@@ -30,9 +32,9 @@
   "url": "https://www.joh.cam.ac.uk/festival",
   "kind": "event",
   "external_id": "2026-10-13|Lunchtime concert",
-  "start": "2026-10-13",
+  "start": "2026-10-13T13:10",
   "end": null,
-  "all_day": true,
+  "all_day": false,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
@@ -47,7 +49,9 @@
   ],
   "summary": "Music in College",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:14+00:00"
  },
  {
   "source_id": "S144",
@@ -55,9 +59,9 @@
   "url": "https://www.joh.cam.ac.uk/festival",
   "kind": "event",
   "external_id": "2026-11-07|Music Society Chapel Late",
-  "start": "2026-11-07",
+  "start": "2026-11-07T20:30",
   "end": null,
-  "all_day": true,
+  "all_day": false,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
@@ -72,7 +76,9 @@
   ],
   "summary": "Music in College",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:14+00:00"
  },
  {
   "source_id": "S144",
@@ -80,9 +86,9 @@
   "url": "https://www.joh.cam.ac.uk/festival",
   "kind": "event",
   "external_id": "2026-11-13|Quanta Piano Trio",
-  "start": "2026-11-13",
+  "start": "2026-11-13T19:30",
   "end": null,
-  "all_day": true,
+  "all_day": false,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
@@ -97,7 +103,9 @@
   ],
   "summary": "Music in College",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:14+00:00"
  },
  {
   "source_id": "S144",
@@ -105,9 +113,9 @@
   "url": "https://www.joh.cam.ac.uk/festival",
   "kind": "event",
   "external_id": "2026-11-15|José Almarcha Flamenco Trio",
-  "start": "2026-11-15",
+  "start": "2026-11-15T18:00",
   "end": null,
-  "all_day": true,
+  "all_day": false,
   "venue": "St John's College",
   "address": "St John's Street, Cambridge",
   "postcode": "CB2 1TP",
@@ -122,7 +130,9 @@
   ],
   "summary": "Music in College",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:46+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:14+00:00"
  },
  {
   "source_id": "S144",
@@ -147,7 +157,9 @@
   ],
   "summary": "concert",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:50+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:19+00:00"
  },
  {
   "source_id": "S144",
@@ -172,7 +184,9 @@
   ],
   "summary": "concert",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:50+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:19+00:00"
  },
  {
   "source_id": "S144",
@@ -197,6 +211,8 @@
   ],
   "summary": "concert",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:50+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:52:19+00:00"
  }
 ]

@@ -21,7 +21,9 @@
   ],
   "summary": "Join us for half an hour of fun and exciting stories read to you by our lovely librarians!",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -46,7 +48,9 @@
   ],
   "summary": "Are you looking to improve your English? Join us to practice English in a comfortable, casual setting.",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -71,7 +75,9 @@
   ],
   "summary": "Need help getting started on computers? Not sure about your new smartphone? Come to our drop-in! Our Digital Buddies are here to help!",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -95,7 +101,9 @@
   ],
   "summary": "Join us for 30 minutes of songs and rhymes.",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -120,7 +128,9 @@
   ],
   "summary": "Come spill the tea with some of the loveliest LGBTQIA+ people in Cambridge!",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -144,7 +154,9 @@
   ],
   "summary": "Join us every other Saturday at Cambridge Central Library for an hour of Lego building fun!",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -168,7 +180,9 @@
   ],
   "summary": "Join us for half an hour of fun and exciting stories!",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -193,7 +207,9 @@
   ],
   "summary": "Listen to a range of readings to help unwind and relax.",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -218,7 +234,9 @@
   ],
   "summary": "Join us for this friendly, relaxed drop-in session where children can unleash their creativity!",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -243,7 +261,9 @@
   ],
   "summary": "Join us for a casual and welcoming community-led British Sign Language user meet up!",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -268,7 +288,9 @@
   ],
   "summary": "Sunday Scribes is Cambridge Central Library's creative writing group",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  },
  {
   "source_id": "S055",
@@ -293,6 +315,8 @@
   ],
   "summary": "Join us for a fun and relaxed afternoon of board games!",
   "published": null,
-  "fetched_at": "2026-09-29T15:36:30+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:49:47+00:00"
  }
 ]

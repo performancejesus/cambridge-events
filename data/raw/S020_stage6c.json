@@ -23,7 +23,9 @@
   ],
   "summary": "National League 1 · v Camborne",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -49,7 +51,9 @@
   ],
   "summary": "National League 1 · v London Scottish",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -75,7 +79,9 @@
   ],
   "summary": "National League 1 · v Dings Crusaders",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -101,7 +107,9 @@
   ],
   "summary": "National League 1 · v Rams",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -127,7 +135,9 @@
   ],
   "summary": "National League 1 · v Tonbridge Juddians",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -153,7 +163,9 @@
   ],
   "summary": "National League 1 · v Plymouth Albion",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -179,7 +191,9 @@
   ],
   "summary": "National League 1 · v Sheffield",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -205,7 +219,9 @@
   ],
   "summary": "National League 1 · v Sale FC",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -231,7 +247,9 @@
   ],
   "summary": "National League 1 · v Bishops Stortford",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -257,7 +275,9 @@
   ],
   "summary": "National League 1 · v Rosslyn Park",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  },
  {
   "source_id": "S020",
@@ -283,6 +303,8 @@
   ],
   "summary": "National League 1 · v Birmingham Moseley",
   "published": null,
-  "fetched_at": "2026-09-29T15:38:25+00:00"
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T08:51:53+00:00"
  }
 ]
