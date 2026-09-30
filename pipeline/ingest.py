@@ -348,6 +348,12 @@ def refresh(con: sqlite3.Connection, run_id: str) -> dict:
             zn, address_unknown = "центр", 1
         if zn is None and e["lat"] is None and any(CITY_ONLY_RE.search(x or "") for x in (address, venue)):
             zn, address_unknown = "центр", 1
+        if zn is None and not postcode:   # этап 7d: город-исключение (King's Lynn) назван в адресе или площадке
+            from .geo import EXEMPT_TOWNS_KM
+            town = next((t for t in EXEMPT_TOWNS_KM if re.search(rf"\b{re.escape(t)}\b", where, re.I)), None)
+            if town:
+                (lat, lon), _ = EXEMPT_TOWNS_KM[town]
+                zn, address_unknown = "до часа", 1
         prices = [parse_price(r["price"], r["summary"], r["title"]) for r in raws]
         prices = [p for p in prices if p is not None]
         price_from = min(prices) if prices else e["price_from"]
