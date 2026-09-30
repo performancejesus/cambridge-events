@@ -49,11 +49,15 @@ def kind_of(c: dict) -> str:
         return "concert"   # концерты в музеях — обычные рубрики («На неделе»), не эта
     if re.search(r"\blates?\b|after hours|evening opening", title, re.I):
         return "late"
-    if re.search(r"exhibition|display|gallery", title, re.I) or (c.get("long_running") and not re.search(
-            r"talk|workshop|class|session|club|day\b", title, re.I)):
-        return "exhibition"
-    if re.search(r"halloween|christmas|santa|pumpkin|autumn|festive|apple|harvest|bonfire|firework", t, re.I):
+    if re.search(r"halloween|christmas|santa|pumpkin|autumn|festive|apple|harvest|bonfire|firework|pick[- ]your[- ]own|"
+                 r"\bcut your own|\bpyo\b|dahlia|sunflower", t, re.I):
         return "seasonal"
+    if re.search(r"exhibition|display|gallery", title, re.I):
+        return "exhibition"
+    if c.get("kids_tag") or re.search(r"family|kids|children|pups|toddler|under[- ]?5|half[- ]term|trail", t, re.I):
+        return "family"   # 7d: «Mucky Pups» (Wicken Fen) — семейные занятия на много недель, не выставка
+    if c.get("long_running") and not re.search(r"talk|workshop|class|session|club|day\b", title, re.I):
+        return "exhibition"
     if re.search(r"workshop|weaving|craft|make\b|class\b", t, re.I):
         return "workshop"
     if c.get("kids_tag") or re.search(r"family|kids|children|half[- ]term|trail", t, re.I):

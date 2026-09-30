@@ -1255,7 +1255,12 @@ def norm_price(v: str | None, lang: str) -> str:
 
 def price_from_data(c: dict) -> tuple[str, str]:
     """Цена по данным базы (если модель ошиблась): «£50», «£5–£20», «free», «price not listed»."""
-    vals = sorted({float(x) for x in re.findall(r"\d+(?:\.\d+)?", (c.get("price_text") or "").replace(",", ""))})
+    txt = (c.get("price_text") or "").replace(",", "")
+    # этап 7d: «£2 day ticket (under 5s free) or £8 2026 PYO Season Ticket» давало «£2–£2026»: суммы с «£», если они
+    # есть; год (19xx/20xx) — не цена
+    pounds = re.findall(r"£\s*(\d+(?:\.\d+)?)", txt)
+    nums = pounds or [x for x in re.findall(r"\d+(?:\.\d+)?", txt) if not re.fullmatch(r"(?:19|20)\d\d", x)]
+    vals = sorted({float(x) for x in nums})
     if c.get("price_from") == 0 and not any(vals):
         return "free", "бесплатно"
     if not vals:

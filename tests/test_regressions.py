@@ -135,6 +135,21 @@ def test_mlc_slug_tokens():
     assert "cambridge" not in _slug_tokens("https://x/the-beat-cambridge/")
 
 
+def test_price_year_not_a_price():
+    """v11: «£8 2026 PYO Season Ticket» (Bury Lane) давало «£2–£2026»."""
+    assert issue.price_from_data({"price_text": "£2 day ticket (under 5s free) or £8 2026 PYO Season Ticket",
+                                  "price_from": 2.0}) == ("£2–£8", "£2–£8")
+
+
+def test_museum_line_kinds():
+    """v11: сезонный сбор цветов и семейные занятия на много недель — не «выставка»."""
+    from pipeline.museums import kind_of
+    assert kind_of({"title": "Cut Your Own Dahlias", "categories": ["farm", "exhibition"], "long_running": True}) == "seasonal"
+    assert kind_of({"title": "Mucky Pups", "categories": ["family"], "long_running": True}) == "family"
+    assert kind_of({"title": "Guided House Tour", "long_running": True}) == "tour"
+    assert kind_of({"title": "Susan Tomes, piano"}) == "concert"
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
