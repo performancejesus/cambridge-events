@@ -1,0 +1,21 @@
+{
+ "only_claude_user_blocked": [
+  "David Lloyd St Neots",
+  "The Gruffalo at Nene Valley Railway"
+ ],
+ "only_training_blocked": [
+  "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+  "UNIQLO"
+ ],
+ "lost_any_ai_agent": [
+  "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+  "UNIQLO",
+  "David Lloyd St Neots",
+  "The Gruffalo at Nene Valley Railway"
+ ],
+ "without_search_links": {
+  "only_claude_user_blocked": 2,
+  "only_training_blocked": 4,
+  "lost_any_ai_agent": 6
+ }
+}
