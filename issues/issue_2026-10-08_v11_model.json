@@ -1187,7 +1187,7 @@
  "usage": {
   "input_tokens": 205882,
   "output_tokens": 40225,
-  "cost_usd": 0.8545400000000001
+  "cost_usd": 0.989294
  },
  "result_post": {
   "result": {
@@ -1279,12 +1279,14 @@
        "price_en": "prices on the website",
        "price_ru": "цены на сайте",
        "blurb_en": "An ordinary League One home fixture with an unexpected link: according to Barrett's sister Rosemary Breen, proceeds from this match go to mental health charities — 10 October is also World Mental Health Day.",
-       "blurb_ru": "Обычный домашний матч Cambridge United в с неожиданной связью: по словам сестры Барретта Rosemary Breen, сборы с этого матча идут на благотворительность в поддержку психического здоровья — 10 октября также отмечается Всемирный день психического здоровья.",
+       "blurb_ru": "Обычный домашний матч Cambridge United с неожиданной связью: по словам сестры Барретта Rosemary Breen, сборы с этого матча идут на благотворительность в поддержку психического здоровья — 10 октября также отмечается Всемирный день психического здоровья.",
        "knowledge_en": [
-        "World Mental Health Day is observed on 10 October"
+        "World Mental Health Day is observed on 10 October",
+        "source check (not_in_source): Матч Cambridge United — Blackpool является обычным домашним матчем лиги One"
        ],
        "knowledge_ru": [
-        "Всемирный день психического здоровья отмечается 10 октября"
+        "Всемирный день психического здоровья отмечается 10 октября",
+        "сверка (нет в источнике): Матч Cambridge United — Blackpool является обычным домашним матчем лиги One"
        ]
       }
      ],
@@ -1306,11 +1308,13 @@
        "blurb_en": "Two 80s favourites share one stage, each bringing their full band for a proper hits night. Hue and Cry, the duo of brothers Patrick and Gregory Kane, made their name in 1984 with the album Seduced and Abandoned, while Roachford rolls out his soul-pop classics from the same golden era.",
        "blurb_ru": "Два любимца 80-х выходят на одну сцену, причём каждый со своим полным составом — будет настоящий вечер хитов. Hue and Cry, дуэт братьев Patrick и Gregory Kane, прославился в 1984 году альбомом Seduced and Abandoned, а Roachford привозит свои соул-поп классики той же золотой эпохи.",
        "knowledge_en": [
-        "Roachford is known for his 1988 hit \"Cuddly Toy\""
+        "Roachford is known for his 1988 hit \"Cuddly Toy\"",
+        "source check (not_in_source): Оба исполнителя выступают со своими полными составами"
        ],
        "knowledge_ru": [
         "Roachford известен своим хитом 1988 года «Cuddly Toy»",
-        "проверка (в 1984 году): Hue and Cry, дуэт братьев Patrick и Gregory Kane, прославился в 1984 году альбомом Seduced and Abandoned, а Roachford привозит свои соул-поп классики той же золотой эпохи."
+        "проверка (в 1984 году): Hue and Cry, дуэт братьев Patrick и Gregory Kane, прославился в 1984 году альбомом Seduced and Abandoned, а Roachford привозит свои соул-поп классики той же золотой эпохи.",
+        "сверка (нет в источнике): Оба исполнителя выступают со своими полными составами"
        ]
       },
       {
@@ -1326,10 +1330,16 @@
        "blurb_en": "The Manchester spoken-word artist turned pop performer, known for weaving observational storytelling into dance-inflected songs, plays the Junction.",
        "blurb_ru": "Манчестерский исполнитель, начинавший со спок-ворда и перешедший в поп, известный тем, что вплетает наблюдательные истории в танцевальные песни, выступает в Junction.",
        "knowledge_en": [
-        "Antony Szmierek began as a spoken-word poet before moving into music"
+        "Antony Szmierek began as a spoken-word poet before moving into music",
+        "source check (not_in_source): Antony Szmierek — манчестерский исполнитель",
+        "source check (not_in_source): Antony Szmierek начинал со спок-ворда и перешёл в поп",
+        "source check (not_in_source): Antony Szmierek известен тем, что вплетает наблюдательные истории в танцевальные песни"
        ],
        "knowledge_ru": [
-        "Antony Szmierek начинал как поэт спок-ворда, прежде чем перейти в музыку"
+        "Antony Szmierek начинал как поэт спок-ворда, прежде чем перейти в музыку",
+        "сверка (нет в источнике): Antony Szmierek — манчестерский исполнитель",
+        "сверка (нет в источнике): Antony Szmierek начинал со спок-ворда и перешёл в поп",
+        "сверка (нет в источнике): Antony Szmierek известен тем, что вплетает наблюдательные истории в танцевальные песни"
        ]
       },
       {
@@ -1345,10 +1355,12 @@
        "blurb_en": "Saxophonist Jess Gillam has put together a programme spanning 900 years of music, from CPE Bach to the present day, played with her own band.",
        "blurb_ru": "Саксофонистка Jess Gillam составила программу, охватывающую 900 лет музыки — от CPE Bach до наших дней, — исполняемую вместе с её собственным составом.",
        "knowledge_en": [
-        "Jess Gillam is a British saxophonist and BBC Radio 3 presenter"
+        "Jess Gillam is a British saxophonist and BBC Radio 3 presenter",
+        "source check (not_in_source): Программа исполняется с её собственным составом"
        ],
        "knowledge_ru": [
-        "Jess Gillam — британская саксофонистка и ведущая BBC Radio 3"
+        "Jess Gillam — британская саксофонистка и ведущая BBC Radio 3",
+        "сверка (нет в источнике): Программа исполняется с её собственным составом"
        ]
       }
      ],
@@ -1377,11 +1389,13 @@
        "blurb_ru": "Nish Kumar, комик, прославившийся благодаря шоу The Mash Report, привозит в Cambridge новую стендап-программу. Ждите злого, но очень смешного разговора о политике, неравенстве и состоянии страны — всё это от человека, который уверяет, что на самом деле он очень милый.",
        "knowledge_en": [
         "Nish Kumar is a British comedian known for hosting The Mash Report",
-        "Nish Kumar is known for hosting the satirical news show The Mash Report"
+        "Nish Kumar is known for hosting the satirical news show The Mash Report",
+        "source check (not_in_source): Nish Kumar прославился благодаря шоу The Mash Report"
        ],
        "knowledge_ru": [
         "Nish Kumar — британский комик, известный по ведению шоу The Mash Report",
-        "Nish Kumar известен по ведению сатирического новостного шоу The Mash Report"
+        "Nish Kumar известен по ведению сатирического новостного шоу The Mash Report",
+        "сверка (нет в источнике): Nish Kumar прославился благодаря шоу The Mash Report"
        ]
       },
       {
@@ -1454,11 +1468,13 @@
        "blurb_ru": "Пионер шок-рока Alice Cooper выходит на сцену, чтобы лично рассказать о своей новой автобиографии Devil on My Shoulder, которая выходит в издательстве Ebury Spotlight в ту же неделю. Редкая возможность услышать из первых уст о более чем шестидесяти годах рок-легенд.",
        "knowledge_en": [
         "Alice Cooper is an American musician known as a pioneer of theatrical shock rock",
-        "Alice Cooper is widely regarded as a pioneer of shock rock"
+        "Alice Cooper is widely regarded as a pioneer of shock rock",
+        "source check (not_in_source): Alice Cooper — пионер шок-рока"
        ],
        "knowledge_ru": [
         "Alice Cooper — американский музыкант, один из основоположников театрального шок-рока",
-        "Alice Cooper считается одним из пионеров шок-рока"
+        "Alice Cooper считается одним из пионеров шок-рока",
+        "сверка (нет в источнике): Alice Cooper — пионер шок-рока"
        ]
       },
       {
@@ -1473,8 +1489,12 @@
        "price_ru": "£37.50",
        "blurb_en": "The 80s band fronted by Wendy James, formed with guitarist Nick Christian Sayer, play the Junction.",
        "blurb_ru": "Группа из 80-х во главе с Wendy James, основанная вместе с гитаристом Nick Christian Sayer, выступает в Junction.",
-       "knowledge_en": [],
-       "knowledge_ru": []
+       "knowledge_en": [
+        "source check (not_in_source): Transvision Vamp — группа из 80-х"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): Transvision Vamp — группа из 80-х"
+       ]
       },
       {
        "ids": [
@@ -1502,6 +1522,31 @@
        "id": "E1026",
        "reason_en": "already two items from Cambridge Junction this week",
        "reason_ru": "в Cambridge Junction уже два пункта на этой неделе"
+      },
+      {
+       "id": "E1018",
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
+      },
+      {
+       "id": "E1027",
+       "reason_en": "Lower importance than all chosen items",
+       "reason_ru": "Меньшая важность, чем у всех выбранных событий"
+      },
+      {
+       "id": "E1742",
+       "reason_en": "Lower importance than all chosen items; relocated small venue show",
+       "reason_ru": "Меньшая важность, чем у всех выбранных; перенесённое шоу в небольшом заведении"
+      },
+      {
+       "id": "E2454",
+       "reason_en": "Not a live event — a cinema screening, and lower importance",
+       "reason_ru": "Не живое событие — кинопоказ, и меньшая важность"
+      },
+      {
+       "id": "E7",
+       "reason_en": "Lower importance than all chosen items; student comedy show",
+       "reason_ru": "Меньшая важность, чем у всех выбранных; студенческое комедийное шоу"
       }
      ]
     },
@@ -1586,8 +1631,12 @@
        "price_ru": "бесплатно",
        "blurb_en": "Professor Josephine Crawley Quinn's inaugural lecture as Professor of Ancient History.",
        "blurb_ru": "Инаугурационная лекция Josephine Crawley Quinn в качестве профессора древней истории.",
-       "knowledge_en": [],
-       "knowledge_ru": []
+       "knowledge_en": [
+        "source check (not_in_source): Это инаугурационная лекция профессора Josephine Crawley Quinn"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): Это инаугурационная лекция профессора Josephine Crawley Quinn"
+       ]
       },
       {
        "ids": [
@@ -1649,7 +1698,93 @@
        "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "E1013",
+       "reason_en": "Not an exhibition — it's a drop-in social/coffee meetup.",
+       "reason_ru": "Это не выставка — встреча за кофе, а не выставочное мероприятie."
+      },
+      {
+       "id": "E1017",
+       "reason_en": "Not an exhibition — it's a dance/movement course.",
+       "reason_ru": "Это не выставка — курс танца и движения."
+      },
+      {
+       "id": "E1031",
+       "reason_en": "Not an exhibition — it's a stand-up comedy show.",
+       "reason_ru": "Это не выставка — стендап-шоу."
+      },
+      {
+       "id": "E1033",
+       "reason_en": "Not an exhibition — it's a club night.",
+       "reason_ru": "Это не выставка — клубная вечеринка."
+      },
+      {
+       "id": "E1271",
+       "reason_en": "No reason — could be included.",
+       "reason_ru": "Причины нет — можно было взять."
+      },
+      {
+       "id": "E1288",
+       "reason_en": "No reason — could be included.",
+       "reason_ru": "Причины нет — можно было взять."
+      },
+      {
+       "id": "E1300",
+       "reason_en": "Not an exhibition — it's a dance course for Parkinson's patients.",
+       "reason_ru": "Это не выставка — танцевальный курс для людей с болезнью Паркинсона."
+      },
+      {
+       "id": "E1302",
+       "reason_en": "Not an exhibition — it's a movement/wellbeing course.",
+       "reason_ru": "Это не выставка — курс движения и оздоровления."
+      },
+      {
+       "id": "E1381",
+       "reason_en": "No fact for a description — summary is empty.",
+       "reason_ru": "Нет фактов для описания — аннотация пустая."
+      },
+      {
+       "id": "E1410",
+       "reason_en": "No fact for a description — summary just says 'exhibition'.",
+       "reason_ru": "Нет фактов для описания — в аннотации только слово 'выставка'."
+      },
+      {
+       "id": "E1423",
+       "reason_en": "Not an exhibition — it's a theatre building tour.",
+       "reason_ru": "Это не выставка — экскурсия по зданию театра."
+      },
+      {
+       "id": "E1425",
+       "reason_en": "Not an exhibition — it's a theatrical play.",
+       "reason_ru": "Это не выставка — театральная постановка."
+      },
+      {
+       "id": "E234",
+       "reason_en": "Not an exhibition — it's a series of author talks/book signings.",
+       "reason_ru": "Это не выставка — серия встреч с авторами и автограф-сессий."
+      },
+      {
+       "id": "E454",
+       "reason_en": "Not an exhibition — it's an open-house eco-home tour event.",
+       "reason_ru": "Это не выставка — мероприятие с открытыми экодомами."
+      },
+      {
+       "id": "E918",
+       "reason_en": "No reason — could be included.",
+       "reason_ru": "Причины нет — можно было взять."
+      },
+      {
+       "id": "E998",
+       "reason_en": "Not an exhibition — it's a professional dance class.",
+       "reason_ru": "Это не выставка — профессиональный танцевальный класс."
+      },
+      {
+       "id": "E999",
+       "reason_en": "Not an exhibition — it's a life drawing class.",
+       "reason_ru": "Это не выставка — класс рисования с натуры."
+      }
+     ]
     },
     {
      "rubric": "free",
@@ -1677,8 +1812,14 @@
        "price_ru": "бесплатно",
        "blurb_en": "Cambridge's libraries run weekly drop-ins all period: rhymetime and storytime for babies and toddlers, craft and Lego clubs for children, plus adult sessions including a board games social, an English conversation group and a British Sign Language meet-up.",
        "blurb_ru": "Библиотеки Кембриджа весь период проводят еженедельные встречи: чтение стишков и рассказов для малышей, творческий и лего-клуб для детей, а также взрослые встречи — от настольных игр до разговорного английского и встреч на языке жестов.",
-       "knowledge_en": [],
-       "knowledge_ru": []
+       "knowledge_en": [
+        "source check (not_in_source): Проводятся встречи для творчества и лего-клуба",
+        "source check (not_in_source): Проводятся встречи на языке жестов"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): Проводятся встречи для творчества и лего-клуба",
+        "сверка (нет в источнике): Проводятся встречи на языке жестов"
+       ]
       },
       {
        "ids": [
@@ -1692,8 +1833,12 @@
        "price_ru": "бесплатно",
        "blurb_en": "A chance to hear King's famous organ played by an international recitalist in the Sunday afternoon series.",
        "blurb_ru": "Возможность услышать знаменитый орган King's College в исполнении приглашённого органиста в рамках воскресной серии.",
-       "knowledge_en": [],
-       "knowledge_ru": []
+       "knowledge_en": [
+        "source check (distorted): Проходит в Westminster Abbey"
+       ],
+       "knowledge_ru": [
+        "сверка (искажено — в источнике: «venue: King's College Chapel»): Проходит в Westminster Abbey"
+       ]
       },
       {
        "ids": [
@@ -1731,7 +1876,18 @@
        "url": "https://www.computinghistory.org.uk/det/77445/International-E-Waste-Day-Saturday-17th-October-2026/"
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "E454",
+       "reason_en": "Not leisure — an educational eco-home open day rather than a leisure event.",
+       "reason_ru": "Не досуг — это образовательное мероприятие об экодомах, а не развлекательное."
+      },
+      {
+       "id": "E918",
+       "reason_en": "Duplicate of the theme — already featured among exhibitions.",
+       "reason_ru": "Дублирует тему — уже представлено в разделе выставок."
+      }
+     ]
     },
     {
      "rubric": "kids",
@@ -1783,7 +1939,33 @@
        "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "E1305",
+       "reason_en": "No reason — could be included.",
+       "reason_ru": "Причины нет — можно было взять."
+      },
+      {
+       "id": "E678",
+       "reason_en": "Not for kids — event explicitly states 'NO kids'.",
+       "reason_ru": "Не для детей — в описании прямо указано 'без детей'."
+      },
+      {
+       "id": "E946",
+       "reason_en": "Already two items from this venue (Kettle's Yard) on the same day.",
+       "reason_ru": "Уже два мероприятия из этого места (Kettle's Yard) в тот же день."
+      },
+      {
+       "id": "E947",
+       "reason_en": "Duplicate of the similar Studio Sunday event already listed.",
+       "reason_ru": "Дублирует похожее мероприятие Studio Sunday, уже включённое в список."
+      },
+      {
+       "id": "F8",
+       "reason_en": "No fact for a description — summary is empty.",
+       "reason_ru": "Нет фактов для описания — аннотация пустая."
+      }
+     ]
     },
     {
      "rubric": "sport",
@@ -1851,9 +2033,64 @@
        "knowledge_en": [],
        "knowledge_ru": [],
        "also": true
+      },
+      {
+       "ids": [
+        "E197"
+       ],
+       "also": true,
+       "auto": true,
+       "title_en": "Dubai Future Champions Festival — racing",
+       "title_ru": "Dubai Future Champions Festival — скачки",
+       "where_en": "Newmarket",
+       "where_ru": "Newmarket",
+       "price_en": "£15",
+       "price_ru": "£15",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1894"
+       ],
+       "also": true,
+       "auto": true,
+       "title_en": "Peterborough Phantoms v Hull Seahawks",
+       "title_ru": "Peterborough Phantoms v Hull Seahawks",
+       "where_en": "Planet Ice Peterborough",
+       "where_ru": "Planet Ice Peterborough",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "E1269",
+       "reason_en": "Not sport — a classical music marathon event",
+       "reason_ru": "Не спорт — это марафон классической музыки"
+      },
+      {
+       "id": "E1593",
+       "reason_en": "Duplicate of other same-series Phoenix charity running events already passed over",
+       "reason_ru": "Дублирует другие подобные благотворительные забеги серии Phoenix"
+      },
+      {
+       "id": "E1764",
+       "reason_en": "Duplicate of other same-series Phoenix charity running events already passed over",
+       "reason_ru": "Дублирует другие подобные благотворительные забеги серии Phoenix"
+      },
+      {
+       "id": "E1765",
+       "reason_en": "Duplicate of other same-series Phoenix charity running events already passed over",
+       "reason_ru": "Дублирует другие подобные благотворительные забеги серии Phoenix"
+      }
+     ]
     },
     {
      "rubric": "out_of_town",
@@ -1890,10 +2127,12 @@
        "blurb_en": "A concert from the veteran singer-songwriter.",
        "blurb_ru": "Концерт ветерана британской поп-сцены.",
        "knowledge_en": [
-        "Leo Sayer is a British singer-songwriter known for hits including \"You Make Me Feel Like Dancing\""
+        "Leo Sayer is a British singer-songwriter known for hits including \"You Make Me Feel Like Dancing\"",
+        "source check (not_in_source): Leo Sayer — ветеран британской поп-сцены"
        ],
        "knowledge_ru": [
-        "Leo Sayer — британский певец и автор песен, известный хитом «You Make Me Feel Like Dancing»"
+        "Leo Sayer — британский певец и автор песен, известный хитом «You Make Me Feel Like Dancing»",
+        "сверка (нет в источнике): Leo Sayer — ветеран британской поп-сцены"
        ]
       },
       {
@@ -1912,7 +2151,13 @@
        "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "E818",
+       "reason_en": "Lower importance than weakest chosen item, and different audience (classical choral music vs. comedy/pop personalities)",
+       "reason_ru": "Меньшая важность, чем у самого слабого выбранного, плюс другая аудитория (классическая хоровая музыка против комедии/поп-звёзд)"
+      }
+     ]
     },
     {
      "rubric": "new_announcements",
@@ -1944,8 +2189,12 @@
        "price_ru": "бесплатно",
        "blurb_en": "Cambridge's free, un-ticketed fireworks night returns to Midsummer Common on 5 November.",
        "blurb_ru": "Бесплатный вечер фейерверков без билетов возвращается на Midsummer Common 5 ноября.",
-       "knowledge_en": [],
-       "knowledge_ru": []
+       "knowledge_en": [
+        "source check (not_in_source): Fireworks Night состоится 5 ноября"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): Fireworks Night состоится 5 ноября"
+       ]
       },
       {
        "ids": [
@@ -1999,7 +2248,43 @@
        "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "A1612",
+       "reason_en": "No summary/description available for this event",
+       "reason_ru": "Нет описания события — не за что зацепиться"
+      },
+      {
+       "id": "A2507",
+       "reason_en": "Too far from Cambridge (over an hour away) and lower importance",
+       "reason_ru": "Слишком далеко от Кембриджа (больше часа езды) и меньшая важность"
+      },
+      {
+       "id": "A424",
+       "reason_en": "No description provided and located far outside Cambridge",
+       "reason_ru": "Нет описания, и находится далеко за пределами Кембриджа"
+      },
+      {
+       "id": "A425",
+       "reason_en": "No description provided, low importance compared to chosen items",
+       "reason_ru": "Нет описания, низкая важность по сравнению с выбранными"
+      },
+      {
+       "id": "A426",
+       "reason_en": "No description provided, too generic/low importance",
+       "reason_ru": "Нет описания, слишком общее событие с низкой важностью"
+      },
+      {
+       "id": "A909",
+       "reason_en": "Duplicate of the already chosen Olly Murs at Newmarket concert",
+       "reason_ru": "Дублирует уже выбранный концерт Olly Murs в Ньюмаркете"
+      },
+      {
+       "id": "A910",
+       "reason_en": "Exact duplicate of the already chosen Simply Red at Newmarket Nights entry",
+       "reason_ru": "Точный дубликат уже выбранного события Simply Red at Newmarket Nights"
+      }
+     ]
     },
     {
      "rubric": "tickets",
@@ -2052,7 +2337,28 @@
        "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "T-p1045",
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
+      },
+      {
+       "id": "T-p57",
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
+      },
+      {
+       "id": "T-p63",
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
+      },
+      {
+       "id": "T-p67",
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
+      }
+     ]
     },
     {
      "rubric": "cancelled",
@@ -2121,10 +2427,14 @@
        "blurb_en": "Cambridge's first UNIQLO has opened across two floors of the Grand Arcade, with a mural by a local artist and an exclusive collection made with the University of Cambridge.",
        "blurb_ru": "Первый UNIQLO в Кембридже открылся на двух этажах Grand Arcade, с настенной росписью местного художника и эксклюзивной коллекцией, созданной совместно с Кембриджским университетом.",
        "knowledge_en": [
-        "check (first): Cambridge's first UNIQLO has opened across two floors of the Grand Arcade, with a mural by a local artist and an exclusive collection made with the University of Cambridge."
+        "check (first): Cambridge's first UNIQLO has opened across two floors of the Grand Arcade, with a mural by a local artist and an exclusive collection made with the University of Cambridge.",
+        "source check (not_in_source): Это первый UNIQLO в Кембридже",
+        "source check (not_in_source): Магазин открылся на двух этажах Grand Arcade"
        ],
        "knowledge_ru": [
-        "проверка (Первый): Первый UNIQLO в Кембридже открылся на двух этажах Grand Arcade, с настенной росписью местного художника и эксклюзивной коллекцией, созданной совместно с Кембриджским университетом."
+        "проверка (Первый): Первый UNIQLO в Кембридже открылся на двух этажах Grand Arcade, с настенной росписью местного художника и эксклюзивной коллекцией, созданной совместно с Кембриджским университетом.",
+        "сверка (нет в источнике): Это первый UNIQLO в Кембридже",
+        "сверка (нет в источнике): Магазин открылся на двух этажах Grand Arcade"
        ]
       },
       {
@@ -2154,8 +2464,12 @@
        "price_ru": "",
        "blurb_en": "A new hot pot restaurant where each table cooks its own pot from a choice of ingredients, in a bright, modern space with river views.",
        "blurb_ru": "Новый ресторан хот-пота, где за каждым столом сами готовят блюдо из выбранных ингредиентов, в светлом современном зале с видом на реку.",
-       "knowledge_en": [],
-       "knowledge_ru": []
+       "knowledge_en": [
+        "source check (not_in_source): Интерьер светлый и современный с видом на реку"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): Интерьер светлый и современный с видом на реку"
+       ]
       },
       {
        "ids": [
@@ -2189,6 +2503,262 @@
       }
      ],
      "passed_over": []
+    },
+    {
+     "rubric": "colleges",
+     "items": [
+      {
+       "ids": [
+        "E920"
+       ],
+       "line": true,
+       "url": "https://www.dow.cam.ac.uk/creative-arts/heong-gallery/ten-good-years",
+       "auto": true,
+       "college": "Downing",
+       "kind_ru": "выставка",
+       "title_en": "Ten Good Years",
+       "title_ru": "Ten Good Years",
+       "where_en": "The Heong Gallery Downing College",
+       "where_ru": "The Heong Gallery Downing College",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E927"
+       ],
+       "line": true,
+       "url": "https://www.murrayedwards.cam.ac.uk/womens-art-collection/exhibition/what-remains",
+       "auto": true,
+       "college": "Murray Edwards",
+       "kind_ru": "выставка",
+       "title_en": "What Remains",
+       "title_ru": "What Remains",
+       "where_en": "The Women's Art Collection, Murray Edwards College",
+       "where_ru": "The Women's Art Collection, Murray Edwards College",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1655"
+       ],
+       "line": true,
+       "url": "https://www.cmp.cam.ac.uk/events/event/item/indian-classical-music-masterclass-with-the-anirudh-varma-collective/",
+       "auto": true,
+       "college": "Queens'",
+       "kind_ru": "концерт",
+       "title_en": "Indian Classical Music Masterclass with the Anirudh Varma Collective",
+       "title_ru": "Indian Classical Music Masterclass with the Anirudh Varma Collective",
+       "where_en": "Fitzpatrick Hall, Queens' College",
+       "where_ru": "Fitzpatrick Hall, Queens' College",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E377"
+       ],
+       "line": true,
+       "url": "https://www.clarehall.cam.ac.uk/events/continuum-renewal/",
+       "auto": true,
+       "college": "Clare",
+       "kind_ru": "концерт",
+       "title_en": "Continuum | Renewal",
+       "title_ru": "Continuum | Renewal",
+       "where_en": "Clare College Chapel, University of Cambridge",
+       "where_ru": "Clare College Chapel, University of Cambridge",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1660"
+       ],
+       "line": true,
+       "url": "https://www.cmp.cam.ac.uk/events/event/item/recital-isabelle-demers/",
+       "auto": true,
+       "college": "St John's",
+       "kind_ru": "концерт",
+       "title_en": "Recital – Isabelle Demers",
+       "title_ru": "Recital – Isabelle Demers",
+       "where_en": "St John’s College",
+       "where_ru": "St John’s College",
+       "price_en": "£20",
+       "price_ru": "£20",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1594"
+       ],
+       "line": true,
+       "url": "https://kingscollegechoir.com/concert/organ-recital-david-newsholme-canterbury-cathedral/",
+       "auto": true,
+       "college": "King's",
+       "kind_ru": "концерт",
+       "title_en": "Organ recital: David Newsholme, Canterbury Cathedral",
+       "title_ru": "Organ recital: David Newsholme, Canterbury Cathedral",
+       "where_en": "King's College Chapel",
+       "where_ru": "King's College Chapel",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ]
+    },
+    {
+     "rubric": "museums",
+     "items": [
+      {
+       "ids": [
+        "E2460"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Bury Lane Farm Shop",
+       "kind_ru": "выставка",
+       "url": "https://burylane.co.uk/pick-your-own/dahlias/",
+       "title_en": "Cut Your Own Dahlias",
+       "title_ru": "Cut Your Own Dahlias",
+       "where_en": "Bury Lane Farm Shop",
+       "where_ru": "Bury Lane Farm Shop (до 30 мин)",
+       "price_en": "£2–£2026",
+       "price_ru": "£2–£2026",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1579"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Royston Museum",
+       "kind_ru": "для семей",
+       "url": "https://www.roystonmuseum.org.uk/what-s-on",
+       "title_en": "Spark Art Club",
+       "title_ru": "Spark Art Club",
+       "where_en": "Royston Museum",
+       "where_ru": "Royston Museum (до 30 мин)",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1299"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Fitzwilliam Museum",
+       "kind_ru": "вечер в музее",
+       "url": "https://www.museums.cam.ac.uk/events/museum-late-frank-bowling-0",
+       "title_en": "Museum Late: Frank Bowling",
+       "title_ru": "Museum Late: Frank Bowling",
+       "where_en": "The Fitzwilliam Museum",
+       "where_ru": "The Fitzwilliam Museum",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E941"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Botanic Garden",
+       "kind_ru": "для семей",
+       "url": "https://www.botanic.cam.ac.uk/whats-on/fungi-field-day/",
+       "title_en": "Fungi Field Day",
+       "title_ru": "Fungi Field Day",
+       "where_en": "Cambridge University Botanic Garden",
+       "where_ru": "Cambridge University Botanic Garden",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E888"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Kettle's Yard",
+       "kind_ru": "экскурсия",
+       "url": "https://www.kettlesyard.cam.ac.uk/whats-on/guided-house-tour-10-10-2026-2/",
+       "title_en": "Guided House Tour",
+       "title_ru": "Guided House Tour",
+       "where_en": "Kettle's Yard",
+       "where_ru": "Kettle's Yard",
+       "price_en": "£16–£18.50",
+       "price_ru": "£16–£18.50",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E2432"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Wicken Fen",
+       "kind_ru": "выставка",
+       "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wicken-fen-national-nature-reserve/events/253a96b0-94a3-47bd-8824-76231be742d8",
+       "title_en": "Mucky Pups",
+       "title_ru": "Mucky Pups",
+       "where_en": "Wicken Fen (National Trust)",
+       "where_ru": "Wicken Fen (National Trust) (до 30 мин)",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ]
     }
    ],
    "editor_notes_en": [
@@ -2312,7 +2882,71 @@
     "V85",
     "V94",
     "V95"
-   ]
+   ],
+   "colleges_why": {
+    "E1249": "лимит рубрики (6 строк)",
+    "E2329": "лимит рубрики (6 строк)",
+    "E2456": "лимит рубрики (6 строк)",
+    "E1657": "лимит рубрики (6 строк)",
+    "E387": "лимит рубрики (6 строк)",
+    "E1662": "лимит рубрики (6 строк)",
+    "E1248": "лимит рубрики (6 строк)",
+    "E2193": "лимит рубрики (6 строк)",
+    "E2217": "лимит рубрики (6 строк)",
+    "E2249": "лимит рубрики (6 строк)",
+    "E1924": "лимит рубрики (6 строк)",
+    "E2334": "лимит рубрики (6 строк)",
+    "E2457": "лимит рубрики (6 строк)",
+    "E2218": "лимит рубрики (6 строк)",
+    "E2264": "лимит рубрики (6 строк)",
+    "E1658": "лимит рубрики (6 строк)"
+   },
+   "museums_why": {
+    "E946": "лимит рубрики (6 строк)",
+    "E947": "лимит рубрики (6 строк)",
+    "E1305": "лимит рубрики (6 строк)",
+    "E2411": "лимит рубрики (6 строк)",
+    "E2413": "лимит рубрики (6 строк)",
+    "E2415": "лимит рубрики (6 строк)",
+    "E2417": "лимит рубрики (6 строк)",
+    "E2419": "лимит рубрики (6 строк)",
+    "E2424": "лимит рубрики (6 строк)",
+    "E2425": "лимит рубрики (6 строк)",
+    "E2426": "лимит рубрики (6 строк)",
+    "E2518": "лимит рубрики (6 строк)",
+    "E2473": "лимит рубрики (6 строк)",
+    "E2474": "лимит рубрики (6 строк)",
+    "E1450": "лимит рубрики (6 строк)",
+    "E1468": "лимит рубрики (6 строк)",
+    "E1369": "лимит рубрики (6 строк)",
+    "E944": "лимит рубрики (6 строк)",
+    "E2468": "лимит рубрики (6 строк)",
+    "E2414": "лимит рубрики (6 строк)",
+    "E2420": "лимит рубрики (6 строк)",
+    "E2421": "лимит рубрики (6 строк)",
+    "E2423": "лимит рубрики (6 строк)",
+    "E1464": "лимит рубрики (6 строк)",
+    "E1298": "лимит рубрики (6 строк)",
+    "E1301": "лимит рубрики (6 строк)",
+    "E2467": "лимит рубрики (6 строк)",
+    "E1303": "лимит рубрики (6 строк)",
+    "E2469": "лимит рубрики (6 строк)",
+    "E2428": "лимит рубрики (6 строк)",
+    "E1306": "лимит рубрики (6 строк)"
+   },
+   "grammar": {
+    "checked": 152,
+    "fixed": [
+     {
+      "where": "Cambridge United — Blackpool",
+      "fixes": [
+       "в с неожиданной связью → с неожиданной связью"
+      ]
+     }
+    ],
+    "rejected": []
+   },
+   "reasons_filled": true
   },
   "removed": {
    "A914": "сокращено: в рубрике больше 5 пунктов",
@@ -2508,6 +3142,90 @@
    [
     "Film “Forgotten Island”: score 7.0 (Wikipedia 667 755 просмотров за 30 дней; широкий прокат); facts from Wikipedia “2026 DreamWorks Animation film”; showing: широкий прокат",
     "фильм «Forgotten Island»: оценка 7.0 (Wikipedia 667 755 просмотров за 30 дней; широкий прокат); факты — статья Wikipedia «2026 DreamWorks Animation film» (тот ли фильм?); где идёт: широкий прокат; ссылка — Wikipedia https://en.wikipedia.org/wiki/Forgotten_Island"
+   ],
+   [
+    "Also playing: 2 fixture(s) from connected clubs added without the model (Dubai Future Champions Festival; Peterborough Phantoms v Hull Seahawks)",
+    "«Также играют»: без модели добавлено матчей и скачек — 2 (Dubai Future Champions Festival; Peterborough Phantoms v Hull Seahawks)"
+   ],
+   [
+    "“Cambridge United v Blackpool”: claim not in the source moved to the check list",
+    "«Cambridge United — Blackpool»: «Матч Cambridge United — Blackpool является обычным домашним матчем лиги One» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Roachford + Hue and Cry”: claim not in the source moved to the check list",
+    "«Roachford + Hue and Cry»: «Оба исполнителя выступают со своими полными составами» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Antony Szmierek”: claim not in the source moved to the check list",
+    "«Antony Szmierek»: «Antony Szmierek — манчестерский исполнитель» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Antony Szmierek”: claim not in the source moved to the check list",
+    "«Antony Szmierek»: «Antony Szmierek начинал со спок-ворда и перешёл в поп» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Antony Szmierek”: claim not in the source moved to the check list",
+    "«Antony Szmierek»: «Antony Szmierek известен тем, что вплетает наблюдательные истории в танцевальные» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Shine with Jess Gillam and her Band”: claim not in the source moved to the check list",
+    "«Shine with Jess Gillam and her Band»: «Программа исполняется с её собственным составом» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Nish Kumar: Angry Humour From a Really Nice Guy”: claim not in the source moved to the check list",
+    "«Nish Kumar: Angry Humour From a Really Nice Guy»: «Nish Kumar прославился благодаря шоу The Mash Report» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Alice Cooper: Devil on My Shoulder Book Tour”: claim not in the source moved to the check list",
+    "«Alice Cooper: Devil on My Shoulder Book Tour»: «Alice Cooper — пионер шок-рока» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Transvision Vamp”: claim not in the source moved to the check list",
+    "«Transvision Vamp»: «Transvision Vamp — группа из 80-х» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn”: claim not in the source moved to the check list",
+    "«Anarchical Antiquity — инаугурационная лекция профессора Josephine Crawley Quinn»: «Это инаугурационная лекция профессора Josephine Crawley Quinn» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Regular sessions in libraries”: claim not in the source moved to the check list",
+    "«Регулярно в библиотеках»: «Проводятся встречи для творчества и лего-клуба» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Regular sessions in libraries”: claim not in the source moved to the check list",
+    "«Регулярно в библиотеках»: «Проводятся встречи на языке жестов» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Organ recital: Paul Greally, Westminster Abbey”: claim not in the source moved to the check list",
+    "«Органный концерт: Paul Greally, Westminster Abbey»: «Проходит в Westminster Abbey» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Leo Sayer”: claim not in the source moved to the check list",
+    "«Leo Sayer»: «Leo Sayer — ветеран британской поп-сцены» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Fireworks Night”: claim not in the source moved to the check list",
+    "«Fireworks Night»: «Fireworks Night состоится 5 ноября» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“UNIQLO”: claim not in the source moved to the check list",
+    "«UNIQLO»: «Это первый UNIQLO в Кембридже» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“UNIQLO”: claim not in the source moved to the check list",
+    "«UNIQLO»: «Магазин открылся на двух этажах Grand Arcade» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Tripots”: claim not in the source moved to the check list",
+    "«Tripots»: «Интерьер светлый и современный с видом на реку» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Cambridge United — Blackpool”: grammar fixed (в с неожиданной связью → с неожиданной связью)",
+    "«Cambridge United — Blackpool»: грамматика: в с неожиданной связью → с неожиданной связью"
+   ],
+   [
+    "passed-over reasons added by a separate request: 45 of 45",
+    "причины пропуска дописаны отдельным запросом: 45 из 45"
    ]
   ],
   "need": {
