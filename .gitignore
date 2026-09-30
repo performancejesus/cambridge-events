@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 ~$*.xlsx
 data/cache/
+
+# временный журнал SQLite во время записи
+data/*.db-journal
