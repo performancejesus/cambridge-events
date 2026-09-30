@@ -8,7 +8,7 @@ from . import (adc_camdram, beer_festival, cambridge105, cambridge_bid, cambridg
                peterborough_telegraph, saffron_hall, kettles_yard, newsquest,
                ucm, junction, botanic, visit_cambridge, uni_whatson, science_centre, cppf, tribe_sites,
                milton_park, family_misc, ely_cathedral, theatre_royal_bury, visit_ely,
-               p3_sources, stage6c, cambridge_union, stage7b)
+               p3_sources, stage6c, cambridge_union, stage7b, stage7d)
 
 ALL = [
     cambridge105.Cambridge105(), talks_cam.TalksCam(), adc_camdram.AdcCamdram(),
@@ -46,4 +46,7 @@ ALL = [
     # этап 7b: Cambridge Union, колледжи, кино
     cambridge_union.CambridgeUnion(), stage7b.CamdramAll(), stage7b.NationalGardenScheme(),
     stage7b.LightCinema(), *stage7b.COLLEGE_COLLECTORS,
+    # этап 7d: музеи, усадьбы, фермы, Кингс-Линн, кинотеатры зоны
+    stage7d.NationalTrust(), stage7d.EnglishHeritage(), stage7d.BuryLaneFarmShop(), stage7d.MuseumOfTechnology(),
+    stage7d.ElyMuseum(), stage7d.KingsLynnCornExchange(), stage7d.RegionalCinemas(),
 ]

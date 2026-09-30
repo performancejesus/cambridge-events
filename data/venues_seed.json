@@ -243,5 +243,100 @@
   ],
   "address": "Round Church Street, Cambridge",
   "postcode": "CB5 8AD"
+ },
+ {
+  "name": "Anglesey Abbey (National Trust)",
+  "aliases": [
+   "anglesey abbey",
+   "anglesey abbey gardens and lode mill",
+   "lode mill"
+  ],
+  "address": "Quy Road, Lode, Cambridge",
+  "postcode": "CB25 9EJ"
+ },
+ {
+  "name": "Wimpole Estate (National Trust)",
+  "aliases": [
+   "wimpole",
+   "wimpole estate",
+   "wimpole hall",
+   "wimpole home farm"
+  ],
+  "address": "Arrington, Royston",
+  "postcode": "SG8 0BW"
+ },
+ {
+  "name": "Wicken Fen (National Trust)",
+  "aliases": [
+   "wicken fen",
+   "wicken fen national nature reserve"
+  ],
+  "address": "Lode Lane, Wicken, Ely",
+  "postcode": "CB7 5XP"
+ },
+ {
+  "name": "Audley End House and Gardens",
+  "aliases": [
+   "audley end",
+   "audley end house",
+   "audley end house and gardens"
+  ],
+  "address": "Audley End, Saffron Walden",
+  "postcode": "CB11 4JF"
+ },
+ {
+  "name": "Bury Lane Farm Shop",
+  "aliases": [
+   "bury lane farm shop",
+   "bury lane"
+  ],
+  "address": "Bury Lane, Melbourn, Royston",
+  "postcode": "SG8 6DF"
+ },
+ {
+  "name": "Cambridge Museum of Technology",
+  "aliases": [
+   "museum of technology",
+   "cambridge museum of technology"
+  ],
+  "address": "Riverside, Cambridge",
+  "postcode": "CB5 8HN"
+ },
+ {
+  "name": "Ely Museum",
+  "aliases": [
+   "ely museum"
+  ],
+  "address": "The Old Gaol, Market Street, Ely",
+  "postcode": "CB7 4LS"
+ },
+ {
+  "name": "King's Lynn Corn Exchange",
+  "aliases": [
+   "king's lynn corn exchange",
+   "kings lynn corn exchange",
+   "corn exchange king's lynn"
+  ],
+  "address": "Tuesday Market Place, King's Lynn",
+  "postcode": "PE30 1JW"
+ },
+ {
+  "name": "Shepreth Wildlife Park",
+  "aliases": [
+   "shepreth wildlife park",
+   "shepreth"
+  ],
+  "address": "Station Road, Shepreth, Royston",
+  "postcode": "SG8 6PZ"
+ },
+ {
+  "name": "IWM Duxford",
+  "aliases": [
+   "iwm duxford",
+   "imperial war museum duxford",
+   "duxford"
+  ],
+  "address": "Duxford, Cambridge",
+  "postcode": "CB22 4QR"
  }
 ]

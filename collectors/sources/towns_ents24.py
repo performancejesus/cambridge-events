@@ -7,7 +7,8 @@
 from ..generic import TownPagesJsonLd
 
 TOWNS = ["peterborough", "ely", "huntingdon", "st-neots", "st-ives", "wisbech", "march", "bury-st-edmunds",
-         "saffron-walden", "newmarket", "royston", "haverhill"]
+         "saffron-walden", "newmarket", "royston", "haverhill",
+         "kings-lynn"]   # этап 7d: Кингс-Линн — исключение из географии, зона «до часа»
 
 
 class TownsEnts24(TownPagesJsonLd):

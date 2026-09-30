@@ -31,12 +31,12 @@ ANNOUNCE_DAYS = 21          # «объявлено недавно»: стать�
 VENUE_NEWS_DAYS = 60        # «Новое в городе» в первом выпуске — открытия за 2 месяца (правки по v3)
 
 # Рубрики после «Темы недели» и «Главного на выходные» (их по одной на каждые выходные периода).
-FIXED_RUBRICS = ["weekdays", "cinema", "talks", "colleges", "exhibitions", "free", "kids", "holidays", "sport", "out_of_town",
+FIXED_RUBRICS = ["weekdays", "cinema", "talks", "colleges", "museums", "exhibitions", "free", "kids", "holidays", "sport", "out_of_town",
                  "county", "new_announcements", "tickets", "cancelled", "new_in_town"]
 RUBRIC_TITLES = {
     "en": {"theme": "Theme of the week: {theme}", "weekend": "The weekend: {weekend}",
            "weekdays": "Weekdays: concerts, theatre, comedy", "cinema": "At the cinema", "talks": "Talks and meetings",
-           "colleges": "At the colleges",
+           "colleges": "At the colleges", "museums": "Museums and estates",
            "exhibitions": "Exhibitions", "free": "Free",
            "kids": "With kids", "holidays": "School holidays: where to book your child", "sport": "Sport",
            "out_of_town": "Out of town (within an hour)", "county": "Around the county",
@@ -44,7 +44,7 @@ RUBRIC_TITLES = {
            "cancelled": "Cancelled and postponed", "new_in_town": "New in town"},
     "ru": {"theme": "Тема недели: {theme}", "weekend": "Главное на выходные {weekend}",
            "weekdays": "На неделе: концерты, театр, комедия", "cinema": "В кино", "talks": "Лекции и встречи",
-           "colleges": "В колледжах",
+           "colleges": "В колледжах", "museums": "В музеях и усадьбах",
            "exhibitions": "Выставки", "free": "Бесплатно",
            "kids": "С детьми", "holidays": "Каникулы: куда записать ребёнка", "sport": "Спорт",
            "out_of_town": "За городом (до часа)", "county": "По графству",
@@ -232,6 +232,9 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
     text = " ".join([e["title"]] + allcats)
     if FILM_RE.search(text) or "film" in [c.lower() for c in allcats] or set(srcs) & {"S045"}:
         facts["film"] = True
+    city = next((c.split(":", 1)[1] for c in allcats if c.lower().startswith("city:")), None)
+    if city:   # этап 7d: кинотеатр округи (S182) — город в пометке
+        facts["city"] = city
     if TALK_RE.search(e["title"]) or any(c.lower() in ("talk", "lecture", "lectures", "talks") for c in allcats) \
             or (set(srcs) & {"S047"}):
         facts["talk"] = True
@@ -352,6 +355,18 @@ def _exclusion(e: sqlite3.Row) -> str | None:
     return None
 
 
+REGIONAL_CINEMA = {"S182"}
+REGIONAL_IN_CAMBRIDGE = "кинотеатр округи: этот показ есть и в Кембридже (Light, Arts Picturehouse)"
+
+
+def _in_cambridge_cinemas(con, title: str, w: Window) -> bool:
+    from . import cinema
+    try:
+        return bool(cinema.where(con, title, w.start, w.end))
+    except sqlite3.Error:
+        return False
+
+
 def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     p = Pools()
     s, e_ = w.start.isoformat(), w.end.isoformat()
@@ -376,6 +391,10 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
         facts["dates"] = sorted({(g["date_start"], g["date_end"] or g["date_start"], kid_time(p, facts, g["time_start"]))
                                  for g in group}, key=lambda x: tuple(y or "" for y in x))
         facts["event_ids"] = [g["event_id"] for g in group]
+        if set(facts.get("sources") or []) <= REGIONAL_CINEMA and _in_cambridge_cinemas(con, first["title"], w):
+            # этап 7d: «собирать шире, публиковать уже» — показ округи в выпуск, только если в Кембридже его нет
+            p.excluded[REGIONAL_IN_CAMBRIDGE].append(f"{first['title']} ({facts.get('city') or first['venue_name']})")
+            continue
         if len(facts["dates"]) == 1 and facts["dates"][0][0] == facts["dates"][0][1]:
             end = page_date_end(d(facts["dates"][0][0]), facts.get("page_facts"))
             if end:   # «пт, 9 октября» + «двухдневное» в описании → «9–10 октября»; время дня тогда не показываем
@@ -1348,7 +1367,7 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 out["sections"].append({"rubric": rub, "title": rubric_title(rub, w, lang), "intro": "", "groups": groups})
             continue
         items = sections.get(rub) or []
-        if rub == "colleges":   # этап 7c: по дате
+        if rub in ("colleges", "museums"):   # этап 7c: по дате (7d: и «В музеях и усадьбах»)
             items = sorted(items, key=lambda it: tuple(x or "" for x in (p.candidates[it["ids"][0]].get("dates") or [("",)])[0]))
         elif rub == "weekdays":   # правки по v5: «На неделе» — по дате
             items = sorted(items, key=lambda it: min((x[0], x[2] or "") for i in it["ids"]
@@ -1382,7 +1401,7 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 price = {"postponed": ("postponed", "перенесено")}.get(c.get("status"), ("cancelled", "отменено"))[
                     0 if lang == "en" else 1]
             meta = " · ".join(x for x in (when(c, w, lang), where_, price, acc, mark) if x)
-            if it.get("line") and it.get("kind_ru") and lang == "ru":   # «В колледжах»: вид события — в строке
+            if it.get("line") and it.get("kind_ru") and lang == "ru":   # «В колледжах», «В музеях и усадьбах»: вид события — в строке
                 meta = f"{it['kind_ru']} · {meta}"
             title = it[f"title_{lang}"]
             if c["kind"] == "venue_news" and not re.search(r"\bCambridge\b", c.get("address") or ""):

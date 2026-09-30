@@ -6,7 +6,8 @@
 from ..generic import TownPagesJsonLd
 
 TOWNS = ["Peterborough", "Ely", "Huntingdon", "St-Neots", "St-Ives", "Wisbech", "March", "Bury-St-Edmunds",
-         "Saffron-Walden", "Newmarket", "Royston", "Haverhill"]
+         "Saffron-Walden", "Newmarket", "Royston", "Haverhill",
+         "Kings-Lynn"]   # этап 7d: Кингс-Линн — зона «до часа»
 
 
 class TownsSkiddle(TownPagesJsonLd):

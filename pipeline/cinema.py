@@ -63,10 +63,10 @@ def norm(t: str) -> str:
 
 # --- Light ---
 
-def light_schedule(http) -> list[dict]:
-    """Расписание Light Cambridge: [{title, kind, dates: [(YYYY-MM-DD, первое время)], cert, runtime, url}]."""
+def light_schedule(http, base: str = LIGHT) -> list[dict]:
+    """Расписание Light (по умолчанию Cambridge; этап 7d — и Light Wisbech): [{title, kind, dates, cert, runtime, url}]."""
     stamp = datetime.now().strftime("%Y%m%d%H00")
-    s = http.get(LIGHT_DATA.format(stamp=stamp)).text
+    s = http.get(base.rstrip("/") + f"/resource/services/miniguide/data.ashx?d={stamp}").text
     data = json.loads(s[s.index("{"):s.rstrip().rstrip(";").rindex("}") + 1])
     out = []
     for f in data.get("Schedule", []):
@@ -79,7 +79,7 @@ def light_schedule(http) -> list[dict]:
         title = htmllib.unescape(f.get("Title") or "").strip()
         kind = EVENT_TYPES.get(f.get("ProgrammeType"), "special" if SPECIAL_RE.search(title) else "film")
         out.append({"title": title, "kind": kind, "dates": dates, "cert": f.get("Cert"), "runtime": f.get("Runtime"),
-                    "url": LIGHT + (f.get("Url") or "")})
+                    "url": base.rstrip("/") + (f.get("Url") or "")})
     return out
 
 

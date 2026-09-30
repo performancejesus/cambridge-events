@@ -29,6 +29,9 @@ NEIGHBOUR_IF_IMPORTANT = "до часа, если важно"
 # «до часа», хотя Бери на 40,3–40,7 км по прямой (по A14 ~40 минут). Stevenage — наоборот, всегда по правилу 40–60 км
 # (только события с оценкой ≥ 7), даже если площадка ближе 40 км. В бэклоге — время в пути вместо расстояния (OSRM).
 NEIGHBOUR_EXEMPT_DISTRICTS = {"West Suffolk"}
+# Этап 7d (решение 30.09): Кингс-Линн (Норфолк) — как West Suffolk: зона «до часа» (прямой поезд, ~50 минут), хотя по
+# прямой ~62 км. Только сам город и ближайшие окрестности, а не весь район King's Lynn and West Norfolk (Хунстантон — нет).
+EXEMPT_TOWNS_KM = {"King's Lynn": ((52.7543, 0.3976), 6.0)}
 NEIGHBOUR_ALWAYS_DISTRICTS = {"Stevenage"}
 POSTCODE_RE = re.compile(r"^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$")
 
@@ -50,6 +53,8 @@ def zone(lat: float | None, lon: float | None, county: str | None = None, distri
         return None
     d = km(CENTRE[0], CENTRE[1], lat, lon)
     cambs = in_cambridgeshire(county, district)
+    if any(km(c[0], c[1], lat, lon) <= r for c, r in EXEMPT_TOWNS_KM.values()):
+        return "до часа"
     if cambs and district in FAR_DISTRICTS and d > ZONES[1][0]:
         return COUNTY_FAR
     band = next((z for limit, z in ZONES if d <= limit), None)
