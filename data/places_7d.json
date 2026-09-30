@@ -1,0 +1,512 @@
+{
+ "built": "2026-09-30",
+ "issue_model": "issue_2026-10-08_v11_model.json",
+ "places": [
+  {
+   "place": "Музеи университета (Zoology, Whipple, Sedgwick, MAA, Polar, Classical Archaeology)",
+   "group": "музеи",
+   "source": "S052",
+   "events_60d": 55,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [
+    "центр"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Fitzwilliam Museum",
+   "group": "музеи",
+   "source": "S052",
+   "events_60d": 17,
+   "in_issue": 2,
+   "rubrics": [
+    "exhibitions",
+    "museums"
+   ],
+   "zones": [
+    "центр"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Kettle's Yard",
+   "group": "музеи",
+   "source": "S052",
+   "events_60d": 27,
+   "in_issue": 3,
+   "rubrics": [
+    "exhibitions",
+    "museums",
+    "tickets"
+   ],
+   "zones": [
+    "центр"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Cambridge University Botanic Garden",
+   "group": "музеи",
+   "source": "S052",
+   "events_60d": 15,
+   "in_issue": 2,
+   "rubrics": [
+    "kids",
+    "museums"
+   ],
+   "zones": [
+    "центр"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Museum of Cambridge",
+   "group": "музеи",
+   "source": "S130",
+   "events_60d": 7,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [
+    "центр"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Centre for Computing History",
+   "group": "музеи",
+   "source": "S134",
+   "events_60d": 7,
+   "in_issue": 1,
+   "rubrics": [
+    "free"
+   ],
+   "zones": [
+    "центр"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Cambridge Museum of Technology",
+   "group": "музеи",
+   "source": "S179 (новый)",
+   "events_60d": 7,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [
+    "центр"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Ely Museum",
+   "group": "музеи",
+   "source": "S180 (новый)",
+   "events_60d": 9,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [
+    "до 30 мин"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Royston Museum",
+   "group": "музеи",
+   "source": "S153",
+   "events_60d": 18,
+   "in_issue": 1,
+   "rubrics": [
+    "museums"
+   ],
+   "zones": [
+    "до 30 мин"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Oliver Cromwell's House (Ely)",
+   "group": "музеи",
+   "source": "—",
+   "events_60d": 0,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [],
+   "decision": "«Не разобрано»: заглушка или проверка бот-защиты"
+  },
+  {
+   "place": "Wimpole Estate и Home Farm (National Trust)",
+   "group": "усадьбы",
+   "source": "S070 (NT, данные страницы)",
+   "events_60d": 19,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [
+    "до 30 мин"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Anglesey Abbey (National Trust)",
+   "group": "усадьбы",
+   "source": "S070 (NT, данные страницы)",
+   "events_60d": 9,
+   "in_issue": 1,
+   "rubrics": [
+    "kids"
+   ],
+   "zones": [
+    "до 30 мин"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Wicken Fen (National Trust)",
+   "group": "усадьбы",
+   "source": "S070 (NT, данные страницы)",
+   "events_60d": 5,
+   "in_issue": 1,
+   "rubrics": [
+    "museums"
+   ],
+   "zones": [
+    "до 30 мин"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Audley End House and Gardens (English Heritage)",
+   "group": "усадьбы",
+   "source": "S139 (API событий EH)",
+   "events_60d": 6,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [
+    "до 30 мин"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Wandlebury (Cambridge PPF)",
+   "group": "усадьбы",
+   "source": "S131",
+   "events_60d": 26,
+   "in_issue": 1,
+   "rubrics": [
+    "free"
+   ],
+   "zones": [
+    "до 30 мин"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "IWM Duxford",
+   "group": "музеи",
+   "source": "S053 → Visit Cambridge (S001)",
+   "events_60d": 1,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [
+    "до 30 мин"
+   ],
+   "decision": "сайт закрыт (заглушка или проверка бот-защиты); события — из других источников"
+  },
+  {
+   "place": "Shepreth Wildlife Park",
+   "group": "фермы",
+   "source": "S135",
+   "events_60d": 0,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [],
+   "decision": "«Не разобрано»: страница отвечает 403"
+  },
+  {
+   "place": "Gog Magog Hills Farm Shop",
+   "group": "фермы",
+   "source": "—",
+   "events_60d": 0,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [],
+   "decision": "«Не разобрано»: обрыв соединения"
+  },
+  {
+   "place": "Bury Lane Farm Shop (Melbourn)",
+   "group": "фермы",
+   "source": "S178 (новый)",
+   "events_60d": 2,
+   "in_issue": 1,
+   "rubrics": [
+    "museums"
+   ],
+   "zones": [
+    "до 30 мин"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "Lynn Museum",
+   "group": "Кингс-Линн",
+   "source": "—",
+   "events_60d": 1,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [
+    "до часа"
+   ],
+   "decision": "сайт закрыт (заглушка или проверка бот-защиты); события — из других источников"
+  },
+  {
+   "place": "Corn Exchange King's Lynn — театр и концерты",
+   "group": "Кингс-Линн",
+   "source": "S181 (новый) + Ents24/Skiddle kings-lynn",
+   "events_60d": 14,
+   "in_issue": 2,
+   "rubrics": [
+    "out_of_town"
+   ],
+   "zones": [
+    "до часа"
+   ],
+   "decision": "подключено"
+  },
+  {
+   "place": "True's Yard Fisherfolk Museum",
+   "group": "Кингс-Линн",
+   "source": "—",
+   "events_60d": 0,
+   "in_issue": 0,
+   "rubrics": [],
+   "zones": [],
+   "decision": "«Не разобрано»: заглушка или проверка бот-защиты"
+  },
+  {
+   "place": "Календарь событий города (Visit West Norfolk)",
+   "group": "Кингс-Линн",
+   "source": "S183 (новый) + Ents24 и Skiddle kings-lynn",
+   "events_60d": 23,
+   "in_issue": 2,
+   "rubrics": [
+    "out_of_town"
+   ],
+   "zones": [
+    "out_of_zone",
+    "до часа"
+   ],
+   "decision": "подключено"
+  }
+ ],
+ "cinemas": [
+  {
+   "place": "The Light Wisbech",
+   "group": "кино округи",
+   "city": "Wisbech",
+   "source": "S182 (новый)",
+   "films": 32,
+   "special": 3,
+   "events_60d": 3,
+   "in_issue": 0,
+   "decision": "в базе с городом; в выпуск — только спецпоказы и трансляции, которых нет в Кембридже"
+  },
+  {
+   "place": "Royal Cinema St Ives (Merlin)",
+   "group": "кино округи",
+   "city": "St Ives",
+   "source": "S182 (новый)",
+   "films": 15,
+   "special": 6,
+   "events_60d": 3,
+   "in_issue": 0,
+   "decision": "в базе с городом; в выпуск — только спецпоказы и трансляции, которых нет в Кембридже"
+  },
+  {
+   "place": "Screen St Ives",
+   "group": "кино округи",
+   "city": "St Ives",
+   "source": "S182 (новый)",
+   "films": 1,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "в базе с городом; в выпуск — только спецпоказы и трансляции, которых нет в Кембридже"
+  },
+  {
+   "place": "Majestic Cinema",
+   "group": "кино округи",
+   "city": "King's Lynn",
+   "source": "S182 (новый)",
+   "films": 13,
+   "special": 2,
+   "events_60d": 2,
+   "in_issue": 0,
+   "decision": "в базе с городом; в выпуск — только спецпоказы и трансляции, которых нет в Кембридже"
+  },
+  {
+   "place": "King's Lynn Corn Exchange Cinema",
+   "group": "кино округи",
+   "city": "King's Lynn",
+   "source": "S182 (новый)",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "в базе с городом; в выпуск — только спецпоказы и трансляции, которых нет в Кембридже"
+  },
+  {
+   "place": "Peterborough Arts Cinema",
+   "group": "кино округи",
+   "city": "Peterborough",
+   "source": "S182 (новый)",
+   "films": 4,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "в базе с городом; в выпуск — только спецпоказы и трансляции, которых нет в Кембридже"
+  },
+  {
+   "place": "The Luxe Cinema Wisbech",
+   "group": "кино округи",
+   "city": "Wisbech",
+   "source": "S182 (новый)",
+   "films": 26,
+   "special": 11,
+   "events_60d": 11,
+   "in_issue": 0,
+   "decision": "в базе с городом; в выпуск — только спецпоказы и трансляции, которых нет в Кембридже"
+  },
+  {
+   "place": "Haverhill Arts Centre",
+   "group": "кино округи",
+   "city": "Haverhill",
+   "source": "S182 (новый)",
+   "films": 7,
+   "special": 2,
+   "events_60d": 2,
+   "in_issue": 0,
+   "decision": "в базе с городом; в выпуск — только спецпоказы и трансляции, которых нет в Кембридже"
+  },
+  {
+   "place": "Babylon Cinema (Ely Maltings)",
+   "group": "кино округи",
+   "city": "Ely",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: обрыв соединения"
+  },
+  {
+   "place": "Abbeygate Cinema",
+   "group": "кино округи",
+   "city": "Bury St Edmunds",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: заглушка или проверка бот-защиты"
+  },
+  {
+   "place": "Saffron Screen",
+   "group": "кино округи",
+   "city": "Saffron Walden",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: заглушка или проверка бот-защиты"
+  },
+  {
+   "place": "Cineworld Huntingdon",
+   "group": "кино округи",
+   "city": "Huntingdon",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: заглушка или проверка бот-защиты"
+  },
+  {
+   "place": "Cineworld St Neots",
+   "group": "кино округи",
+   "city": "St Neots",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: заглушка или проверка бот-защиты"
+  },
+  {
+   "place": "Cineworld Haverhill",
+   "group": "кино округи",
+   "city": "Haverhill",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: заглушка или проверка бот-защиты"
+  },
+  {
+   "place": "Cineworld Bury St Edmunds",
+   "group": "кино округи",
+   "city": "Bury St Edmunds",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: заглушка или проверка бот-защиты"
+  },
+  {
+   "place": "Showcase Peterborough",
+   "group": "кино округи",
+   "city": "Peterborough",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: страница отвечает ошибкой"
+  },
+  {
+   "place": "Odeon Peterborough",
+   "group": "кино округи",
+   "city": "Peterborough",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: заглушка или проверка бот-защиты"
+  },
+  {
+   "place": "Key Theatre (Peterborough)",
+   "group": "кино округи",
+   "city": "Peterborough",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: обрыв соединения"
+  },
+  {
+   "place": "Kings Cinema Newmarket",
+   "group": "кино округи",
+   "city": "Newmarket",
+   "source": "—",
+   "films": 0,
+   "special": 0,
+   "events_60d": 0,
+   "in_issue": 0,
+   "decision": "«Не разобрано»: обрыв соединения"
+  }
+ ]
+}
