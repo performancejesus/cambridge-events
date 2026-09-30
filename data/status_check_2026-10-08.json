@@ -1,16 +1,16 @@
 {
  "issue": "2026-10-08",
- "checked": 225,
- "page_opened": 209,
- "status_readable": 138,
+ "checked": 231,
+ "page_opened": 213,
+ "status_readable": 142,
  "by_result": [
   [
    "ok",
-   209
+   213
   ],
   [
    "error",
-   12
+   14
   ],
   [
    "skipped (газета или нет ссылки)",
@@ -20,7 +20,7 @@
  "by_status": [
   [
    "on_sale",
-   135
+   138
   ],
   [
    "не читается",
@@ -29,26 +29,30 @@
   [
    "sold_out",
    3
+  ],
+  [
+   "cancelled",
+   1
   ]
  ],
  "by_urgency": [
   [
    "few_left",
-   7
+   9
   ],
   [
    "some_dates_sold_out",
-   7
+   9
   ]
  ],
  "by_reason": [
   [
    "окно выпуска",
-   140
+   144
   ],
   [
    "следующие 6 недель (Успейте купить)",
-   50
+   52
   ],
   [
    "пункт 2026-10-08_v9",
@@ -59,7 +63,19 @@
    8
   ]
  ],
- "differs_from_db": [],
+ "differs_from_db": [
+  {
+   "event_id": 371,
+   "url": "https://www.eventbrite.co.uk/e/the-scapegoat-the-brilliant-brief-life-of-the-duke-of-buckingham-tickets-1994669024748",
+   "status": "cancelled",
+   "urgency": "",
+   "evidence": "Cancelled",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "THE SCAPEGOAT - The Brilliant Brief Life of the Duke of Buckingham",
+   "db_status": "on_sale"
+  }
+ ],
  "urgent": [
   {
    "event_id": 38,
@@ -214,6 +230,50 @@
    "why": "окно выпуска",
    "title": "Earth In Our Hands: Breakfast with Professor Julian Allwood",
    "db_status": "scheduled"
+  },
+  {
+   "event_id": 1421,
+   "url": "https://theatreroyal.org/events/secure-my-booking-ticket-protection/",
+   "status": "on_sale",
+   "urgency": "some_dates_sold_out",
+   "evidence": "Sold Out / Book tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Secure My Booking – Ticket Protection",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 1423,
+   "url": "https://theatreroyal.org/events/theatre-tour-2026/",
+   "status": "on_sale",
+   "urgency": "some_dates_sold_out",
+   "evidence": "Sold Out / Book tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Theatre Tour 2026",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 1425,
+   "url": "https://theatreroyal.org/events/switzerland-thriller/",
+   "status": "on_sale",
+   "urgency": "few_left",
+   "evidence": "5 Tickets Left",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Switzerland",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 1428,
+   "url": "https://theatreroyal.org/events/an-audience-with-philippa-gregory-royal-witch/",
+   "status": "on_sale",
+   "urgency": "few_left",
+   "evidence": "Last Few",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "An Audience With Philippa Gregory",
+   "db_status": "on_sale"
   }
  ],
  "events": [
@@ -726,9 +786,9 @@
   {
    "event_id": 249,
    "url": "https://www.junction.co.uk/events/finlay-christie/",
-   "status": "",
+   "status": "on_sale",
    "urgency": "",
-   "evidence": "",
+   "evidence": "Buy Tickets",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Finlay Christie",
@@ -913,9 +973,9 @@
   {
    "event_id": 371,
    "url": "https://www.eventbrite.co.uk/e/the-scapegoat-the-brilliant-brief-life-of-the-duke-of-buckingham-tickets-1994669024748",
-   "status": "on_sale",
+   "status": "cancelled",
    "urgency": "",
-   "evidence": "Get tickets",
+   "evidence": "Cancelled",
    "result": "ok",
    "why": "окно выпуска",
    "title": "THE SCAPEGOAT - The Brilliant Brief Life of the Duke of Buckingham",
@@ -1370,6 +1430,17 @@
    "result": "ok",
    "why": "пункт 2026-10-08_v9",
    "title": "Maddy Prior & Peter Knight",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 678,
+   "url": "https://www.skiddle.com/whats-on/Peterborough/The-Rathskeller/90s-Baby-Daytime-Clubbing-Kings-Lynn/42665135/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "error: FetchError",
+   "why": "окно выпуска",
+   "title": "90's Baby Daytime Clubbing Kings Lynn",
    "db_status": "on_sale"
   },
   {
@@ -2189,9 +2260,9 @@
   {
    "event_id": 1421,
    "url": "https://theatreroyal.org/events/secure-my-booking-ticket-protection/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
+   "status": "on_sale",
+   "urgency": "some_dates_sold_out",
+   "evidence": "Sold Out / Book tickets",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Secure My Booking – Ticket Protection",
@@ -2200,9 +2271,9 @@
   {
    "event_id": 1423,
    "url": "https://theatreroyal.org/events/theatre-tour-2026/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
+   "status": "on_sale",
+   "urgency": "some_dates_sold_out",
+   "evidence": "Sold Out / Book tickets",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Theatre Tour 2026",
@@ -2211,9 +2282,9 @@
   {
    "event_id": 1425,
    "url": "https://theatreroyal.org/events/switzerland-thriller/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
+   "status": "on_sale",
+   "urgency": "few_left",
+   "evidence": "5 Tickets Left",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Switzerland",
@@ -2222,9 +2293,9 @@
   {
    "event_id": 1426,
    "url": "https://theatreroyal.org/events/lunchtime-concert-chris-ingham-trio-standard-time/",
-   "status": "",
+   "status": "on_sale",
    "urgency": "",
-   "evidence": "",
+   "evidence": "Book tickets",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Lunchtime Concert: Chris Ingham Trio – Standard Time",
@@ -2233,9 +2304,9 @@
   {
    "event_id": 1428,
    "url": "https://theatreroyal.org/events/an-audience-with-philippa-gregory-royal-witch/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
+   "status": "on_sale",
+   "urgency": "few_left",
+   "evidence": "Last Few",
    "result": "ok",
    "why": "окно выпуска",
    "title": "An Audience With Philippa Gregory",
@@ -2247,7 +2318,7 @@
    "status": "",
    "urgency": "",
    "evidence": "",
-   "result": "ok",
+   "result": "error: FetchError",
    "why": "пропало из источника",
    "title": "Talk: A History of Violence: Death, Burial and Discovery at Wandlebury",
    "db_status": "disappeared"
@@ -2374,28 +2445,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 1743,
-   "url": "https://musiclivecambridge.com/gigs/reef",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Get Tickets",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "Reef",
-   "db_status": "scheduled"
-  },
-  {
-   "event_id": 1750,
-   "url": "https://musiclivecambridge.com/gigs/breabach",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Get Tickets",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "Breabach",
-   "db_status": "scheduled"
-  },
-  {
    "event_id": 1751,
    "url": "https://musiclivecambridge.com/gigs/nerina-pallot-cambridge-tickets-at-storeys-field-c",
    "status": "",
@@ -2404,28 +2453,6 @@
    "result": "ok",
    "why": "окно выпуска",
    "title": "Nerina Pallot",
-   "db_status": "scheduled"
-  },
-  {
-   "event_id": 1752,
-   "url": "https://musiclivecambridge.com/gigs/hayseed-dixie-2026-10-16",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Get Tickets",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "Hayseed Dixie + Sweet Electric",
-   "db_status": "scheduled"
-  },
-  {
-   "event_id": 1757,
-   "url": "https://musiclivecambridge.com/gigs/the-beat-dance-crazed-too-uk-tour",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Get Tickets",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "The bEAT + The Selecter",
    "db_status": "scheduled"
   },
   {
@@ -2691,6 +2718,105 @@
    "why": "пропало из источника",
    "title": "Lucy Cavendish College's Foundation Day: Panel Discussion",
    "db_status": "disappeared"
+  },
+  {
+   "event_id": 2342,
+   "url": "https://www.ents24.com/kings-lynn-events/kings-lynn-corn-exchange/leo-sayer/7434217",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Leo Sayer",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2343,
+   "url": "https://www.ents24.com/kings-lynn-events/kings-lynn-corn-exchange/kevin-bloody-wilson/7389473",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Kevin 'Bloody' Wilson",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2346,
+   "url": "https://www.ents24.com/kings-lynn-events/st-nicholas-chapel/the-shires/7517778",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "The Shires",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2405,
+   "url": "https://www.eventbrite.co.uk/e/an-evening-with-colette-paul-in-cambridge-tickets-1999776680885",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "An Evening with Colette Paul in Cambridge",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2454,
+   "url": "https://cambridge.thelight.co.uk/enb-the-sleeping-beauty",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "English National Ballet: The Sleeping Beauty",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 2460,
+   "url": "https://burylane.co.uk/pick-your-own/dahlias/",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Book Now",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Cut Your Own Dahlias",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2494,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "RBO 26-27: Macbeth (MET Opera)",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 2495,
+   "url": "https://st-ives.merlincinemas.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "NT Live: Golden Boy",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 2518,
+   "url": "https://www.visitwestnorfolk.com/experiences/events/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Exhibition: All of Us Witches",
+   "db_status": "on_sale"
   }
  ]
 }
