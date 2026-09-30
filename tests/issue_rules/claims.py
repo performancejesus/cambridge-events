@@ -76,6 +76,12 @@ def source_text(ctx, ids: list[str], limit: int = 2500, per_id: int = 1500) -> s
                                         "WHERE s.event_id=? AND a.summary IS NOT NULL", (e,)):
                 if s[:200] not in "\n".join(parts):
                     parts.append(f"article: {s}")
+            # этап 7d: описания всех источников события («final live performance on 24 February 1972» — у Corn
+            # Exchange, а у кандидата — краткое описание из статьи; сверка ошибочно сочла факт «нет в источнике»)
+            for (s,) in ctx.con.execute("SELECT DISTINCT summary FROM raw_items WHERE event_id=? AND summary IS NOT NULL",
+                                        (e,)):
+                if s[:200] not in "\n".join(parts):
+                    parts.append(f"source: {s}")
         own = "\n".join(parts[mark:])[:per_id]   # у каждого пункта темы — своя доля (цитата сестры не должна обрезаться)
         parts[mark:] = [own] if own else []
     return "\n".join(parts)[:limit]
@@ -117,10 +123,10 @@ def collect(ctx, client, chunk: int = 12) -> tuple[dict, float]:
     rest = [x for x in items if not x["strict"]]
     batches = [(STRICT_MODEL, strict, sents)] + [(MODEL, rest[i:i + chunk], []) for i in range(0, len(rest), chunk)]
     for model, batch, sb in batches:
-        payload = {"sentences": [{"n": n, "sentence": s["sentence"], "sources": source_text(ctx, s["ids"], 8000, 1500)}
+        payload = {"sentences": [{"n": n, "sentence": s["sentence"], "sources": source_text(ctx, s["ids"], 8000, 3000)}
                                  for n, s in enumerate(sb)],
                    "items": [{"n": n, "text_en": x["text_en"], "text_ru": x["text_ru"],
-                              "sources": source_text(ctx, x["ids"], 8000 if x["strict"] else 2500, 1500)}
+                              "sources": source_text(ctx, x["ids"], 8000 if x["strict"] else 2500, 3000 if x["strict"] else 1500)}
                              for n, x in enumerate(batch)]}
         if not payload["sentences"] and not payload["items"]:
             continue

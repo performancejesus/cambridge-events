@@ -1783,6 +1783,10 @@ def main() -> None:
         import anthropic
         api_client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
     if not args.no_api:
+        # этап 7d: грамматика — до сверки: проверки на готовом выпуске сверяют тот же текст (кэш), вердикт не меняется
+        n_gr, cost_gr, result["grammar"] = issue_fixes.fix_grammar(api_client, result, pools, con)
+        fix_notes += n_gr
+        usage["cost_usd"] += cost_gr
         ctx.claims, cost_claims = _claims.collect(ctx, api_client)
         usage["cost_usd"] += cost_claims
         fix_notes += issue_fixes.knowledge_from_claims(result, ctx.claims)
@@ -1795,9 +1799,6 @@ def main() -> None:
             ctx.claims, cost_claims2 = _claims.collect(ctx, api_client)
             usage["cost_usd"] += cost_claims2
             fix_notes += issue_fixes.knowledge_from_claims(result, ctx.claims)   # по новой сверке
-        n_gr, cost_gr, result["grammar"] = issue_fixes.fix_grammar(api_client, result, pools, con)
-        fix_notes += n_gr
-        usage["cost_usd"] += cost_gr
         ctx._layout = {}
     # ручные правки и заметки ревью, записанные в сохранённый ответ модели (issues/issue_<дата>_model.json)
     review = [tuple(x) for x in result.get("manual_fixes", []) + result.get("review_notes", [])]
