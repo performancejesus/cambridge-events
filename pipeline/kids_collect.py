@@ -100,6 +100,7 @@ def _holidays_text() -> str:
 
 def collect(con: sqlite3.Connection, http, only: set[str] | None = None) -> dict:
     import anthropic
+    from collectors.http import FetchError
     from collectors.llmlist import visible_text
     init(con)
     client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
@@ -116,7 +117,14 @@ def collect(con: sqlite3.Connection, http, only: set[str] | None = None) -> dict
             if res != "ok":
                 problems.append((url, res, detail))
                 continue
-            text, _ = visible_text(http.get(url).text)
+            try:   # этап 7d: защита пропускает через раз (Nene Park: проверка — 200, загрузка — 403) — не падаем
+                text, _ = visible_text(http.get(url).text)
+            except FetchError as e:
+                problems.append((url, "http_403" if "403" in str(e) else "connection", str(e)[:160]))
+                continue
+            if len(text.split()) < 60 and unparsed.CHALLENGE_RE.search(text):
+                problems.append((url, "bot_challenge", "заглушка бот-защиты"))
+                continue
             text = re.sub(r"(?:\| )+", "| ", text)[:MAX_CHARS]
             sha = hashlib.sha1((_holidays_text() + text).encode()).hexdigest()
             st["pages_ok"] += 1
