@@ -3,8 +3,9 @@
 тренажёрный зал для подростков, а не «гимнастика для младших»."""
 
 GLOSSARY = """Translation glossary (English → Russian), use it for titles and descriptions:
-- gym, junior gym, gym session, fitness suite → тренажёрный зал (junior gym for 11–17 → «тренажёрный зал для подростков»);
-  gymnastics → гимнастика; trampolining → батутный спорт / занятия на батуте;
+- gym, junior gym, gym session, fitness suite — a room with fitness equipment → тренажёрный зал (junior gym for 11–17 →
+  «тренажёрный зал для подростков»); gymnastics, a gymnastics club or academy (Gymfinity, gymnastics camp) → гимнастика
+  («каникулярный лагерь гимнастики»), never «тренажёрный зал»; trampolining → занятия на батуте;
 - multi-sports, multi-activity → мультиспорт / разные виды спорта; holiday camp → каникулярный лагерь;
   holiday club → каникулярный клуб; half term → каникулы; soft play → игровая комната;
 - swimming lessons → уроки плавания; fun session, splash session → свободное плавание;

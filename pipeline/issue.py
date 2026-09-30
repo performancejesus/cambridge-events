@@ -106,8 +106,11 @@ KIDS_RE = re.compile(r"\b(family[- ]friendly|for (all the |the whole )?famil(y|i
                      # правки по v5: детские персонажи и книги — явный признак семейного события (The Gruffalo на NVR)
                      r"gruffalo|peppa pig|paw patrol|room on the broom|stick man|hey duggee|bluey|julia donaldson|"
                      r"santa specials?|meet (father christmas|santa))\b", re.I)
-FOR_KIDS_RE = re.compile(r"\b(for (young )?(children|kids|families|toddlers|little ones)|(children|kids) (aged|will|can)|"
-                         r"family (fun )?(day|event|workshop|show|trail)|ages? \d+\s*[-–+]|suitable for (children|all ages))\b", re.I)
+WASTE_RE = re.compile(r"\b(e-?waste|recycling|repair caf[eé]|swap shop|bring .n. byte)\b", re.I)
+FOR_KIDS_RE = re.compile(r"\b(?:for (?:young )?(?:children|kids|families|toddlers|little ones)|(?:children|kids) (?:aged|will|can)|"
+                         r"family (?:fun )?(?:day|event|workshop|show|trail)|and families|suitable for children)\b|"
+                         r"\bages? \d+\s*(?:[-–+]|to\b|and\b)", re.I)
+# («family friendly» у Visit Cambridge стоит и у джаза в отеле, и у дня переработки техники — для for_kids слабый признак)
 # Семейные категории, которыми источник сам размечает события (фильтры UCM «для кого», раздел Visit Cambridge,
 # раздел University What's On, Science Centre) — явная пометка, не догадка (этап 6).
 FAMILY_CATEGORIES = {"family", "families", "family events", "family friendly", "under 5s", "ages 5+"}
@@ -215,6 +218,12 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
         "importance": e["importance_score"], "importance_reason": e["importance_reason"],
         "kids_tag": is_family(e["title"], summary, _categories(con, e["event_id"], None)),
         "access": e["access"] or "open", "access_note": e["access_note"],
+        # правки по v8: событие действительно для детей — дети в названии, семейная категория источника или описание
+        # прямо адресовано детям; распродажи и дни переработки (Bring 'n' Byte, e-waste day) — нет
+        "for_kids": (bool(KIDS_RE.search(e["title"])) or bool({x.strip().lower() for x in _categories(con, e["event_id"], None)}
+                     & (FAMILY_CATEGORIES - {"family friendly"})) or bool(FOR_KIDS_RE.search(summary or "")))
+                    and not SALE_RE.search(e["title"])
+                    and not WASTE_RE.search(e["title"]),
         "free_tag": strictly_free(e["price_from"], e["price_text"]),
     }
     allcats = _categories(con, e["event_id"], None)
@@ -718,10 +727,7 @@ def _holiday_family(con, w: Window, p: Pools) -> None:
                 continue
             # правки по v8: только события для детей и семей — дети названы в названии или источник сам отнёс событие
             # к семейным, либо описание прямо адресует его детям; распродажи (Bring 'n' Byte Sale) — нет
-            cats = [c.strip().lower() for c in _categories(con, e["event_id"], None)]
-            for_kids = bool(KIDS_RE.search(e["title"])) or bool(set(cats) & FAMILY_CATEGORIES) or bool(
-                FOR_KIDS_RE.search(facts.get("summary") or ""))
-            if not for_kids or SALE_RE.search(e["title"]):
+            if not facts["for_kids"]:
                 continue
             span = (d(e["date_end"] or e["date_start"]) - d(e["date_start"])).days
             if span > 21:

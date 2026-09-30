@@ -1,16 +1,16 @@
 {
  "issue": "2026-10-08",
- "checked": 231,
- "page_opened": 215,
- "status_readable": 151,
+ "checked": 225,
+ "page_opened": 207,
+ "status_readable": 140,
  "by_result": [
   [
    "ok",
-   215
+   207
   ],
   [
    "error",
-   11
+   13
   ],
   [
    "skipped (газета или нет ссылки)",
@@ -20,107 +20,59 @@
  "by_status": [
   [
    "on_sale",
-   147
+   137
   ],
   [
    "не читается",
-   64
-  ],
-  [
-   "cancelled",
-   2
+   67
   ],
   [
    "sold_out",
-   2
+   3
   ]
  ],
  "by_urgency": [
   [
    "few_left",
-   10
+   7
   ],
   [
    "some_dates_sold_out",
-   10
+   7
   ]
  ],
  "by_reason": [
   [
    "окно выпуска",
-   136
+   140
   ],
   [
    "следующие 6 недель (Успейте купить)",
-   51
+   50
   ],
   [
-   "пункт 2026-10-01_v7",
-   40
+   "пункт 2026-10-08_v8",
+   30
   ],
   [
    "пропало из источника",
-   4
+   5
   ]
  ],
  "differs_from_db": [
   {
-   "event_id": 53,
-   "url": "https://www.cornex.co.uk/events/mike-bubbins",
-   "status": "cancelled",
-   "urgency": "",
-   "evidence": "Cancelled",
-   "result": "ok",
-   "why": "следующие 6 недель (Успейте купить)",
-   "title": "Mike Bubbins",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 58,
-   "url": "https://www.cornex.co.uk/events/sam-campbell-kid-giblet",
-   "status": "sold_out",
-   "urgency": "",
-   "evidence": "Sold out",
-   "result": "ok",
-   "why": "следующие 6 недель (Успейте купить)",
-   "title": "Sam Campbell: Kid Giblet",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 70,
-   "url": "https://www.cornex.co.uk/events/chris-hadfield-navigating-the-new-space-age",
-   "status": "cancelled",
-   "urgency": "",
-   "evidence": "CANCELLED: Chris Hadfield: Navigating the New Space Age",
-   "result": "ok",
-   "why": "следующие 6 недель (Успейте купить)",
-   "title": "CANCELLED: Chris Hadfield: Navigating the New Space Age",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 887,
-   "url": "https://www.kettlesyard.cam.ac.uk/whats-on/quartetto-nous-2/",
+   "event_id": 2162,
+   "url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/jeremy-bowen-truth-under-fire/7411994",
    "status": "sold_out",
    "urgency": "",
    "evidence": "Sold Out",
    "result": "ok",
-   "why": "окно выпуска",
-   "title": "Quartetto Noûs",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "Jeremy Bowen - Truth Under Fire",
    "db_status": "on_sale"
   }
  ],
  "urgent": [
-  {
-   "event_id": 32,
-   "url": "https://www.cornex.co.uk/events/joe-jackson-hope-and-fury-tour-2026",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "Limited availability",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "JOE JACKSON - HOPE AND FURY TOUR 2026",
-   "db_status": "on_sale"
-  },
   {
    "event_id": 38,
    "url": "https://www.cornex.co.uk/events/alison-moyet-2",
@@ -221,17 +173,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 1002,
-   "url": "https://www.junction.co.uk/events/flo-joan-with-feeling/",
-   "status": "on_sale",
-   "urgency": "some_dates_sold_out",
-   "evidence": "Sold Out / Buy Tickets",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Flo & Joan: With Feeling | Cambridge Junction",
-   "db_status": "on_sale"
-  },
-  {
    "event_id": 1028,
    "url": "https://www.junction.co.uk/events/li-jin-hao-falling-from-a-moon/",
    "status": "on_sale",
@@ -285,50 +226,6 @@
    "why": "окно выпуска",
    "title": "Earth In Our Hands: Breakfast with Professor Julian Allwood",
    "db_status": "scheduled"
-  },
-  {
-   "event_id": 1421,
-   "url": "https://theatreroyal.org/events/secure-my-booking-ticket-protection/",
-   "status": "on_sale",
-   "urgency": "some_dates_sold_out",
-   "evidence": "Sold Out / Book tickets",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "Secure My Booking – Ticket Protection",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 1423,
-   "url": "https://theatreroyal.org/events/theatre-tour-2026/",
-   "status": "on_sale",
-   "urgency": "some_dates_sold_out",
-   "evidence": "Sold Out / Book tickets",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "Theatre Tour 2026",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 1425,
-   "url": "https://theatreroyal.org/events/switzerland-thriller/",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "5 Tickets Left",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "Switzerland",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 1428,
-   "url": "https://theatreroyal.org/events/an-audience-with-philippa-gregory-royal-witch/",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "Last Few",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "An Audience With Philippa Gregory",
-   "db_status": "on_sale"
   }
  ],
  "events": [
@@ -386,39 +283,6 @@
    "why": "окно выпуска",
    "title": "Footlights ADC Smokers: Michaelmas 2026",
    "db_status": "announced"
-  },
-  {
-   "event_id": 32,
-   "url": "https://www.cornex.co.uk/events/joe-jackson-hope-and-fury-tour-2026",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "Limited availability",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "JOE JACKSON - HOPE AND FURY TOUR 2026",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 34,
-   "url": "https://www.cornex.co.uk/events/gianmarco-soresi-the-misery-loves-tour",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Get Tickets",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Gianmarco Soresi: The Misery Loves Tour",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 35,
-   "url": "https://www.cornex.co.uk/events/don-broco",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "кнопка: Buy Tickets",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Don Broco",
-   "db_status": "on_sale"
   },
   {
    "event_id": 37,
@@ -586,17 +450,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 53,
-   "url": "https://www.cornex.co.uk/events/mike-bubbins",
-   "status": "cancelled",
-   "urgency": "",
-   "evidence": "Cancelled",
-   "result": "ok",
-   "why": "следующие 6 недель (Успейте купить)",
-   "title": "Mike Bubbins",
-   "db_status": "on_sale"
-  },
-  {
    "event_id": 54,
    "url": "https://www.cornex.co.uk/events/maisie-adam-whatsherface",
    "status": "on_sale",
@@ -627,7 +480,7 @@
    "result": "ok",
    "why": "следующие 6 недель (Успейте купить)",
    "title": "Sam Campbell: Kid Giblet",
-   "db_status": "on_sale"
+   "db_status": "sold_out"
   },
   {
    "event_id": 59,
@@ -740,17 +593,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 70,
-   "url": "https://www.cornex.co.uk/events/chris-hadfield-navigating-the-new-space-age",
-   "status": "cancelled",
-   "urgency": "",
-   "evidence": "CANCELLED: Chris Hadfield: Navigating the New Space Age",
-   "result": "ok",
-   "why": "следующие 6 недель (Успейте купить)",
-   "title": "CANCELLED: Chris Hadfield: Navigating the New Space Age",
-   "db_status": "on_sale"
-  },
-  {
    "event_id": 72,
    "url": "https://www.cornex.co.uk/events/chris-packhams-world-of-wonder-a-planet-on-the-edge",
    "status": "on_sale",
@@ -795,17 +637,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 110,
-   "url": "https://www.cambridgeunited.com/fixture/list/57",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "кнопка: Buy Tickets",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Cambridge United FC - Northampton Town FC [EFLT]",
-   "db_status": "announced"
-  },
-  {
    "event_id": 111,
    "url": "https://www.cambridgeunited.com/fixture/list/57",
    "status": "on_sale",
@@ -814,7 +645,7 @@
    "result": "ok",
    "why": "окно выпуска",
    "title": "Cambridge United FC - Blackpool FC",
-   "db_status": "announced"
+   "db_status": "on_sale"
   },
   {
    "event_id": 131,
@@ -823,20 +654,9 @@
    "urgency": "",
    "evidence": "",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Cambridge Beer Festival 2027",
    "db_status": "announced"
-  },
-  {
-   "event_id": 133,
-   "url": "https://www.millroadwinterfair.org/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Mill Road Winter Fair 2026",
-   "db_status": "scheduled"
   },
   {
    "event_id": 163,
@@ -850,17 +670,6 @@
    "db_status": "scheduled"
   },
   {
-   "event_id": 196,
-   "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/sun-chariot-day/",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Buy Tickets",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Sun Chariot Day",
-   "db_status": "on_sale"
-  },
-  {
    "event_id": 197,
    "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/dubai-future-champions-festival/",
    "status": "on_sale",
@@ -872,28 +681,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 206,
-   "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/19th-december-26---christmas-parties2246/",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Book now",
-   "result": "ok",
-   "why": "пропало из источника",
-   "title": "Celebrate Christmas at Newmarket Racecourse",
-   "db_status": "disappeared"
-  },
-  {
-   "event_id": 207,
-   "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/guineas-festival/",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Buy tickets",
-   "result": "ok",
-   "why": "пропало из источника",
-   "title": "The Betfred Guineas Festival",
-   "db_status": "disappeared"
-  },
-  {
    "event_id": 208,
    "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/july-festival/",
    "status": "",
@@ -903,6 +690,17 @@
    "why": "пропало из источника",
    "title": "The Debenhams July Festival",
    "db_status": "disappeared"
+  },
+  {
+   "event_id": 209,
+   "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/newmarket-nights/simply-red/",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Buy Tickets",
+   "result": "ok",
+   "why": "пункт 2026-10-08_v8",
+   "title": "Simply Red",
+   "db_status": "on_sale"
   },
   {
    "event_id": 212,
@@ -925,17 +723,6 @@
    "why": "окно выпуска",
    "title": "London City Ballet",
    "db_status": "on_sale"
-  },
-  {
-   "event_id": 241,
-   "url": "https://cambridge105.co.uk/event/meet-the-cows/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Meet the Cows",
-   "db_status": "scheduled"
   },
   {
    "event_id": 243,
@@ -1061,9 +848,9 @@
   {
    "event_id": 355,
    "url": "https://www.eventbrite.co.uk/e/flow-cytometry-courses-october-2026-tickets-1862606489149",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
+   "evidence": "",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Flow Cytometry Courses - October 2026",
@@ -1329,7 +1116,7 @@
    "urgency": "",
    "evidence": "",
    "result": "skipped (газета или нет ссылки)",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
    "db_status": "scheduled"
   },
@@ -1362,7 +1149,7 @@
    "urgency": "",
    "evidence": "",
    "result": "skipped (газета или нет ссылки)",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Have You Got It Yet? The Story of Syd Barrett and Pink Floyd - Film Screening",
    "db_status": "on_sale"
   },
@@ -1406,7 +1193,7 @@
    "urgency": "",
    "evidence": "",
    "result": "skipped (газета или нет ссылки)",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Cambridge Carbon Footprint's Open Eco Homes",
    "db_status": "scheduled"
   },
@@ -1420,28 +1207,6 @@
    "why": "окно выпуска",
    "title": "Peterborough United FC - Burton Albion FC",
    "db_status": "announced"
-  },
-  {
-   "event_id": 494,
-   "url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/gilbert-osullivan/7464418",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Gilbert O'Sullivan",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 497,
-   "url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/russell-watson/7403879",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Russell Watson",
-   "db_status": "on_sale"
   },
   {
    "event_id": 499,
@@ -1631,6 +1396,17 @@
    "db_status": "on_sale"
   },
   {
+   "event_id": 594,
+   "url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/maddy-prior-and-peter-knight/7539288",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пункт 2026-10-08_v8",
+   "title": "Maddy Prior & Peter Knight",
+   "db_status": "on_sale"
+  },
+  {
    "event_id": 679,
    "url": "https://www.skiddle.com/whats-on/Peterborough/Velvet-Panache/Trance-Central-Peterborough-The-1st-Birthday-with-Lange/42434986/",
    "status": "",
@@ -1749,7 +1525,7 @@
    "result": "ok",
    "why": "окно выпуска",
    "title": "Quartetto Noûs",
-   "db_status": "on_sale"
+   "db_status": "sold_out"
   },
   {
    "event_id": 888,
@@ -1774,24 +1550,13 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 906,
-   "url": "https://www.cambridgefilmfestival.org.uk/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Cambridge Film Festival",
-   "db_status": "announced"
-  },
-  {
    "event_id": 909,
    "url": "https://www.huntspost.co.uk/news/26586199.olly-murs-headline-2027-newmarket-nights-series/",
    "status": "",
    "urgency": "",
    "evidence": "",
    "result": "skipped (газета или нет ссылки)",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Olly Murs at Newmarket Nights",
    "db_status": "on_sale"
   },
@@ -1802,7 +1567,7 @@
    "urgency": "",
    "evidence": "Buy Tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Simply Red at Newmarket Nights",
    "db_status": "scheduled"
   },
@@ -1835,7 +1600,7 @@
    "urgency": "",
    "evidence": "кнопка: Book Tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Fungi Field Day",
    "db_status": "scheduled"
   },
@@ -1862,6 +1627,28 @@
    "db_status": "on_sale"
   },
   {
+   "event_id": 948,
+   "url": "https://www.visitcambridge.org/event/the-big-bike-film-night-2026-cambridge/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пункт 2026-10-08_v8",
+   "title": "The Big Bike Film Night 2026 – Cambridge",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 952,
+   "url": "https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Book Tickets",
+   "result": "ok",
+   "why": "пункт 2026-10-08_v8",
+   "title": "Apple Day 2026",
+   "db_status": "scheduled"
+  },
+  {
    "event_id": 999,
    "url": "https://www.junction.co.uk/events/life-drawing-class/",
    "status": "",
@@ -1870,50 +1657,6 @@
    "result": "ok",
    "why": "окно выпуска",
    "title": "Life Drawing Class | Cambridge Junction",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 1002,
-   "url": "https://www.junction.co.uk/events/flo-joan-with-feeling/",
-   "status": "on_sale",
-   "urgency": "some_dates_sold_out",
-   "evidence": "Sold Out / Buy Tickets",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Flo & Joan: With Feeling | Cambridge Junction",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 1003,
-   "url": "https://www.junction.co.uk/events/the-lemonheads/",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Buy Tickets",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "The Lemonheads | Cambridge Junction",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 1008,
-   "url": "https://www.junction.co.uk/events/tez-ilyas-tez-things-i-hate-about-you/",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Buy Tickets",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Tez Ilyas: Tez Things I Hate About You | Cambridge Junction",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 1010,
-   "url": "https://www.junction.co.uk/events/soundhunt-evan-parker-quartet/",
-   "status": "on_sale",
-   "urgency": "",
-   "evidence": "Buy Tickets",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Soundhunt: Evan Parker Quartet | Cambridge Junction",
    "db_status": "on_sale"
   },
   {
@@ -2324,14 +2067,14 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 1298,
-   "url": "https://www.museums.cam.ac.uk/events/spotlight-talk-kettles-yard-rugs",
+   "event_id": 1287,
+   "url": "https://www.museums.cam.ac.uk/events/whatever-weather-photography-competition",
    "status": "",
    "urgency": "",
    "evidence": "",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Spotlight Talk: Kettle’s Yard Rugs",
+   "why": "пункт 2026-10-08_v8",
+   "title": "Whatever the Weather photography competition",
    "db_status": "scheduled"
   },
   {
@@ -2352,7 +2095,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Rhymetime at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2363,7 +2106,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Storytime at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2374,7 +2117,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "LGBTQIA+ Board Games Social at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2385,7 +2128,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Improve Your English at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2396,7 +2139,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Sunday Scribes at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2407,7 +2150,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Queer Cafe at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2418,7 +2161,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Storytime at Barnwell Road Library (term time only)",
    "db_status": "scheduled"
   },
@@ -2429,7 +2172,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Children's Craft Drop-In at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2440,7 +2183,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Lego Club Drop-In at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2451,7 +2194,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Digital Drop-Ins at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2462,7 +2205,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "British Sign Language Meet-up at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2473,7 +2216,7 @@
    "urgency": "",
    "evidence": "Get tickets",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Reading Aloud with Cherry at Cambridge Central Library",
    "db_status": "scheduled"
   },
@@ -2491,9 +2234,9 @@
   {
    "event_id": 1421,
    "url": "https://theatreroyal.org/events/secure-my-booking-ticket-protection/",
-   "status": "on_sale",
-   "urgency": "some_dates_sold_out",
-   "evidence": "Sold Out / Book tickets",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Secure My Booking – Ticket Protection",
@@ -2502,9 +2245,9 @@
   {
    "event_id": 1423,
    "url": "https://theatreroyal.org/events/theatre-tour-2026/",
-   "status": "on_sale",
-   "urgency": "some_dates_sold_out",
-   "evidence": "Sold Out / Book tickets",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Theatre Tour 2026",
@@ -2513,9 +2256,9 @@
   {
    "event_id": 1425,
    "url": "https://theatreroyal.org/events/switzerland-thriller/",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "5 Tickets Left",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Switzerland",
@@ -2524,9 +2267,9 @@
   {
    "event_id": 1426,
    "url": "https://theatreroyal.org/events/lunchtime-concert-chris-ingham-trio-standard-time/",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Book tickets",
+   "evidence": "",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Lunchtime Concert: Chris Ingham Trio – Standard Time",
@@ -2535,24 +2278,24 @@
   {
    "event_id": 1428,
    "url": "https://theatreroyal.org/events/an-audience-with-philippa-gregory-royal-witch/",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "Last Few",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
    "result": "ok",
    "why": "окно выпуска",
    "title": "An Audience With Philippa Gregory",
    "db_status": "on_sale"
   },
   {
-   "event_id": 1575,
-   "url": "https://bidwells.co.uk/insights-reports-events/bidwells-cambridge-town-gown-10k-2026",
+   "event_id": 1490,
+   "url": "https://cambridgeppf.org/etn/cppf-agm-talk-a-history-of-violence-death-burial-and-discovery-at-wandlebury/",
    "status": "",
    "urgency": "",
    "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Bidwells Cambridge Town & Gown 10K",
-   "db_status": "announced"
+   "result": "error: FetchError",
+   "why": "пропало из источника",
+   "title": "Talk: A History of Violence: Death, Burial and Discovery at Wandlebury",
+   "db_status": "disappeared"
   },
   {
    "event_id": 1581,
@@ -2583,7 +2326,7 @@
    "urgency": "",
    "evidence": "",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Organ recital: Paul Greally, Westminster Abbey",
    "db_status": "scheduled"
   },
@@ -2632,6 +2375,17 @@
    "db_status": "on_sale"
   },
   {
+   "event_id": 1594,
+   "url": "https://kingscollegechoir.com/concert/organ-recital-david-newsholme-canterbury-cathedral/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пункт 2026-10-08_v8",
+   "title": "Organ recital: David Newsholme, Canterbury Cathedral",
+   "db_status": "scheduled"
+  },
+  {
    "event_id": 1600,
    "url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/noel-fitzpatrick-medicine-and-music/7378263",
    "status": "",
@@ -2643,24 +2397,13 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 1614,
-   "url": "https://www.cambridgecityfc.com/event-details/cambridge-city-vs-alvechurch",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Cambridge City v Alvechurch",
-   "db_status": "scheduled"
-  },
-  {
    "event_id": 1615,
    "url": "https://nationalleaguerugby.com/national-league-rugby-fixtures-2026-27/",
    "status": "",
    "urgency": "",
    "evidence": "",
    "result": "ok",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Cambridge RUFC v Camborne",
    "db_status": "scheduled"
   },
@@ -2677,14 +2420,14 @@
   },
   {
    "event_id": 1742,
-   "url": "https://musiclivecambridge.com/gigs/dick-valentine-electric-six",
-   "status": "on_sale",
+   "url": "https://www.ents24.com/cambridge-events/mash/dick-valentine/7509603",
+   "status": "",
    "urgency": "",
-   "evidence": "Get Tickets",
+   "evidence": "",
    "result": "ok",
    "why": "окно выпуска",
-   "title": "Dick Valentine (Electric Six)",
-   "db_status": "scheduled"
+   "title": "Dick Valentine",
+   "db_status": "on_sale"
   },
   {
    "event_id": 1743,
@@ -2775,14 +2518,14 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 1893,
-   "url": "https://iceaccount.co.uk/peterborough-phantoms",
-   "status": "",
+   "event_id": 1885,
+   "url": "https://www.cambridgeunited.com/fixture/list/844",
+   "status": "on_sale",
    "urgency": "",
-   "evidence": "",
-   "result": "error: Disallowed",
-   "why": "пункт 2026-10-01_v7",
-   "title": "Peterborough Phantoms v Swindon Wildcats",
+   "evidence": "кнопка: Buy Tickets",
+   "result": "ok",
+   "why": "пункт 2026-10-08_v8",
+   "title": "Cambridge United Women v Dartford FC Women",
    "db_status": "scheduled"
   },
   {
@@ -2792,8 +2535,19 @@
    "urgency": "",
    "evidence": "",
    "result": "error: Disallowed",
-   "why": "пункт 2026-10-01_v7",
+   "why": "пункт 2026-10-08_v8",
    "title": "Peterborough Phantoms v Hull Seahawks",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 1895,
+   "url": "https://iceaccount.co.uk/peterborough-phantoms",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "error: Disallowed",
+   "why": "пункт 2026-10-08_v8",
+   "title": "Peterborough Phantoms v Solway IHC",
    "db_status": "scheduled"
   },
   {
@@ -2827,6 +2581,28 @@
    "result": "ok",
    "why": "пропало из источника",
    "title": "SJCMS Chapel Late",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 1931,
+   "url": "https://www.murrayedwards.cam.ac.uk/womens-art-collection/talk/curator-talk-what-remains-0",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Book tickets",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Curator Talk: What Remains",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 1932,
+   "url": "https://www.murrayedwards.cam.ac.uk/womens-art-collection/talk/curator-talk-what-remains-0",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Book tickets",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Curator Talk: What Remains",
    "db_status": "disappeared"
   },
   {
@@ -2871,6 +2647,61 @@
    "result": "ok",
    "why": "окно выпуска",
    "title": "Pick ‘n’ Mix Improvised Comedy Showcase",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2162,
+   "url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/jeremy-bowen-truth-under-fire/7411994",
+   "status": "sold_out",
+   "urgency": "",
+   "evidence": "Sold Out",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "Jeremy Bowen - Truth Under Fire",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2172,
+   "url": "https://www.skiddle.com/whats-on/Peterborough/Buzz-Bingo-Peterborough/Oktoberfest---Buzz-Bingo-Peterborough/42750059/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "error: FetchError",
+   "why": "окно выпуска",
+   "title": "Oktoberfest - Buzz Bingo Peterborough",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2189,
+   "url": "https://www.eventbrite.co.uk/e/poetry-pints-tickets-2001578380818",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Poetry + Pints",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2190,
+   "url": "https://www.eventbrite.co.uk/e/speed-dating-in-cambridge-ages-40-59ish-tickets-1999781094085",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Speed Dating in Cambridge Ages 40-59ish",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2193,
+   "url": "https://ngs.org.uk/gardens/robinson-college-cb3/",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Book",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Robinson College — NGS garden opening",
    "db_status": "on_sale"
   }
  ]

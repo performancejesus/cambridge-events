@@ -143,8 +143,8 @@ def fits(rubric: str, c: dict, w: issue.Window) -> bool:
         return bool(c.get("long_running"))
     if rubric == "holidays":
         return c.get("kind") == "programme"
-    if rubric == "kids":
-        return bool(c.get("kids_tag"))
+    if rubric == "kids":   # правки по v8: только события для детей (не распродажи и дни переработки)
+        return bool(c.get("kids_tag")) and c.get("for_kids", True)
     if rubric == "free":
         return bool(c.get("free_tag"))
     if rubric == "out_of_town":   # правки по v3: не ниже 4, без распродаж и барахолок
@@ -1108,7 +1108,7 @@ def expand_long(client, result: dict, pools: issue.Pools, con) -> tuple[list[tup
     return notes, cost
 
 
-MIN_RUBRIC = {"free": 3, "new_announcements": 3, "out_of_town": 3}
+MIN_RUBRIC = {"free": 3, "new_announcements": 3, "out_of_town": 3, "kids": 3}   # kids — правки по v8
 
 
 REASONS_SCHEMA = {"type": "object", "additionalProperties": False, "required": ["reasons"], "properties": {"reasons": {
@@ -1193,6 +1193,16 @@ def mandatory(pools: issue.Pools, result: dict, w: issue.Window) -> dict[str, li
                         and (c.get("importance") or 0) >= thr and not c.get("thin_data")
                         and cid not in need.get(rub, [])),
                        key=lambda cid: -(pools.candidates[cid].get("importance") or 0))
+        if rub == "kids":   # правки по v8: разные площадки — не больше одного пункта с площадки
+            seen_v = {pools.candidates[i].get("venue") for sec in result["sections"] if sec["rubric"] == "kids"
+                      for it in sec["items"] for i in it["ids"][:1]}
+            picked = []
+            for cid in cands:
+                v = pools.candidates[cid].get("venue")
+                if v not in seen_v:
+                    picked.append(cid)
+                    seen_v.add(v)
+            cands = picked
         need.setdefault(rub, []).extend(cands[: mn - have])
     return {k: v for k, v in need.items() if v}
 
@@ -1388,8 +1398,8 @@ def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: l
     cnt_en.append(f"total without “School holidays”: {total} (target 30–{issue.MAX_MAIN_ITEMS}); holiday programme lines: {counts['holidays']}")
     cnt_ru.append(f"всего без «Каникул»: {total} (цель 30–{issue.MAX_MAIN_ITEMS}); строк в «Каникулах»: {counts['holidays']}")
 
-    cost = (f"{MODEL}: {usage['input_tokens']} input + {usage['output_tokens']} output tokens = "
-            f"${usage['cost_usd']:.4f}")
+    cost = (f"main request and post-processing: {usage['input_tokens']} input + {usage['output_tokens']} output tokens = "
+            f"${usage['cost_usd']:.4f}")   # без идентификатора модели в артефактах
     know_en, know_ru, imp_en, imp_ru = [], [], [], []
     for sec in result["sections"]:
         for it in sorted(sec["items"], key=lambda it: -issue.importance_of(pools, it)):

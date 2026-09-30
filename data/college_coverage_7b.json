@@ -1,0 +1,1024 @@
+{
+ "checked": "2026-09-30",
+ "colleges": [
+  {
+   "college": "Christ's",
+   "page": "christs.cam.ac.uk/events",
+   "what": "только встречи выпускников; сады и выставка библиотеки — часы посещения",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   },
+   "decision": "публичной афиши нет — не подключаем",
+   "sources": [],
+   "blocked": false,
+   "covered_before": false,
+   "covered_after": false
+  },
+  {
+   "college": "Churchill",
+   "page": "chu.cam.ac.uk/events/list/ + archives.chu.cam.ac.uk/events/",
+   "what": "лекции Archives Centre (Roskill Lecture), события колледжа, выпускники",
+   "feed": "iCal, JSON-LD (The Events Calendar)",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S150": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 4,
+    "sources": {
+     "S008": 1,
+     "S150": 1,
+     "S169": 2
+    },
+    "examples": [
+     "2026-09-30 Agile Cambridge 2026",
+     "2026-11-07 Sonic Tapestries: music by Judith Weir & Unsuk Chin | Cambri",
+     "2026-10-12 Water, Nature and Resilience in Cambridgeshire: Turning Chal",
+     "2026-11-03 The Master's Book Club"
+    ]
+   },
+   "decision": "подключён S169 (публичные, без выпускников)",
+   "sources": [
+    "S169",
+    "S150"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Clare",
+   "page": "clare.cam.ac.uk/alumni/events",
+   "what": "выпускники; концерты хора — на clarecollegechoir.com",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S048": 1,
+     "S150": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S048": 1,
+     "S170": 1,
+     "S150": 1
+    },
+    "examples": [
+     "2026-10-17 Continuum | Renewal",
+     "2026-10-16 Sir Granville Bantock’s 80th Anniversary Concert"
+    ]
+   },
+   "decision": "концерты — через cmp.cam.ac.uk (S150); сайт хора — обрыв соединения",
+   "sources": [
+    "S150"
+   ],
+   "blocked": true,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Clare Hall",
+   "page": "clarehall.cam.ac.uk/events/",
+   "what": "лекции (Tanner, Ashby), концерты, выставки",
+   "feed": "RSS",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 1,
+    "next_60": 2,
+    "sources": {
+     "S048": 1,
+     "S150": 2
+    }
+   },
+   "after": {
+    "past_60": 1,
+    "next_60": 8,
+    "sources": {
+     "S048": 1,
+     "S150": 2,
+     "S170": 6
+    },
+    "examples": [
+     "2026-10-31 Oktay Üst: Folk Songs of the Black Sea and Turkish Anatolia",
+     "2026-11-14 Fitzwilliam String Quartet: Haydn, Nigel Osborne, Schumann P",
+     "2026-09-30 Learning from Failure at Work: The Importance of Time and So",
+     "2026-10-01 English Literature SIG: Gill Hornby",
+     "2026-10-05 Clare Hall Book Club",
+     "2026-10-16 Family Supper – 16 October"
+    ]
+   },
+   "decision": "подключён S170",
+   "sources": [
+    "S170",
+    "S150"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Corpus Christi",
+   "page": "corpus.cam.ac.uk/events",
+   "what": "заглушка Sucuri",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S150": 1
+    }
+   },
+   "after": {
+    "past_60": 1,
+    "next_60": 18,
+    "sources": {
+     "S008": 1,
+     "S150": 1,
+     "S168": 17
+    },
+    "examples": [
+     "2026-10-18 Creative Street Photography Talk with Matt Hall - CPS 26 Tal",
+     "2026-11-14 Traumlicht: Choral works of the German Romantics",
+     "2026-10-14 To Thine Own Self",
+     "2026-10-20 Smörgåsbord",
+     "2026-10-20 Footlights Playroom Smokers: Michaelmas 2026",
+     "2026-10-21 Ghost"
+    ]
+   },
+   "decision": "закрыт бот-защитой; Corpus Playroom — через Camdram (S168), концерты — S150",
+   "sources": [
+    "S168",
+    "S150"
+   ],
+   "blocked": true,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Darwin",
+   "page": "darwin.cam.ac.uk/lectures",
+   "what": "Darwin College Lecture Series (Lent)",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   },
+   "decision": "покрыт talks.cam (список 5358, S047)",
+   "sources": [
+    "S047"
+   ],
+   "blocked": false,
+   "covered_before": false,
+   "covered_after": false
+  },
+  {
+   "college": "Downing",
+   "page": "dow.cam.ac.uk/about/events",
+   "what": "заглушка Sucuri (с перерывами)",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 4,
+    "sources": {
+     "S067": 1,
+     "S168": 3
+    },
+    "examples": [
+     "2026-10-02 Downing College — NGS garden opening",
+     "2026-10-26 I Kassandra",
+     "2026-11-02 Moonlight Monologues",
+     "2026-11-26 The Winter's Tale"
+    ]
+   },
+   "decision": "Heong Gallery — S163; Howard Theatre — Camdram (S168); сады — NGS (S067)",
+   "sources": [
+    "S163",
+    "S168",
+    "S067"
+   ],
+   "blocked": true,
+   "covered_before": false,
+   "covered_after": true
+  },
+  {
+   "college": "Emmanuel",
+   "page": "emma.cam.ac.uk/members/events",
+   "what": "только выпускники (Emmanuel Society)",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 6,
+    "sources": {
+     "S048": 1,
+     "S150": 5
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 6,
+    "sources": {
+     "S048": 1,
+     "S150": 5
+    },
+    "examples": [
+     "2026-10-12 Cambridge Schola: Vespers at Emmanuel",
+     "2026-10-20 ECMS Lunchtime Recital",
+     "2026-10-27 ECMS Lunchtime Recital",
+     "2026-11-03 ECMS Lunchtime Recital",
+     "2026-11-10 ECMS Lunchtime Recital",
+     "2026-11-24 ECMS: Lunchtime Recital"
+    ]
+   },
+   "decision": "не подключаем; концерты ECMS — S150",
+   "sources": [
+    "S150"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Fitzwilliam",
+   "page": "fitz.cam.ac.uk/listing/whats-on",
+   "what": "без дат (выпускники)",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   },
+   "decision": "публичной афиши нет",
+   "sources": [],
+   "blocked": false,
+   "covered_before": false,
+   "covered_after": false
+  },
+  {
+   "college": "Girton",
+   "page": "girton.cam.ac.uk/upcoming-events",
+   "what": "концерты, лекции; выпускники",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S150": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 5,
+    "sources": {
+     "S150": 1,
+     "S174": 4
+    },
+    "examples": [
+     "2026-11-18 Cambridge Jazz Festival | Girton Jazz presents ‘Kind Of Blue",
+     "2026-10-18 Brass in Motion - Celebrating 200 years of passenger rail",
+     "2026-10-22 Girton College Legacies of Enslavement: Research Hub Launch",
+     "2026-11-01 Bach Cantatas and more",
+     "2026-11-06 Girton Jazz presents Iain McKenzie"
+    ]
+   },
+   "decision": "подключён S174",
+   "sources": [
+    "S174",
+    "S150"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Gonville & Caius",
+   "page": "cai.cam.ac.uk",
+   "what": "заглушка Sucuri; хор — gonvilleandcaiuschoir.com (обрыв)",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   },
+   "decision": "закрыт бот-защитой",
+   "sources": [],
+   "blocked": true,
+   "covered_before": false,
+   "covered_after": false
+  },
+  {
+   "college": "Homerton",
+   "page": "homerton.cam.ac.uk/current-members/events",
+   "what": "заглушка Sucuri",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S008": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S008": 1
+    },
+    "examples": [
+     "2026-11-14 The Rise Leaders Rise Summit 2026"
+    ]
+   },
+   "decision": "закрыт бот-защитой",
+   "sources": [],
+   "blocked": true,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Hughes Hall",
+   "page": "hughes.cam.ac.uk/about/events/",
+   "what": "в основном для студентов; публичные — Lightning Talks, ярмарки",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S150": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 3,
+    "sources": {
+     "S150": 1,
+     "S175": 2
+    },
+    "examples": [
+     "2026-11-16 Cornerstones",
+     "2026-10-16 Pop-up plant sale",
+     "2026-10-26 Hughes Hall Researchers' Lightning Talks series"
+    ]
+   },
+   "decision": "подключён S175 (только публичные)",
+   "sources": [
+    "S175",
+    "S150"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Jesus",
+   "page": "jesus.cam.ac.uk/college/events",
+   "what": "редирект-петля 307 (бот-защита)",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S150": 2
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S150": 2
+    },
+    "examples": [
+     "2026-11-22 Introduction to Spoken Word Poetry with Laurie Bolger",
+     "2026-11-22 Spoken Word Open Mic Night"
+    ]
+   },
+   "decision": "закрыт; spoken word и концерты — S150",
+   "sources": [
+    "S150"
+   ],
+   "blocked": true,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "King's",
+   "page": "kingscollegechoir.com/concert/",
+   "what": "концерты хора, органная серия; лекции — talks.cam",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 1,
+    "next_60": 9,
+    "sources": {
+     "S047": 1,
+     "S092": 1,
+     "S148": 4,
+     "S149": 8
+    }
+   },
+   "after": {
+    "past_60": 1,
+    "next_60": 9,
+    "sources": {
+     "S047": 1,
+     "S092": 1,
+     "S148": 4,
+     "S149": 8
+    },
+    "examples": [
+     "2026-11-16 Naming names: nomenclatural stability, decolonisation, and t",
+     "2026-10-11 Organ recital: Paul Greally, Westminster Abbey",
+     "2026-10-18 Organ recital: David Newsholme, Canterbury Cathedral",
+     "2026-10-25 Organ recital: Hamish Wagstaff, King’s College",
+     "2026-10-28 The Tallis Scholars",
+     "2026-11-01 Organ recital: Paul Greally, Westminster Abbey"
+    ]
+   },
+   "decision": "покрыт S149 (хор) и S047",
+   "sources": [
+    "S149",
+    "S047",
+    "S148"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Lucy Cavendish",
+   "page": "lucy.cam.ac.uk/events",
+   "what": "лекции, панели, выставки",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S171": 1
+    },
+    "examples": [
+     "2026-11-10 Lucy Cavendish College's Foundation Day: Panel Discussion"
+    ]
+   },
+   "decision": "подключён S171",
+   "sources": [
+    "S171"
+   ],
+   "blocked": false,
+   "covered_before": false,
+   "covered_after": true
+  },
+  {
+   "college": "Magdalene",
+   "page": "magd.cam.ac.uk/about/events",
+   "what": "только выпускники и первокурсники",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   },
+   "decision": "публичной афиши нет; Pepys Library — часы посещения",
+   "sources": [],
+   "blocked": false,
+   "covered_before": false,
+   "covered_after": false
+  },
+  {
+   "college": "Murray Edwards",
+   "page": "murrayedwards.cam.ac.uk/news-events",
+   "what": "заглушка Sucuri",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 1,
+    "next_60": 1,
+    "sources": {
+     "S001": 1,
+     "S164": 2
+    }
+   },
+   "after": {
+    "past_60": 1,
+    "next_60": 1,
+    "sources": {
+     "S001": 1,
+     "S164": 2
+    },
+    "examples": [
+     "2026-11-12 Curator Talk: What Remains"
+    ]
+   },
+   "decision": "The Women's Art Collection — S164",
+   "sources": [
+    "S164"
+   ],
+   "blocked": true,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Newnham",
+   "page": "newn.cam.ac.uk/events-alumnae",
+   "what": "только выпускницы; сады — по записи",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S150": 1,
+     "S008": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S150": 1,
+     "S008": 1
+    },
+    "examples": [
+     "2026-11-26 Maqām and Rhythm Masterclass with Al-Firdaus Ensemble",
+     "2026-10-22 Autumn Leaves with soprano Lucy Crowe OBE and pianist Anna T"
+    ]
+   },
+   "decision": "публичной афиши нет; концерты — S150",
+   "sources": [
+    "S150"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Pembroke",
+   "page": "pem.cam.ac.uk/college/events/all",
+   "what": "307 (бот-защита)",
+   "feed": "—",
+   "robots": "главная: HTTP 307 https://www.pem.cam.ac.uk/",
+   "before": {
+    "past_60": 0,
+    "next_60": 6,
+    "sources": {
+     "S091": 2,
+     "S150": 3,
+     "S008": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 7,
+    "sources": {
+     "S091": 2,
+     "S150": 3,
+     "S008": 1,
+     "S168": 1
+    },
+    "examples": [
+     "2026-11-05 Bliss Song Series Opening Season Recital",
+     "2026-11-14 Bliss Song Series - Fatma Said sings Schumann, de Falla and ",
+     "2026-11-07 ĀN | The Moment | A Persian Music Concert Celebrating Omar K",
+     "2026-11-13 Pembroke College Michaelmas Concert",
+     "2026-11-21 Pembroke College Music Society Orchestral Concert",
+     "2026-11-07 ĀN | The Moment — A Persian Music Concert Celebrating Omar K"
+    ]
+   },
+   "decision": "закрыт; Bliss Song Series — S150, S091; New Cellars — Camdram",
+   "sources": [
+    "S150",
+    "S168"
+   ],
+   "blocked": true,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Peterhouse",
+   "page": "pet.cam.ac.uk/music-peterhouse",
+   "what": "музыка без дат; часть сайта закрыта robots.txt",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   },
+   "decision": "публичной афиши нет",
+   "sources": [],
+   "blocked": false,
+   "covered_before": false,
+   "covered_after": false
+  },
+  {
+   "college": "Queens'",
+   "page": "queens.cam.ac.uk",
+   "what": "202 — проверка бот-защиты",
+   "feed": "—",
+   "robots": "главная: HTTP 202 https://www.queens.cam.ac.uk/",
+   "before": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S150": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 8,
+    "sources": {
+     "S008": 1,
+     "S150": 1,
+     "S168": 6
+    },
+    "examples": [
+     "2026-11-07 Rise, Heart",
+     "2026-10-14 Indian Classical Music Masterclass with the Anirudh Varma Co",
+     "2026-10-22 Fallout",
+     "2026-10-23 Heads, Shoulders, Knees, Toes",
+     "2026-11-04 A Cauldron of BATS",
+     "2026-11-12 The Shadow"
+    ]
+   },
+   "decision": "закрыт; Fitzpatrick Hall и Black Box — Camdram (S168), концерты — S150",
+   "sources": [
+    "S168",
+    "S150"
+   ],
+   "blocked": true,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Robinson",
+   "page": "robinson.cam.ac.uk/events",
+   "what": "концерты; много внутренних занятий для студентов",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S008": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 4,
+    "sources": {
+     "S008": 1,
+     "S067": 1,
+     "S168": 2
+    },
+    "examples": [
+     "2026-11-19 5th East of England Global Health Conference",
+     "2026-09-30 Robinson College — NGS garden opening",
+     "2026-10-20 Follies",
+     "2026-10-24 Follies"
+    ]
+   },
+   "decision": "подключён S172 (только публичные); сады — NGS (S067); Brickhouse — Camdram",
+   "sources": [
+    "S172",
+    "S067",
+    "S168"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "St Catharine's",
+   "page": "caths.cam.ac.uk/alumni-friends/events",
+   "what": "307 (бот-защита)",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   },
+   "decision": "закрыт",
+   "sources": [],
+   "blocked": true,
+   "covered_before": false,
+   "covered_after": false
+  },
+  {
+   "college": "St Edmund's",
+   "page": "st-edmunds.cam.ac.uk/the-vhi/vhi-events/",
+   "what": "лекции Von Hügel Institute",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   },
+   "decision": "подключён S173",
+   "sources": [
+    "S173"
+   ],
+   "blocked": false,
+   "covered_before": false,
+   "covered_after": false
+  },
+  {
+   "college": "St John's",
+   "page": "joh.cam.ac.uk/festival + sjcchoir.co.uk/events",
+   "what": "лекции, концерты, хор",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 9,
+    "sources": {
+     "S148": 1,
+     "S144": 8
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 9,
+    "sources": {
+     "S148": 1,
+     "S144": 8
+    },
+    "examples": [
+     "2026-11-04 Chapel Lecture – If humans are unique… ?",
+     "2026-10-08 Anarchical Antiquity – lecture by Professor Josephine Crawle",
+     "2026-10-13 Lunchtime Concert",
+     "2026-10-17 Recital – Isabelle Demers",
+     "2026-11-07 SJCMS Chapel Late",
+     "2026-11-13 Quanta Piano Trio"
+    ]
+   },
+   "decision": "покрыт S144 (этап 6c)",
+   "sources": [
+    "S144"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Selwyn",
+   "page": "sel.cam.ac.uk/events",
+   "what": "органные и вокальные вечера",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 12,
+    "sources": {
+     "S150": 12
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 12,
+    "sources": {
+     "S150": 12
+    },
+    "examples": [
+     "2026-10-15 Anthony Gritten Selwyn Organ Recital",
+     "2026-10-18 Jake Buckton Selwyn Vocal Recital",
+     "2026-10-22 Oliver Clements Selwyn Organ Recital",
+     "2026-10-29 James Thomas Selwyn Organ Recital",
+     "2026-11-01 Harp Trio Concert",
+     "2026-11-05 Ella Nie Selwyn Organ Recital"
+    ]
+   },
+   "decision": "покрыт S150 (12 событий)",
+   "sources": [
+    "S150"
+   ],
+   "blocked": false,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Sidney Sussex",
+   "page": "sid.cam.ac.uk/about-sidney/events",
+   "what": "заглушка Sucuri",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   },
+   "decision": "закрыт бот-защитой",
+   "sources": [],
+   "blocked": true,
+   "covered_before": false,
+   "covered_after": false
+  },
+  {
+   "college": "Trinity",
+   "page": "trin.cam.ac.uk/events/ + /about/public-lectures/",
+   "what": "публичные лекции (Birkbeck), выпускники",
+   "feed": "iCal, JSON-LD",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S150": 1,
+     "S001": 1
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 3,
+    "sources": {
+     "S008": 1,
+     "S150": 1,
+     "S001": 1,
+     "S166": 1
+    },
+    "examples": [
+     "2026-11-06 Roderick Williams Sings Mystical Songs",
+     "2026-11-08 Trinity Connections",
+     "2026-10-20 Birkbeck Lectures 2026 – Material Histories in the Renaissan"
+    ]
+   },
+   "decision": "подключён S166 (только публичные); хор — 403",
+   "sources": [
+    "S166",
+    "S150"
+   ],
+   "blocked": true,
+   "covered_before": true,
+   "covered_after": true
+  },
+  {
+   "college": "Trinity Hall",
+   "page": "trinhall.cam.ac.uk/events/",
+   "what": "лекции и концерты — для членов колледжа и выпускников",
+   "feed": "RSS",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {}
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S168": 1
+    },
+    "examples": [
+     "2026-10-24 FESTEN (A Theatrical Formal Experience)"
+    ]
+   },
+   "decision": "не подключаем; Graham Storey Room — Camdram",
+   "sources": [
+    "S168"
+   ],
+   "blocked": false,
+   "covered_before": false,
+   "covered_after": true
+  },
+  {
+   "college": "Wolfson",
+   "page": "wolfson.cam.ac.uk/whats-on",
+   "what": "307 (бот-защита)",
+   "feed": "—",
+   "robots": "разрешено",
+   "before": {
+    "past_60": 0,
+    "next_60": 5,
+    "sources": {
+     "S131": 2,
+     "S150": 3
+    }
+   },
+   "after": {
+    "past_60": 0,
+    "next_60": 5,
+    "sources": {
+     "S131": 2,
+     "S150": 3
+    },
+    "examples": [
+     "2026-11-19 CPPF AGM & Talk: A History of Violence: Death, Burial and Di",
+     "2026-11-19 Talk: A History of Violence: Death, Burial and Discovery at ",
+     "2026-10-31 Wolfson fundraising Piano Recital for East Anglian Air Ambul",
+     "2026-11-07 WCMS Lunchtime Concert: Diwali in Song",
+     "2026-11-14 Gamelan Michaelmas Concert at Wolfson College"
+    ]
+   },
+   "decision": "закрыт; концерты — S150, лекции CPPF — S131",
+   "sources": [
+    "S150",
+    "S131"
+   ],
+   "blocked": true,
+   "covered_before": true,
+   "covered_after": true
+  }
+ ],
+ "summary": {
+  "covered_before": 19,
+  "covered_after": 22,
+  "own_collector": 8,
+  "blocked": 13,
+  "no_public_programme": 7
+ }
+}

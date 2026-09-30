@@ -290,7 +290,9 @@ TEXT_PROMPT = """For each children's programme (JSON data), write short fields f
 Russian: title (what kind of programme it is, 2–6 words: activity + format, e.g. "Multi-sport holiday camp" /
 «Мультиспортивный лагерь», "Forest school holiday club" / «Каникулярный клуб лесной школы»; no provider name, no dates,
 never translate brand or club names word for word — if the data title is only a brand name, describe the activity;
-holiday club → «каникулярный клуб», holiday camp → «каникулярный лагерь», half term → «каникулы»; no English words in
+holiday club → «каникулярный клуб», holiday camp → «каникулярный лагерь», half term → «каникулы»; a season in the
+provider's brand name («Churchill Summer Camps») is not the season of the programme — an October camp is «каникулярный
+лагерь», never «летний лагерь»; no English words in
 the Russian title except proper names), where (venue and town as in data; in Russian keep venue names in Latin script
 and write only these towns in Russian: Кембридж, Эли, Хантингдон, Питерборо, Бери-Сент-Эдмундс, Саффрон-Уолден,
 Сент-Айвс, Сент-Нитс, Ньюмаркет, Ройстон, Уиттлси; any other town or village — in Latin script as in data; empty
