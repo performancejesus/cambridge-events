@@ -1,5 +1,5 @@
 {
- "window_events": 312,
+ "window_events": 356,
  "window_ids": [
   2,
   3,
@@ -91,6 +91,7 @@
   508,
   509,
   510,
+  678,
   679,
   680,
   685,
@@ -216,6 +217,7 @@
   1406,
   1407,
   1410,
+  1415,
   1419,
   1421,
   1423,
@@ -269,21 +271,17 @@
   1740,
   1741,
   1742,
-  1743,
   1744,
   1745,
   1746,
   1747,
   1748,
   1749,
-  1750,
   1751,
-  1752,
   1753,
   1754,
   1755,
   1756,
-  1757,
   1764,
   1765,
   1873,
@@ -312,20 +310,70 @@
   2264,
   2329,
   2330,
-  2334
+  2334,
+  2342,
+  2343,
+  2344,
+  2345,
+  2346,
+  2404,
+  2405,
+  2410,
+  2411,
+  2413,
+  2414,
+  2415,
+  2416,
+  2417,
+  2418,
+  2419,
+  2420,
+  2421,
+  2422,
+  2423,
+  2424,
+  2425,
+  2426,
+  2427,
+  2428,
+  2429,
+  2430,
+  2431,
+  2432,
+  2446,
+  2447,
+  2448,
+  2454,
+  2455,
+  2456,
+  2457,
+  2459,
+  2460,
+  2466,
+  2467,
+  2468,
+  2469,
+  2473,
+  2474,
+  2475,
+  2487
  ],
  "window_by_vendor": [
   [
    "не определён",
-   145
+   156
+  ],
+  [
+   "Eventbrite",
+   53
   ],
   [
    "Spektrix (касса площадки)",
    52
   ],
   [
-   "Eventbrite",
-   51
+   "National Trust (своя касса)",
+   21
   ],
   [
    "Cambridge Live (касса Corn Exchange и Guildhall)",
@@ -333,7 +381,7 @@
   ],
   [
    "Skiddle",
-   10
+   11
   ],
   [
    "DigiTickets",
@@ -356,11 +404,19 @@
    4
   ],
   [
+   "своя касса (museumoftechnology.com)",
+   4
+  ],
+  [
    "WeGotTickets",
    3
   ],
   [
    "своя касса (allevents.in)",
+   3
+  ],
+  [
+   "English Heritage (своя касса)",
    3
   ],
   [
@@ -377,6 +433,10 @@
   ],
   [
    "Planet Ice (своя касса)",
+   2
+  ],
+  [
+   "своя касса (burylane.co.uk)",
    2
   ],
   [
@@ -558,7 +618,7 @@
    "method": "переход по кнопке покупки → кнопка покупки на свой сайт",
    "page_url": "https://www.cornex.co.uk/events/the-beat-dance-crazed-too-uk-tour",
    "checked_at": "2026-09-29T15:58:03+00:00",
-   "importance": 7.4
+   "importance": 7.9
   },
   "111": {
    "event_id": 111,
@@ -1208,6 +1268,14 @@
    "checked_at": "2026-09-29T15:59:24+00:00",
    "importance": 3.1
   },
+  "678": {
+   "event_id": 678,
+   "vendor": "Skiddle",
+   "vendor_host": "skiddle.com",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.skiddle.com/whats-on/Peterborough/The-Rathskeller/90s-Baby-Daytime-Clubbing-Kings-Lynn/42665135/",
+   "importance": 2.6
+  },
   "679": {
    "event_id": 679,
    "vendor": "Skiddle",
@@ -1566,7 +1634,7 @@
    "method": "кассовая система в коде страницы",
    "page_url": "https://www.junction.co.uk/events/reef/",
    "checked_at": "2026-09-29T14:56:35+00:00",
-   "importance": 6.4
+   "importance": 6.9
   },
   "1019": {
    "event_id": 1019,
@@ -1638,7 +1706,7 @@
    "method": "кассовая система в коде страницы",
    "page_url": "https://www.junction.co.uk/events/breabach/",
    "checked_at": "2026-09-29T16:00:28+00:00",
-   "importance": 5.2
+   "importance": 5.7
   },
   "1027": {
    "event_id": 1027,
@@ -1674,7 +1742,7 @@
    "method": "кассовая система в коде страницы",
    "page_url": "https://www.junction.co.uk/events/hayseed-dixie/",
    "checked_at": "2026-09-29T16:00:39+00:00",
-   "importance": 5.7
+   "importance": 6.2
   },
   "1031": {
    "event_id": 1031,
@@ -2331,6 +2399,15 @@
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.visitely.org.uk/whats-on/uncategorized/castles-anarchy-and-rebellion-in-ely/",
    "checked_at": "2026-09-29T14:59:50+00:00",
+   "importance": 3.0
+  },
+  "1415": {
+   "event_id": 1415,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.visitely.org.uk/whats-on/uncategorized/saturday-morning-make-it-with-marmalade-discover-linocutting-sessions/",
+   "checked_at": "2026-09-29T14:59:56+00:00",
    "importance": 2.5
   },
   "1419": {
@@ -2810,15 +2887,6 @@
    "checked_at": "2026-09-29T15:02:43+00:00",
    "importance": 5.8
   },
-  "1743": {
-   "event_id": 1743,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com/gigs/reef",
-   "checked_at": "2026-09-29T15:02:45+00:00",
-   "importance": 6.1
-  },
   "1744": {
    "event_id": 1744,
    "vendor": "не определён",
@@ -2873,15 +2941,6 @@
    "checked_at": "2026-09-29T16:04:29+00:00",
    "importance": 2.5
   },
-  "1750": {
-   "event_id": 1750,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com/gigs/breabach",
-   "checked_at": "2026-09-29T16:04:32+00:00",
-   "importance": 4.8
-  },
   "1751": {
    "event_id": 1751,
    "vendor": "не определён",
@@ -2890,15 +2949,6 @@
    "page_url": "https://musiclivecambridge.com/gigs/nerina-pallot-cambridge-tickets-at-storeys-field-c",
    "checked_at": "2026-09-29T16:04:37+00:00",
    "importance": 4.6
-  },
-  "1752": {
-   "event_id": 1752,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com/gigs/hayseed-dixie-2026-10-16",
-   "checked_at": "2026-09-29T16:04:37+00:00",
-   "importance": 5.1
   },
   "1753": {
    "event_id": 1753,
@@ -2935,15 +2985,6 @@
    "page_url": "https://musiclivecambridge.com/gigs/blue-rose-code-cambridge-tickets-at-nci-club-on-18",
    "checked_at": "2026-09-29T16:04:48+00:00",
    "importance": 3.3
-  },
-  "1757": {
-   "event_id": 1757,
-   "vendor": "не определён",
-   "vendor_host": null,
-   "method": "на странице нет ссылки на продавца",
-   "page_url": "https://musiclivecambridge.com/gigs/the-beat-dance-crazed-too-uk-tour",
-   "checked_at": "2026-09-29T16:04:49+00:00",
-   "importance": 6.5
   },
   "1764": {
    "event_id": 1764,
@@ -3185,6 +3226,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.cmp.cam.ac.uk/events/event/item/come-and-play-samulnori-society-2/",
+   "checked_at": "2026-09-30T14:38:59+00:00",
    "importance": 2.5
   },
   "2330": {
@@ -3193,6 +3235,7 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://musiclivecambridge.com/gigs/eschalon-akkadian-overture-11th-oct-26-the-portlan",
+   "checked_at": "2026-09-30T14:39:02+00:00",
    "importance": 2.2
   },
   "2334": {
@@ -3201,6 +3244,375 @@
    "vendor_host": null,
    "method": "на странице нет ссылки на продавца",
    "page_url": "https://www.clarehall.cam.ac.uk/events/clare-hall-colloquia-michaelmas-2026/",
+   "checked_at": "2026-09-30T14:39:07+00:00",
+   "importance": 2.5
+  },
+  "2342": {
+   "event_id": 2342,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/kings-lynn-events/kings-lynn-corn-exchange/leo-sayer/7434217",
+   "importance": 6.7
+  },
+  "2343": {
+   "event_id": 2343,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/kings-lynn-events/kings-lynn-corn-exchange/kevin-bloody-wilson/7389473",
+   "importance": 5.1
+  },
+  "2344": {
+   "event_id": 2344,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/kings-lynn-events/kings-lynn-corn-exchange/vicky-jackson-as-pnk/7536680",
+   "importance": 2.5
+  },
+  "2345": {
+   "event_id": 2345,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/kings-lynn-events/kings-lynn-corn-exchange/the-sensational-60s-experience/7459128",
+   "importance": 2.5
+  },
+  "2346": {
+   "event_id": 2346,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.ents24.com/kings-lynn-events/st-nicholas-chapel/the-shires/7517778",
+   "importance": 4.0
+  },
+  "2404": {
+   "event_id": 2404,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/supporting-children-young-people-affected-by-bereavement-tickets-1994301098270",
+   "importance": 2.5
+  },
+  "2405": {
+   "event_id": 2405,
+   "vendor": "Eventbrite",
+   "vendor_host": "eventbrite.co.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.eventbrite.co.uk/e/an-evening-with-colette-paul-in-cambridge-tickets-1999776680885",
+   "importance": 2.0
+  },
+  "2410": {
+   "event_id": 2410,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "переход по кнопке покупки: Disallowed https://help.picturehouses.com/support/tickets/new",
+   "page_url": "https://www.picturehouses.com/movie-details/002/HO00013477/have-you-got-it-yet-the-story-of-syd-barrett-q-a?filter=",
+   "importance": 2.3
+  },
+  "2411": {
+   "event_id": 2411,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/8ec4973c-888c-476f-adec-7d599a1d86cf",
+   "importance": 2.5
+  },
+  "2413": {
+   "event_id": 2413,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/bb855608-d183-4dc9-9974-afad7768cafb",
+   "importance": 2.5
+  },
+  "2414": {
+   "event_id": 2414,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/f2384da2-d8a5-4460-854d-4e6a43a3dafd",
+   "importance": 2.5
+  },
+  "2415": {
+   "event_id": 2415,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wicken-fen-national-nature-reserve/events/185543a8-b015-4bc4-876c-97e32fe706da",
+   "importance": 2.5
+  },
+  "2416": {
+   "event_id": 2416,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/5b107d31-66eb-4e96-af87-2804f8d2dde9",
+   "importance": 2.5
+  },
+  "2417": {
+   "event_id": 2417,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/71f1497b-b5dd-4e36-876c-1de5ae4c772f",
+   "importance": 2.5
+  },
+  "2418": {
+   "event_id": 2418,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/c0f9fe72-dd2c-4335-a4ed-8bea34b8d651",
+   "importance": 2.5
+  },
+  "2419": {
+   "event_id": 2419,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/d35d1d05-a0ec-4b8b-b151-5704862a54af",
+   "importance": 2.5
+  },
+  "2420": {
+   "event_id": 2420,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/f14c6299-0020-4b7a-acf2-2cc011dec6a1",
+   "importance": 2.5
+  },
+  "2421": {
+   "event_id": 2421,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/9ad34f5e-d4db-4f1c-85e5-bccb5eea70c7",
+   "importance": 2.5
+  },
+  "2422": {
+   "event_id": 2422,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/9cfc1bee-1cb7-4e07-a010-f4deec2fb46d",
+   "importance": 2.5
+  },
+  "2423": {
+   "event_id": 2423,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/62cd4ecc-89f6-4514-b272-d3f42e5c9e61",
+   "importance": 2.5
+  },
+  "2424": {
+   "event_id": 2424,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wicken-fen-national-nature-reserve/events/641d52f6-6585-45fc-ba01-c58100283c92",
+   "importance": 2.5
+  },
+  "2425": {
+   "event_id": 2425,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/9b72af23-fc61-4da4-8c9f-4c61446b509a",
+   "importance": 2.5
+  },
+  "2426": {
+   "event_id": 2426,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/fa81e6b1-cef9-462b-ab8e-7469fb5d8852",
+   "importance": 2.5
+  },
+  "2427": {
+   "event_id": 2427,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/be2233cd-9a93-4dcc-93ed-3a46311aa075",
+   "importance": 2.5
+  },
+  "2428": {
+   "event_id": 2428,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/d018844e-5ef5-4c9d-9ba7-a0ca15de50cb",
+   "importance": 2.5
+  },
+  "2429": {
+   "event_id": 2429,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/5c5d231f-c237-441e-983e-32920308ee4a",
+   "importance": 2.5
+  },
+  "2430": {
+   "event_id": 2430,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/6574e718-0583-4d37-9b5d-d4cd3d68cb26",
+   "importance": 2.5
+  },
+  "2431": {
+   "event_id": 2431,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/46391912-05ed-411b-b32c-a904c70b7a83",
+   "importance": 2.5
+  },
+  "2432": {
+   "event_id": 2432,
+   "vendor": "National Trust (своя касса)",
+   "vendor_host": "nationaltrust.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wicken-fen-national-nature-reserve/events/253a96b0-94a3-47bd-8824-76231be742d8",
+   "importance": 2.5
+  },
+  "2446": {
+   "event_id": 2446,
+   "vendor": "English Heritage (своя касса)",
+   "vendor_host": "english-heritage.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.english-heritage.org.uk/visit/whats-on/audley-end-behind-closed-doors-may-to-nov-2026/",
+   "importance": 2.5
+  },
+  "2447": {
+   "event_id": 2447,
+   "vendor": "English Heritage (своя касса)",
+   "vendor_host": "english-heritage.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.english-heritage.org.uk/visit/whats-on/audley-end---yoga-at-audley-end/",
+   "importance": 2.5
+  },
+  "2448": {
+   "event_id": 2448,
+   "vendor": "English Heritage (своя касса)",
+   "vendor_host": "english-heritage.org.uk",
+   "method": "ссылка события ведёт к продавцу",
+   "page_url": "https://www.english-heritage.org.uk/visit/whats-on/audley-end-monasteries-mansions-marriage-and-mayhem/",
+   "importance": 2.5
+  },
+  "2454": {
+   "event_id": 2454,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://cambridge.thelight.co.uk/enb-the-sleeping-beauty",
+   "importance": 5.4
+  },
+  "2455": {
+   "event_id": 2455,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://cambridge.thelight.co.uk/always-lalisa",
+   "importance": 2.5
+  },
+  "2456": {
+   "event_id": 2456,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.camdram.net/shows/2026-pembroke-players-smokers-michaelmas-26",
+   "importance": 2.5
+  },
+  "2457": {
+   "event_id": 2457,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.hughes.cam.ac.uk/about/events/hh-postdocs-social-2026/",
+   "importance": 2.5
+  },
+  "2459": {
+   "event_id": 2459,
+   "vendor": "своя касса (burylane.co.uk)",
+   "vendor_host": "burylane.co.uk",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://burylane.co.uk/pick-your-own/pumpkins/",
+   "importance": 2.5
+  },
+  "2460": {
+   "event_id": 2460,
+   "vendor": "своя касса (burylane.co.uk)",
+   "vendor_host": "burylane.co.uk",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://burylane.co.uk/pick-your-own/dahlias/",
+   "importance": 3.0
+  },
+  "2466": {
+   "event_id": 2466,
+   "vendor": "своя касса (museumoftechnology.com)",
+   "vendor_host": "museumoftechnology.com",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.museumoftechnology.com/calendar/2026/10/9/home-ed-tech-club",
+   "importance": 2.5
+  },
+  "2467": {
+   "event_id": 2467,
+   "vendor": "своя касса (museumoftechnology.com)",
+   "vendor_host": "museumoftechnology.com",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.museumoftechnology.com/calendar/pye-tour-oct26",
+   "importance": 2.5
+  },
+  "2468": {
+   "event_id": 2468,
+   "vendor": "своя касса (museumoftechnology.com)",
+   "vendor_host": "museumoftechnology.com",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.museumoftechnology.com/calendar/2026/10/13/print-shop-open",
+   "importance": 2.5
+  },
+  "2469": {
+   "event_id": 2469,
+   "vendor": "своя касса (museumoftechnology.com)",
+   "vendor_host": "museumoftechnology.com",
+   "method": "кнопка покупки на свой сайт",
+   "page_url": "https://www.museumoftechnology.com/calendar/oct2026/ciag-meeting-w3ksc-hpx32",
+   "importance": 2.5
+  },
+  "2473": {
+   "event_id": 2473,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.elymuseum.org.uk/whats-on-elymuseum/crochet-workshop-2026/",
+   "importance": 2.5
+  },
+  "2474": {
+   "event_id": 2474,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.elymuseum.org.uk/whats-on-elymuseum/hand-embroidery-workshop-2026/",
+   "importance": 2.5
+  },
+  "2475": {
+   "event_id": 2475,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "на странице нет ссылки на продавца",
+   "page_url": "https://www.elymuseum.org.uk/whats-on-elymuseum/home-education-bronze-age-session-october-2026/",
+   "importance": 2.5
+  },
+  "2487": {
+   "event_id": 2487,
+   "vendor": "не определён",
+   "vendor_host": null,
+   "method": "переход по кнопке покупки: Disallowed https://pdluxe.admit-one.eu/tickets/?perfCode=46692",
+   "page_url": "https://wisbechcinema.co.uk/",
    "importance": 2.5
   }
  }

@@ -3,10 +3,8 @@
   "host": "a1funclub.co.uk",
   "provider": "A1 Fun Club",
   "type": "каникулярный клуб",
-  "programmes": 0,
-  "problems": [
-   "server_error: robots.txt: HTTP 429"
-  ]
+  "programmes": 1,
+  "problems": []
  },
  {
   "host": "activeplayeducation.co.uk",
@@ -105,7 +103,7 @@
   "host": "cambridgekungfu.com",
   "provider": "Cambridge Kung Fu",
   "type": "единоборства",
-  "programmes": 8,
+  "programmes": 9,
   "problems": []
  },
  {
@@ -148,9 +146,7 @@
   "provider": "Cambridge and District Riding Club",
   "type": "верховая езда",
   "programmes": 0,
-  "problems": [
-   "js_only: robots.txt: HTTP 200; страница 200, видимого текста 12 слов"
-  ]
+  "problems": []
  },
  {
   "host": "childcare.admin.cam.ac.uk",
@@ -267,8 +263,10 @@
   "host": "funtimeschildcare.com",
   "provider": "Fun Times Cambridgeshire",
   "type": "каникулярный клуб",
-  "programmes": 1,
-  "problems": []
+  "programmes": 0,
+  "problems": [
+   "connection: robots.txt: HTTP -1"
+  ]
  },
  {
   "host": "gkfit.co.uk",
@@ -343,10 +341,8 @@
   "host": "kidsrusoosc.org",
   "provider": "Kids R Us holiday club",
   "type": "срез 6-v4 (не проверен)",
-  "programmes": 0,
-  "problems": [
-   "connection: robots.txt: HTTP -1"
-  ]
+  "programmes": 1,
+  "problems": []
  },
  {
   "host": "kingscamps.org",
@@ -405,10 +401,9 @@
   "host": "nenepark.org.uk",
   "provider": "Nene Park",
   "type": "парк (Питерборо)",
-  "programmes": 0,
+  "programmes": 9,
   "problems": [
-   "http_403: robots.txt: HTTP 200; страница: 403",
-   "http_403: robots.txt: HTTP 200; страница: 403"
+   "connection: robots.txt: HTTP -1"
   ]
  },
  {
@@ -533,8 +528,8 @@
   "type": "футбол",
   "programmes": 0,
   "problems": [
-   "connection: robots.txt: HTTP -1",
-   "connection: robots.txt: HTTP -1"
+   "http_403: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
+   "http_403: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
   ]
  },
  {
