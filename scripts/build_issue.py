@@ -1901,6 +1901,13 @@ def main() -> None:
         http = PoliteClient()
     outcomes, _ = full_run(ctx, api_client, http)
     checks = issue_rules.save(outcomes, out_dir / f"{stem}_checks.json", args.issue, args.version or "v1")
+    # этап 7d: итоговый состав выпуска (с рубриками без модели — «В колледжах», «В музеях и усадьбах»,
+    # «Также играют»), которые пересобираются при каждой сборке и в сохранённый ответ модели не попадают
+    (out_dir / f"{stem}_final.json").write_text(json.dumps(
+        {"issue": args.issue, "version": args.version or "v1",
+         "sections": [{"rubric": sec["rubric"], "items": [{"ids": it["ids"], "title_ru": it.get("title_ru"),
+                                                           "title_en": it.get("title_en")} for it in sec["items"]]}
+                      for sec in result["sections"]]}, ensure_ascii=False, indent=1))
     rows = issue_rules.table_rows(outcomes)
     head_ru = ("НЕ ОТПРАВЛЯТЬ: " + "; ".join(checks["blocking"])) if checks["blocking"] else \
         "все блокирующие проверки пройдены"

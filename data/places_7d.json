@@ -34,7 +34,7 @@
    "group": "музеи",
    "source": "S052",
    "events_60d": 27,
-   "in_issue": 3,
+   "in_issue": 4,
    "rubrics": [
     "exhibitions",
     "museums",
@@ -165,10 +165,8 @@
    "group": "усадьбы",
    "source": "S070 (NT, данные страницы)",
    "events_60d": 5,
-   "in_issue": 1,
-   "rubrics": [
-    "museums"
-   ],
+   "in_issue": 0,
+   "rubrics": [],
    "zones": [
     "до 30 мин"
    ],

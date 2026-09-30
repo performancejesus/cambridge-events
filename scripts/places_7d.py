@@ -127,7 +127,8 @@ def table(model_path: Path) -> None:
     con = connect()
     today = date.today()
     horizon = (today + timedelta(days=60)).isoformat()
-    model = json.loads(model_path.read_text())
+    final = model_path.with_name(model_path.name.replace("_model.json", "_final.json"))
+    model = json.loads((final if final.exists() else model_path).read_text())   # итоговый состав, если есть
     res = (model.get("result_post") or {}).get("result") or model.get("result") or model
     placed = {}
     for sec in res["sections"]:
