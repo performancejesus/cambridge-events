@@ -344,3 +344,35 @@ python -m pytest tests -q                             # регрессионны
 - `pipeline/union_termcard.py`, `scripts/union_watch.py` — termcard Cambridge Union на Issuu (изображения страниц →
   один запрос к модели) и статьи Varsity → таблица кандидатов `union_termcard`; строка «В Cambridge Union на этой неделе
   (для членов клуба): …» — только из termcard.
+
+## Этап 7d — музеи, усадьбы, фермы, Кингс-Линн, кино округи, ежегодные фестивали, правки по v10, выпуск v11
+
+```bash
+python scripts/run_collectors.py && python scripts/update_db.py     # + S070 NT, S139 Audley End, S178–S183
+python scripts/check_recurring.py                     # фестивали: статус (ожидаем / дата объявлена / в продаже)
+python scripts/places_7d.py --probe                   # закрытые места и кинотеатры → лист «Не разобрано» (две попытки)
+python scripts/build_registry_v11.py                  # реестр v0.11
+python scripts/build_issue.py --issue 2026-10-08 --version v11
+python scripts/places_7d.py --table issues/issue_2026-10-08_v11_model.json   # таблица мест → data/places_7d.json
+python -m pytest tests -q
+```
+
+- `collectors/sources/stage7d.py` — National Trust (S070: Wimpole, Anglesey Abbey, Wicken Fen; данные страницы
+  `__NEXT_DATA__`), English Heritage (S139: открытый API поиска событий, Audley End), Bury Lane Farm Shop (S178), Museum
+  of Technology (S179), Ely Museum (S180), Corn Exchange King's Lynn (S181), кинотеатры зоны (S182: таблица
+  `regional_showings` с городом; событиями — только трансляции и спецпоказы), Visit West Norfolk (S183).
+- `pipeline/geo.py` — `EXEMPT_TOWNS_KM`: Кингс-Линн (6 км от центра) — зона «до часа», как West Suffolk; остальной
+  Норфолк — вне зоны.
+- `pipeline/museums.py` — рубрика «В музеях и усадьбах» (4–6 компактных строк без модели, ≤ 2 от места; выставки — в
+  первую неделю открытия; без регулярных занятий). Проверка 37.
+- Кино округи: `issue.build_pools` снимает показ S182, если фильм идёт в Light или Arts Picturehouse (проверка 38).
+- Ежегодные фестивали (`recurring_events.festival`, `stage`, `stage_since`, `town`, `shared_page`): пункт в «Новых
+  анонсах», когда объявлены дата или продажа билетов (за 21 день до выпуска), и напоминание за 4–6 недель; в остальных
+  выпусках не повторяются (проверка 39). Cambridge Pride — R25 (сайт закрыт robots.txt — через события и статьи).
+  Огни и ярмарки — только в Кембридже (`town`); дата со страницы-календаря — только рядом с названием (`shared_page`).
+- Правки по v10: проверка 35 — грамматика русских текстов одним запросом к Haiku (`issue_fixes.fix_grammar`, кэш
+  `text_fixes`); 36 — стадия открытия не противоречит описанию (Bridge Bagels), дата «скоро откроется» — не дата
+  открытия; 9 — имена режиссёров и актёров «В кино» латиницей (имена из Wikipedia фильма, транслитерация целиком для
+  коротких фамилий); 1 — неподтверждённое «одна из старейших» переписывается по тексту источника
+  (`issue_fixes.fix_superlatives`); промпт — факт для описания = то, что важно зрителю сейчас; склейка дублей
+  musiclivecambridge по slug + дате + площадке (`ingest.merge_mlc`).

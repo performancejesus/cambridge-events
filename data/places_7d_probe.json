@@ -1,0 +1,74 @@
+{
+ "S135": [
+  "ok",
+  "robots.txt: HTTP 200; страница: 200"
+ ],
+ "S053": [
+  "bot_challenge",
+  "robots.txt: HTTP 200; страница: 403"
+ ],
+ "P:gogmagoghills.com": [
+  "connection",
+  "robots.txt: HTTP -1"
+ ],
+ "P:olivercromwellshouse.co.uk": [
+  "ok",
+  "robots.txt: HTTP 200; страница: 200"
+ ],
+ "P:museums.norfolk.gov.uk": [
+  "bot_challenge",
+  "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+ ],
+ "P:truesyard.co.uk": [
+  "ok",
+  "robots.txt: HTTP 200; страница: 200"
+ ],
+ "P:visitwestnorfolk.com": [
+  "http_other",
+  "robots.txt: HTTP 200; страница: 404"
+ ],
+ "C:Babylon Cinema (Ely Maltings)": [
+  "connection",
+  "robots.txt: HTTP -1"
+ ],
+ "C:Abbeygate Cinema": [
+  "bot_challenge",
+  "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+ ],
+ "C:Saffron Screen": [
+  "bot_challenge",
+  "robots.txt: HTTP 202; страница: 202, заглушка"
+ ],
+ "C:Cineworld Huntingdon": [
+  "bot_challenge",
+  "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+ ],
+ "C:Cineworld St Neots": [
+  "bot_challenge",
+  "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+ ],
+ "C:Cineworld Haverhill": [
+  "bot_challenge",
+  "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+ ],
+ "C:Cineworld Bury St Edmunds": [
+  "bot_challenge",
+  "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+ ],
+ "C:Showcase Peterborough": [
+  "http_other",
+  "robots.txt: HTTP 200; страница: 404"
+ ],
+ "C:Odeon Peterborough": [
+  "bot_challenge",
+  "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+ ],
+ "C:Key Theatre (Peterborough)": [
+  "connection",
+  "robots.txt: HTTP -1"
+ ],
+ "C:Kings Cinema Newmarket": [
+  "connection",
+  "robots.txt: HTTP -1"
+ ]
+}

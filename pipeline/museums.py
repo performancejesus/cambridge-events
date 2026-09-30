@@ -29,7 +29,8 @@ SKIP_RE = re.compile(r"\b(parkrun|park run|weekly|every (?:mon|tues|wednes|thurs
                      r"yoga|pilates|volunteer\w*|private hire|wedding|members'? (?:evening|event)|staff|corporate|"
                      r"home ed(?:ucation)?|toddle into)\b", re.I)
 KIND_RU = {"exhibition": "выставка", "tour": "экскурсия", "family": "для семей", "seasonal": "сезонное событие",
-           "talk": "лекция", "workshop": "мастер-класс", "other": ""}
+           "talk": "лекция", "workshop": "мастер-класс", "late": "вечер в музее", "other": ""}
+LINE_KINDS = set(KIND_RU) - {"other"}   # концерты и прочее — в обычных рубриках
 LINES_MIN, LINES_MAX, PER_PLACE = 4, 6, 2
 NEW_EXHIBITION_DAYS = 7
 
@@ -41,10 +42,16 @@ def place_of(c: dict) -> str | None:
 
 def kind_of(c: dict) -> str:
     t = f"{c.get('title') or ''} {' '.join(c.get('categories') or [])}"
-    if re.search(r"exhibition|display|gallery", t, re.I) or c.get("long_running"):
-        return "exhibition"
-    if re.search(r"\btours?\b|guided|stroll|walk", t, re.I):
+    title = c.get("title") or ""
+    if re.search(r"\btours?\b|guided|stroll|\bwalk", title, re.I):
         return "tour"
+    if re.search(r"\b(concert|piano|quartet|quartetto|trio|recital|chamber music|choir|orchestra|gig)\b", title, re.I):
+        return "concert"   # концерты в музеях — обычные рубрики («На неделе»), не эта
+    if re.search(r"\blates?\b|after hours|evening opening", title, re.I):
+        return "late"
+    if re.search(r"exhibition|display|gallery", title, re.I) or (c.get("long_running") and not re.search(
+            r"talk|workshop|class|session|club|day\b", title, re.I)):
+        return "exhibition"
     if re.search(r"halloween|christmas|santa|pumpkin|autumn|festive|apple|harvest|bonfire|firework", t, re.I):
         return "seasonal"
     if re.search(r"workshop|weaving|craft|make\b|class\b", t, re.I):
@@ -71,6 +78,8 @@ def candidates(pools, used_events: set[int], w) -> list[tuple[str, dict, str, st
         if sib & (used_events | seen_ev):
             continue
         kind = kind_of(c)
+        if kind not in LINE_KINDS:
+            continue
         first = min(issue.d(x[0]) for x in c["dates"])
         if kind == "exhibition" and not (w.issue - timedelta(days=NEW_EXHIBITION_DAYS) <= first <= w.end):
             continue   # выставка — только в первую неделю открытия (идущие давно — в «Выставках», если сильные)
@@ -81,8 +90,8 @@ def candidates(pools, used_events: set[int], w) -> list[tuple[str, dict, str, st
 
 def score(c: dict, kind: str, w) -> float:
     s = c.get("importance") or 2.5
-    if kind in ("exhibition", "seasonal"):
-        s += 0.7   # новая выставка, сезонный повод
+    if kind in ("exhibition", "seasonal", "late"):
+        s += 0.7   # новая выставка, сезонный повод, вечер в музее
     if c.get("kids_tag"):
         s += 0.3
     return s

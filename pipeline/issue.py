@@ -766,7 +766,7 @@ def _announcements(con, w: Window, p: Pools) -> None:
             {"r.festival, r.stage, r.stage_since" if "stage" in cols else "0 AS festival, NULL AS stage, NULL AS stage_since"}
             FROM recurring_events r JOIN events e USING(event_id)
             WHERE e.date_start > ? AND r.found_date IS NOT NULL AND r.patterns != '[]'""", (after,)).fetchall():
-        fest = festival_stage(e, w)
+        fest = festival_stage(e, w) if e["festival"] else None
         if e["festival"] and not fest:
             continue   # этап 7d: фестиваль из списка — только при новом статусе или за 4–6 недель (не в каждом выпуске)
         add(e, f"дата ежегодного события ({e['rec_name']})" + (f"; {fest[1]}" if fest else ""))
