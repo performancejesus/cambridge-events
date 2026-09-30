@@ -48,5 +48,5 @@ ALL = [
     stage7b.LightCinema(), *stage7b.COLLEGE_COLLECTORS,
     # этап 7d: музеи, усадьбы, фермы, Кингс-Линн, кинотеатры зоны
     stage7d.NationalTrust(), stage7d.EnglishHeritage(), stage7d.BuryLaneFarmShop(), stage7d.MuseumOfTechnology(),
-    stage7d.ElyMuseum(), stage7d.KingsLynnCornExchange(), stage7d.RegionalCinemas(),
+    stage7d.ElyMuseum(), stage7d.KingsLynnCornExchange(), stage7d.RegionalCinemas(), stage7d.VisitWestNorfolk(),
 ]

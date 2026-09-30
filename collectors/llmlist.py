@@ -82,6 +82,10 @@ class LlmListCollector(Collector):
             html = http.get(url).text
             text, links = visible_text(html)
             text = text[:MAX_CHARS]
+            from pipeline.unparsed import CHALLENGE_RE
+            if len(text.split()) < 60 and CHALLENGE_RE.search(text):   # этап 7d: заглушка Sucuri — не событие «нет»
+                from .http import FetchError
+                raise FetchError(f"bot challenge (заглушка бот-защиты) {url}")
             sha = hashlib.sha1((hint + text + getattr(self, "cache_salt", "")).encode()).hexdigest()
             self.stats["pages"] += 1
             row = con.execute("SELECT sha, result FROM llm_list_cache WHERE url=?", (url,)).fetchone()

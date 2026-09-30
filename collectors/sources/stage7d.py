@@ -148,6 +148,17 @@ class KingsLynnCornExchange(LlmListCollector):
         return "/cinema/" not in (it.get("url") or "")
 
 
+class VisitWestNorfolk(LlmListCollector):
+    source_id, name = "S183", "Visit West Norfolk — календарь событий Кингс-Линна и округи"
+    # этап 7d: календарь города (п. 3 брифа); в 7d сайт то отдавал проверку Sucuri, то пускал — при проверке нет, берём
+    pages = [("https://www.visitwestnorfolk.com/experiences/events/",
+              "Events in King's Lynn and west Norfolk (festivals, fairs, markets, talks, courses, family days). venue = "
+              "the place as written, with the town (e.g. \"King's Lynn Town Hall, King's Lynn\"). Date = first day; if an "
+              "event runs for weeks, competition = 'until YYYY-MM-DD'. Skip weekly pop-up shops and open-every-day "
+              "attractions.")]
+    categories = ["west norfolk"]
+
+
 # --- кинотеатры зоны (S182) ---
 
 REGIONAL_CINEMAS = [   # название, город, страница афиши, площадка, адрес, postcode, способ

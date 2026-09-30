@@ -72,6 +72,8 @@ def probe(http, url: str) -> tuple[str, str, str]:
         return "bot_challenge", f"{note}; страница: {r.status}, заглушка", ""
     visible = re.sub(r"\s+", " ", re.sub(r"(?is)<(script|style|noscript)[^>]*>.*?</\1>", " ", r.text))
     visible = re.sub(r"<[^>]+>", " ", visible)
+    if len(visible.split()) < 60 and CHALLENGE_RE.search(visible):   # этап 7d: Sucuri — текст заглушки после 20 КБ стилей
+        return "bot_challenge", f"{note}; страница {r.status}, заглушка «{' '.join(visible.split())[:80]}»", ""
     if len(visible.split()) < 60:
         return "js_only", f"{note}; страница {r.status}, видимого текста {len(visible.split())} слов", ""
     return "ok", f"{note}; страница: {r.status}", text
