@@ -1,7 +1,7 @@
 {
  "S135": [
-  "ok",
-  "robots.txt: HTTP 200; страница: 200"
+  "http_403",
+  "robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
  ],
  "S053": [
   "bot_challenge",
@@ -24,8 +24,8 @@
   "robots.txt: HTTP 200; страница: 200"
  ],
  "P:visitwestnorfolk.com": [
-  "http_other",
-  "robots.txt: HTTP 200; страница: 404"
+  "ok",
+  "robots.txt: HTTP 200; страница: 200"
  ],
  "C:Babylon Cinema (Ely Maltings)": [
   "connection",
