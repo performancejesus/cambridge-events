@@ -106,6 +106,8 @@ KIDS_RE = re.compile(r"\b(family[- ]friendly|for (all the |the whole )?famil(y|i
                      # правки по v5: детские персонажи и книги — явный признак семейного события (The Gruffalo на NVR)
                      r"gruffalo|peppa pig|paw patrol|room on the broom|stick man|hey duggee|bluey|julia donaldson|"
                      r"santa specials?|meet (father christmas|santa))\b", re.I)
+FOR_KIDS_RE = re.compile(r"\b(for (young )?(children|kids|families|toddlers|little ones)|(children|kids) (aged|will|can)|"
+                         r"family (fun )?(day|event|workshop|show|trail)|ages? \d+\s*[-–+]|suitable for (children|all ages))\b", re.I)
 # Семейные категории, которыми источник сам размечает события (фильтры UCM «для кого», раздел Visit Cambridge,
 # раздел University What's On, Science Centre) — явная пометка, не догадка (этап 6).
 FAMILY_CATEGORIES = {"family", "families", "family events", "family friendly", "under 5s", "ages 5+"}
@@ -155,6 +157,8 @@ class Pools:
     links: list[tuple[list[str], str]] = field(default_factory=list)  # связанные события → один пункт
     blocked_kids: dict[str, list[str]] = field(default_factory=dict)   # каникулы → закрытые провайдеры («Ещё проверьте»)
     releases: list[dict] = field(default_factory=list)   # решения после 6c: новые фильмы в прокате UK (календарь релизов)
+    notes: list[tuple[str, str]] = field(default_factory=list)   # этап 7b: заметки редактору от сборки (en, ru)
+    films: list[dict] = field(default_factory=list)      # этап 7b: фильмы окна с кинотеатрами и оценкой (pipeline/cinema)
 
 
 def d(s: str | None) -> date | None:
@@ -210,6 +214,7 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
         "categories": cats, "summary": summary, "source_type": e["source_type"],
         "importance": e["importance_score"], "importance_reason": e["importance_reason"],
         "kids_tag": is_family(e["title"], summary, _categories(con, e["event_id"], None)),
+        "access": e["access"] or "open", "access_note": e["access_note"],
         "free_tag": strictly_free(e["price_from"], e["price_text"]),
     }
     allcats = _categories(con, e["event_id"], None)
@@ -259,6 +264,44 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
     return facts
 
 
+MONTHS_FULL = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
+               "november", "december"]
+RANGE_RE = re.compile(r"\b(?:\w+day\s+)?(\d{1,2})(?:st|nd|rd|th)?\s*(?:-|–|&|and|to)\s*(?:\w+day\s+)?(\d{1,2})(?:st|nd|rd|th)?\s+"
+                      r"(" + "|".join(MONTHS_FULL) + r")\b", re.I)
+
+
+def page_date_end(start: date, text: str | None) -> date | None:
+    """Правки по v8: многодневное событие, у которого источник дал только первый день (Dubai Future Champions Festival —
+    «Friday 9 - Saturday 10 October 2026» на странице события) → дата окончания со страницы. Только диапазон, который
+    начинается с даты события, в том же месяце, не длиннее 14 дней."""
+    for m in RANGE_RE.finditer(text or ""):
+        a, b, mon = int(m.group(1)), int(m.group(2)), MONTHS_FULL.index(m.group(3).lower()) + 1
+        if a == start.day and mon == start.month and a < b <= a + 14:
+            return date(start.year, mon, b)
+    return None
+
+
+NIGHT_RE = re.compile(r"^(2[2-3]|0[0-5]):\d\d$")
+
+
+def kid_time(p: Pools, facts: dict, t: str | None) -> str | None:
+    """Правки по v8: время детского события между 22:00 и 6:00 — подозрительно (Kids Halloween Party в 00:30 — ошибка
+    разбора 12:30). Сверка со страницей первоисточника: там есть то же время днём («12:30», «12.30pm») — берём его;
+    иначе время не показываем. Заметка — редактору."""
+    if not t or not NIGHT_RE.match(t) or not facts.get("kids_tag"):
+        return t
+    h, m = int(t[:2]), t[3:]
+    day_h = h + 12 if h < 6 else h - 12
+    page = facts.get("page_facts") or ""
+    alt = next((f"{day_h:02d}:{m}" for pat in (rf"\b{day_h}[:.]{m}\b", rf"\b{day_h % 12 or 12}[:.]{m}\s*pm\b")
+                if re.search(pat, page, re.I)), None)
+    p.notes.append((f"“{facts['title']}”: time {t} looks wrong for a children's event — "
+                    + (f"page says {alt}, used it" if alt else "hidden"),
+                    f"«{facts['title']}»: время {t} подозрительно для детского события — "
+                    + (f"на странице {alt}, взято оно" if alt else "не показываем")))
+    return alt
+
+
 def strictly_free(price_from, price_text: str | None) -> bool:
     """Правки по v5: «бесплатно» — только если максимальная цена тоже £0 и это не «бесплатно при входном билете»."""
     if price_from != 0:
@@ -293,6 +336,8 @@ def _exclusion(e: sqlite3.Row) -> str | None:
         return "зона не определена (нет postcode)" if not e["zone"] else "вне зоны"
     if e["status"] in ("cancelled", "postponed", "disappeared", "past"):
         return f"статус {e['status']}"
+    if e["access"] == "restricted":   # этап 7b: «Доступ к событию» — купить такой доступ нельзя
+        return "только для студентов или сотрудников (доступ restricted)"
     return None
 
 
@@ -317,8 +362,13 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     for group in series.values():
         first = group[0]
         facts = _event_facts(con, first)
-        facts["dates"] = sorted({(g["date_start"], g["date_end"] or g["date_start"], g["time_start"]) for g in group})
+        facts["dates"] = sorted({(g["date_start"], g["date_end"] or g["date_start"], kid_time(p, facts, g["time_start"]))
+                                 for g in group}, key=lambda x: tuple(y or "" for y in x))
         facts["event_ids"] = [g["event_id"] for g in group]
+        if len(facts["dates"]) == 1 and facts["dates"][0][0] == facts["dates"][0][1]:
+            end = page_date_end(d(facts["dates"][0][0]), facts.get("page_facts"))
+            if end:   # «пт, 9 октября» + «двухдневное» в описании → «9–10 октября»; время дня тогда не показываем
+                facts["dates"] = [(facts["dates"][0][0], end.isoformat(), None)]
         facts["url"] = first["url"]
         facts["kind"] = "event"
         facts["importance"] = max((g["importance_score"] or 0) for g in group) or None
@@ -338,29 +388,105 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     _tickets(con, w, p)
     _cancellations(con, w, p)
     _venue_news(con, w, p)
+    _drop_repeats(con, w, p)
     _kids_programmes(con, w, p)
     _holiday_family(con, w, p)
     _blocked_kids(con, p)
     from . import film_releases
     p.releases = film_releases.in_window(con, w.start, w.end)
+    _films(con, w, p)
     return p
 
 
-_years_ru = lambda m: _n_ru(int(m.group(1)), "год", "года", "лет")
-RERELEASE_RU = [(r"(\d+)(?:st|nd|rd|th) anniversary", _years_ru), (r"(\d+) year anniversary", _years_ru),
-                (r"4k restoration", "4K-реставрация"), (r"director.s cut", "режиссёрская версия"),
-                (r"4k re-?release", "4K"), (r"re-?release", "повторный прокат")]
+def _drop_repeats(con, w: Window, p: Pools) -> None:
+    """Правки по v8: уже показанное в прошлых выпусках (история issue_items, pipeline/history.py) не повторяем."""
+    from . import history
+    seen = history.shown_before(con, w.issue)
+    if not seen:
+        return
+    for cid, c in list(p.candidates.items()):
+        k = cid[:1]
+        keys = [c.get("news_id")] if k == "V" else c.get("event_ids") or []
+        prev = [seen.get(k, {}).get(x) for x in keys]
+        if k in "AT":   # анонс уже был как анонс или старт продаж
+            prev += [seen.get(o, {}).get(x) for o in "AT" for x in keys]
+        prev = [x for x in prev if x]
+        if prev:   # C — только если эта же отмена уже была
+            p.excluded[f"уже было в выпуске от {max(prev)} (история выпусков)"].append(c["title"])
+            del p.candidates[cid]
 
 
-def release_lines(p: Pools, w: Window, lang: str) -> list[dict]:
+FILM_CANDIDATES = 8        # этап 7b: лучшие фильмы окна по оценке — кандидаты F… (модель берёт 2–4 полными пунктами)
+CINEMA_RU = {"Arts Picturehouse": "Arts Picturehouse", "Light": "The Light"}
+
+
+def _films(con, w: Window, p: Pools) -> None:
+    """Раздел «В кино» (этап 7b): фильмы окна (релизы календаря + премьеры и спецпоказы Light / Picturehouse) с
+    кинотеатрами, оценкой и описанием Wikipedia (pipeline/cinema). Нет сети или Wikipedia — рубрика как раньше."""
+    from . import cinema
+    try:
+        p.films = cinema.window_films(con, w.start, w.end)
+    except Exception as e:  # noqa: BLE001
+        p.notes.append((f"cinema: films were not scored ({type(e).__name__})", f"кино: оценка фильмов не выполнена ({type(e).__name__})"))
+        return
+    for i, f in enumerate(p.films[:FILM_CANDIDATES]):
+        if f["score"] <= 0 and not f["cinemas"]:
+            continue
+        url = next((r[0] for r in con.execute("SELECT url FROM cinema_showings WHERE norm=? ORDER BY cinema='Light'",
+                                               (f["norm"],)) if r[0]), None) or (
+            f"https://en.wikipedia.org/wiki/{f['wiki']}" if f.get("wiki") else None)
+        p.candidates[f"F{i + 1}"] = {
+            "kind": "film_release", "title": f["title"], "film": True, "uk_release": f["uk_date"],
+            "rerelease": f["kind"] != "new", "cinemas": f["cinemas"], "wide_release": f["wide"],
+            "importance": f["score"], "importance_reason": "; ".join(f["score_reason"]),
+            "wiki_description": f.get("wiki_description"), "wiki_extract": f.get("wiki_extract"),
+            "dates": [(f["uk_date"], f["uk_date"], None)], "event_ids": [], "url": url, "norm": f["norm"]}
+
+
+def film_where(c: dict, lang: str) -> str:
+    """Где идёт — только подтверждённое: кинотеатры из расписаний; широкий релиз без подтверждения — «в широком
+    прокате»; иначе пусто."""
+    if c.get("cinemas"):
+        names = [CINEMA_RU.get(x, x) if lang == "ru" else ("The Light" if x == "Light" else x) for x in c["cinemas"]]
+        return (("at " if lang == "en" else "идёт в ") + (" and " if lang == "en" else " и ").join(names)
+                + (", Cambridge" if lang == "en" else ", Кембридж"))
+    if c.get("wide_release"):
+        return "on general release" if lang == "en" else "в широком прокате"
+    return ""
+
+
+RERELEASE_PAREN_RE = re.compile(r"\s*\(([^)]*\b(?:restoration|anniversary|re-?release|4k|director.s cut|remaster\w*)\b[^)]*)\)", re.I)
+
+
+def rerelease_title(t: str, lang: str) -> str:
+    """Правки по v8: «24 Hour Party People (24 Year Anniversary 4K Re-Release)» → «24 Hour Party People
+    (4K-реставрация)», «The Others (25th Anniversary)» → «The Others (к 25-летию)», а не «24 года 4K»."""
+    def rep(m):
+        x = m.group(1).lower()
+        years = re.search(r"(\d+)(?:st|nd|rd|th)?[ -]*(?:year )?anniversary", x)
+        if re.search(r"4k|restor|remaster", x):
+            return " (4K restoration)" if lang == "en" else " (4K-реставрация)"
+        if re.search(r"director.s cut", x):
+            return " (director's cut)" if lang == "en" else " (режиссёрская версия)"
+        if years:
+            n = int(years.group(1))
+            return f" ({n}th anniversary)" if lang == "en" else f" (к {n}-летию)"
+        return " (re-release)" if lang == "en" else " (повторный прокат)"
+    return RERELEASE_PAREN_RE.sub(rep, t)
+
+
+def release_lines(p: Pools, w: Window, lang: str, featured: set[str] | None = None) -> list[dict]:
     """«В прокате с пятницы, 2 октября: …» — одна строка на дату релиза (без привязки к кинотеатру), повторные прокаты —
     в той же строке после «снова на экранах»."""
     # одна строка на группу соседних дат (календари расходятся на день: четверг 8-го или пятница 9-го);
     # отдельная дата через несколько дней (премьера во вторник) — своя строка
     def rdays(r):
         return {d(r["uk_date"])} | ({d(r["note"].split(": ")[1])} if (r.get("note") or "").startswith("mediamole") else set())
+    from .cinema import norm as film_norm
+    where = {f["norm"]: f["cinemas"] for f in p.films}
+    featured = featured or set()
     groups: list[list] = []
-    for r in sorted(p.releases, key=lambda r: r["uk_date"]):
+    for r in sorted((r for r in p.releases if film_norm(r["title"]) not in featured), key=lambda r: r["uk_date"]):
         if groups and min(rdays(r)) - max(x for g in groups[-1] for x in rdays(g)) <= timedelta(days=1):
             groups[-1].append(r)
         else:
@@ -382,11 +508,11 @@ def release_lines(p: Pools, w: Window, lang: str) -> list[dict]:
             same_week = dt.isocalendar()[:2] == w.issue.isocalendar()[:2]
             head = ("Out in cinemas this week" if same_week else "Out in cinemas next week") if lang == "en" else \
                 ("В прокате на этой неделе" if same_week else "В прокате на следующей неделе")
-        new = [r["title"] for r in rs if r["kind"] == "new"]
-        old = [r["title"] for r in rs if r["kind"] != "new"]
-        if lang == "ru":
-            for pat, rep in RERELEASE_RU:
-                old = [re.sub(pat, rep, t, flags=re.I) for t in old]
+        def tag(t, shown):   # этап 7b: где идёт — только подтверждённое расписанием кинотеатра
+            cs = where.get(film_norm(t)) or []
+            return shown + (f" ({', '.join('The Light' if c == 'Light' else c for c in cs)})" if cs else "")
+        new = [tag(r["title"], r["title"]) for r in rs if r["kind"] == "new"]
+        old = [tag(r["title"], rerelease_title(r["title"], lang)) for r in rs if r["kind"] != "new"]
         meta = ", ".join(new) + (("; back on screen: " if lang == "en" else "; снова на экранах: ") + ", ".join(old)
                                  if old else "")
         out.append({"title": head, "meta": meta, "blurb": "", "url": None, "compact": True, "ids": [], "release": True})
@@ -590,11 +716,18 @@ def _holiday_family(con, w: Window, p: Pools) -> None:
             facts = _event_facts(con, e)
             if not facts["kids_tag"] or facts.get("regular_series"):
                 continue
+            # правки по v8: только события для детей и семей — дети названы в названии или источник сам отнёс событие
+            # к семейным, либо описание прямо адресует его детям; распродажи (Bring 'n' Byte Sale) — нет
+            cats = [c.strip().lower() for c in _categories(con, e["event_id"], None)]
+            for_kids = bool(KIDS_RE.search(e["title"])) or bool(set(cats) & FAMILY_CATEGORIES) or bool(
+                FOR_KIDS_RE.search(facts.get("summary") or ""))
+            if not for_kids or SALE_RE.search(e["title"]):
+                continue
             span = (d(e["date_end"] or e["date_start"]) - d(e["date_start"])).days
             if span > 21:
                 continue   # длительные выставки и сезонные аттракционы — не «сходить в каникулы»
             facts |= {"kind": "holiday_event", "holiday": h["key"], "url": e["url"], "event_ids": [e["event_id"]],
-                      "dates": [(e["date_start"], e["date_end"] or e["date_start"], e["time_start"])]}
+                      "dates": [(e["date_start"], e["date_end"] or e["date_start"], kid_time(p, facts, e["time_start"]))]}
             p.candidates[f"H{e['event_id']}"] = facts
 
 
@@ -633,7 +766,7 @@ def _venue_news(con, w: Window, p: Pools) -> None:
             "kind": "venue_news", "title": v["name"], "type": v["type"], "stage": v["stage"],
             "address": v["address"], "postcode": v["postcode"], "date": v["date"], "date_basis": v["date_basis"],
             "published": (v["published"] or "")[:10] or None, "note": v["note"], "sources": [v["source_id"]],
-            "source_type": v["source_type"], "url": v["url"], "event_ids": [], "dates": []}
+            "source_type": v["source_type"], "url": v["url"], "event_ids": [], "dates": [], "news_id": v["news_id"]}
 
 
 ALSO_PLAYING = {"S019", "S154"}   # Cambridge City FC, Cambridge United Women
@@ -728,11 +861,31 @@ HOLIDAY_NOTES |= {k: {"en": "who is already taking bookings", "ru": "кто уж
 FAMILY_IN_HOLIDAYS_MAX = 6
 
 
+def booking_closed(c: dict, w: Window) -> bool:
+    """Правки по v8: дедлайн записи прошёл к дате выпуска (Strike Academy — «запись до 1 октября» в выпуске 8 октября)."""
+    bd = c.get("booking_deadline")
+    return bool(bd and re.match(r"\d{4}-\d\d-\d\d$", bd) and d(bd) < w.issue)
+
+
+def holiday_clip(c: dict, dates: list[tuple], hol: dict | None) -> tuple[list[tuple], str | None]:
+    """Правки по v8: даты вне каникул не выдаём за каникулярные — показываем дни каникул (с прилегающими выходными),
+    остальное — пометкой («идёт и раньше, с 19 октября»)."""
+    if not hol or not dates:
+        return dates, None
+    hs, he = d(hol["start"]) - timedelta(days=2), d(hol["end"]) + timedelta(days=2)
+    a, b = d(min(x[0] for x in dates)), d(max(x[1] for x in dates))
+    if b < hs or a > he or (a >= hs and b <= he):
+        return dates, None
+    na, nb = max(a, d(hol["start"]) if a < hs else a), min(b, d(hol["end"]) if b > he else b)
+    note = a if a < hs else None
+    return [(na.isoformat(), nb.isoformat())], note.isoformat() if note else None
+
+
 def _programme_line(x: dict, w: Window, lang: str) -> dict:
     c = x["c"]
-    unknown = re.compile(r"^(цена — при записи|price on booking)$", re.I)
-    norm = lambda v: re.sub(r"\s+", " ", v or "").strip()
-    pairs = [(norm(wh), norm(pr)) for wh, pr in x["where"]]
+    unknown = re.compile(r"^(цены на сайте|prices on the website)$", re.I)
+    norm = lambda v: norm_price(re.sub(r"\s+", " ", v or "").strip(), lang)
+    pairs = [(re.sub(r"\s+", " ", wh or "").strip(), norm(pr)) for wh, pr in x["where"]]
     pairs = [(("" if wh.lower() == pr.lower() or unknown.match(wh) else wh), pr) for wh, pr in pairs]
     if lang == "ru":
         pairs = [(wh, pr[:1].lower() + pr[1:] if re.match(r"[А-ЯЁ][а-яё]", pr) else pr) for wh, pr in pairs]
@@ -755,12 +908,21 @@ def _programme_line(x: dict, w: Window, lang: str) -> dict:
         notes.append("few places left" if lang == "en" else "мест мало")
     if c["places"] == "not_open" and c.get("booking_opens"):
         notes.append(("booking opens " if lang == "en" else "запись открывается: ") + booking_text(c["booking_opens"], lang))
-    if c.get("booking_deadline"):
+    if booking_closed(c, w):
+        notes.append("booking closed" if lang == "en" else "запись закрыта")
+    elif c.get("booking_deadline"):
         notes.append(("book by " if lang == "en" else "запись до ") + booking_text(c["booking_deadline"], lang))
     head = f"{x['provider']} — {x['title']}" + (f" ({ages})" if ages else "")
     dates = sorted(x.get("dates") or [])
+    hol = nearest_holidays(w).get(c.get("holiday")) if c.get("holiday") else None
+    dates, early = holiday_clip(c, dates, hol)
+    if early:
+        notes.append((f"also runs before the holidays, from {_day(d(early), lang, weekday=False)}" if lang == "en"
+                      else f"идёт и раньше, с {_day(d(early), lang, weekday=False)}"))
     if len(dates) > 1:   # одна программа в разные дни (на разных площадках) — одна строка: весь период, «в разные дни»
         c = c | {"dates": [(dates[0][0], max(b for _, b in dates), None)]}
+    elif dates:
+        c = c | {"dates": [(dates[0][0], dates[0][1], None)]}
     dw = when(c, w, lang) + ((" (different days)" if lang == "en" else " (в разные дни)") if len(dates) > 1 else "")
     if lang == "ru":
         place = re.sub(r"^Multiple locations across ", "несколько площадок: ", place)
@@ -770,7 +932,10 @@ def _programme_line(x: dict, w: Window, lang: str) -> dict:
 
 
 def _hurry(c: dict, w: Window) -> bool:
-    """«Успейте записаться»: мест мало или запись заканчивается в ближайшие 14 дней."""
+    """«Успейте записаться»: мест мало или запись заканчивается в ближайшие 14 дней. Правки по v8: только программы,
+    открытые для всех (University Playscheme — только для детей сотрудников и студентов — сюда никогда)."""
+    if c.get("audience") not in (None, "", "public"):
+        return False
     bd = c.get("booking_deadline")
     soon = bool(bd and re.match(r"\d{4}-\d\d-\d\d", bd) and 0 <= (d(bd) - w.issue).days <= 14)
     return c["places"] == "few_left" or soon
@@ -864,7 +1029,8 @@ def limited_holiday_groups(p: Pools, w: Window, lang: str, groups: dict) -> list
     for hol in [k for k in order if k in groups]:
         h = hols.get(hol) or kids.holidays().get(hol)
         near = bool(h) and (d(h["start"]) - w.issue).days <= HOLIDAY_NEAR_DAYS
-        pairs = groups[hol]
+        pairs = [(x, ln) for x, ln in groups[hol] if not booking_closed(x["c"], w)]   # правки по v8: запись закрыта —
+        # в письмо не берём (на полной странице — с пометкой «запись закрыта»)
         if near:
             first = sorted(pairs, key=lambda xl: (xl[0]["zone"] > 1, xl[0]["zone"]))   # центр и «до 30 мин» — первыми
             sel, per_type = [], {}
@@ -932,6 +1098,20 @@ def model_view(p: Pools) -> list[dict]:
     return out
 
 
+UNKNOWN_PRICE_RE = re.compile(r"^(цен[аы]\s*(?:—|-|–)?\s*(?:при|на) (?:записи|бронировании|входе)|цен[аы]? (?:указаны? )?на сайте"
+                              r"(?: организатора| площадки)?|цена не указана|price on booking|price not listed|prices? on "
+                              r"(?:the )?(?:website|booking|request)|see (?:the )?website)\.?$", re.I)
+
+
+def norm_price(v: str | None, lang: str) -> str:
+    """Правки по v8: одна формулировка для неизвестной цены — «цены на сайте» / «prices on the website»; ровные суммы —
+    без копеек (£20, а не £20.00)."""
+    v = re.sub(r"\s+", " ", v or "").strip()
+    if UNKNOWN_PRICE_RE.match(v):
+        return "prices on the website" if lang == "en" else "цены на сайте"
+    return re.sub(r"(£\d+(?:,\d{3})*)\.00\b", r"\1", v)
+
+
 def price_from_data(c: dict) -> tuple[str, str]:
     """Цена по данным базы (если модель ошиблась): «£50», «£5–£20», «free», «price not listed»."""
     vals = sorted({float(x) for x in re.findall(r"\d+(?:\.\d+)?", (c.get("price_text") or "").replace(",", ""))})
@@ -979,6 +1159,11 @@ def when(c: dict, w: Window, lang: str) -> str:
                                                                 "августе", "сентябре", "октябре", "ноябре", "декабре"][dt.month - 1]
             return f"{stage} in {mon}" if lang == "en" else f"{stage.lower().capitalize()} в {mon}"
         return f"{stage} {_day(dt, lang, weekday=False, year=dt.year != w.issue.year)}" if dt else stage
+    if c["kind"] == "film_release":   # этап 7b: полный пункт о фильме — «в прокате с пт, 9 октября»
+        x = d(c["dates"][0][0])
+        if x < w.issue:
+            return "now showing" if lang == "en" else "уже в прокате"
+        return (f"in cinemas from {_day(x, lang)}" if lang == "en" else f"в прокате с {_day(x, lang)}")
     if not c["dates"]:
         return ""
     starts = [d(x[0]) for x in c["dates"]]
@@ -1028,6 +1213,24 @@ def importance_of(p: Pools, it: dict) -> float:
     return max((p.candidates[i].get("importance") or 0) for i in it["ids"])
 
 
+def access_mark(c: dict, lang: str) -> tuple[str, str | None]:
+    """Этап 7b: пометка в строке с датой для событий «только для членов» и ссылка на страницу членства."""
+    if c.get("access") != "members":
+        return "", None
+    f = dict(x.split("=", 1) for x in (c.get("access_note") or "").split("|") if "=" in x)
+    org, fee = f.get("org"), f.get("fee")
+    if lang == "en":
+        s = f"members only — {org}" if org else "members only"
+        s += f" (membership {fee} a year)" if fee else ""
+    else:
+        s = f"только для членов {org}" if org else "только для членов клуба"
+        s += f" (членство — {fee} в год)" if fee else ""
+    return s, f.get("url")
+
+
+LIBRARIES_URL = "https://www.eventbrite.co.uk/o/cambridgeshire-libraries-33302830317"   # все события библиотек (S055)
+
+
 PAGE_URGENCY_MARK = {"few_left": {"en": "few tickets left", "ru": "мало билетов"},
                      "selling_fast": {"en": "selling fast", "ru": "билеты быстро раскупают"},
                      "early_bird_ends": {"en": "early-bird price ending", "ru": "заканчивается ранняя цена"}}
@@ -1060,7 +1263,8 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
             items = sorted(items, key=lambda it: not re.search(r"\bCambridge\b", p.candidates[it["ids"][0]].get("address") or ""))
         elif rub != "theme":   # «Тема недели» — порядок по смыслу, как у модели (правки по v3); остальное — по важности
             items = sorted(items, key=lambda it: -importance_of(p, it))
-        rel = release_lines(p, w, lang) if rub == "cinema" else []
+        featured = {p.candidates[i].get("norm") for it in items for i in it["ids"] if i.startswith("F")}
+        rel = release_lines(p, w, lang, featured) if rub == "cinema" else []
         if not items and not rel:
             continue  # пустые рубрики не выводим (правки по v2)
         sec = {"rubric": rub, "title": rubric_title(rub, w, lang, result.get(f"theme_title_{lang}", "")),
@@ -1071,10 +1275,15 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
             evs = [p.candidates[i] for i in it["ids"] if p.candidates[i]["kind"] == c["kind"] == "event"]
             if len(evs) > 1:  # два дня одной выставки на разных площадках и т.п.
                 c = c | {"dates": sorted({x for e in evs for x in e["dates"]}, key=lambda x: tuple(y or "" for y in x))}
-            price = "" if c["kind"] == "venue_news" else it[f"price_{lang}"]
+            price = "" if c["kind"] in ("venue_news", "film_release") else norm_price(it[f"price_{lang}"], lang)
+            where_ = film_where(c, lang) if c["kind"] == "film_release" else it[f"where_{lang}"]
             urg = next((p.candidates[i].get("page_urgency") for i in it["ids"] if p.candidates[i].get("page_urgency")), None)
             mark = PAGE_URGENCY_MARK.get(urg, {}).get(lang, "") if c["kind"] != "cancellation" else ""
-            meta = " · ".join(x for x in (when(c, w, lang), it[f"where_{lang}"], price, mark) if x)
+            acc, acc_url = access_mark(c, lang)
+            if c["kind"] == "cancellation":   # правки по v8: отмена — одной строкой: что, когда, где, «отменено»
+                price = {"postponed": ("postponed", "перенесено")}.get(c.get("status"), ("cancelled", "отменено"))[
+                    0 if lang == "en" else 1]
+            meta = " · ".join(x for x in (when(c, w, lang), where_, price, acc, mark) if x)
             title = it[f"title_{lang}"]
             if c["kind"] == "venue_news" and not re.search(r"\bCambridge\b", c.get("address") or ""):
                 town = (c.get("address") or "").split(",")[-1].strip()   # правки по v5: городок — в заголовке строки
@@ -1084,8 +1293,12 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
             key = "take_part" if rub == "sport" and any(p.candidates[i].get("participant") for i in it["ids"]) else ""
             if rub == "sport" and not key and (it.get("also") or set(c.get("sources") or []) & ALSO_PLAYING):
                 key = "also"   # правки после v5: нелиговый и женский футбол — одной строкой в «Также играют»
-            groups.setdefault(key, []).append({"title": title, "meta": meta,
-                                               "blurb": it[f"blurb_{lang}"].strip(), "url": c["url"], "ids": it["ids"]})
+            blurb = "" if c["kind"] == "cancellation" else it[f"blurb_{lang}"].strip()
+            url = c["url"]
+            if len(it["ids"]) > 1 and all(set(p.candidates[i].get("sources") or []) <= {"S055"} for i in it["ids"]):
+                url = LIBRARIES_URL   # правки по v8: «Регулярно в библиотеках» — страница всех событий библиотек
+            groups.setdefault(key, []).append({"title": title, "meta": meta, "access_url": acc_url,
+                                               "blurb": blurb, "url": url, "ids": it["ids"]})
         for key in sorted(groups, key=lambda k: ["", "also", "take_part"].index(k)):
             sub_title = {"take_part": ("Take part", "Поучаствовать"), "also": ("Also playing", "Также играют")}.get(key)
             items_ = groups[key]
@@ -1116,7 +1329,9 @@ def render(result: dict, p: Pools, w: Window, lang: str, editor: dict) -> str:
                     head = f"[{it['title']}]({it['url']})" if it.get("url") else it["title"]
                     lines += [f"- **{head}**" + (f" — {it['meta']}" if it["meta"] else "")]
                     continue
-                lines += [f"**{it['title']}** — {it['meta']}  ",
+                acc = (f" ([{'membership' if lang == 'en' else 'членство'}]({it['access_url']}))"
+                       if it.get("access_url") else "")
+                lines += [f"**{it['title']}** — {it['meta']}{acc}  ",
                           (f"{it['blurb']} " if it["blurb"] else "") + f"[{more} →]({it['url']})", ""]
             if any(it.get("compact") for it in g["items"]):
                 lines += [""]
@@ -1142,19 +1357,21 @@ def render_reader_html(result: dict, p: Pools, w: Window, lang: str) -> str:
             if g["title"]:
                 body.append(f'<h3>{e(g["title"])}</h3>')
             for it in g["items"]:
-                body.append(item_html(it, more))
+                body.append(item_html(it, more, lang))
         body.append("</section>")
     return READER_HTML.format(lang=lang, title=e(L["title"]), body="\n".join(body), extra_css="")
 
 
-def item_html(it: dict, more: str) -> str:
+def item_html(it: dict, more: str, lang: str = "ru") -> str:
     from html import escape as e
     if it.get("compact"):   # «Каникулы»: одна строка на программу
         head = f'<a href="{e(it["url"])}">{e(it["title"])}</a>' if it.get("url") else f'<b>{e(it["title"])}</b>'
         return f'<p class="line">{head}' + (f' — <span class="m2">{e(it["meta"])}</span>' if it["meta"] else "") + '</p>'
     return ('<article class="item">'
             f'<p class="t"><a href="{e(it["url"])}">{e(it["title"])}</a></p>'
-            f'<p class="m">{e(it["meta"])}</p>'
+            f'<p class="m">{e(it["meta"])}'
+            + (f' (<a href="{e(it["access_url"])}">{"membership" if lang == "en" else "членство"}</a>)'
+               if it.get("access_url") else "") + '</p>'
             + (f'<p class="b">{e(it["blurb"])}</p>' if it["blurb"] else "")
             + f'<p class="more"><a href="{e(it["url"])}">{more} →</a></p></article>')
 
@@ -1280,7 +1497,7 @@ def render_editor_html(result: dict, p: Pools, w: Window, lang: str, editor: dic
                 if g["title"]:
                     body.append(f'<h3>{e(g["title"])}</h3>')
                 for it in g["items"]:
-                    body.append(item_html(it, more))
+                    body.append(item_html(it, more, lang))
         else:
             title = "Theme of the week" if rub == "theme" and lang == "en" else \
                 "Тема недели" if rub == "theme" else rubric_title(rub, w, lang)

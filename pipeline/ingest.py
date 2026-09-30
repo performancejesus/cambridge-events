@@ -8,7 +8,7 @@ import sqlite3
 from datetime import date, timedelta
 from pathlib import Path
 
-from . import venues
+from . import access, venues
 from .geo import lookup, zone_for_postcode
 from .normalize import end_date, minutes, norm_title, norm_venue, parse_price, split_datetime, title_similarity
 
@@ -67,16 +67,18 @@ def load_run(con: sqlite3.Connection, raw_dir: Path) -> dict:
                 row = con.execute("SELECT raw_id FROM raw_items WHERE source_id=? AND item_key=?", (sid, key)).fetchone()
                 vals = (d["kind"], d["title"], d["url"], d["start"], d["end"], int(bool(d["all_day"])), d["venue"],
                         d["address"], d["postcode"], d["lat"], d["lon"], d["price"], d["status"], d["organizer"],
-                        json.dumps(d["categories"], ensure_ascii=False), d["summary"], d["published"])
+                        json.dumps(d["categories"], ensure_ascii=False), d["summary"], d["published"],
+                        d.get("access"), d.get("access_note"))
                 if row:
                     con.execute("""UPDATE raw_items SET kind=?, title=?, url=?, start=?, "end"=?, all_day=?, venue=?,
                         address=?, postcode=?, lat=?, lon=?, price=?, status=?, organizer=?, categories=?, summary=?,
-                        published=?, last_seen_at=?, disappeared_at=NULL WHERE raw_id=?""", vals + (run_id, row[0]))
+                        published=?, access=?, access_note=?, last_seen_at=?, disappeared_at=NULL WHERE raw_id=?""",
+                                vals + (run_id, row[0]))
                     stats["seen_raw"] += 1
                 else:
                     con.execute("""INSERT INTO raw_items(kind, title, url, start, "end", all_day, venue, address,
-                        postcode, lat, lon, price, status, organizer, categories, summary, published, source_id,
-                        item_key, first_seen_at, last_seen_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                        postcode, lat, lon, price, status, organizer, categories, summary, published, access, access_note,
+                        source_id, item_key, first_seen_at, last_seen_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                                 vals + (sid, key, run_id, run_id))
                     stats["new_raw"] += 1
                 if d["kind"] == "article" and d["url"]:
@@ -317,10 +319,11 @@ def refresh(con: sqlite3.Connection, run_id: str) -> dict:
                 status, src = "on_sale", "page"
         con.execute("""UPDATE events SET title=?, venue_id=?, venue_name=?, address=?, postcode=?, lat=coalesce(?, lat),
             lon=coalesce(?, lon), zone=coalesce(?, zone), address_unknown=?, multi_venue=?, price_from=?, price_text=?, url=?,
-            last_seen_at=?, status=? WHERE event_id=?""",
+            last_seen_at=?, status=?, access=?, access_note=? WHERE event_id=?""",
                     (first["title"] if first else e["title"], venue_id, venue, address, postcode, lat, lon,
                      zn, address_unknown, multi_venue, price_from, price_text, first["url"] if first and first["url"] else e["url"],
-                     max(r["last_seen_at"] for r in raws) if raws else e["last_seen_at"], status, e["event_id"]))
+                     max(r["last_seen_at"] for r in raws) if raws else e["last_seen_at"], status,
+                     *(access.resolve(raws) if raws else (e["access"] or "open", e["access_note"])), e["event_id"]))
         if not con.execute("SELECT 1 FROM status_history WHERE event_id=?", (e["event_id"],)).fetchone():
             con.execute("INSERT INTO status_history(event_id, status, changed_at, source_id, note) VALUES (?,?,?,?,?)",
                         (e["event_id"], status, e["first_seen_at"], first["source_id"] if first else None, "впервые увидено"))

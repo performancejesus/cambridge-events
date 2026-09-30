@@ -19,7 +19,9 @@ import openpyxl
 from . import domains
 from .db import ROOT
 
-REGISTRY = ROOT / "data" / "cambridge_event_sources_v0.8.xlsx"
+# этап 7b: реестр v0.9 (Cambridge Union, NGS, Light, колледжи); пока его нет — v0.8
+REGISTRY = next(p for p in (ROOT / "data" / "cambridge_event_sources_v0.9.xlsx",
+                            ROOT / "data" / "cambridge_event_sources_v0.8.xlsx") if p.exists())
 SCHEMA = """CREATE TABLE IF NOT EXISTS source_ai_auto (
     source_id TEXT, host TEXT, agents TEXT, grp TEXT, checked_at TEXT, PRIMARY KEY (source_id, host)
 )"""

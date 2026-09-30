@@ -24,7 +24,8 @@ BACKOFF = (30, 60, 120)
 # при этом разрешает — ходим через curl с тем же честным User-Agent. Применяется ко всем поддоменам по умолчанию.
 CURL_SUFFIXES = (".cam.ac.uk",)
 # Хосты, которые отвечают 429 уже при паузе в 2 с (WordPress.com): своя, более длинная пауза.
-HOST_DELAYS = {"cambridgefoodies.me.uk": 20.0}
+# cus.org (Cambridge Union, этап 7b) — 429 после десятка запросов с паузой 2 с.
+HOST_DELAYS = {"cambridgefoodies.me.uk": 20.0, "cus.org": 10.0}
 
 
 class Disallowed(Exception):

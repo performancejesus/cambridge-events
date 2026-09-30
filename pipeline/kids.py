@@ -69,7 +69,9 @@ def _town_zone(con: sqlite3.Connection, address: str | None) -> tuple | None:
     # у унитарного Питерборо postcodes.io /places отдаёт его как county — для правила FAR_DISTRICTS нужен district
     district = pl["district"] or (pl["county"] if "Peterborough" in (pl["county"] or "") else None)
     z = zone(pl["lat"], pl["lon"], pl["county"], "Peterborough" if district and "Peterborough" in district else district)
-    return pl["lat"], pl["lon"], "до часа" if z == NEIGHBOUR_IF_IMPORTANT else z
+    # правки по v8: вне Кембриджшира 40–60 км по прямой («до часа, если важно» — для событий с оценкой ≥ 7) у программ
+    # оценки нет — вне зоны (School's Out в Челмсфорде, 55 км); West Suffolk (Бери) — обычная зона по правилу 5b
+    return pl["lat"], pl["lon"], "out_of_zone" if z == NEIGHBOUR_IF_IMPORTANT else z
 
 
 def holidays() -> dict:

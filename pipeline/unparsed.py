@@ -32,7 +32,8 @@ PROBLEM_RU = {"http_403": "страница отвечает 403", "bot_challeng
               "robots_disallow": "robots.txt запрещает", "server_error": "сервер отвечает 5xx",
               "http_other": "страница отвечает ошибкой"}
 CHALLENGE_RE = re.compile(r"just a moment|cf-chl|checking your browser|attention required|captcha|are you a robot|"
-                          r"access denied|request unsuccessful|incapsula|radware|perfdrive|enable javascript and cookies",
+                          r"access denied|request unsuccessful|incapsula|radware|perfdrive|enable javascript and cookies|"
+                          r"request is being verified|sucuri",   # этап 7b: сайты колледжей за Sucuri
                           re.I)
 
 

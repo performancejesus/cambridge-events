@@ -1,26 +1,247 @@
 [
- {"name": "Lady Mitchell Hall", "aliases": ["lady mitchell hall", "sidgwick site", "sidgwick avenue"], "address": "Sidgwick Avenue, Cambridge", "postcode": "CB3 9DA"},
- {"name": "Ray Dolby Centre (Cavendish Laboratory)", "aliases": ["ray dolby centre", "rdc", "cavendish laboratory"], "address": "JJ Thomson Avenue, Cambridge", "postcode": "CB3 0US"},
- {"name": "Department of History and Philosophy of Science", "aliases": ["department of history and philosophy of science", "hps", "whipple museum"], "address": "Free School Lane, Cambridge", "postcode": "CB2 3RH"},
- {"name": "Biffen Lecture Theatre (Department of Genetics)", "aliases": ["biffen lecture", "biffen lecture theatre", "department of genetics"], "address": "Downing Site, Downing Street, Cambridge", "postcode": "CB2 3EH"},
- {"name": "Centre for Mathematical Sciences", "aliases": ["cms", "centre for mathematical sciences", "potter room"], "address": "Wilberforce Road, Cambridge", "postcode": "CB3 0WA"},
- {"name": "Trinity College", "aliases": ["trinity college", "trinity college chapel"], "address": "Trinity Street, Cambridge", "postcode": "CB2 1TQ"},
- {"name": "Darwin College", "aliases": ["darwin college"], "address": "Silver Street, Cambridge", "postcode": "CB3 9EU"},
- {"name": "Churchill College", "aliases": ["churchill college"], "address": "Storey's Way, Cambridge", "postcode": "CB3 0DS"},
- {"name": "West Road Concert Hall", "aliases": ["west road concert"], "address": "11 West Road, Cambridge", "postcode": "CB3 9DP"},
- {"name": "Fitzwilliam Museum", "aliases": ["fitzwilliam museum", "fitzwilliam"], "address": "Trumpington Street, Cambridge", "postcode": "CB2 1RB"},
- {"name": "Kettle's Yard", "aliases": ["kettle s yard", "kettles yard"], "address": "Castle Street, Cambridge", "postcode": "CB3 0AQ"},
- {"name": "Museum of Zoology", "aliases": ["museum of zoology", "zoology museum"], "address": "Downing Street, Cambridge", "postcode": "CB2 3EJ"},
- {"name": "Sedgwick Museum of Earth Sciences", "aliases": ["sedgwick museum"], "address": "Downing Street, Cambridge", "postcode": "CB2 3EQ"},
- {"name": "Cambridge University Botanic Garden", "aliases": ["botanic garden", "university botanic garden"], "address": "1 Brookside, Cambridge", "postcode": "CB2 1JE"},
- {"name": "Cambridge Corn Exchange", "aliases": ["corn exchange"], "address": "2 Wheeler Street, Cambridge", "postcode": "CB2 3QB"},
- {"name": "Cambridge Guildhall", "aliases": ["guildhall", "cambridge guildhall"], "address": "Market Square, Cambridge", "postcode": "CB2 3QJ"},
- {"name": "Cambridge Junction", "aliases": ["junction", "cambridge junction"], "address": "Clifton Way, Cambridge", "postcode": "CB1 7GX"},
- {"name": "ADC Theatre", "aliases": ["adc", "adc theatre"], "address": "Park Street, Cambridge", "postcode": "CB5 8AS"},
- {"name": "Abbey Stadium", "aliases": ["abbey stadium", "cledara abbey", "cledara abbey stadium"], "address": "Newmarket Road, Cambridge", "postcode": "CB5 8LN"},
- {"name": "Newmarket Racecourses (Rowley Mile)", "aliases": ["newmarket racecourses", "newmarket racecourse", "rowley mile"], "address": "Newmarket, Suffolk", "postcode": "CB8 0TF"},
- {"name": "Jesus Green", "aliases": ["jesus green"], "address": "Victoria Avenue, Cambridge", "postcode": "CB4 3AX"},
- {"name": "Midsummer Common", "aliases": ["midsummer common"], "address": "Cambridge", "postcode": "CB5 8DJ"},
- {"name": "Mill Road", "aliases": ["mill road"], "address": "Mill Road, Cambridge", "postcode": "CB1 2AZ"},
- {"name": "The Maltings Ely", "aliases": ["maltings ely", "ely maltings", "the maltings, ely"], "address": "Ship Lane, Ely", "postcode": "CB7 4BB"}
+ {
+  "name": "Lady Mitchell Hall",
+  "aliases": [
+   "lady mitchell hall",
+   "sidgwick site",
+   "sidgwick avenue"
+  ],
+  "address": "Sidgwick Avenue, Cambridge",
+  "postcode": "CB3 9DA"
+ },
+ {
+  "name": "Ray Dolby Centre (Cavendish Laboratory)",
+  "aliases": [
+   "ray dolby centre",
+   "rdc",
+   "cavendish laboratory"
+  ],
+  "address": "JJ Thomson Avenue, Cambridge",
+  "postcode": "CB3 0US"
+ },
+ {
+  "name": "Department of History and Philosophy of Science",
+  "aliases": [
+   "department of history and philosophy of science",
+   "hps",
+   "whipple museum"
+  ],
+  "address": "Free School Lane, Cambridge",
+  "postcode": "CB2 3RH"
+ },
+ {
+  "name": "Biffen Lecture Theatre (Department of Genetics)",
+  "aliases": [
+   "biffen lecture",
+   "biffen lecture theatre",
+   "department of genetics"
+  ],
+  "address": "Downing Site, Downing Street, Cambridge",
+  "postcode": "CB2 3EH"
+ },
+ {
+  "name": "Centre for Mathematical Sciences",
+  "aliases": [
+   "cms",
+   "centre for mathematical sciences",
+   "potter room"
+  ],
+  "address": "Wilberforce Road, Cambridge",
+  "postcode": "CB3 0WA"
+ },
+ {
+  "name": "Trinity College",
+  "aliases": [
+   "trinity college",
+   "trinity college chapel"
+  ],
+  "address": "Trinity Street, Cambridge",
+  "postcode": "CB2 1TQ"
+ },
+ {
+  "name": "Darwin College",
+  "aliases": [
+   "darwin college"
+  ],
+  "address": "Silver Street, Cambridge",
+  "postcode": "CB3 9EU"
+ },
+ {
+  "name": "Churchill College",
+  "aliases": [
+   "churchill college"
+  ],
+  "address": "Storey's Way, Cambridge",
+  "postcode": "CB3 0DS"
+ },
+ {
+  "name": "West Road Concert Hall",
+  "aliases": [
+   "west road concert"
+  ],
+  "address": "11 West Road, Cambridge",
+  "postcode": "CB3 9DP"
+ },
+ {
+  "name": "Fitzwilliam Museum",
+  "aliases": [
+   "fitzwilliam museum",
+   "fitzwilliam"
+  ],
+  "address": "Trumpington Street, Cambridge",
+  "postcode": "CB2 1RB"
+ },
+ {
+  "name": "Kettle's Yard",
+  "aliases": [
+   "kettle s yard",
+   "kettles yard"
+  ],
+  "address": "Castle Street, Cambridge",
+  "postcode": "CB3 0AQ"
+ },
+ {
+  "name": "Museum of Zoology",
+  "aliases": [
+   "museum of zoology",
+   "zoology museum"
+  ],
+  "address": "Downing Street, Cambridge",
+  "postcode": "CB2 3EJ"
+ },
+ {
+  "name": "Sedgwick Museum of Earth Sciences",
+  "aliases": [
+   "sedgwick museum"
+  ],
+  "address": "Downing Street, Cambridge",
+  "postcode": "CB2 3EQ"
+ },
+ {
+  "name": "Cambridge University Botanic Garden",
+  "aliases": [
+   "botanic garden",
+   "university botanic garden"
+  ],
+  "address": "1 Brookside, Cambridge",
+  "postcode": "CB2 1JE"
+ },
+ {
+  "name": "Cambridge Corn Exchange",
+  "aliases": [
+   "corn exchange"
+  ],
+  "address": "2 Wheeler Street, Cambridge",
+  "postcode": "CB2 3QB"
+ },
+ {
+  "name": "Cambridge Guildhall",
+  "aliases": [
+   "guildhall",
+   "cambridge guildhall"
+  ],
+  "address": "Market Square, Cambridge",
+  "postcode": "CB2 3QJ"
+ },
+ {
+  "name": "Cambridge Junction",
+  "aliases": [
+   "junction",
+   "cambridge junction"
+  ],
+  "address": "Clifton Way, Cambridge",
+  "postcode": "CB1 7GX"
+ },
+ {
+  "name": "ADC Theatre",
+  "aliases": [
+   "adc",
+   "adc theatre"
+  ],
+  "address": "Park Street, Cambridge",
+  "postcode": "CB5 8AS"
+ },
+ {
+  "name": "Abbey Stadium",
+  "aliases": [
+   "abbey stadium",
+   "cledara abbey",
+   "cledara abbey stadium"
+  ],
+  "address": "Newmarket Road, Cambridge",
+  "postcode": "CB5 8LN"
+ },
+ {
+  "name": "Newmarket Racecourses (Rowley Mile)",
+  "aliases": [
+   "newmarket racecourses",
+   "newmarket racecourse",
+   "rowley mile"
+  ],
+  "address": "Newmarket, Suffolk",
+  "postcode": "CB8 0TF"
+ },
+ {
+  "name": "Jesus Green",
+  "aliases": [
+   "jesus green"
+  ],
+  "address": "Victoria Avenue, Cambridge",
+  "postcode": "CB4 3AX"
+ },
+ {
+  "name": "Midsummer Common",
+  "aliases": [
+   "midsummer common"
+  ],
+  "address": "Cambridge",
+  "postcode": "CB5 8DJ"
+ },
+ {
+  "name": "Mill Road",
+  "aliases": [
+   "mill road"
+  ],
+  "address": "Mill Road, Cambridge",
+  "postcode": "CB1 2AZ"
+ },
+ {
+  "name": "The Maltings Ely",
+  "aliases": [
+   "maltings ely",
+   "ely maltings",
+   "the maltings, ely"
+  ],
+  "address": "Ship Lane, Ely",
+  "postcode": "CB7 4BB"
+ },
+ {
+  "name": "The Cambridge Union",
+  "aliases": [
+   "cambridge union",
+   "the cambridge union society",
+   "cambridge union society",
+   "the debating chamber, cambridge union"
+  ],
+  "address": "9a Bridge Street, Cambridge",
+  "postcode": "CB2 1UB"
+ },
+ {
+  "name": "The Orator (Cambridge Union)",
+  "aliases": [
+   "the orator",
+   "the orator's cellar",
+   "the orators cellar",
+   "orator's cellar",
+   "the orator's cellars",
+   "the footlight cellars",
+   "footlight cellars",
+   "the orator brasserie & bar",
+   "The Orator’s Cellar",
+   "The Orator’s Cellars",
+   "Orator's Cellars"
+  ],
+  "address": "Round Church Street, Cambridge",
+  "postcode": "CB5 8AD"
+ }
 ]

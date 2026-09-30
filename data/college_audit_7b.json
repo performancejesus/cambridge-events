@@ -1,0 +1,2259 @@
+{
+ "checked": "2026-09-30",
+ "requests": 215,
+ "keenable_calls": 31,
+ "colleges": [
+  {
+   "college": "Christ's",
+   "home": "https://www.christs.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://christs.cam.ac.uk/exhibitions",
+    "https://www.christs.cam.ac.uk/events",
+    "https://christs.cam.ac.uk/student-life/chapel-and-choir",
+    "https://christs.cam.ac.uk/visiting-christs",
+    "https://christs.cam.ac.uk/concerts-and-tours"
+   ],
+   "pages": [
+    {
+     "url": "https://www.christs.cam.ac.uk/events",
+     "result": "ok",
+     "chars": 571,
+     "dates": 6,
+     "future_month_mentions": 4,
+     "feeds": [],
+     "types": [
+      "выпускники"
+     ],
+     "text_head": "| | Skip to main content | | | | | | | | | | | | | | | | | | | | | | | Prospective Students | | Sat 24 Oct 2026 | | Considering Cambridge event | | | | | | 24 October 2026, 10:00 - 17:00 | | Christ's College | | | | | | | Alumni and Friends | | Sat 21 Nov 2026 | | English Alumni Dinner | | | | | | 21 November 2026, 17:30 - 23:00 | | Christ's College | | | | | | | Public | | Thu 22 Apr 2027 | | The Disruptive Stage: Stuart Masques and Court Entertainment | | | | | | 22 April 2027, 09:00 - 18:00 | | Christ's College Cambridge | | | | | | | | | | | | | | | | | | | | |"
+    },
+    {
+     "url": "https://www.christs.cam.ac.uk/about/collegegardens",
+     "result": "ok",
+     "chars": 3434,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "выставки",
+      "сады"
+     ],
+     "text_head": "| | Skip to main content | | | | | | | | | | | | | | | | | Opening Times | Christ’s College, including the Gardens in First, Second and Third Courts and the Darwin Garden, is normally open to visitors between 9:00 and 12:00, 7 days per week. The Fellows’ Garden is open to visitors between 9:00 and 12:00, Mondays to Fridays. | Please note that the College and Gardens are closed during the College’s 'Quiet Period' around exams. Quiet Period usually lasts from mid-April to mid-June. You can download our | summer garden guide | or follow this | garden plan | . | | | Border in Second Court | | | Fi"
+    },
+    {
+     "url": "https://www.christs.cam.ac.uk/visiting-christs",
+     "result": "ok",
+     "chars": 8936,
+     "dates": 20,
+     "future_month_mentions": 24,
+     "feeds": [],
+     "types": [
+      "концерты",
+      "сады",
+      "дни открытых дверей",
+      "библиотека"
+     ],
+     "text_head": "| | Skip to main content | | | | | | | | | | In this section | | | | | | | | | | | | How to get to Christ's | | Self-guided visits to Christ's | | Accommodation in Cambridge | | Sources of food close to Christ's | | | | | | | | | | | | | | | | | | | | For prospective students who can get to Cambridge, we're delighted to offer opportunities to see the College. | | | You will be welcome, whether you walk around the College grounds using our self-guided tour leaflet, or book onto an open day or other event. We also include an online look at the grounds and facilities in our Online College Open Da"
+    },
+    {
+     "url": "https://www.christs.cam.ac.uk/library-plus",
+     "result": "ok",
+     "chars": 3470,
+     "dates": 4,
+     "future_month_mentions": 1,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| | Skip to main content | | | | | | | | | | | | | | | | | Christ’s ambitious Library+ Project, inspired by the historic landscape of the city, will provide a new library, social and study spaces. Alterations to the kitchens, Upper Hall and adjacent areas will include new plant and access improvements as well as a new Servery. | The newly configured space and library will: | provide additional study space and an extended working library including an informal study hub and a multi-faith room. | create an accessible run of buildings which address the needs of disabled people. | help to meet the "
+    },
+    {
+     "url": "https://www.christs.cam.ac.uk/student-life/library-archives/visitors/exhibitions",
+     "result": "ok",
+     "chars": 2086,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "выставки",
+      "библиотека"
+     ],
+     "text_head": "| | Skip to main content | | | | | | | | | | In this section | | | | | | | | | | | | Poetry and Place in Cambridge | | Here be Dragons! Mapping Lands Near & Far | | The Secrets of Life: Scientists, Mathematicians, & the Hunt for Answers | | Liberty in Print: John Locke, Thomas Hollis, and the Christ's College 'Two Treatises of Government' | | The Art of Disruption: Society & the Supernatural | | 'Numerous verse' | | 'The theater of plants' | | Off the beaten track: documenting discovery in the long 19th century | | Women at Christ's | | Christ's and America | | Christ's at War | | Past Masters"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Churchill",
+   "home": "https://www.chu.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://www.chu.cam.ac.uk/news-and-events/churchill-connections-at-the-cambridge-festival-2026/",
+    "https://www.chu.cam.ac.uk/events/",
+    "https://chu.cam.ac.uk/news-and-events/behind-the-scenes-in-summer-at-churchill-college",
+    "https://chu.cam.ac.uk",
+    "https://chu.cam.ac.uk/all-events"
+   ],
+   "pages": [
+    {
+     "url": "https://www.chu.cam.ac.uk/events/",
+     "result": "ok",
+     "chars": 2033,
+     "dates": 3,
+     "future_month_mentions": 5,
+     "feeds": [
+      "JSON-LD Event ×7",
+      "RSS https://www.chu.cam.ac.uk/comments/feed/",
+      "RSS https://www.chu.cam.ac.uk/events/feed/",
+      "RSS https://www.chu.cam.ac.uk/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/comments/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/events/?ical=1"
+     ],
+     "types": [
+      "лекции",
+      "выставки",
+      "выпускники"
+     ],
+     "text_head": "| | | | | | | | | | | | | | | | | | | 7 events found. | | | | | | | | | | | | | | October 2026 | | | | | | | Thu | | 8 | | | | | | | | | | | | Hamburger Bahnhof – National Gallery of Contemporary Art Invalidenstraße 50, 10557 Berlin, Germany Join fellow alumni and friends of Churchill College in Berlin on 8 October 2026. The gathering will […] | | | | | | | | | | Mon | | 12 | | | | | | | | | | | | An evening of discussion, collaboration and networking, including the launch of the Water Living Lab for Greater Cambridge. How can Cambridgeshire secure a thriving future in the face of growing […] "
+    },
+    {
+     "url": "https://www.chu.cam.ac.uk/conferencing-events/",
+     "result": "ok",
+     "chars": 2752,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [
+      "RSS https://www.chu.cam.ac.uk/comments/feed/",
+      "RSS https://www.chu.cam.ac.uk/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/comments/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/events/?ical=1",
+      "iCal/feed https://www.chu.cam.ac.uk/feed/"
+     ],
+     "types": [],
+     "text_head": "| | | Skip to content | | | | | | | Conferences & Events | | | | | | | | | Churchill College has a 50-year history in delivering outstanding meetings, conferences, events and dining experiences | | | | | | Home to a wide variety of accommodation, dining, meeting and events facilities, Churchill College has a 50-year history in catering for bespoke meetings, conferences, events and dining — with full accommodation facilities set among the picturesque parkland of one of the largest Cambridge campuses. | | Churchill College provides a unique collegiate atmosphere just outside of the city centre. "
+    },
+    {
+     "url": "https://www.chu.cam.ac.uk/events/list/",
+     "result": "ok",
+     "chars": 2011,
+     "dates": 3,
+     "future_month_mentions": 5,
+     "feeds": [
+      "JSON-LD Event ×7",
+      "RSS https://www.chu.cam.ac.uk/comments/feed/",
+      "RSS https://www.chu.cam.ac.uk/events/feed/",
+      "RSS https://www.chu.cam.ac.uk/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/comments/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/events/?ical=1"
+     ],
+     "types": [
+      "лекции",
+      "выставки",
+      "выпускники"
+     ],
+     "text_head": "| | | | | | | | 7 events found. | | | | | | | | | | | | | | October 2026 | | | | | | | Thu | | 8 | | | | | | | | | | | | Hamburger Bahnhof – National Gallery of Contemporary Art Invalidenstraße 50, 10557 Berlin, Germany Join fellow alumni and friends of Churchill College in Berlin on 8 October 2026. The gathering will […] | | | | | | | | | | Mon | | 12 | | | | | | | | | | | | An evening of discussion, collaboration and networking, including the launch of the Water Living Lab for Greater Cambridge. How can Cambridgeshire secure a thriving future in the face of growing […] | | | | | | | | | | Th"
+    },
+    {
+     "url": "https://www.chu.cam.ac.uk/conferencing-events/events-price-guide-and-contact-form/",
+     "result": "ok",
+     "chars": 4720,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [
+      "RSS https://www.chu.cam.ac.uk/comments/feed/",
+      "RSS https://www.chu.cam.ac.uk/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/comments/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/events/?ical=1",
+      "iCal/feed https://www.chu.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "лекции",
+      "концерты",
+      "сады"
+     ],
+     "text_head": "| | | Skip to content | | | | | | | Events price guide | | | | | | | | Our adaptable nature and personal approach is at the centre of our service. | | | | | | We know that all of our clients and their individual requirements vary hugely, so we don’t take a one-size-fits-all approach. | | Our facilities and resources are highly adaptable — and we love working with clients to build a package that fulfils all their needs. | | To arrange a viewing or discuss your dining, conference, meeting or event requirements, simply | get in touch | . Prices below are for guidance and exclude VAT. | | | | | | "
+    },
+    {
+     "url": "https://www.chu.cam.ac.uk/news-and-events/churchill-connections-at-the-cambridge-festival-2026/",
+     "result": "ok",
+     "chars": 5187,
+     "dates": 10,
+     "future_month_mentions": 0,
+     "feeds": [
+      "RSS https://www.chu.cam.ac.uk/comments/feed/",
+      "RSS https://www.chu.cam.ac.uk/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/comments/feed/",
+      "iCal/feed https://www.chu.cam.ac.uk/events/?ical=1",
+      "iCal/feed https://www.chu.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "лекции",
+      "концерты"
+     ],
+     "text_head": "| | | | | Skip to content | | | View main News page | Churchill Connections at the Cambridge Festival 2026 | | February 25, 2026 | | | | The 2026 interdisciplinary | Cambridge Festival | will take place from the 16 March to the 2 April with a mixture of online, on-demand and in-person events covering all aspects of the world-leading research happening at Cambridge. | | Once again, we’ve scoured the programme to highlight events featuring Churchill College connections; from Churchill Fellows to the annual Alex Hopkins lecture. | | All these events are free to attend but booking is often require"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S150": 1
+    },
+    "examples": [
+     "2026-09-30 Agile Cambridge 2026",
+     "2026-11-07 Sonic Tapestries: music by Judith Weir & Unsuk Chin | Cambri"
+    ]
+   }
+  },
+  {
+   "college": "Clare",
+   "home": "https://www.clare.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://stories.clare.cam.ac.uk/700anniversary",
+    "https://clare.cam.ac.uk/Site-map"
+   ],
+   "pages": [
+    {
+     "url": "https://www.clare.cam.ac.uk/alumni/events",
+     "result": "ok",
+     "chars": 1414,
+     "dates": 3,
+     "future_month_mentions": 3,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Throughout the year the college runs a number of events for our alumni. | An opportunity to reconnect and share stories of life in and after college. | | | | | | | | | | | | | | | | 700th Anniversary Events Programme | | | A year-long programme of events has been planned to mark the College's 700th anniversary in 2026. With evensongs, distinguished lectures and celebration events, we hope there is something for everyone. | | | | | | | | | | | | | 700th Anniversary Lecture by Professor Henry Louis ('S"
+    },
+    {
+     "url": "https://www.clare.cam.ac.uk/gardens",
+     "result": "ok",
+     "chars": 952,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Welcome to Clare College Gardens | | | | Set in the heart of the city, Clare's stunning gardens provide a natural oasis of calm. Our gardens are one of the most loved features of the College and we hope they can be enjoyed by all members of our community, providing a tranquil setting for socialising, studying, and events. | Alumni and prospective applicants are welcome to visit the gardens when they are open to the college community. | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |"
+    },
+    {
+     "url": "https://www.clare.cam.ac.uk/visit-clare",
+     "result": "ok",
+     "chars": 2380,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | The College welcomes visits from prospective applicants and alumni. If you are visiting, please stop by the Porters' Lodge in Old Court or Memorial Court and let the Porter know that you are here. | | | | | | | | | | | Find Us | | | | | | | | | | | | | The College has facilities spread across three sites. The main site, Old Court, is located on Trinity Lane. From here, the Avenue leads you across the river and over to Memorial Court. Castle Court is located on Chesterton Road, a few minutes cycle or "
+    },
+    {
+     "url": "https://www.clare.cam.ac.uk/library-archives",
+     "result": "ok",
+     "chars": 1394,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Home to a rich collection of books and manuscripts serving our community | | | | The Forbes Mellon Library is the hub of academic study for the student community at Clare. The Fellows’ Library holds the College’s rare book and manuscript collections, and the College Archives documents all aspects of the administration and life of the College. | | | | | | | | | | | | | | | | Forbes Mellon Library | | | The Forbes Mellon Library is the hub of academic study for Clare’s student community | | | | | | | |"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S048": 1,
+     "S150": 1
+    },
+    "examples": [
+     "2026-10-17 Continuum | Renewal",
+     "2026-10-16 Sir Granville Bantock’s 80th Anniversary Concert"
+    ]
+   }
+  },
+  {
+   "college": "Clare Hall",
+   "home": "https://www.clarehall.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://www.clarehall.cam.ac.uk/newsletter-events-at-clare-hall/"
+   ],
+   "pages": [
+    {
+     "url": "https://www.clarehall.cam.ac.uk/events/",
+     "result": "ok",
+     "chars": 8085,
+     "dates": 25,
+     "future_month_mentions": 16,
+     "feeds": [
+      "RSS https://www.clarehall.cam.ac.uk/feed/",
+      "iCal/feed https://www.clarehall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "лекции",
+      "дни открытых дверей",
+      "службы",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | Skip to footer | | | | | | | | Events | | | | | View schedule | | | | | View grid | | | | | | | All | | Art | | Clubs and societies | | GSB | | Industry and Enterprise Programme | | Lectures and talks | | Members' events | | Music | | University events | | Wellbeing | | Archive | | | | | All | | Music | | Art | | Lectures and talks | | University events | | Wellbeing | | Members’ events | | Clubs and societies | | GSB | | Industry and Enterprise Programme | | | | | | | | | | | | | | September 2026 | | | | | | | | | | | | | The Bell Collection of British Studio Potter"
+    },
+    {
+     "url": "https://www.clarehall.cam.ac.uk/news/other-than-words-new-exhibition-opens-at-clare-hall/",
+     "result": "ok",
+     "chars": 5015,
+     "dates": 2,
+     "future_month_mentions": 1,
+     "feeds": [
+      "RSS https://www.clarehall.cam.ac.uk/feed/",
+      "iCal/feed https://www.clarehall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "выставки"
+     ],
+     "text_head": "| Skip to main content | | Skip to footer | | | | | | Clare Hall was delighted to host the opening of its latest art exhibition, | Other than Words: A Sense of Release in the Presence of Art | , on Thursday 24 September. | | | | The preview drew a wonderful turnout, with Clare Hall members and guests enjoying the opportunity to explore the colourful collection of recent paintings by artist Jerry Scott and spend time together over the course of the evening. | | The evening opened with a welcome speech by | Professor Frances Spalding | , Chair of the Art Committee, and | Dr Lucia Tantardini | , "
+    },
+    {
+     "url": "https://www.clarehall.cam.ac.uk/events-category/lectures-and-talks/",
+     "result": "ok",
+     "chars": 6800,
+     "dates": 11,
+     "future_month_mentions": 5,
+     "feeds": [
+      "RSS https://www.clarehall.cam.ac.uk/feed/",
+      "iCal/feed https://www.clarehall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "лекции",
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | Skip to footer | | | | | | | | Events | | | | | View schedule | | | | | View grid | | | | | | | All | | Art | | Clubs and societies | | GSB | | Industry and Enterprise Programme | | Lectures and talks | | Members' events | | Music | | University events | | Wellbeing | | Archive | | | | | All | | Music | | Art | | Lectures and talks | | University events | | Wellbeing | | Members’ events | | Clubs and societies | | GSB | | Industry and Enterprise Programme | | | | | | | | | | | | | | September 2026 | | | | | | | | | | | | | English Literature SIG: Gill Hornby | | | Th"
+    },
+    {
+     "url": "https://www.clarehall.cam.ac.uk/music/",
+     "result": "ok",
+     "chars": 14570,
+     "dates": 21,
+     "future_month_mentions": 7,
+     "feeds": [
+      "RSS https://www.clarehall.cam.ac.uk/feed/",
+      "iCal/feed https://www.clarehall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "лекции",
+      "концерты",
+      "службы",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | Skip to footer | | | | | Music at Clare Hall | | | | | View all of our 2026-2027 concerts and book your tickets here | 🎫 | | | | | | Find the upcoming music performances on our | events page | . | | | | The College’s Music Committee plans a rich range of concerts across the year. Concerts are planned by individual members of the Committee and typically take place on Saturday or Sunday evenings. We offer performances and lectures of all kinds of music by top musicians, from folk and world music to classical and baroque. | | Drawing from a small rolling budget, which i"
+    },
+    {
+     "url": "https://www.clarehall.cam.ac.uk/newsletter-events-at-clare-hall/",
+     "result": "ok",
+     "chars": 19917,
+     "dates": 53,
+     "future_month_mentions": 45,
+     "feeds": [
+      "RSS https://www.clarehall.cam.ac.uk/feed/",
+      "iCal/feed https://www.clarehall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "лекции",
+      "концерты",
+      "выставки",
+      "сады",
+      "службы"
+     ],
+     "text_head": "| Skip to main content | | Skip to footer | | | | | | Dear Clare Hall members and friends, | | Please find below a list of events taking place this week and beyond, to which you are warmly invited. | | | | Contents | | | hide | | | | | | | ➢ Members’ events | | | | | Clare Hall Through Your Lens: Seasonal Photography Competition | Monday 16 February – Monday 2 November 2026 | | | | | New Clare Hall Books | Pre-order now! | | | | | ➢ Lectures and talks | | | | | IEP Talk: Learning from Failure at Work | Wednesday 30 September 2026, 6pm | | | | | Clare Hall Colloquia | Tuesday 13 October – Tuesd"
+    }
+   ],
+   "db": {
+    "past_60": 1,
+    "next_60": 2,
+    "sources": {
+     "S048": 1,
+     "S150": 2
+    },
+    "examples": [
+     "2026-10-31 Oktay Üst: Folk Songs of the Black Sea and Turkish Anatolia",
+     "2026-11-14 Fitzwilliam String Quartet: Haydn, Nigel Osborne, Schumann P"
+    ]
+   }
+  },
+  {
+   "college": "Corpus Christi",
+   "home": "https://www.corpus.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://www.corpus.cam.ac.uk/events",
+    "https://corpus.cam.ac.uk/quick-links/event-booking"
+   ],
+   "pages": [
+    {
+     "url": "https://www.corpus.cam.ac.uk/events",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://www.corpus.cam.ac.uk/parker-library/collections/exhibitions",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://www.corpus.cam.ac.uk/conferences/conference-rooms/mccrum-lecture-theatre",
+     "result": "HTTP 307 https://www.corpus.cam.ac.uk/conferences/conference-rooms/mccrum-lectur"
+    },
+    {
+     "url": "https://www.corpus.cam.ac.uk/about/sustainability-corpus/grounds-and-gardens",
+     "result": "ok",
+     "chars": 5062,
+     "dates": 0,
+     "future_month_mentions": 1,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "сады"
+     ],
+     "text_head": "| | | | | Skip to main content | | | | | | | | | | | | | | | | | | Home | | | | About | | | | Sustainability at Corpus | | | Grounds and Gardens | | | | | | Grounds and Gardens | | The gardens at Leckhampton are a year-round delight for both people and wildlife. The gardening team continue to improve the planting and management of the gardens to create a peaceful place for students, staff and Fellows, and to encourage wildlife to thrive. The video below shows the gardens at Leckhampton through years and across the seasons. | | | | Embedded content cannot be viewed within this site unless you |"
+    },
+    {
+     "url": "https://corpus.cam.ac.uk/quick-links/event-booking",
+     "result": "HTTP 307 https://corpus.cam.ac.uk/quick-links/event-booking"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S150": 1
+    },
+    "examples": [
+     "2026-10-18 Creative Street Photography Talk with Matt Hall - CPS 26 Tal",
+     "2026-11-14 Traumlicht: Choral works of the German Romantics"
+    ]
+   }
+  },
+  {
+   "college": "Darwin",
+   "home": "https://www.darwin.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://darwin.cam.ac.uk/?s=Events",
+    "https://darwin.cam.ac.uk/?s=Lectures",
+    "https://darwin.cam.ac.uk/?s=Calendar",
+    "https://darwin.cam.ac.uk/?page=1",
+    "http://darwin.cam.ac.uk/lectures"
+   ],
+   "pages": [
+    {
+     "url": "https://www.darwin.cam.ac.uk/events/",
+     "result": "ok",
+     "chars": 1244,
+     "dates": 3,
+     "future_month_mentions": 3,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "выпускники"
+     ],
+     "text_head": "| | | | | | Home | | | Upcoming Events | | We look forward to welcoming you to one of the events below. | Full details of alumni events, both in Cambridge and internationally, can be found on our Alumni pages. | | | | | | | | Erasmus Seminar: From cowrie shells to crypto-assets: a very short history of money | | | 14 October, 2026 - Bradfield Room, Darwin College | | We are delighted to announce that the 13th Erasmus Seminar will be given by Dr Duncan Needham, at 6pm on Wednesday 14th October. Duncan will give a 40-minute talk, following which there will be a Q/A session. Duncan will be... | |"
+    },
+    {
+     "url": "https://www.darwin.cam.ac.uk/lectures/category/item/2026-lecture-series-song/",
+     "result": "ok",
+     "chars": 1863,
+     "dates": 8,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "лекции"
+     ],
+     "text_head": "| | | | | | Home | | | | | Lecture Series | | Showing lectures filtered by category. | | | | | | | | | | | | | | | | | Notes and Noises in Nature: Not a Swan Song? | | | Professor Hans Slabbekoorn | | University of Leiden | | 5.30pm, Friday 23rd January 2026 | | | | | | | | | Throat-Singing: Body, Spirit, Pathways, Place | | | Dr Carole Pegg | | University of Cambridge | | 5.30pm, Friday 30th January 2026 | | | | | | | | | Songs We Grow By | | | Dr Ibrahim Baltagi | | Lebanese American University | | 5.30pm, Friday 6th February 2026 | | | | | | | | | Song in the Ancient World: Echoes of Religi"
+    },
+    {
+     "url": "http://darwin.cam.ac.uk/lectures",
+     "result": "robots.txt запрещает"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Downing",
+   "home": "https://www.dow.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://dow.cam.ac.uk/node?page=2",
+    "https://dow.cam.ac.uk/about/events",
+    "https://dow.cam.ac.uk/sites/default/files/Downing%20MCR%20Freshers%20-%20Welcome%20Information%202025_0.pdf"
+   ],
+   "pages": [
+    {
+     "url": "https://www.dow.cam.ac.uk/about/events",
+     "result": "ok",
+     "chars": 623,
+     "dates": 4,
+     "future_month_mentions": 4,
+     "feeds": [],
+     "types": [
+      "лекции"
+     ],
+     "text_head": "| | | | Skip to main content | | | | | | | | | | | | | Events | | View the full College Events Calendar | | | | | | | | | | Home | | | About | | Events | | | | | | | | | | | | | | | | | | | | | | | | Tuesday 20 October 2026 | | Howard Foundation Lecture: Professor Frank Salmon | | | | | | | | | | | | Saturday 7 November 2026 | | Downing College Association Football Club Dinner | | | | | | | | | | | | Saturday 14 November 2026 | | The Long Club Dinner | | | | | | | | | | | | Thursday 3 December 2026 | | Advent Carol Service and Reception 2026 | | | | | | | | | | | | | | | | | | | | | | | | | | "
+    },
+    {
+     "url": "https://www.dow.cam.ac.uk/about/college-gardens",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://www.dow.cam.ac.uk/widening-participation/visit-days",
+     "result": "HTTP 307 https://www.dow.cam.ac.uk/widening-participation/visit-days"
+    },
+    {
+     "url": "https://www.dow.cam.ac.uk/creative-arts/music-downing",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://dow.cam.ac.uk/about/events",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Emmanuel",
+   "home": "https://www.emma.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 404,
+   "search_hits": [
+    "https://emma.cam.ac.uk/members/events"
+   ],
+   "pages": [
+    {
+     "url": "https://www.emma.cam.ac.uk/schools/events",
+     "result": "ok",
+     "chars": 3039,
+     "dates": 1,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады",
+      "дни открытых дверей"
+     ],
+     "text_head": "Admissions | Undergraduates | Why Choose Emmanuel? | Subjects | Application Process | Fees + Living Costs | Accommodation | Open Days | Interviews | Admissions Policy | Postgraduates | Join Us | Funding | Accommodation | Schools | Our Outreach | Upcoming Events | Past Events | Explore | Studying with Us | Living at Emmanuel | Emma Experience | The College Chapel | Our Gardens | The Library | History of the College | News + Features | Towards 450 | People | Directory | Academic Vacancies | Herchel Smith Scholarships | Research Associates | Research Fellowships | Non–Academic Vacancies | Current"
+    },
+    {
+     "url": "https://www.emma.cam.ac.uk/members/events",
+     "result": "ok",
+     "chars": 5380,
+     "dates": 11,
+     "future_month_mentions": 9,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "концерты",
+      "выставки",
+      "сады",
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "Admissions | Undergraduates | Why Choose Emmanuel? | Subjects | Application Process | Fees + Living Costs | Accommodation | Open Days | Interviews | Admissions Policy | Postgraduates | Join Us | Funding | Accommodation | Schools | Our Outreach | Upcoming Events | Past Events | Explore | Studying with Us | Living at Emmanuel | Emma Experience | The College Chapel | Our Gardens | The Library | History of the College | News + Features | Towards 450 | People | Directory | Academic Vacancies | Herchel Smith Scholarships | Research Associates | Research Fellowships | Non–Academic Vacancies | Current"
+    },
+    {
+     "url": "https://www.emma.cam.ac.uk/explore/gardens",
+     "result": "ok",
+     "chars": 10736,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады",
+      "дни открытых дверей"
+     ],
+     "text_head": "Admissions | Undergraduates | Why Choose Emmanuel? | Subjects | Application Process | Fees + Living Costs | Accommodation | Open Days | Interviews | Admissions Policy | Postgraduates | Join Us | Funding | Accommodation | Schools | Our Outreach | Upcoming Events | Past Events | Explore | Studying with Us | Living at Emmanuel | Emma Experience | The College Chapel | Our Gardens | The Library | History of the College | News + Features | Towards 450 | People | Directory | Academic Vacancies | Herchel Smith Scholarships | Research Associates | Research Fellowships | Non–Academic Vacancies | Current"
+    },
+    {
+     "url": "https://www.emma.cam.ac.uk/explore/library",
+     "result": "ok",
+     "chars": 5894,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "сады",
+      "дни открытых дверей",
+      "библиотека"
+     ],
+     "text_head": "Admissions | Undergraduates | Why Choose Emmanuel? | Subjects | Application Process | Fees + Living Costs | Accommodation | Open Days | Interviews | Admissions Policy | Postgraduates | Join Us | Funding | Accommodation | Schools | Our Outreach | Upcoming Events | Past Events | Explore | Studying with Us | Living at Emmanuel | Emma Experience | The College Chapel | Our Gardens | The Library | History of the College | News + Features | Towards 450 | People | Directory | Academic Vacancies | Herchel Smith Scholarships | Research Associates | Research Fellowships | Non–Academic Vacancies | Current"
+    },
+    {
+     "url": "https://emma.cam.ac.uk/members/events",
+     "result": "robots.txt запрещает"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 6,
+    "sources": {
+     "S048": 1,
+     "S150": 5
+    },
+    "examples": [
+     "2026-10-12 Cambridge Schola: Vespers at Emmanuel",
+     "2026-10-20 ECMS Lunchtime Recital",
+     "2026-10-27 ECMS Lunchtime Recital",
+     "2026-11-03 ECMS Lunchtime Recital",
+     "2026-11-10 ECMS Lunchtime Recital",
+     "2026-11-24 ECMS: Lunchtime Recital"
+    ]
+   }
+  },
+  {
+   "college": "Fitzwilliam",
+   "home": "https://www.fitz.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://fitz.cam.ac.uk/listing/whats-on",
+    "https://mcr.fitz.cam.ac.uk/overview",
+    "https://fitz.cam.ac.uk"
+   ],
+   "pages": [
+    {
+     "url": "https://www.fitz.cam.ac.uk/listing/whats-on",
+     "result": "ok",
+     "chars": 614,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | What's On | | | | This page lists all publicly advertised events at Fitz. Some are for schools or those thinking about applying to study in Cambridge, some are for current students or alumni, and lots are open to the public. You can filter events using the buttons below. Some events - especially public talks - make use of a booking system, details of which you can find listed on the event itself. If you would like to learn more about the accessibility of our College site, please consult our Accessable site here. | | | | | | | | | | | | | |"
+    },
+    {
+     "url": "https://www.fitz.cam.ac.uk/gardens",
+     "result": "ok",
+     "chars": 5959,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "выставки",
+      "сады"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | The Fitzwilliam Gardens | | | | For many, Cambridge colleges mean expansive lawns and rather forbidding notices. That isn't the case at Fitz. While we do have a number of beautiful lawns (which you can walk on!), we get most excited about our borders, our potager and the cultivation of interesting plants. | Throughout the seasons, Fitz changes the form and function of our gardens. In autumn, we harvest pumpkins and squash, in spring we enjoy the explosion of green from our extensive trees, and in s"
+    },
+    {
+     "url": "https://www.fitz.cam.ac.uk/visit-fitz",
+     "result": "ok",
+     "chars": 989,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Visit Fitzwilliam | | | | Whether you are thinking of applying, whether you're looking for a venue for your event, or maybe you're meeting a colleague, Fitz is always open to visitors. Below you can find resources on how to make the most of your visit. | | | | | | | | | | | | | | | | | | | | | | | | | | | | Maps and Transport | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Food & Drink | | | | | | | | | | | | | | | | | | | | | | | | | | | | | What's On | | | | | | | | | | | | | | | | | | "
+    },
+    {
+     "url": "https://www.fitz.cam.ac.uk/schools-and-visits",
+     "result": "ok",
+     "chars": 3105,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Organise a visit | | | | One of the easiest ways to learn more about life at university is to come and visit us, or book a visit from our team to your school. On this page you can learn more about how visits work, how you can tailor one to your specific needs, and how to help pupils make the most of the experience. | Visits to Fitzwilliam | At Fitzwilliam College, we welcome visits from schools across the UK, especially those from our link areas of Cheshire, Cumbria, Fulham, and Hammersmith. We hig"
+    },
+    {
+     "url": "https://www.fitz.cam.ac.uk/listing/whats-on",
+     "result": "ok",
+     "chars": 614,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | What's On | | | | This page lists all publicly advertised events at Fitz. Some are for schools or those thinking about applying to study in Cambridge, some are for current students or alumni, and lots are open to the public. You can filter events using the buttons below. Some events - especially public talks - make use of a booking system, details of which you can find listed on the event itself. If you would like to learn more about the accessibility of our College site, please consult our Accessable site here. | | | | | | | | | | | | | |"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Girton",
+   "home": "https://www.girton.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "http://girton.cam.ac.uk/upcoming-events",
+    "https://girton.cam.ac.uk/events-archive?page=1",
+    "https://girton.cam.ac.uk/news/glastonburys-got-nothing-girton-festival-ideas-and-inspiration-mark-150-years",
+    "https://girton.cam.ac.uk/events/end-great-campaign-celebration",
+    "https://girton.cam.ac.uk/undergraduates/widening-participation-outreach/upcoming-outreach-events"
+   ],
+   "pages": [
+    {
+     "url": "https://www.girton.cam.ac.uk/about-girton/buildings-gardens-grounds",
+     "result": "ok",
+     "chars": 7278,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| | | | Skip to main content | | | | | | | | | Buildings, gardens & grounds | | Inspirational surroundings fostering creativity and academic success | | | | | | | | | | | | | Our location | | The College is located on two sites to the north-west of the city centre. The main site is wonderfully spacious, occupying 50 acres of beautiful gardens and grounds, which range in character from formal planting to natural woodlands. Swirles Court, a purpose built postgraduate complex, is a short walk or cycle from the main site, in a set of stunning and spacious new buildings in the University’s fast-gro"
+    },
+    {
+     "url": "https://www.girton.cam.ac.uk/upcoming-events",
+     "result": "ok",
+     "chars": 1250,
+     "dates": 12,
+     "future_month_mentions": 12,
+     "feeds": [],
+     "types": [
+      "концерты",
+      "службы",
+      "выпускники"
+     ],
+     "text_head": "| | | | Skip to main content | | | | | | | | | Upcoming Events | | Stay up-to-date with what's on at Girton | | | | | | | | | | View events archive | | | | | | | 08 Oct | 2026 | | | Recent Graduate Drinks in London | | Vinegar Yard, London, SE1 3QX | | | | | | 11 Oct | 2026 | | | Introductory Evensong: Is Religion Worth Any Attention? | | Chapel | | | | | | 18 Oct | 2026 | | | Brass in Motion - Celebrating 200 years of passenger rail | | Stanley Library | | | | | | 18 Oct | 2026 | | | Curious Attention: a path to hope in an angry world? | | Chapel | | | | | | 22 Oct | 2026 | | | Girton College"
+    },
+    {
+     "url": "https://www.girton.cam.ac.uk/library-archive",
+     "result": "ok",
+     "chars": 2822,
+     "dates": 10,
+     "future_month_mentions": 6,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | Skip to main content | | | | | | | Library & Archive | | Girton has one of the largest and most comprehensive College libraries in the University, holding in the region of 95,000 books | | | | | | | | | | The 1930s building of the Library, with its awe-inspiring vaulted timber ceiling, was complemented in 2005 by a multi-award-winning extension. This created a spacious IT resources area and a state-of-the-art repository to house the Archive and the Special Collections. These collections range from rare Sanskrit manuscripts to gifts of books from Girton’s most notable early supporters s"
+    },
+    {
+     "url": "https://www.girton.cam.ac.uk/art-artefacts",
+     "result": "ok",
+     "chars": 1497,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | Skip to main content | | | | | | | Art & artefacts | | You will encounter works of art wherever you go in Girton | | | | | | | | | | | | The College has enjoyed a strong involvement with the arts throughout its history | | | | From the support of the Pre-Raphaelite brotherhood at its foundation, through to its partnership with the Royal Society of Portrait Painters today. | The long corridors and public rooms are hung with paintings, and there are many sculptures. The range is broad, and you will find works from the fourteenth century through to the twenty-first – for example, works by"
+    },
+    {
+     "url": "https://www.girton.cam.ac.uk/upcoming-events",
+     "result": "ok",
+     "chars": 1250,
+     "dates": 12,
+     "future_month_mentions": 12,
+     "feeds": [],
+     "types": [
+      "концерты",
+      "службы",
+      "выпускники"
+     ],
+     "text_head": "| | | | Skip to main content | | | | | | | | | Upcoming Events | | Stay up-to-date with what's on at Girton | | | | | | | | | | View events archive | | | | | | | 08 Oct | 2026 | | | Recent Graduate Drinks in London | | Vinegar Yard, London, SE1 3QX | | | | | | 11 Oct | 2026 | | | Introductory Evensong: Is Religion Worth Any Attention? | | Chapel | | | | | | 18 Oct | 2026 | | | Brass in Motion - Celebrating 200 years of passenger rail | | Stanley Library | | | | | | 18 Oct | 2026 | | | Curious Attention: a path to hope in an angry world? | | Chapel | | | | | | 22 Oct | 2026 | | | Girton College"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S150": 1
+    },
+    "examples": [
+     "2026-11-18 Cambridge Jazz Festival | Girton Jazz presents ‘Kind Of Blue"
+    ]
+   }
+  },
+  {
+   "college": "Gonville & Caius",
+   "home": "https://www.cai.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://cai.cam.ac.uk/alumni/events"
+   ],
+   "pages": [
+    {
+     "url": "https://www.cai.cam.ac.uk/alumni/events",
+     "result": "HTTP 307 https://www.cai.cam.ac.uk/alumni/events"
+    },
+    {
+     "url": "https://www.cai.cam.ac.uk/living-here/facilities/gardens",
+     "result": "HTTP 307 https://www.cai.cam.ac.uk/living-here/facilities/gardens"
+    },
+    {
+     "url": "https://www.cai.cam.ac.uk/discover/library/online-exhibitions",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://www.cai.cam.ac.uk/access-outreach/resources-and-events/fellows-talks-and-lectures",
+     "result": "HTTP 307 https://www.cai.cam.ac.uk/access-outreach/resources-and-events/fellows-"
+    },
+    {
+     "url": "https://cai.cam.ac.uk/alumni/events",
+     "result": "HTTP 307 https://cai.cam.ac.uk/alumni/events"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Homerton",
+   "home": "https://www.homerton.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://homerton.cam.ac.uk/",
+    "https://homerton.cam.ac.uk/current-members/events",
+    "https://www.homerton.cam.ac.uk/homerton-conference-events",
+    "https://homerton.cam.ac.uk/sites/default/files/Homerton-College-Part-A-September-2024.pdf",
+    "https://homerton.cam.ac.uk/study-here/undergraduate-study/open-days-events-and-visits"
+   ],
+   "pages": [
+    {
+     "url": "https://www.homerton.cam.ac.uk/current-members/events",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://www.homerton.cam.ac.uk/homerton-life/kate-pretty-lectures",
+     "result": "HTTP 307 https://www.homerton.cam.ac.uk/homerton-life/kate-pretty-lectures"
+    },
+    {
+     "url": "https://www.homerton.cam.ac.uk/homersphere/homerton-gardens",
+     "result": "ok",
+     "chars": 443,
+     "dates": 2,
+     "future_month_mentions": 1,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| | | | Skip to main content | | | | | | | | | | | | | | | | | | | Homerton Gardens | | | | | | | | | | | | | | | | | | | | | | | | Homerton Gardens | | | | | 03 March 2026 | | | Daffodils | | | | | 1 min read | | | Daffodils | | | | | | | | | | | | | Homerton Gardens | | | | | 10 October 2025 | | | Trees | | | | | 1 min read | | | Trees | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |"
+    },
+    {
+     "url": "https://www.homerton.cam.ac.uk/about-us/homerton-gardens",
+     "result": "HTTP 307 https://www.homerton.cam.ac.uk/about-us/homerton-gardens"
+    },
+    {
+     "url": "https://homerton.cam.ac.uk/current-members/events",
+     "result": "HTTP 307 https://homerton.cam.ac.uk/current-members/events"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S008": 1
+    },
+    "examples": [
+     "2026-11-14 The Rise Leaders Rise Summit 2026"
+    ]
+   }
+  },
+  {
+   "college": "Hughes Hall",
+   "home": "https://www.hughes.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://hughes.cam.ac.uk/life-at-hughes/events",
+    "https://www.hughes.cam.ac.uk/about/news/category/events/",
+    "https://hughes.cam.ac.uk/about/events/page/2",
+    "https://hughes.cam.ac.uk/about/events/alumni-festival-2026",
+    "https://hughes.cam.ac.uk/applying/life-at-hughes"
+   ],
+   "pages": [
+    {
+     "url": "https://www.hughes.cam.ac.uk/about/events/",
+     "result": "ok",
+     "chars": 2531,
+     "dates": 12,
+     "future_month_mentions": 12,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "выпускники"
+     ],
+     "text_head": "| | | +44 (0)1223 330484 | | | enquiries@hughes.cam.ac.uk | | | | | | | | | Home | | About | | Events | | | Hughes Events | | | | | | | | | | | | Filter by category | | | | Alumni | | Bridge | | Academic | | Postdoc | | Pathways | | Open to all | | seniors | | | | | | | | | | | | | | | | | | Researchers’ monthly brunches | | October 11, 2026 11:30 am | | A chance for our research community from Hughes Hall to meet and catch up with each other over Sunday brunch, in a relaxed informal atmosphere. | | | | | | | | | | | | College Co-Work | | October 12, 2026 2:30 pm | | Join other college members"
+    },
+    {
+     "url": "https://www.hughes.cam.ac.uk/contact/visit-us/",
+     "result": "ok",
+     "chars": 4984,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| | | +44 (0)1223 330484 | | | enquiries@hughes.cam.ac.uk | | | | | | | | | Home | | Contact | | Visit us | | | Visit us | | | | | | | | | | Scholarly calm in the heart of Cambridge | | Hughes Hall is located right in the heart of Cambridge, halfway between the railway station and the market square. Our main site is a quiet and secluded group of buildings clustered around the University cricket ground, on the edge of the old centre of Cambridge. Just around the corner is Mill Road, famous for its cosmopolitan atmosphere and many shops and cafés. Nearby is Regent Street, a commercial centre and"
+    },
+    {
+     "url": "https://www.hughes.cam.ac.uk/applying/open-days-and-visits/",
+     "result": "ok",
+     "chars": 8013,
+     "dates": 5,
+     "future_month_mentions": 2,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| | | +44 (0)1223 330484 | | | enquiries@hughes.cam.ac.uk | | | | | | | | | Home | | Applying | | Open days and outreach | | | Open days and outreach | | | | | | | | | | | | A welcoming community, full of brilliant people doing brilliant things. | | There are many ways to find out more about Hughes Hall and about applying to Cambridge – explore our website, book a visit, join a webinar or give us a call. | | Below you can watch our main College video, take a virtual video tour, hear from 14 Hughes Hall students about their own experiences, and see interviews with our researchers on their work "
+    },
+    {
+     "url": "https://www.hughes.cam.ac.uk/student-centre/practical/music/",
+     "result": "ok",
+     "chars": 7089,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "концерты",
+      "выпускники"
+     ],
+     "text_head": "| | | +44 (0)1223 330484 | | | enquiries@hughes.cam.ac.uk | | | | | | | | | Home | | Student Centre | | Practical | | Music at Hughes | | | Music at Hughes | | | | | | | | | | A full and varied College music programme. | | We warmly invite our whole community to get involved…singing, playing, supporting, enjoying… | | Hughes Hall is a diverse academic and social community, and this is reflected in the wide variety of musical activities and events that take place over the course of the academic year. Music should be entertaining, stimulating, rewarding and, above all, enjoyable and, with this i"
+    },
+    {
+     "url": "https://hughes.cam.ac.uk/life-at-hughes/events",
+     "result": "HTTP 404 https://hughes.cam.ac.uk/life-at-hughes/events"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S150": 1
+    },
+    "examples": [
+     "2026-11-16 Cornerstones"
+    ]
+   }
+  },
+  {
+   "college": "Jesus",
+   "home": "https://www.jesus.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://jesus.cam.ac.uk/research/global/global-cultures",
+    "https://jesus.cam.ac.uk/college/life-jesus/arts-music-sports-and-societies/arts-and-drama",
+    "https://jesus.cam.ac.uk/college/events",
+    "https://jesus.cam.ac.uk",
+    "https://jesus.cam.ac.uk/events/john-hughes-arts-festival-2026-symbiosis"
+   ],
+   "pages": [
+    {
+     "url": "https://jesus.cam.ac.uk/college/life-jesus/arts-music-sports-and-societies/arts-and-drama",
+     "result": "HTTP 307 https://jesus.cam.ac.uk/college/life-jesus/arts-music-sports-and-societ"
+    },
+    {
+     "url": "https://jesus.cam.ac.uk/college/events",
+     "result": "HTTP 307 https://jesus.cam.ac.uk/college/events"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S150": 2
+    },
+    "examples": [
+     "2026-11-22 Introduction to Spoken Word Poetry with Laurie Bolger",
+     "2026-11-22 Spoken Word Open Mic Night"
+    ]
+   }
+  },
+  {
+   "college": "King's",
+   "home": "https://www.kings.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://kings.cam.ac.uk/?page=1",
+    "https://kings.cam.ac.uk/members-and-friends/digital-alumni-week",
+    "https://kings.cam.ac.uk/alumni?calcid=664&calpgid=13&crid=0&gid=1&pgid=584&sid=1306",
+    "https://kings.cam.ac.uk/study/life-at-kings/societies-and-activities/music-at-kings"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kings.cam.ac.uk/news/jane-austens-sanditon-manuscript-goes-exhibition",
+     "result": "ok",
+     "chars": 2022,
+     "dates": 3,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "выставки"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | Jane Austen’s 'Sanditon' manuscript goes on exhibition | | | | 4 Jul, 2025 | | | | | | | | | | | | | Harewood House (L) and the autograph manuscript of 'Sanditon' (R) | | | | | | First published 1 May 2025 | The autograph manuscript of Jane Austen’s final novel, 'Sanditon', has gone on loan to Harewood House in Yorkshire as part of their new exhibition ‘Austen and Turner: A Country House Encounter’. | The ' | Sanditon' | manuscript comprises three small booklets, the third of which features in the exhibition. It is "
+    },
+    {
+     "url": "https://www.kings.cam.ac.uk/news/architecture-exhibition-opens-college-chapel",
+     "result": "ok",
+     "chars": 1657,
+     "dates": 4,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "выставки"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | Architecture exhibition opens in the College Chapel | | | | 29 Aug, 2025 | | | | | | | | | | | | | Universidad Adolfo Ibáñez, Campus Peñalolén Sede Pregrado | | | | | | The exhibition ‘Andean Contours – University Buildings’ by José Cruz Ovalle will run until 28 September, exploring Chilean architecture and reflecting on the connections between architectural design and higher education. | José Cruz Ovalle is a renowned Chilean architect who has worked internationally, with projects in Spain, Argentina, Colombia, and"
+    },
+    {
+     "url": "https://www.kings.cam.ac.uk/chapel/music-chapel/concerts-kings",
+     "result": "ok",
+     "chars": 228,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "концерты"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Concerts at King's | | | | | | | | | | Details of 2026/2027 Concert's at King's will be available soon. | | | | | | | | | | | | | | | | | | | | |"
+    },
+    {
+     "url": "https://www.kings.cam.ac.uk/visit-kings",
+     "result": "ok",
+     "chars": 906,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Visiting King's | | | Tourist information for visiting King's College | | | | | | | | | | | | Plan your Visit | | | | | | | | | | | | Opening Times and Tickets | | | Opening Times and Tickets | | | | | | | | | | | | | | | | Group Information | | | Group Information | | | | | | | | | | | | Getting to King's | | | Getting to King's | | | | | | | | | | | | Upcoming Public Events | | | Upcoming Public Events | | | | | | | | | | | | Accessibility Guide | | | Accessibility Guide | | | | | | | | | | | | Local Resident "
+    },
+    {
+     "url": "https://kings.cam.ac.uk/study/life-at-kings/societies-and-activities/music-at-kings",
+     "result": "robots.txt запрещает"
+    }
+   ],
+   "db": {
+    "past_60": 1,
+    "next_60": 9,
+    "sources": {
+     "S047": 1,
+     "S092": 1,
+     "S148": 4,
+     "S149": 8
+    },
+    "examples": [
+     "2026-11-16 Naming names: nomenclatural stability, decolonisation, and t",
+     "2026-10-11 Organ recital: Paul Greally, Westminster Abbey",
+     "2026-10-18 Organ recital: David Newsholme, Canterbury Cathedral",
+     "2026-10-25 Organ recital: Hamish Wagstaff, King’s College",
+     "2026-10-28 The Tallis Scholars",
+     "2026-11-01 Organ recital: Paul Greally, Westminster Abbey"
+    ]
+   }
+  },
+  {
+   "college": "Lucy Cavendish",
+   "home": "https://www.lucy.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "http://lucy.cam.ac.uk/events",
+    "http://lucy.cam.ac.uk/making-difference/our-traditions",
+    "https://lucy.cam.ac.uk/open-day",
+    "https://lucy.cam.ac.uk/",
+    "https://lucy.cam.ac.uk/arts-at-lucy"
+   ],
+   "pages": [
+    {
+     "url": "https://www.lucy.cam.ac.uk/events",
+     "result": "ok",
+     "chars": 21645,
+     "dates": 105,
+     "future_month_mentions": 27,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "концерты",
+      "выставки",
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | Featured | | Lucy Cavendish College's Foundation Day: Panel Discussion | | Lucy Cavendish College's Foundation Day: Panel Discussion | | See event | | | | | | | | | | | | | | | | | Upcoming Events | | | | | Lucy Cavendish College's Foundation Day: Panel Discussion | | 10 November 2026 | , | | Lucy Cavendish College's Foundation Day: Panel Discussion | | | | | | | | View Past Events | | | | | Lucy Alumni Reunion Dinner | | 18 September 2026 | | | Have you graduated, or will you be graduating from Lucy before September 2026? Then t"
+    },
+    {
+     "url": "https://www.lucy.cam.ac.uk/give-lucy/buildings-and-gardens",
+     "result": "ok",
+     "chars": 1290,
+     "dates": 0,
+     "future_month_mentions": 1,
+     "feeds": [],
+     "types": [
+      "сады",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | Your support will enable us to reimagine and enhance our college environment. By investing in our vibrant gardens and buildings, you can help create dynamic, inclusive spaces that meet the evolving needs of our student community. | | | | With student numbers increasing and interests becoming ever more diverse, we are repurposing existing spaces to encourage social interaction, support collaboration, and ensure they are fit for purpose. By enhancing our facilities, we promote mental health and wellbeing, enable creative self-expression, and f"
+    },
+    {
+     "url": "https://www.lucy.cam.ac.uk/psychology-real-world-talk-series",
+     "result": "ok",
+     "chars": 578,
+     "dates": 3,
+     "future_month_mentions": 1,
+     "feeds": [],
+     "types": [],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | 26 February 2026 - Challenges, psychology and successes; developing novel drugs to treat chronic pain | View event | | | | | | | | 6 February 2025 Gaming to grow: making computer games that create empathy and understanding | View event | | | | | | | | 2 February 2023 Civilians are on Fire: Nine Months of Traumatic Stress and Moral Injury in Ukrainians Under the Russian Invasion | View event | | | | | | | | | | | | | | | | Applying to study in October 2020? | | | Yes | | No | | | | | | | | Close | | | | | | | | |"
+    },
+    {
+     "url": "https://www.lucy.cam.ac.uk/subject/history-art",
+     "result": "ok",
+     "chars": 9202,
+     "dates": 0,
+     "future_month_mentions": 1,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "дни открытых дверей"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | Overview | | Minimum offer level: | A*AA (or equivalent). Please note we routinely specify an A* in one of the subjects taken at A-level or equivalent. | | Required subjects: | None | | Useful subjects: | History and Art | | Number of students per year: | At least 1 | | Admissions assessment: | None | | Submitted work: | None | | | | See 2nd year History of Art student Lucy's timetable here | | | | | | | | | | | What is History of Art? | | | | | The BA in History of Art covers a wide spectrum of art and architecture, from the medieval to the"
+    },
+    {
+     "url": "https://www.lucy.cam.ac.uk/events",
+     "result": "ok",
+     "chars": 21645,
+     "dates": 105,
+     "future_month_mentions": 27,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "концерты",
+      "выставки",
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | Featured | | Lucy Cavendish College's Foundation Day: Panel Discussion | | Lucy Cavendish College's Foundation Day: Panel Discussion | | See event | | | | | | | | | | | | | | | | | Upcoming Events | | | | | Lucy Cavendish College's Foundation Day: Panel Discussion | | 10 November 2026 | , | | Lucy Cavendish College's Foundation Day: Panel Discussion | | | | | | | | View Past Events | | | | | Lucy Alumni Reunion Dinner | | 18 September 2026 | | | Have you graduated, or will you be graduating from Lucy before September 2026? Then t"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Magdalene",
+   "home": "https://www.magd.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://magd.cam.ac.uk/index.php/about/events",
+    "https://magd.cam.ac.uk/news-search",
+    "https://magd.cam.ac.uk/news",
+    "https://magd.cam.ac.uk/index.php/alumni/alumni-events-and-reunions",
+    "http://magd.cam.ac.uk/"
+   ],
+   "pages": [
+    {
+     "url": "https://www.magd.cam.ac.uk/about/events",
+     "result": "ok",
+     "chars": 2428,
+     "dates": 6,
+     "future_month_mentions": 6,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "концерты",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | Magdalene College Events | | | | | | | | | | | | | | | | | | | | Events | | | | | | | | | | | | | Upcoming Magdalene College events. | From thought-provoking lectures and debates to concerts, reunions, and special celebrations, Magdalene offers a diverse programme of events throughout the year. Whether you're a student, alumni, or visitor, there are plenty of opportunities to connect, learn, and celebrate with us. Join us in Cambridge, across the UK, or internationally, and be part of the Magdalene community. | | | | | | "
+    },
+    {
+     "url": "https://www.magd.cam.ac.uk/visitors-and-conferencing",
+     "result": "ok",
+     "chars": 2133,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "выставки",
+      "библиотека"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | Visitors and Conferencing at Magdalene | | | | | | | | | | | | | | | | | | | | Visitors and Conferencing | | | | | | | | | | | | Welcome to our Visitors and Conferencing section. | Whether you're here to explore the rich history of the Pepys Library, enjoy the stunning Robert Cripps Gallery, or experience the tranquil beauty of our Chapel, Magdalene offers a unique setting for both visitors and those attending conferences. | This page provides information on how to make the most of your visit, from exploring the Colle"
+    },
+    {
+     "url": "https://www.magd.cam.ac.uk/visitors-and-conferencing/visit-chapel",
+     "result": "ok",
+     "chars": 2442,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "концерты",
+      "службы"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | Visit the Magdalene Chapel | | | | | | | | | | | | | | | | | | | | Visit the Chapel | | | | | | | | | | | | | | | | | Magdalene College Chapel is open to all, offering a peaceful space for prayer, reflection, or quiet contemplation. | Steeped in history and tradition, the Chapel welcomes visitors throughout the day, and everyone is invited to attend its services. find out more on the | Magdalene Chapel | pages. | | | | | | | | | | A Place of welcome and reflection | | | | | For over 550 years, the Chapel has been a ce"
+    },
+    {
+     "url": "https://www.magd.cam.ac.uk/visitors-and-conferencing/pepys-library",
+     "result": "ok",
+     "chars": 3548,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "библиотека"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | Magdalene's Greatest Treasure | | | | | | | | | | | | | | | | | | | | Pepys Library | | | | | | | | | | | | | | | | | The Pepys Library is closed to visitors until 2027 due to refurbishment works to the building. Regrettably, no public drop-in visits, tours or group visits will be possible during the refurbishment period. | Find out about the | Pepys Restoration Project | . | The Pepys Library is one of Magdalene College’s greatest treasures | Open to the public and visiting scholars, it houses the original diaries of"
+    },
+    {
+     "url": "https://www.magd.cam.ac.uk/about/events",
+     "result": "ok",
+     "chars": 2428,
+     "dates": 6,
+     "future_month_mentions": 6,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "концерты",
+      "выпускники"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | Magdalene College Events | | | | | | | | | | | | | | | | | | | | Events | | | | | | | | | | | | | Upcoming Magdalene College events. | From thought-provoking lectures and debates to concerts, reunions, and special celebrations, Magdalene offers a diverse programme of events throughout the year. Whether you're a student, alumni, or visitor, there are plenty of opportunities to connect, learn, and celebrate with us. Join us in Cambridge, across the UK, or internationally, and be part of the Magdalene community. | | | | | | "
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Murray Edwards",
+   "home": "https://www.murrayedwards.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://murrayedwards.cam.ac.uk/news-events/upcoming-events",
+    "https://murrayedwards.cam.ac.uk/college-news/sixties-renaissance-celebrating-brutalist-masterpiece"
+   ],
+   "pages": [
+    {
+     "url": "https://www.murrayedwards.cam.ac.uk/about-us/our-gardens",
+     "result": "ok",
+     "chars": 4491,
+     "dates": 6,
+     "future_month_mentions": 6,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | Our beautiful gardens, which are informal in keeping with the College's modern and relaxed feel, stretch across 14 acres. The colours and scents change with the seasons, and the wild areas are havens for birds, deer, foxes and other wildlife. | | We encourage our students to enjoy the gardens and, in contrast to most colleges, students and all in our community are welcome to walk on the grass and pick flowers and herbs. In 2007 we were the first Cambridge college to take part in the RHS Chelsea Flower Show. Our garden, the Transit of Venus, "
+    },
+    {
+     "url": "https://www.murrayedwards.cam.ac.uk/news-events",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://www.murrayedwards.cam.ac.uk/subject/music",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://www.murrayedwards.cam.ac.uk/subject/history-art",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://murrayedwards.cam.ac.uk/news-events/upcoming-events",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    }
+   ],
+   "db": {
+    "past_60": 1,
+    "next_60": 1,
+    "sources": {
+     "S001": 1,
+     "S164": 2
+    },
+    "examples": [
+     "2026-11-12 Curator Talk: What Remains"
+    ]
+   }
+  },
+  {
+   "college": "Newnham",
+   "home": "https://newn.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://newn.cam.ac.uk/events-alumnae",
+    "https://newn.cam.ac.uk/alumnae/alumnae-events",
+    "https://newn.cam.ac.uk/conferences-events/feedback",
+    "https://newn.cam.ac.uk/conferences-events/visitor-information"
+   ],
+   "pages": [
+    {
+     "url": "https://newn.cam.ac.uk/newnham-community/newnham-college-garden-party-and-campaign-celebration",
+     "result": "ok",
+     "chars": 616,
+     "dates": 1,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| | | | | | | | | | | | | | | | | | | | | | Play video (requires accepting marketing cookies) | | | | | Embedded content cannot be viewed within this site unless you | accept marketing cookies | . To view this content either accept marketing cookies or | view the content directly on the external website. | | | | | | | | | | | | | Newnham College garden party and campaign celebration | | | | | | | Monday June 24th, 2024 | | | | | | | | | | | | | | | | Events for alumnae | | | Events for alumnae | | | | | | | | | Shaping Newnham's Future | | | Shaping Newnham's Future | | | | | | | | | | | | | |"
+    },
+    {
+     "url": "https://newn.cam.ac.uk/about/gardens",
+     "result": "ok",
+     "chars": 981,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| | | | | | | | | | | | | | | | | | | | | | Gardens | | | | | | | | | | | | | | Our gardens are one of the best kept secrets in Cambridge. Unlike many Cambridge colleges, Newnham’s gardens are normally open to the public for much of the year. | Please see the | Visiting the Gardens page | for the current status of our gardens. | The gardens are at the centre of Newnham College and the hearts of students, the Fellows and Staff who live and work here. Few imagine, when they are walking down Sidgwick Avenue or visiting the Sidgwick Site, that behind the Newnham College red brick buildings there a"
+    },
+    {
+     "url": "https://newn.cam.ac.uk/about/gardens/visiting-gardens",
+     "result": "ok",
+     "chars": 1358,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| | | | | | | | | | | | | | | | | | | | | | Visiting the Gardens | | | | | | | | | | | | | | The College gardens are open to visitors on most days throughout the year. | If you’re visiting us, please ensure that there are | no more than | | 6 people | in your group (except by prior arrangement with the College) and that children are accompanied at all times. | The | lily pond | and | sunken rose garden | pose a potential hazard to children: please supervise them closely in this area. | There are periods when the College is closed to visitors, for example over the Christmas Vacation. If you’re "
+    },
+    {
+     "url": "https://newn.cam.ac.uk/about/gardens/tour-gardens",
+     "result": "HTTP 307 https://newn.cam.ac.uk/about/gardens/tour-gardens"
+    },
+    {
+     "url": "https://newn.cam.ac.uk/events-alumnae",
+     "result": "ok",
+     "chars": 3412,
+     "dates": 11,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "концерты",
+      "сады",
+      "выпускники"
+     ],
+     "text_head": "| | | | | | | | | | | | | | | | | | | | | | Events for alumnae | | | We offer a varied and exciting programme of events for alumnae. | | | | | | | | | | | | | | | | | | | | | Events include large reunion weekends (Commemoration and Alumni Festival) with a programme of talks, concerts and tours; weekends such as the Literary Archive Conference where leading authors speak; and lectures, dinners and garden parties. | Alumnae may also dine-in at College three times a year at both Formal Halls and Subject Formal Halls (on payment and notice), accompanied by up to three paying guests. For more detai"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S150": 1,
+     "S008": 1
+    },
+    "examples": [
+     "2026-11-26 Maqām and Rhythm Masterclass with Al-Firdaus Ensemble",
+     "2026-10-22 Autumn Leaves with soprano Lucy Crowe OBE and pianist Anna T"
+    ]
+   }
+  },
+  {
+   "college": "Pembroke",
+   "home": "https://www.pem.cam.ac.uk/",
+   "robots": "главная: HTTP 307 https://www.pem.cam.ac.uk/",
+   "robots_status": 200,
+   "search_hits": [
+    "https://pem.cam.ac.uk/college/events/all",
+    "https://pem.cam.ac.uk/college/events/pembroke-open-doors-festival",
+    "https://pem.cam.ac.uk/college/news/may-2026-luke-fitzgerald"
+   ],
+   "pages": [
+    {
+     "url": "https://pem.cam.ac.uk/college/events/all",
+     "result": "HTTP 307 https://pem.cam.ac.uk/college/events/all"
+    },
+    {
+     "url": "https://www.pem.cam.ac.uk/college/events/pembroke-open-doors-festival",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 6,
+    "sources": {
+     "S091": 2,
+     "S150": 3,
+     "S008": 1
+    },
+    "examples": [
+     "2026-11-05 Bliss Song Series Opening Season Recital",
+     "2026-11-14 Bliss Song Series - Fatma Said sings Schumann, de Falla and ",
+     "2026-11-07 ĀN | The Moment | A Persian Music Concert Celebrating Omar K",
+     "2026-11-13 Pembroke College Michaelmas Concert",
+     "2026-11-21 Pembroke College Music Society Orchestral Concert",
+     "2026-11-07 ĀN | The Moment — A Persian Music Concert Celebrating Omar K"
+    ]
+   }
+  },
+  {
+   "college": "Peterhouse",
+   "home": "https://www.pet.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://pet.cam.ac.uk/leisure-clubs-societies-sports-drama-and-music",
+    "https://pet.cam.ac.uk/playing-0",
+    "https://pet.cam.ac.uk",
+    "https://pet.cam.ac.uk/open-days",
+    "https://www.pet.cam.ac.uk/peterhouse-theatre"
+   ],
+   "pages": [
+    {
+     "url": "https://www.pet.cam.ac.uk/music-peterhouse",
+     "result": "ok",
+     "chars": 3938,
+     "dates": 0,
+     "future_month_mentions": 1,
+     "feeds": [],
+     "types": [
+      "концерты"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Peterhouse has a rich and thriving musical life. The Chapel Choir sings two services a week in the college's beautiful candlelit chapel. The student-led Music Society hosts regular recitals and concerts throughout term. Peterhouse is also host to an outstanding series of professional chamber music recitals, | Camerata Musica | . | In 2022 the college completed the renovation of a sixteenth-century | Brewhouse | in the grounds of the Master's Lodge, which is now home to a Steinway Grand Piano and ne"
+    },
+    {
+     "url": "https://www.pet.cam.ac.uk/conferences-dining-events",
+     "result": "ok",
+     "chars": 1380,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Peterhouse is the oldest of the Cambridge colleges, founded in 1284 on its current site. Conveniently located in the centre of Cambridge, the College’s historic buildings, set in five acres of tranquil gardens, provide the perfect setting for your function. | Peterhouse has always enjoyed an enviable reputation for the high standards of its food and wine, whether you are planning a gala dinner or wedding reception in our medieval | Hall | , perhaps preceded by drinks in the Fellows’ Garden,"
+    },
+    {
+     "url": "https://pet.cam.ac.uk/leisure-clubs-societies-sports-drama-and-music",
+     "result": "robots.txt запрещает"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Queens'",
+   "home": "https://www.queens.cam.ac.uk/",
+   "robots": "главная: HTTP 202 https://www.queens.cam.ac.uk/",
+   "robots_status": 202,
+   "search_hits": [
+    "https://queens.cam.ac.uk/alumni-development/alumni-news-and-events/alumni-events",
+    "https://calendar.queens.cam.ac.uk/python/pdf.py",
+    "https://queens.cam.ac.uk/",
+    "https://queens.cam.ac.uk/about-us/news-events?paged=3",
+    "https://queens.cam.ac.uk/about-us/news-events/spring-roundup"
+   ],
+   "pages": [
+    {
+     "url": "https://queens.cam.ac.uk/alumni-development/alumni-news-and-events/alumni-events",
+     "result": "HTTP 202 https://queens.cam.ac.uk/alumni-development/alumni-news-and-events/alum"
+    },
+    {
+     "url": "https://queens.cam.ac.uk/about-us/news-events?paged=3",
+     "result": "HTTP 202 https://queens.cam.ac.uk/about-us/news-events?paged=3"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S150": 1
+    },
+    "examples": [
+     "2026-11-07 Rise, Heart",
+     "2026-10-14 Indian Classical Music Masterclass with the Anirudh Varma Co"
+    ]
+   }
+  },
+  {
+   "college": "Robinson",
+   "home": "https://www.robinson.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://www.robinson.cam.ac.uk/events",
+    "https://www.robinson.cam.ac.uk/",
+    "https://robinson.cam.ac.uk/news"
+   ],
+   "pages": [
+    {
+     "url": "https://www.robinson.cam.ac.uk/events",
+     "result": "ok",
+     "chars": 11232,
+     "dates": 60,
+     "future_month_mentions": 115,
+     "feeds": [],
+     "types": [
+      "концерты"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Forthcoming Events | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 08 | | Oct | | | | | | Meet with Molly | | | 8 October, 2026 | | | Molly the Wellbeing Dog is in College today. | | | | | | | | | | | | | | | | | | | | | | | 08 | | Oct | | | | | | Robinson Revises - Afternoon Session | | | 8 October, 2026 | | | A co-working space to focus up and g"
+    },
+    {
+     "url": "https://www.robinson.cam.ac.uk/events/christmas-concert-2026",
+     "result": "ok",
+     "chars": 1724,
+     "dates": 3,
+     "future_month_mentions": 3,
+     "feeds": [],
+     "types": [
+      "концерты"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Christmas Concert 2026 | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Please join us for the annual | Robinson College Christmas Concert | , to be held on | Saturday, 5 December | to celebrate the start of the holiday season. | At 11:00 a.m., prior to the concert, there will be hot drinks and mince pies served in the Hall for concert ticket holders. The concert begins in the College "
+    },
+    {
+     "url": "https://www.robinson.cam.ac.uk/about-robinson/gardens",
+     "result": "ok",
+     "chars": 8516,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "выставки",
+      "сады"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Gardens | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Gardens | | | | | | | | | | | Please Note that due to summer building works access to the gardens is still possible, but some views and routes are disrupted | The Origin of Robinson College Gardens | A Guide to the Gardens with maps and species lists is available from the Porters' Lodge, price £5. Proceeds go to the National "
+    },
+    {
+     "url": "https://www.robinson.cam.ac.uk/contact-us/visiting-robinson/public-transport",
+     "result": "ok",
+     "chars": 3166,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Public Transport | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Public Transport | | | | | | | | | | | Travel from Cambridge Rail Station | When exiting Cambridge rail station, catch the | U1 | or | U2 | bus towards | Eddington | or | Girton Corner | from | Stop 8 | directly | opposite | the entrance to the rail station on Station Place. | Robinson College | is an allocated stop "
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 1,
+    "sources": {
+     "S008": 1
+    },
+    "examples": [
+     "2026-11-19 5th East of England Global Health Conference"
+    ]
+   }
+  },
+  {
+   "college": "St Catharine's",
+   "home": "https://www.caths.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://caths.cam.ac.uk/camfest2026",
+    "https://caths.cam.ac.uk/about-us/college-calendar",
+    "https://mcr.caths.cam.ac.uk",
+    "https://caths.cam.ac.uk/alumni-friends/events/all-events",
+    "https://caths.cam.ac.uk/"
+   ],
+   "pages": [
+    {
+     "url": "https://caths.cam.ac.uk/alumni-friends/events/all-events",
+     "result": "HTTP 307 https://caths.cam.ac.uk/alumni-friends/events/all-events"
+    },
+    {
+     "url": "https://caths.cam.ac.uk/exhibitions-policy",
+     "result": "HTTP 307 https://caths.cam.ac.uk/exhibitions-policy"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "St Edmund's",
+   "home": "https://www.st-edmunds.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://www.st-edmunds.cam.ac.uk/news-events/events/",
+    "https://st-edmunds.cam.ac.uk/the-vhi/vhi-events",
+    "https://www.st-edmunds.cam.ac.uk/conferences-events/"
+   ],
+   "pages": [
+    {
+     "url": "https://www.st-edmunds.cam.ac.uk/news-events/events/",
+     "result": "ok",
+     "chars": 4349,
+     "dates": 0,
+     "future_month_mentions": 8,
+     "feeds": [],
+     "types": [
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| | | Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | My St Edmund's | | | | Contact Us | | | | | Study Here | | | Back | | Undergraduate | | | Undergraduate Study | | Subjects | | How to apply | | Mature undergraduate entry requirements | | Undergraduate Fees | | Undergraduate Funding | | Virtual Tour | | Life in the UK | | Cambridge 21+ Programme | | Second Undergraduate or Affiliate Degrees | | | | Postgraduate | | | Postgraduate Study | | Postgraduate Entry Requirements | | How to Apply | | Postgraduate Fees | | Postgraduate Funding | | The AGM Randere"
+    },
+    {
+     "url": "https://www.st-edmunds.cam.ac.uk/news-events/news/",
+     "result": "ok",
+     "chars": 6105,
+     "dates": 15,
+     "future_month_mentions": 3,
+     "feeds": [],
+     "types": [
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| | | Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | My St Edmund's | | | | Contact Us | | | | | Study Here | | | Back | | Undergraduate | | | Undergraduate Study | | Subjects | | How to apply | | Mature undergraduate entry requirements | | Undergraduate Fees | | Undergraduate Funding | | Virtual Tour | | Life in the UK | | Cambridge 21+ Programme | | Second Undergraduate or Affiliate Degrees | | | | Postgraduate | | | Postgraduate Study | | Postgraduate Entry Requirements | | How to Apply | | Postgraduate Fees | | Postgraduate Funding | | The AGM Randere"
+    },
+    {
+     "url": "https://www.st-edmunds.cam.ac.uk/conferences-events/",
+     "result": "ok",
+     "chars": 5466,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады",
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| | | Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | My St Edmund's | | | | Contact Us | | | | | Study Here | | | Back | | Undergraduate | | | Undergraduate Study | | Subjects | | How to apply | | Mature undergraduate entry requirements | | Undergraduate Fees | | Undergraduate Funding | | Virtual Tour | | Life in the UK | | Cambridge 21+ Programme | | Second Undergraduate or Affiliate Degrees | | | | Postgraduate | | | Postgraduate Study | | Postgraduate Entry Requirements | | How to Apply | | Postgraduate Fees | | Postgraduate Funding | | The AGM Randere"
+    },
+    {
+     "url": "https://www.st-edmunds.cam.ac.uk/the-vhi/vhi-events/",
+     "result": "ok",
+     "chars": 29691,
+     "dates": 21,
+     "future_month_mentions": 8,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "выставки",
+      "сады",
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| | | Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | My St Edmund's | | | | Contact Us | | | | | Study Here | | | Back | | Undergraduate | | | Undergraduate Study | | Subjects | | How to apply | | Mature undergraduate entry requirements | | Undergraduate Fees | | Undergraduate Funding | | Virtual Tour | | Life in the UK | | Cambridge 21+ Programme | | Second Undergraduate or Affiliate Degrees | | | | Postgraduate | | | Postgraduate Study | | Postgraduate Entry Requirements | | How to Apply | | Postgraduate Fees | | Postgraduate Funding | | The AGM Randere"
+    },
+    {
+     "url": "https://www.st-edmunds.cam.ac.uk/the-vhi/vhi-events/",
+     "result": "ok",
+     "chars": 29691,
+     "dates": 21,
+     "future_month_mentions": 8,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "выставки",
+      "сады",
+      "дни открытых дверей",
+      "выпускники"
+     ],
+     "text_head": "| | | Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | My St Edmund's | | | | Contact Us | | | | | Study Here | | | Back | | Undergraduate | | | Undergraduate Study | | Subjects | | How to apply | | Mature undergraduate entry requirements | | Undergraduate Fees | | Undergraduate Funding | | Virtual Tour | | Life in the UK | | Cambridge 21+ Programme | | Second Undergraduate or Affiliate Degrees | | | | Postgraduate | | | Postgraduate Study | | Postgraduate Entry Requirements | | How to Apply | | Postgraduate Fees | | Postgraduate Funding | | The AGM Randere"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "St John's",
+   "home": "https://www.joh.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://joh.cam.ac.uk/festival",
+    "https://joh.cam.ac.uk",
+    "https://joh.cam.ac.uk/about-us",
+    "https://joh.cam.ac.uk/chapel-and-choir/chapel-and-choir-highlights",
+    "https://johnian.joh.cam.ac.uk/events/1511-lunch-2026"
+   ],
+   "pages": [
+    {
+     "url": "https://www.joh.cam.ac.uk/visit-us",
+     "result": "ok",
+     "chars": 1077,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| Back | Visit us | EXPLORE THE BEAUTY AND tradition OF ST JOHN'S COLLEGE | Step into 500 years of history | Founded in 1511, St John’s College has educated great thinkers from William Wordsworth to Paul Dirac and Douglas Adams. Visit the historic courts where they lived as students, enjoy the College’s riverside walks and gardens, and take in the view of the Bridge of Sighs - so admired by Queen Victoria she called it her favourite sight in Cambridge. | Visitor information | opening times | Directions & Map | Find your way to St John’s | Virtual tour of St John's | Explore St John's from anyw"
+    },
+    {
+     "url": "https://www.joh.cam.ac.uk/chapel-and-choir",
+     "result": "ok",
+     "chars": 1449,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "лекции",
+      "концерты",
+      "службы"
+     ],
+     "text_head": "| Back | Chapel & choir | choral excellence in a place of reflection and belonging | MUSIC, WORSHIP & connection | Home to one of the world’s leading collegiate choirs, the Chapel at St John’s offers a space for outstanding music, quiet reflection, and a vibrant community - all at the heart of College life. | Chapel & Choir Highlights | Marking important moments | Chapel services & Events | Join us for community, worship, and celebration | the choir of St john's | a centuries-old tradition with a vibrant modern present | The chapel | The College's Chapel is a place where everyone can find peac"
+    },
+    {
+     "url": "https://www.joh.cam.ac.uk/research/library",
+     "result": "ok",
+     "chars": 4322,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "выставки",
+      "библиотека"
+     ],
+     "text_head": "| Back | | | Library | designated special collections & 120,000 books | Centuries of knowledge meet modern research | With historic archives and state-of-the-art facilities, our Library is home to extraordinary collections. From medieval manuscripts to contemporary digital resources, our expert team is here to help you navigate the collections and access the latest publications and resources. | LIBRARY HIGHLIGHTS | Centuries of knowledge meets modern research | Old library | A 17th-century home for treasured collections | Working library | Round-the-clock access to 120,000 books | Featured ONl"
+    },
+    {
+     "url": "https://www.joh.cam.ac.uk/chapel-and-choir/the-choir-of-st-johns",
+     "result": "ok",
+     "chars": 1811,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "концерты",
+      "службы"
+     ],
+     "text_head": "| Back | | | The choir of | St John's | The Choir of St John’s College, Cambridge, is known and loved by millions from its broadcasts, concert tours & more than 100 recordings | The Choir of St John’s College is part of a centuries-old tradition at St John’s with a vibrant modern present. It consists of around 20 boy and girl treble Choristers from St John’s College School, alongside 18 mixed-gender Choral Scholars and Choral Graduates singing the alto, tenor, and bass parts, and two Organ Scholars. Under the guidance of Director of Music Christopher Gray, the Choir continues to develop its wo"
+    },
+    {
+     "url": "https://www.joh.cam.ac.uk/chapel-and-choir/chapel-and-choir-highlights",
+     "result": "ok",
+     "chars": 5161,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "концерты",
+      "выставки",
+      "дни открытых дверей"
+     ],
+     "text_head": "| Back | | | Chapel & Choir Highlights | Marking important moments | Special events & servicES | Advent Carol Service | The Advent Carol Service takes place towards the end of Michaelmas Term and is a beautiful way of preparing for Christmas. The service was developed in the mid-20th century for the College community and is led by the College Choir. Since the 1980s, the service has been broadcast live by BBC Radio 3 and is one of the highlights of the year. | Epiphany Carol Service | As the new calendar year and new term begin, the Epiphany Carol Service is a highly atmospheric, candle-lit ser"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 9,
+    "sources": {
+     "S148": 1,
+     "S144": 8
+    },
+    "examples": [
+     "2026-11-04 Chapel Lecture – If humans are unique… ?",
+     "2026-10-08 Anarchical Antiquity – lecture by Professor Josephine Crawle",
+     "2026-10-13 Lunchtime Concert",
+     "2026-10-17 Recital – Isabelle Demers",
+     "2026-11-07 SJCMS Chapel Late",
+     "2026-11-13 Quanta Piano Trio"
+    ]
+   }
+  },
+  {
+   "college": "Selwyn",
+   "home": "https://www.sel.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://www.sel.cam.ac.uk/events",
+    "https://sel.cam.ac.uk/news/watch-selwyn-events",
+    "http://www-mcr.sel.cam.ac.uk/?Itemid=122&id=11&option=com_content&view=article",
+    "https://sel.cam.ac.uk"
+   ],
+   "pages": [
+    {
+     "url": "https://www.sel.cam.ac.uk/events",
+     "result": "ok",
+     "chars": 979,
+     "dates": 6,
+     "future_month_mentions": 6,
+     "feeds": [],
+     "types": [],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Events | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 29 Oct | | | | | | MA Dining Evening - Michaelmas | | | | | | | | | | Thursday, 29 October 2026 - 19:00 | | | | | | | Selwyn College | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 09 Dec | | | | | | Selwyn Carol Service | | | | | | | | | | Wednesday, 9 "
+    },
+    {
+     "url": "https://www.sel.cam.ac.uk/about/selwyn-gardens",
+     "result": "ok",
+     "chars": 1568,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [
+      "концерты",
+      "сады"
+     ],
+     "text_head": "| Skip to main content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Selwyn Gardens | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Body | | Established in the Victorian period, the beautiful College gardens have been developed into a landscape of extensive lawns, mature trees, richly planted flowering borders and beds, and collections of shrubs from around the world. | | | A tour of the gardens | | Visiting Selwyn? Read the printable | gardens guide and suggested tour of the gardens |"
+    },
+    {
+     "url": "https://www.sel.cam.ac.uk/current-members/student-event-booking-form",
+     "result": "ok",
+     "chars": 42,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| Submitting Authentication Request... | |"
+    },
+    {
+     "url": "https://www.sel.cam.ac.uk/current-members/fellows-event-booking-form",
+     "result": "ok",
+     "chars": 42,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| Submitting Authentication Request... | |"
+    },
+    {
+     "url": "https://sel.cam.ac.uk/news/watch-selwyn-events",
+     "result": "robots.txt запрещает"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 12,
+    "sources": {
+     "S150": 12
+    },
+    "examples": [
+     "2026-10-15 Anthony Gritten Selwyn Organ Recital",
+     "2026-10-18 Jake Buckton Selwyn Vocal Recital",
+     "2026-10-22 Oliver Clements Selwyn Organ Recital",
+     "2026-10-29 James Thomas Selwyn Organ Recital",
+     "2026-11-01 Harp Trio Concert",
+     "2026-11-05 Ella Nie Selwyn Organ Recital"
+    ]
+   }
+  },
+  {
+   "college": "Sidney Sussex",
+   "home": "https://www.sid.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://sid.cam.ac.uk/node/33585",
+    "https://www.sid.cam.ac.uk/about-sidney/events",
+    "http://sid.cam.ac.uk/"
+   ],
+   "pages": [
+    {
+     "url": "https://www.sid.cam.ac.uk/alumni/events",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://www.sid.cam.ac.uk/about-sidney/events?field_event_audience_target_id=All",
+     "result": "HTTP 307 https://www.sid.cam.ac.uk/about-sidney/events?field_event_audience_targ"
+    },
+    {
+     "url": "https://www.sid.cam.ac.uk/about-sidney/events",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    },
+    {
+     "url": "https://www.sid.cam.ac.uk/about-sidney/sidney-greats-lecture-series",
+     "result": "HTTP 307 https://www.sid.cam.ac.uk/about-sidney/sidney-greats-lecture-series"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Trinity",
+   "home": "https://www.trin.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://www.trin.cam.ac.uk/events/",
+    "https://www.trin.cam.ac.uk/news/category/events/",
+    "https://trin.cam.ac.uk/",
+    "https://postdocsoc.trin.cam.ac.uk/events/list?tribe-bar-date=2026-03-08",
+    "https://trin.cam.ac.uk/about/public-lectures"
+   ],
+   "pages": [
+    {
+     "url": "https://www.trin.cam.ac.uk/events/",
+     "result": "ok",
+     "chars": 2608,
+     "dates": 6,
+     "future_month_mentions": 7,
+     "feeds": [
+      "JSON-LD Event ×4",
+      "iCal/feed https://www.trin.cam.ac.uk/events/?ical=1",
+      "iCal/feed https://www.trin.cam.ac.uk/events/list/?ical=1",
+      "iCal/feed https://www.trin.cam.ac.uk/events/list/?outlook-ical=1"
+     ],
+     "types": [
+      "лекции",
+      "выпускники"
+     ],
+     "text_head": "| Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 4 events found. | | | | | | | | | | | | | | October 2026 | | | | | | | Thu | | 8 | | | | | | | | | | | | We return to Vinegar Yard, London Bridge for our popular Recent Graduate Drinks evening where, this year, we will be joined by alumni of Jesus, Pembroke, Girton and Emmanuel. That's right, we've added another two Colleges to this event to help you to expand your Trinity and Cambridge network wider and catch up with more friends!… | | | | | | | | | | Thu | | 8 | | | | | | | | | | | | John Haidar (2009) will join us"
+    },
+    {
+     "url": "https://www.trin.cam.ac.uk/news/john-rays-garden-reimagined/",
+     "result": "ok",
+     "chars": 11243,
+     "dates": 3,
+     "future_month_mentions": 1,
+     "feeds": [
+      "iCal/feed https://www.trin.cam.ac.uk/events/?ical=1"
+     ],
+     "types": [
+      "выставки",
+      "сады",
+      "библиотека"
+     ],
+     "text_head": "| Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Botanist John Ray’s 1650 garden reimagined | 17/06/2026 | | | | | | | | | | | | | | Share on Twitter | | | | | | | Share on Facebook | | | | | | | Share via email | | | | | | | All News | | | Trinity’s gardeners have reimagined the College garden created by alumnus and botanist John Ray (1627-1705) on what was ‘perhaps the most scientifically important piece of land in seventeenth-century England.’ | | Hitherto known as ‘Newton’s Lawn’ – due to the apple tree (grafted from the famous original at his Lincolnshire home) "
+    },
+    {
+     "url": "https://www.trin.cam.ac.uk/about/public-lectures/",
+     "result": "ok",
+     "chars": 1609,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [
+      "iCal/feed https://www.trin.cam.ac.uk/events/?ical=1"
+     ],
+     "types": [
+      "лекции"
+     ],
+     "text_head": "| Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Trinity College hosts a number of Public Lectures, which take place on a regular basis (usually either annually or biannually). The lectures are open to all, with no ticket required. | | For more information about the talks, and for past lectures see the pages below: | | | | | | | Birkbeck Lectures | | Ecclesiastical History | | | | Upcoming and Past Birkbeck Lectures | | | | Clark Lectures | | English Literature | | | | Upcoming and Past Clark Lectures | | | | Lees Knowles Lectures | | Military History | | |"
+    },
+    {
+     "url": "https://www.trin.cam.ac.uk/about/gardens/",
+     "result": "ok",
+     "chars": 3114,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [
+      "iCal/feed https://www.trin.cam.ac.uk/events/?ical=1"
+     ],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | Trinity College gardens extend for 36 acres including the well-known areas such as Great Court, Trinity Backs and Newton’s lawn, outside Great Gate, where “Newton’s Apple tree” stands. | | | | | | | The Fountain lavender in Great Court and the Newton’s Lawn Crocus (by TH) | | | | | | | | | | | | The grand Trinity lime tree Avenue is flanked by cherry trees creating a space for spring crocus, white daffodils and red tulips. The spring here is a rather special sight followed by unspoilt flowering grasses and wi"
+    },
+    {
+     "url": "https://www.trin.cam.ac.uk/events/",
+     "result": "ok",
+     "chars": 2608,
+     "dates": 6,
+     "future_month_mentions": 7,
+     "feeds": [
+      "JSON-LD Event ×4",
+      "iCal/feed https://www.trin.cam.ac.uk/events/?ical=1",
+      "iCal/feed https://www.trin.cam.ac.uk/events/list/?ical=1",
+      "iCal/feed https://www.trin.cam.ac.uk/events/list/?outlook-ical=1"
+     ],
+     "types": [
+      "лекции",
+      "выпускники"
+     ],
+     "text_head": "| Skip to content | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | 4 events found. | | | | | | | | | | | | | | October 2026 | | | | | | | Thu | | 8 | | | | | | | | | | | | We return to Vinegar Yard, London Bridge for our popular Recent Graduate Drinks evening where, this year, we will be joined by alumni of Jesus, Pembroke, Girton and Emmanuel. That's right, we've added another two Colleges to this event to help you to expand your Trinity and Cambridge network wider and catch up with more friends!… | | | | | | | | | | Thu | | 8 | | | | | | | | | | | | John Haidar (2009) will join us"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 2,
+    "sources": {
+     "S008": 1,
+     "S150": 1,
+     "S001": 1
+    },
+    "examples": [
+     "2026-11-06 Roderick Williams Sings Mystical Songs",
+     "2026-11-08 Trinity Connections"
+    ]
+   }
+  },
+  {
+   "college": "Trinity Hall",
+   "home": "https://www.trinhall.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://www.trinhall.cam.ac.uk/events/",
+    "https://trinhall.cam.ac.uk/college-events/graduands-gelato-2026",
+    "https://trinhall.cam.ac.uk/study-with-us/next-steps/open-days-events-and-visits",
+    "https://trinhall.cam.ac.uk/news"
+   ],
+   "pages": [
+    {
+     "url": "https://www.trinhall.cam.ac.uk/events/",
+     "result": "ok",
+     "chars": 3111,
+     "dates": 5,
+     "future_month_mentions": 4,
+     "feeds": [
+      "RSS https://www.trinhall.cam.ac.uk/feed/",
+      "iCal/feed https://www.trinhall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "лекции",
+      "концерты",
+      "выпускники"
+     ],
+     "text_head": "| | | | | | | | Home | > | Events | | | Events | | | | | | | | Showing 1 to 5 of 5 | | | | All Categories | | 675 | | Alumni | | Concert | | Lectures | | Overseas events | | Regional events | | Spotlights: AI | | Students | | THA | | THwomen50 | | | | | | | | | | | | | Alumni | | Students | | | | | 18 October 2026, 12:30 – 16:30 | | PaTHways Careers Day | | View event | | | | | | | | | | Alumni | | Concert | | Students | | | | | 27 October 2026, 18:00 – 19:00 | | Joseph Crouch: Baroque Music for Solo ‘Cello | | View event | | | | | | | A picture of the speaker Henrietta Bowden-Jones and the lo"
+    },
+    {
+     "url": "https://www.trinhall.cam.ac.uk/about/facilities/gardens/",
+     "result": "ok",
+     "chars": 4777,
+     "dates": 0,
+     "future_month_mentions": 1,
+     "feeds": [
+      "RSS https://www.trinhall.cam.ac.uk/feed/",
+      "iCal/feed https://www.trinhall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "сады"
+     ],
+     "text_head": "| | | | | | | | Home | > | About Trinity Hall | > | Facilities | > | Gardens | | | Gardens | | | | | | | Bringing colour and the majesty of nature to Trinity Hall. | | From courtyards to sweeping lawns, the gardens of Trinity Hall are both enchanting and impressive. Capturing the spirit of nature alongside our illustrious buildings helps to create a feeling that is unique to Trinity Hall. Creating an incredible outlook to be enjoyed from our inside spaces, as well as providing plentiful places to sit and relax, you’ll quickly discover our gardens form a welcome part of life at Trinity Hall. | "
+    },
+    {
+     "url": "https://www.trinhall.cam.ac.uk/alumni/alumni-events/",
+     "result": "ok",
+     "chars": 3406,
+     "dates": 6,
+     "future_month_mentions": 5,
+     "feeds": [
+      "RSS https://www.trinhall.cam.ac.uk/feed/",
+      "iCal/feed https://www.trinhall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "лекции",
+      "концерты",
+      "выпускники"
+     ],
+     "text_head": "| | | | | | | | Home | > | Alumni | > | Alumni Events | | | Alumni Events | | | | | | | Your alumni events include a range of opportunities to get together with friends, discover more about topics old and new, and return to College. We hold events in Cambridge, across the UK and all around the world. We hope to see you at an event soon. | | | | | | | | | Showing 1 to 5 of 5 | | | | | | | | | | | Alumni | | Students | | | | | 18 October 2026, 12:30 – 16:30 | | PaTHways Careers Day | | View event | | | | | | | | | | Alumni | | Concert | | Students | | | | | 27 October 2026, 18:00 – 19:00 | | Jos"
+    },
+    {
+     "url": "https://www.trinhall.cam.ac.uk/about/music/",
+     "result": "ok",
+     "chars": 3077,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [
+      "RSS https://www.trinhall.cam.ac.uk/feed/",
+      "iCal/feed https://www.trinhall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "концерты",
+      "выставки"
+     ],
+     "text_head": "| | | | | | | | Home | > | About Trinity Hall | > | Music | | | Music | | | | | | | Music plays a very important role in the life of Trinity Hall and is overseen by the College’s Director of Music, Andrew Arthur. All genres of music are encouraged and there are countless opportunities to get involved, whether by singing in the chapel choir, attending or performing in one of the many eclectic solo or ensemble concerts presented by the Trinity Hall Music Society, or by simply making use of the College’s musical facilities. | | | | | | | | | | | Music Facilities | | Find out more | | | | | | | Ch"
+    },
+    {
+     "url": "https://www.trinhall.cam.ac.uk/college-events/graduands-gelato-2026/",
+     "result": "ok",
+     "chars": 5074,
+     "dates": 4,
+     "future_month_mentions": 0,
+     "feeds": [
+      "RSS https://www.trinhall.cam.ac.uk/feed/",
+      "iCal/feed https://www.trinhall.cam.ac.uk/feed/"
+     ],
+     "types": [
+      "лекции",
+      "концерты",
+      "выставки",
+      "выпускники"
+     ],
+     "text_head": "| | | | | | | | Home | > | Events | > | Graduands’ Gelato 2026 | | | | | 01 July 2026, 15:00 – 17:00 | | Graduands’ Gelato 2026 | | | | | | | | | | | | Location | Latham Lawn, Trinity Hall | | Cost | Free to attend, however, booking is required | | Booking closing date | Monday, 29 June 2026 12:00pm | | Dress code | N/A | | Event type | Gelato party | | | | Book your place | | Join Trinity Hall's online community | | | | | | | | | Back to all | | | | We would like to invite our graduating students, together with your guests, to join us for an afternoon of gelato ( | Aromi | !), sunshine (hopef"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 0,
+    "sources": {},
+    "examples": []
+   }
+  },
+  {
+   "college": "Wolfson",
+   "home": "https://www.wolfson.cam.ac.uk/",
+   "robots": "разрешено",
+   "robots_status": 200,
+   "search_hits": [
+    "https://wolfson.cam.ac.uk/about/our-college",
+    "https://wolfson.cam.ac.uk/wolfson-media-collection/music-society",
+    "https://wolfson.cam.ac.uk/college-life/wolfson-arts",
+    "https://wolfson.cam.ac.uk/whats-on",
+    "https://wolfson.cam.ac.uk/news/wolfson-rings-60th-anniversary"
+   ],
+   "pages": [
+    {
+     "url": "https://wolfson.cam.ac.uk/wolfson-media-collection/music-society",
+     "result": "HTTP 307 https://wolfson.cam.ac.uk/wolfson-media-collection/music-society"
+    },
+    {
+     "url": "https://wolfson.cam.ac.uk/college-life/wolfson-arts",
+     "result": "ok",
+     "chars": 73,
+     "dates": 0,
+     "future_month_mentions": 0,
+     "feeds": [],
+     "types": [],
+     "text_head": "| | | | | | Please wait while your request is being verified... | | | | |"
+    }
+   ],
+   "db": {
+    "past_60": 0,
+    "next_60": 5,
+    "sources": {
+     "S131": 2,
+     "S150": 3
+    },
+    "examples": [
+     "2026-11-19 CPPF AGM & Talk: A History of Violence: Death, Burial and Di",
+     "2026-11-19 Talk: A History of Violence: Death, Burial and Discovery at ",
+     "2026-10-31 Wolfson fundraising Piano Recital for East Anglian Air Ambul",
+     "2026-11-07 WCMS Lunchtime Concert: Diwali in Song",
+     "2026-11-14 Gamelan Michaelmas Concert at Wolfson College"
+    ]
+   }
+  }
+ ]
+}

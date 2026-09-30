@@ -260,6 +260,10 @@ MIGRATIONS = [
     ("venues", "capacity", "INTEGER"),                # вместимость (вручную, data/venue_capacity.json)
     ("venues", "precision", "TEXT"),                  # postcode | place (населённый пункт) | city (только «Кембридж»)
     ("events", "roundup", "INTEGER"),                 # 1 — подборка («Things to do…»), не событие (pipeline/roundups.py, этап 6c)
+    ("raw_items", "access", "TEXT"),                  # этап 7b: open | members | restricted — от коллектора (pipeline/access.py)
+    ("raw_items", "access_note", "TEXT"),             # организация и стоимость членства / метка источника
+    ("events", "access", "TEXT"),                     # итог по записям источников (ingest.refresh)
+    ("events", "access_note", "TEXT"),
 ]
 
 

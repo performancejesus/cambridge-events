@@ -282,3 +282,29 @@ python scripts/enrich_pages.py --issue 2026-10-08 && python scripts/build_issue.
 - Постобработка выпуска: имена кириллицей → Haiku переписывает латиницей; пропуски без причины → один короткий
   запрос за причинами; даты релизов — пятница.
 - `docs/stage8_options.md` — варианты хостинга, рассылки и публикации страниц (исследование).
+
+## Этап 7b — Cambridge Union, колледжи, кино, выпуск v9
+
+```bash
+python scripts/college_audit.py                       # 31 колледж: страницы событий, фиды, robots.txt, события в базе
+python scripts/run_collectors.py && python scripts/update_db.py   # + S049 Union, S067 NGS, S157 Light, S168 Camdram, S169–S175
+python scripts/extract_articles.py --max-cost 1.00 && python scripts/update_db.py --no-load && python scripts/check_recurring.py
+python scripts/locate_venues.py && python scripts/score_importance.py
+python scripts/college_coverage.py                    # решение по каждому колледжу, до/после → data/college_coverage_7b.json
+python scripts/build_registry_v09.py                  # реестр v0.9: лист «Колледжи», новые источники, «Не разобрано»
+python scripts/recheck_status.py --issue 2026-10-08 && python scripts/update_db.py --no-load
+python -c "from pipeline.db import connect; from pipeline import ai_sources; print(ai_sources.refresh(connect()))"
+python scripts/enrich_pages.py --issue 2026-10-08 && python scripts/build_issue.py --issue 2026-10-08 --version v9
+```
+
+- `pipeline/access.py` — поле `access` у события: `open` / `members` (членство может купить любой: пометка и цена
+  членства в строке с датой) / `restricted` (только студенты и сотрудники — не в выпуск).
+- `collectors/sources/cambridge_union.py` — cus.org: записи `event_jet` из открытого REST WordPress, уровень доступа и
+  площадка со страницы события, стоимость членства Open со страницы членства.
+- `collectors/sources/stage7b.py` — Camdram (все площадки, кроме ADC), National Garden Scheme (API findagarden),
+  Light Cinema (мини-гид JSON: event cinema и спецпоказы), страницы событий колледжей через Haiku (выпускники и
+  студенты отсекаются).
+- `pipeline/cinema.py` — «В кино»: где идёт (Light, Arts Picturehouse), оценка фильма (просмотры Wikipedia, широкий
+  прокат, местный повод), описание из Wikipedia; 2–4 главных фильма — полными пунктами (кандидаты `F…`).
+- `pipeline/history.py` — история выпусков `issue_items`: уже показанное в прошлых выпусках не повторяется.
+- `pipeline/glossary.py` — общий глоссарий перевода для выпуска и «Каникул» (Junior gym → тренажёрный зал для подростков).

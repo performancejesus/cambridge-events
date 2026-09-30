@@ -25,15 +25,17 @@ sys.path.insert(0, str(ROOT))
 
 from pipeline import issue  # noqa: E402
 from pipeline.db import connect  # noqa: E402
+from pipeline.glossary import GLOSSARY  # noqa: E402
 
 MODEL = "claude-sonnet-5"
 PRICE_IN, PRICE_OUT = 2.00 / 1e6, 10.00 / 1e6   # $ за токен, Sonnet 5
-PROMPT = (ROOT / "prompts" / "issue.md").read_text()
+PROMPT = (ROOT / "prompts" / "issue.md").read_text() + "\n\n" + GLOSSARY   # правки по v8: общий глоссарий с «Каникулами»
 SCHEMA = json.loads((ROOT / "prompts" / "issue.schema.json").read_text())
 EVENT_RUBRICS = {"theme", "weekdays", "cinema", "talks", "exhibitions", "free", "kids", "sport", "out_of_town", "county"}
 PREFIX_RUBRICS = {"E": EVENT_RUBRICS, "A": {"new_announcements", "tickets", "theme"},
                   "T": {"tickets", "new_announcements", "theme"},
-                  "C": {"cancelled"}, "V": {"new_in_town"}, "K": {"holidays"}}
+                  "C": {"cancelled"}, "V": {"new_in_town"}, "K": {"holidays"},
+                  "F": {"cinema"}}   # этап 7b: фильмы окна (pipeline/cinema) — только «В кино»
 
 
 def allowed(prefix: str, rubric: str) -> bool:
@@ -190,7 +192,91 @@ HOMOGLYPHS = str.maketrans("aeopcxyAEOPCXHBKMT", "аеорсхуАЕОРСХНВ
 TO_LATIN = str.maketrans("аеорсхуАЕОРСХНВКМТ", "aeopcxyAEOPCXHBKMT")
 MIXED_RE = re.compile(r"\b(?=\w*[а-яё])(?=\w*[a-z])\w+\b", re.I)
 LATIN_RE = re.compile(r"\b[a-z]{4,}\b")
+# правки по v8: «футбольный матch» — не только отмечать, а исправлять без модели. Слово, где кириллицы не меньше
+# латиницы: сначала диграфы (ch → ч), потом буквы-двойники (a → а), потом остальные латинские буквы транслитерацией.
+DIGRAPHS = [("shch", "щ"), ("ch", "ч"), ("sh", "ш"), ("zh", "ж"), ("ts", "ц"), ("kh", "х"), ("ya", "я"), ("yu", "ю"),
+            ("yo", "ё")]
+TRANSLIT = str.maketrans("bdfghijklmnqrstuvwzBDFGHIJKLMNQRSTUVWZ", "бдфгхийклмнкрстувwзБДФГХИЙКЛМНКРСТУВWЗ".replace("w", "в").replace("W", "В"))
+
+
+def fix_mixed_word(word: str) -> str | None:
+    """Русское слово с латинскими буквами → только кириллица; None — слово в основном латинское (имя, название)."""
+    cyr = len(re.findall(r"[а-яё]", word, re.I))
+    lat = len(re.findall(r"[a-z]", word, re.I))
+    if cyr <= lat:   # «морris» — скорее имя (Morris): редактору
+        return None
+    out = word
+    for a, b in DIGRAPHS:
+        out = re.sub(a, b, out)
+        out = re.sub(a.capitalize(), b.upper(), out)
+    out = out.translate(HOMOGLYPHS).translate(TRANSLIT)
+    return out if re.fullmatch(r"[а-яё\-]+", out, re.I) else None
 CYRILLIC_RE = re.compile(r"\b\w*[а-яё]\w*\b", re.I)
+
+
+PRESSURE_RU = re.compile(r"[^.!?]*(поторопи|спешите|успейте|пока (?:трибуны|билеты|места|зал)\w* не|раскупят|разлетятся|"
+                         r"на пике|самого важного|самых важных)[^.!?]*[.!?]?", re.I)
+PRESSURE_EN = re.compile(r"[^.!?]*\b(hurry|don'?t wait|before (?:it|they|the stands|tickets) (?:sell|fill)|fill up|"
+                         r"snap (?:them|it) up|at the peak of|biggest year)[^.!?]*[.!?]?", re.I)
+
+
+def check_tone(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """Правки по v8 («тон без давления»): призыв спешить — только при сигнале срочности со страницы (page_urgency) или
+    у T-кандидата (urgency); оценочные преувеличения — нет. Такие фразы удаляются из описания без модели."""
+    notes = []
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            urgent = any(pools.candidates.get(i, {}).get("page_urgency") or pools.candidates.get(i, {}).get("urgency")
+                         for i in it["ids"])
+            for f, rx in (("blurb_ru", PRESSURE_RU), ("blurb_en", PRESSURE_EN)):
+                for m in list(rx.finditer(it.get(f) or "")):
+                    frag = m.group(0).strip()
+                    hype = re.search(r"на пике|самого важного|самых важных|at the peak|biggest year", frag, re.I)
+                    if urgent and not hype:
+                        continue
+                    if len(frag) >= len((it[f] or "").strip()) - 2:   # вся фраза — единственная: не оставляем пустым
+                        continue
+                    it[f] = re.sub(r"\s{2,}", " ", it[f].replace(frag, "")).strip()
+                    if f == "blurb_ru":
+                        notes.append((f"“{it['title_en']}”: pressure/hype phrase removed", 
+                                      f"«{it['title_ru']}»: убрана фраза с давлением или преувеличением: «{frag[:80]}»"))
+    return notes
+
+
+def check_kids(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """Правки по v8: «С детьми» — не меньше 3 пунктов и разные площадки (не больше 1 с площадки, если есть другие)."""
+    kids = next((sec for sec in result["sections"] if sec["rubric"] == "kids"), {"items": []})
+    used = {i for sec in result["sections"] for it in sec["items"] for i in it["ids"]}
+    venues = [pools.candidates[it["ids"][0]].get("venue") for it in kids["items"] if it["ids"][0] in pools.candidates]
+    free = [c.get("venue") for cid, c in pools.candidates.items() if c.get("kids_tag") and c["kind"] == "event"
+            and cid not in used and c.get("zone") in issue.LISTED_ZONES]
+    notes = []
+    dup = sorted({v for v in venues if v and venues.count(v) > 1})
+    if dup and any(v not in venues for v in free):
+        notes.append((f"Kids: several items from one venue ({', '.join(dup)}) while other venues had candidates",
+                      f"«С детьми»: несколько пунктов с одной площадки ({', '.join(dup)}), хотя есть кандидаты с других"))
+    if len(kids["items"]) < 3 and len(set(free) | set(venues)) >= 3:
+        notes.append((f"Kids: {len(kids['items'])} items, 3 required when candidates exist",
+                      f"«С детьми»: {len(kids['items'])} пункта, нужно не меньше 3 — кандидаты есть"))
+    return notes
+
+
+def film_notes(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """Этап 7b: у полных пунктов о фильмах — какая статья Wikipedia дала факты (проверить, тот ли фильм) и где идёт."""
+    notes = []
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            c = pools.candidates.get(it["ids"][0]) or {}
+            if c.get("kind") != "film_release":
+                continue
+            src = c.get("url") if "wikipedia" in (c.get("url") or "") else None
+            where = ", ".join(c.get("cinemas") or []) or ("широкий прокат" if c.get("wide_release") else "кинотеатр не подтверждён")
+            notes.append((f"Film “{it['title_en']}”: score {c.get('importance')} ({c.get('importance_reason')}); "
+                          f"facts from Wikipedia “{c.get('wiki_description') or '—'}”; showing: {where}",
+                          f"фильм «{it['title_ru']}»: оценка {c.get('importance')} ({c.get('importance_reason')}); "
+                          f"факты — статья Wikipedia «{c.get('wiki_description') or '—'}» (тот ли фильм?); где идёт: {where}"
+                          + (f"; ссылка — Wikipedia {src}" if src else "")))
+    return notes
 
 
 def check_alphabets(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
@@ -205,10 +291,12 @@ def check_alphabets(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
     for obj, f in fields:
         for word in MIXED_RE.findall(obj[f]):
             fixed = word.translate(HOMOGLYPHS)
-            if re.fullmatch(r"[а-яё]+", fixed, re.I):
+            if not re.fullmatch(r"[а-яё]+", fixed, re.I):
+                fixed = fix_mixed_word(word) or fixed
+            if re.fullmatch(r"[а-яё\-]+", fixed, re.I):
                 obj[f] = obj[f].replace(word, fixed)
-                notes.append((f"Russian text: Latin letters inside the word «{fixed}» — fixed",
-                              f"русский текст: латинские буквы в слове «{fixed}» — исправлено"))
+                notes.append((f"Russian text: Latin letters inside the word «{word}» → «{fixed}» — fixed",
+                              f"русский текст: латинские буквы в слове «{word}» → «{fixed}» — исправлено"))
             else:
                 notes.append((f"Russian text: mixed Cyrillic and Latin in «{word}» — rewrite the word",
                               f"русский текст: кириллица и латиница в одном слове «{word}» — переписать слово"))
@@ -378,7 +466,7 @@ def current_not_verified(con, kd: dict) -> list[tuple[str, str, str]]:
 
 # «Причины отбора — явно»: заданное число пунктов по рубрикам (как в prompts/issue.md, правило 3)
 RUBRIC_LIMITS = {"theme": (3, 6), "weekend": (3, 5), "weekdays": (4, 6), "cinema": (0, 4), "talks": (2, 5),
-                 "exhibitions": (2, 4), "free": (3, 4), "kids": (2, 4), "sport": (0, 4), "out_of_town": (3, 4),
+                 "exhibitions": (2, 4), "free": (3, 4), "kids": (3, 4), "sport": (0, 4), "out_of_town": (3, 4),
                  "county": (0, 3), "new_announcements": (3, 5), "tickets": (0, 3), "cancelled": (0, 3),
                  "new_in_town": (5, 6)}
 FULL_ITEMS_MAX = 45   # решения после 6c: полных пунктов (с описанием) не больше 40–45; компактные строки — отдельно
@@ -1316,6 +1404,8 @@ def editor_block(result: dict, pools: issue.Pools, w: issue.Window, fix_notes: l
     fixes_ru = [f"проверка ответа: {ru}" for _, ru in fix_notes]
     fixes_en += [f"review: {en}" for en, _ in review]
     fixes_ru += [f"ревью: {ru}" for _, ru in review]
+    fixes_en += [f"build: {en}" for en, _ in dict.fromkeys(pools.notes)]   # этап 7b: время детских событий и т.п.
+    fixes_ru += [f"сборка: {ru}" for _, ru in dict.fromkeys(pools.notes)]
     return {
         "en": [("Doubtful items and model notes", result["editor_notes_en"] + fixes_en),
                ("Possible duplicates the pipeline did not merge", dups_en),
@@ -1343,6 +1433,7 @@ def main() -> None:
     ap.add_argument("--end", help=f"по умолчанию — дата отправки + {issue.WINDOW_DAYS} дней")
     ap.add_argument("--version", default="", help="суффикс файлов: v2 → issue_<дата>_v2_en.md")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--no-record", action="store_true", help="не записывать пункты в историю выпусков issue_items")
     ap.add_argument("--no-api", action="store_true", help="без дополнительных запросов при постобработке")
     ap.add_argument("--from-json", help="не вызывать API, взять сохранённый ответ модели")
     ap.add_argument("--redo-post", action="store_true", help="с --from-json: заново выполнить постобработку ответа "
@@ -1444,6 +1535,8 @@ def main() -> None:
         n3, cost3 = expand_long(client, result, pools, con)
         n4, cost4 = fix_names_ru(client, result, pools, con)
         fix_notes += n3 + n4 + english_in_russian(result, pools) + latin_names_ru(result, pools)
+        fix_notes += check_tone(result, pools) + check_kids(result, pools) + check_alphabets(result, pools) \
+            + film_notes(result, pools)
         knowledge_check(result, pools)
         usage = {"input_tokens": usage["input_tokens"] + tin2, "output_tokens": usage["output_tokens"] + tout2,
                  "cost_usd": usage["cost_usd"] + tin2 * PRICE_IN + tout2 * PRICE_OUT + cost3 + cost4}
@@ -1488,6 +1581,10 @@ def main() -> None:
     st_en, st_ru = page_statuses(result, pools, con)
     editor["en"].insert(-1, ("Statuses from event pages (stage 7 recheck)", st_en))
     editor["ru"].insert(-1, ("Статусы со страниц событий (перепроверка, этап 7)", st_ru))
+    if not args.no_record:   # правки по v8: история выпусков против повторов (pipeline/history.py)
+        from pipeline import history
+        print(json.dumps({"issue_items_recorded": history.record(con, args.issue, args.version or "v1", result,
+                                                                 pools.candidates)}), file=sys.stderr)
     (out_dir / f"{stem}_ai_measure.json").write_text(json.dumps(m, ensure_ascii=False, indent=1))
     lists = editor_lists(result, pools, w, removed, con)
     miss_ids = lists.pop("_missing_ids")

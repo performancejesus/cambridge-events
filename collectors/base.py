@@ -29,6 +29,8 @@ class RawEvent:
     categories: list[str] = field(default_factory=list)
     summary: str | None = None     # короткий фрагмент описания для внутреннего использования (не публикуется)
     published: str | None = None   # для статей: дата публикации
+    access: str | None = None      # этап 7b: open / members / restricted (если источник это указывает)
+    access_note: str | None = None # «только для членов Cambridge Union · членство Open £370 в год» и т.п.
     fetched_at: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat(timespec="seconds"))
 
     def to_dict(self) -> dict:
