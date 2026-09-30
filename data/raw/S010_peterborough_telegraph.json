@@ -1,10 +1,10 @@
 [
  {
   "source_id": "S010",
-  "title": "HRH The Princess Royal celebrates lifesaving partnerships with Magpas Air Ambulance",
-  "url": "https://www.peterboroughtoday.co.uk/your-world/hrh-the-princess-royal-celebrates-lifesaving-partnerships-with-magpas-air-ambulance-9234680",
+  "title": "Sainsbury’s has 25% off Taste the Difference and I’ve found everything I need for movie night",
+  "url": "https://www.peterboroughtoday.co.uk/recommended/sainsburys-taste-the-difference-9234220",
   "kind": "article",
-  "external_id": "9234680",
+  "external_id": "9232800",
   "start": null,
   "end": null,
   "all_day": false,
@@ -17,13 +17,39 @@
   "status": null,
   "organizer": null,
   "categories": [
-   "Your World"
+   "Recommended"
   ],
-  "summary": "On 29th September, Magpas Air Ambulance welcomed HRH The Princess Royal to the charity’s headquarters in Alconbury Weald, Cambridgeshire, for a special event celebrating lifesaving partnerships.",
-  "published": "2026-09-30T13:10:31Z",
+  "summary": "I’ve found the Sainsbury’s deal that’s made my Friday night movie plans very easy",
+  "published": "2026-09-30T18:29:32Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Rent rises, pets and evictions: what your landlord can and cannot do under the Renters’ Rights Act",
+  "url": "https://www.peterboroughtoday.co.uk/recommended/renters-rights-act-tenant-rights-england-landlord-rent-increases-renting-with-pets-axa-landlord-advice-9222372",
+  "kind": "article",
+  "external_id": "9220318",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Recommended"
+  ],
+  "summary": "From ending rental bidding wars to giving pet requests a fair hearing, England’s rental reforms affect everyday decisions for tenants and property owners",
+  "published": "2026-09-30T17:57:20Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -47,10 +73,327 @@
    "News"
   ],
   "summary": "Popular movie house was one of the most ornate buildings in the city centre",
-  "published": "2026-09-30T13:08:14Z",
+  "published": "2026-09-30T17:15:44Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "£195,000 boost to help crime victims in Peterborough deal with impact of early prisoner release",
+  "url": "https://www.peterboroughtoday.co.uk/news/crime/ps195000-boost-to-help-crime-victims-in-peterborough-deal-with-impact-of-early-prisoner-release-9235888",
+  "kind": "article",
+  "external_id": "9235888",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Crime",
+   "News"
+  ],
+  "summary": "Vital services to help victims of crime in Peterborough are to get a cash boost to counter the impact of the early release of prisoners.",
+  "published": "2026-09-30T16:05:58Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Leah leapt to the top of two singles competitions on two golf course",
+  "url": "https://www.peterboroughtoday.co.uk/sport/golf/leah-leapt-to-the-top-of-two-singles-competitions-on-two-golf-course-9236714",
+  "kind": "article",
+  "external_id": "9236714",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Sport"
+  ],
+  "summary": "Leah Jeeves won the Nene Park singles competitions on the club’s Thorpe Wood and Orton Meadows courses.",
+  "published": "2026-09-30T16:05:35Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Jailed in September: Faces of 11 crooks locked up for crimes in and around Peterborough - including 'dangerous rapist'",
+  "url": "https://www.peterboroughtoday.co.uk/news/crime/jailed-in-september-faces-of-11-crooks-locked-up-for-crimes-in-and-around-peterborough-including-dangerous-rapist-9219941",
+  "kind": "article",
+  "external_id": "9219941",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Crime",
+   "News"
+  ],
+  "summary": "A ‘dangerous’ rapist who raped a woman in a late-night attack near a filling station is among the crooks locked up for crimes in and around Peterborough in September.",
+  "published": "2026-09-30T15:35:06Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "The Royal Shakespeare Company takes centre stage at Ormiston Bushfield Academy",
+  "url": "https://www.peterboroughtoday.co.uk/your-world/the-royal-shakespeare-company-takes-centre-stage-at-ormiston-bushfield-academy-9236212",
+  "kind": "article",
+  "external_id": "9236212",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Your World"
+  ],
+  "summary": "Ormiston Bushfield Academy (OBA) in Orton, part of Ormiston Academies Trust, has welcomed the world-renowned Royal Shakespeare Company (RSC) into the school for two weeks of performances and enrichment activities with its students.",
+  "published": "2026-09-30T15:24:27Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Binance faces £250m group action over alleged unauthorised crypto sales",
+  "url": "https://www.peterboroughtoday.co.uk/must-read/binance-changpeng-zhao-crypto-trading-platform-9236119",
+  "kind": "article",
+  "external_id": "9236119",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Must Read"
+  ],
+  "summary": "More than 1,000 consumers in England and Wales have joined a group action legal claim against Binance and its founder Changpeng Zhao.",
+  "published": "2026-09-30T15:16:30Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Arsonists torch boat on Peterborough Embankment",
+  "url": "https://www.peterboroughtoday.co.uk/news/emergency-incident/arsonists-torch-boat-on-peterborough-embankment-9236113",
+  "kind": "article",
+  "external_id": "9236113",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Emergency Incident",
+   "News"
+  ],
+  "summary": "An appeal has been launched after arsonists set fire to a boat at Peterborough’s Embankment.",
+  "published": "2026-09-30T15:14:18Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Industry veterans launch Elevare Software Group with two acquisitions in housing",
+  "url": "https://www.peterboroughtoday.co.uk/must-read/industry-veterans-launch-elevare-software-group-with-two-acquisitions-in-housing-9236036",
+  "kind": "article",
+  "external_id": "9236036",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Must Read"
+  ],
+  "summary": "Elevare plans to support landlords across the country.",
+  "published": "2026-09-30T15:08:52Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Barchester Healthcare wins prestigious industry award for all-electric kitchen designs",
+  "url": "https://www.peterboroughtoday.co.uk/must-read/barchester-healthcare-wins-prestigious-industry-award-for-all-electric-kitchen-designs-9235913",
+  "kind": "article",
+  "external_id": "9235913",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Must Read"
+  ],
+  "summary": "Barchester Healthcare was named the Operator of the Year for Innovative Kitchen Design.",
+  "published": "2026-09-30T14:59:49Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "5 historic pubs in and around Peterborough that are looking for a new landlord or landlady right now - and how much money you could make",
+  "url": "https://www.peterboroughtoday.co.uk/news/people/5-historic-pubs-in-and-around-peterborough-that-are-looking-for-a-new-landlord-or-landlady-right-now-and-how-much-money-you-could-make-9235606",
+  "kind": "article",
+  "external_id": "9235606",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "People",
+   "News"
+  ],
+  "summary": "These pubs are in need of new tenants",
+  "published": "2026-09-30T14:30:21Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Petrolhead transforms 1974 Beetle into Hot Wheels style-car - using egg whisk and champagne cooler",
+  "url": "https://www.peterboroughtoday.co.uk/news/people/petrolhead-transforms-1974-beetle-into-hot-wheels-style-car-using-egg-whisk-and-champagne-cooler-9235426",
+  "kind": "article",
+  "external_id": "9235426",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "People",
+   "News"
+  ],
+  "summary": "A petrolhead from Guyhirn has lived every boy’s dream, creating a Hot Wheels style VW Beetle out of junk found in his garage.",
+  "published": "2026-09-30T14:14:37Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "Peterborough dachshund group grows to nearly 300 members, creating a community for sausage dog owners",
+  "url": "https://www.peterboroughtoday.co.uk/your-world/peterborough-dachshund-group-grows-to-nearly-300-members-creating-a-community-for-sausage-dog-owners-9235397",
+  "kind": "article",
+  "external_id": "9235397",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Your World"
+  ],
+  "summary": "A Peterborough dachshund walking group has grown to more than 260 members in just six months, bringing together owners and helping nervous dogs build confidence.",
+  "published": "2026-09-30T14:13:29Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
+ },
+ {
+  "source_id": "S010",
+  "title": "HRH The Princess Royal celebrates lifesaving partnerships with Magpas Air Ambulance",
+  "url": "https://www.peterboroughtoday.co.uk/your-world/hrh-the-princess-royal-celebrates-lifesaving-partnerships-with-magpas-air-ambulance-9234680",
+  "kind": "article",
+  "external_id": "9234680",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Your World"
+  ],
+  "summary": "On 29th September, Magpas Air Ambulance welcomed HRH The Princess Royal to the charity’s headquarters in Alconbury Weald, Cambridgeshire, for a special event celebrating lifesaving partnerships.",
+  "published": "2026-09-30T13:10:31Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -77,7 +420,7 @@
   "published": "2026-09-30T12:43:31Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -104,7 +447,7 @@
   "published": "2026-09-30T12:28:33Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -131,7 +474,7 @@
   "published": "2026-09-30T12:10:22Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -158,7 +501,7 @@
   "published": "2026-09-30T11:15:44Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -184,7 +527,7 @@
   "published": "2026-09-30T11:11:53Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -210,34 +553,7 @@
   "published": "2026-09-30T11:04:42Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Jailed in September: Faces of 11 crooks locked up for crimes in and around Peterborough - including 'dangerous rapist'",
-  "url": "https://www.peterboroughtoday.co.uk/news/crime/jailed-in-september-faces-of-11-crooks-locked-up-for-crimes-in-and-around-peterborough-including-dangerous-rapist-9219941",
-  "kind": "article",
-  "external_id": "9219941",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Crime",
-   "News"
-  ],
-  "summary": "A ‘dangerous’ rapist who raped a woman in a late-night attack near a filling station is among the crooks locked up for crimes in and around Peterborough in September.",
-  "published": "2026-09-30T10:32:33Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -263,7 +579,7 @@
   "published": "2026-09-30T10:30:40Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -291,7 +607,7 @@
   "published": "2026-09-30T10:22:41Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -317,7 +633,7 @@
   "published": "2026-09-30T10:14:18Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -344,7 +660,7 @@
   "published": "2026-09-30T10:13:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -370,7 +686,7 @@
   "published": "2026-09-30T10:09:30Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -398,7 +714,7 @@
   "published": "2026-09-30T10:03:17Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -425,7 +741,7 @@
   "published": "2026-09-30T09:26:47Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -452,7 +768,7 @@
   "published": "2026-09-30T09:21:01Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -478,34 +794,7 @@
   "published": "2026-09-30T08:18:48Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Williams' wonder strike salvages a point for Peterborough Sports, League Cup joy for Netherton United and Spalding United sign an ex-Posh player",
-  "url": "https://www.peterboroughtoday.co.uk/sport/football/williams-wonder-strike-salvages-a-point-for-peterborough-sports-league-cup-joy-for-netherton-united-and-spalding-united-sign-an-ex-posh-player-9226074",
-  "kind": "article",
-  "external_id": "9226074",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Football",
-   "Sport"
-  ],
-  "summary": "A wonder goal in injury time from Harvey Williams salvaged a point for Peterborough Sports in their Tuesday night Southern Premier Division Central game against Redditch United at PIMS Park.",
-  "published": "2026-09-30T08:02:21Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -533,7 +822,7 @@
   "published": "2026-09-30T08:00:12Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -559,7 +848,7 @@
   "published": "2026-09-30T07:52:48Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -587,7 +876,7 @@
   "published": "2026-09-30T07:47:31Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -613,7 +902,7 @@
   "published": "2026-09-30T07:40:29Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -640,7 +929,7 @@
   "published": "2026-09-30T07:22:54Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -666,7 +955,7 @@
   "published": "2026-09-30T07:22:02Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -692,7 +981,7 @@
   "published": "2026-09-30T07:10:47Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -719,7 +1008,7 @@
   "published": "2026-09-30T07:06:44Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -745,7 +1034,7 @@
   "published": "2026-09-30T06:45:04Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -772,7 +1061,7 @@
   "published": "2026-09-30T06:17:41Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -798,7 +1087,7 @@
   "published": "2026-09-30T05:32:26Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -824,7 +1113,7 @@
   "published": "2026-09-30T05:00:52Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -850,7 +1139,7 @@
   "published": "2026-09-30T04:10:13Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -877,7 +1166,7 @@
   "published": "2026-09-30T00:57:50Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -904,300 +1193,7 @@
   "published": "2026-09-30T00:57:28Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Always running out of ink? This offer gives you three extra trial months",
-  "url": "https://www.peterboroughtoday.co.uk/recommended/hp-instant-ink-hp-instant-ink-offer-printer-ink-subscription-summer26uki-hp-ink-trial-9218188",
-  "kind": "article",
-  "external_id": "9208843",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Recommended"
-  ],
-  "summary": "New customers can unlock extra trial months with a promotional code, while automatic ink deliveries could take one household job off the list",
-  "published": "2026-09-29T16:58:28Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Peterborough United deny Robbie Savage has been offered the manager's position at London Road - not yet anyway!",
-  "url": "https://www.peterboroughtoday.co.uk/sport/football/peterborough-united/peterborough-united-deny-robbie-savage-has-been-offered-the-managers-position-at-london-road-not-yet-anyway-9222946",
-  "kind": "article",
-  "external_id": "9222946",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Peterborough United",
-   "Football",
-   "Sport"
-  ],
-  "summary": "Peterborough United have disputed a claim from Forest Green Rovers owner Dale Vince that Robbie Savage has been offered the job as first-team manager at London Road.",
-  "published": "2026-09-29T16:24:50Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Strong Peterborough United Under 21 side beaten by Fleetwood Town",
-  "url": "https://www.peterboroughtoday.co.uk/sport/football/peterborough-united/strong-peterborough-united-under-21-side-beaten-by-fleetwood-town-9222710",
-  "kind": "article",
-  "external_id": "9222710",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Peterborough United",
-   "Football",
-   "Sport"
-  ],
-  "summary": "A strong starting line-up including first-team regulars Danny Ormerod, Chris Conn-Clarke, James Dornelly, Harrison Jones, Evan Weir and Ethan Williams lost 1-0 to Fleetwood Town in a Professional Development Under 21 League game at the Weston Homes Stadium on Tuesday.",
-  "published": "2026-09-29T15:29:16Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Appeal to Peterborough householders to remove batteries from electrical items after recycling centre fire",
-  "url": "https://www.peterboroughtoday.co.uk/news/people/appeal-to-peterborough-householders-to-remove-batteries-from-electrical-items-after-recycling-centre-fire-9222499",
-  "kind": "article",
-  "external_id": "9222499",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "People",
-   "News"
-  ],
-  "summary": "An appeal has gone out to Peterborough householders to make sure they remove batteries before throwing away electrical items.",
-  "published": "2026-09-29T15:06:15Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Neeyamo unveils AI system for global payroll compliance",
-  "url": "https://www.peterboroughtoday.co.uk/must-read/neeyamo-compass-regulatory-change-detection-9222354",
-  "kind": "article",
-  "external_id": "9222354",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Must Read"
-  ],
-  "summary": "Neeyamo's Compass turns regulatory change into payroll-ready configuration, cross-checked by a council of AI models.",
-  "published": "2026-09-29T14:54:33Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "ProHance launches 'industry first' governance platform",
-  "url": "https://www.peterboroughtoday.co.uk/must-read/prohance-launches-governance-platform-9222274",
-  "kind": "article",
-  "external_id": "9222274",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Must Read"
-  ],
-  "summary": "The platform will give enterprises actionable insights on future conditions that could impact their company",
-  "published": "2026-09-29T14:48:01Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Discounts on Sainsbury’s top kitchen staples mean £100 of shopping for £75 in inflation-busting deal",
-  "url": "https://www.peterboroughtoday.co.uk/recommended/discounts-on-sainsburys-top-quality-food-range-9220496",
-  "kind": "article",
-  "external_id": "9219067",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Recommended"
-  ],
-  "summary": "Households on a budget can enjoy high-quality food and drink without breaking the bank thanks to Sainsbury's limited-time 25% discount deal on its Taste the Difference range, but shoppers must sign up for a virtual Nectar card to get the best bargains.",
-  "published": "2026-09-29T14:43:13Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Thomas Deacon Academy staff member wins award for community work in Peterborough",
-  "url": "https://www.peterboroughtoday.co.uk/your-world/thomas-deacon-academy-staff-member-wins-award-for-community-work-in-peterborough-9222215",
-  "kind": "article",
-  "external_id": "9222215",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Your World"
-  ],
-  "summary": "A Thomas Deacon Academy staff member has been recognised for her work supporting young people and communities across Peterborough.",
-  "published": "2026-09-29T14:42:14Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "England rugby legend Johnson calls on coaches in Peterborough to get life-saving cardiac arrest training",
-  "url": "https://www.peterboroughtoday.co.uk/your-world/england-rugby-legend-johnson-calls-on-coaches-in-peterborough-to-get-life-saving-cardiac-arrest-training-9222095",
-  "kind": "article",
-  "external_id": "9222095",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Your World"
-  ],
-  "summary": "Former England Rugby captain and Head Coach Martin Johnson has called on sports coaches across Peterborough to get vital cardiac arrest training as part of a campaign to raise awareness of undiagnosed heart conditions.",
-  "published": "2026-09-29T14:33:32Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Drug dealer jailed after crashing into parked car during pursuit with police in Peterborough",
-  "url": "https://www.peterboroughtoday.co.uk/news/people/drug-dealer-jailed-after-crashing-into-parked-car-during-pursuit-with-police-in-peterborough-9222079",
-  "kind": "article",
-  "external_id": "9222079",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "People",
-   "News"
-  ],
-  "summary": "A drug dealer who crashed into a parked car while trying to escape police in Peterborough has been jailed for almost four years.",
-  "published": "2026-09-29T14:29:36Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Last chance of 2026! Red Arrows flying near Peterborough on Friday en route to final display of the year - exact route and timings",
-  "url": "https://www.peterboroughtoday.co.uk/news/people/last-chance-of-2026-red-arrows-flying-near-peterborough-on-friday-en-route-to-final-display-of-the-year-exact-route-and-timings-9222063",
-  "kind": "article",
-  "external_id": "9222063",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "People",
-   "News"
-  ],
-  "summary": "It’ll be your last chance to see the iconic jets for several months",
-  "published": "2026-09-29T14:28:46Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -1224,14 +1220,14 @@
   "published": "2026-09-29T14:26:16Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
-  "title": "Met Police raid Cambridgeshire homes as part of major operation to tackle organised crime",
-  "url": "https://www.peterboroughtoday.co.uk/news/people/met-police-raid-cambridgeshire-homes-as-part-of-major-operation-to-tackle-organised-crime-9221959",
+  "title": "Green was a shining light in a disappointing season for Peterborough Town CC",
+  "url": "https://www.peterboroughtoday.co.uk/sport/cricket/green-was-a-shining-light-in-a-disappointing-season-for-peterborough-town-cc-9217133",
   "kind": "article",
-  "external_id": "9221959",
+  "external_id": "9217133",
   "start": null,
   "end": null,
   "all_day": false,
@@ -1244,121 +1240,14 @@
   "status": null,
   "organizer": null,
   "categories": [
-   "People",
-   "News"
+   "Cricket",
+   "Sport"
   ],
-  "summary": "Officers from the Met Police raided a number of homes in Cambridgeshire as part of a major operation to tackle organised crime.",
-  "published": "2026-09-29T14:21:03Z",
+  "summary": "All-rounder Nick Green won the player-of-the-year award at Peterborough Town Cricket Club.",
+  "published": "2026-09-29T07:23:06Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Why the sandwich remains Britain’s workplace lunch champion",
-  "url": "https://www.peterboroughtoday.co.uk/must-read/sandwich-britains-workplace-lunch-champion-9221902",
-  "kind": "article",
-  "external_id": "9221902",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Must Read"
-  ],
-  "summary": "Sandwich platters remain a firm staple in office meetings and family gatherings.",
-  "published": "2026-09-29T14:17:22Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "EXPLAINED: The state of play with Peterborough’s hosepipe ban going into October - and what it means for you",
-  "url": "https://www.peterboroughtoday.co.uk/news/people/explained-the-state-of-play-with-peterboroughs-hosepipe-ban-going-into-october-and-what-it-means-for-you-9221635",
-  "kind": "article",
-  "external_id": "9221635",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "People",
-   "News"
-  ],
-  "summary": "Peterborough has been under a hosepipe ban since July 11",
-  "published": "2026-09-29T13:54:05Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "The cheapest places to buy diesel in Peterborough according to petrolprices.com - as cost to fill up hits record high",
-  "url": "https://www.peterboroughtoday.co.uk/news/people/the-cheapest-places-to-buy-diesel-in-peterborough-according-to-petrolpricescom-as-cost-to-fill-up-hits-record-high-9221521",
-  "kind": "article",
-  "external_id": "9221521",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "People",
-   "News"
-  ],
-  "summary": "Diesel prices in the UK have hit a record high this week, according to the RAC.",
-  "published": "2026-09-29T13:44:34Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Nene Park Trust hit out at council over lack of consultation at move to axe £1 million funding for £6 million climbing centre",
-  "url": "https://www.peterboroughtoday.co.uk/news/people/nene-park-trust-hit-out-at-council-over-lack-of-consultation-at-move-to-axe-ps1-million-funding-for-ps6-million-climbing-centre-9221432",
-  "kind": "article",
-  "external_id": "9221432",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "People",
-   "News"
-  ],
-  "summary": "Nene Park Trust bosses have hit back at Peterborough City Council’s move to axe more than £1 million of funding for a major climbing centre on parkland.",
-  "published": "2026-09-29T13:36:36Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  },
  {
   "source_id": "S010",
@@ -1385,33 +1274,6 @@
   "published": "2026-09-29T06:49:04Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
- },
- {
-  "source_id": "S010",
-  "title": "Double dating with Peterborough's Club With No Name this weekend",
-  "url": "https://www.peterboroughtoday.co.uk/whats-on/arts-and-entertainment/double-dating-with-peterboroughs-club-with-no-name-this-weekend-9180662",
-  "kind": "article",
-  "external_id": "9180662",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Arts and Entertainment",
-   "What&#039;s On"
-  ],
-  "summary": "Club With No Name (…or should that be Club With No Fixed Abode!) has a busy weekend lined up for Peterborough gig-goers.",
-  "published": "2026-09-25T15:20:51Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:34:41+00:00"
+  "fetched_at": "2026-09-30T21:35:25+00:00"
  }
 ]

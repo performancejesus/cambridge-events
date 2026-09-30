@@ -1,30 +1,6 @@
 [
  {
   "source_id": "S072",
-  "title": "Cambridge Rock 'n Roll Club - \"JOHNNY RED\"",
-  "url": "https://www.camcityevents.co.uk/events/cambridge-rock-n-roll-club-johnny-red",
-  "kind": "event",
-  "external_id": "https://www.camcityevents.co.uk/events/cambridge-rock-n-roll-club-johnny-red",
-  "start": "2026-10-11",
-  "end": null,
-  "all_day": true,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "£7.00",
-  "status": "scheduled",
-  "organizer": "City Events",
-  "categories": [],
-  "summary": "🎸 The Cambridge Rock ’n’ Roll Club🎸 SUNDAY 11TH OCTOBER 2026 - JOHNNY REDOn the third Friday of every month, head to the Abbey Lounge on Newmarket Road, Cambridge, CB5 8LN, for a fantastic afternoon of live rock ’n’ roll!🕝 2.30pm – 5.30pmEvery month features a different great rock ’n’ roll band or …",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:24+00:00"
- },
- {
-  "source_id": "S072",
   "title": "Fireworks Night",
   "url": "https://www.camcityevents.co.uk/events/fireworks-night-2026",
   "kind": "event",
@@ -45,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:24+00:00"
+  "fetched_at": "2026-09-30T21:32:46+00:00"
  },
  {
   "source_id": "S072",
@@ -69,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:24+00:00"
+  "fetched_at": "2026-09-30T21:32:46+00:00"
  },
  {
   "source_id": "S072",
@@ -93,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:24+00:00"
+  "fetched_at": "2026-09-30T21:32:46+00:00"
  },
  {
   "source_id": "S072",
@@ -117,6 +93,30 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:24+00:00"
+  "fetched_at": "2026-09-30T21:32:46+00:00"
+ },
+ {
+  "source_id": "S072",
+  "title": "Jordan Ashman benefit concert",
+  "url": "https://www.camcityevents.co.uk/events/jordan-ashman-benefit-concert",
+  "kind": "event",
+  "external_id": "https://www.camcityevents.co.uk/events/jordan-ashman-benefit-concert",
+  "start": "2026-12-18",
+  "end": null,
+  "all_day": true,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "£38.50",
+  "status": "scheduled",
+  "organizer": "City Events",
+  "categories": [],
+  "summary": "JORDAN ASHMAN – PERCUSSIONISTBBC YOUNG MUSICIAN OF THE YEAR 2022 The Rotary Club of Cambridge Rutherford have teamed up with Queens’ College to promote a benefit concert in support of Jordan Ashman’s continuing musical studies. FROM MILTON TO THE MAIN STAGEJordan grew up in Milton, was educated at …",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:32:48+00:00"
  }
 ]

@@ -1,6 +1,33 @@
 [
  {
   "source_id": "S045",
+  "title": "Have You Got It Yet? The Story Of Syd Barret + Q&A",
+  "url": "https://www.picturehouses.com/movie-details/002/HO00013477/have-you-got-it-yet-the-story-of-syd-barrett-q-a?filter=",
+  "kind": "event",
+  "external_id": "2026-10-09|Have You Got It Yet? The Story Of Syd Barret + Q&A",
+  "start": "2026-10-09T20:30",
+  "end": null,
+  "all_day": false,
+  "venue": "Arts Picturehouse",
+  "address": "38-39 St Andrew's Street, Cambridge",
+  "postcode": "CB2 3AR",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "special screening"
+  ],
+  "summary": "special screening",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:41:18+00:00"
+ },
+ {
+  "source_id": "S045",
   "title": "Jet Lag: The Game Japanorama Finale",
   "url": "https://www.picturehouses.com/movie-details/000/HO00018557/jet-lag-the-game-japanorama-finale?filter=",
   "kind": "event",
@@ -24,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:41:39+00:00"
+  "fetched_at": "2026-09-30T21:41:18+00:00"
  },
  {
   "source_id": "S045",
@@ -51,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:41:39+00:00"
+  "fetched_at": "2026-09-30T21:41:18+00:00"
  },
  {
   "source_id": "S045",
@@ -78,7 +105,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:41:39+00:00"
+  "fetched_at": "2026-09-30T21:41:18+00:00"
  },
  {
   "source_id": "S045",
@@ -105,6 +132,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:41:39+00:00"
+  "fetched_at": "2026-09-30T21:41:18+00:00"
  }
 ]

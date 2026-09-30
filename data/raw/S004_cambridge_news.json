@@ -1,6 +1,34 @@
 [
  {
   "source_id": "S004",
+  "title": "Exactly when Peterborough’s Christmas lights will be switched on",
+  "url": "https://www.cambridge-news.co.uk/whats-on/whats-on-news/exactly-peterboroughs-christmas-lights-switched-34694878",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/whats-on/whats-on-news/exactly-peterboroughs-christmas-lights-switched-34694878",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "What's On",
+   "Peterborough",
+   "Christmas"
+  ],
+  "summary": "It may only be September - but Christmas arrangements are in full swing",
+  "published": "2026-09-30T17:00:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:27:21+00:00"
+ },
+ {
+  "source_id": "S004",
   "title": "Best beach to visit in autumn has been named - and it's just 120 minutes from Cambridge",
   "url": "https://www.cambridge-news.co.uk/whats-on/best-beach-visit-autumn-been-34683311",
   "kind": "article",
@@ -25,7 +53,7 @@
   "published": "2026-09-29T02:36:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
  },
  {
   "source_id": "S004",
@@ -54,7 +82,7 @@
   "published": "2026-09-29T00:27:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
  },
  {
   "source_id": "S004",
@@ -82,7 +110,7 @@
   "published": "2026-09-27T16:02:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
  },
  {
   "source_id": "S004",
@@ -110,7 +138,7 @@
   "published": "2026-09-27T14:30:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
  },
  {
   "source_id": "S004",
@@ -138,7 +166,7 @@
   "published": "2026-09-27T08:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
  },
  {
   "source_id": "S004",
@@ -167,7 +195,7 @@
   "published": "2026-09-27T03:56:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
  },
  {
   "source_id": "S004",
@@ -195,7 +223,7 @@
   "published": "2026-09-26T11:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
  },
  {
   "source_id": "S004",
@@ -224,7 +252,7 @@
   "published": "2026-09-25T02:17:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
  },
  {
   "source_id": "S004",
@@ -253,7 +281,7 @@
   "published": "2026-09-24T12:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
  },
  {
   "source_id": "S004",
@@ -281,7 +309,148 @@
   "published": "2026-09-24T07:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:04+00:00"
+  "fetched_at": "2026-09-30T21:27:21+00:00"
+ },
+ {
+  "source_id": "S004",
+  "title": "Drawing of suspect released after woman 'sexually assaulted' in village near St Neots",
+  "url": "https://www.cambridge-news.co.uk/news/local-news/drawing-suspect-released-after-woman-34696875",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/news/local-news/drawing-suspect-released-after-woman-34696875",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Local News",
+   "Crime",
+   "Cambridgeshire Constabulary"
+  ],
+  "summary": "If you think you recognise the person in the image get in touch with the police",
+  "published": "2026-09-30T15:28:49Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:27:24+00:00"
+ },
+ {
+  "source_id": "S004",
+  "title": "Doctor who touched student's hip and groin area cleared of sexual harassment",
+  "url": "https://www.cambridge-news.co.uk/news/local-news/doctor-who-touched-students-hip-34691004",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/news/local-news/doctor-who-touched-students-hip-34691004",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Local News",
+   "NHS",
+   "Air ambulance",
+   "Cambridge"
+  ],
+  "summary": "He was cleared by a tribunal of sexually harassing four students",
+  "published": "2026-09-30T15:00:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:27:24+00:00"
+ },
+ {
+  "source_id": "S004",
+  "title": "Cambridge paedophile sent ‘13-year-old girl’ photo of people having sex",
+  "url": "https://www.cambridge-news.co.uk/news/cambridge-news/cambridge-paedophile-sent-13-year-34696606",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/news/cambridge-news/cambridge-paedophile-sent-13-year-34696606",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Cambridge News",
+   "Crime",
+   "Courts"
+  ],
+  "summary": "The man also asked the 'girl' about her sexual experiences",
+  "published": "2026-09-30T14:44:53Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:27:24+00:00"
+ },
+ {
+  "source_id": "S004",
+  "title": "Lifelong Cambridge resident 'disgusted by how the city looks today'",
+  "url": "https://www.cambridge-news.co.uk/news/local-news/lifelong-cambridge-resident-disgusted-how-34696055",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/news/local-news/lifelong-cambridge-resident-disgusted-how-34696055",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Local News",
+   "Cambridge",
+   "Cambridge City Council"
+  ],
+  "summary": "A lifelong Cambridge resident launched a petition which will be debated by Cambridge City Council",
+  "published": "2026-09-30T14:09:13Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:27:24+00:00"
+ },
+ {
+  "source_id": "S004",
+  "title": "Google preferred sources: How to add CambridgeshireLive to keep up to date with the latest news",
+  "url": "https://www.cambridge-news.co.uk/news/cambridge-news/google-preferred-sources-how-add-34694965",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/news/cambridge-news/google-preferred-sources-how-add-34694965",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Cambridge News",
+   "Cambridgeshire",
+   "Google"
+  ],
+  "summary": "You can make sure you're in the loop with our latest stories",
+  "published": "2026-09-30T13:44:32Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -309,7 +478,7 @@
   "published": "2026-09-30T11:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -336,7 +505,7 @@
   "published": "2026-09-30T09:59:15Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -365,7 +534,7 @@
   "published": "2026-09-30T08:56:59Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -393,7 +562,7 @@
   "published": "2026-09-30T06:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -421,7 +590,7 @@
   "published": "2026-09-30T05:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -448,7 +617,7 @@
   "published": "2026-09-29T16:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -475,7 +644,7 @@
   "published": "2026-09-29T15:13:33Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -503,7 +672,7 @@
   "published": "2026-09-29T15:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -531,7 +700,7 @@
   "published": "2026-09-29T12:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -558,7 +727,7 @@
   "published": "2026-09-29T11:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -587,7 +756,7 @@
   "published": "2026-09-29T10:57:58Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -616,7 +785,7 @@
   "published": "2026-09-29T08:47:54Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -645,7 +814,7 @@
   "published": "2026-09-29T04:52:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -673,7 +842,7 @@
   "published": "2026-09-28T17:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -701,7 +870,7 @@
   "published": "2026-09-28T15:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -729,7 +898,7 @@
   "published": "2026-09-28T14:00:53Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  },
  {
   "source_id": "S004",
@@ -756,145 +925,6 @@
   "published": "2026-09-28T13:40:33Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
- },
- {
-  "source_id": "S004",
-  "title": "Residents fear being 'ankle deep in sewage' as more homes set to be built in Cambridge South",
-  "url": "https://www.cambridge-news.co.uk/news/news-opinion/residents-fear-being-ankle-deep-34680617",
-  "kind": "article",
-  "external_id": "https://www.cambridge-news.co.uk/news/news-opinion/residents-fear-being-ankle-deep-34680617",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "News Opinion",
-   "Housing",
-   "Commenting content"
-  ],
-  "summary": "Readers have slammed the plans with overpopulation and water fears",
-  "published": "2026-09-28T12:00:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
- },
- {
-  "source_id": "S004",
-  "title": "Cheapest fuel in your area as prices hit all-time high",
-  "url": "https://www.cambridge-news.co.uk/news/local-news/cheapest-fuel-your-area-prices-34682146",
-  "kind": "article",
-  "external_id": "https://www.cambridge-news.co.uk/news/local-news/cheapest-fuel-your-area-prices-34682146",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Local News",
-   "Travel",
-   "Motoring"
-  ],
-  "summary": "Drivers are now paying the highest ever recorded prices at the forecourt",
-  "published": "2026-09-28T11:11:08Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
- },
- {
-  "source_id": "S004",
-  "title": "Former police officer granted taxi licence after leaving force for 'racist and misogynistic' comments",
-  "url": "https://www.cambridge-news.co.uk/news/local-news/former-police-officer-granted-taxi-34681026",
-  "kind": "article",
-  "external_id": "https://www.cambridge-news.co.uk/news/local-news/former-police-officer-granted-taxi-34681026",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Local News",
-   "South Cambridgeshire Council"
-  ],
-  "summary": "South Cambridgeshire District Council granted a licence to the former officer who had been with the police for nearly two decades",
-  "published": "2026-09-28T11:00:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
- },
- {
-  "source_id": "S004",
-  "title": "'Horrible' road near schools with 'heavy congestion' making drop off and pick up 'unsafe'",
-  "url": "https://www.cambridge-news.co.uk/news/local-news/school-traffic-limited-parking-creating-34670715",
-  "kind": "article",
-  "external_id": "https://www.cambridge-news.co.uk/news/local-news/school-traffic-limited-parking-creating-34670715",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Local News",
-   "Cambridgeshire County Council",
-   "Huntingdon"
-  ],
-  "summary": "A petition has been launched",
-  "published": "2026-09-28T06:00:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
- },
- {
-  "source_id": "S004",
-  "title": "The historic Peterborough landmark where 2 Tudor queens were buried",
-  "url": "https://www.cambridge-news.co.uk/news/local-news/famous-people-buried-peterborough-cathedral-21332734",
-  "kind": "article",
-  "external_id": "https://www.cambridge-news.co.uk/news/local-news/famous-people-buried-peterborough-cathedral-21332734",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Local News",
-   "Peterborough",
-   "Things to do in Cambridgeshire"
-  ],
-  "summary": "They both played major parts in history",
-  "published": "2026-09-27T15:00:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:27:06+00:00"
+  "fetched_at": "2026-09-30T21:27:24+00:00"
  }
 ]

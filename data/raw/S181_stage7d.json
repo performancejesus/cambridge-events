@@ -1,0 +1,55 @@
+[
+ {
+  "source_id": "S181",
+  "title": "The Drifters",
+  "url": "https://www.kingslynncornexchange.co.uk/theatre/whats-on/music/the-drifters/",
+  "kind": "event",
+  "external_id": "2026-10-01|The Drifters",
+  "start": "2026-10-01",
+  "end": null,
+  "all_day": true,
+  "venue": "King's Lynn Corn Exchange",
+  "address": "Tuesday Market Place, King's Lynn",
+  "postcode": "PE30 1JW",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "music"
+  ],
+  "summary": "music",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:45:33+00:00"
+ },
+ {
+  "source_id": "S181",
+  "title": "Tease",
+  "url": "https://www.kingslynncornexchange.co.uk/theatre/whats-on/event/tease/",
+  "kind": "event",
+  "external_id": "2026-10-02|Tease",
+  "start": "2026-10-02",
+  "end": null,
+  "all_day": true,
+  "venue": "King's Lynn Corn Exchange",
+  "address": "Tuesday Market Place, King's Lynn",
+  "postcode": "PE30 1JW",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:45:33+00:00"
+ }
+]

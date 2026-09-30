@@ -21,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -45,7 +45,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "Ultimate Rave Bingo // Cambridge // Saturday 10th October",
+  "url": "https://www.skiddle.com/whats-on/Cambridge/Vinyl/Ultimate-Rave-Bingo--Cambridge--Saturday-10th-October/41600600/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Cambridge/Vinyl/Ultimate-Rave-Bingo--Cambridge--Saturday-10th-October/41600600/",
+  "start": "2026-10-10T17:30:00+01:00",
+  "end": "2026-10-10T22:30:00+01:00",
+  "all_day": false,
+  "venue": "Vinyl",
+  "address": "22 Sidney Street, Cambridge, CB2 3HG",
+  "postcode": "CB2 3HG",
+  "lat": 52.206186,
+  "lon": 0.120868,
+  "price": "GBP 15.00, GBP 18.00, GBP 135.00, GBP 155.00, GBP 165.00, GBP 0.00",
+  "status": "scheduled",
+  "organizer": "Surprisingly Adequate Events LTD",
+  "categories": [],
+  "summary": "This isn't just bingo. It's something completely different - designed with you in mind, and packed with surprises from start to finish.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -69,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -93,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -117,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -141,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -165,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -189,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -213,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -237,16 +261,16 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
   "title": "SEN Kids Disability Discos",
-  "url": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447588/",
+  "url": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447587/",
   "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447588/",
-  "start": "2026-12-21T14:00:00+00:00",
-  "end": "2026-12-21T15:15:00+00:00",
+  "external_id": "https://www.skiddle.com/whats-on/Northampton/Palm-Beach/SEN-Kids-Disability-Discos/42447587/",
+  "start": "2026-10-30T14:00:00+00:00",
+  "end": "2026-10-30T15:15:00+00:00",
   "all_day": false,
   "venue": "Palm Beach",
   "address": "3 Commercial Way, Northampton, NN8 1ET",
@@ -261,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -285,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -309,7 +333,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -333,7 +357,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -357,7 +381,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -381,7 +405,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -405,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -429,7 +453,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -453,7 +477,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -477,7 +501,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -501,7 +525,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -525,7 +549,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -549,7 +573,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -573,7 +597,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -597,7 +621,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -621,7 +645,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -645,7 +669,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -669,7 +693,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -693,7 +717,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -717,7 +741,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -741,7 +765,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -765,7 +789,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -789,7 +813,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -813,7 +837,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -837,7 +861,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -861,7 +885,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -885,7 +909,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -909,7 +933,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -933,7 +957,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -957,7 +981,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -981,7 +1005,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1005,7 +1029,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1029,7 +1053,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1053,7 +1077,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1077,7 +1101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1101,7 +1125,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1125,7 +1149,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1149,7 +1173,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1173,7 +1197,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1197,7 +1221,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1221,7 +1245,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1245,7 +1269,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1269,7 +1293,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1293,7 +1317,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
+ },
+ {
+  "source_id": "S007",
+  "title": "Breakfast with Santa",
+  "url": "https://www.skiddle.com/whats-on/Bedford/The-Compasses%2C-44-High-Street/Breakfast-with-Santa/42704668/",
+  "kind": "event",
+  "external_id": "https://www.skiddle.com/whats-on/Bedford/The-Compasses%2C-44-High-Street/Breakfast-with-Santa/42704668/",
+  "start": "2026-12-06T09:30:00+00:00",
+  "end": "2026-12-06T11:30:00+00:00",
+  "all_day": false,
+  "venue": "The Compasses, 44 High Street",
+  "address": "44 High Street, Bedford, MK45 5DD",
+  "postcode": "MK45 5DD",
+  "lat": 52.0010175,
+  "lon": -0.4691541,
+  "price": "GBP 15.00",
+  "status": "scheduled",
+  "organizer": "Barley and Vine Events Limited",
+  "categories": [],
+  "summary": "Join us for a magical morning of pancakes with Santa! Enjoy festive fun, decorate your own pancakes and capture a special photo with Santa.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1317,7 +1365,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1341,7 +1389,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1365,7 +1413,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1389,7 +1437,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1413,7 +1461,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1437,7 +1485,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1461,7 +1509,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1485,7 +1533,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1509,7 +1557,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1533,16 +1581,16 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
   "title": "Oktoberfest - Buzz Bingo Colchester",
-  "url": "https://www.skiddle.com/whats-on/Colchester/Buzz-Bingo-Colchester/Oktoberfest---Buzz-Bingo-Colchester/42775871/",
+  "url": "https://www.skiddle.com/whats-on/Colchester/Buzz-Bingo-Colchester/Oktoberfest---Buzz-Bingo-Colchester/42775869/",
   "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/Colchester/Buzz-Bingo-Colchester/Oktoberfest---Buzz-Bingo-Colchester/42775871/",
-  "start": "2026-10-11T19:00:00+01:00",
-  "end": "2026-10-11T21:00:00+01:00",
+  "external_id": "https://www.skiddle.com/whats-on/Colchester/Buzz-Bingo-Colchester/Oktoberfest---Buzz-Bingo-Colchester/42775869/",
+  "start": "2026-10-09T19:00:00+01:00",
+  "end": "2026-10-09T21:00:00+01:00",
   "all_day": false,
   "venue": "Buzz Bingo Colchester",
   "address": "48 Osborne Street, Colchester, CO2 7DP",
@@ -1557,7 +1605,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1581,31 +1629,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
- },
- {
-  "source_id": "S007",
-  "title": "The Royal Christmas Ball at Brocket Hall",
-  "url": "https://www.skiddle.com/whats-on/St-Albans/Brocket-Hall/The-Royal-Christmas-Ball-at-Brocket-Hall/42809085/",
-  "kind": "event",
-  "external_id": "https://www.skiddle.com/whats-on/St-Albans/Brocket-Hall/The-Royal-Christmas-Ball-at-Brocket-Hall/42809085/",
-  "start": "2026-12-06T12:00:00+00:00",
-  "end": "2026-12-06T14:00:00+00:00",
-  "all_day": false,
-  "venue": "Brocket Hall",
-  "address": "Brocket Hall, Hertfordshire AL8 7XG, St-Albans, AL8 7XG",
-  "postcode": "AL8 7XG",
-  "lat": 51.7939798,
-  "lon": -0.2196838,
-  "price": "GBP 50.00, GBP 20.00",
-  "status": "scheduled",
-  "organizer": "Brocket Hall",
-  "categories": [],
-  "summary": "A magical Royal Christmas Ball with a princess, royal dancing, Father Christmas, a little festive brunch, games and plenty of Christmas magic!",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  },
  {
   "source_id": "S007",
@@ -1629,6 +1653,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:31:54+00:00"
+  "fetched_at": "2026-09-30T21:32:12+00:00"
  }
 ]

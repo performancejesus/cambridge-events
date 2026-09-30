@@ -21,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -45,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -69,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -93,31 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
- },
- {
-  "source_id": "S008",
-  "title": "I'm a Groomer... Get Me Out of Hair!",
-  "url": "https://www.eventbrite.com/e/im-a-groomer-get-me-out-of-hair-tickets-1986342859965",
-  "kind": "event",
-  "external_id": "https://www.eventbrite.com/e/im-a-groomer-get-me-out-of-hair-tickets-1986342859965",
-  "start": "2026-10-03",
-  "end": "2026-10-03",
-  "all_day": true,
-  "venue": "Fen Drayton Village Hall",
-  "address": "Cootes Lane, Fen Drayton, England, CB24 4SL",
-  "postcode": "CB24 4SL",
-  "lat": 52.2986221,
-  "lon": -0.0425505,
-  "price": "GBP 71.13",
-  "status": "scheduled",
-  "organizer": null,
-  "categories": [],
-  "summary": "If you’re new to dog grooming industry or had a bit of experience but not quite reached champion level, we welcome you to join our comp!",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -141,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -165,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -189,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -213,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -237,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -261,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -285,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -309,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -333,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -357,31 +333,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
- },
- {
-  "source_id": "S008",
-  "title": "#Hire Local- Speed networking event",
-  "url": "https://www.eventbrite.co.uk/e/hire-local-speed-networking-event-tickets-1993595212948",
-  "kind": "event",
-  "external_id": "https://www.eventbrite.co.uk/e/hire-local-speed-networking-event-tickets-1993595212948",
-  "start": "2026-09-30",
-  "end": "2026-09-30",
-  "all_day": true,
-  "venue": "The Grain & Hop Store",
-  "address": "69 Regent Street, Cambridge, England, CB2 1AB",
-  "postcode": "CB2 1AB",
-  "lat": 52.2006204,
-  "lon": 0.1263221,
-  "price": "GBP 10.0",
-  "status": "scheduled",
-  "organizer": null,
-  "categories": [],
-  "summary": "Local architects and consultants: a night of networking, drinks and new connections at the Hop and Grain Store.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -405,7 +357,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -429,7 +381,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -453,7 +405,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -477,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:30+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -501,7 +453,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -525,7 +477,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:53+00:00"
  },
  {
   "source_id": "S008",
@@ -549,7 +501,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -573,7 +525,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -597,7 +549,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -621,7 +573,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -645,7 +597,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -669,7 +621,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -693,31 +645,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
- },
- {
-  "source_id": "S008",
-  "title": "Monthly Quiz Night with Adrian",
-  "url": "https://www.eventbrite.co.uk/e/monthly-quiz-night-with-adrian-tickets-1989691578071",
-  "kind": "event",
-  "external_id": "https://www.eventbrite.co.uk/e/monthly-quiz-night-with-adrian-tickets-1989691578071",
-  "start": "2026-10-20",
-  "end": "2026-10-20",
-  "all_day": true,
-  "venue": "The Printworks Papworth",
-  "address": "Letterpress Lane, Papworth Everard, England, CB23 3AY",
-  "postcode": "CB23 3AY",
-  "lat": 52.2480935,
-  "lon": -0.1180082,
-  "price": "GBP 3.0",
-  "status": "scheduled",
-  "organizer": null,
-  "categories": [],
-  "summary": "Join us for our monthly quiz night with our resident quiz master, Adrian! £3 per team member, maximum of 8 in a team.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -741,7 +669,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -765,7 +693,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -789,7 +717,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -813,7 +741,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -837,7 +765,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -861,7 +789,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -885,7 +813,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -909,7 +837,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -933,7 +861,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:34+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -957,7 +885,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -981,7 +909,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -1005,7 +933,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:32:57+00:00"
  },
  {
   "source_id": "S008",
@@ -1029,7 +957,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1053,7 +981,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1077,7 +1005,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1101,7 +1029,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1125,7 +1053,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1149,7 +1077,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1173,7 +1101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1197,7 +1125,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1221,7 +1149,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1245,7 +1173,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1269,7 +1197,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1293,7 +1221,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1317,7 +1245,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1341,7 +1269,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1365,7 +1293,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1389,7 +1317,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1413,7 +1341,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:38+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1437,7 +1365,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1461,7 +1389,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1485,7 +1413,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:01+00:00"
  },
  {
   "source_id": "S008",
@@ -1509,7 +1437,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1533,7 +1461,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1557,7 +1485,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1581,31 +1509,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
- },
- {
-  "source_id": "S008",
-  "title": "CORELLI AND COMPANY",
-  "url": "https://www.eventbrite.co.uk/e/corelli-and-company-tickets-1997558208374",
-  "kind": "event",
-  "external_id": "https://www.eventbrite.co.uk/e/corelli-and-company-tickets-1997558208374",
-  "start": "2026-09-30",
-  "end": "2026-09-30",
-  "all_day": true,
-  "venue": "Holy Trinity Church Hildersham",
-  "address": "High Street, Hildersham, England, CB21 6BU",
-  "postcode": "CB21 6BU",
-  "lat": 52.11624820000001,
-  "lon": 0.2555258,
-  "price": "GBP 20.0",
-  "status": "scheduled",
-  "organizer": null,
-  "categories": [],
-  "summary": "Another exciting evening featuring the Chaos String Quartet with Sam Brown (Archlute) playing music by Corelli and other Italian composers",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1629,7 +1533,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1653,7 +1557,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1677,7 +1581,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1701,7 +1605,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1725,31 +1629,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
- },
- {
-  "source_id": "S008",
-  "title": "Optimisey #18",
-  "url": "https://www.eventbrite.co.uk/e/optimisey-18-tickets-1991922815763",
-  "kind": "event",
-  "external_id": "https://www.eventbrite.co.uk/e/optimisey-18-tickets-1991922815763",
-  "start": "2026-09-30",
-  "end": "2026-09-30",
-  "all_day": true,
-  "venue": "The Bradfield Centre",
-  "address": "184 Cambridge Science Park Milton Road, Cambridge, England, CB4 0GA",
-  "postcode": "CB4 0GA",
-  "lat": 52.2337476,
-  "lon": 0.1461126,
-  "price": "GBP 0.0",
-  "status": "scheduled",
-  "organizer": null,
-  "categories": [],
-  "summary": "Come and find out the latest in search, search marketing and SEO from expert speakers.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1773,31 +1653,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
- },
- {
-  "source_id": "S008",
-  "title": "THE SCAPEGOAT - The Brilliant Brief Life of the Duke of Buckingham",
-  "url": "https://www.eventbrite.co.uk/e/the-scapegoat-the-brilliant-brief-life-of-the-duke-of-buckingham-tickets-1994669024748",
-  "kind": "event",
-  "external_id": "https://www.eventbrite.co.uk/e/the-scapegoat-the-brilliant-brief-life-of-the-duke-of-buckingham-tickets-1994669024748",
-  "start": "2026-10-14",
-  "end": "2026-10-14",
-  "all_day": true,
-  "venue": "National Horseracing Museum",
-  "address": "Palace Street, Newmarket, England, CB8 8EP",
-  "postcode": "CB8 8EP",
-  "lat": 52.2437964,
-  "lon": 0.4074339,
-  "price": "GBP 30.0",
-  "status": "scheduled",
-  "organizer": null,
-  "categories": [],
-  "summary": "A talk by prize-winning author, Lucy Hughes-Hallett, followed by a drinks reception",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1821,7 +1677,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1845,7 +1701,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1869,55 +1725,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
- },
- {
-  "source_id": "S008",
-  "title": "Win Clients on LinkedIn - Full Day Course - CAMBRIDGE Social Selling",
-  "url": "https://www.eventbrite.co.uk/e/win-clients-on-linkedin-full-day-course-cambridge-social-selling-tickets-1994300975904",
-  "kind": "event",
-  "external_id": "https://www.eventbrite.co.uk/e/win-clients-on-linkedin-full-day-course-cambridge-social-selling-tickets-1994300975904",
-  "start": "2026-09-30",
-  "end": "2026-09-30",
-  "all_day": true,
-  "venue": "Holiday Inn Cambridge, an IHG Hotel",
-  "address": "Bridge Road, Impington, England, CB24 9PH",
-  "postcode": "CB24 9PH",
-  "lat": 52.237102,
-  "lon": 0.115489,
-  "price": "GBP 245.0",
-  "status": "scheduled",
-  "organizer": null,
-  "categories": [],
-  "summary": "A practical course to get leads, build pipeline and grow your business on LinkedIn",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:41+00:00"
- },
- {
-  "source_id": "S008",
-  "title": "Collectible Card Game Night in Cambridge",
-  "url": "https://www.eventbrite.co.uk/e/collectible-card-game-night-in-cambridge-tickets-1997984607746",
-  "kind": "event",
-  "external_id": "https://www.eventbrite.co.uk/e/collectible-card-game-night-in-cambridge-tickets-1997984607746",
-  "start": "2026-09-30",
-  "end": "2026-09-30",
-  "all_day": true,
-  "venue": "Waterstones",
-  "address": "22 Sidney Street, Cambridge, England, CB2 3HG",
-  "postcode": "CB2 3HG",
-  "lat": 52.20634889999999,
-  "lon": 0.1207196,
-  "price": "GBP 0.0",
-  "status": "scheduled",
-  "organizer": null,
-  "categories": [],
-  "summary": "Come join us for some Commander Magic, Disney Lorcana, and Star Wars games at a good venue with good people.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1941,7 +1749,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1965,7 +1773,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -1989,7 +1797,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -2013,7 +1821,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -2037,7 +1845,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -2061,7 +1869,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -2085,7 +1893,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:06+00:00"
  },
  {
   "source_id": "S008",
@@ -2109,7 +1917,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2133,7 +1941,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2157,7 +1965,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2181,7 +1989,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2205,7 +2013,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2229,7 +2037,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2253,7 +2061,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2277,7 +2085,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2301,31 +2109,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
- },
- {
-  "source_id": "S008",
-  "title": "Meet the Councillors",
-  "url": "https://www.eventbrite.co.uk/e/meet-the-councillors-tickets-1999792826176",
-  "kind": "event",
-  "external_id": "https://www.eventbrite.co.uk/e/meet-the-councillors-tickets-1999792826176",
-  "start": "2026-09-30",
-  "end": "2026-09-30",
-  "all_day": true,
-  "venue": "Royston Golf Club",
-  "address": "Baldock Road, Royston, England, SG8 5BG",
-  "postcode": "SG8 5BG",
-  "lat": 52.0475387,
-  "lon": -0.03002,
-  "price": "GBP 6.13",
-  "status": "scheduled",
-  "organizer": null,
-  "categories": [],
-  "summary": "Join us on 30th September for a night of delicious pizza and engaging political discussions - it's the perfect combo!",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2349,7 +2133,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  },
  {
   "source_id": "S008",
@@ -2373,6 +2157,222 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:32:44+00:00"
+  "fetched_at": "2026-09-30T21:33:10+00:00"
+ },
+ {
+  "source_id": "S008",
+  "title": "Maggie's Cambridge Firewalk 2026",
+  "url": "https://www.eventbrite.co.uk/e/maggies-cambridge-firewalk-2026-tickets-1993319417035",
+  "kind": "event",
+  "external_id": "https://www.eventbrite.co.uk/e/maggies-cambridge-firewalk-2026-tickets-1993319417035",
+  "start": "2026-10-26",
+  "end": "2026-10-26",
+  "all_day": true,
+  "venue": "Shelford Rugby Club",
+  "address": "Cambridge Road, Great Shelford, England, CB22 5JJ",
+  "postcode": "CB22 5JJ",
+  "lat": 52.1586101,
+  "lon": 0.1222142,
+  "price": "GBP 30.0",
+  "status": "scheduled",
+  "organizer": null,
+  "categories": [],
+  "summary": "Ignite your courage and brave the flames, all while supporting people with cancer and their family and friends.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:10+00:00"
+ },
+ {
+  "source_id": "S008",
+  "title": "Cambridge - People Planet Pint™: Sustainability Meetup",
+  "url": "https://www.eventbrite.co.uk/e/cambridge-people-planet-pinttm-sustainability-meetup-tickets-1981923852595",
+  "kind": "event",
+  "external_id": "https://www.eventbrite.co.uk/e/cambridge-people-planet-pinttm-sustainability-meetup-tickets-1981923852595",
+  "start": "2026-10-01",
+  "end": "2026-10-01",
+  "all_day": true,
+  "venue": "Salisbury Arms",
+  "address": "76 Tenison Road, Cambridge, England, CB1 2DW",
+  "postcode": "CB1 2DW",
+  "lat": 52.198363,
+  "lon": 0.1352374,
+  "price": "GBP 0.0",
+  "status": "scheduled",
+  "organizer": null,
+  "categories": [],
+  "summary": "A better future is possible today, and it starts at the pub!",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:10+00:00"
+ },
+ {
+  "source_id": "S008",
+  "title": "Supporting Children & Young People Affected by Bereavement",
+  "url": "https://www.eventbrite.co.uk/e/supporting-children-young-people-affected-by-bereavement-tickets-1994301098270",
+  "kind": "event",
+  "external_id": "https://www.eventbrite.co.uk/e/supporting-children-young-people-affected-by-bereavement-tickets-1994301098270",
+  "start": "2026-10-08",
+  "end": "2026-10-08",
+  "all_day": true,
+  "venue": "Education & Conference Centre, Arthur Rank Hospice Charity",
+  "address": "Cherry Hinton Road, Cambridge, Cambridgeshire, CB22 3FB",
+  "postcode": "CB22 3FB",
+  "lat": 52.167646,
+  "lon": 0.1616470000000163,
+  "price": "GBP 0.0",
+  "status": "scheduled",
+  "organizer": null,
+  "categories": [],
+  "summary": "A workshop for anyone whose work brings them into contact with young people who may be affected by loss or bereavement.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:10+00:00"
+ },
+ {
+  "source_id": "S008",
+  "title": "CUPGRA 37th Annual Cambridge Potato Conference 2026",
+  "url": "https://www.eventbrite.co.uk/e/cupgra-37th-annual-cambridge-potato-conference-2026-tickets-1996990867442",
+  "kind": "event",
+  "external_id": "https://www.eventbrite.co.uk/e/cupgra-37th-annual-cambridge-potato-conference-2026-tickets-1996990867442",
+  "start": "2026-12-15",
+  "end": "2026-12-16",
+  "all_day": true,
+  "venue": "Robinson College",
+  "address": "Grange Road, Cambridge, England, CB3 9AN",
+  "postcode": "CB3 9AN",
+  "lat": 52.2043155,
+  "lon": 0.1047027,
+  "price": "GBP 17.77",
+  "status": "scheduled",
+  "organizer": null,
+  "categories": [],
+  "summary": "A two-day conference at Robinson College, Cambridge for potato industry professionals.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:10+00:00"
+ },
+ {
+  "source_id": "S008",
+  "title": "Raptors in Flight: Wildlife Photography - CPM 26",
+  "url": "https://www.eventbrite.co.uk/e/raptors-in-flight-wildlife-photography-cpm-26-tickets-1989994350672",
+  "kind": "event",
+  "external_id": "https://www.eventbrite.co.uk/e/raptors-in-flight-wildlife-photography-cpm-26-tickets-1989994350672",
+  "start": "2026-10-23",
+  "end": "2026-10-23",
+  "all_day": true,
+  "venue": "Histon Football Club",
+  "address": "Bridge Road, Impington, England, CB24 9PH",
+  "postcode": "CB24 9PH",
+  "lat": 52.24240109999999,
+  "lon": 0.113729,
+  "price": "GBP 15.0",
+  "status": "scheduled",
+  "organizer": null,
+  "categories": [],
+  "summary": "Photograph birds of prey in flight with Bill Lawton—learn sharp action techniques, wildlife settings, and respectful photography skills.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:10+00:00"
+ },
+ {
+  "source_id": "S008",
+  "title": "Erşah Kahraman'la Türkçe Quiz Show - Cambridge",
+  "url": "https://www.eventbrite.co.uk/e/ersah-kahramanla-turkce-quiz-show-cambridge-tickets-2001450696912",
+  "kind": "event",
+  "external_id": "https://www.eventbrite.co.uk/e/ersah-kahramanla-turkce-quiz-show-cambridge-tickets-2001450696912",
+  "start": "2026-10-06",
+  "end": "2026-10-06",
+  "all_day": true,
+  "venue": "Town and Gown",
+  "address": "8 Market Passage, Cambridge, England, CB2 3PF",
+  "postcode": "CB2 3PF",
+  "lat": 52.2064208,
+  "lon": 0.1199775,
+  "price": "GBP 11.55",
+  "status": "scheduled",
+  "organizer": null,
+  "categories": [],
+  "summary": "\"Quiz Night\"ın ne olduğuna hepimiz alışığız İngiltere'de. Bu gösteri onun Türkçesi ve bize göre çok daha eğlencelisi.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:10+00:00"
+ },
+ {
+  "source_id": "S008",
+  "title": "Pa-Kua Martial Art & Self-Defense for Kids (years 5-12)",
+  "url": "https://www.eventbrite.co.uk/e/pa-kua-martial-art-self-defense-for-kids-years-5-12-tickets-1358210346709",
+  "kind": "event",
+  "external_id": "https://www.eventbrite.co.uk/e/pa-kua-martial-art-self-defense-for-kids-years-5-12-tickets-1358210346709",
+  "start": "2026-10-07",
+  "end": "2026-10-07",
+  "all_day": true,
+  "venue": "Pa-Kua Cambridge",
+  "address": "231 Chesterton Road, Cambridge, England, CB4 1AS",
+  "postcode": "CB4 1AS",
+  "lat": 52.2156386,
+  "lon": 0.1307401,
+  "price": "GBP 0.0",
+  "status": "scheduled",
+  "organizer": null,
+  "categories": [],
+  "summary": "Learn to control the body and the basics of martial art in a friendly, inclusive environment. Recommended for children aged 5 - 12.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:10+00:00"
+ },
+ {
+  "source_id": "S008",
+  "title": "An Evening with Colette Paul in Cambridge",
+  "url": "https://www.eventbrite.co.uk/e/an-evening-with-colette-paul-in-cambridge-tickets-1999776680885",
+  "kind": "event",
+  "external_id": "https://www.eventbrite.co.uk/e/an-evening-with-colette-paul-in-cambridge-tickets-1999776680885",
+  "start": "2026-10-14",
+  "end": "2026-10-14",
+  "all_day": true,
+  "venue": "Waterstones",
+  "address": "22 Sidney Street, Cambridge, England, CB2 3HG",
+  "postcode": "CB2 3HG",
+  "lat": 52.20634889999999,
+  "lon": 0.1207196,
+  "price": "GBP 5.0",
+  "status": "scheduled",
+  "organizer": null,
+  "categories": [],
+  "summary": "Join Scottish short story author Colette Paul as she discusses her new book A Complete Success.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:10+00:00"
+ },
+ {
+  "source_id": "S008",
+  "title": "Religious Diversity in End of Life Care Training 2026",
+  "url": "https://www.eventbrite.co.uk/e/religious-diversity-in-end-of-life-care-training-2026-tickets-1993340530185",
+  "kind": "event",
+  "external_id": "https://www.eventbrite.co.uk/e/religious-diversity-in-end-of-life-care-training-2026-tickets-1993340530185",
+  "start": "2026-10-22",
+  "end": "2026-10-22",
+  "all_day": true,
+  "venue": "Woolf Institute",
+  "address": "Madingley Road, Cambridge, England, CB3 0UB",
+  "postcode": "CB3 0UB",
+  "lat": 52.2104258,
+  "lon": 0.1108102,
+  "price": "GBP 50.0",
+  "status": "scheduled",
+  "organizer": null,
+  "categories": [],
+  "summary": "An in-person training session on religious diversity in end of life care aimed at practitioners working in end of life care.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:10+00:00"
  }
 ]

@@ -24,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:47+00:00"
+  "fetched_at": "2026-09-30T21:43:31+00:00"
  },
  {
   "source_id": "S168",
@@ -51,7 +51,34 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:47+00:00"
+  "fetched_at": "2026-09-30T21:43:31+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "Pembroke Players Smokers Michaelmas ‘26",
+  "url": "https://www.camdram.net/shows/2026-pembroke-players-smokers-michaelmas-26",
+  "kind": "event",
+  "external_id": "camdram-performance-10725",
+  "start": "2026-10-11T20:00:00+00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Pembroke New Cellars",
+  "address": "Pembroke College, Trumpington Street, Cambridge",
+  "postcode": "CB2 1RF",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "21:00, Sun 11th October 2026 ·  About Development API Privacy Policy FAQ Contact Us Log in with Tip: Press the 's' or forward-slash key to jump to search! No results found for \" \" Search is not available at the moment Home Diary Vacancies Societies Venues Events Roles Events Roles Show Admin Add a show Pembroke Players presents... Pembroke Players Smokers Michaelmas ‘26 21:00, Sun 11th October 2026 at Pembroke New Cellars Michaelmas Week 1 The return of the greatest basement comedy night in the world ever. Cast Production Team Print sign in sheet Download sign in sheet (CSV) Site Map Home Diary Vacancies Societies Venues Pe",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -78,7 +105,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:47+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -105,7 +132,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:47+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -132,7 +159,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:47+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -159,7 +186,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:47+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -186,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:47+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -213,7 +240,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:47+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -240,7 +267,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:47+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -267,7 +294,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -294,7 +321,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -321,7 +348,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -348,7 +375,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -375,7 +402,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -402,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -429,7 +456,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -456,7 +483,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -483,7 +510,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -510,7 +537,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -537,7 +564,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -564,7 +591,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -591,7 +618,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -618,7 +645,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -645,7 +672,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -672,7 +699,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -699,7 +726,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -726,7 +753,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -753,7 +780,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -780,7 +807,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -807,7 +834,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -834,7 +861,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -861,7 +888,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -888,7 +915,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  },
  {
   "source_id": "S168",
@@ -915,6 +942,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:42:49+00:00"
+  "fetched_at": "2026-09-30T21:43:33+00:00"
  }
 ]

@@ -1,33 +1,6 @@
 [
  {
   "source_id": "S157",
-  "title": "Knife: The Attempted Murder of Salman Rushdie + Recorded Q&A",
-  "url": "https://cambridge.thelight.co.uk/knife-the-attempted-murder-of-salman-rushdie-qa",
-  "kind": "event",
-  "external_id": "light-knife-the-attempted-murder-of-salman-rushdie-qa-2026-09-30",
-  "start": "2026-09-30T20:10:00",
-  "end": null,
-  "all_day": false,
-  "venue": "The Light Cinema Cambridge",
-  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
-  "postcode": "CB1 7DY",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "film",
-   "special screening"
-  ],
-  "summary": "cert 15 · 2h 17m",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:43:28+00:00"
- },
- {
-  "source_id": "S157",
   "title": "National Theatre Live: The Misanthrope",
   "url": "https://cambridge.thelight.co.uk/national-theatre-live-the-misanthrope",
   "kind": "event",
@@ -51,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:43:28+00:00"
+  "fetched_at": "2026-09-30T21:44:12+00:00"
  },
  {
   "source_id": "S157",
@@ -78,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:43:28+00:00"
+  "fetched_at": "2026-09-30T21:44:12+00:00"
  },
  {
   "source_id": "S157",
@@ -105,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:43:28+00:00"
+  "fetched_at": "2026-09-30T21:44:12+00:00"
  },
  {
   "source_id": "S157",
@@ -132,6 +105,60 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:43:28+00:00"
+  "fetched_at": "2026-09-30T21:44:12+00:00"
+ },
+ {
+  "source_id": "S157",
+  "title": "English National Ballet: The Sleeping Beauty",
+  "url": "https://cambridge.thelight.co.uk/enb-the-sleeping-beauty",
+  "kind": "event",
+  "external_id": "light-enb-the-sleeping-beauty-2026-10-14",
+  "start": "2026-10-14T19:15:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Light Cinema Cambridge",
+  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
+  "postcode": "CB1 7DY",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema"
+  ],
+  "summary": "cert U · 2h 24m",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:44:12+00:00"
+ },
+ {
+  "source_id": "S157",
+  "title": "ALWAYS LALISA",
+  "url": "https://cambridge.thelight.co.uk/always-lalisa",
+  "kind": "event",
+  "external_id": "light-always-lalisa-2026-10-14",
+  "start": "2026-10-14T19:30:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Light Cinema Cambridge",
+  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
+  "postcode": "CB1 7DY",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema"
+  ],
+  "summary": "cert CTBA · 1h 40m",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:44:12+00:00"
  }
 ]

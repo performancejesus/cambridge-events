@@ -1,6 +1,30 @@
 [
  {
   "source_id": "S092",
+  "title": "Why does Raspberry Pi’s record-breaking performance cause share price wobbles?",
+  "url": "https://www.cambridgeindependent.co.uk/business/why-does-raspberry-pi-s-record-breaking-performance-cause-sh-9485027/",
+  "kind": "article",
+  "external_id": "https://www.cambridgeindependent.co.uk/business/why-does-raspberry-pi-s-record-breaking-performance-cause-sh-9485027/",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "City of London seems to struggle to understand Cambridge company’s success.",
+  "published": "2026-09-30T16:24:49Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:54+00:00"
+ },
+ {
+  "source_id": "S092",
   "title": "In pictures: Musicians and customers help drum up support for Cambridge’s new UNIQLO store",
   "url": "https://www.cambridgeindependent.co.uk/news/in-pictures-musicians-and-customers-help-drum-up-support-fo-9484878/",
   "kind": "article",
@@ -21,7 +45,7 @@
   "published": "2026-09-30T08:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -45,7 +69,7 @@
   "published": "2026-09-29T16:53:32Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -69,7 +93,7 @@
   "published": "2026-09-28T22:15:32Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -93,7 +117,7 @@
   "published": "2026-09-29T17:05:03Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -117,7 +141,7 @@
   "published": "2026-09-28T07:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -141,7 +165,7 @@
   "published": "2026-09-27T06:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -165,7 +189,7 @@
   "published": "2026-09-25T00:13:55Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -189,7 +213,7 @@
   "published": "2026-09-25T10:44:06Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -213,7 +237,7 @@
   "published": "2026-09-24T15:17:48Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -237,7 +261,7 @@
   "published": "2026-09-25T10:45:25Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -261,7 +285,7 @@
   "published": "2026-09-24T16:57:19Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -285,7 +309,7 @@
   "published": "2026-09-25T10:44:31Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -309,7 +333,7 @@
   "published": "2026-09-23T21:37:44Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -333,7 +357,7 @@
   "published": "2026-09-23T11:01:56Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -357,7 +381,7 @@
   "published": "2026-09-22T20:48:22Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -381,7 +405,7 @@
   "published": "2026-09-21T20:49:31Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -405,7 +429,7 @@
   "published": "2026-09-21T10:07:02Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -429,7 +453,7 @@
   "published": "2026-09-20T10:30:53Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
@@ -453,14 +477,14 @@
   "published": "2026-09-17T20:07:25Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:54+00:00"
  },
  {
   "source_id": "S092",
-  "title": "2026 Cambridge Forum ask not what AI could do, but what AI should do",
-  "url": "https://www.cambridgeindependent.co.uk/business/2026-cambridge-forum-ask-not-what-ai-could-do-but-what-ai-s-9483343/",
+  "title": "Convoy4Ukraine’s Lviv delivery includes letter of support from mayor of Cambridge",
+  "url": "https://www.cambridgeindependent.co.uk/news/convoy4ukraine-s-lviv-delivery-includes-letter-of-support-fr-9485033/",
   "kind": "article",
-  "external_id": "https://www.cambridgeindependent.co.uk/business/2026-cambridge-forum-ask-not-what-ai-could-do-but-what-ai-s-9483343/",
+  "external_id": "https://www.cambridgeindependent.co.uk/news/convoy4ukraine-s-lviv-delivery-includes-letter-of-support-fr-9485033/",
   "start": null,
   "end": null,
   "all_day": false,
@@ -473,11 +497,59 @@
   "status": null,
   "organizer": null,
   "categories": [],
-  "summary": "Two-day event at Corn Exchange includes a great drumming session.",
-  "published": "2026-09-23T13:03:45Z",
+  "summary": "More than 300 vehicles now delivered since 2022.",
+  "published": "2026-09-30T19:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:03+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
+ },
+ {
+  "source_id": "S092",
+  "title": "Teacher’s month of half-marathons to fundraise for better spaces for his pupils",
+  "url": "https://www.cambridgeindependent.co.uk/news/teacher-s-month-of-half-marathons-to-fundraise-for-better-sp-9485034/",
+  "kind": "article",
+  "external_id": "https://www.cambridgeindependent.co.uk/news/teacher-s-month-of-half-marathons-to-fundraise-for-better-sp-9485034/",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Mr Lucas has run a half-marathon every day for a month –&#160;equivalent to nearly 700 kilometres",
+  "published": "2026-09-30T17:35:22Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:56+00:00"
+ },
+ {
+  "source_id": "S092",
+  "title": "Artist’s impression released after serious sexual assault on woman in Cambridgeshire village",
+  "url": "https://www.cambridgeindependent.co.uk/news/artist-s-impression-released-after-serious-sexual-assault-on-9485017/",
+  "kind": "article",
+  "external_id": "https://www.cambridgeindependent.co.uk/news/artist-s-impression-released-after-serious-sexual-assault-on-9485017/",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Police also want to hear from anyone who saw a dark Tesla in the area.",
+  "published": "2026-09-30T15:42:45Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -501,7 +573,7 @@
   "published": "2026-09-30T08:49:17Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -525,7 +597,7 @@
   "published": "2026-09-30T05:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -549,7 +621,7 @@
   "published": "2026-09-29T15:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -573,7 +645,7 @@
   "published": "2026-09-29T16:52:16Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -597,7 +669,7 @@
   "published": "2026-09-29T08:35:52Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -621,7 +693,7 @@
   "published": "2026-09-29T07:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -645,7 +717,7 @@
   "published": "2026-09-29T06:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -669,7 +741,7 @@
   "published": "2026-09-29T05:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -693,7 +765,7 @@
   "published": "2026-09-28T09:00:48Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -717,7 +789,7 @@
   "published": "2026-09-28T09:12:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -741,7 +813,7 @@
   "published": "2026-09-28T05:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -765,7 +837,7 @@
   "published": "2026-09-28T05:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -789,7 +861,7 @@
   "published": "2026-09-27T11:05:51Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  },
  {
   "source_id": "S092",
@@ -813,102 +885,6 @@
   "published": "2026-09-28T09:18:09Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
- },
- {
-  "source_id": "S092",
-  "title": "Experienced teacher and leader appointed Bottisham Community Primary School headteacher",
-  "url": "https://www.cambridgeindependent.co.uk/news/experienced-teacher-and-leader-appointed-bottisham-community-9483975/",
-  "kind": "article",
-  "external_id": "https://www.cambridgeindependent.co.uk/news/experienced-teacher-and-leader-appointed-bottisham-community-9483975/",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Rebecca Brierley brings more than 21 years’ experience in education.",
-  "published": "2026-09-26T05:30:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
- },
- {
-  "source_id": "S092",
-  "title": "Cambridge University Botanic Garden director Beverley Glover: How drought is affecting plants and pollinators",
-  "url": "https://www.cambridgeindependent.co.uk/news/cambridge-university-botanic-garden-director-beverley-glover-9484114/",
-  "kind": "article",
-  "external_id": "https://www.cambridgeindependent.co.uk/news/cambridge-university-botanic-garden-director-beverley-glover-9484114/",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Expert analysis I Professor Beverley Glover gives her analysis on the impacts of the UK droughts on plants and pollinators.",
-  "published": "2026-09-26T05:00:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
- },
- {
-  "source_id": "S092",
-  "title": "HGV driver jailed after fatal M11 crash that killed ‘loving family man’",
-  "url": "https://www.cambridgeindependent.co.uk/news/hgv-driver-jailed-after-fatal-m11-crash-that-killed-loving-9484453/",
-  "kind": "article",
-  "external_id": "https://www.cambridgeindependent.co.uk/news/hgv-driver-jailed-after-fatal-m11-crash-that-killed-loving-9484453/",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "The collision occurred near junction 10 for Duxford.",
-  "published": "2026-09-25T14:56:30Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
- },
- {
-  "source_id": "S092",
-  "title": "4,000 homes, schools, shops and riverside country park proposed for land south of Cambridge",
-  "url": "https://www.cambridgeindependent.co.uk/news/4-000-homes-schools-shops-and-riverside-country-park-propo-9484381/",
-  "kind": "article",
-  "external_id": "https://www.cambridgeindependent.co.uk/news/4-000-homes-schools-shops-and-riverside-country-park-propo-9484381/",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Parish councils fear they could be consumed by ‘ever-expanding Cambridge’.",
-  "published": "2026-09-25T10:30:59Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T13:33:05+00:00"
+  "fetched_at": "2026-09-30T21:33:56+00:00"
  }
 ]
