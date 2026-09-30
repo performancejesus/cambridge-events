@@ -1,5 +1,5 @@
 {
- "_run_id": "2026-09-30T21:25:53+00:00",
+ "_run_id": "2026-09-30T22:05:25+00:00",
  "S005": {
   "name": "Cambridge 105",
   "module": "cambridge105",
@@ -1267,11 +1267,18 @@
  "S183": {
   "name": "Visit West Norfolk — календарь событий Кингс-Линна и округи",
   "module": "stage7d",
-  "started_at": "2026-09-30T21:46:06+00:00",
-  "ok": false,
-  "error": "FetchError: bot challenge (заглушка бот-защиты) https://www.visitwestnorfolk.com/experiences/events/",
-  "trace": "Traceback (most recent call last):\n  File \"/home/user/cambridge-events/scripts/run_collectors.py\", line 48, in main\n    events = c.collect(http)\n             ^^^^^^^^^^^^^^^\n  File \"/home/user/cambridge-events/collectors/llmlist.py\", line 88, in collect\n    raise FetchError(f\"bot challenge (заглушка бот-защиты) {url}\")\ncollectors.http.FetchError: bot challenge (заглушка бот-защиты) https://www.visitwestnorfolk.com/experiences/events/\n",
+  "started_at": "2026-09-30T22:05:25+00:00",
+  "ok": true,
+  "events": 7,
+  "articles": 0,
+  "stores": 0,
+  "stats": {
+   "pages": 1,
+   "cached": 1,
+   "model_calls": 0,
+   "cost_usd": 0.0
+  },
   "requests": 2,
-  "seconds": 3.0
+  "seconds": 3.8
  }
 }
