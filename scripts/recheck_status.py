@@ -75,7 +75,10 @@ if __name__ == "__main__":
     before = {r[0]: r[1] for r in con.execute("SELECT event_id, status FROM events")}
     res = []
     for n, (eid, why) in enumerate(sorted(todo.items())):
-        title = con.execute("SELECT title FROM events WHERE event_id=?", (eid,)).fetchone()[0]
+        row = con.execute("SELECT title FROM events WHERE event_id=?", (eid,)).fetchone()
+        if not row:   # этап 7d: событие склеено с другим (дубль musiclivecambridge и т. п.) — проверять нечего
+            continue
+        title = row[0]
         r = status_check.check(con, http, eid, page_url(con, eid), title)
         res.append(r | {"why": why, "title": title, "db_status": before.get(eid)})
         if n % 25 == 0:
