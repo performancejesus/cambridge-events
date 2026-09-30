@@ -3,8 +3,10 @@
   "host": "a1funclub.co.uk",
   "provider": "A1 Fun Club",
   "type": "каникулярный клуб",
-  "programmes": 1,
-  "problems": []
+  "programmes": 0,
+  "problems": [
+   "server_error: robots.txt: HTTP 429"
+  ]
  },
  {
   "host": "activeplayeducation.co.uk",
@@ -40,7 +42,7 @@
   "host": "barracudas.co.uk",
   "provider": "Barracudas",
   "type": "национальный оператор лагерей",
-  "programmes": 8,
+  "programmes": 5,
   "problems": []
  },
  {
@@ -110,10 +112,8 @@
   "host": "cambridgeltc.com",
   "provider": "Cambridge Lawn Tennis Club",
   "type": "теннис",
-  "programmes": 0,
-  "problems": [
-   "connection: robots.txt: HTTP -1"
-  ]
+  "programmes": 3,
+  "problems": []
  },
  {
   "host": "cambridgeppf.org",
@@ -148,7 +148,9 @@
   "provider": "Cambridge and District Riding Club",
   "type": "верховая езда",
   "programmes": 0,
-  "problems": []
+  "problems": [
+   "js_only: robots.txt: HTTP 200; страница 200, видимого текста 12 слов"
+  ]
  },
  {
   "host": "childcare.admin.cam.ac.uk",
@@ -178,7 +180,7 @@
   "host": "clipnclimbcambridge.co.uk",
   "provider": "Clip 'n Climb Cambridge",
   "type": "скалодром",
-  "programmes": 0,
+  "programmes": 1,
   "problems": []
  },
  {
@@ -265,10 +267,8 @@
   "host": "funtimeschildcare.com",
   "provider": "Fun Times Cambridgeshire",
   "type": "каникулярный клуб",
-  "programmes": 0,
-  "problems": [
-   "http_403: robots.txt: HTTP 200; страница: 403"
-  ]
+  "programmes": 1,
+  "problems": []
  },
  {
   "host": "gkfit.co.uk",
@@ -343,8 +343,10 @@
   "host": "kidsrusoosc.org",
   "provider": "Kids R Us holiday club",
   "type": "срез 6-v4 (не проверен)",
-  "programmes": 1,
-  "problems": []
+  "programmes": 0,
+  "problems": [
+   "connection: robots.txt: HTTP -1"
+  ]
  },
  {
   "host": "kingscamps.org",
@@ -405,8 +407,8 @@
   "type": "парк (Питерборо)",
   "programmes": 0,
   "problems": [
-   "http_403: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
-   "connection: robots.txt: HTTP -1"
+   "http_403: robots.txt: HTTP 200; страница: 403",
+   "http_403: robots.txt: HTTP 200; страница: 403"
   ]
  },
  {
@@ -450,10 +452,8 @@
   "host": "s4swimschool.uk",
   "provider": "S4 Swim School",
   "type": "плавание",
-  "programmes": 0,
-  "problems": [
-   "connection: robots.txt: HTTP -1"
-  ]
+  "programmes": 13,
+  "problems": []
  },
  {
   "host": "scambs.gov.uk",
@@ -533,8 +533,8 @@
   "type": "футбол",
   "programmes": 0,
   "problems": [
-   "http_403: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
-   "http_403: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+   "connection: robots.txt: HTTP -1",
+   "connection: robots.txt: HTTP -1"
   ]
  },
  {
