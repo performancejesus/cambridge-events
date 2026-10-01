@@ -29,7 +29,7 @@ def _time(t: str | None) -> str | None:
 
 class SaffronHall(Collector):
     source_id, name = "S017", "Saffron Hall"
-    max_pages = 12
+    max_pages = 30   # этап 7e: обход до пустой страницы; лимит — только предохранитель
 
     def collect(self, http):
         out, seen, postcode = [], set(), None

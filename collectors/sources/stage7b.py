@@ -68,7 +68,7 @@ def college_address(venue: str) -> tuple[str | None, str | None]:
 class CamdramAll(DetailCache, Collector):
     source_id, name = "S168", "Camdram — все площадки (театры колледжей, Corpus Playroom)"
     DIARY = "https://www.camdram.net/diary.json?start={start}&end={end}"
-    WEEKS = 12
+    WEEKS = 52   # этап 7e: база знаний — весь доступный срок (было 12 недель)
 
     def parse_page(self, page: str, link: str) -> dict | None:
         tree = HTMLParser(page)

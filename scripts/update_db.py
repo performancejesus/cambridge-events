@@ -40,6 +40,8 @@ def main() -> None:
     stats |= roundups.tag(con)                # подборки («Things to do…») — не события, разбираются отдельно
     stats |= kids.load(con)                   # детские программы на каникулы (data/kids_programmes.json)
     stats |= importance.resolve_neighbours(con)   # 40–60 км вне графства: по уже известным оценкам (новые — после оценки)
+    from pipeline import knowledge           # этап 7e: база знаний — last_verified_at, архив, организации, перепроверка
+    stats["knowledge"] = knowledge.migrate(con)
     con.commit()
     print(json.dumps(stats, ensure_ascii=False, indent=1))
 

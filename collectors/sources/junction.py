@@ -8,7 +8,7 @@ class Junction(HtmlDetailCollector):
     source_id, name = "S012", "Cambridge Junction"
     list_urls = ["https://www.junction.co.uk/whats-on/"]
     page_fmt = "{base}/page/{n}/"
-    max_pages = 15
+    max_pages = 40   # этап 7e: обход до пустой страницы; лимит — только предохранитель
     link_re = r'href="(https://www\.junction\.co\.uk/events/[a-z0-9-]+/)"'
     after = "Event Information"
     venue, address, postcode = "Cambridge Junction", "Clifton Way, Cambridge", "CB1 7GX"

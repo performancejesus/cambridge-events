@@ -29,7 +29,8 @@ SCHEMA = """CREATE TABLE IF NOT EXISTS kids_programmes (
 
 def load(con: sqlite3.Connection) -> dict:
     """Ручной срез 6-v4 (data/kids_programmes.json). Этап 6c: строки коллектора (source = collector) не трогаем; ручные
-    строки провайдера, по которому уже есть данные коллектора, не загружаем — срез заменяется коллектором."""
+    строки провайдера, по которому уже есть данные коллектора, не загружаем — срез заменяется коллектором (этап 7e:
+    прежняя строка остаётся в базе со статусом gone)."""
     from .kids_collect import init
     init(con)
     d = json.loads(DATA.read_text())
@@ -37,20 +38,23 @@ def load(con: sqlite3.Connection) -> dict:
     lookup(con, [p["postcode"] for p in progs if p.get("postcode")])
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     collected = {r[0] for r in con.execute("SELECT DISTINCT provider_host FROM kids_programmes WHERE source='collector'")}
-    con.execute("DELETE FROM kids_programmes WHERE source IS NULL")
     n = 0
     for p in progs:
         host = p["url"].split("/")[2].lower().removeprefix("www.")
-        if host in collected:
+        if host in collected:   # этап 7e: строка ручного среза не удаляется, а уходит в архив (gone)
+            con.execute("UPDATE kids_programmes SET status='gone', gone_at=coalesce(gone_at, ?) WHERE prog_id=? "
+                        "AND source IS NULL", (now, p["id"]))
             continue
         g = zone_for_postcode(con, p.get("postcode")) or _town_zone(con, p.get("address"))
         con.execute("""INSERT OR REPLACE INTO kids_programmes(prog_id, holiday, provider, title, ages, date_start, date_end,
             hours, price, venue, address, postcode, zone, booking_opens, places, audience, url, verified, note, checked_at,
-            provider_host, kind) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            provider_host, kind, status, last_verified_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,
+            CASE WHEN ? < date('now') THEN 'past' ELSE 'active' END, ?)""",
                     (p["id"], p["holiday"], p["provider"], p["title"], p.get("ages"), p.get("date_start"),
                      p.get("date_end"), p.get("hours"), p.get("price"), p.get("venue"), p.get("address"),
                      p.get("postcode"), g[2] if g else None, p.get("booking_opens"), p.get("places"),
-                     p.get("audience"), p["url"], int(bool(p.get("verified"))), p.get("note"), now, host, "holiday"))
+                     p.get("audience"), p["url"], int(bool(p.get("verified"))), p.get("note"), now, host, "holiday",
+                     p.get("date_end") or p.get("date_start") or "9", now))
         n += 1
     return {"kids_programmes_manual": n, "kids_programmes_collector":
             con.execute("SELECT count(*) FROM kids_programmes WHERE source='collector'").fetchone()[0]}

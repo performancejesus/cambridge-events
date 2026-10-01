@@ -46,7 +46,7 @@ class KingsCollegeChoir(DetailCache, Collector):
 
     def collect(self, http):
         links: dict[str, list[str]] = {}
-        for n in range(1, 5):   # список отсортирован по дате публикации — концерты сезона на 1–3 страницах
+        for n in range(1, 11):   # список отсортирован по дате публикации; этап 7e — до пустой страницы (было 4)
             try:
                 listing = http.get(self.SEED if n == 1 else f"{self.SEED}page/{n}/").text
             except Exception:  # noqa: BLE001 — страницы кончились
@@ -166,7 +166,7 @@ class FindARace(Collector):
     def collect(self, http):
         import json as _json
         out, seen = [], set()
-        for n in range(1, 6):
+        for n in range(1, 21):   # этап 7e: до пустой страницы (было 5)
             try:
                 page = http.get(self.URL.format(page="" if n == 1 else f"/p{n}")).text
             except Exception:  # noqa: BLE001 — страницы кончились (404)
@@ -224,12 +224,16 @@ class StNeotsTownCouncil(DetailCache, Collector):
     def collect(self, http):
         links: list[str] = []
         today = date.today()
-        for k in range(3):   # текущий и два следующих месяца
+        empty = 0
+        for k in range(12):   # этап 7e: все месяцы, которые отдаёт календарь (было 3), до двух пустых подряд
             y, mo = today.year + (today.month - 1 + k) // 12, (today.month - 1 + k) % 12 + 1
             page = http.get(f"{self.BASE}?event_month={y}-{mo:02d}-01").text
-            for u in re.findall(r'href="(https://www\.stneots-tc\.gov\.uk/council_events/[a-z0-9-]+/(?:\?event_date=[\d-]+)?)"', page):
-                if u not in links and not self.SKIP_RE.search(u):
-                    links.append(u)
+            found = [u for u in re.findall(r'href="(https://www\.stneots-tc\.gov\.uk/council_events/[a-z0-9-]+/(?:\?event_date=[\d-]+)?)"', page)
+                     if u not in links and not self.SKIP_RE.search(u)]
+            links += list(dict.fromkeys(found))
+            empty = 0 if found else empty + 1
+            if empty >= 2:
+                break
         self.start_details()
         out = []
         for u in links:

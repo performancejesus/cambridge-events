@@ -15,7 +15,7 @@ LIST = "https://www.visitely.org.uk/whats-on/"
 
 class VisitEly(Collector):
     source_id, name = "S113", "Visit Ely"
-    max_pages = 6
+    max_pages = 30   # этап 7e: обход до пустой страницы; лимит — только предохранитель
 
     def collect(self, http):
         out, seen = [], set()

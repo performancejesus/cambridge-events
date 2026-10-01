@@ -7,7 +7,7 @@ from ..parsers import clean_text, find_postcode
 
 class TribeEvents(Collector):
     api: str = ""
-    max_pages: int = 10
+    max_pages: int = 30   # этап 7e: обход до пустой страницы; лимит — только предохранитель
 
     def collect(self, http: PoliteClient) -> list[RawEvent]:
         out, url, n = [], f"{self.api}?per_page=50", 0

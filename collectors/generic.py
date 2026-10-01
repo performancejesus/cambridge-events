@@ -149,7 +149,7 @@ class JsonLdDetailCollector(DetailCache, Collector):
     page_param: str | None = "page"
     max_pages: int = 10
     link_re: str = ""          # регулярка для ссылок на страницы событий
-    max_events: int = 250
+    max_events: int = 600   # этап 7e: предохранитель, а не окно (было 250)
 
     def collect(self, http: PoliteClient) -> list[RawEvent]:
         links: list[str] = []

@@ -43,11 +43,13 @@ def init(con: sqlite3.Connection) -> None:
 
 def probe(http, url: str) -> tuple[str, str, str]:
     """(result, detail, text): result — ok | один из типов проблем. Одна загрузка страницы, без обхода защиты."""
-    from collectors.http import Disallowed, FetchError, Response
+    from collectors.http import Deferred, Disallowed, FetchError, Response
     from pipeline.extract import strip_html
     base = f"{urlparse(url).scheme}://{urlparse(url).netloc}"
     try:
         allowed = http.allowed(url)
+    except Deferred as e:   # этап 7e: домен на паузе или ошибка меньше суток назад — не проблема сайта, а наше правило
+        return "deferred", str(e)[:160], ""
     except FetchError as e:
         return "connection", f"robots.txt: {e}"[:160], ""
     rstat = http.robots_status.get(base)
@@ -56,7 +58,9 @@ def probe(http, url: str) -> tuple[str, str, str]:
         return kind, f"robots.txt: HTTP {rstat}", ""
     note = f"robots.txt: HTTP {rstat}" + (" (4xx — правил нет, RFC 9309)" if rstat and 400 <= rstat < 500 else "")
     try:
-        r = http._raw_get(url)
+        r = http.fetch(url)
+    except Deferred as e:
+        return "deferred", f"{note}; {e}"[:200], ""
     except FetchError as e:
         msg = str(e)
         kind = "tls" if re.search(r"ssl|tls|certificate", msg, re.I) else "connection"

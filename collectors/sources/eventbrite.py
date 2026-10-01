@@ -14,7 +14,7 @@ NEAR_AREAS = {"CB", "PE", "SG", "CM", "IP"}
 class Eventbrite(DetailCache, JsonLdListCollector):
     source_id, name = "S008", "Eventbrite"
     pages = ["https://www.eventbrite.co.uk/d/united-kingdom--cambridge/all-events/"]
-    page_param, max_pages = "page", 5
+    page_param, max_pages = "page", 20   # этап 7e: до первой страницы без новых событий (было 5)
 
     def keep(self, kw):
         pc = kw.get("postcode")

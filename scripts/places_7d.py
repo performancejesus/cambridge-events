@@ -173,7 +173,7 @@ def table(model_path: Path) -> None:
     cin = []
     from collectors.sources.stage7d import REGIONAL_CINEMAS
     for name, city, url, venue, *_ in REGIONAL_CINEMAS:
-        films = con.execute("SELECT count(*), sum(kind!='film') FROM regional_showings WHERE cinema=? AND last_date >= ?",
+        films = con.execute("SELECT count(*), sum(kind!='film') FROM regional_showings WHERE cinema=? AND last_date >= ? AND gone_at IS NULL",
                             (name, today.isoformat())).fetchone()
         evs = [r[0] for r in con.execute("""SELECT e.event_id FROM events e JOIN event_sources s USING(event_id)
                 WHERE s.source_id='S182' AND e.venue_name=? AND coalesce(e.date_end, e.date_start) >= ?

@@ -56,9 +56,17 @@ class UniWhatsOn(DetailCache, Collector):
     def collect(self, http):
         today = date.today()
         monday = today - timedelta(days=today.weekday())
-        weeks = [monday + timedelta(days=7 * i) for i in range(3)]
-        family = {x["uid"] for w in weeks for x in self.week(http, w, "13")}
-        rows = [x for w in weeks for x in self.week(http, w)]
+        # этап 7e: все недели, которые отдаёт календарь (было 3), до трёх пустых подряд, не больше 26
+        rows, family, empty = [], set(), 0
+        for i in range(26):
+            w = monday + timedelta(days=7 * i)
+            week = self.week(http, w)
+            rows += week
+            if week:
+                family |= {x["uid"] for x in self.week(http, w, "13")}
+            empty = 0 if week else empty + 1
+            if empty >= 3:
+                break
         self.start_details()
         out, done = [], set()
         for x in rows:

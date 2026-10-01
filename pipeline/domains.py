@@ -34,44 +34,44 @@ def host(url: str) -> str:
     return urlparse(url).netloc.lower().removeprefix("www.")
 
 
-def _check(h: str) -> tuple:
-    rp = RobotFileParser()
+def _check(h: str, http) -> tuple | None:
+    """Этап 7e: robots.txt — через общий слой бережных запросов (кэш на сутки, пауза домена, журнал), а не напрямую.
+    Домен на паузе — None (проверим в другой день)."""
+    from collectors.http import Deferred
     status = -1
-    for scheme in ("https", "http"):
+    rp = None
+    for base in (f"https://{h}", f"https://www.{h}"):
         try:
-            r = httpx.get(f"{scheme}://{h}/robots.txt", timeout=15, follow_redirects=True,
-                          headers={"User-Agent": USER_AGENT})
-            status = r.status_code
+            rp = http._robots_for(base + "/")
+            status = http.robots_status.get(base, -1)
+        except Deferred:
+            return None
+        if status != -1:
             break
-        except httpx.HTTPError:
-            try:
-                r = httpx.get(f"{scheme}://www.{h}/robots.txt", timeout=15, follow_redirects=True,
-                              headers={"User-Agent": USER_AGENT})
-                status = r.status_code
-                break
-            except httpx.HTTPError:
-                continue
-    if status == 200:
-        rp.parse(r.text.splitlines())
-    elif status == 429 or status >= 500 or status == -1:
-        rp.disallow_all = True      # недоступен или обрыв — полный запрет (RFC 9309, 2.3.1.4)
-    else:
-        rp.allow_all = True         # 4xx (в т.ч. 403) — «правил нет» (RFC 9309, 2.3.1.3)
     root = f"https://{h}/"
-    blocked = [a for a in AI_AGENTS if not rp.can_fetch(a, root)] if status == 200 else []
-    return h, status, int(rp.can_fetch(USER_AGENT, root)), ",".join(blocked)
+    blocked = [a for a in AI_AGENTS if not rp.can_fetch(a, root)] if status == 200 and rp else []
+    return h, status, int(bool(rp) and rp.can_fetch(USER_AGENT, root)), ",".join(blocked)
 
 
-def check(con: sqlite3.Connection, hosts: set[str], workers: int = 16) -> int:
+def check(con: sqlite3.Connection, hosts: set[str], workers: int = 1) -> int:
+    """robots.txt новых доменов — последовательно, через общий слой (раньше — 16 потоков напрямую)."""
+    from collectors.http import PoliteClient
     con.execute(SCHEMA)
     done = {r[0] for r in con.execute("SELECT host FROM domain_robots")}
     todo = sorted(hosts - done)
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    with ThreadPoolExecutor(workers) as ex:
-        for h, status, ok, blocked in ex.map(_check, todo):
-            con.execute("INSERT OR REPLACE INTO domain_robots VALUES (?,?,?,?,?)", (h, status, ok, blocked, now))
+    http = PoliteClient(purpose="domains_robots")
+    n = 0
+    try:
+        for h in todo:
+            res = _check(h, http)
+            if res:
+                con.execute("INSERT OR REPLACE INTO domain_robots VALUES (?,?,?,?,?)", (*res, now))
+                n += 1
+    finally:
+        http.close()
     con.commit()
-    return len(todo)
+    return n
 
 
 def robots(con: sqlite3.Connection) -> dict[str, sqlite3.Row]:

@@ -192,6 +192,7 @@ CINEMA_SCHEMA = {"type": "object", "additionalProperties": False, "required": ["
                                               "url": {"type": ["string", "null"]}}}}}}
 REGIONAL_SQL = """CREATE TABLE IF NOT EXISTS regional_showings (
     cinema TEXT, city TEXT, norm TEXT, title TEXT, kind TEXT, first_date TEXT, last_date TEXT, url TEXT, checked_at TEXT,
+    last_seen_at TEXT, gone_at TEXT,   -- этап 7e: архив вместо удаления
     PRIMARY KEY (cinema, norm)
 )"""
 
@@ -246,16 +247,18 @@ class RegionalCinemas(Collector):
                 self.stats["errors"].append(f"{name}: {type(e).__name__}: {str(e)[:80]}")
                 continue
             self.stats["cinemas"] += 1
-            con.execute("DELETE FROM regional_showings WHERE cinema=?", (name,))
+            # этап 7e: фильмы, сошедшие с экрана, не удаляем (архив), а отмечаем gone_at
+            con.execute("UPDATE regional_showings SET gone_at=? WHERE cinema=? AND gone_at IS NULL", (now, name))
             for f in films:
                 if not re.match(r"\d{4}-\d\d-\d\d$", f.get("first_date") or "") or (f.get("last_date") or f["first_date"]) < today:
                     continue
                 link = f.get("url") or url
                 if link.startswith("/"):
                     link = re.match(r"https?://[^/]+", url).group(0) + link
-                con.execute("INSERT OR REPLACE INTO regional_showings VALUES (?,?,?,?,?,?,?,?,?)",
+                con.execute("""INSERT OR REPLACE INTO regional_showings(cinema, city, norm, title, kind, first_date,
+                    last_date, url, checked_at, last_seen_at, gone_at) VALUES (?,?,?,?,?,?,?,?,?,?,NULL)""",
                             (name, city, norm(f["title"]), f["title"], f["kind"], f["first_date"],
-                             f.get("last_date") or f["first_date"], link, now))
+                             f.get("last_date") or f["first_date"], link, now, now))
                 self.stats["films"] += 1
                 if f["kind"] in ("event_cinema", "special"):
                     self.stats["events"] += 1

@@ -1,0 +1,647 @@
+{
+ "built": "2026-10-01T00:09:39",
+ "db": "/tmp/claude-0/-home-user-cambridge-events/a068d4e6-b494-5cbc-b1bd-6f3f2c0e7abc/scratchpad/events_before_7e.db",
+ "user_agent_changes": [
+  "0280a22 2026-09-29: +CURL_SUFFIXES = (\".cam.ac.uk\",)",
+  "24ddf62 2026-09-27: +USER_AGENT = \"CambridgeEventsBot/0.1 (+https://github.com/performancejesus/cambridge-events)\"",
+  "24ddf62 2026-09-27: +DELAY_SECONDS = 2.0"
+ ],
+ "outgoing_ip_7e": "160.79.106.128–131 (AS396982 Google LLC, Columbus, US; адрес меняется между запросами)",
+ "sites": [
+  {
+   "host": "junction.co.uk",
+   "source": "S012",
+   "name": "Cambridge Junction",
+   "runs": [
+    {
+     "run_id": "2026-09-28T17:31:44+00:00",
+     "ok": 1,
+     "items": 260,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-28T19:45:41+00:00",
+     "ok": 1,
+     "items": 260,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-29T15:25:18+00:00",
+     "ok": 1,
+     "items": 262,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T08:37:54+00:00",
+     "ok": 1,
+     "items": 262,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T13:25:38+00:00",
+     "ok": 1,
+     "items": 0,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T21:25:53+00:00",
+     "ok": 1,
+     "items": 0,
+     "error": null
+    }
+   ],
+   "first_error": {
+    "run_id": "2026-09-30T13:25:38+00:00",
+    "ok": 1,
+    "items": 0,
+    "error": null
+   },
+   "last_ok": "2026-09-30T08:37:54+00:00",
+   "window": [
+    "2026-09-29T13:25:38",
+    "2026-09-30T13:25:38"
+   ],
+   "requests_24h_before": {
+    "коллектор: страницы событий": 3,
+    "recheck_status (статусы)": 4,
+    "enrich_pages (обогащение)": 1,
+    "ticket_vendors (продавцы)": 42,
+    "коллектор: прогонов за сутки": 2,
+    "коллектор: запросов в этих прогонах (списки и страницы)": 35
+   },
+   "requests_24h_total_min": 82,
+   "collector_history": [
+    {
+     "source": "S012",
+     "started_at": "2026-09-28T17:31:57+00:00",
+     "ok": true,
+     "events": 260,
+     "requests": 15,
+     "error": ""
+    },
+    {
+     "source": "S012",
+     "started_at": "2026-09-28T19:45:42+00:00",
+     "ok": true,
+     "events": 260,
+     "requests": 275,
+     "error": ""
+    },
+    {
+     "source": "S012",
+     "started_at": "2026-09-29T15:34:06+00:00",
+     "ok": true,
+     "events": 262,
+     "requests": 19,
+     "error": ""
+    },
+    {
+     "source": "S012",
+     "started_at": "2026-09-30T08:47:35+00:00",
+     "ok": true,
+     "events": 262,
+     "requests": 16,
+     "error": ""
+    },
+    {
+     "source": "S012",
+     "started_at": "2026-09-30T14:15:46+00:00",
+     "ok": true,
+     "events": 0,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S012",
+     "started_at": "2026-09-30T21:37:57+00:00",
+     "ok": true,
+     "events": 0,
+     "requests": 2,
+     "error": ""
+    }
+   ],
+   "code_changes": [
+    "2026-09-28 17:21 c8ea6b2 Stage 6 (in progress): Stevenage rule, respect_ai_disallow flag, P1 HTML collectors (UCM, Junction, Botanic, Visit "
+   ]
+  },
+  {
+   "host": "cambridgeppf.org",
+   "source": "S131",
+   "name": "Cambridge Past, Present & Future",
+   "runs": [
+    {
+     "run_id": "2026-09-28T17:31:44+00:00",
+     "ok": 1,
+     "items": 108,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-29T15:25:18+00:00",
+     "ok": 1,
+     "items": 108,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T08:37:54+00:00",
+     "ok": 1,
+     "items": 108,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T13:25:38+00:00",
+     "ok": 1,
+     "items": 0,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T21:25:53+00:00",
+     "ok": 1,
+     "items": 0,
+     "error": null
+    }
+   ],
+   "first_error": {
+    "run_id": "2026-09-30T13:25:38+00:00",
+    "ok": 1,
+    "items": 0,
+    "error": null
+   },
+   "last_ok": "2026-09-30T08:37:54+00:00",
+   "window": [
+    "2026-09-29T13:25:38",
+    "2026-09-30T13:25:38"
+   ],
+   "requests_24h_before": {
+    "enrich_pages (обогащение)": 3,
+    "ticket_vendors (продавцы)": 13,
+    "коллектор: прогонов за сутки": 2,
+    "коллектор: запросов в этих прогонах (списки и страницы)": 4
+   },
+   "requests_24h_total_min": 20,
+   "collector_history": [
+    {
+     "source": "S131",
+     "started_at": "2026-09-28T17:39:14+00:00",
+     "ok": true,
+     "events": 108,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S131",
+     "started_at": "2026-09-29T15:36:30+00:00",
+     "ok": true,
+     "events": 108,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S131",
+     "started_at": "2026-09-30T08:49:47+00:00",
+     "ok": true,
+     "events": 108,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S131",
+     "started_at": "2026-09-30T14:15:48+00:00",
+     "ok": true,
+     "events": 0,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S131",
+     "started_at": "2026-09-30T21:38:52+00:00",
+     "ok": true,
+     "events": 0,
+     "requests": 2,
+     "error": ""
+    }
+   ],
+   "code_changes": [
+    "2026-09-28 17:21 c8ea6b2 Stage 6 (in progress): Stevenage rule, respect_ai_disallow flag, P1 HTML collectors (UCM, Junction, Botanic, Visit "
+   ]
+  },
+  {
+   "host": "visitcambridge.org",
+   "source": "S001",
+   "name": "Visit Cambridge",
+   "runs": [
+    {
+     "run_id": "2026-09-28T17:31:44+00:00",
+     "ok": 1,
+     "items": 98,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-29T15:25:18+00:00",
+     "ok": 1,
+     "items": 98,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T08:37:54+00:00",
+     "ok": 1,
+     "items": 98,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T13:25:38+00:00",
+     "ok": 1,
+     "items": 98,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T21:25:53+00:00",
+     "ok": 1,
+     "items": 0,
+     "error": null
+    }
+   ],
+   "first_error": {
+    "run_id": "2026-09-30T21:25:53+00:00",
+    "ok": 1,
+    "items": 0,
+    "error": null
+   },
+   "last_ok": "2026-09-30T13:25:38+00:00",
+   "window": [
+    "2026-09-29T21:25:53",
+    "2026-09-30T21:25:53"
+   ],
+   "requests_24h_before": {
+    "recheck_status (статусы)": 1,
+    "коллектор: прогонов за сутки": 2,
+    "коллектор: запросов в этих прогонах (списки и страницы)": 38
+   },
+   "requests_24h_total_min": 39,
+   "collector_history": [
+    {
+     "source": "S001",
+     "started_at": "2026-09-28T17:32:45+00:00",
+     "ok": true,
+     "events": 98,
+     "requests": 116,
+     "error": ""
+    },
+    {
+     "source": "S001",
+     "started_at": "2026-09-29T15:35:06+00:00",
+     "ok": true,
+     "events": 98,
+     "requests": 20,
+     "error": ""
+    },
+    {
+     "source": "S001",
+     "started_at": "2026-09-30T08:48:25+00:00",
+     "ok": true,
+     "events": 98,
+     "requests": 19,
+     "error": ""
+    },
+    {
+     "source": "S001",
+     "started_at": "2026-09-30T13:37:33+00:00",
+     "ok": true,
+     "events": 98,
+     "requests": 19,
+     "error": ""
+    },
+    {
+     "source": "S001",
+     "started_at": "2026-09-30T21:38:10+00:00",
+     "ok": true,
+     "events": 0,
+     "requests": 8,
+     "error": ""
+    }
+   ],
+   "code_changes": [
+    "2026-09-28 17:33 7fdf72c Stage 6 (in progress): churches, fairs, open spaces, deferred P2, P3 collectors; family tagging by source categorie",
+    "2026-09-28 17:21 c8ea6b2 Stage 6 (in progress): Stevenage rule, respect_ai_disallow flag, P1 HTML collectors (UCM, Junction, Botanic, Visit "
+   ]
+  },
+  {
+   "host": "visitwestnorfolk.com",
+   "source": "S183",
+   "name": "Visit West Norfolk",
+   "runs": [
+    {
+     "run_id": "2026-09-30T21:25:53+00:00",
+     "ok": 0,
+     "items": 0,
+     "error": "FetchError: bot challenge (заглушка бот-защиты) https://www.visitwestnorfolk.com/experiences/events/"
+    },
+    {
+     "run_id": "2026-09-30T22:05:25+00:00",
+     "ok": 1,
+     "items": 7,
+     "error": null
+    }
+   ],
+   "first_error": null,
+   "last_ok": "2026-09-30T22:05:25+00:00",
+   "collector_history": [
+    {
+     "source": "S183",
+     "started_at": "2026-09-30T21:46:06+00:00",
+     "ok": false,
+     "events": null,
+     "requests": 2,
+     "error": "FetchError: bot challenge (заглушка бот-защиты) https://www.visitwestnorfolk.com/experiences/events/"
+    },
+    {
+     "source": "S183",
+     "started_at": "2026-09-30T22:05:25+00:00",
+     "ok": true,
+     "events": 7,
+     "requests": 2,
+     "error": ""
+    }
+   ],
+   "code_changes": [
+    "2026-09-30 21:25 e476c03 Этап 7d (в работе): Visit West Norfolk (S183), места — лист «Не разобрано» (две попытки против нестабильной защиты)",
+    "2026-09-30 21:09 b419650 Этап 7d (в работе): источники мест (NT, Audley End, Bury Lane, Museum of Technology, Ely Museum, Corn Exchange King"
+   ]
+  },
+  {
+   "host": "cus.org",
+   "source": "S049",
+   "name": "Cambridge Union",
+   "runs": [
+    {
+     "run_id": "2026-09-30T08:37:54+00:00",
+     "ok": 1,
+     "items": 0,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T13:25:38+00:00",
+     "ok": 1,
+     "items": 0,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T21:25:53+00:00",
+     "ok": 0,
+     "items": 0,
+     "error": "Disallowed: https://cus.org/wp-json/wp/v2/event_jet?per_page=100&_fields=id,link,title,modified"
+    }
+   ],
+   "first_error": {
+    "run_id": "2026-09-30T08:37:54+00:00",
+    "ok": 1,
+    "items": 0,
+    "error": null
+   },
+   "last_ok": null,
+   "window": [
+    "2026-09-29T08:37:54",
+    "2026-09-30T08:37:54"
+   ],
+   "requests_24h_before": {
+    "коллектор: прогонов за сутки": 0,
+    "коллектор: запросов в этих прогонах (списки и страницы)": 0
+   },
+   "requests_24h_total_min": 0,
+   "collector_history": [
+    {
+     "source": "S049",
+     "started_at": "2026-09-30T08:52:27+00:00",
+     "ok": true,
+     "events": 0,
+     "requests": 3,
+     "error": ""
+    },
+    {
+     "source": "S049",
+     "started_at": "2026-09-30T13:42:02+00:00",
+     "ok": true,
+     "events": 0,
+     "requests": 3,
+     "error": ""
+    },
+    {
+     "source": "S049",
+     "started_at": "2026-09-30T21:41:58+00:00",
+     "ok": false,
+     "events": null,
+     "requests": 3,
+     "error": "Disallowed: https://cus.org/wp-json/wp/v2/event_jet?per_page=100&_fields=id,link,title,modified"
+    }
+   ],
+   "code_changes": [
+    "2026-09-30 08:50 26719b2 Этап 7b (в работе): Cambridge Union, доступ к событию, колледжи, Camdram, NGS, Light Cinema, кино, правки по v8"
+   ]
+  },
+  {
+   "host": "dow.cam.ac.uk",
+   "source": "S163",
+   "name": "Heong Gallery (Downing College)",
+   "runs": [
+    {
+     "run_id": "2026-09-29T10:30:48+00:00",
+     "ok": 1,
+     "items": 1,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-29T15:25:18+00:00",
+     "ok": 1,
+     "items": 1,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T08:37:54+00:00",
+     "ok": 1,
+     "items": 1,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T13:25:38+00:00",
+     "ok": 1,
+     "items": 1,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T21:25:53+00:00",
+     "ok": 0,
+     "items": 0,
+     "error": "FetchError: HTTP 307 https://www.dow.cam.ac.uk/creative-arts/heong-gallery"
+    }
+   ],
+   "first_error": {
+    "run_id": "2026-09-30T21:25:53+00:00",
+    "ok": 0,
+    "items": 0,
+    "error": "FetchError: HTTP 307 https://www.dow.cam.ac.uk/creative-arts/heong-gallery"
+   },
+   "last_ok": "2026-09-30T13:25:38+00:00",
+   "window": [
+    "2026-09-29T21:25:53",
+    "2026-09-30T21:25:53"
+   ],
+   "requests_24h_before": {
+    "проверка ссылок выпуска (правило 7)": 1,
+    "проверки «Не разобрано» / places_7d --probe": 1,
+    "коллектор: прогонов за сутки": 2,
+    "коллектор: запросов в этих прогонах (списки и страницы)": 4
+   },
+   "requests_24h_total_min": 6,
+   "collector_history": [
+    {
+     "source": "S163",
+     "started_at": "2026-09-29T10:30:59+00:00",
+     "ok": true,
+     "events": 1,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S163",
+     "started_at": "2026-09-29T15:38:50+00:00",
+     "ok": true,
+     "events": 1,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S163",
+     "started_at": "2026-09-30T08:52:19+00:00",
+     "ok": true,
+     "events": 1,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S163",
+     "started_at": "2026-09-30T13:41:52+00:00",
+     "ok": true,
+     "events": 1,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S163",
+     "started_at": "2026-09-30T21:41:51+00:00",
+     "ok": false,
+     "events": null,
+     "requests": 2,
+     "error": "FetchError: HTTP 307 https://www.dow.cam.ac.uk/creative-arts/heong-gallery"
+    }
+   ],
+   "code_changes": [
+    "2026-09-30 14:17 a107c33 Этап 7c (в работе): обязательные проверки выпуска (tests/issue_rules, 34 правила), verified_facts, правки по v9, «В",
+    "2026-09-29 12:54 0280a22 Этап 6c (в работе): коллекторы, правило robots.txt 4xx, «Не разобрано», детские провайдеры, каникулы, правки по v5"
+   ]
+  },
+  {
+   "host": "theatreroyal.org",
+   "source": "S126",
+   "name": "Theatre Royal Bury St Edmunds",
+   "runs": [
+    {
+     "run_id": "2026-09-28T17:31:44+00:00",
+     "ok": 1,
+     "items": 33,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-29T15:25:18+00:00",
+     "ok": 1,
+     "items": 33,
+     "error": null
+    },
+    {
+     "run_id": "2026-09-30T08:37:54+00:00",
+     "ok": 0,
+     "items": 0,
+     "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+     "run_id": "2026-09-30T09:02:28+00:00",
+     "ok": 0,
+     "items": 0,
+     "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+     "run_id": "2026-09-30T13:25:38+00:00",
+     "ok": 0,
+     "items": 0,
+     "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+     "run_id": "2026-09-30T21:25:53+00:00",
+     "ok": 0,
+     "items": 0,
+     "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    }
+   ],
+   "first_error": {
+    "run_id": "2026-09-30T08:37:54+00:00",
+    "ok": 0,
+    "items": 0,
+    "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   },
+   "last_ok": "2026-09-29T15:25:18+00:00",
+   "window": [
+    "2026-09-29T08:37:54",
+    "2026-09-30T08:37:54"
+   ],
+   "requests_24h_before": {
+    "ticket_vendors (продавцы)": 8,
+    "коллектор: прогонов за сутки": 1,
+    "коллектор: запросов в этих прогонах (списки и страницы)": 2
+   },
+   "requests_24h_total_min": 10,
+   "collector_history": [
+    {
+     "source": "S126",
+     "started_at": "2026-09-28T17:39:55+00:00",
+     "ok": true,
+     "events": 33,
+     "requests": 35,
+     "error": ""
+    },
+    {
+     "source": "S126",
+     "started_at": "2026-09-29T15:37:01+00:00",
+     "ok": true,
+     "events": 33,
+     "requests": 2,
+     "error": ""
+    },
+    {
+     "source": "S126",
+     "started_at": "2026-09-30T09:02:32+00:00",
+     "ok": false,
+     "events": null,
+     "requests": 2,
+     "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+     "source": "S126",
+     "started_at": "2026-09-30T13:39:15+00:00",
+     "ok": false,
+     "events": null,
+     "requests": 2,
+     "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+     "source": "S126",
+     "started_at": "2026-09-30T21:39:20+00:00",
+     "ok": false,
+     "events": null,
+     "requests": 2,
+     "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    }
+   ],
+   "code_changes": [
+    "2026-09-28 17:33 7fdf72c Stage 6 (in progress): churches, fairs, open spaces, deferred P2, P3 collectors; family tagging by source categorie"
+   ]
+  }
+ ]
+}

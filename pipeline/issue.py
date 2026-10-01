@@ -660,7 +660,8 @@ def _kids_programmes(con, w: Window, p: Pools) -> None:
     from .kids_collect import text_of
     horizon = (w.issue + timedelta(weeks=13)).isoformat()
     texts = {x["id"]: x.get("text", {}) for x in json.loads(kids.DATA.read_text())["programmes"]}
-    for k in con.execute("SELECT * FROM kids_programmes WHERE coalesce(kind, 'holiday') = 'holiday' ORDER BY prog_id").fetchall():
+    for k in con.execute("SELECT * FROM kids_programmes WHERE coalesce(kind, 'holiday') = 'holiday' "
+                         "AND coalesce(status, 'active') = 'active' ORDER BY prog_id").fetchall():
         if k["source"] == "collector":
             texts[k["prog_id"]] = text_of(con, k["prog_id"])
         if k["date_start"] and not (w.issue.isoformat() <= (k["date_end"] or k["date_start"]) and k["date_start"] <= horizon):

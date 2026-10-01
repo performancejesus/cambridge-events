@@ -2,6 +2,10 @@
 
 Запуск: python scripts/run_collectors.py            # все
         python scripts/run_collectors.py S005 S047  # выбранные
+        python scripts/run_collectors.py --slot B   # этап 7e: только источники слота (тяжёлые сайты — в разное время)
+
+Этап 7e: все запросы — через общий слой бережного сбора (collectors/http.py); источник, чей домен на паузе или чья
+страница списка дала ошибку меньше суток назад, отмечается deferred и не загружается (данные в базе не трогаются).
 """
 
 from __future__ import annotations
@@ -16,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from collectors.http import PoliteClient  # noqa: E402
+from collectors.http import Deferred, PoliteClient  # noqa: E402
 from collectors.sources import ALL  # noqa: E402
 from pipeline import ai_policy  # noqa: E402
 from pipeline.db import connect  # noqa: E402
@@ -24,7 +28,12 @@ from pipeline.db import connect  # noqa: E402
 RAW = ROOT / "data" / "raw"
 
 
-def main(ids: list[str]) -> None:
+def slot_of(sid: str) -> str:
+    plan = json.loads((ROOT / "data" / "crawl_plan.json").read_text())
+    return plan["sources"].get(sid, "A")
+
+
+def main(ids: list[str], slot: str | None = None) -> None:
     RAW.mkdir(parents=True, exist_ok=True)
     summary_path = RAW / "_run.json"
     summary = json.loads(summary_path.read_text()) if summary_path.exists() and ids else {}
@@ -36,6 +45,9 @@ def main(ids: list[str]) -> None:
         for c in ALL:
             if ids and c.source_id not in ids:
                 continue
+            if slot and slot_of(c.source_id) != slot:
+                continue
+            http.purpose = f"collect:{c.source_id}"
             module = type(c).__module__.rsplit(".", 1)[-1]
             print(f"{c.source_id} {c.name} …", file=sys.stderr, flush=True)
             t0, before = time.monotonic(), http.requests
@@ -65,6 +77,8 @@ def main(ids: list[str]) -> None:
                     db.commit()
             except (KeyboardInterrupt, SystemExit):
                 raise
+            except Deferred as e:   # этап 7e: правило бережного сбора, а не сбой источника
+                entry.update(ok=False, deferred=True, error=f"deferred: {e}"[:500])
             except BaseException as e:  # noqa: BLE001 — один упавший коллектор не останавливает прогон
                 # (этап 7c: pypdf → cryptography без cffi падал с PanicException — это BaseException)
                 entry.update(ok=False, error=f"{type(e).__name__}: {e}"[:500],
@@ -80,4 +94,10 @@ def main(ids: list[str]) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    args = sys.argv[1:]
+    slot = None
+    if "--slot" in args:
+        i = args.index("--slot")
+        slot = args[i + 1]
+        args = args[:i] + args[i + 2:]
+    main(args, slot)

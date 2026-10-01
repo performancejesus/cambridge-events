@@ -16,7 +16,7 @@ class VisitCambridge(HtmlDetailCollector):
     source_id, name = "S001", "Visit Cambridge"
     list_urls = [f"https://www.visitcambridge.org/event-categories/{c}/" for c in CATS]
     page_fmt = "{base}/page/{n}/"
-    max_pages = 6
+    max_pages = 30   # этап 7e: обход до пустой страницы; лимит — только предохранитель
     link_re = r'href="(https://www\.visitcambridge\.org/event/[a-z0-9-]+/)"'
 
     def category_of(self, list_url: str) -> str | None:

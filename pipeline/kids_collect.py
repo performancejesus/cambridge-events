@@ -21,7 +21,7 @@ from .db import ROOT
 
 MODEL = "claude-haiku-4-5"
 PRICE_IN, PRICE_OUT = 1.00 / 1e6, 5.00 / 1e6
-MAX_CHARS = 10000
+MAX_CHARS = 20000   # этап 7e: длинные страницы провайдеров (секции на весь год) — было 10000
 CACHE = """CREATE TABLE IF NOT EXISTS kids_page_cache (
     url TEXT PRIMARY KEY, sha TEXT, result TEXT, fetched_at TEXT
 )"""
@@ -156,6 +156,12 @@ def collect(con: sqlite3.Connection, http, only: set[str] | None = None) -> dict
                 x |= {"url": url, "provider": data.get("provider") or p["name"],
                       "holiday": None if x.get("holiday") == "none" else x.get("holiday")}
                 progs.append(x)
+        if problems and all(r == "deferred" for _, r, _ in problems) and not progs:
+            # этап 7e: домен на паузе бережного сбора — данные провайдера не трогаем (не помечаем программы пропавшими)
+            st["deferred"] = st.get("deferred", 0) + 1
+            report.append({"host": p["host"], "provider": p["name"], "type": p["type"], "programmes": None,
+                           "problems": [f"{r}: {d}" for _, r, d in problems]})
+            continue
         if not progs and problems and len(problems) == len(p["urls"]):
             url, res, detail = problems[0]
             unparsed.record(con, f"P:{p['host']}", p["name"], url, res, detail, "каникулярные программы и секции провайдера",
@@ -246,29 +252,60 @@ def rezone(con: sqlite3.Connection, recompute: bool = False) -> dict:
     return st
 
 
+def _stable_id(host: str, x: dict, s: str | None) -> str:
+    """Этап 7e: устойчивый ключ программы (раньше — порядковый номер на странице: при сдвиге списка запись одной
+    программы перезаписывалась другой)."""
+    key = "|".join(str(v or "").lower().strip() for v in (x.get("title"), s, x.get("venue"), x.get("ages"), x.get("days")))
+    return f"C:{host}:{hashlib.sha1(key.encode()).hexdigest()[:8]}"
+
+
 def store(con: sqlite3.Connection, p: dict, progs: list[dict], now: str) -> None:
-    """Программы провайдера: заменяют прежние записи коллектора и ручного среза этого провайдера."""
+    """Программы провайдера. Этап 7e (база знаний): прежние записи не удаляются — программа, которой больше нет на
+    странице, получает status = gone (прошедшая — past); снова появилась — active. Ручной срез 6-v4 провайдера, по
+    которому есть данные коллектора, помечается gone (не удаляется)."""
     from .geo import lookup
-    con.execute("DELETE FROM kids_programmes WHERE provider_host=? AND source='collector'", (p["host"],))
+    today = date.today().isoformat()
     if progs:   # ручной срез 6-v4 заменяется данными коллектора
-        con.execute("DELETE FROM kids_programmes WHERE source IS NULL AND url LIKE ?", (f"%{p['host']}%",))
+        con.execute("UPDATE kids_programmes SET status='gone', gone_at=? WHERE source IS NULL AND url LIKE ? "
+                    "AND coalesce(status,'active')='active'", (now, f"%{p['host']}%"))
     lookup(con, [x["postcode"] for x in progs if x.get("postcode")])
-    for n, x in enumerate(progs):
+    old = {r["prog_id"]: dict(r) for r in con.execute(
+        "SELECT * FROM kids_programmes WHERE provider_host=? AND source='collector'", (p["host"],))}
+    # прежние записи с порядковыми ключами (C:host:N) — сопоставляем по названию, дате и площадке
+    by_content = {(o["title"], o["date_start"], o["venue"]): pid for pid, o in old.items()}
+    seen = set()
+    for x in progs:
         s, e = _dates(x)
-        if x["kind"] == "holiday" and e and e < date.today().isoformat():
+        if x["kind"] == "holiday" and e and e < today:
             continue
         z, basis = kid_zone(con, x, provider_towns().get(p["host"], []))
-        pid = f"C:{p['host']}:{n + 1}"
-        first = con.execute("SELECT first_seen_at FROM kids_programmes WHERE prog_id=?", (pid,)).fetchone()
+        pid = _stable_id(p["host"], x, s)
+        if pid not in old and (x["title"], s, x.get("venue")) in by_content:
+            pid = by_content[(x["title"], s, x.get("venue"))]
+        if pid in seen:
+            continue
+        seen.add(pid)
+        prev = old.get(pid) or {}
+        rec = x.get("recruiting") or "unknown"
         con.execute("""INSERT OR REPLACE INTO kids_programmes(prog_id, holiday, provider, title, ages, date_start, date_end,
             hours, price, venue, address, postcode, zone, booking_opens, places, audience, url, verified, note, checked_at,
-            source, provider_host, days, booking_deadline, first_seen_at, kind)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            source, provider_host, days, booking_deadline, first_seen_at, kind, status, last_seen_at, gone_at,
+            last_verified_at, next_check_at, org_id, category, recruiting, trial_free, recruiting_note)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                     (pid, x.get("holiday") or ("regular" if x["kind"] == "regular" else None), x["provider"], x["title"],
                      x.get("ages"), s, e, x.get("hours"), x.get("price"), x.get("venue"), x.get("address"),
                      x.get("postcode"), z, x.get("booking_opens"), x["places"], x["audience"], x["url"],
-                     1, f"со страницы провайдера: {x['evidence'][:200]}" + (f" · зона — {basis}" if z and basis != "postcode" else ""), now, "collector", p["host"], x.get("days"),
-                     x.get("booking_deadline"), first[0] if first else now, x["kind"]))
+                     1, f"со страницы провайдера: {x['evidence'][:200]}" + (f" · зона — {basis}" if z and basis != "postcode" else ""),
+                     now, "collector", p["host"], x.get("days"), x.get("booking_deadline"), prev.get("first_seen_at") or now,
+                     x["kind"], "active", now, None, now, prev.get("next_check_at"), prev.get("org_id"),
+                     x.get("category") or prev.get("category"), rec, int(bool(x.get("trial_free"))) if "trial_free" in x else prev.get("trial_free"),
+                     x.get("recruiting_note") or prev.get("recruiting_note")))
+    for pid, o in old.items():
+        if pid in seen or o.get("status") in ("gone", "past"):
+            continue
+        ended = o.get("kind") != "regular" and (o.get("date_end") or o.get("date_start") or "9") < today
+        con.execute("UPDATE kids_programmes SET status=?, gone_at=? WHERE prog_id=?",
+                    ("past" if ended else "gone", None if ended else now, pid))
 
 
 def reminders(con: sqlite3.Connection, today: date | None = None) -> list[dict]:
@@ -281,7 +318,8 @@ def reminders(con: sqlite3.Connection, today: date | None = None) -> list[dict]:
         days = (date.fromisoformat(h["start"]) - today).days
         if not 0 <= days <= 42:
             continue
-        rows = con.execute("SELECT provider_host, provider FROM kids_programmes WHERE holiday=?", (h["key"],)).fetchall()
+        rows = con.execute("SELECT provider_host, provider FROM kids_programmes WHERE holiday=? "
+                           "AND coalesce(status,'active')='active'", (h["key"],)).fetchall()
         with_data = {r[0] for r in rows if r[0]}
         out.append({"holiday": h["key"], "start": h["start"], "end": h["end"], "days_left": days,
                     "programmes": len(rows), "providers_with_data": len(with_data),

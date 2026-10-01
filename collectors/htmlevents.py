@@ -93,7 +93,7 @@ class HtmlDetailCollector(DetailCache, Collector):
     venue: str | None = None
     address: str | None = None
     postcode: str | None = None
-    max_events: int = 300
+    max_events: int = 600   # этап 7e: предохранитель, а не окно (было 300)
 
     def links(self, http: PoliteClient) -> dict[str, list[str]]:
         """Ссылка → категории (по странице списка, где она найдена)."""

@@ -50,8 +50,14 @@ VERSION_RE = re.compile(r"\s*\((?:dubbed|subbed|subtitled|imax|3d|2d|[a-z]+ (?:l
 WIKI_PAUSE = 1.0
 
 
+INSERT_SHOWING = """INSERT OR REPLACE INTO cinema_showings(cinema, norm, title, kind, first_date, last_date, days,
+    first_time, cert, runtime, url, checked_at, gone_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,NULL)"""
+
+
 def init(con: sqlite3.Connection) -> None:
     con.executescript(SCHEMA)
+    if "gone_at" not in {r[1] for r in con.execute("PRAGMA table_info(cinema_showings)")}:
+        con.execute("ALTER TABLE cinema_showings ADD COLUMN gone_at TEXT")   # этап 7e: архив вместо удаления
 
 
 def norm(t: str) -> str:
@@ -93,24 +99,24 @@ def refresh(con: sqlite3.Connection, http) -> dict:
     except Exception as e:  # noqa: BLE001 — мини-гид недоступен: остаются данные прошлой проверки
         stats["light_error"] = f"{type(e).__name__}: {str(e)[:80]}"
         light = []
-    if light:
-        con.execute("DELETE FROM cinema_showings WHERE cinema='Light'")
+    if light:   # этап 7e: сошедшие с экрана не удаляем (архив для базы знаний), а отмечаем gone_at
+        con.execute("UPDATE cinema_showings SET gone_at=? WHERE cinema='Light' AND gone_at IS NULL", (now,))
     for f in light:
         if not f["dates"]:
             continue
-        con.execute("INSERT OR REPLACE INTO cinema_showings VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+        con.execute(INSERT_SHOWING,
                     ("Light", norm(f["title"]), f["title"], f["kind"], f["dates"][0][0], f["dates"][-1][0],
                      len(f["dates"]), f["dates"][0][1], f["cert"], f["runtime"], f["url"], now))
         stats["light"] += 1
     rows = con.execute("""SELECT title, start, "end", url, categories, last_seen_at FROM raw_items WHERE source_id='S045'
         AND last_seen_at = (SELECT max(last_seen_at) FROM raw_items WHERE source_id='S045')""").fetchall()
     if rows:
-        con.execute("DELETE FROM cinema_showings WHERE cinema='Arts Picturehouse'")
+        con.execute("UPDATE cinema_showings SET gone_at=? WHERE cinema='Arts Picturehouse' AND gone_at IS NULL", (now,))
     for r in rows:
         cats = json.loads(r["categories"] or "[]")
         kind = "film" if "now playing" in cats else "special"
         start = (r["start"] or "")[:10]
-        con.execute("INSERT OR REPLACE INTO cinema_showings VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+        con.execute(INSERT_SHOWING,
                     ("Arts Picturehouse", norm(r["title"]), r["title"], kind, start, (r["end"] or r["start"] or "")[:10],
                      None, (r["start"] or "")[11:16] or None, None, None, r["url"], r["last_seen_at"]))
         stats["picturehouse"] += 1
@@ -122,7 +128,8 @@ def where(con: sqlite3.Connection, title: str, start: date, end: date) -> list[s
     """Кинотеатры, где фильм идёт в окне выпуска (подтверждено расписанием или «Now Playing»)."""
     init(con)
     n = norm(title)
-    rows = con.execute("SELECT cinema FROM cinema_showings WHERE norm=? AND first_date <= ? AND last_date >= ?",
+    rows = con.execute("SELECT cinema FROM cinema_showings WHERE norm=? AND first_date <= ? AND last_date >= ? "
+                       "AND gone_at IS NULL",
                        (n, end.isoformat(), start.isoformat())).fetchall()
     return sorted({r[0] for r in rows}, key=lambda c: c != "Arts Picturehouse")
 
@@ -233,7 +240,8 @@ def window_films(con: sqlite3.Connection, start: date, end: date, http_client=No
     for r in rel:
         films.setdefault(norm(r["title"]), {"title": r["title"], "uk_date": r["uk_date"], "kind": r["kind"],
                                             "wide": "mediamole.co.uk" in r["sources"], "sources": r["sources"]})
-    for r in con.execute("""SELECT * FROM cinema_showings WHERE first_date BETWEEN ? AND ? AND kind IN ('film','special')""",
+    for r in con.execute("""SELECT * FROM cinema_showings WHERE first_date BETWEEN ? AND ? AND kind IN ('film','special')
+                            AND gone_at IS NULL""",
                          (start.isoformat(), end.isoformat())):
         n = r["norm"]
         if n in films:
