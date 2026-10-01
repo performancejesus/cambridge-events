@@ -178,12 +178,31 @@ def _nums(text: str) -> set[float]:
     return {round(float(x), 2) for x in NUM_RE.findall(text.replace(",", ""))}
 
 
-def check_price(it: dict, cands: list[dict]) -> tuple[str, str] | None:
+def same_event(pools: issue.Pools, ids: list[str]) -> list[dict]:
+    """Этап 7e (правки по v11, Olly Murs): другие кандидаты того же события — та же дата начала и название одного
+    содержит название другого («Olly Murs» / «Olly Murs at Newmarket Nights»: несклеенные дубли, цена £45 — у второго)."""
+    from pipeline.normalize import norm_title
+    out = []
+    for i in ids:
+        c = pools.candidates.get(i) or {}
+        if not c.get("dates") or c.get("kind") in ("venue_news", "film_release", "programme"):
+            continue
+        t = norm_title(c.get("title") or "")
+        for cid, x in pools.candidates.items():
+            if cid in ids or not x.get("dates") or x["dates"][0][0] != c["dates"][0][0]:
+                continue
+            u = norm_title(x.get("title") or "")
+            if t and u and (t in u or u in t) and min(len(t), len(u)) >= 6:
+                out.append(x)
+    return out
+
+
+def check_price(it: dict, cands: list[dict], same: list[dict] | None = None) -> tuple[str, str] | None:
     """Цифры цены в тексте модели должны быть в данных любого из кандидатов пункта (price_text, price_from, summary);
     иначе — цена из данных (правки по v3: значение из данных, а не «цена не указана», если оно есть у любого id)."""
     c = cands[0]
     known = set()
-    for x in cands:
+    for x in cands + (same or []):
         known |= _nums(x.get("price_text")) | _nums(x.get("summary")) | _nums(x.get("note")) | _nums(x.get("page_price"))
         for sib in x.get("siblings") or []:   # этап 7c: цена несклеенного дубля (The bEAT: £43 у Corn Exchange)
             known |= _nums(sib.get("price_text"))
@@ -194,7 +213,8 @@ def check_price(it: dict, cands: list[dict]) -> tuple[str, str] | None:
     if not wrong or c["kind"] == "venue_news":
         return None
     from pipeline.issue_fixes import _priced
-    best = next((x for y in cands for x in _priced(y)), None)
+    # этап 7e (правки по v11): цена есть в данных — подставляем её (у пункта или у кандидата того же события)
+    best = next((x for y in cands + (same or []) for x in _priced(y) if _nums(x[1]) or x[2] is not None), None)
     en, ru = issue.price_from_data({"price_text": best[1], "price_from": best[2]} if best else c)
     it["price_en"], it["price_ru"] = en, ru
     return (f"“{it['title_en']}”: price in the model text did not match the data ({sorted(wrong)}) — replaced with “{en}”",
@@ -400,7 +420,7 @@ def validate(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[st
                 notes.append((f"“{it['title_en']}” ({ids[0]}) does not fit rubric {sec['rubric']} — removed",
                               f"«{it['title_ru']}» ({ids[0]}) не подходит для рубрики {sec['rubric']} — убран"))
                 continue
-            fixed = check_price(it, [pools.candidates[i] for i in ids])
+            fixed = check_price(it, [pools.candidates[i] for i in ids], same_event(pools, ids))
             if fixed:
                 notes.append(fixed)
             used.update(ids)
@@ -861,6 +881,10 @@ def base_fit(rub: str, c: dict) -> bool:
         return k == "event" and bool(college_of(c)) and c.get("zone") == "центр"
     if rub == "learn":
         return k == "course" or bool(c.get("learn"))
+    if rub == "kids" and k == "section":     # этап 7e: «Секции: идёт набор»
+        return True
+    if rub == "sport" and k == "adult_programme":   # этап 7e: взрослые новички — «Поучаствовать»
+        return True
     if rub == "museums":
         from pipeline.museums import place_of
         return k == "event" and bool(place_of(c)) and c.get("zone") in issue.LISTED_ZONES
@@ -918,6 +942,9 @@ def editor_lists(result: dict, pools: issue.Pools, w: issue.Window, removed: dic
             if not why and (SKIP_RE.search(c["title"]) or NOT_HERE_VENUE_RE.search(c.get("venue") or "")):
                 why = "служба, выпускники, ADC или музей — не в эту рубрику"
             why = why or ("доступ restricted" if c.get("access") == "restricted" else "дубль или не прошёл отбор рубрики")
+            return False, (why, why)
+        if cid[:2] in ("S:", "B:"):   # этап 7e: секции с набором и взрослые новички (pipeline/sections.py)
+            why = (result.get("sections_why") or {}).get(cid) or "не прошёл отбор"
             return False, (why, why)
         if rub == "learn":   # этап 7e: причины отбора рубрики «Научиться» (pipeline/courses.select)
             why = (result.get("learn_why") or {}).get(cid) or "не прошёл отбор рубрики"
@@ -1609,7 +1636,9 @@ FIX_RULES = [(8, r"латинские буквы в слове|кириллиц�
              (22, r"третий пункт с одной площадки"), (23, r"состав из данных не назван"),
              (28, r"причины пропуска дописаны"), (29, r"Факты из знаний модели"), (30, r"лига не подтверждена"),
              (14, r"дата окончания со страницы"), (31, r"вытеснено подтверждённым открытием"),
-             (36, r"противоречие стадии открытия"), (1, r"переписано по источнику"), (35, r"грамматика:")]
+             (36, r"противоречие стадии открытия"), (1, r"переписано по источнику"), (35, r"грамматика:"),
+             (44, r"название в оригинале"), (45, r"Дед Мороз|пояснение «"), (46, r"роли участников"),
+             (43, r"вступление переписано"), (47, r"город в заголовке")]
 
 
 def fix_log(notes: list[tuple[str, str]]) -> dict[int, list[tuple[str, str]]]:
@@ -1773,6 +1802,19 @@ def main() -> None:
     result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "learn"]
     learn_items, result["learn_why"] = courses.build_items(con, pools, result, w)
     result["sections"].append({"rubric": "learn", "items": learn_items})
+    from pipeline import sections   # этап 7e: «Секции: идёт набор» (в «С детьми»), взрослые новички (в «Спорте»)
+    for sec in result["sections"]:
+        sec["items"] = [it for it in sec["items"] if not (it.get("section_line") or it.get("adult_line"))]
+    sec_items, why_s = sections.build_items(con, pools, w)
+    adult, why_a = sections.adult_items(con, pools, w)
+    result["sections_why"] = why_s | why_a
+    for rub, add in (("kids", sec_items), ("sport", adult)):
+        if add:
+            target = next((s for s in result["sections"] if s["rubric"] == rub), None)
+            if target is None:
+                target = {"rubric": rub, "items": []}
+                result["sections"].append(target)
+            target["items"].extend(add)
     fee = next((dict(x.split("=", 1) for x in (c.get("access_note") or "").split("|") if "=" in x).get("fee")
                 for c in pools.candidates.values() if "S049" in (c.get("sources") or [])), None) or "£370"
     u_item, u_notes = union_termcard.line_item(con, w.start, w.end, fee)
@@ -1787,6 +1829,9 @@ def main() -> None:
             result["sections"].append(talks)
         talks["items"].append(u_item)
     knowledge_check(result, pools)
+    # этап 7e (правки по v11): названия событий — в оригинале (44); культурные реалии — Father Christmas, panto (45)
+    from pipeline import issue_fixes as _ifx
+    fix_notes += _ifx.fix_original_titles(result, pools) + _ifx.fix_realia(result, pools)
     # этап 7c: сверка утверждений выпуска с текстами источников (Haiku, кэш claim_checks) — для проверок 1, 2 и 29;
     # утверждения не из источника — в «Факты из знаний модели (проверить)»
     from pipeline import issue_fixes
@@ -1799,6 +1844,12 @@ def main() -> None:
         import anthropic
         api_client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
     if not args.no_api:
+        # этап 7e (правки по v11): роли участников только из источника (46); вступление — только о том, что в выпуске (43)
+        n_role, cost_role = issue_fixes.fix_roles(api_client, result, pools, con)
+        n_intro, cost_intro = issue_fixes.fix_intro(api_client, result, pools, w, con)
+        fix_notes += n_role + n_intro
+        usage["cost_usd"] += cost_role + cost_intro
+        ctx._layout = {}
         # этап 7d: грамматика — до сверки: проверки на готовом выпуске сверяют тот же текст (кэш), вердикт не меняется
         n_gr, cost_gr, result["grammar"] = issue_fixes.fix_grammar(api_client, result, pools, con)
         fix_notes += n_gr

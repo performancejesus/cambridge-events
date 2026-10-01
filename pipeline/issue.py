@@ -1423,6 +1423,27 @@ PAGE_URGENCY_MARK = {"few_left": {"en": "few tickets left", "ru": "мало би
 # «some_dates_sold_out» (метка «Sold out» и кнопка покупки на одной странице) неоднозначно — только редактору
 
 
+TOWN_RU = {"Bury St Edmunds": "Бери-Сент-Эдмундс", "Saffron Walden": "Саффрон-Уолден", "St Ives": "Сент-Айвс",
+           "St Neots": "Сент-Нитс", "Huntingdon": "Хантингдон", "Peterborough": "Питерборо", "Ely": "Эли",
+           "Newmarket": "Ньюмаркет", "Royston": "Ройстон", "Haverhill": "Хейверхилл", "Wisbech": "Уисбич",
+           "March": "Марч", "King's Lynn": "Кингс-Линн", "Cambourne": "Кембурн", "Sawston": "Сотон", "Histon": "Хистон"}
+
+
+def news_town(c: dict) -> str | None:
+    """Этап 7e: городок открытия вне Кембриджа — из адреса (часть без индекса), иначе известный город в адресе/названии."""
+    addr = c.get("address") or ""
+    for t in sorted(TOWN_RU, key=len, reverse=True):
+        if re.search(rf"\b{re.escape(t)}\b", addr):
+            return t
+    parts = [x.strip() for x in addr.split(",") if x.strip() and not re.search(r"\d", x)]
+    if parts:
+        return parts[-1]
+    for t in sorted(TOWN_RU, key=len, reverse=True):
+        if re.search(rf"\b{re.escape(t)}\b", c.get("title") or ""):
+            return t
+    return None
+
+
 def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
     """Выпуск как структура (для Markdown и читательского HTML): шапка, вступление, разделы → подразделы → пункты."""
     weekends = (" and " if lang == "en" else " и ").join(_range(a, b, lang) for a, b in w.weekends)
@@ -1464,6 +1485,14 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                                                   "blurb": "", "url": it.get("url"), "ids": [], "compact": True})
                 continue
             c = p.candidates[it["ids"][0]]
+            if it.get("section_line") or it.get("adult_line"):   # этап 7e: секции с набором; взрослые новички
+                key = "sections" if it.get("section_line") else "take_part"
+                meta = it[f"meta_{lang}"]
+                if it.get(f"kind_{lang}"):
+                    meta = f"{it[f'kind_{lang}']} · {meta}"
+                groups.setdefault(key, []).append({"title": it[f"title_{lang}"], "meta": meta, "blurb": "",
+                                                   "url": it.get("url") or c.get("url"), "ids": it["ids"], "compact": True})
+                continue
             evs = [p.candidates[i] for i in it["ids"] if p.candidates[i]["kind"] == c["kind"] == "event"]
             if len(evs) > 1:  # два дня одной выставки на разных площадках и т.п.
                 c = c | {"dates": sorted({x for e in evs for x in e["dates"]}, key=lambda x: tuple(y or "" for y in x))}
@@ -1480,9 +1509,14 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 meta = f"{it[f'kind_{lang}']} · {meta}" if lang == "ru" or rub == "learn" else meta
             title = it[f"title_{lang}"]
             if c["kind"] == "venue_news" and not re.search(r"\bCambridge\b", c.get("address") or ""):
-                town = (c.get("address") or "").split(",")[-1].strip()   # правки по v5: городок — в заголовке строки
-                if town and town.lower() not in title.lower():
-                    title = f"{title} — {town}"
+                # правки по v5 (и по v11: David Lloyd St Neots): городок и зона — в заголовке строки всегда, даже если
+                # город входит в название: «David Lloyd St Neots — Сент-Нитс, до часа»
+                town = news_town(c)
+                if town:
+                    tl = town if lang == "en" else TOWN_RU.get(town, town)
+                    z = c.get("zone")
+                    zl = (ZONE_EN.get(z, z) if lang == "en" else z) if z and z != "центр" else ""
+                    title = f"{title} — {tl}" + (f", {zl}" if zl else "")
             # правки по v4: забеги и триатлоны с регистрацией участников — подраздел «Поучаствовать» в «Спорте»
             key = "take_part" if rub == "sport" and any(p.candidates[i].get("participant") for i in it["ids"]) else ""
             if rub == "sport" and not key and (it.get("also") or set(c.get("sources") or []) & ALSO_PLAYING):
@@ -1494,8 +1528,9 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
             groups.setdefault(key, []).append({"title": title, "meta": meta, "access_url": acc_url,
                                                "blurb": blurb, "url": url, "ids": it["ids"],
                                                **({"compact": True} if it.get("line") else {})})
-        for key in sorted(groups, key=lambda k: ["", "also", "take_part"].index(k)):
-            sub_title = {"take_part": ("Take part", "Поучаствовать"), "also": ("Also playing", "Также играют")}.get(key)
+        for key in sorted(groups, key=lambda k: ["", "also", "take_part", "sections"].index(k)):
+            sub_title = {"take_part": ("Take part", "Поучаствовать"), "also": ("Also playing", "Также играют"),
+                         "sections": ("Clubs taking new members", "Секции: идёт набор")}.get(key)
             items_ = groups[key]
             if key == "also":   # по дате
                 items_ = sorted((x | {"compact": True} for x in items_),

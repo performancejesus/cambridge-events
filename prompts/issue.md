@@ -127,7 +127,9 @@ Rules:
    normal events and do not say tickets are not on sale yet.
 7. Facts. Dates, times, prices, line-ups, venues and addresses come only from the candidate data. When the data
    names who performs, name them in the item: every name in `lineup` (up to five) plus `performer` — the line-up is
-   often the whole point of the event, and we check the text against it. General knowledge
+   often the whole point of the event, and we check the text against it. Do not give anyone a role or an order on the
+   bill ("headliner", "support act", "opening for", «на разогреве», «хедлайнер») unless the data says so in those
+   words; if the data simply lists performers, list them as performers. General knowledge
    that cannot go out of date is allowed — the genre of a band, the country an artist comes from, what a well-known
    festival or institution is ("Pink Floyd's founder", "a Scottish pop duo", "the university's museum of art") — but
    list every such statement in the item's `knowledge_en` / `knowledge_ru` so the editor can check it. Nothing that
@@ -156,7 +158,8 @@ Fields of an item:
 - `title_en`, `title_ru` — a short, clean title: drop ticket-site noise ("CAMBRIDGE:", "in Cambridge", tour names in
   capitals, "- Cambridge"). For `V…` items the title is just the name of the place: the stage ("coming soon",
   "opened", «скоро открытие») is printed next to it from the data, do not repeat it in the title. In Russian keep names of people, bands, shows and venues in Latin script; translate
-  descriptive titles ("Meet the Cows" → «Знакомство с коровами»). Never mix alphabets inside one word
+  event titles are kept in the original language, exactly as for every other item ("Three Cheers for Pooh! Story
+  trail" stays in English; never «Три ура Винни-Пуху!»); a translation, if useful, goes into the description. Never mix alphabets inside one word
   («морris» is wrong: either «моррис» or "morris"); English text has no Cyrillic letters.
 - `where_en`, `where_ru` — venue plus area or town ("Cambridge Junction, Cambridge", "The Maltings, Ely"). Area or
   town only from the address or where a well-known venue really is. Russian: venue in Latin script, town in Russian

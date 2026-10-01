@@ -36,12 +36,20 @@ Only report what the page states. Do not invent dates, prices, ages or venues. A
 holidays, adult classes, parties and venue hire. holiday = "none" for regular term-time classes. places: few_left if the page says limited/few places/almost full,
 full if sold out, not_open if booking has not opened (then booking_opens as written), open if booking is open,
 unknown otherwise. audience: public; eligible (HAF — free school meals); university (only children of University of
-Cambridge staff/students); school_pupils (only pupils of one school)."""
+Cambridge staff/students); school_pupils (only pupils of one school).
+For regular term-time classes and club sections also give: category (the activity); recruiting — open if the page
+invites new members now ("new players welcome", "we are recruiting", "join us", "registration open", "spaces available",
+"book a free trial", a start date for new starters), waitlist if it says there is a waiting list, closed if full or
+not taking new members, unknown otherwise; trial_free — true only if the page offers a free taster or trial session;
+recruiting_note — the short phrase from the page that shows it (or null). For holiday programmes: category as well,
+recruiting = unknown, trial_free = false."""
+PROMPT_VERSION = "7e-sections"   # этап 7e: набор в секции, пробное занятие, вид спорта (меняет кэш ответов)
 SCHEMA = {"type": "object", "additionalProperties": False, "required": ["provider", "programmes"], "properties": {
     "provider": {"type": "string"},
     "programmes": {"type": "array", "items": {"type": "object", "additionalProperties": False, "required": [
         "kind", "holiday", "title", "ages", "date_start", "date_end", "days", "hours", "price", "venue", "address",
-        "postcode", "places", "booking_opens", "booking_deadline", "audience", "evidence"], "properties": {
+        "postcode", "places", "booking_opens", "booking_deadline", "audience", "category", "recruiting", "trial_free",
+        "recruiting_note", "evidence"], "properties": {
         "kind": {"type": "string", "enum": ["holiday", "regular"]},
         "holiday": {"type": "string", "enum": ["october_half_term", "christmas", "february_half_term", "easter",
                                                "may_half_term", "summer", "none"]},
@@ -52,6 +60,11 @@ SCHEMA = {"type": "object", "additionalProperties": False, "required": ["provide
         "places": {"type": "string", "enum": ["open", "few_left", "full", "not_open", "unknown"]},
         "booking_opens": {"type": ["string", "null"]}, "booking_deadline": {"type": ["string", "null"]},
         "audience": {"type": "string", "enum": ["public", "eligible", "university", "school_pupils"]},
+        "category": {"type": "string", "enum": ["football", "netball", "rugby", "hockey", "cricket", "tennis", "basketball",
+                     "dodgeball", "swimming", "gymnastics", "athletics", "martial_arts", "dance", "drama", "music", "chess",
+                     "arts", "science", "multi_sport", "outdoor", "other"]},
+        "recruiting": {"type": "string", "enum": ["open", "waitlist", "closed", "unknown"]},
+        "trial_free": {"type": "boolean"}, "recruiting_note": {"type": ["string", "null"]},
         "evidence": {"type": "string"}}}}}}
 SKIP_TYPES = ("справочник", "туристический", "платформа записи", "агрегатор", "площадка бронирования")
 
@@ -126,7 +139,7 @@ def collect(con: sqlite3.Connection, http, only: set[str] | None = None) -> dict
                 problems.append((url, "bot_challenge", "заглушка бот-защиты"))
                 continue
             text = re.sub(r"(?:\| )+", "| ", text)[:MAX_CHARS]
-            sha = hashlib.sha1((_holidays_text() + text).encode()).hexdigest()
+            sha = hashlib.sha1((PROMPT_VERSION + _holidays_text() + text).encode()).hexdigest()
             st["pages_ok"] += 1
             row = con.execute("SELECT sha, result FROM kids_page_cache WHERE url=?", (url,)).fetchone()
             if row and row[0] == sha:

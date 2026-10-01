@@ -24,6 +24,224 @@
    "towns": [
     "Cambridge"
    ]
+  },
+  {
+   "host": "cambridgerangers.com",
+   "provider": "Cambridge Rangers (girls' football)",
+   "type": "футбол (секция)",
+   "urls": [
+    "https://cambridgerangers.com/",
+    "https://cambridgerangers.com/teams"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "chestertoneagles.org",
+   "provider": "Chesterton Eagles FC (junior & girls football)",
+   "type": "футбол (секция)",
+   "urls": [
+    "https://chestertoneagles.org/Cms/Spaces/DEFAULT/About+Us"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "rocketsnc.co.uk",
+   "provider": "Rockets Netball Club",
+   "type": "нетбол (секция)",
+   "urls": [
+    "http://rocketsnc.co.uk/"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "cityofelynetball.co.uk",
+   "provider": "City of Ely Netball Club — juniors",
+   "type": "нетбол (секция)",
+   "urls": [
+    "http://www.cityofelynetball.co.uk/juniors"
+   ],
+   "towns": [
+    "Ely"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "cambridgerugby.co.uk",
+   "provider": "Cambridge RUFC Minis & Youth",
+   "type": "регби (секция)",
+   "urls": [
+    "https://cambridgerugby.co.uk/mini-youth/",
+    "https://cambridgerugby.co.uk/joining-mini-youth/"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "bottishamswimclub.org.uk",
+   "provider": "Bottisham Swimming Club",
+   "type": "плавание (секция)",
+   "urls": [
+    "https://bottishamswimclub.org.uk/"
+   ],
+   "towns": [
+    "Bottisham"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "cocsc.org.uk",
+   "provider": "City of Cambridge Swimming Club — academy squads",
+   "type": "плавание (секция)",
+   "urls": [
+    "https://cocsc.org.uk/page/squads/academy-squads"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "chessgo.org.uk",
+   "provider": "Cambridge Junior Chess and Go Club",
+   "type": "шахматы (секция)",
+   "urls": [
+    "http://chessgo.org.uk/"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "papa.perse.co.uk",
+   "provider": "Perse Performing Arts (PAPA) — dance",
+   "type": "танцы (секция)",
+   "urls": [
+    "https://papa.perse.co.uk/dance"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "cambridgesouthhockeyclub.co.uk",
+   "provider": "Cambridge South Hockey Club — juniors",
+   "type": "хоккей на траве (секция)",
+   "urls": [
+    "https://cambridgesouthhockeyclub.co.uk/juniors/"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "ccjhc.co.uk",
+   "provider": "Cambridge City Junior Hockey Club",
+   "type": "хоккей на траве (секция)",
+   "urls": [
+    "https://www.ccjhc.co.uk/"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "miltoncricket.org.uk",
+   "provider": "Milton Cricket Club — junior coaching",
+   "type": "крикет (секция)",
+   "urls": [
+    "https://miltoncricket.org.uk/cricket-coaching-cambridge"
+   ],
+   "towns": [
+    "Milton"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "fastbreakbasketball.co.uk",
+   "provider": "Fastbreak Basketball (Cambridge Kestrels)",
+   "type": "баскетбол (секция)",
+   "urls": [
+    "https://fastbreakbasketball.co.uk/clubs/cambridge"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "cambridgecats.co.uk",
+   "provider": "Cambridge Cats Basketball Club",
+   "type": "баскетбол (секция)",
+   "urls": [
+    "https://cambridgecats.co.uk/"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "kidsmartialartscambridge.co.uk",
+   "provider": "Kids Martial Arts Cambridge",
+   "type": "единоборства (секция)",
+   "urls": [
+    "https://kidsmartialartscambridge.co.uk/"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "bjjcambridge.co.uk",
+   "provider": "BJJ Cambridge — children's classes",
+   "type": "единоборства (секция)",
+   "urls": [
+    "https://bjjcambridge.co.uk/childrens-bjj-classes"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "cambridge-mma.gymdesk.com",
+   "provider": "Cambridge MMA — kids 8–15",
+   "type": "единоборства (секция)",
+   "urls": [
+    "https://cambridge-mma.gymdesk.com/page/kids-8yrs-to-15yrs"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
+  },
+  {
+   "host": "cambridgeandcoleridge.org.uk",
+   "provider": "Cambridge & Coleridge Athletic Club — juniors",
+   "type": "лёгкая атлетика (секция)",
+   "urls": [
+    "https://www.cambridgeandcoleridge.org.uk/"
+   ],
+   "towns": [
+    "Cambridge"
+   ],
+   "note": "этап 7e: секция — поиск Keenable 01.10.2026"
   }
  ],
  "also_checked": [
