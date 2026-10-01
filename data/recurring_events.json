@@ -1,27 +1,971 @@
 [
- {"rec_id": "R01", "name": "Whittlesea Straw Bear Festival", "month": "01", "url": "https://www.strawbear.org.uk/", "method": "page", "patterns": ["Straw Bear"], "tickets": false, "venue": "Whittlesey, Market Place", "postcode": "PE7 1BQ"},
- {"rec_id": "R02", "name": "Thriplow Daffodil Weekend", "month": "03", "url": "https://www.thriplowdaffodils.org.uk", "method": "page", "patterns": ["Thriplow", "Daffodil Weekend"], "tickets": true, "venue": "Thriplow", "postcode": "SG8 7RD"},
- {"rec_id": "R03", "name": "Cambridge Half Marathon", "month": "03", "url": "https://cambridgehalfmarathon.com/", "method": "page", "patterns": ["Cambridge Half Marathon"], "tickets": true},
- {"rec_id": "R04", "name": "Cambridge Festival", "month": "03,04", "url": "https://www.festival.cam.ac.uk/", "method": "page_curl", "patterns": ["Cambridge Festival"], "tickets": false, "venue": "Cambridge, разные площадки", "postcode": "CB2 3PQ"},
- {"rec_id": "R05", "name": "Cambridge Beer Festival", "month": "05", "url": "https://www.cambridgebeerfestival.com/", "method": "page", "patterns": ["Cambridge Beer Festival"], "tickets": true},
- {"rec_id": "R06", "name": "May Bumps", "month": "06", "url": "https://www.cucbc.org/bumps", "method": "page", "patterns": ["May Bumps"], "tickets": false},
- {"rec_id": "R07", "name": "Strawberry Fair", "month": "06", "url": "https://strawberry-fair.org.uk/", "method": "page", "patterns": ["Strawberry Fair"], "tickets": false, "festival": true, "town": "Cambridge"},
- {"rec_id": "R08", "name": "Midsummer Fair", "month": "06", "url": "https://www.cambridge.gov.uk/midsummer-common", "method": "news", "patterns": ["Midsummer Fair"], "tickets": false, "festival": true, "town": "Cambridge"},
- {"rec_id": "R09", "name": "Cambridge Folk Festival", "month": "07,08", "url": "https://www.cambridgefolkfestival.co.uk/", "method": "page", "patterns": ["Cambridge Folk Festival", "Folk Festival"], "tickets": true, "page_date": "end", "manual_start": "", "note": "на сайте только дата окончания; начало вносит владелец проекта (manual_start, YYYY-MM-DD)", "venue": "Cherry Hinton Hall", "postcode": "CB1 8DW", "festival": true, "town": "Cambridge"},
- {"rec_id": "R10", "name": "Cambridge Dragon Boat Festival (ACT)", "month": "09", "url": "https://act4addenbrookes.org.uk/dragonboat/", "method": "page", "patterns": ["Dragon Boat"], "tickets": false},
- {"rec_id": "R11", "name": "Chariots of Fire", "month": "09", "url": "https://www.chariots-of-fire.co.uk/", "method": "page", "patterns": ["Chariots of Fire"], "tickets": true},
- {"rec_id": "R12", "name": "Open Cambridge", "month": "09", "url": "https://www.opencambridge.cam.ac.uk/", "method": "page_curl", "patterns": ["Open Cambridge"], "tickets": false},
- {"rec_id": "R13", "name": "Cambridge Oktoberfest", "month": "09", "url": "https://cambridge-oktoberfest.co.uk/", "method": "page", "patterns": ["Cambridge Oktoberfest"], "tickets": true},
- {"rec_id": "R14", "name": "Town and Gown 10k", "month": "10", "url": "https://www.townandgown10k.com/", "method": "manual", "patterns": ["Town and Gown 10", "Town & Gown 10", "Bidwells Cambridge 10k"], "note": "сайт за Cloudflare — дату вносит владелец проекта; также ловится по новостям", "tickets": true},
- {"rec_id": "R15", "name": "Fireworks Night, Midsummer Common", "month": "11", "url": "https://www.camcityevents.co.uk/events", "method": "news", "patterns": ["Fireworks Night", "Cambridge Fireworks"], "tickets": false, "festival": true, "town": "Cambridge"},
- {"rec_id": "R16", "name": "Mill Road Winter Fair", "month": "12", "url": "https://www.millroadwinterfair.org/", "method": "page", "patterns": ["Mill Road Winter Fair"], "tickets": false, "festival": true, "town": "Cambridge"},
- {"rec_id": "R17", "name": "Cambridge Film Festival", "month": "10,11", "url": "https://www.cambridgefilmfestival.org.uk/", "method": "page", "patterns": ["Cambridge Film Festival"], "tickets": true, "venue": "Arts Picturehouse и другие площадки, Cambridge", "postcode": "CB2 3AR", "note": "решение после этапа 5; на сайте дата в виде «Oct 22 - Nov 1 2026»"},
- {"rec_id": "R18", "name": "Cambridgeshire Cats: домашний сезон (американский футбол)", "month": "04,05,06,07", "url": "https://cambridgeshirecats.com/", "method": "manual", "patterns": ["Cambridgeshire Cats"], "tickets": false, "note": "решение после этапа 5 (S084): сезон BAFA весна–лето, расписания на сайте нет (сайт в разработке) — проверить весной и внести даты домашних матчей"},
- {"rec_id": "R19", "name": "parkrun: забеги на Рождество", "month": "12", "url": "https://www.parkrun.org.uk/", "method": "manual", "patterns": ["Christmas Day parkrun", "Christmas parkrun"], "tickets": false, "note": "решение после этапа 5: сайт parkrun закрыт для ботов (robots.txt 403) — какие забеги зоны проводят спецзабег 25.12, вносит владелец проекта (manual_start)"},
- {"rec_id": "R20", "name": "parkrun: забеги в Новый год", "month": "01", "url": "https://www.parkrun.org.uk/", "method": "manual", "patterns": ["New Year's Day parkrun", "New Year parkrun"], "tickets": false, "note": "решение после этапа 5: как R19, спецзабеги 1.01 — вручную"},
- {"rec_id": "R21", "name": "Christmas in Cambridge (Parker's Piece: каток, маркет, колесо обозрения)", "month": "11", "url": "https://www.christmasincambridge.co.uk/", "method": "page", "patterns": ["Christmas in Cambridge"], "tickets": true, "venue": "Parker's Piece, Cambridge", "note": "этап 6 (поля и ярмарки): S039; на сайте «Opening 13th November 2026 – 3rd January 2027»", "town": "Cambridge"},
- {"rec_id": "R22", "name": "Stourbridge Fair (Leper Chapel)", "month": "09", "url": "https://cambridgeppf.org/leper-chapel/", "method": "page", "patterns": ["Stourbridge Fair"], "tickets": false, "venue": "Leper Chapel, Newmarket Road, Cambridge", "postcode": "CB5 8JJ", "note": "этап 6: историческая ярмарка у Leper Chapel (CPPF, S131); события CPPF собираются коллектором S131; этап 7d: на странице CPPF — календарь всех событий капеллы, дата берётся только рядом с «Stourbridge Fair» (в 7c ошибочно взята дата «Гамлета» 30.09)", "festival": true, "town": "Cambridge", "shared_page": true},
- {"rec_id": "R23", "name": "Cambridge Big Weekend (Parker's Piece)", "month": "07", "url": "https://www.camcityevents.co.uk/events", "method": "news", "patterns": ["Big Weekend"], "tickets": false, "venue": "Parker's Piece, Cambridge", "note": "этап 6: событие совета, публикуется на camcityevents (S047) ближе к лету", "festival": true, "town": "Cambridge"},
- {"rec_id": "R24", "name": "Cambridge Christmas lights switch-on", "month": "11", "url": "https://www.camcityevents.co.uk/events", "method": "news", "patterns": ["lights switch-on", "Christmas Lights Switch On", "Christmas lights switch on"], "tickets": false, "venue": "Cambridge city centre", "note": "этап 6: через camcityevents и статьи; этап 7d: только Кембридж (в 7c совпало с огнями Висбеча, событие #810)", "festival": true, "town": "Cambridge"},
- {"rec_id": "R25", "name": "Cambridge Pride", "month": "06,07", "url": "https://www.cambridgepride.org.uk/", "method": "news", "patterns": ["Cambridge Pride"], "tickets": false, "venue": "Jesus Green, Cambridge", "note": "этап 7d: летний фестиваль ЛГБТ+; robots.txt сайта закрывает его для ботов — дата через события и статьи, иначе вручную (manual_start)", "festival": true, "town": "Cambridge"}
+ {
+  "rec_id": "R01",
+  "name": "Whittlesea Straw Bear Festival",
+  "month": "01",
+  "url": "https://www.strawbear.org.uk/",
+  "method": "page",
+  "patterns": [
+   "Straw Bear"
+  ],
+  "tickets": false,
+  "venue": "Whittlesey, Market Place",
+  "postcode": "PE7 1BQ",
+  "tags": [
+   "quirky"
+  ],
+  "description": "«Соломенный медведь» в Уиттлси: человек в костюме из соломы танцует по улицам с фолк-музыкантами, в конце — сожжение медведя; обычай Plough Monday, возрождён в 1980 году."
+ },
+ {
+  "rec_id": "R02",
+  "name": "Thriplow Daffodil Weekend",
+  "month": "03",
+  "url": "https://www.thriplowdaffodils.org.uk",
+  "method": "page",
+  "patterns": [
+   "Thriplow",
+   "Daffodil Weekend"
+  ],
+  "tickets": true,
+  "venue": "Thriplow",
+  "postcode": "SG8 7RD"
+ },
+ {
+  "rec_id": "R03",
+  "name": "Cambridge Half Marathon",
+  "month": "03",
+  "url": "https://cambridgehalfmarathon.com/",
+  "method": "page",
+  "patterns": [
+   "Cambridge Half Marathon"
+  ],
+  "tickets": true
+ },
+ {
+  "rec_id": "R04",
+  "name": "Cambridge Festival",
+  "month": "03,04",
+  "url": "https://www.festival.cam.ac.uk/",
+  "method": "page_curl",
+  "patterns": [
+   "Cambridge Festival"
+  ],
+  "tickets": false,
+  "venue": "Cambridge, разные площадки",
+  "postcode": "CB2 3PQ"
+ },
+ {
+  "rec_id": "R05",
+  "name": "Cambridge Beer Festival",
+  "month": "05",
+  "url": "https://www.cambridgebeerfestival.com/",
+  "method": "page",
+  "patterns": [
+   "Cambridge Beer Festival"
+  ],
+  "tickets": true
+ },
+ {
+  "rec_id": "R06",
+  "name": "May Bumps",
+  "month": "06",
+  "url": "https://www.cucbc.org/bumps",
+  "method": "page",
+  "patterns": [
+   "May Bumps"
+  ],
+  "tickets": false
+ },
+ {
+  "rec_id": "R07",
+  "name": "Strawberry Fair",
+  "month": "06",
+  "url": "https://strawberry-fair.org.uk/",
+  "method": "page",
+  "patterns": [
+   "Strawberry Fair"
+  ],
+  "tickets": false,
+  "festival": true,
+  "town": "Cambridge"
+ },
+ {
+  "rec_id": "R08",
+  "name": "Midsummer Fair",
+  "month": "06",
+  "url": "https://www.cambridge.gov.uk/midsummer-common",
+  "method": "news",
+  "patterns": [
+   "Midsummer Fair"
+  ],
+  "tickets": false,
+  "festival": true,
+  "town": "Cambridge"
+ },
+ {
+  "rec_id": "R09",
+  "name": "Cambridge Folk Festival",
+  "month": "07,08",
+  "url": "https://www.cambridgefolkfestival.co.uk/",
+  "method": "page",
+  "patterns": [
+   "Cambridge Folk Festival",
+   "Folk Festival"
+  ],
+  "tickets": true,
+  "page_date": "end",
+  "manual_start": "",
+  "note": "на сайте только дата окончания; начало вносит владелец проекта (manual_start, YYYY-MM-DD)",
+  "venue": "Cherry Hinton Hall",
+  "postcode": "CB1 8DW",
+  "festival": true,
+  "town": "Cambridge"
+ },
+ {
+  "rec_id": "R10",
+  "name": "Cambridge Dragon Boat Festival (ACT)",
+  "month": "09",
+  "url": "https://act4addenbrookes.org.uk/dragonboat/",
+  "method": "page",
+  "patterns": [
+   "Dragon Boat"
+  ],
+  "tickets": false
+ },
+ {
+  "rec_id": "R11",
+  "name": "Chariots of Fire",
+  "month": "09",
+  "url": "https://www.chariots-of-fire.co.uk/",
+  "method": "page",
+  "patterns": [
+   "Chariots of Fire"
+  ],
+  "tickets": true
+ },
+ {
+  "rec_id": "R12",
+  "name": "Open Cambridge",
+  "month": "09",
+  "url": "https://www.opencambridge.cam.ac.uk/",
+  "method": "page_curl",
+  "patterns": [
+   "Open Cambridge"
+  ],
+  "tickets": false
+ },
+ {
+  "rec_id": "R13",
+  "name": "Cambridge Oktoberfest",
+  "month": "09",
+  "url": "https://cambridge-oktoberfest.co.uk/",
+  "method": "page",
+  "patterns": [
+   "Cambridge Oktoberfest"
+  ],
+  "tickets": true
+ },
+ {
+  "rec_id": "R14",
+  "name": "Town and Gown 10k",
+  "month": "10",
+  "url": "https://www.townandgown10k.com/",
+  "method": "manual",
+  "patterns": [
+   "Town and Gown 10",
+   "Town & Gown 10",
+   "Bidwells Cambridge 10k"
+  ],
+  "note": "сайт за Cloudflare — дату вносит владелец проекта; также ловится по новостям",
+  "tickets": true
+ },
+ {
+  "rec_id": "R15",
+  "name": "Fireworks Night, Midsummer Common",
+  "month": "11",
+  "url": "https://www.camcityevents.co.uk/events",
+  "method": "news",
+  "patterns": [
+   "Fireworks Night",
+   "Cambridge Fireworks"
+  ],
+  "tickets": false,
+  "festival": true,
+  "town": "Cambridge"
+ },
+ {
+  "rec_id": "R16",
+  "name": "Mill Road Winter Fair",
+  "month": "12",
+  "url": "https://www.millroadwinterfair.org/",
+  "method": "page",
+  "patterns": [
+   "Mill Road Winter Fair"
+  ],
+  "tickets": false,
+  "festival": true,
+  "town": "Cambridge"
+ },
+ {
+  "rec_id": "R17",
+  "name": "Cambridge Film Festival",
+  "month": "10,11",
+  "url": "https://www.cambridgefilmfestival.org.uk/",
+  "method": "page",
+  "patterns": [
+   "Cambridge Film Festival"
+  ],
+  "tickets": true,
+  "venue": "Arts Picturehouse и другие площадки, Cambridge",
+  "postcode": "CB2 3AR",
+  "note": "решение после этапа 5; на сайте дата в виде «Oct 22 - Nov 1 2026»"
+ },
+ {
+  "rec_id": "R18",
+  "name": "Cambridgeshire Cats: домашний сезон (американский футбол)",
+  "month": "04,05,06,07",
+  "url": "https://cambridgeshirecats.com/",
+  "method": "manual",
+  "patterns": [
+   "Cambridgeshire Cats"
+  ],
+  "tickets": false,
+  "note": "решение после этапа 5 (S084): сезон BAFA весна–лето, расписания на сайте нет (сайт в разработке) — проверить весной и внести даты домашних матчей"
+ },
+ {
+  "rec_id": "R19",
+  "name": "parkrun: забеги на Рождество",
+  "month": "12",
+  "url": "https://www.parkrun.org.uk/",
+  "method": "manual",
+  "patterns": [
+   "Christmas Day parkrun",
+   "Christmas parkrun"
+  ],
+  "tickets": false,
+  "note": "решение после этапа 5: сайт parkrun закрыт для ботов (robots.txt 403) — какие забеги зоны проводят спецзабег 25.12, вносит владелец проекта (manual_start)"
+ },
+ {
+  "rec_id": "R20",
+  "name": "parkrun: забеги в Новый год",
+  "month": "01",
+  "url": "https://www.parkrun.org.uk/",
+  "method": "manual",
+  "patterns": [
+   "New Year's Day parkrun",
+   "New Year parkrun"
+  ],
+  "tickets": false,
+  "note": "решение после этапа 5: как R19, спецзабеги 1.01 — вручную"
+ },
+ {
+  "rec_id": "R21",
+  "name": "Christmas in Cambridge (Parker's Piece: каток, маркет, колесо обозрения)",
+  "month": "11",
+  "url": "https://www.christmasincambridge.co.uk/",
+  "method": "page",
+  "patterns": [
+   "Christmas in Cambridge"
+  ],
+  "tickets": true,
+  "venue": "Parker's Piece, Cambridge",
+  "note": "этап 6 (поля и ярмарки): S039; на сайте «Opening 13th November 2026 – 3rd January 2027»",
+  "town": "Cambridge"
+ },
+ {
+  "rec_id": "R22",
+  "name": "Stourbridge Fair (Leper Chapel)",
+  "month": "09",
+  "url": "https://cambridgeppf.org/leper-chapel/",
+  "method": "page",
+  "patterns": [
+   "Stourbridge Fair"
+  ],
+  "tickets": false,
+  "venue": "Leper Chapel, Newmarket Road, Cambridge",
+  "postcode": "CB5 8JJ",
+  "note": "этап 6: историческая ярмарка у Leper Chapel (CPPF, S131); события CPPF собираются коллектором S131; этап 7d: на странице CPPF — календарь всех событий капеллы, дата берётся только рядом с «Stourbridge Fair» (в 7c ошибочно взята дата «Гамлета» 30.09)",
+  "festival": true,
+  "town": "Cambridge",
+  "shared_page": true
+ },
+ {
+  "rec_id": "R23",
+  "name": "Cambridge Big Weekend (Parker's Piece)",
+  "month": "07",
+  "url": "https://www.camcityevents.co.uk/events",
+  "method": "news",
+  "patterns": [
+   "Big Weekend"
+  ],
+  "tickets": false,
+  "venue": "Parker's Piece, Cambridge",
+  "note": "этап 6: событие совета, публикуется на camcityevents (S047) ближе к лету",
+  "festival": true,
+  "town": "Cambridge"
+ },
+ {
+  "rec_id": "R24",
+  "name": "Cambridge Christmas lights switch-on",
+  "month": "11",
+  "url": "https://www.camcityevents.co.uk/events",
+  "method": "news",
+  "patterns": [
+   "lights switch-on",
+   "Christmas Lights Switch On",
+   "Christmas lights switch on"
+  ],
+  "tickets": false,
+  "venue": "Cambridge city centre",
+  "note": "этап 6: через camcityevents и статьи; этап 7d: только Кембридж (в 7c совпало с огнями Висбеча, событие #810)",
+  "festival": true,
+  "town": "Cambridge"
+ },
+ {
+  "rec_id": "R25",
+  "name": "Cambridge Pride",
+  "month": "06,07",
+  "url": "https://www.cambridgepride.org.uk/",
+  "method": "news",
+  "patterns": [
+   "Cambridge Pride"
+  ],
+  "tickets": false,
+  "venue": "Jesus Green, Cambridge",
+  "note": "этап 7d: летний фестиваль ЛГБТ+; robots.txt сайта закрывает его для ботов — дата через события и статьи, иначе вручную (manual_start)",
+  "festival": true,
+  "town": "Cambridge"
+ },
+ {
+  "rec_id": "R26",
+  "name": "World Pea Shooting Championship",
+  "month": "07",
+  "url": "https://worldpeashoot.com/",
+  "method": "page",
+  "patterns": [
+   "Pea Shoot",
+   "Peashoot"
+  ],
+  "tickets": false,
+  "venue": "Witcham Village Green, Witcham",
+  "town": "Witcham",
+  "tags": [
+   "quirky"
+  ],
+  "description": "Чемпионат мира по стрельбе горохом из трубочки — на деревенском лугу в Уитчеме под Эли; участвовать может любой, запись в день соревнования.",
+  "note": "этап 7e: обычно вторая суббота июля; 54-й чемпионат — 10 июля 2027 (сайт организаторов)"
+ },
+ {
+  "rec_id": "R27",
+  "name": "World Snail Racing Championship",
+  "month": "07",
+  "url": "https://www.snailracing.net/",
+  "method": "news",
+  "patterns": [
+   "Snail Racing"
+  ],
+  "tickets": false,
+  "venue": "Grimston Cricket Club, Congham",
+  "town": "Congham",
+  "tags": [
+   "quirky"
+  ],
+  "description": "Чемпионат мира по гонкам улиток в Конгеме под Кингс-Линном: улитки ползут 13 дюймов от центра круга к краю, приз — серебряный кубок с листьями салата.",
+  "note": "этап 7e: Норфолк, входит по исключению для Кингс-Линна (зона «до часа» — по расстоянию до Кингс-Линна, проверить); 2026 — 18 июля"
+ },
+ {
+  "rec_id": "R28",
+  "name": "Pig racing at Skylark Maize Maze and Funyard (Wimblington)",
+  "month": "07,08,09,10",
+  "url": "https://www.maize-maze.com/locations/skylark-maize-maze-and-funyard",
+  "method": "news",
+  "patterns": [
+   "Skylark Maize",
+   "Trotter Trophy",
+   "pig rac"
+  ],
+  "tickets": true,
+  "venue": "Skylark Maize Maze, Wimblington",
+  "town": "Wimblington",
+  "tags": [
+   "quirky"
+  ],
+  "description": "Гонки поросят «Trotter Trophy» — ежедневно в 13:00 и 15:00 в сезон кукурузного лабиринта Skylark под Марчем: выбираете поросёнка по цвету и болеете.",
+  "note": "этап 7e: не отдельное ежегодное событие, а сезонный аттракцион фермерского парка (лабиринт — лето и осень). Pigeons Farm (Питерборо) — закрыт."
+ },
+ {
+  "rec_id": "R29",
+  "name": "Stilton Cheese Rolling",
+  "month": "05",
+  "url": "https://www.stiltoncheeserolling.co.uk/",
+  "method": "news",
+  "patterns": [
+   "Cheese Rolling"
+  ],
+  "tickets": false,
+  "venue": "High Street, Stilton",
+  "town": "Stilton",
+  "tags": [
+   "quirky"
+  ],
+  "description": "Сырные гонки в деревне Стилтон: команды в костюмах катят по главной улице деревянные «головки сыра»; в тот же день — деревенский праздник с майским деревом.",
+  "note": "этап 7e: майский банковский понедельник (в 2027 — 3 мая, по правилу, дата не объявлена)"
+ },
+ {
+  "rec_id": "R30",
+  "name": "Ely Eel Festival (Eel Day)",
+  "month": "05",
+  "url": "https://www.visitely.org.uk/visit-ely-events/",
+  "method": "page",
+  "patterns": [
+   "Eel Festival",
+   "Eel Day"
+  ],
+  "tickets": false,
+  "venue": "Jubilee Gardens, Ely",
+  "postcode": "CB7 4DN",
+  "town": "Ely",
+  "tags": [
+   "quirky"
+  ],
+  "shared_page": true,
+  "festival": true,
+  "description": "Праздник угря в Эли (город назван в честь угрей): шествие с огромным угрём от собора к реке, ярмарка с едой и соревнование по метанию угрей — не настоящих.",
+  "note": "этап 7e: выходные майского банковского понедельника; 2026 — 2–4 мая (Eel Day — суббота 2 мая); в программе Visit Ely на 2026 после мая — только Orchard Fayre"
+ },
+ {
+  "rec_id": "R31",
+  "name": "Dicing for Bibles (St Ives)",
+  "month": "05,06",
+  "url": "https://calendarcustoms.com/articles/dicing-for-bibles",
+  "method": "manual",
+  "patterns": [
+   "Dicing for Bibles",
+   "dice for bibles"
+  ],
+  "tickets": false,
+  "venue": "All Saints Church, St Ives",
+  "town": "St Ives",
+  "tags": [
+   "quirky"
+  ],
+  "description": "Обычай XVII века: во вторник после Троицы дети в церкви All Saints в Сент-Айвсе бросают кости за шесть Библий — по завещанию местного купца Роберта Уайлда.",
+  "note": "этап 7e: Whit Tuesday (в 2027 — 18 мая, по правилу)"
+ },
+ {
+  "rec_id": "R32",
+  "name": "Plough Monday Molly Dancing (Cambridge Morris Men)",
+  "month": "01",
+  "url": "https://www.cambridgemorrismen.org.uk/",
+  "method": "news",
+  "patterns": [
+   "Plough Monday",
+   "Molly danc"
+  ],
+  "tickets": false,
+  "venue": "Cambridge",
+  "town": "Cambridge",
+  "tags": [
+   "quirky"
+  ],
+  "description": "Molly dancing — кембриджширский вариант моррис-танцев: в первый понедельник после Крещения пахари с раскрашенными лицами танцуют по пабам; возрождён Cambridge Morris Men в 1977 году.",
+  "note": "этап 7e: Plough Monday — 11 января 2027 (по правилу); Mepal Molly — по школам и деревням"
+ },
+ {
+  "rec_id": "R33",
+  "name": "Fen skating races (на льду Фенов)",
+  "month": "12,01,02",
+  "url": "https://www.museumofcambridge.org.uk/2021/09/the-history-of-fen-skating/",
+  "method": "manual",
+  "patterns": [
+   "Fen skating"
+  ],
+  "tickets": false,
+  "venue": "Bury Fen, Bluntisham / Welney",
+  "town": "Bluntisham",
+  "tags": [
+   "quirky"
+  ],
+  "description": "Гонки на коньках по замёрзшим заливным лугам Фенов — традиция с XIX века; проводятся только в морозные зимы, когда встанет лёд.",
+  "status_note": "не ежегодно — только при льде; дату объявляют за 1–2 дня",
+  "note": "этап 7e: не по расписанию"
+ },
+ {
+  "rec_id": "R34",
+  "name": "Cambridge Literary Festival (Winter)",
+  "month": "11",
+  "url": "https://cambridgeliteraryfestival.com/whats-on",
+  "method": "page",
+  "patterns": [
+   "Cambridge Literary",
+   "Literary Winter Festival"
+  ],
+  "tickets": true,
+  "venue": "Cambridge Union and other venues, Cambridge",
+  "town": "Cambridge",
+  "festival": true,
+  "shared_page": true,
+  "description": "Литературный фестиваль Кембриджа — встречи с писателями и публичными людьми; зимняя сессия в ноябре, весенняя — в апреле.",
+  "note": "этап 7e: Winter 2026 — 21–22 ноября (сайт фестиваля)"
+ },
+ {
+  "rec_id": "R35",
+  "name": "Cambridge Literary Festival (Spring)",
+  "month": "04",
+  "url": "https://cambridgeliteraryfestival.com/",
+  "method": "page",
+  "patterns": [
+   "Cambridge Literary Festival"
+  ],
+  "tickets": true,
+  "venue": "Cambridge",
+  "town": "Cambridge",
+  "festival": true,
+  "shared_page": true,
+  "description": "Весенняя сессия литературного фестиваля Кембриджа (около 50 встреч и детская программа).",
+  "note": "этап 7e: 2026 — 22–26 апреля"
+ },
+ {
+  "rec_id": "R36",
+  "name": "Cambridge Shakespeare Festival",
+  "month": "07",
+  "url": "https://cambridgeshakespeare.com/",
+  "method": "page",
+  "patterns": [
+   "Shakespeare Festival"
+  ],
+  "tickets": true,
+  "venue": "College gardens, Cambridge",
+  "town": "Cambridge",
+  "festival": true,
+  "description": "Шекспир под открытым небом в садах колледжей (St John's, Downing и др.) — каждый вечер с середины июля до конца августа.",
+  "note": "этап 7e: 2026 — 13 июля – 29 августа"
+ },
+ {
+  "rec_id": "R37",
+  "name": "Cambridge Summer Music Festival",
+  "month": "07",
+  "url": "https://cambridgesummermusic.co.uk/",
+  "method": "page",
+  "patterns": [
+   "Cambridge Summer Music"
+  ],
+  "tickets": true,
+  "venue": "Cambridge",
+  "town": "Cambridge",
+  "festival": true,
+  "description": "Летний музыкальный фестиваль: оркестровые и хоровые концерты в капеллах колледжей, «Sounds Green» по средам в Ботаническом саду.",
+  "note": "этап 7e: 2026 — 1–29 июля"
+ },
+ {
+  "rec_id": "R38",
+  "name": "Cambridge International Jazz Festival",
+  "month": "11",
+  "url": "https://www.cambridgejazzfestival.co.uk/",
+  "method": "news",
+  "patterns": [
+   "Cambridge Jazz Festival",
+   "Cambridge International Jazz"
+  ],
+  "tickets": true,
+  "venue": "Various venues, Cambridge",
+  "town": "Cambridge",
+  "festival": true,
+  "description": "Джазовый фестиваль Кембриджа — десятки концертов по клубам, кафе и залам города в ноябре.",
+  "note": "этап 7e: 2026 — около 9–23 ноября (сайты-агрегаторы, не подтверждено); концерты фестиваля в продаже (Hidden Rooms 12 ноября, Hot Numbers 19 ноября)"
+ },
+ {
+  "rec_id": "R39",
+  "name": "Lent Bumps",
+  "month": "02,03",
+  "url": "https://www.cucbc.org/",
+  "method": "page",
+  "patterns": [
+   "Lent Bumps"
+  ],
+  "tickets": false,
+  "venue": "River Cam, Fen Ditton",
+  "town": "Cambridge",
+  "description": "Весенние «бампс» — гребные гонки колледжей на Каме, где лодки стартуют друг за другом и стараются «ударить» впереди идущую; смотреть удобно с берега у Fen Ditton.",
+  "note": "этап 7e: 2027 — 9–13 марта (CUCBC); вручную: даты со страницы cucbc.org (Tuesday 9th – Saturday 13th March, без года — 2027; наш бот, 01.10.2026)",
+  "manual_start": "2027-03-09",
+  "manual_end": "2027-03-13"
+ },
+ {
+  "rec_id": "R40",
+  "name": "A Festival of Nine Lessons and Carols (King's College)",
+  "month": "12",
+  "url": "https://www.kings.cam.ac.uk/chapel/festival-nine-lessons-and-carols",
+  "method": "page",
+  "patterns": [
+   "Nine Lessons"
+  ],
+  "tickets": true,
+  "venue": "King's College Chapel, Cambridge",
+  "postcode": "CB2 1ST",
+  "town": "Cambridge",
+  "festival": true,
+  "description": "Рождественская служба с хором King's College 24 декабря, которую транслирует BBC; около половины мест — для публики.",
+  "status_note": "бесплатные билеты — только по онлайн-лотерее (ballot); «There is no longer a public queue for tickets» (сайт колледжа, наш бот 01.10.2026); страница обновится ранней осенью 2026",
+  "note": "этап 7e: в брифе — «очередь с утра»; по сайту колледжа теперь лотерея (в 2025 — 1–15 ноября) — напоминание в выпуске перед открытием лотереи"
+ },
+ {
+  "rec_id": "R41",
+  "name": "Ely Folk Festival",
+  "month": "07",
+  "url": "https://elyfolkfestival.co.uk/",
+  "method": "page",
+  "patterns": [
+   "Ely Folk"
+  ],
+  "tickets": true,
+  "venue": "Ely",
+  "town": "Ely",
+  "festival": true,
+  "description": "Фолк-фестиваль в Эли — три дня музыки, моррис-танцев и кемпинга.",
+  "on_sale_note": "билеты на 2027 в продаже (elyfolkfestival.co.uk/tickets)",
+  "note": "этап 7e: 2027 — 9–11 июля"
+ },
+ {
+  "rec_id": "R42",
+  "name": "Ely Aquafest",
+  "month": "07",
+  "url": "https://elyaquafest.org.uk/",
+  "method": "page",
+  "patterns": [
+   "Aquafest"
+  ],
+  "tickets": false,
+  "venue": "Jubilee Gardens, Ely",
+  "postcode": "CB7 4DN",
+  "town": "Ely",
+  "description": "Бесплатный речной праздник Эли с 1978 года: гонки на самодельных плотах, спасательные показы, музыка у реки.",
+  "note": "этап 7e: 2026 — 5 июля (Rotary Club of Ely)"
+ },
+ {
+  "rec_id": "R43",
+  "name": "St Ives Michaelmas Fair",
+  "month": "10",
+  "url": "https://thestiveshub.co.uk/events-in-stives/michaelmas-fair/",
+  "method": "page",
+  "patterns": [
+   "Michaelmas Fair"
+  ],
+  "tickets": false,
+  "venue": "Town centre, St Ives",
+  "town": "St Ives",
+  "festival": true,
+  "description": "Михайловская ярмарка в Сент-Айвсе: три дня аттракционов на улицах центра со второго понедельника октября — одна из старых ярмарок графства.",
+  "note": "этап 7e: второй понедельник октября и два следующих дня (2026 — 12–14 октября, Riverporter); вручную: второй понедельник октября + 2 дня; на thestiveshub.co.uk — 12 октября (наш бот), Riverporter — «Monday 12th –14th»",
+  "manual_start": "2026-10-12",
+  "manual_end": "2026-10-14"
+ },
+ {
+  "rec_id": "R44",
+  "name": "Wisbech Rose Fair",
+  "month": "06,07",
+  "url": "https://wisbechtowncouncil.gov.uk/events",
+  "method": "page",
+  "patterns": [
+   "Wisbech Rose",
+   "Rose Fair"
+  ],
+  "tickets": false,
+  "venue": "Town centre, Wisbech",
+  "town": "Wisbech",
+  "description": "Праздник роз в Уисбиче: шествие с королевой роз, ярмарка и развлечения в центре города.",
+  "note": "этап 7e: 2026 — 27 июня (Wisbech Town Council)"
+ },
+ {
+  "rec_id": "R45",
+  "name": "Peterborough Beer Festival",
+  "month": "08",
+  "url": "https://pborobeerfest.camra.org.uk/",
+  "method": "page",
+  "patterns": [
+   "Peterborough Beer Festival"
+  ],
+  "tickets": false,
+  "venue": "The Embankment, Peterborough",
+  "postcode": "PE1 1EF",
+  "town": "Peterborough",
+  "description": "Пивной фестиваль CAMRA на набережной Питерборо — пять дней в конце августа, один из крупнейших в стране.",
+  "note": "этап 7e: 2026 — 25–29 августа"
+ },
+ {
+  "rec_id": "R46",
+  "name": "Peterborough Heritage Festival",
+  "month": "06,07",
+  "url": "https://www.peterboroughtoday.co.uk/",
+  "method": "manual",
+  "patterns": [
+   "Peterborough Heritage Festival"
+  ],
+  "tickets": false,
+  "venue": "Cathedral Square, Peterborough",
+  "town": "Peterborough",
+  "status_note": "не найдено проведения после 2019 года (последние упоминания — реконструкции у собора, 2016–2019); вместо него — Heritage Open Days в сентябре",
+  "description": "Исторический фестиваль у собора Питерборо с реконструкциями.",
+  "note": "этап 7e: «?» в брифе — подтверждения текущего проведения нет"
+ },
+ {
+  "rec_id": "R47",
+  "name": "AEPG Great Eastern Run",
+  "month": "10",
+  "url": "https://www.greateastern.run/",
+  "method": "page",
+  "patterns": [
+   "Great Eastern Run"
+  ],
+  "tickets": true,
+  "venue": "The Embankment, Peterborough",
+  "postcode": "PE1 1EF",
+  "town": "Peterborough",
+  "festival": true,
+  "description": "Полумарафон по улицам Питерборо (до 8000 бегунов) и забег на 5 км; зрителям — бесплатно вдоль маршрута.",
+  "note": "этап 7e: 2026 — 11 октября, старт 10:30"
+ },
+ {
+  "rec_id": "R48",
+  "name": "Secret Garden Party",
+  "month": "07",
+  "url": "https://www.secretgardenparty.com/",
+  "method": "manual",
+  "patterns": [
+   "Secret Garden Party"
+  ],
+  "tickets": true,
+  "venue": "Abbots Ripton",
+  "town": "Abbots Ripton",
+  "status_note": "не проводится: фестиваль закрылся после 2024 года (The Guardian, 13.06.2026)",
+  "description": "Фестиваль искусства и музыки в Abbots Ripton.",
+  "note": "этап 7e"
+ },
+ {
+  "rec_id": "R49",
+  "name": "The Big Retreat Cambridgeshire",
+  "month": "09",
+  "url": "https://thebigretreatfestival.com/",
+  "method": "page",
+  "patterns": [
+   "Big Retreat"
+  ],
+  "tickets": true,
+  "venue": "Abbots Ripton Estate",
+  "town": "Abbots Ripton",
+  "description": "Фестиваль «хорошего самочувствия»: йога, мастер-классы, музыка; кембриджширская площадка — с 2026 года.",
+  "note": "этап 7e: 2026 — 11–13 сентября (первый раз в Кембриджшире); на 2027 объявлен только Пембрукшир (28–31 мая)"
+ },
+ {
+  "rec_id": "R50",
+  "name": "Newmarket July Festival",
+  "month": "07",
+  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/",
+  "method": "page",
+  "patterns": [
+   "July Festival"
+  ],
+  "tickets": true,
+  "venue": "July Course, Newmarket",
+  "town": "Newmarket",
+  "shared_page": true,
+  "festival": true,
+  "description": "Трёхдневный июльский фестиваль скачек на July Course — одна из вершин сезона гладких скачек.",
+  "note": "этап 7e: 2026 — 9–11 июля"
+ },
+ {
+  "rec_id": "R51",
+  "name": "Betfred Guineas Festival (Newmarket)",
+  "month": "04,05",
+  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/guineas-festival",
+  "method": "page",
+  "patterns": [
+   "Guineas"
+  ],
+  "tickets": true,
+  "venue": "Rowley Mile, Newmarket",
+  "town": "Newmarket",
+  "festival": true,
+  "description": "Гинеи — первые классические скачки сезона (2000 и 1000 Guineas) на Rowley Mile.",
+  "on_sale_note": "билеты на 2027 в продаже (сайт ипподрома)",
+  "note": "этап 7e: 2027 — 30 апреля – 2 мая"
+ },
+ {
+  "rec_id": "R52",
+  "name": "Newmarket Nights",
+  "month": "06,07,08",
+  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/",
+  "method": "news",
+  "patterns": [
+   "Newmarket Nights"
+  ],
+  "tickets": true,
+  "venue": "July Course, Newmarket",
+  "town": "Newmarket",
+  "description": "Летние пятничные вечера в Ньюмаркете: скачки, а после них — концерт известного исполнителя.",
+  "note": "этап 7e: 2026 — июнь–август (Madness, Aitch, Jessie J, Craig David и др.); 2027 — состав не объявлен"
+ },
+ {
+  "rec_id": "R53",
+  "name": "Bury St Edmunds Christmas Fayre",
+  "month": "11",
+  "url": "https://www.ourburystedmunds.com/",
+  "method": "manual",
+  "patterns": [
+   "Christmas Fayre"
+  ],
+  "tickets": false,
+  "venue": "Bury St Edmunds",
+  "town": "Bury St Edmunds",
+  "status_note": "не проводится с 2020 года; вместо неё — серия событий «Christmas in Bury St Edmunds» (BID)",
+  "description": "Рождественская ярмарка в Бери.",
+  "note": "этап 7e"
+ },
+ {
+  "rec_id": "R54",
+  "name": "Bury Festival (май)",
+  "month": "05",
+  "url": "https://buryfestival.co.uk/",
+  "method": "manual",
+  "patterns": [
+   "Bury Festival"
+  ],
+  "tickets": true,
+  "venue": "Bury St Edmunds",
+  "town": "Bury St Edmunds",
+  "status_note": "не найдено проведения в 2025–2026: сайт buryfestival.co.uk теперь о другом проекте; в мае в Бери — Bury Wildlife Festival и городские события BID",
+  "description": "Майский фестиваль искусств в Бери-Сент-Эдмундсе.",
+  "note": "этап 7e: «?»"
+ },
+ {
+  "rec_id": "R55",
+  "name": "Bury St Edmunds Literature Festival",
+  "month": "10",
+  "url": "https://burylitfest.co.uk/",
+  "method": "page",
+  "patterns": [
+   "Bury St Edmunds Lit",
+   "Literature Festival"
+  ],
+  "tickets": true,
+  "venue": "Bury St Edmunds",
+  "town": "Bury St Edmunds",
+  "festival": true,
+  "description": "Литературный фестиваль Бери-Сент-Эдмундса: встречи с авторами, мастер-классы и литературные прогулки по городу.",
+  "note": "этап 7e: 2026 — 8–11 октября, 9-й год; вручную: даты со страницы burylitfest.co.uk (Thursday 8th – Sunday 11th October, без года; наш бот, 01.10.2026)",
+  "manual_start": "2026-10-08",
+  "manual_end": "2026-10-11"
+ },
+ {
+  "rec_id": "R56",
+  "name": "King's Lynn Festival",
+  "month": "07",
+  "url": "https://kingslynnfestival.org.uk/",
+  "method": "page",
+  "patterns": [
+   "Lynn Festival"
+  ],
+  "tickets": true,
+  "venue": "King's Lynn",
+  "town": "King's Lynn",
+  "festival": true,
+  "description": "Фестиваль музыки и искусств в Кингс-Линне, основан в 1951 году; две недели концертов в июле.",
+  "note": "этап 7e: 2026 — 12–25 июля (75-й)"
+ },
+ {
+  "rec_id": "R57",
+  "name": "King's Lynn Mart",
+  "month": "02",
+  "url": "https://www.west-norfolk.gov.uk/",
+  "method": "news",
+  "patterns": [
+   "Lynn Mart"
+  ],
+  "tickets": false,
+  "venue": "Tuesday Market Place, King's Lynn",
+  "town": "King's Lynn",
+  "description": "Старинная ярмарка с аттракционами на Tuesday Market Place — открывается в День святого Валентина и идёт две недели.",
+  "note": "этап 7e: обычно с 14 февраля; 2027 — по данным norfolklocal 12 февраля (не подтверждено)"
+ },
+ {
+  "rec_id": "R58",
+  "name": "RHS Sandringham Flower Show",
+  "month": "07",
+  "url": "https://www.rhs.org.uk/shows-events/rhs-sandringham-flower-show",
+  "method": "page",
+  "patterns": [
+   "Sandringham Flower"
+  ],
+  "tickets": true,
+  "venue": "Sandringham Estate",
+  "town": "Sandringham",
+  "description": "Цветочная выставка в королевском поместье Сандрингем — с 2026 года её проводит Королевское садоводческое общество (RHS).",
+  "note": "этап 7e: 2026 — июль (первая выставка RHS); Сандрингем — за пределами исключения Кингс-Линна (проверить зону)"
+ },
+ {
+  "rec_id": "R59",
+  "name": "Bedford River Festival",
+  "month": "07",
+  "url": "https://riverfestival.bedford.gov.uk/",
+  "method": "page",
+  "patterns": [
+   "Bedford River Festival"
+  ],
+  "tickets": false,
+  "venue": "The Embankment, Bedford",
+  "town": "Bedford",
+  "status_note": "раз в два года: 2026 — 18–19 июля; следующий — 2028",
+  "description": "Речной фестиваль Бедфорда — два дня на Great Ouse, до полумиллиона посетителей.",
+  "note": "этап 7e: правило 40–60 км — только крупное"
+ },
+ {
+  "rec_id": "R60",
+  "name": "Knebworth Park concerts",
+  "month": "06,07,08,09",
+  "url": "https://www.knebworthhouse.com/",
+  "method": "news",
+  "patterns": [
+   "Knebworth"
+  ],
+  "tickets": true,
+  "venue": "Knebworth Park",
+  "town": "Knebworth",
+  "description": "Большие концерты под открытым небом в парке Knebworth House (Хартфордшир).",
+  "note": "этап 7e: 2027 — Oasis, 11, 12, 18, 19 сентября (новости о туре Live 27); 2026 — Iron Maiden (июль)"
+ },
+ {
+  "rec_id": "R61",
+  "name": "IWM Duxford Air Shows",
+  "month": "05,07,09",
+  "url": "https://www.iwm.org.uk/visits/iwm-duxford/airshows",
+  "method": "manual",
+  "patterns": [
+   "Air Show",
+   "Airshow"
+  ],
+  "tickets": true,
+  "venue": "IWM Duxford",
+  "postcode": "CB22 4QR",
+  "town": "Duxford",
+  "festival": true,
+  "description": "Авиашоу в Даксфорде: летнее (июль) и Battle of Britain (сентябрь) — исторические самолёты, Спитфайры в строю.",
+  "note": "этап 7e: 2026 — Summer Air Show 4–5 июля, Battle of Britain 12–13 сентября, Flying Days в мае и июне; сайт IWM закрыт для бота (403) — даты вручную"
+ },
+ {
+  "rec_id": "R62",
+  "name": "Ely's Autumn and Orchard Fayre",
+  "month": "10",
+  "url": "https://www.visitely.org.uk/visit-ely-events/",
+  "method": "page",
+  "patterns": [
+   "Orchard Fayre"
+  ],
+  "tickets": false,
+  "venue": "Ely",
+  "town": "Ely",
+  "shared_page": true,
+  "festival": true,
+  "description": "Осенняя ярмарка в Эли: местные продукты, ремёсла, яблочные забавы и музыка — два дня в октябре.",
+  "note": "этап 7e: 2026 — 10–11 октября (Visit Ely)"
+ }
 ]

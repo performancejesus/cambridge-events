@@ -21,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -45,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -69,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -93,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -117,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -141,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -165,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -189,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -213,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -237,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -261,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -285,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:26+00:00"
+  "fetched_at": "2026-10-01T00:17:34+00:00"
  },
  {
   "source_id": "S113",
@@ -309,6 +309,33 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:39:29+00:00"
+  "fetched_at": "2026-10-01T00:17:35+00:00"
+ },
+ {
+  "source_id": "S113",
+  "title": "Ely’s Autumn and Orchard Fayre 2026",
+  "url": "https://www.visitely.org.uk/visit-ely-events/",
+  "kind": "event",
+  "external_id": "https://www.visitely.org.uk/visit-ely-events/#Ely’s Autumn and Orchard Fayre 2026",
+  "start": "2026-10-10",
+  "end": "2026-10-11",
+  "all_day": true,
+  "venue": null,
+  "address": "Ely",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": "Visit Ely",
+  "categories": [
+   "festival",
+   "fair"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-01T00:17:40+00:00"
  }
 ]

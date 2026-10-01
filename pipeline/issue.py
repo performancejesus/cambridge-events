@@ -415,6 +415,7 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     _find_duplicates(p, excluded_rows)
     _links(p)
     _announcements(con, w, p)
+    _quirky_marks(con, w, p)
     _tickets(con, w, p)
     _cancellations(con, w, p)
     _venue_news(con, w, p)
@@ -737,6 +738,36 @@ def festival_stage(e, w: Window) -> tuple[str, str] | None:
     return None
 
 
+QUIRKY_WEEKS = (2, 4)   # этап 7e: необычные традиции — за 2–4 недели «заранее» с объяснением, что это за обычай
+
+
+def quirky_stage(e, w: Window) -> tuple[str, str] | None:
+    """Этап 7e (бриф, п. 3): необычная традиция (recurring_events.tags = quirky) — как фестиваль: дата объявлена →
+    «Новые анонсы»; за 2–4 недели — заранее, с коротким объяснением традиции. None — в этом выпуске не показываем."""
+    start = d(e["date_start"])
+    weeks = (start - w.issue).days / 7
+    if QUIRKY_WEEKS[0] <= weeks <= QUIRKY_WEEKS[1]:
+        return "reminder", f"традиция через {round(weeks)} нед."
+    since = (e["stage_since"] or "")[:10]
+    if since and since >= (w.issue - timedelta(days=ANNOUNCE_DAYS)).isoformat():
+        return ("on_sale", "билеты в продаже") if e["stage"] == "в продаже" else ("announced", f"дата объявлена {since}")
+    return None
+
+
+def _quirky_marks(con, w: Window, p: Pools) -> None:
+    """Этап 7e: событие окна — необычная традиция → пометка quirky (описание из recurring_events): модель пишет одну
+    фразу «что это за обычай», сборка ставит его в «Главное на выходные» (build_issue.mandatory, проверка 40)."""
+    cols = {r[1] for r in con.execute("PRAGMA table_info(recurring_events)")}
+    if "tags" not in cols:
+        return
+    q = {r["event_id"]: r for r in con.execute("""SELECT rec_id, name, description, event_id FROM recurring_events
+                                                 WHERE tags LIKE '%quirky%' AND event_id IS NOT NULL""")}
+    for cid, c in p.candidates.items():
+        for eid in c.get("event_ids") or []:
+            if eid in q:
+                c["quirky"] = {"rec_id": q[eid]["rec_id"], "tradition": q[eid]["description"]}
+
+
 def _announcements(con, w: Window, p: Pools) -> None:
     """Первый выпуск: заметные события дальше окна, объявленные недавно по данным источников — статья о событии
     или старт продаж за последние ANNOUNCE_DAYS дней, найденная дата ежегодного события."""
@@ -764,15 +795,19 @@ def _announcements(con, w: Window, p: Pools) -> None:
         add(e, f"старт продаж {e['on_sale_date'] or '?'}")
     cols = {r[1] for r in con.execute("PRAGMA table_info(recurring_events)")}
     for e in con.execute(f"""SELECT e.*, r.name AS rec_name, r.rec_id,
-            {"r.festival, r.stage, r.stage_since" if "stage" in cols else "0 AS festival, NULL AS stage, NULL AS stage_since"}
+            {"r.festival, r.stage, r.stage_since" if "stage" in cols else "0 AS festival, NULL AS stage, NULL AS stage_since"},
+            {"r.tags, r.description AS tradition" if "tags" in cols else "NULL AS tags, NULL AS tradition"}
             FROM recurring_events r JOIN events e USING(event_id)
             WHERE e.date_start > ? AND r.found_date IS NOT NULL AND r.patterns != '[]'""", (after,)).fetchall():
-        fest = festival_stage(e, w) if e["festival"] else None
-        if e["festival"] and not fest:
+        quirky = "quirky" in (e["tags"] or "")
+        fest = quirky_stage(e, w) if quirky else festival_stage(e, w) if e["festival"] else None
+        if (e["festival"] or quirky) and not fest:
             continue   # этап 7d: фестиваль из списка — только при новом статусе или за 4–6 недель (не в каждом выпуске)
         add(e, f"дата ежегодного события ({e['rec_name']})" + (f"; {fest[1]}" if fest else ""))
         if fest and f"A{e['event_id']}" in p.candidates:
             p.candidates[f"A{e['event_id']}"]["festival"] = {"rec_id": e["rec_id"], "stage": fest[0], "since": e["stage_since"]}
+        if quirky and f"A{e['event_id']}" in p.candidates:   # этап 7e: объяснение традиции — в текст пункта
+            p.candidates[f"A{e['event_id']}"]["quirky"] = {"rec_id": e["rec_id"], "tradition": e["tradition"]}
 
 
 def _tickets(con, w: Window, p: Pools) -> None:

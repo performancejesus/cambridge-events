@@ -1,5 +1,5 @@
 {
- "_run_id": "2026-09-30T22:05:25+00:00",
+ "_run_id": "2026-10-01T00:17:34+00:00",
  "S005": {
   "name": "Cambridge 105",
   "module": "cambridge105",
@@ -706,13 +706,13 @@
  "S113": {
   "name": "Visit Ely",
   "module": "visit_ely",
-  "started_at": "2026-09-30T21:39:23+00:00",
+  "started_at": "2026-10-01T00:17:34+00:00",
   "ok": true,
-  "events": 13,
+  "events": 14,
   "articles": 0,
   "stores": 0,
-  "requests": 4,
-  "seconds": 10.5
+  "requests": 2,
+  "seconds": 6.4
  },
  "S022": {
   "name": "Huntingdon Racecourse",

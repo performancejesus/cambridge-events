@@ -11,6 +11,26 @@ from ..base import Collector
 from ..htmlevents import find_when
 
 LIST = "https://www.visitely.org.uk/whats-on/"
+# этап 7e: собственные события Visit Ely (Eel Festival, Autumn and Orchard Fayre) — отдельная страница, в /whats-on/ их нет
+OWN = "https://www.visitely.org.uk/visit-ely-events/"
+DAY = r"(?:(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day )?(\d{1,2})(?:st|nd|rd|th)?"
+OWN_RE = re.compile(rf"([A-Z][^|]{{3,90}}?) (20\d\d) – {DAY}(?: (?:and|&|–|-|to) {DAY})? ([A-Z][a-z]+) (20\d\d)")
+
+
+def own_events(text: str) -> list[dict]:
+    """«Ely’s Autumn and Orchard Fayre 2026 – Saturday 10th and Sunday 11th October 2026» → название и даты."""
+    from datetime import datetime
+    out = []
+    for m in OWN_RE.finditer(text):
+        name, d1, d2, month, year = m.group(1).strip(" |–-"), m.group(3), m.group(4), m.group(5), m.group(6)
+        try:
+            start = datetime.strptime(f"{d1} {month} {year}", "%d %B %Y").date()
+            end = datetime.strptime(f"{d2} {month} {year}", "%d %B %Y").date() if d2 else None
+        except ValueError:
+            continue
+        out.append({"title": f"{name} {m.group(2)}", "start": start.isoformat(),
+                    "end": end.isoformat() if end and end != start else None})
+    return out
 
 
 class VisitEly(Collector):
@@ -48,4 +68,9 @@ class VisitEly(Collector):
                                       venue=None, address="Ely"))
             if not new:
                 break
+        from ..llmlist import visible_text
+        for x in own_events(visible_text(http.get(OWN).text)[0]):   # этап 7e
+            out.append(self.event(title=x["title"], url=OWN, external_id=f"{OWN}#{x['title']}", start=x["start"],
+                                  end=x["end"], all_day=True, venue=None, address="Ely", organizer="Visit Ely",
+                                  categories=["festival", "fair"]))
         return out

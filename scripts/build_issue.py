@@ -133,7 +133,8 @@ def fits(rubric: str, c: dict, w: issue.Window) -> bool:
             return False
         if c.get("participant") and imp < issue.BIG_RACE_MIN:
             return False
-        return rubric in c.get("on_weekends", []) and imp >= issue.WEEKEND_MIN
+        # этап 7e: необычная традиция — в «Главное» при любой оценке (у таких событий нет вместимости и Wikipedia)
+        return rubric in c.get("on_weekends", []) and (imp >= issue.WEEKEND_MIN or bool(c.get("quirky")))
     if rubric == "weekdays":
         return bool(c.get("on_weekdays"))
     if rubric == "cinema":   # правки после v5: новые фильмы недели и спецпоказы
@@ -1310,6 +1311,10 @@ def mandatory(pools: issue.Pools, result: dict, w: issue.Window) -> dict[str, li
         if c["kind"] == "announcement" and "ежегодного" in (c.get("evidence") or "") \
                 and ((c.get("importance") or 0) >= 6 or c.get("festival")) and free(cid):   # 7d: фестивали — всегда
             need.setdefault("new_announcements", []).append(cid)
+    # этап 7e: необычная традиция в выходные окна — в «Главное на выходные» (с объяснением, что это за обычай)
+    for cid, c in pools.candidates.items():
+        if c["kind"] == "event" and c.get("quirky") and c.get("on_weekends") and free(cid):
+            need.setdefault(c["on_weekends"][0], []).append(cid)
     counts = {sec["rubric"]: len(sec["items"]) for sec in result["sections"]}
     wk = [sec for sec in result["sections"] if sec["rubric"] == "weekdays"]
     if not any(pools.candidates[i].get("theatre") for sec in wk for it in sec["items"] for i in it["ids"]):

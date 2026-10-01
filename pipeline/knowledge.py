@@ -61,6 +61,7 @@ COLUMNS = [
     ("recurring_events", "tags", "TEXT"),        # JSON: ["quirky"] — необычные местные традиции (этап 7e)
     ("recurring_events", "description", "TEXT"),  # коротко, что это за традиция (для «Главного на выходные»)
     ("recurring_events", "status_note", "TEXT"),  # не проводится / раз в два года / нет в программе этого года
+    ("recurring_events", "on_sale_note", "TEXT"), # где подтверждена продажа билетов текущего цикла
     # кинотеатры: не удаляем фильмы, которые сошли с экрана (архив), а отмечаем
     ("regional_showings", "last_seen_at", "TEXT"),
     ("regional_showings", "gone_at", "TEXT"),

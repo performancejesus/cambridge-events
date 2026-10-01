@@ -26,20 +26,27 @@ MONTH_FIRST_RE = re.compile(rf"\b{_MON}\s+({_DAY})(?:\s*(?:-|–|to)\s*(?:{_MON}
 
 
 def seed(con: sqlite3.Connection) -> None:
+    for col in ("tags", "description", "status_note", "on_sale_note"):   # этап 7e (pipeline/knowledge.py)
+        if col not in {x[1] for x in con.execute("PRAGMA table_info(recurring_events)")}:
+            con.execute(f"ALTER TABLE recurring_events ADD COLUMN {col} TEXT")
     for r in json.loads(SEED.read_text()):
         con.execute("""INSERT INTO recurring_events(rec_id, name, expected_month, official_url, check_method, patterns, note,
-            tickets, page_date, manual_start, manual_end, venue, postcode, town, shared_page, festival)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            tickets, page_date, manual_start, manual_end, venue, postcode, town, shared_page, festival, tags, description,
+            status_note, on_sale_note)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ON CONFLICT(rec_id) DO UPDATE SET name=excluded.name, expected_month=excluded.expected_month,
             official_url=excluded.official_url, check_method=excluded.check_method, patterns=excluded.patterns,
             note=excluded.note, tickets=excluded.tickets, page_date=excluded.page_date,
             manual_start=excluded.manual_start, manual_end=excluded.manual_end, venue=excluded.venue,
             postcode=excluded.postcode, town=excluded.town, shared_page=excluded.shared_page,
-            festival=excluded.festival""",
+            festival=excluded.festival, tags=excluded.tags, description=excluded.description,
+            status_note=excluded.status_note, on_sale_note=excluded.on_sale_note""",
                     (r["rec_id"], r["name"], r["month"], r["url"], r["method"], json.dumps(r["patterns"]), r.get("note"),
                      int(bool(r.get("tickets"))), r.get("page_date"), r.get("manual_start") or None,
                      r.get("manual_end") or None, r.get("venue"), r.get("postcode"), r.get("town"),
-                     int(bool(r.get("shared_page"))), int(bool(r.get("festival")))))
+                     int(bool(r.get("shared_page"))), int(bool(r.get("festival"))),
+                     json.dumps(r["tags"]) if r.get("tags") else None, r.get("description"), r.get("status_note"),
+                     r.get("on_sale_note")))
 
 
 def dates_in(text: str, months: set[str], today: str) -> list[tuple[str, str | None]]:
@@ -87,16 +94,23 @@ def in_town(e: sqlite3.Row, town: str | None) -> bool:
     if town == "Cambridge" and e["zone"] and e["zone"] != "центр":
         return False
     text = " ".join(str(e[k] or "") for k in ("title", "venue_name", "address", "url"))
+    if re.search(rf"\b{re.escape(town)}\b", text, re.I):   # этап 7e: свой город в адресе — событие этого города
+        return True                                         # (Great Eastern Run, Peterborough — раньше уходило в дубль)
     others = re.search(r"\b(Wisbech|Ely|St Ives|Huntingdon|March|Whittlesey|St Neots|Peterborough|Royston|Saffron Walden|"
-                       r"Newmarket|Haverhill|King'?s Lynn|Bury St Edmunds|Chatteris|Ramsey)\b", text, re.I)
-    return not others or bool(re.search(rf"\b{re.escape(town)}\b", e["title"] or "", re.I))
+                       r"Newmarket|Haverhill|King'?s Lynn|Bury St Edmunds|Chatteris|Ramsey|Cambridge)\b", text, re.I)
+    return not others
 
 
 def stage_of(con: sqlite3.Connection, r: sqlite3.Row) -> tuple[str, str | None]:
     """Статус ежегодного события для таблицы и «Новых анонсов»: ожидаем | дата объявлена | в продаже, и с какого
     времени (по истории события: первое появление даты, старт продаж или смена статуса на on_sale)."""
+    note = (r["status_note"] or "") if "status_note" in r.keys() else ""
+    if note.startswith("не проводится"):   # этап 7e: закрылся или прекращён (Secret Garden Party, Bury Christmas Fayre)
+        return "не проводится", None
     if not r["found_date"]:
         return "ожидаем", None
+    if "on_sale_note" in r.keys() and r["on_sale_note"]:   # этап 7e: продажа подтверждена на странице организатора
+        return "в продаже", r["last_checked_at"]
     e = con.execute("SELECT * FROM events WHERE event_id=?", (r["event_id"],)).fetchone() if r["event_id"] else None
     since = (e["first_seen_at"] if e else r["last_checked_at"]) or None
     if e and r["tickets"]:

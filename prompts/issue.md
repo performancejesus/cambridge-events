@@ -146,6 +146,10 @@ Rules:
    band's history that a reader cannot use — who signed them, record-label and contract history, managers, producers
    of a debut single ("signed to MCA by Dave Ambrose" is not a reason to go; "known for the hit Baby I Don't
    Care" is).
+9. Local traditions. A candidate with `quirky` is an unusual local tradition (pea shooting, snail racing, the straw
+   bear): put it in "Highlights of the weekend" when it falls on a weekend of the period (or in "New announcements" when
+   it is an announcement), and give one sentence on what the tradition is, based on `quirky.tradition` (written in
+   Russian — say it in your own words in English too). This explanation is data, not your own knowledge.
 
 Fields of an item:
 - `ids` — candidate ids (usually one).
