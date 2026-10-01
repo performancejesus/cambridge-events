@@ -35,6 +35,9 @@ class Handler(BaseHTTPRequestHandler):
         elif self.path == "/missing":
             body = b"not found"
             self.send_response(404)
+        elif self.path == "/queue":   # Skiddle: 202 на отдельную страницу события
+            body = b"<html><body>Please wait</body></html>"
+            self.send_response(202)
         elif self.path == "/forbidden":
             body = b"forbidden"
             self.send_response(403)
@@ -126,3 +129,10 @@ def test_forbidden_pauses_host(client):
         c.get(base + "/forbidden")
     with pytest.raises(http.Deferred):
         c.get(base + "/page")
+
+
+def test_202_is_page_level_not_host_pause(client):
+    c, base, http = client
+    with pytest.raises(http.FetchError):
+        c.get(base + "/queue")
+    assert c.get(base + "/page").status == 200   # домен не на паузе

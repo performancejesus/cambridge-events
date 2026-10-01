@@ -32,3 +32,11 @@ REALIA_EXPLAIN = [   # (признак в данных, слово в русск
     (r"\bpanto(?:mime)?\b", r"пантомим\w*", "рождественское семейное шоу"),
     (r"\bbonfire night|guy fawkes\b", r"ночь костров|bonfire night", "5 ноября: костры и фейерверки"),
 ]
+
+
+def realia_ru(text: str) -> str:
+    """Замена «Деда Мороза» на «Санту» (Father Christmas — британская реалия) в любом русском тексте."""
+    import re
+    for rx, good in REALIA_FIXES:
+        text = re.sub(rx, good, text)
+    return text

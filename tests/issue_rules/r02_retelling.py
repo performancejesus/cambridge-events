@@ -26,5 +26,8 @@ def check(ctx) -> Finding:
         for c in claims:
             if c["verdict"] == "distorted":
                 f.violations.append(f"«{key}»: «{c['claim_ru']}» — искажено; в источнике: «{c['evidence'][:160]}»")
+    miss = [k for k in ctx.claims.get("unavailable", []) if ctx.claims.get("strict", {}).get(k)]
+    if miss:   # этап 7e: API недоступен — строгие пункты не сверены; редактору проверить вручную
+        f.warnings.append("не сверено (API недоступен): " + "; ".join(f"«{k}»" for k in miss))
     f.info.append(f"пунктов сверено строго: {n}")
     return f

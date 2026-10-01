@@ -51,6 +51,27 @@
    "source": "https://www.cambridgeunited.com/table/57",
    "checked_by": "сборщик: сайт клуба, 30.09.2026 (правки по v9: «матч Лиги Two» — ошибка из знаний модели)",
    "checked_at": "2026-09-30"
+  },
+  {
+   "subject": "Syd Barrett",
+   "aliases": [
+    "Barrett",
+    "Syd",
+    "Барретт",
+    "Барретта",
+    "Барретту",
+    "Барреттом",
+    "Барретте",
+    "Сид Барретт",
+    "Сида Барретта",
+    "Сиду Барретту"
+   ],
+   "kind": "last",
+   "value": "1972-02-24",
+   "statement": "последнее концертное выступление Сида Барретта — Cambridge Corn Exchange, 24 февраля 1972 года",
+   "source": "https://www.cornex.co.uk/ (описание события S011/S091: «where he gave his final live performance on 24 February 1972»); https://en.wikipedia.org/wiki/Syd_Barrett",
+   "checked_by": "сборщик (этап 7e): страница площадки и Wikipedia совпадают",
+   "checked_at": "2026-10-01"
   }
  ]
 }

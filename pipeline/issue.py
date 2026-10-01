@@ -1124,8 +1124,13 @@ def holiday_groups(p: Pools, w: Window, lang: str) -> list[dict]:
     """Подразделы «Каникул»: «Успейте записаться» (мест мало, скоро дедлайн) → по каникулам, внутри — по зоне
     (Кембридж → до 30 мин → дальше); одинаковые программы одного провайдера на разных площадках — одной строкой;
     в конце — «Куда сходить с детьми в каникулы» (семейные события в дни каникул)."""
-    groups = programme_lines(p, w, lang)
-    return limited_holiday_groups(p, w, lang, groups)
+    groups = limited_holiday_groups(p, w, lang, programme_lines(p, w, lang))
+    if lang == "ru":   # этап 7e (правки по v11): культурные реалии и в строках «Каникул» (тексты из кэша kids_text_cache)
+        from .glossary import realia_ru
+        for g in groups:
+            for it in g["items"]:
+                it["title"], it["meta"] = realia_ru(it.get("title") or ""), realia_ru(it.get("meta") or "")
+    return groups
 
 
 PROG_TYPES = [("swimming", re.compile(r"\bswim|плаван", re.I)),

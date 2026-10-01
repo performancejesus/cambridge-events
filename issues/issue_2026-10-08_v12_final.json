@@ -1,0 +1,664 @@
+{
+ "issue": "2026-10-08",
+ "version": "v12",
+ "sections": [
+  {
+   "rubric": "theme",
+   "items": [
+    {
+     "ids": [
+      "E39"
+     ],
+     "title_ru": "A Tribute to Syd Barrett: Official 80th Anniversary Celebrations",
+     "title_en": "A Tribute to Syd Barrett: Official 80th Anniversary Celebrations"
+    },
+    {
+     "ids": [
+      "E435"
+     ],
+     "title_ru": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+     "title_en": "Syd Barrett Exhibition: Life, Art and Cultural Impact"
+    },
+    {
+     "ids": [
+      "E437"
+     ],
+     "title_ru": "Talk by Rob Chapman: Syd Barrett — A Very Irregular Head",
+     "title_en": "Talk by Rob Chapman: Syd Barrett — A Very Irregular Head"
+    },
+    {
+     "ids": [
+      "E438",
+      "E439"
+     ],
+     "title_ru": "Have You Got It Yet?: meet the director + film screening",
+     "title_en": "Have You Got It Yet?: meet the director + film screening"
+    },
+    {
+     "ids": [
+      "E111"
+     ],
+     "title_ru": "Cambridge United v Blackpool",
+     "title_en": "Cambridge United v Blackpool"
+    }
+   ]
+  },
+  {
+   "rubric": "weekend_1",
+   "items": [
+    {
+     "ids": [
+      "E41"
+     ],
+     "title_ru": "Roachford + Hue and Cry",
+     "title_en": "Roachford + Hue and Cry"
+    },
+    {
+     "ids": [
+      "E819"
+     ],
+     "title_ru": "Shine with Jess Gillam and her Band",
+     "title_en": "Shine with Jess Gillam and her Band"
+    },
+    {
+     "ids": [
+      "E2521"
+     ],
+     "title_ru": "Ely’s Autumn and Orchard Fayre 2026",
+     "title_en": "Ely’s Autumn and Orchard Fayre 2026"
+    }
+   ]
+  },
+  {
+   "rubric": "weekend_2",
+   "items": [
+    {
+     "ids": [
+      "E46"
+     ],
+     "title_ru": "Nish Kumar: Angry Humour From a Really Nice Guy",
+     "title_en": "Nish Kumar: Angry Humour From a Really Nice Guy"
+    },
+    {
+     "ids": [
+      "E47"
+     ],
+     "title_ru": "The bEAT: Dance Crazed Too UK Tour",
+     "title_en": "The bEAT: Dance Crazed Too UK Tour"
+    },
+    {
+     "ids": [
+      "E1591"
+     ],
+     "title_ru": "WCB Comedy: Hal Cruttenden, Reginald D Hunter and Dan Antopolski",
+     "title_en": "WCB Comedy: Hal Cruttenden, Reginald D Hunter and Dan Antopolski"
+    }
+   ]
+  },
+  {
+   "rubric": "weekdays",
+   "items": [
+    {
+     "ids": [
+      "E37"
+     ],
+     "title_ru": "Simon Amstell: I Love It Here",
+     "title_en": "Simon Amstell: I Love It Here"
+    },
+    {
+     "ids": [
+      "E1024"
+     ],
+     "title_ru": "Transvision Vamp",
+     "title_en": "Transvision Vamp"
+    },
+    {
+     "ids": [
+      "E7"
+     ],
+     "title_ru": "Footlights ADC Smokers: Michaelmas 2026",
+     "title_en": "Footlights ADC Smokers: Michaelmas 2026"
+    },
+    {
+     "ids": [
+      "E44"
+     ],
+     "title_ru": "Fin Taylor",
+     "title_en": "Fin Taylor"
+    }
+   ]
+  },
+  {
+   "rubric": "cinema",
+   "items": [
+    {
+     "ids": [
+      "F1"
+     ],
+     "title_ru": "The Uprising",
+     "title_en": "The Uprising"
+    },
+    {
+     "ids": [
+      "F2"
+     ],
+     "title_ru": "Street Fighter",
+     "title_en": "Street Fighter"
+    },
+    {
+     "ids": [
+      "F3"
+     ],
+     "title_ru": "Whalefall",
+     "title_en": "Whalefall"
+    },
+    {
+     "ids": [
+      "F4"
+     ],
+     "title_ru": "Forgotten Island",
+     "title_en": "Forgotten Island"
+    }
+   ]
+  },
+  {
+   "rubric": "talks",
+   "items": [
+    {
+     "ids": [
+      "E1923"
+     ],
+     "title_ru": "Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn",
+     "title_en": "Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn"
+    },
+    {
+     "ids": [
+      "E370"
+     ],
+     "title_ru": "In Conversation with Simon Woolley",
+     "title_en": "In Conversation with Simon Woolley"
+    }
+   ]
+  },
+  {
+   "rubric": "exhibitions",
+   "items": [
+    {
+     "ids": [
+      "E447"
+     ],
+     "title_ru": "Frank Bowling: Seeking the Sublime",
+     "title_en": "Frank Bowling: Seeking the Sublime"
+    },
+    {
+     "ids": [
+      "E886"
+     ],
+     "title_ru": "Sunil Gupta: Life with a Camera, 1970 – Now",
+     "title_en": "Sunil Gupta: Life with a Camera, 1970 – Now"
+    }
+   ]
+  },
+  {
+   "rubric": "free",
+   "items": [
+    {
+     "ids": [
+      "E1583",
+      "E1594"
+     ],
+     "title_ru": "Free Sunday organ recitals at King's College Chapel",
+     "title_en": "Free Sunday organ recitals at King's College Chapel"
+    },
+    {
+     "ids": [
+      "E2415"
+     ],
+     "title_ru": "Stranger Folk",
+     "title_en": "Stranger Folk"
+    },
+    {
+     "ids": [
+      "E1356",
+      "E1357",
+      "E1358",
+      "E1359",
+      "E1360",
+      "E1361",
+      "E1362",
+      "E1363",
+      "E1364",
+      "E1365",
+      "E1366",
+      "E1367"
+     ],
+     "title_ru": "Regular sessions in libraries",
+     "title_en": "Regular sessions in libraries"
+    },
+    {
+     "ids": [
+      "E918"
+     ],
+     "title_ru": "poíēsis: an exhibition by Tom de Freston",
+     "title_en": "poíēsis: an exhibition by Tom de Freston"
+    }
+   ]
+  },
+  {
+   "rubric": "kids",
+   "items": [
+    {
+     "ids": [
+      "E952"
+     ],
+     "title_ru": "Apple Day 2026",
+     "title_en": "Apple Day 2026"
+    },
+    {
+     "ids": [
+      "E1021"
+     ],
+     "title_ru": "Dance In The Dark",
+     "title_en": "Dance In The Dark"
+    },
+    {
+     "ids": [
+      "E1349"
+     ],
+     "title_ru": "STEMtots – Marvellous Magnets",
+     "title_en": "STEMtots – Marvellous Magnets"
+    },
+    {
+     "ids": [
+      "S:C:cambridgesouthhockeyclub.co.uk:194b9ebe"
+     ],
+     "title_ru": "Cambridge South Hockey Club: Хоккей на траве, 13–14 лет",
+     "title_en": "Cambridge South Hockey Club: Junior hockey, ages 13–14"
+    },
+    {
+     "ids": [
+      "S:C:formationsdance.co.uk:0d2f91da"
+     ],
+     "title_ru": "Formations Dance Company: Музыкальный театр, все возрасты",
+     "title_en": "Formations Dance Company: Musical theatre, all ages"
+    },
+    {
+     "ids": [
+      "S:C:gkfit.co.uk:9577bf10"
+     ],
+     "title_ru": "GK Fit: Мультиспорт, 9–12 лет",
+     "title_en": "GK Fit: Multi-sports, ages 9–12"
+    },
+    {
+     "ids": [
+      "S:C:papa.perse.co.uk:19df93e2"
+     ],
+     "title_ru": "PAPA Perse: Танцы для малышей, от 4 лет",
+     "title_en": "PAPA Perse: Tiny Dancers, Reception"
+    }
+   ]
+  },
+  {
+   "rubric": "sport",
+   "items": [
+    {
+     "ids": [
+      "E1615"
+     ],
+     "title_ru": "Cambridge RUFC v Camborne",
+     "title_en": "Cambridge RUFC v Camborne"
+    },
+    {
+     "ids": [
+      "E1885"
+     ],
+     "title_ru": "Cambridge United Women v Dartford FC Women",
+     "title_en": "Cambridge United Women v Dartford FC Women"
+    },
+    {
+     "ids": [
+      "E1895"
+     ],
+     "title_ru": "Peterborough Phantoms v Solway IHC",
+     "title_en": "Peterborough Phantoms v Solway IHC"
+    },
+    {
+     "ids": [
+      "E197"
+     ],
+     "title_ru": "Dubai Future Champions Festival — racing",
+     "title_en": "Dubai Future Champions Festival — racing"
+    },
+    {
+     "ids": [
+      "E1894"
+     ],
+     "title_ru": "Peterborough Phantoms v Hull Seahawks",
+     "title_en": "Peterborough Phantoms v Hull Seahawks"
+    },
+    {
+     "ids": [
+      "E468"
+     ],
+     "title_ru": "Peterborough United FC - Burton Albion FC",
+     "title_en": "Peterborough United FC - Burton Albion FC"
+    },
+    {
+     "ids": [
+      "E1582"
+     ],
+     "title_ru": "AEPG Great Eastern Run",
+     "title_en": "AEPG Great Eastern Run"
+    },
+    {
+     "ids": [
+      "B:K:cufcfoundation.com:b4cda6a6"
+     ],
+     "title_ru": "Walking Football",
+     "title_en": "Walking Football"
+    }
+   ]
+  },
+  {
+   "rubric": "out_of_town",
+   "items": [
+    {
+     "ids": [
+      "E502"
+     ],
+     "title_ru": "Martin Kemp",
+     "title_en": "Martin Kemp"
+    },
+    {
+     "ids": [
+      "E2526"
+     ],
+     "title_ru": "Bury St Edmunds Literature Festival",
+     "title_en": "Bury St Edmunds Literature Festival"
+    },
+    {
+     "ids": [
+      "E2522"
+     ],
+     "title_ru": "St Ives Michaelmas Fair",
+     "title_en": "St Ives Michaelmas Fair"
+    }
+   ]
+  },
+  {
+   "rubric": "new_announcements",
+   "items": [
+    {
+     "ids": [
+      "A133"
+     ],
+     "title_ru": "Mill Road Winter Fair 2026",
+     "title_en": "Mill Road Winter Fair 2026"
+    },
+    {
+     "ids": [
+      "A103"
+     ],
+     "title_ru": "Fireworks Night on Midsummer Common",
+     "title_en": "Fireworks Night on Midsummer Common"
+    },
+    {
+     "ids": [
+      "A424"
+     ],
+     "title_ru": "Whittlesea Straw Bear Festival",
+     "title_en": "Whittlesea Straw Bear Festival"
+    },
+    {
+     "ids": [
+      "A131"
+     ],
+     "title_ru": "Cambridge Beer Festival 2027",
+     "title_en": "Cambridge Beer Festival 2027"
+    },
+    {
+     "ids": [
+      "A207"
+     ],
+     "title_ru": "The Betfred Guineas Festival",
+     "title_en": "The Betfred Guineas Festival"
+    }
+   ]
+  },
+  {
+   "rubric": "tickets",
+   "items": [
+    {
+     "ids": [
+      "T-p38"
+     ],
+     "title_ru": "Alison Moyet",
+     "title_en": "Alison Moyet"
+    },
+    {
+     "ids": [
+      "T-p889"
+     ],
+     "title_ru": "Susan Tomes, piano",
+     "title_en": "Susan Tomes, piano"
+    },
+    {
+     "ids": [
+      "T-p1428"
+     ],
+     "title_ru": "An Audience With Philippa Gregory",
+     "title_en": "An Audience With Philippa Gregory"
+    }
+   ]
+  },
+  {
+   "rubric": "cancelled",
+   "items": [
+    {
+     "ids": [
+      "C371"
+     ],
+     "title_ru": "THE SCAPEGOAT – The Brilliant Brief Life of the Duke of Buckingham",
+     "title_en": "THE SCAPEGOAT – The Brilliant Brief Life of the Duke of Buckingham"
+    },
+    {
+     "ids": [
+      "C53"
+     ],
+     "title_ru": "Mike Bubbins",
+     "title_en": "Mike Bubbins"
+    },
+    {
+     "ids": [
+      "C70"
+     ],
+     "title_ru": "Chris Hadfield: Navigating the New Space Age",
+     "title_en": "Chris Hadfield: Navigating the New Space Age"
+    }
+   ]
+  },
+  {
+   "rubric": "new_in_town",
+   "items": [
+    {
+     "ids": [
+      "V72",
+      "V76",
+      "V94"
+     ],
+     "title_ru": "UNIQLO",
+     "title_en": "UNIQLO"
+    },
+    {
+     "ids": [
+      "V56"
+     ],
+     "title_ru": "Carmen's Pizza",
+     "title_en": "Carmen's Pizza"
+    },
+    {
+     "ids": [
+      "V59"
+     ],
+     "title_ru": "Tripots",
+     "title_en": "Tripots"
+    },
+    {
+     "ids": [
+      "V84"
+     ],
+     "title_ru": "Arbury Social",
+     "title_en": "Arbury Social"
+    },
+    {
+     "ids": [
+      "V60"
+     ],
+     "title_ru": "Ephesus Turkish Restaurant",
+     "title_en": "Ephesus Turkish Restaurant"
+    }
+   ]
+  },
+  {
+   "rubric": "colleges",
+   "items": [
+    {
+     "ids": [
+      "E920"
+     ],
+     "title_ru": "Ten Good Years",
+     "title_en": "Ten Good Years"
+    },
+    {
+     "ids": [
+      "E927"
+     ],
+     "title_ru": "What Remains",
+     "title_en": "What Remains"
+    },
+    {
+     "ids": [
+      "E1249"
+     ],
+     "title_ru": "Other than Words: A Sense of Release in the Presence of Art",
+     "title_en": "Other than Words: A Sense of Release in the Presence of Art"
+    },
+    {
+     "ids": [
+      "E1655"
+     ],
+     "title_ru": "Indian Classical Music Masterclass with the Anirudh Varma Collective",
+     "title_en": "Indian Classical Music Masterclass with the Anirudh Varma Collective"
+    },
+    {
+     "ids": [
+      "E377"
+     ],
+     "title_ru": "Continuum | Renewal",
+     "title_en": "Continuum | Renewal"
+    },
+    {
+     "ids": [
+      "E1660"
+     ],
+     "title_ru": "Recital – Isabelle Demers",
+     "title_en": "Recital – Isabelle Demers"
+    }
+   ]
+  },
+  {
+   "rubric": "museums",
+   "items": [
+    {
+     "ids": [
+      "E2460"
+     ],
+     "title_ru": "Cut Your Own Dahlias",
+     "title_en": "Cut Your Own Dahlias"
+    },
+    {
+     "ids": [
+      "E1579"
+     ],
+     "title_ru": "Spark Art Club",
+     "title_en": "Spark Art Club"
+    },
+    {
+     "ids": [
+      "E1299"
+     ],
+     "title_ru": "Museum Late: Frank Bowling",
+     "title_en": "Museum Late: Frank Bowling"
+    },
+    {
+     "ids": [
+      "E941"
+     ],
+     "title_ru": "Fungi Field Day",
+     "title_en": "Fungi Field Day"
+    },
+    {
+     "ids": [
+      "E888"
+     ],
+     "title_ru": "Guided House Tour",
+     "title_en": "Guided House Tour"
+    },
+    {
+     "ids": [
+      "E946"
+     ],
+     "title_ru": "Studio Sunday Relaxed Session",
+     "title_en": "Studio Sunday Relaxed Session"
+    }
+   ]
+  },
+  {
+   "rubric": "learn",
+   "items": [
+    {
+     "ids": [
+      "K:kilncambridge.com:920af43c"
+     ],
+     "title_ru": "Saturday throwing Taster session",
+     "title_en": "Saturday throwing Taster session"
+    },
+    {
+     "ids": [
+      "E2138"
+     ],
+     "title_ru": "Cambridge Art Class",
+     "title_en": "Cambridge Art Class"
+    },
+    {
+     "ids": [
+      "K:whitecottagebakery.com:ad5ce00f"
+     ],
+     "title_ru": "SOURDOUGH WORKSHOP",
+     "title_en": "SOURDOUGH WORKSHOP"
+    },
+    {
+     "ids": [
+      "K:cambridgecookery.com:d2a56ede"
+     ],
+     "title_ru": "Kitchen Classics - Knife Skills",
+     "title_en": "Kitchen Classics - Knife Skills"
+    },
+    {
+     "ids": [
+      "E375"
+     ],
+     "title_ru": "Celia Webb Singing Workshop",
+     "title_en": "Celia Webb Singing Workshop"
+    },
+    {
+     "ids": [
+      "E379"
+     ],
+     "title_ru": "Lights and Shadows, a crash course about things that make your photos",
+     "title_en": "Lights and Shadows, a crash course about things that make your photos"
+    }
+   ]
+  }
+ ]
+}

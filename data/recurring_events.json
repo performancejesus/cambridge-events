@@ -14,7 +14,8 @@
   "tags": [
    "quirky"
   ],
-  "description": "«Соломенный медведь» в Уиттлси: человек в костюме из соломы танцует по улицам с фолк-музыкантами, в конце — сожжение медведя; обычай Plough Monday, возрождён в 1980 году."
+  "description": "«Соломенный медведь» в Уиттлси: человек в костюме из соломы танцует по улицам с фолк-музыкантами, в конце — сожжение медведя; обычай Plough Monday, возрождён в 1980 году.",
+  "description_en": "The Straw Bear: a man covered head to toe in straw dances through the streets with folk musicians, and the bear is burned at the end; a Plough Monday custom."
  },
  {
   "rec_id": "R02",
@@ -353,7 +354,8 @@
    "quirky"
   ],
   "description": "Чемпионат мира по стрельбе горохом из трубочки — на деревенском лугу в Уитчеме под Эли; участвовать может любой, запись в день соревнования.",
-  "note": "этап 7e: обычно вторая суббота июля; 54-й чемпионат — 10 июля 2027 (сайт организаторов)"
+  "note": "этап 7e: обычно вторая суббота июля; 54-й чемпионат — 10 июля 2027 (сайт организаторов)",
+  "description_en": "The World Pea Shooting Championship on the village green at Witcham near Ely; anyone can enter on the day."
  },
  {
   "rec_id": "R27",
@@ -371,7 +373,8 @@
    "quirky"
   ],
   "description": "Чемпионат мира по гонкам улиток в Конгеме под Кингс-Линном: улитки ползут 13 дюймов от центра круга к краю, приз — серебряный кубок с листьями салата.",
-  "note": "этап 7e: Норфолк, входит по исключению для Кингс-Линна (зона «до часа» — по расстоянию до Кингс-Линна, проверить); 2026 — 18 июля"
+  "note": "этап 7e: Норфолк, входит по исключению для Кингс-Линна (зона «до часа» — по расстоянию до Кингс-Линна, проверить); 2026 — 18 июля",
+  "description_en": "The World Snail Racing Championship at Congham near King's Lynn: snails race 13 inches from the centre of a circle to its edge."
  },
  {
   "rec_id": "R28",
@@ -431,7 +434,8 @@
   "shared_page": true,
   "festival": true,
   "description": "Праздник угря в Эли (город назван в честь угрей): шествие с огромным угрём от собора к реке, ярмарка с едой и соревнование по метанию угрей — не настоящих.",
-  "note": "этап 7e: выходные майского банковского понедельника; 2026 — 2–4 мая (Eel Day — суббота 2 мая); в программе Visit Ely на 2026 после мая — только Orchard Fayre"
+  "note": "этап 7e: выходные майского банковского понедельника; 2026 — 2–4 мая (Eel Day — суббота 2 мая); в программе Visit Ely на 2026 после мая — только Orchard Fayre",
+  "description_en": "Ely's eel festival (the city is named after eels): a parade with a giant eel from the cathedral to the river, a food fair and an eel-throwing contest with toy eels."
  },
  {
   "rec_id": "R31",
@@ -655,10 +659,11 @@
   "venue": "Town centre, St Ives",
   "town": "St Ives",
   "festival": true,
-  "description": "Михайловская ярмарка в Сент-Айвсе: три дня аттракционов на улицах центра со второго понедельника октября — одна из старых ярмарок графства.",
+  "description": "Михайловская ярмарка в Сент-Айвсе: три дня аттракционов на улицах центра, со второго понедельника октября.",
   "note": "этап 7e: второй понедельник октября и два следующих дня (2026 — 12–14 октября, Riverporter); вручную: второй понедельник октября + 2 дня; на thestiveshub.co.uk — 12 октября (наш бот), Riverporter — «Monday 12th –14th»",
   "manual_start": "2026-10-12",
-  "manual_end": "2026-10-14"
+  "manual_end": "2026-10-14",
+  "description_en": "St Ives' Michaelmas Fair: three days of funfair rides in the town-centre streets, starting on the second Monday of October."
  },
  {
   "rec_id": "R44",
@@ -723,7 +728,8 @@
   "town": "Peterborough",
   "festival": true,
   "description": "Полумарафон по улицам Питерборо (до 8000 бегунов) и забег на 5 км; зрителям — бесплатно вдоль маршрута.",
-  "note": "этап 7e: 2026 — 11 октября, старт 10:30"
+  "note": "этап 7e: 2026 — 11 октября, старт 10:30",
+  "description_en": "A half marathon through the streets of Peterborough (up to 8,000 runners) plus a 5k fun run; free to watch along the route."
  },
  {
   "rec_id": "R48",
@@ -854,7 +860,8 @@
   "description": "Литературный фестиваль Бери-Сент-Эдмундса: встречи с авторами, мастер-классы и литературные прогулки по городу.",
   "note": "этап 7e: 2026 — 8–11 октября, 9-й год; вручную: даты со страницы burylitfest.co.uk (Thursday 8th – Sunday 11th October, без года; наш бот, 01.10.2026)",
   "manual_start": "2026-10-08",
-  "manual_end": "2026-10-11"
+  "manual_end": "2026-10-11",
+  "description_en": "Bury St Edmunds Literature Festival: author talks, panel discussions, workshops and literary walks around the town."
  },
  {
   "rec_id": "R56",
@@ -966,6 +973,7 @@
   "shared_page": true,
   "festival": true,
   "description": "Осенняя ярмарка в Эли: местные продукты, ремёсла, яблочные забавы и музыка — два дня в октябре.",
-  "note": "этап 7e: 2026 — 10–11 октября (Visit Ely)"
+  "note": "этап 7e: 2026 — 10–11 октября (Visit Ely)",
+  "description_en": "Ely's autumn fair: local food, drink and crafts, apple-themed activities and live music over two days in October."
  }
 ]

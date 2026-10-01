@@ -407,9 +407,12 @@ def _price_text(c: dict, lang: str) -> str:
     """Цена — как у организатора (ровные суммы без копеек); неизвестная — «цены на сайте»; бесплатно — только £0.
     Дорогие (от £200) — тоже просто цена, без оценок «выгодно» (проверка 41)."""
     p = re.sub(r"\s+", " ", (c.get("price") or "").strip())
-    if c.get("price_from") == 0 and not re.search(r"£\s*[1-9]", p):
+    if c.get("price_from") == 0 and not re.search(r"(?:£|GBP)\s*[1-9]", p):
         return "бесплатно" if lang == "ru" else "free"
-    m = re.findall(r"£\s*(\d+(?:\.\d\d)?)", p)
+    p = re.sub(r"\bGBP\s*", "£", p)   # «GBP 20.0» (Eventbrite) → «£20.0»
+    m = re.findall(r"£\s*(\d+(?:\.\d+)?)", p)
+    if not m and (c.get("price_from") or 0) > 0:
+        m = [str(c["price_from"])]
     if not m:
         return "цены на сайте" if lang == "ru" else "prices on the website"
     vals = sorted({float(x) for x in m})

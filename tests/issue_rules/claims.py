@@ -136,12 +136,18 @@ def collect(ctx, client, chunk: int = 12) -> tuple[dict, float]:
         if row:
             res = json.loads(row[0])
         elif client is None:
+            out.setdefault("unavailable", []).extend([x["key"] for x in batch] + [s["key"] for s in sb])
             continue
         else:
-            with client.messages.stream(model=model, max_tokens=32000, system=SYSTEM,
-                                        messages=[{"role": "user", "content": body}],
-                                        output_config={"format": {"type": "json_schema", "schema": SCHEMA}}) as st:
-                msg = st.get_final_message()
+            import anthropic
+            try:
+                with client.messages.stream(model=model, max_tokens=32000, system=SYSTEM,
+                                            messages=[{"role": "user", "content": body}],
+                                            output_config={"format": {"type": "json_schema", "schema": SCHEMA}}) as st:
+                    msg = st.get_final_message()
+            except anthropic.APIError:   # этап 7e: API недоступен (баланс) — пункты остаются непроверенными, не падаем
+                out.setdefault("unavailable", []).extend([x["key"] for x in batch] + [s["key"] for s in sb])
+                continue
             pin, pout = PRICES[model]
             c = msg.usage.input_tokens * pin + msg.usage.output_tokens * pout
             cost += c
@@ -215,10 +221,14 @@ def verify_distorted(ctx, client, out: dict) -> float:
     elif client is None:
         return 0.0
     else:
-        with client.messages.stream(model=STRICT_MODEL, max_tokens=16000, system=VERIFY_SYSTEM,
-                                    messages=[{"role": "user", "content": body}],
-                                    output_config={"format": {"type": "json_schema", "schema": VERIFY_SCHEMA}}) as st:
-            msg = st.get_final_message()
+        import anthropic
+        try:
+            with client.messages.stream(model=STRICT_MODEL, max_tokens=16000, system=VERIFY_SYSTEM,
+                                        messages=[{"role": "user", "content": body}],
+                                        output_config={"format": {"type": "json_schema", "schema": VERIFY_SCHEMA}}) as st:
+                msg = st.get_final_message()
+        except anthropic.APIError:   # этап 7e: API недоступен — «искажено» остаётся (строгие пункты блокируют)
+            return 0.0
         pin, pout = PRICES[STRICT_MODEL]
         cost = msg.usage.input_tokens * pin + msg.usage.output_tokens * pout
         ctx.con.execute("INSERT INTO llm_usage(called_at, purpose, model, article_id, input_tokens, output_tokens, "

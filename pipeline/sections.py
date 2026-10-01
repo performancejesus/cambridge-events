@@ -16,6 +16,8 @@ import sqlite3
 from datetime import date, timedelta
 
 ROTATION_WEEKS = 8
+DAYS_RU = {"Monday": "пн", "Tuesday": "вт", "Wednesday": "ср", "Thursday": "чт", "Friday": "пт", "Saturday": "сб",
+           "Sunday": "вс"}
 STRONG_RE = re.compile(r"new (?:players|members|starters|joiners|gymnasts|swimmers)|recruit|join (?:us|the club|our)|"
                        r"registration|register|spaces?\b|places? (?:available|left)|taster|trial|now (?:booking|open)|enrol|"
                        r"sign[- ]up|welcomes? (?:new|all|any)|are welcome|beginners? welcome|make a booking|book (?:now|a)", re.I)
@@ -206,8 +208,9 @@ def build_items(con: sqlite3.Connection, pools, w) -> tuple[list[dict], dict[str
                     start = f"new group from {r['date_start']}" if lang == "en" else f"новая группа с {r['date_start']}"
                 zone = "" if r["zone"] == "центр" else f" ({r['zone']})" if lang == "ru" else ""
                 item[f"title_{lang}"] = f"{r['provider']}: {t[f'title_{lang}']}"
+                price = re.sub(r"(£\d+)[.,]00\b", r"\1", t[f"price_{lang}"])   # ровные суммы — без копеек
                 item[f"meta_{lang}"] = " · ".join(x for x in (t[f"when_{lang}"], start, (t[f"where_{lang}"] + zone).strip(),
-                                                              t[f"price_{lang}"], trial) if x)
+                                                              price, trial) if x)
                 item[f"kind_{lang}"] = None   # вид уже в названии строки
         else:   # без API — данные как есть (редактору видно в проверке алфавита)
             for lang in ("en", "ru"):
@@ -263,6 +266,10 @@ def adult_items(con: sqlite3.Connection, pools, w) -> tuple[list[dict], dict[str
                                  "price_text": r["price"]}
         if why[cid] != "в выпуске":
             continue
+        days_ru = r["days"] or ""
+        for en_d, ru_d in DAYS_RU.items():
+            days_ru = re.sub(rf"\b{en_d}s?\b", ru_d, days_ru)
+        sched_ru = " ".join(x for x in (days_ru, r["hours"] if (r["hours"] or "").count(":") else None) if x)
         sched = " ".join(x for x in (r["days"], r["hours"] if (r["hours"] or "").count(":") or "am" in (r["hours"] or "") or "pm" in (r["hours"] or "") else None) if x)
         start_ru = f"старт {r['date_start']}" if r["kind"] != "drop_in" and r["date_start"] else ""
         start_en = f"starts {r['date_start']}" if start_ru else ""
@@ -271,7 +278,7 @@ def adult_items(con: sqlite3.Connection, pools, w) -> tuple[list[dict], dict[str
         items.append({"ids": [cid], "line": True, "auto": True, "adult_line": True, "url": r["url"],
                       "title_en": r["title"], "title_ru": r["title"],
                       "meta_en": " · ".join(x for x in ("for beginners", start_en, sched, place, price) if x),
-                      "meta_ru": " · ".join(x for x in ("для начинающих", start_ru, sched, place, price) if x),
+                      "meta_ru": " · ".join(x for x in ("для начинающих", start_ru, sched_ru, place, price) if x),
                       "where_en": "", "where_ru": "", "price_en": "", "price_ru": "", "blurb_en": "", "blurb_ru": "",
                       "knowledge_en": [], "knowledge_ru": []})
     return items, why

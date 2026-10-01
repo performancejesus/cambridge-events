@@ -359,7 +359,9 @@ class PoliteClient:
             return r
         challenge = r.status in (200, 202) and is_challenge(r.status, r.content)
         self._page_error(url, host, r.status, "заглушка бот-защиты" if challenge else f"HTTP {r.status}")
-        if challenge or r.status in COOLDOWN_STATUSES:
+        # 202 (Skiddle отвечает так ботам на отдельные страницы событий, списки при этом открываются) — ошибка только
+        # этой страницы; пауза всего домена — на 403 / 429 / 5xx / обрыв и на настоящую заглушку проверки (200)
+        if (challenge and r.status != 202) or r.status in COOLDOWN_STATUSES:
             self._set_cooldown(host, f"{'заглушка бот-защиты' if challenge else 'HTTP ' + str(r.status)} на {url[:120]}")
         return r
 

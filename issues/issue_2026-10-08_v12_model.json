@@ -1,0 +1,3642 @@
+{
+ "result": {
+  "intro_en": "Two weeks dominated by one anniversary: Cambridge marks what would have been Syd Barrett's 80th year with a tribute concert, talks and an exhibition, while the Corn Exchange keeps the big names coming with Alison Moyet, Alice Cooper, Nish Kumar and The Beat.",
+  "intro_ru": "Эти две недели в Кембридже проходят под знаком одной даты: город отмечает 80-летие со дня рождения Сида Барретта — трибьют-концертом, лекциями и выставкой, а Corn Exchange продолжает принимать звёзд: Alison Moyet, Alice Cooper, Nish Kumar и The Beat.",
+  "sections": [
+   {
+    "rubric": "theme",
+    "items": [
+     {
+      "ids": [
+       "E39"
+      ],
+      "title_en": "A Tribute to Syd Barrett: Official 80th Anniversary Celebrations",
+      "title_ru": "A Tribute to Syd Barrett: Official 80th Anniversary Celebrations",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£55–£132",
+      "price_ru": "£55–£132",
+      "blurb_en": "A concert marking the year of what would have been Syd Barrett's 80th birthday, in the city where the Pink Floyd founder was born and where he gave his last live performance. Kula Shaker and Soft Machine are among the acts performing his songs, with a light show by The Mad Alchemist.",
+      "blurb_ru": "Концерт в честь года, когда основателю Pink Floyd Сиду Барретту исполнилось бы 80 лет — в городе, где он родился и дал своё последнее концертное выступление. Среди исполнителей его песен — Kula Shaker и Soft Machine, световое шоу готовит The Mad Alchemist.",
+      "knowledge_en": [
+       "Syd Barrett was a founding member and early songwriter of Pink Floyd",
+       "Kula Shaker are a British rock band",
+       "Soft Machine are a band associated with the Canterbury progressive-rock scene"
+      ],
+      "knowledge_ru": [
+       "Syd Barrett был одним из основателей и первым автором песен Pink Floyd",
+       "Kula Shaker — британская рок-группа",
+       "Soft Machine — группа, связанная с кентерберийской прогрессив-рок-сценой"
+      ]
+     },
+     {
+      "ids": [
+       "E435"
+      ],
+      "title_en": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+      "title_ru": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+      "where_en": "Openspace, Cambridge",
+      "where_ru": "Openspace, Кембридж",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "Paintings, sketches and work by contemporary artists tracing Barrett's visual art and its influence, running through the anniversary week.",
+      "blurb_ru": "Картины, эскизы и работы современных художников, прослеживающие визуальное творчество Барретта и его влияние — выставка идёт всю юбилейную неделю.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E437"
+      ],
+      "title_en": "Talk by Rob Chapman: Syd Barrett — A Very Irregular Head",
+      "title_ru": "Talk by Rob Chapman: Syd Barrett — A Very Irregular Head",
+      "where_en": "Openspace, Cambridge",
+      "where_ru": "Openspace, Кембридж",
+      "price_en": "£10",
+      "price_ru": "£10",
+      "blurb_en": "Barrett's biographer Rob Chapman, author of A Very Irregular Head, talks about his career.",
+      "blurb_ru": "Биограф Сида Барретта Роб Чапмен, автор книги A Very Irregular Head, рассказывает о его творческом пути.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E438",
+       "E439"
+      ],
+      "title_en": "Have You Got It Yet?: meet the director + film screening",
+      "title_ru": "Have You Got It Yet?: встреча с режиссёром + показ фильма",
+      "where_en": "Openspace / Arts Picturehouse, Cambridge",
+      "where_ru": "Openspace / Arts Picturehouse, Кембридж",
+      "price_en": "£10 (talk); cinema price on booking",
+      "price_ru": "£10 (встреча); цена билета в кино на сайте",
+      "blurb_en": "Director Roddy Bogawa talks about making his Barrett documentary and shows unseen outtakes (5pm, Openspace), followed the same evening by a screening of the finished film, Have You Got It Yet? The Story of Syd Barrett and Pink Floyd (8.30pm, Arts Picturehouse).",
+      "blurb_ru": "Режиссёр Родди Богава рассказывает о работе над своим документальным фильмом о Барретте и показывает неизданные дубли (17:00, Openspace), а тем же вечером в Arts Picturehouse — показ готового фильма Have You Got It Yet? The Story of Syd Barrett and Pink Floyd (20:30).",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E111"
+      ],
+      "title_en": "Cambridge United v Blackpool",
+      "title_ru": "Cambridge United v Blackpool",
+      "where_en": "Abbey Stadium, Cambridge",
+      "where_ru": "Abbey Stadium, Кембридж",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "An ordinary League One fixture with an unexpected link to the week's theme: according to Barrett's sister Rosemary Breen, Cambridge United are playing Blackpool on this day with proceeds going to mental health charities.",
+      "blurb_ru": "Обычный матч League One с неожиданной связью с темой недели: по словам сестры Барретта, Розмари Брин, в этот день Cambridge United играют с Blackpool, и выручка идёт на благотворительность в поддержку психического здоровья.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "weekend_1",
+    "items": [
+     {
+      "ids": [
+       "E41"
+      ],
+      "title_en": "Roachford + Hue and Cry",
+      "title_ru": "Roachford + Hue and Cry",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£38–£113",
+      "price_ru": "£38–£113",
+      "blurb_en": "A co-headline night of 80s hits: Scottish duo Hue and Cry and soul singer Roachford play full sets with full bands.",
+      "blurb_ru": "Совместный концерт хитов 80-х: шотландский дуэт Hue and Cry и соул-исполнитель Roachford выступают с полными составами групп.",
+      "knowledge_en": [
+       "Hue and Cry are a Scottish pop duo formed by brothers Pat and Greg Kane",
+       "Roachford is a British soul singer known for the hit Cuddly Toy"
+      ],
+      "knowledge_ru": [
+       "Hue and Cry — шотландский поп-дуэт братьев Pat и Greg Kane",
+       "Roachford — британский соул-исполнитель, известный хитом Cuddly Toy"
+      ]
+     },
+     {
+      "ids": [
+       "E819"
+      ],
+      "title_en": "Shine with Jess Gillam and her Band",
+      "title_ru": "Shine with Jess Gillam and her Band",
+      "where_en": "Saffron Hall, Saffron Walden",
+      "where_ru": "Saffron Hall, Саффрон-Уолден",
+      "price_en": "from £20",
+      "price_ru": "от £20",
+      "blurb_en": "Saxophonist Jess Gillam brings her electrifying programme Shine, spanning 900 years of music.",
+      "blurb_ru": "Саксофонистка Jess Gillam привозит свою программу Shine, охватывающую 900 лет музыки.",
+      "knowledge_en": [
+       "Jess Gillam is an award-winning British saxophonist and broadcaster"
+      ],
+      "knowledge_ru": [
+       "Jess Gillam — отмеченная наградами британская саксофонистка и телеведущая"
+      ]
+     },
+     {
+      "ids": [
+       "E3"
+      ],
+      "title_en": "Footlights Tour Show 2026: Prize Cow (for my best son)",
+      "title_ru": "Footlights Tour Show 2026: Prize Cow (for my best son)",
+      "where_en": "ADC Theatre, Cambridge",
+      "where_ru": "ADC Theatre, Кембридж",
+      "price_en": "£7.50–£12",
+      "price_ru": "£7.50–£12",
+      "blurb_en": "The home run of the Cambridge Footlights' 2026 tour show, an hour of student sketch comedy.",
+      "blurb_ru": "Финальные показы тур-шоу Cambridge Footlights 2026 года — час студенческих скетчей.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E2521"
+      ],
+      "title_en": "Ely's Autumn and Orchard Fayre 2026",
+      "title_ru": "Ely's Autumn and Orchard Fayre 2026",
+      "where_en": "Ely",
+      "where_ru": "Эли",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "Ely's annual autumn fayre, part of the town's regular calendar of seasonal events.",
+      "blurb_ru": "Ежегодная осенняя ярмарка в Эли, часть регулярного календаря сезонных событий города.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1020"
+      ],
+      "title_en": "Shiny New Model Festival 2026",
+      "title_ru": "Shiny New Model Festival 2026",
+      "where_en": "Cambridge Junction, Cambridge",
+      "where_ru": "Cambridge Junction, Кембридж",
+      "price_en": "£38.50",
+      "price_ru": "£38.50",
+      "blurb_en": "Cambridge's festival for new, noisy and independent music returns for its third year, headlined by Brighton post-punk band Squid.",
+      "blurb_ru": "Кембриджский фестиваль новой, шумной и независимой музыки проходит в третий раз, хедлайнер — брайтонская пост-панк группа Squid.",
+      "knowledge_en": [
+       "Squid are a Brighton post-punk band"
+      ],
+      "knowledge_ru": [
+       "Squid — пост-панк группа из Брайтона"
+      ]
+     }
+    ],
+    "passed_over": [
+     {
+      "id": "E197",
+      "reason_en": "racing festival, below the weekend threshold once stronger items were chosen",
+      "reason_ru": "скачки, ниже порога для «выходных» при наличии более сильных пунктов"
+     },
+     {
+      "id": "E818",
+      "reason_en": "choral concert, lower importance than items chosen",
+      "reason_ru": "хоровой концерт, важность ниже отобранных пунктов"
+     }
+    ]
+   },
+   {
+    "rubric": "weekend_2",
+    "items": [
+     {
+      "ids": [
+       "E46"
+      ],
+      "title_en": "Nish Kumar: Angry Humour From a Really Nice Guy",
+      "title_ru": "Nish Kumar: Angry Humour From a Really Nice Guy",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£28",
+      "price_ru": "£28",
+      "blurb_en": "New stand-up from comedian Nish Kumar, taking on the state of the country's politics.",
+      "blurb_ru": "Новое стендап-шоу комика Nish Kumar о текущем состоянии британской политики.",
+      "knowledge_en": [
+       "Nish Kumar is a British stand-up comedian, formerly host of The Mash Report"
+      ],
+      "knowledge_ru": [
+       "Nish Kumar — британский стендап-комик, бывший ведущий The Mash Report"
+      ]
+     },
+     {
+      "ids": [
+       "E47"
+      ],
+      "title_en": "The bEAT: Dance Crazed Too UK Tour",
+      "title_ru": "The bEAT: Dance Crazed Too UK Tour",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£43",
+      "price_ru": "£43",
+      "blurb_en": "Legendary 2-Tone band The Beat, led by Dave Wakeling, play the hits — Mirror in the Bathroom, Save It for Later and more.",
+      "blurb_ru": "Легендарная 2-tone группа The Beat во главе с Dave Wakeling играет свои хиты — Mirror in the Bathroom, Save It for Later и другие.",
+      "knowledge_en": [
+       "2-Tone is a British music genre blending ska, punk and pop that emerged in the late 1970s"
+      ],
+      "knowledge_ru": [
+       "2-Tone — британский музыкальный жанр, соединивший ска, панк и поп, возникший в конце 1970-х"
+      ]
+     },
+     {
+      "ids": [
+       "E1591"
+      ],
+      "title_en": "WCB Comedy: Hal Cruttenden, Reginald D Hunter and Dan Antopolski",
+      "title_ru": "WCB Comedy: Hal Cruttenden, Reginald D Hunter and Dan Antopolski",
+      "where_en": "The Great Hall at The Leys, Cambridge",
+      "where_ru": "The Great Hall at The Leys, Кембридж",
+      "price_en": "from £26",
+      "price_ru": "от £26",
+      "blurb_en": "A strong stand-up line-up for one night: Hal Cruttenden, Reginald D Hunter and Dan Antopolski.",
+      "blurb_ru": "Сильная стендап-афиша на один вечер: Hal Cruttenden, Reginald D Hunter и Dan Antopolski.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E822"
+      ],
+      "title_en": "Pasadena Roof Orchestra",
+      "title_ru": "Pasadena Roof Orchestra",
+      "where_en": "Saffron Hall, Saffron Walden",
+      "where_ru": "Saffron Hall, Саффрон-Уолден",
+      "price_en": "from £17",
+      "price_ru": "от £17",
+      "blurb_en": "A step back into the Roaring Twenties and 1930s with the Pasadena Roof Orchestra's recreated dance-band arrangements.",
+      "blurb_ru": "Путешествие в эпоху ревущих двадцатых и 1930-х: Pasadena Roof Orchestra воссоздаёт оригинальные аранжировки танцевальных оркестров той эпохи.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1038"
+      ],
+      "title_en": "Hannah Sanders & Ben Savage with Jon Thorne",
+      "title_ru": "Hannah Sanders & Ben Savage with Jon Thorne",
+      "where_en": "Cambridge Junction, Cambridge",
+      "where_ru": "Cambridge Junction, Кембридж",
+      "price_en": "£19.50",
+      "price_ru": "£19.50",
+      "blurb_en": "Critically acclaimed folk duo Hannah Sanders & Ben Savage join double bassist Jon Thorne for a one-off tour date.",
+      "blurb_ru": "Отмеченный критиками фолк-дуэт Hannah Sanders & Ben Savage выступает вместе с контрабасистом Jon Thorne в рамках разового тура.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": [
+     {
+      "id": "E1428",
+      "reason_en": "moved to tickets — the venue page flags few seats left",
+      "reason_ru": "перенесено в раздел «билеты» — на странице указано мало оставшихся мест"
+     }
+    ]
+   },
+   {
+    "rubric": "weekdays",
+    "items": [
+     {
+      "ids": [
+       "E37"
+      ],
+      "title_en": "Simon Amstell: I Love It Here",
+      "title_ru": "Simon Amstell: I Love It Here",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£23–£30",
+      "price_ru": "£23–£30",
+      "blurb_en": "New stand-up from comedian and filmmaker Simon Amstell, on a limited tour after a sold-out London residency.",
+      "blurb_ru": "Новое стендап-шоу комика и режиссёра Simon Amstell в рамках ограниченного тура после аншлагового резидентства в Лондоне.",
+      "knowledge_en": [
+       "Simon Amstell is a British comedian and filmmaker, formerly host of Popworld and Never Mind the Buzzcocks"
+      ],
+      "knowledge_ru": [
+       "Simon Amstell — британский комик и режиссёр, бывший ведущий Popworld и Never Mind the Buzzcocks"
+      ]
+     },
+     {
+      "ids": [
+       "E1024"
+      ],
+      "title_en": "Transvision Vamp",
+      "title_ru": "Transvision Vamp",
+      "where_en": "Cambridge Junction, Cambridge",
+      "where_ru": "Cambridge Junction, Кембридж",
+      "price_en": "£37.50",
+      "price_ru": "£37.50",
+      "blurb_en": "Late-80s indie-rock band Transvision Vamp, fronted by Wendy James, on tour.",
+      "blurb_ru": "Инди-рок-группа конца 80-х Transvision Vamp во главе с Wendy James — на гастролях.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1026"
+      ],
+      "title_en": "Breabach",
+      "title_ru": "Breabach",
+      "where_en": "Cambridge Junction, Cambridge",
+      "where_ru": "Cambridge Junction, Кембридж",
+      "price_en": "£26",
+      "price_ru": "£26",
+      "blurb_en": "Scottish folk band Breabach, anchoring Highland and Gaelic island tradition with bagpipes, fiddle and step-dance.",
+      "blurb_ru": "Шотландская фолк-группа Breabach, опирающаяся на традиции Хайленда и гэльских островов — волынки, скрипка и степ-данс.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E7"
+      ],
+      "title_en": "Footlights ADC Smokers: Michaelmas 2026",
+      "title_ru": "Footlights ADC Smokers: Michaelmas 2026",
+      "where_en": "ADC Theatre, Cambridge",
+      "where_ru": "ADC Theatre, Кембридж",
+      "price_en": "£5–£7",
+      "price_ru": "£5–£7",
+      "blurb_en": "A variety night of student stand-up, sketch and song from Cambridge's best student comedy talent.",
+      "blurb_ru": "Разножанровый вечер студенческого стендапа, скетчей и песен от лучших комедийных талантов Кембриджа.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E44"
+      ],
+      "title_en": "Fin Taylor",
+      "title_ru": "Fin Taylor",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£25.50–£30.50",
+      "price_ru": "£25.50–£30.50",
+      "blurb_en": "Stand-up from comedian and podcaster Fin Taylor.",
+      "blurb_ru": "Стендап-шоу комика и подкастера Fin Taylor.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": [
+     {
+      "id": "E1030",
+      "reason_en": "would have been a third Junction item, and venue cap is already reached",
+      "reason_ru": "стал бы третьим пунктом от Junction при уже заполненном лимите по площадке"
+     }
+    ]
+   },
+   {
+    "rubric": "cinema",
+    "items": [
+     {
+      "ids": [
+       "F1"
+      ],
+      "title_en": "The Uprising",
+      "title_ru": "The Uprising",
+      "where_en": "",
+      "where_ru": "",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Paul Greengrass directs this action period drama dramatising the 1381 Peasants' Revolt, with Jamie Bell and Cosmo Jarvis as its leaders Wat Tyler and John Ball, and Andrew Garfield, Thomasin McKenzie and Jonny Lee Miller among the cast.",
+      "blurb_ru": "Paul Greengrass снял этот экшн-драму о Крестьянском восстании 1381 года в Англии: Jamie Bell и Cosmo Jarvis играют его предводителей Wat Tyler и John Ball, в актёрском составе также Andrew Garfield, Thomasin McKenzie и Jonny Lee Miller.",
+      "knowledge_en": [
+       "Paul Greengrass is a British director known for the Bourne films and Captain Phillips"
+      ],
+      "knowledge_ru": [
+       "Paul Greengrass — британский режиссёр, известный по фильмам о Борне и Captain Phillips"
+      ]
+     },
+     {
+      "ids": [
+       "F2"
+      ],
+      "title_en": "Street Fighter",
+      "title_ru": "Street Fighter",
+      "where_en": "",
+      "where_ru": "",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Directed by Kitao Sakurai, this action comedy is the third live-action film based on Capcom's video game series.",
+      "blurb_ru": "Экшн-комедия режиссёра Kitao Sakurai — третий полнометражный игровой фильм по мотивам видеоигры Capcom.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "F3"
+      ],
+      "title_en": "Whalefall",
+      "title_ru": "Whalefall",
+      "where_en": "",
+      "where_ru": "",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Director Brian Duffield adapts Daniel Kraus's novel about a scuba diver who, searching for his father's remains, is swallowed alive by a sperm whale and has to find a way out. Elisabeth Shue co-stars.",
+      "blurb_ru": "Режиссёр Brian Duffield экранизирует роман Daniel Kraus о дайвере, который, разыскивая останки отца, оказывается заживо проглочен кашалотом и должен найти способ выбраться. В одной из ролей — Elisabeth Shue.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "F4"
+      ],
+      "title_en": "Forgotten Island",
+      "title_ru": "Forgotten Island",
+      "where_en": "",
+      "where_ru": "",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "A DreamWorks Animation fantasy comedy, set in 1990s Philippines, about two best friends drawn into the mystical world of Nakali from local folklore; voices include H.E.R., Liza Soberano and Jo Koy.",
+      "blurb_ru": "Анимационная фэнтези-комедия DreamWorks о двух лучших подругах, попадающих в мистический мир Накали из филиппинского фольклора; действие происходит на Филиппинах 1990-х, голоса озвучивают H.E.R., Liza Soberano и Jo Koy.",
+      "knowledge_en": [
+       "DreamWorks Animation is the studio behind Shrek and Kung Fu Panda"
+      ],
+      "knowledge_ru": [
+       "DreamWorks Animation — студия, создавшая Shrek и Kung Fu Panda"
+      ]
+     },
+     {
+      "ids": [
+       "F8"
+      ],
+      "title_en": "Spirited Away (25th anniversary)",
+      "title_ru": "Spirited Away (25-я годовщина)",
+      "where_en": "",
+      "where_ru": "",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Studio Ghibli's Hayao Miyazaki classic about a girl who must free her parents, turned into pigs by a witch, returns to cinemas for its 25th anniversary.",
+      "blurb_ru": "Классика студии Ghibli режиссёра Hayao Miyazaki о девочке, которой нужно спасти родителей, превращённых ведьмой в свиней, возвращается в кинотеатры к 25-летию фильма.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E2213"
+      ],
+      "title_en": "Queen Budapest",
+      "title_ru": "Queen Budapest",
+      "where_en": "",
+      "where_ru": "",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "A remastered 4K screening of Queen's 1986 Budapest stadium show, the last time the band toured with Freddie Mercury.",
+      "blurb_ru": "Показ отреставрированной в 4K записи стадионного концерта Queen в Будапеште 1986 года — последнего тура группы с Freddie Mercury.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "F7"
+      ],
+      "title_en": "Hadestown: The Musical",
+      "title_ru": "Hadestown: The Musical",
+      "where_en": "",
+      "where_ru": "",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "A live capture of the Tony-winning musical, filmed in London with the original Broadway principals.",
+      "blurb_ru": "Киноверсия удостоенного премии Tony мюзикла, снятая в Лондоне с оригинальными исполнителями главных ролей с Бродвея.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": [
+     {
+      "id": "F5",
+      "reason_en": "close in importance but cut to keep the main-films list to four",
+      "reason_ru": "близка по важности, но отсечена, чтобы оставить список главных фильмов из четырёх"
+     },
+     {
+      "id": "F6",
+      "reason_en": "close in importance but cut to keep the main-films list to four",
+      "reason_ru": "близка по важности, но отсечена, чтобы оставить список главных фильмов из четырёх"
+     }
+    ]
+   },
+   {
+    "rubric": "talks",
+    "items": [
+     {
+      "ids": [
+       "E1923"
+      ],
+      "title_en": "Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn",
+      "title_ru": "Anarchical Antiquity — инаугурационная лекция профессора Josephine Crawley Quinn",
+      "where_en": "St John's College, Cambridge",
+      "where_ru": "St John's College, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "An inaugural lecture on the ancient world's politics of disorder.",
+      "blurb_ru": "Инаугурационная лекция об устройстве власти и беспорядка в античном мире.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E370"
+      ],
+      "title_en": "In Conversation with Simon Woolley",
+      "title_ru": "In Conversation with Simon Woolley",
+      "where_en": "The Parish Church of All Saints', Harston",
+      "where_ru": "The Parish Church of All Saints', Харстон",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A hosted conversation with Baron Simon Woolley over a glass of wine before the talk begins.",
+      "blurb_ru": "Беседа с бароном Simon Woolley, перед которой гостям предложат бокал вина.",
+      "knowledge_en": [
+       "Simon Woolley is a crossbench peer and founder of Operation Black Vote"
+      ],
+      "knowledge_ru": [
+       "Simon Woolley — независимый member Палаты лордов и основатель Operation Black Vote"
+      ]
+     },
+     {
+      "ids": [
+       "E42",
+       "E244"
+      ],
+      "title_en": "Alice Cooper: Devil on My Shoulder — in conversation",
+      "title_ru": "Alice Cooper: Devil on My Shoulder — встреча-беседа",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£56–£132",
+      "price_ru": "£56–£132",
+      "blurb_en": "Veteran shock-rock musician Alice Cooper discusses his new autobiography, Devil on My Shoulder, published the same week.",
+      "blurb_ru": "Ветеран шок-рока Alice Cooper рассказывает о своей новой автобиографии Devil on My Shoulder, вышедшей на той же неделе.",
+      "knowledge_en": [
+       "Alice Cooper is a veteran American shock-rock musician"
+      ],
+      "knowledge_ru": [
+       "Alice Cooper — ветеран американского шок-рока"
+      ]
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "exhibitions",
+    "items": [
+     {
+      "ids": [
+       "E447"
+      ],
+      "title_en": "Frank Bowling: Seeking the Sublime",
+      "title_ru": "Frank Bowling: Seeking the Sublime",
+      "where_en": "Fitzwilliam Museum, Cambridge",
+      "where_ru": "Fitzwilliam Museum, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "Nearly seven decades of work by British painter Frank Bowling, from figurative beginnings to his later abstractions.",
+      "blurb_ru": "Почти семь десятилетий творчества британского художника Frank Bowling — от фигуративных ранних работ до поздней абстракции.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E886"
+      ],
+      "title_en": "Sunil Gupta: Life with a Camera, 1970 – Now",
+      "title_ru": "Sunil Gupta: Life with a Camera, 1970 – Now",
+      "where_en": "Kettle's Yard, Cambridge",
+      "where_ru": "Kettle's Yard, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A major survey of photographer Sunil Gupta's five decades of work.",
+      "blurb_ru": "Масштабный обзор пятидесятилетнего творчества фотографа Sunil Gupta.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E448"
+      ],
+      "title_en": "A Mughal Songbook: Art, Music and Empire",
+      "title_ru": "A Mughal Songbook: Art, Music and Empire",
+      "where_en": "Fitzwilliam Museum, Cambridge",
+      "where_ru": "Fitzwilliam Museum, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A rare manuscript of 77 Persian and Urdu songs brings the music and culture of Mughal South Asia (1750–1850) to life.",
+      "blurb_ru": "Редкая рукопись из 77 песен на персидском и урду раскрывает музыку и культуру Могольской Южной Азии (1750–1850).",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1410"
+      ],
+      "title_en": "Castles: Anarchy and Rebellion in Ely",
+      "title_ru": "Castles: Anarchy and Rebellion in Ely",
+      "where_en": "Ely Museum, Ely",
+      "where_ru": "Ely Museum, Эли",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "The story of Ely's lost castles and its role in the 12th-century civil war known as the Anarchy.",
+      "blurb_ru": "История исчезнувших замков Эли и роль города в гражданской войне XII века, известной как «Анархия».",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "free",
+    "items": [
+     {
+      "ids": [
+       "E1299"
+      ],
+      "title_en": "Museum Late: Frank Bowling",
+      "title_ru": "Museum Late: Frank Bowling",
+      "where_en": "The Fitzwilliam Museum, Cambridge",
+      "where_ru": "The Fitzwilliam Museum, Кембридж",
+      "price_en": "donations welcome",
+      "price_ru": "donation",
+      "blurb_en": "An after-hours evening themed around the Frank Bowling exhibition, with Diasporas Now.",
+      "blurb_ru": "Вечернее мероприятие после закрытия музея, посвящённое выставке Frank Bowling, совместно с Diasporas Now.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1583",
+       "E1594"
+      ],
+      "title_en": "Free Sunday organ recitals at King's College Chapel",
+      "title_ru": "Бесплатные органные концерты по воскресеньям в King's College Chapel",
+      "where_en": "King's College Chapel, Cambridge",
+      "where_ru": "King's College Chapel, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "King's famous organ in recital by visiting organists — Paul Greally of Westminster Abbey on 11 October, David Newsholme of Canterbury Cathedral on 18 October.",
+      "blurb_ru": "Знаменитый орган King's College в исполнении приглашённых органистов: Paul Greally из Вестминстерского аббатства — 11 октября, David Newsholme из Кентерберийского собора — 18 октября.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E2415"
+      ],
+      "title_en": "Stranger Folk",
+      "title_ru": "Stranger Folk",
+      "where_en": "Wicken Fen (National Trust), Ely",
+      "where_ru": "Wicken Fen (National Trust), Эли",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A free Halloween adventure game weaving British folklore into the fen landscape.",
+      "blurb_ru": "Бесплатная хеллоуинская игра-приключение, вплетающая британский фольклор в пейзаж фена.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1356",
+       "E1357",
+       "E1358",
+       "E1359",
+       "E1360",
+       "E1361",
+       "E1362",
+       "E1363",
+       "E1364",
+       "E1365",
+       "E1366",
+       "E1367"
+      ],
+      "title_en": "Regular sessions in libraries",
+      "title_ru": "Regular sessions in libraries",
+      "where_en": "Cambridge Central Library and branches, Cambridge",
+      "where_ru": "Cambridge Central Library и филиалы, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "Cambridgeshire libraries run a regular programme of free drop-ins this fortnight: Rhymetime and Storytime for babies and toddlers, Children's Craft and Lego Club, a Digital Drop-In, an Improve Your English group, Sunday Scribes writing group, a BSL meet-up and LGBTQIA+ social sessions.",
+      "blurb_ru": "Библиотеки Кембриджшира проводят регулярные бесплатные занятия на эти две недели: Rhymetime и Storytime для малышей, детский творческий клуб и Lego Club, занятия по цифровой грамотности, группа разговорного английского, группа письма Sunday Scribes, встречи для изучающих BSL и ЛГБТК-сообщества.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "kids",
+    "items": [
+     {
+      "ids": [
+       "E952"
+      ],
+      "title_en": "Apple Day 2026",
+      "title_ru": "Apple Day 2026",
+      "where_en": "Cambridge University Botanic Garden, Cambridge",
+      "where_ru": "Cambridge University Botanic Garden, Кембридж",
+      "price_en": "free with normal Garden admission",
+      "price_ru": "бесплатно при обычном входном билете в сад",
+      "blurb_en": "The region's biggest Apple Day, with activities for families celebrating the harvest.",
+      "blurb_ru": "Крупнейший в регионе праздник яблок с семейными активностями в честь урожая.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E2416"
+      ],
+      "title_en": "Three Cheers for Pooh! Story trail",
+      "title_ru": "Three Cheers for Pooh! Story trail",
+      "where_en": "Anglesey Abbey (National Trust), Lode, Cambridge",
+      "where_ru": "Anglesey Abbey (National Trust), Лод, Кембридж",
+      "price_en": "included in admission",
+      "price_ru": "включено в стоимость входа",
+      "blurb_en": "A family trail through the garden finding Winnie-the-Pooh and friends, marking Pooh's 100th anniversary.",
+      "blurb_ru": "Семейный маршрут по саду в поисках Winnie-the-Pooh и его друзей, приуроченный к 100-летию Винни-Пуха.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1021"
+      ],
+      "title_en": "Dance In The Dark",
+      "title_ru": "Dance In The Dark",
+      "where_en": "Cambridge Junction, Cambridge",
+      "where_ru": "Cambridge Junction, Кембридж",
+      "price_en": "£15.50",
+      "price_ru": "£15.50",
+      "blurb_en": "A dance and music show for ages 3+ and families, with a giant sleepover den and pyjamas encouraged.",
+      "blurb_ru": "Танцевально-музыкальное шоу для детей от 3 лет и семей, с гигантским «спальным» шатром — приходить рекомендуют в пижамах.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1349"
+      ],
+      "title_en": "STEMtots – Marvellous Magnets",
+      "title_ru": "STEMtots – Marvellous Magnets",
+      "where_en": "Cambridge Science Centre, Cambridge",
+      "where_ru": "Cambridge Science Centre, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "A weekly relaxed science session for under-5s, this week exploring magnetic materials.",
+      "blurb_ru": "Еженедельное спокойное научно-техническое занятие для детей до 5 лет, на этот раз — про магнитные материалы.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "sport",
+    "items": [
+     {
+      "ids": [
+       "E1615"
+      ],
+      "title_en": "Cambridge RUFC v Camborne",
+      "title_ru": "Cambridge RUFC v Camborne",
+      "where_en": "Volac Park, Cambridge RUFC, Cambridge",
+      "where_ru": "Volac Park, Cambridge RUFC, Кембридж",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "National League 1 home match against Camborne.",
+      "blurb_ru": "Домашний матч National League 1 против Camborne.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1885"
+      ],
+      "title_en": "Cambridge United Women v Dartford FC Women",
+      "title_ru": "Cambridge United Women v Dartford FC Women",
+      "where_en": "Grange Road, Cambridge",
+      "where_ru": "Grange Road, Кембридж",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "FAWNL South East Division One home fixture for Cambridge United Women.",
+      "blurb_ru": "Домашний матч Cambridge United Women в FAWNL South East Division One.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1895"
+      ],
+      "title_en": "Peterborough Phantoms v Solway IHC",
+      "title_ru": "Peterborough Phantoms v Solway IHC",
+      "where_en": "Planet Ice Peterborough, Peterborough",
+      "where_ru": "Planet Ice Peterborough, Питерборо",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "Ice hockey league match for Peterborough Phantoms.",
+      "blurb_ru": "Матч хоккейной лиги для Peterborough Phantoms.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1582"
+      ],
+      "title_en": "AEPG Great Eastern Run",
+      "title_ru": "AEPG Great Eastern Run",
+      "where_en": "Peterborough",
+      "where_ru": "Питерборо",
+      "price_en": "£19.90–£40",
+      "price_ru": "£19.90–£40",
+      "blurb_en": "A flat half marathon and 5K through Peterborough — registration still open.",
+      "blurb_ru": "Равнинный полумарафон и забег на 5 км по Питерборо — регистрация ещё открыта.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1581"
+      ],
+      "title_en": "Grafham Water Trail Races",
+      "title_ru": "Grafham Water Trail Races",
+      "where_en": "Grafham Water, Huntingdon",
+      "where_ru": "Grafham Water, Хантингдон",
+      "price_en": "£26.74–£32.04",
+      "price_ru": "£26.74–£32.04",
+      "blurb_en": "A new 10K and half marathon trail challenge around the reservoir.",
+      "blurb_ru": "Новый трейловый забег на 10 км и полумарафон вокруг водохранилища.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E1593"
+      ],
+      "title_en": "Phoenix: Cambridgeshire – KiSS Charity Run",
+      "title_ru": "Phoenix: Cambridgeshire – KiSS Charity Run",
+      "where_en": "St Neots",
+      "where_ru": "Сент-Нитс",
+      "price_en": "£22–£39.95",
+      "price_ru": "£22–£39.95",
+      "blurb_en": "A timed charity run in St Neots in aid of the charity KiSS.",
+      "blurb_ru": "Хронометрируемый благотворительный забег в Сент-Нитсе в поддержку благотворительной организации KiSS.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "out_of_town",
+    "items": [
+     {
+      "ids": [
+       "E502"
+      ],
+      "title_en": "Martin Kemp",
+      "title_ru": "Martin Kemp",
+      "where_en": "The Apex, Bury St Edmunds",
+      "where_ru": "The Apex, Бери-Сент-Эдмундс",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "Spandau Ballet bassist and TV personality Martin Kemp, now also DJing 80s classics.",
+      "blurb_ru": "Басист Spandau Ballet и телеведущий Martin Kemp, сегодня также диджеящий классику 80-х.",
+      "knowledge_en": [
+       "Martin Kemp was the bassist of Spandau Ballet"
+      ],
+      "knowledge_ru": [
+       "Martin Kemp — басист группы Spandau Ballet"
+      ]
+     },
+     {
+      "ids": [
+       "E2342"
+      ],
+      "title_en": "Leo Sayer",
+      "title_ru": "Leo Sayer",
+      "where_en": "King's Lynn Corn Exchange, King's Lynn",
+      "where_ru": "King's Lynn Corn Exchange, Кингс-Линн",
+      "price_en": "£51.15",
+      "price_ru": "£51.15",
+      "blurb_en": "70s pop singer Leo Sayer in concert.",
+      "blurb_ru": "Поп-певец 1970-х Leo Sayer с концертом.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E2343"
+      ],
+      "title_en": "Kevin 'Bloody' Wilson",
+      "title_ru": "Kevin 'Bloody' Wilson",
+      "where_en": "King's Lynn Corn Exchange, King's Lynn",
+      "where_ru": "King's Lynn Corn Exchange, Кингс-Линн",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "Australian comedian Kevin Bloody Wilson's unfiltered stand-up, after 40-plus years on the road.",
+      "blurb_ru": "Нефильтрованный стендап австралийского комика Kevin Bloody Wilson, который гастролирует уже более 40 лет.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "E2346"
+      ],
+      "title_en": "The Shires",
+      "title_ru": "The Shires",
+      "where_en": "St Nicholas Chapel, King's Lynn",
+      "where_ru": "St Nicholas Chapel, Кингс-Линн",
+      "price_en": "£46.54",
+      "price_ru": "£46.54",
+      "blurb_en": "UK country duo The Shires, on a rescheduled date.",
+      "blurb_ru": "Британский кантри-дуэт The Shires, перенесённая дата концерта.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "new_announcements",
+    "items": [
+     {
+      "ids": [
+       "A133"
+      ],
+      "title_en": "Mill Road Winter Fair 2026",
+      "title_ru": "Mill Road Winter Fair 2026",
+      "where_en": "Mill Road, Cambridge",
+      "where_ru": "Mill Road, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "Cambridge's best-loved winter street fair is confirmed for Saturday 5 December, 10.30am–4.30pm.",
+      "blurb_ru": "Любимая кембриджская зимняя уличная ярмарка подтверждена на субботу 5 декабря, с 10:30 до 16:30.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "A103"
+      ],
+      "title_en": "Fireworks Night on Midsummer Common",
+      "title_ru": "Fireworks Night on Midsummer Common",
+      "where_en": "Midsummer Common, Cambridge",
+      "where_ru": "Midsummer Common, Кембридж",
+      "price_en": "free",
+      "price_ru": "бесплатно",
+      "blurb_en": "One of Cambridge's longest-running free traditions returns on 5 November, with an award-winning fireworks display, food and entertainment.",
+      "blurb_ru": "Одна из старейших бесплатных кембриджских традиций возвращается 5 ноября — фейерверк от отмеченной наградами компании, еда и развлечения.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "A909",
+       "T6",
+       "T8"
+      ],
+      "title_en": "Olly Murs at Newmarket Nights",
+      "title_ru": "Olly Murs at Newmarket Nights",
+      "where_en": "July Course, Newmarket",
+      "where_ru": "July Course, Ньюмаркет",
+      "price_en": "from £45",
+      "price_ru": "от £45",
+      "blurb_en": "Pop singer Olly Murs headlines Newmarket's open-air Newmarket Nights series next June, combining live music with evening racing; tickets go on sale 2 October.",
+      "blurb_ru": "Поп-певец Olly Murs станет хедлайнером летней серии концертов Newmarket Nights на ипподроме в июне будущего года — живая музыка вместе с вечерними скачками; билеты поступают в продажу 2 октября.",
+      "knowledge_en": [
+       "Olly Murs was runner-up on The X Factor in 2009"
+      ],
+      "knowledge_ru": [
+       "Olly Murs занял второе место на шоу The X Factor в 2009 году"
+      ]
+     },
+     {
+      "ids": [
+       "A910",
+       "T4"
+      ],
+      "title_en": "Simply Red at Newmarket Nights",
+      "title_ru": "Simply Red at Newmarket Nights",
+      "where_en": "July Course, Newmarket",
+      "where_ru": "July Course, Ньюмаркет",
+      "price_en": "from £45",
+      "price_ru": "от £45",
+      "blurb_en": "Simply Red, fronted by Mick Hucknall, play Newmarket Nights next August as part of their Summer Funk '27 tour.",
+      "blurb_ru": "Simply Red во главе с Mick Hucknall выступят на Newmarket Nights в августе будущего года в рамках тура Summer Funk '27.",
+      "knowledge_en": [
+       "Simply Red are a British band fronted by Mick Hucknall, known for hits including Holding Back the Years"
+      ],
+      "knowledge_ru": [
+       "Simply Red — британская группа во главе с Mick Hucknall, известная хитами вроде Holding Back the Years"
+      ]
+     },
+     {
+      "ids": [
+       "A424"
+      ],
+      "title_en": "Whittlesea Straw Bear Festival",
+      "title_ru": "Whittlesea Straw Bear Festival",
+      "where_en": "Whittlesey",
+      "where_ru": "Уиттлси",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "Dates confirmed for January's Straw Bear Festival: a man dressed head to toe in straw dances through the streets with folk musicians, ending with the burning of the bear — a Plough Monday custom revived in 1980.",
+      "blurb_ru": "Подтверждены даты январского фестиваля «Соломенного медведя»: человек в костюме из соломы с ног до головы танцует по улицам в сопровождении фолк-музыкантов, завершается всё сожжением чучела медведя — обычай Plough Monday, возрождённый в 1980 году.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "tickets",
+    "items": [
+     {
+      "ids": [
+       "T-p38"
+      ],
+      "title_en": "Alison Moyet",
+      "title_ru": "Alison Moyet",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "£38.50–£71.50",
+      "price_ru": "£38.50–£71.50",
+      "blurb_en": "Alison Moyet plays her Yazoo catalogue and solo electronica tracks; the venue page shows few tickets left.",
+      "blurb_ru": "Alison Moyet исполняет песни из каталога Yazoo и свои сольные электронные треки; на странице площадки — мало оставшихся билетов.",
+      "knowledge_en": [
+       "Alison Moyet was one half of the duo Yazoo"
+      ],
+      "knowledge_ru": [
+       "Alison Moyet была участницей дуэта Yazoo"
+      ]
+     },
+     {
+      "ids": [
+       "T-p889"
+      ],
+      "title_en": "Susan Tomes, piano",
+      "title_ru": "Susan Tomes, piano",
+      "where_en": "Kettle's Yard, Cambridge",
+      "where_ru": "Kettle's Yard, Кембридж",
+      "price_en": "£25 (£5 students)",
+      "price_ru": "£25 (£5 для студентов)",
+      "blurb_en": "A chamber concert in the Kettle's Yard house with pianist Susan Tomes; the page shows limited availability.",
+      "blurb_ru": "Камерный концерт в доме Kettle's Yard с пианисткой Susan Tomes; на странице указана ограниченная доступность мест.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "T-p1428"
+      ],
+      "title_en": "An Audience With Philippa Gregory",
+      "title_ru": "An Audience With Philippa Gregory",
+      "where_en": "Theatre Royal, Bury St Edmunds",
+      "where_ru": "Theatre Royal, Бери-Сент-Эдмундс",
+      "price_en": "£12–£39",
+      "price_ru": "£12–£39",
+      "blurb_en": "Novelist Philippa Gregory discusses her new novel Royal Witch; the venue page shows only a few tickets left.",
+      "blurb_ru": "Писательница Philippa Gregory рассказывает о новом романе Royal Witch; на странице площадки указано, что осталось мало билетов.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "cancelled",
+    "items": [
+     {
+      "ids": [
+       "C371"
+      ],
+      "title_en": "THE SCAPEGOAT – The Brilliant Brief Life of the Duke of Buckingham",
+      "title_ru": "THE SCAPEGOAT – The Brilliant Brief Life of the Duke of Buckingham",
+      "where_en": "National Horseracing Museum, Newmarket",
+      "where_ru": "National Horseracing Museum, Ньюмаркет",
+      "price_en": "£30",
+      "price_ru": "£30",
+      "blurb_en": "Talk by Lucy Hughes-Hallett, 14 October — cancelled.",
+      "blurb_ru": "Лекция Lucy Hughes-Hallett, 14 октября — отменена.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "C53"
+      ],
+      "title_en": "Mike Bubbins",
+      "title_ru": "Mike Bubbins",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "Stand-up show, 24 October — cancelled.",
+      "blurb_ru": "Стендап-шоу, 24 октября — отменено.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "C70"
+      ],
+      "title_en": "Chris Hadfield: Navigating the New Space Age",
+      "title_ru": "Chris Hadfield: Navigating the New Space Age",
+      "where_en": "Cambridge Corn Exchange, Cambridge",
+      "where_ru": "Cambridge Corn Exchange, Кембридж",
+      "price_en": "prices on the website",
+      "price_ru": "цены на сайте",
+      "blurb_en": "Talk by astronaut Chris Hadfield, 14 November — cancelled.",
+      "blurb_ru": "Лекция астронавта Chris Hadfield, 14 ноября — отменена.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": []
+   },
+   {
+    "rubric": "new_in_town",
+    "items": [
+     {
+      "ids": [
+       "V72",
+       "V76",
+       "V94"
+      ],
+      "title_en": "UNIQLO",
+      "title_ru": "UNIQLO",
+      "where_en": "St Andrew's Street, Grand Arcade, Cambridge",
+      "where_ru": "St Andrew's Street, Grand Arcade, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Opened — the Japanese clothing retailer's first Cambridge shop, across two floors of the Grand Arcade, with a mural by a Cambridge artist and a capsule collection made with the University.",
+      "blurb_ru": "Открылся — первый кембриджский магазин японского бренда одежды UNIQLO на двух этажах Grand Arcade, с настенной росписью кембриджского художника и капсульной коллекцией, созданной совместно с университетом.",
+      "knowledge_en": [
+       "UNIQLO is a Japanese clothing retailer"
+      ],
+      "knowledge_ru": [
+       "UNIQLO — японский бренд одежды"
+      ]
+     },
+     {
+      "ids": [
+       "V61"
+      ],
+      "title_en": "Catte Latte",
+      "title_ru": "Catte Latte",
+      "where_en": "Mill Road, Cambridge",
+      "where_ru": "Mill Road, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Opened — Cambridge's first cat café; entry (£14.49 weekdays, £17.99 weekends for an hour) must be booked online, with drinks and snacks extra.",
+      "blurb_ru": "Открылось — первое в Кембридже кафе с кошками; вход (£14,49 в будни, £17,99 в выходные за час) нужно бронировать онлайн, напитки и угощения — отдельно.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "V56"
+      ],
+      "title_en": "Carmen's Pizza",
+      "title_ru": "Carmen's Pizza",
+      "where_en": "The Blue Moon, Norfolk Street, Cambridge",
+      "where_ru": "The Blue Moon, Norfolk Street, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Opened — a new pizzeria inside The Blue Moon pub, run by the former manager of the Oscar's Lockdown Pizza it replaces, keeping the same dough recipe but adding Latin American and Mediterranean touches.",
+      "blurb_ru": "Открылась — новая пиццерия в пабе The Blue Moon, которой управляет бывший менеджер закрывшейся Oscar's Lockdown Pizza: рецепт теста сохранён, но добавлены латиноамериканские и средиземноморские нотки.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "V59"
+      ],
+      "title_en": "Tripots",
+      "title_ru": "Tripots",
+      "where_en": "Quayside, Cambridge",
+      "where_ru": "Quayside, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Opened — a hot-pot restaurant with a pot built into every table, diners choosing their own ingredients, in a bright, modern space with river views.",
+      "blurb_ru": "Открылся — ресторан хот-пот с котелком, встроенным в каждый стол: посетители сами выбирают ингредиенты, интерьер современный и светлый, с видом на реку.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "V84"
+      ],
+      "title_en": "Arbury Social",
+      "title_ru": "Arbury Social",
+      "where_en": "Meadows Community Centre, Arbury Road, Cambridge",
+      "where_ru": "Meadows Community Centre, Arbury Road, Кембридж",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Opened — a community café run by Cambridge Sustainable Food, cooking from scratch with seasonal, surplus and locally sourced ingredients on a not-for-profit basis.",
+      "blurb_ru": "Открылось — некоммерческое общественное кафе Cambridge Sustainable Food, готовящее с нуля из сезонных, излишних и местных продуктов.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     },
+     {
+      "ids": [
+       "V60"
+      ],
+      "title_en": "Ephesus Turkish Restaurant",
+      "title_ru": "Ephesus Turkish Restaurant",
+      "where_en": "Saffron Walden",
+      "where_ru": "Саффрон-Уолден",
+      "price_en": "",
+      "price_ru": "",
+      "blurb_en": "Opened — a Turkish restaurant with its own brewery, butchery and charcoal grill, with a courtyard decorated in blue tiles.",
+      "blurb_ru": "Открылся — турецкий ресторан с собственной пивоварней, мясной лавкой и угольным грилем, во дворе — оформление из голубой плитки.",
+      "knowledge_en": [],
+      "knowledge_ru": []
+     }
+    ],
+    "passed_over": [
+     {
+      "id": "V85",
+      "reason_en": "still only a coming-soon sign-up page, no confirmed opening date",
+      "reason_ru": "пока только страница предзаписи, дата открытия не подтверждена"
+     }
+    ]
+   }
+  ],
+  "editor_notes_en": [
+   "Syd Barrett was born 6 January 1946 — his 80th birthday fell in January 2026, not this month; theme copy deliberately avoids saying 'this month' and uses 'this year' / 'the anniversary week' instead.",
+   "E39 and T2 are the same Tribute to Syd Barrett concert; used E39 only.",
+   "E438 and E439 are one occasion (director talk + film screening, same evening) — merged into one theme item per the editor note in the data.",
+   "E42 and E244 are the same Alice Cooper event (book tour vs 'in conversation' framing); merged, placed in talks since it's a discussion/Q&A rather than a performance.",
+   "A909/T6/T8 are the same Olly Murs announcement; A910/T4 the same Simply Red announcement — each merged to one item.",
+   "E1583/E1652 and E1594/E1661 are duplicate listings of the same King's College Chapel organ recitals (CMP site vs choir site) — only one id pair used per recital in the combined free item.",
+   "The library regular-session candidates (E1356–E1367) were combined into one 'Regular sessions in libraries' item per the rules.",
+   "No county item met the importance-5 threshold once the participant races were moved to sport, so the county rubric is omitted this issue."
+  ],
+  "editor_notes_ru": [
+   "Сид Барретт родился 6 января 1946 года — 80-летие пришлось на январь 2026-го, а не на этот месяц; в тексте темы сознательно избегается «в этом месяце», используется «в этом году» / «юбилейная неделя».",
+   "E39 и T2 — один и тот же концерт A Tribute to Syd Barrett; использован только E39.",
+   "E438 и E439 — один повод (встреча с режиссёром + показ фильма в тот же вечер), объединены в один пункт темы согласно примечанию в данных.",
+   "E42 и E244 — одно и то же событие с Alice Cooper (книжный тур vs формат «беседы»); объединены и помещены в раздел «лекции», так как это скорее разговор/вопросы-ответы, а не выступление.",
+   "A909/T6/T8 — одно и то же анонс о Olly Murs; A910/T4 — то же о Simply Red; каждая пара объединена в один пункт.",
+   "E1583/E1652 и E1594/E1661 — дублирующие записи одних и тех же органных концертов в King's College Chapel (сайт CMP и сайт хора) — использована одна пара id на концерт в объединённом пункте бесплатных событий.",
+   "Регулярные библиотечные занятия (E1356–E1367) объединены в один пункт «Regular sessions in libraries» согласно правилам.",
+   "Ни один кандидат по зоне «дальше часа» не набрал нужной важности 5+ после того, как забеги-участия были перенесены в раздел «спорт», поэтому рубрика county в этом выпуске отсутствует."
+  ],
+  "theme_title_en": "Cambridge toasts Syd Barrett",
+  "theme_title_ru": "Кембридж вспоминает Сида Барретта",
+  "theme_intro_en": "This week the city marks the year of what would have been Syd Barrett's 80th birthday — the Pink Floyd founder was born here and gave his last live performance here — with a tribute concert, talks, an exhibition and one unexpected football connection.",
+  "theme_intro_ru": "На этой неделе город отмечает год, в который основателю Pink Floyd Сиду Барретту, родившемуся и давшему своё последнее концертное выступление в Кембридже, исполнилось бы 80 лет: трибьют-концерт, лекции, выставка — и одна неожиданная футбольная связь."
+ },
+ "usage": {
+  "input_tokens": 243840,
+  "output_tokens": 50405,
+  "cost_usd": 2.6440180000000004
+ },
+ "result_post": {
+  "result": {
+   "intro_en": "Two weeks dominated by one anniversary: Cambridge marks what would have been Syd Barrett's 80th year with a tribute concert, talks and an exhibition, while the Corn Exchange keeps the big names coming with Alison Moyet, Nish Kumar and The Beat.",
+   "intro_ru": "Эти две недели в Кембридже проходят под знаком одной даты: город отмечает 80-летие со дня рождения Сида Барретта — трибьют-концертом, лекциями и выставкой, а Corn Exchange продолжает принимать звёзд: Alison Moyet, Nish Kumar и The Beat.",
+   "sections": [
+    {
+     "rubric": "theme",
+     "items": [
+      {
+       "ids": [
+        "E39"
+       ],
+       "title_en": "A Tribute to Syd Barrett: Official 80th Anniversary Celebrations",
+       "title_ru": "A Tribute to Syd Barrett: Official 80th Anniversary Celebrations",
+       "where_en": "Cambridge Corn Exchange, Cambridge",
+       "where_ru": "Cambridge Corn Exchange, Кембридж",
+       "price_en": "£55–£132",
+       "price_ru": "£55–£132",
+       "blurb_en": "A concert marking the year of what would have been Syd Barrett's 80th birthday, in the city where the Pink Floyd founder was born and where he gave his last live performance. Kula Shaker and Soft Machine are among the acts performing his songs, with a light show by The Mad Alchemist.",
+       "blurb_ru": "Концерт в честь года, когда основателю Pink Floyd Сиду Барретту исполнилось бы 80 лет — в городе, где он родился и дал своё последнее концертное выступление. Среди исполнителей его песен — Kula Shaker и Soft Machine, световое шоу готовит The Mad Alchemist.",
+       "knowledge_en": [
+        "Syd Barrett was a founding member and early songwriter of Pink Floyd",
+        "Kula Shaker are a British rock band",
+        "Soft Machine are a band associated with the Canterbury progressive-rock scene",
+        "check (born, last): A concert marking the year of what would have been Syd Barrett's 80th birthday, in the city where the Pink Floyd founder was born and where he gave his last live performance.",
+        "check (born, last): This week the city marks the year of what would have been Syd Barrett's 80th birthday — the Pink Floyd founder was born here and gave his last live performance here — with a tribute concert, talks, an exhibition and one unexpected football connection.",
+        "source check (not_in_source): Барретт родился в этом городе"
+       ],
+       "knowledge_ru": [
+        "Syd Barrett был одним из основателей и первым автором песен Pink Floyd",
+        "Kula Shaker — британская рок-группа",
+        "Soft Machine — группа, связанная с кентерберийской прогрессив-рок-сценой",
+        "проверка (исполнилось бы, последнее): Концерт в честь года, когда основателю Pink Floyd Сиду Барретту исполнилось бы 80 лет — в городе, где он родился и дал своё последнее концертное выступление.",
+        "проверка (последнее, исполнилось бы): На этой неделе город отмечает год, в который основателю Pink Floyd Сиду Барретту, родившемуся и давшему своё последнее концертное выступление в Кембридже, исполнилось бы 80 лет: трибьют-концерт, лекции, выставка — и одна неожиданная футбольная связь.",
+        "сверка (нет в источнике): Барретт родился в этом городе"
+       ]
+      },
+      {
+       "ids": [
+        "E435"
+       ],
+       "title_en": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+       "title_ru": "Syd Barrett Exhibition: Life, Art and Cultural Impact",
+       "where_en": "Openspace, Cambridge",
+       "where_ru": "Openspace, Кембридж",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Paintings, sketches and work by contemporary artists tracing Barrett's visual art and its influence, running through the anniversary week.",
+       "blurb_ru": "Картины, эскизы и работы современных художников, прослеживающие визуальное творчество Барретта и его влияние — выставка идёт всю юбилейную неделю.",
+       "knowledge_en": [
+        "source check (not_in_source): Выставка идёт всю юбилейную неделю"
+       ],
+       "knowledge_ru": [
+        "проверка (юбилейную): Картины, эскизы и работы современных художников, прослеживающие визуальное творчество Барретта и его влияние — выставка идёт всю юбилейную неделю.",
+        "сверка (нет в источнике): Выставка идёт всю юбилейную неделю"
+       ]
+      },
+      {
+       "ids": [
+        "E437"
+       ],
+       "title_en": "Talk by Rob Chapman: Syd Barrett — A Very Irregular Head",
+       "title_ru": "Talk by Rob Chapman: Syd Barrett — A Very Irregular Head",
+       "where_en": "Openspace, Cambridge",
+       "where_ru": "Openspace, Кембридж",
+       "price_en": "£10",
+       "price_ru": "£10",
+       "blurb_en": "Barrett's biographer Rob Chapman, author of A Very Irregular Head, talks about his career.",
+       "blurb_ru": "Биограф Сида Барретта Rob Chapman, автор книги A Very Irregular Head, рассказывает о его творческом пути.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E438",
+        "E439"
+       ],
+       "title_en": "Have You Got It Yet?: meet the director + film screening",
+       "title_ru": "Have You Got It Yet?: meet the director + film screening",
+       "where_en": "Openspace / Arts Picturehouse, Cambridge",
+       "where_ru": "Openspace / Arts Picturehouse, Кембридж",
+       "price_en": "£10 (talk); cinema price on booking",
+       "price_ru": "£10 (встреча); цена билета в кино на сайте",
+       "blurb_en": "Director Roddy Bogawa talks about making his Barrett documentary and shows unseen outtakes (5pm, Openspace), followed the same evening by a screening of the finished film, Have You Got It Yet? The Story of Syd Barrett and Pink Floyd (8.30pm, Arts Picturehouse).",
+       "blurb_ru": "Режиссёр Director Roddy Bogawa рассказывает о работе над своим документальным фильмом о Барретте и показывает неизданные дубли (17:00, Openspace), а тем же вечером в Arts Picturehouse — показ готового фильма Have You Got It Yet? The Story of Syd Barrett and Pink Floyd (20:30).",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E111"
+       ],
+       "title_en": "Cambridge United v Blackpool",
+       "title_ru": "Cambridge United v Blackpool",
+       "where_en": "Abbey Stadium, Cambridge",
+       "where_ru": "Abbey Stadium, Кембридж",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "An ordinary League One fixture with an unexpected link to the week's theme: according to Barrett's sister Rosemary Breen, Cambridge United are playing Blackpool on this day with proceeds going to mental health charities.",
+       "blurb_ru": "Обычный матч League One с неожиданной связью с темой недели: по словам сестры Барретта, Rosemary Breen, в этот день Cambridge United играют с Blackpool, и выручка идёт на благотворительность в поддержку психического здоровья.",
+       "knowledge_en": [
+        "source check (not_in_source): Матч Cambridge United - Blackpool - обычный матч Лиги One"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): Матч Cambridge United - Blackpool - обычный матч Лиги One"
+       ]
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "weekend_1",
+     "items": [
+      {
+       "ids": [
+        "E41"
+       ],
+       "title_en": "Roachford + Hue and Cry",
+       "title_ru": "Roachford + Hue and Cry",
+       "where_en": "Cambridge Corn Exchange, Cambridge",
+       "where_ru": "Cambridge Corn Exchange, Кембридж",
+       "price_en": "£38–£113",
+       "price_ru": "£38–£113",
+       "blurb_en": "Catch two 80s legends on one stage as Roachford and Hue and Cry team up for a co-headline night at the Corn Exchange, each bringing their own full band for a complete set. Expect the soulful hooks Roachford is known for alongside Hue and Cry's synth-pop classics from Patrick and Gregory Kane.",
+       "blurb_ru": "Два хедлайнера 80-х на одной сцене: Roachford и Hue and Cry выступят с совместным концертом в Corn Exchange, каждый — с полным составом своей группы. Ждите соул-хиты Roachford и синти-поп классику братьев Patrick и Gregory Kane из Hue and Cry.",
+       "knowledge_en": [
+        "Hue and Cry are a Scottish pop duo formed by brothers Pat and Greg Kane",
+        "Roachford is a British soul singer known for the hit Cuddly Toy",
+        "Hue and Cry is a Scottish duo formed in 1984 by brothers Patrick and Gregory Kane, known for the hit 'Labour of Love'.",
+        "Roachford is a British soul singer best known for his 1988 hit 'Cuddly Toy'.",
+        "source check (not_in_source): Hue and Cry — синти-поп группа"
+       ],
+       "knowledge_ru": [
+        "Hue and Cry — шотландский поп-дуэт братьев Pat и Greg Kane",
+        "Roachford — британский соул-исполнитель, известный хитом Cuddly Toy",
+        "Hue and Cry — шотландский дуэт, основанный в 1984 году братьями Patrick и Gregory Kane, известный хитом 'Labour of Love'.",
+        "Roachford — британский соул-исполнитель, прославившийся хитом 'Cuddly Toy' 1988 года.",
+        "сверка (нет в источнике): Hue and Cry — синти-поп группа"
+       ]
+      },
+      {
+       "ids": [
+        "E819"
+       ],
+       "title_en": "Shine with Jess Gillam and her Band",
+       "title_ru": "Shine with Jess Gillam and her Band",
+       "where_en": "Saffron Hall, Saffron Walden",
+       "where_ru": "Saffron Hall, Саффрон-Уолден",
+       "price_en": "from £20",
+       "price_ru": "от £20",
+       "blurb_en": "Saxophonist Jess Gillam brings her electrifying programme Shine, spanning 900 years of music.",
+       "blurb_ru": "Саксофонистка Jess Gillam привозит свою программу Shine, охватывающую 900 лет музыки.",
+       "knowledge_en": [
+        "Jess Gillam is an award-winning British saxophonist and broadcaster"
+       ],
+       "knowledge_ru": [
+        "Jess Gillam — отмеченная наградами британская саксофонистка и телеведущая"
+       ]
+      },
+      {
+       "ids": [
+        "E3"
+       ],
+       "title_en": "Footlights Tour Show 2026: Prize Cow (for my best son)",
+       "title_ru": "Footlights Tour Show 2026: Prize Cow (for my best son)",
+       "where_en": "ADC Theatre, Cambridge",
+       "where_ru": "ADC Theatre, Кембридж",
+       "price_en": "£7.50–£12",
+       "price_ru": "£7.50–£12",
+       "blurb_en": "The home run of the Cambridge Footlights' 2026 tour show, an hour of student sketch comedy.",
+       "blurb_ru": "Финальные показы тур-шоу Cambridge Footlights 2026 года — час студенческих скетчей.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ],
+     "passed_over": [
+      {
+       "id": "E197",
+       "reason_en": "racing festival, below the weekend threshold once stronger items were chosen",
+       "reason_ru": "скачки, ниже порога для «выходных» при наличии более сильных пунктов"
+      },
+      {
+       "id": "E818",
+       "reason_en": "choral concert, lower importance than items chosen",
+       "reason_ru": "хоровой концерт, важность ниже отобранных пунктов"
+      }
+     ]
+    },
+    {
+     "rubric": "weekend_2",
+     "items": [
+      {
+       "ids": [
+        "E46"
+       ],
+       "title_en": "Nish Kumar: Angry Humour From a Really Nice Guy",
+       "title_ru": "Nish Kumar: Angry Humour From a Really Nice Guy",
+       "where_en": "Cambridge Corn Exchange, Cambridge",
+       "where_ru": "Cambridge Corn Exchange, Кембридж",
+       "price_en": "£28",
+       "price_ru": "£28",
+       "blurb_en": "Nish Kumar brings a fresh hour of political comedy to the Corn Exchange, taking sharp aim at inequality, autocracy and the general mess of modern politics. It's billed as angry, but don't expect him to lose his famously nice-guy charm.",
+       "blurb_ru": "Nish Kumar привозит в Corn Exchange новый час политического юмора, метко проходясь по неравенству, автократии и общему хаосу современной политики. Шоу обещают злым, но фирменное обаяние «хорошего парня» никуда не денется.",
+       "knowledge_en": [
+        "Nish Kumar is a British stand-up comedian, formerly host of The Mash Report",
+        "Nish Kumar is a British comedian known for hosting 'The Mash Report' and frequent appearances on 'Mock the Week'."
+       ],
+       "knowledge_ru": [
+        "Nish Kumar — британский стендап-комик, бывший ведущий The Mash Report",
+        "Nish Kumar — британский комик, известный как ведущий 'The Mash Report' и частый участник 'Mock the Week'."
+       ]
+      },
+      {
+       "ids": [
+        "E47"
+       ],
+       "title_en": "The bEAT: Dance Crazed Too UK Tour",
+       "title_ru": "The bEAT: Dance Crazed Too UK Tour",
+       "where_en": "Cambridge Corn Exchange, Cambridge",
+       "where_ru": "Cambridge Corn Exchange, Кембридж",
+       "price_en": "£43",
+       "price_ru": "£43",
+       "blurb_en": "Legendary 2-Tone band The Beat, led by Dave Wakeling, play the hits — Mirror in the Bathroom, Save It for Later and more.",
+       "blurb_ru": "Легендарная 2-tone группа The Beat во главе с Dave Wakeling играет свои хиты — Mirror in the Bathroom, Save It for Later и другие.",
+       "knowledge_en": [
+        "2-Tone is a British music genre blending ska, punk and pop that emerged in the late 1970s"
+       ],
+       "knowledge_ru": [
+        "2-Tone — британский музыкальный жанр, соединивший ска, панк и поп, возникший в конце 1970-х"
+       ]
+      },
+      {
+       "ids": [
+        "E1591"
+       ],
+       "title_en": "WCB Comedy: Hal Cruttenden, Reginald D Hunter and Dan Antopolski",
+       "title_ru": "WCB Comedy: Hal Cruttenden, Reginald D Hunter and Dan Antopolski",
+       "where_en": "The Great Hall at The Leys, Cambridge",
+       "where_ru": "The Great Hall at The Leys, Кембридж",
+       "price_en": "from £26",
+       "price_ru": "от £26",
+       "blurb_en": "A strong stand-up line-up for one night: Hal Cruttenden, Reginald D Hunter and Dan Antopolski.",
+       "blurb_ru": "Сильная стендап-афиша на один вечер: Hal Cruttenden, Reginald D Hunter и Dan Antopolski.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ],
+     "passed_over": [
+      {
+       "id": "E1428",
+       "reason_en": "moved to tickets — the venue page flags few seats left",
+       "reason_ru": "перенесено в раздел «билеты» — на странице указано мало оставшихся мест"
+      }
+     ]
+    },
+    {
+     "rubric": "weekdays",
+     "items": [
+      {
+       "ids": [
+        "E37"
+       ],
+       "title_en": "Simon Amstell: I Love It Here",
+       "title_ru": "Simon Amstell: I Love It Here",
+       "where_en": "Cambridge Corn Exchange, Cambridge",
+       "where_ru": "Cambridge Corn Exchange, Кембридж",
+       "price_en": "£23–£30",
+       "price_ru": "£23–£30",
+       "blurb_en": "Fresh off a sold-out five-week run in London, Simon Amstell brings his new show I Love It Here to a short tour, promising something funnier and truer than his previous work. Expect his trademark blend of sharp observation and genuine warmth.",
+       "blurb_ru": "После аншлагового пятинедельного резидентства в Лондоне Simon Amstell привозит новое шоу I Love It Here в короткий тур, обещая нечто смешнее и честнее всего, что было раньше. Ждите фирменное сочетание острых наблюдений и неподдельной теплоты.",
+       "knowledge_en": [
+        "Simon Amstell is a British comedian and filmmaker, formerly host of Popworld and Never Mind the Buzzcocks",
+        "Simon Amstell is a British comedian and filmmaker, formerly a host of 'Never Mind the Buzzcocks'."
+       ],
+       "knowledge_ru": [
+        "Simon Amstell — британский комик и режиссёр, бывший ведущий Popworld и Never Mind the Buzzcocks",
+        "Simon Amstell — британский комик и режиссёр, в прошлом ведущий 'Never Mind the Buzzcocks'."
+       ]
+      },
+      {
+       "ids": [
+        "E1024"
+       ],
+       "title_en": "Transvision Vamp",
+       "title_ru": "Transvision Vamp",
+       "where_en": "Cambridge Junction, Cambridge",
+       "where_ru": "Cambridge Junction, Кембридж",
+       "price_en": "£37.50",
+       "price_ru": "£37.50",
+       "blurb_en": "Late-80s indie-rock band Transvision Vamp, fronted by Wendy James, on tour.",
+       "blurb_ru": "Инди-рок-группа конца 80-х Transvision Vamp во главе с Wendy James — на гастролях.",
+       "knowledge_en": [
+        "source check (not_in_source): Transvision Vamp — инди-рок-группа конца 80-х"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): Transvision Vamp — инди-рок-группа конца 80-х"
+       ]
+      },
+      {
+       "ids": [
+        "E7"
+       ],
+       "title_en": "Footlights ADC Smokers: Michaelmas 2026",
+       "title_ru": "Footlights ADC Smokers: Michaelmas 2026",
+       "where_en": "ADC Theatre, Cambridge",
+       "where_ru": "ADC Theatre, Кембридж",
+       "price_en": "£5–£7",
+       "price_ru": "£5–£7",
+       "blurb_en": "A variety night of student stand-up, sketch and song from Cambridge's best student comedy talent.",
+       "blurb_ru": "Разножанровый вечер студенческого стендапа, скетчей и песен от лучших комедийных талантов Кембриджа.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E44"
+       ],
+       "title_en": "Fin Taylor",
+       "title_ru": "Fin Taylor",
+       "where_en": "Cambridge Corn Exchange, Cambridge",
+       "where_ru": "Cambridge Corn Exchange, Кембридж",
+       "price_en": "£25.50–£30.50",
+       "price_ru": "£25.50–£30.50",
+       "blurb_en": "Stand-up from comedian and podcaster Fin Taylor.",
+       "blurb_ru": "Стендап-шоу комика и подкастера Fin Taylor.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ],
+     "passed_over": [
+      {
+       "id": "E1030",
+       "reason_en": "would have been a third Junction item, and venue cap is already reached",
+       "reason_ru": "стал бы третьим пунктом от Junction при уже заполненном лимите по площадке"
+      }
+     ]
+    },
+    {
+     "rubric": "cinema",
+     "items": [
+      {
+       "ids": [
+        "F1"
+       ],
+       "title_en": "The Uprising",
+       "title_ru": "The Uprising",
+       "where_en": "",
+       "where_ru": "",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Paul Greengrass directs this action period drama dramatising the 1381 Peasants' Revolt, with Jamie Bell and Cosmo Jarvis as its leaders Wat Tyler and John Ball, and Andrew Garfield, Thomasin McKenzie and Jonny Lee Miller among the cast.",
+       "blurb_ru": "Paul Greengrass снял этот экшн-драму о Крестьянском восстании 1381 года в Англии: Jamie Bell и Cosmo Jarvis играют его предводителей Wat Tyler и John Ball, в актёрском составе также Andrew Garfield, Thomasin McKenzie и Jonny Lee Miller.",
+       "knowledge_en": [
+        "Paul Greengrass is a British director known for the Bourne films and Captain Phillips",
+        "source check (distorted): Jamie Bell играет Wat Tyler",
+        "source check (distorted): Cosmo Jarvis играет John Ball"
+       ],
+       "knowledge_ru": [
+        "Paul Greengrass — британский режиссёр, известный по фильмам о Борне и Captain Phillips",
+        "сверка (искажено — в источнике: «with Bell and Jarvis portraying the revolt's main leaders, John Ball and Wat Tyler, respectively»): Jamie Bell играет Wat Tyler",
+        "сверка (искажено — в источнике: «with Bell and Jarvis portraying the revolt's main leaders, John Ball and Wat Tyler, respectively»): Cosmo Jarvis играет John Ball"
+       ]
+      },
+      {
+       "ids": [
+        "F2"
+       ],
+       "title_en": "Street Fighter",
+       "title_ru": "Street Fighter",
+       "where_en": "",
+       "where_ru": "",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Directed by Kitao Sakurai, this action comedy is the third live-action film based on Capcom's video game series.",
+       "blurb_ru": "Экшн-комедия режиссёра Kitao Sakurai — третий полнометражный игровой фильм по мотивам видеоигры Capcom.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "F3"
+       ],
+       "title_en": "Whalefall",
+       "title_ru": "Whalefall",
+       "where_en": "",
+       "where_ru": "",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Director Brian Duffield adapts Daniel Kraus's novel about a scuba diver who, searching for his father's remains, is swallowed alive by a sperm whale and has to find a way out. Elisabeth Shue co-stars.",
+       "blurb_ru": "Режиссёр Brian Duffield экранизирует роман Daniel Kraus о дайвере, который, разыскивая останки отца, оказывается заживо проглочен кашалотом и должен найти способ выбраться. В одной из ролей — Elisabeth Shue.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "F4"
+       ],
+       "title_en": "Forgotten Island",
+       "title_ru": "Forgotten Island",
+       "where_en": "",
+       "where_ru": "",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "A DreamWorks Animation fantasy comedy, set in 1990s Philippines, about two best friends drawn into the mystical world of Nakali from local folklore; voices include H.E.R., Liza Soberano and Jo Koy.",
+       "blurb_ru": "Анимационная фэнтези-комедия DreamWorks о двух лучших подругах, попадающих в мистический мир Накали из филиппинского фольклора; действие происходит на Филиппинах 1990-х, голоса озвучивают H.E.R., Liza Soberano и Jo Koy.",
+       "knowledge_en": [
+        "DreamWorks Animation is the studio behind Shrek and Kung Fu Panda"
+       ],
+       "knowledge_ru": [
+        "DreamWorks Animation — студия, создавшая Shrek и Kung Fu Panda"
+       ]
+      }
+     ],
+     "passed_over": [
+      {
+       "id": "F5",
+       "reason_en": "close in importance but cut to keep the main-films list to four",
+       "reason_ru": "близка по важности, но отсечена, чтобы оставить список главных фильмов из четырёх"
+      },
+      {
+       "id": "F6",
+       "reason_en": "close in importance but cut to keep the main-films list to four",
+       "reason_ru": "близка по важности, но отсечена, чтобы оставить список главных фильмов из четырёх"
+      }
+     ]
+    },
+    {
+     "rubric": "talks",
+     "items": [
+      {
+       "ids": [
+        "E1923"
+       ],
+       "title_en": "Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn",
+       "title_ru": "Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn",
+       "where_en": "St John's College, Cambridge",
+       "where_ru": "St John's College, Кембридж",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "An inaugural lecture on the ancient world's politics of disorder.",
+       "blurb_ru": "Инаугурационная лекция об устройстве власти и беспорядка в античном мире.",
+       "knowledge_en": [
+        "source check (not_in_source): Лекция об устройстве власти и беспорядка в античном мире"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): Лекция об устройстве власти и беспорядка в античном мире"
+       ]
+      },
+      {
+       "ids": [
+        "E370"
+       ],
+       "title_en": "In Conversation with Simon Woolley",
+       "title_ru": "In Conversation with Simon Woolley",
+       "where_en": "The Parish Church of All Saints', Harston",
+       "where_ru": "The Parish Church of All Saints', Харстон",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "A hosted conversation with Baron Simon Woolley over a glass of wine before the talk begins.",
+       "blurb_ru": "Беседа с бароном Simon Woolley, перед которой гостям предложат бокал вина.",
+       "knowledge_en": [
+        "Simon Woolley is a crossbench peer and founder of Operation Black Vote"
+       ],
+       "knowledge_ru": [
+        "Simon Woolley — независимый member Палаты лордов и основатель Operation Black Vote"
+       ]
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "exhibitions",
+     "items": [
+      {
+       "ids": [
+        "E447"
+       ],
+       "title_en": "Frank Bowling: Seeking the Sublime",
+       "title_ru": "Frank Bowling: Seeking the Sublime",
+       "where_en": "Fitzwilliam Museum, Cambridge",
+       "where_ru": "Fitzwilliam Museum, Кембридж",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "Nearly seven decades of work by British painter Frank Bowling, from figurative beginnings to his later abstractions.",
+       "blurb_ru": "Почти семь десятилетий творчества британского художника Frank Bowling — от фигуративных ранних работ до поздней абстракции.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E886"
+       ],
+       "title_en": "Sunil Gupta: Life with a Camera, 1970 – Now",
+       "title_ru": "Sunil Gupta: Life with a Camera, 1970 – Now",
+       "where_en": "Kettle's Yard, Cambridge",
+       "where_ru": "Kettle's Yard, Кембридж",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "A major survey of photographer Sunil Gupta's five decades of work.",
+       "blurb_ru": "Масштабный обзор пятидесятилетнего творчества фотографа Sunil Gupta.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "free",
+     "items": [
+      {
+       "ids": [
+        "E1583",
+        "E1594"
+       ],
+       "title_en": "Free Sunday organ recitals at King's College Chapel",
+       "title_ru": "Free Sunday organ recitals at King's College Chapel",
+       "where_en": "King's College Chapel, Cambridge",
+       "where_ru": "King's College Chapel, Кембридж",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "King's famous organ in recital by visiting organists — Paul Greally of Westminster Abbey on 11 October, David Newsholme of Canterbury Cathedral on 18 October.",
+       "blurb_ru": "Знаменитый орган King's College в исполнении приглашённых органистов: Paul Greally из Вестминстерского аббатства — 11 октября, David Newsholme из Кентерберийского собора — 18 октября.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E2415"
+       ],
+       "title_en": "Stranger Folk",
+       "title_ru": "Stranger Folk",
+       "where_en": "Wicken Fen (National Trust), Ely",
+       "where_ru": "Wicken Fen (National Trust), Эли",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "A free Halloween adventure game weaving British folklore into the fen landscape.",
+       "blurb_ru": "Бесплатная хеллоуинская игра-приключение, вплетающая британский фольклор в пейзаж фена.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1356",
+        "E1357",
+        "E1358",
+        "E1359",
+        "E1360",
+        "E1361",
+        "E1362",
+        "E1363",
+        "E1364",
+        "E1365",
+        "E1366",
+        "E1367"
+       ],
+       "title_en": "Regular sessions in libraries",
+       "title_ru": "Regular sessions in libraries",
+       "where_en": "Cambridge Central Library and branches, Cambridge",
+       "where_ru": "Cambridge Central Library и филиалы, Кембридж",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "Cambridgeshire libraries run a regular programme of free drop-ins this fortnight: Rhymetime and Storytime for babies and toddlers, Children's Craft and Lego Club, a Digital Drop-In, an Improve Your English group, Sunday Scribes writing group, a BSL meet-up and LGBTQIA+ social sessions.",
+       "blurb_ru": "Библиотеки Кембриджшира проводят регулярные бесплатные занятия на эти две недели: Rhymetime и Storytime для малышей, детский творческий клуб и Lego Club, занятия по цифровой грамотности, группа разговорного английского, группа письма Sunday Scribes, встречи для изучающих BSL и ЛГБТК-сообщества.",
+       "knowledge_en": [
+        "source check (not_in_source): Есть детский творческий клуб и Lego Club",
+        "source check (not_in_source): Есть занятия по цифровой грамотности",
+        "source check (not_in_source): Есть встречи для изучающих BSL"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): Есть детский творческий клуб и Lego Club",
+        "сверка (нет в источнике): Есть занятия по цифровой грамотности",
+        "сверка (нет в источнике): Есть встречи для изучающих BSL"
+       ]
+      },
+      {
+       "ids": [
+        "E918"
+       ],
+       "title_en": "poíēsis: an exhibition by Tom de Freston",
+       "title_ru": "poíēsis: an exhibition by Tom de Freston",
+       "where_en": "Museum of Classical Archaeology, Cambridge",
+       "where_ru": "Museum of Classical Archaeology, Кембридж",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "An exhibition by artist Tom de Freston taking its title from the ancient Greek word for the act of making something new, explored here as both an artistic method and a personal experience.",
+       "blurb_ru": "Выставка художника Tom de Freston, названная в честь древнегреческого слова, означающего акт создания нового, — здесь это одновременно художественный метод и личный опыт автора.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "kids",
+     "items": [
+      {
+       "ids": [
+        "E952"
+       ],
+       "title_en": "Apple Day 2026",
+       "title_ru": "Apple Day 2026",
+       "where_en": "Cambridge University Botanic Garden, Cambridge",
+       "where_ru": "Cambridge University Botanic Garden, Кембридж",
+       "price_en": "free with normal Garden admission",
+       "price_ru": "бесплатно при обычном входном билете в сад",
+       "blurb_en": "The region's biggest Apple Day, with activities for families celebrating the harvest.",
+       "blurb_ru": "Крупнейший в регионе праздник яблок с семейными активностями в честь урожая.",
+       "knowledge_en": [
+        "source check (not_in_source): На нём есть семейные активности в честь урожая"
+       ],
+       "knowledge_ru": [
+        "проверка (Крупнейший): Крупнейший в регионе праздник яблок с семейными активностями в честь урожая.",
+        "сверка (нет в источнике): На нём есть семейные активности в честь урожая"
+       ],
+       "url": "https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/"
+      },
+      {
+       "ids": [
+        "E1021"
+       ],
+       "title_en": "Dance In The Dark",
+       "title_ru": "Dance In The Dark",
+       "where_en": "Cambridge Junction, Cambridge",
+       "where_ru": "Cambridge Junction, Кембридж",
+       "price_en": "£15.50",
+       "price_ru": "£15.50",
+       "blurb_en": "A dance and music show for ages 3+ and families, with a giant sleepover den and pyjamas encouraged.",
+       "blurb_ru": "Танцевально-музыкальное шоу для детей от 3 лет и семей, с гигантским «спальным» шатром — приходить рекомендуют в пижамах.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1349"
+       ],
+       "title_en": "STEMtots – Marvellous Magnets",
+       "title_ru": "STEMtots – Marvellous Magnets",
+       "where_en": "Cambridge Science Centre, Cambridge",
+       "where_ru": "Cambridge Science Centre, Кембридж",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "A weekly relaxed science session for under-5s, this week exploring magnetic materials.",
+       "blurb_ru": "Еженедельное спокойное научно-техническое занятие для детей до 5 лет, на этот раз — про магнитные материалы.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "S:C:cambridgesouthhockeyclub.co.uk:194b9ebe"
+       ],
+       "line": true,
+       "auto": true,
+       "section_line": true,
+       "url": "https://cambridgesouthhockeyclub.co.uk/juniors/",
+       "kind_ru": null,
+       "kind_en": null,
+       "where_en": "",
+       "where_ru": "",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "title_en": "Cambridge South Hockey Club: Junior hockey, ages 13–14",
+       "meta_en": "Tue 18:15–19:30 · St Mary's & Homerton Sports Ground, Cambridge · £135 a season · free taster",
+       "title_ru": "Cambridge South Hockey Club: Хоккей на траве, 13–14 лет",
+       "meta_ru": "вт, 18:15–19:30 · St Mary's & Homerton Sports Ground, Кембридж · £135 за сезон · пробное занятие бесплатно"
+      },
+      {
+       "ids": [
+        "S:C:formationsdance.co.uk:0d2f91da"
+       ],
+       "line": true,
+       "auto": true,
+       "section_line": true,
+       "url": "https://formationsdance.co.uk",
+       "kind_ru": null,
+       "kind_en": null,
+       "where_en": "",
+       "where_ru": "",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "title_en": "Formations Dance Company: Musical theatre, all ages",
+       "meta_en": "Mon, Tue, Wed · Fen Ditton Hall, Cambridge; Exning Community Church Hall, Newmarket; Tuddenham St Mary Village Hall, Suffolk · £5.50–£7 per class · free taster",
+       "title_ru": "Formations Dance Company: Музыкальный театр, все возрасты",
+       "meta_ru": "пн, вт, ср · Fen Ditton Hall, Кембридж; Exning Community Church Hall, Ньюмаркет; Tuddenham St Mary Village Hall, Саффолк · £5,50–£7 за занятие · пробное занятие бесплатно"
+      },
+      {
+       "ids": [
+        "S:C:gkfit.co.uk:9577bf10"
+       ],
+       "line": true,
+       "auto": true,
+       "section_line": true,
+       "url": "https://gkfit.co.uk/daytime",
+       "kind_ru": null,
+       "kind_en": null,
+       "where_en": "",
+       "where_ru": "",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "title_en": "GK Fit: Multi-sports, ages 9–12",
+       "meta_en": "Mon 12:40–13:40 · Meadows Community Centre, Cambridge · £8.25 per session · free taster",
+       "title_ru": "GK Fit: Мультиспорт, 9–12 лет",
+       "meta_ru": "пн, 12:40–13:40 · Meadows Community Centre, Кембридж · £8,25 за занятие · пробное занятие бесплатно"
+      },
+      {
+       "ids": [
+        "S:C:papa.perse.co.uk:19df93e2"
+       ],
+       "line": true,
+       "auto": true,
+       "section_line": true,
+       "url": "https://papa.perse.co.uk/dance",
+       "kind_ru": null,
+       "kind_en": null,
+       "where_en": "",
+       "where_ru": "",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "title_en": "PAPA Perse: Tiny Dancers, Reception",
+       "meta_en": "Sat 10:00–10:30 · Perse Upper School Performing Arts Centre, Cambridge · £130 Autumn Term · free taster",
+       "title_ru": "PAPA Perse: Танцы для малышей, от 4 лет",
+       "meta_ru": "сб, 10:00–10:30 · Perse Upper School Performing Arts Centre, Кембридж · £130 осенний триместр · пробное занятие бесплатно"
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "sport",
+     "items": [
+      {
+       "ids": [
+        "E1615"
+       ],
+       "title_en": "Cambridge RUFC v Camborne",
+       "title_ru": "Cambridge RUFC v Camborne",
+       "where_en": "Volac Park, Cambridge RUFC, Cambridge",
+       "where_ru": "Volac Park, Cambridge RUFC, Кембридж",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "National League 1 home match against Camborne.",
+       "blurb_ru": "Домашний матч National League 1 против Camborne.",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "also": true
+      },
+      {
+       "ids": [
+        "E1885"
+       ],
+       "title_en": "Cambridge United Women v Dartford FC Women",
+       "title_ru": "Cambridge United Women v Dartford FC Women",
+       "where_en": "Grange Road, Cambridge",
+       "where_ru": "Grange Road, Кембридж",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "FAWNL South East Division One home fixture for Cambridge United Women.",
+       "blurb_ru": "Домашний матч Cambridge United Women в FAWNL South East Division One.",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "also": true
+      },
+      {
+       "ids": [
+        "E1895"
+       ],
+       "title_en": "Peterborough Phantoms v Solway IHC",
+       "title_ru": "Peterborough Phantoms v Solway IHC",
+       "where_en": "Planet Ice Peterborough, Peterborough",
+       "where_ru": "Planet Ice Peterborough, Питерборо",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Ice hockey league match for Peterborough Phantoms.",
+       "blurb_ru": "Матч хоккейной лиги для Peterborough Phantoms.",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "also": true
+      },
+      {
+       "ids": [
+        "E197"
+       ],
+       "also": true,
+       "auto": true,
+       "title_en": "Dubai Future Champions Festival — racing",
+       "title_ru": "Dubai Future Champions Festival — racing",
+       "where_en": "Newmarket",
+       "where_ru": "Newmarket",
+       "price_en": "£15",
+       "price_ru": "£15",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1894"
+       ],
+       "also": true,
+       "auto": true,
+       "title_en": "Peterborough Phantoms v Hull Seahawks",
+       "title_ru": "Peterborough Phantoms v Hull Seahawks",
+       "where_en": "Planet Ice Peterborough",
+       "where_ru": "Planet Ice Peterborough",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E468"
+       ],
+       "also": true,
+       "auto": true,
+       "title_en": "Peterborough United FC - Burton Albion FC",
+       "title_ru": "Peterborough United FC - Burton Albion FC",
+       "where_en": "London Road Stadium (Peterborough United)",
+       "where_ru": "London Road Stadium (Peterborough United)",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "B:K:cufcfoundation.com:b4cda6a6"
+       ],
+       "line": true,
+       "auto": true,
+       "adult_line": true,
+       "url": "https://www.cufcfoundation.com/adults/walking-football",
+       "title_en": "Walking Football",
+       "title_ru": "Walking Football",
+       "meta_en": "for beginners · Tuesday — Bar Hill Community Pitch; Thursday — Abbey Leisure Complex; Friday — Milton Community Centre · £3",
+       "meta_ru": "для начинающих · Tuesday — Bar Hill Community Pitch; Thursday — Abbey Leisure Complex; Friday — Milton Community Centre · £3",
+       "where_en": "",
+       "where_ru": "",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "out_of_town",
+     "items": [
+      {
+       "ids": [
+        "E502"
+       ],
+       "title_en": "Martin Kemp",
+       "title_ru": "Martin Kemp",
+       "where_en": "The Apex, Bury St Edmunds",
+       "where_ru": "The Apex, Бери-Сент-Эдмундс",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Spandau Ballet bassist and TV personality Martin Kemp, now also DJing 80s classics.",
+       "blurb_ru": "Басист Spandau Ballet и телеведущий Martin Kemp, сегодня также диджеящий классику 80-х.",
+       "knowledge_en": [
+        "Martin Kemp was the bassist of Spandau Ballet"
+       ],
+       "knowledge_ru": [
+        "Martin Kemp — басист группы Spandau Ballet"
+       ]
+      },
+      {
+       "ids": [
+        "E2342"
+       ],
+       "title_en": "Leo Sayer",
+       "title_ru": "Leo Sayer",
+       "where_en": "King's Lynn Corn Exchange, King's Lynn",
+       "where_ru": "King's Lynn Corn Exchange, Кингс-Линн",
+       "price_en": "£51.15",
+       "price_ru": "£51.15",
+       "blurb_en": "70s pop singer Leo Sayer in concert.",
+       "blurb_ru": "Поп-певец 1970-х Leo Sayer с концертом.",
+       "knowledge_en": [
+        "source check (not_in_source): Leo Sayer был поп-певцом 1970-х годов",
+        "source check (not_in_source): Leo Sayer — поп-певец 1970-х годов"
+       ],
+       "knowledge_ru": [
+        "проверка (1970): Поп-певец 1970-х Leo Sayer с концертом.",
+        "сверка (нет в источнике): Leo Sayer был поп-певцом 1970-х годов",
+        "сверка (нет в источнике): Leo Sayer — поп-певец 1970-х годов"
+       ]
+      },
+      {
+       "ids": [
+        "E2343"
+       ],
+       "title_en": "Kevin 'Bloody' Wilson",
+       "title_ru": "Kevin 'Bloody' Wilson",
+       "where_en": "King's Lynn Corn Exchange, King's Lynn",
+       "where_ru": "King's Lynn Corn Exchange, Кингс-Линн",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Australian comedian Kevin Bloody Wilson's unfiltered stand-up, after 40-plus years on the road.",
+       "blurb_ru": "Нефильтрованный стендап австралийского комика Kevin Bloody Wilson, который гастролирует уже более 40 лет.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "new_announcements",
+     "items": [
+      {
+       "ids": [
+        "A133"
+       ],
+       "title_en": "Mill Road Winter Fair 2026",
+       "title_ru": "Mill Road Winter Fair 2026",
+       "where_en": "Mill Road, Cambridge",
+       "where_ru": "Mill Road, Кембридж",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Cambridge's best-loved winter street fair is confirmed for Saturday 5 December, 10.30am–4.30pm.",
+       "blurb_ru": "Любимая кембриджская зимняя уличная ярмарка подтверждена на субботу 5 декабря, с 10:30 до 16:30.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "A103"
+       ],
+       "title_en": "Fireworks Night on Midsummer Common",
+       "title_ru": "Fireworks Night on Midsummer Common",
+       "where_en": "Midsummer Common, Cambridge",
+       "where_ru": "Midsummer Common, Кембридж",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "One of Cambridge's longest-running free traditions returns on 5 November, with an award-winning fireworks display, food and entertainment.",
+       "blurb_ru": "Одна из самых давних бесплатных кембриджских традиций возвращается 5 ноября — фейерверк от отмеченной наградами компании, еда и развлечения.",
+       "knowledge_en": [
+        "source check (not_in_source): Fireworks Night проходит 5 ноября",
+        "source check (not_in_source): Fireworks Night пройдёт 5 ноября"
+       ],
+       "knowledge_ru": [
+        "проверка (старейших): Одна из старейших бесплатных кембриджских традиций возвращается 5 ноября — фейерверк от отмеченной наградами компании, еда и развлечения.",
+        "сверка (нет в источнике): Fireworks Night проходит 5 ноября",
+        "сверка (нет в источнике): Fireworks Night пройдёт 5 ноября"
+       ]
+      },
+      {
+       "ids": [
+        "A424"
+       ],
+       "title_en": "Whittlesea Straw Bear Festival",
+       "title_ru": "Whittlesea Straw Bear Festival",
+       "where_en": "Whittlesey",
+       "where_ru": "Уиттлси",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Dates confirmed for January's Straw Bear Festival: a man dressed head to toe in straw dances through the streets with folk musicians, ending with the burning of the bear — a Plough Monday custom revived in 1980.",
+       "blurb_ru": "Подтверждены даты январского фестиваля «Соломенного медведя»: человек в костюме из соломы с ног до головы танцует по улицам в сопровождении фолк-музыкантов, завершается всё сожжением чучела медведя — обычай Plough Monday, возрождённый в 1980 году.",
+       "knowledge_en": [
+        "check (in 1980): Dates confirmed for January's Straw Bear Festival: a man dressed head to toe in straw dances through the streets with folk musicians, ending with the burning of the bear — a Plough Monday custom revived in 1980.",
+        "source check (not_in_source): На Whittlesea Straw Bear Festival человек в костюме из соломы танцует по улицам с фолк-музыкантами",
+        "source check (not_in_source): Фестиваль завершается сожжением соломенного чучела медведя",
+        "source check (not_in_source): Это обычай Plough Monday, возрождённый в 1980 году",
+        "source check (not_in_source): Whittlesea Straw Bear Festival — фестиваль в январе",
+        "source check (not_in_source): На фестивале человек в костюме из соломы танцует по улицам с фолк-музыкантами",
+        "source check (not_in_source): Завершается сожжением чучела медведя"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): На Whittlesea Straw Bear Festival человек в костюме из соломы танцует по улицам с фолк-музыкантами",
+        "сверка (нет в источнике): Фестиваль завершается сожжением соломенного чучела медведя",
+        "сверка (нет в источнике): Это обычай Plough Monday, возрождённый в 1980 году",
+        "сверка (нет в источнике): Whittlesea Straw Bear Festival — фестиваль в январе",
+        "сверка (нет в источнике): На фестивале человек в костюме из соломы танцует по улицам с фолк-музыкантами",
+        "сверка (нет в источнике): Завершается сожжением чучела медведя"
+       ]
+      },
+      {
+       "ids": [
+        "A131"
+       ],
+       "title_en": "Cambridge Beer Festival 2027",
+       "title_ru": "Cambridge Beer Festival 2027",
+       "where_en": "Jesus Green, Cambridge",
+       "where_ru": "Jesus Green, Кембридж",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "The city's long-running beer festival returns to Jesus Green next May, with over 180 real ales, more than 80 ciders and perries, plus international beers, mead and wine. Dates are confirmed for 24–29 May 2027.",
+       "blurb_ru": "Традиционный кембриджский фестиваль пива снова пройдёт на Jesus Green в конце мая: более 180 сортов эля, свыше 80 сидров и перри, а также зарубежное пиво, медовуха и вино. Даты уже известны — 24–29 мая 2027 года.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "A207"
+       ],
+       "title_en": "The Betfred Guineas Festival",
+       "title_ru": "The Betfred Guineas Festival",
+       "where_en": "Newmarket Racecourses, Newmarket",
+       "where_ru": "Newmarket Racecourses, Ньюмаркет",
+       "price_en": "£15",
+       "price_ru": "от £15",
+       "blurb_en": "Tickets have gone on sale for Newmarket's spring racing festival, one of the highlights of the flat racing calendar, held at the end of April next year.",
+       "blurb_ru": "В продажу поступили билеты на весенний скаковой фестиваль в Ньюмаркете — одно из главных событий сезона плоских скачек, которое пройдёт в конце апреля будущего года.",
+       "knowledge_en": [
+        "The Guineas Festival at Newmarket is one of the classic events of the British flat racing season.",
+        "source check (not_in_source): The Betfred Guineas Festival — весенний скаковой фестиваль в Ньюмаркете",
+        "source check (not_in_source): Фестиваль — одно из главных событий сезона плоских скачек",
+        "source check (not_in_source): Фестиваль проходит в конце апреля",
+        "source check (not_in_source): Это одно из главных событий сезона плоских скачек",
+        "source check (not_in_source): Фестиваль пройдёт в конце апреля"
+       ],
+       "knowledge_ru": [
+        "Guineas Festival в Ньюмаркете — одно из классических событий британского сезона скачек на ровной дистанции.",
+        "сверка (нет в источнике): The Betfred Guineas Festival — весенний скаковой фестиваль в Ньюмаркете",
+        "сверка (нет в источнике): Фестиваль — одно из главных событий сезона плоских скачек",
+        "сверка (нет в источнике): Фестиваль проходит в конце апреля",
+        "сверка (нет в источнике): Это одно из главных событий сезона плоских скачек",
+        "сверка (нет в источнике): Фестиваль пройдёт в конце апреля"
+       ]
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "tickets",
+     "items": [
+      {
+       "ids": [
+        "T-p38"
+       ],
+       "title_en": "Alison Moyet",
+       "title_ru": "Alison Moyet",
+       "where_en": "Cambridge Corn Exchange, Cambridge",
+       "where_ru": "Cambridge Corn Exchange, Кембридж",
+       "price_en": "£38.50–£71.50",
+       "price_ru": "£38.50–£71.50",
+       "blurb_en": "Alison Moyet dedicates her 2026 tour entirely to the Yazoo catalogue alongside tracks from her solo electronica albums 'the minutes' and 'Other', digging into songs rarely heard live. Tickets are running low at the Corn Exchange, so don't sit on this one too long.",
+       "blurb_ru": "В туре 2026 года Alison Moyet исполняет исключительно каталог Yazoo вместе с треками из сольных электронных альбомов 'the minutes' и 'Other', включая песни, которые редко звучат вживую. Билетов в Corn Exchange остаётся немного, так что лучше не затягивать с решением.",
+       "knowledge_en": [
+        "Alison Moyet was one half of the duo Yazoo",
+        "Alison Moyet was one half of the synth-pop duo Yazoo alongside Vince Clarke in the early 1980s."
+       ],
+       "knowledge_ru": [
+        "Alison Moyet была участницей дуэта Yazoo",
+        "Alison Moyet была участницей синти-поп дуэта Yazoo вместе с Vince Clarke в начале 1980-х."
+       ]
+      },
+      {
+       "ids": [
+        "T-p889"
+       ],
+       "title_en": "Susan Tomes, piano",
+       "title_ru": "Susan Tomes, piano",
+       "where_en": "Kettle's Yard, Cambridge",
+       "where_ru": "Kettle's Yard, Кембридж",
+       "price_en": "£25 (£5 students)",
+       "price_ru": "£25 (£5 для студентов)",
+       "blurb_en": "A chamber concert in the Kettle's Yard house with pianist Susan Tomes; the page shows limited availability.",
+       "blurb_ru": "Камерный концерт в доме Kettle's Yard с пианисткой Susan Tomes; на странице указана ограниченная доступность мест.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "T-p1428"
+       ],
+       "title_en": "An Audience With Philippa Gregory",
+       "title_ru": "An Audience With Philippa Gregory",
+       "where_en": "Theatre Royal, Bury St Edmunds",
+       "where_ru": "Theatre Royal, Бери-Сент-Эдмундс",
+       "price_en": "£12–£39",
+       "price_ru": "£12–£39",
+       "blurb_en": "Novelist Philippa Gregory discusses her new novel Royal Witch; the venue page shows only a few tickets left.",
+       "blurb_ru": "Писательница Philippa Gregory рассказывает о новом романе Royal Witch; на странице площадки указано, что осталось мало билетов.",
+       "knowledge_en": [
+        "check (only): Novelist Philippa Gregory discusses her new novel Royal Witch; the venue page shows only a few tickets left."
+       ],
+       "knowledge_ru": []
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "cancelled",
+     "items": [
+      {
+       "ids": [
+        "C371"
+       ],
+       "title_en": "THE SCAPEGOAT – The Brilliant Brief Life of the Duke of Buckingham",
+       "title_ru": "THE SCAPEGOAT – The Brilliant Brief Life of the Duke of Buckingham",
+       "where_en": "National Horseracing Museum, Newmarket",
+       "where_ru": "National Horseracing Museum, Ньюмаркет",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "Talk by Lucy Hughes-Hallett, 14 October — cancelled.",
+       "blurb_ru": "Лекция Lucy Hughes-Hallett, 14 октября — отменена.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "C53"
+       ],
+       "title_en": "Mike Bubbins",
+       "title_ru": "Mike Bubbins",
+       "where_en": "Cambridge Corn Exchange, Cambridge",
+       "where_ru": "Cambridge Corn Exchange, Кембридж",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "Stand-up show, 24 October — cancelled.",
+       "blurb_ru": "Стендап-шоу, 24 октября — отменено.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "C70"
+       ],
+       "title_en": "Chris Hadfield: Navigating the New Space Age",
+       "title_ru": "Chris Hadfield: Navigating the New Space Age",
+       "where_en": "Cambridge Corn Exchange, Cambridge",
+       "where_ru": "Cambridge Corn Exchange, Кембридж",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "This talk with astronaut Chris Hadfield on navigating the new space age has been cancelled, so no need to plan around it anymore. It would have covered who controls space resources and how the coming space revolution might reshape life on Earth.",
+       "blurb_ru": "Лекция астронавта Chris Hadfield о навигации в новую космическую эпоху отменена, так что планировать поход на неё больше не нужно. В ней должны были обсуждаться вопросы контроля над космическими ресурсами и то, как грядущая космическая революция изменит жизнь на Земле.",
+       "knowledge_en": [
+        "Chris Hadfield is a retired Canadian astronaut and former commander of the International Space Station, widely known for his cover of David Bowie's 'Space Oddity' recorded in orbit."
+       ],
+       "knowledge_ru": [
+        "Chris Hadfield — канадский астронавт в отставке, бывший командир Международной космической станции, известный своей записью кавера на 'Space Oddity' David Bowie, сделанной на орбите."
+       ]
+      }
+     ],
+     "passed_over": []
+    },
+    {
+     "rubric": "new_in_town",
+     "items": [
+      {
+       "ids": [
+        "V72",
+        "V76",
+        "V94"
+       ],
+       "title_en": "UNIQLO",
+       "title_ru": "UNIQLO",
+       "where_en": "St Andrew's Street, Grand Arcade, Cambridge",
+       "where_ru": "St Andrew's Street, Grand Arcade, Кембридж",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "Opened — the Japanese clothing retailer's first Cambridge shop, across two floors of the Grand Arcade, with a mural by a Cambridge artist and a capsule collection made with the University.",
+       "blurb_ru": "Открылся — первый кембриджский магазин японского бренда одежды UNIQLO на двух этажах Grand Arcade, с настенной росписью кембриджского художника и капсульной коллекцией, созданной совместно с университетом.",
+       "knowledge_en": [
+        "UNIQLO is a Japanese clothing retailer"
+       ],
+       "knowledge_ru": [
+        "UNIQLO — японский бренд одежды"
+       ]
+      },
+      {
+       "ids": [
+        "V56"
+       ],
+       "title_en": "Carmen's Pizza",
+       "title_ru": "Carmen's Pizza",
+       "where_en": "The Blue Moon, Norfolk Street, Cambridge",
+       "where_ru": "The Blue Moon, Norfolk Street, Кембридж",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "Opened — a new pizzeria inside The Blue Moon pub, run by the former manager of the Oscar's Lockdown Pizza it replaces, keeping the same dough recipe but adding Latin American and Mediterranean touches.",
+       "blurb_ru": "Открылась — новая пиццерия в пабе The Blue Moon, которой управляет бывший менеджер закрывшейся Oscar's Lockdown Pizza: рецепт теста сохранён, но добавлены латиноамериканские и средиземноморские нотки.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "V59"
+       ],
+       "title_en": "Tripots",
+       "title_ru": "Tripots",
+       "where_en": "Quayside, Cambridge",
+       "where_ru": "Quayside, Кембридж",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "Opened — a hot-pot restaurant with a pot built into every table, diners choosing their own ingredients, in a bright, modern space with river views.",
+       "blurb_ru": "Открылся — ресторан хот-пот с котелком, встроенным в каждый стол: посетители сами выбирают ингредиенты, интерьер современный и светлый, с видом на реку.",
+       "knowledge_en": [
+        "source check (not_in_source): С видом на реку"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): С видом на реку"
+       ]
+      },
+      {
+       "ids": [
+        "V84"
+       ],
+       "title_en": "Arbury Social",
+       "title_ru": "Arbury Social",
+       "where_en": "Meadows Community Centre, Arbury Road, Cambridge",
+       "where_ru": "Meadows Community Centre, Arbury Road, Кембридж",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "Opened — a community café run by Cambridge Sustainable Food, cooking from scratch with seasonal, surplus and locally sourced ingredients on a not-for-profit basis.",
+       "blurb_ru": "Открылось — некоммерческое общественное кафе Cambridge Sustainable Food, готовящее с нуля из сезонных, излишних и местных продуктов.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "V60"
+       ],
+       "title_en": "Ephesus Turkish Restaurant",
+       "title_ru": "Ephesus Turkish Restaurant",
+       "where_en": "Saffron Walden",
+       "where_ru": "Саффрон-Уолден",
+       "price_en": "",
+       "price_ru": "",
+       "blurb_en": "Opened — a Turkish restaurant with its own brewery, butchery and charcoal grill, with a courtyard decorated in blue tiles.",
+       "blurb_ru": "Открылся — турецкий ресторан с собственной пивоварней, мясной лавкой и угольным грилем, во дворе — оформление из голубой плитки.",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ],
+     "passed_over": [
+      {
+       "id": "V85",
+       "reason_en": "still only a coming-soon sign-up page, no confirmed opening date",
+       "reason_ru": "пока только страница предзаписи, дата открытия не подтверждена"
+      }
+     ]
+    },
+    {
+     "rubric": "colleges",
+     "items": [
+      {
+       "ids": [
+        "E920"
+       ],
+       "line": true,
+       "url": "https://www.dow.cam.ac.uk/creative-arts/heong-gallery/ten-good-years",
+       "auto": true,
+       "college": "Downing",
+       "kind_ru": "выставка",
+       "title_en": "Ten Good Years",
+       "title_ru": "Ten Good Years",
+       "where_en": "The Heong Gallery Downing College",
+       "where_ru": "The Heong Gallery Downing College",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E927"
+       ],
+       "line": true,
+       "url": "https://www.murrayedwards.cam.ac.uk/womens-art-collection/exhibition/what-remains",
+       "auto": true,
+       "college": "Murray Edwards",
+       "kind_ru": "выставка",
+       "title_en": "What Remains",
+       "title_ru": "What Remains",
+       "where_en": "The Women's Art Collection, Murray Edwards College",
+       "where_ru": "The Women's Art Collection, Murray Edwards College",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1249"
+       ],
+       "line": true,
+       "url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=bebe0f56-5807-47ba-a35f-a2afc09929f6",
+       "auto": true,
+       "college": "Clare Hall",
+       "kind_ru": "выставка",
+       "title_en": "Other than Words: A Sense of Release in the Presence of Art",
+       "title_ru": "Other than Words: A Sense of Release in the Presence of Art",
+       "where_en": "Clare Hall",
+       "where_ru": "Clare Hall",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1655"
+       ],
+       "line": true,
+       "url": "https://www.cmp.cam.ac.uk/events/event/item/indian-classical-music-masterclass-with-the-anirudh-varma-collective/",
+       "auto": true,
+       "college": "Queens'",
+       "kind_ru": "концерт",
+       "title_en": "Indian Classical Music Masterclass with the Anirudh Varma Collective",
+       "title_ru": "Indian Classical Music Masterclass with the Anirudh Varma Collective",
+       "where_en": "Fitzpatrick Hall, Queens' College",
+       "where_ru": "Fitzpatrick Hall, Queens' College",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E377"
+       ],
+       "line": true,
+       "url": "https://www.clarehall.cam.ac.uk/events/continuum-renewal/",
+       "auto": true,
+       "college": "Clare",
+       "kind_ru": "концерт",
+       "title_en": "Continuum | Renewal",
+       "title_ru": "Continuum | Renewal",
+       "where_en": "Clare College Chapel, University of Cambridge",
+       "where_ru": "Clare College Chapel, University of Cambridge",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1660"
+       ],
+       "line": true,
+       "url": "https://www.cmp.cam.ac.uk/events/event/item/recital-isabelle-demers/",
+       "auto": true,
+       "college": "St John's",
+       "kind_ru": "концерт",
+       "title_en": "Recital – Isabelle Demers",
+       "title_ru": "Recital – Isabelle Demers",
+       "where_en": "St John’s College",
+       "where_ru": "St John’s College",
+       "price_en": "£20",
+       "price_ru": "£20",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "access_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ]
+    },
+    {
+     "rubric": "museums",
+     "items": [
+      {
+       "ids": [
+        "E2460"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Bury Lane Farm Shop",
+       "kind_ru": "сезонное событие",
+       "url": "https://burylane.co.uk/pick-your-own/dahlias/",
+       "title_en": "Cut Your Own Dahlias",
+       "title_ru": "Cut Your Own Dahlias",
+       "where_en": "Bury Lane Farm Shop",
+       "where_ru": "Bury Lane Farm Shop (до 30 мин)",
+       "price_en": "£2–£8",
+       "price_ru": "£2–£8",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1579"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Royston Museum",
+       "kind_ru": "для семей",
+       "url": "https://www.roystonmuseum.org.uk/what-s-on",
+       "title_en": "Spark Art Club",
+       "title_ru": "Spark Art Club",
+       "where_en": "Royston Museum",
+       "where_ru": "Royston Museum (до 30 мин)",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E1299"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Fitzwilliam Museum",
+       "kind_ru": "вечер в музее",
+       "url": "https://www.museums.cam.ac.uk/events/museum-late-frank-bowling-0",
+       "title_en": "Museum Late: Frank Bowling",
+       "title_ru": "Museum Late: Frank Bowling",
+       "where_en": "The Fitzwilliam Museum",
+       "where_ru": "The Fitzwilliam Museum",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E941"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Botanic Garden",
+       "kind_ru": "для семей",
+       "url": "https://www.botanic.cam.ac.uk/whats-on/fungi-field-day/",
+       "title_en": "Fungi Field Day",
+       "title_ru": "Fungi Field Day",
+       "where_en": "Cambridge University Botanic Garden",
+       "where_ru": "Cambridge University Botanic Garden",
+       "price_en": "with admission",
+       "price_ru": "по входному билету",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E888"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Kettle's Yard",
+       "kind_ru": "экскурсия",
+       "url": "https://www.kettlesyard.cam.ac.uk/whats-on/guided-house-tour-10-10-2026-2/",
+       "title_en": "Guided House Tour",
+       "title_ru": "Guided House Tour",
+       "where_en": "Kettle's Yard",
+       "where_ru": "Kettle's Yard",
+       "price_en": "£16–£18.50",
+       "price_ru": "£16–£18.50",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      },
+      {
+       "ids": [
+        "E946"
+       ],
+       "line": true,
+       "auto": true,
+       "place": "Kettle's Yard",
+       "kind_ru": "для семей",
+       "url": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-23",
+       "title_en": "Studio Sunday Relaxed Session",
+       "title_ru": "Studio Sunday Relaxed Session",
+       "where_en": "Kettle's Yard",
+       "where_ru": "Kettle's Yard",
+       "price_en": "free",
+       "price_ru": "бесплатно",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": []
+      }
+     ]
+    },
+    {
+     "rubric": "learn",
+     "items": [
+      {
+       "ids": [
+        "K:kilncambridge.com:920af43c"
+       ],
+       "line": true,
+       "auto": true,
+       "kind_ru": "керамика · пробное занятие",
+       "kind_en": "pottery · taster",
+       "url": "https://www.tickettailor.com/events/kilncambridge",
+       "title_en": "Saturday throwing Taster session",
+       "title_ru": "Saturday throwing Taster session",
+       "where_en": "Kiln Cambridge",
+       "where_ru": "Kiln Cambridge",
+       "price_en": "£70",
+       "price_ru": "£70",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "few_left": true
+      },
+      {
+       "ids": [
+        "E2138"
+       ],
+       "line": true,
+       "auto": true,
+       "kind_ru": "рисование",
+       "kind_en": "drawing",
+       "url": "https://www.eventbrite.co.uk/e/cambridge-art-class-tickets-1993449076851",
+       "title_en": "Cambridge Art Class",
+       "title_ru": "Cambridge Art Class",
+       "where_en": "101 Richmond Rd (St Augustine's Church)",
+       "where_ru": "101 Richmond Rd (St Augustine's Church)",
+       "price_en": "£20",
+       "price_ru": "£20",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "few_left": false
+      },
+      {
+       "ids": [
+        "K:whitecottagebakery.com:ad5ce00f"
+       ],
+       "line": true,
+       "auto": true,
+       "kind_ru": "выпечка",
+       "kind_en": "baking",
+       "url": "https://whitecottagebakery.com/workshop-calendar.html",
+       "title_en": "SOURDOUGH WORKSHOP",
+       "title_ru": "SOURDOUGH WORKSHOP",
+       "where_en": "White Cottage Bakery, near Cambridge",
+       "where_ru": "White Cottage Bakery, near Cambridge",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "few_left": false
+      },
+      {
+       "ids": [
+        "K:cambridgecookery.com:d2a56ede"
+       ],
+       "line": true,
+       "auto": true,
+       "kind_ru": "кулинария",
+       "kind_en": "cookery",
+       "url": "https://cambridgecookery.com/classes/kitchen-classics-knife-skills-47/",
+       "title_en": "Kitchen Classics - Knife Skills",
+       "title_ru": "Kitchen Classics - Knife Skills",
+       "where_en": "Cambridge Cookery, Purbeck Road, Cambridge",
+       "where_ru": "Cambridge Cookery, Purbeck Road, Cambridge",
+       "price_en": "£165",
+       "price_ru": "£165",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "few_left": false
+      },
+      {
+       "ids": [
+        "E375"
+       ],
+       "line": true,
+       "auto": true,
+       "kind_ru": "занятие",
+       "kind_en": "class",
+       "url": "https://www.eventbrite.co.uk/e/celia-webb-singing-workshop-tickets-1997897159185",
+       "title_en": "Celia Webb Singing Workshop",
+       "title_ru": "Celia Webb Singing Workshop",
+       "where_en": "Storey's Field Centre",
+       "where_ru": "Storey's Field Centre",
+       "price_en": "£38.62",
+       "price_ru": "£38.62",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "few_left": false
+      },
+      {
+       "ids": [
+        "E379"
+       ],
+       "line": true,
+       "auto": true,
+       "kind_ru": "фотография",
+       "kind_en": "photography",
+       "url": "https://www.eventbrite.co.uk/e/lights-and-shadows-a-crash-course-about-things-that-make-your-photos-tickets-1987333893172",
+       "title_en": "Lights and Shadows, a crash course about things that make your photos",
+       "title_ru": "Lights and Shadows, a crash course about things that make your photos",
+       "where_en": "Graduate by Hilton Cambridge",
+       "where_ru": "Graduate by Hilton Cambridge",
+       "price_en": "£5",
+       "price_ru": "£5",
+       "blurb_en": "",
+       "blurb_ru": "",
+       "knowledge_en": [],
+       "knowledge_ru": [],
+       "few_left": false
+      }
+     ]
+    }
+   ],
+   "editor_notes_en": [
+    "Syd Barrett was born 6 January 1946 — his 80th birthday fell in January 2026, not this month; theme copy deliberately avoids saying 'this month' and uses 'this year' / 'the anniversary week' instead.",
+    "E39 and T2 are the same Tribute to Syd Barrett concert; used E39 only.",
+    "E438 and E439 are one occasion (director talk + film screening, same evening) — merged into one theme item per the editor note in the data.",
+    "E42 and E244 are the same Alice Cooper event (book tour vs 'in conversation' framing); merged, placed in talks since it's a discussion/Q&A rather than a performance.",
+    "A909/T6/T8 are the same Olly Murs announcement; A910/T4 the same Simply Red announcement — each merged to one item.",
+    "E1583/E1652 and E1594/E1661 are duplicate listings of the same King's College Chapel organ recitals (CMP site vs choir site) — only one id pair used per recital in the combined free item.",
+    "The library regular-session candidates (E1356–E1367) were combined into one 'Regular sessions in libraries' item per the rules.",
+    "No county item met the importance-5 threshold once the participant races were moved to sport, so the county rubric is omitted this issue."
+   ],
+   "editor_notes_ru": [
+    "Сид Барретт родился 6 января 1946 года — 80-летие пришлось на январь 2026-го, а не на этот месяц; в тексте темы сознательно избегается «в этом месяце», используется «в этом году» / «юбилейная неделя».",
+    "E39 и T2 — один и тот же концерт A Tribute to Syd Barrett; использован только E39.",
+    "E438 и E439 — один повод (встреча с режиссёром + показ фильма в тот же вечер), объединены в один пункт темы согласно примечанию в данных.",
+    "E42 и E244 — одно и то же событие с Alice Cooper (книжный тур vs формат «беседы»); объединены и помещены в раздел «лекции», так как это скорее разговор/вопросы-ответы, а не выступление.",
+    "A909/T6/T8 — одно и то же анонс о Olly Murs; A910/T4 — то же о Simply Red; каждая пара объединена в один пункт.",
+    "E1583/E1652 и E1594/E1661 — дублирующие записи одних и тех же органных концертов в King's College Chapel (сайт CMP и сайт хора) — использована одна пара id на концерт в объединённом пункте бесплатных событий.",
+    "Регулярные библиотечные занятия (E1356–E1367) объединены в один пункт «Regular sessions in libraries» согласно правилам.",
+    "Ни один кандидат по зоне «дальше часа» не набрал нужной важности 5+ после того, как забеги-участия были перенесены в раздел «спорт», поэтому рубрика county в этом выпуске отсутствует."
+   ],
+   "theme_title_en": "Cambridge toasts Syd Barrett",
+   "theme_title_ru": "Кембридж вспоминает Сида Барретта",
+   "theme_intro_en": "This week the city marks the year of what would have been Syd Barrett's 80th birthday — the Pink Floyd founder was born here and gave his last live performance here — with a tribute concert, talks, an exhibition and one unexpected football connection.",
+   "theme_intro_ru": "На этой неделе город отмечает год, в который основателю Pink Floyd Сиду Барретту, родившемуся и давшему своё последнее концертное выступление в Кембридже, исполнилось бы 80 лет: трибьют-концерт, лекции, выставка — и одна неожиданная футбольная связь.",
+   "model_min": {
+    "theme": 2.6,
+    "weekend_1": 4.6,
+    "weekend_2": 4.3,
+    "weekdays": 5.6,
+    "cinema": 2.5,
+    "talks": 6.0,
+    "exhibitions": 3.0,
+    "free": 2.5,
+    "kids": 2.5,
+    "sport": 2.5,
+    "out_of_town": 4.0,
+    "new_announcements": 5.0,
+    "tickets": 4.3,
+    "new_in_town": 0
+   },
+   "model_ids": [
+    "A103",
+    "A133",
+    "A424",
+    "A909",
+    "A910",
+    "C371",
+    "C53",
+    "C70",
+    "E1020",
+    "E1021",
+    "E1024",
+    "E1026",
+    "E1038",
+    "E111",
+    "E1299",
+    "E1349",
+    "E1356",
+    "E1357",
+    "E1358",
+    "E1359",
+    "E1360",
+    "E1361",
+    "E1362",
+    "E1363",
+    "E1364",
+    "E1365",
+    "E1366",
+    "E1367",
+    "E1410",
+    "E1581",
+    "E1582",
+    "E1583",
+    "E1591",
+    "E1593",
+    "E1594",
+    "E1615",
+    "E1885",
+    "E1895",
+    "E1923",
+    "E2213",
+    "E2342",
+    "E2343",
+    "E2346",
+    "E2415",
+    "E2416",
+    "E244",
+    "E2521",
+    "E3",
+    "E37",
+    "E370",
+    "E39",
+    "E41",
+    "E42",
+    "E435",
+    "E437",
+    "E438",
+    "E439",
+    "E44",
+    "E447",
+    "E448",
+    "E46",
+    "E47",
+    "E502",
+    "E7",
+    "E819",
+    "E822",
+    "E886",
+    "E952",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F7",
+    "F8",
+    "T-p1428",
+    "T-p38",
+    "T-p889",
+    "T4",
+    "T6",
+    "T8",
+    "V56",
+    "V59",
+    "V60",
+    "V61",
+    "V72",
+    "V76",
+    "V84",
+    "V94"
+   ],
+   "colleges_why": {
+    "E2329": "лимит рубрики (6 строк)",
+    "E2456": "лимит рубрики (6 строк)",
+    "E1657": "лимит рубрики (6 строк)",
+    "E387": "лимит рубрики (6 строк)",
+    "E1662": "лимит рубрики (6 строк)",
+    "E1248": "лимит рубрики (6 строк)",
+    "E2193": "лимит рубрики (6 строк)",
+    "E2217": "лимит рубрики (6 строк)",
+    "E2249": "лимит рубрики (6 строк)",
+    "E1924": "лимит рубрики (6 строк)",
+    "E2334": "лимит рубрики (6 строк)",
+    "E2457": "лимит рубрики (6 строк)",
+    "E2218": "лимит рубрики (6 строк)",
+    "E2264": "лимит рубрики (6 строк)",
+    "E1658": "лимит рубрики (6 строк)"
+   },
+   "museums_why": {
+    "E947": "лимит рубрики (6 строк)",
+    "E1305": "лимит рубрики (6 строк)",
+    "E949": "лимит рубрики (6 строк)",
+    "E2459": "лимит рубрики (6 строк)",
+    "E2413": "лимит рубрики (6 строк)",
+    "E2417": "лимит рубрики (6 строк)",
+    "E2419": "лимит рубрики (6 строк)",
+    "E2424": "лимит рубрики (6 строк)",
+    "E2425": "лимит рубрики (6 строк)",
+    "E2426": "лимит рубрики (6 строк)",
+    "E2518": "лимит рубрики (6 строк)",
+    "E2473": "лимит рубрики (6 строк)",
+    "E2474": "лимит рубрики (6 строк)",
+    "E1450": "лимит рубрики (6 строк)",
+    "E1468": "лимит рубрики (6 строк)",
+    "E944": "лимит рубрики (6 строк)",
+    "E1284": "лимит рубрики (6 строк)",
+    "E2416": "лимит рубрики (6 строк)",
+    "E2468": "лимит рубрики (6 строк)",
+    "E2432": "лимит рубрики (6 строк)",
+    "E2411": "лимит рубрики (6 строк)",
+    "E2414": "лимит рубрики (6 строк)",
+    "E2420": "лимит рубрики (6 строк)",
+    "E2421": "лимит рубрики (6 строк)",
+    "E2423": "лимит рубрики (6 строк)",
+    "E1464": "лимит рубрики (6 строк)",
+    "E1298": "лимит рубрики (6 строк)",
+    "E1301": "лимит рубрики (6 строк)",
+    "E2467": "лимит рубрики (6 строк)",
+    "E1303": "лимит рубрики (6 строк)",
+    "E2469": "лимит рубрики (6 строк)",
+    "E2428": "лимит рубрики (6 строк)",
+    "E1306": "лимит рубрики (6 строк)",
+    "E1369": "лимит рубрики (6 строк)"
+   },
+   "learn_why": {
+    "K:kilncambridge.com:920af43c": "в выпуске",
+    "E2138": "в выпуске",
+    "K:whitecottagebakery.com:ad5ce00f": "в выпуске",
+    "K:cambridgecookery.com:d2a56ede": "в выпуске",
+    "E375": "в выпуске",
+    "E379": "в выпуске",
+    "K:kilncambridge.com:5e565570": "дубль строки",
+    "K:botanic.cam.ac.uk:2868b3ad": "лимит рубрики (6 строк)",
+    "K:stainedglassmuseum.com:e4944f5e": "лимит рубрики (6 строк)",
+    "E2473": "лимит рубрики (6 строк)",
+    "E2474": "лимит рубрики (6 строк)",
+    "E368": "лимит рубрики (6 строк)",
+    "E2475": "лимит рубрики (6 строк)"
+   },
+   "sections_why": {
+    "S:C:aquastarsorg.co.uk:1": "набор не объявлен",
+    "S:C:bjjcambridge.co.uk:510933dc": "мало данных для строки (нет ни дня, ни места)",
+    "S:C:bjjcambridge.co.uk:a83a0541": "мало данных для строки (нет ни дня, ни места)",
+    "S:C:bjjcambridge.co.uk:b88b7e7e": "мало данных для строки (нет ни дня, ни места)",
+    "S:C:cambridge.gov.uk:0bb8ed48": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:0c7647e4": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:0f98bed4": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:10": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:11": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:12": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:13": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:14": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:1c15abfd": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:253408a0": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:2eb09d0e": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:32315f7d": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:335679ed": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:40b47f7c": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:5": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:590450fc": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:6": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:61a962fe": "мало данных для строки (нет ни дня, ни места)",
+    "S:C:cambridge.gov.uk:7": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:8": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:84c86109": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:9": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:e2d44a1f": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridge.gov.uk:e4acac0c": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:cambridgekungfu.com:1a9a71ed": "набор не объявлен",
+    "S:C:cambridgekungfu.com:5c9d937e": "набор не объявлен",
+    "S:C:cambridgekungfu.com:65421d30": "набор не объявлен",
+    "S:C:cambridgekungfu.com:6c01e3c9": "набор не объявлен",
+    "S:C:cambridgekungfu.com:9427a7a8": "набор не объявлен",
+    "S:C:cambridgekungfu.com:b5b8c6af": "набор не объявлен",
+    "S:C:cambridgekungfu.com:f2ce0798": "вне зоны выпуска или зона не определена",
+    "S:C:cambridgekungfu.com:fb97699b": "набор не объявлен",
+    "S:C:cambridgesciencecentre.org:6ea4b315": "набор не объявлен",
+    "S:C:cambridgesciencecentre.org:b9bc4ab6": "набор не объявлен",
+    "S:C:cityofelynetball.co.uk:7c2ceeb0": "набор закрыт",
+    "S:C:cocsc.org.uk:180efe1a": "набор не объявлен",
+    "S:C:cocsc.org.uk:8b0fc91a": "набор не объявлен",
+    "S:C:cocsc.org.uk:8f77db0d": "набор не объявлен",
+    "S:C:davidlloyd.co.uk:1": "набор не объявлен",
+    "S:C:davidlloyd.co.uk:12874a88": "набор не объявлен",
+    "S:C:davidlloyd.co.uk:2": "набор не объявлен",
+    "S:C:davidlloyd.co.uk:3": "набор не объявлен",
+    "S:C:davidlloyd.co.uk:4": "набор не объявлен",
+    "S:C:davidlloyd.co.uk:645be6b7": "набор не объявлен",
+    "S:C:dramaticmoments.co.uk:1": "набор не объявлен",
+    "S:C:eliteswimmingacademy.co.uk:7f9fa168": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:fastbreakbasketball.co.uk:67678839": "набор не объявлен",
+    "S:C:firefliesforestschool.co.uk:4": "набор не объявлен",
+    "S:C:firefliesforestschool.co.uk:66efbafd": "набор не объявлен",
+    "S:C:firefliesforestschool.co.uk:ac319ae8": "набор не объявлен",
+    "S:C:formationsdance.co.uk:10e15b8e": "для взрослых — не детская секция",
+    "S:C:formationsdance.co.uk:992dfdfd": "для взрослых — не детская секция",
+    "S:C:formationsdance.co.uk:dc31530f": "для взрослых — не детская секция",
+    "S:C:formationsdance.co.uk:f579f88c": "для взрослых — не детская секция",
+    "S:C:gkfit.co.uk:27c61d40": "лист ожидания",
+    "S:C:gkfit.co.uk:4": "набор не объявлен",
+    "S:C:gkfit.co.uk:51312821": "лист ожидания",
+    "S:C:gkfit.co.uk:d0a51779": "лист ожидания",
+    "S:C:kidsclubely.co.uk:1": "набор не объявлен",
+    "S:C:kidsclubely.co.uk:2": "набор не объявлен",
+    "S:C:miltoncricket.org.uk:95cb7ee4": "вне зоны выпуска или зона не определена",
+    "S:C:monachriding.co.uk:ab35ec61": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:monachriding.co.uk:c4b3bdef": "вне зоны выпуска или зона не определена",
+    "S:C:monachriding.co.uk:e0b4a928": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:newboroughkidzclub.co.uk:08f56289": "набор не объявлен",
+    "S:C:newboroughkidzclub.co.uk:1312a221": "набор не объявлен",
+    "S:C:papa.perse.co.uk:6da84467": "набор не объявлен",
+    "S:C:premier-education.com:16": "набор не объявлен",
+    "S:C:premier-education.com:17": "набор не объявлен",
+    "S:C:premier-education.com:18": "доступ только для своих (университет, ученики школы)",
+    "S:C:premier-education.com:19": "доступ только для своих (университет, ученики школы)",
+    "S:C:premier-education.com:20": "доступ только для своих (университет, ученики школы)",
+    "S:C:premier-education.com:21": "доступ только для своих (университет, ученики школы)",
+    "S:C:premier-education.com:22": "набор закрыт",
+    "S:C:premier-education.com:24": "набор не объявлен",
+    "S:C:premier-education.com:25": "набор не объявлен",
+    "S:C:premier-education.com:26": "набор не объявлен",
+    "S:C:premier-education.com:27": "набор не объявлен",
+    "S:C:premier-education.com:28": "набор не объявлен",
+    "S:C:premier-education.com:29": "набор не объявлен",
+    "S:C:premier-education.com:30c15346": "набор не объявлен",
+    "S:C:premier-education.com:b6ef53f8": "набор не объявлен",
+    "S:C:rocketsnc.co.uk:aba38caf": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:scec.co.uk:26e577bf": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:scec.co.uk:83aca6be": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:scec.co.uk:93a1e9eb": "набор не объявлен явно (нет фразы о новых участниках или пробном занятии)",
+    "S:C:stardustdanceacademy.com:11": "вне зоны выпуска или зона не определена",
+    "S:C:stardustdanceacademy.com:12": "вне зоны выпуска или зона не определена",
+    "S:C:stardustdanceacademy.com:14": "для взрослых — не детская секция",
+    "S:C:stardustdanceacademy.com:6": "вне зоны выпуска или зона не определена",
+    "S:C:stardustdanceacademy.com:8": "вне зоны выпуска или зона не определена",
+    "S:C:theoutdoorsproject.co.uk:86b7a462": "доступ только для своих (университет, ученики школы)",
+    "S:C:theoutdoorsproject.co.uk:a2a7be9e": "доступ только для своих (университет, ученики школы)",
+    "S:C:theoutdoorsproject.co.uk:a98db689": "доступ только для своих (университет, ученики школы)",
+    "S:C:theoutdoorsproject.co.uk:fda12c5b": "доступ только для своих (университет, ученики школы)",
+    "S:C:tjkids.co.uk:1": "набор не объявлен",
+    "S:C:tjkids.co.uk:2": "набор не объявлен",
+    "S:C:tjkids.co.uk:4": "набор не объявлен",
+    "S:C:cambridgesouthhockeyclub.co.uk:194b9ebe": "в выпуске",
+    "S:C:cambridgesouthhockeyclub.co.uk:61b0dafc": "уже есть строка от этого провайдера",
+    "S:C:cambridgesouthhockeyclub.co.uk:76424f70": "уже есть строка от этого провайдера",
+    "S:C:cambridgesouthhockeyclub.co.uk:b4c98ae5": "уже есть строка от этого провайдера",
+    "S:C:cambridgesouthhockeyclub.co.uk:f030ea38": "уже есть строка от этого провайдера",
+    "S:C:formationsdance.co.uk:0d2f91da": "в выпуске",
+    "S:C:formationsdance.co.uk:1dec57f2": "уже есть строка от этого провайдера",
+    "S:C:formationsdance.co.uk:38f890e9": "уже есть строка от этого провайдера",
+    "S:C:formationsdance.co.uk:a2ff0463": "уже есть строка от этого провайдера",
+    "S:C:formationsdance.co.uk:bc41e15f": "уже есть строка от этого провайдера",
+    "S:C:formationsdance.co.uk:bee0fae6": "уже есть строка от этого провайдера",
+    "S:C:gkfit.co.uk:9577bf10": "в выпуске",
+    "S:C:gkfit.co.uk:f62be165": "уже есть строка от этого провайдера",
+    "S:C:papa.perse.co.uk:19df93e2": "в выпуске",
+    "S:C:papa.perse.co.uk:38c31167": "уже есть строка от этого провайдера",
+    "S:C:papa.perse.co.uk:4e82a180": "уже есть строка от этого провайдера",
+    "S:C:papa.perse.co.uk:dacbe00b": "уже есть строка от этого провайдера",
+    "S:C:formationsdance.co.uk:2a5c62ef": "уже есть строка от этого провайдера",
+    "S:C:formationsdance.co.uk:70abe978": "уже есть строка от этого провайдера",
+    "S:C:gkfit.co.uk:4109aaff": "уже есть строка от этого провайдера",
+    "S:C:kidsmartialartscambridge.co.uk:9fd56016": "лимит подраздела (4)",
+    "S:C:miltoncricket.org.uk:b42d5637": "лимит подраздела (4)",
+    "S:C:dreamweavergymnastics.com:1": "лимит подраздела (4)",
+    "S:C:chessgo.org.uk:ff7e9fba": "лимит подраздела (4)",
+    "S:C:butterfliesforestschool.co.uk:1": "лимит подраздела (4)",
+    "S:C:butterfliesforestschool.co.uk:10": "лимит подраздела (4)",
+    "S:C:butterfliesforestschool.co.uk:2": "лимит подраздела (4)",
+    "S:C:butterfliesforestschool.co.uk:3": "лимит подраздела (4)",
+    "S:C:stardustdanceacademy.com:10": "уже есть строка этого вида",
+    "S:C:stardustdanceacademy.com:2": "уже есть строка этого вида",
+    "S:C:stardustdanceacademy.com:3": "уже есть строка этого вида",
+    "S:C:stardustdanceacademy.com:9": "уже есть строка этого вида",
+    "S:C:fastbreakbasketball.co.uk:28292a53": "лимит подраздела (4)",
+    "B:K:cufcfoundation.com:b4cda6a6": "в выпуске"
+   },
+   "grammar": {
+    "checked": 140,
+    "fixed": [],
+    "rejected": []
+   },
+   "reasons_filled": true
+  },
+  "removed": {
+   "E1593": "пустое описание (в данных нет содержательного факта)",
+   "V61": "вытеснено подтверждённым открытием (S148) с датой со страницы",
+   "E2213": "сокращено: в рубрике больше 4 пунктов",
+   "F8": "сокращено: в рубрике больше 4 пунктов",
+   "F7": "сокращено: в рубрике больше 4 пунктов",
+   "A909": "сокращено: в рубрике больше 5 пунктов",
+   "T6": "сокращено: в рубрике больше 5 пунктов",
+   "T8": "сокращено: в рубрике больше 5 пунктов",
+   "A910": "сокращено: в рубрике больше 5 пунктов",
+   "T4": "сокращено: в рубрике больше 5 пунктов",
+   "E2416": "сокращено по длине выпуска (оценка 2.5)",
+   "E1410": "сокращено по длине выпуска (оценка 3)",
+   "E1581": "сокращено по длине выпуска (оценка 3.3)",
+   "E2346": "сокращено по длине выпуска (оценка 4)",
+   "E1038": "сокращено по длине выпуска (оценка 4.3)",
+   "E448": "сокращено по длине выпуска (оценка 4.5)",
+   "E1020": "сокращено по длине выпуска (оценка 4.6)",
+   "E2521": "сокращено по длине выпуска (оценка 5)",
+   "E822": "сокращено по длине выпуска (оценка 5.3)",
+   "E1026": "сокращено по длине выпуска (оценка 5.7)",
+   "E1582": "сокращено по длине выпуска (оценка 5.8)",
+   "V85": "противоречие стадии открытия: стадия «открылось» (2026-09-28), а описание — «скоро откроется»"
+  },
+  "notes": [
+   [
+    "“Alice Cooper: Devil on My Shoulder — in conversation” (E42) does not fit rubric talks — removed",
+    "«Alice Cooper: Devil on My Shoulder — встреча-беседа» (E42) не подходит для рубрики talks — убран"
+   ],
+   [
+    "“Museum Late: Frank Bowling” (E1299) does not fit rubric free — removed",
+    "«Museum Late: Frank Bowling» (E1299) не подходит для рубрики free — убран"
+   ],
+   [
+    "“Dance In The Dark”: the performer from the data (Sonrisa Arts) is not named in the text",
+    "«Dance In The Dark»: исполнитель из данных (Sonrisa Arts) не назван в тексте"
+   ],
+   [
+    "“Phoenix: Cambridgeshire – KiSS Charity Run”: empty description (“A timed charity run in St Neots in aid of the charity KiSS.”) — item removed",
+    "«Phoenix: Cambridgeshire – KiSS Charity Run»: пустое описание («Хронометрируемый благотворительный забег в Сент-Нитсе в поддержку благотворительной организации KiSS.») — пункт убран"
+   ],
+   [
+    "“Leo Sayer” (6.7): no substantive fact in the data — kept with a neutral line",
+    "«Leo Sayer» (6.7): в данных нет содержательного факта — оставлен с нейтральной фразой"
+   ],
+   [
+    "“Cambridge RUFC v Camborne”: club fixture — a short line under Also playing",
+    "«Cambridge RUFC v Camborne»: матч клуба — компактной строкой в «Также играют»"
+   ],
+   [
+    "“Cambridge United Women v Dartford FC Women”: club fixture — a short line under Also playing",
+    "«Cambridge United Women v Dartford FC Women»: матч клуба — компактной строкой в «Также играют»"
+   ],
+   [
+    "“Peterborough Phantoms v Solway IHC”: club fixture — a short line under Also playing",
+    "«Peterborough Phantoms v Solway IHC»: матч клуба — компактной строкой в «Также играют»"
+   ],
+   [
+    "“Catte Latte”: bumped by a confirmed opening",
+    "«Catte Latte»: вытеснено подтверждённым открытием (S148)"
+   ],
+   [
+    "“poíēsis: an exhibition by Tom de Freston” added to free (mandatory by the v5 rules)",
+    "«poíēsis: an exhibition by Tom de Freston» дописан в «Бесплатно» (обязателен по правкам v5)"
+   ],
+   [
+    "“Cambridge Beer Festival 2027” added to new_announcements (mandatory by the v5 rules)",
+    "«Cambridge Beer Festival 2027» дописан в «Новые анонсы» (обязателен по правкам v5)"
+   ],
+   [
+    "“The Betfred Guineas Festival” added to new_announcements (mandatory by the v5 rules)",
+    "«The Betfred Guineas Festival» дописан в «Новые анонсы» (обязателен по правкам v5)"
+   ],
+   [
+    "“Bridge Bagels” added to new_in_town (mandatory by the v5 rules)",
+    "«Bridge Bagels» дописан в «Новое в городе» (обязателен по правкам v5)"
+   ],
+   [
+    "“Queen Budapest”: cut — rubric cinema above its maximum 4",
+    "«Queen Budapest»: сокращён — выпуск длиннее: в рубрике больше 4 пунктов"
+   ],
+   [
+    "“Spirited Away (25th anniversary)”: cut — rubric cinema above its maximum 4",
+    "«Spirited Away (25-я годовщина)»: сокращён — выпуск длиннее: в рубрике больше 4 пунктов"
+   ],
+   [
+    "“Hadestown: The Musical”: cut — rubric cinema above its maximum 4",
+    "«Hadestown: The Musical»: сокращён — выпуск длиннее: в рубрике больше 4 пунктов"
+   ],
+   [
+    "“Olly Murs at Newmarket Nights”: cut — rubric new_announcements above its maximum 5",
+    "«Olly Murs at Newmarket Nights»: сокращён — выпуск длиннее: в рубрике больше 5 пунктов"
+   ],
+   [
+    "“Simply Red at Newmarket Nights”: cut — rubric new_announcements above its maximum 5",
+    "«Simply Red at Newmarket Nights»: сокращён — выпуск длиннее: в рубрике больше 5 пунктов"
+   ],
+   [
+    "“Three Cheers for Pooh! Story trail” (2.5, kids): cut — the issue is longer than 45 items",
+    "«Three Cheers for Pooh! Story trail» (2.5, kids): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Castles: Anarchy and Rebellion in Ely” (3, exhibitions): cut — the issue is longer than 45 items",
+    "«Castles: Anarchy and Rebellion in Ely» (3, exhibitions): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Grafham Water Trail Races” (3.3, sport): cut — the issue is longer than 45 items",
+    "«Grafham Water Trail Races» (3.3, sport): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“The Shires” (4, out_of_town): cut — the issue is longer than 45 items",
+    "«The Shires» (4, out_of_town): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Hannah Sanders & Ben Savage with Jon Thorne” (4.3, weekend_2): cut — the issue is longer than 45 items",
+    "«Hannah Sanders & Ben Savage with Jon Thorne» (4.3, weekend_2): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“A Mughal Songbook: Art, Music and Empire” (4.5, exhibitions): cut — the issue is longer than 45 items",
+    "«A Mughal Songbook: Art, Music and Empire» (4.5, exhibitions): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Shiny New Model Festival 2026” (4.6, weekend_1): cut — the issue is longer than 45 items",
+    "«Shiny New Model Festival 2026» (4.6, weekend_1): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Ely's Autumn and Orchard Fayre 2026” (5, weekend_1): cut — the issue is longer than 45 items",
+    "«Ely's Autumn and Orchard Fayre 2026» (5, weekend_1): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Pasadena Roof Orchestra” (5.3, weekend_2): cut — the issue is longer than 45 items",
+    "«Pasadena Roof Orchestra» (5.3, weekend_2): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Breabach” (5.7, weekdays): cut — the issue is longer than 45 items",
+    "«Breabach» (5.7, weekdays): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“AEPG Great Eastern Run” (5.8, sport): cut — the issue is longer than 45 items",
+    "«AEPG Great Eastern Run» (5.8, sport): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Mill Road Winter Fair 2026”: “free” not in the data — prices on the website",
+    "«Mill Road Winter Fair 2026»: «бесплатно» нет в данных — цена из лучшего источника: цены на сайте"
+   ],
+   [
+    "“Apple Day 2026”: link https://www.museums.cam.ac.uk/events/apple-day-2026 → https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/",
+    "«Apple Day 2026»: ссылка — площадка / организатор (https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/) вместо агрегатор (https://www.museums.cam.ac.uk/events/apple-day-2026)"
+   ],
+   [
+    "“Bridge Bagels”: removed — opening stage contradicts the text (стадия «открылось» (2026-09-28), а описание — «скоро откроется»)",
+    "«Bridge Bagels»: убран — противоречие стадии открытия: стадия «открылось» (2026-09-28), а описание — «скоро откроется»"
+   ],
+   [
+    "“Roachford + Hue and Cry”: importance ≥ 8 — description regenerated to 2–3 sentences",
+    "«Roachford + Hue and Cry»: оценка ≥ 8 — описание перегенерировано до 2–3 предложений"
+   ],
+   [
+    "“Nish Kumar: Angry Humour From a Really Nice Guy”: importance ≥ 8 — description regenerated to 2–3 sentences",
+    "«Nish Kumar: Angry Humour From a Really Nice Guy»: оценка ≥ 8 — описание перегенерировано до 2–3 предложений"
+   ],
+   [
+    "“Simon Amstell: I Love It Here”: importance ≥ 8 — description regenerated to 2–3 sentences",
+    "«Simon Amstell: I Love It Here»: оценка ≥ 8 — описание перегенерировано до 2–3 предложений"
+   ],
+   [
+    "“Alison Moyet”: importance ≥ 8 — description regenerated to 2–3 sentences",
+    "«Alison Moyet»: оценка ≥ 8 — описание перегенерировано до 2–3 предложений"
+   ],
+   [
+    "“Chris Hadfield: Navigating the New Space Age”: importance ≥ 8 — description regenerated to 2–3 sentences",
+    "«Chris Hadfield: Navigating the New Space Age»: оценка ≥ 8 — описание перегенерировано до 2–3 предложений"
+   ],
+   [
+    "“Have You Got It Yet?: meet the director + film screening”: names put back into Latin script (Director Roddy Bogawa)",
+    "«Have You Got It Yet?: встреча с режиссёром + показ фильма»: имена переписаны латиницей (Director Roddy Bogawa)"
+   ],
+   [
+    "“Cambridge United v Blackpool”: names put back into Latin script (Rosemary Breen)",
+    "«Cambridge United v Blackpool»: имена переписаны латиницей (Rosemary Breen)"
+   ],
+   [
+    "“Talk by Rob Chapman: Syd Barrett — A Very Irregular Head”: names put back into Latin script (Rob Chapman)",
+    "«Talk by Rob Chapman: Syd Barrett — A Very Irregular Head»: имена переписаны латиницей (Rob Chapman)"
+   ],
+   [
+    "“Have You Got It Yet?: meet the director + film screening”: English word “and” in the Russian text (blurb_ru)",
+    "«Have You Got It Yet?: встреча с режиссёром + показ фильма»: английское слово «and» в русском тексте (blurb_ru)"
+   ],
+   [
+    "Film “The Uprising”: score 7.0 (Wikipedia 487 074 просмотров за 30 дней; широкий прокат); facts from Wikipedia “2026 film by Paul Greengrass”; showing: широкий прокат",
+    "фильм «The Uprising»: оценка 7.0 (Wikipedia 487 074 просмотров за 30 дней; широкий прокат); факты — статья Wikipedia «2026 film by Paul Greengrass» (тот ли фильм?); где идёт: широкий прокат; ссылка — Wikipedia https://en.wikipedia.org/wiki/The_Uprising_(2026_film)"
+   ],
+   [
+    "Film “Street Fighter”: score 7.0 (Wikipedia 314 085 просмотров за 30 дней; широкий прокат); facts from Wikipedia “Upcoming film by Kitao Sakurai”; showing: широкий прокат",
+    "фильм «Street Fighter»: оценка 7.0 (Wikipedia 314 085 просмотров за 30 дней; широкий прокат); факты — статья Wikipedia «Upcoming film by Kitao Sakurai» (тот ли фильм?); где идёт: широкий прокат; ссылка — Wikipedia https://en.wikipedia.org/wiki/Street_Fighter_(2026_film)"
+   ],
+   [
+    "Film “Whalefall”: score 7.0 (Wikipedia 295 301 просмотров за 30 дней; широкий прокат); facts from Wikipedia “Upcoming film by Brian Duffield”; showing: широкий прокат",
+    "фильм «Whalefall»: оценка 7.0 (Wikipedia 295 301 просмотров за 30 дней; широкий прокат); факты — статья Wikipedia «Upcoming film by Brian Duffield» (тот ли фильм?); где идёт: широкий прокат; ссылка — Wikipedia https://en.wikipedia.org/wiki/Whalefall_(film)"
+   ],
+   [
+    "Film “Forgotten Island”: score 7.0 (Wikipedia 667 755 просмотров за 30 дней; широкий прокат); facts from Wikipedia “2026 DreamWorks Animation film”; showing: широкий прокат",
+    "фильм «Forgotten Island»: оценка 7.0 (Wikipedia 667 755 просмотров за 30 дней; широкий прокат); факты — статья Wikipedia «2026 DreamWorks Animation film» (тот ли фильм?); где идёт: широкий прокат; ссылка — Wikipedia https://en.wikipedia.org/wiki/Forgotten_Island"
+   ],
+   [
+    "Also playing: 3 fixture(s) from connected clubs added without the model (Dubai Future Champions Festival; Peterborough Phantoms v Hull Seahawks; Peterborough United FC - Burton Albion FC)",
+    "«Также играют»: без модели добавлено матчей и скачек — 3 (Dubai Future Champions Festival; Peterborough Phantoms v Hull Seahawks; Peterborough United FC - Burton Albion FC)"
+   ],
+   [
+    "“Have You Got It Yet?: meet the director + film screening”: Russian title replaced by the original",
+    "«Have You Got It Yet?: meet the director + film screening»: название в оригинале вместо перевода «Have You Got It Yet?: встреча с режиссёром + показ фильма»"
+   ],
+   [
+    "“Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn”: Russian title replaced by the original",
+    "«Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn»: название в оригинале вместо перевода «Anarchical Antiquity — инаугурационная лекция профессора Josephine Crawley Quinn»"
+   ],
+   [
+    "“Free Sunday organ recitals at King's College Chapel”: Russian title replaced by the original",
+    "«Free Sunday organ recitals at King's College Chapel»: название в оригинале вместо перевода «Бесплатные органные концерты по воскресеньям в King's College Chapel»"
+   ],
+   [
+    "“Dubai Future Champions Festival — racing”: Russian title replaced by the original",
+    "«Dubai Future Champions Festival — racing»: название в оригинале вместо перевода «Dubai Future Champions Festival — скачки»"
+   ],
+   [
+    "intro rewritten: not in the issue — «Alison Moyet, Alice Cooper, Nish Kumar and The Beat»; «Alice Cooper»",
+    "вступление переписано: нет в выпуске — «Alison Moyet, Alice Cooper, Nish Kumar and The Beat»; «Alice Cooper» (было: «Эти две недели в Кембридже проходят под знаком одной даты: город отмечает 80-летие со дня рождения Сида Барретта — трибьют-концертом, лекциями и выставкой, а Corn Exchange продолжает принимать звёзд: »)"
+   ],
+   [
+    "“A Tribute to Syd Barrett: Official 80th Anniversary Celebrations”: claim not in the source moved to the check list",
+    "«A Tribute to Syd Barrett: Official 80th Anniversary Celebrations»: «Барретт родился в этом городе» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Roachford + Hue and Cry”: claim not in the source moved to the check list",
+    "«Roachford + Hue and Cry»: «Hue and Cry — синти-поп группа» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Transvision Vamp”: claim not in the source moved to the check list",
+    "«Transvision Vamp»: «Transvision Vamp — инди-рок-группа конца 80-х» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“The Uprising”: claim not in the source moved to the check list",
+    "«The Uprising»: «Jamie Bell играет Wat Tyler» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“The Uprising”: claim not in the source moved to the check list",
+    "«The Uprising»: «Cosmo Jarvis играет John Ball» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn”: claim not in the source moved to the check list",
+    "«Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn»: «Лекция об устройстве власти и беспорядка в античном мире» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Regular sessions in libraries”: claim not in the source moved to the check list",
+    "«Regular sessions in libraries»: «Есть детский творческий клуб и Lego Club» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Regular sessions in libraries”: claim not in the source moved to the check list",
+    "«Regular sessions in libraries»: «Есть занятия по цифровой грамотности» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Regular sessions in libraries”: claim not in the source moved to the check list",
+    "«Regular sessions in libraries»: «Есть встречи для изучающих BSL» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Apple Day 2026”: claim not in the source moved to the check list",
+    "«Apple Day 2026»: «На нём есть семейные активности в честь урожая» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Leo Sayer”: claim not in the source moved to the check list",
+    "«Leo Sayer»: «Leo Sayer был поп-певцом 1970-х годов» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Fireworks Night on Midsummer Common”: claim not in the source moved to the check list",
+    "«Fireworks Night on Midsummer Common»: «Fireworks Night проходит 5 ноября» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Whittlesea Straw Bear Festival”: claim not in the source moved to the check list",
+    "«Whittlesea Straw Bear Festival»: «На Whittlesea Straw Bear Festival человек в костюме из соломы танцует по улицам » — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Whittlesea Straw Bear Festival”: claim not in the source moved to the check list",
+    "«Whittlesea Straw Bear Festival»: «Фестиваль завершается сожжением соломенного чучела медведя» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Whittlesea Straw Bear Festival”: claim not in the source moved to the check list",
+    "«Whittlesea Straw Bear Festival»: «Это обычай Plough Monday, возрождённый в 1980 году» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“The Betfred Guineas Festival”: claim not in the source moved to the check list",
+    "«The Betfred Guineas Festival»: «The Betfred Guineas Festival — весенний скаковой фестиваль в Ньюмаркете» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“The Betfred Guineas Festival”: claim not in the source moved to the check list",
+    "«The Betfred Guineas Festival»: «Фестиваль — одно из главных событий сезона плоских скачек» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“The Betfred Guineas Festival”: claim not in the source moved to the check list",
+    "«The Betfred Guineas Festival»: «Фестиваль проходит в конце апреля» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Fireworks Night on Midsummer Common”: superlative rewritten from the source: “Одна из самых давних бесплатных кембриджских традиций возвращается 5 ноября — фейерверк от отмеченной наградами компании, еда и развлечения.”",
+    "«Fireworks Night on Midsummer Common»: переписано по источнику — «Одна из самых давних бесплатных кембриджских традиций возвращается 5 ноября — фейерверк от отмеченной наградами компании, еда и развлечения.» (в источнике: «one of Cambridge's longest-running»)"
+   ],
+   [
+    "“Syd Barrett Exhibition: Life, Art and Cultural Impact”: claim not in the source moved to the check list",
+    "«Syd Barrett Exhibition: Life, Art and Cultural Impact»: «Выставка идёт всю юбилейную неделю» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Cambridge United v Blackpool”: claim not in the source moved to the check list",
+    "«Cambridge United v Blackpool»: «Матч Cambridge United - Blackpool - обычный матч Лиги One» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Leo Sayer”: claim not in the source moved to the check list",
+    "«Leo Sayer»: «Leo Sayer — поп-певец 1970-х годов» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Fireworks Night on Midsummer Common”: claim not in the source moved to the check list",
+    "«Fireworks Night on Midsummer Common»: «Fireworks Night пройдёт 5 ноября» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Whittlesea Straw Bear Festival”: claim not in the source moved to the check list",
+    "«Whittlesea Straw Bear Festival»: «Whittlesea Straw Bear Festival — фестиваль в январе» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Whittlesea Straw Bear Festival”: claim not in the source moved to the check list",
+    "«Whittlesea Straw Bear Festival»: «На фестивале человек в костюме из соломы танцует по улицам с фолк-музыкантами» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Whittlesea Straw Bear Festival”: claim not in the source moved to the check list",
+    "«Whittlesea Straw Bear Festival»: «Завершается сожжением чучела медведя» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“The Betfred Guineas Festival”: claim not in the source moved to the check list",
+    "«The Betfred Guineas Festival»: «Это одно из главных событий сезона плоских скачек» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“The Betfred Guineas Festival”: claim not in the source moved to the check list",
+    "«The Betfred Guineas Festival»: «Фестиваль пройдёт в конце апреля» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Tripots”: claim not in the source moved to the check list",
+    "«Tripots»: «С видом на реку» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "passed-over reasons not added: API unavailable (BadRequestError)",
+    "причины пропусков не дописаны: API недоступен (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo)"
+   ]
+  ],
+  "need": {
+   "new_announcements": [
+    "A131",
+    "A207"
+   ],
+   "new_in_town": [
+    "V85"
+   ],
+   "free": [
+    "E918"
+   ]
+  }
+ }
+}

@@ -20,7 +20,8 @@ def check(ctx) -> Finding:
         client = anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"])
     bad, _ = intro_unsupported(client, ctx.result, ctx.pools, ctx.w, ctx.con)
     if bad is None:
-        f.skipped = "нет ключа API — сверка вступления не выполнялась"
+        f.skipped = ("API недоступен (нет ключа или кончился баланс) — сверка вступления не выполнялась; "
+                     "проверьте вступление вручную")
         return f
     for x in bad:
         f.violations.append(f"{'вступление' if x['where'] == 'intro' else 'вступление темы'} ({x['lang']}): "

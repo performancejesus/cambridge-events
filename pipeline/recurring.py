@@ -26,27 +26,27 @@ MONTH_FIRST_RE = re.compile(rf"\b{_MON}\s+({_DAY})(?:\s*(?:-|–|to)\s*(?:{_MON}
 
 
 def seed(con: sqlite3.Connection) -> None:
-    for col in ("tags", "description", "status_note", "on_sale_note"):   # этап 7e (pipeline/knowledge.py)
+    for col in ("tags", "description", "status_note", "on_sale_note", "description_en"):   # этап 7e (pipeline/knowledge.py)
         if col not in {x[1] for x in con.execute("PRAGMA table_info(recurring_events)")}:
             con.execute(f"ALTER TABLE recurring_events ADD COLUMN {col} TEXT")
     for r in json.loads(SEED.read_text()):
         con.execute("""INSERT INTO recurring_events(rec_id, name, expected_month, official_url, check_method, patterns, note,
             tickets, page_date, manual_start, manual_end, venue, postcode, town, shared_page, festival, tags, description,
-            status_note, on_sale_note)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            status_note, on_sale_note, description_en)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ON CONFLICT(rec_id) DO UPDATE SET name=excluded.name, expected_month=excluded.expected_month,
             official_url=excluded.official_url, check_method=excluded.check_method, patterns=excluded.patterns,
             note=excluded.note, tickets=excluded.tickets, page_date=excluded.page_date,
             manual_start=excluded.manual_start, manual_end=excluded.manual_end, venue=excluded.venue,
             postcode=excluded.postcode, town=excluded.town, shared_page=excluded.shared_page,
             festival=excluded.festival, tags=excluded.tags, description=excluded.description,
-            status_note=excluded.status_note, on_sale_note=excluded.on_sale_note""",
+            status_note=excluded.status_note, on_sale_note=excluded.on_sale_note, description_en=excluded.description_en""",
                     (r["rec_id"], r["name"], r["month"], r["url"], r["method"], json.dumps(r["patterns"]), r.get("note"),
                      int(bool(r.get("tickets"))), r.get("page_date"), r.get("manual_start") or None,
                      r.get("manual_end") or None, r.get("venue"), r.get("postcode"), r.get("town"),
                      int(bool(r.get("shared_page"))), int(bool(r.get("festival"))),
                      json.dumps(r["tags"]) if r.get("tags") else None, r.get("description"), r.get("status_note"),
-                     r.get("on_sale_note")))
+                     r.get("on_sale_note"), r.get("description_en")))
 
 
 def dates_in(text: str, months: set[str], today: str) -> list[tuple[str, str | None]]:

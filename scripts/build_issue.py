@@ -764,6 +764,63 @@ def check_v4_rules(result: dict, pools: issue.Pools, removed: dict[str, str]) ->
     return notes
 
 
+def annual_window_items(con, result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[str, str]]:
+    """Этап 7e: ежегодное событие из списка (фестиваль, ярмарка, необычная традиция) идёт в окне выпуска, а модель его
+    не взяла или оно сократилось по длине (в v12: St Ives Michaelmas Fair, Ely's Orchard Fayre, Bury St Edmunds
+    Literature Festival, Great Eastern Run) — пункт дописывается без модели: описание — из recurring_events (составлено
+    по источникам), рубрика — по дням и зоне. Такие пункты защищены от сокращения по длине."""
+    cols = {r[1] for r in con.execute("PRAGMA table_info(recurring_events)")}
+    if "description_en" not in cols:
+        return []
+    placed = {e for sec in result["sections"] for it in sec["items"] for i in it["ids"]
+              for e in (pools.candidates.get(i) or {}).get("event_ids", [])}
+    rec = {r["event_id"]: r for r in con.execute("""SELECT * FROM recurring_events WHERE event_id IS NOT NULL
+             AND (festival = 1 OR tags LIKE '%quirky%') AND description IS NOT NULL""")}
+    notes = []
+    for cid, c in list(pools.candidates.items()):
+        if c.get("kind") != "event":
+            continue
+        hit = next((rec[e] for e in c["event_ids"] if e in rec), None)
+        if not hit or set(c["event_ids"]) & placed:
+            continue
+        z = c.get("zone")
+        if c.get("participant"):
+            rub = "sport"
+        elif c.get("on_weekends") and z in ("центр", "до 30 мин"):
+            rub = c["on_weekends"][0]
+        elif z in issue.OUT_OF_TOWN:
+            rub = "out_of_town"
+        elif z == issue.geo_COUNTY_FAR:
+            rub = "county"
+        else:
+            continue
+        en, ru = issue.price_from_data(c)
+        if en == "price not listed":   # правки по v8: одна формулировка для неизвестной цены
+            en, ru = "prices on the website", "цены на сайте"
+        town = hit["town"] or ""
+        venue = (c.get("venue") or hit["venue"] or town).replace("Town centre, ", "")
+        where_ru = venue if not town or town in venue else f"{venue}, {town}"
+        town_ru = issue.TOWN_RU.get(town, town)
+        where_ru = where_ru.replace(town, town_ru) if town else where_ru
+        c["annual_window"] = True
+        item = {"ids": [cid], "title_en": c["title"], "title_ru": c["title"], "where_en": venue if town in venue else
+                f"{venue}, {town}".strip(", "), "where_ru": where_ru, "price_en": en, "price_ru": ru,
+                "blurb_en": hit["description_en"] or "", "blurb_ru": hit["description"], "knowledge_en": [],
+                "knowledge_ru": [], "annual_window": True}
+        if rub == "sport":   # забег с участниками — компактной строкой в «Поучаствовать», как другие забеги
+            item |= {"line": True, "kind_ru": "забег", "kind_en": "race"}
+        target = next((s for s in result["sections"] if s["rubric"] == rub), None)
+        if target is None:
+            target = {"rubric": rub, "items": []}
+            result["sections"].append(target)
+        target["items"].append(item)
+        placed |= set(c["event_ids"])
+        notes.append((f"“{c['title']}” added to {rub}: annual event in the issue window (no model, description from "
+                      f"recurring_events)", f"«{c['title']}» дописан в «{issue.rubric_title(rub, w, 'ru', '')}»: ежегодное "
+                                            f"событие в окне выпуска (без модели, описание из recurring_events)"))
+    return notes
+
+
 def trim(result: dict, pools: issue.Pools, removed: dict[str, str]) -> list[tuple[str, str]]:
     """Правки по v4: основная часть — не больше MAX_MAIN_ITEMS пунктов. Сокращаются самые слабые пункты по оценке
     важности в рубриках, где больше двух пунктов («Тема недели», «Главное» и «Новое в городе» не сокращаются)."""
@@ -780,7 +837,8 @@ def trim(result: dict, pools: issue.Pools, removed: dict[str, str]) -> list[tupl
         for it in sorted(items, key=lambda it: issue.importance_of(pools, it)):
             if extra <= 0:
                 break
-            if any("ежегодного" in (pools.candidates.get(i, {}).get("evidence") or "") for i in it["ids"]):
+            if any("ежегодного" in (pools.candidates.get(i, {}).get("evidence") or "")
+                   or pools.candidates.get(i, {}).get("annual_window") for i in it["ids"]):
                 continue
             sec["items"].remove(it)
             extra -= 1
@@ -800,7 +858,8 @@ def trim(result: dict, pools: issue.Pools, removed: dict[str, str]) -> list[tupl
                     1 for x in sec["items"] for i in x["ids"] if (pools.candidates.get(i) or {}).get("theatre")) <= 1:
                 return True   # этап 7d: единственный театр/танец «На неделе» (проверка 22; в v11 сокращён London City Ballet)
             return issue.importance_of(pools, it) >= 7 or any(
-                "ежегодного" in (c.get("evidence") or "") or c.get("page_urgency") or c.get("urgency") for c in cs)
+                "ежегодного" in (c.get("evidence") or "") or c.get("page_urgency") or c.get("urgency")
+                or c.get("annual_window") for c in cs)
         pool = [(issue.importance_of(pools, it), sec, it) for sec in result["sections"]
                 if sec["rubric"] not in keep_whole and len(sec["items"]) > 2
                 and n_full(sec) > RUBRIC_LIMITS.get("weekend" if sec["rubric"].startswith("weekend_") else sec["rubric"],
@@ -1349,7 +1408,8 @@ def mandatory(pools: issue.Pools, result: dict, w: issue.Window) -> dict[str, li
     for cid, c in pools.candidates.items():
         if c["kind"] == "event" and c.get("quirky") and c.get("on_weekends") and free(cid):
             need.setdefault(c["on_weekends"][0], []).append(cid)
-    counts = {sec["rubric"]: len(sec["items"]) for sec in result["sections"]}
+    # этап 7e: минимум рубрики — по полным пунктам, как в проверке 20 (строка «Регулярно в библиотеках» — компактная)
+    counts = {sec["rubric"]: sum(1 for it in sec["items"] if not is_compact(it, pools)) for sec in result["sections"]}
     wk = [sec for sec in result["sections"] if sec["rubric"] == "weekdays"]
     if not any(pools.candidates[i].get("theatre") for sec in wk for it in sec["items"] for i in it["ids"]):
         th = sorted((cid for cid, c in pools.candidates.items() if c["kind"] == "event" and c.get("theatre")
@@ -1638,7 +1698,7 @@ FIX_RULES = [(8, r"латинские буквы в слове|кириллиц�
              (14, r"дата окончания со страницы"), (31, r"вытеснено подтверждённым открытием"),
              (36, r"противоречие стадии открытия"), (1, r"переписано по источнику"), (35, r"грамматика:"),
              (44, r"название в оригинале"), (45, r"Дед Мороз|пояснение «"), (46, r"роли участников"),
-             (43, r"вступление переписано"), (47, r"город в заголовке")]
+             (43, r"вступление переписано"), (47, r"город в заголовке"), (39, r"ежегодное событие в окне выпуска")]
 
 
 def fix_log(notes: list[tuple[str, str]]) -> dict[int, list[tuple[str, str]]]:
@@ -1798,6 +1858,9 @@ def main() -> None:
     result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "museums"]
     mus_items, result["museums_why"] = museums.build_items(pools, result, w)
     result["sections"].append({"rubric": "museums", "items": mus_items})
+    # этап 7e: ежегодные события окна, которых нет в выпуске, — без модели; затем снова сокращение до 45 полных пунктов
+    fix_notes += annual_window_items(con, result, pools, w)
+    fix_notes += trim(result, pools, removed)
     from pipeline import courses   # этап 7e: «Научиться» — курсы и мастер-классы для взрослых, без модели
     result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "learn"]
     learn_items, result["learn_why"] = courses.build_items(con, pools, result, w)
@@ -1910,8 +1973,12 @@ def main() -> None:
     if miss_ids and not result.get("reasons_filled") and os.environ.get("EVENTS_ANTHROPIC_KEY") and not args.no_api:
         # решения после 6d: пропуски без причины — модель один раз дописывает причины отдельным коротким запросом
         import anthropic
-        n5, cost5 = fill_reasons(anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"]), result, pools, w,
-                                 miss_ids, con)
+        try:
+            n5, cost5 = fill_reasons(anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"]), result, pools, w,
+                                     miss_ids, con)
+        except anthropic.APIError as e:   # этап 7e: API недоступен (кончился баланс) — выпуск не падает, редактору пометка
+            n5, cost5 = [(f"passed-over reasons not added: API unavailable ({type(e).__name__})",
+                          f"причины пропусков не дописаны: API недоступен ({str(e)[:120]})")], 0.0
         fix_notes += n5
         usage["cost_usd"] += cost5
         result["reasons_filled"] = True
