@@ -268,45 +268,11 @@
    "rule": 28,
    "title": "Пропуски с оценкой не ниже выбранного — с причиной",
    "level": "fix",
-   "status": "left",
-   "details": [
-    "Бесплатно: 'Polar Panoramas' (2.8)",
-    "Бесплатно: ANDREW CHAMBLIN MEMORIAL LECTURE 2026 (3.4)",
-    "Бесплатно: Academy of Great St Mary's Music Marathon (2.9)",
-    "Бесплатно: Bridging Binaries LGBTQ+ Tour (3)",
-    "Бесплатно: Cambridge Carbon Footprint's Open Eco Homes (3.5)",
-    "Бесплатно: Fishies Cambridge WEVS | LAUNCH NIGHT ft ABBA Live Tribute (2.8)",
-    "Бесплатно: International E-Waste Day – Saturday 17th October 2026 (3)",
-    "Бесплатно: Meet the Cows (3)",
-    "Бесплатно: Misery and Beauty: Harry Becker's Portrait of East Anglian Farm Labour around the Great War (2.8)",
-    "Бесплатно: Museum Boost (3)",
-    "Бесплатно: Museum Encounters: Parkinson's Dance Course (Autumn 2026) (3)",
-    "Бесплатно: Under control?  The hidden technology of automatic control past and future (2.9)",
-    "В кино: English National Ballet: The Sleeping Beauty (5.4)",
-    "Выставки: Cambridge Carbon Footprint's Open Eco Homes (3.5)",
-    "Выставки: Indie Fridays | Cambridge Junction (3.1)",
-    "Выставки: Legacies of the Windrush Exhibition (3.1)",
-    "Выставки: Life Drawing Class | Cambridge Junction (3.2)",
-    "Выставки: The Comedy Store 2026 | Cambridge Junction (5.7)",
-    "Выставки: Waterstones Book Events (3.4)",
-    "Главное на выходные 10–11 октября: Antony Szmierek | Cambridge Junction (6.4)",
-    "Главное на выходные 17–18 октября: The Beat Starring Dave Wakeling (6.9)",
-    "На неделе: концерты, театр, комедия: Dick Valentine (5.8)",
-    "На неделе: концерты, театр, комедия: Reef | Cambridge Junction (6.9)",
-    "Новые анонсы: Olly Murs (8.4)",
-    "Новые анонсы: Simply Red (10)",
-    "С детьми: 90's Baby Daytime Clubbing Kings Lynn (2.6)",
-    "С детьми: International E-Waste Day – Saturday 17th October 2026 (3)",
-    "С детьми: Welly Walk October 2026 (3)",
-    "Спорт: Academy of Great St Mary's Music Marathon (2.9)",
-    "Спорт: PHOENIX BEDFORDSHIRE Freaky Phoenix Friday (2.7)",
-    "Спорт: PHOENIX BEDFORDSHIRE Skull Runner (2.8)",
-    "Успейте купить билеты: JACK SAVORETTI (8.3)",
-    "Успейте купить билеты: Jonathan Pie (7.9)",
-    "Успейте купить билеты: The Bluetones | Cambridge Junction (6.3)",
-    "Успейте купить билеты: The Proclaimers (8.5)"
-   ],
-   "fixed": []
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "причины пропуска дописаны отдельным запросом: 35 из 35"
+   ]
   },
   {
    "rule": 29,
@@ -342,7 +308,21 @@
     "«Whittlesea Straw Bear Festival»: «Завершается сожжением чучела медведя» — в «Факты из знаний модели (проверить)»",
     "«The Betfred Guineas Festival»: «Это одно из главных событий сезона плоских скачек» — в «Факты из знаний модели (проверить)»",
     "«The Betfred Guineas Festival»: «Фестиваль пройдёт в конце апреля» — в «Факты из знаний модели (проверить)»",
-    "«Tripots»: «С видом на реку» — в «Факты из знаний модели (проверить)»"
+    "«Tripots»: «С видом на реку» — в «Факты из знаний модели (проверить)»",
+    "«Roachford + Hue and Cry»: «Hue and Cry исполняют синти-поп классику» — в «Факты из знаний модели (проверить)»",
+    "«Nish Kumar: Angry Humour From a Really Nice Guy»: «Nish Kumar выступает с новым часом политического юмора» — в «Факты из знаний модели (проверить)»",
+    "«Regular sessions in libraries»: «Проводятся занятия по цифровой грамотности (Digital Drop-In)» — в «Факты из знаний модели (проверить)»",
+    "«Regular sessions in libraries»: «Проводятся встречи для изучающих BSL» — в «Факты из знаний модели (проверить)»",
+    "«Regular sessions in libraries»: «Проводятся занятия Children's Craft и Lego Club» — в «Факты из знаний модели (проверить)»",
+    "«Apple Day 2026»: «Праздник включает семейные активности в честь урожая» — в «Факты из знаний модели (проверить)»",
+    "«AEPG Great Eastern Run»: «В полумарафоне участвует до 8000 бегунов» — в «Факты из знаний модели (проверить)»",
+    "«AEPG Great Eastern Run»: «Зрителям бесплатно вдоль маршрута» — в «Факты из знаний модели (проверить)»",
+    "«Bury St Edmunds Literature Festival»: «Фестиваль включает встречи с авторами» — в «Факты из знаний модели (проверить)»",
+    "«Bury St Edmunds Literature Festival»: «Фестиваль включает мастер-классы» — в «Факты из знаний модели (проверить)»",
+    "«Bury St Edmunds Literature Festival»: «Фестиваль включает литературные прогулки по городу» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «Фестиваль сопровождается фолк-музыкантами» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «Обычай Plough Monday был возрождён в 1980 году» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «Завершается событие сожжением чучела медведя» — в «Факты из знаний модели (проверить)»"
    ]
   },
   {
@@ -391,10 +371,8 @@
    "rule": 35,
    "title": "Грамматика русских текстов (падежи, согласование) — вычитка",
    "level": "fix",
-   "status": "skip",
-   "details": [
-    "не проверялась: нет ключа API"
-   ],
+   "status": "pass",
+   "details": [],
    "fixed": []
   },
   {
@@ -464,10 +442,8 @@
    "rule": 43,
    "title": "Вступление — только о том, что есть в выпуске",
    "level": "block",
-   "status": "skip",
-   "details": [
-    "не проверялась: API недоступен (нет ключа или кончился баланс) — сверка вступления не выполнялась; проверьте вступление вручную"
-   ],
+   "status": "fixed",
+   "details": [],
    "fixed": [
     "вступление переписано: нет в выпуске — «Alison Moyet, Alice Cooper, Nish Kumar and The Beat»; «Alice Cooper» (было: «Эти две недели в Кембридже проходят под знаком одной даты: город отмечает 80-летие со дня рождения Сида Барретта — трибьют-концертом, лекциями и выставкой, а Corn Exchange продолжает принимать звёзд: »)"
    ]
@@ -482,6 +458,7 @@
     "«Have You Got It Yet?: meet the director + film screening»: название в оригинале вместо перевода «Have You Got It Yet?: встреча с режиссёром + показ фильма»",
     "«Anarchical Antiquity — inaugural lecture by Professor Josephine Crawley Quinn»: название в оригинале вместо перевода «Anarchical Antiquity — инаугурационная лекция профессора Josephine Crawley Quinn»",
     "«Free Sunday organ recitals at King's College Chapel»: название в оригинале вместо перевода «Бесплатные органные концерты по воскресеньям в King's College Chapel»",
+    "«Dubai Future Champions Festival — racing»: название в оригинале вместо перевода «Dubai Future Champions Festival — скачки»",
     "«Dubai Future Champions Festival — racing»: название в оригинале вместо перевода «Dubai Future Champions Festival — скачки»",
     "«Dubai Future Champions Festival — racing»: название в оригинале вместо перевода «Dubai Future Champions Festival — скачки»"
    ]

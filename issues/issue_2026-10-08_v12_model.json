@@ -1286,7 +1286,7 @@
  "usage": {
   "input_tokens": 243840,
   "output_tokens": 50405,
-  "cost_usd": 2.6440180000000004
+  "cost_usd": 2.7795870000000007
  },
  "result_post": {
   "result": {
@@ -1312,17 +1312,17 @@
         "Syd Barrett was a founding member and early songwriter of Pink Floyd",
         "Kula Shaker are a British rock band",
         "Soft Machine are a band associated with the Canterbury progressive-rock scene",
+        "source check (not_in_source): Барретт родился в этом городе",
         "check (born, last): A concert marking the year of what would have been Syd Barrett's 80th birthday, in the city where the Pink Floyd founder was born and where he gave his last live performance.",
-        "check (born, last): This week the city marks the year of what would have been Syd Barrett's 80th birthday — the Pink Floyd founder was born here and gave his last live performance here — with a tribute concert, talks, an exhibition and one unexpected football connection.",
-        "source check (not_in_source): Барретт родился в этом городе"
+        "check (born, last): This week the city marks the year of what would have been Syd Barrett's 80th birthday — the Pink Floyd founder was born here and gave his last live performance here — with a tribute concert, talks, an exhibition and one unexpected football connection."
        ],
        "knowledge_ru": [
         "Syd Barrett был одним из основателей и первым автором песен Pink Floyd",
         "Kula Shaker — британская рок-группа",
         "Soft Machine — группа, связанная с кентерберийской прогрессив-рок-сценой",
+        "сверка (нет в источнике): Барретт родился в этом городе",
         "проверка (исполнилось бы, последнее): Концерт в честь года, когда основателю Pink Floyd Сиду Барретту исполнилось бы 80 лет — в городе, где он родился и дал своё последнее концертное выступление.",
-        "проверка (последнее, исполнилось бы): На этой неделе город отмечает год, в который основателю Pink Floyd Сиду Барретту, родившемуся и давшему своё последнее концертное выступление в Кембридже, исполнилось бы 80 лет: трибьют-концерт, лекции, выставка — и одна неожиданная футбольная связь.",
-        "сверка (нет в источнике): Барретт родился в этом городе"
+        "проверка (последнее, исполнилось бы): На этой неделе город отмечает год, в который основателю Pink Floyd Сиду Барретту, родившемуся и давшему своё последнее концертное выступление в Кембридже, исполнилось бы 80 лет: трибьют-концерт, лекции, выставка — и одна неожиданная футбольная связь."
        ]
       },
       {
@@ -1341,8 +1341,8 @@
         "source check (not_in_source): Выставка идёт всю юбилейную неделю"
        ],
        "knowledge_ru": [
-        "проверка (юбилейную): Картины, эскизы и работы современных художников, прослеживающие визуальное творчество Барретта и его влияние — выставка идёт всю юбилейную неделю.",
-        "сверка (нет в источнике): Выставка идёт всю юбилейную неделю"
+        "сверка (нет в источнике): Выставка идёт всю юбилейную неделю",
+        "проверка (юбилейную): Картины, эскизы и работы современных художников, прослеживающие визуальное творчество Барретта и его влияние — выставка идёт всю юбилейную неделю."
        ]
       },
       {
@@ -1418,14 +1418,16 @@
         "Roachford is a British soul singer known for the hit Cuddly Toy",
         "Hue and Cry is a Scottish duo formed in 1984 by brothers Patrick and Gregory Kane, known for the hit 'Labour of Love'.",
         "Roachford is a British soul singer best known for his 1988 hit 'Cuddly Toy'.",
-        "source check (not_in_source): Hue and Cry — синти-поп группа"
+        "source check (not_in_source): Hue and Cry — синти-поп группа",
+        "source check (not_in_source): Hue and Cry исполняют синти-поп классику"
        ],
        "knowledge_ru": [
         "Hue and Cry — шотландский поп-дуэт братьев Pat и Greg Kane",
         "Roachford — британский соул-исполнитель, известный хитом Cuddly Toy",
         "Hue and Cry — шотландский дуэт, основанный в 1984 году братьями Patrick и Gregory Kane, известный хитом 'Labour of Love'.",
         "Roachford — британский соул-исполнитель, прославившийся хитом 'Cuddly Toy' 1988 года.",
-        "сверка (нет в источнике): Hue and Cry — синти-поп группа"
+        "сверка (нет в источнике): Hue and Cry — синти-поп группа",
+        "сверка (нет в источнике): Hue and Cry исполняют синти-поп классику"
        ]
       },
       {
@@ -1449,18 +1451,19 @@
       },
       {
        "ids": [
-        "E3"
+        "E2521"
        ],
-       "title_en": "Footlights Tour Show 2026: Prize Cow (for my best son)",
-       "title_ru": "Footlights Tour Show 2026: Prize Cow (for my best son)",
-       "where_en": "ADC Theatre, Cambridge",
-       "where_ru": "ADC Theatre, Кембридж",
-       "price_en": "£7.50–£12",
-       "price_ru": "£7.50–£12",
-       "blurb_en": "The home run of the Cambridge Footlights' 2026 tour show, an hour of student sketch comedy.",
-       "blurb_ru": "Финальные показы тур-шоу Cambridge Footlights 2026 года — час студенческих скетчей.",
+       "title_en": "Ely’s Autumn and Orchard Fayre 2026",
+       "title_ru": "Ely’s Autumn and Orchard Fayre 2026",
+       "where_en": "Ely",
+       "where_ru": "Эли",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Ely's autumn fair: local food, drink and crafts, apple-themed activities and live music over two days in October.",
+       "blurb_ru": "Осенняя ярмарка в Эли: местные продукты, ремёсла, яблочные забавы и музыка — два дня в октябре.",
        "knowledge_en": [],
-       "knowledge_ru": []
+       "knowledge_ru": [],
+       "annual_window": true
       }
      ],
      "passed_over": [
@@ -1473,6 +1476,11 @@
        "id": "E818",
        "reason_en": "choral concert, lower importance than items chosen",
        "reason_ru": "хоровой концерт, важность ниже отобранных пунктов"
+      },
+      {
+       "id": "E1022",
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       }
      ]
     },
@@ -1493,11 +1501,13 @@
        "blurb_ru": "Nish Kumar привозит в Corn Exchange новый час политического юмора, метко проходясь по неравенству, автократии и общему хаосу современной политики. Шоу обещают злым, но фирменное обаяние «хорошего парня» никуда не денется.",
        "knowledge_en": [
         "Nish Kumar is a British stand-up comedian, formerly host of The Mash Report",
-        "Nish Kumar is a British comedian known for hosting 'The Mash Report' and frequent appearances on 'Mock the Week'."
+        "Nish Kumar is a British comedian known for hosting 'The Mash Report' and frequent appearances on 'Mock the Week'.",
+        "source check (not_in_source): Nish Kumar выступает с новым часом политического юмора"
        ],
        "knowledge_ru": [
         "Nish Kumar — британский стендап-комик, бывший ведущий The Mash Report",
-        "Nish Kumar — британский комик, известный как ведущий 'The Mash Report' и частый участник 'Mock the Week'."
+        "Nish Kumar — британский комик, известный как ведущий 'The Mash Report' и частый участник 'Mock the Week'.",
+        "сверка (нет в источнике): Nish Kumar выступает с новым часом политического юмора"
        ]
       },
       {
@@ -1540,6 +1550,11 @@
        "id": "E1428",
        "reason_en": "moved to tickets — the venue page flags few seats left",
        "reason_ru": "перенесено в раздел «билеты» — на странице указано мало оставшихся мест"
+      },
+      {
+       "id": "E250",
+       "reason_en": "Duplicate of the already chosen event 'The bEAT: Dance Crazed Too UK Tour' (same tour and date)",
+       "reason_ru": "Дублирует уже выбранное событие «The bEAT: Dance Crazed Too UK Tour» (тот же тур и дата)"
       }
      ]
     },
@@ -1622,6 +1637,16 @@
        "id": "E1030",
        "reason_en": "would have been a third Junction item, and venue cap is already reached",
        "reason_ru": "стал бы третьим пунктом от Junction при уже заполненном лимите по площадке"
+      },
+      {
+       "id": "E1018",
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
+      },
+      {
+       "id": "E1742",
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
       }
      ]
     },
@@ -1711,6 +1736,11 @@
        "id": "F6",
        "reason_en": "close in importance but cut to keep the main-films list to four",
        "reason_ru": "близка по важности, но отсечена, чтобы оставить список главных фильмов из четырёх"
+      },
+      {
+       "id": "E2454",
+       "reason_en": "This is a ballet performance screening, not a film — doesn't fit the cinema listings focus on movies",
+       "reason_ru": "Это трансляция балета, а не фильм — не подходит под формат киноафиши"
       }
      ]
     },
@@ -1792,7 +1822,38 @@
        "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "E1031",
+       "reason_en": "Not an exhibition — it's a stand-up comedy show",
+       "reason_ru": "Не выставка — это стендап-шоу"
+      },
+      {
+       "id": "E1033",
+       "reason_en": "Not an exhibition — it's a club/dance night",
+       "reason_ru": "Не выставка — это клубная вечеринка"
+      },
+      {
+       "id": "E1381",
+       "reason_en": "Lower priority exhibition out of the centre, weaker than the chosen items",
+       "reason_ru": "Менее приоритетная выставка за пределами центра, слабее выбранных"
+      },
+      {
+       "id": "E234",
+       "reason_en": "Not an exhibition — these are book signings/author talks",
+       "reason_ru": "Не выставка — это встречи с авторами и автограф-сессии"
+      },
+      {
+       "id": "E454",
+       "reason_en": "Not an exhibition — it's a home-tour event about eco upgrades",
+       "reason_ru": "Не выставка — это экскурсии по экодомам"
+      },
+      {
+       "id": "E999",
+       "reason_en": "Not an exhibition — it's a recurring drawing class",
+       "reason_ru": "Не выставка — это регулярные занятия рисованием"
+      }
+     ]
     },
     {
      "rubric": "free",
@@ -1854,12 +1915,18 @@
        "knowledge_en": [
         "source check (not_in_source): Есть детский творческий клуб и Lego Club",
         "source check (not_in_source): Есть занятия по цифровой грамотности",
-        "source check (not_in_source): Есть встречи для изучающих BSL"
+        "source check (not_in_source): Есть встречи для изучающих BSL",
+        "source check (not_in_source): Проводятся занятия по цифровой грамотности (Digital Drop-In)",
+        "source check (not_in_source): Проводятся встречи для изучающих BSL",
+        "source check (not_in_source): Проводятся занятия Children's Craft и Lego Club"
        ],
        "knowledge_ru": [
         "сверка (нет в источнике): Есть детский творческий клуб и Lego Club",
         "сверка (нет в источнике): Есть занятия по цифровой грамотности",
-        "сверка (нет в источнике): Есть встречи для изучающих BSL"
+        "сверка (нет в источнике): Есть встречи для изучающих BSL",
+        "сверка (нет в источнике): Проводятся занятия по цифровой грамотности (Digital Drop-In)",
+        "сверка (нет в источнике): Проводятся встречи для изучающих BSL",
+        "сверка (нет в источнике): Проводятся занятия Children's Craft и Lego Club"
        ]
       },
       {
@@ -1878,7 +1945,68 @@
        "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "E1269",
+       "reason_en": "Duplicate of the classical-music theme already covered by the organ recitals",
+       "reason_ru": "Дублирует тему классической музыки, уже представленную органными концертами"
+      },
+      {
+       "id": "E1271",
+       "reason_en": "Duplicate of the exhibition theme already covered by the de Freston show",
+       "reason_ru": "Дублирует тему выставки, уже представленной выставкой де Фрестона"
+      },
+      {
+       "id": "E1272",
+       "reason_en": "Not leisure — an academic lecture on engineering history",
+       "reason_ru": "Не досуг — это академическая лекция по истории техники"
+      },
+      {
+       "id": "E1279",
+       "reason_en": "Not leisure — a specialist physics memorial lecture",
+       "reason_ru": "Не досуг — это специализированная мемориальная лекция по физике"
+      },
+      {
+       "id": "E1288",
+       "reason_en": "Duplicate of the exhibition theme already covered by another free pick",
+       "reason_ru": "Дублирует тему выставки, уже представленную другим бесплатным пунктом"
+      },
+      {
+       "id": "E1300",
+       "reason_en": "Niche audience (Parkinson's-specific programme), not general leisure",
+       "reason_ru": "Узкая аудитория (программа для людей с болезнью Паркинсона), не общий досуг"
+      },
+      {
+       "id": "E1302",
+       "reason_en": "Niche audience programme, not general leisure",
+       "reason_ru": "Программа для узкой аудитории, не общий досуг"
+      },
+      {
+       "id": "E1586",
+       "reason_en": "Unclear whether this is actually free — description is garbled and not reliable",
+       "reason_ru": "Неясно, действительно ли это бесплатно — описание сбивчивое и ненадёжное"
+      },
+      {
+       "id": "E241",
+       "reason_en": "Out of the centre zone, already enough nature-walk style items",
+       "reason_ru": "Вне центральной зоны, уже достаточно подобных прогулок на природе"
+      },
+      {
+       "id": "E454",
+       "reason_en": "Not leisure — an educational eco-home tour",
+       "reason_ru": "Не досуг — это образовательная экскурсия по экодомам"
+      },
+      {
+       "id": "E944",
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
+      },
+      {
+       "id": "E949",
+       "reason_en": "Not leisure — a technical/educational e-waste event",
+       "reason_ru": "Не досуг — это техническое/образовательное мероприятие по утилизации электроники"
+      }
+     ]
     },
     {
      "rubric": "kids",
@@ -1896,11 +2024,13 @@
        "blurb_en": "The region's biggest Apple Day, with activities for families celebrating the harvest.",
        "blurb_ru": "Крупнейший в регионе праздник яблок с семейными активностями в честь урожая.",
        "knowledge_en": [
-        "source check (not_in_source): На нём есть семейные активности в честь урожая"
+        "source check (not_in_source): На нём есть семейные активности в честь урожая",
+        "source check (not_in_source): Праздник включает семейные активности в честь урожая"
        ],
        "knowledge_ru": [
+        "сверка (нет в источнике): На нём есть семейные активности в честь урожая",
         "проверка (Крупнейший): Крупнейший в регионе праздник яблок с семейными активностями в честь урожая.",
-        "сверка (нет в источнике): На нём есть семейные активности в честь урожая"
+        "сверка (нет в источнике): Праздник включает семейные активности в честь урожая"
        ],
        "url": "https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/"
       },
@@ -2027,7 +2157,23 @@
        "meta_ru": "сб, 10:00–10:30 · Perse Upper School Performing Arts Centre, Кембридж · £130 осенний триместр · пробное занятие бесплатно"
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "E1305",
+       "reason_en": "No reason — could be included",
+       "reason_ru": "Причины нет — можно было взять"
+      },
+      {
+       "id": "E678",
+       "reason_en": "Explicitly an adults-only event — 'NO kids' stated in description",
+       "reason_ru": "Явно мероприятие только для взрослых — в описании указано «NO kids»"
+      },
+      {
+       "id": "E949",
+       "reason_en": "Not specifically a kids' event",
+       "reason_ru": "Не специально детское мероприятие"
+      }
+     ]
     },
     {
      "rubric": "sport",
@@ -2133,6 +2279,31 @@
       },
       {
        "ids": [
+        "E1582"
+       ],
+       "title_en": "AEPG Great Eastern Run",
+       "title_ru": "AEPG Great Eastern Run",
+       "where_en": "Peterborough, Cambridgeshire",
+       "where_ru": "Питерборо, Cambridgeshire",
+       "price_en": "£19.90–£40",
+       "price_ru": "£19.90–£40",
+       "blurb_en": "A half marathon through the streets of Peterborough (up to 8,000 runners) plus a 5k fun run; free to watch along the route.",
+       "blurb_ru": "Полумарафон по улицам Питерборо (до 8000 бегунов) и забег на 5 км; зрителям — бесплатно вдоль маршрута.",
+       "knowledge_en": [
+        "source check (not_in_source): В полумарафоне участвует до 8000 бегунов",
+        "source check (not_in_source): Зрителям бесплатно вдоль маршрута"
+       ],
+       "knowledge_ru": [
+        "сверка (нет в источнике): В полумарафоне участвует до 8000 бегунов",
+        "сверка (нет в источнике): Зрителям бесплатно вдоль маршрута"
+       ],
+       "annual_window": true,
+       "line": true,
+       "kind_ru": "забег",
+       "kind_en": "race"
+      },
+      {
+       "ids": [
         "B:K:cufcfoundation.com:b4cda6a6"
        ],
        "line": true,
@@ -2142,7 +2313,7 @@
        "title_en": "Walking Football",
        "title_ru": "Walking Football",
        "meta_en": "for beginners · Tuesday — Bar Hill Community Pitch; Thursday — Abbey Leisure Complex; Friday — Milton Community Centre · £3",
-       "meta_ru": "для начинающих · Tuesday — Bar Hill Community Pitch; Thursday — Abbey Leisure Complex; Friday — Milton Community Centre · £3",
+       "meta_ru": "для начинающих · вт — Bar Hill Community Pitch; чт — Abbey Leisure Complex; пт — Milton Community Centre · £3",
        "where_en": "",
        "where_ru": "",
        "price_en": "",
@@ -2153,7 +2324,23 @@
        "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "E1269",
+       "reason_en": "This is a music event, not a sports event",
+       "reason_ru": "Это музыкальное мероприятие, а не спортивное"
+      },
+      {
+       "id": "E1764",
+       "reason_en": "Duplicate running race theme already covered by AEPG Great Eastern Run, and located far from Cambridge (Biggleswade)",
+       "reason_ru": "Дублирует тему забега, уже представленную AEPG Great Eastern Run, к тому же проходит далеко от Кембриджа (Биггльсвейд)"
+      },
+      {
+       "id": "E1765",
+       "reason_en": "Duplicate running race theme already covered by AEPG Great Eastern Run, and located far from Cambridge (Biggleswade)",
+       "reason_ru": "Дублирует тему забега, уже представленную AEPG Great Eastern Run, к тому же проходит далеко от Кембриджа (Биггльсвейд)"
+      }
+     ]
     },
     {
      "rubric": "out_of_town",
@@ -2179,40 +2366,43 @@
       },
       {
        "ids": [
-        "E2342"
+        "E2526"
        ],
-       "title_en": "Leo Sayer",
-       "title_ru": "Leo Sayer",
-       "where_en": "King's Lynn Corn Exchange, King's Lynn",
-       "where_ru": "King's Lynn Corn Exchange, Кингс-Линн",
-       "price_en": "£51.15",
-       "price_ru": "£51.15",
-       "blurb_en": "70s pop singer Leo Sayer in concert.",
-       "blurb_ru": "Поп-певец 1970-х Leo Sayer с концертом.",
+       "title_en": "Bury St Edmunds Literature Festival",
+       "title_ru": "Bury St Edmunds Literature Festival",
+       "where_en": "Bury St Edmunds",
+       "where_ru": "Бери-Сент-Эдмундс",
+       "price_en": "prices on the website",
+       "price_ru": "цены на сайте",
+       "blurb_en": "Bury St Edmunds Literature Festival: author talks, panel discussions, workshops and literary walks around the town.",
+       "blurb_ru": "Литературный фестиваль Бери-Сент-Эдмундса: встречи с авторами, мастер-классы и литературные прогулки по городу.",
        "knowledge_en": [
-        "source check (not_in_source): Leo Sayer был поп-певцом 1970-х годов",
-        "source check (not_in_source): Leo Sayer — поп-певец 1970-х годов"
+        "source check (not_in_source): Фестиваль включает встречи с авторами",
+        "source check (not_in_source): Фестиваль включает мастер-классы",
+        "source check (not_in_source): Фестиваль включает литературные прогулки по городу"
        ],
        "knowledge_ru": [
-        "проверка (1970): Поп-певец 1970-х Leo Sayer с концертом.",
-        "сверка (нет в источнике): Leo Sayer был поп-певцом 1970-х годов",
-        "сверка (нет в источнике): Leo Sayer — поп-певец 1970-х годов"
-       ]
+        "сверка (нет в источнике): Фестиваль включает встречи с авторами",
+        "сверка (нет в источнике): Фестиваль включает мастер-классы",
+        "сверка (нет в источнике): Фестиваль включает литературные прогулки по городу"
+       ],
+       "annual_window": true
       },
       {
        "ids": [
-        "E2343"
+        "E2522"
        ],
-       "title_en": "Kevin 'Bloody' Wilson",
-       "title_ru": "Kevin 'Bloody' Wilson",
-       "where_en": "King's Lynn Corn Exchange, King's Lynn",
-       "where_ru": "King's Lynn Corn Exchange, Кингс-Линн",
+       "title_en": "St Ives Michaelmas Fair",
+       "title_ru": "St Ives Michaelmas Fair",
+       "where_en": "St Ives",
+       "where_ru": "Сент-Айвс",
        "price_en": "prices on the website",
        "price_ru": "цены на сайте",
-       "blurb_en": "Australian comedian Kevin Bloody Wilson's unfiltered stand-up, after 40-plus years on the road.",
-       "blurb_ru": "Нефильтрованный стендап австралийского комика Kevin Bloody Wilson, который гастролирует уже более 40 лет.",
+       "blurb_en": "St Ives' Michaelmas Fair: three days of funfair rides in the town-centre streets, starting on the second Monday of October.",
+       "blurb_ru": "Михайловская ярмарка в Сент-Айвсе: три дня аттракционов на улицах центра, со второго понедельника октября.",
        "knowledge_en": [],
-       "knowledge_ru": []
+       "knowledge_ru": [],
+       "annual_window": true
       }
      ],
      "passed_over": []
@@ -2252,7 +2442,6 @@
         "source check (not_in_source): Fireworks Night пройдёт 5 ноября"
        ],
        "knowledge_ru": [
-        "проверка (старейших): Одна из старейших бесплатных кембриджских традиций возвращается 5 ноября — фейерверк от отмеченной наградами компании, еда и развлечения.",
         "сверка (нет в источнике): Fireworks Night проходит 5 ноября",
         "сверка (нет в источнике): Fireworks Night пройдёт 5 ноября"
        ]
@@ -2270,13 +2459,16 @@
        "blurb_en": "Dates confirmed for January's Straw Bear Festival: a man dressed head to toe in straw dances through the streets with folk musicians, ending with the burning of the bear — a Plough Monday custom revived in 1980.",
        "blurb_ru": "Подтверждены даты январского фестиваля «Соломенного медведя»: человек в костюме из соломы с ног до головы танцует по улицам в сопровождении фолк-музыкантов, завершается всё сожжением чучела медведя — обычай Plough Monday, возрождённый в 1980 году.",
        "knowledge_en": [
-        "check (in 1980): Dates confirmed for January's Straw Bear Festival: a man dressed head to toe in straw dances through the streets with folk musicians, ending with the burning of the bear — a Plough Monday custom revived in 1980.",
         "source check (not_in_source): На Whittlesea Straw Bear Festival человек в костюме из соломы танцует по улицам с фолк-музыкантами",
         "source check (not_in_source): Фестиваль завершается сожжением соломенного чучела медведя",
         "source check (not_in_source): Это обычай Plough Monday, возрождённый в 1980 году",
         "source check (not_in_source): Whittlesea Straw Bear Festival — фестиваль в январе",
         "source check (not_in_source): На фестивале человек в костюме из соломы танцует по улицам с фолк-музыкантами",
-        "source check (not_in_source): Завершается сожжением чучела медведя"
+        "source check (not_in_source): Завершается сожжением чучела медведя",
+        "check (in 1980): Dates confirmed for January's Straw Bear Festival: a man dressed head to toe in straw dances through the streets with folk musicians, ending with the burning of the bear — a Plough Monday custom revived in 1980.",
+        "source check (not_in_source): Фестиваль сопровождается фолк-музыкантами",
+        "source check (not_in_source): Обычай Plough Monday был возрождён в 1980 году",
+        "source check (not_in_source): Завершается событие сожжением чучела медведя"
        ],
        "knowledge_ru": [
         "сверка (нет в источнике): На Whittlesea Straw Bear Festival человек в костюме из соломы танцует по улицам с фолк-музыкантами",
@@ -2284,7 +2476,10 @@
         "сверка (нет в источнике): Это обычай Plough Monday, возрождённый в 1980 году",
         "сверка (нет в источнике): Whittlesea Straw Bear Festival — фестиваль в январе",
         "сверка (нет в источнике): На фестивале человек в костюме из соломы танцует по улицам с фолк-музыкантами",
-        "сверка (нет в источнике): Завершается сожжением чучела медведя"
+        "сверка (нет в источнике): Завершается сожжением чучела медведя",
+        "сверка (нет в источнике): Фестиваль сопровождается фолк-музыкантами",
+        "сверка (нет в источнике): Обычай Plough Monday был возрождён в 1980 году",
+        "сверка (нет в источнике): Завершается событие сожжением чучела медведя"
        ]
       },
       {
@@ -2332,7 +2527,18 @@
        ]
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "A1964",
+       "reason_en": "Already a Newmarket Racecourse event chosen (Guineas Festival) — venue limit reached",
+       "reason_ru": "Уже выбрано мероприятие на ипподроме Ньюмаркета (Guineas Festival) — лимит по площадке исчерпан"
+      },
+      {
+       "id": "A209",
+       "reason_en": "Already a Newmarket Racecourse event chosen (Guineas Festival) — venue limit reached",
+       "reason_ru": "Уже выбрано мероприятие на ипподроме Ньюмаркета (Guineas Festival) — лимит по площадке исчерпан"
+      }
+     ]
     },
     {
      "rubric": "tickets",
@@ -2391,7 +2597,28 @@
        "knowledge_ru": []
       }
      ],
-     "passed_over": []
+     "passed_over": [
+      {
+       "id": "T-p1045",
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
+      },
+      {
+       "id": "T-p57",
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
+      },
+      {
+       "id": "T-p63",
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
+      },
+      {
+       "id": "T-p67",
+       "reason_en": "no reason — could be included",
+       "reason_ru": "причины нет — можно было взять"
+      }
+     ]
     },
     {
      "rubric": "cancelled",
@@ -3270,11 +3497,10 @@
     "B:K:cufcfoundation.com:b4cda6a6": "в выпуске"
    },
    "grammar": {
-    "checked": 140,
+    "checked": 141,
     "fixed": [],
     "rejected": []
-   },
-   "reasons_filled": true
+   }
   },
   "removed": {
    "E1593": "пустое описание (в данных нет содержательного факта)",
@@ -3622,8 +3848,100 @@
     "«Tripots»: «С видом на реку» — в «Факты из знаний модели (проверить)»"
    ],
    [
-    "passed-over reasons not added: API unavailable (BadRequestError)",
-    "причины пропусков не дописаны: API недоступен (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo)"
+    "Also playing: 3 fixture(s) from connected clubs added without the model (Dubai Future Champions Festival; Peterborough Phantoms v Hull Seahawks; Peterborough United FC - Burton Albion FC)",
+    "«Также играют»: без модели добавлено матчей и скачек — 3 (Dubai Future Champions Festival; Peterborough Phantoms v Hull Seahawks; Peterborough United FC - Burton Albion FC)"
+   ],
+   [
+    "“Bury St Edmunds Literature Festival” added to out_of_town: annual event in the issue window (no model, description from recurring_events)",
+    "«Bury St Edmunds Literature Festival» дописан в «За городом (до часа)»: ежегодное событие в окне выпуска (без модели, описание из recurring_events)"
+   ],
+   [
+    "“Ely’s Autumn and Orchard Fayre 2026” added to weekend_1: annual event in the issue window (no model, description from recurring_events)",
+    "«Ely’s Autumn and Orchard Fayre 2026» дописан в «Главное на выходные 10–11 октября»: ежегодное событие в окне выпуска (без модели, описание из recurring_events)"
+   ],
+   [
+    "“AEPG Great Eastern Run” added to sport: annual event in the issue window (no model, description from recurring_events)",
+    "«AEPG Great Eastern Run» дописан в «Спорт»: ежегодное событие в окне выпуска (без модели, описание из recurring_events)"
+   ],
+   [
+    "“St Ives Michaelmas Fair” added to out_of_town: annual event in the issue window (no model, description from recurring_events)",
+    "«St Ives Michaelmas Fair» дописан в «За городом (до часа)»: ежегодное событие в окне выпуска (без модели, описание из recurring_events)"
+   ],
+   [
+    "“Kevin 'Bloody' Wilson”: cut — rubric out_of_town above its maximum 4",
+    "«Kevin 'Bloody' Wilson»: сокращён — выпуск длиннее: в рубрике больше 4 пунктов"
+   ],
+   [
+    "“Footlights Tour Show 2026: Prize Cow (for my best son)” (6.2, weekend_1): cut — the issue is longer than 45 items",
+    "«Footlights Tour Show 2026: Prize Cow (for my best son)» (6.2, weekend_1): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Leo Sayer” (6.7, out_of_town): cut — the issue is longer than 45 items",
+    "«Leo Sayer» (6.7, out_of_town): сокращён — выпуск длиннее 45 пунктов"
+   ],
+   [
+    "“Dubai Future Champions Festival — racing”: Russian title replaced by the original",
+    "«Dubai Future Champions Festival — racing»: название в оригинале вместо перевода «Dubai Future Champions Festival — скачки»"
+   ],
+   [
+    "“Roachford + Hue and Cry”: claim not in the source moved to the check list",
+    "«Roachford + Hue and Cry»: «Hue and Cry исполняют синти-поп классику» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Nish Kumar: Angry Humour From a Really Nice Guy”: claim not in the source moved to the check list",
+    "«Nish Kumar: Angry Humour From a Really Nice Guy»: «Nish Kumar выступает с новым часом политического юмора» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Regular sessions in libraries”: claim not in the source moved to the check list",
+    "«Regular sessions in libraries»: «Проводятся занятия по цифровой грамотности (Digital Drop-In)» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Regular sessions in libraries”: claim not in the source moved to the check list",
+    "«Regular sessions in libraries»: «Проводятся встречи для изучающих BSL» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Regular sessions in libraries”: claim not in the source moved to the check list",
+    "«Regular sessions in libraries»: «Проводятся занятия Children's Craft и Lego Club» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Apple Day 2026”: claim not in the source moved to the check list",
+    "«Apple Day 2026»: «Праздник включает семейные активности в честь урожая» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“AEPG Great Eastern Run”: claim not in the source moved to the check list",
+    "«AEPG Great Eastern Run»: «В полумарафоне участвует до 8000 бегунов» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“AEPG Great Eastern Run”: claim not in the source moved to the check list",
+    "«AEPG Great Eastern Run»: «Зрителям бесплатно вдоль маршрута» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Bury St Edmunds Literature Festival”: claim not in the source moved to the check list",
+    "«Bury St Edmunds Literature Festival»: «Фестиваль включает встречи с авторами» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Bury St Edmunds Literature Festival”: claim not in the source moved to the check list",
+    "«Bury St Edmunds Literature Festival»: «Фестиваль включает мастер-классы» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Bury St Edmunds Literature Festival”: claim not in the source moved to the check list",
+    "«Bury St Edmunds Literature Festival»: «Фестиваль включает литературные прогулки по городу» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Whittlesea Straw Bear Festival”: claim not in the source moved to the check list",
+    "«Whittlesea Straw Bear Festival»: «Фестиваль сопровождается фолк-музыкантами» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Whittlesea Straw Bear Festival”: claim not in the source moved to the check list",
+    "«Whittlesea Straw Bear Festival»: «Обычай Plough Monday был возрождён в 1980 году» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "“Whittlesea Straw Bear Festival”: claim not in the source moved to the check list",
+    "«Whittlesea Straw Bear Festival»: «Завершается событие сожжением чучела медведя» — в «Факты из знаний модели (проверить)»"
+   ],
+   [
+    "passed-over reasons added by a separate request: 35 of 35",
+    "причины пропуска дописаны отдельным запросом: 35 из 35"
    ]
   ],
   "need": {

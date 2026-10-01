@@ -1976,12 +1976,13 @@ def main() -> None:
         try:
             n5, cost5 = fill_reasons(anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"]), result, pools, w,
                                      miss_ids, con)
-        except anthropic.APIError as e:   # этап 7e: API недоступен (кончился баланс) — выпуск не падает, редактору пометка
+            result["reasons_filled"] = True
+        except anthropic.APIError as e:   # этап 7e: API недоступен (кончился баланс) — выпуск не падает, редактору пометка;
+            # reasons_filled не ставим — при пересборке (--from-json) причины допишутся
             n5, cost5 = [(f"passed-over reasons not added: API unavailable ({type(e).__name__})",
                           f"причины пропусков не дописаны: API недоступен ({str(e)[:120]})")], 0.0
         fix_notes += n5
         usage["cost_usd"] += cost5
-        result["reasons_filled"] = True
         saved = json.loads(raw_path.read_text())
         if "result_post" in saved:
             saved["result_post"]["result"] = result
@@ -1993,6 +1994,8 @@ def main() -> None:
         editor["ru"].insert(-1, ("ИИ-запреты в robots.txt: что пропало бы из выпуска", measure["ru"]))
         editor["en"].insert(-1, ("Holiday programmes not verified on the provider site", unv))
         editor["ru"].insert(-1, ("Детские программы, не проверенные на сайте провайдера", unv))
+        editor["en"].insert(-1, ("Statuses from event pages (stage 7 recheck)", st_en))   # этап 7e: терялись при пересборке
+        editor["ru"].insert(-1, ("Статусы со страниц событий (перепроверка, этап 7)", st_ru))
         lists = editor_lists(result, pools, w, removed, con)
         lists.pop("_missing_ids")
     miss = lists.pop("_missing_reasons")
