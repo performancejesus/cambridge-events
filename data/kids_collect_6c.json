@@ -1,35 +1,5 @@
 [
  {
-  "host": "a1funclub.co.uk",
-  "provider": "A1 Fun Club",
-  "type": "каникулярный клуб",
-  "programmes": 1,
-  "problems": []
- },
- {
-  "host": "activeplayeducation.co.uk",
-  "provider": "Active Play Education",
-  "type": "оператор каникулярных клубов",
-  "programmes": 0,
-  "problems": [
-   "bot_challenge: robots.txt: HTTP 200; страница: 200, заглушка"
-  ]
- },
- {
-  "host": "activities.bookpebble.co.uk",
-  "provider": "Primary Sports Stars",
-  "type": "срез 6-v4",
-  "programmes": 0,
-  "problems": []
- },
- {
-  "host": "adventure-camps.co.uk",
-  "provider": "Adventure Camps",
-  "type": "оператор лагерей",
-  "programmes": 6,
-  "problems": []
- },
- {
   "host": "aquastarsorg.co.uk",
   "provider": "Aquastars",
   "type": "плавание",
@@ -37,67 +7,62 @@
   "problems": []
  },
  {
-  "host": "barracudas.co.uk",
-  "provider": "Barracudas",
-  "type": "национальный оператор лагерей",
+  "host": "better.org.uk",
+  "provider": "Parkside Pools And Gym",
+  "type": "оператор бассейнов и спортцентров (GLL/Better)",
   "programmes": 5,
   "problems": []
  },
  {
-  "host": "better.org.uk",
-  "provider": "Parkside Pools And Gym",
-  "type": "оператор бассейнов и спортцентров (GLL/Better)",
-  "programmes": 6,
+  "host": "bjjcambridge.co.uk",
+  "provider": "BJJ Cambridge — children's classes",
+  "type": "единоборства (секция)",
+  "programmes": 3,
   "problems": []
+ },
+ {
+  "host": "bottishamswimclub.org.uk",
+  "provider": "Bottisham Swimming Club",
+  "type": "плавание (секция)",
+  "programmes": 0,
+  "problems": [
+   "connection: robots.txt: HTTP -1"
+  ]
  },
  {
   "host": "butterfliesforestschool.co.uk",
   "provider": "Butterflies Forest School",
   "type": "лесная школа",
-  "programmes": 10,
+  "programmes": 5,
+  "problems": []
+ },
+ {
+  "host": "cambridge-mma.gymdesk.com",
+  "provider": "Cambridge MMA — kids 8–15",
+  "type": "единоборства (секция)",
+  "programmes": 0,
   "problems": []
  },
  {
   "host": "cambridge.gov.uk",
   "provider": "Cambridge City Council — занятия для детей и молодёжи",
   "type": "совет (регулярные занятия)",
-  "programmes": 22,
+  "programmes": 24,
   "problems": []
  },
  {
-  "host": "cambridge.thelittlegym.co.uk",
-  "provider": "The Little Gym",
-  "type": "гимнастика",
-  "programmes": 2,
-  "problems": []
- },
- {
-  "host": "cambridgecityfc.com",
-  "provider": "Cambridge City FC",
-  "type": "футбольный клуб",
-  "programmes": 2,
-  "problems": []
- },
- {
-  "host": "cambridgegymnastics.co.uk",
-  "provider": "Cambridge Gymnastics Academy",
-  "type": "гимнастика",
+  "host": "cambridgeandcoleridge.org.uk",
+  "provider": "Cambridge & Coleridge Athletic Club — juniors",
+  "type": "лёгкая атлетика (секция)",
   "programmes": 0,
-  "problems": [
-   "bot_challenge: robots.txt: HTTP 202; страница: 202, заглушка",
-   "bot_challenge: robots.txt: HTTP 202; страница: 202, заглушка",
-   "bot_challenge: robots.txt: HTTP 202; страница: 202, заглушка"
-  ]
+  "problems": []
  },
  {
-  "host": "cambridgekidsclub.com",
-  "provider": "Cambridge Kids Club",
-  "type": "каникулярный клуб",
+  "host": "cambridgecats.co.uk",
+  "provider": "Cambridge Cats Basketball Club",
+  "type": "баскетбол (секция)",
   "programmes": 0,
-  "problems": [
-   "bot_challenge: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
-   "bot_challenge: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
-  ]
+  "problems": []
  },
  {
   "host": "cambridgekungfu.com",
@@ -107,114 +72,79 @@
   "problems": []
  },
  {
-  "host": "cambridgeltc.com",
-  "provider": "Cambridge Lawn Tennis Club",
-  "type": "теннис",
-  "programmes": 3,
-  "problems": []
+  "host": "cambridgerangers.com",
+  "provider": "Cambridge Rangers (girls' football)",
+  "type": "футбол (секция)",
+  "programmes": 0,
+  "problems": [
+   "server_error: robots.txt: HTTP 429",
+   "server_error: robots.txt: HTTP 429"
+  ]
  },
  {
-  "host": "cambridgeppf.org",
-  "provider": "Cambridge Past, Present & Future",
-  "type": "срез 6-v4",
-  "programmes": 1,
-  "problems": []
+  "host": "cambridgerugby.co.uk",
+  "provider": "Cambridge RUFC Minis & Youth",
+  "type": "регби (секция)",
+  "programmes": 0,
+  "problems": [
+   "bot_challenge: robots.txt: HTTP 202; страница: 202, заглушка",
+   "deferred: robots.txt: HTTP 202; cambridgerugby.co.uk: пауза до 2026-10-02T00:59:25+00:00 (заглушка бот-защиты на https://cambridgerugby.co.uk/mini-youth/)"
+  ]
  },
  {
   "host": "cambridgesciencecentre.org",
   "provider": "Cambridge Science Centre",
   "type": "срез 6-v4",
-  "programmes": 14,
+  "programmes": 15,
   "problems": []
  },
  {
-  "host": "cambridgeshire.gov.uk",
-  "provider": "Cambridgeshire Council",
-  "type": "совет (HAF, Family Information Directory)",
-  "programmes": 8,
+  "host": "cambridgesouthhockeyclub.co.uk",
+  "provider": "Cambridge South Hockey Club — juniors",
+  "type": "хоккей на траве (секция)",
+  "programmes": 5,
   "problems": []
  },
  {
-  "host": "cambridgeunited.com",
-  "provider": "Cambridge United FC — holiday camps",
-  "type": "клуб (каникулярные лагеря)",
+  "host": "ccjhc.co.uk",
+  "provider": "Cambridge City Junior Hockey Club",
+  "type": "хоккей на траве (секция)",
+  "programmes": 0,
+  "problems": []
+ },
+ {
+  "host": "chessgo.org.uk",
+  "provider": "Cambridge Junior Chess and Go Club",
+  "type": "шахматы (секция)",
+  "programmes": 1,
+  "problems": []
+ },
+ {
+  "host": "chestertoneagles.org",
+  "provider": "Chesterton Eagles FC (junior & girls football)",
+  "type": "футбол (секция)",
+  "programmes": 0,
+  "problems": []
+ },
+ {
+  "host": "cityofelynetball.co.uk",
+  "provider": "City of Ely Netball Club — juniors",
+  "type": "нетбол (секция)",
+  "programmes": 1,
+  "problems": []
+ },
+ {
+  "host": "cocsc.org.uk",
+  "provider": "City of Cambridge Swimming Club — academy squads",
+  "type": "плавание (секция)",
   "programmes": 3,
-  "problems": []
- },
- {
-  "host": "canddrc.org.uk",
-  "provider": "Cambridge and District Riding Club",
-  "type": "верховая езда",
-  "programmes": 0,
-  "problems": []
- },
- {
-  "host": "childcare.admin.cam.ac.uk",
-  "provider": "Childcare Services",
-  "type": "университет — только дети сотрудников и студентов",
-  "programmes": 6,
-  "problems": [
-   "connection: robots.txt: HTTP -1",
-   "connection: robots.txt: HTTP -1"
-  ]
- },
- {
-  "host": "chorusmusictherapy.co.uk",
-  "provider": "Chorus Music Therapy",
-  "type": "музыка",
-  "programmes": 1,
-  "problems": []
- },
- {
-  "host": "churchillsummercamps.co.uk",
-  "provider": "Churchill Camps",
-  "type": "срез 6-v4",
-  "programmes": 20,
-  "problems": []
- },
- {
-  "host": "clipnclimbcambridge.co.uk",
-  "provider": "Clip 'n Climb Cambridge",
-  "type": "скалодром",
-  "programmes": 1,
-  "problems": []
- },
- {
-  "host": "clubhubuk.co.uk",
-  "provider": "Club Hub UK / Professor Fab's",
-  "type": "срез 6-v4",
-  "programmes": 2,
-  "problems": []
- },
- {
-  "host": "clubspark.lta.org.uk",
-  "provider": "Cambridge Lawn Tennis Club",
-  "type": "теннис (платформа LTA)",
-  "programmes": 0,
-  "problems": [
-   "bot_challenge: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
-   "bot_challenge: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
-  ]
- },
- {
-  "host": "comeandplay-holidayclub.co.uk",
-  "provider": "COME and PLAY HOLIDAY CLUB",
-  "type": "каникулярный клуб",
-  "programmes": 6,
-  "problems": []
- },
- {
-  "host": "culford.co.uk",
-  "provider": "Culford",
-  "type": "частная школа (Бери)",
-  "programmes": 1,
   "problems": []
  },
  {
   "host": "davidlloyd.co.uk",
   "provider": "David Lloyd Clubs",
   "type": "фитнес-клуб (детские лагеря)",
-  "programmes": 7,
+  "programmes": 9,
   "problems": []
  },
  {
@@ -232,13 +162,6 @@
   "problems": []
  },
  {
-  "host": "eequ.org",
-  "provider": "Peterborough City Council",
-  "type": "срез 6-v4",
-  "programmes": 1,
-  "problems": []
- },
- {
   "host": "eliteswimmingacademy.co.uk",
   "provider": "Elite Swimming Academy",
   "type": "плавание",
@@ -246,88 +169,31 @@
   "problems": []
  },
  {
+  "host": "fastbreakbasketball.co.uk",
+  "provider": "Fastbreak Basketball (Cambridge Kestrels)",
+  "type": "баскетбол (секция)",
+  "programmes": 2,
+  "problems": []
+ },
+ {
   "host": "firefliesforestschool.co.uk",
   "provider": "Fireflies Forest School",
   "type": "лесная школа",
-  "programmes": 4,
+  "programmes": 8,
   "problems": []
  },
  {
   "host": "formationsdance.co.uk",
   "provider": "Formations Dance Company",
   "type": "танцы",
-  "programmes": 32,
+  "programmes": 12,
   "problems": []
- },
- {
-  "host": "funtimeschildcare.com",
-  "provider": "Fun Times Cambridgeshire",
-  "type": "каникулярный клуб",
-  "programmes": 0,
-  "problems": [
-   "connection: robots.txt: HTTP -1"
-  ]
  },
  {
   "host": "gkfit.co.uk",
   "provider": "GK Fit Ltd",
   "type": "спортивные лагеря",
-  "programmes": 4,
-  "problems": []
- },
- {
-  "host": "gymfinitykids.com",
-  "provider": "Gymfinity Kids",
-  "type": "гимнастика",
-  "programmes": 6,
-  "problems": [
-   "http_other: robots.txt: HTTP 200; страница: 404",
-   "http_other: robots.txt: HTTP 200; страница: 404"
-  ]
- },
- {
-  "host": "haverhill-tc.gov.uk",
-  "provider": "West Suffolk Council",
-  "type": "совет",
-  "programmes": 1,
-  "problems": []
- },
- {
-  "host": "horseridinguk.co.uk",
-  "provider": "Sawston Riding School",
-  "type": "верховая езда (справочник)",
-  "programmes": 0,
-  "problems": []
- },
- {
-  "host": "kaplaclubs.co.uk",
-  "provider": "Kapla Clubs UK",
-  "type": "конструирование (Kapla)",
-  "programmes": 1,
-  "problems": []
- },
- {
-  "host": "kcs.cambs.sch.uk",
-  "provider": "King's College School Cambridge",
-  "type": "частная школа",
-  "programmes": 2,
-  "problems": []
- },
- {
-  "host": "kettlesyard.cam.ac.uk",
-  "provider": "Kettle's Yard",
-  "type": "музей",
-  "programmes": 0,
-  "problems": [
-   "connection: robots.txt: HTTP -1",
-   "connection: robots.txt: HTTP -1"
-  ]
- },
- {
-  "host": "kick-offsports.co.uk",
-  "provider": "Kick-Off Sports",
-  "type": "срез 6-v4",
-  "programmes": 2,
+  "programmes": 7,
   "problems": []
  },
  {
@@ -338,102 +204,38 @@
   "problems": []
  },
  {
-  "host": "kidsrusoosc.org",
-  "provider": "Kids R Us holiday club",
-  "type": "срез 6-v4 (не проверен)",
+  "host": "kidsmartialartscambridge.co.uk",
+  "provider": "Kids Martial Arts Cambridge",
+  "type": "единоборства (секция)",
   "programmes": 1,
   "problems": []
  },
  {
-  "host": "kingscamps.org",
-  "provider": "Kings Camps",
-  "type": "национальный оператор лагерей",
-  "programmes": 4,
-  "problems": []
- },
- {
-  "host": "levelupgym.co.uk",
-  "provider": "Level Up — youth athletic programme",
-  "type": "срез 6-v4 (не проверен)",
-  "programmes": 1,
-  "problems": []
- },
- {
-  "host": "mikestennis.com",
-  "provider": "Mike's Tennis Academy",
-  "type": "теннис",
-  "programmes": 0,
-  "problems": [
-   "bot_challenge: robots.txt: HTTP 202; страница: 202, заглушка"
-  ]
- },
- {
-  "host": "miltoncountrypark.org",
-  "provider": "The Outdoors Project",
-  "type": "срез 6-v4",
-  "programmes": 1,
+  "host": "miltoncricket.org.uk",
+  "provider": "Milton Cricket Club — junior coaching",
+  "type": "крикет (секция)",
+  "programmes": 2,
   "problems": []
  },
  {
   "host": "monachriding.co.uk",
   "provider": "Monach Farm Horse Riding Stables",
   "type": "верховая езда",
-  "programmes": 6,
+  "programmes": 4,
   "problems": []
- },
- {
-  "host": "multi-active.co.uk",
-  "provider": "Multi-Active (Huntingdon & St Ives)",
-  "type": "срез 6-v4 (не проверен)",
-  "programmes": 0,
-  "problems": [
-   "connection: robots.txt: HTTP -1"
-  ]
- },
- {
-  "host": "nationaltrust.org.uk",
-  "provider": "National Trust",
-  "type": "National Trust",
-  "programmes": 2,
-  "problems": []
- },
- {
-  "host": "nenepark.org.uk",
-  "provider": "Nene Park",
-  "type": "парк (Питерборо)",
-  "programmes": 9,
-  "problems": [
-   "connection: robots.txt: HTTP -1"
-  ]
  },
  {
   "host": "newboroughkidzclub.co.uk",
   "provider": "Newborough Kidz Club",
   "type": "каникулярный клуб",
-  "programmes": 7,
+  "programmes": 8,
   "problems": []
  },
  {
-  "host": "officialsoccerschools.co.uk",
-  "provider": "Cambridge United soccer schools",
-  "type": "срез 6-v4 (не проверен)",
-  "programmes": 0,
-  "problems": [
-   "bot_challenge: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
-  ]
- },
- {
-  "host": "persesummerschool.co.uk",
-  "provider": "The Perse Summer School",
-  "type": "частная школа — летняя школа",
-  "programmes": 1,
-  "problems": []
- },
- {
-  "host": "peterborough.gov.uk",
-  "provider": "peterborough.gov.uk",
-  "type": "совет (HAF)",
-  "programmes": 3,
+  "host": "papa.perse.co.uk",
+  "provider": "Perse Performing Arts (PAPA) — dance",
+  "type": "танцы (секция)",
+  "programmes": 5,
   "problems": []
  },
  {
@@ -444,16 +246,9 @@
   "problems": []
  },
  {
-  "host": "s4swimschool.uk",
-  "provider": "S4 Swim School",
-  "type": "плавание",
-  "programmes": 13,
-  "problems": []
- },
- {
-  "host": "scambs.gov.uk",
-  "provider": "South Cambridgeshire District Council",
-  "type": "срез 6-v4",
+  "host": "rocketsnc.co.uk",
+  "provider": "Rockets Netball Club",
+  "type": "нетбол (секция)",
   "programmes": 1,
   "problems": []
  },
@@ -461,85 +256,15 @@
   "host": "scec.co.uk",
   "provider": "South Cambridgeshire Equestrian Centre",
   "type": "верховая езда",
-  "programmes": 11,
-  "problems": []
- },
- {
-  "host": "schoolsoutactivities.co.uk",
-  "provider": "School's Out Activities",
-  "type": "срез 6-v4",
-  "programmes": 14,
-  "problems": []
- },
- {
-  "host": "sport.cam.ac.uk",
-  "provider": "University of Cambridge Sport",
-  "type": "спорт университета",
-  "programmes": 5,
-  "problems": [
-   "connection: robots.txt: HTTP -1"
-  ]
- },
- {
-  "host": "sportscentre.perse.co.uk",
-  "provider": "The Perse Sports Centre",
-  "type": "частная школа — спорт-центр",
-  "programmes": 7,
-  "problems": []
- },
- {
-  "host": "stagecoach.co.uk",
-  "provider": "Stagecoach Cambridge — holiday workshops",
-  "type": "срез 6-v4 (не проверен)",
-  "programmes": 0,
+  "programmes": 3,
   "problems": []
  },
  {
   "host": "stardustdanceacademy.com",
   "provider": "Stardust Dance Academy",
   "type": "танцы",
-  "programmes": 14,
+  "programmes": 13,
   "problems": []
- },
- {
-  "host": "stephenperse.com",
-  "provider": "Stephen Perse",
-  "type": "частная школа",
-  "programmes": 3,
-  "problems": []
- },
- {
-  "host": "strikeacademy.classforkids.io",
-  "provider": "Strike Academy",
-  "type": "футбол",
-  "programmes": 1,
-  "problems": []
- },
- {
-  "host": "theatretrain.co.uk",
-  "provider": "Theatretrain",
-  "type": "театр/драма",
-  "programmes": 2,
-  "problems": []
- },
- {
-  "host": "thefootballfunfactory.co.uk",
-  "provider": "The Football Fun Factory",
-  "type": "футбол",
-  "programmes": 0,
-  "problems": [
-   "http_403: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
-   "http_403: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
-  ]
- },
- {
-  "host": "theleys.net",
-  "provider": "The Leys",
-  "type": "частная школа",
-  "programmes": 0,
-  "problems": [
-   "bot_challenge: robots.txt: HTTP 200; страница: 403"
-  ]
  },
  {
   "host": "theoutdoorsproject.co.uk",
@@ -549,41 +274,10 @@
   "problems": []
  },
  {
-  "host": "theyoungactorscompany.com",
-  "provider": "The Young Actors Company",
-  "type": "театр/драма",
-  "programmes": 8,
-  "problems": []
- },
- {
   "host": "tjkids.co.uk",
   "provider": "TJKids",
   "type": "каникулярный клуб",
-  "programmes": 5,
-  "problems": []
- },
- {
-  "host": "tsasports.co.uk",
-  "provider": "Tsa Sports",
-  "type": "спортивные лагеря",
-  "programmes": 11,
-  "problems": []
- },
- {
-  "host": "vivacity.org",
-  "provider": "Vivacity",
-  "type": "оператор досуговых центров (Питерборо)",
-  "programmes": 0,
-  "problems": [
-   "http_other: robots.txt: HTTP 404 (4xx — правил нет, RFC 9309); страница: 404",
-   "http_other: robots.txt: HTTP 404 (4xx — правил нет, RFC 9309); страница: 404"
-  ]
- },
- {
-  "host": "wild-at-art-workshops.classforkids.io",
-  "provider": "Wild @ Art",
-  "type": "искусство",
-  "programmes": 8,
+  "programmes": 4,
   "problems": []
  }
 ]

@@ -1,0 +1,2194 @@
+{
+ "day_before": "2026-09-30",
+ "rows": [
+  {
+   "host": "kettlesyard.cam.ac.uk",
+   "before_total": 103,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 96,
+    "page_status": 4,
+    "link_checks": 3
+   },
+   "plan_per_day": 36,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "ents24.com",
+   "before_total": 87,
+   "before_runs": 6,
+   "before_detail": {
+    "коллекторы": 43,
+    "page_status": 30,
+    "event_pages": 4,
+    "ticket_vendors": 5,
+    "link_checks": 5
+   },
+   "plan_per_day": 45,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "eventbrite.co.uk",
+   "before_total": 80,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 37,
+    "page_status": 36,
+    "ticket_vendors": 4,
+    "link_checks": 3
+   },
+   "plan_per_day": 15,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cornex.co.uk",
+   "before_total": 62,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 20,
+    "page_status": 31,
+    "link_checks": 11
+   },
+   "plan_per_day": 7,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "skiddle.com",
+   "before_total": 56,
+   "before_runs": 6,
+   "before_detail": {
+    "коллекторы": 43,
+    "page_status": 10,
+    "ticket_vendors": 2,
+    "link_checks": 1
+   },
+   "plan_per_day": 25,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "junction.co.uk",
+   "before_total": 59,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 20,
+    "page_status": 33,
+    "link_checks": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "camdram.net",
+   "before_total": 55,
+   "before_runs": 6,
+   "before_detail": {
+    "коллекторы": 45,
+    "page_status": 1,
+    "event_pages": 4,
+    "ticket_vendors": 4,
+    "link_checks": 1
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "visitcambridge.org",
+   "before_total": 51,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 46,
+    "page_status": 5
+   },
+   "plan_per_day": 8,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "api.findagarden.ngs.org.uk",
+   "before_total": 48,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 48
+   },
+   "plan_per_day": 16,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "saffronhall.com",
+   "before_total": 38,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 30,
+    "page_status": 5,
+    "link_checks": 3
+   },
+   "plan_per_day": 15,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "joh.cam.ac.uk",
+   "before_total": 34,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 30,
+    "page_status": 2,
+    "link_checks": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 15,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "nationaltrust.org.uk",
+   "before_total": 30,
+   "before_runs": 1,
+   "before_detail": {
+    "коллекторы": 4,
+    "event_pages": 2,
+    "ticket_vendors": 21,
+    "link_checks": 3
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 4,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "admin.cam.ac.uk",
+   "before_total": 27,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 21,
+    "page_status": 6
+   },
+   "plan_per_day": 7,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "museums.cam.ac.uk",
+   "before_total": 25,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 18,
+    "page_status": 3,
+    "link_checks": 4
+   },
+   "plan_per_day": 9,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "kingscollegechoir.com",
+   "before_total": 22,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 18,
+    "page_status": 2,
+    "link_checks": 2
+   },
+   "plan_per_day": 6,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgelivetickets.co.uk",
+   "before_total": 21,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 20,
+    "page_status": 1
+   },
+   "plan_per_day": 7,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "findarace.com",
+   "before_total": 20,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 15,
+    "page_status": 5
+   },
+   "plan_per_day": 10,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridge-news.co.uk",
+   "before_total": 16,
+   "before_runs": 6,
+   "before_detail": {
+    "коллекторы": 15,
+    "link_checks": 1
+   },
+   "plan_per_day": 5,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "talks.cam.ac.uk",
+   "before_total": 19,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 18,
+    "page_status": 1
+   },
+   "plan_per_day": 7,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "botanic.cam.ac.uk",
+   "before_total": 18,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 12,
+    "page_status": 3,
+    "link_checks": 3
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 5,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgeindependent.co.uk",
+   "before_total": 14,
+   "before_runs": 6,
+   "before_detail": {
+    "коллекторы": 12,
+    "link_checks": 2
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgefoodies.me.uk",
+   "before_total": 17,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 14,
+    "link_checks": 3
+   },
+   "plan_per_day": 6,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "chu.cam.ac.uk",
+   "before_total": 16,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 12,
+    "page_status": 1,
+    "event_pages": 1,
+    "ticket_vendors": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 5,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridge.thelight.co.uk",
+   "before_total": 15,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 1,
+    "event_pages": 4,
+    "ticket_vendors": 4
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "clarehall.cam.ac.uk",
+   "before_total": 14,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 2,
+    "event_pages": 2,
+    "ticket_vendors": 2,
+    "link_checks": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridge105.co.uk",
+   "before_total": 14,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 9,
+    "page_status": 3,
+    "link_checks": 2
+   },
+   "plan_per_day": 6,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "wisbech.thelight.co.uk",
+   "before_total": 15,
+   "before_runs": 1,
+   "before_detail": {
+    "коллекторы": 15
+   },
+   "plan_per_day": 15,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cmp.cam.ac.uk",
+   "before_total": 13,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 7,
+    "page_status": 1,
+    "event_pages": 1,
+    "ticket_vendors": 1,
+    "link_checks": 3
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "thejockeyclub.co.uk",
+   "before_total": 13,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 5,
+    "link_checks": 2
+   },
+   "plan_per_day": 7,
+   "fact_2026_10_01": 5,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "stneots-tc.gov.uk",
+   "before_total": 12,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 12
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "camcityevents.co.uk",
+   "before_total": 12,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 10,
+    "page_status": 1,
+    "link_checks": 1
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "theatreroyal.org",
+   "before_total": 12,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 5,
+    "link_checks": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "trin.cam.ac.uk",
+   "before_total": 11,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 9,
+    "llm_list_cache": 2
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "hughes.cam.ac.uk",
+   "before_total": 11,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "event_pages": 2,
+    "ticket_vendors": 2,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "musiclivecambridge.com",
+   "before_total": 10,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 7,
+    "page_status": 1,
+    "event_pages": 1,
+    "ticket_vendors": 1
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "millroadwinterfair.org",
+   "before_total": 10,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 9,
+    "link_checks": 1
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgeunited.com",
+   "before_total": 10,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 2,
+    "link_checks": 2
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "murrayedwards.cam.ac.uk",
+   "before_total": 10,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 2,
+    "link_checks": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cus.org",
+   "before_total": 9,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 9
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "huntspost.co.uk",
+   "before_total": 9,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 1,
+    "link_checks": 2
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgebeerfestival.com",
+   "before_total": 9,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 7,
+    "page_status": 1,
+    "link_checks": 1
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "museumoftechnology.com",
+   "before_total": 11,
+   "before_runs": 1,
+   "before_detail": {
+    "коллекторы": 2,
+    "event_pages": 4,
+    "ticket_vendors": 4,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "fitzmuseum.cam.ac.uk",
+   "before_total": 9,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 2,
+    "link_checks": 1
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "girton.cam.ac.uk",
+   "before_total": 9,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "event_pages": 1,
+    "ticket_vendors": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "picturehouses.com",
+   "before_total": 9,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "event_pages": 1,
+    "ticket_vendors": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "lucy.cam.ac.uk",
+   "before_total": 8,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "visitely.org.uk",
+   "before_total": 8,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 8
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 5,
+   "cache_hits_2026_10_01": 3
+  },
+  {
+   "host": "st-edmunds.cam.ac.uk",
+   "before_total": 8,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 7,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgeppf.org",
+   "before_total": 8,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 1,
+    "link_checks": 1
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "roystonmuseum.org.uk",
+   "before_total": 8,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 1,
+    "link_checks": 1
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "elymuseum.org.uk",
+   "before_total": 9,
+   "before_runs": 1,
+   "before_detail": {
+    "коллекторы": 2,
+    "event_pages": 3,
+    "ticket_vendors": 3,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "dow.cam.ac.uk",
+   "before_total": 7,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "link_checks": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "robinson.cam.ac.uk",
+   "before_total": 7,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "elycathedral.org",
+   "before_total": 7,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "page_status": 1
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "whatsonincambridge.com",
+   "before_total": 7,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "link_checks": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "burylane.co.uk",
+   "before_total": 9,
+   "before_runs": 1,
+   "before_detail": {
+    "коллекторы": 2,
+    "page_status": 1,
+    "event_pages": 2,
+    "ticket_vendors": 2,
+    "link_checks": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambstimes.co.uk",
+   "before_total": 7,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "link_checks": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "computinghistory.org.uk",
+   "before_total": 7,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6,
+    "link_checks": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "miltoncountrypark.org",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "graftoncentre.co.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "elystandard.co.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "thelionyard.co.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "visitwestnorfolk.com",
+   "before_total": 7,
+   "before_runs": 2,
+   "before_detail": {
+    "коллекторы": 4,
+    "page_status": 1,
+    "event_pages": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 3,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgebid.co.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "wisbechtowncouncil.gov.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgesciencecentre.org",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 5,
+    "link_checks": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "ics.fixtur.es",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "strawberry-fair.org.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "peterboroughtoday.co.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "gophantoms.co.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "museumofcambridge.org.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "grandarcade.co.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "wisbechstandard.co.uk",
+   "before_total": 6,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 6
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "outlook.live.com",
+   "before_total": 4,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 4
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgeshire.gov.uk",
+   "before_total": 3,
+   "before_runs": 3,
+   "before_detail": {
+    "коллекторы": 3
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "english-heritage.org.uk",
+   "before_total": 5,
+   "before_runs": 1,
+   "before_detail": {
+    "коллекторы": 2,
+    "ticket_vendors": 3
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "adctheatre.com",
+   "before_total": 5,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 4,
+    "link_checks": 1
+   },
+   "plan_per_day": 4,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "kingslynncornexchange.co.uk",
+   "before_total": 4,
+   "before_runs": 1,
+   "before_detail": {
+    "коллекторы": 2,
+    "llm_list_cache": 2
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "eventbrite.com",
+   "before_total": 4,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 4
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "en.wikipedia.org",
+   "before_total": 4,
+   "before_runs": 0,
+   "before_detail": {
+    "link_checks": 4
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "sjcchoir.co.uk",
+   "before_total": 4,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 2,
+    "link_checks": 1,
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "wegottickets.com",
+   "before_total": 4,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 2,
+    "link_checks": 2
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "iceaccount.co.uk",
+   "before_total": 3,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 2,
+    "link_checks": 1
+   },
+   "plan_per_day": 2,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "wisbechcinema.co.uk",
+   "before_total": 3,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 1,
+    "event_pages": 1,
+    "ticket_vendors": 1
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "barracudas.co.uk",
+   "before_total": 2,
+   "before_runs": 0,
+   "before_detail": {
+    "link_checks": 1,
+    "kids_page_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridge.gov.uk",
+   "before_total": 2,
+   "before_runs": 0,
+   "before_detail": {
+    "event_pages": 1,
+    "link_checks": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 4,
+   "cache_hits_2026_10_01": 3
+  },
+  {
+   "host": "cambridgebagels.com",
+   "before_total": 2,
+   "before_runs": 0,
+   "before_detail": {
+    "event_pages": 1,
+    "link_checks": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "clipnclimbcambridge.co.uk",
+   "before_total": 2,
+   "before_runs": 0,
+   "before_detail": {
+    "kids_page_cache": 2
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "nationalleaguerugby.com",
+   "before_total": 2,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 1,
+    "link_checks": 1
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "theposh.com",
+   "before_total": 2,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 1,
+    "link_checks": 1
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "enjoy.ly",
+   "before_total": 2,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 1,
+    "link_checks": 1
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "ngs.org.uk",
+   "before_total": 2,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 1,
+    "ticket_vendors": 1
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "magd.cam.ac.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "butterfliesforestschool.co.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "link_checks": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "eliteswimmingacademy.co.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "link_checks": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "wild-at-art-workshops.classforkids.io",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "link_checks": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "archives.chu.cam.ac.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "theoutdoorsproject.co.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "kids_page_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "emma.cam.ac.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "eventbrite.ca",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "better.org.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "link_checks": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 5,
+   "cache_hits_2026_10_01": 3
+  },
+  {
+   "host": "cambridgekungfu.com",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "kids_page_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "gkfit.co.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "kids_page_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "trinhall.cam.ac.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "llm_list_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "farmerfreeman.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "event_pages": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "peterborough.gov.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "kids_page_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "st-ives.merlincinemas.co.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 1
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "waoc.org.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 1
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "clubhubuk.co.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "link_checks": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "funtimeschildcare.com",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "kids_page_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "nenepark.org.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "kids_page_cache": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "kidsclubely.co.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "link_checks": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 1,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "bbc.com.im",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "event_pages": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgeltc.com",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "link_checks": 1
+   },
+   "plan_per_day": 0,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "carbootdirectory.co.uk",
+   "before_total": 1,
+   "before_runs": 0,
+   "before_detail": {
+    "page_status": 1
+   },
+   "plan_per_day": 1,
+   "fact_2026_10_01": 0,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "kettlesyard.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 1,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "chessgo.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "opencambridge.cam.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "wineunearthed.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "cambridgelive.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "thriplowdaffodils.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "pborobeerfest.camra.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "bottishamswimclub.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 1,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "classbento.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgecats.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "whitecottagebakery.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridge-mma.gymdesk.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "cambridgeliteraryfestival.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "sedgwickmuseum.org",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 1,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "maa.cam.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgecookeryschool.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "localwineschool.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "ccjhc.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "haverhillartscentre.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "elyfolkfestival.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "theapex.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgerugby.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "townhouseceramics.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "chariots-of-fire.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridge-oktoberfest.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "hildatattersall.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "kings.cam.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "firefliesforestschool.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 2
+  },
+  {
+   "host": "westroad.org",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgerangers.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 1,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "afrosalsa.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 1,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "camre.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "christmasincambridge.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "unshaken-photography.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgefolkfestival.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "stainedglassmuseum.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "creamphotoworkshops.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "tindalls.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgesouthhockeyclub.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "whipplemuseum.cam.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "davidlloyd.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "cambridgecookery.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 119,
+   "cache_hits_2026_10_01": 119
+  },
+  {
+   "host": "cucbc.org",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "rowanhumberstone.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgeshakespeare.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "chestertoneagles.org",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "kingslynnfestival.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgefiguredrawing.carrd.co",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "cambridgecookingclasses.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "elyclaycollective.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 4,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cityofelynetball.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "classics.cam.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "burylitfest.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "camopenstudios.org",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "spri.cam.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgehalfmarathon.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "elyaquafest.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgesummermusic.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "dramaticmoments.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "aru.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "thestiveshub.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "susanabbs.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "hillsroad.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "museum.zoo.cam.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "act4addenbrookes.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "bjjcambridge.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "strawbear.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "citycollegepeterborough.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "festival.cam.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "thebigretreatfestival.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "formationsdance.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "cambridgesalsa.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "cambridgedancecentre.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "dreamweavergymnastics.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "cambridgewoodworkschool.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "aquastarsorg.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "rhs.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "greateastern.run",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "kilncambridge.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 3,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "ice.cam.ac.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "worldpeashoot.com",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cocsc.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "fastbreakbasketball.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "cambridge-glass-studio.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 4,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "amberbpottery.co.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  },
+  {
+   "host": "riverfestival.bedford.gov.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 0
+  },
+  {
+   "host": "cambridgeandcoleridge.org.uk",
+   "before_total": 0,
+   "before_runs": 0,
+   "before_detail": {},
+   "plan_per_day": 0,
+   "fact_2026_10_01": 2,
+   "cache_hits_2026_10_01": 1
+  }
+ ],
+ "totals": {
+  "before": 1438,
+  "plan": 436,
+  "fact_2026_10_01": 374,
+  "cache_hits_2026_10_01": 163
+ }
+}
