@@ -45,7 +45,7 @@ def allowed(prefix: str, rubric: str) -> bool:
 
 def model_rubrics(w: issue.Window) -> list[str]:
     """Рубрики, которые пишет модель: «Каникулы» собираются без неё (правки по v4)."""
-    return [r for r in w.rubrics() if r not in ("holidays", "colleges", "museums")]   # 7c/7d: «В колледжах», «В музеях» — тоже без модели
+    return [r for r in w.rubrics() if r not in ("holidays", "colleges", "museums", "learn")]   # 7e: «Научиться» — без модели   # 7c/7d: «В колледжах», «В музеях» — тоже без модели
 
 
 def schema_for(w: issue.Window) -> dict:
@@ -146,6 +146,8 @@ def fits(rubric: str, c: dict, w: issue.Window) -> bool:
     if rubric == "colleges":   # этап 7c: строки без модели (pipeline/colleges.py)
         from pipeline.colleges import college_of
         return c.get("kind") == "event" and bool(college_of(c))
+    if rubric == "learn":     # этап 7e: строки без модели (pipeline/courses.py)
+        return bool(c.get("learn")) or c.get("kind") == "course"
     if rubric == "museums":   # этап 7d: строки без модели (pipeline/museums.py)
         from pipeline.museums import place_of
         return c.get("kind") == "event" and bool(place_of(c))
@@ -482,7 +484,7 @@ def current_not_verified(con, kd: dict) -> list[tuple[str, str, str]]:
 # «Причины отбора — явно»: заданное число пунктов по рубрикам (как в prompts/issue.md, правило 3)
 RUBRIC_LIMITS = {"theme": (3, 6), "weekend": (3, 5), "weekdays": (4, 6), "cinema": (0, 4), "talks": (2, 5),
                  "colleges": (0, 0),   # этап 7c: только компактные строки (3–6, pipeline/colleges.py)
-                 "museums": (0, 0),    # этап 7d: только компактные строки (4–6, pipeline/museums.py)
+                 "museums": (0, 0), "learn": (0, 0),   # 7e: «Научиться» — только компактные строки (pipeline/courses.py)    # этап 7d: только компактные строки (4–6, pipeline/museums.py)
                  "exhibitions": (2, 4), "free": (3, 4), "kids": (3, 4), "sport": (0, 4), "out_of_town": (3, 4),
                  "county": (0, 3), "new_announcements": (3, 5), "tickets": (0, 3), "cancelled": (0, 3),
                  "new_in_town": (5, 6)}
@@ -857,6 +859,8 @@ def base_fit(rub: str, c: dict) -> bool:
     if rub == "colleges":
         from pipeline.colleges import college_of
         return k == "event" and bool(college_of(c)) and c.get("zone") == "центр"
+    if rub == "learn":
+        return k == "course" or bool(c.get("learn"))
     if rub == "museums":
         from pipeline.museums import place_of
         return k == "event" and bool(place_of(c)) and c.get("zone") in issue.LISTED_ZONES
@@ -914,6 +918,9 @@ def editor_lists(result: dict, pools: issue.Pools, w: issue.Window, removed: dic
             if not why and (SKIP_RE.search(c["title"]) or NOT_HERE_VENUE_RE.search(c.get("venue") or "")):
                 why = "служба, выпускники, ADC или музей — не в эту рубрику"
             why = why or ("доступ restricted" if c.get("access") == "restricted" else "дубль или не прошёл отбор рубрики")
+            return False, (why, why)
+        if rub == "learn":   # этап 7e: причины отбора рубрики «Научиться» (pipeline/courses.select)
+            why = (result.get("learn_why") or {}).get(cid) or "не прошёл отбор рубрики"
             return False, (why, why)
         if rub == "museums":   # этап 7d: причины отбора рубрики «В музеях и усадьбах» (pipeline/museums.select)
             from pipeline.museums import NEW_EXHIBITION_DAYS, SKIP_RE as M_SKIP
@@ -1762,6 +1769,10 @@ def main() -> None:
     result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "museums"]
     mus_items, result["museums_why"] = museums.build_items(pools, result, w)
     result["sections"].append({"rubric": "museums", "items": mus_items})
+    from pipeline import courses   # этап 7e: «Научиться» — курсы и мастер-классы для взрослых, без модели
+    result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "learn"]
+    learn_items, result["learn_why"] = courses.build_items(con, pools, result, w)
+    result["sections"].append({"rubric": "learn", "items": learn_items})
     fee = next((dict(x.split("=", 1) for x in (c.get("access_note") or "").split("|") if "=" in x).get("fee")
                 for c in pools.candidates.values() if "S049" in (c.get("sources") or [])), None) or "£370"
     u_item, u_notes = union_termcard.line_item(con, w.start, w.end, fee)

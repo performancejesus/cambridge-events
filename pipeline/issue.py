@@ -31,12 +31,12 @@ ANNOUNCE_DAYS = 21          # «объявлено недавно»: стать�
 VENUE_NEWS_DAYS = 60        # «Новое в городе» в первом выпуске — открытия за 2 месяца (правки по v3)
 
 # Рубрики после «Темы недели» и «Главного на выходные» (их по одной на каждые выходные периода).
-FIXED_RUBRICS = ["weekdays", "cinema", "talks", "colleges", "museums", "exhibitions", "free", "kids", "holidays", "sport", "out_of_town",
+FIXED_RUBRICS = ["weekdays", "cinema", "talks", "colleges", "museums", "learn", "exhibitions", "free", "kids", "holidays", "sport", "out_of_town",
                  "county", "new_announcements", "tickets", "cancelled", "new_in_town"]
 RUBRIC_TITLES = {
     "en": {"theme": "Theme of the week: {theme}", "weekend": "The weekend: {weekend}",
            "weekdays": "Weekdays: concerts, theatre, comedy", "cinema": "At the cinema", "talks": "Talks and meetings",
-           "colleges": "At the colleges", "museums": "Museums and estates",
+           "colleges": "At the colleges", "museums": "Museums and estates", "learn": "Learn something",
            "exhibitions": "Exhibitions", "free": "Free",
            "kids": "With kids", "holidays": "School holidays: where to book your child", "sport": "Sport",
            "out_of_town": "Out of town (within an hour)", "county": "Around the county",
@@ -44,7 +44,7 @@ RUBRIC_TITLES = {
            "cancelled": "Cancelled and postponed", "new_in_town": "New in town"},
     "ru": {"theme": "Тема недели: {theme}", "weekend": "Главное на выходные {weekend}",
            "weekdays": "На неделе: концерты, театр, комедия", "cinema": "В кино", "talks": "Лекции и встречи",
-           "colleges": "В колледжах", "museums": "В музеях и усадьбах",
+           "colleges": "В колледжах", "museums": "В музеях и усадьбах", "learn": "Научиться",
            "exhibitions": "Выставки", "free": "Бесплатно",
            "kids": "С детьми", "holidays": "Каникулы: куда записать ребёнка", "sport": "Спорт",
            "out_of_town": "За городом (до часа)", "county": "По графству",
@@ -1442,7 +1442,7 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 out["sections"].append({"rubric": rub, "title": rubric_title(rub, w, lang), "intro": "", "groups": groups})
             continue
         items = sections.get(rub) or []
-        if rub in ("colleges", "museums"):   # этап 7c: по дате (7d: и «В музеях и усадьбах»)
+        if rub in ("colleges", "museums", "learn"):   # этап 7c: по дате (7d: и «В музеях и усадьбах», 7e: «Научиться»)
             items = sorted(items, key=lambda it: tuple(x or "" for x in (p.candidates[it["ids"][0]].get("dates") or [("",)])[0]))
         elif rub == "weekdays":   # правки по v5: «На неделе» — по дате
             items = sorted(items, key=lambda it: min((x[0], x[2] or "") for i in it["ids"]
@@ -1476,8 +1476,8 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 price = {"postponed": ("postponed", "перенесено")}.get(c.get("status"), ("cancelled", "отменено"))[
                     0 if lang == "en" else 1]
             meta = " · ".join(x for x in (when(c, w, lang), where_, price, acc, mark) if x)
-            if it.get("line") and it.get("kind_ru") and lang == "ru":   # «В колледжах», «В музеях и усадьбах»: вид события — в строке
-                meta = f"{it['kind_ru']} · {meta}"
+            if it.get("line") and it.get(f"kind_{lang}"):   # «В колледжах», «В музеях», «Научиться»: вид — в строке
+                meta = f"{it[f'kind_{lang}']} · {meta}" if lang == "ru" or rub == "learn" else meta
             title = it[f"title_{lang}"]
             if c["kind"] == "venue_news" and not re.search(r"\bCambridge\b", c.get("address") or ""):
                 town = (c.get("address") or "").split(",")[-1].strip()   # правки по v5: городок — в заголовке строки

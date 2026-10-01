@@ -1,0 +1,276 @@
+{
+ "_comment": "Этап 7e, рубрика «Научиться»: провайдеры курсов и мастер-классов для взрослых (поиск Keenable 01.10.2026 → проверка страницы нашим ботом). venue/postcode — площадка по умолчанию (для зоны). Закрытые — в blocked (лист «Не разобрано»), защиту не обходим. Сайты Cambridge, Massachusetts (cambridgeculinary.com, commonwealthwineschool.com, cambridgeart.org и др.) — не наши, исключены.",
+ "providers": [
+  {
+   "host": "cambridgecookery.com",
+   "name": "Cambridge Cookery (cookery school & wine school)",
+   "category": "cookery",
+   "urls": [
+    "https://cambridgecookery.com/wine-classes-and-events"
+   ],
+   "venue": "Cambridge Cookery, Purbeck Road, Cambridge",
+   "postcode": "CB2 8EB",
+   "sitemaps": [
+    "https://cambridgecookery.com/ajde_events-sitemap.xml",
+    "https://cambridgecookery.com/ajde_events-sitemap2.xml"
+   ],
+   "page_re": "/classes/",
+   "sitemap_days": 120
+  },
+  {
+   "host": "cambridgecookingclasses.co.uk",
+   "name": "Cambridge Cooking Classes",
+   "category": "cookery",
+   "urls": [
+    "https://cambridgecookingclasses.co.uk/"
+   ],
+   "venue": "Cambridge",
+   "postcode": null
+  },
+  {
+   "host": "whitecottagebakery.com",
+   "name": "White Cottage Bakery (bread & baking school)",
+   "category": "cookery",
+   "urls": [
+    "https://whitecottagebakery.com/workshop-calendar.html"
+   ],
+   "venue": "White Cottage Bakery, near Cambridge",
+   "postcode": null
+  },
+  {
+   "host": "citycollegepeterborough.ac.uk",
+   "name": "City College Peterborough — leisure courses",
+   "category": "other",
+   "urls": [
+    "https://citycollegepeterborough.ac.uk/leisure-courses"
+   ],
+   "venue": "City College Peterborough",
+   "postcode": "PE1 4DZ"
+  },
+  {
+   "host": "kilncambridge.com",
+   "name": "Kiln Cambridge (pottery)",
+   "category": "pottery",
+   "urls": [
+    "https://kilncambridge.com/courses",
+    "https://kilncambridge.com/events"
+   ],
+   "venue": "Kiln Cambridge",
+   "postcode": null
+  },
+  {
+   "host": "townhouseceramics.co.uk",
+   "name": "Townhouse Ceramics",
+   "category": "pottery",
+   "urls": [
+    "https://townhouseceramics.co.uk/lessons",
+    "https://townhouseceramics.co.uk/workshops"
+   ],
+   "venue": "Townhouse Ceramics, Cambridge",
+   "postcode": null
+  },
+  {
+   "host": "elyclaycollective.com",
+   "name": "Ely Clay Collective",
+   "category": "pottery",
+   "urls": [
+    "https://www.elyclaycollective.com/collections/classes",
+    "https://www.elyclaycollective.com/collections/workshops"
+   ],
+   "venue": "The Yard, Ely",
+   "postcode": null
+  },
+  {
+   "host": "amberbpottery.co.uk",
+   "name": "Amber B Pottery",
+   "category": "pottery",
+   "urls": [
+    "https://amberbpottery.co.uk/pages/classes"
+   ],
+   "venue": null,
+   "postcode": null
+  },
+  {
+   "host": "hildatattersall.co.uk",
+   "name": "Hilda Tattersall Ceramics",
+   "category": "pottery",
+   "urls": [
+    "https://hildatattersall.co.uk/"
+   ],
+   "venue": "Cambridge",
+   "postcode": null
+  },
+  {
+   "host": "susanabbs.co.uk",
+   "name": "Susan Abbs — drawing and painting classes",
+   "category": "drawing",
+   "urls": [
+    "https://susanabbs.co.uk/classes",
+    "https://susanabbs.co.uk/classes-life-drawing-copy"
+   ],
+   "venue": "Susan Abbs studio, Cambridge",
+   "postcode": null
+  },
+  {
+   "host": "cambridgefiguredrawing.carrd.co",
+   "name": "Cambridge Figure Drawing",
+   "category": "drawing",
+   "urls": [
+    "https://cambridgefiguredrawing.carrd.co/"
+   ],
+   "venue": "Cambridge",
+   "postcode": null
+  },
+  {
+   "host": "hillsroad.ac.uk",
+   "name": "Hills Road Adult Education",
+   "category": "other",
+   "urls": [
+    "https://hillsroad.ac.uk/adult-education/courses"
+   ],
+   "venue": "Hills Road Sixth Form College, Cambridge",
+   "postcode": "CB2 8PE"
+  },
+  {
+   "host": "ice.cam.ac.uk",
+   "name": "University of Cambridge Institute of Continuing Education (Madingley Hall)",
+   "category": "other",
+   "urls": [
+    "https://www.ice.cam.ac.uk/courses"
+   ],
+   "venue": "Madingley Hall, Madingley",
+   "postcode": "CB23 8AQ"
+  },
+  {
+   "host": "botanic.cam.ac.uk",
+   "name": "Cambridge University Botanic Garden — courses",
+   "category": "gardening",
+   "urls": [
+    "https://www.botanic.cam.ac.uk/learning/courses/"
+   ],
+   "venue": "Cambridge University Botanic Garden",
+   "postcode": "CB2 1JE"
+  },
+  {
+   "host": "stainedglassmuseum.com",
+   "name": "The Stained Glass Museum (Ely) — adult workshops",
+   "category": "crafts",
+   "urls": [
+    "https://stainedglassmuseum.com/whatson.php?filter=catAdult+Workshop"
+   ],
+   "venue": "The Stained Glass Museum, Ely Cathedral",
+   "postcode": "CB7 4DL"
+  },
+  {
+   "host": "cambridgewoodworkschool.co.uk",
+   "name": "Cambridge Woodwork School",
+   "category": "crafts",
+   "urls": [
+    "https://cambridgewoodworkschool.co.uk/services"
+   ],
+   "venue": "Cambridge Woodwork School",
+   "postcode": null
+  },
+  {
+   "host": "cambridge-glass-studio.co.uk",
+   "name": "Cambridge Glass Studio",
+   "category": "crafts",
+   "urls": [
+    "https://cambridge-glass-studio.co.uk/workshops",
+    "https://cambridge-glass-studio.co.uk/classes"
+   ],
+   "venue": "Cambridge Glass Studio",
+   "postcode": null
+  },
+  {
+   "host": "cambridgesalsa.co.uk",
+   "name": "Cambridge Salsa",
+   "category": "dance",
+   "urls": [
+    "https://cambridgesalsa.co.uk/"
+   ],
+   "venue": "Cambridge",
+   "postcode": null
+  },
+  {
+   "host": "localwineschool.com",
+   "name": "Cambridge Wine School (Local Wine School)",
+   "category": "wine",
+   "urls": [
+    "https://localwineschool.com/cambridge/events/"
+   ],
+   "venue": "Cambridge",
+   "postcode": null
+  },
+  {
+   "host": "wineunearthed.co.uk",
+   "name": "Wine Unearthed — Cambridge wine tasting days",
+   "category": "wine",
+   "urls": [
+    "https://wineunearthed.co.uk/cambridge-wine-tasting"
+   ],
+   "venue": "Gonville Hotel, Cambridge",
+   "postcode": "CB1 1LY"
+  },
+  {
+   "host": "creamphotoworkshops.co.uk",
+   "name": "Cream Photo Workshops (Cambridge)",
+   "category": "photography",
+   "urls": [
+    "https://creamphotoworkshops.co.uk/cambridge"
+   ],
+   "venue": "Cambridge",
+   "postcode": null
+  }
+ ],
+ "blocked": [
+  [
+   "camre.ac.uk",
+   "Cambridge Regional College — adult courses",
+   "https://camre.ac.uk/courses/art-design-crafts",
+   "bot_challenge"
+  ],
+  [
+   "camopenstudios.org",
+   "Cambridge Open Studios — workshops",
+   "https://camopenstudios.org/whats-on",
+   "bot_challenge"
+  ],
+  [
+   "unshaken-photography.co.uk",
+   "Unshaken Photography — short courses",
+   "https://unshaken-photography.co.uk/short-photography-courses/beginners-courses",
+   "bot_challenge"
+  ],
+  [
+   "classbento.co.uk",
+   "ClassBento — Cambridge workshops (агрегатор)",
+   "https://classbento.co.uk/workshops-cambridge",
+   "http_403"
+  ],
+  [
+   "rowanhumberstone.org.uk",
+   "Rowan Humberstone — evening classes",
+   "https://rowanhumberstone.org.uk/events",
+   "http_403"
+  ],
+  [
+   "cambridgedancecentre.co.uk",
+   "Cambridge Dance Centre — salsa",
+   "https://cambridgedancecentre.co.uk/salsa-dance-classes-in-cambridge.html",
+   "http_403"
+  ],
+  [
+   "afrosalsa.co.uk",
+   "Afro Salsa Cambridge",
+   "https://afrosalsa.co.uk/",
+   "robots_disallow"
+  ],
+  [
+   "aru.ac.uk",
+   "Anglia Ruskin — short courses",
+   "https://www.aru.ac.uk/study/short-courses",
+   "http_other"
+  ]
+ ]
+}
