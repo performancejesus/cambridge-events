@@ -1,0 +1,125 @@
+{
+ "checked": "2026-10-02T00:18:50+00:00",
+ "note": "по одному запросу к главной после 24-часовой паузы; сбор не запускался",
+ "sites": [
+  {
+   "source": "S001",
+   "name": "Visit Cambridge",
+   "url": "https://www.visitcambridge.org/",
+   "at": "2026-10-02T00:17:38+00:00",
+   "status": 200,
+   "final_url": "https://www.visitcambridge.org/",
+   "challenge": false,
+   "bytes": 131806,
+   "from_cache": false,
+   "server": "nginx",
+   "protection_headers": [],
+   "title": "Home - Visit Cambridge",
+   "event_links": 1,
+   "result": "открылся"
+  },
+  {
+   "source": "S012",
+   "name": "Cambridge Junction",
+   "url": "https://www.junction.co.uk/",
+   "at": "2026-10-02T00:17:50+00:00",
+   "status": 200,
+   "final_url": "https://www.junction.co.uk/",
+   "challenge": false,
+   "bytes": 106173,
+   "from_cache": false,
+   "server": "cloudflare",
+   "protection_headers": [
+    "cf-ray",
+    "cf-cache-status"
+   ],
+   "title": "Cambridge Junction | Music, Comedy, Theatre &amp; Community Venue",
+   "event_links": 2,
+   "result": "открылся"
+  },
+  {
+   "source": "S131",
+   "name": "Cambridge Past, Present & Future",
+   "url": "https://www.cambridgeppf.org/",
+   "at": "2026-10-02T00:18:01+00:00",
+   "status": 200,
+   "final_url": "https://cambridgeppf.org/",
+   "challenge": false,
+   "bytes": 825667,
+   "from_cache": false,
+   "server": "LiteSpeed",
+   "protection_headers": [],
+   "title": "Cambridge Past, Present &amp; Future | Protecting Green Spaces",
+   "result": "открылся"
+  },
+  {
+   "source": "S183",
+   "name": "Visit West Norfolk",
+   "url": "https://www.visitwestnorfolk.com/",
+   "at": "2026-10-02T00:18:13+00:00",
+   "status": 200,
+   "final_url": "https://www.visitwestnorfolk.com/",
+   "challenge": false,
+   "bytes": 73512,
+   "from_cache": false,
+   "server": "LiteSpeed",
+   "protection_headers": [
+    "x-litespeed-cache"
+   ],
+   "title": "Visit West Norfolk &#8211; The official tourism website for West Norfolk",
+   "result": "открылся"
+  },
+  {
+   "source": "S049",
+   "name": "Cambridge Union",
+   "url": "https://cus.org/",
+   "at": "2026-10-02T00:18:24+00:00",
+   "status": 429,
+   "final_url": "https://cus.org/",
+   "challenge": false,
+   "bytes": 960,
+   "from_cache": false,
+   "server": "nginx",
+   "protection_headers": [],
+   "title": "WordPress.com 429 Error",
+   "result": "ошибка 429"
+  },
+  {
+   "source": "S163",
+   "name": "Heong Gallery (Downing)",
+   "url": "https://www.dow.cam.ac.uk/",
+   "at": "2026-10-02T00:18:35+00:00",
+   "status": 200,
+   "final_url": "https://www.dow.cam.ac.uk/",
+   "challenge": false,
+   "bytes": 48263,
+   "from_cache": false,
+   "server": "Sucuri/Cloudproxy",
+   "protection_headers": [
+    "x-sucuri-id",
+    "server",
+    "x-sucuri-cache"
+   ],
+   "title": "Downing College | Downing College Cambridge",
+   "result": "открылся"
+  },
+  {
+   "source": "S126",
+   "name": "Theatre Royal Bury St Edmunds",
+   "url": "https://www.theatreroyal.org/",
+   "at": "2026-10-02T00:18:42+00:00",
+   "status": 200,
+   "final_url": "https://theatreroyal.org/",
+   "challenge": false,
+   "bytes": 112430,
+   "from_cache": false,
+   "server": "cloudflare",
+   "protection_headers": [
+    "cf-ray",
+    "cf-cache-status"
+   ],
+   "title": "Theatre Royal Bury St Edmunds | Theatre, Comedy, Music",
+   "result": "открылся"
+  }
+ ]
+}
