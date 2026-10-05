@@ -419,3 +419,30 @@ python scripts/build_issue.py --issue 2026-10-08 --version v12
 - **Правки по v11** — проверки 43 (вступление только о пунктах выпуска, блокирующая), 44 (названия в оригинале),
   45 (культурные реалии: Father Christmas, panto, Bonfire Night), 46 (роли участников только из источника),
   47 (городок в заголовке «Нового в городе»); цена — из кандидатов того же события (Olly Murs £45).
+
+## Прогон 7e+ (05.10) — решения после 7e, свежий выпуск v13, кандидаты для разметки 7f
+
+```bash
+python scripts/probe_closed.py                       # закрывшиеся сайты: по одному запросу к главной → data/probe_closed_<дата>.json
+python scripts/run_collectors.py && python scripts/update_db.py   # Junction — лимит 20 запросов за прогон (request_budget)
+python scripts/extract_articles.py --max-cost 1.00 && python scripts/update_db.py --no-load && python scripts/check_recurring.py
+python scripts/locate_venues.py && python scripts/score_importance.py && python scripts/kids_collect.py
+python scripts/recheck_status.py --issue 2026-10-08 && python scripts/update_db.py --no-load
+python scripts/enrich_pages.py --issue 2026-10-08
+python scripts/build_issue.py --issue 2026-10-08 --version v13      # сначала — проверка баланса Claude API
+python scripts/export_candidates.py --issue 2026-10-08 --version v13   # issues/candidates_v13.json (разметка 7f)
+python scripts/probe_closed.py --report              # запросов к домену за сутки и событий собрано
+python scripts/mark_sent.py --issue 2026-10-08 --version v13        # после отправки: выпуск учитывается в истории
+```
+
+- **Черновики в истории** — `issue_items.status`: `draft` (по умолчанию для каждой сборки) / `sent` (`scripts/mark_sent.py`).
+  Правило «не повторять 4 недели» и ротация секций учитывают только отправленные выпуски; v5–v12 — черновики.
+- **Баланс Claude API** — `pipeline/budget.py`: пробный запрос перед сборкой (пуст → сборка не стартует, код 3,
+  уведомление в `data/notifications.jsonl`), оценка расхода прогона и недели по `llm_usage`; остаток — если сумма указана в
+  `data/api_balance.json` (`balance_usd`, `as_of`): меньше прогона — стоп, меньше недели — уведомление.
+- **Ежегодные события** (`data/recurring_events.json`): `on_sale_since` (дата старта продаж), `official_only` (дата
+  только с сайта организатора — Jazz Festival; события с его названием только из агрегаторов в выпуск не идут),
+  `zone_exception` (именное исключение вне зоны — Congham, Sandringham: только «Новые анонсы» и «Главное на выходные»),
+  `ballot` у R40 (Nine Lessons: ссылка и дата открытия онлайн-лотереи).
+- Проверки: 39 — и на фестиваль «в продаже» без даты начала; 35 — английское слово-дубль рядом с русским (без модели,
+  `issue_fixes.fix_en_dupes`); 45 — Nine Lessons: только онлайн-лотерея (`issue_fixes.fix_nine_lessons`).
