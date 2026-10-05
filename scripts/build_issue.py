@@ -126,6 +126,12 @@ def fits(rubric: str, c: dict, w: issue.Window) -> bool:
     """Выходные — событие в эти выходные и оценка ≥ 7; «На неделе» — есть день пн–пт; «С детьми» и «Бесплатно» —
     по тегам из данных; «за городом» и «по графству» — по зоне."""
     imp = c.get("importance") or 0
+    exc = c.get("zone_exception")
+    if exc:   # решение после 7e (01.10): именное исключение вне зоны — только «Новые анонсы» и «Главное на выходные»
+        if rubric.startswith("weekend_") and "weekend" in exc["rubrics"]:
+            return rubric in c.get("on_weekends", []) and not c.get("long_running")
+        if not (rubric == "new_announcements" and "announcements" in exc["rubrics"]):
+            return False
     if rubric.startswith("weekend_"):
         # правки по v3: длительные выставки — не сюда; «Кембриджшир, дальше часа» — только от 8
         # правки по v5: «до часа» (за городом) — тоже только от 8; забег с участниками — только крупный (от 7, для зрителей)
@@ -1150,6 +1156,60 @@ def editor_lists(result: dict, pools: issue.Pools, w: issue.Window, removed: dic
     return lists
 
 
+def candidates_dump(lists: dict, pools: issue.Pools, result: dict, w: issue.Window) -> dict:
+    """Прогон 7e+ (для разметки 7f): все кандидаты выпуска — рубрика, в выпуске да/нет, причина отбора или отсева;
+    описание по-русски дописывает scripts/export_candidates.py. Кандидаты рубрик без модели («Научиться», «Секции»,
+    «В колледжах», «В музеях и усадьбах») — из *_why ответа; исключённые до отбора (вне зоны, нет площадки) — отдельно."""
+    placed = {i: sec["rubric"] for sec in result["sections"] for it in sec["items"] for i in it["ids"]}
+    out: dict[str, dict] = {}
+    skip = {"dropped", "unparsed", "nowhere", "_missing_reasons", "_missing_ids"}
+    for rub, rows in lists.items():
+        if rub in skip:
+            continue
+        for r in rows:
+            if r["id"] == "—":
+                continue
+            e = out.setdefault(r["id"], {"id": r["id"], "rubrics": [], "in_issue": False, "rubric": None, "reason": None})
+            label = issue.rubric_title(rub, w, "ru", "") if rub != "theme" else "Тема недели"
+            if label not in e["rubrics"]:
+                e["rubrics"].append(label)
+            if r["in"] and not e["in_issue"]:
+                e.update(in_issue=True, rubric=label, reason=r["why"]["ru"])
+            elif not e["in_issue"] and e["reason"] is None:
+                e.update(rubric=label, reason=r["why"]["ru"])
+    for r in lists.get("nowhere", []):
+        if r["id"] != "—" and r["id"] not in out:
+            out[r["id"]] = {"id": r["id"], "rubrics": [], "in_issue": False, "rubric": "—", "reason": r["why"]["ru"]}
+    for key, label in (("learn_why", "learn"), ("sections_why", "kids"), ("colleges_why", "colleges"),
+                       ("museums_why", "museums")):
+        for cid, why in (result.get(key) or {}).items():
+            title = issue.rubric_title(label if not cid.startswith("B:") else "sport", w, "ru", "")
+            e = out.setdefault(cid, {"id": cid, "rubrics": [], "in_issue": False, "rubric": title, "reason": why})
+            if title not in e["rubrics"]:
+                e["rubrics"].append(title)
+            if cid in placed or why == "в выпуске":
+                e.update(in_issue=True, rubric=title, reason=why if why != "в выпуске" else "в выпуске (строка без модели)")
+    for cid, rub in placed.items():   # пункты выпуска, которых нет в списках рубрик (тема недели, строки без модели)
+        e = out.setdefault(cid, {"id": cid, "rubrics": [], "in_issue": True, "rubric": None, "reason": "в выпуске"})
+        if not e["in_issue"] or not e["rubric"]:
+            label = issue.rubric_title(rub, w, "ru", "") if rub != "theme" else "Тема недели"
+            e.update(in_issue=True, rubric=label, reason=e["reason"] if e["in_issue"] else "в выпуске")
+    for cid, e in out.items():
+        c = pools.candidates.get(cid)
+        if c:
+            price = issue.price_from_data(c)[1] if c["kind"] not in ("venue_news", "programme") else (c.get("price") or "")
+            e.update(kind=c["kind"], title=c.get("title") if c["kind"] != "programme" else
+                     f"{c.get('provider')} — {c.get('title')}", url=c.get("url"),
+                     when=issue.when(c, w, "ru"), venue=c.get("venue") or c.get("address") or "", zone=c.get("zone") or "",
+                     price=price, importance=c.get("importance"), importance_reason=c.get("importance_reason"),
+                     summary=(c.get("summary") or c.get("page_facts") or c.get("wiki_description") or "")[:600],
+                     sources=c.get("sources") or [])
+    excluded = [{"title": t, "reason": why} for why, ts in pools.excluded.items() for t in ts]
+    excluded += [{"title": t, "reason": "распродано"} for t in pools.sold_out]
+    return {"issue_date": w.issue.isoformat(), "period": [w.start.isoformat(), w.end.isoformat()],
+            "candidates": list(out.values()), "excluded_before_selection": excluded}
+
+
 # --- правки по черновику v5 ---
 
 RISK_EN = re.compile(r"\b(born|birthday|anniversary|\d+(?:st|nd|rd|th) (?:anniversary|birthday|year)|first|last|only|"
@@ -1711,6 +1771,9 @@ def fix_log(notes: list[tuple[str, str]]) -> dict[int, list[tuple[str, str]]]:
     return out
 
 
+BALANCE_CHECK: dict = {}   # прогон 7e+: результат проверки баланса перед сборкой (в «Для редактора»)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--issue", required=True)
@@ -1732,6 +1795,16 @@ def main() -> None:
                      date.fromisoformat(args.end) if args.end else sent + timedelta(days=issue.WINDOW_DAYS))
     stem = f"issue_{args.issue}" + (f"_{args.version}" if args.version else "")
     con = connect()
+    if not args.dry_run and not (args.from_json and args.no_api):
+        # решение после 7e (01.10): баланс Claude API — до запуска сборки; пуст — сборка не стартует, владельцу уведомление;
+        # на неделю не хватает (если остаток известен, data/api_balance.json) — уведомление, сборка идёт
+        from pipeline import budget
+        try:
+            BALANCE_CHECK.update(budget.preflight(con, purpose=f"сборка выпуска {args.issue} {args.version}".strip()))
+        except budget.BalanceEmpty as e:
+            print(f"сборка не запущена: баланс Claude API — {e}", file=sys.stderr)
+            sys.exit(3)
+        print("баланс Claude API: " + budget.describe(BALANCE_CHECK), file=sys.stderr)
     if not args.dry_run and not args.from_json:
         # правки по v4: состав участников из всех склеенных записей — для событий окна с оценкой ≥ 5 (кэш)
         import anthropic
@@ -1741,6 +1814,10 @@ def main() -> None:
         print(json.dumps(lineup.refresh(con, ids, anthropic.Anthropic(api_key=os.environ["EVENTS_ANTHROPIC_KEY"]))),
               file=sys.stderr)
     pools = issue.build_pools(con, w)
+    if BALANCE_CHECK:   # прогон 7e+: проверка баланса перед сборкой — редактору
+        from pipeline import budget
+        pools.notes.append(("Claude API balance before the build: " + BALANCE_CHECK.get("status", ""),
+                            "Баланс Claude API перед сборкой: " + budget.describe(BALANCE_CHECK)))
     payload = {"issue_date": args.issue, "period": [w.start.isoformat(), w.end.isoformat()],
                "weekends": {f"weekend_{i + 1}": [a.isoformat(), b.isoformat()] for i, (a, b) in enumerate(w.weekends)},
                "rubrics": model_rubrics(w),
@@ -1895,6 +1972,11 @@ def main() -> None:
     # этап 7e (правки по v11): названия событий — в оригинале (44); культурные реалии — Father Christmas, panto (45)
     from pipeline import issue_fixes as _ifx
     fix_notes += _ifx.fix_original_titles(result, pools) + _ifx.fix_realia(result, pools)
+    # прогон 7e+ (решения 01.10): Nine Lessons — только онлайн-лотерея (45); английское слово-дубль рядом с русским (35)
+    fix_notes += _ifx.fix_nine_lessons(result, pools, con)
+    n_dup = _ifx.fix_en_dupes(result)
+    fix_notes += n_dup
+    result["en_dupes_fixed"] = [ru for _, ru in n_dup]
     # этап 7c: сверка утверждений выпуска с текстами источников (Haiku, кэш claim_checks) — для проверок 1, 2 и 29;
     # утверждения не из источника — в «Факты из знаний модели (проверить)»
     from pipeline import issue_fixes
@@ -1999,6 +2081,9 @@ def main() -> None:
         lists = editor_lists(result, pools, w, removed, con)
         lists.pop("_missing_ids")
     miss = lists.pop("_missing_reasons")
+    # прогон 7e+: все кандидаты выпуска для разметки 7f (описания — scripts/export_candidates.py)
+    (out_dir / f"{stem}_candidates_raw.json").write_text(
+        json.dumps(candidates_dump(lists, pools, result, w), ensure_ascii=False, indent=1, default=str))
     sizes = rubric_sizes(result, pools, w)
     editor["en"].insert(-1, ("Items per rubric: set (min–max) and actual", sizes["en"]))
     editor["ru"].insert(-1, ("Число пунктов по рубрикам: задано (мин–макс) и получилось", sizes["ru"]))

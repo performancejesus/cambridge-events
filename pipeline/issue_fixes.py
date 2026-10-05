@@ -18,6 +18,7 @@ import re
 from datetime import datetime, timezone
 
 from . import issue
+from .db import ROOT
 
 Note = tuple[str, str]
 
@@ -501,6 +502,136 @@ def fix_grammar(client, result: dict, pools, con) -> tuple[list[Note], float, di
         info["fixed"].append({"where": where, "fixes": x["fixes"]})
         notes.append((f"“{where}”: grammar fixed ({fx})", f"«{where}»: грамматика: {fx}"))
     return notes, cost, info
+
+
+# --- прогон 7e+ (решения после 7e, 01.10): английское слово-дубль рядом с русским (проверка 35) ---------------------
+
+# «Режиссёр Director Roddy Bogawa»: английское слово переводит соседнее русское — проверка 8 ловит смешанные буквы
+# внутри слова, а такие дубли — нет. Пары: английское слово → основа русского (без окончания).
+EN_RU_DUPES = {
+    "director": "режисс", "directed": "режисс", "conductor": "дириж", "choir": "хор", "orchestra": "оркестр",
+    "quartet": "квартет", "trio": "трио", "band": "групп", "singer": "певи|певец|певц", "pianist": "пианист",
+    "violinist": "скрипач", "guitarist": "гитарист", "composer": "композитор", "author": "автор", "writer": "писател",
+    "poet": "поэт", "artist": "художни|артист", "actor": "актёр|актер", "actress": "актрис", "comedian": "комик",
+    "speaker": "спикер|доклад", "lecture": "лекци", "talk": "лекци|беседа|доклад", "concert": "концерт",
+    "festival": "фестивал", "exhibition": "выставк", "museum": "музе", "gallery": "галере", "theatre": "театр",
+    "market": "рын|ярмар", "fair": "ярмар", "workshop": "мастер-класс|мастерск", "tour": "тур|экскурси",
+    "film": "фильм", "screening": "показ", "premiere": "премьер", "show": "шоу", "live": "живь", "free": "бесплатн",
+    "children": "дет", "family": "семе|семей", "walk": "прогулк", "run": "забег", "race": "забег|гонк",
+    "dance": "танц", "class": "заняти|класс", "course": "курс", "tasting": "дегустац", "opening": "открыти",
+    "fireworks": "фейерверк", "carols": "гимн|колядк|рождественск", "service": "служб", "organ": "орган",
+    "recital": "концерт|сольн", "host": "ведущ", "presenter": "ведущ", "producer": "продюсер", "curator": "куратор",
+}
+_EN_WORD = r"[A-Z][a-z]+|[a-z]+"
+
+
+def en_dupes(text: str) -> list[tuple[str, str]]:
+    """(русское слово, английское) — английское слово рядом с русским, которое оно дублирует по смыслу.
+    Имена собственные (Director's Cut, Live at the Apollo) не трогаем: английское слово должно стоять отдельно — сразу
+    после русского или перед ним, и следующее за ним слово — не часть английской фразы в нижнем регистре."""
+    out = []
+    for m in re.finditer(r"([А-Яа-яЁё][А-Яа-яЁё-]+)\s+(" + _EN_WORD + r")\b|\b(" + _EN_WORD + r")\s+([А-Яа-яЁё][А-Яа-яЁё-]+)",
+                         text or ""):
+        ru, en = (m.group(1), m.group(2)) if m.group(1) else (m.group(4), m.group(3))
+        stem = EN_RU_DUPES.get(en.lower())
+        if not stem or not re.match(rf"(?:{stem})", ru.lower()):
+            continue
+        after = (text or "")[m.end():m.end() + 30]
+        if m.group(1) and re.match(r"\s*(?:'s|of|at|in|on|and|&|the)\b", after):
+            continue   # «фестиваль Festival of Ideas» — часть названия
+        out.append((ru, en))
+    return out
+
+
+def fix_en_dupes(result: dict) -> list[Note]:
+    """Проверка 35 (решение 01.10): убрать английское слово-дубль рядом с русским («Режиссёр Director Roddy Bogawa» →
+    «Режиссёр Roddy Bogawa»). Только в русских полях; название события в оригинале (title_ru = title_en) не трогаем."""
+    notes = []
+    slots = [(result, f"{k}_ru", "вступление") for k in ("intro", "theme_intro")] + \
+        [(it, f, it.get("title_en") or "") for sec in result["sections"] for it in sec["items"]
+         for f in ("title_ru", "blurb_ru", "where_ru")]
+    for obj, f, where in slots:
+        t = obj.get(f) or ""
+        if not t or (f == "title_ru" and t == obj.get("title_en")):
+            continue
+        new = t
+        for ru, en in en_dupes(t):
+            new = re.sub(rf"(?<={re.escape(ru)})\s+{re.escape(en)}\b|\b{re.escape(en)}\s+(?={re.escape(ru)})", "", new, count=1)
+        if new != t:
+            obj[f] = new
+            notes.append((f"“{where}”: English duplicate word removed", f"«{where}»: английское слово-дубль убрано "
+                          f"(«{t[:70]}» → «{new[:70]}»)"))
+    return notes
+
+
+# --- прогон 7e+ (решения после 7e, 01.10): King's Nine Lessons and Carols — только онлайн-лотерея ---------------------
+
+NINE_RE = re.compile(r"Nine Lessons|девяти чтени", re.I)
+QUEUE_RE = re.compile(r"очеред\w*|queu\w*|занять\s+место\s+с\s+утра", re.I)
+NO_QUEUE_RE = re.compile(r"больше нет|нет очеред|no (?:public |longer a )?queue|no longer", re.I)
+
+
+def drop_queue(text: str) -> str:
+    """Убрать предложения про очередь (кроме «очереди больше нет»)."""
+    parts = re.split(r"(?<=[.!?])\s+", text or "")
+    return " ".join(x for x in parts if not (QUEUE_RE.search(x) and not NO_QUEUE_RE.search(x))).strip()
+BALLOT_RU_RE = re.compile(r"лотере|ballot", re.I)
+BALLOT_EN_RE = re.compile(r"\bballot\b|\blottery\b", re.I)
+
+
+def nine_lessons_ballot(con) -> dict:
+    """Ссылка и дата открытия лотереи из recurring_events.json (R40 → ballot)."""
+    for r in json.loads((ROOT / "data" / "recurring_events.json").read_text()):
+        if r["rec_id"] == "R40":
+            return r.get("ballot") or {"url": r["url"], "opens": None}
+    return {}
+
+
+def ballot_sentence(b: dict, lang: str) -> str:
+    opens = b.get("opens")
+    if lang == "ru":
+        when = f" Приём заявок открывается {ru_date(opens)}." if opens else " Дату открытия лотереи колледж объявит на сайте."
+        return "Бесплатные билеты — только по онлайн-лотерее на сайте King's College; очереди у часовни больше нет." + when
+    when = f" The ballot opens on {opens}." if opens else " The college will announce the ballot dates on its website."
+    return "Free tickets are allocated only by an online ballot on the King's College website; there is no public queue." + when
+
+
+def ru_date(iso: str) -> str:
+    months = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября",
+              "декабря"]
+    y, m, d_ = iso[:10].split("-")
+    return f"{int(d_)} {months[int(m) - 1]}"
+
+
+def fix_nine_lessons(result: dict, pools, con=None) -> list[Note]:
+    """Решение 01.10: «очереди больше нет, только онлайн-лотерея» — фразы про очередь заменяются формулировкой про
+    лотерею; в анонсе — дата открытия лотереи (когда известна) и ссылка на страницу лотереи."""
+    notes = []
+    b = None
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            src = " ".join([it.get("title_en") or "", it.get("title_ru") or ""] +
+                           [str(c.get("title") or "") for c in _cands(pools, it)])
+            if not NINE_RE.search(src):
+                continue
+            b = b or nine_lessons_ballot(con)
+            changed = False
+            for f, lang, rx in (("blurb_ru", "ru", BALLOT_RU_RE), ("blurb_en", "en", BALLOT_EN_RE)):
+                t = it.get(f) or ""
+                new = drop_queue(t)
+                opens = b.get("opens")
+                date_txt = (ru_date(opens) if lang == "ru" else opens[:10]) if opens else None
+                if not rx.search(new) or (date_txt and date_txt not in new):
+                    new = f"{new} {ballot_sentence(b, lang)}".strip()
+                if new != t:
+                    it[f] = re.sub(r"\s{2,}", " ", new)
+                    changed = True
+            if b.get("url") and it.get("url") != b["url"]:
+                it["ballot_url"] = b["url"]
+            if changed:
+                notes.append((f"“{it.get('title_en')}”: online ballot wording", f"«{it.get('title_ru')}»: формулировка про "
+                              f"онлайн-лотерею (очереди больше нет, решение 01.10)"))
+    return notes
 
 
 # --- этап 7e, правки по v11 ---------------------------------------------------------------------------------------

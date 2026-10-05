@@ -1,5 +1,5 @@
 httpx[http2]
-selectolax
+selectolax<1.0   # 1.0 убрал парсер Modest (selectolax.parser.HTMLParser)
 feedparser
 icalendar
 openpyxl

@@ -238,8 +238,8 @@ class PoliteClient:
             self.db.execute("""INSERT INTO hosts(host, robots_status, robots_text, robots_at) VALUES (?,?,?,?)
                 ON CONFLICT(host) DO UPDATE SET robots_status=excluded.robots_status, robots_text=excluded.robots_text,
                 robots_at=excluded.robots_at""", (host, status, text, _iso(_now())))
-            if status == 429 or status >= 500:
-                self._set_cooldown(host, f"robots.txt: {status}")
+            if status == 429 or status >= 500 or status == -1:   # прогон 7e+: обрыв на robots.txt — тоже пауза домена
+                self._set_cooldown(host, f"robots.txt: {'обрыв соединения' if status == -1 else status}")
         if status == 200:
             rp.parse(text.splitlines())
         elif status == 429 or status >= 500 or status == -1:

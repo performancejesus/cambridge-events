@@ -228,6 +228,10 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
                     and not WASTE_RE.search(e["title"]),
         "free_tag": strictly_free(e["price_from"], e["price_text"]),
     }
+    exc = zone_exception(e)
+    if exc:   # решение после 7e: именное исключение (Congham, Sandringham) — только «Новые анонсы» и «Главное»
+        facts["zone"] = exc["zone"]
+        facts["zone_exception"] = exc
     allcats = _categories(con, e["event_id"], None)
     text = " ".join([e["title"]] + allcats)
     if FILM_RE.search(text) or "film" in [c.lower() for c in allcats] or set(srcs) & {"S045"}:
@@ -334,6 +338,49 @@ def thin(title: str, summary: str | None, performer: str | None, names: list[str
     return len(extra) < 8
 
 
+_ZONE_EXC: list | None = None
+
+
+def zone_exception(e) -> dict | None:
+    """Решение после 7e (01.10): именные исключения для флагманских ежегодных событий вне зоны (World Snail Racing
+    Championship в Конгеме, RHS Sandringham Flower Show) — радиус Кингс-Линна не расширяем; только эти события (шаблон
+    названия из data/recurring_events.json → zone_exception), только в «Новых анонсах» и «Главном на выходные»
+    (build_issue.fits). Возвращает {rec_id, zone, rubrics, why} или None."""
+    global _ZONE_EXC
+    if _ZONE_EXC is None:
+        _ZONE_EXC = []
+        for r in json.loads((ROOT / "data" / "recurring_events.json").read_text()):
+            if r.get("zone_exception"):
+                rx = re.compile("|".join(re.escape(x) for x in r["patterns"]), re.I)
+                _ZONE_EXC.append((rx, dict(r["zone_exception"], rec_id=r["rec_id"], name=r["name"])))
+    if e["zone"] in LISTED_ZONES:
+        return None
+    for rx, exc in _ZONE_EXC:
+        if rx.search(e["title"] or ""):
+            return exc
+    return None
+
+
+AGGREGATOR_SOURCES = {"S006", "S007", "S128", "S129", "S148", "S165"}   # Ents24, Skiddle, поиск, подборки
+
+
+def official_only_reason(con, e) -> str | None:
+    """Решение после 7e (01.10): Cambridge International Jazz Festival — только по подтверждению на сайте фестиваля
+    (recurring_events.official_only). Событие с названием фестиваля только из агрегаторов (Ents24, Skiddle, поиск), пока
+    дата не подтверждена на официальной странице, в выпуск не ставим."""
+    cols = {r[1] for r in con.execute("PRAGMA table_info(recurring_events)")}
+    if "official_only" not in cols:
+        return None
+    for r in con.execute("SELECT name, patterns, official_url, found_source FROM recurring_events WHERE official_only='1'"):
+        rx = re.compile("|".join(re.escape(x) for x in json.loads(r["patterns"])), re.I)
+        if not rx.search(e["title"] or "") or r["found_source"] == r["official_url"]:
+            continue
+        srcs = set(_sources(con, e["event_id"]))
+        if srcs and srcs <= AGGREGATOR_SOURCES:
+            return f"{r['name']}: только агрегаторы, ждём подтверждения на сайте фестиваля (решение 01.10)"
+    return None
+
+
 def _exclusion(e: sqlite3.Row) -> str | None:
     if TBC_RE.search(e["title"]):
         return "лекции talks.cam с «Title to be confirmed»"
@@ -346,7 +393,7 @@ def _exclusion(e: sqlite3.Row) -> str | None:
     # площадки нет, но есть адрес (Visit Cambridge, Visit Ely) — место известно
     if (not e["venue_name"] or NO_VENUE_RE.match(e["venue_name"])) and not e["multi_venue"] and not e["address"]:
         return "нет площадки или адреса"
-    if e["zone"] not in LISTED_ZONES:
+    if e["zone"] not in LISTED_ZONES and not zone_exception(e):
         return "зона не определена (нет postcode)" if not e["zone"] else "вне зоны"
     if e["status"] in ("cancelled", "postponed", "disappeared", "past"):
         return f"статус {e['status']}"
@@ -376,7 +423,7 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     series: dict[tuple, list] = defaultdict(list)
     excluded_rows = []
     for r in rows:
-        why = _exclusion(r)
+        why = _exclusion(r) or official_only_reason(con, r)
         if why:
             excluded_rows.append(r)
             p.excluded[why].append(f"{r['title']} ({r['date_start']})")
@@ -778,6 +825,10 @@ def _announcements(con, w: Window, p: Pools) -> None:
     def add(e: sqlite3.Row, evidence: str) -> None:
         if e["event_id"] in seen or _exclusion(e):
             return
+        why = official_only_reason(con, e)
+        if why:   # прогон 7e+: Jazz Festival по агрегаторам — не анонсируем
+            p.excluded[why].append(f"{e['title']} ({e['date_start']})")
+            return
         facts = _event_facts(con, e)
         if facts["sources"] and set(facts["sources"]) <= SEASON_CALENDAR:
             return
@@ -820,6 +871,8 @@ def _tickets(con, w: Window, p: Pools) -> None:
         if not e:  # событие из статьи могло не связаться: ищем по дате и названию
             e = next((x for x in con.execute("SELECT * FROM events WHERE date_start=?", (u["date"],))
                       if title_similarity(norm_title(x["title"]), norm_title(u["event_name"])) >= 0.6), None)
+        if e and official_only_reason(con, e):   # прогон 7e+: Jazz Festival по агрегаторам — не ставим
+            continue
         facts = _event_facts(con, e) if e else {"title": u["event_name"], "sources": [u["source_id"]]}
         # ссылка — на событие (первоисточник), а не на статью о старте продаж, если событие есть в базе
         facts |= {"kind": "tickets", "on_sale_date": u["on_sale_date"], "url": (e["url"] if e and e["url"] else u["url"]),

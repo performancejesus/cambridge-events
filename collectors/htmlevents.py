@@ -98,10 +98,13 @@ class HtmlDetailCollector(DetailCache, Collector):
     def links(self, http: PoliteClient) -> dict[str, list[str]]:
         """Ссылка → категории (по странице списка, где она найдена)."""
         found: dict[str, list[str]] = {}
+        self._budget_start = http.requests
         for base in self.list_urls:
             cat = self.category_of(base)
             for n in range(1, self.max_pages + 1):
                 url = base if n == 1 or not self.page_fmt else self.page_fmt.format(base=base.rstrip("/"), n=n)
+                if n > 1 and not self.budget_left(http):   # прогон 7e+: лимит запросов (Junction)
+                    break
                 try:
                     page = http.get(url).text
                 except FetchError:

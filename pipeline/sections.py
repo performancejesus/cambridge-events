@@ -45,8 +45,9 @@ def shown_recently(con: sqlite3.Connection, w) -> dict[str, str]:
     from . import history
     history.init(con)
     since = (w.issue - timedelta(weeks=ROTATION_WEEKS)).isoformat()
-    return {r[0]: r[1] for r in con.execute("""SELECT cand_id, max(issue_date) FROM issue_items WHERE issue_date < ?
-            AND issue_date >= ? AND (cand_id LIKE 'S:%' OR cand_id LIKE 'B:%') GROUP BY cand_id""", (w.issue.isoformat(), since))}
+    return {r[0]: r[1] for r in con.execute(f"""SELECT cand_id, max(issue_date) FROM issue_items WHERE issue_date < ?
+            AND issue_date >= ? AND (cand_id LIKE 'S:%' OR cand_id LIKE 'B:%') AND {history.SENT} GROUP BY cand_id""",
+                                            (w.issue.isoformat(), since))}   # прогон 7e+: черновики не считаются
 
 
 SECTION_PROMPT = """For each children's club or regular class (JSON data), write short fields for one newsletter line in

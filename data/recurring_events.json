@@ -115,12 +115,15 @@
   ],
   "tickets": true,
   "page_date": "end",
-  "manual_start": "",
-  "note": "на сайте только дата окончания; начало вносит владелец проекта (manual_start, YYYY-MM-DD)",
+  "manual_start": "2027-07-30",
+  "note": "решение после 7e (01.10): 2027 — 30 июля – 1 августа (manual_start/manual_end, владелец проекта); ранние билеты в продаже с 18.09.2026 (Cambridge Independent); на сайте фестиваля только дата окончания",
   "venue": "Cherry Hinton Hall",
   "postcode": "CB1 8DW",
   "festival": true,
-  "town": "Cambridge"
+  "town": "Cambridge",
+  "manual_end": "2027-08-01",
+  "on_sale_note": "ранние билеты на 2027 в продаже с 18 сентября 2026 (Cambridge Independent)",
+  "on_sale_since": "2026-09-18"
  },
  {
   "rec_id": "R10",
@@ -373,8 +376,16 @@
    "quirky"
   ],
   "description": "Чемпионат мира по гонкам улиток в Конгеме под Кингс-Линном: улитки ползут 13 дюймов от центра круга к краю, приз — серебряный кубок с листьями салата.",
-  "note": "этап 7e: Норфолк, входит по исключению для Кингс-Линна (зона «до часа» — по расстоянию до Кингс-Линна, проверить); 2026 — 18 июля",
-  "description_en": "The World Snail Racing Championship at Congham near King's Lynn: snails race 13 inches from the centre of a circle to its edge."
+  "note": "этап 7e: Норфолк, рядом с Кингс-Линном; решение 01.10 — именное исключение (zone_exception): только «Новые анонсы» и «Главное на выходные»; 2026 — 18 июля",
+  "description_en": "The World Snail Racing Championship at Congham near King's Lynn: snails race 13 inches from the centre of a circle to its edge.",
+  "zone_exception": {
+   "zone": "до часа",
+   "rubrics": [
+    "announcements",
+    "weekend"
+   ],
+   "why": "решение после 7e (01.10): именное исключение для флагманского ежегодного события (Congham, Норфолк) — радиус Кингс-Линна не расширяем"
+  }
  },
  {
   "rec_id": "R28",
@@ -566,7 +577,7 @@
   "name": "Cambridge International Jazz Festival",
   "month": "11",
   "url": "https://www.cambridgejazzfestival.co.uk/",
-  "method": "news",
+  "method": "page",
   "patterns": [
    "Cambridge Jazz Festival",
    "Cambridge International Jazz"
@@ -576,7 +587,8 @@
   "town": "Cambridge",
   "festival": true,
   "description": "Джазовый фестиваль Кембриджа — десятки концертов по клубам, кафе и залам города в ноябре.",
-  "note": "этап 7e: 2026 — около 9–23 ноября (сайты-агрегаторы, не подтверждено); концерты фестиваля в продаже (Hidden Rooms 12 ноября, Hot Numbers 19 ноября)"
+  "note": "решение после 7e (01.10): даты — только по подтверждению на сайте фестиваля; по агрегаторам в выпуск не ставить. 2026 — около 9–23 ноября по агрегаторам (не подтверждено); отдельные концерты в продаже у площадок",
+  "official_only": true
  },
  {
   "rec_id": "R39",
@@ -609,9 +621,15 @@
   "postcode": "CB2 1ST",
   "town": "Cambridge",
   "festival": true,
-  "description": "Рождественская служба с хором King's College 24 декабря, которую транслирует BBC; около половины мест — для публики.",
+  "description": "Рождественская служба с хором King's College 24 декабря, которую транслирует BBC. Бесплатные билеты — только по онлайн-лотерее (ballot) на сайте колледжа; очереди у часовни больше нет.",
   "status_note": "бесплатные билеты — только по онлайн-лотерее (ballot); «There is no longer a public queue for tickets» (сайт колледжа, наш бот 01.10.2026); страница обновится ранней осенью 2026",
-  "note": "этап 7e: в брифе — «очередь с утра»; по сайту колледжа теперь лотерея (в 2025 — 1–15 ноября) — напоминание в выпуске перед открытием лотереи"
+  "note": "решение после 7e (01.10): очереди больше нет — только онлайн-лотерея; в анонсе — дата открытия лотереи и ссылка (ballot.opens вносим, когда колледж объявит)",
+  "description_en": "The Christmas Eve service with King's College Choir, broadcast by the BBC. Free tickets are allocated only by an online ballot on the college website; there is no longer a public queue.",
+  "ballot": {
+   "url": "https://www.kings.cam.ac.uk/chapel/festival-nine-lessons-and-carols",
+   "opens": null,
+   "note": "дата открытия лотереи 2026 — когда колледж обновит страницу (в 2025 — 1–15 ноября)"
+  }
  },
  {
   "rec_id": "R41",
@@ -907,7 +925,15 @@
   "venue": "Sandringham Estate",
   "town": "Sandringham",
   "description": "Цветочная выставка в королевском поместье Сандрингем — с 2026 года её проводит Королевское садоводческое общество (RHS).",
-  "note": "этап 7e: 2026 — июль (первая выставка RHS); Сандрингем — за пределами исключения Кингс-Линна (проверить зону)"
+  "note": "этап 7e: 2026 — июль (первая выставка RHS); решение 01.10 — именное исключение (zone_exception): только «Новые анонсы» и «Главное на выходные»",
+  "zone_exception": {
+   "zone": "до часа",
+   "rubrics": [
+    "announcements",
+    "weekend"
+   ],
+   "why": "решение после 7e (01.10): именное исключение для флагманского ежегодного события (Sandringham, Норфолк) — радиус Кингс-Линна не расширяем"
+  }
  },
  {
   "rec_id": "R59",

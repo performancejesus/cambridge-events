@@ -105,6 +105,19 @@ class DetailCache:
         self.fresh_pages: dict[str, dict | None] = {}
         self._fresh_after = (datetime.now(timezone.utc) - timedelta(days=self.refresh_days)).isoformat()
         self.stats = {"links": 0, "cached": 0, "fetched": 0, "fetch_errors": 0, "no_jsonld": 0}
+        if getattr(self, "request_budget", None):
+            self.stats.update(stale=0, budget_skipped=0)
+
+    def budget_left(self, http: PoliteClient) -> bool:
+        """Прогон 7e+: лимит сетевых запросов источника за прогон (request_budget, Junction — ≈ 20). Отсчёт — от первого
+        запроса прогона (_budget_start ставит links() / collect())."""
+        budget = getattr(self, "request_budget", None)
+        if not budget:
+            return True
+        start = getattr(self, "_budget_start", None)
+        if start is None:
+            start = self._budget_start = http.requests
+        return http.requests - start < budget
 
     def detail(self, http: PoliteClient, link: str) -> dict | None:
         """Поля события со страницы (JSON-LD + цена текстом); None — страница недоступна или без JSON-LD."""
@@ -116,6 +129,14 @@ class DetailCache:
         elif link in cache and cache[link][0] >= self._fresh_after:
             self.stats["cached"] += 1
             kw = cache[link][1]
+        elif getattr(self, "request_budget", None) and link in cache:
+            # прогон 7e+: с лимитом запросов известные страницы не перезапрашиваем — поля из прошлого разбора,
+            # лимит тратится только на новые события
+            self.stats["stale"] += 1
+            kw = cache[link][1]
+        elif not self.budget_left(http):
+            self.stats["budget_skipped"] += 1
+            return None
         else:
             try:
                 page = http.get(link).text

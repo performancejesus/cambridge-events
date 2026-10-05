@@ -26,27 +26,32 @@ MONTH_FIRST_RE = re.compile(rf"\b{_MON}\s+({_DAY})(?:\s*(?:-|–|to)\s*(?:{_MON}
 
 
 def seed(con: sqlite3.Connection) -> None:
-    for col in ("tags", "description", "status_note", "on_sale_note", "description_en"):   # этап 7e (pipeline/knowledge.py)
+    for col in ("tags", "description", "status_note", "on_sale_note", "description_en",   # этап 7e (pipeline/knowledge.py)
+                "on_sale_since", "official_only", "zone_exception"):   # прогон 7e+ (решения после 7e, 01.10)
         if col not in {x[1] for x in con.execute("PRAGMA table_info(recurring_events)")}:
             con.execute(f"ALTER TABLE recurring_events ADD COLUMN {col} TEXT")
     for r in json.loads(SEED.read_text()):
         con.execute("""INSERT INTO recurring_events(rec_id, name, expected_month, official_url, check_method, patterns, note,
             tickets, page_date, manual_start, manual_end, venue, postcode, town, shared_page, festival, tags, description,
-            status_note, on_sale_note, description_en)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            status_note, on_sale_note, description_en, on_sale_since, official_only, zone_exception)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ON CONFLICT(rec_id) DO UPDATE SET name=excluded.name, expected_month=excluded.expected_month,
             official_url=excluded.official_url, check_method=excluded.check_method, patterns=excluded.patterns,
             note=excluded.note, tickets=excluded.tickets, page_date=excluded.page_date,
             manual_start=excluded.manual_start, manual_end=excluded.manual_end, venue=excluded.venue,
             postcode=excluded.postcode, town=excluded.town, shared_page=excluded.shared_page,
             festival=excluded.festival, tags=excluded.tags, description=excluded.description,
-            status_note=excluded.status_note, on_sale_note=excluded.on_sale_note, description_en=excluded.description_en""",
+            status_note=excluded.status_note, on_sale_note=excluded.on_sale_note, description_en=excluded.description_en,
+            on_sale_since=excluded.on_sale_since, official_only=excluded.official_only,
+            zone_exception=excluded.zone_exception""",
                     (r["rec_id"], r["name"], r["month"], r["url"], r["method"], json.dumps(r["patterns"]), r.get("note"),
                      int(bool(r.get("tickets"))), r.get("page_date"), r.get("manual_start") or None,
                      r.get("manual_end") or None, r.get("venue"), r.get("postcode"), r.get("town"),
                      int(bool(r.get("shared_page"))), int(bool(r.get("festival"))),
                      json.dumps(r["tags"]) if r.get("tags") else None, r.get("description"), r.get("status_note"),
-                     r.get("on_sale_note"), r.get("description_en")))
+                     r.get("on_sale_note"), r.get("description_en"), r.get("on_sale_since"),
+                     "1" if r.get("official_only") else None,
+                     json.dumps(r["zone_exception"], ensure_ascii=False) if r.get("zone_exception") else None))
 
 
 def dates_in(text: str, months: set[str], today: str) -> list[tuple[str, str | None]]:
@@ -107,10 +112,13 @@ def stage_of(con: sqlite3.Connection, r: sqlite3.Row) -> tuple[str, str | None]:
     note = (r["status_note"] or "") if "status_note" in r.keys() else ""
     if note.startswith("не проводится"):   # этап 7e: закрылся или прекращён (Secret Garden Party, Bury Christmas Fayre)
         return "не проводится", None
+    keys = r.keys()
+    on_sale = r["on_sale_note"] if "on_sale_note" in keys else None
+    sale_since = (r["on_sale_since"] if "on_sale_since" in keys else None) or r["last_checked_at"]
+    if on_sale:   # этап 7e: продажа подтверждена у организатора; прогон 7e+: и без даты начала (Folk Festival 2027 —
+        return "в продаже", sale_since   # билеты с 18.09, а на сайте только окончание) — проверка 39 это ловит
     if not r["found_date"]:
         return "ожидаем", None
-    if "on_sale_note" in r.keys() and r["on_sale_note"]:   # этап 7e: продажа подтверждена на странице организатора
-        return "в продаже", r["last_checked_at"]
     e = con.execute("SELECT * FROM events WHERE event_id=?", (r["event_id"],)).fetchone() if r["event_id"] else None
     since = (e["first_seen_at"] if e else r["last_checked_at"]) or None
     if e and r["tickets"]:
@@ -148,8 +156,10 @@ def check(con: sqlite3.Connection, http: PoliteClient, run_id: str, fetch_pages:
         # 0) дата, внесённая вручную (data/recurring_events.json: manual_start / manual_end)
         if r["manual_start"] and r["manual_start"] >= today:
             found, end, source = r["manual_start"], r["manual_end"], "вручную"
-        # 1) уже есть в базе событий (из фидов или статей)
-        for e in ([] if found else con.execute(
+        official_only = bool(r["official_only"]) if "official_only" in r.keys() else False
+        # 1) уже есть в базе событий (из фидов или статей); official_only (Jazz Festival, решение 01.10) — только сайт
+        #    фестиваля: агрегаторам и статьям дату не верим
+        for e in ([] if found or official_only else con.execute(
                 "SELECT * FROM events WHERE date_start BETWEEN ? AND ? AND status NOT IN ('cancelled') AND source_type!='recurring'",
                 (today, horizon))):
             if rx.search(e["title"]) and e["date_start"][5:7] in months and in_town(e, r["town"]):
@@ -172,7 +182,7 @@ def check(con: sqlite3.Connection, http: PoliteClient, run_id: str, fetch_pages:
         if found and source == r["official_url"] and r["page_date"] == "end" and not end:
             only_end, found, source = found, None, None
         # 3) статьи (заголовок и RSS-анонс)
-        if not found:
+        if not found and not official_only:
             for a in con.execute("SELECT * FROM articles WHERE published >= ?", ((date.today() - timedelta(days=120)).isoformat(),)):
                 txt = f"{a['title']} {a['summary'] or ''}"
                 if rx.search(txt):
@@ -202,7 +212,9 @@ def check(con: sqlite3.Connection, http: PoliteClient, run_id: str, fetch_pages:
                         (eid, status, run_id, None, f"ежегодное {r['rec_id']}: дата найдена ({source})"))
         # этап 7d: найденное раньше больше не подтверждается (другой город, дата с чужого события страницы) — сбрасываем
         stale = False
-        if not found and r["found_date"] and r["found_source"] != "вручную":
+        if official_only and r["found_date"] and r["found_source"] not in ("вручную", r["official_url"]):
+            stale = True   # прогон 7e+: дата была взята не с сайта фестиваля — сбрасываем до подтверждения
+        elif not found and r["found_date"] and r["found_source"] != "вручную":
             old = con.execute("SELECT * FROM events WHERE event_id=?", (r["event_id"],)).fetchone() if r["event_id"] else None
             if old is None or not in_town(old, r["town"]) or (old["source_type"] == "recurring" and r["shared_page"]) \
                     or not rx.search(old["title"] or r["name"]):
