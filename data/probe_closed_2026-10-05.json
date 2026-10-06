@@ -16,7 +16,16 @@
    "server": "cloudflare",
    "title": "Cambridge Junction | Music, Comedy, Theatre &amp; Community Venue",
    "result": "открылся",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 22,
+   "cache_24h": 0,
+   "collect": {
+    "ok": true,
+    "events": 256,
+    "requests": 20,
+    "error": null
+   },
+   "cooldown_now": null
   },
   {
    "host": "cambridgeppf.org",
@@ -32,7 +41,16 @@
    "server": "LiteSpeed",
    "title": "Cambridge Past, Present &amp; Future | Protecting Green Spaces",
    "result": "открылся",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 5,
+   "cache_24h": 1,
+   "collect": {
+    "ok": true,
+    "events": 108,
+    "requests": 1,
+    "error": null
+   },
+   "cooldown_now": null
   },
   {
    "host": "www.visitcambridge.org",
@@ -48,7 +66,16 @@
    "server": "nginx",
    "title": "Home - Visit Cambridge",
    "result": "открылся",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 126,
+   "cache_24h": 0,
+   "collect": {
+    "ok": true,
+    "events": 103,
+    "requests": 124,
+    "error": null
+   },
+   "cooldown_now": null
   },
   {
    "host": "www.visitwestnorfolk.com",
@@ -64,7 +91,16 @@
    "server": "LiteSpeed",
    "title": "Visit West Norfolk &#8211; The official tourism website for West Norfolk",
    "result": "открылся",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 3,
+   "cache_24h": 1,
+   "collect": {
+    "ok": true,
+    "events": 8,
+    "requests": 1,
+    "error": null
+   },
+   "cooldown_now": null
   },
   {
    "host": "cus.org",
@@ -80,7 +116,19 @@
    "server": "nginx",
    "title": "WordPress.com 429 Error",
    "result": "закрыт",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "collect": {
+    "ok": false,
+    "events": null,
+    "requests": 0,
+    "error": "deferred: cus.org: пауза до 2026-10-06T22:18:54+00:00 (HTTP 429 на https://cus.org/)"
+   },
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:18:54+00:00",
+    "cooldown_reason": "HTTP 429 на https://cus.org/"
+   }
   },
   {
    "host": "www.dow.cam.ac.uk",
@@ -96,7 +144,16 @@
    "server": "Sucuri/Cloudproxy",
    "title": "Downing College | Downing College Cambridge",
    "result": "открылся",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 3,
+   "cache_24h": 0,
+   "collect": {
+    "ok": true,
+    "events": 1,
+    "requests": 1,
+    "error": null
+   },
+   "cooldown_now": null
   },
   {
    "host": "theatreroyal.org",
@@ -112,7 +169,16 @@
    "server": "cloudflare",
    "title": "Theatre Royal Bury St Edmunds | Theatre, Comedy, Music",
    "result": "открылся",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 36,
+   "cache_24h": 0,
+   "collect": {
+    "ok": true,
+    "events": 33,
+    "requests": 34,
+    "error": null
+   },
+   "cooldown_now": null
   },
   {
    "host": "camre.ac.uk",
@@ -128,7 +194,13 @@
    "server": "nginx",
    "title": null,
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:19:18+00:00",
+    "cooldown_reason": "прогон 7e+: главная 202"
+   }
   },
   {
    "host": "rowanhumberstone.org.uk",
@@ -144,7 +216,10 @@
    "server": "Apache",
    "title": "Rowan - Creating art, Improving lives",
    "result": "открылся",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": null
   },
   {
    "host": "cambridgedancecentre.co.uk",
@@ -160,7 +235,10 @@
    "server": "Apache",
    "title": "Hen Party Dance Class Cambridge | Dance Classes | Cambridge Dance Centre",
    "result": "открылся",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": null
   },
   {
    "host": "unshaken-photography.co.uk",
@@ -176,7 +254,13 @@
    "server": "nginx",
    "title": null,
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:19:39+00:00",
+    "cooldown_reason": "прогон 7e+: главная 202"
+   }
   },
   {
    "host": "classbento.co.uk",
@@ -192,7 +276,13 @@
    "server": "cloudflare",
    "title": "Just a moment...",
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:19:45+00:00",
+    "cooldown_reason": "HTTP 403 на https://classbento.co.uk/"
+   }
   },
   {
    "host": "camopenstudios.org",
@@ -208,7 +298,13 @@
    "server": "nginx",
    "title": null,
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:19:52+00:00",
+    "cooldown_reason": "прогон 7e+: главная 202"
+   }
   },
   {
    "host": "haysouthcambs.co.uk",
@@ -224,7 +320,13 @@
    "server": "cloudflare",
    "title": "Just a moment...",
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:19:58+00:00",
+    "cooldown_reason": "HTTP 403 на https://haysouthcambs.co.uk/"
+   }
   },
   {
    "host": "cambridgerugby.co.uk",
@@ -240,7 +342,13 @@
    "server": "nginx",
    "title": null,
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:20:05+00:00",
+    "cooldown_reason": "прогон 7e+: главная 202"
+   }
   },
   {
    "host": "cambridgerangers.com",
@@ -252,7 +360,13 @@
    "status": null,
    "error": "robots.txt: 429 — сайт закрыт для бота целиком",
    "requests": 1,
-   "robots_status": 429
+   "robots_status": 429,
+   "requests_24h": 1,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:20:05+00:00",
+    "cooldown_reason": "robots.txt: 429"
+   }
   },
   {
    "host": "worldpeashoot.com",
@@ -268,7 +382,13 @@
    "server": "nginx",
    "title": null,
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:20:12+00:00",
+    "cooldown_reason": "прогон 7e+: главная 202"
+   }
   },
   {
    "host": "cambridgeliteraryfestival.com",
@@ -284,7 +404,13 @@
    "server": "cloudflare",
    "title": "Just a moment...",
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:20:22+00:00",
+    "cooldown_reason": "HTTP 403 на https://cambridgeliteraryfestival.com/"
+   }
   },
   {
    "host": "elyfolkfestival.co.uk",
@@ -300,7 +426,13 @@
    "server": "nginx",
    "title": null,
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:20:29+00:00",
+    "cooldown_reason": "прогон 7e+: главная 202"
+   }
   },
   {
    "host": "thebigretreatfestival.com",
@@ -316,7 +448,13 @@
    "server": "cloudflare",
    "title": "Just a moment...",
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:20:35+00:00",
+    "cooldown_reason": "HTTP 403 на https://thebigretreatfestival.com/"
+   }
   },
   {
    "host": "www.peterboroughtoday.co.uk",
@@ -332,7 +470,19 @@
    "server": "cloudflare",
    "title": "Just a moment...",
    "result": "новая заглушка",
-   "requests": 2
+   "requests": 2,
+   "requests_24h": 2,
+   "cache_24h": 0,
+   "collect": {
+    "ok": false,
+    "events": null,
+    "requests": 0,
+    "error": "deferred: www.peterboroughtoday.co.uk: пауза до 2026-10-06T22:20:42+00:00 (HTTP 403 на https://www.peterboroughtoday.co.uk/)"
+   },
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:20:42+00:00",
+    "cooldown_reason": "HTTP 403 на https://www.peterboroughtoday.co.uk/"
+   }
   },
   {
    "host": "cambridgefoodies.me.uk",
@@ -344,7 +494,19 @@
    "status": null,
    "error": "robots.txt: 429 — сайт закрыт для бота целиком",
    "requests": 1,
-   "robots_status": 429
+   "robots_status": 429,
+   "requests_24h": 1,
+   "cache_24h": 0,
+   "collect": {
+    "ok": false,
+    "events": null,
+    "requests": 0,
+    "error": "Disallowed: https://cambridgefoodies.me.uk/feed/"
+   },
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:20:42+00:00",
+    "cooldown_reason": "robots.txt: 429"
+   }
   },
   {
    "host": "www.spri.cam.ac.uk",
@@ -356,7 +518,20 @@
    "status": null,
    "error": "robots.txt: обрыв соединения — сайт закрыт для бота целиком",
    "requests": 1,
-   "robots_status": -1
+   "robots_status": -1,
+   "requests_24h": 1,
+   "cache_24h": 0,
+   "collect": {
+    "ok": true,
+    "events": 9,
+    "requests": 12,
+    "error": null
+   },
+   "cooldown_now": {
+    "cooldown_until": "2026-10-06T22:21:07+00:00",
+    "cooldown_reason": "прогон 7e+: robots.txt — обрыв соединения (-1)"
+   }
   }
- ]
+ ],
+ "report_at": "2026-10-06T00:52:46+00:00"
 }

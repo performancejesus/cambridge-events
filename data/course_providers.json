@@ -241,6 +241,28 @@
    ],
    "venue": "South Cambridgeshire",
    "postcode": null
+  },
+  {
+   "host": "www.rowanhumberstone.org.uk",
+   "name": "Rowan Humberstone — evening classes",
+   "category": "crafts",
+   "urls": [
+    "https://www.rowanhumberstone.org.uk/community-evening-classes/"
+   ],
+   "venue": "Rowan Humberstone, 40 Humberstone Road, Cambridge",
+   "postcode": "CB4 1JF",
+   "note": "прогон 7e+: главная открылась 05.10 — снят с «Не разобрано»; /events — 404, адрес занятий взят со ссылки главной (кэш)"
+  },
+  {
+   "host": "cambridgedancecentre.co.uk",
+   "name": "Cambridge Dance Centre — salsa",
+   "category": "dance",
+   "urls": [
+    "https://cambridgedancecentre.co.uk/salsa-dance-classes-in-cambridge.html"
+   ],
+   "venue": "Cambridge Dance Centre, Cambridge",
+   "postcode": null,
+   "note": "прогон 7e+: главная открылась 05.10 — снят с «Не разобрано»"
   }
  ],
  "blocked": [
@@ -266,18 +288,6 @@
    "classbento.co.uk",
    "ClassBento — Cambridge workshops (агрегатор)",
    "https://classbento.co.uk/workshops-cambridge",
-   "http_403"
-  ],
-  [
-   "rowanhumberstone.org.uk",
-   "Rowan Humberstone — evening classes",
-   "https://rowanhumberstone.org.uk/events",
-   "http_403"
-  ],
-  [
-   "cambridgedancecentre.co.uk",
-   "Cambridge Dance Centre — salsa",
-   "https://cambridgedancecentre.co.uk/salsa-dance-classes-in-cambridge.html",
    "http_403"
   ],
   [
