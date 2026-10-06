@@ -23,33 +23,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:51+00:00"
- },
- {
-  "source_id": "S054",
-  "title": "Discover the Science Around Us",
-  "url": "https://www.cambridgesciencecentre.org/whats-on/discover-the-science-around-us-2/",
-  "kind": "event",
-  "external_id": "https://www.cambridgesciencecentre.org/whats-on/discover-the-science-around-us-2/",
-  "start": "2026-10-03T09:00",
-  "end": "2026-10-04",
-  "all_day": false,
-  "venue": "Cambridge Science Centre",
-  "address": "Cambridge",
-  "postcode": "CB4 0FN",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family"
-  ],
-  "summary": "Looking for fun things to do in Cambridge this weekend with your kids? Head to Cambridge Science Centre to investigate the extraordinary properties of man-made materials in our 'Marvellous Man-Made Materials' show. Witness the effects of a vacuum chamber on Marsha the marshmallow, explore the conductive and fireproof properties of different materials and observe how materials interact with different types of light. Join us to see how marvellous man-made materials keep us safe, cool, and capable ",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:38:51+00:00"
+  "fetched_at": "2026-10-05T23:56:35+00:00"
  },
  {
   "source_id": "S054",
@@ -75,7 +49,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:51+00:00"
+  "fetched_at": "2026-10-05T23:56:42+00:00"
  },
  {
   "source_id": "S054",
@@ -101,7 +75,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:51+00:00"
+  "fetched_at": "2026-10-05T23:56:47+00:00"
  },
  {
   "source_id": "S054",
@@ -127,33 +101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:51+00:00"
- },
- {
-  "source_id": "S054",
-  "title": "STEMtots – Space Exploration",
-  "url": "https://www.cambridgesciencecentre.org/whats-on/stemtots-space-exploration/",
-  "kind": "event",
-  "external_id": "https://www.cambridgesciencecentre.org/whats-on/stemtots-space-exploration/",
-  "start": "2026-10-02T09:30",
-  "end": null,
-  "all_day": false,
-  "venue": "Cambridge Science Centre",
-  "address": "Cambridge",
-  "postcode": "CB4 0FN",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family"
-  ],
-  "summary": "Take off for intergalactic fun and learning at STEM Tots. Join us to explore slime and lunar landscapes and launch your own rocket. Perfect for curious under-5s to play, learn, and feel a bit of science. STEMtots is our weekly relaxed, free-flow session for preschoolers, designed to encourage curiosity through hands-on fun.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:38:51+00:00"
+  "fetched_at": "2026-10-05T23:56:54+00:00"
  },
  {
   "source_id": "S054",
@@ -179,7 +127,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:51+00:00"
+  "fetched_at": "2026-10-05T23:57:00+00:00"
  },
  {
   "source_id": "S054",
@@ -205,7 +153,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:51+00:00"
+  "fetched_at": "2026-10-05T23:57:06+00:00"
  },
  {
   "source_id": "S054",
@@ -231,6 +179,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:51+00:00"
+  "fetched_at": "2026-10-05T23:57:12+00:00"
  }
 ]

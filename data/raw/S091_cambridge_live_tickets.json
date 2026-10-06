@@ -1,126 +1,6 @@
 [
  {
   "source_id": "S091",
-  "title": "JOE JACKSON - HOPE AND FURY TOUR 2026",
-  "url": "https://www.cambridgelivetickets.co.uk/events/joe-jackson-hope-and-fury-tour-2026",
-  "kind": "event",
-  "external_id": "https://www.cambridgelivetickets.co.uk/events/joe-jackson-hope-and-fury-tour-2026",
-  "start": "2026-10-01",
-  "end": null,
-  "all_day": true,
-  "venue": "Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": "£35.50 - £52.50",
-  "status": "scheduled",
-  "organizer": "Cambridge Live Tickets",
-  "categories": [],
-  "summary": "Joe Jackson and his band will perform in the Corn Exchange. This show will feature work from throughout Joe Jackson’s remarkable career, and also celebrate the release of his new album Hope and Fury, which will be released worldwide on 10 April 2026. Hope and Fury overflows with great tunes, clever…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
- },
- {
-  "source_id": "S091",
-  "title": "Steve Hackett – Best of Genesis & Solo Gems",
-  "url": "https://www.cambridgelivetickets.co.uk/events/steve-hackett-best-of-genesis-solo-gems",
-  "kind": "event",
-  "external_id": "https://www.cambridgelivetickets.co.uk/events/steve-hackett-best-of-genesis-solo-gems",
-  "start": "2026-10-02",
-  "end": null,
-  "all_day": true,
-  "venue": "Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": "£52.50 - £68.00",
-  "status": "scheduled",
-  "organizer": "Cambridge Live Tickets",
-  "categories": [],
-  "summary": "It has been 12 years since STEVE HACKETT brought his classic Genesis Revisited show to us. Back then, in 2013, his UK tour culminated in his acclaimed performance at London’s Royal Albert Hall and the following release of the live DVD of that performance.Since then, Steve’s timeless guitar work has…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
- },
- {
-  "source_id": "S091",
-  "title": "Gianmarco Soresi: The Misery Loves Tour",
-  "url": "https://www.cambridgelivetickets.co.uk/events/gianmarco-soresi-the-misery-loves-tour",
-  "kind": "event",
-  "external_id": "https://www.cambridgelivetickets.co.uk/events/gianmarco-soresi-the-misery-loves-tour",
-  "start": "2026-10-03",
-  "end": null,
-  "all_day": true,
-  "venue": "Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": "£38.50 - £44.00",
-  "status": "scheduled",
-  "organizer": "Cambridge Live Tickets",
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
- },
- {
-  "source_id": "S091",
-  "title": "Corn Exchange Tour and AR Experience",
-  "url": "https://www.cambridgelivetickets.co.uk/events/corn-exchange-tour-and-ar-experience",
-  "kind": "event",
-  "external_id": "https://www.cambridgelivetickets.co.uk/events/corn-exchange-tour-and-ar-experience",
-  "start": "2026-10-05",
-  "end": null,
-  "all_day": true,
-  "venue": "Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": "scheduled",
-  "organizer": "Cambridge Live Tickets",
-  "categories": [],
-  "summary": "Step into the future with an interactive Augmented Reality showcase celebrating the 150th anniversary of the Corn Exchange. View some of the greatest artists to ever step foot on the Corn Exchange stage come to life and perform before your eyes. Watch vehicles come to life in a virtual car showcase…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
- },
- {
-  "source_id": "S091",
-  "title": "TOM McRAE",
-  "url": "https://www.cambridgelivetickets.co.uk/events/tom-mcrae",
-  "kind": "event",
-  "external_id": "https://www.cambridgelivetickets.co.uk/events/tom-mcrae",
-  "start": "2026-10-05",
-  "end": null,
-  "all_day": true,
-  "venue": "Portland Arms",
-  "address": "129 Chesterton Road, Cambridge, CB4 3BA",
-  "postcode": "CB4 3BA",
-  "lat": null,
-  "lon": null,
-  "price": "£27.00",
-  "status": "scheduled",
-  "organizer": "Cambridge Live Tickets",
-  "categories": [],
-  "summary": "McRae's critically acclaimed debut earned him nominations for the Mercury Prize, a Q Award and the BRIT Award for Best Newcomer. In the quarter century since, he has built one of the most quietly devoted audiences in British music across ten albums - from \"Just Like Blood\" and \"The Alphabet of Hurr…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
- },
- {
-  "source_id": "S091",
   "title": "Don Broco",
   "url": "https://www.cambridgelivetickets.co.uk/events/don-broco",
   "kind": "event",
@@ -141,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:02:22+00:00"
  },
  {
   "source_id": "S091",
@@ -165,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:02:28+00:00"
  },
  {
   "source_id": "S091",
@@ -189,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:02:34+00:00"
  },
  {
   "source_id": "S091",
@@ -213,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:02:40+00:00"
  },
  {
   "source_id": "S091",
@@ -237,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:02:46+00:00"
  },
  {
   "source_id": "S091",
@@ -257,11 +137,11 @@
   "status": "scheduled",
   "organizer": "Cambridge Live Tickets",
   "categories": [],
-  "summary": "🎸 The Cambridge Rock ’n’ Roll Club🎸 SUNDAY 11TH OCTOBER 2026 - JOHNNY REDOn the third Friday of every month, head to the Abbey Lounge on Newmarket Road, Cambridge, CB5 8LN, for a fantastic afternoon of live rock ’n’ roll!🕝 2.30pm – 5.30pmEvery month features a different great rock ’n’ roll band or …",
+  "summary": "🎸 The Cambridge Rock ’n’ Roll Club 🎸On the third Sunday of every month, head to the Abbey Lounge on Newmarket Road, Cambridge, CB5 8LN, for a fantastic afternoon of live rock ’n’ roll!🕝 2.30pm – 5.30pmEvery month features a different great rock ’n’ roll band or artist, performing songs from the gol…",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:02:52+00:00"
  },
  {
   "source_id": "S091",
@@ -285,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:02:58+00:00"
  },
  {
   "source_id": "S091",
@@ -309,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:05+00:00"
  },
  {
   "source_id": "S091",
@@ -333,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:10+00:00"
  },
  {
   "source_id": "S091",
@@ -357,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:16+00:00"
  },
  {
   "source_id": "S091",
@@ -381,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:22+00:00"
  },
  {
   "source_id": "S091",
@@ -405,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:28+00:00"
  },
  {
   "source_id": "S091",
@@ -429,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:34+00:00"
  },
  {
   "source_id": "S091",
@@ -453,7 +333,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:41+00:00"
  },
  {
   "source_id": "S091",
@@ -477,7 +357,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:46+00:00"
  },
  {
   "source_id": "S091",
@@ -501,7 +381,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:52+00:00"
  },
  {
   "source_id": "S091",
@@ -525,7 +405,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:03:58+00:00"
  },
  {
   "source_id": "S091",
@@ -549,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:04+00:00"
  },
  {
   "source_id": "S091",
@@ -573,7 +453,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:10+00:00"
  },
  {
   "source_id": "S091",
@@ -597,7 +477,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:16+00:00"
  },
  {
   "source_id": "S091",
@@ -621,7 +501,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:22+00:00"
  },
  {
   "source_id": "S091",
@@ -645,7 +525,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:29+00:00"
  },
  {
   "source_id": "S091",
@@ -669,7 +549,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:34+00:00"
  },
  {
   "source_id": "S091",
@@ -693,7 +573,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:40+00:00"
  },
  {
   "source_id": "S091",
@@ -717,7 +597,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:46+00:00"
  },
  {
   "source_id": "S091",
@@ -741,7 +621,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:52+00:00"
  },
  {
   "source_id": "S091",
@@ -765,7 +645,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:04:58+00:00"
  },
  {
   "source_id": "S091",
@@ -789,7 +669,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:04+00:00"
  },
  {
   "source_id": "S091",
@@ -813,7 +693,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:10+00:00"
  },
  {
   "source_id": "S091",
@@ -837,7 +717,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:16+00:00"
  },
  {
   "source_id": "S091",
@@ -861,7 +741,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:22+00:00"
  },
  {
   "source_id": "S091",
@@ -885,7 +765,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:29+00:00"
  },
  {
   "source_id": "S091",
@@ -909,7 +789,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:34+00:00"
  },
  {
   "source_id": "S091",
@@ -933,7 +813,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:40+00:00"
  },
  {
   "source_id": "S091",
@@ -957,7 +837,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:46+00:00"
  },
  {
   "source_id": "S091",
@@ -981,7 +861,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:52+00:00"
  },
  {
   "source_id": "S091",
@@ -1005,7 +885,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:05:58+00:00"
  },
  {
   "source_id": "S091",
@@ -1029,7 +909,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:05+00:00"
  },
  {
   "source_id": "S091",
@@ -1053,7 +933,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:10+00:00"
  },
  {
   "source_id": "S091",
@@ -1077,7 +957,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:16+00:00"
  },
  {
   "source_id": "S091",
@@ -1101,7 +981,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:22+00:00"
  },
  {
   "source_id": "S091",
@@ -1125,7 +1005,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:22+00:00"
  },
  {
   "source_id": "S091",
@@ -1149,7 +1029,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:28+00:00"
  },
  {
   "source_id": "S091",
@@ -1173,7 +1053,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:34+00:00"
  },
  {
   "source_id": "S091",
@@ -1197,7 +1077,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:40+00:00"
  },
  {
   "source_id": "S091",
@@ -1221,7 +1101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:46+00:00"
  },
  {
   "source_id": "S091",
@@ -1245,7 +1125,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:52+00:00"
  },
  {
   "source_id": "S091",
@@ -1269,7 +1149,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:06:58+00:00"
  },
  {
   "source_id": "S091",
@@ -1293,7 +1173,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:04+00:00"
  },
  {
   "source_id": "S091",
@@ -1317,7 +1197,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:10+00:00"
  },
  {
   "source_id": "S091",
@@ -1341,7 +1221,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:16+00:00"
  },
  {
   "source_id": "S091",
@@ -1365,7 +1245,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:22+00:00"
  },
  {
   "source_id": "S091",
@@ -1389,7 +1269,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:28+00:00"
  },
  {
   "source_id": "S091",
@@ -1413,7 +1293,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:35+00:00"
  },
  {
   "source_id": "S091",
@@ -1437,7 +1317,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:40+00:00"
  },
  {
   "source_id": "S091",
@@ -1461,7 +1341,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:46+00:00"
  },
  {
   "source_id": "S091",
@@ -1485,7 +1365,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:52+00:00"
  },
  {
   "source_id": "S091",
@@ -1509,7 +1389,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:07:58+00:00"
  },
  {
   "source_id": "S091",
@@ -1533,7 +1413,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:04+00:00"
  },
  {
   "source_id": "S091",
@@ -1557,7 +1437,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:10+00:00"
  },
  {
   "source_id": "S091",
@@ -1581,7 +1461,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:16+00:00"
  },
  {
   "source_id": "S091",
@@ -1605,7 +1485,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:22+00:00"
  },
  {
   "source_id": "S091",
@@ -1629,7 +1509,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:28+00:00"
  },
  {
   "source_id": "S091",
@@ -1653,7 +1533,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:34+00:00"
  },
  {
   "source_id": "S091",
@@ -1677,7 +1557,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:40+00:00"
  },
  {
   "source_id": "S091",
@@ -1701,7 +1581,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:46+00:00"
  },
  {
   "source_id": "S091",
@@ -1725,7 +1605,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:52+00:00"
  },
  {
   "source_id": "S091",
@@ -1749,55 +1629,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
- },
- {
-  "source_id": "S091",
-  "title": "Step into Christmas",
-  "url": "https://www.cambridgelivetickets.co.uk/events/step-into-christmas-3",
-  "kind": "event",
-  "external_id": "https://www.cambridgelivetickets.co.uk/events/step-into-christmas-3",
-  "start": "2026-12-14",
-  "end": null,
-  "all_day": true,
-  "venue": "Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": "£27.00 - £37.00",
-  "status": "scheduled",
-  "organizer": "Cambridge Live Tickets",
-  "categories": [],
-  "summary": "Back for 2026, bigger and better, your Christmas starts here!Get ready to Step Into Christmas once again for the most magical, feel-good show of the year! After a sensational run, we’re back – bigger, brighter, and more festive than ever before. This spectacular Christmas concert is the ultimate wa…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
- },
- {
-  "source_id": "S091",
-  "title": "The Christmas Orchestra",
-  "url": "https://www.cambridgelivetickets.co.uk/events/the-christmas-orchestra",
-  "kind": "event",
-  "external_id": "https://www.cambridgelivetickets.co.uk/events/the-christmas-orchestra",
-  "start": "2026-12-15",
-  "end": null,
-  "all_day": true,
-  "venue": "The Guildhall",
-  "address": "The Guildhall, Market Square, Cambridge, CB2 3QJ",
-  "postcode": "CB2 3QJ",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": "scheduled",
-  "organizer": "Cambridge Live Tickets",
-  "categories": [],
-  "summary": "The Christmas Orchestra returns for 2026, after a fantastic run of sold-out shows in 2024 and 2025! We're thrilled to be bringing our unique concert experience to more locations than ever before. Prepare to immerse yourself in the magic of the festive season and create lasting memories together! On…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:08:58+00:00"
  },
  {
   "source_id": "S091",
@@ -1821,7 +1653,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:09:04+00:00"
  },
  {
   "source_id": "S091",
@@ -1845,7 +1677,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:50+00:00"
+  "fetched_at": "2026-10-05T23:09:10+00:00"
  },
  {
   "source_id": "S091",
@@ -1869,7 +1701,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:09:10+00:00"
  },
  {
   "source_id": "S091",
@@ -1893,7 +1725,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:09:16+00:00"
  },
  {
   "source_id": "S091",
@@ -1917,7 +1749,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:09:22+00:00"
  },
  {
   "source_id": "S091",
@@ -1941,7 +1773,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:09:28+00:00"
  },
  {
   "source_id": "S091",
@@ -1965,7 +1797,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:09:34+00:00"
  },
  {
   "source_id": "S091",
@@ -1989,7 +1821,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:09:40+00:00"
  },
  {
   "source_id": "S091",
@@ -2013,7 +1845,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:09:46+00:00"
  },
  {
   "source_id": "S091",
@@ -2037,7 +1869,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:09:52+00:00"
  },
  {
   "source_id": "S091",
@@ -2061,7 +1893,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:09:58+00:00"
  },
  {
   "source_id": "S091",
@@ -2085,7 +1917,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:10:04+00:00"
  },
  {
   "source_id": "S091",
@@ -2109,7 +1941,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:10:10+00:00"
  },
  {
   "source_id": "S091",
@@ -2133,7 +1965,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:10:16+00:00"
  },
  {
   "source_id": "S091",
@@ -2157,7 +1989,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:10:22+00:00"
  },
  {
   "source_id": "S091",
@@ -2181,7 +2013,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:10:28+00:00"
  },
  {
   "source_id": "S091",
@@ -2205,6 +2037,54 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:33:53+00:00"
+  "fetched_at": "2026-10-05T23:10:34+00:00"
+ },
+ {
+  "source_id": "S091",
+  "title": "Step into Christmas",
+  "url": "https://www.cambridgelivetickets.co.uk/events/step-into-christmas-3",
+  "kind": "event",
+  "external_id": "https://www.cambridgelivetickets.co.uk/events/step-into-christmas-3",
+  "start": "2026-12-14",
+  "end": null,
+  "all_day": true,
+  "venue": "Corn Exchange",
+  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
+  "postcode": "CB2 3QB",
+  "lat": null,
+  "lon": null,
+  "price": "£27.00 - £37.00",
+  "status": "scheduled",
+  "organizer": "Cambridge Live Tickets",
+  "categories": [],
+  "summary": "Back for 2026, bigger and better, your Christmas starts here!Get ready to Step Into Christmas once again for the most magical, feel-good show of the year! After a sensational run, we’re back – bigger, brighter, and more festive than ever before. This spectacular Christmas concert is the ultimate wa…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T23:10:40+00:00"
+ },
+ {
+  "source_id": "S091",
+  "title": "The Christmas Orchestra",
+  "url": "https://www.cambridgelivetickets.co.uk/events/the-christmas-orchestra",
+  "kind": "event",
+  "external_id": "https://www.cambridgelivetickets.co.uk/events/the-christmas-orchestra",
+  "start": "2026-12-15",
+  "end": null,
+  "all_day": true,
+  "venue": "The Guildhall",
+  "address": "The Guildhall, Market Square, Cambridge, CB2 3QJ",
+  "postcode": "CB2 3QJ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": "scheduled",
+  "organizer": "Cambridge Live Tickets",
+  "categories": [],
+  "summary": "The Christmas Orchestra returns for 2026, after a fantastic run of sold-out shows in 2024 and 2025! We're thrilled to be bringing our unique concert experience to more locations than ever before. Prepare to immerse yourself in the magic of the festive season and create lasting memories together! On…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T23:10:46+00:00"
  }
 ]

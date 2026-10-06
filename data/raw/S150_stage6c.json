@@ -1,6 +1,32 @@
 [
  {
   "source_id": "S150",
+  "title": "Hướng Việt Performing Arts Group: The Musical Splendour of Vietnam",
+  "url": "https://www.cmp.cam.ac.uk/events/event/item/huong-viet-performing-arts-group-the-musical-splendour-of-vietnam/",
+  "kind": "event",
+  "external_id": "https://www.cmp.cam.ac.uk/events/event/item/huong-viet-performing-arts-group-the-musical-splendour-of-vietnam/",
+  "start": "2026-10-17T19:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Sidney Sussex College Chapel",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "folk"
+  ],
+  "summary": " Please note that this event is not organised by the Centre for Music Performance, and as such, the Centre cannot accept any responsibility for inaccuracies in its listing. Any questions or concerns related to the performance and event details should be directed to the ensemble or performers responsible for this event. | Venue: Sidney Sussex College Chapel. | Hướng Việt Performing Arts Group | was founded in 2001 in Washington State by Dr. Hai Viet Hong, and is dedicated to the study, promotion, preservation, and popularisation of Vietnamese traditional music and arts. The group is committed t",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:28+00:00"
+ },
+ {
+  "source_id": "S150",
   "title": "Come and Play | Samulnori Society",
   "url": "https://www.cmp.cam.ac.uk/events/event/item/come-and-play-samulnori-society-2/",
   "kind": "event",
@@ -23,7 +49,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -49,7 +75,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -75,7 +101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -104,7 +130,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -130,7 +156,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -156,7 +182,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -182,7 +208,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -208,7 +234,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -234,7 +260,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -260,7 +286,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -286,7 +312,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -314,35 +340,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
- },
- {
-  "source_id": "S150",
-  "title": "Academy of Ancient Music: 1765: Times of Transition",
-  "url": "https://www.cmp.cam.ac.uk/events/event/item/1765-times-of-transition/",
-  "kind": "event",
-  "external_id": "https://www.cmp.cam.ac.uk/events/event/item/1765-times-of-transition/",
-  "start": "2026-09-30T19:30",
-  "end": null,
-  "all_day": false,
-  "venue": "West Road Concert Hall",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "£5",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "classical",
-   "early-music",
-   "historical-performance"
-  ],
-  "summary": " MOZART Symphony No. 1 in E-flat major K. 16 | PHILIDOR Arias from Tom Jones | HAYDN Symphony No. 39 in G minor | TELEMANN Ino | ACADEMY OF ANCIENT MUSIC | LAURENCE CUMMINGS director & harpsichord | AMANDA FORSYTHE soprano | Please note that this event is not organised by the Centre for Music Performance, and as such, the Centre cannot accept any responsibility for inaccuracies in its listing. Any questions or concerns related to the performance and event details should be directed to the ensemble or performers responsible for this event. | Mozart, Haydn, Telemann and Philidor: four composers ",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -370,7 +368,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -399,7 +397,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -427,7 +425,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -453,7 +451,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -481,7 +479,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -508,7 +506,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -534,7 +532,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -560,7 +558,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -586,7 +584,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -612,7 +610,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -638,7 +636,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -664,7 +662,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -690,7 +688,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -716,7 +714,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -742,7 +740,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -769,7 +767,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -795,7 +793,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -821,7 +819,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -847,7 +845,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -873,7 +871,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -899,7 +897,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -925,7 +923,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -952,7 +950,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -978,7 +976,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1004,7 +1002,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1030,7 +1028,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1057,7 +1055,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1086,7 +1084,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1112,7 +1110,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1138,7 +1136,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1164,7 +1162,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1190,7 +1188,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1216,7 +1214,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1242,7 +1240,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1268,7 +1266,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1294,7 +1292,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1320,7 +1318,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1346,7 +1344,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1372,7 +1370,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1398,7 +1396,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1424,7 +1422,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1450,7 +1448,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1477,7 +1475,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1503,7 +1501,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1529,7 +1527,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1555,7 +1553,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1581,7 +1579,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1607,7 +1605,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1636,7 +1634,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1664,7 +1662,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1690,7 +1688,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1716,7 +1714,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1743,7 +1741,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1771,7 +1769,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1797,7 +1795,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1823,7 +1821,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1849,7 +1847,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1875,7 +1873,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1901,7 +1899,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1927,7 +1925,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1953,7 +1951,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -1980,7 +1978,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2006,7 +2004,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2032,7 +2030,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2058,7 +2056,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2085,7 +2083,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2111,7 +2109,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2137,7 +2135,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2163,7 +2161,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2189,7 +2187,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2215,7 +2213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2241,7 +2239,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2267,7 +2265,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2293,7 +2291,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2319,7 +2317,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2345,7 +2343,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2372,7 +2370,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  },
  {
   "source_id": "S150",
@@ -2399,32 +2397,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
- },
- {
-  "source_id": "S150",
-  "title": "Kettle’s Yard Chamber Music: Quartetto Noûs",
-  "url": "https://www.cmp.cam.ac.uk/events/event/item/kettles-yard-chamber-music-quartetto-nous/",
-  "kind": "event",
-  "external_id": "https://www.cmp.cam.ac.uk/events/event/item/kettles-yard-chamber-music-quartetto-nous/",
-  "start": "2026-10-08T20:00",
-  "end": null,
-  "all_day": false,
-  "venue": "Kettle’s Yard",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "£25",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "chamber"
-  ],
-  "summary": " Please note that this event is not organised by the Centre for Music Performance, and as such, the Centre cannot accept any responsibility for inaccuracies in its listing. Any questions or concerns related to the performance and event details should be directed to the ensemble or performers responsible for this event. | Join us for a Chamber Music concert in the Kettle’s Yard house with Quartetto Noûs. | The concert starts at 8pm. Doors open at 7.30pm. | Programme: Dmitri Shostakovich: String Quartet No. 4; Ludwig van Beethoven: String Quartet, Op. 135; Alfred Schnittke: String Quartet No. 3.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:01+00:00"
+  "fetched_at": "2026-10-06T00:04:28+00:00"
  }
 ]

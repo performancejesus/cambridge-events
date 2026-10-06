@@ -1,11 +1,38 @@
 [
  {
   "source_id": "S181",
-  "title": "The Drifters",
-  "url": "https://www.kingslynncornexchange.co.uk/theatre/whats-on/music/the-drifters/",
+  "title": "Queenz: Battle of the Divas!",
+  "url": "https://www.kingslynncornexchange.co.uk/theatre/whats-on/event/queenz-battle-of-the-divas/",
   "kind": "event",
-  "external_id": "2026-10-01|The Drifters",
-  "start": "2026-10-01",
+  "external_id": "2026-10-07|Queenz: Battle of the Divas!",
+  "start": "2026-10-07",
+  "end": null,
+  "all_day": true,
+  "venue": "King's Lynn Corn Exchange",
+  "address": "Tuesday Market Place, King's Lynn",
+  "postcode": "PE30 1JW",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "comedy"
+  ],
+  "summary": "comedy",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:13:54+00:00"
+ },
+ {
+  "source_id": "S181",
+  "title": "Leo Sayer",
+  "url": "https://www.kingslynncornexchange.co.uk/theatre/whats-on/music/leo-sayer/",
+  "kind": "event",
+  "external_id": "2026-10-08|Leo Sayer",
+  "start": "2026-10-08",
   "end": null,
   "all_day": true,
   "venue": "King's Lynn Corn Exchange",
@@ -24,15 +51,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:33+00:00"
+  "fetched_at": "2026-10-06T00:13:54+00:00"
  },
  {
   "source_id": "S181",
-  "title": "Tease",
-  "url": "https://www.kingslynncornexchange.co.uk/theatre/whats-on/event/tease/",
+  "title": "Coffee Concert Neruda Quartet",
+  "url": "https://www.kingslynncornexchange.co.uk/theatre/whats-on/opera-classical/coffee-concert-neruda-quartet/",
   "kind": "event",
-  "external_id": "2026-10-02|Tease",
-  "start": "2026-10-02",
+  "external_id": "2026-10-09|Coffee Concert Neruda Quartet",
+  "start": "2026-10-09",
   "end": null,
   "all_day": true,
   "venue": "King's Lynn Corn Exchange",
@@ -44,12 +71,13 @@
   "status": null,
   "organizer": null,
   "categories": [
-   "theatre"
+   "theatre",
+   "music"
   ],
-  "summary": null,
+  "summary": "music",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:33+00:00"
+  "fetched_at": "2026-10-06T00:13:54+00:00"
  }
 ]

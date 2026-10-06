@@ -5,7 +5,7 @@
   "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/8ec4973c-888c-476f-adec-7d599a1d86cf",
   "kind": "event",
   "external_id": "nt-8ec4973c-888c-476f-adec-7d599a1d86cf",
-  "start": "2026-10-01",
+  "start": "2026-10-06",
   "end": "2026-11-01",
   "all_day": true,
   "venue": "Wimpole Estate (National Trust)",
@@ -24,88 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
- },
- {
-  "source_id": "S070",
-  "title": "Halloween in the House",
-  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/bb855608-d183-4dc9-9974-afad7768cafb",
-  "kind": "event",
-  "external_id": "nt-bb855608-d183-4dc9-9974-afad7768cafb",
-  "start": "2026-10-01",
-  "end": "2026-11-01",
-  "all_day": true,
-  "venue": "Wimpole Estate (National Trust)",
-  "address": "Arrington, Royston",
-  "postcode": "SG8 0BW",
-  "lat": null,
-  "lon": null,
-  "price": "Included in admission",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "national trust",
-   "estate"
-  ],
-  "summary": "Enter Wimpole Hall if you dare this Halloween!",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
- },
- {
-  "source_id": "S070",
-  "title": "Glasshouse Chilli Tours",
-  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/f2384da2-d8a5-4460-854d-4e6a43a3dafd",
-  "kind": "event",
-  "external_id": "nt-f2384da2-d8a5-4460-854d-4e6a43a3dafd",
-  "start": "2026-10-02",
-  "end": "2026-10-09",
-  "all_day": true,
-  "venue": "Wimpole Estate (National Trust)",
-  "address": "Arrington, Royston",
-  "postcode": "SG8 0BW",
-  "lat": null,
-  "lon": null,
-  "price": "Included in admission",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "national trust",
-   "estate"
-  ],
-  "summary": "Spice up your visit to Wimpole Estate and join us for a chilli tour in the Glasshouse.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
- },
- {
-  "source_id": "S070",
-  "title": "parkrun",
-  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/c0f9fe72-dd2c-4335-a4ed-8bea34b8d651",
-  "kind": "event",
-  "external_id": "nt-c0f9fe72-dd2c-4335-a4ed-8bea34b8d651",
-  "start": "2026-10-03",
-  "end": "2026-12-26",
-  "all_day": true,
-  "venue": "Wimpole Estate (National Trust)",
-  "address": "Arrington, Royston",
-  "postcode": "SG8 0BW",
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "national trust",
-   "estate"
-  ],
-  "summary": "A free, fun, and friendly weekly 5k community event. Walk, jog, run, volunteer or spectate – it's up to you!",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -113,7 +32,7 @@
   "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/d35d1d05-a0ec-4b8b-b151-5704862a54af",
   "kind": "event",
   "external_id": "nt-d35d1d05-a0ec-4b8b-b151-5704862a54af",
-  "start": "2026-10-03",
+  "start": "2026-10-06",
   "end": "2026-10-31",
   "all_day": true,
   "venue": "Wimpole Estate (National Trust)",
@@ -132,88 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
- },
- {
-  "source_id": "S070",
-  "title": "Saturday Parkland Walk",
-  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/f14c6299-0020-4b7a-acf2-2cc011dec6a1",
-  "kind": "event",
-  "external_id": "nt-f14c6299-0020-4b7a-acf2-2cc011dec6a1",
-  "start": "2026-10-03",
-  "end": "2026-10-10",
-  "all_day": true,
-  "venue": "Wimpole Estate (National Trust)",
-  "address": "Arrington, Royston",
-  "postcode": "SG8 0BW",
-  "lat": null,
-  "lon": null,
-  "price": "Included in admission",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "national trust",
-   "estate"
-  ],
-  "summary": "Join our volunteer guides for a Saturday walk and discover some of the parkland’s most scenic highlights.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
- },
- {
-  "source_id": "S070",
-  "title": "Junior parkrun",
-  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/9cfc1bee-1cb7-4e07-a010-f4deec2fb46d",
-  "kind": "event",
-  "external_id": "nt-9cfc1bee-1cb7-4e07-a010-f4deec2fb46d",
-  "start": "2026-10-04",
-  "end": "2026-12-20",
-  "all_day": true,
-  "venue": "Wimpole Estate (National Trust)",
-  "address": "Arrington, Royston",
-  "postcode": "SG8 0BW",
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "national trust",
-   "estate"
-  ],
-  "summary": "A free, fun, and friendly weekly 2k event for juniors (4 to 14 year olds).",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
- },
- {
-  "source_id": "S070",
-  "title": "History Strolls",
-  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/9ad34f5e-d4db-4f1c-85e5-bccb5eea70c7",
-  "kind": "event",
-  "external_id": "nt-9ad34f5e-d4db-4f1c-85e5-bccb5eea70c7",
-  "start": "2026-10-04",
-  "end": "2026-10-25",
-  "all_day": true,
-  "venue": "Wimpole Estate (National Trust)",
-  "address": "Arrington, Royston",
-  "postcode": "SG8 0BW",
-  "lat": null,
-  "lon": null,
-  "price": "Included in admission",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "national trust",
-   "estate"
-  ],
-  "summary": "Join us for a walk around Wimpole Estate every Sunday morning.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -240,7 +78,34 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
+ },
+ {
+  "source_id": "S070",
+  "title": "Halloween in the House",
+  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/bb855608-d183-4dc9-9974-afad7768cafb",
+  "kind": "event",
+  "external_id": "nt-bb855608-d183-4dc9-9974-afad7768cafb",
+  "start": "2026-10-06",
+  "end": "2026-11-01",
+  "all_day": true,
+  "venue": "Wimpole Estate (National Trust)",
+  "address": "Arrington, Royston",
+  "postcode": "SG8 0BW",
+  "lat": null,
+  "lon": null,
+  "price": "Included in admission",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "national trust",
+   "estate"
+  ],
+  "summary": "Enter Wimpole Hall if you dare this Halloween!",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -267,7 +132,142 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
+ },
+ {
+  "source_id": "S070",
+  "title": "Glasshouse Chilli Tours",
+  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/f2384da2-d8a5-4460-854d-4e6a43a3dafd",
+  "kind": "event",
+  "external_id": "nt-f2384da2-d8a5-4460-854d-4e6a43a3dafd",
+  "start": "2026-10-09",
+  "end": "2026-10-09",
+  "all_day": true,
+  "venue": "Wimpole Estate (National Trust)",
+  "address": "Arrington, Royston",
+  "postcode": "SG8 0BW",
+  "lat": null,
+  "lon": null,
+  "price": "Included in admission",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "national trust",
+   "estate"
+  ],
+  "summary": "Spice up your visit to Wimpole Estate and join us for a chilli tour in the Glasshouse.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:12:49+00:00"
+ },
+ {
+  "source_id": "S070",
+  "title": "parkrun",
+  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/c0f9fe72-dd2c-4335-a4ed-8bea34b8d651",
+  "kind": "event",
+  "external_id": "nt-c0f9fe72-dd2c-4335-a4ed-8bea34b8d651",
+  "start": "2026-10-10",
+  "end": "2026-12-26",
+  "all_day": true,
+  "venue": "Wimpole Estate (National Trust)",
+  "address": "Arrington, Royston",
+  "postcode": "SG8 0BW",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "national trust",
+   "estate"
+  ],
+  "summary": "A free, fun, and friendly weekly 5k community event. Walk, jog, run, volunteer or spectate – it's up to you!",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:12:49+00:00"
+ },
+ {
+  "source_id": "S070",
+  "title": "Saturday Parkland Walk",
+  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/f14c6299-0020-4b7a-acf2-2cc011dec6a1",
+  "kind": "event",
+  "external_id": "nt-f14c6299-0020-4b7a-acf2-2cc011dec6a1",
+  "start": "2026-10-10",
+  "end": "2026-10-10",
+  "all_day": true,
+  "venue": "Wimpole Estate (National Trust)",
+  "address": "Arrington, Royston",
+  "postcode": "SG8 0BW",
+  "lat": null,
+  "lon": null,
+  "price": "Included in admission",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "national trust",
+   "estate"
+  ],
+  "summary": "Join our volunteer guides for a Saturday walk and discover some of the parkland’s most scenic highlights.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:12:49+00:00"
+ },
+ {
+  "source_id": "S070",
+  "title": "Junior parkrun",
+  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/9cfc1bee-1cb7-4e07-a010-f4deec2fb46d",
+  "kind": "event",
+  "external_id": "nt-9cfc1bee-1cb7-4e07-a010-f4deec2fb46d",
+  "start": "2026-10-11",
+  "end": "2026-12-20",
+  "all_day": true,
+  "venue": "Wimpole Estate (National Trust)",
+  "address": "Arrington, Royston",
+  "postcode": "SG8 0BW",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "national trust",
+   "estate"
+  ],
+  "summary": "A free, fun, and friendly weekly 2k event for juniors (4 to 14 year olds).",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:12:49+00:00"
+ },
+ {
+  "source_id": "S070",
+  "title": "History Strolls",
+  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wimpole-estate/events/9ad34f5e-d4db-4f1c-85e5-bccb5eea70c7",
+  "kind": "event",
+  "external_id": "nt-9ad34f5e-d4db-4f1c-85e5-bccb5eea70c7",
+  "start": "2026-10-11",
+  "end": "2026-10-25",
+  "all_day": true,
+  "venue": "Wimpole Estate (National Trust)",
+  "address": "Arrington, Royston",
+  "postcode": "SG8 0BW",
+  "lat": null,
+  "lon": null,
+  "price": "Included in admission",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "national trust",
+   "estate"
+  ],
+  "summary": "Join us for a walk around Wimpole Estate every Sunday morning.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -294,7 +294,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -321,7 +321,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -348,7 +348,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -375,7 +375,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -402,7 +402,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -429,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -457,7 +457,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -485,7 +485,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -512,34 +512,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:13+00:00"
- },
- {
-  "source_id": "S070",
-  "title": "Exhibition: The Art of Collecting – 100 Years of the Fairhaven Legacy",
-  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/991ad98f-1014-4dab-99eb-59fc1846cf0a",
-  "kind": "event",
-  "external_id": "nt-991ad98f-1014-4dab-99eb-59fc1846cf0a",
-  "start": "2026-10-01",
-  "end": "2026-10-01",
-  "all_day": true,
-  "venue": "Anglesey Abbey (National Trust)",
-  "address": "Quy Road, Lode, Cambridge",
-  "postcode": "CB25 9EJ",
-  "lat": null,
-  "lon": null,
-  "price": "Included in admission",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "national trust",
-   "estate"
-  ],
-  "summary": "Explore Lord Fairhaven's love of collecting, the treasures he accumulated and his legacy in this anniversary exhibition.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
+  "fetched_at": "2026-10-06T00:12:49+00:00"
  },
  {
   "source_id": "S070",
@@ -547,7 +520,7 @@
   "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/5b107d31-66eb-4e96-af87-2804f8d2dde9",
   "kind": "event",
   "external_id": "nt-5b107d31-66eb-4e96-af87-2804f8d2dde9",
-  "start": "2026-10-03",
+  "start": "2026-10-06",
   "end": "2027-01-03",
   "all_day": true,
   "venue": "Anglesey Abbey (National Trust)",
@@ -567,7 +540,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
+  "fetched_at": "2026-10-06T00:12:55+00:00"
  },
  {
   "source_id": "S070",
@@ -575,7 +548,7 @@
   "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/71f1497b-b5dd-4e36-876c-1de5ae4c772f",
   "kind": "event",
   "external_id": "nt-71f1497b-b5dd-4e36-876c-1de5ae4c772f",
-  "start": "2026-10-03",
+  "start": "2026-10-06",
   "end": "2027-01-03",
   "all_day": true,
   "venue": "Anglesey Abbey (National Trust)",
@@ -594,34 +567,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
- },
- {
-  "source_id": "S070",
-  "title": "TOUR: Collecting Passions",
-  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/62cd4ecc-89f6-4514-b272-d3f42e5c9e61",
-  "kind": "event",
-  "external_id": "nt-62cd4ecc-89f6-4514-b272-d3f42e5c9e61",
-  "start": "2026-10-05",
-  "end": "2026-10-28",
-  "all_day": true,
-  "venue": "Anglesey Abbey (National Trust)",
-  "address": "Quy Road, Lode, Cambridge",
-  "postcode": "CB25 9EJ",
-  "lat": null,
-  "lon": null,
-  "price": "Included in admission",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "national trust",
-   "estate"
-  ],
-  "summary": "Discover how Lord Fairhaven’s passion for collecting shaped Anglesey Abbey",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
+  "fetched_at": "2026-10-06T00:12:55+00:00"
  },
  {
   "source_id": "S070",
@@ -648,7 +594,34 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
+  "fetched_at": "2026-10-06T00:12:55+00:00"
+ },
+ {
+  "source_id": "S070",
+  "title": "TOUR: Collecting Passions",
+  "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/62cd4ecc-89f6-4514-b272-d3f42e5c9e61",
+  "kind": "event",
+  "external_id": "nt-62cd4ecc-89f6-4514-b272-d3f42e5c9e61",
+  "start": "2026-10-07",
+  "end": "2026-10-28",
+  "all_day": true,
+  "venue": "Anglesey Abbey (National Trust)",
+  "address": "Quy Road, Lode, Cambridge",
+  "postcode": "CB25 9EJ",
+  "lat": null,
+  "lon": null,
+  "price": "Included in admission",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "national trust",
+   "estate"
+  ],
+  "summary": "Discover how Lord Fairhaven’s passion for collecting shaped Anglesey Abbey",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:12:55+00:00"
  },
  {
   "source_id": "S070",
@@ -676,7 +649,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
+  "fetched_at": "2026-10-06T00:12:55+00:00"
  },
  {
   "source_id": "S070",
@@ -703,7 +676,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
+  "fetched_at": "2026-10-06T00:12:55+00:00"
  },
  {
   "source_id": "S070",
@@ -730,7 +703,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
+  "fetched_at": "2026-10-06T00:12:55+00:00"
  },
  {
   "source_id": "S070",
@@ -757,7 +730,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
+  "fetched_at": "2026-10-06T00:12:55+00:00"
  },
  {
   "source_id": "S070",
@@ -784,7 +757,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:15+00:00"
+  "fetched_at": "2026-10-06T00:12:55+00:00"
  },
  {
   "source_id": "S070",
@@ -792,7 +765,7 @@
   "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wicken-fen-national-nature-reserve/events/185543a8-b015-4bc4-876c-97e32fe706da",
   "kind": "event",
   "external_id": "nt-185543a8-b015-4bc4-876c-97e32fe706da",
-  "start": "2026-10-03",
+  "start": "2026-10-06",
   "end": "2026-11-01",
   "all_day": true,
   "venue": "Wicken Fen (National Trust)",
@@ -811,7 +784,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:18+00:00"
+  "fetched_at": "2026-10-06T00:13:01+00:00"
  },
  {
   "source_id": "S070",
@@ -819,7 +792,7 @@
   "url": "https://www.nationaltrust.org.uk/visit/cambridgeshire/wicken-fen-national-nature-reserve/events/641d52f6-6585-45fc-ba01-c58100283c92",
   "kind": "event",
   "external_id": "nt-641d52f6-6585-45fc-ba01-c58100283c92",
-  "start": "2026-10-05",
+  "start": "2026-10-12",
   "end": "2026-12-14",
   "all_day": true,
   "venue": "Wicken Fen (National Trust)",
@@ -838,7 +811,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:18+00:00"
+  "fetched_at": "2026-10-06T00:13:01+00:00"
  },
  {
   "source_id": "S070",
@@ -866,7 +839,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:18+00:00"
+  "fetched_at": "2026-10-06T00:13:01+00:00"
  },
  {
   "source_id": "S070",
@@ -894,7 +867,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:18+00:00"
+  "fetched_at": "2026-10-06T00:13:01+00:00"
  },
  {
   "source_id": "S070",
@@ -922,6 +895,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:18+00:00"
+  "fetched_at": "2026-10-06T00:13:01+00:00"
  }
 ]

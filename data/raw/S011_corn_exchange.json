@@ -1,102 +1,6 @@
 [
  {
   "source_id": "S011",
-  "title": "JOE JACKSON - HOPE AND FURY TOUR 2026",
-  "url": "https://www.cornex.co.uk/events/joe-jackson-hope-and-fury-tour-2026",
-  "kind": "event",
-  "external_id": "https://www.cornex.co.uk/events/joe-jackson-hope-and-fury-tour-2026",
-  "start": "2026-10-01",
-  "end": null,
-  "all_day": true,
-  "venue": "Cambridge Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": "£35.50 - £52.50",
-  "status": "scheduled",
-  "organizer": "Cambridge Corn Exchange",
-  "categories": [],
-  "summary": "Joe Jackson and his band will perform in the Corn Exchange. This show will feature work from throughout Joe Jackson’s remarkable career, and also celebrate the release of his new album Hope and Fury, which will be released worldwide on 10 April 2026. Hope and Fury overflows with great tunes, clever…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
- },
- {
-  "source_id": "S011",
-  "title": "Steve Hackett – Best of Genesis & Solo Gems",
-  "url": "https://www.cornex.co.uk/events/steve-hackett-best-of-genesis-solo-gems",
-  "kind": "event",
-  "external_id": "https://www.cornex.co.uk/events/steve-hackett-best-of-genesis-solo-gems",
-  "start": "2026-10-02",
-  "end": null,
-  "all_day": true,
-  "venue": "Cambridge Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": "£52.50 - £68.00",
-  "status": "scheduled",
-  "organizer": "Cambridge Corn Exchange",
-  "categories": [],
-  "summary": "It has been 12 years since STEVE HACKETT brought his classic Genesis Revisited show to us. Back then, in 2013, his UK tour culminated in his acclaimed performance at London’s Royal Albert Hall and the following release of the live DVD of that performance.Since then, Steve’s timeless guitar work has…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
- },
- {
-  "source_id": "S011",
-  "title": "Gianmarco Soresi: The Misery Loves Tour",
-  "url": "https://www.cornex.co.uk/events/gianmarco-soresi-the-misery-loves-tour",
-  "kind": "event",
-  "external_id": "https://www.cornex.co.uk/events/gianmarco-soresi-the-misery-loves-tour",
-  "start": "2026-10-03",
-  "end": null,
-  "all_day": true,
-  "venue": "Cambridge Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": "£38.50 - £44.00",
-  "status": "scheduled",
-  "organizer": "Cambridge Corn Exchange",
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
- },
- {
-  "source_id": "S011",
-  "title": "Corn Exchange Tour and AR Experience",
-  "url": "https://www.cornex.co.uk/events/corn-exchange-tour-and-ar-experience",
-  "kind": "event",
-  "external_id": "https://www.cornex.co.uk/events/corn-exchange-tour-and-ar-experience",
-  "start": "2026-10-05",
-  "end": null,
-  "all_day": true,
-  "venue": "Cambridge Corn Exchange",
-  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
-  "postcode": "CB2 3QB",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": "scheduled",
-  "organizer": "Cambridge Corn Exchange",
-  "categories": [],
-  "summary": "Step into the future with an interactive Augmented Reality showcase celebrating the 150th anniversary of the Corn Exchange. View some of the greatest artists to ever step foot on the Corn Exchange stage come to life and perform before your eyes. Watch vehicles come to life in a virtual car showcase…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
- },
- {
-  "source_id": "S011",
   "title": "Don Broco",
   "url": "https://www.cornex.co.uk/events/don-broco",
   "kind": "event",
@@ -117,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:27:17+00:00"
  },
  {
   "source_id": "S011",
@@ -141,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:27:24+00:00"
  },
  {
   "source_id": "S011",
@@ -165,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:27:29+00:00"
  },
  {
   "source_id": "S011",
@@ -189,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:27:36+00:00"
  },
  {
   "source_id": "S011",
@@ -213,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:27:42+00:00"
  },
  {
   "source_id": "S011",
@@ -237,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:27:49+00:00"
  },
  {
   "source_id": "S011",
@@ -261,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:27:54+00:00"
  },
  {
   "source_id": "S011",
@@ -285,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:00+00:00"
  },
  {
   "source_id": "S011",
@@ -309,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:05+00:00"
  },
  {
   "source_id": "S011",
@@ -333,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:12+00:00"
  },
  {
   "source_id": "S011",
@@ -357,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:18+00:00"
  },
  {
   "source_id": "S011",
@@ -381,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:24+00:00"
  },
  {
   "source_id": "S011",
@@ -405,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:30+00:00"
  },
  {
   "source_id": "S011",
@@ -429,7 +333,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:36+00:00"
  },
  {
   "source_id": "S011",
@@ -453,7 +357,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:42+00:00"
  },
  {
   "source_id": "S011",
@@ -477,7 +381,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:48+00:00"
  },
  {
   "source_id": "S011",
@@ -501,7 +405,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:28:53+00:00"
  },
  {
   "source_id": "S011",
@@ -525,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:01+00:00"
  },
  {
   "source_id": "S011",
@@ -549,7 +453,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:06+00:00"
  },
  {
   "source_id": "S011",
@@ -573,7 +477,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:12+00:00"
  },
  {
   "source_id": "S011",
@@ -597,7 +501,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:18+00:00"
  },
  {
   "source_id": "S011",
@@ -621,7 +525,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:24+00:00"
  },
  {
   "source_id": "S011",
@@ -645,7 +549,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:30+00:00"
  },
  {
   "source_id": "S011",
@@ -669,7 +573,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:36+00:00"
  },
  {
   "source_id": "S011",
@@ -693,7 +597,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:41+00:00"
  },
  {
   "source_id": "S011",
@@ -717,7 +621,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:48+00:00"
  },
  {
   "source_id": "S011",
@@ -741,7 +645,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:29:53+00:00"
  },
  {
   "source_id": "S011",
@@ -765,7 +669,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:01+00:00"
  },
  {
   "source_id": "S011",
@@ -789,7 +693,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:06+00:00"
  },
  {
   "source_id": "S011",
@@ -813,7 +717,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:12+00:00"
  },
  {
   "source_id": "S011",
@@ -837,7 +741,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:18+00:00"
  },
  {
   "source_id": "S011",
@@ -861,7 +765,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:24+00:00"
  },
  {
   "source_id": "S011",
@@ -885,7 +789,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:29+00:00"
  },
  {
   "source_id": "S011",
@@ -909,7 +813,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:36+00:00"
  },
  {
   "source_id": "S011",
@@ -933,31 +837,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
- },
- {
-  "source_id": "S011",
-  "title": "Cambridge Rock 'n Roll Club - \"SARAH MAI\"",
-  "url": "https://www.cornex.co.uk/events/cambridge-rock-n-roll-club-sarah-mai",
-  "kind": "event",
-  "external_id": "https://www.cornex.co.uk/events/cambridge-rock-n-roll-club-sarah-mai",
-  "start": "2026-11-15",
-  "end": null,
-  "all_day": true,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "£7.00",
-  "status": "scheduled",
-  "organizer": "Cambridge Corn Exchange",
-  "categories": [],
-  "summary": "🎸 The Cambridge Rock ’n’ Roll Club 🎸On the third Sunday of every month, head to the Abbey Lounge on Newmarket Road, Cambridge, CB5 8LN, for a fantastic afternoon of live rock ’n’ roll!🕝 2.30pm – 5.30pmEvery month features a different great rock ’n’ roll band or artist, performing songs from the gol…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:42+00:00"
  },
  {
   "source_id": "S011",
@@ -981,7 +861,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:48+00:00"
  },
  {
   "source_id": "S011",
@@ -1005,7 +885,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:30:54+00:00"
  },
  {
   "source_id": "S011",
@@ -1029,7 +909,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:00+00:00"
  },
  {
   "source_id": "S011",
@@ -1053,7 +933,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:06+00:00"
  },
  {
   "source_id": "S011",
@@ -1077,7 +957,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:12+00:00"
  },
  {
   "source_id": "S011",
@@ -1101,7 +981,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:18+00:00"
  },
  {
   "source_id": "S011",
@@ -1125,7 +1005,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:24+00:00"
  },
  {
   "source_id": "S011",
@@ -1149,7 +1029,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:30+00:00"
  },
  {
   "source_id": "S011",
@@ -1173,7 +1053,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1197,7 +1077,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:42+00:00"
  },
  {
   "source_id": "S011",
@@ -1221,7 +1101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:48+00:00"
  },
  {
   "source_id": "S011",
@@ -1245,7 +1125,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:31:54+00:00"
  },
  {
   "source_id": "S011",
@@ -1269,7 +1149,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:00+00:00"
  },
  {
   "source_id": "S011",
@@ -1293,7 +1173,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:05+00:00"
  },
  {
   "source_id": "S011",
@@ -1317,7 +1197,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:12+00:00"
  },
  {
   "source_id": "S011",
@@ -1341,7 +1221,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:18+00:00"
  },
  {
   "source_id": "S011",
@@ -1365,7 +1245,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:24+00:00"
  },
  {
   "source_id": "S011",
@@ -1389,7 +1269,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:30+00:00"
  },
  {
   "source_id": "S011",
@@ -1413,7 +1293,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1437,7 +1317,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:42+00:00"
  },
  {
   "source_id": "S011",
@@ -1461,7 +1341,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:48+00:00"
  },
  {
   "source_id": "S011",
@@ -1485,7 +1365,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:54+00:00"
  },
  {
   "source_id": "S011",
@@ -1509,7 +1389,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:32:59+00:00"
  },
  {
   "source_id": "S011",
@@ -1533,7 +1413,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:33:06+00:00"
  },
  {
   "source_id": "S011",
@@ -1557,7 +1437,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:33:12+00:00"
  },
  {
   "source_id": "S011",
@@ -1581,7 +1461,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
+  "fetched_at": "2026-10-05T22:33:18+00:00"
  },
  {
   "source_id": "S011",
@@ -1605,31 +1485,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:32+00:00"
- },
- {
-  "source_id": "S011",
-  "title": "Jordan Ashman benefit concert",
-  "url": "https://www.cornex.co.uk/events/jordan-ashman-benefit-concert",
-  "kind": "event",
-  "external_id": "https://www.cornex.co.uk/events/jordan-ashman-benefit-concert",
-  "start": "2026-12-18",
-  "end": null,
-  "all_day": true,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "£38.50",
-  "status": "scheduled",
-  "organizer": "Cambridge Corn Exchange",
-  "categories": [],
-  "summary": "JORDAN ASHMAN – PERCUSSIONISTBBC YOUNG MUSICIAN OF THE YEAR 2022 The Rotary Club of Cambridge Rutherford have teamed up with Queens’ College to promote a benefit concert in support of Jordan Ashman’s continuing musical studies. FROM MILTON TO THE MAIN STAGEJordan grew up in Milton, was educated at …",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:32:35+00:00"
+  "fetched_at": "2026-10-05T22:33:23+00:00"
  },
  {
   "source_id": "S011",
@@ -1653,7 +1509,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:35+00:00"
+  "fetched_at": "2026-10-05T22:33:30+00:00"
+ },
+ {
+  "source_id": "S011",
+  "title": "Voulez-Vous: The Music Of ABBA",
+  "url": "https://www.cornex.co.uk/events/voulez-vous-the-music-of-abba",
+  "kind": "event",
+  "external_id": "https://www.cornex.co.uk/events/voulez-vous-the-music-of-abba",
+  "start": "2026-12-19",
+  "end": null,
+  "all_day": true,
+  "venue": "Cambridge Corn Exchange",
+  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
+  "postcode": "CB2 3QB",
+  "lat": null,
+  "lon": null,
+  "price": "£35.00",
+  "status": "scheduled",
+  "organizer": "Cambridge Corn Exchange",
+  "categories": [],
+  "summary": "Cambridge… dust off your platform boots, dig out those 70s outfits, and get ready to sing and dance the night away at the biggest Christmas ABBA party night of the year with Voulez-Vous: The Music of ABBA.Expect an evening of electrifying, non-stop entertainment, packed with nostalgia, sensational …",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:33:36+00:00"
  },
  {
   "source_id": "S011",
@@ -1677,7 +1557,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:35+00:00"
+  "fetched_at": "2026-10-05T22:33:42+00:00"
  },
  {
   "source_id": "S011",
@@ -1701,7 +1581,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:35+00:00"
+  "fetched_at": "2026-10-05T22:33:48+00:00"
  },
  {
   "source_id": "S011",
@@ -1725,6 +1605,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:35+00:00"
+  "fetched_at": "2026-10-05T22:33:54+00:00"
  }
 ]

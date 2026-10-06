@@ -1,34 +1,6 @@
 [
  {
   "source_id": "S182",
-  "title": "National Theatre Live: The Misanthrope",
-  "url": "https://wisbech.thelight.co.uk/national-theatre-live-the-misanthrope",
-  "kind": "event",
-  "external_id": "The Light Wisbech|National Theatre Live: The Misanthrope|2026-10-01",
-  "start": "2026-10-01",
-  "end": null,
-  "all_day": true,
-  "venue": "The Light Wisbech",
-  "address": "Wisbech",
-  "postcode": "PE13 1AR",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "film",
-   "event cinema",
-   "city:Wisbech"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:36+00:00"
- },
- {
-  "source_id": "S182",
   "title": "Queen Budapest",
   "url": "https://wisbech.thelight.co.uk/queen-budapest",
   "kind": "event",
@@ -53,7 +25,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:36+00:00"
+  "fetched_at": "2026-10-06T00:14:01+00:00"
  },
  {
   "source_id": "S182",
@@ -62,7 +34,7 @@
   "kind": "event",
   "external_id": "The Light Wisbech|Hadestown: The Musical|2026-10-13",
   "start": "2026-10-13",
-  "end": null,
+  "end": "2026-10-18",
   "all_day": true,
   "venue": "The Light Wisbech",
   "address": "Wisbech",
@@ -81,7 +53,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:36+00:00"
+  "fetched_at": "2026-10-06T00:14:01+00:00"
  },
  {
   "source_id": "S182",
@@ -109,7 +81,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:42+00:00"
+  "fetched_at": "2026-10-06T00:14:16+00:00"
  },
  {
   "source_id": "S182",
@@ -137,7 +109,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:42+00:00"
+  "fetched_at": "2026-10-06T00:14:16+00:00"
  },
  {
   "source_id": "S182",
@@ -165,7 +137,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:42+00:00"
+  "fetched_at": "2026-10-06T00:14:16+00:00"
  },
  {
   "source_id": "S182",
@@ -193,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:42+00:00"
+  "fetched_at": "2026-10-06T00:14:16+00:00"
  },
  {
   "source_id": "S182",
@@ -221,7 +193,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:42+00:00"
+  "fetched_at": "2026-10-06T00:14:16+00:00"
  },
  {
   "source_id": "S182",
@@ -249,15 +221,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:42+00:00"
+  "fetched_at": "2026-10-06T00:14:16+00:00"
  },
  {
   "source_id": "S182",
-  "title": "Power Station + Director Q&A",
+  "title": "TERMINATOR 2: JUDGMENT DAY 35th Anniversary",
   "url": "https://majestic-cinema.co.uk/",
   "kind": "event",
-  "external_id": "Majestic Cinema|Power Station + Director Q&A|2026-10-01",
-  "start": "2026-10-01",
+  "external_id": "Majestic Cinema|TERMINATOR 2: JUDGMENT DAY 35th Anniversary|2026-10-06",
+  "start": "2026-10-06",
   "end": null,
   "all_day": true,
   "venue": "Majestic Cinema",
@@ -277,15 +249,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:54+00:00"
+  "fetched_at": "2026-10-06T00:14:40+00:00"
  },
  {
   "source_id": "S182",
-  "title": "Chitty Chitty Bang Bang with King's Lynn Steampunk Society",
+  "title": "Verity - Subtitled",
   "url": "https://majestic-cinema.co.uk/",
   "kind": "event",
-  "external_id": "Majestic Cinema|Chitty Chitty Bang Bang with King's Lynn Steampunk Society|2026-10-02",
-  "start": "2026-10-02",
+  "external_id": "Majestic Cinema|Verity - Subtitled|2026-10-06",
+  "start": "2026-10-06",
   "end": null,
   "all_day": true,
   "venue": "Majestic Cinema",
@@ -305,16 +277,72 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:54+00:00"
+  "fetched_at": "2026-10-06T00:14:40+00:00"
+ },
+ {
+  "source_id": "S182",
+  "title": "QUEEN BUDAPEST",
+  "url": "https://majestic-cinema.co.uk/",
+  "kind": "event",
+  "external_id": "Majestic Cinema|QUEEN BUDAPEST|2026-10-06",
+  "start": "2026-10-06",
+  "end": null,
+  "all_day": true,
+  "venue": "Majestic Cinema",
+  "address": "Tower Street, King's Lynn",
+  "postcode": "PE30 1EJ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema",
+   "city:King's Lynn"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:14:40+00:00"
+ },
+ {
+  "source_id": "S182",
+  "title": "CASINO ROYALE 20TH ANNIVERSARY",
+  "url": "https://majestic-cinema.co.uk/",
+  "kind": "event",
+  "external_id": "Majestic Cinema|CASINO ROYALE 20TH ANNIVERSARY|2026-10-06",
+  "start": "2026-10-06",
+  "end": null,
+  "all_day": true,
+  "venue": "Majestic Cinema",
+  "address": "Tower Street, King's Lynn",
+  "postcode": "PE30 1EJ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "special screening",
+   "city:King's Lynn"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:14:40+00:00"
  },
  {
   "source_id": "S182",
   "title": "Sensory Screening - Shaun the Sheep: The Beast of Mossy Bottom",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|Sensory Screening - Shaun the Sheep: The Beast of Mossy Bottom|2026-10-05",
-  "start": "2026-10-05",
-  "end": "2026-10-12",
+  "external_id": "The Luxe Cinema Wisbech|Sensory Screening - Shaun the Sheep: The Beast of Mossy Bottom|2026-10-11",
+  "start": "2026-10-11",
+  "end": null,
   "all_day": true,
   "venue": "The Luxe Cinema",
   "address": "Alexandra Road, Wisbech",
@@ -333,15 +361,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
-  "title": "The MET 26-27 - Cosí fan tutte",
+  "title": "Sensory Screening - Forgotten Island",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|The MET 26-27 - Cosí fan tutte|2026-10-06",
-  "start": "2026-10-06",
+  "external_id": "The Luxe Cinema Wisbech|Sensory Screening - Forgotten Island|2026-10-24",
+  "start": "2026-10-24",
   "end": null,
   "all_day": true,
   "venue": "The Luxe Cinema",
@@ -354,23 +382,23 @@
   "organizer": null,
   "categories": [
    "film",
-   "event cinema",
+   "special screening",
    "city:Wisbech"
   ],
   "summary": null,
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
   "title": "Hadestown: The Musical",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|Hadestown: The Musical|2026-10-21",
-  "start": "2026-10-21",
-  "end": "2026-11-05",
+  "external_id": "The Luxe Cinema Wisbech|Hadestown: The Musical|2026-10-14",
+  "start": "2026-10-14",
+  "end": "2026-10-26",
   "all_day": true,
   "venue": "The Luxe Cinema",
   "address": "Alexandra Road, Wisbech",
@@ -389,15 +417,43 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
+ },
+ {
+  "source_id": "S182",
+  "title": "NT Live: The Misanthrope",
+  "url": "https://wisbechcinema.co.uk/",
+  "kind": "event",
+  "external_id": "The Luxe Cinema Wisbech|NT Live: The Misanthrope|2026-10-20",
+  "start": "2026-10-20",
+  "end": null,
+  "all_day": true,
+  "venue": "The Luxe Cinema",
+  "address": "Alexandra Road, Wisbech",
+  "postcode": "PE13 1HQ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema",
+   "city:Wisbech"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
   "title": "RBO 26-27: Macbeth (MET Opera)",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|RBO 26-27: Macbeth (MET Opera)|2026-10-30",
-  "start": "2026-10-30",
+  "external_id": "The Luxe Cinema Wisbech|RBO 26-27: Macbeth (MET Opera)|2026-10-23",
+  "start": "2026-10-23",
   "end": null,
   "all_day": true,
   "venue": "The Luxe Cinema",
@@ -417,16 +473,16 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
   "title": "Comèdie Française",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|Comèdie Française|2026-11-06",
-  "start": "2026-11-06",
-  "end": "2026-11-13",
+  "external_id": "The Luxe Cinema Wisbech|Comèdie Française|2026-10-26",
+  "start": "2026-10-26",
+  "end": "2026-11-09",
   "all_day": true,
   "venue": "The Luxe Cinema",
   "address": "Alexandra Road, Wisbech",
@@ -445,16 +501,16 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
   "title": "Fallen Angels by Noël Coward",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|Fallen Angels by Noël Coward|2026-11-12",
-  "start": "2026-11-12",
-  "end": "2026-11-14",
+  "external_id": "The Luxe Cinema Wisbech|Fallen Angels by Noël Coward|2026-10-26",
+  "start": "2026-10-26",
+  "end": "2026-10-28",
   "all_day": true,
   "venue": "The Luxe Cinema",
   "address": "Alexandra Road, Wisbech",
@@ -473,43 +529,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
- },
- {
-  "source_id": "S182",
-  "title": "RBO 26-27 - Manon (Royal Ballet)",
-  "url": "https://wisbechcinema.co.uk/",
-  "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|RBO 26-27 - Manon (Royal Ballet)|2026-11-14",
-  "start": "2026-11-14",
-  "end": null,
-  "all_day": true,
-  "venue": "The Luxe Cinema",
-  "address": "Alexandra Road, Wisbech",
-  "postcode": "PE13 1HQ",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "film",
-   "event cinema",
-   "city:Wisbech"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
   "title": "Fear and Fizz: The Lost Boys",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|Fear and Fizz: The Lost Boys|2026-11-15",
-  "start": "2026-11-15",
+  "external_id": "The Luxe Cinema Wisbech|Fear and Fizz: The Lost Boys|2026-11-02",
+  "start": "2026-11-02",
   "end": null,
   "all_day": true,
   "venue": "The Luxe Cinema",
@@ -529,16 +557,16 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
   "title": "National Theatre Live: Golden Boy",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|National Theatre Live: Golden Boy|2026-11-21",
-  "start": "2026-11-21",
-  "end": "2026-11-22",
+  "external_id": "The Luxe Cinema Wisbech|National Theatre Live: Golden Boy|2026-11-05",
+  "start": "2026-11-05",
+  "end": "2026-11-07",
   "all_day": true,
   "venue": "The Luxe Cinema",
   "address": "Alexandra Road, Wisbech",
@@ -557,16 +585,16 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
-  "title": "Queen at Sea",
+  "title": "Rocky (50th Anniversary 4K Restoration)",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|Queen at Sea|2026-11-28",
-  "start": "2026-11-28",
-  "end": "2026-11-29",
+  "external_id": "The Luxe Cinema Wisbech|Rocky (50th Anniversary 4K Restoration)|2026-11-07",
+  "start": "2026-11-07",
+  "end": null,
   "all_day": true,
   "venue": "The Luxe Cinema",
   "address": "Alexandra Road, Wisbech",
@@ -578,22 +606,22 @@
   "organizer": null,
   "categories": [
    "film",
-   "event cinema",
+   "special screening",
    "city:Wisbech"
   ],
   "summary": null,
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
   "title": "RBO 26-27 - Carmen (Royal Opera)",
   "url": "https://wisbechcinema.co.uk/",
   "kind": "event",
-  "external_id": "The Luxe Cinema Wisbech|RBO 26-27 - Carmen (Royal Opera)|2026-11-28",
-  "start": "2026-11-28",
+  "external_id": "The Luxe Cinema Wisbech|RBO 26-27 - Carmen (Royal Opera)|2026-11-10",
+  "start": "2026-11-10",
   "end": null,
   "all_day": true,
   "venue": "The Luxe Cinema",
@@ -613,7 +641,63 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:02+00:00"
+  "fetched_at": "2026-10-06T00:15:06+00:00"
+ },
+ {
+  "source_id": "S182",
+  "title": "RBO 26-27 - Manon (Royal Ballet)",
+  "url": "https://wisbechcinema.co.uk/",
+  "kind": "event",
+  "external_id": "The Luxe Cinema Wisbech|RBO 26-27 - Manon (Royal Ballet)|2026-11-16",
+  "start": "2026-11-16",
+  "end": null,
+  "all_day": true,
+  "venue": "The Luxe Cinema",
+  "address": "Alexandra Road, Wisbech",
+  "postcode": "PE13 1HQ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema",
+   "city:Wisbech"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:15:06+00:00"
+ },
+ {
+  "source_id": "S182",
+  "title": "Dracula (1958) 4K Remaster",
+  "url": "https://wisbechcinema.co.uk/",
+  "kind": "event",
+  "external_id": "The Luxe Cinema Wisbech|Dracula (1958) 4K Remaster|2026-10-26",
+  "start": "2026-10-26",
+  "end": null,
+  "all_day": true,
+  "venue": "The Luxe Cinema",
+  "address": "Alexandra Road, Wisbech",
+  "postcode": "PE13 1HQ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "special screening",
+   "city:Wisbech"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:15:06+00:00"
  },
  {
   "source_id": "S182",
@@ -641,34 +725,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:46:06+00:00"
- },
- {
-  "source_id": "S182",
-  "title": "EOS: James McNeill Whistler",
-  "url": "https://www.haverhillartscentre.co.uk/whats-on/",
-  "kind": "event",
-  "external_id": "Haverhill Arts Centre|EOS: James McNeill Whistler|2026-10-01",
-  "start": "2026-10-01",
-  "end": null,
-  "all_day": true,
-  "venue": "Haverhill Arts Centre",
-  "address": "Town Hall, High Street, Haverhill",
-  "postcode": "CB9 8AR",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "film",
-   "event cinema",
-   "city:Haverhill"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:46:06+00:00"
+  "fetched_at": "2026-10-06T00:15:16+00:00"
  }
 ]

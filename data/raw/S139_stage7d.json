@@ -24,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:20+00:00"
+  "fetched_at": "2026-10-06T00:13:08+00:00"
  },
  {
   "source_id": "S139",
@@ -51,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:20+00:00"
+  "fetched_at": "2026-10-06T00:13:08+00:00"
  },
  {
   "source_id": "S139",
@@ -78,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:20+00:00"
+  "fetched_at": "2026-10-06T00:13:08+00:00"
  },
  {
   "source_id": "S139",
@@ -106,7 +106,34 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:20+00:00"
+  "fetched_at": "2026-10-06T00:13:08+00:00"
+ },
+ {
+  "source_id": "S139",
+  "title": "Members' Event: Diwali Lantern-making Workshop at Audley End House",
+  "url": "https://www.english-heritage.org.uk/visit/whats-on/me-audley-end-diwali-lantern-making-workshop-oct-26/",
+  "kind": "event",
+  "external_id": "eh-255694",
+  "start": "2026-10-27T10:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Audley End House and Gardens",
+  "address": "Audley End, Saffron Walden",
+  "postcode": "CB11 4JF",
+  "lat": null,
+  "lon": null,
+  "price": "Included in admission",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "english heritage",
+   "estate"
+  ],
+  "summary": "Join Surtal Arts for a hands-on Diwali lantern-making workshop. Create your own decorative lantern using colourful materials and craft techniques, and take home a handmade decoration for Diwali.",
+  "published": null,
+  "access": "members",
+  "access_note": "org=English Heritage|url=https://www.english-heritage.org.uk/membership/",
+  "fetched_at": "2026-10-06T00:13:08+00:00"
  },
  {
   "source_id": "S139",
@@ -133,7 +160,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:20+00:00"
+  "fetched_at": "2026-10-06T00:13:08+00:00"
  },
  {
   "source_id": "S139",
@@ -161,7 +188,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:20+00:00"
+  "fetched_at": "2026-10-06T00:13:08+00:00"
  },
  {
   "source_id": "S139",
@@ -188,6 +215,34 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:20+00:00"
+  "fetched_at": "2026-10-06T00:13:08+00:00"
+ },
+ {
+  "source_id": "S139",
+  "title": "Members' Event: A Braybrooke Christmas at Audley End",
+  "url": "https://www.english-heritage.org.uk/visit/whats-on/me-audley-end-a-braybrooke-christmas-dec-26/",
+  "kind": "event",
+  "external_id": "eh-255554",
+  "start": "2026-12-10T12:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Audley End House and Gardens",
+  "address": "Audley End, Saffron Walden",
+  "postcode": "CB11 4JF",
+  "lat": null,
+  "lon": null,
+  "price": "Included in admission",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "english heritage",
+   "estate",
+   "family"
+  ],
+  "summary": "Learn about how the Braybrooke family celebrated Christmas through the ages from this talk at Audley End. Then, enjoy a festive lunch inspired by some of the foods the Braybrookes would have enjoyed.",
+  "published": null,
+  "access": "members",
+  "access_note": "org=English Heritage|url=https://www.english-heritage.org.uk/membership/",
+  "fetched_at": "2026-10-06T00:13:08+00:00"
  }
 ]

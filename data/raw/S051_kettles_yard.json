@@ -23,7 +23,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:00+00:00"
+  "fetched_at": "2026-10-05T23:15:09+00:00"
  },
  {
   "source_id": "S051",
@@ -47,7 +47,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:03+00:00"
+  "fetched_at": "2026-10-05T23:15:16+00:00"
+ },
+ {
+  "source_id": "S051",
+  "title": "Spotlight Talk: Ben Nicholson and Nancy Nicholson Textiles",
+  "url": "https://www.kettlesyard.cam.ac.uk/whats-on/spotlight-talk-ben-nicholson-and-nancy-nicholson-textiles/",
+  "kind": "event",
+  "external_id": "https://www.kettlesyard.cam.ac.uk/whats-on/spotlight-talk-ben-nicholson-and-nancy-nicholson-textiles/",
+  "start": "2026-10-06T13:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Kettle's Yard",
+  "address": "Castle Street, Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": " |  |  | Join us for a short 20-minute spotlight talk in the Kettle’s Yard house, taking a closer look at textiles in the collection by artists Ben Nicholson and Nancy Nicholson. |  |  |  | Sold Out |  | FREE, booking required |  |  |  |  |  | This event is part of the Art History Festival 2026. The",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T23:15:21+00:00"
  },
  {
   "source_id": "S051",
@@ -71,7 +95,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:06+00:00"
+  "fetched_at": "2026-10-05T23:15:27+00:00"
  },
  {
   "source_id": "S051",
@@ -95,7 +119,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:09+00:00"
+  "fetched_at": "2026-10-05T23:15:33+00:00"
  },
  {
   "source_id": "S051",
@@ -119,7 +143,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:29+00:00"
+  "fetched_at": "2026-10-05T23:16:03+00:00"
  },
  {
   "source_id": "S051",
@@ -143,7 +167,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:31+00:00"
+  "fetched_at": "2026-10-05T23:16:09+00:00"
  },
  {
   "source_id": "S051",
@@ -163,11 +187,11 @@
   "status": null,
   "organizer": null,
   "categories": [],
-  "summary": " (doors at 7.30pm) |  |  | Join us for a Chamber Music concert in the Kettle’s Yard house. This week we welcome the return of | Quartetto Noûs. |  |  |  | Sold Out |  | £25 (£5 students), booking required |  |  |  |  |  | Programme |  | Dmitri Shostakovich | String Quartet No.4 |  | Ludwig van Beeth",
+  "summary": " (doors at 7.30pm) |  |  | Join us for a Chamber Music concert in the Kettle’s Yard house. This week we welcome the return of | Quartetto Noûs. |  |  |  | Sold Out |  | £25 (£5 students), booking required |  |  |  |  |  | Programme |  | Dmitri Shostakovich | String Quartet No.10 |  | Ludwig van Beet",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:49+00:00"
+  "fetched_at": "2026-10-05T23:16:46+00:00"
  },
  {
   "source_id": "S051",
@@ -191,7 +215,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:52+00:00"
+  "fetched_at": "2026-10-05T23:16:51+00:00"
  },
  {
   "source_id": "S051",
@@ -215,7 +239,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:55+00:00"
+  "fetched_at": "2026-10-05T23:16:57+00:00"
  },
  {
   "source_id": "S051",
@@ -235,11 +259,11 @@
   "status": null,
   "organizer": null,
   "categories": [],
-  "summary": " (doors open at 7.30pm) |  |  | Join us for a Chamber Music concert in the Kettle’s Yard house with Raphael Wallfisch, cello and Simon Callaghan, piano. |  |  |  | Book Now |  | £25 (£5 students and Open House Community cardholders), booking required |  |  |  |  |  | Programme |  | Bohuslav Martinů ",
+  "summary": " (doors open at 7.30pm) |  |  | Join us for a Chamber Music concert in the Kettle’s Yard house with Raphael Wallfisch, cello and Simon Callaghan, piano. |  |  |  | Sold Out |  | £25 (£5 students and Open House Community cardholders), booking required |  |  |  |  |  | Programme |  | Bohuslav Martinů ",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:36:58+00:00"
+  "fetched_at": "2026-10-05T23:17:09+00:00"
  },
  {
   "source_id": "S051",
@@ -259,11 +283,11 @@
   "status": null,
   "organizer": null,
   "categories": [],
-  "summary": " (doors open at 7.30pm) |  |  | Join us for a Chamber Music concert in the Kettle’s Yard house with Nicholas Daniel, oboe, and Huw Watkins, piano. |  |  |  | Book Now |  | £25 (£5 students and Open House Community cardholders), booking required |  |  |  |  |  | Programme |  | Helen Grime | Three min",
+  "summary": " (doors open at 7.30pm) |  |  | Join us for a Chamber Music concert in the Kettle’s Yard house with Nicholas Daniel, oboe, and Huw Watkins, piano. |  |  |  | Limited Availability |  | £25 (£5 students and Open House Community cardholders), booking required |  |  |  |  |  | Programme |  | Helen Grime",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:37:01+00:00"
+  "fetched_at": "2026-10-05T23:17:15+00:00"
  },
  {
   "source_id": "S051",
@@ -287,7 +311,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:37:04+00:00"
+  "fetched_at": "2026-10-05T23:17:21+00:00"
  },
  {
   "source_id": "S051",
@@ -311,7 +335,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:37:08+00:00"
+  "fetched_at": "2026-10-05T23:17:27+00:00"
  },
  {
   "source_id": "S051",
@@ -335,7 +359,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:37:12+00:00"
+  "fetched_at": "2026-10-05T23:17:33+00:00"
  },
  {
   "source_id": "S051",
@@ -359,7 +383,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:37:15+00:00"
+  "fetched_at": "2026-10-05T23:17:39+00:00"
  },
  {
   "source_id": "S051",
@@ -383,7 +407,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:37:17+00:00"
+  "fetched_at": "2026-10-05T23:17:45+00:00"
  },
  {
   "source_id": "S051",
@@ -407,7 +431,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:37:20+00:00"
+  "fetched_at": "2026-10-05T23:17:51+00:00"
  },
  {
   "source_id": "S051",
@@ -431,7 +455,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:37:23+00:00"
+  "fetched_at": "2026-10-05T23:17:57+00:00"
  },
  {
   "source_id": "S051",
@@ -455,30 +479,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:37:26+00:00"
- },
- {
-  "source_id": "S051",
-  "title": "Piers Lane, piano",
-  "url": "https://www.kettlesyard.cam.ac.uk/whats-on/piers-lane-piano/",
-  "kind": "event",
-  "external_id": "https://www.kettlesyard.cam.ac.uk/whats-on/piers-lane-piano/",
-  "start": "2027-03-18T20:00",
-  "end": null,
-  "all_day": false,
-  "venue": "Kettle's Yard",
-  "address": "Castle Street, Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": " (doors open at 7.30pm) |  |  | Join us for a Chamber Music concert in the Kettle’s Yard house with Piers Lane, piano. |  |  |  | Book Now |  | £25 (£5 students and Open House Community cardholders), booking required |  |  |  |  |  | Programme |  | Frédéric Chopin | Four | Ballades, | and | Préludes",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:37:29+00:00"
+  "fetched_at": "2026-10-05T23:18:03+00:00"
  }
 ]

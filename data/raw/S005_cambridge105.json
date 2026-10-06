@@ -1,150 +1,6 @@
 [
  {
   "source_id": "S005",
-  "title": "Things to do in Cambridge for Halloween",
-  "url": "https://cambridge105.co.uk/event/things-to-do-in-cambridge-for-halloween/",
-  "kind": "event",
-  "external_id": "103225",
-  "start": "2026-10-01T01:00:00",
-  "end": "2026-11-01T00:59:59",
-  "all_day": true,
-  "venue": "Various",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Horror at Hinchingbrooke House Anglesey Abbey Halloween Trail Halloween at Wimpole Audley End Miniature Railway Sacrewell Halloween & Pumpkin Village Skylark Events Week of Wickedness Milton Maze Pumpkin Patch Traditional Punting Company Punt & Hunt Rutherford’s Ghost Punting Fearsome Family Fun Da…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Waterstones Book Events",
-  "url": "https://cambridge105.co.uk/event/waterstones-book-events/",
-  "kind": "event",
-  "external_id": "103373",
-  "start": "2026-10-01T01:00:00",
-  "end": "2026-10-30T00:59:59",
-  "all_day": true,
-  "venue": "Waterstones Book Shop",
-  "address": "22 Sidney Street, Cambridge, CB2 3HG",
-  "postcode": "CB2 3HG",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Celebrating National Poetry Day with poet, literary critic, performing artist, and film-maker Pelé Cox; New York Times bestselling horror author Rachel Harrison coming all the way from the USA to discuss her new book Kiss Slay Replay; bestselling crime author Ian Rankin signing his new standalone n…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "The Charlotte Carrivick Band at Stapleford Granary",
-  "url": "https://cambridge105.co.uk/event/the-charlotte-carrivick-band-at-stapleford-granary/",
-  "kind": "event",
-  "external_id": "103132",
-  "start": "2026-10-03T01:00:00",
-  "end": "2026-10-04T00:59:59",
-  "all_day": true,
-  "venue": "Stapleford Granary",
-  "address": "Bury Road, Stapleford, CB22 5BP",
-  "postcode": "CB22 5BP",
-  "lat": null,
-  "lon": null,
-  "price": "£12.00 – £24.00",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "A folk concert with Charlotte Carrivick, guitar | Kieran Towers, fiddle | Evan Davies, mandolin | Eleanor Wilkie, double bass One of the UK’s most respected flat-picking guitarists, Charlotte Carrivick has a passion for modern Bluegrass. The band perform original songs based on old stories and fidd…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Dowsing at Wandlebury Park",
-  "url": "https://cambridge105.co.uk/event/dowsing-at-wandlebury-park/",
-  "kind": "event",
-  "external_id": "103153",
-  "start": "2026-10-03T01:00:00",
-  "end": "2026-10-04T00:59:59",
-  "all_day": true,
-  "venue": "Wandlebury Country Park",
-  "address": " Cambridge, CB22 3AE",
-  "postcode": "CB22 3AE",
-  "lat": null,
-  "lon": null,
-  "price": "£30.00 – £35.00",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "A day of archaeological dowsing at Wandlebury Iron Age Hill fort with Ann & Steve Dawson of Dowsing Anglia. 10am – 4pm. Working on and around the foundations of the former manor house you can try and dowse what each room was used for and search for service pipes and find the site of the Ice House. …",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Exhibition – Abrasions",
-  "url": "https://cambridge105.co.uk/event/103157/",
-  "kind": "event",
-  "external_id": "103157",
-  "start": "2026-10-03T01:00:00",
-  "end": "2026-11-01T00:59:59",
-  "all_day": true,
-  "venue": "The Edge Cafe",
-  "address": "351 Mill Road, Cambridge, CB1 3DF",
-  "postcode": "CB1 3DF",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Ian Rawlinson has a new solo exhibition in Cambridge. Abrasions is his 10th solo exhibition at the Edge Café, which celebrates its 10th anniversary this year. He is showing work from two recent series which explore connections between different areas of his East Anglian past. Open Mon – Fri 08.00 –…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "The Sampson Orchestra of Cambridge – 40th Anniversary",
-  "url": "https://cambridge105.co.uk/event/the-sampson-orchestra-of-cambridge-40th-anniversary/",
-  "kind": "event",
-  "external_id": "103221",
-  "start": "2026-10-03T01:00:00",
-  "end": "2026-10-04T00:59:59",
-  "all_day": true,
-  "venue": "West Road Concert Hall",
-  "address": "11 West Road, Cambridge, CB3 9DP",
-  "postcode": "CB3 9DP",
-  "lat": null,
-  "lon": null,
-  "price": "£5.00 – £20.00",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "The Sampson Orchestra of Cambridge, conducted by Darrell Davison, performs a exciting programme of early 20th-century English works. Edward Elgar’s Cockaigne Overture (1901) is followed by John Ireland’s Piano Concerto (1930), featuring star soloist Christos Fountos. The second half of the concert …",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
- },
- {
-  "source_id": "S005",
   "title": "Richie Ros at Cottenham Communty Centre",
   "url": "https://cambridge105.co.uk/event/richie-ros-at-cottenham-communty-centre/",
   "kind": "event",
@@ -165,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -189,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -213,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -237,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -261,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -285,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -309,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -333,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -357,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -381,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -405,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -429,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -453,7 +309,79 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Jools Holland and His Rhythm and Blues Orchestra",
+  "url": "https://cambridge105.co.uk/event/jools-holland-and-his-rhythm-and-blues-orchestra/",
+  "kind": "event",
+  "external_id": "103452",
+  "start": "2026-11-01T01:00:00",
+  "end": "2026-11-02T00:59:59",
+  "all_day": true,
+  "venue": "Cambridge Corn Exchange",
+  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
+  "postcode": "CB2 3QB",
+  "lat": null,
+  "lon": null,
+  "price": "£40.50 – £58.00",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Musical maestro Jools Holland and his world-renowned Rhythm & Blues Orchestra are delighted to announce their 2026 Autumn / Winter tour of 31 dates across the UK, visiting some of the country’s most iconic venues. Renowned for his exuberant live shows, Jools will once again be backed by the full po…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "The Gang of Three",
+  "url": "https://cambridge105.co.uk/event/the-gang-of-three/",
+  "kind": "event",
+  "external_id": "103477",
+  "start": "2026-11-03T01:00:00",
+  "end": "2026-11-08T00:59:59",
+  "all_day": true,
+  "venue": "Cambridge Arts Theatre",
+  "address": "6 St Edward's Passage, Cambridge , CB2 3PJ",
+  "postcode": "CB2 3PJ",
+  "lat": null,
+  "lon": null,
+  "price": "£22.00",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "In the heat of economic crisis, the Labour Party’s Roy Jenkins, Denis Healey and Tony Crosland clash over the soul of British socialism. Sharp, witty and gripping, the play captures towering intellects, fierce rivalries and the private tensions behind public power. Following a sell-out smash hit ru…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Things I Know to be True",
+  "url": "https://cambridge105.co.uk/event/things-i-know-to-be-true/",
+  "kind": "event",
+  "external_id": "103485",
+  "start": "2026-11-03T01:00:00",
+  "end": "2026-11-08T00:59:59",
+  "all_day": true,
+  "venue": "ADC Theatre",
+  "address": "Park Street, Cambridge,  CB5 8AS",
+  "postcode": "CB5 8AS",
+  "lat": null,
+  "lon": null,
+  "price": "£10.00 – £18.50",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "What happens when love turns to grief? Six people, tied by their family bond, must navigate the interpersonal tensions and individual aspirations that threaten to tear them apart. “Things I Know To Be True is about love in many of its forms. At times comforting and supportive. At others suffocating…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -477,7 +405,127 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Tony Hadley – The Christmas Big Band Tour",
+  "url": "https://cambridge105.co.uk/event/tony-hadley-the-christmas-big-band-tour/",
+  "kind": "event",
+  "external_id": "103454",
+  "start": "2026-11-13T01:00:00",
+  "end": "2026-11-14T00:59:59",
+  "all_day": true,
+  "venue": "Cambridge Corn Exchange",
+  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
+  "postcode": "CB2 3QB",
+  "lat": null,
+  "lon": null,
+  "price": "£44.00 – £170.50",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "One of the UK’s most iconic voices to perform songs from Sinatra, Bennett Presley, and more swing and crooner greats. A true national treasure, the crooning, swing style not only suits Tony’s timeless singing voice, but also his natural charm as a raconteur and a showman in every sense. The perfect…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Well Being Ceilidh",
+  "url": "https://cambridge105.co.uk/event/well-being-ceilidh/",
+  "kind": "event",
+  "external_id": "103449",
+  "start": "2026-11-14T01:00:00",
+  "end": "2026-11-15T00:59:59",
+  "all_day": true,
+  "venue": "Downing Place United Reform Church",
+  "address": "Downing Street, Cambridge, CB2 3EL",
+  "postcode": "CB2 3EL",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "A ceilidh is a relaxed and sociable form of group dancing accompanied by live folk music. Come along for an uplifting evening of live music, movement, connection and community in the heart of Cambridge. Whether you are coming for the dancing, the music, the company or simply to try something differ…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "London Symphonic Rock Orchestra",
+  "url": "https://cambridge105.co.uk/event/london-symphonic-rock-orchestra-2/",
+  "kind": "event",
+  "external_id": "103456",
+  "start": "2026-11-15T01:00:00",
+  "end": "2026-11-16T00:59:59",
+  "all_day": true,
+  "venue": "Cambridge Corn Exchange",
+  "address": "2 Wheeler Street, Cambridge, CB2 3QB",
+  "postcode": "CB2 3QB",
+  "lat": null,
+  "lon": null,
+  "price": "£36.00 – £69.50",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Boundary-breaking and genre-defying, the London Symphonic Rock Orchestra return to the UK with a brand new set. Performing legendary anthems with breathtaking scale and intensity, fusing the majestic power of the symphony orchestra with the rebellious energy of rock. Since 2018, the London Symphoni…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "The Haunting of Hill House",
+  "url": "https://cambridge105.co.uk/event/the-haunting-of-hill-house/",
+  "kind": "event",
+  "external_id": "103479",
+  "start": "2026-11-17T01:00:00",
+  "end": "2026-11-22T00:59:59",
+  "all_day": true,
+  "venue": "Cambridge Arts Theatre",
+  "address": "6 St Edward's Passage, Cambridge , CB2 3PJ",
+  "postcode": "CB2 3PJ",
+  "lat": null,
+  "lon": null,
+  "price": "£23.50",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "From best-selling novel to major hit Netflix series, The Haunting of Hill House now takes to the stage in this gripping new production that blurs the line between heart-thumping suspense and the supernatural. This bold new stage adaptation is tense, unsettling and darkly playful. Where shadows whis…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Connaught Brass",
+  "url": "https://cambridge105.co.uk/event/connaught-brass/",
+  "kind": "event",
+  "external_id": "103487",
+  "start": "2026-11-18T01:00:00",
+  "end": "2026-11-19T00:59:59",
+  "all_day": true,
+  "venue": "Stapleford Granary",
+  "address": "Bury Road, Stapleford, CB22 5BP",
+  "postcode": "CB22 5BP",
+  "lat": null,
+  "lon": null,
+  "price": "£12.00 – £24.00",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Blending a deep respect for the genre’s rich heritage with a youthful perspective, Connaught Brass are quickly making a name for themselves as a fresh talent in chamber music. Aaron Akugbo & Harry Plant, trumpet | Zoë Tweed, French horn | Chris Brewster, tenor trombone | Aled Meredith-Barrett, tuba…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
  },
  {
   "source_id": "S005",
@@ -501,7 +549,333 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:25:58+00:00"
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "CUAD/Footlights Pantomime – Cinderella",
+  "url": "https://cambridge105.co.uk/event/cuad-footlights-pantomime-cinderella/",
+  "kind": "event",
+  "external_id": "103483",
+  "start": "2026-11-25T01:00:00",
+  "end": "2026-12-06T00:59:59",
+  "all_day": true,
+  "venue": "ADC Theatre",
+  "address": "Park Street, Cambridge,  CB5 8AS",
+  "postcode": "CB5 8AS",
+  "lat": null,
+  "lon": null,
+  "price": "£11.00 – £21.00",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Cinderella longs for the simple things in life: a loving family, a welcoming community, and a bedroom without rats. But in the Kingdom of Newtopia, everyone except her best friend Buttons is too busy to stop for a quick chat, say hello, or even make eye contact. And so, when the King announces a la…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Jack and the Beanstalk",
+  "url": "https://cambridge105.co.uk/event/jack-and-the-beanstalk/",
+  "kind": "event",
+  "external_id": "103481",
+  "start": "2026-11-27T01:00:00",
+  "end": "2027-01-04T00:59:59",
+  "all_day": true,
+  "venue": "Cambridge Arts Theatre",
+  "address": "6 St Edward's Passage, Cambridge , CB2 3PJ",
+  "postcode": "CB2 3PJ",
+  "lat": null,
+  "lon": null,
+  "price": "£10.00",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Fee-fi-fo-fum… Prepare to embark on a gigantic adventure with Jack and the Beanstalk, The Arts Theatre Cambridge’s LARGER-THAN-LIFE pantomime! Cambridge’s #1 pantomime star Matt Crosby returns as Dame Trott alongside UK Pantomime Award-winning Steven Roberts as Jack Trott. The cast is completed by …",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:20+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Stagger 04/10/2026",
+  "url": "https://cambridge105.co.uk/stagger-04-10-2026/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103494",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Featured",
+   "Podcasts",
+   "Stagger"
+  ],
+  "summary": "David and Tom are joined by Bin Weasel, who will be playing music snd talking about their mission to support the local music scene.",
+  "published": "2026-10-05T17:49:07Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Polish Waves with",
+  "url": "https://cambridge105.co.uk/polish-waves-04-10-26/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103492",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Podcasts",
+   "Polish Waves"
+  ],
+  "summary": "Sebastian Lesniewski presents a selection of tracks from Polish artists and talks about upcoming cultural events.",
+  "published": "2026-10-05T17:22:30Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "From the Terraces: City exit FA Cup, Histon humbled, U’s and women’s latest",
+  "url": "https://cambridge105.co.uk/from-the-terraces-04-10-2026/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103473",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Featured",
+   "From The Terraces",
+   "Podcasts"
+  ],
+  "summary": "Daniel Baker and Tim Armitage analyse the latest football action on a day where Cambridge City and Histon were in the spotlight. City’s FA Cup run is over for another […]",
+  "published": "2026-10-04T18:52:27Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Cambs Politics with Julian Clover 04/10/2026",
+  "url": "https://cambridge105.co.uk/cambs-politics-04-10-2026/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103468",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Cambs Politics with Trevor Dann",
+   "Featured",
+   "Podcasts"
+  ],
+  "summary": "Julian Clover presents the October edition of Cambs Politics, Trevor Dann speaks to City Council leader Katie Thornburrow 100 days into her leadership. Plus, Romsey councillor Dave Baigent explains his […]",
+  "published": "2026-10-04T14:07:14Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Glenn Jones Live from Town & Gown 10K",
+  "url": "https://cambridge105.co.uk/glenn-jones-04-10-2026/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103460",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Featured",
+   "Glenn Jones",
+   "Podcasts"
+  ],
+  "summary": "Join Glenn Jones and Christine Schneider on Midsummer Common for the Bidwells Town & Gown 10K, the annual fundraiser for Muscular Dystrophy UK.",
+  "published": "2026-10-04T14:01:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Flavour: Arbury Social Cafe",
+  "url": "https://cambridge105.co.uk/flavour-03-10-2026/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103458",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Featured",
+   "Flavour",
+   "Podcasts"
+  ],
+  "summary": "The Arbury Social café opens after eight years development. Vendors from last weeks Biodiversity and Regenerative Food fair on Parkers Piece tell us why their food & drink is so […]",
+  "published": "2026-10-04T13:47:15Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Collaboration among Cambridge independent businesses",
+  "url": "https://cambridge105.co.uk/breakfast-01-10-2026/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103445",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Cambridge Breakfast",
+   "Podcasts"
+  ],
+  "summary": "Indie Cambridge founder Anne Beamish joins Julian Clover to talk about the city’s independent sector.",
+  "published": "2026-10-02T12:30:16Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Amplify! Johnny Wright",
+  "url": "https://cambridge105.co.uk/amplify-30-09-2026/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103437",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Amplify!",
+   "Featured",
+   "Podcasts"
+  ],
+  "summary": "Justine Hatfield’s guest is the Cambridge musician behind the Wednesday Sessions, Johnny Wright.",
+  "published": "2026-10-02T11:45:11Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "Neil Jones Rock Show: Joey Tempest",
+  "url": "https://cambridge105.co.uk/neil-jones-29-09-2026/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103441",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Featured",
+   "Podcasts",
+   "The Rock Show with Neil Jones"
+  ],
+  "summary": "Neil meets Joey Tempest from Europe – they chat about the band’s new album and the 40th anniversary of the Final Countdown. Also on the show is a chat with […]",
+  "published": "2026-10-02T11:44:59Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
+ },
+ {
+  "source_id": "S005",
+  "title": "From the Terraces: Row Z: Cambridge City and Histon take centre stage",
+  "url": "https://cambridge105.co.uk/from-the-terraces-01-10-2026/",
+  "kind": "article",
+  "external_id": "https://cambridge105.co.uk/?p=103431",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Featured",
+   "From The Terraces",
+   "Podcasts"
+  ],
+  "summary": "Daniel Baker and Tim Armitage preview the weekend’s football action. Cambridge United have a week off due to internationals, so they assess the U’s season so far, how their players […]",
+  "published": "2026-10-01T18:40:05Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -529,7 +903,7 @@
   "published": "2026-09-30T08:04:44Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -557,7 +931,7 @@
   "published": "2026-09-29T09:04:10Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -584,7 +958,7 @@
   "published": "2026-09-29T08:58:02Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -612,7 +986,7 @@
   "published": "2026-09-29T08:49:53Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -640,7 +1014,7 @@
   "published": "2026-09-27T18:48:31Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -668,7 +1042,7 @@
   "published": "2026-09-27T18:27:45Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -696,7 +1070,7 @@
   "published": "2026-09-27T18:23:42Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -724,7 +1098,7 @@
   "published": "2026-09-27T18:18:03Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -752,7 +1126,7 @@
   "published": "2026-09-24T19:36:47Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -780,7 +1154,7 @@
   "published": "2026-09-24T17:26:26Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -808,7 +1182,7 @@
   "published": "2026-09-24T17:21:17Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -836,7 +1210,7 @@
   "published": "2026-09-24T17:16:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -864,7 +1238,7 @@
   "published": "2026-09-21T14:46:48Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -892,7 +1266,7 @@
   "published": "2026-09-21T14:30:08Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -919,7 +1293,7 @@
   "published": "2026-09-20T18:59:22Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -946,7 +1320,7 @@
   "published": "2026-09-20T17:48:29Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -974,7 +1348,7 @@
   "published": "2026-09-17T20:16:41Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -1002,7 +1376,7 @@
   "published": "2026-09-17T17:48:48Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -1029,7 +1403,7 @@
   "published": "2026-09-17T17:39:24Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  },
  {
   "source_id": "S005",
@@ -1057,281 +1431,6 @@
   "published": "2026-09-15T13:54:55Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Gadget Guide: IFA Berlin",
-  "url": "https://cambridge105.co.uk/gadget-guide-14-09-2026/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103266",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Gadget Guide",
-   "Podcasts"
-  ],
-  "summary": "Rob Chipperfield and Lawrence Micallef check out news and announcements from IFA Berlin.",
-  "published": "2026-09-15T13:50:29Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "From the Terraces: U’s bounce back to beat Royals, City and Histon beaten",
-  "url": "https://cambridge105.co.uk/from-the-terraces-13-09-2026/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103259",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "From The Terraces",
-   "Podcasts"
-  ],
-  "summary": "Scotty McGeorge and Tim Armitage review the weekend’s football action including Cambridge United’s impressive 2-1 victory over Reading which leaves them in a play-off place and with just one defeat […]",
-  "published": "2026-09-13T18:32:07Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Rock of Ages: Malek Hyde-Smith",
-  "url": "https://cambridge105.co.uk/paul-christoforou-07-09-2026/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103257",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Featured",
-   "Paul Christoforou",
-   "Podcasts"
-  ],
-  "summary": "Paul’s guest is the Cambridge-based percussionist and drummer Malek Hyde-Smith",
-  "published": "2026-09-13T18:12:38Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Polish Waves with Piotr Czosnyka",
-  "url": "https://cambridge105.co.uk/polish-waves-13-09-2026/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103255",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Podcasts",
-   "Polish Waves"
-  ],
-  "summary": "Piotr Czosnyka presents Polish Waves, with new music, news and cultural highlights.",
-  "published": "2026-09-13T18:01:29Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Peter Dawe: Another Side of Cambridge",
-  "url": "https://cambridge105.co.uk/peter-dawe-another-side-of-cambridge/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103250",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Featured",
-   "Podcasts"
-  ],
-  "summary": "Cambridgeshire entrepreneur and philanthropist Peter Dawe talks to Lewis Herbert about internet start-up Pipex, his work with WinterComfort and plans to reinvent local TV.",
-  "published": "2026-09-13T17:59:36Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Glenn Jones live from Bridge the Gap",
-  "url": "https://cambridge105.co.uk/glenn-jones-live-from-bridge-the-gap/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103247",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Featured",
-   "Podcasts"
-  ],
-  "summary": "Join Glenn Jones and Christine Schneider on Parker’s Piece as walkers head into hidden parts of Cambridge in aid of Romsey Mill and Arthur Rank Hospice Charity.",
-  "published": "2026-09-13T12:10:55Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Cambridge Film Show: Practical Magic 2",
-  "url": "https://cambridge105.co.uk/filmshow-12-09-2026/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103243",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Cambridge Film Show",
-   "Featured",
-   "Podcasts"
-  ],
-  "summary": "The Film Show reviews the return of those cheeky witches in Practical Magic 2 as well as more vertical challenges in Fall 2. The team also review two films with […]",
-  "published": "2026-09-13T12:03:25Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "From the Terraces: Row Z: Royals visit the Abbey, City, Histon and women’s previews",
-  "url": "https://cambridge105.co.uk/from-the-terraces-10-09-2026/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103239",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Featured",
-   "From The Terraces",
-   "Podcasts"
-  ],
-  "summary": "Daniel Baker, Tim Armitage, Gary Atyes and Scott McGeorge preview the weekend’s football action including Cambridge United’s home match with Reading which is their first game since the controversial 2-2 […]",
-  "published": "2026-09-10T19:50:24Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Amplify! False Adults",
-  "url": "https://cambridge105.co.uk/amplify-09-09-2026/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103236",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Amplify!",
-   "Featured",
-   "Podcasts"
-  ],
-  "summary": "Justine Hatfield is joined by MCs Dronic and iPod from False Adults.",
-  "published": "2026-09-10T17:30:57Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
- },
- {
-  "source_id": "S005",
-  "title": "Neil Jones Rock Show: Magnum",
-  "url": "https://cambridge105.co.uk/neil-jones-08-09-2026/",
-  "kind": "article",
-  "external_id": "https://cambridge105.co.uk/?p=103232",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Featured",
-   "Podcasts",
-   "The Rock Show with Neil Jones"
-  ],
-  "summary": "Each week, Neil brings you the best in classic rock and metal, the latest new releases, breaking rock news, and emerging local talent. This week’s guests are Primus and Magnum. […]",
-  "published": "2026-09-10T17:23:33Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:26:01+00:00"
+  "fetched_at": "2026-10-05T22:24:25+00:00"
  }
 ]

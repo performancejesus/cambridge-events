@@ -24,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:38+00:00"
+  "fetched_at": "2026-10-06T00:10:12+00:00"
  },
  {
   "source_id": "S067",
@@ -51,34 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:41+00:00"
- },
- {
-  "source_id": "S067",
-  "title": "Feeringbury Manor — NGS garden opening",
-  "url": "https://ngs.org.uk/gardens/feeringbury-manor-co5/",
-  "kind": "event",
-  "external_id": "ngs-8412-2026-10-01",
-  "start": "2026-10-01",
-  "end": "2026-10-02",
-  "all_day": true,
-  "venue": "Feeringbury Manor",
-  "address": "Coggeshall Road, Feering",
-  "postcode": "CO5 9RB",
-  "lat": 51.861007,
-  "lon": 0.7055347,
-  "price": "£6, children free",
-  "status": null,
-  "organizer": "National Garden Scheme",
-  "categories": [
-   "garden",
-   "open garden"
-  ],
-  "summary": "There is always plenty to see in this peaceful 10 acre garden with two ponds and River Blackwater. Jewelled lawn in early April then spectacular blossom lead on to a huge number of different and colourful herbaceous plants, many unusual, culminating in a purple explosion of michaelmas daisies in late September.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:43:43+00:00"
+  "fetched_at": "2026-10-06T00:10:19+00:00"
  },
  {
   "source_id": "S067",
@@ -105,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:43+00:00"
+  "fetched_at": "2026-10-06T00:10:25+00:00"
  },
  {
   "source_id": "S067",
@@ -132,7 +105,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:43+00:00"
+  "fetched_at": "2026-10-06T00:10:25+00:00"
  },
  {
   "source_id": "S067",
@@ -159,7 +132,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:45+00:00"
+  "fetched_at": "2026-10-06T00:10:31+00:00"
  },
  {
   "source_id": "S067",
@@ -186,7 +159,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:47+00:00"
+  "fetched_at": "2026-10-06T00:10:37+00:00"
  },
  {
   "source_id": "S067",
@@ -213,34 +186,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:50+00:00"
- },
- {
-  "source_id": "S067",
-  "title": "Bramble House — NGS garden opening",
-  "url": "https://ngs.org.uk/gardens/bramble-house-cm6/",
-  "kind": "event",
-  "external_id": "ngs-48600-2026-10-03",
-  "start": "2026-10-03",
-  "end": "2026-10-04",
-  "all_day": true,
-  "venue": "Bramble House",
-  "address": "Pound Hill, Little Dunmow, Dunmow",
-  "postcode": "CM6 3HR",
-  "lat": 51.8672852,
-  "lon": 0.4094211,
-  "price": "£5, children free",
-  "status": null,
-  "organizer": "National Garden Scheme",
-  "categories": [
-   "garden",
-   "open garden"
-  ],
-  "summary": "This rural garden features a recently redesigned, south facing front courtyard. Herbaceous mixed borders with spring bulbs and autumnal colour. A large enclosed vegetable garden with potting shed and cold frames. A wildflower bank and woodland areas, mature trees, natural hedges and chemical free lawns. A redundant swimming pool area has been turned into a petanque pitch and gazebo.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:43:52+00:00"
+  "fetched_at": "2026-10-06T00:10:43+00:00"
  },
  {
   "source_id": "S067",
@@ -267,61 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:54+00:00"
- },
- {
-  "source_id": "S067",
-  "title": "Downing College — NGS garden opening",
-  "url": "https://findagarden.ngs.org.uk/garden/12682",
-  "kind": "event",
-  "external_id": "ngs-12682-2026-10-02T11:00:00",
-  "start": "2026-10-02T11:00:00",
-  "end": "2026-10-02T12:00:00",
-  "all_day": false,
-  "venue": "Downing College",
-  "address": "Regent Street, Cambridge",
-  "postcode": "CB2 1DQ",
-  "lat": 52.200923,
-  "lon": 0.125115,
-  "price": "£12.5",
-  "status": null,
-  "organizer": "National Garden Scheme",
-  "categories": [
-   "garden",
-   "open garden"
-  ],
-  "summary": "pre-booking essential · Book this tour to experience Downing College's 20 acre site containing an impressive diversity of gardens, lawns, trees and flowers hidden away in the heart of Cambridge. All tours are for those aged 16 years and over only. Please arrive by 11am for a prompt start",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:43:57+00:00"
- },
- {
-  "source_id": "S067",
-  "title": "Fullers Mill Garden — NGS garden opening",
-  "url": "https://ngs.org.uk/gardens/fullers-mill-garden-ip2/",
-  "kind": "event",
-  "external_id": "ngs-22031-2026-10-04T11:00:00",
-  "start": "2026-10-04T11:00:00",
-  "end": "2026-10-04T17:00:00",
-  "all_day": false,
-  "venue": "Fullers Mill Garden",
-  "address": "West Stow",
-  "postcode": "IP28 6HD",
-  "lat": 52.30678,
-  "lon": 0.6473035,
-  "price": "£10, children £4",
-  "status": null,
-  "organizer": "National Garden Scheme",
-  "categories": [
-   "garden",
-   "open garden"
-  ],
-  "summary": "This award-winning seven acre garden is a tranquil, peaceful and enchanting waterside oasis set in the heart of Suffolk. It combines dappled woodland with a plantsman’s collection of shrubs, perennials, lilies and marginal plants to create a year-round garden. Views of its fantastic displays of form and colour reflect off its mill pond, the River Lark and Culford Stream throughout the seasons.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:43:59+00:00"
+  "fetched_at": "2026-10-06T00:10:48+00:00"
  },
  {
   "source_id": "S067",
@@ -348,7 +240,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:02+00:00"
+  "fetched_at": "2026-10-06T00:10:55+00:00"
  },
  {
   "source_id": "S067",
@@ -375,15 +267,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:04+00:00"
+  "fetched_at": "2026-10-06T00:11:00+00:00"
  },
  {
   "source_id": "S067",
   "title": "Robinson College — NGS garden opening",
   "url": "https://ngs.org.uk/gardens/robinson-college-cb3/",
   "kind": "event",
-  "external_id": "ngs-10918-2026-09-30",
-  "start": "2026-09-30",
+  "external_id": "ngs-10918-2026-10-06",
+  "start": "2026-10-06",
   "end": "2026-12-22",
   "all_day": true,
   "venue": "Robinson College",
@@ -402,7 +294,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:06+00:00"
+  "fetched_at": "2026-10-06T00:11:07+00:00"
  },
  {
   "source_id": "S067",
@@ -429,6 +321,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:09+00:00"
+  "fetched_at": "2026-10-06T00:11:12+00:00"
  }
 ]

@@ -1,370 +1,6 @@
 [
  {
   "source_id": "S151",
-  "title": "Flo & Joan: With Feeling",
-  "url": "https://musiclivecambridge.com/gigs/flo-joan-with-feeling",
-  "kind": "event",
-  "external_id": "/gigs/flo-joan-with-feeling",
-  "start": "2026-09-30T19:30",
-  "end": null,
-  "all_day": false,
-  "venue": "Cambridge Junction",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Academy of Ancient Music – 1765: Times of Transition",
-  "url": "https://musiclivecambridge.com/gigs/academy-of-ancient-music-1765-times-of-transition",
-  "kind": "event",
-  "external_id": "/gigs/academy-of-ancient-music-1765-times-of-transition",
-  "start": "2026-09-30T19:30",
-  "end": "2026-09-30T21:30",
-  "all_day": false,
-  "venue": "West Road Concert Hall",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Open Mic Night @ The Boathouse",
-  "url": "https://musiclivecambridge.com/gigs/open-mic-night-the-boathouse-20260930",
-  "kind": "event",
-  "external_id": "/gigs/open-mic-night-the-boathouse-20260930",
-  "start": "2026-09-30T19:45",
-  "end": "2026-09-30T22:00",
-  "all_day": false,
-  "venue": "The Boathouse",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": "Every Wednesday from 7.45pm",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "The Lemonheads",
-  "url": "https://musiclivecambridge.com/gigs/the-lemonheads-2026-10-01",
-  "kind": "event",
-  "external_id": "/gigs/the-lemonheads-2026-10-01",
-  "start": "2026-10-01T19:00",
-  "end": "2026-10-01T23:00",
-  "all_day": false,
-  "venue": "Cambridge Junction",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": "Playing songs from the new album Love Chant out now via Fire Records, plus all the hits",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Lunchtime Recital - English Piano Trio",
-  "url": "https://musiclivecambridge.com/gigs/lunchtime-recital-english-piano-trio-ely-cathedral",
-  "kind": "event",
-  "external_id": "/gigs/lunchtime-recital-english-piano-trio-ely-cathedral",
-  "start": "2026-10-01T13:00",
-  "end": null,
-  "all_day": false,
-  "venue": "Ely Cathedral",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Joe Jackson",
-  "url": "https://musiclivecambridge.com/gigs/joe-jackson-hope-and-fury-tour-2026",
-  "kind": "event",
-  "external_id": "/gigs/joe-jackson-hope-and-fury-tour-2026",
-  "start": "2026-10-01T19:30",
-  "end": null,
-  "all_day": false,
-  "venue": "Cambridge Corn Exchange",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": "Hope and Fury Tour 2026",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Robert Jon & The Wreck",
-  "url": "https://musiclivecambridge.com/gigs/robert-jon-the-wreck",
-  "kind": "event",
-  "external_id": "/gigs/robert-jon-the-wreck",
-  "start": "2026-10-02T19:00",
-  "end": "2026-10-02T23:00",
-  "all_day": false,
-  "venue": "Cambridge Junction",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Steve Hackett",
-  "url": "https://musiclivecambridge.com/gigs/steve-hackett-best-of-genesis-solo-gems",
-  "kind": "event",
-  "external_id": "/gigs/steve-hackett-best-of-genesis-solo-gems",
-  "start": "2026-10-02T19:30",
-  "end": null,
-  "all_day": false,
-  "venue": "Cambridge Corn Exchange",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": "Best of Genesis and solo gems",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Jazz Sabbath",
-  "url": "https://musiclivecambridge.com/gigs/jazz-sabbath",
-  "kind": "event",
-  "external_id": "/gigs/jazz-sabbath",
-  "start": "2026-10-02T20:00",
-  "end": null,
-  "all_day": false,
-  "venue": "Cambridge Junction",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "40th Anniversary Concert - Season 1",
-  "url": "https://musiclivecambridge.com/gigs/40th-anniversary-concert-season-1-west-road-concer",
-  "kind": "event",
-  "external_id": "/gigs/40th-anniversary-concert-season-1-west-road-concer",
-  "start": "2026-10-03T19:30",
-  "end": "2026-10-03T21:30",
-  "all_day": false,
-  "venue": "West Road Concert Hall",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": "An exciting programme of early 20th-century English works",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Andy Bowie Quartet",
-  "url": "https://musiclivecambridge.com/gigs/andy-bowie-quartet-20261004",
-  "kind": "event",
-  "external_id": "/gigs/andy-bowie-quartet-20261004",
-  "start": "2026-10-04T19:30",
-  "end": "2026-10-04T22:00",
-  "all_day": false,
-  "venue": "The Tram Depot",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": "Local jazz quartet live here every Sunday",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Ballads And Songs: Sam Carter Sings Nic Jones",
-  "url": "https://musiclivecambridge.com/gigs/ballads-and-songs-sam-carter-sings-nic-jones",
-  "kind": "event",
-  "external_id": "/gigs/ballads-and-songs-sam-carter-sings-nic-jones",
-  "start": "2026-10-04T20:00",
-  "end": "2026-10-04T23:00",
-  "all_day": false,
-  "venue": "Cambridge Junction",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": "A live celebration of Nic Jones’ music, performed by BBC Folk Award winner Sam Carter",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Soundhunt: Evan Parker Quartet",
-  "url": "https://musiclivecambridge.com/gigs/soundhunt-evan-parker-quartet",
-  "kind": "event",
-  "external_id": "/gigs/soundhunt-evan-parker-quartet",
-  "start": "2026-10-04T20:00",
-  "end": null,
-  "all_day": false,
-  "venue": "Cambridge Junction",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Zephyrus Final Show",
-  "url": "https://musiclivecambridge.com/gigs/zephyrus-final-show-fundraiser-for-the-red-cross",
-  "kind": "event",
-  "external_id": "/gigs/zephyrus-final-show-fundraiser-for-the-red-cross",
-  "start": "2026-10-05T18:00",
-  "end": "2026-10-05T23:00",
-  "all_day": false,
-  "venue": "Cambridge Junction",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": "Fundraiser for the Red Cross",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
   "title": "Lime Garden",
   "url": "https://musiclivecambridge.com/gigs/lime-garden",
   "kind": "event",
@@ -387,7 +23,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -413,7 +49,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -439,7 +75,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -465,7 +101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -491,7 +127,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -517,7 +153,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -543,33 +179,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Reef",
-  "url": "https://musiclivecambridge.com/gigs/reef",
-  "kind": "event",
-  "external_id": "/gigs/reef",
-  "start": "2026-10-09T19:00",
-  "end": "2026-10-09T23:00",
-  "all_day": false,
-  "venue": "Cambridge Junction",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -595,7 +205,33 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Reef",
+  "url": "https://musiclivecambridge.com/gigs/reef",
+  "kind": "event",
+  "external_id": "/gigs/reef",
+  "start": "2026-10-09T19:00",
+  "end": "2026-10-09T23:00",
+  "all_day": false,
+  "venue": "Cambridge Junction",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -621,7 +257,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -647,33 +283,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Shiny New Model Festival 2026",
-  "url": "https://musiclivecambridge.com/gigs/shiny-new-model-festival-2026",
-  "kind": "event",
-  "external_id": "/gigs/shiny-new-model-festival-2026",
-  "start": "2026-10-10T13:00",
-  "end": "2026-10-10T23:00",
-  "all_day": false,
-  "venue": "Cambridge Junction",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -699,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -725,59 +335,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Eschalon +Akkadian +Overture (11th Oct 26) – The Portland Arms",
-  "url": "https://musiclivecambridge.com/gigs/eschalon-akkadian-overture-11th-oct-26-the-portlan",
-  "kind": "event",
-  "external_id": "/gigs/eschalon-akkadian-overture-11th-oct-26-the-portlan",
-  "start": "2026-10-11T19:30",
-  "end": "2026-10-11T23:00",
-  "all_day": false,
-  "venue": "The Portland Arms",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "Kris Barras Band",
-  "url": "https://musiclivecambridge.com/gigs/kris-barras-band",
-  "kind": "event",
-  "external_id": "/gigs/kris-barras-band",
-  "start": "2026-10-11T18:30",
-  "end": null,
-  "all_day": false,
-  "venue": "MASH Cambridge",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": "One of modern hard rock's most exciting breakouts in recent years",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -803,7 +361,59 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Kris Barras Band",
+  "url": "https://musiclivecambridge.com/gigs/kris-barras-band",
+  "kind": "event",
+  "external_id": "/gigs/kris-barras-band",
+  "start": "2026-10-11T18:30",
+  "end": null,
+  "all_day": false,
+  "venue": "MASH Cambridge",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": "One of modern hard rock's most exciting breakouts in recent years",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:35+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Eschalon +Akkadian +Overture (11th Oct 26) – The Portland Arms",
+  "url": "https://musiclivecambridge.com/gigs/eschalon-akkadian-overture-11th-oct-26-the-portlan",
+  "kind": "event",
+  "external_id": "/gigs/eschalon-akkadian-overture-11th-oct-26-the-portlan",
+  "start": "2026-10-11T19:30",
+  "end": "2026-10-11T23:00",
+  "all_day": false,
+  "venue": "The Portland Arms",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -829,7 +439,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -855,7 +465,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -881,7 +491,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -907,7 +517,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -933,7 +543,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -959,7 +569,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -985,7 +595,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -1011,7 +621,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -1037,7 +647,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -1063,7 +673,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -1089,7 +699,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -1115,33 +725,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
- },
- {
-  "source_id": "S151",
-  "title": "The Big Pants Party",
-  "url": "https://musiclivecambridge.com/gigs/the-big-pants-party",
-  "kind": "event",
-  "external_id": "/gigs/the-big-pants-party",
-  "start": "2026-10-16T19:30",
-  "end": null,
-  "all_day": false,
-  "venue": "Cambridge Corn Exchange",
-  "address": "Cambridge",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "concert"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -1167,7 +751,33 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "The Big Pants Party",
+  "url": "https://musiclivecambridge.com/gigs/the-big-pants-party",
+  "kind": "event",
+  "external_id": "/gigs/the-big-pants-party",
+  "start": "2026-10-16T19:30",
+  "end": null,
+  "all_day": false,
+  "venue": "Cambridge Corn Exchange",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -1193,7 +803,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
  },
  {
   "source_id": "S151",
@@ -1219,7 +829,33 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:35+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Georgia Nevada + Kier + Rhiannon Paige",
+  "url": "https://musiclivecambridge.com/gigs/georgia-nevada-kier-and-rhiannon-paige-18th-oct-26",
+  "kind": "event",
+  "external_id": "/gigs/georgia-nevada-kier-and-rhiannon-paige-18th-oct-26",
+  "start": "2026-10-18T19:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Portland Arms",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": "The Worst Kept Secret tour",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:41+00:00"
  },
  {
   "source_id": "S151",
@@ -1245,7 +881,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:41+00:00"
  },
  {
   "source_id": "S151",
@@ -1271,7 +907,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:41+00:00"
  },
  {
   "source_id": "S151",
@@ -1297,6 +933,370 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:04+00:00"
+  "fetched_at": "2026-10-06T00:04:41+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Sounds Of The 60’s Live - Hosted By Tony Blackburn OBE",
+  "url": "https://musiclivecambridge.com/gigs/sounds-of-the-60s-live-hosted-by-tony-blackburn-ob",
+  "kind": "event",
+  "external_id": "/gigs/sounds-of-the-60s-live-hosted-by-tony-blackburn-ob",
+  "start": "2026-10-19T19:30",
+  "end": null,
+  "all_day": false,
+  "venue": "Cambridge Corn Exchange",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:41+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "The Mary Wallopers",
+  "url": "https://musiclivecambridge.com/gigs/the-mary-wallopers-cambridge-corn-exchange",
+  "kind": "event",
+  "external_id": "/gigs/the-mary-wallopers-cambridge-corn-exchange",
+  "start": "2026-10-20T20:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Cambridge Corn Exchange",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:47+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Undercover Hippy",
+  "url": "https://musiclivecambridge.com/gigs/undercover-hippy-21st-oct-26-the-portland-arms",
+  "kind": "event",
+  "external_id": "/gigs/undercover-hippy-21st-oct-26-the-portland-arms",
+  "start": "2026-10-21T19:30",
+  "end": "2026-10-21T23:00",
+  "all_day": false,
+  "venue": "The Portland Arms",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": "Politically driven roots reggae hip-hop with a sly sense of humour",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:53+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Britten Sinfonia: Ancient Greek Meze",
+  "url": "https://musiclivecambridge.com/gigs/ancient-greek-meze",
+  "kind": "event",
+  "external_id": "/gigs/ancient-greek-meze",
+  "start": "2026-10-21T19:30",
+  "end": null,
+  "all_day": false,
+  "venue": "West Road Concert Hall",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": "An atmospheric evening of pieces based on ancient Greek myths, with brilliant comedic commentary",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:04:59+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "The Undercover Hippy + Foreign Locals",
+  "url": "https://musiclivecambridge.com/gigs/the-undercover-hippy-2026-10-21",
+  "kind": "event",
+  "external_id": "/gigs/the-undercover-hippy-2026-10-21",
+  "start": "2026-10-21T19:30",
+  "end": "2026-10-21T23:00",
+  "all_day": false,
+  "venue": "Cambridge Junction",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": "Politically driven roots reggae hip-hop with a sly sense of humour",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:05+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Leo Sayer - Can't Stop Loving You",
+  "url": "https://musiclivecambridge.com/gigs/leo-sayer-cant-stop-loving-you",
+  "kind": "event",
+  "external_id": "/gigs/leo-sayer-cant-stop-loving-you",
+  "start": "2026-10-22T19:30",
+  "end": null,
+  "all_day": false,
+  "venue": "Cambridge Corn Exchange",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:11+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Martin McAloon",
+  "url": "https://musiclivecambridge.com/gigs/martin-mcaloon-cambridge-tickets-at-storeys-field-",
+  "kind": "event",
+  "external_id": "/gigs/martin-mcaloon-cambridge-tickets-at-storeys-field-",
+  "start": "2026-10-22T19:30",
+  "end": null,
+  "all_day": false,
+  "venue": "Storey's Field Centre",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:17+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Duke Special",
+  "url": "https://musiclivecambridge.com/gigs/duke-special",
+  "kind": "event",
+  "external_id": "/gigs/duke-special",
+  "start": "2026-10-22T20:00",
+  "end": "2026-10-22T23:00",
+  "all_day": false,
+  "venue": "Cambridge Junction",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:23+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Megson",
+  "url": "https://musiclivecambridge.com/gigs/megson-2026-10-22",
+  "kind": "event",
+  "external_id": "/gigs/megson-2026-10-22",
+  "start": "2026-10-22T20:00",
+  "end": "2026-10-22T23:00",
+  "all_day": false,
+  "venue": "Cambridge Junction",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": "A truly unique brand of folk music",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:29+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "The Bluetones + Support TBC",
+  "url": "https://musiclivecambridge.com/gigs/the-bluetones-2026-10-23",
+  "kind": "event",
+  "external_id": "/gigs/the-bluetones-2026-10-23",
+  "start": "2026-10-23T19:00",
+  "end": "2026-10-23T23:00",
+  "all_day": false,
+  "venue": "Cambridge Junction",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": "Expecting to Fly 30th anniversary tour",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:35+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "An Evening of Kate Bush",
+  "url": "https://musiclivecambridge.com/gigs/an-evening-of-kate-bush",
+  "kind": "event",
+  "external_id": "/gigs/an-evening-of-kate-bush",
+  "start": "2026-10-23T19:30",
+  "end": null,
+  "all_day": false,
+  "venue": "Ely Cathedral",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": "Performed live by a full band, vocalists and string quartet",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:41+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Din of Celestial Birds + Wildernesses",
+  "url": "https://musiclivecambridge.com/gigs/din-of-celestial-birds",
+  "kind": "event",
+  "external_id": "/gigs/din-of-celestial-birds",
+  "start": "2026-10-24T18:30",
+  "end": null,
+  "all_day": false,
+  "venue": "MASH Cambridge",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:47+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "New Routes: Bête Noire + Dan Wilde",
+  "url": "https://musiclivecambridge.com/gigs/new-routes-bete-noire-dan-wilde",
+  "kind": "event",
+  "external_id": "/gigs/new-routes-bete-noire-dan-wilde",
+  "start": "2026-10-24T19:30",
+  "end": null,
+  "all_day": false,
+  "venue": "Cambridge Junction",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": "Another instalment in the New Routes series, an evening of acoustic, folk and roots artists",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:53+00:00"
+ },
+ {
+  "source_id": "S151",
+  "title": "Black Slate",
+  "url": "https://musiclivecambridge.com/gigs/black-slate",
+  "kind": "event",
+  "external_id": "/gigs/black-slate",
+  "start": "2026-10-25T19:00",
+  "end": "2026-10-25T23:00",
+  "all_day": false,
+  "venue": "Cambridge Junction",
+  "address": "Cambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "concert"
+  ],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:05:59+00:00"
  }
 ]

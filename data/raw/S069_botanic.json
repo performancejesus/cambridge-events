@@ -21,31 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
- },
- {
-  "source_id": "S069",
-  "title": "Fun with Fungi",
-  "url": "https://www.botanic.cam.ac.uk/whats-on/fun-with-fungi/",
-  "kind": "event",
-  "external_id": "https://www.botanic.cam.ac.uk/whats-on/fun-with-fungi/",
-  "start": "2026-10-03T10:00",
-  "end": null,
-  "all_day": false,
-  "venue": "Cambridge University Botanic Garden",
-  "address": "1 Brookside, Cambridge",
-  "postcode": "CB2 1JE",
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:22:37+00:00"
  },
  {
   "source_id": "S069",
@@ -69,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:22:43+00:00"
  },
  {
   "source_id": "S069",
@@ -93,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:22:49+00:00"
  },
  {
   "source_id": "S069",
@@ -117,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:22:55+00:00"
  },
  {
   "source_id": "S069",
@@ -141,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:01+00:00"
  },
  {
   "source_id": "S069",
@@ -165,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:07+00:00"
  },
  {
   "source_id": "S069",
@@ -189,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:13+00:00"
  },
  {
   "source_id": "S069",
@@ -213,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:19+00:00"
  },
  {
   "source_id": "S069",
@@ -237,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:25+00:00"
  },
  {
   "source_id": "S069",
@@ -261,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:31+00:00"
  },
  {
   "source_id": "S069",
@@ -285,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:37+00:00"
  },
  {
   "source_id": "S069",
@@ -309,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:43+00:00"
  },
  {
   "source_id": "S069",
@@ -333,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:49+00:00"
  },
  {
   "source_id": "S069",
@@ -357,7 +333,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:23:55+00:00"
  },
  {
   "source_id": "S069",
@@ -381,7 +357,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:24:01+00:00"
  },
  {
   "source_id": "S069",
@@ -405,7 +381,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:24:07+00:00"
  },
  {
   "source_id": "S069",
@@ -429,6 +405,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:10+00:00"
+  "fetched_at": "2026-10-05T23:24:13+00:00"
  }
 ]

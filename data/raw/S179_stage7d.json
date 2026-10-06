@@ -1,33 +1,6 @@
 [
  {
   "source_id": "S179",
-  "title": "Toddle into Tech",
-  "url": "https://www.museumoftechnology.com/calendar/2026/10/2/toddle-into-tech",
-  "kind": "event",
-  "external_id": "2026-10-02|Toddle into Tech",
-  "start": "2026-10-02",
-  "end": null,
-  "all_day": true,
-  "venue": "Cambridge Museum of Technology",
-  "address": "Riverside, Cambridge",
-  "postcode": "CB5 8HN",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "museum",
-   "family"
-  ],
-  "summary": "family",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:27+00:00"
- },
- {
-  "source_id": "S179",
   "title": "Home Ed Tech Club",
   "url": "https://www.museumoftechnology.com/calendar/2026/10/9/home-ed-tech-club",
   "kind": "event",
@@ -51,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:27+00:00"
+  "fetched_at": "2026-10-06T00:13:30+00:00"
  },
  {
   "source_id": "S179",
@@ -78,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:27+00:00"
+  "fetched_at": "2026-10-06T00:13:30+00:00"
  },
  {
   "source_id": "S179",
@@ -105,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:27+00:00"
+  "fetched_at": "2026-10-06T00:13:30+00:00"
  },
  {
   "source_id": "S179",
@@ -132,7 +105,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:27+00:00"
+  "fetched_at": "2026-10-06T00:13:30+00:00"
  },
  {
   "source_id": "S179",
@@ -159,7 +132,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:27+00:00"
+  "fetched_at": "2026-10-06T00:13:30+00:00"
  },
  {
   "source_id": "S179",
@@ -186,6 +159,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:27+00:00"
+  "fetched_at": "2026-10-06T00:13:30+00:00"
  }
 ]

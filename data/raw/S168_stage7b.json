@@ -1,33 +1,6 @@
 [
  {
   "source_id": "S168",
-  "title": "Becky Shaw",
-  "url": "https://www.camdram.net/shows/2026-becky-shaw",
-  "kind": "event",
-  "external_id": "camdram-performance-10646",
-  "start": "2026-09-29T18:00:00+00:00",
-  "end": "2026-10-03",
-  "all_day": false,
-  "venue": "Corpus Playroom",
-  "address": "Corpus Playroom, St Edward's Passage, Cambridge",
-  "postcode": "CB2 3PJ",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "theatre",
-   "student"
-  ],
-  "summary": "19:00, Tue 29th September – Sat 3rd October 2026 ·  About Development API Privacy Policy FAQ Contact Us Log in with Tip: Press the 's' or forward-slash key to jump to search! No results found for \" \" Search is not available at the moment Home Diary Vacancies Societies Venues Events Roles Events Roles Show Admin Add a show Becky Shaw 19:00, Tue 29th September – Sat 3rd October 2026 at Corpus Playroom Summer Vacation Contact organizers Cast Production Team Director – Cat Nicol Production Manager – Ian Bruno Print sign in sheet Download sign in sheet (CSV) Site Map Home Diary Vacancies Societies Venues People About About Camdram Development API D",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:43:31+00:00"
- },
- {
-  "source_id": "S168",
   "title": "The Garden of Love SHOWCASE",
   "url": "https://www.camdram.net/shows/2026-the-garden-of-love-showcase",
   "kind": "event",
@@ -51,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:31+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -78,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -105,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -132,7 +105,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -159,7 +132,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -186,7 +159,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -213,7 +186,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -240,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -267,7 +240,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -294,7 +267,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -321,7 +294,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -348,34 +321,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
- },
- {
-  "source_id": "S168",
-  "title": "FESTEN (A Theatrical Formal Experience)",
-  "url": "https://www.camdram.net/shows/2026-festen-a-theatrical-formal-experience",
-  "kind": "event",
-  "external_id": "camdram-performance-10718",
-  "start": "2026-10-24T18:30:00+00:00",
-  "end": null,
-  "all_day": false,
-  "venue": "Trinity Hall Graham Storey Room",
-  "address": "Trinity Hall, Trinity Lane, Cambridge",
-  "postcode": "CB2 1TJ",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "theatre",
-   "student"
-  ],
-  "summary": "19:30, Sat 24th October 2026 ·  About Development API Privacy Policy FAQ Contact Us Log in with Tip: Press the 's' or forward-slash key to jump to search! No results found for \" \" Search is not available at the moment Home Diary Vacancies Societies Venues Events Roles Events Roles Show Admin Add a show Tickets: £30 The Preston Society presents... FESTEN (A Theatrical Formal Experience) By Based on the play by David Eldridge 19:30, Sat 24th October 2026 at Trinity Hall Graham Storey Room Michaelmas Week 2 Content warning (may contain spoilers) Click to expand Click to close Rape and/or sexual assault Child abuse and/or paedo",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -402,7 +348,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -429,7 +375,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -456,7 +402,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -483,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
  },
  {
   "source_id": "S168",
@@ -510,7 +456,34 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:43+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "The Gentleman's Ruse",
+  "url": "https://www.camdram.net/shows/2026-the-gentlemans-ruse-1",
+  "kind": "event",
+  "external_id": "camdram-performance-10735",
+  "start": "2026-11-06T19:00:00+00:00",
+  "end": "2026-11-08",
+  "all_day": false,
+  "venue": "Pembroke New Cellars",
+  "address": "Pembroke College, Trumpington Street, Cambridge",
+  "postcode": "CB2 1RF",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "19:00, Fri 6th – Sun 8th November 2026 ·  About Development API Privacy Policy FAQ Contact Us Log in with Tip: Press the 's' or forward-slash key to jump to search! No results found for \" \" Search is not available at the moment Home Diary Vacancies Societies Venues Events Roles Events Roles Show Admin Add a show Pembroke Players presents... The Gentleman's Ruse By Emily Farrell 19:00, Fri 6th – Sun 8th November 2026 at Pembroke New Cellars Michaelmas Week 4 to Week 5 Content warning (may contain spoilers) Click to expand Click to close Sexism, Nude female painting, innuendos Feel like being a part of a riotously funny comedy? Who get",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -537,7 +510,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -564,7 +537,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -591,7 +564,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -618,7 +591,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -645,7 +618,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -672,7 +645,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -699,7 +672,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -726,7 +699,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -753,7 +726,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -780,7 +753,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -807,7 +780,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
  },
  {
   "source_id": "S168",
@@ -834,7 +807,34 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:48+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "In Every Life",
+  "url": "https://www.camdram.net/shows/2026-in-every-life",
+  "kind": "event",
+  "external_id": "camdram-performance-10733",
+  "start": "2026-11-25T19:00:00+00:00",
+  "end": "2026-11-27",
+  "all_day": false,
+  "venue": "Pembroke New Cellars",
+  "address": "Pembroke College, Trumpington Street, Cambridge",
+  "postcode": "CB2 1RF",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "19:00, Wed 25th – Fri 27th November 2026 ·  About Development API Privacy Policy FAQ Contact Us Log in with Tip: Press the 's' or forward-slash key to jump to search! No results found for \" \" Search is not available at the moment Home Diary Vacancies Societies Venues Events Roles Events Roles Show Admin Add a show Pembroke Players presents... In Every Life By Sophia Emmett 19:00, Wed 25th – Fri 27th November 2026 at Pembroke New Cellars Michaelmas Week 7 Told between two timelines in the 1890s and present day, Arabella and Nellie are preparing to enter British society with their debuts, but struggle to adapt to a new life of balls and ",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:09:55+00:00"
  },
  {
   "source_id": "S168",
@@ -861,7 +861,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:55+00:00"
  },
  {
   "source_id": "S168",
@@ -888,7 +888,61 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:09:55+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "The Tempest",
+  "url": "https://www.camdram.net/shows/2026-the-tempest",
+  "kind": "event",
+  "external_id": "camdram-performance-10726",
+  "start": "2026-11-28T19:30:00+00:00",
+  "end": "2026-11-29",
+  "all_day": false,
+  "venue": "Emmanuel Queen's Building",
+  "address": "Emmanuel College, St Andrew's Street, Cambridge",
+  "postcode": "CB2 3AP",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "19:30, Sat 28th – Sun 29th November 2026",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:10:00+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "Pem Sketch Night",
+  "url": "https://www.camdram.net/shows/2026-pem-sketch-night",
+  "kind": "event",
+  "external_id": "camdram-performance-10727",
+  "start": "2026-11-29T21:00:00+00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Pembroke New Cellars",
+  "address": "Pembroke College, Trumpington Street, Cambridge",
+  "postcode": "CB2 1RF",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "21:00, Sun 29th November 2026",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:10:00+00:00"
  },
  {
   "source_id": "S168",
@@ -915,7 +969,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:10:00+00:00"
  },
  {
   "source_id": "S168",
@@ -942,6 +996,195 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:43:33+00:00"
+  "fetched_at": "2026-10-06T00:10:00+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "The Well of Loneliness",
+  "url": "https://www.camdram.net/shows/2027-the-well-of-loneliness",
+  "kind": "event",
+  "external_id": "camdram-performance-10659",
+  "start": "2027-01-26T19:00:00+00:00",
+  "end": "2027-01-30",
+  "all_day": false,
+  "venue": "Corpus Playroom",
+  "address": "Corpus Playroom, St Edward's Passage, Cambridge",
+  "postcode": "CB2 3PJ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "19:00, Tue 26th – Sat 30th January 2027",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:10:00+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "Venus and Adonis",
+  "url": "https://www.camdram.net/shows/2027-venus-and-adonis",
+  "kind": "event",
+  "external_id": "camdram-performance-10711",
+  "start": "2027-02-18T20:00:00+00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Emmanuel College Chapel",
+  "address": "Emmanuel College, St Andrew's Street, Cambridge",
+  "postcode": "CB2 3AP",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "20:00, Thu 18th February 2027",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:10:00+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "Venus and Adonis",
+  "url": "https://www.camdram.net/shows/2027-venus-and-adonis",
+  "kind": "event",
+  "external_id": "camdram-performance-10693",
+  "start": "2027-02-19T18:00:00+00:00",
+  "end": "2027-02-20",
+  "all_day": false,
+  "venue": "Emmanuel College Chapel",
+  "address": "Emmanuel College, St Andrew's Street, Cambridge",
+  "postcode": "CB2 3AP",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "18:00, Fri 19th – Sat 20th February 2027",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:10:00+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "CU Dance Society: Annual Show",
+  "url": "https://www.camdram.net/shows/2027-cu-dance-society-annual-show",
+  "kind": "event",
+  "external_id": "camdram-performance-10697",
+  "start": "2027-02-19T19:30:00+00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Great Hall at The Leys",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "19:30, Fri 19th February 2027",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:10:00+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "CU Dance Society: Annual Show",
+  "url": "https://www.camdram.net/shows/2027-cu-dance-society-annual-show",
+  "kind": "event",
+  "external_id": "camdram-performance-10695",
+  "start": "2027-02-20T14:00:00+00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Great Hall at The Leys",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "14:00, Sat 20th February 2027",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:10:00+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "CU Dance Society: Annual Show",
+  "url": "https://www.camdram.net/shows/2027-cu-dance-society-annual-show",
+  "kind": "event",
+  "external_id": "camdram-performance-10696",
+  "start": "2027-02-20T19:30:00+00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Great Hall at The Leys",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "19:30, Sat 20th February 2027",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:10:00+00:00"
+ },
+ {
+  "source_id": "S168",
+  "title": "FESTEN (A Theatrical Formal Experience)",
+  "url": "https://www.camdram.net/shows/2027-festen-a-theatrical-formal-experience",
+  "kind": "event",
+  "external_id": "camdram-performance-10718",
+  "start": "2027-02-27T19:30:00+00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "Trinity Hall Graham Storey Room",
+  "address": "Trinity Hall, Trinity Lane, Cambridge",
+  "postcode": "CB2 1TJ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "theatre",
+   "student"
+  ],
+  "summary": "19:30, Sat 27th February 2027",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:10:00+00:00"
  }
 ]

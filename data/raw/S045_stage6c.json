@@ -24,17 +24,17 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:41:18+00:00"
+  "fetched_at": "2026-10-06T00:08:40+00:00"
  },
  {
   "source_id": "S045",
-  "title": "Jet Lag: The Game Japanorama Finale",
-  "url": "https://www.picturehouses.com/movie-details/000/HO00018557/jet-lag-the-game-japanorama-finale?filter=",
+  "title": "Digger",
+  "url": "https://www.picturehouses.com/movie-details/000/HO00018431/digger",
   "kind": "event",
-  "external_id": "2026-10-03|Jet Lag: The Game Japanorama Finale",
-  "start": "2026-10-03T17:30",
+  "external_id": "2026-10-06|Digger",
+  "start": "2026-10-06",
   "end": null,
-  "all_day": false,
+  "all_day": true,
   "venue": "Arts Picturehouse",
   "address": "38-39 St Andrew's Street, Cambridge",
   "postcode": "CB2 3AR",
@@ -45,13 +45,121 @@
   "organizer": null,
   "categories": [
    "film",
-   "special screening"
+   "now playing"
   ],
-  "summary": "special screening",
+  "summary": "now playing",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:41:18+00:00"
+  "fetched_at": "2026-10-06T00:08:40+00:00"
+ },
+ {
+  "source_id": "S045",
+  "title": "Hope",
+  "url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
+  "kind": "event",
+  "external_id": "2026-10-06|Hope",
+  "start": "2026-10-06",
+  "end": null,
+  "all_day": true,
+  "venue": "Arts Picturehouse",
+  "address": "38-39 St Andrew's Street, Cambridge",
+  "postcode": "CB2 3AR",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "now playing"
+  ],
+  "summary": "now playing",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:08:40+00:00"
+ },
+ {
+  "source_id": "S045",
+  "title": "Sense and Sensibility",
+  "url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
+  "kind": "event",
+  "external_id": "2026-10-06|Sense and Sensibility",
+  "start": "2026-10-06",
+  "end": null,
+  "all_day": true,
+  "venue": "Arts Picturehouse",
+  "address": "38-39 St Andrew's Street, Cambridge",
+  "postcode": "CB2 3AR",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "now playing"
+  ],
+  "summary": "now playing",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:08:40+00:00"
+ },
+ {
+  "source_id": "S045",
+  "title": "Her Private Hell",
+  "url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
+  "kind": "event",
+  "external_id": "2026-10-06|Her Private Hell",
+  "start": "2026-10-06",
+  "end": null,
+  "all_day": true,
+  "venue": "Arts Picturehouse",
+  "address": "38-39 St Andrew's Street, Cambridge",
+  "postcode": "CB2 3AR",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "now playing"
+  ],
+  "summary": "now playing",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:08:40+00:00"
+ },
+ {
+  "source_id": "S045",
+  "title": "Digger",
+  "url": "https://www.picturehouses.com/movie-details/000/HO00018431/digger",
+  "kind": "event",
+  "external_id": "now|Digger",
+  "start": "2026-10-06",
+  "end": "2026-10-12",
+  "all_day": true,
+  "venue": "Arts Picturehouse",
+  "address": "38-39 St Andrew's Street, Cambridge",
+  "postcode": "CB2 3AR",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "now playing"
+  ],
+  "summary": "в прокате",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:08:40+00:00"
  },
  {
   "source_id": "S045",
@@ -59,8 +167,8 @@
   "url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
   "kind": "event",
   "external_id": "now|Hope",
-  "start": "2026-09-30",
-  "end": "2026-10-06",
+  "start": "2026-10-06",
+  "end": "2026-10-12",
   "all_day": true,
   "venue": "Arts Picturehouse",
   "address": "38-39 St Andrew's Street, Cambridge",
@@ -78,7 +186,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:41:18+00:00"
+  "fetched_at": "2026-10-06T00:08:40+00:00"
  },
  {
   "source_id": "S045",
@@ -86,8 +194,8 @@
   "url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
   "kind": "event",
   "external_id": "now|Sense and Sensibility",
-  "start": "2026-09-30",
-  "end": "2026-10-06",
+  "start": "2026-10-06",
+  "end": "2026-10-12",
   "all_day": true,
   "venue": "Arts Picturehouse",
   "address": "38-39 St Andrew's Street, Cambridge",
@@ -105,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:41:18+00:00"
+  "fetched_at": "2026-10-06T00:08:40+00:00"
  },
  {
   "source_id": "S045",
@@ -113,8 +221,8 @@
   "url": "https://www.picturehouses.com/cinema/arts-picturehouse-cambridge",
   "kind": "event",
   "external_id": "now|Her Private Hell",
-  "start": "2026-09-30",
-  "end": "2026-10-06",
+  "start": "2026-10-06",
+  "end": "2026-10-12",
   "all_day": true,
   "venue": "Arts Picturehouse",
   "address": "38-39 St Andrew's Street, Cambridge",
@@ -132,6 +240,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:41:18+00:00"
+  "fetched_at": "2026-10-06T00:08:40+00:00"
  }
 ]

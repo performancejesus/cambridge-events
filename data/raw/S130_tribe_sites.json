@@ -1,34 +1,6 @@
 [
  {
   "source_id": "S130",
-  "title": "Little Feet, Big Impressions",
-  "url": "https://www.museumofcambridge.org.uk/event/little-feet-big-impressions-62/",
-  "kind": "event",
-  "external_id": "17101",
-  "start": "2026-09-30T10:30:00",
-  "end": "2026-09-30T12:00:00",
-  "all_day": false,
-  "venue": "Enid Porter Room, Museum of Cambridge",
-  "address": "2-3 Castle Street, Cambridge, CB3 0AQ",
-  "postcode": "CB3 0AQ",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Activity",
-   "Arts and Crafts",
-   "Museum"
-  ],
-  "summary": "Little Feet, Big Impressions at the Museum of Cambridge! Join us for our programme of FREE storytelling and activities every two weeks for families with children aged 1-5. Be welcomed into the Museum’s purpose-built event space, the Enid Porter Room, with complementary tea and coffee, before enteri…",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:38:59+00:00"
- },
- {
-  "source_id": "S130",
   "title": "Exhibition: Folklore",
   "url": "https://www.museumofcambridge.org.uk/event/folklore/",
   "kind": "event",
@@ -53,7 +25,35 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:59+00:00"
+  "fetched_at": "2026-10-05T23:57:22+00:00"
+ },
+ {
+  "source_id": "S130",
+  "title": "October Half Term 2026 – Corn Dollies and Witch Bottles",
+  "url": "https://www.museumofcambridge.org.uk/event/october-half-term-2026/",
+  "kind": "event",
+  "external_id": "22032",
+  "start": "2026-10-24T00:00:00",
+  "end": "2026-11-01T23:59:59",
+  "all_day": true,
+  "venue": "The Museum of Cambridge",
+  "address": "2-3 Castle Street, Cambridge, CB3 0AQ",
+  "postcode": "CB3 0AQ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Activity",
+   "Arts and Crafts",
+   "Museum"
+  ],
+  "summary": "Folklore runs through the Museum this Half Term! Inspired by the Museum’s new temporary exhibition, Folklore, we’re bringing a Witch Bottle trail and Corn Dolly crafting into the Museum as the witchy vibes escape the attic. Follow the trail throughout the permanent displays, collecting the ingredie…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T23:57:22+00:00"
  },
  {
   "source_id": "S130",
@@ -81,7 +81,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:59+00:00"
+  "fetched_at": "2026-10-05T23:57:22+00:00"
  },
  {
   "source_id": "S130",
@@ -109,7 +109,59 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:59+00:00"
+  "fetched_at": "2026-10-05T23:57:22+00:00"
+ },
+ {
+  "source_id": "S130",
+  "title": "Winter Calling",
+  "url": "https://www.museumofcambridge.org.uk/event/winter-calling/",
+  "kind": "event",
+  "external_id": "22021",
+  "start": "2026-11-28T19:00:00",
+  "end": "2026-11-28T21:00:00",
+  "all_day": false,
+  "venue": "Enid Porter Room, Museum of Cambridge",
+  "address": "2-3 Castle Street, Cambridge, CB3 0AQ",
+  "postcode": "CB3 0AQ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Museum"
+  ],
+  "summary": "Winter calls to you. Winter stories and songs to warm the bones and stir the heart. From true events in snow-clad forests, to solstice legends and fiery folk tales, this is a show, humming with myth and music, that celebrates the warmth, hope and glittering imagination that bring us together in the…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T23:57:22+00:00"
+ },
+ {
+  "source_id": "S130",
+  "title": "Winter Calling",
+  "url": "https://www.museumofcambridge.org.uk/event/winter-calling-2/",
+  "kind": "event",
+  "external_id": "22025",
+  "start": "2026-11-29T19:00:00",
+  "end": "2026-11-29T21:00:00",
+  "all_day": false,
+  "venue": "Enid Porter Room, Museum of Cambridge",
+  "address": "2-3 Castle Street, Cambridge, CB3 0AQ",
+  "postcode": "CB3 0AQ",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Museum"
+  ],
+  "summary": "Winter calls to you. Winter stories and songs to warm the bones and stir the heart. From true events in snow-clad forests, to solstice legends and fiery folk tales, this is a show, humming with myth and music, that celebrates the warmth, hope and glittering imagination that bring us together in the…",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T23:57:22+00:00"
  },
  {
   "source_id": "S130",
@@ -137,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:59+00:00"
+  "fetched_at": "2026-10-05T23:57:22+00:00"
  },
  {
   "source_id": "S130",
@@ -165,7 +217,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:59+00:00"
+  "fetched_at": "2026-10-05T23:57:22+00:00"
  },
  {
   "source_id": "S130",
@@ -193,7 +245,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:59+00:00"
+  "fetched_at": "2026-10-05T23:57:22+00:00"
  },
  {
   "source_id": "S130",
@@ -221,6 +273,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:38:59+00:00"
+  "fetched_at": "2026-10-05T23:57:22+00:00"
  }
 ]

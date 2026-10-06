@@ -1,30 +1,6 @@
 [
  {
   "source_id": "S153",
-  "title": "Music at the Museum",
-  "url": "https://www.roystonmuseum.org.uk/what-s-on",
-  "kind": "event",
-  "external_id": "music-at-the-museum#2026-10-02",
-  "start": "2026-10-02",
-  "end": null,
-  "all_day": true,
-  "venue": "Royston Museum",
-  "address": "Lower King Street, Royston",
-  "postcode": "SG8 5AL",
-  "lat": null,
-  "lon": null,
-  "price": "£15 per person",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
- },
- {
-  "source_id": "S153",
   "title": "Museum Tots - Shopping",
   "url": "https://www.roystonmuseum.org.uk/what-s-on",
   "kind": "event",
@@ -47,7 +23,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -73,7 +49,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -97,7 +73,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -121,7 +97,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -145,7 +121,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -169,7 +145,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -193,7 +169,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -219,7 +195,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -245,7 +221,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -269,7 +245,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -295,7 +271,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -319,7 +295,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -343,7 +319,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -367,7 +343,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -393,7 +369,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -417,7 +393,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
@@ -441,15 +417,39 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
+ },
+ {
+  "source_id": "S153",
+  "title": "Workshop: First Impressions - Kids Festive Printing",
+  "url": "https://www.roystonmuseum.org.uk/what-s-on",
+  "kind": "event",
+  "external_id": "workshop-first-impressions-kids-festive-printing#2026-12-06",
+  "start": "2026-12-06",
+  "end": null,
+  "all_day": true,
+  "venue": "Royston Museum",
+  "address": "Lower King Street, Royston",
+  "postcode": "SG8 5AL",
+  "lat": null,
+  "lon": null,
+  "price": "£7.50 / Booking required",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
   "title": "Play in the Past",
   "url": "https://www.roystonmuseum.org.uk/what-s-on",
   "kind": "event",
-  "external_id": "play-in-the-past#2026-10-01",
-  "start": "2026-10-01",
+  "external_id": "play-in-the-past#2026-10-08",
+  "start": "2026-10-08",
   "end": null,
   "all_day": true,
   "venue": "Royston Museum",
@@ -465,15 +465,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  },
  {
   "source_id": "S153",
   "title": "Royston Printmakers",
   "url": "https://www.roystonmuseum.org.uk/what-s-on",
   "kind": "event",
-  "external_id": "royston-printmakers#2026-10-01",
-  "start": "2026-10-01",
+  "external_id": "royston-printmakers#2026-10-08",
+  "start": "2026-10-08",
   "end": null,
   "all_day": true,
   "venue": "Royston Museum",
@@ -489,6 +489,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:40:55+00:00"
+  "fetched_at": "2026-10-06T00:07:34+00:00"
  }
 ]

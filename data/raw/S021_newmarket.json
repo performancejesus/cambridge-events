@@ -1,30 +1,6 @@
 [
  {
   "source_id": "S021",
-  "title": "Sun Chariot Day",
-  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/sun-chariot-day/",
-  "kind": "event",
-  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/sun-chariot-day/",
-  "start": "2026-10-03T11:59",
-  "end": null,
-  "all_day": false,
-  "venue": "Newmarket",
-  "address": "Newmarket Racecourses, Newmarket, Suffolk",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "GBP 18.00",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
- },
- {
-  "source_id": "S021",
   "title": "Dubai Future Champions Festival",
   "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/dubai-future-champions-festival/",
   "kind": "event",
@@ -45,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -69,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -93,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -117,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -141,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -165,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -189,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -213,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -237,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -261,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -285,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -309,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -333,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  },
  {
   "source_id": "S021",
@@ -357,6 +333,30 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:32:15+00:00"
+  "fetched_at": "2026-10-05T22:26:47+00:00"
+ },
+ {
+  "source_id": "S021",
+  "title": "Celebrate Christmas at Newmarket Racecourse",
+  "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/19th-december-26---christmas-parties2246/",
+  "kind": "event",
+  "external_id": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/19th-december-26---christmas-parties2246/",
+  "start": "2026-12-19T01:01",
+  "end": null,
+  "all_day": false,
+  "venue": "Newmarket",
+  "address": "Newmarket Racecourses, Newmarket, Suffolk",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-05T22:26:47+00:00"
  }
 ]

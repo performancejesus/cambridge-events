@@ -1,33 +1,6 @@
 [
  {
   "source_id": "S157",
-  "title": "National Theatre Live: The Misanthrope",
-  "url": "https://cambridge.thelight.co.uk/national-theatre-live-the-misanthrope",
-  "kind": "event",
-  "external_id": "light-national-theatre-live-the-misanthrope-2026-10-01",
-  "start": "2026-10-01T11:10:00",
-  "end": null,
-  "all_day": false,
-  "venue": "The Light Cinema Cambridge",
-  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
-  "postcode": "CB1 7DY",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "film",
-   "event cinema"
-  ],
-  "summary": "cert 15 · 1h 46m",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:44:12+00:00"
- },
- {
-  "source_id": "S157",
   "title": "Queen Budapest",
   "url": "https://cambridge.thelight.co.uk/queen-budapest",
   "kind": "event",
@@ -51,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:12+00:00"
+  "fetched_at": "2026-10-06T00:11:19+00:00"
  },
  {
   "source_id": "S157",
@@ -78,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:12+00:00"
+  "fetched_at": "2026-10-06T00:11:19+00:00"
  },
  {
   "source_id": "S157",
@@ -101,11 +74,92 @@
    "film",
    "event cinema"
   ],
-  "summary": "cert CTBA · 2h 22m",
+  "summary": "cert PG · 2h 22m",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:12+00:00"
+  "fetched_at": "2026-10-06T00:11:19+00:00"
+ },
+ {
+  "source_id": "S157",
+  "title": "Hadestown: The Musical",
+  "url": "https://cambridge.thelight.co.uk/hadestown-the-musical",
+  "kind": "event",
+  "external_id": "light-hadestown-the-musical-2026-10-15",
+  "start": "2026-10-15T10:15:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Light Cinema Cambridge",
+  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
+  "postcode": "CB1 7DY",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema"
+  ],
+  "summary": "cert PG · 2h 22m",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:11:19+00:00"
+ },
+ {
+  "source_id": "S157",
+  "title": "Hadestown: The Musical",
+  "url": "https://cambridge.thelight.co.uk/hadestown-the-musical",
+  "kind": "event",
+  "external_id": "light-hadestown-the-musical-2026-10-17",
+  "start": "2026-10-17T19:00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Light Cinema Cambridge",
+  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
+  "postcode": "CB1 7DY",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema"
+  ],
+  "summary": "cert PG · 2h 22m",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:11:19+00:00"
+ },
+ {
+  "source_id": "S157",
+  "title": "Hadestown: The Musical",
+  "url": "https://cambridge.thelight.co.uk/hadestown-the-musical",
+  "kind": "event",
+  "external_id": "light-hadestown-the-musical-2026-10-18",
+  "start": "2026-10-18T14:00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Light Cinema Cambridge",
+  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
+  "postcode": "CB1 7DY",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema"
+  ],
+  "summary": "cert PG · 2h 22m",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:11:19+00:00"
  },
  {
   "source_id": "S157",
@@ -132,15 +186,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:12+00:00"
+  "fetched_at": "2026-10-06T00:11:19+00:00"
  },
  {
   "source_id": "S157",
   "title": "ALWAYS LALISA",
   "url": "https://cambridge.thelight.co.uk/always-lalisa",
   "kind": "event",
-  "external_id": "light-always-lalisa-2026-10-14",
-  "start": "2026-10-14T19:30:00",
+  "external_id": "light-always-lalisa-2026-10-17",
+  "start": "2026-10-17T19:15:00",
   "end": null,
   "all_day": false,
   "venue": "The Light Cinema Cambridge",
@@ -159,6 +213,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:12+00:00"
+  "fetched_at": "2026-10-06T00:11:19+00:00"
  }
 ]

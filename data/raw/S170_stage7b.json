@@ -1,87 +1,6 @@
 [
  {
   "source_id": "S170",
-  "title": "Learning from Failure at Work: The Importance of Time and Social Context",
-  "url": "https://www.clarehall.cam.ac.uk/events/learning-from-failure-at-work-the-importance-of-time-and-social-context/",
-  "kind": "event",
-  "external_id": "2026-09-30|Learning from Failure at Work: The Importance of Time and Social Context",
-  "start": "2026-09-30",
-  "end": null,
-  "all_day": true,
-  "venue": "Clare Hall",
-  "address": "Clare Hall, Herschel Road, Cambridge",
-  "postcode": "CB3 9AL",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "college",
-   "lecture"
-  ],
-  "summary": "lecture",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:44:31+00:00"
- },
- {
-  "source_id": "S170",
-  "title": "English Literature SIG: Gill Hornby",
-  "url": "https://www.clarehall.cam.ac.uk/events/english-literature-sig-gill-hornby/",
-  "kind": "event",
-  "external_id": "2026-10-01|English Literature SIG: Gill Hornby",
-  "start": "2026-10-01",
-  "end": null,
-  "all_day": true,
-  "venue": "Clare Hall",
-  "address": "Clare Hall, Herschel Road, Cambridge",
-  "postcode": "CB3 9AL",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "college",
-   "lecture"
-  ],
-  "summary": "lecture",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:44:31+00:00"
- },
- {
-  "source_id": "S170",
-  "title": "Special Interest Groups (SIGs) 2026/27",
-  "url": "https://www.clarehall.cam.ac.uk/events/special-interest-groups-sigs-2026-2027/",
-  "kind": "event",
-  "external_id": "2026-10-01|Special Interest Groups (SIGs) 2026/27",
-  "start": "2026-10-01",
-  "end": null,
-  "all_day": true,
-  "venue": "Clare Hall",
-  "address": "Clare Hall, Herschel Road, Cambridge",
-  "postcode": "CB3 9AL",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "college",
-   "lecture"
-  ],
-  "summary": "lecture",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:44:31+00:00"
- },
- {
-  "source_id": "S170",
   "title": "Clare Hall Colloquia – Michaelmas 2026",
   "url": "https://www.clarehall.cam.ac.uk/events/clare-hall-colloquia-michaelmas-2026/",
   "kind": "event",
@@ -105,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:31+00:00"
+  "fetched_at": "2026-10-06T00:11:48+00:00"
  },
  {
   "source_id": "S170",
@@ -132,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:31+00:00"
+  "fetched_at": "2026-10-06T00:11:48+00:00"
  },
  {
   "source_id": "S170",
@@ -159,6 +78,87 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:44:31+00:00"
+  "fetched_at": "2026-10-06T00:11:48+00:00"
+ },
+ {
+  "source_id": "S170",
+  "title": "Clare Hall's Ceramics Symposium",
+  "url": "https://www.clarehall.cam.ac.uk/events/clare-halls-ceramics-symposium/",
+  "kind": "event",
+  "external_id": "2026-10-24|Clare Hall's Ceramics Symposium",
+  "start": "2026-10-24",
+  "end": null,
+  "all_day": true,
+  "venue": "Clare Hall",
+  "address": "Clare Hall, Herschel Road, Cambridge",
+  "postcode": "CB3 9AL",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:11:48+00:00"
+ },
+ {
+  "source_id": "S170",
+  "title": "The Betty Behrens Seminar on Classics of Historiography – Michaelmas 2026",
+  "url": "https://www.clarehall.cam.ac.uk/events/the-betty-behrens-seminar-on-classics-of-historiography-michaelmas-2026/",
+  "kind": "event",
+  "external_id": "2026-10-30|The Betty Behrens Seminar on Classics of Historiography – Michaelmas 2026",
+  "start": "2026-10-30",
+  "end": null,
+  "all_day": true,
+  "venue": "Clare Hall",
+  "address": "Clare Hall, Herschel Road, Cambridge",
+  "postcode": "CB3 9AL",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:11:48+00:00"
+ },
+ {
+  "source_id": "S170",
+  "title": "Oktay Üst: Folk Songs of the Black Sea and Turkish Anatolia",
+  "url": "https://www.clarehall.cam.ac.uk/events/oktay-ust-folk-songs-of-the-black-sea-and-turkish-anatolia/",
+  "kind": "event",
+  "external_id": "2026-10-31|Oktay Üst: Folk Songs of the Black Sea and Turkish Anatolia",
+  "start": "2026-10-31",
+  "end": null,
+  "all_day": true,
+  "venue": "Clare Hall",
+  "address": "Clare Hall, Herschel Road, Cambridge",
+  "postcode": "CB3 9AL",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "concert"
+  ],
+  "summary": "concert",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-06T00:11:48+00:00"
  }
 ]

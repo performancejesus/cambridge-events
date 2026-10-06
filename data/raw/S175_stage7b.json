@@ -1,33 +1,6 @@
 [
  {
   "source_id": "S175",
-  "title": "HH Researchers' social with President (by invitation)",
-  "url": "https://www.hughes.cam.ac.uk/about/events/hh-postdocs-social-2026/",
-  "kind": "event",
-  "external_id": "2026-10-14|HH Researchers' social with President (by invitation)",
-  "start": "2026-10-14",
-  "end": null,
-  "all_day": true,
-  "venue": "Hughes Hall",
-  "address": "Hughes Hall, Wollaston Road, Cambridge",
-  "postcode": "CB1 2EW",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "college",
-   "other"
-  ],
-  "summary": "other",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:03+00:00"
- },
- {
-  "source_id": "S175",
   "title": "Pop-up plant sale",
   "url": "https://www.hughes.cam.ac.uk/about/events/pop-up-plant-sale-3/",
   "kind": "event",
@@ -51,60 +24,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-09-30T21:45:03+00:00"
- },
- {
-  "source_id": "S175",
-  "title": "Education Subject Dinner (by invitation)",
-  "url": "https://www.hughes.cam.ac.uk/about/events/education-subject-dinner-by-invitation/",
-  "kind": "event",
-  "external_id": "2026-10-22|Education Subject Dinner (by invitation)",
-  "start": "2026-10-22",
-  "end": null,
-  "all_day": true,
-  "venue": "Hughes Hall",
-  "address": "Hughes Hall, Wollaston Road, Cambridge",
-  "postcode": "CB1 2EW",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "college",
-   "other"
-  ],
-  "summary": "other",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:03+00:00"
- },
- {
-  "source_id": "S175",
-  "title": "Hughes Hall Researchers' Lightning Talks series",
-  "url": "https://www.hughes.cam.ac.uk/about/events/hughes-hall-researchers-lightning-talks/",
-  "kind": "event",
-  "external_id": "2026-10-26|Hughes Hall Researchers' Lightning Talks series",
-  "start": "2026-10-26",
-  "end": null,
-  "all_day": true,
-  "venue": "Hughes Hall",
-  "address": "Hughes Hall, Wollaston Road, Cambridge",
-  "postcode": "CB1 2EW",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "college",
-   "lecture"
-  ],
-  "summary": "lecture",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-09-30T21:45:03+00:00"
+  "fetched_at": "2026-10-06T00:12:35+00:00"
  }
 ]
