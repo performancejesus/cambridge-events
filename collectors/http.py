@@ -54,6 +54,10 @@ CURL_SUFFIXES = (".cam.ac.uk",)
 HOST_DELAYS = {"cambridgefoodies.me.uk": 20.0, "cus.org": 10.0, "www.junction.co.uk": 10.0,
                "cambridgeppf.org": 10.0, "www.cambridgeppf.org": 10.0, "www.visitcambridge.org": 10.0,
                "www.visitwestnorfolk.com": 10.0, "theatreroyal.org": 10.0}
+# Прогон 7e+ (05.10): суточный лимит для сайтов, которые закрывались из-за нашей частоты (Junction: 82 запроса 30.09).
+# Разрешение 01.10 — один сбор ≈ 20 запросов; в прогоне 7e+ перепроверка статусов добавила к сбору ещё 33 запроса
+# к страницам событий (всего 55 за сутки) — теперь все модули вместе не больше лимита, остальное — Deferred до завтра.
+HOST_DAY_LIMITS = {"www.junction.co.uk": 25, "junction.co.uk": 25}
 COOLDOWN_STATUSES = {403, 429, 503, 502, 504, 520, 521, 522, 523, 524}
 CHALLENGE_RE = re.compile(r"just a moment|cf-chl|checking your browser|attention required|captcha|are you a robot|"
                           r"access denied|request unsuccessful|incapsula|radware|perfdrive|enable javascript and cookies|"
@@ -182,10 +186,11 @@ class PoliteClient:
             raise Deferred(f"{host}: пауза до {row['cooldown_until']} ({row['cooldown_reason']})")
         day = self.db.execute("SELECT count(*) FROM request_log WHERE host=? AND result IN ('network','not_modified','robots') "
                               "AND ts >= ?", (host, _iso(now - timedelta(hours=24)))).fetchone()[0]
-        if day >= MAX_PER_HOST_DAY:
+        limit = HOST_DAY_LIMITS.get(host, MAX_PER_HOST_DAY)
+        if day >= limit:
             self._log(host, url, "skip_budget")
             self.stats["deferred"] += 1
-            raise Deferred(f"{host}: лимит {MAX_PER_HOST_DAY} запросов в сутки")
+            raise Deferred(f"{host}: лимит {limit} запросов в сутки")
         if probation and row and row["probation"]:
             p = urlparse(url)
             root = f"{p.scheme}://{p.netloc}/"

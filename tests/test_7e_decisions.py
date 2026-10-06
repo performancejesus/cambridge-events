@@ -176,3 +176,21 @@ def test_junction_request_budget():
     for link in links:
         c.detail(http, link)
     assert http.requests <= c.request_budget
+
+
+def test_junction_day_limit(tmp_path, monkeypatch):
+    """Суточный лимит Junction — для всех модулей вместе (сбор, статусы, ссылки)."""
+    from collectors import http as H
+    con = H.state(tmp_path / "s.db")
+    c = H.PoliteClient.__new__(H.PoliteClient)
+    c.db, c.stats = con, {"deferred": 0}
+    c.purpose = "test"
+    now = H._iso(H._now())
+    for _ in range(H.HOST_DAY_LIMITS["www.junction.co.uk"]):
+        con.execute("INSERT INTO request_log VALUES (?,?,?,?,?,?,?)", (now, "www.junction.co.uk", "u", "x", "network", 200, 1))
+    try:
+        c._check_host("www.junction.co.uk", "https://www.junction.co.uk/events/x/")
+        raise AssertionError("лимит должен сработать")
+    except H.Deferred:
+        pass
+    c._check_host("www.kettlesyard.co.uk", "https://www.kettlesyard.co.uk/")   # у других доменов — общий лимит 250
