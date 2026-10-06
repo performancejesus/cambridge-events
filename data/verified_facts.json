@@ -72,6 +72,19 @@
    "source": "https://www.cornex.co.uk/ (описание события S011/S091: «where he gave his final live performance on 24 February 1972»); https://en.wikipedia.org/wiki/Syd_Barrett",
    "checked_by": "сборщик (этап 7e): страница площадки и Wikipedia совпадают",
    "checked_at": "2026-10-01"
+  },
+  {
+   "subject": "I Fagiolini",
+   "aliases": [
+    "I Fagiolini",
+    "Fagiolini"
+   ],
+   "kind": "birth_date",
+   "value": "1986-01-01",
+   "statement": "вокальный ансамбль I Fagiolini основан в 1986 году (Robert Hollingworth, Оксфорд); 40-летие в 2026 году — в названии концерта Saffron Hall «Spem In Alium: I Fagiolini at 40». Известен только год основания (дата 01.01 — условная, для расчёта возраста)",
+   "source": "https://www.saffronhall.com/whats-on/view/spem-in-alium-i-fagolini-at-40 ; https://en.wikipedia.org/wiki/I_Fagiolini",
+   "checked_by": "сборщик, прогон 7e+ (название концерта у источника + Wikipedia); на подтверждение редактору",
+   "checked_at": "2026-10-06"
   }
  ]
 }

@@ -34,7 +34,9 @@ YEAR_RE = re.compile(r"в этом году|this year", re.I)
 SUPER_RE = re.compile(r"\bвпервые\b|\bперв(?:ый|ая|ое|ые|ого|ой|ую|ым|ом)\b|\bпоследн\w+|\bединственн\w+|\bстарейш\w+|"
                       r"\bfirst(?:[- ]ever)?\b|\bthe only\b|\bonly (?:one|time|chance)\b|\boldest\b|\bfinal (?:concert|gig|"
                       r"performance|show)\b|\blast (?:concert|gig|performance|show|live)\b", re.I)
-SUPER_SKIP = re.compile(r"последн\w+ (?:дв|тр|нескольк|год|месяц|недел)|\blast (?:year|month|week|few)\b", re.I)
+SUPER_SKIP = re.compile(r"последн\w+ (?:дв|тр|нескольк|год|месяц|недел)|\blast (?:year|month|week|few)\b|"
+                        r"последн\w+ (?:билет|мест)|\blast (?:remaining |few )?(?:tickets|seats|places)\b", re.I)
+# прогон 7e+: «остались последние билеты» — пометка «мало билетов» со страницы продавца, а не «последний концерт»
 FOUNDED_RE = re.compile(r"основан\w*\s+в\s+(\d{4})|с\s+(\d{4})\s+года|founded\s+in\s+(\d{4})|established\s+in\s+(\d{4})|"
                         r"\bsince\s+(\d{4})", re.I)
 EDITION_RE = re.compile(r"(?:уже\s+)?в\s+(\d+|\w+)[-‑]?(?:й|ый|ой|ий)?\s+раз\b|\b(\d+|second|third|fourth|fifth|\w+th)\s+"

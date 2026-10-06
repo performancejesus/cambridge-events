@@ -1,58 +1,58 @@
 {
  "issue": "2026-10-08",
- "checked": 231,
- "page_opened": 213,
- "status_readable": 142,
+ "checked": 330,
+ "page_opened": 289,
+ "status_readable": 196,
  "by_result": [
   [
    "ok",
-   213
+   289
   ],
   [
    "error",
-   14
+   36
   ],
   [
    "skipped (газета или нет ссылки)",
-   4
+   5
   ]
  ],
  "by_status": [
   [
    "on_sale",
-   138
+   190
   ],
   [
    "не читается",
-   71
+   93
   ],
   [
    "sold_out",
-   3
-  ],
-  [
-   "cancelled",
-   1
+   6
   ]
  ],
  "by_urgency": [
+  [
+   "some_dates_sold_out",
+   10
+  ],
   [
    "few_left",
    9
   ],
   [
-   "some_dates_sold_out",
-   9
+   "early_bird_ends",
+   1
   ]
  ],
  "by_reason": [
   [
    "окно выпуска",
-   144
+   223
   ],
   [
    "следующие 6 недель (Успейте купить)",
-   52
+   61
   ],
   [
    "пункт 2026-10-08_v9",
@@ -60,34 +60,45 @@
   ],
   [
    "пропало из источника",
-   8
+   19
   ]
  ],
  "differs_from_db": [
   {
-   "event_id": 371,
-   "url": "https://www.eventbrite.co.uk/e/the-scapegoat-the-brilliant-brief-life-of-the-duke-of-buckingham-tickets-1994669024748",
-   "status": "cancelled",
-   "urgency": "",
-   "evidence": "Cancelled",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "THE SCAPEGOAT - The Brilliant Brief Life of the Duke of Buckingham",
-   "db_status": "on_sale"
-  }
- ],
- "urgent": [
-  {
    "event_id": 38,
    "url": "https://www.cornex.co.uk/events/alison-moyet-2",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "Limited availability",
+   "status": "sold_out",
+   "urgency": "",
+   "evidence": "Sold out",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Alison Moyet",
    "db_status": "on_sale"
   },
+  {
+   "event_id": 67,
+   "url": "https://www.cornex.co.uk/events/jack-savoretti",
+   "status": "sold_out",
+   "urgency": "",
+   "evidence": "Sold out",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "JACK SAVORETTI",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 437,
+   "url": "https://wegottickets.com/f/29037/",
+   "status": "sold_out",
+   "urgency": "",
+   "evidence": "No tickets available",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Talk by Rob Chapman - Syd Barrett: A Very Irregular Head",
+   "db_status": "on_sale"
+  }
+ ],
+ "urgent": [
   {
    "event_id": 39,
    "url": "https://www.cornex.co.uk/events/a-tribute-to-syd-barrett-official-80th-anniversary-celebrations",
@@ -122,6 +133,17 @@
    "db_status": "on_sale"
   },
   {
+   "event_id": 61,
+   "url": "https://www.cornex.co.uk/events/jools-holland-and-his-rhythm-and-blues-orchestra",
+   "status": "on_sale",
+   "urgency": "few_left",
+   "evidence": "Limited availability",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "JOOLS HOLLAND AND HIS RHYTHM AND BLUES ORCHESTRA",
+   "db_status": "on_sale"
+  },
+  {
    "event_id": 63,
    "url": "https://www.cornex.co.uk/events/the-proclaimers",
    "status": "on_sale",
@@ -144,17 +166,6 @@
    "db_status": "on_sale"
   },
   {
-   "event_id": 67,
-   "url": "https://www.cornex.co.uk/events/jack-savoretti",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "Limited availability",
-   "result": "ok",
-   "why": "следующие 6 недель (Успейте купить)",
-   "title": "JACK SAVORETTI",
-   "db_status": "on_sale"
-  },
-  {
    "event_id": 374,
    "url": "https://www.eventbrite.co.uk/e/sound-bath-tickets-1993818002317",
    "status": "on_sale",
@@ -174,6 +185,17 @@
    "result": "ok",
    "why": "окно выпуска",
    "title": "Susan Tomes, piano",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 1026,
+   "url": "https://www.junction.co.uk/events/breabach/",
+   "status": "on_sale",
+   "urgency": "few_left",
+   "evidence": "Last Few Tickets!",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Breabach | Cambridge Junction",
    "db_status": "on_sale"
   },
   {
@@ -274,6 +296,28 @@
    "why": "окно выпуска",
    "title": "An Audience With Philippa Gregory",
    "db_status": "on_sale"
+  },
+  {
+   "event_id": 2526,
+   "url": "https://burylitfest.co.uk/",
+   "status": "on_sale",
+   "urgency": "some_dates_sold_out",
+   "evidence": "this event is SOLD OUT / Add To Cart",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Bury St Edmunds Literature Festival",
+   "db_status": "announced"
+  },
+  {
+   "event_id": 2690,
+   "url": "https://www.eventbrite.co.uk/e/ground-and-glow-a-candlelit-sound-bath-at-camyoga-in-cambridge-tickets-1999151368559",
+   "status": "on_sale",
+   "urgency": "early_bird_ends",
+   "evidence": "Early Bird Tickets Available Until 1 September 2026 ",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "✨Ground and Glow ✨A candlelit Sound Bath at CamYoga in Cambridge",
+   "db_status": "on_sale"
   }
  ],
  "events": [
@@ -327,7 +371,7 @@
    "status": "",
    "urgency": "",
    "evidence": "",
-   "result": "ok",
+   "result": "error: Deferred",
    "why": "окно выпуска",
    "title": "Footlights ADC Smokers: Michaelmas 2026",
    "db_status": "announced"
@@ -346,9 +390,9 @@
   {
    "event_id": 38,
    "url": "https://www.cornex.co.uk/events/alison-moyet-2",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "Limited availability",
+   "status": "sold_out",
+   "urgency": "",
+   "evidence": "Sold out",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Alison Moyet",
@@ -556,8 +600,8 @@
    "event_id": 61,
    "url": "https://www.cornex.co.uk/events/jools-holland-and-his-rhythm-and-blues-orchestra",
    "status": "on_sale",
-   "urgency": "",
-   "evidence": "кнопка: Buy Tickets",
+   "urgency": "few_left",
+   "evidence": "Limited availability",
    "result": "ok",
    "why": "следующие 6 недель (Успейте купить)",
    "title": "JOOLS HOLLAND AND HIS RHYTHM AND BLUES ORCHESTRA",
@@ -610,9 +654,9 @@
   {
    "event_id": 67,
    "url": "https://www.cornex.co.uk/events/jack-savoretti",
-   "status": "on_sale",
-   "urgency": "few_left",
-   "evidence": "Limited availability",
+   "status": "sold_out",
+   "urgency": "",
+   "evidence": "Sold out",
    "result": "ok",
    "why": "следующие 6 недель (Успейте купить)",
    "title": "JACK SAVORETTI",
@@ -733,7 +777,7 @@
    "url": "https://www.thejockeyclub.co.uk/newmarket/events-tickets/newmarket-nights/simply-red/",
    "status": "on_sale",
    "urgency": "",
-   "evidence": "Buy Tickets",
+   "evidence": "BUY TICKETS",
    "result": "ok",
    "why": "пункт 2026-10-08_v9",
    "title": "Simply Red",
@@ -888,7 +932,7 @@
    "status": "",
    "urgency": "",
    "evidence": "",
-   "result": "ok",
+   "result": "error: Deferred",
    "why": "окно выпуска",
    "title": "Flow Cytometry Courses - October 2026",
    "db_status": "on_sale"
@@ -968,17 +1012,6 @@
    "result": "ok",
    "why": "окно выпуска",
    "title": "In Conversation with Simon Woolley",
-   "db_status": "on_sale"
-  },
-  {
-   "event_id": 371,
-   "url": "https://www.eventbrite.co.uk/e/the-scapegoat-the-brilliant-brief-life-of-the-duke-of-buckingham-tickets-1994669024748",
-   "status": "cancelled",
-   "urgency": "",
-   "evidence": "Cancelled",
-   "result": "ok",
-   "why": "окно выпуска",
-   "title": "THE SCAPEGOAT - The Brilliant Brief Life of the Duke of Buckingham",
    "db_status": "on_sale"
   },
   {
@@ -1160,9 +1193,9 @@
   {
    "event_id": 437,
    "url": "https://wegottickets.com/f/29037/",
-   "status": "",
+   "status": "sold_out",
    "urgency": "",
-   "evidence": "",
+   "evidence": "No tickets available",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Talk by Rob Chapman - Syd Barrett: A Very Irregular Head",
@@ -1587,6 +1620,17 @@
    "db_status": "on_sale"
   },
   {
+   "event_id": 905,
+   "url": "https://www.kettlesyard.cam.ac.uk/whats-on/piers-lane-piano/",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Book Now",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Piers Lane, piano",
+   "db_status": "disappeared"
+  },
+  {
    "event_id": 909,
    "url": "https://www.huntspost.co.uk/news/26586199.olly-murs-headline-2027-newmarket-nights-series/",
    "status": "",
@@ -1602,7 +1646,7 @@
    "url": "https://thejockeyclub.co.uk/newmarket/events-tickets/newmarket-nights/simply-red",
    "status": "on_sale",
    "urgency": "",
-   "evidence": "Buy Tickets",
+   "evidence": "BUY TICKETS",
    "result": "ok",
    "why": "пункт 2026-10-08_v9",
    "title": "Simply Red at Newmarket Nights",
@@ -1673,6 +1717,17 @@
    "why": "пункт 2026-10-08_v9",
    "title": "Studio Sunday Relaxed Session",
    "db_status": "scheduled"
+  },
+  {
+   "event_id": 952,
+   "url": "https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Book Tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Apple Day 2026",
+   "db_status": "on_sale"
   },
   {
    "event_id": 999,
@@ -1788,8 +1843,8 @@
    "event_id": 1026,
    "url": "https://www.junction.co.uk/events/breabach/",
    "status": "on_sale",
-   "urgency": "",
-   "evidence": "Buy Tickets",
+   "urgency": "few_left",
+   "evidence": "Last Few Tickets!",
    "result": "ok",
    "why": "окно выпуска",
    "title": "Breabach | Cambridge Junction",
@@ -2106,10 +2161,10 @@
   {
    "event_id": 1356,
    "url": "https://www.eventbrite.co.uk/e/rhymetime-at-cambridge-central-library-tickets-170460357518",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Rhymetime at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2117,10 +2172,10 @@
   {
    "event_id": 1357,
    "url": "https://www.eventbrite.co.uk/e/storytime-at-cambridge-central-library-tickets-170458267266",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Storytime at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2128,10 +2183,10 @@
   {
    "event_id": 1358,
    "url": "https://www.eventbrite.co.uk/e/lgbtqia-board-games-social-at-cambridge-central-library-tickets-270918984977",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "LGBTQIA+ Board Games Social at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2139,10 +2194,10 @@
   {
    "event_id": 1359,
    "url": "https://www.eventbrite.co.uk/e/improve-your-english-at-cambridge-central-library-tickets-302787344097",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Improve Your English at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2150,10 +2205,10 @@
   {
    "event_id": 1360,
    "url": "https://www.eventbrite.co.uk/e/sunday-scribes-at-cambridge-central-library-tickets-788160819227",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Sunday Scribes at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2161,10 +2216,10 @@
   {
    "event_id": 1361,
    "url": "https://www.eventbrite.co.uk/e/queer-cafe-at-cambridge-central-library-tickets-970320674257",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Queer Cafe at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2172,10 +2227,10 @@
   {
    "event_id": 1362,
    "url": "https://www.eventbrite.co.uk/e/storytime-at-barnwell-road-library-term-time-only-tickets-1011196093737",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Storytime at Barnwell Road Library (term time only)",
    "db_status": "scheduled"
@@ -2183,10 +2238,10 @@
   {
    "event_id": 1363,
    "url": "https://www.eventbrite.co.uk/e/childrens-craft-drop-in-at-cambridge-central-library-tickets-1205435212169",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Children's Craft Drop-In at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2194,10 +2249,10 @@
   {
    "event_id": 1364,
    "url": "https://www.eventbrite.co.uk/e/lego-club-drop-in-at-cambridge-central-library-tickets-1679056245429",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Lego Club Drop-In at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2205,10 +2260,10 @@
   {
    "event_id": 1365,
    "url": "https://www.eventbrite.co.uk/e/digital-drop-ins-at-cambridge-central-library-tickets-1974982855887",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Digital Drop-Ins at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2216,10 +2271,10 @@
   {
    "event_id": 1366,
    "url": "https://www.eventbrite.co.uk/e/british-sign-language-meet-up-at-cambridge-central-library-tickets-1980854601436",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "British Sign Language Meet-up at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2227,10 +2282,10 @@
   {
    "event_id": 1367,
    "url": "https://www.eventbrite.co.uk/e/reading-aloud-with-cherry-at-cambridge-central-library-tickets-1980723752062",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "пункт 2026-10-08_v9",
    "title": "Reading Aloud with Cherry at Cambridge Central Library",
    "db_status": "scheduled"
@@ -2311,17 +2366,6 @@
    "why": "окно выпуска",
    "title": "An Audience With Philippa Gregory",
    "db_status": "on_sale"
-  },
-  {
-   "event_id": 1490,
-   "url": "https://cambridgeppf.org/etn/cppf-agm-talk-a-history-of-violence-death-burial-and-discovery-at-wandlebury/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "error: FetchError",
-   "why": "пропало из источника",
-   "title": "Talk: A History of Violence: Death, Burial and Discovery at Wandlebury",
-   "db_status": "disappeared"
   },
   {
    "event_id": 1581,
@@ -2579,10 +2623,10 @@
   {
    "event_id": 2138,
    "url": "https://www.eventbrite.co.uk/e/cambridge-art-class-tickets-1993449076851",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "окно выпуска",
    "title": "Cambridge Art Class",
    "db_status": "on_sale"
@@ -2590,10 +2634,10 @@
   {
    "event_id": 2139,
    "url": "https://www.eventbrite.co.uk/e/wild-on-the-water-wildlife-photography-by-punt-tickets-1998649130351",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "окно выпуска",
    "title": "Wild on the Water: Wildlife Photography by Punt",
    "db_status": "on_sale"
@@ -2601,10 +2645,10 @@
   {
    "event_id": 2140,
    "url": "https://www.eventbrite.co.uk/e/cambridges-midcentury-home-market-tickets-1994139179968",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "окно выпуска",
    "title": "Cambridge's Midcentury Home Market",
    "db_status": "on_sale"
@@ -2617,7 +2661,7 @@
    "evidence": "",
    "result": "ok",
    "why": "окно выпуска",
-   "title": "Pick ‘n’ Mix Improvised Comedy Showcase",
+   "title": "Pick 'n' Mix Improvised Comedy Showcase",
    "db_status": "on_sale"
   },
   {
@@ -2645,10 +2689,10 @@
   {
    "event_id": 2189,
    "url": "https://www.eventbrite.co.uk/e/poetry-pints-tickets-2001578380818",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "окно выпуска",
    "title": "Poetry + Pints",
    "db_status": "on_sale"
@@ -2656,10 +2700,10 @@
   {
    "event_id": 2190,
    "url": "https://www.eventbrite.co.uk/e/speed-dating-in-cambridge-ages-40-59ish-tickets-1999781094085",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "окно выпуска",
    "title": "Speed Dating in Cambridge Ages 40-59ish",
    "db_status": "on_sale"
@@ -2676,6 +2720,17 @@
    "db_status": "on_sale"
   },
   {
+   "event_id": 2215,
+   "url": "https://www.trin.cam.ac.uk/event/birkbeck-lectures-2026/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Birkbeck Lectures 2026 – Material Histories in the Renaissance",
+   "db_status": "disappeared"
+  },
+  {
    "event_id": 2250,
    "url": "https://www.chu.cam.ac.uk/event/the-masters-book-club-5/",
    "status": "",
@@ -2687,28 +2742,6 @@
    "db_status": "disappeared"
   },
   {
-   "event_id": 2255,
-   "url": "https://www.clarehall.cam.ac.uk/events/clare-halls-ceramics-symposium/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пропало из источника",
-   "title": "Clare Hall's Ceramics Symposium",
-   "db_status": "disappeared"
-  },
-  {
-   "event_id": 2256,
-   "url": "https://www.clarehall.cam.ac.uk/events/the-betty-behrens-seminar-on-classics-of-historiography-michaelmas-2026/",
-   "status": "",
-   "urgency": "",
-   "evidence": "",
-   "result": "ok",
-   "why": "пропало из источника",
-   "title": "The Betty Behrens Seminar on Classics of Historiography – Michaelmas 2026",
-   "db_status": "disappeared"
-  },
-  {
    "event_id": 2257,
    "url": "https://www.lucy.cam.ac.uk/events/lucy-cavendish-colleges-foundation-day-panel-discussion",
    "status": "",
@@ -2717,6 +2750,17 @@
    "result": "ok",
    "why": "пропало из источника",
    "title": "Lucy Cavendish College's Foundation Day: Panel Discussion",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2265,
+   "url": "https://www.hughes.cam.ac.uk/about/events/hughes-hall-researchers-lightning-talks/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Hughes Hall Researchers' Lightning Talks series",
    "db_status": "disappeared"
   },
   {
@@ -2755,10 +2799,10 @@
   {
    "event_id": 2405,
    "url": "https://www.eventbrite.co.uk/e/an-evening-with-colette-paul-in-cambridge-tickets-1999776680885",
-   "status": "on_sale",
+   "status": "",
    "urgency": "",
-   "evidence": "Get tickets",
-   "result": "ok",
+   "evidence": "",
+   "result": "error: Deferred",
    "why": "окно выпуска",
    "title": "An Evening with Colette Paul in Cambridge",
    "db_status": "on_sale"
@@ -2775,6 +2819,39 @@
    "db_status": "scheduled"
   },
   {
+   "event_id": 2455,
+   "url": "https://cambridge.thelight.co.uk/always-lalisa",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "ALWAYS LALISA",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2457,
+   "url": "https://www.hughes.cam.ac.uk/about/events/hh-postdocs-social-2026/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "HH Researchers' social with President (by invitation)",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2458,
+   "url": "https://www.hughes.cam.ac.uk/about/events/education-subject-dinner-by-invitation/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Education Subject Dinner (by invitation)",
+   "db_status": "disappeared"
+  },
+  {
    "event_id": 2460,
    "url": "https://burylane.co.uk/pick-your-own/dahlias/",
    "status": "on_sale",
@@ -2786,6 +2863,17 @@
    "db_status": "on_sale"
   },
   {
+   "event_id": 2493,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Hadestown: The Musical",
+   "db_status": "disappeared"
+  },
+  {
    "event_id": 2494,
    "url": "https://wisbechcinema.co.uk/",
    "status": "",
@@ -2794,7 +2882,7 @@
    "result": "ok",
    "why": "следующие 6 недель (Успейте купить)",
    "title": "RBO 26-27: Macbeth (MET Opera)",
-   "db_status": "scheduled"
+   "db_status": "disappeared"
   },
   {
    "event_id": 2495,
@@ -2808,6 +2896,83 @@
    "db_status": "scheduled"
   },
   {
+   "event_id": 2496,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Comèdie Française",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2497,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Fallen Angels by Noël Coward",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2498,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "RBO 26-27 - Manon (Royal Ballet)",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2499,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Fear and Fizz: The Lost Boys",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2501,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "National Theatre Live: Golden Boy",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2502,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "Queen at Sea",
+   "db_status": "disappeared"
+  },
+  {
+   "event_id": 2503,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "пропало из источника",
+   "title": "RBO 26-27 - Carmen (Royal Opera)",
+   "db_status": "disappeared"
+  },
+  {
    "event_id": 2518,
    "url": "https://www.visitwestnorfolk.com/experiences/events/",
    "status": "",
@@ -2816,6 +2981,974 @@
    "result": "ok",
    "why": "окно выпуска",
    "title": "Exhibition: All of Us Witches",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2521,
+   "url": "https://www.visitely.org.uk/visit-ely-events/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Ely’s Autumn and Orchard Fayre 2026",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 2522,
+   "url": "https://thestiveshub.co.uk/events-in-stives/michaelmas-fair/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "error: Deferred",
+   "why": "окно выпуска",
+   "title": "St Ives Michaelmas Fair",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 2526,
+   "url": "https://burylitfest.co.uk/",
+   "status": "on_sale",
+   "urgency": "some_dates_sold_out",
+   "evidence": "this event is SOLD OUT / Add To Cart",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Bury St Edmunds Literature Festival",
+   "db_status": "announced"
+  },
+  {
+   "event_id": 2533,
+   "url": "https://talks.cam.ac.uk/talk/index/273357",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "CSAR lecture: Organic Semiconductors – From OLED displays to Quantum Applications - Professor Sir Richard Friend, FRS, Department of Physics, U. of Cambridge",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 2550,
+   "url": "https://www.ents24.com/cambridge-events/cambridge-junction/the-bluetones/7432607",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "The Bluetones",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2551,
+   "url": "https://www.ents24.com/cambridge-events/the-arts-theatre/phil-wang/7469589",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "Phil Wang",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2561,
+   "url": "https://www.ents24.com/st-ives-events/bluntisham-village-hall/nathan-caton/7542241",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Nathan Caton",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2562,
+   "url": "https://www.ents24.com/kings-lynn-events/kings-lynn-corn-exchange/adam-garcias-emerald-storm/7487279",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Adam Garcia's Emerald Storm",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2566,
+   "url": "https://www.ents24.com/peterborough-events/peterborough-cathedral/nick-heyward/7483021",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "Nick Heyward",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2567,
+   "url": "https://www.ents24.com/bury-st-edmunds-events/the-apex/dom-joly-trigger-happy-tv-25th-anniversary-tour/7435583",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "Dom Joly - Trigger Happy TV 25th Anniversary Tour",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2662,
+   "url": "https://www.eventbrite.co.uk/e/50-singles-night-at-the-tivoli-cambridge-love-at-first-sign-tickets-1997963317065",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "50+ Singles Night at The Tivoli Cambridge | Love at First Sign",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2663,
+   "url": "https://www.eventbrite.co.uk/e/childhood-charcuterie-a-nostalgic-wine-snack-tasting-experience-tickets-1994678971499",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Childhood Charcuterie: A Nostalgic Wine & Snack Tasting Experience",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2664,
+   "url": "https://www.eventbrite.co.uk/e/circus-cottenham-circus-cortex-bizzzar-811-oct-2026-tickets-1992701662314",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Circus Cottenham | Circus Cortex BizZzaR | 8–11 Oct 2026",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2666,
+   "url": "https://www.eventbrite.co.uk/e/social-dating-cambridge-relaxed-dating-evening-for-ages-18-30-tickets-1998965633019",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Social Dating Cambridge: Relaxed Dating Evening for Ages 18-30",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2667,
+   "url": "https://www.eventbrite.com/e/autumn-wreath-workshop-tickets-1999848626075",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Autumn wreath workshop",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2669,
+   "url": "https://www.eventbrite.com/e/fitness-pilates-tickets-1259777300819",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Fitness Pilates",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2670,
+   "url": "https://www.eventbrite.ca/e/paint-your-pet-party-tickets-2001063328282",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Paint Your Pet Party!",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2671,
+   "url": "https://www.eventbrite.co.uk/e/behind-the-backs-a-photography-experience-on-the-cam-tickets-1998648093249",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Behind the Backs: A Photography Experience on the Cam",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2672,
+   "url": "https://www.eventbrite.co.uk/e/big-deal-comedy-tickets-1996229606490",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Big Deal Comedy",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2676,
+   "url": "https://www.eventbrite.co.uk/e/piano-bar-de-luca-fridays-tickets-1999256936315",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Piano Bar @ De Luca - Fridays!",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2677,
+   "url": "https://www.eventbrite.co.uk/e/spies-lies-and-double-agents-e-tickets-1358090307669",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Spies, Lies and Double Agents (e)",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2678,
+   "url": "https://www.eventbrite.com/e/oli-bruce-live-at-the-blue-moon-tickets-1998377865992",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Oli Bruce Live at The Blue Moon",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2679,
+   "url": "https://www.eventbrite.com/e/tai-chi-qigong-health-beginner-course-tickets-1663262576139",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Tai Chi Qigong Health Beginner course",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2681,
+   "url": "https://www.eventbrite.co.uk/e/draw-the-museum-with-karin-eklund-zoology-museum-tickets-2000728374426",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Draw the Museum with Karin Eklund Zoology Museum",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2682,
+   "url": "https://www.eventbrite.co.uk/e/duxford-quintet-a-benefit-concert-by-candlelight-tickets-1991767921470",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Duxford Quintet: A Benefit Concert by Candlelight",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2685,
+   "url": "https://www.eventbrite.com/e/an-evening-of-improvised-comedy-with-floortime-our-new-chicago-style-team-tickets-1991070783311",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "An Evening of Improvised Comedy with Floortime, our new Chicago style team!",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2686,
+   "url": "https://www.eventbrite.com/e/charity-gala-dinner-world-mental-health-day-tickets-1992598080498",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "CHARITY GALA DINNER-World Mental Health Day",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2687,
+   "url": "https://www.eventbrite.com/e/film-poetry-screening-international-poetry-reading-tickets-2000817443835",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Film Poetry Screening & International Poetry Reading",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2688,
+   "url": "https://www.eventbrite.com/e/poetic-lightning-talks-tickets-1999926637409",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Poetic Lightning Talks",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2689,
+   "url": "https://www.eventbrite.com/e/writing-the-future-with-alice-willitts-tickets-1998810099815",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Writing The Future with Alice Willitts",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2690,
+   "url": "https://www.eventbrite.co.uk/e/ground-and-glow-a-candlelit-sound-bath-at-camyoga-in-cambridge-tickets-1999151368559",
+   "status": "on_sale",
+   "urgency": "early_bird_ends",
+   "evidence": "Early Bird Tickets Available Until 1 September 2026 ",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "✨Ground and Glow ✨A candlelit Sound Bath at CamYoga in Cambridge",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2692,
+   "url": "https://www.eventbrite.co.uk/e/sex-and-the-city-cambridge-women-town-and-gown-n-tickets-1358088803169",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Sex and the City: Cambridge Women, Town and Gown (n)",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2693,
+   "url": "https://www.eventbrite.com/e/british-centre-for-literary-translation-poetry-translation-panel-tickets-1999926632394",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "British Centre for Literary Translation: Poetry Translation Panel",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2694,
+   "url": "https://www.eventbrite.com/e/imagined-cities-magma-poetry-workshop-architecture-tickets-1999926502004",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Imagined Cities — Magma Poetry Workshop: Architecture",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2695,
+   "url": "https://www.eventbrite.com/e/soul-stretch-sound-bath-tickets-1999020282477",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Soul Stretch & Sound Bath",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2696,
+   "url": "https://www.eventbrite.com/e/what-makes-an-era-defining-poet-in-conversation-with-jade-cuttle-tickets-2002508927107",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "\"What Makes an Era-Defining Poet?\" In Conversation with Jade Cuttle",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2701,
+   "url": "https://www.eventbrite.co.uk/e/house-of-cromwell-miranda-malins-at-heffers-bookshop-tickets-1999698072766",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "House of Cromwell - Miranda Malins, at Heffers Bookshop",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2702,
+   "url": "https://www.eventbrite.co.uk/e/k-pop-dance-classes-in-cambridge-registration-2002378642422",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "K-pop dance classes in Cambridge",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2703,
+   "url": "https://www.eventbrite.co.uk/e/paint-night-at-piccolo-lounge-ely-cambs-tickets-1994682542179",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Paint Night at Piccolo Lounge. Ely, Cambs",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2704,
+   "url": "https://www.eventbrite.co.uk/e/saffron-walden-business-buzz-networking-tickets-1977588850487",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Saffron Walden Business Buzz Networking",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2706,
+   "url": "https://www.eventbrite.co.uk/e/creative-comics-drawing-evening-at-hot-numbers-tickets-1993313378975",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Creative Comics Drawing evening at Hot Numbers",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2707,
+   "url": "https://www.eventbrite.co.uk/e/october-cowork-brunch-tickets-1999484203076",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "October Cowork + Brunch",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2709,
+   "url": "https://www.eventbrite.com/e/the-little-review-a-literary-salon-tickets-2002815961455",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "The Little Review: A Literary Salon",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2710,
+   "url": "https://www.eventbrite.co.uk/e/27144-safe-driving-with-virtual-reality-and-locity-funded-by-tfl-tickets-1998888047960",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "27144 - Safe Driving with Virtual Reality and LoCITY - Funded by TfL",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2711,
+   "url": "https://www.eventbrite.co.uk/e/business-owners-open-mastermind-in-person-tickets-1981799750402",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Business Owners Open Mastermind - In person",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2713,
+   "url": "https://www.eventbrite.co.uk/e/parentcarer-coaching-workshop-tickets-2001221076110",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Parent/Carer coaching workshop",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2714,
+   "url": "https://www.eventbrite.co.uk/e/synergy-founders-club-and-synergy-business-networking-tickets-2002385505951",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Synergy Founders Club and Synergy Business Networking",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2715,
+   "url": "https://www.eventbrite.co.uk/e/an-evening-of-breath-sound-tickets-1988980341744",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "An evening of BREATH & SOUND",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2716,
+   "url": "https://www.eventbrite.co.uk/e/an-evening-with-laleh-khadivi-in-cambridge-tickets-1999792027788",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "error: Deferred",
+   "why": "окно выпуска",
+   "title": "An Evening with Laleh Khadivi in Cambridge",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2717,
+   "url": "https://www.eventbrite.co.uk/e/cambridge-street-photography-workshop-with-matt-hall-tickets-2002085756392",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Cambridge Street Photography Workshop with Matt Hall",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2718,
+   "url": "https://www.eventbrite.co.uk/e/cowork-crew-cambridge-tickets-2001875026092",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Cowork Crew Cambridge",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2719,
+   "url": "https://www.eventbrite.co.uk/e/hart-fest-presented-by-the-other-farah-tickets-1995435423066",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Hart Fest - presented by The Other Farah",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2720,
+   "url": "https://www.eventbrite.co.uk/e/saline-tickets-1999711006451",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "saline",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2721,
+   "url": "https://www.eventbrite.co.uk/e/20-years-of-photography-through-an-adhd-lens-cps-26-talks-tickets-1987982420936",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "20 Years of Photography… Through an ADHD Lens... - CPS 26 Talks",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2724,
+   "url": "https://www.eventbrite.co.uk/e/behind-the-headlines-stories-from-a-life-in-press-photography-cps-26-tickets-1993596652253",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Behind the Headlines: Stories from a Life in Press Photography - CPS 26",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2726,
+   "url": "https://www.eventbrite.co.uk/e/cambridge-on-camera-from-student-photographer-to-global-audience-cps26-tickets-1987256436497",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Cambridge On Camera: From Student Photographer To Global Audience: CPS26",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2727,
+   "url": "https://www.eventbrite.co.uk/e/confessions-of-a-nightlife-photographer-cps-26-talks-tickets-1988063815389",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Confessions of a Nightlife Photographer - CPS 26 Talks",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2728,
+   "url": "https://www.eventbrite.co.uk/e/discover-the-hanpan-beginners-handpan-workshop-cambridge-tickets-2001892043993",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Discover The Hanpan - Beginners Handpan Workshop | Cambridge",
+   "db_status": "sold_out"
+  },
+  {
+   "event_id": 2730,
+   "url": "https://www.eventbrite.co.uk/e/drawing-workshop-with-the-creative-canvas-tickets-2000181998200",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Drawing Workshop with The Creative Canvas",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2731,
+   "url": "https://www.eventbrite.co.uk/e/finish-the-frame-take-your-images-further-cps-26-tickets-1998487191989",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Finish the Frame: Take Your Images Further - CPS 26",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2732,
+   "url": "https://www.eventbrite.co.uk/e/frames-of-cambridge-an-analogue-experience-cps26-tickets-1993599273092",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "️ Frames of Cambridge: An Analogue Experience - CPS26",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2733,
+   "url": "https://www.eventbrite.co.uk/e/framing-the-moment-football-through-crisis-and-comeback-cps-26-talks-tickets-1987067437195",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Framing the Moment: Football Through Crisis and Comeback - CPS 26 Talks",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2734,
+   "url": "https://www.eventbrite.co.uk/e/from-intimidation-to-connection-photographing-nervous-subjects-tickets-1988822499634",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "From Intimidation to Connection: Photographing Nervous Subjects",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2735,
+   "url": "https://www.eventbrite.co.uk/e/mosaic-workshops-in-cambridge-tickets-1994656024865",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Mosaic Workshops in Cambridge",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2736,
+   "url": "https://www.eventbrite.co.uk/e/navigating-the-fast-moving-world-of-drones-cps-26-talks-tickets-1987981775004",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Navigating the Fast-Moving World of Drones - CPS 26 Talks",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2737,
+   "url": "https://www.eventbrite.co.uk/e/northern-soul-night-tickets-1996436707936",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Northern Soul Night",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2738,
+   "url": "https://www.eventbrite.co.uk/e/pa-kua-chinese-archery-tickets-1991273766439",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Pa-Kua Chinese Archery",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2739,
+   "url": "https://www.eventbrite.co.uk/e/release-and-rise-ecstatic-dance-wave-qigong-cambridge-tickets-1982774875026",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Release and Rise - Ecstatic Dance Wave + QiGong/ Cambridge",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2742,
+   "url": "https://www.eventbrite.co.uk/e/win-big-at-the-cambridge-photography-show-2026-tickets-1995903138014",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Win Big at the Cambridge Photography Show 2026",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2743,
+   "url": "https://www.eventbrite.com/e/littleport-card-show-tickets-1999690650566",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Littleport Card Show!",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2744,
+   "url": "https://www.eventbrite.com/e/vendor-booking-littleport-tcg-tickets-1999707434768",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Vendor Booking Littleport TCG",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2745,
+   "url": "https://www.eventbrite.co.uk/e/behind-the-lens-at-10-downing-street-with-richard-etienne-cps-26-talks-tickets-1987770929359",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "️ Behind the Lens at 10 Downing Street with Richard Etienne - CPS 26 Talks",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2747,
+   "url": "https://www.eventbrite.co.uk/e/qigong-longevity-workshop-tickets-1997019882226",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "QIGONG LONGEVITY WORKSHOP",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2748,
+   "url": "https://www.eventbrite.co.uk/e/see-more-shoot-differently-explore-cambridge-with-om-system-cps-26-tickets-1998488215049",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "See More. Shoot Differently. Explore Cambridge with OM SYSTEM - CPS 26",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2749,
+   "url": "https://www.eventbrite.co.uk/e/st-neots-monthly-meditation-evening-tickets-1986893562130",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "St. Neots Monthly Meditation Evening",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2750,
+   "url": "https://www.eventbrite.co.uk/e/the-change-of-seasons-cps26-tickets-1996982034021",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "The Change of Seasons - CPS26",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2751,
+   "url": "https://www.eventbrite.co.uk/e/the-unwind-session-pilates-painting-creative-reset-tickets-1998875889594",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "The Unwind Session: Pilates & Painting Creative Reset",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2752,
+   "url": "https://www.eventbrite.co.uk/e/weddings-101-building-a-wedding-photography-business-that-gets-noticed-tickets-2001764320970",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Get tickets",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Weddings 101: Building a Wedding Photography Business That Gets Noticed",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2831,
+   "url": "https://www.eventbrite.co.uk/e/rory-clements-invitation-from-a-dictator-at-heffers-bookshop-tickets-2002073220898",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "error: Deferred",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "Rory Clements - Invitation from a Dictator, at Heffers Bookshop",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2959,
+   "url": "https://www.visitcambridge.org/event/familiar-faces-with-gareth-davies/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Familiar Faces with Gareth Davies",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 2991,
+   "url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=670a0e11-6416-40d5-a713-ea2a09884c55",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Voices of Dissent: an Evening of Protest Poetry",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 3004,
+   "url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=b0f357fe-0401-4c21-8e0a-f128f6a1c8e1",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "Graham Storey lecture with Eleanor Catton",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 3024,
+   "url": "https://www.admin.cam.ac.uk/whatson/detail.shtml?uid=100a208b-dafe-4a40-a6cc-3fe77f3254fc",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "The Master’s Book Club: Prof. Sharon Peacock in conversation with Prof. Sir Christopher Frayling, author of 'The Hollywood History of Art'",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 3204,
+   "url": "https://ngs.org.uk/gardens/robinson-college-cb3/",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Book",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Robinson College — NGS garden opening",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 3258,
+   "url": "https://burylane.co.uk/pick-your-own/dahlias/",
+   "status": "on_sale",
+   "urgency": "",
+   "evidence": "Book Now",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Cut Your Own Dahlias",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 3270,
+   "url": "https://wisbechcinema.co.uk/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "следующие 6 недель (Успейте купить)",
+   "title": "RBO 26-27: Macbeth (MET Opera)",
+   "db_status": "scheduled"
+  },
+  {
+   "event_id": 3282,
+   "url": "https://www.visitwestnorfolk.com/experiences/events/",
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "ok",
+   "why": "окно выпуска",
+   "title": "Creative Writing Workshops: All of Us Witches",
+   "db_status": "on_sale"
+  },
+  {
+   "event_id": 3294,
+   "url": null,
+   "status": "",
+   "urgency": "",
+   "evidence": "",
+   "result": "skipped (газета или нет ссылки)",
+   "why": "окно выпуска",
+   "title": "The Skylark Garden Centre - Week of Wickedness",
    "db_status": "on_sale"
   }
  ]

@@ -1,0 +1,523 @@
+{
+ "issue_date": "2026-10-08",
+ "version": "v13",
+ "send_allowed": true,
+ "blocking": [],
+ "checks": [
+  {
+   "rule": 1,
+   "title": "Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»)",
+   "level": "block",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Transvision Vamp»: переписано по источнику — «Поп-рок группа восьмидесятых Transvision Vamp во главе с Wendy James выступает в Кембридже.» (в источнике нет — убрано)",
+    "«Transvision Vamp»: переписано по источнику — «Eighties pop-rockers Transvision Vamp, fronted by Wendy James, play Cambridge.» (в источнике нет — убрано)"
+   ]
+  },
+  {
+   "rule": 2,
+   "title": "Пересказ источника (тема недели, вступления, пункты из статей)",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 3,
+   "title": "Прошедшие события",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 4,
+   "title": "Отменённые и распроданные — не в обычных рубриках",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 5,
+   "title": "Доступ restricted — не в выпуске, никогда в «Успейте»",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 6,
+   "title": "Дедлайн записи прошёл — программа не в письме",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 7,
+   "title": "Ссылки отвечают, нет относительных ссылок на отсутствующие файлы",
+   "level": "block",
+   "status": "warn",
+   "details": [
+    "https://www.camdram.net/shows/footlights-adc-smokers-michaelmas-2026 — не проверить: www.camdram.net: пауза до 2026-10-07T00:10:00+00:00 (обрыв соединения: RemoteProtocolError: Server disconnected without ",
+    "https://www.eventbrite.co.uk/e/cambridge-art-class-tickets-1993449076851 — не проверить: www.eventbrite.co.uk: лимит 250 запросов в сутки",
+    "https://www.nationaltrust.org.uk/visit/cambridgeshire/wicken-fen-national-nature-reserve/events/185543a8-b015-4bc4-876c-97e32fe706da — не проверить: RemoteProtocolError: <ConnectionTerminated error_code:0, last_stream_id:1, additional_data:None>",
+    "https://www.eventbrite.co.uk/o/cambridgeshire-libraries-33302830317 — не проверить: www.eventbrite.co.uk: лимит 250 запросов в сутки",
+    "https://www.nationaltrust.org.uk/visit/cambridgeshire/anglesey-abbey-gardens-and-lode-mill/events/5b107d31-66eb-4e96-af87-2804f8d2dde9 — не проверить: www.nationaltrust.org.uk: пауза до 2026-10-07T01:46:08+00:00 (обрыв соединения: RemoteProtocolError: <ConnectionTerminat",
+    "https://www.skiddle.com/whats-on/Peterborough/The-White-Horse-Tilbrook/Kids-Halloween-Party/42673054/ — не проверить: 202",
+    "https://www.junction.co.uk/events/shelf-the-kids-show-2/ — не проверить: www.junction.co.uk: лимит 25 запросов в сутки",
+    "https://www.eventbrite.co.uk/e/the-scapegoat-the-brilliant-brief-life-of-the-duke-of-buckingham-tickets-1994669024748 — не проверить: www.eventbrite.co.uk: лимит 250 запросов в сутки",
+    "https://cambridgefoodies.me.uk/2026/09/02/tripot-quayside-sharing-hotpots-at-your-table/ — не проверить: robots.txt не разрешает",
+    "https://cambridgefoodies.me.uk/2026/09/16/farewell-oscars-hello-carmans-cambridges-newest-pizza-joint-the-blue-moon/ — не проверить: robots.txt не разрешает"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 8,
+   "title": "Смешанные алфавиты в русском тексте",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 9,
+   "title": "Имена людей и групп — латиницей",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«The Uprising»: имена переписаны латиницей (John Ball, Wat Tyler)"
+   ]
+  },
+  {
+   "rule": 10,
+   "title": "Цена — из данных и из лучшего источника",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Mill Road Winter Fair 2026»: «бесплатно» нет в данных — цена из лучшего источника: цены на сайте"
+   ]
+  },
+  {
+   "rule": 11,
+   "title": "Ссылка — на первоисточник",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Apple Day 2026»: ссылка — площадка / организатор (https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/) вместо агрегатор (https://www.museums.cam.ac.uk/events/apple-day-2026)",
+    "«Leo Sayer»: ссылка — площадка / организатор (https://www.kingslynncornexchange.co.uk/theatre/whats-on/music/leo-sayer/) вместо агрегатор (https://www.ents24.com/kings-lynn-events/kings-lynn-corn-exchange/leo-sayer/7434217)"
+   ]
+  },
+  {
+   "rule": 12,
+   "title": "Тон без давления",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 13,
+   "title": "Отмены — одной строкой",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 14,
+   "title": "Многодневные события — диапазон; релизы — пятница",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 15,
+   "title": "Открытия: дата статьи — не дата открытия",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 16,
+   "title": "Детские события ночью — сверка времени",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Kids Halloween Party»: время 00:30 подозрительно для детского события — не показываем"
+   ]
+  },
+  {
+   "rule": 17,
+   "title": "Пустые описания (в том числе «Новое в городе»)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 18,
+   "title": "Дубли имён («Также в программе: X», когда X уже в тексте)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 19,
+   "title": "Заголовки без приписок статуса и даты",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 20,
+   "title": "Размер выпуска и рубрик (rubric_sizes)",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "new_announcements: 6 пунктов, максимум 5"
+   ],
+   "fixed": [
+    "«Органный концерт: Paul Greally» дописан в «Бесплатно» (обязателен по правкам v5)",
+    "«Cambridge Beer Festival 2027» дописан в «Новые анонсы» (обязателен по правкам v5)",
+    "«Cambridge Folk Festival» дописан в «Новые анонсы» (обязателен по правкам v5)",
+    "«The Betfred Guineas Festival» дописан в «Новые анонсы» (обязателен по правкам v5)",
+    "«Arbury Social» дописан в «Новое в городе» (обязателен по правкам v5)",
+    "«Hadestown: The Musical»: сокращён — выпуск длиннее: в рубрике больше 4 пунктов",
+    "«Always Lalisa»: сокращён — выпуск длиннее: в рубрике больше 4 пунктов",
+    "«English National Ballet: The Sleeping Beauty»: сокращён — выпуск длиннее: в рубрике больше 4 пунктов",
+    "«Olly Murs at Newmarket Racecourse»: сокращён — выпуск длиннее: в рубрике больше 5 пунктов",
+    "«Simply Red at Newmarket Nights»: сокращён — выпуск длиннее: в рубрике больше 5 пунктов",
+    "«Andrew Chamblin Memorial Lecture 2026» (3.4, talks): сокращён — выпуск длиннее 45 пунктов",
+    "«'What Makes an Era-Defining Poet?' In Conversation with Jade Cuttle» (3.7, talks): сокращён — выпуск длиннее 45 пунктов",
+    "«Hart Fest» (4, out_of_town): сокращён — выпуск длиннее 45 пунктов",
+    "«Hannah Sanders & Ben Savage with Jon Thorne» (4.3, weekend_2): сокращён — выпуск длиннее 45 пунктов",
+    "«A Mughal Songbook: Art, Music and Empire» (4.5, exhibitions): сокращён — выпуск длиннее 45 пунктов",
+    "«Ely's Autumn and Orchard Fayre» (5, weekend_1): сокращён — выпуск длиннее 45 пунктов",
+    "«Nathan Caton» (5.1, weekend_1): сокращён — выпуск длиннее 45 пунктов",
+    "«Reef» (6.9, weekdays): сокращён — выпуск длиннее 45 пунктов",
+    "«Bury St Edmunds Literature Festival» (5, out_of_town): сокращён — выпуск длиннее 45 пунктов",
+    "«AEPG Great Eastern Run» (5.8, sport): сокращён — выпуск длиннее 45 пунктов",
+    "«The Footlights Tour Show 2026: Prize Cow (for my best son)» (6.2, weekend_1): сокращён — выпуск длиннее 45 пунктов",
+    "«St Ives Michaelmas Fair» (5, out_of_town): сокращён — выпуск длиннее 45 пунктов"
+   ]
+  },
+  {
+   "rule": 21,
+   "title": "«Главное на выходные» и «По графству» — пороги зон",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 22,
+   "title": "Разнообразие площадок; театр в «На неделе»",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 23,
+   "title": "Состав участников — полностью",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Spem In Alium: I Fagiolini at 40»: состав из данных не назван в тексте (Jess Gillam and her Band) — добавлен"
+   ]
+  },
+  {
+   "rule": 24,
+   "title": "«Успейте купить» — с сигналом; ежегодные — в «Новых анонсах»",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Cambridge Half Marathon 2027»: ежегодное событие с подтверждённой датой не в «Новых анонсах»"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 25,
+   "title": "Повторы между выпусками (issue_items, 4 недели)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 26,
+   "title": "«Каникулы»: лимиты, дни каникул, зона, глоссарий",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 27,
+   "title": "Подборки — не событие",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 28,
+   "title": "Пропуски с оценкой не ниже выбранного — с причиной",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "причины пропуска дописаны отдельным запросом: 40 из 40"
+   ]
+  },
+  {
+   "rule": 29,
+   "title": "Факты из знаний модели — в список «проверить» (правки по v9)",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Have You Got It Yet? The Story of Syd Barrett and Pink Floyd: director's talk and screening»: «Встреча проходит в 17:00 в Openspace» — в «Факты из знаний модели (проверить)»",
+    "«Have You Got It Yet? The Story of Syd Barrett and Pink Floyd: director's talk and screening»: «Сам фильм показывают в Arts Picturehouse в тот же вечер в 20:30» — в «Факты из знаний модели (проверить)»",
+    "«Roachford + Hue and Cry»: «Roachford — автор соул-хита 'Cuddly Toy'» — в «Факты из знаний модели (проверить)»",
+    "«Roachford + Hue and Cry»: «Hue and Cry создали 'Labour of Love'» — в «Факты из знаний модели (проверить)»",
+    "«Spem In Alium: I Fagiolini at 40»: «Вокальный ансамбль I Fagiolini отмечает своё 40-летие» — в «Факты из знаний модели (проверить)»",
+    "«Spem In Alium: I Fagiolini at 40»: «Spem in Alium — мотет Thomas Tallis с 40 голосами» — в «Факты из знаний модели (проверить)»",
+    "«Ely’s Autumn and Orchard Fayre 2026»: «Осенняя ярмарка в Эли с местными продуктами, ремёслами, яблочными забавами и муз» — в «Факты из знаний модели (проверить)»",
+    "«Nish Kumar: Angry Humour From a Really Nice Guy»: «Nish Kumar выступает в The News Quiz и The Mash Report» — в «Факты из знаний модели (проверить)»",
+    "«Simon Amstell: I Love It Here»: «Simon Amstell — комик и режиссёр» — в «Факты из знаний модели (проверить)»",
+    "«Alice Cooper: Devil on My Shoulder»: «Alice Cooper сядет побеседовать с диджеем Claire Sturgess» — в «Факты из знаний модели (проверить)»",
+    "«Transvision Vamp»: «Transvision Vamp — поп-рок группа восьмидесятых» — в «Факты из знаний модели (проверить)»",
+    "«Transvision Vamp»: «Это первый концерт Transvision Vamp в Кембридже за долгое время» — в «Факты из знаний модели (проверить)»",
+    "«Street Fighter»: «Персонажи Рю и Chun-Li из игровой серии» — в «Факты из знаний модели (проверить)»",
+    "«Anarchical Antiquity – inaugural lecture by Professor Josephine Crawley Quinn»: «Профессор Josephine Crawley Quinn прочитает актовую лекцию при вступлении в долж» — в «Факты из знаний модели (проверить)»",
+    "«Anarchical Antiquity – inaugural lecture by Professor Josephine Crawley Quinn»: «Лекция посвящена беспорядку и восстаниям в античном мире» — в «Факты из знаний модели (проверить)»",
+    "«Sunil Gupta: Life with a Camera, 1970 – Now»: «Карьера охватывает период от 1970 года до настоящего времени» — в «Факты из знаний модели (проверить)»",
+    "«Sunil Gupta: Life with a Camera, 1970 – Now»: «От ранних документальных работ до недавних проектов» — в «Факты из знаний модели (проверить)»",
+    "«Regular sessions in libraries»: «Кружки рукоделия и Lego для детей» — в «Факты из знаний модели (проверить)»",
+    "«Regular sessions in libraries»: «Встречи для взрослых включают разговорную практику, настольные игры и queer-кафе» — в «Факты из знаний модели (проверить)»",
+    "«Apple Day 2026»: «Включает определение сортов яблок, отжим сока, игры и прилавки для семей» — в «Факты из знаний модели (проверить)»",
+    "«Leo Sayer»: «Leo Sayer — хитмейкер семидесятых» — в «Факты из знаний модели (проверить)»",
+    "«Leo Sayer»: «Известен по 'You Make Me Feel Like Dancing'» — в «Факты из знаний модели (проверить)»",
+    "«Leo Sayer»: «Выступает в Кингс-Линне» — в «Факты из знаний модели (проверить)»",
+    "«Fireworks Night»: «Событие проходит 5 ноября» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «Фестиваль Straw Bear проходит в январе» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «На фестивале человек в костюме из соломы танцует по улицам с фолк-музыкантами» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «Фестиваль заканчивается ритуальным сожжением медведя» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «Это возрождённый обычай Plough Monday» — в «Факты из знаний модели (проверить)»",
+    "«Cambridge Folk Festival»: «Это один из самых давних ежегодных фестивалей города» — в «Факты из знаний модели (проверить)»",
+    "«Cambridge Folk Festival»: «Билеты поступили в продажу с середины сентября» — в «Факты из знаний модели (проверить)»",
+    "«The Betfred Guineas Festival»: «Это встреча, которая традиционно открывает британский сезон гладких скачек» — в «Факты из знаний модели (проверить)»",
+    "«The Betfred Guineas Festival»: «На фестивале проводятся классические гонки 2000 и 1000 Guineas» — в «Факты из знаний модели (проверить)»",
+    "«Tripots»: «Новый ресторан Tripots открылся на Quayside» — в «Факты из знаний модели (проверить)»",
+    "«The Arbury Social»: «Готовит блюда из излишков продуктов и местных ингредиентов» — в «Факты из знаний модели (проверить)»",
+    "«Cambridge United v Blackpool»: «Матч Cambridge United против Blackpool — обычный матч Лиги One» — в «Факты из знаний модели (проверить)»",
+    "«Roachford + Hue and Cry»: «Hue and Cry подарили миру 'Labour of Love'» — в «Факты из знаний модели (проверить)»",
+    "«Spem In Alium: I Fagiolini at 40»: «Программа включает 40-голосный мотет Thomas Tallis Spem in Alium» — в «Факты из знаний модели (проверить)»",
+    "«Ely’s Autumn and Orchard Fayre 2026»: «На ярмарке местная еда, напитки и ремёсла» — в «Факты из знаний модели (проверить)»",
+    "«Ely’s Autumn and Orchard Fayre 2026»: «На ярмарке яблочные забавы и музыка» — в «Факты из знаний модели (проверить)»",
+    "«Nish Kumar: Angry Humour From a Really Nice Guy»: «Nish Kumar известен по The News Quiz и The Mash Report» — в «Факты из знаний модели (проверить)»",
+    "«Alice Cooper: Devil on My Shoulder»: «Alice Cooper сядет побеседовать с Claire Sturgess» — в «Факты из знаний модели (проверить)»",
+    "«UNIQLO»: «UNIQLO — японская сеть одежды» — в «Факты из знаний модели (проверить)»",
+    "«UNIQLO»: «Это первый кембриджский магазин сети» — в «Факты из знаний модели (проверить)»",
+    "«Tripots»: «Новый ресторан хот-пота открылся на Quayside» — в «Факты из знаний модели (проверить)»",
+    "«The Arbury Social»: «Готовят блюда из излишков и местных продуктов» — в «Факты из знаний модели (проверить)»",
+    "«Anarchical Antiquity – inaugural lecture by Professor Josephine Crawley Quinn»: «Актовая лекция историка в связи с вступлением в должность профессора древней ист» — в «Факты из знаний модели (проверить)»",
+    "«Anarchical Antiquity – inaugural lecture by Professor Josephine Crawley Quinn»: «О беспорядке и восстаниях в античном мире» — в «Факты из знаний модели (проверить)»",
+    "«Regular sessions in libraries»: «Еженедельные встречи в библиотеках Кембриджа» — в «Факты из знаний модели (проверить)»",
+    "«Apple Day 2026»: «С определением сортов яблок, отжимом сока, играми и прилавками для всей семьи» — в «Факты из знаний модели (проверить)»",
+    "«AEPG Great Eastern Run»: «До 8000 бегунов» — в «Факты из знаний модели (проверить)»",
+    "«AEPG Great Eastern Run»: «Зрителям — бесплатно вдоль маршрута» — в «Факты из знаний модели (проверить)»",
+    "«Leo Sayer»: «Leo Sayer известен по песне 'You Make Me Feel Like Dancing'» — в «Факты из знаний модели (проверить)»",
+    "«Adam Garcia's Emerald Storm»: «Emerald Storm — это высокоэнергетическое шоу» — в «Факты из знаний модели (проверить)»",
+    "«Bury St Edmunds Literature Festival»: «Bury St Edmunds Literature Festival включает встречи с авторами, мастер-классы и» — в «Факты из знаний модели (проверить)»",
+    "«Mill Road Winter Fair 2026»: «Mill Road Winter Fair — самая любимая уличная ярмарка Кембриджа» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «На фестивале Straw Bear Festival участвует человек в костюме из соломы» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «Фестиваль Straw Bear Festival — возрождённый обычай Plough Monday» — в «Факты из знаний модели (проверить)»",
+    "«Whittlesea Straw Bear Festival»: «Фестиваль Straw Bear Festival проходит в январе» — в «Факты из знаний модели (проверить)»",
+    "«Cambridge Folk Festival»: «Cambridge Folk Festival — один из самых давних ежегодных фестивалей Кембриджа» — в «Факты из знаний модели (проверить)»",
+    "«Cambridge Folk Festival»: «Билеты на Cambridge Folk Festival поступили в продажу с середины сентября» — в «Факты из знаний модели (проверить)»",
+    "«The Betfred Guineas Festival»: «На Guineas Festival проходят классические гонки 2000 и 1000 Guineas» — в «Факты из знаний модели (проверить)»",
+    "«Breabach»: «Breabach — шотландская фолк-группа» — в «Факты из знаний модели (проверить)»",
+    "«Breabach»: «Осталось мало билетов» — в «Факты из знаний модели (проверить)»",
+    "«Tripots»: «Новый ресторан с хот-потом открылся на Quayside» — в «Факты из знаний модели (проверить)»"
+   ]
+  },
+  {
+   "rule": 30,
+   "title": "Лига футбольного клуба — только подтверждённая",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 31,
+   "title": "Подтверждённые открытия (S148) — в «Новом в городе» (правки по v9)",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Catte Latte»: вытеснено подтверждённым открытием (S148)"
+   ]
+  },
+  {
+   "rule": 32,
+   "title": "Семейные фильмы — кандидаты в «С детьми» (правки по v9)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 33,
+   "title": "«В колледжах»: 3–6 строк, ≤ 2 от колледжа, без служб и дублей",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 34,
+   "title": "Cambridge Union: члены — одной строкой, открытые — пунктами",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 35,
+   "title": "Грамматика русских текстов (падежи, согласование) — вычитка",
+   "level": "fix",
+   "status": "warn",
+   "details": [
+    "Fireworks Night: правка не принята автоматически — с едой и развлечениями помимо самого салюта → с едой, развлечениями и фейерверком"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 36,
+   "title": "«Новое в городе»: стадия открытия не противоречит описанию",
+   "level": "block",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Bridge Bagels»: убран — противоречие стадии открытия: стадия «открылось» (2026-09-28), а описание — «скоро откроется»"
+   ]
+  },
+  {
+   "rule": 37,
+   "title": "«В музеях и усадьбах»: 4–6 строк, ≤ 2 от места, без регулярных занятий и дублей",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 38,
+   "title": "Кино округи — только то, чего нет в Кембридже",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 39,
+   "title": "Ежегодные фестивали: анонс при новой дате или продаже, напоминание за 4–6 недель",
+   "level": "fix",
+   "status": "left",
+   "details": [
+    "«Ely Folk Festival» (R41): в продаже с 2026-10-06, но нет даты начала — нет кандидата для «Новых анонсов»; внести manual_start в data/recurring_events.json"
+   ],
+   "fixed": [
+    "«Ely’s Autumn and Orchard Fayre 2026» дописан в «Главное на выходные 10–11 октября»: ежегодное событие в окне выпуска (без модели, описание из recurring_events)",
+    "«St Ives Michaelmas Fair» дописан в «За городом (до часа)»: ежегодное событие в окне выпуска (без модели, описание из recurring_events)",
+    "«Bury St Edmunds Literature Festival» дописан в «За городом (до часа)»: ежегодное событие в окне выпуска (без модели, описание из recurring_events)",
+    "«AEPG Great Eastern Run» дописан в «Спорт»: ежегодное событие в окне выпуска (без модели, описание из recurring_events)"
+   ]
+  },
+  {
+   "rule": 40,
+   "title": "Необычные традиции: анонс, «Главное на выходные» с объяснением обычая",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 41,
+   "title": "«Научиться»: 4–6 строк, ≤ 2 от организатора, курсы со стартом в 3 недели, цена у дорогих",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 42,
+   "title": "«Секции: идёт набор»: только с набором, 2–4 строки, раз в 8 недель, открытые для всех",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 43,
+   "title": "Вступление — только о том, что есть в выпуске",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 44,
+   "title": "Названия событий — в оригинале, перевод — в описании",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Organ recital: Paul Greally»: название в оригинале вместо перевода «Органный концерт: Paul Greally»",
+    "«Dubai Future Champions Festival — racing»: название в оригинале вместо перевода «Dubai Future Champions Festival — скачки»",
+    "«Dubai Future Champions Festival — racing»: название в оригинале вместо перевода «Dubai Future Champions Festival — скачки»"
+   ]
+  },
+  {
+   "rule": 45,
+   "title": "Культурные реалии: Father Christmas, panto, Bonfire Night — без подмены",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 46,
+   "title": "Роли и порядок участников («хедлайнер», «на разогреве») — только из источника",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«The Uprising»: роли участников, которых нет в источнике, убраны (support)",
+    "«Whalefall»: роли участников, которых нет в источнике, убраны (support)"
+   ]
+  },
+  {
+   "rule": 47,
+   "title": "«Новое в городе» вне Кембриджа — городок в заголовке строки",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  }
+ ]
+}

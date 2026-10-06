@@ -1009,7 +1009,10 @@ AGES_RU = [(r"^school age$", "школьники"), (r"^families$", "семьи"
 AUDIENCE = {"eligible": {"en": "for families eligible for free school meals",
                          "ru": "для семей с правом на бесплатное школьное питание"},
             "university": {"en": "only for children of University of Cambridge staff and students",
-                           "ru": "только для детей сотрудников и студентов университета"}}
+                           "ru": "только для детей сотрудников и студентов университета"},
+            # прогон 7e+: лагерь в школе только для её учеников (kids_collect: audience=school_pupils) — в письмо не идёт,
+            # на странице каникул — с пометкой
+            "school_pupils": {"en": "only for pupils of the host school", "ru": "только для учеников этой школы"}}
 
 
 def _date_conflict(c: dict) -> str | None:
@@ -1038,6 +1041,8 @@ def holiday_selection(p: Pools) -> tuple[list[str], dict[str, str]]:
             why[cid] = "не проверено на сайте провайдера"
         elif c["places"] == "full":
             why[cid] = "мест нет"
+        elif c.get("audience") == "school_pupils":
+            why[cid] = "только для учеников школы, где проходит лагерь"
         elif _date_conflict(c):
             why[cid] = _date_conflict(c)
         elif c["zone"] not in LISTED_ZONES and not (c["zone"] is None and c["audience"] == "eligible"):

@@ -194,3 +194,10 @@ def test_junction_day_limit(tmp_path, monkeypatch):
     except H.Deferred:
         pass
     c._check_host("www.kettlesyard.co.uk", "https://www.kettlesyard.co.uk/")   # у других доменов — общий лимит 250
+
+
+def test_last_tickets_is_not_superlative():
+    from tests.issue_rules.r01_verified_facts import classify
+    assert "super" not in classify("Остались последние билеты на встречу с писательницей Philippa Gregory.")
+    assert "super" not in classify("Last few tickets for An Audience With Philippa Gregory.")
+    assert "super" in classify("Это последний концерт группы в Кембридже.")

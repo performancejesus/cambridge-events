@@ -88,6 +88,17 @@ def main() -> None:
         for x in (res or {}).get("items", []):
             if 0 <= x["n"] < len(part):
                 desc[part[x["n"]]["id"]] = x["ru"].strip()
+    miss = [e for e in cands if e["id"] not in desc]   # модель пропустила часть пакета — повтор мелкими пакетами
+    for i in range(0, len(miss), 10):
+        part = miss[i:i + 10]
+        data = [{"n": n, "title": e.get("title"), "venue": e.get("venue"), "kind": e.get("kind"),
+                 "summary": (e.get("summary") or "")[:400]} for n, e in enumerate(part)]
+        res, c = _cached_call(con, client, "claude-haiku-4-5", DESC_PROMPT, data, DESC_SCHEMA,
+                              "candidates_7f descriptions (retry)", max_tokens=4000)
+        cost += c
+        for x in (res or {}).get("items", []):
+            if 0 <= x["n"] < len(part):
+                desc[part[x["n"]]["id"]] = x["ru"].strip()
     out = []
     for e in cands:
         out.append({"id": e["id"], "title": e.get("title"), "url": e.get("url"), "when_where_price": one_line(e),
