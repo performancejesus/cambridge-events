@@ -1396,7 +1396,13 @@ def candidates_dump(lists: dict, pools: issue.Pools, result: dict, w: issue.Wind
                      when=issue.when(c, w, "ru"), venue=c.get("venue") or c.get("address") or "", zone=c.get("zone") or "",
                      price=price, importance=c.get("importance"), importance_reason=c.get("importance_reason"),
                      summary=(c.get("summary") or c.get("page_facts") or c.get("wiki_description") or "")[:600],
-                     sources=c.get("sources") or [])
+                     sources=c.get("sources") or [], types=c.get("types") or [], category=c.get("category"),
+                     rank=c.get("rank"))
+    why = {i: (it.get("why_ru") or "", it.get("why_en") or "") for sec in result["sections"] for it in sec["items"]
+           for i in it["ids"] if it.get("why_ru")}
+    for cid, e in out.items():   # этап 7g: «Почему стоит пойти» пунктов выпуска
+        if cid in why:
+            e["why_go_ru"], e["why_go_en"] = why[cid]
     excluded = [{"title": t, "reason": why} for why, ts in pools.excluded.items() for t in ts]
     excluded += [{"title": t, "reason": "распродано"} for t in pools.sold_out]
     return {"issue_date": w.issue.isoformat(), "period": [w.start.isoformat(), w.end.isoformat()],

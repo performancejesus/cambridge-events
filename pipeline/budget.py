@@ -60,11 +60,22 @@ def probe(api_key: str | None = None) -> dict:
         return {"ok": False, "error": f"сеть: {e}"[:300], "credit": False}
 
 
-def estimate(con: sqlite3.Connection, builds: int = 3, days: int = 7) -> dict:
-    """Расход по журналу: сборка выпуска (среднее последних `builds` сборок — основной вызов и всё, что с ним в тот же
-    день по `issue …`), сбор за сутки (среднее за последние `days` дней с расходом), неделя = 7 суток сбора + сборка."""
+ONE_OFF_PURPOSES = ("union termcard", "search_extract", "newspaper_primary", "kids_providers", "places_profile",
+                    "kids_texts", "candidates_7f", "gap_audit", "importance_backfill")
+RECURRING_PURPOSES = ("article_extract", "list_extract", "importance", "venue_locate", "lineup", "regional cinema",
+                      "kids_collect", "courses_collect")
+
+
+def estimate(con: sqlite3.Connection, builds: int = 3, days: int = 14) -> dict:
+    """Расход по журналу (этап 7g: оценка 7e+ $12.91 была завышена — сбор делился на дни с расходом, а не на
+    календарные дни, и в него входили разовые статьи):
+    - сборка выпуска — среднее последних `builds` сборок (основной вызов и всё «issue …» той же сборки);
+    - сбор в сутки — ежедневные статьи (извлечение, оценка важности новых событий, списки, площадки, состав, детские
+      и курсы — только изменившиеся страницы) за последние `days` календарных дней, делённые на число этих дней;
+    - разовые статьи (termcard раз в триместр, первичные заполнения, аудит поиска, описания кандидатов для разметки) —
+      отдельно, в неделю не входят; неделя = 7 суток сбора + одна сборка."""
     rows = con.execute("""SELECT purpose, cost_usd, called_at FROM llm_usage WHERE purpose LIKE 'issue 20%'
-                          ORDER BY called_at DESC LIMIT ?""", (builds,)).fetchall()
+                          AND purpose NOT LIKE '%claims%' ORDER BY called_at DESC LIMIT ?""", (builds,)).fetchall()
     issue_costs = []
     for r in rows:   # всё «issue …» за час до и шесть часов после основного вызова — одна сборка
         t = datetime.fromisoformat(r["called_at"])
@@ -72,12 +83,19 @@ def estimate(con: sqlite3.Connection, builds: int = 3, days: int = 7) -> dict:
                           ((t - timedelta(hours=1)).isoformat(), (t + timedelta(hours=6)).isoformat())).fetchone()[0]
         issue_costs.append(tot or r["cost_usd"] or 0)
     issue_avg = sum(issue_costs) / len(issue_costs) if issue_costs else 4.0
-    like = " OR ".join("purpose LIKE ?" for _ in COLLECT_PURPOSES)
-    per_day = con.execute(f"""SELECT substr(called_at, 1, 10) d, sum(cost_usd) FROM llm_usage WHERE ({like})
-                              GROUP BY d ORDER BY d DESC LIMIT ?""", (*[p + "%" for p in COLLECT_PURPOSES], days)).fetchall()
-    collect_avg = sum(r[1] or 0 for r in per_day) / len(per_day) if per_day else 0.5
+    since = (_now() - timedelta(days=days)).isoformat()
+    first = con.execute("SELECT min(called_at) FROM llm_usage").fetchone()[0] or since
+    span = max(1, min(days, (_now() - datetime.fromisoformat(max(first, since))).days))
+    like = " OR ".join("purpose LIKE ?" for _ in RECURRING_PURPOSES)
+    recurring = con.execute(f"SELECT coalesce(sum(cost_usd), 0) FROM llm_usage WHERE ({like}) AND called_at >= ?",
+                            (*[p + "%" for p in RECURRING_PURPOSES], since)).fetchone()[0]
+    like1 = " OR ".join("purpose LIKE ?" for _ in ONE_OFF_PURPOSES)
+    one_off = con.execute(f"SELECT coalesce(sum(cost_usd), 0) FROM llm_usage WHERE ({like1}) AND called_at >= ?",
+                          (*[p + "%" for p in ONE_OFF_PURPOSES], since)).fetchone()[0]
+    collect_avg = recurring / span
     return {"issue_build_usd": round(issue_avg, 2), "collect_day_usd": round(collect_avg, 2),
-            "week_usd": round(issue_avg + 7 * collect_avg, 2), "builds_seen": len(issue_costs), "days_seen": len(per_day)}
+            "week_usd": round(issue_avg + 7 * collect_avg, 2), "one_off_usd_period": round(one_off, 2),
+            "builds_seen": len(issue_costs), "days": span}
 
 
 def known_balance(con: sqlite3.Connection) -> dict | None:

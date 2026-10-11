@@ -132,6 +132,9 @@ def test_budget_credit_error_blocks(monkeypatch, tmp_path):
                 "input_tokens INTEGER, output_tokens INTEGER, cost_usd REAL)")
     con.execute("INSERT INTO llm_usage VALUES ('2026-10-01T10:00:00+00:00','issue 2026-10-08_v12','m',NULL,0,0,0.8)")
     con.execute("INSERT INTO llm_usage VALUES ('2026-10-01T10:05:00+00:00','issue claims x','m',NULL,0,0,1.2)")
+    from datetime import datetime, timedelta, timezone   # этап 7g: неделя = сборка + 7 × ежедневный сбор (календарные дни)
+    con.execute("INSERT INTO llm_usage VALUES (?,'importance','m',NULL,0,0,3.5)",
+                ((datetime.now(timezone.utc) - timedelta(days=1)).isoformat(),))
     monkeypatch.setattr(budget, "NOTIFY_FILE", tmp_path / "n.jsonl")
     monkeypatch.setattr(budget, "BALANCE_FILE", tmp_path / "b.json")
     assert budget.estimate(con)["issue_build_usd"] == 2.0
@@ -143,9 +146,9 @@ def test_budget_credit_error_blocks(monkeypatch, tmp_path):
         pass
     assert "api_balance_empty" in (tmp_path / "n.jsonl").read_text()
     monkeypatch.setattr(budget, "probe", lambda: {"ok": True, "error": None, "credit": False})
-    (tmp_path / "b.json").write_text(json.dumps({"balance_usd": 5.0, "as_of": "2026-10-01T00:00:00+00:00"}))
-    assert budget.preflight(con)["status"] == "ok_week_short"   # остаток 3.0 ≥ прогона 2.0, но < недели 5.5
-    (tmp_path / "b.json").write_text(json.dumps({"balance_usd": 2.5, "as_of": "2026-10-01T00:00:00+00:00"}))
+    (tmp_path / "b.json").write_text(json.dumps({"balance_usd": 8.0, "as_of": "2026-10-01T00:00:00+00:00"}))
+    assert budget.preflight(con)["status"] == "ok_week_short"   # остаток ≥ прогона 2.0, но < недели (2.0 + 7 × 0.25)
+    (tmp_path / "b.json").write_text(json.dumps({"balance_usd": 6.5, "as_of": "2026-10-01T00:00:00+00:00"}))
     try:
         budget.preflight(con)
         raise AssertionError("остаток меньше прогона — стоп")
