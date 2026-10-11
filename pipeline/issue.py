@@ -14,7 +14,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 
-from . import enrich, evergreen, kids, lineup, school_holidays
+from . import enrich, event_types, evergreen, kids, lineup, school_holidays, selection
 from .db import ROOT
 from .normalize import norm_title, norm_venue, title_similarity
 
@@ -31,22 +31,31 @@ ANNOUNCE_DAYS = 21          # «объявлено недавно»: стать�
 VENUE_NEWS_DAYS = 60        # «Новое в городе» в первом выпуске — открытия за 2 месяца (правки по v3)
 
 # Рубрики после «Темы недели» и «Главного на выходные» (их по одной на каждые выходные периода).
-FIXED_RUBRICS = ["weekdays", "cinema", "talks", "colleges", "museums", "learn", "exhibitions", "free", "kids", "holidays", "sport", "out_of_town",
-                 "county", "new_announcements", "tickets", "cancelled", "new_in_town"]
+# Этап 7g (новый состав, решено 11.10): убраны «В колледжах», «Выставки», «Бесплатно», «За городом», «Новые анонсы» —
+# их события разложены по тематическим рубрикам; «Бесплатно» — пометка цены, «За городом» — пометка зоны, анонсы —
+# строки «Объявлено: …» в конце тематической рубрики. Новые: «Фестивали», «Волонтёрство». «Успейте купить», «Отменено»,
+# «По графству» — только в редакторской версии (EDITOR_ONLY).
+FIXED_RUBRICS = ["weekdays", "cinema", "talks", "museums", "learn", "sport", "festivals", "volunteering", "holidays", "kids",
+                 "new_in_town", "tickets", "cancelled", "county"]
+EDITOR_ONLY = {"tickets", "cancelled", "county"}
+REMOVED_RUBRICS = {"colleges", "exhibitions", "free", "out_of_town", "new_announcements"}   # этап 7g: не выводятся
+NO_MODEL_RUBRICS = {"holidays", "learn", "festivals", "volunteering"}   # строки без модели
 RUBRIC_TITLES = {
     "en": {"theme": "Theme of the week: {theme}", "weekend": "The weekend: {weekend}",
            "weekdays": "Weekdays: concerts, theatre, comedy", "cinema": "At the cinema", "talks": "Talks and meetings",
-           "colleges": "At the colleges", "museums": "Museums and estates", "learn": "Learn something",
+           "colleges": "At the colleges", "museums": "Museums, exhibitions and estates", "learn": "Learn something",
            "exhibitions": "Exhibitions", "free": "Free",
            "kids": "With kids", "holidays": "School holidays: where to book your child", "sport": "Sport",
+           "festivals": "Festivals", "volunteering": "Volunteering",
            "out_of_town": "Out of town (within an hour)", "county": "Around the county",
            "new_announcements": "Just announced", "tickets": "Get your tickets",
            "cancelled": "Cancelled and postponed", "new_in_town": "New in town"},
     "ru": {"theme": "Тема недели: {theme}", "weekend": "Главное на выходные {weekend}",
            "weekdays": "На неделе: концерты, театр, комедия", "cinema": "В кино", "talks": "Лекции и встречи",
-           "colleges": "В колледжах", "museums": "В музеях и усадьбах", "learn": "Научиться",
+           "colleges": "В колледжах", "museums": "Музеи, выставки и усадьбы", "learn": "Научиться",
            "exhibitions": "Выставки", "free": "Бесплатно",
            "kids": "С детьми", "holidays": "Каникулы: куда записать ребёнка", "sport": "Спорт",
+           "festivals": "Фестивали", "volunteering": "Волонтёрство",
            "out_of_town": "За городом (до часа)", "county": "По графству",
            "new_announcements": "Новые анонсы", "tickets": "Успейте купить билеты",
            "cancelled": "Отменено и перенесено", "new_in_town": "Новое в городе"},
@@ -59,7 +68,8 @@ LONG_BLURB_MIN = 8.0        # развёрнутое описание (2–3 п�
 ONE_LINE_MAX = 3.0          # одна короткая фраза (правки по v2: описание есть у каждого пункта)
 OUT_OF_TOWN_MIN = 4.0       # «За городом» — не ниже 4 (правки по v3; было 3 после v2)
 COUNTY_MIN = 5.0            # «По графству» — не ниже 5 (правки по v4; было 4)
-MAX_MAIN_ITEMS = 45         # основная часть выпуска (всё, кроме «Каникул») — не больше 40–45 пунктов (правки по v4)
+MAX_MAIN_ITEMS = 50         # основная часть выпуска (всё, кроме «Каникул») — правки по v4: 40–45; этап 7g: «Главное» до 10
+                            # на выходные, а пять рубрик убраны — потолок 50 полных карточек (компактные строки — отдельно)
 COUNTY_WEEKEND_MIN = 8.0    # «Кембриджшир, дальше часа» и «до часа» в «Главном на выходные» — только от 8 (правки по v3, v5)
 BIG_RACE_MIN = 7.0          # крупный забег с участниками — в «Главное» как событие для зрителей (решения после 6b)
 TICKETS_SOON_DAYS = (14, 42)  # «Успейте купить»: событие через 2–6 недель с высокой оценкой и небольшим залом
@@ -90,8 +100,12 @@ LONG_EXHIBITION_DAYS = 14   # идёт дольше 2 недель — не в �
 SALE_RE = re.compile(r"\b(sale|jumble|car boot|nearly new|bric-?a-?brac|table top|flea market)\b", re.I)
 HOLIDAY_NOTES = {"october_half_term": {"en": "booking now", "ru": "запись идёт сейчас"},
                  "christmas": {"en": "who is already taking bookings", "ru": "кто уже открыл запись"}}
-HOLIDAY_TITLES = {"october_half_term": {"en": "October half term", "ru": "Октябрьские каникулы"},
-                  "christmas": {"en": "Christmas holidays", "ru": "Рождественские каникулы"}}
+HOLIDAY_TITLES = {"october_half_term": {"en": "October half term", "ru": "Октябрьские каникулы (half-term)"},
+                  "christmas": {"en": "Christmas holidays", "ru": "Рождественские каникулы"},
+                  "february_half_term": {"en": "February half term", "ru": "Февральские каникулы (half-term)"},
+                  "easter": {"en": "Easter holidays", "ru": "Пасхальные каникулы"},
+                  "may_half_term": {"en": "May half term", "ru": "Майские каникулы (half-term)"},
+                  "summer": {"en": "Summer holidays", "ru": "Летние каникулы"}}
 WINDOW_DAYS = 10            # период выпуска = дата отправки … +10 дней (правки по v2)
 # правки по v4: забеги, триатлоны, челленджи с регистрацией участников — не «Успейте купить билеты», а «Спорт →
 # Поучаствовать». Явные виды — по названию; «run/race/challenge/walk» — только если в описании есть регистрация.
@@ -423,7 +437,7 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     series: dict[tuple, list] = defaultdict(list)
     excluded_rows = []
     for r in rows:
-        why = _exclusion(r) or official_only_reason(con, r)
+        why = _exclusion(r) or official_only_reason(con, r) or selection.nonevent_reason(r["title"], None, r["venue_name"])
         if why:
             excluded_rows.append(r)
             p.excluded[why].append(f"{r['title']} ({r['date_start']})")
@@ -458,8 +472,18 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
             facts["long_running"] = True     # выставка / длительное событие: не в «Главное на выходные»
         if SALE_RE.search(first["title"]):
             facts["sale"] = True             # распродажа / барахолка: не в «За городом» / «По графству»
+        event_types.annotate(facts)
+        # этап 7g: частые регулярные (экскурсии, прогулки, библиотеки) — «постоянное», не в недельный выпуск;
+        # расплывчатые без страницы события — не берём, со страницей — модель раскрывает по page_facts
+        why = selection.frequent_regular(facts) or selection.vague_reason(facts)
+        if why:
+            p.excluded[why].append(f"{first['title']} ({first['date_start']})")
+            continue
+        if selection.vague(facts):
+            facts["vague"] = True
         p.candidates[f"E{first['event_id']}"] = facts
     _find_duplicates(p, excluded_rows)
+    merge_duplicates(p)   # этап 7g: дубли — сильнее склейка (площадка + дата + похожее название или одна страница)
     _links(p)
     _announcements(con, w, p)
     _quirky_marks(con, w, p)
@@ -474,7 +498,70 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     p.releases = film_releases.in_window(con, w.start, w.end)
     _films(con, w, p)
     _siblings(con, p)
+    for c in p.candidates.values():   # этап 7g: тэги типа, категория, rank (важность + редакторский бонус)
+        if c["kind"] not in ("programme",):
+            event_types.annotate(c)
     return p
+
+
+def _fullness(c: dict) -> tuple:
+    """Какая запись дубля полнее: больше источников, есть цена, длиннее описание и факты со страницы."""
+    return (len(c.get("sources") or []), c.get("price_from") is not None or bool(c.get("price_text")),
+            len(c.get("page_facts") or "") + len(c.get("summary") or ""), c.get("importance") or 0)
+
+
+MERGE_STOP = {"photography", "photographic", "photos", "lecture", "lectures", "recital", "organ", "exhibition", "family",
+              "halloween", "workshop", "workshops", "society", "museum", "college", "cambridge", "junction", "evening",
+              "morning", "afternoon", "night", "talks", "with"}
+
+
+def merge_duplicates(p: Pools) -> list[tuple[str, str]]:
+    """Этап 7g (дубли v13: Alice Cooper ×2, Tenpin ×2, Ely Autumn Fayre ×2, Harvest Weekend ×2, Lunchtime Concert ×2,
+    Parkinson's Dance ×2, Tots Football ×2 …): события окна с общей датой и той же площадкой (или одной страницей) и
+    похожим названием — один кандидат; остаётся более полная запись, события второй вливаются в неё (siblings, все
+    даты). Разные названия и разное время одного дня (I Fagiolini 19:30 и Jess Gillam 15:30) — не дубли."""
+    evs = [(cid, c) for cid, c in p.candidates.items() if c["kind"] == "event"]
+    merged = []
+    gone = set()
+    for i, (a, ca) in enumerate(evs):
+        if a in gone:
+            continue
+        for b, cb in evs[i + 1:]:
+            if b in gone or a in gone:
+                continue
+            days_a, days_b = {x[0] for x in ca["dates"]}, {x[0] for x in cb["dates"]}
+            if not days_a & days_b:
+                continue
+            same_url = bool(ca.get("url")) and ca.get("url") == cb.get("url")
+            va, vb = norm_venue(ca.get("venue") or ""), norm_venue(cb.get("venue") or "")
+            same_venue = bool(va and vb) and (va == vb or va in vb or vb in va)
+            ta, tb = norm_title(ca["title"]), norm_title(cb["title"])
+            sim = title_similarity(ta, tb) if ta and tb else 0.0
+            common = _tokens(ca["title"]) & _tokens(cb["title"]) - MERGE_STOP   # отличительные слова, не «talk», «photography»
+            contains = min(len(ta), len(tb)) >= 6 and (ta in tb or tb in ta)
+            times_a = {x[2] for x in ca["dates"] if x[2]}
+            times_b = {x[2] for x in cb["dates"] if x[2]}
+            if times_a and times_b and not times_a & times_b and sim < 0.85:
+                continue   # разное время в один день и разные названия — разные события
+            # одна ссылка — признак дубля, только если и названия похожи (у музеев все события ведут на страницу-список)
+            same_url = same_url and (sim >= 0.3 or bool(common) or contains)
+            if not (same_url or (same_venue and (sim >= 0.6 or (len(common) >= 2 and sim >= 0.4) or contains))
+                    or sim >= 0.9):
+                continue
+            keep, drop = (a, b) if _fullness(ca) >= _fullness(cb) else (b, a)
+            ck, cd = p.candidates[keep], p.candidates[drop]
+            ck["event_ids"] = list(dict.fromkeys(ck["event_ids"] + cd["event_ids"]))
+            ck["dates"] = sorted(set(ck["dates"]) | set(cd["dates"]), key=lambda x: tuple(y or "" for y in x))
+            ck["sources"] = list(dict.fromkeys((ck.get("sources") or []) + (cd.get("sources") or [])))
+            for k in ("price_text", "price_from", "page_facts", "summary", "performer"):
+                if not ck.get(k) and cd.get(k):
+                    ck[k] = cd[k]
+            ck.setdefault("merged_titles", []).append(cd["title"])
+            p.excluded[f"дубль склеен с «{ck['title']}» (этап 7g)"].append(f"{cd['title']} ({drop})")
+            del p.candidates[drop]
+            gone.add(drop)
+            merged.append((keep, drop))
+    return merged
 
 
 SIB_STOP = {"the", "and", "with", "tour", "live", "show", "night", "music", "concert", "comedy", "festival", "party", "club",
@@ -542,10 +629,22 @@ def _drop_repeats(con, w: Window, p: Pools) -> None:
     """Правки по v8: уже показанное в прошлых выпусках (история issue_items, pipeline/history.py) не повторяем."""
     from . import history
     seen = history.shown_before(con, w.issue)
+    places = history.shown_places(con, w.issue)
+    for cid, c in list(p.candidates.items()):   # этап 7g: «Новое в городе» — «скоро откроется» один раз, «открылось» —
+        if c["kind"] != "venue_news":           # ещё один раз; дальше не повторяется (по названию места)
+            continue
+        stages = places.get(selection.norm_place(c["title"]), set())
+        if (c.get("stage") or "") in stages or (stages and c.get("stage") != "opened"):
+            p.excluded["«Новое в городе»: уже выходило в этой стадии (отправленные выпуски)"].append(c["title"])
+            del p.candidates[cid]
+        elif stages:
+            c["second_mention"] = True   # было «скоро откроется», теперь открылось — второй и последний раз
     if not seen:
         return
     for cid, c in list(p.candidates.items()):
         k = cid[:1]
+        if k == "V" and c.get("second_mention"):
+            continue
         keys = [c.get("news_id")] if k == "V" else c.get("event_ids") or []
         prev = [seen.get(k, {}).get(x) for x in keys]
         if k in "AT":   # анонс уже был как анонс или старт продаж
@@ -714,9 +813,32 @@ def _kids_programmes(con, w: Window, p: Pools) -> None:
             texts[k["prog_id"]] = text_of(con, k["prog_id"])
         if k["date_start"] and not (w.issue.isoformat() <= (k["date_end"] or k["date_start"]) and k["date_start"] <= horizon):
             continue
+        # этап 7g (правка 7 после v13): только для детей сотрудников и студентов университета — restricted: ни в выпуске,
+        # ни на странице каникул (в базе хранится); лагерь только для учеников школы — тоже
+        if k["audience"] in ("university", "school_pupils"):
+            p.excluded[f"каникулы: {AUDIENCE[k['audience']]['ru']} — не показываем"].append(f"{k['provider']} — {k['title']}")
+            continue
+        # этап 7g: каникулярные программы вне зоны (School's Out в Chelmsford, Norwich, Ipswich…) — даже не кандидаты
+        if k["zone"] and k["zone"] not in LISTED_ZONES:
+            p.excluded["каникулы: программа вне зоны"].append(f"{k['provider']} — {k['title']} ({k['venue'] or '?'})")
+            continue
+        if re.search(r"\(\s*(?:\w+\s+)?20\d\d\s*\)|\b20\d\d\b", k["title"] or "") and k["date_start"]:
+            years = set(re.findall(r"\b(20\d\d)\b", k["title"]))
+            if years and k["date_start"][:4] not in years and (k["date_end"] or k["date_start"])[:4] not in years:
+                # правка 4 после v13: «School holidays (Oct 2027)» на 26–30 октября 2026 — противоречие у источника
+                p.excluded["каникулы: год в названии не совпадает с датами (проверить у провайдера)"].append(
+                    f"{k['provider']} — {k['title']} ({k['date_start']})")
+                continue
+        dkey = (selection.norm_place(k["provider"]), k["date_start"], k["date_end"], re.sub(r"\D+", "-", k["ages"] or ""))
+        twin = next((cid for cid, c in p.candidates.items() if c["kind"] == "programme" and c.get("_dkey") == dkey
+                     and k["date_start"]), None)
+        if twin:   # правка 5: страница лагеря + страница дат одного провайдера — одна программа
+            p.excluded["каникулы: дубль (провайдер + даты + возраст)"].append(f"{k['provider']} — {k['title']}")
+            continue
         p.candidates[k["prog_id"]] = {
-            "kind": "programme", "title": k["title"], "provider": k["provider"], "holiday": k["holiday"],
-            "ages": k["ages"], "hours": k["hours"], "price_text": k["price"], "venue": k["venue"],
+            "kind": "programme", "title": selection.dup_age(k["title"]), "provider": k["provider"], "holiday": k["holiday"],
+            "_dkey": dkey,
+            "ages": k["ages"], "hours": k["hours"], "price_text": selection.fix_price_comma(k["price"]), "venue": k["venue"],
             "address": k["address"], "postcode": k["postcode"], "zone": k["zone"], "places": k["places"],
             "booking_opens": k["booking_opens"], "audience": k["audience"], "verified": bool(k["verified"]),
             "note": k["note"], "url": k["url"], "event_ids": [],
@@ -825,8 +947,8 @@ def _announcements(con, w: Window, p: Pools) -> None:
     def add(e: sqlite3.Row, evidence: str) -> None:
         if e["event_id"] in seen or _exclusion(e):
             return
-        why = official_only_reason(con, e)
-        if why:   # прогон 7e+: Jazz Festival по агрегаторам — не анонсируем
+        why = official_only_reason(con, e) or selection.nonevent_reason(e["title"], None, e["venue_name"])
+        if why:   # прогон 7e+: Jazz Festival по агрегаторам — не анонсируем; этап 7g: не события
             p.excluded[why].append(f"{e['title']} ({e['date_start']})")
             return
         facts = _event_facts(con, e)
@@ -985,6 +1107,22 @@ def _venue_news(con, w: Window, p: Pools) -> None:
         if CHAIN_RE.search(v["name"]) and not re.search(r"\bCambridge\b", v["address"] or ""):
             p.excluded["сетевой фастфуд за пределами Кембриджа"].append(v["name"])
             continue
+        why = selection.news_reason({"title": v["name"], "stage": v["stage"], "category": v["type"]})
+        if why:   # этап 7g: только открытия и «скоро откроется»
+            p.excluded[why].append(v["name"])
+            continue
+        # этап 7g (правка 2 после v13: «The Arbury Social» и «Arbury Social»): одно место — один кандидат
+        key = (selection.norm_place(v["name"]), (v["postcode"] or "").replace(" ", "").upper())
+        twin = next((cid for cid, c in p.candidates.items() if c["kind"] == "venue_news"
+                     and selection.norm_place(c["title"]) == key[0]
+                     and (not key[1] or not c.get("postcode") or c["postcode"].replace(" ", "").upper() == key[1])), None)
+        if twin:
+            t = p.candidates[twin]
+            if v["stage"] == "opened" and t.get("stage") != "opened":   # «открылось» — свежее «скоро откроется»
+                t.update(stage="opened", date=v["date"] or t.get("date"), url=v["url"] or t.get("url"))
+            t.setdefault("merged_titles", []).append(v["name"])
+            p.excluded["«Новое в городе»: дубль того же места (название без артикля и пунктуации + адрес)"].append(v["name"])
+            continue
         p.candidates[f"V{v['news_id']}"] = {
             "kind": "venue_news", "title": v["name"], "type": v["type"], "stage": v["stage"],
             "address": v["address"], "postcode": v["postcode"], "date": v["date"], "date_basis": v["date_basis"],
@@ -1083,10 +1221,6 @@ def booking_text(bo: str, lang: str) -> str:
     return out
 
 
-HOLIDAY_TITLES |= {"february_half_term": {"en": "February half term", "ru": "Февральские каникулы"},
-                   "easter": {"en": "Easter holidays", "ru": "Пасхальные каникулы"},
-                   "may_half_term": {"en": "May half term", "ru": "Майские каникулы"},
-                   "summer": {"en": "Summer holidays", "ru": "Летние каникулы"}}
 HOLIDAY_NOTES |= {k: {"en": "who is already taking bookings", "ru": "кто уже открыл запись"}
                   for k in ("february_half_term", "easter", "may_half_term", "summer")}
 FAMILY_IN_HOLIDAYS_MAX = 6
@@ -1131,6 +1265,9 @@ def _programme_line(x: dict, w: Window, lang: str) -> dict:
         place, price = "; ".join(places), "; ".join(prices)
     else:
         place, price = "; ".join(places), (prices[0] if prices else "")
+    if not price:   # этап 7g: в каждой строке программы — цена или «цены на сайте»
+        price = "prices on the website" if lang == "en" else "цены на сайте"
+    price = selection.fix_price_comma(price)
     ages = _ages(c["ages"], lang)
     notes = []
     if c["audience"] in AUDIENCE:
@@ -1143,7 +1280,8 @@ def _programme_line(x: dict, w: Window, lang: str) -> dict:
         notes.append("booking closed" if lang == "en" else "запись закрыта")
     elif c.get("booking_deadline"):
         notes.append(("book by " if lang == "en" else "запись до ") + booking_text(c["booking_deadline"], lang))
-    head = f"{x['provider']} — {x['title']}" + (f" ({ages})" if ages else "")
+    title = selection.dup_age(x["title"])   # правка 5 после v13: «(11-16 yrs) (11 to 16 yrs old)» — возраст один раз
+    head = f"{x['provider']} — {title}" + (f" ({ages})" if ages and not re.search(r"\(\s*[^)]*\d", title) else "")
     dates = sorted(x.get("dates") or [])
     hol = nearest_holidays(w).get(c.get("holiday")) if c.get("holiday") else None
     dates, early = holiday_clip(c, dates, hol)
@@ -1211,6 +1349,8 @@ def prog_type(x: dict) -> str:
 
 
 def kids_page_name(hol: str, h: dict | None, lang: str) -> str:
+    if hol == "all":   # этап 7g: одна страница всех программ, разделы по каникулам
+        return f"kids_holidays_{lang}.html"
     year = (h or {}).get("start", "")[:4]
     return f"kids_{hol}_{year}_{lang}.html"
 
@@ -1282,9 +1422,9 @@ def limited_holiday_groups(p: Pools, w: Window, lang: str, groups: dict) -> list
         rest = len(pairs) - len(sel)
         if near and rest > 0:
             items.append({"title": (f"{rest} more programmes for these holidays →" if lang == "en" else
-                                    f"Ещё {rest} программ на эти каникулы →"),
-                          "meta": "", "blurb": "", "url": kids_page_name(hol, h, lang), "compact": True, "ids": [],
-                          "more": True})
+                                    f"Ещё {_n_ru(rest, 'программа', 'программы', 'программ')} на эти каникулы →"),
+                          "meta": "", "blurb": "", "url": f"{kids_page_name('all', None, lang)}#{hol}", "compact": True,
+                          "ids": [], "more": True})   # этап 7g: согласование числа; общая страница, раздел каникул
         if near and p.blocked_kids.get(hol):
             names = ", ".join(sorted(set(p.blocked_kids[hol])))
             items.append({"title": (f"Also check: {names}" if lang == "en" else f"Ещё проверьте: {names}"),
@@ -1328,10 +1468,12 @@ def model_view(p: Pools) -> list[dict]:
     """Кандидаты для модели: только нужные поля, без пустых. «Каникулы» собираются без модели."""
     out = []
     for cid, c in p.candidates.items():
-        if c["kind"] in ("programme", "holiday_event"):
+        # этап 7g: анонсы, старты продаж и отмены — строки без модели («Объявлено», редакторская версия)
+        if c["kind"] in ("programme", "holiday_event", "announcement", "tickets", "cancellation", "festival"):
             continue
         item = {"id": cid} | {k: v for k, v in c.items()
-                              if k not in ("url", "event_ids", "importance_reason") and v not in (None, "", [], False)}
+                              if k not in ("url", "event_ids", "importance_reason", "_dkey", "all_urls")
+                              and v not in (None, "", [], False)}
         if item.get("summary") and (c.get("importance") or 0) < 6:   # экономия: полный состав нужен крупным событиям
             item["summary"] = item["summary"][:400]
         out.append(item)
@@ -1520,21 +1662,30 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
     sections = {s["rubric"]: s["items"] for s in result["sections"]}
     out = {"title": title, "subtitle": sub, "intro": result[f"intro_{lang}"], "sections": []}
     for rub in w.rubrics():
+        if rub in EDITOR_ONLY or rub in REMOVED_RUBRICS:   # этап 7g: только в редакторской версии / рубрика убрана
+            continue
         if rub == "holidays":   # без модели, одна строка на программу (правки по v4)
             groups = holiday_groups(p, w, lang)
             if groups:
                 out["sections"].append({"rubric": rub, "title": rubric_title(rub, w, lang), "intro": "", "groups": groups})
             continue
         items = sections.get(rub) or []
-        if rub in ("colleges", "museums", "learn"):   # этап 7c: по дате (7d: и «В музеях и усадьбах», 7e: «Научиться»)
-            items = sorted(items, key=lambda it: tuple(x or "" for x in (p.candidates[it["ids"][0]].get("dates") or [("",)])[0]))
+        if rub in ("learn", "festivals", "volunteering"):   # этап 7e: «Научиться» — по дате; 7g: фестивали, волонтёрство
+            items = sorted(items, key=lambda it: tuple(x or "" for x in ((p.candidates.get(it["ids"][0], {}) if it["ids"] else {})
+                                                                         .get("dates") or [("",)])[0]))
+        elif rub == "museums":   # этап 7g: полные пункты выставок — первыми (по rank), строки занятий — по дате
+            items = sorted(items, key=lambda it: (bool(it.get("line")), tuple(x or "" for x in (p.candidates[it["ids"][0]]
+                           .get("dates") or [("",)])[0]) if it.get("line") else (-(p.candidates[it["ids"][0]].get("rank") or 0),)))
         elif rub == "weekdays":   # правки по v5: «На неделе» — по дате
             items = sorted(items, key=lambda it: min((x[0], x[2] or "") for i in it["ids"]
                                                      for x in (p.candidates[i]["dates"] or [("9999", "", None)])))
         elif rub == "new_in_town":   # сначала Кембридж
             items = sorted(items, key=lambda it: not re.search(r"\bCambridge\b", p.candidates[it["ids"][0]].get("address") or ""))
         elif rub != "theme":   # «Тема недели» — порядок по смыслу, как у модели (правки по v3); остальное — по важности
-            items = sorted(items, key=lambda it: (bool(it.get("union")), -importance_of(p, it) if it["ids"] else 0))
+            # (этап 7g: по rank — важность + редакторский бонус; строки — после карточек)
+            items = sorted(items, key=lambda it: (bool(it.get("union")), bool(it.get("line")), -max(
+                ((p.candidates.get(i, {}).get("rank") or p.candidates.get(i, {}).get("importance") or 0) for i in it["ids"]),
+                default=0)))
         featured = {p.candidates[i].get("norm") for it in items for i in it["ids"] if i.startswith("F")}
         rel = release_lines(p, w, lang, featured) if rub == "cinema" else []
         if not items and not rel:
@@ -1547,9 +1698,21 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
                 groups.setdefault("", []).append({"title": it[f"title_{lang}"], "meta": it.get(f"meta_{lang}", ""),
                                                   "blurb": "", "url": it.get("url"), "ids": [], "compact": True})
                 continue
+            if it.get("festival_line") or it.get("volunteer_line") or it.get("announce_line") or it.get("parkrun_line"):
+                # этап 7g: строки без модели — «Фестивали», «Волонтёрство», «Объявлено: …», parkrun
+                key = "announced" if it.get("announce_line") else ("take_part" if rub == "sport" else "sections") \
+                    if it.get("parkrun_line") else ""
+                meta = it.get(f"meta_{lang}") or ""
+                if it.get("parkrun_line") and it.get(f"kind_{lang}"):
+                    meta = f"{it[f'kind_{lang}']} · {meta}"
+                groups.setdefault(key, []).append({"title": it[f"title_{lang}"], "meta": meta, "blurb": "",
+                                                   "url": it.get("url"), "ids": it["ids"], "compact": True})
+                continue
             c = p.candidates[it["ids"][0]]
             if it.get("section_line") or it.get("adult_line"):   # этап 7e: секции с набором; взрослые новички
                 key = "sections" if it.get("section_line") else "take_part"
+                if it.get("home_ed"):   # этап 7g: для детей на домашнем обучении — отдельной строкой
+                    key = "home_ed"
                 meta = it[f"meta_{lang}"]
                 if it.get(f"kind_{lang}"):
                     meta = f"{it[f'kind_{lang}']} · {meta}"
@@ -1567,7 +1730,10 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
             if c["kind"] == "cancellation":   # правки по v8: отмена — одной строкой: что, когда, где, «отменено»
                 price = {"postponed": ("postponed", "перенесено")}.get(c.get("status"), ("cancelled", "отменено"))[
                     0 if lang == "en" else 1]
-            meta = " · ".join(x for x in (when(c, w, lang), where_, price, acc, mark) if x)
+            z = c.get("zone")   # этап 7g: «За городом» — пометка зоны у пункта, а не рубрика
+            zl = "" if c["kind"] in ("venue_news", "film_release") or z in (None, "центр") or z not in LISTED_ZONES else \
+                (ZONE_EN.get(z, z) if lang == "en" else z)
+            meta = " · ".join(x for x in (when(c, w, lang), where_, zl, price, acc, mark) if x)
             if it.get("line") and it.get(f"kind_{lang}"):   # «В колледжах», «В музеях», «Научиться»: вид — в строке
                 meta = f"{it[f'kind_{lang}']} · {meta}" if lang == "ru" or rub == "learn" else meta
             title = it[f"title_{lang}"]
@@ -1588,12 +1754,16 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
             url = it.get("url") or c["url"]   # этап 7c: ссылка на первоисточник (issue_fixes.fix_links)
             if len(it["ids"]) > 1 and all(set(p.candidates[i].get("sources") or []) <= {"S055"} for i in it["ids"]):
                 url = LIBRARIES_URL   # правки по v8: «Регулярно в библиотеках» — страница всех событий библиотек
+            why = "" if it.get("line") or c["kind"] == "cancellation" else (it.get(f"why_{lang}") or "").strip()
             groups.setdefault(key, []).append({"title": title, "meta": meta, "access_url": acc_url,
-                                               "blurb": blurb, "url": url, "ids": it["ids"],
+                                               "blurb": blurb, "url": url, "ids": it["ids"], "why": why,
                                                **({"compact": True} if it.get("line") else {})})
-        for key in sorted(groups, key=lambda k: ["", "also", "take_part", "sections"].index(k)):
-            sub_title = {"take_part": ("Take part", "Поучаствовать"), "also": ("Also playing", "Также играют"),
-                         "sections": ("Clubs taking new members", "Секции: идёт набор")}.get(key)
+        order = ["", "also", "take_part", "sections", "home_ed", "announced"]
+        for key in sorted(groups, key=lambda k: order.index(k)):
+            sub_title = {"take_part": ("Take part", "Поучаствовать"), "also": ("Watch", "Смотреть"),
+                         "sections": ("Clubs taking new members", "Секции: идёт набор"),
+                         "home_ed": ("For home-educated children", "Для детей на домашнем обучении"),
+                         "announced": ("Announced", "Объявлено")}.get(key)
             items_ = groups[key]
             if key == "also":   # по дате
                 items_ = sorted((x | {"compact": True} for x in items_),
@@ -1624,8 +1794,9 @@ def render(result: dict, p: Pools, w: Window, lang: str, editor: dict) -> str:
                     continue
                 acc = (f" ([{'membership' if lang == 'en' else 'членство'}]({it['access_url']}))"
                        if it.get("access_url") else "")
+                why = (f"*{'Why go' if lang == 'en' else 'Почему стоит пойти'}: {it['why']}*  " if it.get("why") else "")
                 lines += [f"**{it['title']}** — {it['meta']}{acc}  ",
-                          (f"{it['blurb']} " if it["blurb"] else "") + f"[{more} →]({it['url']})", ""]
+                          (f"{it['blurb']} " if it["blurb"] else "") + f"[{more} →]({it['url']})"] + ([why] if why else []) + [""]
             if any(it.get("compact") for it in g["items"]):
                 lines += [""]
     lines += ["---", "", "## For the editor" if lang == "en" else "## Для редактора", ""]
@@ -1666,6 +1837,8 @@ def item_html(it: dict, more: str, lang: str = "ru") -> str:
             + (f' (<a href="{e(it["access_url"])}">{"membership" if lang == "en" else "членство"}</a>)'
                if it.get("access_url") else "") + '</p>'
             + (f'<p class="b">{e(it["blurb"])}</p>' if it["blurb"] else "")
+            + (f'<p class="why"><b>{"Why go" if lang == "en" else "Почему стоит пойти"}:</b> {e(it["why"])}</p>'
+               if it.get("why") else "")
             + f'<p class="more"><a href="{e(it["url"])}">{more} →</a></p></article>')
 
 
@@ -1696,6 +1869,7 @@ h3 {{ font:600 1em/1.3 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; mar
 .more a {{ color:var(--accent); font:14px -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }}
 a {{ color:var(--accent); overflow-wrap:anywhere; }}
 .line {{ margin:0 0 8px; font-size:.95em; }}
+.why {{ font:14px/1.45 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; margin:3px 0 0 !important; }}
 .line a {{ color:var(--ink); font-weight:700; }}
 .m2 {{ color:var(--muted); font:14px/1.45 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }}
 {extra_css}
@@ -1795,8 +1969,11 @@ def render_editor_html(result: dict, p: Pools, w: Window, lang: str, editor: dic
         else:
             title = "Theme of the week" if rub == "theme" and lang == "en" else \
                 "Тема недели" if rub == "theme" else rubric_title(rub, w, lang)
-            hidden = "not in the issue" if lang == "en" else "в выпуск не вошла"
+            hidden = ("editor's version only" if lang == "en" else "только в редакторской версии и на сайте") \
+                if rub in EDITOR_ONLY else ("not in the issue" if lang == "en" else "в выпуск не вошла")
             body.append(f'<section class="stub"><h2>{e(title)} — {hidden}</h2>')
+        if rub == "theme" and result.get("theme_options"):   # правка 11 после v13: варианты темы — выбор редактора
+            body.append(_theme_options_html(result, p, lang))
         body.append(_cands_html(rows, lang, placed, items_n if rub not in ("holidays",) else None))
         body.append("</section>")
     nowhere = lists.get("nowhere", [])
@@ -1812,6 +1989,20 @@ def render_editor_html(result: dict, p: Pools, w: Window, lang: str, editor: dic
     body.append("</section>")
     return READER_HTML.format(lang=lang, title=e(L["title"] + (" — editor" if lang == "en" else " — редактор")),
                               body="\n".join(body), extra_css=EDITOR_CSS + "\n" + _plate_css())
+
+
+def _theme_options_html(result: dict, p: Pools, lang: str) -> str:
+    """Варианты темы недели (2–3): название, почему, события. Выбор — data/check_overrides.json → theme: option N."""
+    from html import escape as e
+    head = "Theme options — the editor chooses (check_overrides.json: theme → option)" if lang == "en" else \
+        "Варианты темы — выбирает редактор (check_overrides.json: theme → option)"
+    out = [f'<details open><summary>{e(head)}</summary><ol class="cands">']
+    for k, o in enumerate(result.get("theme_options") or []):
+        evs = "; ".join(e(p.candidates[i]["title"]) for i in o.get("ids", []) if i in p.candidates)
+        mark = " ← в выпуске" if k == 0 and lang == "ru" else " ← in the issue" if k == 0 else ""
+        out.append(f'<li><b>{k}. {e(o["title_" + lang])}</b>{mark} — {e(o["why_" + lang])}<br><span class="src">{evs}</span></li>')
+    out.append("</ol></details>")
+    return "".join(out)
 
 
 def _plate_css() -> str:

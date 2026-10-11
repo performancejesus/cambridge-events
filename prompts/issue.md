@@ -9,32 +9,36 @@ or event («на пике одного из самых важных годов �
 The user message is JSON: the issue period, its weekends, the rubrics to fill and a list of candidates prepared from
 our database. Every candidate has an `id`; its prefix says what it is:
 - `E…` — an event inside the issue period (a series of dates at one venue is already one candidate);
-- `A…` — an event after the period that was announced recently (`evidence` says how we know);
-- `T…` — tickets for an event went on sale recently or will go on sale soon (`on_sale_date`);
-- `C…` — a cancelled or postponed event;
-- `V…` — an opening, upcoming opening or closure of a restaurant, café, bar or shop;
+- `V…` — an opening or upcoming opening of a restaurant, café, bar or shop;
 - `F…` — a film in cinemas in the period (a new UK release or a premiere / special screening at a Cambridge cinema):
   `cinemas` (where it is confirmed to be showing), `wide_release`, `uk_release`, `rerelease`, `importance` (film score),
   `wiki_description` and `wiki_extract` (the opening of its Wikipedia article: genre, director, cast, what it is about).
+Announcements, ticket sales, cancellations, festivals, classes, clubs and holiday programmes are added by us without you.
 
 Event candidates carry `importance` (1–10, computed from venue size, price, press coverage, Wikipedia, fame) with
-`importance_reason`, `on_weekends` (which weekend rubrics the event falls on), `on_weekdays`, `kids_tag` (children
-or families are named in the data) and `free_tag`, sometimes `performer` (the best-known act), `lineup` (everyone named on the bill in any of the merged
+`importance_reason`; `rank` — importance plus our editorial priority (children's and family events, museums and
+exhibitions, local traditions and new places): choose by `rank`; `category` (kids, museum, concert, comedy, theatre,
+sport, traditions, talk, film, class, volunteering, other) and `types` (finer tags). Also `on_weekends` (which weekend
+rubrics the event falls on), `on_weekdays`, `kids_tag` (children or families are named in the data) and `free_tag`,
+sometimes `performer` (the best-known act), `lineup` (everyone named on the bill in any of the merged
 records), `participant` (a run, triathlon or challenge where people register to take part), `thin_data` (the data has no
 substantive fact beyond the title), `page_facts` (text from the event's own page — use it for facts), `film`,
-`talk` / `public_talk`, `theatre`, `urgency` (on `T…`: why tickets are urgent), `long_running` (runs for more than two weeks), `access`
+`talk` / `public_talk`, `theatre`, `long_running` (runs for more than two weeks), `vague` (the title alone does not say
+what will happen — see rule 10), `access`
 (`members`: only for members of a club or society that anyone can join — `access_note` names it; we print "members only"
 and the membership price next to the date, do not put it in the title), `sale` (a sale or
-jumble sale) and `regular_series` (a weekly library session and the like — present it as regular sessions, one line,
-no dates of the whole series). An `editor_note` is a fact checked by our editor — trust it. `linked` lists candidates that belong to the
+jumble sale), `zone` (we print the zone next to the date for events outside Cambridge — do not put it in the title).
+An `editor_note` is a fact checked by our editor — trust it. `linked` lists candidates that belong to the
 same occasion (a director's talk and the screening of their film) — they go into one item together.
 
 Rubrics (`rubric` values; the input lists the ones available):
 - `theme` — "Theme of the week": when several candidates share one occasion (an anniversary, a festival spread over
   several events), group them here, at the top of the issue. At least one of them must have importance ≥ 7. Give the
   theme a short title (`theme_title_en`, `theme_title_ru`) and one or two sentences of introduction
-  (`theme_intro_en`, `theme_intro_ru`). No theme → no `theme` section and empty theme fields. Look for links between
-  the participants: when one candidate's people made another candidate (the director of a film speaks before its
+  (`theme_intro_en`, `theme_intro_ru`). No theme → no `theme` section and empty theme fields. Also give 2–3
+  `theme_options` for the editor: the theme you chose first, then the other possible occasions of the period (each:
+  title, one sentence "why" in both languages, the candidate ids). The editor may pick another option. Look for links
+  between the participants: when one candidate's people made another candidate (the director of a film speaks before its
   screening, an author talks about a book that is being staged, a tribute album's artists play the concert), say so
   and, if both are on the same day or form one visit, put both ids into one item ("screening + meet the director").
   Only links that the data states (summary, editor_note, `linked`); a guess goes to the editor notes instead.
@@ -46,14 +50,15 @@ Rubrics (`rubric` values; the input lists the ones available):
   contradict them. A birthday or "would have turned N" is "this month" only if the verified birth date is in the month
   of the issue; otherwise say "this year". Every such sentence is checked against `verified_facts` by code, and an
   unverified one stops the issue from being sent.
-- `weekend_1`, `weekend_2`, … — "The weekend" for each weekend of the period (dates in the input): the 3–5 best
-  events on that Saturday or Sunday by importance, none below 4. Every event with importance ≥ 7 on that weekend must
-  be here or in `theme`. If nothing on a weekend reaches 4, leave that rubric out. The biggest events of the period
-  belong here or in `theme`, not only in `tickets`. Not here: `long_running` events (exhibitions — they go to
-  `exhibitions` or `free`), zone `Кембриджшир, дальше часа` or `до часа` below importance 8 (they go to `county` /
-  `out_of_town`). At least 2 of the 3–4 items must be in Cambridge (`центр`) or `до 30 мин`. A big `participant` race
+- `weekend_1`, `weekend_2`, … — "The weekend" for each weekend of the period (dates in the input): up to 10 of the
+  best events on that Saturday or Sunday by `rank`, none below 4. Variety: 1–2 items from each `category`, never more
+  than 2 of one category — one kind of event must not take the whole weekend; children's (`kids`) and museum
+  (`museum`) events are a priority of the editor: include the best of each when there is one. Every event with
+  importance ≥ 7 on that weekend must be here or in `theme`. If nothing on a weekend reaches 4, leave that rubric out.
+  Not here: `long_running` events (exhibitions — they go to `museums`), zone `Кембриджшир, дальше часа` or `до часа`
+  below rank 8. At least half of the items must be in Cambridge (`центр`) or `до 30 мин`. A big `participant` race
   (importance ≥ 7, e.g. a 10K through the city) goes here as an event to watch: where to watch, start and finish, road
-  closures if the data says so; if registration is still open, one short phrase. Do not repeat it in `sport`.
+  closures if the data says so. Do not repeat it in `sport`.
 - `weekdays` — "Weekdays: concerts, theatre, comedy": notable concerts, plays, musicals, dance and stand-up on
   Monday–Friday in the period (`on_weekdays` true), 4–6 items. Variety: no more than 2 items from one venue, and at
   least one theatre or dance item (`theatre`) when a candidate with importance ≥ 4 exists (student theatre at the ADC
@@ -63,64 +68,44 @@ Rubrics (`rubric` values; the input lists the ones available):
   your own words (a retelling, never a copy of `wiki_extract`). Facts about the film come from `wiki_description` /
   `wiki_extract`; anything else from your own knowledge goes into `knowledge_*`. Names of directors and actors stay
   in Latin script in the Russian text too ("Paul Greengrass", "Thomasin McKenzie", never «Пол Гринграсс»). No
-  `wiki_extract` and you do not know
-  the film — do not take it. We print where it is showing from the data — do not write cinemas into `where_*` (leave
-  them empty) and do not name cinemas in the blurb. Then special screenings from `E…` film candidates (Q&A, classics,
-  live broadcasts of theatre and opera, festivals), one sentence each. Not a list of showtimes. The line "Out in cinemas
-  from Friday: …" (the other new releases of the week) is added by us from the release calendar — do not write it.
+  `wiki_extract` and you do not know the film — do not take it. We print where it is showing from the data — do not
+  write cinemas into `where_*` (leave them empty) and do not name cinemas in the blurb. Then special screenings from
+  `E…` film candidates (Q&A, classics, live broadcasts of theatre and opera, festivals), one sentence each. Not a list
+  of showtimes. The line "Out in cinemas from Friday: …" is added by us — do not write it.
 - `talks` — "Talks and meetings": public lectures and talks (`public_talk` true) — university public lectures, college
-  lecture series, museum talks, book events. Not specialist seminars. 3–6 items.
-- `exhibitions` — "Exhibitions": `long_running` candidates, the notable ones, one short sentence each.
-- `free` — free events and exhibitions (`free_tag` true — really free, not "free with museum admission"). Give 3–4 items
-  when there are enough candidates (free organ recitals, festivals, family days). Regular library sessions (Rhymetime,
-  Storytime and similar) — one item for all of them: title "Regular sessions in libraries" / «Регулярно в
-  библиотеках», all their ids in `ids`.
-- `kids` — only candidates with `kids_tag` true, from any zone of the issue (say the town when it is not Cambridge).
-  Do not guess that something suits children. At least 3 items when three or more qualify, from different venues: no
-  more than 1 item from one venue while candidates from other venues remain. If fewer than three qualify, give fewer.
-- `sport` — matches (football, rugby, ice hockey), race days and other sport to watch in the period; for matches name
-  the competition and the opponent, for race days the main race if the data names it. Non-league and women's football
-  (Cambridge City FC, Cambridge United Women) — one short line each: opponent, time, ground (we print them under "Also
-  playing"). `participant` events (runs, triathlons, charity challenges
-  where you register to take part) belong here — we print them under "Take part".
-- `out_of_town` — leisure events in the period in zone `до 30 мин` or `до часа`, importance 4 or more, no `sale` items
-  (charity sales and jumble sales), no civic events (consultations, planning exhibitions). Give 3–4 items when there
-  are enough candidates above the threshold.
-- `county` — events in zone `Кембриджшир, дальше часа` (Peterborough, the Fens), importance 5 or more, no `sale` items.
-  Do not make an ordinary league match the only item of this rubric — leave the rubric out instead.
-- `new_announcements` — `A…` candidates and `T…` candidates without `urgency`: notable events announced recently,
-  including dates of annual events — an annual event with a confirmed date (`evidence` mentions the annual event, e.g.
-  Mill Road Winter Fair) is the first candidate and must be included. Far-off concerts on sale now go here ("on sale
-  since …"). 3–4 items when there are enough.
-- `page_urgency` (few_left, selling_fast, early_bird_ends, some_dates_sold_out) — a signal our recheck found on the
-  event page; we print it next to the date, you may mention it once in the blurb. `page_signal` is the text it came from.
-- `tickets` — only `T…` candidates with `urgency` (few tickets left, early price ending, a soon event in a small hall):
-  say why it is urgent. Only tickets for an audience: registrations for runs, triathlons and challenges
-  (`participant`) never go here. No urgent candidates — leave the rubric out.
-- `cancelled` — `C…` candidates only. We print one line: what, when, where, "cancelled" — write the blurb as one short
-  neutral phrase (it is not printed), no biography.
-- `new_in_town` — `V…` candidates: openings of restaurants, cafés, bars and shops; closures only if notable. Cambridge
-  first; from other towns of the zone no more than 1–2 items. Skip places that are not open to the public and chain
-  fast food outside Cambridge. This is one of the strongest rubrics: give 5–6 items when there are enough good
-  candidates.
+  lectures and lecture series, museum talks, author events in bookshops (Heffers, Waterstones), literary salons,
+  poetry evenings. University seminars only when the data says they are open to all ("public lecture", "open to
+  all"); otherwise not at all. 3–6 items.
+- `museums` — "Museums, exhibitions and estates": exhibitions (`long_running`), new displays, college exhibitions and
+  notable events at museums, galleries and historic houses (talks, family days, late openings), 2–5 items, one or two
+  sentences each. Classes and workshops at museums are added by us as short lines — do not write them.
+- `kids` — only candidates with `kids_tag` true, from any zone of the issue. Do not guess that something suits
+  children; nothing for adults ever goes here (adult fitness, senior teams, 16+, 18+). At least 3 items when three or
+  more qualify, from different venues: no more than 1 item from one venue while candidates from other venues remain.
+- `sport` — sport to watch in the period: matches (football incl. Cambridge United men and women, Cambridge City FC,
+  rugby — Cambridge RUFC, hockey — Cambridge City HC and Cambridge South HC, ice hockey — Peterborough Phantoms) and
+  race days at Newmarket and Huntingdon; for matches name the competition and the opponent, for race days the main race
+  if the data names it. Non-league and women's football — one short line each (we print them under "Watch").
+  `participant` events (runs, triathlons, charity challenges where you register to take part) belong here — we print
+  them under "Take part". parkrun and walking football lines are added by us.
+- `new_in_town` — `V…` candidates: openings and upcoming openings only (never closures) of restaurants, cafés, bars and
+  shops. Cambridge first; from other towns of the zone no more than 1–2 items. Skip places that are not open to the
+  public, chain fast food outside Cambridge, petrol stations, medical centres, funeral services and nameless places
+  ("a new pizzeria"). This is one of the strongest rubrics: give 5–6 items when there are enough good candidates.
 
 Rules:
-1. `E…` candidates go to `theme`, the weekend rubrics, `weekdays`, `cinema`, `talks`, `free`, `kids`, `sport`,
-   `out_of_town`, `county`;
-   `A…` and `T…` to `new_announcements` / `tickets` (an `A…`/`T…` candidate may also anchor the theme if its event
-   is in the period); `C…` to `cancelled`; `V…` to `new_in_town`.
-2. Each event appears at most once in the whole issue. If an event has both an `E…` and a `T…` candidate, use one of
-   them. An event that fits several rubrics goes where it is most useful.
-3. Items per rubric (min–max): theme 3–6, each weekend 3–5, weekdays 4–6, cinema 0–4, talks 2–5, exhibitions 2–4,
-   free 3–4, kids 3–4, sport 0–4 (plus the short "Also playing" and "Take part" lines), out_of_town 3–4, county 0–3,
-   new_announcements 3–5, tickets 0–3, cancelled 0–3, new_in_town 5–6. Full items (with a description) in the whole
-   issue — never more than 45; short lines (Also playing, the library line) do not count. The issue is read in five
-   minutes. Cut the weakest items by importance rather than whole rubrics. Never pad with weak or
-   irrelevant items and never invent items. A rubric with
-   nothing suitable is simply left out — no "nothing this week" line.
-4. Skip: professional courses, business conferences and networking events priced for companies; listings that are
-   not an event ("Things to do in Cambridge for Halloween", "Waterstones Book Events"); private events; lectures with
-   "Title to be confirmed"; sold-out events.
+1. `E…` candidates go to `theme`, the weekend rubrics, `weekdays`, `cinema`, `talks`, `museums`, `kids`, `sport`;
+   `V…` to `new_in_town`; `F…` to `cinema` (and family films also to `kids`).
+2. Each event appears at most once in the whole issue. An event that fits several rubrics goes where it is most useful.
+3. Items per rubric (min–max): theme 3–6, each weekend 3–10, weekdays 4–6, cinema 0–4, talks 2–5, museums 2–5,
+   kids 3–5, sport 0–4 (plus the short "Watch" and "Take part" lines), new_in_town 5–6. Full items (with a description)
+   in the whole issue — never more than 50; short lines do not count. Within one rubric no more than 2 items of one
+   kind (three photography meet-ups are too many). Cut the weakest items by `rank` rather than whole rubrics. Never pad
+   with weak or irrelevant items and never invent items. A rubric with nothing suitable is simply left out.
+4. Skip: professional courses, business conferences and networking events; school and college open days; parking,
+   ticket insurance, donation or membership pages; dating events (never); listings that are not an event ("Things to
+   do in Cambridge for Halloween"); daily tours, weekly walks and library sessions (regular, not news); private events;
+   lectures with "Title to be confirmed"; sold-out events.
 5. If two or more candidates are clearly the same event, put all their ids in one item's `ids` and say so in the
    editor notes.
 6. Status `scheduled (no ticket data)` (ADC Theatre, Cambridge United) means we have no sales data: present these as
@@ -149,9 +134,26 @@ Rules:
    of a debut single ("signed to MCA by Dave Ambrose" is not a reason to go; "known for the hit Baby I Don't
    Care" is).
 9. Local traditions. A candidate with `quirky` is an unusual local tradition (pea shooting, snail racing, the straw
-   bear): put it in "Highlights of the weekend" when it falls on a weekend of the period (or in "New announcements" when
+   bear): put it in "The weekend" when it falls on a weekend of the period (announcements are added by us as lines when
    it is an announcement), and give one sentence on what the tradition is, based on `quirky.tradition` (written in
    Russian — say it in your own words in English too). This explanation is data, not your own knowledge.
+
+10. Vague items (`vague`: "Waterstones Book Events", "Studio Sunday", "Print Shop Open", "Discovery Sessions", "Guided
+   Tour of the Pye Exhibitions"): say concretely what will happen, from `page_facts` (who speaks, what you make, what the
+   tour shows). If the data does not say, do not take the item.
+11. Explain the unfamiliar in a few words, the first time: organisations ("MIND Cambridge — a mental health charity"),
+   practices and sports (Reiki, Wing Chun, Escrima, walking football, cricket nets — practice lanes enclosed by nets),
+   formats (parkrun — a free weekly timed 5 km run). For an item from a listings site, say who exactly will be there
+   when the data says so ("Alice Cooper himself"). Russian text: no English common nouns inside Russian sentences
+   (write «Гренландия», «стрельба из лука», not "Greenland", "archery"); names and titles stay in Latin script. Translate
+   meaning, not words: cohousing → «кохаузинг (совместное проживание)», visual impairment → «нарушения зрения»,
+   hand-rolled bagels → «бейглы ручной формовки», Commercial (a dance style) → «стиль commercial», not «коммерческие
+   мероприятия». Never print placeholders like "(not specified)", TBC, N/A, unknown — leave the fact out. Leagues in
+   Russian: «Первая лига (League One)», «Вторая лига (League Two)», never «Лига One».
+12. "Why go" (`why_en`, `why_ru`) — one short sentence under the card: only a concrete fact from the data — first /
+   last time, a tradition of N years, only here, free, suits children from N, who performs or speaks. No advertising
+   words ("a great way to…", "unmissable", «отличный способ», «незабываемый»). If there is no such fact, leave both
+   empty — never invent. It is checked against the sources like the description.
 
 Fields of an item:
 - `ids` — candidate ids (usually one).
@@ -174,6 +176,7 @@ Fields of an item:
   printed with its date range by us — describe it as such, do not contradict the dates.
 - `knowledge_en`, `knowledge_ru` — statements in the blurb or title that come from your general knowledge, not from
   the data (empty lists if none).
+- `why_en`, `why_ru` — "Why go", rule 12 (empty strings if there is no concrete fact).
 
 Field of a section:
 - `passed_over` — for every candidate that fits this rubric, has importance ≥ the lowest importance among the items you

@@ -40,7 +40,8 @@
   "patterns": [
    "Cambridge Half Marathon"
   ],
-  "tickets": true
+  "tickets": true,
+  "note": "; ответ 06.10: Cambridge Half Marathon 2027 — в рубрику (этап 7g: «Спорт», строка «Объявлено»)"
  },
  {
   "rec_id": "R04",
@@ -629,7 +630,8 @@
    "url": "https://www.kings.cam.ac.uk/chapel/festival-nine-lessons-and-carols",
    "opens": null,
    "note": "дата открытия лотереи 2026 — когда колледж обновит страницу (в 2025 — 1–15 ноября)"
-  }
+  },
+  "calendar": false
  },
  {
   "rec_id": "R41",
@@ -645,8 +647,11 @@
   "town": "Ely",
   "festival": true,
   "description": "Фолк-фестиваль в Эли — три дня музыки, моррис-танцев и кемпинга.",
-  "on_sale_note": "билеты на 2027 в продаже (elyfolkfestival.co.uk/tickets)",
-  "note": "этап 7e: 2027 — 9–11 июля"
+  "on_sale_note": "ранние билеты на 2027 в продаже (официальная страница tickets, проверено владельцем 06.10)",
+  "note": "ответ владельца 06.10: 2027 — 9–11 июля, ранние билеты в продаже (manual_start/manual_end)",
+  "manual_start": "2027-07-09",
+  "manual_end": "2027-07-11",
+  "on_sale_since": "2026-10-01"
  },
  {
   "rec_id": "R42",
@@ -795,7 +800,8 @@
   "shared_page": true,
   "festival": true,
   "description": "Трёхдневный июльский фестиваль скачек на July Course — одна из вершин сезона гладких скачек.",
-  "note": "этап 7e: 2026 — 9–11 июля"
+  "note": "этап 7e: 2026 — 9–11 июля",
+  "calendar": false
  },
  {
   "rec_id": "R51",
@@ -812,7 +818,8 @@
   "festival": true,
   "description": "Гинеи — первые классические скачки сезона (2000 и 1000 Guineas) на Rowley Mile.",
   "on_sale_note": "билеты на 2027 в продаже (сайт ипподрома)",
-  "note": "этап 7e: 2027 — 30 апреля – 2 мая"
+  "note": "этап 7e: 2027 — 30 апреля – 2 мая",
+  "calendar": false
  },
  {
   "rec_id": "R52",

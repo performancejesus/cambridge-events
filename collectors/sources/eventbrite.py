@@ -25,7 +25,8 @@ class Eventbrite(DetailCache, JsonLdListCollector):
     def collect(self, http: PoliteClient) -> list[RawEvent]:
         events = super().collect(http)
         self.start_details()
-        for ev in events:
+        cache = getattr(self, "cache", {})
+        for ev in sorted(events, key=lambda e: (e.url in cache)):   # этап 7g: новые события — первыми
             kw = self.detail(http, ev.url) if ev.url else None
             if kw:
                 ev.price = ev.price or kw.get("price")

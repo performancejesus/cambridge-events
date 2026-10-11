@@ -156,7 +156,8 @@ class HtmlDetailCollector(DetailCache, Collector):
         links = self.links(http)
         self.start_details()
         out = []
-        for link, cats in list(links.items())[: self.max_events]:
+        for link in self.order_links(list(links)[: self.max_events]):   # этап 7g: новые — первыми
+            cats = links[link]
             kw = self.detail(http, link)
             if not kw:
                 continue

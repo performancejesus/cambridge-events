@@ -17,6 +17,7 @@
 
 from __future__ import annotations
 
+import json
 import sqlite3
 from datetime import date, datetime, timedelta, timezone
 
@@ -31,18 +32,57 @@ SENT = "status = 'sent'"   # условие для запросов: тольк�
 
 def init(con: sqlite3.Connection) -> None:
     con.execute(SCHEMA)
-    if "status" not in {r[1] for r in con.execute("PRAGMA table_info(issue_items)")}:   # прогон 7e+ (снимок базы — до)
+    cols = {r[1] for r in con.execute("PRAGMA table_info(issue_items)")}
+    if "status" not in cols:   # прогон 7e+ (снимок базы — до)
         con.execute("ALTER TABLE issue_items ADD COLUMN status TEXT DEFAULT 'draft'")
         con.execute("UPDATE issue_items SET status='draft'")
         con.commit()
+    if "detail" not in cols:   # этап 7g: стадия «Нового в городе» и название места (повтор: «скоро» → «открылось»)
+        con.execute("ALTER TABLE issue_items ADD COLUMN detail TEXT")
+        con.commit()
+    con.execute("""CREATE TABLE IF NOT EXISTS issue_themes (issue_date TEXT, version TEXT, title_en TEXT, title_ru TEXT,
+        event_ids TEXT, status TEXT DEFAULT 'draft', recorded_at TEXT, PRIMARY KEY (issue_date, version))""")
 
 
 def mark_sent(con: sqlite3.Connection, issue_date: str, version: str) -> int:
     """Выпуск отправлен: его пункты начинают учитываться в правиле повторов и в отсчёте «Новых анонсов»."""
     init(con)
     n = con.execute("UPDATE issue_items SET status='sent' WHERE issue_date=? AND version=?", (issue_date, version)).rowcount
+    con.execute("UPDATE issue_themes SET status='sent' WHERE issue_date=? AND version=?", (issue_date, version))
     con.commit()
     return n
+
+
+THEME_WEEKS = 8   # правка 11 после v13: тему не повторять 8 недель (только отправленные выпуски)
+
+
+def record_theme(con: sqlite3.Connection, issue_date: str, version: str, title_en: str, title_ru: str,
+                 event_ids: list[int], status: str = "draft") -> None:
+    init(con)
+    con.execute("INSERT OR REPLACE INTO issue_themes VALUES (?,?,?,?,?,?,?)",
+                (issue_date, version, title_en, title_ru, json.dumps(sorted(set(event_ids))), status,
+                 datetime.now(timezone.utc).isoformat(timespec="seconds")))
+    con.commit()
+
+
+def recent_themes(con: sqlite3.Connection, issue: date, weeks: int = THEME_WEEKS) -> list[dict]:
+    """Темы отправленных выпусков за `weeks` недель до даты отправки (черновики не считаются)."""
+    init(con)
+    since = (issue - timedelta(weeks=weeks)).isoformat()
+    return [{"issue_date": r[0], "title_en": r[1], "title_ru": r[2], "event_ids": json.loads(r[3] or "[]")}
+            for r in con.execute("""SELECT issue_date, title_en, title_ru, event_ids FROM issue_themes WHERE status='sent'
+                                    AND issue_date < ? AND issue_date >= ?""", (issue.isoformat(), since))]
+
+
+def shown_places(con: sqlite3.Connection, issue: date) -> dict[str, set[str]]:
+    """«Новое в городе» в отправленных выпусках: название места (norm_place) → стадии, в которых оно уже выходило."""
+    init(con)
+    out: dict[str, set[str]] = {}
+    for (det,) in con.execute(f"SELECT detail FROM issue_items WHERE kind='V' AND {SENT} AND issue_date < ? "
+                              "AND detail IS NOT NULL", (issue.isoformat(),)):
+        stage, _, name = det.partition("|")
+        out.setdefault(name, set()).add(stage)
+    return out
 
 
 def last_sent(con: sqlite3.Connection, before: date) -> str | None:
@@ -65,10 +105,14 @@ def record(con: sqlite3.Connection, issue_date: str, version: str, result: dict,
                 c = candidates.get(cid) or {}
                 evs = c.get("event_ids") or [None]
                 key = c.get("news_id") if cid.startswith("V") else None
+                detail = None
+                if cid.startswith("V"):
+                    from .selection import norm_place
+                    detail = f"{c.get('stage') or ''}|{norm_place(c.get('title'))}"
                 for e in evs if key is None else [key]:
                     con.execute("""INSERT OR REPLACE INTO issue_items(issue_date, version, rubric, cand_id, kind, event_id,
-                        title, recorded_at, status) VALUES (?,?,?,?,?,?,?,?,?)""",
-                                (issue_date, version, sec["rubric"], cid, cid[:1], e, it.get("title_en"), now, status))
+                        title, recorded_at, status, detail) VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                                (issue_date, version, sec["rubric"], cid, cid[:1], e, it.get("title_en"), now, status, detail))
                     n += 1
     con.commit()
     return n

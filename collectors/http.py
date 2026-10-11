@@ -57,7 +57,13 @@ HOST_DELAYS = {"cambridgefoodies.me.uk": 20.0, "cus.org": 10.0, "www.junction.co
 # Прогон 7e+ (05.10): суточный лимит для сайтов, которые закрывались из-за нашей частоты (Junction: 82 запроса 30.09).
 # Разрешение 01.10 — один сбор ≈ 20 запросов; в прогоне 7e+ перепроверка статусов добавила к сбору ещё 33 запроса
 # к страницам событий (всего 55 за сутки) — теперь все модули вместе не больше лимита, остальное — Deferred до завтра.
-HOST_DAY_LIMITS = {"www.junction.co.uk": 25, "junction.co.uk": 25}
+HOST_DAY_LIMITS = {"www.junction.co.uk": 25, "junction.co.uk": 25,
+                   # этап 7g (ответ 06.10): Eventbrite — 150 в сутки; порядок — новые события → перепроверка пунктов
+                   # выпуска → обновление старых страниц (DetailCache оставляет запас REFRESH_RESERVE)
+                   "www.eventbrite.co.uk": 150, "www.eventbrite.com": 150}
+# Этап 7g (ответ 06.10): cus.org больше не запрашивать — Cambridge Union только через termcard (Issuu) и Varsity.
+BLOCKED_HOSTS = {"cus.org": "решение владельца 06.10: cus.org не запрашиваем (Cambridge Union — termcard и Varsity)",
+                 "www.cus.org": "решение владельца 06.10: cus.org не запрашиваем"}
 COOLDOWN_STATUSES = {403, 429, 503, 502, 504, 520, 521, 522, 523, 524}
 CHALLENGE_RE = re.compile(r"just a moment|cf-chl|checking your browser|attention required|captcha|are you a robot|"
                           r"access denied|request unsuccessful|incapsula|radware|perfdrive|enable javascript and cookies|"
@@ -176,8 +182,18 @@ class PoliteClient:
     def _host_row(self, host: str) -> sqlite3.Row | None:
         return self.db.execute("SELECT * FROM hosts WHERE host=?", (host,)).fetchone()
 
+    def day_left(self, host: str) -> int:
+        """Сколько сетевых запросов к домену осталось в суточном лимите."""
+        day = self.db.execute("SELECT count(*) FROM request_log WHERE host=? AND result IN ('network','not_modified','robots') "
+                              "AND ts >= ?", (host, _iso(_now() - timedelta(hours=24)))).fetchone()[0]
+        return HOST_DAY_LIMITS.get(host, MAX_PER_HOST_DAY) - day
+
     def _check_host(self, host: str, url: str, probation: bool = True) -> None:
         """Пауза домена и суточный лимит. После паузы — сначала один запрос к главной (probation)."""
+        if host in BLOCKED_HOSTS:
+            self._log(host, url, "skip_blocked")
+            self.stats["deferred"] += 1
+            raise Deferred(f"{host}: {BLOCKED_HOSTS[host]}")
         row = self._host_row(host)
         now = _now()
         if row and row["cooldown_until"] and row["cooldown_until"] > _iso(now):
@@ -324,6 +340,8 @@ class PoliteClient:
     def fetch(self, url: str) -> Response:
         """Запрос по всем правилам бережного сбора. Возвращает ответ с любым кодом (из кэша — 200).
         Бросает Disallowed (robots.txt), Deferred (пауза домена, ошибка < суток назад, лимит), FetchError (сеть)."""
+        if urlparse(url).netloc in BLOCKED_HOSTS:   # этап 7g: даже robots.txt не запрашиваем
+            self._check_host(urlparse(url).netloc, url)
         if not self.allowed(url):
             self._log(urlparse(url).netloc, url, "disallowed")
             raise Disallowed(url)

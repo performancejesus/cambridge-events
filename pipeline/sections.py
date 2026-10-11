@@ -14,6 +14,7 @@ from __future__ import annotations
 import re
 import sqlite3
 from datetime import date, timedelta
+from . import selection
 
 ROTATION_WEEKS = 8
 DAYS_RU = {"Monday": "пн", "Tuesday": "вт", "Wednesday": "ср", "Thursday": "чт", "Friday": "пт", "Saturday": "сб",
@@ -131,9 +132,33 @@ def kids_candidates(con: sqlite3.Connection, w) -> list[dict]:
         elif ADULT_RE.search(r["ages"] or "") or ADULT_RE.search(r["title"] or ""):
             why = "для взрослых — не детская секция"
         why = why or _line_ok(r)
-        out.append({"cid": f"S:{r['prog_id']}", "row": r, "why": why, "starts": starts,
+        # этап 7g (итоги 7f): обязательные поля строки (провайдер, площадка, возраст, что за занятие), взрослое — вон,
+        # продлёнки и завтраки при школах — вон; Home Ed — пометка и отдельная строка
+        text = " ".join(str(r[k] or "") for k in ("title", "ages", "note", "recruiting_note"))
+        why = why or selection.section_reason(dict(r))
+        home = selection.home_ed(text)
+        if not why and not home and school_hours(r):   # правка 10 после v13 (GK Fit, пн 12:40, 9–12 лет)
+            why = "занятие в учебное время в будни — похоже, для детей на домашнем обучении; уточнить у провайдера"
+        out.append({"cid": f"S:{r['prog_id']}", "row": r, "why": why, "starts": starts, "home_ed": home,
                     "org": r["provider_host"], "cat": r["category"] or "other"})
     return out
+
+
+SCHOOL_DAYS_RE = re.compile(r"\b(mon|tue|wed|thu|fri)\w*|\b(пн|вт|ср|чт|пт)\b", re.I)
+
+
+def school_hours(r) -> bool:
+    """Будний день и начало между 9:00 и 15:00 у школьников (5+): в учебное время ходят только дети на домашнем
+    обучении. Признак для уточнения, а не для пометки."""
+    days, hours = r["days"] or "", r["hours"] or ""
+    if not SCHOOL_DAYS_RE.search(days) or re.search(r"\b(sat|sun)\w*|сб|вс", days, re.I):
+        return False
+    m = re.search(r"\b(\d{1,2})[:.](\d{2})\s*(am|pm)?", hours, re.I)
+    if not m:
+        return False
+    h = int(m.group(1)) % 12 + (12 if (m.group(3) or "").lower() == "pm" else 0) if m.group(3) else int(m.group(1))
+    ages = [int(x) for x in re.findall(r"\d{1,2}", r["ages"] or "")]
+    return 9 <= h < 15 and bool(ages) and min(ages) >= 5
 
 
 def select(cands: list[dict], recent: dict[str, str], limit: int) -> tuple[list[dict], dict[str, str]]:
@@ -198,6 +223,7 @@ def build_items(con: sqlite3.Connection, pools, w) -> tuple[list[dict], dict[str
         t = texts.get(r["prog_id"])
         kind_ru = CAT_RU.get(c["cat"], "секция")
         item = {"ids": [c["cid"]], "line": True, "auto": True, "section_line": True, "url": r["url"],
+                "home_ed": c.get("home_ed", False),
                 "kind_ru": kind_ru, "kind_en": CAT_EN.get(c["cat"], c["cat"].replace("_", " ")),
                 "where_en": "", "where_ru": "", "price_en": "", "price_ru": "", "blurb_en": "", "blurb_ru": "",
                 "knowledge_en": [], "knowledge_ru": []}
@@ -209,6 +235,8 @@ def build_items(con: sqlite3.Connection, pools, w) -> tuple[list[dict], dict[str
                     start = f"new group from {r['date_start']}" if lang == "en" else f"новая группа с {r['date_start']}"
                 zone = "" if r["zone"] == "центр" else f" ({r['zone']})" if lang == "ru" else ""
                 item[f"title_{lang}"] = f"{r['provider']}: {t[f'title_{lang}']}"
+                if c.get("home_ed"):   # этап 7g: пометка в строке
+                    item[f"title_{lang}"] += " (home-educated children)" if lang == "en" else " (для детей на домашнем обучении)"
                 price = re.sub(r"(£\d+)[.,]00\b", r"\1", t[f"price_{lang}"])   # ровные суммы — без копеек
                 item[f"meta_{lang}"] = " · ".join(x for x in (t[f"when_{lang}"], start, (t[f"where_{lang}"] + zone).strip(),
                                                               price, trial) if x)
@@ -276,8 +304,10 @@ def adult_items(con: sqlite3.Connection, pools, w) -> tuple[list[dict], dict[str
         start_en = f"starts {r['date_start']}" if start_ru else ""
         place = (r["venue"] or "") + ("" if r["zone"] in ("центр", None) else f" ({r['zone']})")
         price = re.sub(r"(£\d+)\.00\b", r"\1", r["price"] or "")
+        wf = re.search(r"walking football", r["title"], re.I)   # этап 7g: walking football — с пояснением
         items.append({"ids": [cid], "line": True, "auto": True, "adult_line": True, "url": r["url"],
-                      "title_en": r["title"], "title_ru": r["title"],
+                      "title_en": r["title"] + (" — football without running or tackles" if wf else ""),
+                      "title_ru": r["title"] + (" — футбол шагом: без бега и подкатов" if wf else ""),
                       "meta_en": " · ".join(x for x in ("for beginners", start_en, sched, place, price) if x),
                       "meta_ru": " · ".join(x for x in ("для начинающих", start_ru, sched_ru, place, price) if x),
                       "where_en": "", "where_ru": "", "price_en": "", "price_ru": "", "blurb_en": "", "blurb_ru": "",

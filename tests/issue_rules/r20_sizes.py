@@ -1,13 +1,15 @@
 """20. Размер выпуска (исправляющая через дописывание или сокращение): полных пунктов 40–45, компактные строки —
 отдельно; минимумы и максимумы рубрик — по таблице rubric_sizes (база, заполняется из build_issue.RUBRIC_LIMITS; меняет
-редактор). Меньше минимума — нарушение, только если подходящих кандидатов хватало."""
+редактор). Меньше минимума — нарушение, только если подходящих кандидатов хватало. Этап 7g: новый состав рубрик,
+полных пунктов 35–50; обязательный минимум — «С детьми» и «Музеи, выставки и усадьбы» (приоритет редакции)."""
 
 from __future__ import annotations
 
+from pipeline import issue
 from . import FIX, Finding
 
 RULE, TITLE, LEVEL = 20, "Размер выпуска и рубрик (rubric_sizes)", FIX
-FULL_MIN, FULL_MAX = 40, 45
+FULL_MIN, FULL_MAX = 35, 50   # этап 7g: «Главное» до 10 на выходные, пять рубрик убраны
 
 
 def sizes(con) -> dict[str, tuple[int, int]]:
@@ -39,7 +41,7 @@ def check(ctx) -> Finding:
     used = {i for _, it in ctx.model_items() for i in it["ids"]}
     for rub in ctx.w.rubrics():
         key = "weekend" if rub.startswith("weekend_") else rub
-        if key not in lim or rub in ("holidays",):
+        if key not in lim or rub in ("holidays",) or rub in issue.EDITOR_ONLY:
             continue
         lo, hi = lim[key]
         n = got.get(rub, 0)
@@ -48,7 +50,7 @@ def check(ctx) -> Finding:
         elif n < lo:
             spare = sum(1 for cid, c in ctx.pools.candidates.items() if cid not in used and cid[0] in "EATVCF"
                         and fits(rub, c, ctx.w) and not c.get("thin_data"))
-            (f.violations if spare >= lo - n and key in ("free", "kids", "new_announcements", "out_of_town") else f.warnings
+            (f.violations if spare >= lo - n and key in ("kids", "museums") else f.warnings
              ).append(f"{rub}: {n} пунктов, минимум {lo} (свободных подходящих кандидатов: {spare})")
     f.info.append(f"полных {full}, компактных {compact}")
     return f

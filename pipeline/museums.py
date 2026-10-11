@@ -138,10 +138,13 @@ def build_items(pools, result: dict, w) -> tuple[list[dict], dict[str, str]]:
     from . import issue
     from tests.issue_rules.common import tier
     from tests.issue_rules.r11_primary_link import best_url
-    used = {e for sec in result["sections"] if sec["rubric"] != "museums" for it in sec["items"] for i in it["ids"]
+    # этап 7g: полные пункты выставок в той же рубрике (модель) — тоже заняты; строк меньше минимума — всё равно выводим,
+    # если в рубрике уже есть полные пункты
+    used = {e for sec in result["sections"] for it in sec["items"] if not it.get("museum_line") for i in it["ids"]
             if i in pools.candidates for e in pools.candidates[i]["event_ids"]}
+    has_full = any(not it.get("line") for sec in result["sections"] if sec["rubric"] == "museums" for it in sec["items"])
     chosen, why = select(candidates(pools, used, w), w)
-    if len(chosen) < LINES_MIN:
+    if len(chosen) < LINES_MIN and not has_full:
         for cid, *_ in chosen:
             why[cid] = f"меньше {LINES_MIN} кандидатов — рубрика не выводится"
         chosen = []

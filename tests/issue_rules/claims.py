@@ -102,7 +102,9 @@ def audited_items(ctx) -> list[dict]:
         from_article = any(c.get("source_type") == "article" or set(c.get("sources") or []) <= ARTICLE_SOURCES
                            for c in cands if c.get("sources"))
         out.append({"key": it.get("title_ru") or it.get("title_en"), "rubric": rub,
-                    "text_en": f"{it['title_en']}. {it['blurb_en']}", "text_ru": f"{it['title_ru']}. {it['blurb_ru']}",
+                    # этап 7g: «Почему стоит пойти» — тоже утверждение, сверяется с источником (проверки 2 и 43)
+                    "text_en": f"{it['title_en']}. {it['blurb_en']} {it.get('why_en') or ''}".strip(),
+                    "text_ru": f"{it['title_ru']}. {it['blurb_ru']} {it.get('why_ru') or ''}".strip(),
                     "ids": it["ids"], "strict": rub == "theme" or from_article})
     return out
 

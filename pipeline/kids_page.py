@@ -84,3 +84,74 @@ li.style.display=ok?'':'none';if(ok)n++;}});document.getElementById('n').textCon
 document.getElementById('age').addEventListener('input',f);document.getElementById('zone').addEventListener('change',f);
 </script></main></body></html>
 """
+
+
+HOL_ORDER = ["october_half_term", "christmas", "february_half_term", "easter", "may_half_term", "summer"]
+
+
+def render_all(p: "issue.Pools", w: "issue.Window", lang: str) -> str:
+    """Этап 7g (итоги 7f): одна страница всех программ, разделы по каникулам (октябрьские half-term, рождественские,
+    февральские, пасхальные, майские, летние) — только каникулы, на которые есть проверенные программы; фильтр
+    возраста и зоны — на всю страницу."""
+    groups = issue.programme_lines(p, w, lang)
+    hols = issue.nearest_holidays(w)
+    zones = ZONES_EN if lang == "en" else ZONES_RU
+    title = "School holidays: all programmes" if lang == "en" else "Каникулы: все программы"
+    sections, nav, total = [], [], 0
+    for hol in HOL_ORDER:
+        pairs = groups.get(hol, []) + [xl for xl in groups.get("hurry", []) if xl[0]["c"]["holiday"] == hol]
+        if not pairs:
+            continue
+        h = hols.get(hol) or {}
+        rng = (f"{issue._day(issue.d(h['start']), lang, weekday=False)} – "
+               f"{issue._day(issue.d(h['end']), lang, weekday=False, year=True)}") if h else ""
+        rows = []
+        for x, ln in sorted(pairs, key=lambda xl: (xl[0]["zone"], xl[1]["title"].lower())):
+            lo, hi = age_range(x["c"].get("ages"))
+            z = x["c"].get("zone") or ""
+            rows.append(f'<li data-lo="{lo}" data-hi="{hi}" data-zone="{escape(z)}"><a href="{escape(ln["url"] or "#")}">'
+                        f'{escape(ln["title"])}</a><div class="meta">{escape(ln["meta"])}'
+                        f'{" · " + escape(zones.get(z, z)) if z and z != "центр" else ""}</div></li>')
+        total += len(rows)
+        name = issue.HOLIDAY_TITLES.get(hol, {}).get(lang, hol)
+        nav.append(f'<a href="#{hol}">{escape(name)}</a> ({len(rows)})')
+        sections.append(f'<section id="{hol}"><h2>{escape(name)}</h2><div class="sub">{escape(rng)}</div>'
+                        f'<ul class="list">{"".join(rows)}</ul></section>')
+    zone_opts = "".join(f'<option value="{escape(k)}">{escape(v)}</option>' for k, v in zones.items())
+    t = {"age": "Child's age" if lang == "en" else "Возраст ребёнка", "zone": "Zone" if lang == "en" else "Зона",
+         "all": "all" if lang == "en" else "все", "count": "programmes" if lang == "en" else "программ",
+         "note": ("Verified on the providers' websites; only programmes open to everyone (camps for University staff "
+                  "families and for pupils of one school are not listed). Check dates and prices when booking."
+                  if lang == "en" else
+                  "Проверено на сайтах провайдеров; только открытые для всех (лагеря для детей сотрудников университета "
+                  "и для учеников одной школы не показываем). Даты и цены уточняйте при записи.")}
+    return f"""<!doctype html>
+<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{escape(title)}</title>
+<style>
+:root {{ --bg:#fbfaf7; --fg:#1d1b18; --muted:#6b645a; --line:#e4dfd6; --accent:#8a3b12; }}
+@media (prefers-color-scheme: dark) {{ :root {{ --bg:#1b1a18; --fg:#ece8e1; --muted:#a39b8f; --line:#3a3631; --accent:#e0915f; }} }}
+body {{ background:var(--bg); color:var(--fg); font:16px/1.5 Georgia, serif; margin:0; padding:16px; }}
+main {{ max-width:720px; margin:0 auto; }}
+h1 {{ color:var(--accent); font-size:1.5rem; margin:.2rem 0; }}
+h2 {{ font:700 1.1rem/1.3 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color:var(--accent); margin:22px 0 2px; }}
+.sub, .meta, label, nav {{ color:var(--muted); font:14px/1.4 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }}
+nav a {{ color:var(--accent); font-weight:600; margin-right:10px; }}
+.filters {{ display:flex; flex-wrap:wrap; gap:12px; margin:12px 0; position:sticky; top:0; background:var(--bg); padding:6px 0; }}
+select, input {{ font:inherit; max-width:100%; }}
+ul {{ list-style:none; padding:0; }} li {{ border-top:1px solid var(--line); padding:8px 0; }}
+a {{ color:var(--fg); font-weight:bold; overflow-wrap:anywhere; }}
+</style></head><body><main>
+<h1>{escape(title)}</h1><div class="sub"><span id="n">{total}</span> {t['count']}</div>
+<nav>{" · ".join(nav)}</nav>
+<p class="sub">{t['note']}</p>
+<div class="filters"><label>{t['age']}: <input id="age" type="number" min="0" max="18" inputmode="numeric" style="width:4em"></label>
+<label>{t['zone']}: <select id="zone"><option value="">{t['all']}</option>{zone_opts}</select></label></div>
+{"".join(sections)}
+<script>
+function f(){{var a=parseInt(document.getElementById('age').value),z=document.getElementById('zone').value,n=0;
+document.querySelectorAll('.list li').forEach(function(li){{var ok=(isNaN(a)||(a>=+li.dataset.lo&&a<=+li.dataset.hi))&&(!z||li.dataset.zone===z);
+li.style.display=ok?'':'none';if(ok)n++;}});document.getElementById('n').textContent=n;}}
+document.getElementById('age').addEventListener('input',f);document.getElementById('zone').addEventListener('change',f);
+</script></main></body></html>
+"""

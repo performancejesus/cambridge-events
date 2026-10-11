@@ -76,6 +76,14 @@
          "items": {
           "type": "string"
          }
+        },
+        "why_en": {
+         "type": "string",
+         "description": "«Why go»: one concrete fact from the data (first / last / N-year tradition / only here / free / suits children from N / who performs); empty string if there is no such fact"
+        },
+        "why_ru": {
+         "type": "string",
+         "description": "«Почему стоит пойти»: тот же факт по-русски; пустая строка, если факта нет"
         }
        },
        "required": [
@@ -89,7 +97,9 @@
         "blurb_en",
         "blurb_ru",
         "knowledge_en",
-        "knowledge_ru"
+        "knowledge_ru",
+        "why_en",
+        "why_ru"
        ],
        "additionalProperties": false
       }
@@ -149,6 +159,41 @@
   },
   "theme_intro_ru": {
    "type": "string"
+  },
+  "theme_options": {
+   "type": "array",
+   "description": "2–3 candidate themes for the editor (the chosen theme first)",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "title_en",
+     "title_ru",
+     "why_en",
+     "why_ru",
+     "ids"
+    ],
+    "properties": {
+     "title_en": {
+      "type": "string"
+     },
+     "title_ru": {
+      "type": "string"
+     },
+     "why_en": {
+      "type": "string"
+     },
+     "why_ru": {
+      "type": "string"
+     },
+     "ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   }
   }
  },
  "required": [
@@ -160,7 +205,8 @@
   "theme_title_en",
   "theme_title_ru",
   "theme_intro_en",
-  "theme_intro_ru"
+  "theme_intro_ru",
+  "theme_options"
  ],
  "additionalProperties": false
 }

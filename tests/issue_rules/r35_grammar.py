@@ -4,7 +4,10 @@
 попали в итоговый текст; правки, где модель поменяла больше окончаний, не приняты — редактору.
 
 Прогон 7e+ (решение 01.10, «Режиссёр Director Roddy Bogawa»): английское слово, дублирующее соседнее русское, —
-без модели (issue_fixes.en_dupes / fix_en_dupes); проверка 8 ловит только смешанные буквы внутри слова."""
+без модели (issue_fixes.en_dupes / fix_en_dupes); проверка 8 ловит только смешанные буквы внутри слова.
+Этап 7g: английские заглушки («(not specified)», TBC, N/A, unknown — правка 3), смешанные названия лиг («Лиги One» →
+«Первой лиги (League One)» — правка 6), нарицательные английские слова внутри русской фразы (Greenland, archery —
+итоги 7f; исправляет issue_fixes.fix_stray_english)."""
 
 from __future__ import annotations
 
@@ -19,6 +22,21 @@ def check(ctx) -> Finding:
     for where, text in ctx.texts("ru"):   # английское слово-дубль рядом с русским — без модели, всегда
         for ru, en in en_dupes(text):
             f.violations.append(f"«{where}»: английское слово-дубль «{ru} {en}»")
+    from pipeline.issue_fixes import issue_names, mixed_leagues, placeholders, stray_english
+    names = issue_names(ctx.pools)
+    for rub, it in ctx.model_items():
+        for fld in ("title_ru", "blurb_ru", "where_ru", "price_ru", "meta_ru", "why_ru", "blurb_en", "title_en", "why_en"):
+            t = it.get(fld) or ""
+            if not isinstance(t, str):
+                continue
+            for p in placeholders(t):
+                f.violations.append(f"«{it.get('title_ru')}»: английская заглушка «{p}» ({fld})")
+            if fld.endswith("_ru"):
+                for m in mixed_leagues(t):
+                    f.violations.append(f"«{it.get('title_ru')}»: смешанное название лиги «{m}»")
+                if fld in ("blurb_ru", "why_ru"):
+                    for wd in stray_english(t, names + " " + (it.get("title_en") or "")):
+                        f.warnings.append(f"«{it.get('title_ru')}»: английское слово в русской фразе — «{wd}»")
     if ctx.result.get("en_dupes_fixed"):
         f.info.append(f"английских слов-дублей убрано: {len(ctx.result['en_dupes_fixed'])}")
     g = ctx.result.get("grammar")

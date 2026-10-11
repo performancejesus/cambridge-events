@@ -5,7 +5,7 @@ from __future__ import annotations
 import html
 import re
 from datetime import datetime, timedelta, timezone
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from .base import Collector, RawEvent
 from .http import Disallowed, FetchError, PoliteClient
@@ -97,9 +97,19 @@ def page_price(page_html: str) -> str | None:
 
 
 class DetailCache:
-    """Страницы событий с кэшем: cache (url → (fetched_at, поля)) заполняет и сохраняет вызывающий код."""
+    """Страницы событий с кэшем: cache (url → (fetched_at, поля)) заполняет и сохраняет вызывающий код.
+
+    Этап 7g (ответ 06.10, Eventbrite): порядок — сначала новые события (order_links), обновление старых страниц —
+    только пока у домена в суточном лимите остаётся запас REFRESH_RESERVE (он нужен перепроверке пунктов выпуска);
+    иначе поля старой страницы берутся из прошлого разбора."""
 
     refresh_days: int = 7
+    REFRESH_RESERVE = 40
+
+    def order_links(self, links):
+        """Новые (ещё не разобранные) ссылки — первыми, затем уже известные."""
+        cache = getattr(self, "cache", {})
+        return sorted(links, key=lambda u: u in cache)
 
     def start_details(self) -> None:
         self.fresh_pages: dict[str, dict | None] = {}
@@ -137,6 +147,9 @@ class DetailCache:
         elif not self.budget_left(http):
             self.stats["budget_skipped"] += 1
             return None
+        elif link in cache and hasattr(http, "day_left") and http.day_left(urlparse(link).netloc) < self.REFRESH_RESERVE:
+            self.stats["stale"] = self.stats.get("stale", 0) + 1   # этап 7g: запас лимита — перепроверке пунктов
+            kw = cache[link][1]
         else:
             try:
                 page = http.get(link).text
@@ -191,7 +204,7 @@ class JsonLdDetailCollector(DetailCache, Collector):
                 break
         out = []
         self.start_details()
-        for link in links[: self.max_events]:
+        for link in self.order_links(links[: self.max_events]):
             kw = self.detail(http, link)
             if kw:
                 out.append(self.event(**dict(kw, url=kw.get("url") or link, external_id=link)))

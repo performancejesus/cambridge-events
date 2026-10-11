@@ -32,9 +32,11 @@ MODEL = "claude-sonnet-5"
 PRICE_IN, PRICE_OUT = 2.00 / 1e6, 10.00 / 1e6   # $ за токен, Sonnet 5
 PROMPT = (ROOT / "prompts" / "issue.md").read_text() + "\n\n" + GLOSSARY   # правки по v8: общий глоссарий с «Каникулами»
 SCHEMA = json.loads((ROOT / "prompts" / "issue.schema.json").read_text())
-EVENT_RUBRICS = {"theme", "weekdays", "cinema", "talks", "exhibitions", "free", "kids", "sport", "out_of_town", "county"}
-PREFIX_RUBRICS = {"E": EVENT_RUBRICS, "A": {"new_announcements", "tickets", "theme"},
-                  "T": {"tickets", "new_announcements", "theme"},
+# этап 7g (новый состав рубрик): «Выставки», «Бесплатно», «За городом», «В колледжах», «Новые анонсы» убраны; анонсы —
+# строки «Объявлено» без модели (pipeline/lines.py); «Успейте купить», «Отменено», «По графству» — только редактору
+EVENT_RUBRICS = {"theme", "weekdays", "cinema", "talks", "museums", "kids", "sport", "county"}
+PREFIX_RUBRICS = {"E": EVENT_RUBRICS, "A": {"tickets", "theme"},
+                  "T": {"tickets", "theme"},
                   "C": {"cancelled"}, "V": {"new_in_town"}, "K": {"holidays"},
                   "F": {"cinema", "kids"}}   # этап 7b: фильмы окна (pipeline/cinema); 7c: семейные — и в «С детьми»
 
@@ -45,7 +47,9 @@ def allowed(prefix: str, rubric: str) -> bool:
 
 def model_rubrics(w: issue.Window) -> list[str]:
     """Рубрики, которые пишет модель: «Каникулы» собираются без неё (правки по v4)."""
-    return [r for r in w.rubrics() if r not in ("holidays", "colleges", "museums", "learn")]   # 7e: «Научиться» — без модели   # 7c/7d: «В колледжах», «В музеях» — тоже без модели
+    # 7e: «Научиться» — без модели; 7g: «Фестивали», «Волонтёрство» — строки без модели; «Музеи, выставки и усадьбы» —
+    # модель пишет выставки и события музеев, строки занятий в музеях добавляются после; редакторские рубрики — без модели
+    return [r for r in w.rubrics() if r not in issue.NO_MODEL_RUBRICS and r not in issue.EDITOR_ONLY]
 
 
 def schema_for(w: issue.Window) -> dict:
@@ -57,8 +61,8 @@ def schema_for(w: issue.Window) -> dict:
 MAX_TOKENS = 128000
 # Группы рубрик для генерации частями (решение после этапа 4b: обрезанный ответ стоил $0.73)
 PART_GROUPS = [lambda w: ["theme"] + [r for r in w.rubrics() if r.startswith("weekend_")] + ["weekdays"],
-               lambda w: ["cinema", "talks", "exhibitions", "free", "kids", "sport", "out_of_town", "county"],
-               lambda w: ["new_announcements", "tickets", "cancelled", "new_in_town"]]
+               lambda w: ["cinema", "talks", "museums", "kids", "sport"],
+               lambda w: ["new_in_town"]]
 TOKENS_PER_ITEM = 450         # видимый ответ на пункт: два языка, место, цена, факты из знаний модели
 THINKING_FACTOR = 4           # запас на рассуждения модели (effort medium)
 
@@ -126,6 +130,7 @@ def fits(rubric: str, c: dict, w: issue.Window) -> bool:
     """Выходные — событие в эти выходные и оценка ≥ 7; «На неделе» — есть день пн–пт; «С детьми» и «Бесплатно» —
     по тегам из данных; «за городом» и «по графству» — по зоне."""
     imp = c.get("importance") or 0
+    rank = c.get("rank") or imp   # этап 7g: в отборе — важность + редакторский бонус (детское, музеи, местное)
     exc = c.get("zone_exception")
     if exc:   # решение после 7e (01.10): именное исключение вне зоны — только «Новые анонсы» и «Главное на выходные»
         if rubric.startswith("weekend_") and "weekend" in exc["rubrics"]:
@@ -135,20 +140,24 @@ def fits(rubric: str, c: dict, w: issue.Window) -> bool:
     if rubric.startswith("weekend_"):
         # правки по v3: длительные выставки — не сюда; «Кембриджшир, дальше часа» — только от 8
         # правки по v5: «до часа» (за городом) — тоже только от 8; забег с участниками — только крупный (от 7, для зрителей)
-        if c.get("long_running") or (c.get("zone") in (issue.geo_COUNTY_FAR, "до часа") and imp < issue.COUNTY_WEEKEND_MIN):
+        if c.get("long_running") or (c.get("zone") in (issue.geo_COUNTY_FAR, "до часа") and rank < issue.COUNTY_WEEKEND_MIN):
             return False
         if c.get("participant") and imp < issue.BIG_RACE_MIN:
             return False
         # этап 7e: необычная традиция — в «Главное» при любой оценке (у таких событий нет вместимости и Wikipedia)
-        return rubric in c.get("on_weekends", []) and (imp >= issue.WEEKEND_MIN or bool(c.get("quirky")))
+        return rubric in c.get("on_weekends", []) and (rank >= issue.WEEKEND_MIN or bool(c.get("quirky")))
     if rubric == "weekdays":
         return bool(c.get("on_weekdays"))
     if rubric == "cinema":   # правки после v5: новые фильмы недели и спецпоказы
         return bool(c.get("film"))
-    if rubric == "talks":    # правки после v5: только публичные лекции (не узкие семинары)
-        return bool(c.get("talk")) and bool(c.get("public_talk"))
-    if rubric == "exhibitions":
-        return bool(c.get("long_running"))
+    if rubric == "talks":    # правки после v5: только публичные лекции; 7g: семинары — только с пометкой «открыто для всех»
+        return bool(c.get("talk")) and bool(c.get("public_talk")) and (
+            "academic_seminar" not in (c.get("types") or []) or bool(issue.PUBLIC_RE.search(
+                " ".join(str(c.get(k) or "") for k in ("title", "summary", "page_facts")))))
+    if rubric == "museums":   # этап 7g: «Музеи, выставки и усадьбы» — выставки и события музеев и усадеб
+        from pipeline.museums import place_of
+        return c.get("kind") == "event" and (bool(c.get("long_running")) or bool(
+            {"museum_exhibition", "museum_talk"} & set(c.get("types") or [])) or bool(place_of(c)))
     if rubric == "colleges":   # этап 7c: строки без модели (pipeline/colleges.py)
         from pipeline.colleges import college_of
         return c.get("kind") == "event" and bool(college_of(c))
@@ -160,7 +169,8 @@ def fits(rubric: str, c: dict, w: issue.Window) -> bool:
     if rubric == "holidays":
         return c.get("kind") == "programme"
     if rubric == "kids":   # правки по v8: только события для детей (не распродажи и дни переработки)
-        return bool(c.get("kids_tag")) and c.get("for_kids", True)
+        from pipeline.selection import adult   # этап 7g: взрослое — никогда в детской рубрике
+        return bool(c.get("kids_tag")) and c.get("for_kids", True) and not adult(c.get("title") or "")
     if rubric == "free":
         return bool(c.get("free_tag"))
     if rubric == "out_of_town":   # правки по v3: не ниже 4, без распродаж и барахолок
@@ -402,9 +412,194 @@ def apply_links(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
     return notes
 
 
+def title_match(title: str, cand_title: str) -> float:
+    """Похожесть названия пункта и кандидата (0–1): нормализованные названия, совпадение отличительных слов."""
+    from pipeline.normalize import norm_title, title_similarity
+    a, b = norm_title(title or ""), norm_title(cand_title or "")
+    if not a or not b:
+        return 0.0
+    if a in b or b in a:
+        return 1.0
+    ta, tb = {x for x in a.split() if len(x) >= 4}, {x for x in b.split() if len(x) >= 4}
+    overlap = len(ta & tb) / max(1, min(len(ta), len(tb)))
+    return max(title_similarity(a, b), overlap)
+
+
+def fix_ids_by_title(result: dict, pools: issue.Pools) -> list[tuple[str, str]]:
+    """Правка 1 после v13: модель написала пункт про «Spem In Alium: I Fagiolini at 40», а поставила id «Shine with Jess
+    Gillam» — ссылка, дата и состав пришли от чужого события. Название пункта должно совпадать с кандидатом: если не
+    совпадает, а другой кандидат совпадает почти точно — id заменяется; если подходящего нет — пункт убирается."""
+    notes = []
+    events = [(cid, c) for cid, c in pools.candidates.items() if c["kind"] in ("event", "announcement", "tickets",
+                                                                             "film_release", "venue_news")]
+    for sec in result["sections"]:
+        keep = []
+        for it in sec["items"]:
+            if not it.get("ids") or it.get("line") or len(it["ids"]) > 2 or sec["rubric"] == "theme" and len(it["ids"]) > 1:
+                keep.append(it)
+                continue
+            c = pools.candidates.get(it["ids"][0])
+            if not c or c["kind"] not in ("event", "announcement", "tickets", "film_release", "venue_news"):
+                keep.append(it)
+                continue
+            names = [c["title"]] + list(c.get("merged_titles") or []) + [x["title"] for x in c.get("siblings") or []]
+            score = max(max(title_match(it["title_en"], n) for n in names), max(title_match(it["title_ru"], n) for n in names))
+            if score >= 0.5 or any(title_match(it["title_en"], pools.candidates[i]["title"]) >= 0.5 for i in it["ids"][1:]
+                                   if i in pools.candidates):
+                keep.append(it)
+                continue
+            best = max(((title_match(it["title_en"], x["title"]), cid) for cid, x in events if cid not in it["ids"]),
+                       default=(0, None))
+            if best[0] >= 0.8:
+                notes.append((f"“{it['title_en']}”: the model used the id of “{c['title']}” ({it['ids'][0]}) — "
+                              f"replaced with {best[1]} by the title",
+                              f"«{it['title_ru']}»: модель поставила id чужого события «{c['title']}» ({it['ids'][0]}) — "
+                              f"заменён на {best[1]} по названию"))
+                it["ids"] = [best[1]]
+                keep.append(it)
+            else:
+                notes.append((f"“{it['title_en']}”: the title does not match its candidate “{c['title']}” — item removed",
+                              f"«{it['title_ru']}»: название не совпадает с кандидатом «{c['title']}» — пункт убран"))
+        sec["items"] = keep
+    return notes
+
+
+def cap_weekend_categories(result: dict, pools: issue.Pools, removed: dict) -> list[tuple[str, str]]:
+    """«Главное на выходные» (11.10): до 10 событий, по 1–2 из каждой категории — лишние (по rank) убираются."""
+    notes = []
+    for sec in result["sections"]:
+        if not sec["rubric"].startswith("weekend_"):
+            continue
+        per: dict[str, int] = {}
+        keep = []
+        for it in sorted(sec["items"], key=lambda it: -max((pools.candidates.get(i, {}).get("rank") or 0) for i in it["ids"])):
+            cat = pools.candidates.get(it["ids"][0], {}).get("category") or "other"
+            if per.get(cat, 0) >= WEEKEND_PER_CATEGORY and not any(pools.candidates.get(i, {}).get("quirky") for i in it["ids"]):
+                for i in it["ids"]:
+                    removed[i] = f"«Главное»: уже {WEEKEND_PER_CATEGORY} пункта категории «{cat}»"
+                notes.append((f"“{it['title_en']}”: The weekend already has {WEEKEND_PER_CATEGORY} items of category {cat}",
+                              f"«{it['title_ru']}»: в «Главном» уже {WEEKEND_PER_CATEGORY} пункта категории «{cat}» — убран"))
+                continue
+            per[cat] = per.get(cat, 0) + 1
+            keep.append(it)
+        sec["items"] = [it for it in sec["items"] if it in keep]
+    return notes
+
+
+SUBTYPES = [("photography", re.compile(r"\bphoto\w*|фото", re.I)), ("pottery", re.compile(r"\b(pottery|ceramic\w*|clay|wheel)\b", re.I)),
+            ("organ", re.compile(r"\borgan (recital|concert)|\borgan\b", re.I)), ("yoga", re.compile(r"\b(yoga|pilates|sound bath|meditation)\b", re.I)),
+            ("walk", re.compile(r"\b(walk|walking tour|guided tour|tour)\b", re.I)), ("quiz", re.compile(r"\bquiz\b", re.I)),
+            ("craft", re.compile(r"\b(craft|crochet|knit\w*|embroider\w*|sewing|felting)\b", re.I)),
+            ("tasting", re.compile(r"\b(tasting|wine|beer|gin|whisky|cocktail)\b", re.I)),
+            ("book", re.compile(r"\b(book|author|poetry|literary)\b", re.I)), ("science", re.compile(r"\b(science|stem|robot|space)\b", re.I)),
+            ("halloween", re.compile(r"\b(halloween|spooky|pumpkin)\b", re.I)), ("comedy", re.compile(r"\b(comedy|stand-?up)\b", re.I))]
+SUBTYPE_MAX = 2   # итоги 7f: в одной рубрике не больше 1–2 пунктов одного подвида (встреч по фотографии в v13 — слишком много)
+
+
+def subtype(c: dict) -> str:
+    text = " ".join([c.get("title") or ""] + list(c.get("categories") or []))
+    return next((name for name, rx in SUBTYPES if rx.search(text)), c.get("category") or "other")
+
+
+def diversity(result: dict, pools: issue.Pools, removed: dict) -> list[tuple[str, str]]:
+    """Разнообразие (итоги 7f): в рубрике (кроме «Темы недели» и «Главного» — там категории) не больше SUBTYPE_MAX
+    пунктов одного подвида; лишние — самые слабые по rank."""
+    notes = []
+    for sec in result["sections"]:
+        if sec["rubric"] == "theme" or sec["rubric"].startswith("weekend_") or sec["rubric"] in ("cinema", "new_in_town"):
+            continue
+        per: dict[str, int] = {}
+        keep = []
+        for it in sorted(sec["items"], key=lambda it: -max((pools.candidates.get(i, {}).get("rank") or 0) for i in it["ids"]) if it["ids"] else 0):
+            c = pools.candidates.get(it["ids"][0]) if it["ids"] else None
+            if not c or it.get("line"):
+                keep.append(it)
+                continue
+            st = subtype(c)
+            if per.get(st, 0) >= SUBTYPE_MAX and st not in ("other", "concert", "theatre"):
+                for i in it["ids"]:
+                    removed[i] = f"разнообразие: в рубрике уже {SUBTYPE_MAX} пункта подвида «{st}»"
+                notes.append((f"“{it['title_en']}”: rubric already has {SUBTYPE_MAX} items of subtype {st}",
+                              f"«{it['title_ru']}»: в рубрике уже {SUBTYPE_MAX} пункта подвида «{st}» — убран"))
+                continue
+            per[st] = per.get(st, 0) + 1
+            keep.append(it)
+        sec["items"] = [it for it in sec["items"] if it in keep]
+    return notes
+
+
+def theme_choice(con, result: dict, pools: issue.Pools, w: issue.Window, version: str) -> list[tuple[str, str]]:
+    """Правка 11 после v13: тема не повторяет тему отправленного выпуска за 8 недель (черновики не считаются); в
+    редакторской версии — 2–3 варианта темы (theme_options от модели); редактор выбирает вариант в
+    data/check_overrides.json: {"theme": [{"issue_date", "version", "option": N, "by", "at"}]}. Выбранный вариант —
+    пункты переносятся в «Тему недели» из других рубрик (пункты, которых нет в выпуске, — пересборка без --from-json)."""
+    from pipeline import history
+    from tests.issue_rules import OVERRIDES
+    notes = []
+    opts = result.get("theme_options") or []
+    theme = next((sec for sec in result["sections"] if sec["rubric"] == "theme"), None)
+    recent = history.recent_themes(con, w.issue)
+
+    def ev_of(ids):
+        return {e for i in ids for e in (pools.candidates.get(i) or {}).get("event_ids", [])}
+
+    def repeats(title, ids):
+        for t in recent:
+            same_title = title_match(title or "", t["title_en"] or "") >= 0.6
+            ev = ev_of(ids)
+            if same_title or (ev and len(ev & set(t["event_ids"])) >= max(1, len(ev) // 2)):
+                return t
+        return None
+
+    choice = None
+    over = json.loads(OVERRIDES.read_text()).get("theme", []) if OVERRIDES.exists() else []
+    o = next((x for x in over if x.get("issue_date") == w.issue.isoformat() and x.get("version") in (version, "*")), None)
+    if o and 0 <= int(o.get("option", -1)) < len(opts):
+        choice = int(o["option"])
+        notes.append((f"theme: option {choice + 1} chosen by the editor ({o.get('by', '')})",
+                      f"тема: выбран вариант {choice + 1} редактором ({o.get('by', '')}, check_overrides.json)"))
+    elif theme and theme["items"]:
+        rep = repeats(result.get("theme_title_en"), [i for it in theme["items"] for i in it["ids"]])
+        if rep:
+            alt = next((k for k, x in enumerate(opts[1:], 1) if not repeats(x["title_en"], x["ids"])), None)
+            notes.append((f"theme repeats the sent issue of {rep['issue_date']} — " + (f"option {alt + 1} used" if alt else "theme removed"),
+                          f"тема повторяет отправленный выпуск от {rep['issue_date']} (8 недель) — "
+                          + (f"взят вариант {alt + 1}" if alt else "тема снята")))
+            choice = alt if alt is not None else -1
+    if choice is None:
+        return notes
+    if choice == -1 or not theme:
+        if theme:
+            theme["items"] = []
+        return notes
+    opt = opts[choice]
+    moved = []
+    for sec in result["sections"]:
+        if sec["rubric"] == "theme":
+            continue
+        for it in list(sec["items"]):
+            if set(it["ids"]) & set(opt["ids"]):
+                sec["items"].remove(it)
+                moved.append(it)
+    if theme["items"]:   # прежние пункты темы — обратно не раскладываются (редактор видит их в списке кандидатов)
+        notes.append(("previous theme items removed", "пункты прежней темы убраны из выпуска (видны в кандидатах)"))
+    theme["items"] = moved
+    for lang in ("en", "ru"):
+        result[f"theme_title_{lang}"] = opt[f"title_{lang}"]
+        result[f"theme_intro_{lang}"] = opt[f"why_{lang}"]
+    missing = [i for i in opt["ids"] if not any(i in it["ids"] for it in moved)]
+    if missing:
+        notes.append((f"theme option: items without text {missing} — rebuild without --from-json",
+                      f"вариант темы: пунктов {missing} нет в выпуске — пересоберите без --from-json, модель их напишет"))
+    return notes
+
+
 def validate(result: dict, pools: issue.Pools, w: issue.Window) -> list[tuple[str, str]]:
     """Убирает неизвестные и повторные id, пункты не в своей рубрике; возвращает замечания (en, ru)."""
     notes, used, used_events = [], set(), set()
+    for sec in result["sections"]:   # этап 7g: id пункта ↔ название (правка 1 после v13) — до остальных проверок
+        sec["items"] = [it | {"ids": [i for i in it["ids"] if i in pools.candidates]} for it in sec["items"]]
+    notes += fix_ids_by_title(result, pools)
     for sec in result["sections"]:
         kept = []
         for it in sec["items"]:
@@ -508,13 +703,14 @@ def current_not_verified(con, kd: dict) -> list[tuple[str, str, str]]:
 
 
 # «Причины отбора — явно»: заданное число пунктов по рубрикам (как в prompts/issue.md, правило 3)
-RUBRIC_LIMITS = {"theme": (3, 6), "weekend": (3, 5), "weekdays": (4, 6), "cinema": (0, 4), "talks": (2, 5),
-                 "colleges": (0, 0),   # этап 7c: только компактные строки (3–6, pipeline/colleges.py)
-                 "museums": (0, 0), "learn": (0, 0),   # 7e: «Научиться» — только компактные строки (pipeline/courses.py)    # этап 7d: только компактные строки (4–6, pipeline/museums.py)
-                 "exhibitions": (2, 4), "free": (3, 4), "kids": (3, 4), "sport": (0, 4), "out_of_town": (3, 4),
-                 "county": (0, 3), "new_announcements": (3, 5), "tickets": (0, 3), "cancelled": (0, 3),
-                 "new_in_town": (5, 6)}
-FULL_ITEMS_MAX = 45   # решения после 6c: полных пунктов (с описанием) не больше 40–45; компактные строки — отдельно
+# этап 7g (новый состав): «Главное» — до 10 на выходные; «Музеи, выставки и усадьбы» — полные пункты выставок (2–5) +
+# строки занятий; «Научиться», «Фестивали», «Волонтёрство» — только строки; редакторские рубрики — без пунктов
+RUBRIC_LIMITS = {"theme": (3, 6), "weekend": (3, 10), "weekdays": (4, 6), "cinema": (0, 4), "talks": (2, 5),
+                 "museums": (2, 5), "learn": (0, 0), "festivals": (0, 0), "volunteering": (0, 0),
+                 "kids": (3, 5), "sport": (0, 4), "new_in_town": (3, 6),
+                 "county": (0, 0), "tickets": (0, 0), "cancelled": (0, 0)}
+FULL_ITEMS_MAX = issue.MAX_MAIN_ITEMS   # полные пункты (с описанием); компактные строки — отдельно
+WEEKEND_PER_CATEGORY = 2   # «Главное на выходные»: по 1–2 из каждой категории, чтобы одна не забирала всё (11.10)
 
 
 def is_compact(it: dict, pools: issue.Pools) -> bool:
@@ -792,14 +988,10 @@ def annual_window_items(con, result: dict, pools: issue.Pools, w: issue.Window) 
         z = c.get("zone")
         if c.get("participant"):
             rub = "sport"
-        elif c.get("on_weekends") and z in ("центр", "до 30 мин"):
-            rub = c["on_weekends"][0]
-        elif z in issue.OUT_OF_TOWN:
-            rub = "out_of_town"
-        elif z == issue.geo_COUNTY_FAR:
-            rub = "county"
+        elif c.get("on_weekends") and z in issue.LISTED_ZONES:
+            rub = c["on_weekends"][0]   # этап 7g: «За городом» убрана — зона пометкой у пункта
         else:
-            continue
+            continue   # этап 7g: фестивали и ярмарки в будни — календарь «Фестивали» (pipeline/festivals.py)
         en, ru = issue.price_from_data(c)
         if en == "price not listed":   # правки по v8: одна формулировка для неизвестной цены
             en, ru = "prices on the website", "цены на сайте"
@@ -1386,7 +1578,7 @@ def expand_long(client, result: dict, pools: issue.Pools, con) -> tuple[list[tup
     return notes, cost
 
 
-MIN_RUBRIC = {"free": 3, "new_announcements": 3, "out_of_town": 3, "kids": 3}   # kids — правки по v8
+MIN_RUBRIC = {"kids": 3, "museums": 2}   # kids — правки по v8; 7g: музеи и выставки — приоритет редакции
 
 
 REASONS_SCHEMA = {"type": "object", "additionalProperties": False, "required": ["reasons"], "properties": {"reasons": {
@@ -1460,10 +1652,19 @@ def mandatory(pools: issue.Pools, result: dict, w: issue.Window) -> dict[str, li
     placed_ev = {e for i in placed for e in pools.candidates[i]["event_ids"]}
     free = lambda cid: cid not in placed and not set(pools.candidates[cid]["event_ids"]) & placed_ev
     need: dict[str, list[str]] = {}
-    for cid, c in pools.candidates.items():
-        if c["kind"] == "announcement" and "ежегодного" in (c.get("evidence") or "") \
-                and ((c.get("importance") or 0) >= 6 or c.get("festival")) and free(cid):   # 7d: фестивали — всегда
-            need.setdefault("new_announcements", []).append(cid)
+    # этап 7g: анонсы ежегодных событий — строки «Объявлено» и календарь «Фестивали» (без модели, pipeline/lines.py)
+    # этап 7g (приоритет редакции): в каждом «Главном» — хотя бы одно детское и одно музейное событие, если есть
+    for sec_name in [r for r in w.rubrics() if r.startswith("weekend_")]:
+        have = {pools.candidates[i].get("category") for sec in result["sections"] if sec["rubric"] == sec_name
+                for it in sec["items"] for i in it["ids"][:1]}
+        for cat in ("kids", "museum"):
+            if cat in have:
+                continue
+            best = sorted((cid for cid, c in pools.candidates.items() if c["kind"] == "event" and c.get("category") == cat
+                           and fits(sec_name, c, w) and free(cid) and not c.get("thin_data")),
+                          key=lambda cid: -(pools.candidates[cid].get("rank") or 0))
+            if best:
+                need.setdefault(sec_name, []).append(best[0])
     # этап 7e: необычная традиция в выходные окна — в «Главное на выходные» (с объяснением, что это за обычай)
     for cid, c in pools.candidates.items():
         if c["kind"] == "event" and c.get("quirky") and c.get("on_weekends") and free(cid):
@@ -1498,8 +1699,8 @@ def mandatory(pools: issue.Pools, result: dict, w: issue.Window) -> dict[str, li
         have = counts.get(rub, 0) + len(need.get(rub, []))
         if have >= mn:
             continue
-        thr = issue.OUT_OF_TOWN_MIN if rub == "out_of_town" else 0
-        pre = "A" if rub == "new_announcements" else "E"
+        thr = 0
+        pre = "E"
         cands = sorted((cid for cid, c in pools.candidates.items() if cid[0] == pre and fits(rub, c, w) and free(cid)
                         and (c.get("importance") or 0) >= thr and not c.get("thin_data")
                         and cid not in need.get(rub, [])),
@@ -1885,6 +2086,8 @@ def main() -> None:
         result["model_ids"] = sorted({i for sec in result["sections"] for it in sec["items"] for i in it["ids"]})
         result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "holidays"]   # «Каникулы» — без модели
         fix_notes = apply_links(result, pools) + validate(result, pools, w) \
+            + cap_weekend_categories(result, pools, removed) + diversity(result, pools, removed) \
+            + theme_choice(con, result, pools, w, args.version or "v1") \
             + strip_status(result, pools) + check_alphabets(result, pools) \
             + check_v4_rules(result, pools, removed) + weekdays_rules(result, pools, removed)
         # правки по v5: обязательные пункты, цены со страниц, развёрнутые описания для ≥ 8 — отдельными запросами
@@ -1926,35 +2129,56 @@ def main() -> None:
     for sec in result["sections"]:   # строки «Также играют» без модели — пересобираются при каждой сборке
         sec["items"] = [it for it in sec["items"] if not it.get("auto")]
     fix_notes += also_playing(result, pools, w)   # только матчи, которых ещё нет в выпуске
-    # этап 7c: «В колледжах» (компактные строки без модели) и строка Cambridge Union (termcard) в «Лекциях и встречах»
-    from pipeline import colleges, union_termcard
-    result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "colleges"]
-    col_items, result["colleges_why"] = colleges.build_items(pools, result)
-    result["sections"].append({"rubric": "colleges", "items": col_items})
-    from pipeline import museums   # этап 7d: «В музеях и усадьбах» — после колледжей, без дублей полных пунктов
-    result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "museums"]
+    # этап 7g (новый состав рубрик): «В колледжах» убрана — лекции колледжей идут в «Лекции и встречи», выставки — в
+    # «Музеи, выставки и усадьбы» (их пишет модель); строки занятий в музеях и усадьбах — после полных пунктов, без дублей
+    from pipeline import colleges, festivals, lines, union_termcard
+    result["sections"] = [sec for sec in result["sections"] if sec["rubric"] not in issue.REMOVED_RUBRICS]
+    for sec in result["sections"]:   # строки без модели пересобираются при каждой сборке
+        sec["items"] = [it for it in sec["items"] if not (it.get("line") and (it.get("museum_line") or it.get("announce_line")
+                        or it.get("festival_line") or it.get("volunteer_line") or it.get("parkrun_line")))]
+    result["colleges_why"] = {}
+    from pipeline import museums   # этап 7d: строки музеев и усадеб; 7g: в одной рубрике с выставками
     mus_items, result["museums_why"] = museums.build_items(pools, result, w)
-    result["sections"].append({"rubric": "museums", "items": mus_items})
-    # этап 7e: ежегодные события окна, которых нет в выпуске, — без модели; затем снова сокращение до 45 полных пунктов
+    sec_m = next((s_ for s_ in result["sections"] if s_["rubric"] == "museums"), None)
+    if sec_m is None:
+        sec_m = {"rubric": "museums", "items": []}
+        result["sections"].append(sec_m)
+    sec_m["items"] += [it | {"museum_line": True} for it in mus_items]
+    # этап 7e: ежегодные события окна, которых нет в выпуске, — без модели; затем снова сокращение до потолка
     fix_notes += annual_window_items(con, result, pools, w)
     fix_notes += trim(result, pools, removed)
     from pipeline import courses   # этап 7e: «Научиться» — курсы и мастер-классы для взрослых, без модели
     result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != "learn"]
     learn_items, result["learn_why"] = courses.build_items(con, pools, result, w)
     result["sections"].append({"rubric": "learn", "items": learn_items})
+    # этап 7g: «Фестивали» — календарь из recurring_events; «Волонтёрство» — рабочие выезды и уборки
+    for rub in ("festivals", "volunteering"):
+        result["sections"] = [sec for sec in result["sections"] if sec["rubric"] != rub]
+    fest_items, result["festivals_why"] = festivals.build_items(con, pools, result, w)
+    result["sections"].append({"rubric": "festivals", "items": fest_items})
+    vol_items, result["volunteering_why"] = lines.volunteer_items(pools, result, w)
+    result["sections"].append({"rubric": "volunteering", "items": vol_items})
     from pipeline import sections   # этап 7e: «Секции: идёт набор» (в «С детьми»), взрослые новички (в «Спорте»)
     for sec in result["sections"]:
         sec["items"] = [it for it in sec["items"] if not (it.get("section_line") or it.get("adult_line"))]
     sec_items, why_s = sections.build_items(con, pools, w)
     adult, why_a = sections.adult_items(con, pools, w)
     result["sections_why"] = why_s | why_a
-    for rub, add in (("kids", sec_items), ("sport", adult)):
-        if add:
-            target = next((s for s in result["sections"] if s["rubric"] == rub), None)
-            if target is None:
-                target = {"rubric": rub, "items": []}
-                result["sections"].append(target)
-            target["items"].extend(add)
+    park = lines.parkrun_items()   # этап 7g: parkrun — одной строкой (взрослый — «Спорт», junior — «Секции»)
+    for rub, add in (("kids", sec_items + [park["kids"]]), ("sport", adult + [park["sport"]])):
+        target = next((s_ for s_ in result["sections"] if s_["rubric"] == rub), None)
+        if target is None:
+            target = {"rubric": rub, "items": []}
+            result["sections"].append(target)
+        target["items"].extend(add)
+    # этап 7g: «Объявлено: …» — анонсы в конце тематической рубрики, 1–3 строки (вместо рубрики «Новые анонсы»)
+    for rub, add in lines.announce_items(pools, result, w).items():
+        target = next((s_ for s_ in result["sections"] if s_["rubric"] == rub), None)
+        if target is None:
+            target = {"rubric": rub, "items": []}
+            result["sections"].append(target)
+        target["items"].extend(add)
+    del colleges
     fee = next((dict(x.split("=", 1) for x in (c.get("access_note") or "").split("|") if "=" in x).get("fee")
                 for c in pools.candidates.values() if "S049" in (c.get("sources") or [])), None) or "£370"
     u_item, u_notes = union_termcard.line_item(con, w.start, w.end, fee)
@@ -1974,6 +2198,11 @@ def main() -> None:
     fix_notes += _ifx.fix_original_titles(result, pools) + _ifx.fix_realia(result, pools)
     # прогон 7e+ (решения 01.10): Nine Lessons — только онлайн-лотерея (45); английское слово-дубль рядом с русским (35)
     fix_notes += _ifx.fix_nine_lessons(result, pools, con)
+    # этап 7g: английские заглушки (not specified, TBC, N/A), лиги («Лиги One» → «Первой лиги (League One)»), пояснения
+    # незнакомого (MIND, Reiki, walking football, parkrun…), ошибки перевода (cohousing, cricket nets, Commercial),
+    # «Почему стоит пойти» без рекламы
+    fix_notes += _ifx.fix_placeholders(result) + _ifx.fix_leagues(result) + _ifx.fix_translation(result) \
+        + _ifx.fix_explain(result, pools) + _ifx.fix_why_go(result, pools)
     n_dup = _ifx.fix_en_dupes(result)
     fix_notes += n_dup
     result["en_dupes_fixed"] = [ru for _, ru in n_dup]
@@ -1996,6 +2225,9 @@ def main() -> None:
         usage["cost_usd"] += cost_role + cost_intro
         ctx._layout = {}
         # этап 7d: грамматика — до сверки: проверки на готовом выпуске сверяют тот же текст (кэш), вердикт не меняется
+        n_st, cost_st = issue_fixes.fix_stray_english(api_client, result, pools, con)   # 7g: Greenland, archery
+        fix_notes += n_st
+        usage["cost_usd"] += cost_st
         n_gr, cost_gr, result["grammar"] = issue_fixes.fix_grammar(api_client, result, pools, con)
         fix_notes += n_gr
         usage["cost_usd"] += cost_gr
@@ -2100,12 +2332,10 @@ def main() -> None:
     # решения после 6c: полный список программ на ближайшие каникулы — отдельная страница рядом с выпуском
     # (этап 7c: до проверок — относительная ссылка «Ещё N программ →» должна вести на существующий файл)
     from pipeline import kids_page
-    for hol, h in issue.nearest_holidays(w).items():
-        if (issue.d(h["start"]) - w.issue).days <= issue.HOLIDAY_NEAR_DAYS and hol in issue.programme_lines(pools, w, "ru"):
-            for lang in ("en", "ru"):
-                page = out_dir / issue.kids_page_name(hol, h, lang)
-                page.write_text(kids_page.render(pools, w, lang, hol, h))
-                print(page.relative_to(ROOT))
+    for lang in ("en", "ru"):   # этап 7g: одна страница всех программ, разделы по каникулам
+        page = out_dir / issue.kids_page_name("all", None, lang)
+        page.write_text(kids_page.render_all(pools, w, lang))
+        print(page.relative_to(ROOT))
     for lang in ("en", "ru"):
         reader = out_dir / f"{stem}_reader_{lang}.html"   # читательская версия без блока «Для редактора»
         reader.write_text(issue.render_reader_html(result, pools, w, lang))

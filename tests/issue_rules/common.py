@@ -42,7 +42,8 @@ class Ctx:
                     if compact is not None and bool(it.get("compact")) != compact:
                         continue
                     yield {"rubric": sec["rubric"], "group": g["title"], "title": it["title"], "meta": it.get("meta") or "",
-                           "blurb": it.get("blurb") or "", "url": it.get("url"), "ids": it.get("ids") or [],
+                           "blurb": it.get("blurb") or "", "why": it.get("why") or "", "url": it.get("url"),
+                           "ids": it.get("ids") or [],
                            "compact": bool(it.get("compact")), "more": bool(it.get("more")),
                            "cands": [self.pools.candidates[i] for i in it.get("ids") or [] if i in self.pools.candidates]}
 
@@ -60,7 +61,7 @@ class Ctx:
             if sec.get("intro"):
                 yield "вступление темы", sec["intro"]
         for e in self.entries(lang):
-            yield e["title"], f"{e['title']}. {e['blurb']}"
+            yield e["title"], f"{e['title']}. {e['blurb']}" + (f" {e['why']}" if e.get("why") else "")
 
 
 # --- имена: латиница ↔ кириллица (проверка «имя уже есть в тексте», дубль «Также в программе») ---

@@ -15,7 +15,8 @@ def check(ctx) -> Finding:
     from pipeline import issue
     from pipeline.museums import LINES_MAX, LINES_MIN, NEW_EXHIBITION_DAYS, PER_PLACE, SKIP_RE, candidates, kind_of, place_of
     f = Finding()
-    lines = [it for rub, it in ctx.model_items() if rub == "museums"]
+    # этап 7g: «Музеи, выставки и усадьбы» — полные пункты выставок (модель) + строки занятий; здесь — строки
+    lines = [it for rub, it in ctx.model_items() if rub == "museums" and it.get("line")]
     full_events = {e for rub, it in ctx.model_items() if rub != "museums" for i in it["ids"]
                    for e in (ctx.pools.candidates.get(i) or {}).get("event_ids", [])}
     per = {}
