@@ -212,7 +212,9 @@ class PoliteClient:
             root = f"{p.scheme}://{p.netloc}/"
             if url != root and self.allowed(root):
                 r = self._network(root, host)   # один спокойный запрос к главной
-                if r.status != 200 or is_challenge(r.status, r.content):
+                # этап 7g: у фид-хостов главной нет (ics.fixtur.es отвечает 404) — сайт отвечает, это не закрытие;
+                # закрытие — 403 / 429 / 5xx / заглушка
+                if r.status in COOLDOWN_STATUSES or r.status >= 500 or is_challenge(r.status, r.content):
                     self._set_cooldown(host, f"после паузы главная: {r.status}{' заглушка' if r.status == 200 else ''}")
                     raise Deferred(f"{host}: после паузы главная не открылась ({r.status})")
             self.db.execute("UPDATE hosts SET probation=0, cooldown_since=NULL WHERE host=?", (host,))

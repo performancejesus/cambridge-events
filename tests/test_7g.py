@@ -258,3 +258,15 @@ def test_cus_org_blocked(tmp_path):
         raise AssertionError("cus.org должен быть закрыт")
     except H.Deferred:
         pass
+
+
+def test_probation_404_root_is_not_closed(tmp_path, monkeypatch):
+    """У ics.fixtur.es нет главной (404): после паузы домен открывается, а не уходит на паузу навсегда."""
+    from collectors import http as H
+    c = H.PoliteClient.__new__(H.PoliteClient)
+    c.db, c.stats, c.purpose = H.state(tmp_path / "s.db"), {"deferred": 0, "network": 0}, "test"
+    c.db.execute("INSERT INTO hosts(host, probation) VALUES ('ics.fixtur.es', 1)")
+    monkeypatch.setattr(c, "allowed", lambda url: True)
+    monkeypatch.setattr(c, "_network", lambda url, host, cond=None: H.Response(url, 404, b"Not found", {}))
+    c._check_host("ics.fixtur.es", "https://ics.fixtur.es/v2/cambridge-united.ics")
+    assert c.db.execute("SELECT probation FROM hosts WHERE host='ics.fixtur.es'").fetchone()[0] == 0
