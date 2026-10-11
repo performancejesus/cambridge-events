@@ -446,3 +446,34 @@ python scripts/mark_sent.py --issue 2026-10-08 --version v13        # после
   `ballot` у R40 (Nine Lessons: ссылка и дата открытия онлайн-лотереи).
 - Проверки: 39 — и на фестиваль «в продаже» без даты начала; 35 — английское слово-дубль рядом с русским (без модели,
   `issue_fixes.fix_en_dupes`); 45 — Nine Lessons: только онлайн-лотерея (`issue_fixes.fix_nine_lessons`).
+
+## Этап 7g — перестройка по разметке 7f, выпуск v14
+
+```bash
+python scripts/load_editor_ratings.py editor_ratings_v13.json      # разметка 7f → editor_ratings (снимок базы — до)
+python scripts/run_collectors.py && python scripts/update_db.py    # + S186 Cambridge South HC, S187 Phantoms, S188 RUFC
+python scripts/extract_articles.py --max-cost 1.00 && python scripts/update_db.py --no-load && python scripts/check_recurring.py
+python scripts/locate_venues.py && python scripts/score_importance.py && python scripts/kids_collect.py && python scripts/courses_collect.py
+python scripts/recheck_status.py --issue 2026-10-15 && python scripts/update_db.py --no-load && python scripts/enrich_pages.py --issue 2026-10-15
+python scripts/build_issue.py --issue 2026-10-15 --version v14     # проверка баланса → сборка → проверки 1–62
+python scripts/export_candidates.py --issue 2026-10-15 --version v14   # candidates_v14.json (+ why_go, тэги типа)
+python scripts/quality_7f.py                                        # качество на разметке v13: до / после → data/quality_7f.json
+```
+
+- **Новый состав рубрик** (решено 11.10, `issue.FIXED_RUBRICS`): тема → «Главное» (до 10 на выходные, ≤ 2 на
+  категорию) → «На неделе: концерты, театр, комедия» → «В кино» → «Лекции и встречи» → «Музеи, выставки и усадьбы» →
+  «Научиться» → «Спорт» (Смотреть / Поучаствовать / parkrun) → «Фестивали» (`pipeline/festivals.py`) → «Волонтёрство»
+  (`pipeline/lines.py`) → «Каникулы» (по каникулам) → «С детьми» (+ «Секции», junior parkrun, Home Ed) → «Новое в
+  городе». Убраны «В колледжах», «Выставки», «Бесплатно», «За городом», «Новые анонсы» (анонсы — строки «Объявлено» в
+  конце тематической рубрики); «Успейте купить», «Отменено», «По графству» — только в редакторской версии.
+- **Карточка:** «Почему стоит пойти» (`why_en`/`why_ru` — только конкретный факт, сверка с источником, проверка 48);
+  пояснения незнакомого, перевод по смыслу, без английских заглушек и нарицательных слов (`issue_fixes`, проверки 35, 60).
+- **Отбор** (`pipeline/selection.py`): не события, частые регулярные, расплывчатые, «Новое в городе» только открытия,
+  детские секции (обязательные поля, взрослое и продлёнки — вон, Home Ed), программы вне зоны и с ограниченным доступом.
+  Дубли — `issue.merge_duplicates`; id пункта ↔ название — `build_issue.fix_ids_by_title` (проверка 49 по кэшу страниц).
+- **Ранжирование** (`pipeline/event_types.py`): тэги типа, категория, `rank` = важность + редакторский бонус (детское и
+  музеи +1.5, местное +0.5); оценки редактора в формулу не входят.
+- **Тема недели:** 2–3 варианта (`theme_options`) в редакторской версии; выбор — `data/check_overrides.json` → `theme`;
+  без повтора 8 недель (`history.issue_themes`, только отправленные).
+- **Слой запросов:** Eventbrite — 150 в сутки, новые события первыми, запас на перепроверку; cus.org не запрашиваем.
+- Новые проверки 48–62 (`tests/issue_rules/`), тесты — `tests/test_7g.py`.
