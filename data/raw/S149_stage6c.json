@@ -23,7 +23,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:04:10+00:00"
+  "fetched_at": "2026-10-11T21:02:22+00:00"
  },
  {
   "source_id": "S149",
@@ -49,7 +49,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:04:10+00:00"
+  "fetched_at": "2026-10-11T21:02:28+00:00"
  },
  {
   "source_id": "S149",
@@ -75,7 +75,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:04:10+00:00"
+  "fetched_at": "2026-10-11T21:02:35+00:00"
  },
  {
   "source_id": "S149",
@@ -101,7 +101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:04:10+00:00"
+  "fetched_at": "2026-10-11T21:02:40+00:00"
  },
  {
   "source_id": "S149",
@@ -127,7 +127,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:04:10+00:00"
+  "fetched_at": "2026-10-11T21:02:40+00:00"
  },
  {
   "source_id": "S149",
@@ -153,7 +153,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:04:10+00:00"
+  "fetched_at": "2026-10-11T21:02:40+00:00"
  },
  {
   "source_id": "S149",
@@ -179,7 +179,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:04:10+00:00"
+  "fetched_at": "2026-10-11T21:02:46+00:00"
  },
  {
   "source_id": "S149",
@@ -205,15 +205,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:04:10+00:00"
+  "fetched_at": "2026-10-11T21:02:53+00:00"
  },
  {
   "source_id": "S149",
-  "title": "Easter at King’s: Beethoven — Missa Solemnis",
-  "url": "https://kingscollegechoir.com/concert/easter-at-kings-beethoven-missa-solemnis/",
+  "title": "The Choir of King’s College, Cambridge in Concert",
+  "url": "https://kingscollegechoir.com/concert/the-choir-of-kings-college-cambridge-in-concert/",
   "kind": "event",
-  "external_id": "easter-at-king-s-beethoven-missa-solemnis#2027-03-26",
-  "start": "2027-03-26T19:30",
+  "external_id": "the-choir-of-king-s-college-cambridge-in-concert#2027-02-26",
+  "start": "2027-02-26T19:30",
   "end": null,
   "all_day": false,
   "venue": "King's College Chapel",
@@ -227,10 +227,10 @@
   "categories": [
    "concert"
   ],
-  "summary": "King's College, Cambridge commemorates, to the day, the bicentenary of the death of Beethoven with his greatest work. |  | Friday 26 March 2027 | 7:30 pm | Philharmonia Chorus | BBC Concert Orchestra | Daniel Hyde | Conductor | Beethoven | Missa Solemnis, Op. 123 | This concert will be broadcast on BBC Radio 3 | The Philharmonia Chorus and BBC Concert Orchestra with conductor Daniel Hyde bring to life the monumental | Missa Solemnis | on the bicentenary of Beethoven’s death on 26 March 1827. Regarded by the composer as his greatest work, this colossal sacred canvas pushes the boundaries of human emotion and choral architecture. It evokes the mystery and wonder of God through an equally unfathomable musical narrative. Join us for a once-in-a-generation commemoration ",
+  "summary": "A rare opportunity to hear one of the most famous choirs in the world on the concert platform at home in King's College Chapel. |  | Friday 26 February 2027 | 7:30 pm | The Choir of King’s College, Cambridge | Daniel Hyde | Conductor | Fauré | Requiem | and unaccompanied works by | Byrd | , | Tallis | , and | Phillips | Don’t miss this rare opportunity to hear one of the most famous choral ensembles in the world on the concert platform at home in the unmistakable architecture and acoustic of the King’s College Chapel. Alongside Fauré’s celebrated | Requiem | , the choir performs choral masterworks of the seventeenth century by Byrd, Tallis, and Phillips. The choir is conducted by Director of Music, Daniel Hyde. | More information and tickets coming soon | This concert is",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:04:10+00:00"
+  "fetched_at": "2026-10-11T21:02:58+00:00"
  }
 ]

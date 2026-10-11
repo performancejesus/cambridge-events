@@ -1,33 +1,6 @@
 [
  {
   "source_id": "S144",
-  "title": "Anarchical Antiquity – lecture by Professor Josephine Crawley Quinn",
-  "url": "https://www.joh.cam.ac.uk/about-us/events-and-services/inaugural-lecture-professor-josephine-crawley-quinn-professor-of-ancient-history",
-  "kind": "event",
-  "external_id": "2026-10-08|Anarchical Antiquity – lecture by Professor Josephine Crawley Quinn",
-  "start": "2026-10-08",
-  "end": null,
-  "all_day": true,
-  "venue": "St John's College",
-  "address": "St John's Street, Cambridge",
-  "postcode": "CB2 1TP",
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "college",
-   "Lecture"
-  ],
-  "summary": "Lecture",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:08:47+00:00"
- },
- {
-  "source_id": "S144",
   "title": "Lunchtime concert",
   "url": "https://www.joh.cam.ac.uk/about-us/events-and-services/lunchtime-concert",
   "kind": "event",
@@ -51,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:08:47+00:00"
+  "fetched_at": "2026-10-11T21:20:39+00:00"
  },
  {
   "source_id": "S144",
@@ -78,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:08:47+00:00"
+  "fetched_at": "2026-10-11T21:20:39+00:00"
  },
  {
   "source_id": "S144",
@@ -105,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:08:47+00:00"
+  "fetched_at": "2026-10-11T21:20:39+00:00"
  },
  {
   "source_id": "S144",
@@ -132,7 +105,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:08:47+00:00"
+  "fetched_at": "2026-10-11T21:20:39+00:00"
  },
  {
   "source_id": "S144",
@@ -159,14 +132,14 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:08:47+00:00"
+  "fetched_at": "2026-10-11T21:20:39+00:00"
  },
  {
   "source_id": "S144",
-  "title": "Recital – Isabelle Demers",
+  "title": "International Recital – Isabelle Demers",
   "url": "https://www.sjcchoir.co.uk/event/recital-isabelle-demers/",
   "kind": "event",
-  "external_id": "2026-10-17|Recital – Isabelle Demers",
+  "external_id": "2026-10-17|International Recital – Isabelle Demers",
   "start": "2026-10-17",
   "end": null,
   "all_day": true,
@@ -186,14 +159,149 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:08:56+00:00"
+  "fetched_at": "2026-10-11T21:20:53+00:00"
  },
  {
   "source_id": "S144",
-  "title": "Recital – Nathan Laube",
+  "title": "Sunday Organ Recital no.1601 | Rachel Mahon",
+  "url": "https://www.sjcchoir.co.uk/event/sunday-organ-recital-rachel-mahon/",
+  "kind": "event",
+  "external_id": "2026-10-18|Sunday Organ Recital no.1601 | Rachel Mahon",
+  "start": "2026-10-18",
+  "end": null,
+  "all_day": true,
+  "venue": "St John's College",
+  "address": "St John's Street, Cambridge",
+  "postcode": "CB2 1TP",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "concert"
+  ],
+  "summary": "concert",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:20:53+00:00"
+ },
+ {
+  "source_id": "S144",
+  "title": "Sunday Organ Recital no.1602 | Alexander Robson",
+  "url": "https://www.sjcchoir.co.uk/event/sunday-organ-recital-alex-robson/",
+  "kind": "event",
+  "external_id": "2026-10-25|Sunday Organ Recital no.1602 | Alexander Robson",
+  "start": "2026-10-25",
+  "end": null,
+  "all_day": true,
+  "venue": "St John's College",
+  "address": "St John's Street, Cambridge",
+  "postcode": "CB2 1TP",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "concert"
+  ],
+  "summary": "concert",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:20:53+00:00"
+ },
+ {
+  "source_id": "S144",
+  "title": "Sunday Organ Recital no.1603 | Joseph Wicks",
+  "url": "https://www.sjcchoir.co.uk/event/sunday-organ-recital-joseph-wicks/",
+  "kind": "event",
+  "external_id": "2026-11-01|Sunday Organ Recital no.1603 | Joseph Wicks",
+  "start": "2026-11-01",
+  "end": null,
+  "all_day": true,
+  "venue": "St John's College",
+  "address": "St John's Street, Cambridge",
+  "postcode": "CB2 1TP",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "concert"
+  ],
+  "summary": "concert",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:20:53+00:00"
+ },
+ {
+  "source_id": "S144",
+  "title": "Sunday Organ Recital no.1604 | Thomas Watkin",
+  "url": "https://www.sjcchoir.co.uk/event/sunday-organ-recital-thomas-watkin/",
+  "kind": "event",
+  "external_id": "2026-11-08|Sunday Organ Recital no.1604 | Thomas Watkin",
+  "start": "2026-11-08",
+  "end": null,
+  "all_day": true,
+  "venue": "St John's College",
+  "address": "St John's Street, Cambridge",
+  "postcode": "CB2 1TP",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "concert"
+  ],
+  "summary": "concert",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:20:53+00:00"
+ },
+ {
+  "source_id": "S144",
+  "title": "Sunday Organ Recital no.1605 | Pascal Bachmann",
+  "url": "https://www.sjcchoir.co.uk/event/sunday-organ-recital-pascal-bachmann/",
+  "kind": "event",
+  "external_id": "2026-11-15|Sunday Organ Recital no.1605 | Pascal Bachmann",
+  "start": "2026-11-15",
+  "end": null,
+  "all_day": true,
+  "venue": "St John's College",
+  "address": "St John's Street, Cambridge",
+  "postcode": "CB2 1TP",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "concert"
+  ],
+  "summary": "concert",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:20:53+00:00"
+ },
+ {
+  "source_id": "S144",
+  "title": "International Recital – Nathan Laube",
   "url": "https://www.sjcchoir.co.uk/event/recital-nathan-laube/",
   "kind": "event",
-  "external_id": "2026-11-21|Recital – Nathan Laube",
+  "external_id": "2026-11-21|International Recital – Nathan Laube",
   "start": "2026-11-21",
   "end": null,
   "all_day": true,
@@ -213,14 +321,41 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:08:56+00:00"
+  "fetched_at": "2026-10-11T21:20:53+00:00"
  },
  {
   "source_id": "S144",
-  "title": "Christmas Concert – Save the date",
+  "title": "Sunday Organ Recital no.1606 | Benjamin Nicholas",
+  "url": "https://www.sjcchoir.co.uk/event/sunday-organ-recital-benjamin-nicholas/",
+  "kind": "event",
+  "external_id": "2026-11-22|Sunday Organ Recital no.1606 | Benjamin Nicholas",
+  "start": "2026-11-22",
+  "end": null,
+  "all_day": true,
+  "venue": "St John's College",
+  "address": "St John's Street, Cambridge",
+  "postcode": "CB2 1TP",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "concert"
+  ],
+  "summary": "concert",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:20:53+00:00"
+ },
+ {
+  "source_id": "S144",
+  "title": "Christmas Concert",
   "url": "https://www.sjcchoir.co.uk/event/christmas-concert-26/",
   "kind": "event",
-  "external_id": "2026-12-04|Christmas Concert – Save the date",
+  "external_id": "2026-12-04|Christmas Concert",
   "start": "2026-12-04",
   "end": null,
   "all_day": true,
@@ -240,6 +375,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:08:56+00:00"
+  "fetched_at": "2026-10-11T21:20:53+00:00"
  }
 ]

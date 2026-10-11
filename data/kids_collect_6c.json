@@ -84,7 +84,7 @@
   "host": "cambridge.gov.uk",
   "provider": "Cambridge City Council — занятия для детей и молодёжи",
   "type": "совет (регулярные занятия)",
-  "programmes": 24,
+  "programmes": 25,
   "problems": []
  },
  {
@@ -129,10 +129,10 @@
   "host": "cambridgekidsclub.com",
   "provider": "Cambridge Kids Club",
   "type": "каникулярный клуб",
-  "programmes": 0,
+  "programmes": null,
   "problems": [
-   "bot_challenge: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
-   "deferred: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); cambridgekidsclub.com: пауза до 2026-10-06T22:36:19+00:00 (HTTP 403 на https://cambridgekidsclub.com/playscheme/ckc-wacky)"
+   "deferred: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); cambridgekidsclub.com: после паузы главная не открылась (403)",
+   "deferred: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); cambridgekidsclub.com: пауза до 2026-10-12T20:54:45+00:00 (после паузы главная: 403)"
   ]
  },
  {
@@ -160,21 +160,15 @@
   "host": "cambridgerangers.com",
   "provider": "Cambridge Rangers (girls' football)",
   "type": "футбол (секция)",
-  "programmes": 0,
-  "problems": [
-   "server_error: robots.txt: HTTP 429",
-   "server_error: robots.txt: HTTP 429"
-  ]
+  "programmes": 4,
+  "problems": []
  },
  {
   "host": "cambridgerugby.co.uk",
   "provider": "Cambridge RUFC Minis & Youth",
   "type": "регби (секция)",
-  "programmes": null,
-  "problems": [
-   "deferred: robots.txt: HTTP 202; cambridgerugby.co.uk: пауза до 2026-10-06T22:20:05+00:00 (прогон 7e+: главная 202)",
-   "deferred: robots.txt: HTTP 202; cambridgerugby.co.uk: пауза до 2026-10-06T22:20:05+00:00 (прогон 7e+: главная 202)"
-  ]
+  "programmes": 17,
+  "problems": []
  },
  {
   "host": "cambridgesciencecentre.org",
@@ -281,10 +275,10 @@
   "host": "clubspark.lta.org.uk",
   "provider": "Cambridge Lawn Tennis Club",
   "type": "теннис (платформа LTA)",
-  "programmes": 0,
+  "programmes": null,
   "problems": [
-   "bot_challenge: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403",
-   "deferred: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); clubspark.lta.org.uk: пауза до 2026-10-06T22:40:10+00:00 (HTTP 403 на https://clubspark.lta.org.uk/CocksandHensTennisCambridge/Coaching)"
+   "deferred: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); clubspark.lta.org.uk: после паузы главная не открылась (403)",
+   "deferred: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); clubspark.lta.org.uk: пауза до 2026-10-12T20:58:29+00:00 (после паузы главная: 403)"
   ]
  },
  {
@@ -356,8 +350,8 @@
   "type": "лесная школа",
   "programmes": 0,
   "problems": [
-   "connection: robots.txt: HTTP -1",
-   "connection: robots.txt: HTTP -1"
+   "connection: robots.txt: HTTP 200; ConnectError: [Errno 104] Connection reset by peer",
+   "deferred: robots.txt: HTTP 200; firefliesforestschool.co.uk: пауза до 2026-10-12T20:59:54+00:00 (обрыв соединения: ConnectError: [Errno 104] Connection reset by peer)"
   ]
  },
  {
@@ -385,7 +379,7 @@
   "host": "gymfinitykids.com",
   "provider": "Gymfinity Kids",
   "type": "гимнастика",
-  "programmes": 5,
+  "programmes": 6,
   "problems": [
    "http_other: robots.txt: HTTP 200; страница: 404",
    "http_other: robots.txt: HTTP 200; страница: 404"
@@ -461,11 +455,8 @@
   "host": "kingscamps.org",
   "provider": "Kings Camps",
   "type": "национальный оператор лагерей",
-  "programmes": 0,
-  "problems": [
-   "connection: robots.txt: HTTP 200; RemoteProtocolError: Server disconnected without sending a response.",
-   "deferred: robots.txt: HTTP 200; kingscamps.org: пауза до 2026-10-06T22:44:12+00:00 (обрыв соединения: RemoteProtocolError: Server disconnected without sending a response.)"
-  ]
+  "programmes": 5,
+  "problems": []
  },
  {
   "host": "levelupgym.co.uk",
@@ -478,7 +469,7 @@
   "host": "mikestennis.com",
   "provider": "Mike's Tennis Academy",
   "type": "теннис",
-  "programmes": 0,
+  "programmes": 5,
   "problems": []
  },
  {
@@ -536,9 +527,9 @@
   "host": "officialsoccerschools.co.uk",
   "provider": "Cambridge United soccer schools",
   "type": "срез 6-v4 (не проверен)",
-  "programmes": 0,
+  "programmes": null,
   "problems": [
-   "bot_challenge: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); страница: 403"
+   "deferred: robots.txt: HTTP 403 (4xx — правил нет, RFC 9309); officialsoccerschools.co.uk: после паузы главная не открылась (403)"
   ]
  },
  {
@@ -668,10 +659,8 @@
   "host": "theleys.net",
   "provider": "The Leys",
   "type": "частная школа",
-  "programmes": 0,
-  "problems": [
-   "bot_challenge: robots.txt: HTTP 200; страница: 403"
-  ]
+  "programmes": 4,
+  "problems": []
  },
  {
   "host": "theoutdoorsproject.co.uk",

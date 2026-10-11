@@ -18,13 +18,13 @@
   "organizer": null,
   "categories": [
    "college",
-   "lecture"
+   "concert"
   ],
-  "summary": "lecture",
+  "summary": "concert",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:12:19+00:00"
+  "fetched_at": "2026-10-11T21:24:24+00:00"
  },
  {
   "source_id": "S174",
@@ -45,13 +45,67 @@
   "organizer": null,
   "categories": [
    "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:24:24+00:00"
+ },
+ {
+  "source_id": "S174",
+  "title": "2026 William Dusinberre Prize Giving Ceremony",
+  "url": "https://www.girton.cam.ac.uk/events/dusinberre-prizegiving-2026",
+  "kind": "event",
+  "external_id": "2026-10-22|2026 William Dusinberre Prize Giving Ceremony",
+  "start": "2026-10-22",
+  "end": null,
+  "all_day": true,
+  "venue": "Girton College",
+  "address": "Girton College, Huntingdon Road, Cambridge",
+  "postcode": "CB3 0JG",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
    "other"
   ],
   "summary": "other",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:12:19+00:00"
+  "fetched_at": "2026-10-11T21:24:24+00:00"
+ },
+ {
+  "source_id": "S174",
+  "title": "The Door of No Return (2021): Woodwind Recital Music as a Slavery Counter-narrative",
+  "url": "https://www.girton.cam.ac.uk/events/black-history-month-2026",
+  "kind": "event",
+  "external_id": "2026-10-22|The Door of No Return (2021): Woodwind Recital Music as a Slavery Counter-narrative",
+  "start": "2026-10-22",
+  "end": null,
+  "all_day": true,
+  "venue": "Girton College",
+  "address": "Girton College, Huntingdon Road, Cambridge",
+  "postcode": "CB3 0JG",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "concert"
+  ],
+  "summary": "concert",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:24:24+00:00"
  },
  {
   "source_id": "S174",
@@ -78,12 +132,12 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:12:19+00:00"
+  "fetched_at": "2026-10-11T21:24:24+00:00"
  },
  {
   "source_id": "S174",
   "title": "Girton Jazz presents Iain McKenzie",
-  "url": "https://www.girton.cam.ac.uk/events/girton-jazz-presents-iain-mckenzie",
+  "url": "https://www.girton.cam.ac.uk/index%2ephp/events/girton-jazz-presents-iain-mckenzie",
   "kind": "event",
   "external_id": "2026-11-06|Girton Jazz presents Iain McKenzie",
   "start": "2026-11-06",
@@ -105,6 +159,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:12:19+00:00"
+  "fetched_at": "2026-10-11T21:24:24+00:00"
  }
 ]

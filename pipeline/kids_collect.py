@@ -407,7 +407,18 @@ def texts(con: sqlite3.Connection, client=None) -> dict:
     return {"texts_generated": len(todo), "cost_usd": round(tin * PRICE_IN + tout * PRICE_OUT, 4)}
 
 
+# этап 7g: английские вставки в русском названии строки (проверка 35) — «(school holidays)» лишнее под заголовком
+# каникул, нарицательные слова — по-русски
+RU_TEXT_FIXES = [(re.compile(r"\s*\((?:school holidays|half[- ]term)\)", re.I), ""),
+                 (re.compile(r"лагерь bushcraft", re.I), "лагерь бушкрафта (навыки выживания на природе)"),
+                 (re.compile(r"\bbushcraft\b", re.I), "бушкрафт")]
+
+
 def text_of(con: sqlite3.Connection, prog_id: str) -> dict:
     con.execute(TEXT_CACHE)
     r = con.execute("SELECT text FROM kids_text_cache WHERE prog_id=?", (prog_id,)).fetchone()
-    return json.loads(r[0]) if r else {}
+    t = json.loads(r[0]) if r else {}
+    if t.get("title_ru"):
+        for rx, rep in RU_TEXT_FIXES:
+            t["title_ru"] = rx.sub(rep, t["title_ru"])
+    return t

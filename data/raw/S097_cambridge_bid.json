@@ -1,6 +1,86 @@
 [
  {
   "source_id": "S097",
+  "title": "Cambridge BID Annual Showcase Wrap-Up",
+  "url": "https://www.cambridgebid.co.uk/news/2026/10/7/cambridge-bid-annual-showcase-and-agm-wrap-up",
+  "kind": "article",
+  "external_id": "5bf5389c36099b050d24c4c8:5bf53a4003ce6458107eaeb7:6ac641d7205bb90630e13b0a",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Connect & Support"
+  ],
+  "summary": "On Thursday 1st October, Cambridge BID hosted its Annual Showcase and AGM at the Hilton Cambridge City Centre Hotel.",
+  "published": "2026-10-07T13:23:28Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:39:18+00:00"
+ },
+ {
+  "source_id": "S097",
+  "title": "Cambridge Student Handbook launches for 2026/27",
+  "url": "https://www.cambridgebid.co.uk/news/2026/10/7/cambridge-student-handbook-launches-for-202627",
+  "kind": "article",
+  "external_id": "5bf5389c36099b050d24c4c8:5bf53a4003ce6458107eaeb7:6ac625631960ff55aeb6b3df",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Safe & Clean"
+  ],
+  "summary": "Cambridge BID has launched the Cambridge Student Handbook 2026/27, designed to welcome students to the city and help them discover everything Cambridge has to offer.",
+  "published": "2026-10-07T11:15:27Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:39:18+00:00"
+ },
+ {
+  "source_id": "S097",
+  "title": "From Vision to Delivery: Our Annual Report 2025/26",
+  "url": "https://www.cambridgebid.co.uk/news/2026/10/7/from-vision-to-delivery-our-annual-report-202526",
+  "kind": "article",
+  "external_id": "5bf5389c36099b050d24c4c8:5bf53a4003ce6458107eaeb7:6ac6100e0f46c87336a221b2",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Safe & Clean",
+   "Welcome & Experience",
+   "Connect & Support"
+  ],
+  "summary": "Our 2025/26 Annual Report – From Vision to Delivery is now live, showcasing another busy year for Cambridge BID and the work delivered on behalf of our levy-paying businesses.",
+  "published": "2026-10-07T09:27:34Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:39:18+00:00"
+ },
+ {
+  "source_id": "S097",
   "title": "Summer in the Square 2026 Wrap-up Report",
   "url": "https://www.cambridgebid.co.uk/news/2026/9/4/summer-in-the-square-wrap-up-report",
   "kind": "article",
@@ -23,7 +103,7 @@
   "published": "2026-09-04T14:28:10Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -47,7 +127,7 @@
   "published": "2026-08-26T12:02:48Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -71,7 +151,7 @@
   "published": "2026-08-25T14:10:56Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -95,7 +175,7 @@
   "published": "2026-08-14T14:33:23Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -121,7 +201,7 @@
   "published": "2026-08-07T10:54:35Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -147,7 +227,7 @@
   "published": "2026-08-04T14:11:06Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -173,7 +253,7 @@
   "published": "2026-07-30T13:30:52Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -199,7 +279,7 @@
   "published": "2026-07-01T12:16:50Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -226,7 +306,7 @@
   "published": "2026-07-01T12:11:18Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -252,7 +332,7 @@
   "published": "2026-06-19T15:11:31Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -279,7 +359,7 @@
   "published": "2026-06-17T14:38:12Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -305,7 +385,7 @@
   "published": "2026-06-02T15:21:26Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -329,7 +409,7 @@
   "published": "2026-05-27T14:30:29Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -355,7 +435,7 @@
   "published": "2026-05-26T11:29:09Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -381,7 +461,7 @@
   "published": "2026-05-14T15:30:31Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -407,7 +487,7 @@
   "published": "2026-04-17T12:11:42Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  },
  {
   "source_id": "S097",
@@ -433,84 +513,6 @@
   "published": "2026-04-15T15:31:15Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
- },
- {
-  "source_id": "S097",
-  "title": "Cambridge BID Launches Creative Club for 2026/2027",
-  "url": "https://www.cambridgebid.co.uk/news/2026/3/20/cambridge-bid-launches-creative-club-for-20262027",
-  "kind": "article",
-  "external_id": "5bf5389c36099b050d24c4c8:5bf53a4003ce6458107eaeb7:69bd2f54e9f12d30b7a37ace",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Welcome & Experience"
-  ],
-  "summary": "Cambridge BID is excited to launch Creative Club for 2026/2027, a refreshed and reimagined version of the former Art Club series.",
-  "published": "2026-03-20T11:33:20Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
- },
- {
-  "source_id": "S097",
-  "title": "Welcome Back / Refresher Fair Wrap-Up",
-  "url": "https://www.cambridgebid.co.uk/news/2026/3/18/welcome-back-refresher-fair-wrap-up",
-  "kind": "article",
-  "external_id": "5bf5389c36099b050d24c4c8:5bf53a4003ce6458107eaeb7:69bad1067d20e6195e698b8e",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Safe & Clean"
-  ],
-  "summary": "As part of Cambridge BID’s ongoing commitment to supporting a safe, welcoming, and vibrant night-time economy, the Purple Flag team attended the January 2026 Welcome Back events at University of Cambridge – footfall of approx. 1,256 (19 January 2026) and Anglia Ruskin University footfall of approx.…",
-  "published": "2026-03-18T16:28:28Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
- },
- {
-  "source_id": "S097",
-  "title": "Cambridge Arts Festival 2026 - Wrap-Up Report",
-  "url": "https://www.cambridgebid.co.uk/news/2026/3/16/cambridge-arts-festival-2026-wrap-up-report",
-  "kind": "article",
-  "external_id": "5bf5389c36099b050d24c4c8:5bf53a4003ce6458107eaeb7:69b834658c9b79703a690fc2",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "Welcome & Experience"
-  ],
-  "summary": "Cambridge Arts Festival 2026 - Wrap-Up Report Cambridge Arts Festival 2026 was delivered by Cambridge BID to celebrate the City’s rich creative and cultural landscape, while actively engaging City centre businesses in a programme designed to increase footfall, dwell time and visibility across key l…",
-  "published": "2026-03-16T16:55:15Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:11:27+00:00"
+  "fetched_at": "2026-10-11T20:39:18+00:00"
  }
 ]

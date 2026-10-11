@@ -295,3 +295,13 @@ def test_vague_provider_venue_not_inherited():
     assert issue.VAGUE_VENUE_RE.search("Multiple locations across Cambridge, Newmarket")
     assert issue.VAGUE_VENUE_RE.search("selected pools")
     assert not issue.VAGUE_VENUE_RE.search("The Little Gym") and not issue.VAGUE_VENUE_RE.search("Cambridge LTC")
+
+
+def test_programme_ru_title_without_english():
+    from pipeline import kids_collect
+    con = sqlite3.connect(":memory:")
+    con.execute(kids_collect.TEXT_CACHE)
+    con.execute("INSERT INTO kids_text_cache VALUES ('p1', 'x', ?)",
+                (json.dumps({"title_ru": "Раскрась тыкву (school holidays)"}, ensure_ascii=False),))
+    assert kids_collect.text_of(con, "p1")["title_ru"] == "Раскрась тыкву"
+    assert issue._ages("11 to 16 yrs old", "ru") == "11–16 лет"

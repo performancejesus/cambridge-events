@@ -1,0 +1,716 @@
+{
+ "issue": "2026-10-15",
+ "version": "v14",
+ "sections": [
+  {
+   "rubric": "theme",
+   "items": [
+    {
+     "ids": [
+      "E447"
+     ],
+     "title_ru": "Frank Bowling: Seeking the Sublime",
+     "title_en": "Frank Bowling: Seeking the Sublime"
+    },
+    {
+     "ids": [
+      "E449"
+     ],
+     "title_ru": "An Enamel Revolution: China and the World",
+     "title_en": "An Enamel Revolution: China and the World"
+    },
+    {
+     "ids": [
+      "E450"
+     ],
+     "title_ru": "A Call to Art: William Morris and the Pre-Raphaelites",
+     "title_en": "A Call to Art: William Morris and the Pre-Raphaelites"
+    },
+    {
+     "ids": [
+      "E448"
+     ],
+     "title_ru": "A Mughal Songbook: Art, Music and Empire",
+     "title_en": "A Mughal Songbook: Art, Music and Empire"
+    }
+   ]
+  },
+  {
+   "rubric": "weekend_1",
+   "items": [
+    {
+     "ids": [
+      "E46"
+     ],
+     "title_ru": "Nish Kumar: Angry Humour From a Really Nice Guy",
+     "title_en": "Nish Kumar: Angry Humour From a Really Nice Guy"
+    },
+    {
+     "ids": [
+      "E47",
+      "E250"
+     ],
+     "title_ru": "The Beat: Dance Crazed Too",
+     "title_en": "The Beat: Dance Crazed Too"
+    },
+    {
+     "ids": [
+      "E1591"
+     ],
+     "title_ru": "WCB Comedy: Hal Cruttenden, Reginald D Hunter and Dan Antopolski",
+     "title_en": "WCB Comedy: Hal Cruttenden, Reginald D Hunter and Dan Antopolski"
+    },
+    {
+     "ids": [
+      "E822"
+     ],
+     "title_ru": "Pasadena Roof Orchestra",
+     "title_en": "Pasadena Roof Orchestra"
+    },
+    {
+     "ids": [
+      "E952"
+     ],
+     "title_ru": "Apple Day 2026",
+     "title_en": "Apple Day 2026"
+    },
+    {
+     "ids": [
+      "E1277"
+     ],
+     "title_ru": "Hidden Histories",
+     "title_en": "Hidden Histories"
+    }
+   ]
+  },
+  {
+   "rubric": "weekend_2",
+   "items": [
+    {
+     "ids": [
+      "E54"
+     ],
+     "title_ru": "Maisie Adam: Whatsherface",
+     "title_en": "Maisie Adam: Whatsherface"
+    },
+    {
+     "ids": [
+      "E824"
+     ],
+     "title_ru": "London Philharmonic Orchestra",
+     "title_en": "London Philharmonic Orchestra"
+    },
+    {
+     "ids": [
+      "E1051"
+     ],
+     "title_ru": "Black Slate",
+     "title_en": "Black Slate"
+    },
+    {
+     "ids": [
+      "E1936"
+     ],
+     "title_ru": "Space Safari Drone Light Show",
+     "title_en": "Space Safari Drone Light Show"
+    },
+    {
+     "ids": [
+      "E113"
+     ],
+     "title_ru": "Cambridge United v Plymouth Argyle",
+     "title_en": "Cambridge United FC v Plymouth Argyle"
+    },
+    {
+     "ids": [
+      "E2449"
+     ],
+     "title_ru": "Halloween half-term at Audley End House and Gardens",
+     "title_en": "Halloween half-term at Audley End House and Gardens"
+    },
+    {
+     "ids": [
+      "E892"
+     ],
+     "title_ru": "Guided House Tour",
+     "title_en": "Guided House Tour"
+    }
+   ]
+  },
+  {
+   "rubric": "weekdays",
+   "items": [
+    {
+     "ids": [
+      "E49"
+     ],
+     "title_ru": "The Mary Wallopers",
+     "title_en": "The Mary Wallopers"
+    },
+    {
+     "ids": [
+      "E1040"
+     ],
+     "title_ru": "L'Addition",
+     "title_en": "L'Addition"
+    },
+    {
+     "ids": [
+      "E50"
+     ],
+     "title_ru": "Michael Palin: In the Philippines",
+     "title_en": "Michael Palin: In the Philippines"
+    },
+    {
+     "ids": [
+      "E1045"
+     ],
+     "title_ru": "The Bluetones: Expecting to Fly 30th Anniversary",
+     "title_en": "The Bluetones: Expecting to Fly 30th Anniversary"
+    },
+    {
+     "ids": [
+      "E515"
+     ],
+     "title_ru": "Stewart Lee vs The Man-Wulf",
+     "title_en": "Stewart Lee vs The Man-Wulf"
+    },
+    {
+     "ids": [
+      "E3684"
+     ],
+     "title_ru": "RBO 26-27: Macbeth (MET Opera)",
+     "title_en": "RBO 26-27: Macbeth (MET Opera)"
+    },
+    {
+     "ids": [
+      "A425"
+     ],
+     "title_ru": "Thriplow Daffodil Weekend",
+     "title_en": "Thriplow Daffodil Weekend"
+    },
+    {
+     "ids": [
+      "A3743"
+     ],
+     "title_ru": "Rudimental with Girls Don't Sync and MJ Cole",
+     "title_en": "Rudimental with Girls Don't Sync and MJ Cole"
+    },
+    {
+     "ids": [
+      "A1612"
+     ],
+     "title_ru": "Christmas in Cambridge",
+     "title_en": "Christmas in Cambridge"
+    }
+   ]
+  },
+  {
+   "rubric": "cinema",
+   "items": [
+    {
+     "ids": [
+      "F3"
+     ],
+     "title_ru": "Forgotten Island",
+     "title_en": "Forgotten Island"
+    },
+    {
+     "ids": [
+      "F1"
+     ],
+     "title_ru": "Street Fighter",
+     "title_en": "Street Fighter"
+    },
+    {
+     "ids": [
+      "F2"
+     ],
+     "title_ru": "Whalefall",
+     "title_en": "Whalefall"
+    },
+    {
+     "ids": [
+      "F4"
+     ],
+     "title_ru": "Clayface",
+     "title_en": "Clayface"
+    }
+   ]
+  },
+  {
+   "rubric": "talks",
+   "items": [
+    {
+     "ids": [
+      "E3004"
+     ],
+     "title_ru": "Graham Storey lecture with Eleanor Catton",
+     "title_en": "Graham Storey lecture with Eleanor Catton"
+    },
+    {
+     "ids": [
+      "E2533"
+     ],
+     "title_ru": "Organic Semiconductors: From OLED Displays to Quantum Applications",
+     "title_en": "Organic Semiconductors: From OLED Displays to Quantum Applications"
+    },
+    {
+     "ids": [
+      "E1600"
+     ],
+     "title_ru": "Noel Fitzpatrick: Medicine & Music",
+     "title_en": "Noel Fitzpatrick: Medicine & Music"
+    }
+   ]
+  },
+  {
+   "rubric": "museums",
+   "items": [
+    {
+     "ids": [
+      "E886"
+     ],
+     "title_ru": "Sunil Gupta: Life with a Camera, 1970 – Now",
+     "title_en": "Sunil Gupta: Life with a Camera, 1970 – Now"
+    },
+    {
+     "ids": [
+      "E1284"
+     ],
+     "title_ru": "The Art of Deception",
+     "title_en": "The Art of Deception"
+    },
+    {
+     "ids": [
+      "E1381"
+     ],
+     "title_ru": "Legacies of the Windrush Exhibition",
+     "title_en": "Legacies of the Windrush Exhibition"
+    },
+    {
+     "ids": [
+      "E1450"
+     ],
+     "title_ru": "Exhibition: Folklore",
+     "title_en": "Exhibition: Folklore"
+    },
+    {
+     "ids": [
+      "E1271"
+     ],
+     "title_ru": "Misery and Beauty: Harry Becker's Portrait of East Anglian Farm Labour",
+     "title_en": "Misery and Beauty: Harry Becker's Portrait of East Anglian Farm Labour"
+    },
+    {
+     "ids": [
+      "E2413"
+     ],
+     "title_ru": "Halloween in the House",
+     "title_en": "Halloween in the House"
+    },
+    {
+     "ids": [
+      "E2518"
+     ],
+     "title_ru": "Exhibition: All of Us Witches",
+     "title_en": "Exhibition: All of Us Witches"
+    },
+    {
+     "ids": [
+      "E1305"
+     ],
+     "title_ru": "Welly Walk October 2026",
+     "title_en": "Welly Walk October 2026"
+    },
+    {
+     "ids": [
+      "E949"
+     ],
+     "title_ru": "International E-Waste Day – Saturday 17th October 2026",
+     "title_en": "International E-Waste Day – Saturday 17th October 2026"
+    },
+    {
+     "ids": [
+      "E890"
+     ],
+     "title_ru": "Exhibition Tour: Sunil Gupta: Life with a Camera, 1970 – Today",
+     "title_en": "Exhibition Tour: Sunil Gupta: Life with a Camera, 1970 – Today"
+    },
+    {
+     "ids": [
+      "E1316"
+     ],
+     "title_ru": "The Magpies Magic Forest Trail",
+     "title_en": "The Magpies Magic Forest Trail"
+    }
+   ]
+  },
+  {
+   "rubric": "sport",
+   "items": [
+    {
+     "ids": [
+      "E112"
+     ],
+     "title_ru": "Cambridge United v Wycombe Wanderers",
+     "title_en": "Cambridge United FC v Wycombe Wanderers"
+    },
+    {
+     "ids": [
+      "E1895"
+     ],
+     "title_ru": "Peterborough Phantoms v Solway IHC",
+     "title_en": "Peterborough Phantoms v Solway IHC"
+    },
+    {
+     "ids": [
+      "E1896"
+     ],
+     "title_ru": "Peterborough Phantoms v Romford Raiders",
+     "title_en": "Peterborough Phantoms v Romford Raiders"
+    },
+    {
+     "ids": [
+      "E198"
+     ],
+     "title_ru": "Two-Year-Old Day",
+     "title_en": "Two-Year-Old Day"
+    },
+    {
+     "ids": [
+      "E468"
+     ],
+     "title_ru": "Peterborough United FC - Burton Albion FC",
+     "title_en": "Peterborough United FC - Burton Albion FC"
+    },
+    {
+     "ids": [
+      "E3706"
+     ],
+     "title_ru": "Cambridge South HC Ladies' 1st XI v Dereham",
+     "title_en": "Cambridge South HC Ladies' 1st XI v Dereham"
+    },
+    {
+     "ids": [
+      "E3707"
+     ],
+     "title_ru": "Cambridge South HC Men's 1st XI v March Town",
+     "title_en": "Cambridge South HC Men's 1st XI v March Town"
+    },
+    {
+     "ids": [
+      "E1885"
+     ],
+     "title_ru": "Cambridge United Women v Dartford FC Women",
+     "title_en": "Cambridge United Women v Dartford FC Women"
+    },
+    {
+     "ids": [
+      "B:K:cufcfoundation.com:b4cda6a6"
+     ],
+     "title_ru": "Walking Football — футбол шагом: без бега и подкатов",
+     "title_en": "Walking Football — football without running or tackles"
+    },
+    {
+     "ids": [
+      "B:K:haysouthcambs.co.uk:df105553"
+     ],
+     "title_ru": "Walking Football - Cambourne — футбол шагом: без бега и подкатов",
+     "title_en": "Walking Football - Cambourne — football without running or tackles"
+    },
+    {
+     "ids": [
+      "X:parkrun"
+     ],
+     "title_ru": "parkrun — бесплатный забег на 5 км",
+     "title_en": "parkrun — free 5 km run"
+    },
+    {
+     "ids": [
+      "A2942"
+     ],
+     "title_ru": "Cambridge Half Marathon 2027",
+     "title_en": "Cambridge Half Marathon 2027"
+    },
+    {
+     "ids": [
+      "A207"
+     ],
+     "title_ru": "The Betfred Guineas Festival",
+     "title_en": "The Betfred Guineas Festival"
+    },
+    {
+     "ids": [
+      "A2525"
+     ],
+     "title_ru": "Lent Bumps",
+     "title_en": "Lent Bumps"
+    }
+   ]
+  },
+  {
+   "rubric": "kids",
+   "items": [
+    {
+     "ids": [
+      "E2416"
+     ],
+     "title_ru": "Three Cheers for Pooh! Story trail",
+     "title_en": "Three Cheers for Pooh! Story trail"
+    },
+    {
+     "ids": [
+      "E3215"
+     ],
+     "title_ru": "October Half Term – Corn Dollies and Witch Bottles",
+     "title_en": "October Half Term – Corn Dollies and Witch Bottles"
+    },
+    {
+     "ids": [
+      "E2432"
+     ],
+     "title_ru": "Mucky Pups",
+     "title_en": "Mucky Pups"
+    },
+    {
+     "ids": [
+      "S:C:cambridgerugby.co.uk:03ab1653"
+     ],
+     "title_ru": "Cambridge Rugby Club: Регби для детей и подростков, 4–18 лет",
+     "title_en": "Cambridge Rugby Club: Mini & Youth Rugby, ages 4–18"
+    },
+    {
+     "ids": [
+      "S:C:cambridgesouthhockeyclub.co.uk:17645993"
+     ],
+     "title_ru": "Cambridge South Hockey Club: Хоккей, 11–12 лет",
+     "title_en": "Cambridge South Hockey Club: Junior Hockey, ages 11–12"
+    },
+    {
+     "ids": [
+      "S:C:papa.perse.co.uk:19df93e2"
+     ],
+     "title_ru": "PAPA Perse: Танцы для малышей, от 4 лет",
+     "title_en": "PAPA Perse: Tiny Dancers, Reception"
+    },
+    {
+     "ids": [
+      "S:C:kidsmartialartscambridge.co.uk:9fd56016"
+     ],
+     "title_ru": "Axis BJJ Academy: Бразильское джиу-джитсу, 6–12 лет",
+     "title_en": "Axis BJJ Academy: Brazilian Jiu-Jitsu, ages 6–12"
+    },
+    {
+     "ids": [
+      "X:junior_parkrun"
+     ],
+     "title_ru": "junior parkrun — 2 км, 4–14 лет",
+     "title_en": "junior parkrun — 2 km for ages 4–14"
+    },
+    {
+     "ids": [
+      "A1418"
+     ],
+     "title_ru": "Peppa Pig at Nene Valley Railway",
+     "title_en": "Peppa Pig at Nene Valley Railway"
+    }
+   ]
+  },
+  {
+   "rubric": "new_in_town",
+   "items": [
+    {
+     "ids": [
+      "V124"
+     ],
+     "title_ru": "The Pickerel Inn",
+     "title_en": "The Pickerel Inn"
+    },
+    {
+     "ids": [
+      "V72"
+     ],
+     "title_ru": "UNIQLO",
+     "title_en": "UNIQLO"
+    },
+    {
+     "ids": [
+      "V61"
+     ],
+     "title_ru": "Catte Latte",
+     "title_en": "Catte Latte"
+    },
+    {
+     "ids": [
+      "V59"
+     ],
+     "title_ru": "Tripots",
+     "title_en": "Tripots"
+    },
+    {
+     "ids": [
+      "V85"
+     ],
+     "title_ru": "Bridge Bagels",
+     "title_en": "Bridge Bagels"
+    },
+    {
+     "ids": [
+      "V84"
+     ],
+     "title_ru": "Arbury Social",
+     "title_en": "Arbury Social"
+    }
+   ]
+  },
+  {
+   "rubric": "learn",
+   "items": [
+    {
+     "ids": [
+      "E2713"
+     ],
+     "title_ru": "Parent/Carer coaching workshop",
+     "title_en": "Parent/Carer coaching workshop"
+    },
+    {
+     "ids": [
+      "E2717"
+     ],
+     "title_ru": "Cambridge Street Photography Workshop with Matt Hall",
+     "title_en": "Cambridge Street Photography Workshop with Matt Hall"
+    },
+    {
+     "ids": [
+      "E3520"
+     ],
+     "title_ru": "Tai Chi Qigong Health Beginner course",
+     "title_en": "Tai Chi Qigong Health Beginner course"
+    },
+    {
+     "ids": [
+      "E379"
+     ],
+     "title_ru": "Lights and Shadows, a crash course about things that make your photos",
+     "title_en": "Lights and Shadows, a crash course about things that make your photos"
+    },
+    {
+     "ids": [
+      "K:kilncambridge.com:5e565570"
+     ],
+     "title_ru": "Saturday Throwing Taster Session",
+     "title_en": "Saturday Throwing Taster Session"
+    },
+    {
+     "ids": [
+      "K:botanic.cam.ac.uk:2868b3ad"
+     ],
+     "title_ru": "Gods in the garden: Classicism in 18th-century gardens",
+     "title_en": "Gods in the garden: Classicism in 18th-century gardens"
+    }
+   ]
+  },
+  {
+   "rubric": "festivals",
+   "items": [
+    {
+     "ids": [
+      "R:R17"
+     ],
+     "title_ru": "Cambridge Film Festival",
+     "title_en": "Cambridge Film Festival"
+    },
+    {
+     "ids": [
+      "R:R16"
+     ],
+     "title_ru": "Mill Road Winter Fair",
+     "title_en": "Mill Road Winter Fair"
+    },
+    {
+     "ids": [
+      "R:R01"
+     ],
+     "title_ru": "Whittlesea Straw Bear Festival",
+     "title_en": "Whittlesea Straw Bear Festival"
+    },
+    {
+     "ids": [
+      "R:R04"
+     ],
+     "title_ru": "Cambridge Festival",
+     "title_en": "Cambridge Festival"
+    },
+    {
+     "ids": [
+      "R:R05"
+     ],
+     "title_ru": "Cambridge Beer Festival",
+     "title_en": "Cambridge Beer Festival"
+    },
+    {
+     "ids": [
+      "R:R41"
+     ],
+     "title_ru": "Ely Folk Festival",
+     "title_en": "Ely Folk Festival"
+    },
+    {
+     "ids": [
+      "R:R09"
+     ],
+     "title_ru": "Cambridge Folk Festival",
+     "title_en": "Cambridge Folk Festival"
+    },
+    {
+     "ids": [
+      "R:R34"
+     ],
+     "title_ru": "Cambridge Literary Festival (Winter)",
+     "title_en": "Cambridge Literary Festival (Winter)"
+    },
+    {
+     "ids": [
+      "A3748"
+     ],
+     "title_ru": "World Pea Shooting Championship",
+     "title_en": "World Pea Shooting Championship"
+    },
+    {
+     "ids": [
+      "A103"
+     ],
+     "title_ru": "Fireworks Night",
+     "title_en": "Fireworks Night"
+    }
+   ]
+  },
+  {
+   "rubric": "volunteering",
+   "items": [
+    {
+     "ids": [
+      "E1470"
+     ],
+     "title_ru": "Volunteer Work Party",
+     "title_en": "Volunteer Work Party"
+    },
+    {
+     "ids": [
+      "X:volunteer1"
+     ],
+     "title_ru": "Volunteer Cambs — база волонтёрских вакансий Кембриджшира",
+     "title_en": "Volunteer Cambs — volunteering opportunities across Cambridgeshire"
+    },
+    {
+     "ids": [
+      "X:volunteer2"
+     ],
+     "title_ru": "Уборка мусора с Cambridge City Council",
+     "title_en": "Litter picking with Cambridge City Council"
+    }
+   ]
+  }
+ ]
+}

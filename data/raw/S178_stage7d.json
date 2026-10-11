@@ -1,40 +1,12 @@
 [
  {
   "source_id": "S178",
-  "title": "Cut Your Own Dahlias",
-  "url": "https://burylane.co.uk/pick-your-own/dahlias/",
-  "kind": "event",
-  "external_id": "2026-10-02|Cut Your Own Dahlias",
-  "start": "2026-10-02",
-  "end": "2026-10-31",
-  "all_day": true,
-  "venue": "Bury Lane Farm Shop",
-  "address": "Bury Lane, Melbourn, Royston",
-  "postcode": "SG8 6DF",
-  "lat": null,
-  "lon": null,
-  "price": "£2 day ticket (under 5s free)",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "farm",
-   "seasonal",
-   "exhibition"
-  ],
-  "summary": "exhibition",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:13:20+00:00"
- },
- {
-  "source_id": "S178",
   "title": "PYO Pumpkin Patch",
   "url": "https://burylane.co.uk/pick-your-own/pumpkins/",
   "kind": "event",
-  "external_id": "2026-10-06|PYO Pumpkin Patch",
-  "start": "2026-10-06",
-  "end": "2026-10-31",
+  "external_id": "2026-10-11|PYO Pumpkin Patch",
+  "start": "2026-10-11",
+  "end": null,
   "all_day": true,
   "venue": "Bury Lane Farm Shop",
   "address": "Bury Lane, Melbourn, Royston",
@@ -46,14 +18,13 @@
   "organizer": null,
   "categories": [
    "farm",
-   "seasonal",
-   "exhibition"
+   "seasonal"
   ],
-  "summary": "exhibition",
+  "summary": null,
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:20+00:00"
+  "fetched_at": "2026-10-11T21:25:34+00:00"
  },
  {
   "source_id": "S178",
@@ -80,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:20+00:00"
+  "fetched_at": "2026-10-11T21:25:34+00:00"
  },
  {
   "source_id": "S178",
@@ -107,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:20+00:00"
+  "fetched_at": "2026-10-11T21:25:34+00:00"
  },
  {
   "source_id": "S178",
@@ -134,7 +105,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:20+00:00"
+  "fetched_at": "2026-10-11T21:25:34+00:00"
  },
  {
   "source_id": "S178",
@@ -161,6 +132,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:20+00:00"
+  "fetched_at": "2026-10-11T21:25:34+00:00"
  }
 ]

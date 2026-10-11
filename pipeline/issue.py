@@ -1146,7 +1146,7 @@ ALSO_PLAYING = {"S019", "S154", "S186", "S187", "S188"}   # City FC, United Wome
 ZONE_ORDER = ["центр", "до 30 мин", "до часа", geo_COUNTY_FAR]
 AGES_RU = [(r"^school age$", "школьники"), (r"^families$", "семьи"), (r"^children, by level$", "дети, по уровню"),
            (r"^primary and secondary$", "начальная и средняя школа"), (r"^Reception – (\d+)$", r"от Reception до \1 лет"),
-           (r"^(\d+)\s*(?:[–-]|to)\s*(\d+)(?: years?(?: old)?)?(?: \((.*)\))?$", r"\1–\2 лет"),
+           (r"^(\d+)\s*(?:[–-]|to)\s*(\d+)(?: (?:years?|yrs?)(?: old)?)?(?: \((.*)\))?$", r"\1–\2 лет"),
            (r"^(?:school )?years? (\d+)\s*(?:[–-]|to)\s*(?:year )?(\d+)$", r"Year \1 – Year \2"),
            (r"^reception(?: class)?\s*(?:[–-]|to)\s*(\d+)(?: years?(?: old)?)?$", r"от Reception до \1 лет"),
            (r"^primary and secondary school children$", "начальная и средняя школа"),

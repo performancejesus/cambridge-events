@@ -1,82 +1,6 @@
 [
  {
   "source_id": "S153",
-  "title": "Museum Tots - Shopping",
-  "url": "https://www.roystonmuseum.org.uk/what-s-on",
-  "kind": "event",
-  "external_id": "museum-tots-shopping#2026-10-07",
-  "start": "2026-10-07",
-  "end": null,
-  "all_day": true,
-  "venue": "Royston Museum",
-  "address": "Lower King Street, Royston",
-  "postcode": "SG8 5AL",
-  "lat": null,
-  "lon": null,
-  "price": "£4 per child",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
- },
- {
-  "source_id": "S153",
-  "title": "Spark Art Club",
-  "url": "https://www.roystonmuseum.org.uk/what-s-on",
-  "kind": "event",
-  "external_id": "spark-art-club#2026-10-08",
-  "start": "2026-10-08",
-  "end": null,
-  "all_day": true,
-  "venue": "Royston Museum",
-  "address": "Lower King Street, Royston",
-  "postcode": "SG8 5AL",
-  "lat": null,
-  "lon": null,
-  "price": "Free / Booking Essential",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
- },
- {
-  "source_id": "S153",
-  "title": "Escape Room - The Thief and the Highwayman",
-  "url": "https://www.roystonmuseum.org.uk/what-s-on",
-  "kind": "event",
-  "external_id": "escape-room-the-thief-and-the-highwayman#2026-10-08",
-  "start": "2026-10-08",
-  "end": null,
-  "all_day": true,
-  "venue": "Royston Museum",
-  "address": "Lower King Street, Royston",
-  "postcode": "SG8 5AL",
-  "lat": null,
-  "lon": null,
-  "price": "From £15 per person",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
- },
- {
-  "source_id": "S153",
   "title": "Coffee and Cake",
   "url": "https://www.roystonmuseum.org.uk/what-s-on",
   "kind": "event",
@@ -97,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -121,14 +45,14 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
-  "title": "Dance and Film Workshop with BEEE Creative",
+  "title": "Youth Soundscape and Landscape Workshop with BEEE Creative",
   "url": "https://www.roystonmuseum.org.uk/what-s-on",
   "kind": "event",
-  "external_id": "dance-and-film-workshop-with-beee-creative#2026-10-22",
+  "external_id": "youth-soundscape-and-landscape-workshop-with-beee-creative#2026-10-22",
   "start": "2026-10-22",
   "end": null,
   "all_day": true,
@@ -145,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -169,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -195,7 +119,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -221,7 +145,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -245,7 +169,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -271,7 +195,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
+ },
+ {
+  "source_id": "S153",
+  "title": "Escape Room - The Thief and the Highwayman",
+  "url": "https://www.roystonmuseum.org.uk/what-s-on",
+  "kind": "event",
+  "external_id": "escape-room-the-thief-and-the-highwayman#2026-11-12",
+  "start": "2026-11-12",
+  "end": null,
+  "all_day": true,
+  "venue": "Royston Museum",
+  "address": "Lower King Street, Royston",
+  "postcode": "SG8 5AL",
+  "lat": null,
+  "lon": null,
+  "price": "From £15 per person",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -295,7 +243,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -319,7 +267,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -343,7 +291,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -369,7 +317,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -393,7 +341,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -417,7 +365,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
@@ -441,15 +389,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
-  "title": "Play in the Past",
+  "title": "Talk: A Very Merry Interwar Christmas!",
   "url": "https://www.roystonmuseum.org.uk/what-s-on",
   "kind": "event",
-  "external_id": "play-in-the-past#2026-10-08",
-  "start": "2026-10-08",
+  "external_id": "talk-a-very-merry-interwar-christmas#2026-12-16",
+  "start": "2026-12-16",
   "end": null,
   "all_day": true,
   "venue": "Royston Museum",
@@ -457,7 +405,7 @@
   "postcode": "SG8 5AL",
   "lat": null,
   "lon": null,
-  "price": "Free Entry",
+  "price": "£7.50 per person",
   "status": null,
   "organizer": null,
   "categories": [],
@@ -465,15 +413,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  },
  {
   "source_id": "S153",
   "title": "Royston Printmakers",
   "url": "https://www.roystonmuseum.org.uk/what-s-on",
   "kind": "event",
-  "external_id": "royston-printmakers#2026-10-08",
-  "start": "2026-10-08",
+  "external_id": "royston-printmakers#2026-10-15",
+  "start": "2026-10-15",
   "end": null,
   "all_day": true,
   "venue": "Royston Museum",
@@ -489,6 +437,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:34+00:00"
+  "fetched_at": "2026-10-11T21:19:15+00:00"
  }
 ]

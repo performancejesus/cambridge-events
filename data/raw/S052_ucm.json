@@ -23,7 +23,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -47,7 +47,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -71,7 +71,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -95,7 +95,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -119,7 +119,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -143,7 +143,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -167,7 +167,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -191,7 +191,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -215,230 +215,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Family Friendly Drop In",
-  "url": "https://www.museums.cam.ac.uk/events/family-friendly-drop-11",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/family-friendly-drop-11#2026-10-07T10:00",
-  "start": "2026-10-07T10:00",
-  "end": "2026-10-07T12:00",
-  "all_day": false,
-  "venue": "The Fitzwilliam Museum",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "families",
-   "family events",
-   "under 5s"
-  ],
-  "summary": "Join us for a relaxed morning at the Museum for all the family.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "LGBTQ+ Tours at the Sedgwick Museum of Earth Sciences",
-  "url": "https://www.museums.cam.ac.uk/events/lgbtq-tours-sedgwick-museum-earth-sciences-18",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/lgbtq-tours-sedgwick-museum-earth-sciences-18#2026-10-07T13:00",
-  "start": "2026-10-07T13:00",
-  "end": "2026-10-07T13:45",
-  "all_day": false,
-  "venue": "Sedgwick Museum of Earth Sciences",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join us to celebrate some of the queer histories of the Sedgwick Museum's collections and people.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Black History of Science Tours",
-  "url": "https://www.museums.cam.ac.uk/events/black-history-science-tours-2",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/black-history-science-tours-2#2026-10-07T15:00",
-  "start": "2026-10-07T15:00",
-  "end": "2026-10-07T15:30",
-  "all_day": false,
-  "venue": "Whipple Museum of the History of Science",
-  "address": "Whipple Museum, Free School Lane, Cambridge, CB2 3RH",
-  "postcode": "CB2 3RH",
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "To celebrate Black History Month this October, join us for our Black History of Science Tour at the Whipple.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Spotlight Talk: Women Weavers: Thread, Memory, Identity",
-  "url": "https://www.museums.cam.ac.uk/events/spotlight-talk-women-weavers-thread-memory-identity",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/spotlight-talk-women-weavers-thread-memory-identity#2026-10-07T13:00",
-  "start": "2026-10-07T13:00",
-  "end": "2026-10-07T13:20",
-  "all_day": false,
-  "venue": "Kettle's Yard",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join us for a short 20-minute spotlight talk in the Kettle’s Yard house, taking a closer look at the connections between women in the Atlas Mountains and one of the textiles in the collection, on display in the dining room.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Home Educators Event at the Museum of Archaeology and Anthropology",
-  "url": "https://www.museums.cam.ac.uk/events/home-educators-event-museum-archaeology-and-anthropology-0",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/home-educators-event-museum-archaeology-and-anthropology-0#2026-10-08T13:30",
-  "start": "2026-10-08T13:30",
-  "end": "2026-10-08T14:30",
-  "all_day": false,
-  "venue": "Museum of Archaeology and Anthropology",
-  "address": "Museum of Archaeology and Anthropology,Downing Street,CambridgeCB2 3DZ",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "ages 5+",
-   "family events"
-  ],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Kettle’s Yard Chamber Music: Quartetto Noûs",
-  "url": "https://www.museums.cam.ac.uk/events/kettles-yard-chamber-music-quartetto-nous",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/kettles-yard-chamber-music-quartetto-nous#2026-10-08T20:00",
-  "start": "2026-10-08T20:00",
-  "end": "2026-10-08T22:00",
-  "all_day": false,
-  "venue": "Kettle's Yard",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "£25 (£5 students), booking required",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join us for a Chamber Music concert in the Kettle’s Yard house with Quartetto Noûs.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Spotlight Talk: Kettle’s Yard Rugs",
-  "url": "https://www.museums.cam.ac.uk/events/spotlight-talk-kettles-yard-rugs",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/spotlight-talk-kettles-yard-rugs#2026-10-08T13:00",
-  "start": "2026-10-08T13:00",
-  "end": "2026-10-08T13:20",
-  "all_day": false,
-  "venue": "Kettle's Yard",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join us for a short 20-minute spotlight talk in the Kettle’s Yard house, taking a closer look at the rugs on display in relation to Jim and Helen Ede’s former residence in Tangiers.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Museum Late: Frank Bowling",
-  "url": "https://www.museums.cam.ac.uk/events/museum-late-frank-bowling-0",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/museum-late-frank-bowling-0#2026-10-08T18:30",
-  "start": "2026-10-08T18:30",
-  "end": "2026-10-08T21:00",
-  "all_day": false,
-  "venue": "The Fitzwilliam Museum",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "By donation",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join us after hours for our Late themed around our Frank Bowling: Seeking the Sublime display, in collaboration with Diasporas Now.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Spotlight Talk: Helen Ede and Knitting",
-  "url": "https://www.museums.cam.ac.uk/events/spotlight-talk-helen-ede-and-knitting",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/spotlight-talk-helen-ede-and-knitting#2026-10-09T13:00",
-  "start": "2026-10-09T13:00",
-  "end": "2026-10-09T13:20",
-  "all_day": false,
-  "venue": "Kettle's Yard",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join us for a short 20-minute spotlight talk in the Kettle’s Yard house, taking a closer look at Helen Ede’s creative practices.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -462,7 +239,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -486,107 +263,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Bridging Binaries LGBTQ+ Tour",
-  "url": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-42",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-42#2026-10-10T14:30",
-  "start": "2026-10-10T14:30",
-  "end": "2026-10-10T15:30",
-  "all_day": false,
-  "venue": "Museum of Classical Archaeology",
-  "address": "Faculty of Classics,Sidgwick Avenue,Cambridge,CB3 9DA",
-  "postcode": "CB3 9DA",
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Same-sex desire does not need modern labels and categories in order to exist across time.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Fungi Field Day",
-  "url": "https://www.museums.cam.ac.uk/events/fungi-field-day-1",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/fungi-field-day-1#2026-10-10T10:00",
-  "start": "2026-10-10T10:00",
-  "end": "2026-10-10T16:00",
-  "all_day": false,
-  "venue": "Cambridge University Botanic Garden",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free with normal Garden admission",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family events"
-  ],
-  "summary": "This UK Fungus Day, join us for Fungi Field Day at the Botanic Garden to celebrate fungi and their relationships with plants.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Fungi Field Day 2026",
-  "url": "https://www.museums.cam.ac.uk/events/fungi-field-day-2026",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/fungi-field-day-2026#2026-10-10T10:00",
-  "start": "2026-10-10T10:00",
-  "end": "2026-10-10T16:00",
-  "all_day": false,
-  "venue": "Cambridge University Botanic Garden",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free with normal Garden admission",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family events"
-  ],
-  "summary": "Do you want to know more about the fantastic world of fungi?",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Guided House Tour",
-  "url": "https://www.museums.cam.ac.uk/events/guided-house-tour-25",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/guided-house-tour-25#2026-10-10T11:00",
-  "start": "2026-10-10T11:00",
-  "end": "2026-10-10T12:00",
-  "all_day": false,
-  "venue": "Kettle's Yard",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "£18.50 (£16 Friends and Students), booking required",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join one of our knowledgeable Visitor Assistants for an introductory guided tour of the Kettle’s Yard house.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -610,33 +287,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Studio Sunday Relaxed Session",
-  "url": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-23",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-23#2026-10-11T12:00",
-  "start": "2026-10-11T12:00",
-  "end": "2026-10-11T13:00",
-  "all_day": false,
-  "venue": "Kettle's Yard",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family events"
-  ],
-  "summary": "Join us for a relaxed Studio Sunday session aimed at children and families with additional sensory needs.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -663,7 +314,33 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Studio Sunday Relaxed Session",
+  "url": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-23",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-23#2026-10-11T12:00",
+  "start": "2026-10-11T12:00",
+  "end": "2026-10-11T13:00",
+  "all_day": false,
+  "venue": "Kettle's Yard",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "family events"
+  ],
+  "summary": "Join us for a relaxed Studio Sunday session aimed at children and families with additional sensory needs.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -687,7 +364,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -714,7 +391,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -738,7 +415,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -762,31 +439,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
-  "title": "Pride in Nature LGBTQ+ tour",
-  "url": "https://www.museums.cam.ac.uk/events/pride-nature-lgbtq-tour-12",
+  "title": "Whipple Highlights Tour",
+  "url": "https://www.museums.cam.ac.uk/events/whipple-highlights-tour-25",
   "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/pride-nature-lgbtq-tour-12#2026-10-18T13:00",
-  "start": "2026-10-18T13:00",
-  "end": "2026-10-18T14:00",
+  "external_id": "https://www.museums.cam.ac.uk/events/whipple-highlights-tour-25#2026-10-17T15:00",
+  "start": "2026-10-17T15:00",
+  "end": "2026-10-17T15:30",
   "all_day": false,
-  "venue": "Museum of Zoology",
-  "address": "University Museum of ZoologyDowning StCambridge",
-  "postcode": null,
+  "venue": "Whipple Museum of the History of Science",
+  "address": "Whipple Museum, Free School Lane, Cambridge, CB2 3RH",
+  "postcode": "CB2 3RH",
   "lat": null,
   "lon": null,
   "price": "Free",
   "status": null,
   "organizer": null,
   "categories": [],
-  "summary": "Join us on a tour of the Museum as our volunteer experts share their stories about gender and sex in the animal world.",
+  "summary": "This free tour showcases a selection of must-see museum objects – your perfect introduction to the Whipple.",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -812,7 +489,79 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Pride in Nature LGBTQ+ tour",
+  "url": "https://www.museums.cam.ac.uk/events/pride-nature-lgbtq-tour-12",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/pride-nature-lgbtq-tour-12#2026-10-18T13:00",
+  "start": "2026-10-18T13:00",
+  "end": "2026-10-18T14:00",
+  "all_day": false,
+  "venue": "Museum of Zoology",
+  "address": "University Museum of ZoologyDowning StCambridge",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Join us on a tour of the Museum as our volunteer experts share their stories about gender and sex in the animal world.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Whipple Highlights Tour",
+  "url": "https://www.museums.cam.ac.uk/events/whipple-highlights-tour-24",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/whipple-highlights-tour-24#2026-10-19T15:00",
+  "start": "2026-10-19T15:00",
+  "end": "2026-10-19T15:30",
+  "all_day": false,
+  "venue": "Whipple Museum of the History of Science",
+  "address": "Whipple Museum, Free School Lane, Cambridge, CB2 3RH",
+  "postcode": "CB2 3RH",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "This free tour showcases a selection of must-see museum objects – your perfect introduction to the Whipple.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Art for Students 2026-27",
+  "url": "https://www.museums.cam.ac.uk/events/art-students-2026-27",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/art-students-2026-27#2026-10-19T14:00",
+  "start": "2026-10-19T14:00",
+  "end": "2026-10-19T17:00",
+  "all_day": false,
+  "venue": "Kettle's Yard",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "£20 fee and £30 refundable deposit per artwork, come along",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Why have a poster on your wall when you can have a real work of art?Ever since Kettle’s Yard was created, students have been borrowing works of art from the collection. At the beginning of every academic year, we invite students at Anglia Ruskin University and University of Cambridge to borrow artworks from our Art for Students collection, giving them a bit of Kettle’s Yard to take home with them.Come along to Kettle’s Yard to choose your artwork.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -836,7 +585,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -860,7 +609,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -888,83 +637,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "LGBTQ+ Tours at the Sedgwick Museum of Earth Sciences",
-  "url": "https://www.museums.cam.ac.uk/events/lgbtq-tours-sedgwick-museum-earth-sciences-19",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/lgbtq-tours-sedgwick-museum-earth-sciences-19#2026-10-21T13:00",
-  "start": "2026-10-21T13:00",
-  "end": "2026-10-21T13:45",
-  "all_day": false,
-  "venue": "Sedgwick Museum of Earth Sciences",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join us to celebrate some of the queer histories of the Sedgwick Museum's collections and people.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Black History of Science Tours",
-  "url": "https://www.museums.cam.ac.uk/events/black-history-science-tours-3",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/black-history-science-tours-3#2026-10-21T15:00",
-  "start": "2026-10-21T15:00",
-  "end": "2026-10-21T15:30",
-  "all_day": false,
-  "venue": "Whipple Museum of the History of Science",
-  "address": "Whipple Museum, Free School Lane, Cambridge, CB2 3RH",
-  "postcode": "CB2 3RH",
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "To celebrate Black History Month this October, join us for our Black History of Science Tour at the Whipple.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Toddlers in the Galleries",
-  "url": "https://www.museums.cam.ac.uk/events/toddlers-galleries-7",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/toddlers-galleries-7#2026-10-21T10:30",
-  "start": "2026-10-21T10:30",
-  "end": "2026-10-21T11:30",
-  "all_day": false,
-  "venue": "The Fitzwilliam Museum",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Family: £4",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "families",
-   "family events",
-   "under 5s"
-  ],
-  "summary": "Join us for relaxed and social session in the Fitzwilliam Museum with your baby or toddler.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -992,31 +665,83 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
-  "title": "An Enamel Revolution: Curator's Talk",
-  "url": "https://www.museums.cam.ac.uk/events/enamel-revolution-curators-talk",
+  "title": "Toddlers in the Galleries",
+  "url": "https://www.museums.cam.ac.uk/events/toddlers-galleries-7",
   "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/enamel-revolution-curators-talk#2026-10-22T11:00",
-  "start": "2026-10-22T11:00",
-  "end": "2026-10-22T12:00",
+  "external_id": "https://www.museums.cam.ac.uk/events/toddlers-galleries-7#2026-10-21T10:30",
+  "start": "2026-10-21T10:30",
+  "end": "2026-10-21T11:30",
   "all_day": false,
   "venue": "The Fitzwilliam Museum",
   "address": null,
   "postcode": null,
   "lat": null,
   "lon": null,
-  "price": "£10 & Free for Fitz List",
+  "price": "Family: £4",
   "status": null,
   "organizer": null,
-  "categories": [],
-  "summary": "Learn how Chinese workshops revolutionised enamel techniques through experimentation with materials and colours in the 1600s",
+  "categories": [
+   "families",
+   "family events",
+   "under 5s"
+  ],
+  "summary": "Join us for relaxed and social session in the Fitzwilliam Museum with your baby or toddler.",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Black History of Science Tours",
+  "url": "https://www.museums.cam.ac.uk/events/black-history-science-tours-3",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/black-history-science-tours-3#2026-10-21T15:00",
+  "start": "2026-10-21T15:00",
+  "end": "2026-10-21T15:30",
+  "all_day": false,
+  "venue": "Whipple Museum of the History of Science",
+  "address": "Whipple Museum, Free School Lane, Cambridge, CB2 3RH",
+  "postcode": "CB2 3RH",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "To celebrate Black History Month this October, join us for our Black History of Science Tour at the Whipple.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "LGBTQ+ Tours at the Sedgwick Museum of Earth Sciences",
+  "url": "https://www.museums.cam.ac.uk/events/lgbtq-tours-sedgwick-museum-earth-sciences-19",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/lgbtq-tours-sedgwick-museum-earth-sciences-19#2026-10-21T13:00",
+  "start": "2026-10-21T13:00",
+  "end": "2026-10-21T13:45",
+  "all_day": false,
+  "venue": "Sedgwick Museum of Earth Sciences",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Join us to celebrate some of the queer histories of the Sedgwick Museum's collections and people.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1040,7 +765,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1064,7 +789,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "An Enamel Revolution: Curator's Talk",
+  "url": "https://www.museums.cam.ac.uk/events/enamel-revolution-curators-talk",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/enamel-revolution-curators-talk#2026-10-22T11:00",
+  "start": "2026-10-22T11:00",
+  "end": "2026-10-22T12:00",
+  "all_day": false,
+  "venue": "The Fitzwilliam Museum",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "£10 & Free for Fitz List",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Learn how Chinese workshops revolutionised enamel techniques through experimentation with materials and colours in the 1600s",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1088,31 +837,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Bridging Binaries LGBTQ+ Tour",
-  "url": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-43",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-43#2026-10-23T14:00",
-  "start": "2026-10-23T14:00",
-  "end": "2026-10-23T15:00",
-  "all_day": false,
-  "venue": "Museum of Classical Archaeology",
-  "address": "Faculty of Classics,Sidgwick Avenue,CambridgeCB3 9DA",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Same-sex desire does not need modern labels and categories in order to exist across time.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1139,7 +864,79 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Bridging Binaries LGBTQ+ Tour",
+  "url": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-43",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-43#2026-10-23T14:00",
+  "start": "2026-10-23T14:00",
+  "end": "2026-10-23T15:00",
+  "all_day": false,
+  "venue": "Museum of Classical Archaeology",
+  "address": "Faculty of Classics,Sidgwick Avenue,CambridgeCB3 9DA",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Same-sex desire does not need modern labels and categories in order to exist across time.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Guided House Tour",
+  "url": "https://www.museums.cam.ac.uk/events/guided-house-tour-26",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/guided-house-tour-26#2026-10-24T11:00",
+  "start": "2026-10-24T11:00",
+  "end": "2026-10-24T12:00",
+  "all_day": false,
+  "venue": "Kettle's Yard",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "£18.50 (£16 Friends and Students), booking required",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Join one of our knowledgeable Visitor Assistants for an introductory guided tour of the Kettle’s Yard house.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Autumn Tours and Talks",
+  "url": "https://www.museums.cam.ac.uk/events/autumn-tours-and-talks",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/autumn-tours-and-talks#2026-10-24T11:30",
+  "start": "2026-10-24T11:30",
+  "end": "2026-11-01T13:45",
+  "all_day": false,
+  "venue": "Cambridge University Botanic Garden",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free with normal Garden admission",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Enjoy free daily tours and talks throughout October half-term.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1166,7 +963,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1190,106 +987,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Guided House Tour",
-  "url": "https://www.museums.cam.ac.uk/events/guided-house-tour-26",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/guided-house-tour-26#2026-10-24T11:00",
-  "start": "2026-10-24T11:00",
-  "end": "2026-10-24T12:00",
-  "all_day": false,
-  "venue": "Kettle's Yard",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "£18.50 (£16 Friends and Students), booking required",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join one of our knowledgeable Visitor Assistants for an introductory guided tour of the Kettle’s Yard house.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Autumn Tours and Talks",
-  "url": "https://www.museums.cam.ac.uk/events/autumn-tours-and-talks",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/autumn-tours-and-talks#2026-10-24T11:30",
-  "start": "2026-10-24T11:30",
-  "end": "2026-11-01T13:45",
-  "all_day": false,
-  "venue": "Cambridge University Botanic Garden",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free with normal Garden admission",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Enjoy free daily tours and talks throughout October half-term.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "African Legacies in Cambridge Museums Tour",
-  "url": "https://www.museums.cam.ac.uk/events/african-legacies-cambridge-museums-tour-9",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/african-legacies-cambridge-museums-tour-9#2026-10-25T14:30",
-  "start": "2026-10-25T14:30",
-  "end": "2026-10-25T16:00",
-  "all_day": false,
-  "venue": "The Fitzwilliam Museum, Museum of Zoology, Museum of Archaeology and Anthropology",
-  "address": "Meet at The Fitzwilliam MuseumCourtyard Entrance (no stairs)Trumpington StreetCambridgeCB2 1RB",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "FREE, booking required",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Join a thought-provoking tour exploring African objects and histories within the University, led by Uncomfortable Cambridge.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Studio Sunday Relaxed Session",
-  "url": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-24",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-24#2026-10-25T12:00",
-  "start": "2026-10-25T12:00",
-  "end": "2026-10-25T13:00",
-  "all_day": false,
-  "venue": "Kettle's Yard",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "families",
-   "family events"
-  ],
-  "summary": "Join us for a relaxed Studio Sunday session aimed at children and families with additional sensory needs.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1316,7 +1014,58 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Studio Sunday Relaxed Session",
+  "url": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-24",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-24#2026-10-25T12:00",
+  "start": "2026-10-25T12:00",
+  "end": "2026-10-25T13:00",
+  "all_day": false,
+  "venue": "Kettle's Yard",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "families",
+   "family events"
+  ],
+  "summary": "Join us for a relaxed Studio Sunday session aimed at children and families with additional sensory needs.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "African Legacies in Cambridge Museums Tour",
+  "url": "https://www.museums.cam.ac.uk/events/african-legacies-cambridge-museums-tour-9",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/african-legacies-cambridge-museums-tour-9#2026-10-25T14:30",
+  "start": "2026-10-25T14:30",
+  "end": "2026-10-25T16:00",
+  "all_day": false,
+  "venue": "The Fitzwilliam Museum, Museum of Zoology, Museum of Archaeology and Anthropology",
+  "address": "Meet at The Fitzwilliam MuseumCourtyard Entrance (no stairs)Trumpington StreetCambridgeCB2 1RB",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "FREE, booking required",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Join a thought-provoking tour exploring African objects and histories within the University, led by Uncomfortable Cambridge.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1345,7 +1094,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1372,7 +1121,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1398,7 +1147,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1422,135 +1171,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Weird Whipple",
-  "url": "https://www.museums.cam.ac.uk/events/weird-whipple",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/weird-whipple#2026-10-28T18:00",
-  "start": "2026-10-28T18:00",
-  "end": "2026-10-28T21:00",
-  "all_day": false,
-  "venue": "Whipple Museum of the History of Science",
-  "address": "Whipple Museum, Free School Lane, Cambridge, CB2 3RHThe event is suitable for ages 16+.",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Discover the stranger side of the history of science by candlelight",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Blackout Poetry",
-  "url": "https://www.museums.cam.ac.uk/events/blackout-poetry",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/blackout-poetry#2026-10-28T10:00",
-  "start": "2026-10-28T10:00",
-  "end": "2026-10-28T11:00",
-  "all_day": false,
-  "venue": "The Polar Museum",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family events"
-  ],
-  "summary": "Inspired by 'Polar Panoramas', join us to create your own blackout poetry",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Make your own Polar Postcard",
-  "url": "https://www.museums.cam.ac.uk/events/make-your-own-polar-postcard",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/make-your-own-polar-postcard#2026-10-28T11:15",
-  "start": "2026-10-28T11:15",
-  "end": "2026-10-28T12:15",
-  "all_day": false,
-  "venue": "The Polar Museum",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family events"
-  ],
-  "summary": "Inspired by 'Polar Panoramas', join us to make your own polar panorama postcards",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "October Half Term Family Day",
-  "url": "https://www.museums.cam.ac.uk/events/october-half-term-family-day",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/october-half-term-family-day#2026-10-28T10:30",
-  "start": "2026-10-28T10:30",
-  "end": "2026-10-28T15:30",
-  "all_day": false,
-  "venue": "The Fitzwilliam Museum",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "families",
-   "family events",
-   "under 5s"
-  ],
-  "summary": "Take part in our Family Day: a specially curated artist-led event for families to relax and have fun together exploring our collections.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Sedgwick Museum Staff Favourites Tours",
-  "url": "https://www.museums.cam.ac.uk/events/sedgwick-museum-staff-favourites-tours-71",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/sedgwick-museum-staff-favourites-tours-71#2026-10-28T13:00",
-  "start": "2026-10-28T13:00",
-  "end": "2026-10-28T13:30",
-  "all_day": false,
-  "venue": "Sedgwick Museum of Earth Sciences",
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Drop in and be inspired by the displays and objects that our staff love.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1578,7 +1199,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1606,7 +1227,135 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Sedgwick Museum Staff Favourites Tours",
+  "url": "https://www.museums.cam.ac.uk/events/sedgwick-museum-staff-favourites-tours-71",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/sedgwick-museum-staff-favourites-tours-71#2026-10-28T13:00",
+  "start": "2026-10-28T13:00",
+  "end": "2026-10-28T13:30",
+  "all_day": false,
+  "venue": "Sedgwick Museum of Earth Sciences",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Drop in and be inspired by the displays and objects that our staff love.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "October Half Term Family Day",
+  "url": "https://www.museums.cam.ac.uk/events/october-half-term-family-day",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/october-half-term-family-day#2026-10-28T10:30",
+  "start": "2026-10-28T10:30",
+  "end": "2026-10-28T15:30",
+  "all_day": false,
+  "venue": "The Fitzwilliam Museum",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "families",
+   "family events",
+   "under 5s"
+  ],
+  "summary": "Take part in our Family Day: a specially curated artist-led event for families to relax and have fun together exploring our collections.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Make your own Polar Postcard",
+  "url": "https://www.museums.cam.ac.uk/events/make-your-own-polar-postcard",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/make-your-own-polar-postcard#2026-10-28T11:15",
+  "start": "2026-10-28T11:15",
+  "end": "2026-10-28T12:15",
+  "all_day": false,
+  "venue": "The Polar Museum",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "family events"
+  ],
+  "summary": "Inspired by 'Polar Panoramas', join us to make your own polar panorama postcards",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Blackout Poetry",
+  "url": "https://www.museums.cam.ac.uk/events/blackout-poetry",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/blackout-poetry#2026-10-28T10:00",
+  "start": "2026-10-28T10:00",
+  "end": "2026-10-28T11:00",
+  "all_day": false,
+  "venue": "The Polar Museum",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "family events"
+  ],
+  "summary": "Inspired by 'Polar Panoramas', join us to create your own blackout poetry",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Weird Whipple",
+  "url": "https://www.museums.cam.ac.uk/events/weird-whipple",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/weird-whipple#2026-10-28T18:00",
+  "start": "2026-10-28T18:00",
+  "end": "2026-10-28T21:00",
+  "all_day": false,
+  "venue": "Whipple Museum of the History of Science",
+  "address": "Whipple Museum, Free School Lane, Cambridge, CB2 3RHThe event is suitable for ages 16+.",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Discover the stranger side of the history of science by candlelight",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1634,7 +1383,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1658,7 +1407,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1682,7 +1431,33 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Family Friendly Drop In Nov",
+  "url": "https://www.museums.cam.ac.uk/events/family-friendly-drop-nov",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/family-friendly-drop-nov#2026-11-04T10:00",
+  "start": "2026-11-04T10:00",
+  "end": "2026-11-04T12:00",
+  "all_day": false,
+  "venue": "The Fitzwilliam Museum",
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "families"
+  ],
+  "summary": "Join us for a relaxed morning at the Museum for all the family. We’ll have picture books, drawing materials, sensory play resources, as well as tips and ideas to help you enjoy your visit. There’s no need to book, just drop-in.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1706,7 +1481,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Whipple Highlights Tour",
+  "url": "https://www.museums.cam.ac.uk/events/whipple-highlights-tour-26",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/whipple-highlights-tour-26#2026-11-07T15:00",
+  "start": "2026-11-07T15:00",
+  "end": "2026-11-07T15:30",
+  "all_day": false,
+  "venue": "Whipple Museum of the History of Science",
+  "address": "Whipple Museum, Free School Lane, Cambridge, CB2 3RH",
+  "postcode": "CB2 3RH",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "This free tour showcases a selection of must-see museum objects – your perfect introduction to the Whipple.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1730,7 +1529,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1758,33 +1557,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "From Darwin to Dodos - guided tour of the Museum",
-  "url": "https://www.museums.cam.ac.uk/events/darwin-dodos-guided-tour-museum-3",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/darwin-dodos-guided-tour-museum-3#2026-11-13T15:00",
-  "start": "2026-11-13T15:00",
-  "end": "2026-11-13T15:45",
-  "all_day": false,
-  "venue": "Museum of Zoology",
-  "address": "University Museum of ZoologyDowning StCambridgeCB2 3EJ",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "families"
-  ],
-  "summary": "Join us for a FREE expert-led guided tour.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1811,7 +1584,57 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "From Darwin to Dodos - guided tour of the Museum",
+  "url": "https://www.museums.cam.ac.uk/events/darwin-dodos-guided-tour-museum-3",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/darwin-dodos-guided-tour-museum-3#2026-11-13T15:00",
+  "start": "2026-11-13T15:00",
+  "end": "2026-11-13T15:45",
+  "all_day": false,
+  "venue": "Museum of Zoology",
+  "address": "University Museum of ZoologyDowning StCambridgeCB2 3EJ",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "families"
+  ],
+  "summary": "Join us for a FREE expert-led guided tour.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Whipple Highlights Tour",
+  "url": "https://www.museums.cam.ac.uk/events/whipple-highlights-tour-27",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/whipple-highlights-tour-27#2026-11-14T15:00",
+  "start": "2026-11-14T15:00",
+  "end": "2026-11-14T15:30",
+  "all_day": false,
+  "venue": "Whipple Museum of the History of Science",
+  "address": "Whipple Museum, Free School Lane, Cambridge, CB2 3RH",
+  "postcode": "CB2 3RH",
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "This free tour showcases a selection of must-see museum objects – your perfect introduction to the Whipple.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1835,7 +1658,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1859,7 +1682,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1883,7 +1706,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1907,7 +1730,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1931,7 +1754,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1955,7 +1778,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -1979,7 +1802,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2005,7 +1828,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2029,7 +1852,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2053,7 +1876,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2077,7 +1900,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2101,7 +1924,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2125,7 +1948,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
+ },
+ {
+  "source_id": "S052",
+  "title": "Bridging Binaries LGBTQ+ Tour",
+  "url": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-46",
+  "kind": "event",
+  "external_id": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-46#2026-12-11T14:00",
+  "start": "2026-12-11T14:00",
+  "end": "2026-12-11T15:00",
+  "all_day": false,
+  "venue": "Museum of Classical Archaeology",
+  "address": "Faculty of Classics,Sidgwick Avenue,CambridgeCB3 9DA",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": "Free",
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": "Same-sex desire does not need modern labels and categories in order to exist across time.",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2149,7 +1996,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2176,31 +2023,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
- },
- {
-  "source_id": "S052",
-  "title": "Bridging Binaries LGBTQ+ Tour",
-  "url": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-46",
-  "kind": "event",
-  "external_id": "https://www.museums.cam.ac.uk/events/bridging-binaries-lgbtq-tour-46#2026-12-11T14:00",
-  "start": "2026-12-11T14:00",
-  "end": "2026-12-11T15:00",
-  "all_day": false,
-  "venue": "Museum of Classical Archaeology",
-  "address": "Faculty of Classics,Sidgwick Avenue,CambridgeCB3 9DA",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": "Free",
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Same-sex desire does not need modern labels and categories in order to exist across time.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2224,7 +2047,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2248,7 +2071,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2272,7 +2095,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2296,7 +2119,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2320,7 +2143,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2344,7 +2167,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2368,7 +2191,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  },
  {
   "source_id": "S052",
@@ -2392,6 +2215,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:19:01+00:00"
+  "fetched_at": "2026-10-11T20:46:34+00:00"
  }
 ]

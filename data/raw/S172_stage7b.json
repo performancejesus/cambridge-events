@@ -1,6 +1,33 @@
 [
  {
   "source_id": "S172",
+  "title": "Social Commentary Through Song",
+  "url": "https://www.robinson.cam.ac.uk/events/social-commentary-through-song",
+  "kind": "event",
+  "external_id": "2026-10-16|Social Commentary Through Song",
+  "start": "2026-10-16",
+  "end": null,
+  "all_day": true,
+  "venue": "Robinson College",
+  "address": "Robinson College, Grange Road, Cambridge",
+  "postcode": "CB3 9AN",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "concert"
+  ],
+  "summary": "concert",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:23:57+00:00"
+ },
+ {
+  "source_id": "S172",
   "title": "Christmas Concert 2026",
   "url": "https://www.robinson.cam.ac.uk/events/christmas-concert-2026",
   "kind": "event",
@@ -24,6 +51,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:12:04+00:00"
+  "fetched_at": "2026-10-11T21:23:57+00:00"
  }
 ]

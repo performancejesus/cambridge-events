@@ -91,12 +91,14 @@ def duplicates(cands: list[dict], raw: dict) -> set[str]:
         t = norm_title(c.get("title") or "")
         # слова площадки в названии («… at Cambridge Central Library») не делают события похожими
         t = " ".join(w for w in t.split() if w not in set(venue.split()) | {"at", "cambridge"})
-        rows.append((c["id"], t, (r.get("when") or "")[:20], venue, c.get("url"), c.get("kind")))
+        rows.append((c["id"], t, (r.get("when") or "")[:20], venue, c.get("url"), c.get("kind"), c.get("title") or ""))
     dup = set()
     for i, a in enumerate(rows):
         for b in rows[i + 1:]:
             if b[0] in dup or not a[1] or not b[1]:
                 continue
+            if a[5] == b[5] == "programme" and re.findall(r"\d+", a[6]) != re.findall(r"\d+", b[6]):
+                continue   # разные возрастные группы одного лагеря (Cambridge LTC 5–8 / 8–10 / 11–16) — не дубли
             sim = title_similarity(a[1], b[1])
             same_place = a[2] == b[2] and a[3] and a[3] == b[3]
             if a[5] == "venue_news" and b[5] == "venue_news":

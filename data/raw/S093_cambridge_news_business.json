@@ -1,6 +1,87 @@
 [
  {
   "source_id": "S093",
+  "title": "First look at new Hickory’s Smokehouse set to open in former Cambridge pub",
+  "url": "https://www.cambridge-news.co.uk/news/cambridge-news/gallery/first-look-new-hickorys-smokehouse-34733415",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/news/cambridge-news/gallery/first-look-new-hickorys-smokehouse-34733415",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Food and drink",
+   "Cambridge"
+  ],
+  "summary": "This is the second Hickory's to open in Cambridgeshire within a couple of months",
+  "published": "2026-10-08T16:00:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:38:43+00:00"
+ },
+ {
+  "source_id": "S093",
+  "title": "More than 12,000 Cambridgeshire residents could have groceries delivered by robots",
+  "url": "https://www.cambridge-news.co.uk/news/local-news/more-12000-cambridgeshire-residents-could-34728056",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/news/local-news/more-12000-cambridgeshire-residents-could-34728056",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Food and drink",
+   "Cambridgeshire"
+  ],
+  "summary": "The trial is already underway",
+  "published": "2026-10-07T11:00:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:38:43+00:00"
+ },
+ {
+  "source_id": "S093",
+  "title": "One of Cambridge's oldest pubs reopens after autumn refurb",
+  "url": "https://www.cambridge-news.co.uk/whats-on/food-drink-news/gallery/one-cambridges-oldest-pubs-reopens-34721920",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/whats-on/food-drink-news/gallery/one-cambridges-oldest-pubs-reopens-34721920",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Food and drink",
+   "Cambridge"
+  ],
+  "summary": "The historic pub is believed to have been a favoured watering hole of CS Lewis",
+  "published": "2026-10-06T16:00:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:38:43+00:00"
+ },
+ {
+  "source_id": "S093",
   "title": "New Aldi, petrol station and drive-thru restaurant could open next to busy road",
   "url": "https://www.cambridge-news.co.uk/news/local-news/new-aldi-petrol-station-drive-34716659",
   "kind": "article",
@@ -24,7 +105,7 @@
   "published": "2026-10-05T14:04:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:10:53+00:00"
+  "fetched_at": "2026-10-11T20:38:43+00:00"
  },
  {
   "source_id": "S093",
@@ -53,14 +134,14 @@
   "published": "2026-10-04T08:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:10:53+00:00"
+  "fetched_at": "2026-10-11T20:38:43+00:00"
  },
  {
   "source_id": "S093",
-  "title": "Cambridge restaurant with panoramic city views from your own private dome",
-  "url": "https://www.cambridge-news.co.uk/whats-on/food-drink-news/cambridge-restaurant-panoramic-city-views-34694209",
+  "title": "Shops and restaurants that have opened in Cambridgeshire so far this year",
+  "url": "https://www.cambridge-news.co.uk/news/local-news/shops-restaurants-opened-cambridgeshire-far-34729881",
   "kind": "article",
-  "external_id": "https://www.cambridge-news.co.uk/whats-on/food-drink-news/cambridge-restaurant-panoramic-city-views-34694209",
+  "external_id": "https://www.cambridge-news.co.uk/news/local-news/shops-restaurants-opened-cambridgeshire-far-34729881",
   "start": null,
   "end": null,
   "all_day": false,
@@ -73,13 +154,12 @@
   "status": null,
   "organizer": null,
   "categories": [
-   "Food and drink",
-   "Cambridge"
+   "Shopping"
   ],
-  "summary": "It has been described as a 'very special way to experience dinner in Cambridge' by a previous customer",
-  "published": "2026-10-03T16:14:00Z",
+  "summary": "There have been a number of new additions to the county",
+  "published": "2026-10-11T07:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:10:53+00:00"
+  "fetched_at": "2026-10-11T20:38:49+00:00"
  }
 ]

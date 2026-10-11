@@ -1,0 +1,27 @@
+{
+ "only_claude_user_blocked": [
+  "Rudimental with Girls Don't Sync and MJ Cole",
+  "Peppa Pig at Nene Valley Railway",
+  "The Gruffalo at Nene Valley Railway"
+ ],
+ "only_training_blocked": [
+  "Christmas in Cambridge",
+  "Organic Semiconductors: From OLED Displays to Quantum Applications",
+  "The Pickerel Inn",
+  "UNIQLO"
+ ],
+ "lost_any_ai_agent": [
+  "Rudimental with Girls Don't Sync and MJ Cole",
+  "Christmas in Cambridge",
+  "Organic Semiconductors: From OLED Displays to Quantum Applications",
+  "Peppa Pig at Nene Valley Railway",
+  "The Pickerel Inn",
+  "UNIQLO",
+  "The Gruffalo at Nene Valley Railway"
+ ],
+ "without_search_links": {
+  "only_claude_user_blocked": 3,
+  "only_training_blocked": 4,
+  "lost_any_ai_agent": 7
+ }
+}

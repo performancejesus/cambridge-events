@@ -1,0 +1,225 @@
+{
+ "candidates": 860,
+ "in_issue": 114,
+ "before_all": {
+  "nonevent": {
+   "n": 22,
+   "examples": [
+    "Every Thursday, 60+ Local Business Owners Meet Here. Why?",
+    "Go Meet, 95 Regent Street - Punting & Networking — Cambridge Style",
+    "Space",
+    "Wo+Men’s Leadership Conference 2026: Inclusive leadership in the age o",
+    "Greene King Car Park Space",
+    "Secure My Booking – Ticket Protection"
+   ]
+  },
+  "regular": {
+   "n": 18,
+   "examples": [
+    "Rhymetime at Cambridge Central Library",
+    "Storytime at Cambridge Central Library",
+    "LGBTQIA+ Board Games Social at Cambridge Central Library",
+    "Improve Your English at Cambridge Central Library",
+    "Sunday Scribes at Cambridge Central Library",
+    "Queer Cafe at Cambridge Central Library"
+   ]
+  },
+  "dup": {
+   "n": 51,
+   "examples": [
+    "Adventure Camps — Multi-Activity Camp - Survival",
+    "Cambridge Science Centre — Wisbech Science Centre - Public visits (Chr",
+    "Cambridge Science Centre — Cambridge Science Centre - Public visits (C",
+    "The Arbury Social",
+    "Have You Got It Yet? The Story Of Syd Barret + Q&A",
+    "Susan Tomes, piano"
+   ]
+  },
+  "unclear": {
+   "n": 60,
+   "examples": [
+    "Children's Craft Drop-In at Cambridge Central Library",
+    "Lego Club Drop-In at Cambridge Central Library",
+    "Musical Theatre",
+    "Studio Sunday Relaxed Session",
+    "Studio Sunday",
+    "Rowan Community Evening Classes"
+   ]
+  },
+  "adult_in_kids": {
+   "n": 14,
+   "examples": [
+    "Under 5's Stay & Play",
+    "Cambridge Adult Disability MultiSport (CADMuS) club",
+    "Tennis",
+    "Badminton",
+    "Gymnastics for adults",
+    "Families Moving courses"
+   ]
+  },
+  "wraparound": {
+   "n": 20,
+   "examples": [
+    "After School Club",
+    "After School Club",
+    "Breakfast Club",
+    "After School Club",
+    "Breakfast Wraparound Care",
+    "After School Wraparound Care"
+   ]
+  }
+ },
+ "before_in_issue": {
+  "nonevent": {
+   "n": 0,
+   "examples": []
+  },
+  "regular": {
+   "n": 12,
+   "examples": [
+    "Rhymetime at Cambridge Central Library",
+    "Storytime at Cambridge Central Library",
+    "LGBTQIA+ Board Games Social at Cambridge Central Library",
+    "Improve Your English at Cambridge Central Library",
+    "Sunday Scribes at Cambridge Central Library",
+    "Queer Cafe at Cambridge Central Library"
+   ]
+  },
+  "dup": {
+   "n": 4,
+   "examples": [
+    "Adventure Camps — Multi-Activity Camp - Survival",
+    "Cambridge Science Centre — Wisbech Science Centre - Public visits (Chr",
+    "Cambridge Science Centre — Cambridge Science Centre - Public visits (C",
+    "The Arbury Social"
+   ]
+  },
+  "unclear": {
+   "n": 3,
+   "examples": [
+    "Children's Craft Drop-In at Cambridge Central Library",
+    "Lego Club Drop-In at Cambridge Central Library",
+    "Musical Theatre"
+   ]
+  },
+  "adult_in_kids": {
+   "n": 0,
+   "examples": []
+  },
+  "wraparound": {
+   "n": 0,
+   "examples": []
+  }
+ },
+ "after_rule": {
+  "nonevent": 0,
+  "regular": 0,
+  "dup": 0,
+  "unclear": 0,
+  "adult_in_kids": 0,
+  "wraparound": 0
+ },
+ "note": "после правил 7g эти кандидаты не доходят до отбора: не-события и регулярные — selection, дубли — merge_duplicates (остаётся одна запись), неясные — vague_reason и section_reason, взрослое — section_reason / fits(kids)",
+ "v14_candidates": 799,
+ "v14_in_issue": 108,
+ "v14_all": {
+  "nonevent": {
+   "n": 0,
+   "examples": []
+  },
+  "regular": {
+   "n": 5,
+   "examples": [
+    "junior parkrun — 2 km for ages 4–14",
+    "parkrun — free 5 km run",
+    "Walking tour of Gregory Hardiman's Cambridge",
+    "Halloween Spooky Story Time in Wimpole Hall",
+    "Weekly Drama and Musical Theatre Classes"
+   ]
+  },
+  "dup": {
+   "n": 19,
+   "examples": [
+    "Museum Encounters: Parkinson's Dance Course (Autumn 2026)",
+    "Make it with Marmalade Discover Linocutting Saturday Workshop Sessions",
+    "Adventure Camps — Multi-Activity Camps - Perform",
+    "Adventure Camps — Multi-Activity Camps - Survival",
+    "Adventure Camps — Young Leaders Programme",
+    "Adventure Camps — Multi-Activity Camp - Survival"
+   ]
+  },
+  "unclear": {
+   "n": 59,
+   "examples": [
+    "Rowan Community Evening Classes",
+    "Swimming Lessons",
+    "Kids",
+    "Rumble Tots",
+    "Pee Wees",
+    "Home Ed: Drop-off"
+   ]
+  },
+  "adult_in_kids": {
+   "n": 18,
+   "examples": [
+    "Under 5's Stay & Play",
+    "Cambridge Adult Disability MultiSport (CADMuS) club",
+    "Tennis",
+    "Badminton",
+    "All ages disability football (16+)",
+    "Disability football (male, 16+)"
+   ]
+  },
+  "wraparound": {
+   "n": 20,
+   "examples": [
+    "After School Club",
+    "After School Club",
+    "Breakfast Club",
+    "After School Club",
+    "Breakfast Wraparound Care",
+    "After School Wraparound Care"
+   ]
+  }
+ },
+ "v14_in": {
+  "nonevent": {
+   "n": 0,
+   "examples": []
+  },
+  "regular": {
+   "n": 2,
+   "examples": [
+    "junior parkrun — 2 km for ages 4–14",
+    "parkrun — free 5 km run"
+   ]
+  },
+  "dup": {
+   "n": 0,
+   "examples": []
+  },
+  "unclear": {
+   "n": 0,
+   "examples": []
+  },
+  "adult_in_kids": {
+   "n": 0,
+   "examples": []
+  },
+  "wraparound": {
+   "n": 0,
+   "examples": []
+  }
+ },
+ "weekend_v13": {
+  "items": 6,
+  "kids": 0,
+  "museum": 0
+ },
+ "weekend_v14": {
+  "items": 13,
+  "kids": 2,
+  "museum": 2
+ },
+ "editor_comments": null
+}

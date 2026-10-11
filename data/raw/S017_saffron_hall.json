@@ -1,78 +1,6 @@
 [
  {
   "source_id": "S017",
-  "title": "Foyer Folk",
-  "url": "https://www.saffronhall.com/whats-on/view/foyer-folk-24",
-  "kind": "event",
-  "external_id": "https://www.saffronhall.com/whats-on/view/foyer-folk-24",
-  "start": "2026-10-09T20:00",
-  "end": null,
-  "all_day": false,
-  "venue": "Saffron Hall",
-  "address": "Saffron Walden",
-  "postcode": "CB11 4UH",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": "scheduled",
-  "organizer": "Saffron Hall",
-  "categories": [],
-  "summary": "Good availability Foyer seating Foyer Folk",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
- },
- {
-  "source_id": "S017",
-  "title": "Spem In Alium: I Fagiolini at 40",
-  "url": "https://www.saffronhall.com/whats-on/view/spem-in-alium-i-fagolini-at-40",
-  "kind": "event",
-  "external_id": "https://www.saffronhall.com/whats-on/view/spem-in-alium-i-fagolini-at-40",
-  "start": "2026-10-10T19:30",
-  "end": null,
-  "all_day": false,
-  "venue": "Saffron Hall",
-  "address": "Saffron Walden",
-  "postcode": "CB11 4UH",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": "scheduled",
-  "organizer": "Saffron Hall",
-  "categories": [],
-  "summary": "Good availability Tiered seating Spem In Alium: I Fagiolini at 40",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
- },
- {
-  "source_id": "S017",
-  "title": "Shine with Jess Gillam and her Band",
-  "url": "https://www.saffronhall.com/whats-on/view/shine-with-jess-gillam-and-her-band",
-  "kind": "event",
-  "external_id": "https://www.saffronhall.com/whats-on/view/shine-with-jess-gillam-and-her-band",
-  "start": "2026-10-11T15:30",
-  "end": null,
-  "all_day": false,
-  "venue": "Saffron Hall",
-  "address": "Saffron Walden",
-  "postcode": "CB11 4UH",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": "scheduled",
-  "organizer": "Saffron Hall",
-  "categories": [],
-  "summary": "Good availability Tiered seating Shine with Jess Gillam and her Band",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
- },
- {
-  "source_id": "S017",
   "title": "SWCHS Sixth Form Open Evening",
   "url": "https://www.saffronhall.com/whats-on/view/swchs-sixth-form-open-evening-3",
   "kind": "event",
@@ -93,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -117,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -141,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -165,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -189,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -206,14 +134,14 @@
   "lat": null,
   "lon": null,
   "price": null,
-  "status": "few_left",
+  "status": "sold_out",
   "organizer": "Saffron Hall",
   "categories": [],
-  "summary": "Nearly full Cabaret tables Faulty Towers The Dining Experience",
+  "summary": "Sold out Cabaret tables Faulty Towers The Dining Experience",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -237,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:08+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -261,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -278,14 +206,14 @@
   "lat": null,
   "lon": null,
   "price": null,
-  "status": "few_left",
+  "status": "sold_out",
   "organizer": "Saffron Hall",
   "categories": [],
-  "summary": "Nearly full Tiered seating Sinfonia of London",
+  "summary": "Sold out Tiered seating Sinfonia of London",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -309,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:06+00:00"
  },
  {
   "source_id": "S017",
@@ -333,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -357,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -381,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -405,7 +333,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -429,7 +357,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -453,7 +381,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -477,7 +405,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:14+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -501,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -525,7 +453,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -549,7 +477,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:11+00:00"
  },
  {
   "source_id": "S017",
@@ -573,7 +501,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -597,7 +525,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -621,7 +549,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -645,7 +573,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -669,7 +597,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -693,7 +621,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -717,7 +645,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:20+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -741,7 +669,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -765,7 +693,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -789,7 +717,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:18+00:00"
  },
  {
   "source_id": "S017",
@@ -813,7 +741,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -837,7 +765,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -861,7 +789,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -885,7 +813,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -909,7 +837,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -933,7 +861,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -957,7 +885,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:26+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -981,7 +909,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -1005,7 +933,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -1022,14 +950,14 @@
   "lat": null,
   "lon": null,
   "price": null,
-  "status": "scheduled",
+  "status": "few_left",
   "organizer": "Saffron Hall",
   "categories": [],
-  "summary": "Good availability Tiered seating The Hallé",
+  "summary": "Nearly full Tiered seating The Hallé",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:23+00:00"
  },
  {
   "source_id": "S017",
@@ -1053,7 +981,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1077,7 +1005,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1101,7 +1029,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1125,7 +1053,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1149,7 +1077,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1173,7 +1101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1197,7 +1125,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:32+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1221,7 +1149,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1245,7 +1173,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1269,7 +1197,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:29+00:00"
  },
  {
   "source_id": "S017",
@@ -1293,7 +1221,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1317,7 +1245,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1341,7 +1269,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1365,7 +1293,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1389,7 +1317,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1413,7 +1341,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1437,7 +1365,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:38+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1461,7 +1389,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1485,7 +1413,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1509,7 +1437,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:35+00:00"
  },
  {
   "source_id": "S017",
@@ -1533,7 +1461,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:41+00:00"
  },
  {
   "source_id": "S017",
@@ -1557,7 +1485,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:41+00:00"
  },
  {
   "source_id": "S017",
@@ -1581,7 +1509,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:41+00:00"
  },
  {
   "source_id": "S017",
@@ -1605,7 +1533,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:41+00:00"
  },
  {
   "source_id": "S017",
@@ -1629,7 +1557,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:41+00:00"
  },
  {
   "source_id": "S017",
@@ -1653,7 +1581,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:41+00:00"
  },
  {
   "source_id": "S017",
@@ -1677,7 +1605,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:44+00:00"
+  "fetched_at": "2026-10-11T20:42:41+00:00"
  },
  {
   "source_id": "S017",
@@ -1701,6 +1629,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:14:49+00:00"
+  "fetched_at": "2026-10-11T20:42:41+00:00"
  }
 ]

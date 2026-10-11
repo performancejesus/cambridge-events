@@ -1,6 +1,33 @@
 [
  {
   "source_id": "S002",
+  "title": "One of Cambridge’s oldest pubs reopens after autumn refurb",
+  "url": "https://www.whatsonincambridge.com/one-of-cambridges-oldest-pubs-reopens-after-autumn-refurb/?utm_source=rss&utm_medium=rss&utm_campaign=one-of-cambridges-oldest-pubs-reopens-after-autumn-refurb",
+  "kind": "article",
+  "external_id": "https://www.cambridge-news.co.uk/whats-on/food-drink-news/gallery/one-cambridges-oldest-pubs-reopens-34721920",
+  "start": null,
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": null,
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "Cambridge News",
+   "What's On"
+  ],
+  "summary": "The historic pub is believed to have been a favoured watering hole of CS Lewis Courtesy of What's On Archive | Everyone Theatres... The post One of Cambridge’s oldest pubs reopens after autumn refurb appeared first on What's On In Cambridge .",
+  "published": "2026-10-06T16:15:00Z",
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:22:32+00:00"
+ },
+ {
+  "source_id": "S002",
   "title": "Comical Reactions An evening of science and politics themed stand-up comedy",
   "url": "https://www.whatsonincambridge.com/event/comical-reactions-an-evening-of-science-and-politics-themed-stand-up-comedy-2/?utm_source=rss&utm_medium=rss&utm_campaign=comical-reactions-an-evening-of-science-and-politics-themed-stand-up-comedy-2",
   "kind": "article",
@@ -21,7 +48,7 @@
   "published": "2026-10-20T18:45:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
+  "fetched_at": "2026-10-11T20:22:32+00:00"
  },
  {
   "source_id": "S002",
@@ -45,7 +72,7 @@
   "published": "2026-10-10T18:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
+  "fetched_at": "2026-10-11T20:22:32+00:00"
  },
  {
   "source_id": "S002",
@@ -69,7 +96,7 @@
   "published": "2026-10-24T18:30:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
+  "fetched_at": "2026-10-11T20:22:32+00:00"
  },
  {
   "source_id": "S002",
@@ -95,7 +122,7 @@
   "published": "2026-09-30T19:34:40Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
+  "fetched_at": "2026-10-11T20:22:32+00:00"
  },
  {
   "source_id": "S002",
@@ -119,7 +146,7 @@
   "published": "2026-10-21T09:30:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
+  "fetched_at": "2026-10-11T20:22:32+00:00"
  },
  {
   "source_id": "S002",
@@ -143,7 +170,7 @@
   "published": "2026-10-17T13:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
+  "fetched_at": "2026-10-11T20:22:32+00:00"
  },
  {
   "source_id": "S002",
@@ -167,7 +194,7 @@
   "published": "2026-10-04T09:00:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
+  "fetched_at": "2026-10-11T20:22:32+00:00"
  },
  {
   "source_id": "S002",
@@ -193,7 +220,7 @@
   "published": "2026-09-18T22:43:40Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
+  "fetched_at": "2026-10-11T20:22:32+00:00"
  },
  {
   "source_id": "S002",
@@ -220,30 +247,6 @@
   "published": "2026-09-17T17:55:00Z",
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
- },
- {
-  "source_id": "S002",
-  "title": "Henslow Son et Lumiere with Kate Hooper",
-  "url": "https://www.whatsonincambridge.com/event/henslow-son-et-lumiere-with-kate-hooper/?utm_source=rss&utm_medium=rss&utm_campaign=henslow-son-et-lumiere-with-kate-hooper",
-  "kind": "article",
-  "external_id": "https://www.whatsonincambridge.com/?post_type=tribe_events&p=52733",
-  "start": null,
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": null,
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "Friends of Duxford Churches are pleased to invite you to the first in a series of Autumn Talks, in support of St Peter’s Church much-need roof resoration. Kate Hooper has... The post Henslow Son et Lumiere with Kate Hooper appeared first on What's On In Cambridge .",
-  "published": "2026-09-25T18:30:00Z",
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T22:26:06+00:00"
+  "fetched_at": "2026-10-11T20:22:32+00:00"
  }
 ]

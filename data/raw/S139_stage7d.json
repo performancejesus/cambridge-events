@@ -24,34 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:08+00:00"
- },
- {
-  "source_id": "S139",
-  "title": "Yoga at Audley End",
-  "url": "https://www.english-heritage.org.uk/visit/whats-on/audley-end---yoga-at-audley-end/",
-  "kind": "event",
-  "external_id": "eh-253299",
-  "start": "2026-07-03",
-  "end": "2026-10-30",
-  "all_day": true,
-  "venue": "Audley End House and Gardens",
-  "address": "Audley End, Saffron Walden",
-  "postcode": "CB11 4JF",
-  "lat": null,
-  "lon": null,
-  "price": "Included in admission",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "english heritage",
-   "estate"
-  ],
-  "summary": "Join AJ for authentic, inclusive yoga in the beautiful grounds of Audley End House. Enjoy a welcoming 50-minute class outdoors beneath the oak trees or indoors in the elegant Cipriani Room, suitable for all experience levels. This is a third-party event hosted by AJ.",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:13:08+00:00"
+  "fetched_at": "2026-10-11T21:25:16+00:00"
  },
  {
   "source_id": "S139",
@@ -78,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:08+00:00"
+  "fetched_at": "2026-10-11T21:25:16+00:00"
  },
  {
   "source_id": "S139",
@@ -106,7 +79,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:08+00:00"
+  "fetched_at": "2026-10-11T21:25:16+00:00"
  },
  {
   "source_id": "S139",
@@ -133,7 +106,7 @@
   "published": null,
   "access": "members",
   "access_note": "org=English Heritage|url=https://www.english-heritage.org.uk/membership/",
-  "fetched_at": "2026-10-06T00:13:08+00:00"
+  "fetched_at": "2026-10-11T21:25:16+00:00"
  },
  {
   "source_id": "S139",
@@ -160,7 +133,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:08+00:00"
+  "fetched_at": "2026-10-11T21:25:16+00:00"
  },
  {
   "source_id": "S139",
@@ -188,7 +161,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:08+00:00"
+  "fetched_at": "2026-10-11T21:25:16+00:00"
  },
  {
   "source_id": "S139",
@@ -215,7 +188,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:13:08+00:00"
+  "fetched_at": "2026-10-11T21:25:16+00:00"
  },
  {
   "source_id": "S139",
@@ -243,6 +216,6 @@
   "published": null,
   "access": "members",
   "access_note": "org=English Heritage|url=https://www.english-heritage.org.uk/membership/",
-  "fetched_at": "2026-10-06T00:13:08+00:00"
+  "fetched_at": "2026-10-11T21:25:16+00:00"
  }
 ]

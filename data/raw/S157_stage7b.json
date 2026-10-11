@@ -1,60 +1,6 @@
 [
  {
   "source_id": "S157",
-  "title": "Queen Budapest",
-  "url": "https://cambridge.thelight.co.uk/queen-budapest",
-  "kind": "event",
-  "external_id": "light-queen-budapest-2026-10-07",
-  "start": "2026-10-07T19:00:00",
-  "end": null,
-  "all_day": false,
-  "venue": "The Light Cinema Cambridge",
-  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
-  "postcode": "CB1 7DY",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "film",
-   "event cinema"
-  ],
-  "summary": "cert U · 1h 36m",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:11:19+00:00"
- },
- {
-  "source_id": "S157",
-  "title": "Queen Budapest",
-  "url": "https://cambridge.thelight.co.uk/queen-budapest",
-  "kind": "event",
-  "external_id": "light-queen-budapest-2026-10-10",
-  "start": "2026-10-10T19:00:00",
-  "end": null,
-  "all_day": false,
-  "venue": "The Light Cinema Cambridge",
-  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
-  "postcode": "CB1 7DY",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "film",
-   "event cinema"
-  ],
-  "summary": "cert U · 1h 36m",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:11:19+00:00"
- },
- {
-  "source_id": "S157",
   "title": "Hadestown: The Musical",
   "url": "https://cambridge.thelight.co.uk/hadestown-the-musical",
   "kind": "event",
@@ -78,7 +24,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:11:19+00:00"
+  "fetched_at": "2026-10-11T21:23:05+00:00"
  },
  {
   "source_id": "S157",
@@ -105,7 +51,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:11:19+00:00"
+  "fetched_at": "2026-10-11T21:23:05+00:00"
  },
  {
   "source_id": "S157",
@@ -113,7 +59,7 @@
   "url": "https://cambridge.thelight.co.uk/hadestown-the-musical",
   "kind": "event",
   "external_id": "light-hadestown-the-musical-2026-10-17",
-  "start": "2026-10-17T19:00:00",
+  "start": "2026-10-17T15:00:00",
   "end": null,
   "all_day": false,
   "venue": "The Light Cinema Cambridge",
@@ -132,7 +78,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:11:19+00:00"
+  "fetched_at": "2026-10-11T21:23:05+00:00"
  },
  {
   "source_id": "S157",
@@ -159,7 +105,34 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:11:19+00:00"
+  "fetched_at": "2026-10-11T21:23:05+00:00"
+ },
+ {
+  "source_id": "S157",
+  "title": "Hadestown: The Musical",
+  "url": "https://cambridge.thelight.co.uk/hadestown-the-musical",
+  "kind": "event",
+  "external_id": "light-hadestown-the-musical-2026-10-21",
+  "start": "2026-10-21T19:00:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Light Cinema Cambridge",
+  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
+  "postcode": "CB1 7DY",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema"
+  ],
+  "summary": "cert PG · 2h 22m",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:23:05+00:00"
  },
  {
   "source_id": "S157",
@@ -186,15 +159,15 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:11:19+00:00"
+  "fetched_at": "2026-10-11T21:23:05+00:00"
  },
  {
   "source_id": "S157",
-  "title": "ALWAYS LALISA",
-  "url": "https://cambridge.thelight.co.uk/always-lalisa",
+  "title": "RBO Cinema Season 2026-27: Macbeth",
+  "url": "https://cambridge.thelight.co.uk/rbo-cinema-season-202627-macbeth",
   "kind": "event",
-  "external_id": "light-always-lalisa-2026-10-17",
-  "start": "2026-10-17T19:15:00",
+  "external_id": "light-rbo-cinema-season-202627-macbeth-2026-10-20",
+  "start": "2026-10-20T18:00:00",
   "end": null,
   "all_day": false,
   "venue": "The Light Cinema Cambridge",
@@ -209,10 +182,37 @@
    "film",
    "event cinema"
   ],
-  "summary": "cert CTBA · 1h 40m",
+  "summary": "cert CTBA · 3h 30m",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:11:19+00:00"
+  "fetched_at": "2026-10-11T21:23:05+00:00"
+ },
+ {
+  "source_id": "S157",
+  "title": "BTS WORLD TOUR 'ARIRANG' BUENOS AIRES: LIVE VIEWING",
+  "url": "https://cambridge.thelight.co.uk/bts-arirang-buenos-aires-live-viewing",
+  "kind": "event",
+  "external_id": "light-bts-arirang-buenos-aires-live-viewing-2026-10-25",
+  "start": "2026-10-25T13:45:00",
+  "end": null,
+  "all_day": false,
+  "venue": "The Light Cinema Cambridge",
+  "address": "Cambridge Leisure Park, Clifton Way, Cambridge",
+  "postcode": "CB1 7DY",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "film",
+   "event cinema"
+  ],
+  "summary": "cert CTBA · 3h 15m",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:23:05+00:00"
  }
 ]

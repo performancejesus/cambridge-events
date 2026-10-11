@@ -1,6 +1,32 @@
 [
  {
   "source_id": "S001",
+  "title": "Festive Indian Block Printing",
+  "url": "https://www.visitcambridge.org/event/festive-indian-block-printing/",
+  "kind": "event",
+  "external_id": "https://www.visitcambridge.org/event/festive-indian-block-printing/",
+  "start": "2026-11-07T10:30",
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": "Grantchester Village Hall Vicarage Drive, Grantchester, Cambridge, Cambridgeshire CB3 9NG",
+  "postcode": "CB3 9NG",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "art exhibitions"
+  ],
+  "summary": "Festive Indian Block Printing",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T20:53:39+00:00"
+ },
+ {
+  "source_id": "S001",
   "title": "Cambridge Murder Mystery",
   "url": "https://www.visitcambridge.org/event/murder-mystery-experience/",
   "kind": "event",
@@ -23,7 +49,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:27:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -49,7 +75,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:27:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -75,7 +101,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:27:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -102,7 +128,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:27:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -129,7 +155,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:28:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -155,113 +181,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:28:15+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Cats of Cambridge",
-  "url": "https://www.visitcambridge.org/event/cats-of-cambridge/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/cats-of-cambridge/",
-  "start": "2026-07-31",
-  "end": "2026-10-05",
-  "all_day": true,
-  "venue": null,
-  "address": "Museum of Cambridge 2-3 Castle Street, Cambridge, Cambs CB3 0AQ",
-  "postcode": "CB3 0AQ",
-  "lat": null,
-  "lon": null,
-  "price": "£7.70",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family friendly",
-   "art exhibitions"
-  ],
-  "summary": "Cats of Cambridge",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:28:24+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Cats of Cambridge – Exhibition through the Museum",
-  "url": "https://www.visitcambridge.org/event/cats-of-cambridge-exhibition-through-the-museum/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/cats-of-cambridge-exhibition-through-the-museum/",
-  "start": "2026-07-31",
-  "end": "2026-10-05",
-  "all_day": true,
-  "venue": null,
-  "address": "Museum of Cambridge 2-3 Castle Street, Cambridge, Cambridgeshire CB3 0AQ",
-  "postcode": "CB3 0AQ",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family friendly",
-   "art exhibitions"
-  ],
-  "summary": "Cats of Cambridge – Exhibition through the Museum",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:28:35+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Fungi Field Day",
-  "url": "https://www.visitcambridge.org/event/fungi-field-day-4/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/fungi-field-day-4/",
-  "start": "2026-10-10T10:00",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "1 Brookside, Cambridge, Cambridgeshire CB2 1JE",
-  "postcode": "CB2 1JE",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family friendly"
-  ],
-  "summary": "Fungi Field Day",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:28:45+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Fungi Field Day",
-  "url": "https://www.visitcambridge.org/event/fungi-field-day-5/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/fungi-field-day-5/",
-  "start": "2026-10-10T10:00",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Cambridge University Botanic Garden 1 Brookside, Cambridge, Cambridgeshire CB2 1JE",
-  "postcode": "CB2 1JE",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "family friendly"
-  ],
-  "summary": "Fungi Field Day",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:28:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -289,7 +209,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:29:04+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -315,7 +235,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:29:14+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -341,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:29:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -368,7 +288,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:29:34+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -397,7 +317,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:29:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -424,7 +344,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:29:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -451,7 +371,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:30:06+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -477,7 +397,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:30:16+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -505,7 +425,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:30:24+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -532,7 +452,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:30:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -558,7 +478,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:30:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -584,7 +504,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:30:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -610,7 +530,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:31:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -636,7 +556,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:31:14+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -663,7 +583,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:31:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -690,7 +610,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:31:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -716,7 +636,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:31:44+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -742,7 +662,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:31:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -769,7 +689,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:32:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -796,7 +716,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:32:14+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -823,7 +743,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:32:24+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -849,7 +769,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:32:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -876,7 +796,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:32:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -903,7 +823,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:32:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -929,7 +849,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:33:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -955,7 +875,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:33:15+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -983,7 +903,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:33:24+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1010,7 +930,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:33:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1037,7 +957,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:33:46+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1065,7 +985,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:33:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1094,7 +1014,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:34:04+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1121,59 +1041,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:34:15+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Hex presents: Our Autumn",
-  "url": "https://www.visitcambridge.org/event/hex-presents-our-autumn/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/hex-presents-our-autumn/",
-  "start": "2026-10-10T19:30",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "St John the Evangelist Church Hills Road, Cambridge, Cambridgeshire CB2 8RN",
-  "postcode": "CB2 8RN",
-  "lat": null,
-  "lon": null,
-  "price": "£15",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "music"
-  ],
-  "summary": "Hex presents: Our Autumn",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:34:25+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Spem In Alium: I Fagiolini at 40",
-  "url": "https://www.visitcambridge.org/event/spem-in-alium-i-fagiolini-at-40/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/spem-in-alium-i-fagiolini-at-40/",
-  "start": "2026-10-10T19:30",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Saffron Hall Audley End Road, Saffron Walden, Essex CB11 4UH",
-  "postcode": "CB11 4UH",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "music"
-  ],
-  "summary": "Spem In Alium: I Fagiolini at 40",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:34:34+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1201,7 +1069,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:34:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1227,7 +1095,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:34:54+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1253,7 +1121,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:35:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1279,7 +1147,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:35:15+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1305,7 +1173,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:35:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1332,7 +1200,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:35:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1358,7 +1226,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:35:46+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1385,7 +1253,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:35:54+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1411,7 +1279,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:36:06+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1438,7 +1306,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:36:15+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1464,7 +1332,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:36:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1490,59 +1358,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:36:45+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Pick ‘n’ Mix Improvised Comedy Showcase",
-  "url": "https://www.visitcambridge.org/event/pick-n-mix-improvised-comedy-showcase/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/pick-n-mix-improvised-comedy-showcase/",
-  "start": "2026-10-08T19:30",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "The Boathouse 14 Chesterton Road, Cambridge, Cambridgeshire CB4 3AX",
-  "postcode": "CB4 3AX",
-  "lat": null,
-  "lon": null,
-  "price": "£1",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "comedy entertainment"
-  ],
-  "summary": "Pick ‘n’ Mix Improvised Comedy Showcase",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:36:45+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Leanne Clarke",
-  "url": "https://www.visitcambridge.org/event/leanne-clarke-5/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/leanne-clarke-5/",
-  "start": "2026-10-09T19:00",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Town & Gown 8 Market Passage, Cambridge, Cambs CB2 3PF",
-  "postcode": "CB2 3PF",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "comedy entertainment"
-  ],
-  "summary": "Leanne Clarke",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:36:54+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1568,7 +1384,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:37:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1594,7 +1410,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:37:15+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1620,7 +1436,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:37:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1646,7 +1462,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:37:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1672,7 +1488,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:37:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1698,7 +1514,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:37:54+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1724,7 +1540,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:38:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1750,7 +1566,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:38:14+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1776,7 +1592,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:38:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1802,7 +1618,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:38:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1828,7 +1644,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:38:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1854,33 +1670,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:39:06+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Portraits of Cambridge: A Town in Transition",
-  "url": "https://www.visitcambridge.org/event/portraits-of-cambridge-a-town-in-transition/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/portraits-of-cambridge-a-town-in-transition/",
-  "start": "2026-06-13",
-  "end": "2026-10-05",
-  "all_day": true,
-  "venue": null,
-  "address": "Museum of Cambridge 2-3 Castle Street, Cambridge, Cambridgeshire CB3 0AQ",
-  "postcode": "CB3 0AQ",
-  "lat": null,
-  "lon": null,
-  "price": "£7.70",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "art exhibitions"
-  ],
-  "summary": "Portraits of Cambridge: A Town in Transition",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:39:14+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1906,7 +1696,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:39:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1932,7 +1722,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:39:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1958,7 +1748,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:39:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -1984,137 +1774,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:39:54+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Blackwork Embroidery Caps with Steph Norwood",
-  "url": "https://www.visitcambridge.org/event/blackwork-embroidery-caps-with-steph-norwood/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/blackwork-embroidery-caps-with-steph-norwood/",
-  "start": "2026-10-06T18:30",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Northstowe Tap and Social Unit 2, The Mount, Station Rd, Northstowe, Cambridgeshire CB24 3DS",
-  "postcode": "CB24 3DS",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "art exhibitions"
-  ],
-  "summary": "Blackwork Embroidery Caps with Steph Norwood",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:40:05+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Hiro Ceramics @ Hot Numbers Trumpington Street",
-  "url": "https://www.visitcambridge.org/event/hiro-ceramics-hot-numbers-trumpington-street/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/hiro-ceramics-hot-numbers-trumpington-street/",
-  "start": "2026-10-07T18:00",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Hot Numbers Coffee 4 Trumpington St,, Cambridge, Cambridgeshire CB2 1QA",
-  "postcode": "CB2 1QA",
-  "lat": null,
-  "lon": null,
-  "price": "£30.00",
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "art exhibitions"
-  ],
-  "summary": "Hiro Ceramics @ Hot Numbers Trumpington Street",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:40:15+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "An Introduction to Jewellery: Making a Pendant with Rebecca Ilett",
-  "url": "https://www.visitcambridge.org/event/an-introduction-to-jewellery-making-a-pendant-with-rebecca-ilett/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/an-introduction-to-jewellery-making-a-pendant-with-rebecca-ilett/",
-  "start": "2026-10-10T10:30",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "184 Gwydir Street, Cambridge, Cambridgeshire CB1 2LW",
-  "postcode": "CB1 2LW",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "art exhibitions"
-  ],
-  "summary": "An Introduction to Jewellery: Making a Pendant with Rebecca Ilett",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:40:25+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Guided House Tour",
-  "url": "https://www.visitcambridge.org/event/guided-house-tour-23/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/guided-house-tour-23/",
-  "start": "2026-10-10T11:00",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Kettle's Yard, Castle Street, Cambridge, United Kingdom CB3 0AQ",
-  "postcode": "CB3 0AQ",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "art exhibitions"
-  ],
-  "summary": "Guided House Tour",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:40:35+00:00"
- },
- {
-  "source_id": "S001",
-  "title": "Bridging Binaries LGBTQ+ Tour",
-  "url": "https://www.visitcambridge.org/event/bridging-binaries-lgbtq-tour-24/",
-  "kind": "event",
-  "external_id": "https://www.visitcambridge.org/event/bridging-binaries-lgbtq-tour-24/",
-  "start": "2026-10-10T14:30",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Museum of Classical Archaeology, Faculty of Classics, Sidgwick Avenue,, Cambridge, Cambridgeshire CB3 9DA",
-  "postcode": "CB3 9DA",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [
-   "art exhibitions"
-  ],
-  "summary": "Bridging Binaries LGBTQ+ Tour",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-05T23:40:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2140,7 +1800,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:40:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2166,7 +1826,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:41:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2192,7 +1852,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:41:15+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2218,7 +1878,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:41:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2244,7 +1904,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:41:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2270,7 +1930,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:41:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2296,7 +1956,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:41:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2322,7 +1982,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:42:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2348,7 +2008,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:42:15+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2374,7 +2034,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:42:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2400,7 +2060,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:42:34+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2426,7 +2086,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:42:44+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2452,7 +2112,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:42:55+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2478,7 +2138,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:43:05+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2504,7 +2164,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:43:15+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2530,7 +2190,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:43:24+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2556,7 +2216,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:43:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2582,7 +2242,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:43:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2608,7 +2268,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:43:54+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2634,7 +2294,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:44:15+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2660,7 +2320,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:44:25+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2686,7 +2346,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:44:35+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  },
  {
   "source_id": "S001",
@@ -2712,6 +2372,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-05T23:44:45+00:00"
+  "fetched_at": "2026-10-11T20:53:39+00:00"
  }
 ]

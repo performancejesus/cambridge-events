@@ -21,7 +21,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
+  "fetched_at": "2026-10-11T21:01:20+00:00"
  },
  {
   "source_id": "S113",
@@ -45,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
+  "fetched_at": "2026-10-11T21:01:20+00:00"
  },
  {
   "source_id": "S113",
@@ -69,7 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
+  "fetched_at": "2026-10-11T21:01:20+00:00"
  },
  {
   "source_id": "S113",
@@ -93,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
+  "fetched_at": "2026-10-11T21:01:20+00:00"
  },
  {
   "source_id": "S113",
@@ -117,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
+  "fetched_at": "2026-10-11T21:01:20+00:00"
  },
  {
   "source_id": "S113",
@@ -141,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
+  "fetched_at": "2026-10-11T21:01:20+00:00"
  },
  {
   "source_id": "S113",
@@ -165,103 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
- },
- {
-  "source_id": "S113",
-  "title": "David Evans: The Use of Published Prints for his Designs, an online talk with Canon Jeff Hopewell",
-  "url": "https://www.visitely.org.uk/whats-on/uncategorized/david-evans-the-use-of-published-prints-for-his-designs-an-online-talk-with-canon-jeff-hopewell/",
-  "kind": "event",
-  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/david-evans-the-use-of-published-prints-for-his-designs-an-online-talk-with-canon-jeff-hopewell/",
-  "start": "2026-10-07T19:00",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Ely",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
- },
- {
-  "source_id": "S113",
-  "title": "Two Day Screen Printing on Glass Masterclass with James Cockerill",
-  "url": "https://www.visitely.org.uk/whats-on/uncategorized/two-day-screen-printing-on-glass-masterclass-with-james-cockerill/",
-  "kind": "event",
-  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/two-day-screen-printing-on-glass-masterclass-with-james-cockerill/",
-  "start": "2026-10-08T10:00",
-  "end": "2026-10-09",
-  "all_day": false,
-  "venue": null,
-  "address": "Ely",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
- },
- {
-  "source_id": "S113",
-  "title": "Autumnal Hand Embroidery Workshop",
-  "url": "https://www.visitely.org.uk/whats-on/uncategorized/autumnal-hand-embroidery-workshop/",
-  "kind": "event",
-  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/autumnal-hand-embroidery-workshop/",
-  "start": "2026-10-10T14:00",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Ely",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
- },
- {
-  "source_id": "S113",
-  "title": "Make an Autumn Bookmark",
-  "url": "https://www.visitely.org.uk/whats-on/uncategorized/make-an-autumn-bookmark/",
-  "kind": "event",
-  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/make-an-autumn-bookmark/",
-  "start": "2026-10-10T10:30",
-  "end": null,
-  "all_day": false,
-  "venue": null,
-  "address": "Ely",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": null,
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
+  "fetched_at": "2026-10-11T21:01:20+00:00"
  },
  {
   "source_id": "S113",
@@ -285,17 +189,17 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:19+00:00"
+  "fetched_at": "2026-10-11T21:01:20+00:00"
  },
  {
   "source_id": "S113",
-  "title": "Print Your Own Lampshade Workshop - 2 workshops in 1",
-  "url": "https://www.visitely.org.uk/whats-on/uncategorized/print-your-own-lampshade-workshop-2-workshops-in-1/",
+  "title": "The Life and Work of Trena Cox (1895-1980), and online talk with Aleta Doran",
+  "url": "https://www.visitely.org.uk/whats-on/uncategorized/the-life-and-work-of-trena-cox-1895-1980-and-online-talk-with-aleta-doran/",
   "kind": "event",
-  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/print-your-own-lampshade-workshop-2-workshops-in-1/",
-  "start": "2026-10-04",
+  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/the-life-and-work-of-trena-cox-1895-1980-and-online-talk-with-aleta-doran/",
+  "start": "2026-10-14T19:00",
   "end": null,
-  "all_day": true,
+  "all_day": false,
   "venue": null,
   "address": "Ely",
   "postcode": null,
@@ -309,7 +213,79 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:26+00:00"
+  "fetched_at": "2026-10-11T21:01:20+00:00"
+ },
+ {
+  "source_id": "S113",
+  "title": "Dried Floral Pumpkin Decor Workshop",
+  "url": "https://www.visitely.org.uk/whats-on/uncategorized/dried-floral-pumpkin-decor-workshop/",
+  "kind": "event",
+  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/dried-floral-pumpkin-decor-workshop/",
+  "start": "2026-10-14T18:30",
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": "Ely",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:01:20+00:00"
+ },
+ {
+  "source_id": "S113",
+  "title": "Beginners Lino Printing - Christmas Cards - Saturday 17th October 2026",
+  "url": "https://www.visitely.org.uk/whats-on/uncategorized/beginners-lino-printing-christmas-cards-saturday-17th-october-2026/",
+  "kind": "event",
+  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/beginners-lino-printing-christmas-cards-saturday-17th-october-2026/",
+  "start": "2026-10-17T14:00",
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": "Ely",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:01:20+00:00"
+ },
+ {
+  "source_id": "S113",
+  "title": "Leading and Glazing Workshop with Will Burrows",
+  "url": "https://www.visitely.org.uk/whats-on/uncategorized/leading-and-glazing-workshop-with-will-burrows-5/",
+  "kind": "event",
+  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/leading-and-glazing-workshop-with-will-burrows-5/",
+  "start": "2026-10-17T10:00",
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": "Ely",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:01:20+00:00"
  },
  {
   "source_id": "S113",
@@ -333,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:26+00:00"
+  "fetched_at": "2026-10-11T21:01:27+00:00"
  },
  {
   "source_id": "S113",
@@ -357,7 +333,55 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:26+00:00"
+  "fetched_at": "2026-10-11T21:01:27+00:00"
+ },
+ {
+  "source_id": "S113",
+  "title": "Autumnal Hand Embroidery Workshop",
+  "url": "https://www.visitely.org.uk/whats-on/uncategorized/autumnal-hand-embroidery-workshop/",
+  "kind": "event",
+  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/autumnal-hand-embroidery-workshop/",
+  "start": "2026-10-10T14:00",
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": "Ely",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:01:27+00:00"
+ },
+ {
+  "source_id": "S113",
+  "title": "Make an Autumn Bookmark",
+  "url": "https://www.visitely.org.uk/whats-on/uncategorized/make-an-autumn-bookmark/",
+  "kind": "event",
+  "external_id": "https://www.visitely.org.uk/whats-on/uncategorized/make-an-autumn-bookmark/",
+  "start": "2026-10-10T10:30",
+  "end": null,
+  "all_day": false,
+  "venue": null,
+  "address": "Ely",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": null,
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:01:27+00:00"
  },
  {
   "source_id": "S113",
@@ -384,6 +408,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:03:38+00:00"
+  "fetched_at": "2026-10-11T21:01:38+00:00"
  }
 ]

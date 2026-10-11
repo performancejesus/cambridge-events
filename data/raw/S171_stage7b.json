@@ -1,6 +1,60 @@
 [
  {
   "source_id": "S171",
+  "title": "CLIFF: From Snow to Floods: Understanding Water in the Himalayas",
+  "url": "https://www.lucy.cam.ac.uk/events/cliff-snow-floods-understanding-water-himalayas",
+  "kind": "event",
+  "external_id": "2026-10-22|CLIFF: From Snow to Floods: Understanding Water in the Himalayas",
+  "start": "2026-10-22",
+  "end": null,
+  "all_day": true,
+  "venue": "Lucy Cavendish College",
+  "address": "Lucy Cavendish College, Lady Margaret Road, Cambridge",
+  "postcode": "CB3 0BU",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:23:45+00:00"
+ },
+ {
+  "source_id": "S171",
+  "title": "CLIFF: Comprehensive Economic and Trade Agreement (CETA): Opportunities and Challenges",
+  "url": "https://www.lucy.cam.ac.uk/events/cliff-comprehensive-economic-and-trade-agreement-ceta-opportunities-and-challenges",
+  "kind": "event",
+  "external_id": "2026-11-05|CLIFF: Comprehensive Economic and Trade Agreement (CETA): Opportunities and Challenges",
+  "start": "2026-11-05T17:45",
+  "end": null,
+  "all_day": false,
+  "venue": "Lucy Cavendish College",
+  "address": "Lucy Cavendish College, Lady Margaret Road, Cambridge",
+  "postcode": "CB3 0BU",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:23:45+00:00"
+ },
+ {
+  "source_id": "S171",
   "title": "Lucy Cavendish College's Foundation Day",
   "url": "https://www.lucy.cam.ac.uk/events/lucy-cavendish-colleges-foundation-day",
   "kind": "event",
@@ -24,6 +78,33 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:11:55+00:00"
+  "fetched_at": "2026-10-11T21:23:45+00:00"
+ },
+ {
+  "source_id": "S171",
+  "title": "CLIFF: Law, Sport and Social Justice: Lessons in Cricket from India, South Africa, and the UK",
+  "url": "https://www.lucy.cam.ac.uk/events/cliff-law-sport-and-social-justice-lessons-cricket-india-south-africa-and-uk",
+  "kind": "event",
+  "external_id": "2026-11-27|CLIFF: Law, Sport and Social Justice: Lessons in Cricket from India, South Africa, and the UK",
+  "start": "2026-11-27T17:45",
+  "end": null,
+  "all_day": false,
+  "venue": "Lucy Cavendish College",
+  "address": "Lucy Cavendish College, Lady Margaret Road, Cambridge",
+  "postcode": "CB3 0BU",
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [
+   "college",
+   "lecture"
+  ],
+  "summary": "lecture",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:23:45+00:00"
  }
 ]

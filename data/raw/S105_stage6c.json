@@ -1,51 +1,27 @@
 [
  {
   "source_id": "S105",
-  "title": "Ghost Walk with Grace Chapman",
-  "url": "https://www.stneots-tc.gov.uk/council_events/ghost-walk-with-grace-chapman/?event_date=2026-10-07",
+  "title": "Wave of Light",
+  "url": "https://www.stneots-tc.gov.uk/council_events/wave-of-light/",
   "kind": "event",
-  "external_id": "https://www.stneots-tc.gov.uk/council_events/ghost-walk-with-grace-chapman/?event_date=2026-10-07",
-  "start": "2026-10-07",
+  "external_id": "https://www.stneots-tc.gov.uk/council_events/wave-of-light/",
+  "start": "2026-10-15T18:30",
   "end": null,
-  "all_day": true,
-  "venue": "The Old Court",
-  "address": "The Old Court, 8 New Street, St Neots, Cambridgeshire, PE19 1AE",
-  "postcode": "PE19 1AE",
+  "all_day": false,
+  "venue": "St Neots",
+  "address": "St Neots",
+  "postcode": null,
   "lat": null,
   "lon": null,
   "price": null,
   "status": null,
   "organizer": null,
   "categories": [],
-  "summary": "| Ghost Walk with Grace Chapman | Join local historian Grace Chapman for the most hair-raising tour in town. Discover where you might spy a phantom suit of armour, which former schoolhouse is haunted by a past pupil, which building had its very own exorcism – and much more! | This walk is suitable for adults and older children. No specialist knowledge needed, just curiosity about local history. The walk takes place outdoors so we recommend dressing for the weather. In the event of severe weather",
+  "summary": " | Location | Love’s Farm House 17 Kester Way Love’s Farm St Neots Cambridgeshire PE19 6SL | Wave of Light | As part of Baby Loss Awareness Week, St Neots Town Council invites you to join us for a special Wave of Light Ceremony at Love’s Farm House on 15 October. | Families, friends, and members of the community are welcome to arrive from 6.30pm, with refreshments available before and after the ceremony and an opportunity to spend time together in quiet reflection. | At 7pm, we will join the glo",
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
- },
- {
-  "source_id": "S105",
-  "title": "Farm and Craft Market",
-  "url": "https://www.stneots-tc.gov.uk/council_events/farm-and-craft-market-4/?event_date=2026-10-10",
-  "kind": "event",
-  "external_id": "https://www.stneots-tc.gov.uk/council_events/farm-and-craft-market-4/?event_date=2026-10-10",
-  "start": "2026-10-10",
-  "end": null,
-  "all_day": true,
-  "venue": "St Neots Market Square",
-  "address": "St Neots Market Square, PE19 2AF",
-  "postcode": "PE19 2AF",
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": "| Time | 0900 - 1400 | Farm and Craft Market | Since 2002, the St Neots Farm & Craft Market has been a vibrant hub of | local produce, creativity, and community spirit. | Held on the | second and fourth Saturday of each month | from | 9 am to 2 pm | , the Market Square comes alive with the very best our region has to offer. | Browse a fantastic selection of fresh, | locally sourced meats, poultry, game, and seasonal vegetables, alongside artisan breads, specialty vegan bakes, and award-winning s",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:17:27+00:00"
  },
  {
   "source_id": "S105",
@@ -69,7 +45,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:17:32+00:00"
  },
  {
   "source_id": "S105",
@@ -93,31 +69,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
- },
- {
-  "source_id": "S105",
-  "title": "Wave of Light",
-  "url": "https://www.stneots-tc.gov.uk/council_events/wave-of-light/",
-  "kind": "event",
-  "external_id": "https://www.stneots-tc.gov.uk/council_events/wave-of-light/",
-  "start": "2026-10-15T18:30",
-  "end": null,
-  "all_day": false,
-  "venue": "St Neots",
-  "address": "St Neots",
-  "postcode": null,
-  "lat": null,
-  "lon": null,
-  "price": null,
-  "status": null,
-  "organizer": null,
-  "categories": [],
-  "summary": " | Location | Love’s Farm House 17 Kester Way Love’s Farm St Neots Cambridgeshire PE19 6SL | Wave of Light | As part of Baby Loss Awareness Week, St Neots Town Council invites you to join us for a special Wave of Light Ceremony at Love’s Farm House on 15 October. | Families, friends, and members of the community are welcome to arrive from 6.30pm, with refreshments available before and after the ceremony and an opportunity to spend time together in quiet reflection. | At 7pm, we will join the glo",
-  "published": null,
-  "access": null,
-  "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:17:38+00:00"
  },
  {
   "source_id": "S105",
@@ -141,7 +93,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:17:45+00:00"
  },
  {
   "source_id": "S105",
@@ -165,7 +117,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:17:57+00:00"
  },
  {
   "source_id": "S105",
@@ -189,7 +141,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:18:03+00:00"
  },
  {
   "source_id": "S105",
@@ -213,7 +165,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:18:08+00:00"
  },
  {
   "source_id": "S105",
@@ -237,7 +189,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:18:14+00:00"
  },
  {
   "source_id": "S105",
@@ -261,7 +213,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:18:20+00:00"
  },
  {
   "source_id": "S105",
@@ -285,7 +237,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:18:26+00:00"
  },
  {
   "source_id": "S105",
@@ -309,7 +261,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:18:38+00:00"
  },
  {
   "source_id": "S105",
@@ -333,7 +285,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:18:45+00:00"
  },
  {
   "source_id": "S105",
@@ -357,7 +309,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:18:50+00:00"
  },
  {
   "source_id": "S105",
@@ -381,7 +333,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:18:57+00:00"
  },
  {
   "source_id": "S105",
@@ -405,7 +357,31 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:08+00:00"
+  "fetched_at": "2026-10-11T21:19:03+00:00"
+ },
+ {
+  "source_id": "S105",
+  "title": "Carols on the Green",
+  "url": "https://www.stneots-tc.gov.uk/council_events/carols-on-the-green/",
+  "kind": "event",
+  "external_id": "https://www.stneots-tc.gov.uk/council_events/carols-on-the-green/",
+  "start": "2026-12-04T18:00",
+  "end": null,
+  "all_day": false,
+  "venue": "St Neots",
+  "address": "St Neots",
+  "postcode": null,
+  "lat": null,
+  "lon": null,
+  "price": null,
+  "status": null,
+  "organizer": null,
+  "categories": [],
+  "summary": " | Location | Eaton Socon Village Green (outside St Mary’s Church) | Carols on the Green | Get into the festive spirit with Carols on the Green, led by Peppercorns Academy. Everyone in the community is warmly invited to come along, sing a few favourites, and enjoy a seasonal treat. | Free entry + free mince pies | Refreshments: | Free mince pies available on the night (we’ll do our best to provide a gluten-free vegan option) | Hot drinks available to buy from the church car park | Organiser: Eat",
+  "published": null,
+  "access": null,
+  "access_note": null,
+  "fetched_at": "2026-10-11T21:19:08+00:00"
  },
  {
   "source_id": "S105",
@@ -429,7 +405,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:13+00:00"
+  "fetched_at": "2026-10-11T21:19:08+00:00"
  },
  {
   "source_id": "S105",
@@ -453,7 +429,7 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:19+00:00"
+  "fetched_at": "2026-10-11T21:19:08+00:00"
  },
  {
   "source_id": "S105",
@@ -477,6 +453,6 @@
   "published": null,
   "access": null,
   "access_note": null,
-  "fetched_at": "2026-10-06T00:07:25+00:00"
+  "fetched_at": "2026-10-11T21:19:08+00:00"
  }
 ]
