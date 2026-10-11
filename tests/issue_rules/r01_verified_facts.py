@@ -35,7 +35,9 @@ SUPER_RE = re.compile(r"\bвпервые\b|\bперв(?:ый|ая|ое|ые|ог
                       r"\bfirst(?:[- ]ever)?\b|\bthe only\b|\bonly (?:one|time|chance)\b|\boldest\b|\bfinal (?:concert|gig|"
                       r"performance|show)\b|\blast (?:concert|gig|performance|show|live)\b", re.I)
 SUPER_SKIP = re.compile(r"последн\w+ (?:дв|тр|нескольк|год|месяц|недел)|\blast (?:year|month|week|few)\b|"
-                        r"последн\w+ (?:билет|мест)|\blast (?:remaining |few )?(?:tickets|seats|places)\b", re.I)
+                        r"последн\w+ (?:билет|мест)|\blast (?:remaining |few )?(?:tickets|seats|places)\b|"
+                        r"перв\w+ лиг\w*|перв\w+ сезон\w*|\bfirst season\b|\bfirst[- ]team\b|1st XI", re.I)
+# этап 7g: «Первой лиги (League One)» — название лиги, «first season» у двухлеток — не «впервые»
 # прогон 7e+: «остались последние билеты» — пометка «мало билетов» со страницы продавца, а не «последний концерт»
 FOUNDED_RE = re.compile(r"основан\w*\s+в\s+(\d{4})|с\s+(\d{4})\s+года|founded\s+in\s+(\d{4})|established\s+in\s+(\d{4})|"
                         r"\bsince\s+(\d{4})", re.I)

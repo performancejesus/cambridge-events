@@ -36,7 +36,7 @@ def fix_links(result: dict, pools) -> list[Note]:
     for sec in result["sections"]:
         for it in sec["items"]:
             cs = _cands(pools, it)
-            if not cs or it.get("also") or len(it["ids"]) > 3:
+            if not cs or len(it["ids"]) > 3:   # этап 7g: и строки «Смотреть» (Phantoms — ссылка продавца билетов)
                 continue
             c = cs[0]
             if c["kind"] == "film_release":
@@ -649,7 +649,7 @@ def fix_original_titles(result: dict, pools) -> list[Note]:
             continue
         for it in sec["items"]:
             cs = _cands(pools, it)
-            if not cs or cs[0]["kind"] not in ORIGINAL_KINDS or len(it["ids"]) > 3 or it.get("union"):
+            if not cs or cs[0]["kind"] not in ORIGINAL_KINDS or len(it["ids"]) > 3 or it.get("union") or it.get("line"):
                 continue
             ru, en = it.get("title_ru") or "", it.get("title_en") or ""
             if CYR_RE.search(ru) and en and not CYR_RE.search(en):
@@ -943,7 +943,9 @@ EXPLAIN = [
     (re.compile(r"\bparkrun\b", re.I), re.compile(r"parkrun", re.I), "бесплатный еженедельный забег на время"),
     (re.compile(r"\bceilidh\b", re.I), re.compile(r"ceilidh|кейли", re.I), "вечер шотландских и ирландских народных танцев"),
     (re.compile(r"\bevensong\b", re.I), re.compile(r"Evensong|ивенсонг", re.I), "вечерняя хоровая служба"),
-    (re.compile(r"\bmorris\b", re.I), re.compile(r"\bmorris\b|моррис", re.I), "английский народный танец"),
+    # только танец (morris dancing / morris side / morris men), не William Morris (этап 7g: ошибка в v14)
+    (re.compile(r"\bmorris (danc\w*|men|side|dancers)\b", re.I), re.compile(r"\bmorris (?:danc\w*|men|side)|моррис", re.I),
+     "английский народный танец"),
     (re.compile(r"\bHAF\b"), re.compile(r"\bHAF\b"), "бесплатная программа для детей с правом на бесплатное школьное питание"),
 ]
 

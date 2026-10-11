@@ -86,8 +86,8 @@ def announce_items(pools, result: dict, w) -> dict[str, list[dict]]:
                                                  "" if (en if lang == "en" else ru) in ("price not listed", "цена не указана")
                                                  else (en if lang == "en" else ru)) if x)
                     for i, lang in enumerate(("en", "ru"))}
-            out.setdefault(rub, []).append(_empty(ids=[cid], title_en=f"Announced: {c['title']}",
-                                                  title_ru=f"Объявлено: {c['title']}", meta_en=meta["en"],
+            # заголовок группы — «Объявлено»; в строке — название события в оригинале
+            out.setdefault(rub, []).append(_empty(ids=[cid], title_en=c["title"], title_ru=c["title"], meta_en=meta["en"],
                                                   meta_ru=meta["ru"], url=c.get("url"), announce_line=True))
     return out
 

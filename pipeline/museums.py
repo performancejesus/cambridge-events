@@ -101,6 +101,15 @@ def score(c: dict, kind: str, w) -> float:
     return s
 
 
+NOT_MUSEUM_LINE_RE = re.compile(r"\b(sale|jumble|car boot|bring .n. byte|cut your own|pick your own|farm shop)\b", re.I)
+
+
+def _same(a: str, b: str) -> bool:
+    from .normalize import norm_title
+    x, y = norm_title(a or ""), norm_title(b or "")
+    return bool(x and y) and min(len(x), len(y)) >= 6 and (x in y or y in x)
+
+
 def select(cands, w):
     ranked = sorted(cands, key=lambda x: (-score(x[1], x[3], w), x[1]["dates"][0][0]))
     chosen, per, why = [], {}, {}
@@ -109,6 +118,12 @@ def select(cands, w):
             why[cid] = f"лимит рубрики ({LINES_MAX} строк)"
         elif per.get(place, 0) >= PER_PLACE:
             why[cid] = f"уже {PER_PLACE} строки от места {place}"
+        elif NOT_MUSEUM_LINE_RE.search(c["title"]) or place == "Bury Lane Farm Shop":
+            # этап 7g: «Музеи, выставки и усадьбы» — без распродаж и сезонных забав фермерских магазинов
+            why[cid] = "не музей, выставка или усадьба (распродажа, ферма)"
+        elif any(_same(c["title"], x[1]["title"]) and x[2] == place for x in chosen):
+            # этап 7g (дубли v13): «Studio Sunday» и «Studio Sunday Relaxed Session» — один пункт
+            why[cid] = "дубль строки того же места (одно название содержит другое)"
         else:
             chosen.append((cid, c, place, kind))
             per[place] = per.get(place, 0) + 1

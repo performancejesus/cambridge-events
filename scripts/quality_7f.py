@@ -34,11 +34,21 @@ COMMENT_KINDS = {"nonevent": re.compile(r"не событие|не меропр�
                  "adult": re.compile(r"взросл|не для детей|не детск", re.I)}
 
 
-def load(stem: str) -> tuple[list[dict], dict]:
+def load(stem: str, date: str = "2026-10-08") -> tuple[list[dict], dict]:
     cands = json.loads((ROOT / "issues" / f"candidates_{stem}.json").read_text())["candidates"]
-    raw = {c["id"]: c for c in json.loads((ROOT / "issues" / f"issue_2026-10-08_{stem}_candidates_raw.json").read_text())
+    raw = {c["id"]: c for c in json.loads((ROOT / "issues" / f"issue_{date}_{stem}_candidates_raw.json").read_text())
            ["candidates"]}
     return cands, raw
+
+
+def _progs() -> dict:
+    """Строки kids_programmes по prog_id: у секции в выгрузке кандидатов нет возраста — берём из базы."""
+    con = sqlite3.connect(ROOT / "data" / "events.db")
+    con.row_factory = sqlite3.Row
+    return {r["prog_id"]: r for r in con.execute("SELECT * FROM kids_programmes")}
+
+
+PROGS = _progs()
 
 
 def classify(c: dict, r: dict) -> set[str]:
@@ -55,7 +65,9 @@ def classify(c: dict, r: dict) -> set[str]:
     if c.get("kind") == "section":
         # строка секции: провайдер — «Провайдер — название»; площадка и возраст — из строки «дата · место · цена»
         prov, _, t = title.partition(" — ")
-        why = selection.section_reason({"provider": prov, "title": t or title, "venue": r.get("venue"),
+        row = PROGS.get(c["id"][2:]) if c["id"].startswith("S:") else None
+        why = selection.section_reason(dict(row) if row else
+                                       {"provider": prov, "title": t or title, "venue": r.get("venue"),
                                         "ages": c.get("when_where_price"), "category": None})
         if why and why.startswith("нужно дополнить"):
             out.add("unclear")
@@ -134,12 +146,27 @@ def main() -> None:
 
     before = {k: share(k) for k in ("nonevent", "regular", "dup", "unclear", "adult_in_kids", "wraparound")}
     before_in = {k: share(k, issue_ids) for k in before}
-    # «после»: правила 7g отсекают все эти виды до отбора (кроме дублей — остаётся одна запись группы)
+    # «после» на v13: правила 7g отсекают эти виды до отбора (из дублей остаётся одна запись группы)
     res = {"candidates": n_all, "in_issue": n_in, "before_all": before, "before_in_issue": before_in,
            "after_rule": {"nonevent": 0, "regular": 0, "dup": 0, "unclear": 0, "adult_in_kids": 0, "wraparound": 0},
            "note": "после правил 7g эти кандидаты не доходят до отбора: не-события и регулярные — selection, дубли — "
                    "merge_duplicates (остаётся одна запись), неясные — vague_reason и section_reason, взрослое — "
                    "section_reason / fits(kids)"}
+    # «после» измеренное: те же проверки на кандидатах v14 (собраны уже с правилами 7g)
+    if (ROOT / "issues" / "candidates_v14.json").exists():
+        c14l, r14 = load("v14", "2026-10-15")
+        f14 = {c["id"]: classify(c, r14.get(c["id"], {})) for c in c14l}
+        for i in duplicates(c14l, r14):
+            f14.setdefault(i, set()).add("dup")
+        in14 = {c["id"] for c in c14l if c.get("in_issue") == "да"}
+        t14 = {c["id"]: c["title"] for c in c14l}
+
+        def share14(kind: str, pool: set[str] | None = None) -> dict:
+            ids = [i for i, f in f14.items() if kind in f and (pool is None or i in pool)]
+            return {"n": len(ids), "examples": [t14[i][:70] for i in ids[:6]]}
+        res["v14_candidates"], res["v14_in_issue"] = len(c14l), len(in14)
+        res["v14_all"] = {k: share14(k) for k in before}
+        res["v14_in"] = {k: share14(k, in14) for k in before}
     v13_final = ROOT / "issues" / "issue_2026-10-08_v13_final.json"
     res["weekend_v13"] = weekend_mix(v13_final)
     p14 = Path(a.v14)
@@ -169,8 +196,10 @@ def main() -> None:
     else:
         res["editor_comments"] = None
     (ROOT / "data" / "quality_7f.json").write_text(json.dumps(res, ensure_ascii=False, indent=1))
-    print(json.dumps({k: v for k, v in res.items() if k not in ("before_all", "before_in_issue")}, ensure_ascii=False, indent=1))
+    print(json.dumps({k: v for k, v in res.items() if k not in ("before_all", "before_in_issue", "v14_all", "v14_in")}, ensure_ascii=False, indent=1))
     print({k: v["n"] for k, v in before.items()}, {k: v["n"] for k, v in before_in.items()})
+    if "v14_all" in res:
+        print("v14", {k: v["n"] for k, v in res["v14_all"].items()}, {k: v["n"] for k, v in res["v14_in"].items()})
 
 
 if __name__ == "__main__":

@@ -45,6 +45,8 @@ def due(r, issue: date) -> tuple[bool, str]:
     if ("official_only" in keys and r["official_only"]) and r["found_source"] != r["official_url"]:
         return False, "ждём подтверждения на сайте фестиваля"
     since = (r["stage_since"] or "")[:10] if "stage_since" in keys else ""
+    if r["found_date"] and (r["found_date_end"] or r["found_date"])[:10] < issue.isoformat():
+        return False, "прошёл"   # сначала — не прошёл ли (Bury Lit Festival 8–11.10 в выпуске 15.10)
     if r["found_date"] and stage in ("дата объявлена", "в продаже") and since and \
             since >= (issue - timedelta(days=21)).isoformat():
         return True, "даты или продажа объявлены недавно"   # анонс (как правило 39), даже если до начала далеко

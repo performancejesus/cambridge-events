@@ -137,6 +137,13 @@ def test_explain_and_translation():
     assert "стиле commercial" in it2["blurb_ru"] and "совместное проживание" in it2["blurb_ru"] and "крикетных" in it2["blurb_ru"]
 
 
+def test_morris_explained_only_for_dance():
+    it = {"title_en": "A Call to Art: William Morris", "title_ru": "A Call to Art: William Morris",
+          "blurb_ru": "Выставка о William Morris и прерафаэлитах.", "blurb_en": "", "ids": []}
+    issue_fixes.fix_explain({"sections": [{"rubric": "museums", "items": [it]}]}, _pools({}))
+    assert "танец" not in it["blurb_ru"]
+
+
 def test_event_types_and_editorial_bonus():
     kids = event_types.annotate({"kind": "event", "title": "Gruffalo trail", "kids_tag": True, "for_kids": True, "importance": 4})
     mus = event_types.annotate({"kind": "event", "title": "Frank Bowling exhibition", "venue": "Fitzwilliam Museum",
@@ -270,3 +277,21 @@ def test_probation_404_root_is_not_closed(tmp_path, monkeypatch):
     monkeypatch.setattr(c, "_network", lambda url, host, cond=None: H.Response(url, 404, b"Not found", {}))
     c._check_host("ics.fixtur.es", "https://ics.fixtur.es/v2/cambridge-united.ics")
     assert c.db.execute("SELECT probation FROM hosts WHERE host='ics.fixtur.es'").fetchone()[0] == 0
+
+
+def test_holiday_programme_needs_place_and_age():
+    """Строка каникулярной программы — с возрастом и местом; иначе «нужно дополнить» (в редакторской версии)."""
+    base = {"kind": "programme", "verified": True, "audience": "eligible", "places": None, "zone": "центр",
+            "title": "Half-Term Tennis Camp", "date_start": None, "dates": []}
+    chosen, why = issue.holiday_selection(_pools({
+        "ok": base | {"venue": "Cambridge LTC", "ages": "8 to 10 yrs old"},
+        "noplace": base | {"venue": None, "address": None, "ages": "8 to 10 yrs old"},
+        "noage": base | {"venue": "Cambridge LTC", "ages": "not specified"}}))
+    assert chosen == ["ok"] and why["noplace"].startswith("нужно дополнить") and why["noage"].startswith("нужно дополнить")
+
+
+def test_vague_provider_venue_not_inherited():
+    """Площадку провайдера подставляем, только если она конкретная (не «multiple locations», не «selected pools»)."""
+    assert issue.VAGUE_VENUE_RE.search("Multiple locations across Cambridge, Newmarket")
+    assert issue.VAGUE_VENUE_RE.search("selected pools")
+    assert not issue.VAGUE_VENUE_RE.search("The Little Gym") and not issue.VAGUE_VENUE_RE.search("Cambridge LTC")

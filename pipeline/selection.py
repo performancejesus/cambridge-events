@@ -79,6 +79,19 @@ def frequent_regular(c: dict) -> str | None:
         return "частое регулярное (ежедневные экскурсии, еженедельные прогулки) — постоянное, не в недельный выпуск"
     if n_dates >= 5 and re.search(r"\b(tour|walk|session|club|class|group)\b", text, re.I):
         return f"частое регулярное ({n_dates} дат в окне) — постоянное, не в недельный выпуск"
+    title = c.get("title") or ""
+    span = 0
+    if c.get("dates"):
+        try:
+            from datetime import date as _d
+            span = (_d.fromisoformat(str(max(x[1] or x[0] for x in c["dates"]))[:10])
+                    - _d.fromisoformat(str(min(x[0] for x in c["dates"]))[:10])).days
+        except (ValueError, TypeError):
+            span = 0
+    if re.search(r"\b(mon|tues|wednes|thurs|fri|satur|sun)day (walks?|tours?|club|group|sessions?)\b|\bweekly\b", title, re.I) \
+            or (span > 14 and re.search(r"\b(walks?|tours?|club|stay and play|play ?group|bumps and babies)\b", title, re.I)):
+        # «Wednesday Walks» до 30 декабря, «Bumps and Babies Play» — регулярное, не новость недели
+        return "частое регулярное (еженедельная прогулка, клуб, группа) — постоянное, не в недельный выпуск"
     return None
 
 
@@ -160,6 +173,9 @@ def adult(text: str) -> bool:
 
 def home_ed(text: str) -> bool:
     return bool(HOME_ED_RE.search(text or ""))
+
+
+PLACEHOLDER_AGES = re.compile(r"^\s*(not specified|unknown|n/?a|tbc|all ages|all levels.*)?\s*$", re.I)
 
 
 def section_reason(r: dict) -> str | None:

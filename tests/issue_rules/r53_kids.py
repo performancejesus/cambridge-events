@@ -34,6 +34,9 @@ def check(ctx) -> Finding:
                 if why and why.startswith("нужно дополнить"):
                     f.violations.append(f"«{e['title']}»: {why}")
         if e["rubric"] == "holidays" and not e.get("more") and e["ids"]:
+            from pipeline.issue_fixes import placeholders
+            for p_ in placeholders(text):
+                f.violations.append(f"«{e['title']}»: английская заглушка «{p_}»")
             if re.search(r"£\s?\d+,\d{2}\b", text):
                 f.violations.append(f"«{e['title']}»: цена с запятой")
             if not re.search(r"£|бесплатно|цены на сайте|free", e["meta"], re.I):

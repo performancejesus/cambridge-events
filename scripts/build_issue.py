@@ -1148,8 +1148,10 @@ def base_fit(rub: str, c: dict) -> bool:
         return k == "event" and bool(place_of(c)) and c.get("zone") in issue.LISTED_ZONES
     if rub == "free":
         return k == "event" and bool(c.get("free_tag"))
-    if rub == "kids":
-        return k in ("event", "film_release") and bool(c.get("kids_tag"))
+    if rub == "kids":   # этап 7g: как в отборе — только для детей (не распродажи, не взрослое)
+        from pipeline.selection import adult
+        return k in ("event", "film_release") and bool(c.get("kids_tag")) and c.get("for_kids", True) \
+            and not adult(c.get("title") or "")
     if rub == "sport":
         return k == "event" and bool(srcs & SPORT_SOURCES or SPORT_RE.search(text) or c.get("participant"))
     if rub == "out_of_town":
@@ -2186,6 +2188,8 @@ def main() -> None:
             result["sections"].append(target)
         target["items"].extend(add)
     lines.register(pools, [it for sec in result["sections"] for it in sec["items"]])
+    pools.placed_events = {e for sec in result["sections"] for it in sec["items"] for i in it["ids"]
+                           for e in (pools.candidates.get(i) or {}).get("event_ids", [])}   # для «Каникул» (без дублей)
     del colleges
     fee = next((dict(x.split("=", 1) for x in (c.get("access_note") or "").split("|") if "=" in x).get("fee")
                 for c in pools.candidates.values() if "S049" in (c.get("sources") or [])), None) or "£370"

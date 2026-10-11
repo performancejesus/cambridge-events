@@ -48,7 +48,8 @@ def check(ctx) -> Finding:
         names = [e["title"]] + [c["title"] for c in e["cands"]]
         score = max(title_match(n, part) for n in names for part in pt.split(" | "))
         if score < 0.34:
-            if LISTING_RE.search(pt):   # страница-список (афиша, календарь матчей) — не та ошибка; редактору
+            from urllib.parse import urlparse
+            if LISTING_RE.search(pt) or urlparse(e["url"]).path in ("", "/"):   # список или главная — редактору   # страница-список (афиша, календарь матчей) — не та ошибка; редактору
                 f.warnings.append(f"«{e['title']}»: ссылка ведёт на страницу-список «{pt[:60]}»")
             else:
                 f.violations.append(f"«{e['title']}»: заголовок страницы по ссылке — «{pt[:90]}» ({e['url']})")

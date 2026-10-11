@@ -807,6 +807,12 @@ def _kids_programmes(con, w: Window, p: Pools) -> None:
     from .kids_collect import text_of
     horizon = (w.issue + timedelta(weeks=13)).isoformat()
     texts = {x["id"]: x.get("text", {}) for x in json.loads(kids.DATA.read_text())["programmes"]}
+    # этап 7g: у новой записи лагеря нет площадки, а у провайдера в базе ровно одна площадка (The Little Gym, Cambridge
+    # LTC) — берём её; расплывчатые («multiple locations», «selected pools») не годятся
+    venues: dict[str, set] = defaultdict(set)
+    for r in con.execute("SELECT provider_host, venue, address, postcode FROM kids_programmes WHERE coalesce(venue, '') != ''"):
+        if not VAGUE_VENUE_RE.search(r["venue"]):
+            venues[r["provider_host"]].add((r["venue"].strip(), r["address"], r["postcode"]))
     for k in con.execute("SELECT * FROM kids_programmes WHERE coalesce(kind, 'holiday') = 'holiday' "
                          "AND coalesce(status, 'active') = 'active' ORDER BY prog_id").fetchall():
         if k["source"] == "collector":
@@ -835,11 +841,14 @@ def _kids_programmes(con, w: Window, p: Pools) -> None:
         if twin:   # правка 5: страница лагеря + страница дат одного провайдера — одна программа
             p.excluded["каникулы: дубль (провайдер + даты + возраст)"].append(f"{k['provider']} — {k['title']}")
             continue
+        venue, address, postcode = k["venue"], k["address"], k["postcode"]
+        if not (venue or address) and len(venues.get(k["provider_host"], ())) == 1:
+            venue, address, postcode = next(iter(venues[k["provider_host"]]))
         p.candidates[k["prog_id"]] = {
             "kind": "programme", "title": selection.dup_age(k["title"]), "provider": k["provider"], "holiday": k["holiday"],
             "_dkey": dkey,
-            "ages": k["ages"], "hours": k["hours"], "price_text": selection.fix_price_comma(k["price"]), "venue": k["venue"],
-            "address": k["address"], "postcode": k["postcode"], "zone": k["zone"], "places": k["places"],
+            "ages": k["ages"], "hours": k["hours"], "price_text": selection.fix_price_comma(k["price"]), "venue": venue,
+            "address": address, "postcode": postcode, "zone": k["zone"], "places": k["places"],
             "booking_opens": k["booking_opens"], "audience": k["audience"], "verified": bool(k["verified"]),
             "note": k["note"], "url": k["url"], "event_ids": [],
             "sources": ["kids_collector"] if k["source"] == "collector" else ["web_search"],
@@ -1168,6 +1177,9 @@ def _date_conflict(c: dict) -> str | None:
     return f"дата на странице ({c['dates'][0][0]}) не совпадает с каникулами из названия — противоречие у провайдера"
 
 
+VAGUE_VENUE_RE = re.compile(r"\b(?:multiple|various|selected|several)\b|\blocations\b|\bonline\b|\btbc\b", re.I)
+
+
 def holiday_selection(p: Pools) -> tuple[list[str], dict[str, str]]:
     """«Каникулы» собираются без модели (правки по v4: одна строка на программу). В выпуск — проверенные на сайте
     провайдера программы в зоне (и университетская — с пометкой); остальные — с причиной (для редакторской версии)."""
@@ -1181,6 +1193,10 @@ def holiday_selection(p: Pools) -> tuple[list[str], dict[str, str]]:
             why[cid] = "мест нет"
         elif c.get("audience") == "school_pupils":
             why[cid] = "только для учеников школы, где проходит лагерь"
+        elif not (c.get("venue") or c.get("address")) or not selection.AGE_RE.search(
+                f"{'' if selection.PLACEHOLDER_AGES.match(c.get('ages') or '') else c.get('ages') or ''} {c.get('title') or ''}"):
+            # этап 7g: каждая строка программы — возраст, место, цена или «цены на сайте»
+            why[cid] = "нужно дополнить: нет места или возраста"
         elif _date_conflict(c):
             why[cid] = _date_conflict(c)
         elif c["zone"] not in LISTED_ZONES and not (c["zone"] is None and c["audience"] == "eligible"):
@@ -1191,6 +1207,9 @@ def holiday_selection(p: Pools) -> tuple[list[str], dict[str, str]]:
 
 
 def _ages(a: str | None, lang: str) -> str:
+    from .issue_fixes import PLACEHOLDER_FIELD_RE
+    if a and PLACEHOLDER_FIELD_RE.match(a):   # этап 7g: «not specified» — не возраст
+        return ""
     if not a or lang == "en":
         return a or ""
     for pat, rep in AGES_RU:
@@ -1439,8 +1458,17 @@ def limited_holiday_groups(p: Pools, w: Window, lang: str, groups: dict) -> list
             title = "Both holidays" if lang == "en" else "На все каникулы"
         if items:
             out.append({"title": title, "items": items})
-    fam = sorted((c for c in p.candidates.values() if c["kind"] == "holiday_event"),
-                 key=lambda c: -(c.get("importance") or 0))[:FAMILY_IN_HOLIDAYS_MAX]
+    # этап 7g: события, которые уже стоят в выпуске («С детьми»), — не повторяем в «Куда сходить с детьми в каникулы»
+    placed = getattr(p, "placed_events", set())
+    fam, seen_f = [], []
+    for c in sorted((c for c in p.candidates.values() if c["kind"] == "holiday_event" and not set(c["event_ids"]) & placed),
+                    key=lambda c: -(c.get("importance") or 0)):
+        t, v, d0 = norm_title(c["title"]), norm_venue(c.get("venue") or ""), (c.get("dates") or [("",)])[0][0]
+        if any(v == v2 and d0 == d2 and min(len(t), len(t2)) >= 6 and (t in t2 or t2 in t) for t2, v2, d2 in seen_f):
+            continue   # этап 7g: «Studio Sunday» и «Studio Sunday Relaxed Session» в один день — одна строка
+        seen_f.append((t, v, d0))
+        fam.append(c)
+    fam = fam[:FAMILY_IN_HOLIDAYS_MAX]
     if fam:
         items = []
         for c in sorted(fam, key=lambda c: c["dates"][0][0]):

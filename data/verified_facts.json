@@ -85,6 +85,20 @@
    "source": "https://www.saffronhall.com/whats-on/view/spem-in-alium-i-fagolini-at-40 ; https://en.wikipedia.org/wiki/I_Fagiolini",
    "checked_by": "редактор (подтверждено 06.10: основан в 1986, концерт «I Fagiolini at 40»)",
    "checked_at": "2026-10-06"
+  },
+  {
+   "subject": "The Pickerel Inn",
+   "aliases": [
+    "Pickerel Inn",
+    "Pickerel",
+    "The Pickerel"
+   ],
+   "kind": "founded",
+   "value": "1608",
+   "statement": "паб The Pickerel Inn (Magdalene Street) основан в 1608 году — по тексту источника пункта «Новое в городе»; «старейший паб Кембриджа» в источнике нет",
+   "source": "https://www.cambridgeindependent.co.uk/whats-on/in-pictures-the-pickerel-inn-reopens-following-refurbishmen-9486229/",
+   "checked_by": "сборщик, этап 7g (текст источника пункта)",
+   "checked_at": "2026-10-11"
   }
  ]
 }

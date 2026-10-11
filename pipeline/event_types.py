@@ -82,7 +82,8 @@ def tags(c: dict) -> list[str]:
         out.append("traditions_fairs_markets")
     if c.get("festival") or FESTIVAL_RE.search(title):
         out.append("festival")
-    if VOLUNTEER_RE.search(text):
+    # волонтёрство — по названию или категории источника (в описании «run by volunteers» бывает у прогулок и групп)
+    if VOLUNTEER_RE.search(title) or any(re.search(r"\bvolunteer", x, re.I) for x in (c.get("categories") or [])):
         out.append("volunteering")
     if c.get("kids_tag") and c.get("for_kids", True):
         out.append("family_hands_on")

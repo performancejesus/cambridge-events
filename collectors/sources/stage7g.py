@@ -34,7 +34,8 @@ class CambridgeSouthHockey(Collector):
             m = re.match(r"\[H\]\s+(M1|L1)\s+(?:\d+\s*-\s*\d+\s+)?(.+)$", kw["title"])
             if not m or (kw["start"] or "")[:10] < today:
                 continue
-            team, opp = self.TEAMS[m.group(1)], re.sub(r"\s+(Mens|Ladies|Men|Women)\s+\d+$", "", m.group(2)).strip()
+            opp = re.sub(r"^(?:vs?\.?|v)\s+", "", m.group(2).strip(), flags=re.I)   # «[H] L1 vs Dereham Ladies 1»
+            team, opp = self.TEAMS[m.group(1)], re.sub(r"\s+(Mens|Ladies|Men|Women)\s+\d+$", "", opp).strip()
             out.append(self.event(**dict(kw, title=f"Cambridge South HC {team} v {opp}",
                                          categories=["sport", "hockey", "field hockey"],
                                          summary=f"Home league hockey match: Cambridge South {team} v {m.group(2)}")))
