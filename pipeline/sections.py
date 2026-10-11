@@ -213,7 +213,7 @@ def build_items(con: sqlite3.Connection, pools, w) -> tuple[list[dict], dict[str
     for c in cands:
         r = c["row"]
         pools.candidates[c["cid"]] = {"kind": "section", "title": r["title"], "url": r["url"], "event_ids": [], "dates": [],
-                                      "provider": r["provider"], "zone": r["zone"], "venue": r["venue"],
+                                      "provider": r["provider"], "zone": r["zone"], "venue": r["venue"], "ages": r["ages"],
                                       "price_text": r["price"], "audience": r["audience"], "recruiting": r["recruiting"],
                                       "trial_free": bool(r["trial_free"]), "category": c["cat"], "starts": c["starts"],
                                       "recruiting_note": r["recruiting_note"]}

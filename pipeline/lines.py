@@ -15,6 +15,8 @@ from __future__ import annotations
 
 import re
 
+from . import festivals
+
 ANNOUNCE_MAX = 3
 VOLUNTEER_MAX = 6
 PARKRUN_URL = "https://www.parkrun.org.uk/"
@@ -50,14 +52,23 @@ def announce_items(pools, result: dict, w) -> dict[str, list[dict]]:
     """Рубрика → строки «Объявлено: …» (не больше ANNOUNCE_MAX; обязательные ежегодные — первыми и в счёт)."""
     from .issue import price_from_data, when
     placed = _placed(result, pools)
+    from .normalize import norm_title
+    placed_urls = {pools.candidates[i].get("url") for sec in result["sections"] for it in sec["items"] for i in it["ids"]
+                   if i in pools.candidates and pools.candidates[i].get("url")}
+    placed_titles = {norm_title(pools.candidates[i]["title"]) for sec in result["sections"] for it in sec["items"]
+                     for i in it["ids"] if i in pools.candidates and pools.candidates[i].get("title")}
+    # «Куда сходить с детьми в каникулы» собирается при вёрстке — его события тоже уже в выпуске
+    placed_titles |= {norm_title(c["title"]) for c in pools.candidates.values() if c["kind"] == "holiday_event"}
     by_rub: dict[str, list[tuple]] = {}
     for cid, c in pools.candidates.items():
         if c["kind"] not in ("announcement", "tickets") or c.get("urgency") or not c.get("event_ids"):
             continue
-        if set(c["event_ids"]) & placed:
-            continue
-        if c.get("festival") and "festival" in (c.get("types") or []):
-            continue   # фестивали со статусом — календарь «Фестивали»
+        if set(c["event_ids"]) & placed or (c.get("url") and c["url"] in placed_urls) or \
+                norm_title(c["title"]) in placed_titles:
+            continue   # то же шоу уже стоит карточкой (The Gruffalo в окне и его поздние даты) — без «Объявлено»
+        fest = c.get("festival") or {}
+        if fest.get("rec_id") and fest["rec_id"] in festivals.calendar_ids():
+            continue   # фестивали и ярмарки из реестра — календарь «Фестивали»
         mandatory = "ежегодного" in (c.get("evidence") or "")
         by_rub.setdefault(announce_rubric(c), []).append((not mandatory, -(c.get("rank") or c.get("importance") or 0), cid))
     out: dict[str, list[dict]] = {}
@@ -102,21 +113,48 @@ def volunteer_items(pools, result: dict, w) -> tuple[list[dict], dict[str, str]]
         items.append(_empty(ids=[cid], title_en=c["title"], title_ru=c["title"], meta_en=meta["en"], meta_ru=meta["ru"],
                             url=c.get("url"), volunteer_line=True))
         why[cid] = "в выпуске"
-    return items, why
+    return items + standing_volunteer_items(), why
+
+
+# постоянные строки «Волонтёрства» (проверены на сайтах 11.10): база вакансий и волонтёрские уборки — всегда в конце
+STANDING_VOLUNTEER = [
+    {"title_en": "Volunteer Cambs — volunteering opportunities across Cambridgeshire",
+     "title_ru": "Volunteer Cambs — база волонтёрских вакансий Кембриджшира",
+     "meta_en": "Support Cambridgeshire (Cambridge CVS) · regular and one-off roles",
+     "meta_ru": "Support Cambridgeshire (Cambridge CVS) · постоянная и разовая помощь",
+     "url": "https://cambridgecvs.org.uk/volunteering/volunteer-cambs"},
+    {"title_en": "Litter picking with Cambridge City Council", "title_ru": "Уборка мусора с Cambridge City Council",
+     "meta_en": "on your own or as a local group · the council lends equipment",
+     "meta_ru": "в одиночку или своей группой · инструменты даёт городской совет",
+     "url": "https://www.cambridge.gov.uk/volunteer-litter-picking"},
+]
+
+
+def standing_volunteer_items() -> list[dict]:
+    return [_empty(ids=[f"X:volunteer{n}"], volunteer_line=True, standing=True, **x) for n, x in enumerate(STANDING_VOLUNTEER, 1)]
 
 
 def parkrun_items() -> dict[str, dict]:
     """Строки parkrun: «sport» (взрослый) и «kids» (junior)."""
     return {
-        "sport": _empty(ids=[], title_en="parkrun — free 5 km run", title_ru="parkrun — бесплатный забег на 5 км",
+        "sport": _empty(ids=["X:parkrun"], title_en="parkrun — free 5 km run", title_ru="parkrun — бесплатный забег на 5 км",
                         meta_en="every Saturday at 9:00 · parks in Cambridge and around · register once, free",
                         meta_ru="каждую субботу в 9:00 · парки Кембриджа и округи · бесплатно, один раз "
                                 "зарегистрироваться на сайте",
                         kind_en="parkrun", kind_ru="parkrun — еженедельный забег на время, не соревнование",
                         url=PARKRUN_URL, parkrun_line=True, adult_line=True),
-        "kids": _empty(ids=[], title_en="junior parkrun — 2 km for ages 4–14", title_ru="junior parkrun — 2 км, 4–14 лет",
+        "kids": _empty(ids=["X:junior_parkrun"], title_en="junior parkrun — 2 km for ages 4–14", title_ru="junior parkrun — 2 км, 4–14 лет",
                        meta_en="every Sunday morning · free, register once",
                        meta_ru="каждое воскресенье утром · бесплатно, один раз зарегистрироваться на сайте",
                        kind_en="junior parkrun", kind_ru="детский забег parkrun", url=PARKRUN_URL, parkrun_line=True,
                        section_line=True),
     }
+
+
+def register(pools, items: list[dict]) -> None:
+    """Постоянные строки (parkrun, Volunteer Cambs) — служебные кандидаты вида standing, чтобы проверки видели id."""
+    for it in items:
+        for i in it.get("ids") or []:
+            if i.startswith("X:") and i not in pools.candidates:
+                pools.candidates[i] = {"kind": "standing", "title": it["title_en"], "url": it.get("url"), "event_ids": [],
+                                       "dates": [], "sources": ["standing"], "importance": None}

@@ -1133,7 +1133,7 @@ def _venue_news(con, w: Window, p: Pools) -> None:
             p.candidates[f"V{v['news_id']}"]["page_facts"] = page["text"][:700]
 
 
-ALSO_PLAYING = {"S019", "S154"}   # Cambridge City FC, Cambridge United Women
+ALSO_PLAYING = {"S019", "S154", "S186", "S187", "S188"}   # City FC, United Women; 7g: South HC, Phantoms, RUFC — строкой
 ZONE_ORDER = ["центр", "до 30 мин", "до часа", geo_COUNTY_FAR]
 AGES_RU = [(r"^school age$", "школьники"), (r"^families$", "семьи"), (r"^children, by level$", "дети, по уровню"),
            (r"^primary and secondary$", "начальная и средняя школа"), (r"^Reception – (\d+)$", r"от Reception до \1 лет"),
@@ -1280,7 +1280,8 @@ def _programme_line(x: dict, w: Window, lang: str) -> dict:
         notes.append("booking closed" if lang == "en" else "запись закрыта")
     elif c.get("booking_deadline"):
         notes.append(("book by " if lang == "en" else "запись до ") + booking_text(c["booking_deadline"], lang))
-    title = selection.dup_age(x["title"])   # правка 5 после v13: «(11-16 yrs) (11 to 16 yrs old)» — возраст один раз
+    from .issue_fixes import PLACEHOLDER_PAREN_RE   # правка 3: «(not specified)» и в строках программ
+    title = PLACEHOLDER_PAREN_RE.sub("", selection.dup_age(x["title"])).strip()   # правка 5 после v13: «(11-16 yrs) (11 to 16 yrs old)» — возраст один раз
     head = f"{x['provider']} — {title}" + (f" ({ages})" if ages and not re.search(r"\(\s*[^)]*\d", title) else "")
     dates = sorted(x.get("dates") or [])
     hol = nearest_holidays(w).get(c.get("holiday")) if c.get("holiday") else None

@@ -28,8 +28,9 @@ def check(ctx) -> Finding:
             f.violations.append(f"«{e['title']}»: продлёнка или завтрак при школе")
         for c in e["cands"]:
             if c.get("kind") == "section":
-                why = section_reason({"provider": c.get("provider"), "title": c.get("title"), "venue": c.get("venue"),
-                                      "ages": c.get("ages") or e["meta"], "category": c.get("category")})
+                why = section_reason({"provider": c.get("provider"), "title": f"{c.get('title')} {e['title']}",
+                                      "venue": c.get("venue"), "ages": c.get("ages") or e["meta"],
+                                      "category": c.get("category")})
                 if why and why.startswith("нужно дополнить"):
                     f.violations.append(f"«{e['title']}»: {why}")
         if e["rubric"] == "holidays" and not e.get("more") and e["ids"]:
@@ -49,9 +50,7 @@ def check(ctx) -> Finding:
             want = issue._n_ru(n, "программа", "программы", "программ").split()[1]
             if word != want:
                 f.violations.append(f"«{e['title']}»: «{n} {word}» — нужно «{n} {want}»")
-    hidden = {k: len(v) for k, v in (ctx.result.get("sections_why") or {}).items()} if False else None
     sw = ctx.result.get("sections_why") or {}
     need = sum(1 for v in sw.values() if v.startswith("нужно дополнить"))
     f.info.append(f"секций скрыто до дополнения данных: {need}")
-    del hidden
     return f

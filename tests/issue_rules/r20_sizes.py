@@ -16,8 +16,9 @@ def sizes(con) -> dict[str, tuple[int, int]]:
     from scripts.build_issue import RUBRIC_LIMITS
     con.execute("CREATE TABLE IF NOT EXISTS rubric_sizes (rubric TEXT PRIMARY KEY, min_items INTEGER, max_items INTEGER, "
                 "note TEXT)")
-    for r, (lo, hi) in RUBRIC_LIMITS.items():
-        con.execute("INSERT OR IGNORE INTO rubric_sizes VALUES (?,?,?,?)", (r, lo, hi, "из build_issue.RUBRIC_LIMITS"))
+    for r, (lo, hi) in RUBRIC_LIMITS.items():   # этап 7g: строки по умолчанию обновляются (правку редактора не трогаем)
+        con.execute("""INSERT INTO rubric_sizes VALUES (?,?,?,?) ON CONFLICT(rubric) DO UPDATE SET min_items=excluded.min_items,
+            max_items=excluded.max_items WHERE rubric_sizes.note = excluded.note""", (r, lo, hi, "из build_issue.RUBRIC_LIMITS"))
     con.commit()
     return {r: (lo, hi) for r, lo, hi in con.execute("SELECT rubric, min_items, max_items FROM rubric_sizes")}
 

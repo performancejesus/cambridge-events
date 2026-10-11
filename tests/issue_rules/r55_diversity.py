@@ -11,7 +11,7 @@ RULE, TITLE, LEVEL = 55, "Разнообразие: «Главное» ≤ 10 и
 
 
 def check(ctx) -> Finding:
-    from scripts.build_issue import SUBTYPE_MAX, WEEKEND_PER_CATEGORY, subtype
+    from scripts.build_issue import SUBTYPE_MAX, SUBTYPE_NAMES, WEEKEND_PER_CATEGORY, subtype
     f = Finding()
     info = []
     by_rub: dict[str, list[dict]] = {}
@@ -35,7 +35,7 @@ def check(ctx) -> Finding:
                 s = subtype(c)
                 sub[s] = sub.get(s, 0) + 1
             for s, n in sub.items():
-                if n > SUBTYPE_MAX and s not in ("other", "concert", "theatre"):
+                if n > SUBTYPE_MAX and s in SUBTYPE_NAMES:
                     f.violations.append(f"{rub}: {n} пунктов подвида «{s}» (не больше {SUBTYPE_MAX})")
     f.info += info
     return f

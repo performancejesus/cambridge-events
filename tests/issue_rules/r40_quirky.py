@@ -26,7 +26,7 @@ def check(ctx) -> Finding:
         rub, it = hit
         if c["kind"] == "event" and c.get("on_weekends") and not rub.startswith("weekend_"):
             f.violations.append(f"«{c['title']}»: традиция в выходные окна — не в «Главном на выходные» ({rub})")
-        if len((it.get("blurb_ru") or "").split()) < 8:
+        if len((it.get("blurb_ru") or it.get("meta_ru") or "").split()) < 8:   # 7g: строка календаря — объяснение в строке
             f.violations.append(f"«{c['title']}»: нет объяснения, что это за традиция")
     f.info.append("традиций к показу: " + (", ".join(c["title"] for _, c in due) or "нет"))
     return f

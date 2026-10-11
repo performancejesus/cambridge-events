@@ -14,7 +14,7 @@ RULE, TITLE, LEVEL = 42, "«Секции: идёт набор»: только с
 def check(ctx) -> Finding:
     from pipeline.sections import busy_season, shown_recently
     f = Finding()
-    lines = [(rub, it) for rub, it in ctx.model_items() if it.get("section_line")]
+    lines = [(rub, it) for rub, it in ctx.model_items() if it.get("section_line") and not it.get("parkrun_line")]   # 7g: junior parkrun — постоянная строка
     adult = [(rub, it) for rub, it in ctx.model_items() if it.get("adult_line")]
     limit = 4 if busy_season(ctx.w) else 2
     if len(lines) > limit:

@@ -44,6 +44,10 @@ def due(r, issue: date) -> tuple[bool, str]:
         return False, "не проводится"
     if ("official_only" in keys and r["official_only"]) and r["found_source"] != r["official_url"]:
         return False, "ждём подтверждения на сайте фестиваля"
+    since = (r["stage_since"] or "")[:10] if "stage_since" in keys else ""
+    if r["found_date"] and stage in ("дата объявлена", "в продаже") and since and \
+            since >= (issue - timedelta(days=21)).isoformat():
+        return True, "даты или продажа объявлены недавно"   # анонс (как правило 39), даже если до начала далеко
     if r["found_date"]:
         start = date.fromisoformat(r["found_date"][:10])
         end = date.fromisoformat((r["found_date_end"] or r["found_date"])[:10])
@@ -96,6 +100,9 @@ def build_items(con, pools, result: dict, w) -> tuple[list[dict], dict[str, str]
             status = st_en if lang == "en" else st_ru
             note = (r["on_sale_note"] or "") if lang == "ru" and stage == "в продаже" else ""
             line[lang] = " · ".join(x for x in (when, place, status) if x) + (f" ({note})" if note and len(note) < 80 else "")
+            desc = r["description"] if lang == "ru" else r["description_en"]
+            if desc and r["tags"] and "quirky" in r["tags"]:   # необычная традиция — одна фраза, что это за обычай (правило 40)
+                line[lang] += " — " + re.split(r"(?<=[.!?])\s", desc)[0]
         cid = f"R:{r['rec_id']}"
         pools.candidates[cid] = {"kind": "festival", "title": r["name"], "url": r["official_url"], "event_ids":
                                  [r["event_id"]] if r["event_id"] else [], "dates": [(r["found_date"],

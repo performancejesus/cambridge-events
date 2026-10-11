@@ -493,6 +493,7 @@ SUBTYPES = [("photography", re.compile(r"\bphoto\w*|фото", re.I)), ("pottery
             ("tasting", re.compile(r"\b(tasting|wine|beer|gin|whisky|cocktail)\b", re.I)),
             ("book", re.compile(r"\b(book|author|poetry|literary)\b", re.I)), ("science", re.compile(r"\b(science|stem|robot|space)\b", re.I)),
             ("halloween", re.compile(r"\b(halloween|spooky|pumpkin)\b", re.I)), ("comedy", re.compile(r"\b(comedy|stand-?up)\b", re.I))]
+SUBTYPE_NAMES = {name for name, _ in SUBTYPES}
 SUBTYPE_MAX = 2   # итоги 7f: в одной рубрике не больше 1–2 пунктов одного подвида (встреч по фотографии в v13 — слишком много)
 
 
@@ -516,7 +517,7 @@ def diversity(result: dict, pools: issue.Pools, removed: dict) -> list[tuple[str
                 keep.append(it)
                 continue
             st = subtype(c)
-            if per.get(st, 0) >= SUBTYPE_MAX and st not in ("other", "concert", "theatre"):
+            if per.get(st, 0) >= SUBTYPE_MAX and st in SUBTYPE_NAMES:   # подвиды по теме, не основная категория рубрики
                 for i in it["ids"]:
                     removed[i] = f"разнообразие: в рубрике уже {SUBTYPE_MAX} пункта подвида «{st}»"
                 notes.append((f"“{it['title_en']}”: rubric already has {SUBTYPE_MAX} items of subtype {st}",
@@ -678,7 +679,7 @@ def content_words(text: str, title: str) -> int:
     return len([x for x in re.findall(r"\w+", text.lower()) if len(x) > 3 and x not in tw])
 
 
-SPECTATOR_SOURCES = {"S018", "S123", "S019", "S154", "S020", "S155", "S021", "S022"}
+SPECTATOR_SOURCES = {"S018", "S123", "S019", "S154", "S020", "S155", "S021", "S022", "S186", "S187", "S188"}
 TOWN_RU = {"Cambridge": "Кембридж", "Peterborough": "Питерборо", "Newmarket": "Ньюмаркет", "Huntingdon": "Хантингдон",
            "Ely": "Эли", "St Neots": "Сент-Нитс", "St Ives": "Сент-Айвс"}
 
@@ -988,8 +989,8 @@ def annual_window_items(con, result: dict, pools: issue.Pools, w: issue.Window) 
         z = c.get("zone")
         if c.get("participant"):
             rub = "sport"
-        elif c.get("on_weekends") and z in issue.LISTED_ZONES:
-            rub = c["on_weekends"][0]   # этап 7g: «За городом» убрана — зона пометкой у пункта
+        elif c.get("on_weekends") and (z in ("центр", "до 30 мин") or (c.get("rank") or 0) >= issue.COUNTY_WEEKEND_MIN):
+            rub = c["on_weekends"][0]   # этап 7g: «За городом» убрана — зона пометкой у пункта; дальше — порог 8
         else:
             continue   # этап 7g: фестивали и ярмарки в будни — календарь «Фестивали» (pipeline/festivals.py)
         en, ru = issue.price_from_data(c)
@@ -1082,7 +1083,7 @@ PERF_SOURCES = {"S011", "S012", "S042", "S006", "S007", "S128", "S129", "S091", 
 SPORT_RE = re.compile(r"\b(match|football|rugby|cricket|hockey|racing|races?|raceday|run|running|triathlon|marathon|"
                       r"parkrun|swim|cycling|athletics|golf|boxing|darts|netball|basketball|rowing|regatta|\d+k|park-?o|"
                       r"orienteering|fc|united)\b", re.I)
-SPORT_SOURCES = {"S018", "S123", "S022"}
+SPORT_SOURCES = {"S018", "S123", "S022", "S021", "S019", "S154", "S186", "S187", "S188"}
 R = {  # причины: ключ → (en, ru)
     "in": ("in the issue", "в выпуске"),
     "elsewhere": ("in the issue: {r}", "в выпуске: {r}"),
@@ -2178,6 +2179,7 @@ def main() -> None:
             target = {"rubric": rub, "items": []}
             result["sections"].append(target)
         target["items"].extend(add)
+    lines.register(pools, [it for sec in result["sections"] for it in sec["items"]])
     del colleges
     fee = next((dict(x.split("=", 1) for x in (c.get("access_note") or "").split("|") if "=" in x).get("fee")
                 for c in pools.candidates.values() if "S049" in (c.get("sources") or [])), None) or "£370"

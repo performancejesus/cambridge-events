@@ -12,6 +12,7 @@ import re
 from . import BLOCK, Finding
 
 RULE, TITLE, LEVEL = 49, "Название пункта = заголовок страницы по ссылке (по кэшу)", BLOCK
+LISTING_RE = re.compile(r"\b(events|what'?s on|calendar|fixtures|programme|listings?|whats-on|diary)\b", re.I)
 SKIP_KINDS = {"venue_news", "film_release", "programme", "section", "course", "festival", "union_line", "adult_programme"}
 
 
@@ -47,6 +48,9 @@ def check(ctx) -> Finding:
         names = [e["title"]] + [c["title"] for c in e["cands"]]
         score = max(title_match(n, part) for n in names for part in pt.split(" | "))
         if score < 0.34:
-            f.violations.append(f"«{e['title']}»: заголовок страницы по ссылке — «{pt[:90]}» ({e['url']})")
+            if LISTING_RE.search(pt):   # страница-список (афиша, календарь матчей) — не та ошибка; редактору
+                f.warnings.append(f"«{e['title']}»: ссылка ведёт на страницу-список «{pt[:60]}»")
+            else:
+                f.violations.append(f"«{e['title']}»: заголовок страницы по ссылке — «{pt[:90]}» ({e['url']})")
     f.info.append(f"сверено по кэшу {checked}, страниц нет в кэше {nocache}")
     return f

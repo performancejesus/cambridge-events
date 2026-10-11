@@ -22,6 +22,8 @@ def confirmed(ctx, cands, text: str) -> bool:
     for m in LEAGUE_RE.finditer(text):
         lg = m.group(0)
         en = re.sub(r"Лиг\w+\s+", "League ", lg)
+        en = re.sub(r"(?i)^перв\w+ лиг\w*$", "League One", en)   # этап 7g: «Первой лиги (League One)»
+        en = re.sub(r"(?i)^втор\w+ лиг\w*$", "League Two", en)
         if en.lower() in data.lower() or any(verified_facts.mentions(x, " ".join(c.get("title") or "" for c in cands))
                                              and x["value"].lower().startswith(en.lower()) for x in facts):
             continue

@@ -105,8 +105,9 @@ def load(con, path: Path, issue_date: str, version: str, who: str | None = None)
             ON CONFLICT(issue_date, version, cand_id, who, kind, rubric) DO UPDATE SET rating=excluded.rating,
             comment=excluded.comment, from_eid=excluded.from_eid, title=excluded.title, extra=excluded.extra,
             loaded_at=excluded.loaded_at""",
-                    (issue_date, version, str(cid) if cid else None, event_of(str(cid)) if cid else None,
-                     rec["who"] or "editor", None if rating is None else str(rating), comment, r.get("rubric"),
+                    # поля ключа без NULL: в SQLite NULL в UNIQUE не конфликтует — повторная загрузка дублировала бы
+                    (issue_date, version, str(cid) if cid else "", event_of(str(cid)) if cid else None,
+                     rec["who"] or "editor", None if rating is None else str(rating), comment, r.get("rubric") or "",
                      None if _first(r, FROM_KEYS) is None else str(_first(r, FROM_KEYS)), kind, r.get("title"),
                      json.dumps(extra, ensure_ascii=False) if extra else None, now))
         n[kind] += 1
