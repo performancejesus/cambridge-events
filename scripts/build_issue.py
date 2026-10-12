@@ -560,22 +560,26 @@ def weekend_shortfall(result: dict, pools: issue.Pools, w: issue.Window) -> dict
         per = Counter(cat(i) for it in sec["items"] for i in it["ids"][:1] if i in pools.candidates)
         capped = Counter(cat(cid) for cid in free if per.get(cat(cid), 0) >= WEEKEND_PER_CATEGORY)
         cats = sorted({cat(cid) for cid in fit})
-        ru = [f"{n} из {RUBRIC_LIMITS['weekend'][1]}: кандидатов выше порога (оценка ≥ {issue.WEEKEND_MIN:g}, детское и музеи — "
-              f"с бонусом) в эти выходные — {len(fit)}"]
-        en = [f"{n} of {RUBRIC_LIMITS['weekend'][1]}: candidates above the threshold this weekend — {len(fit)}"]
-        if elsewhere:
-            ru.append(f"{len(elsewhere)} стоят в других рубриках (тема, музеи, на неделе…)")
-            en.append(f"{len(elsewhere)} placed in other rubrics")
+        lim = RUBRIC_LIMITS['weekend'][1]
+        ru = [f"в рубрике {n} из {lim}; подходящих кандидатов (оценка ≥ {issue.WEEKEND_MIN:g}, детское и музеи — с бонусом) "
+              f"— {len(fit)}: здесь {len(here)}, в других рубриках {len(elsewhere)} (тема, музеи, на неделе…), "
+              f"не взяты {len(free)}"]
+        en = [f"{n} of {lim} in the rubric; candidates above the threshold — {len(fit)}: here {len(here)}, in other rubrics "
+              f"{len(elsewhere)}, not taken {len(free)}"]
         if capped:
-            ru.append("лимит 2 на категорию: " + ", ".join(f"{CAT_RU.get(k, k)} (ещё {v})" for k, v in capped.most_common()))
-            en.append("2-per-category limit: " + ", ".join(f"{k} (+{v})" for k, v in capped.most_common()))
+            ru.append("из не взятых упёрлись в лимит 2 на категорию: " +
+                      ", ".join(f"{CAT_RU.get(k, k)} — {v}" for k, v in capped.most_common()))
+            en.append("of those, 2-per-category limit: " + ", ".join(f"{k} — {v}" for k, v in capped.most_common()))
         rest = len(free) - sum(capped.values())
         if rest > 0:
-            ru.append(f"ещё {rest} — модель не взяла (ниже по значимости)")
-            en.append(f"{rest} more not taken by the model (lower importance)")
+            ru.append(f"остальные {rest} модель не взяла (ниже по значимости)")
+            en.append(f"the other {rest} not taken by the model (lower importance)")
         if len(cats) <= 4:
             ru.append(f"категорий всего {len(cats)}: " + ", ".join(CAT_RU.get(k, k) for k in cats))
             en.append(f"only {len(cats)} categories: " + ", ".join(cats))
+        if len(here) < n:
+            ru.append(f"ещё {n - len(here)} — обязательные пункты (детское, музей, фестиваль)")
+            en.append(f"{n - len(here)} more are mandatory items")
         out[rub] = {"ru": "; ".join(ru) + ".", "en": "; ".join(en) + "."}
     return out
 

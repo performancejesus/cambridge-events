@@ -192,7 +192,8 @@ def test_weekend_shortfall():
                         {"rubric": "museums", "items": [{"ids": ["E9"]}]}]}
     why = build_issue.weekend_shortfall(res, _pools(cands), W)
     ru = why["weekend_1"]["ru"]
-    assert ru.startswith("2 из 10") and "1 стоят в других рубриках" in ru and "комедия (ещё 3)" in ru
+    assert ru.startswith("в рубрике 2 из 10") and "здесь 2, в других рубриках 1" in ru and "не взяты 3" in ru
+    assert "комедия — 3" in ru
 
 
 # разметка v13 → правила 7h: встречи с авторами — «Лекции и встречи», дегустации — не «Научиться», «Новое в городе»,
