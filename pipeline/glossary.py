@@ -40,3 +40,12 @@ def realia_ru(text: str) -> str:
     for rx, good in REALIA_FIXES:
         text = re.sub(rx, good, text)
     return text
+
+
+def hockey_ru(text: str, src: str = "") -> str:
+    """Правка 9 после v14: в Британии hockey — хоккей на траве; «Хоккей» в детских секциях → «хоккей на траве», если в
+    данных нет ice hockey (Peterborough Phantoms — на льду)."""
+    import re
+    if not text or re.search(r"\bice\b|на льду", f"{src} {text}", re.I):
+        return text
+    return re.sub(r"\b([Хх])оккей(\w*)\b(?!\s+на\s+(?:траве|льду))", r"\1оккей\2 на траве", text)

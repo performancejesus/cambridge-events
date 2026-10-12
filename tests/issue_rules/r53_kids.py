@@ -2,7 +2,8 @@
 нет взрослого (adult / senior men / masters / 16+ / 18+ / over 50); нет продлёнок и завтраков при школах; у секции —
 провайдер в названии, площадка, возраст, что за занятие (иначе — в «нужно дополнить» редактору); Home Ed — с пометкой;
 занятие в учебное время в будни без пометки Home Ed — не показываем (уточнить). Программы каникул: только в зоне
-выпуска; в строке — возраст, место, цена или «цены на сайте»; цена с точкой («£5.50», не «£5,50»); возраст в названии
+выпуска; в строке — возраст, место, цена или «цены на сайте»; цена с точкой («£5.50», не «£5,50») — во всём выпуске
+(правка 3 после v14, исправляет issue.polish_layout); возраст в названии
 один раз; «Ещё N программ» — с согласованием числа."""
 
 from __future__ import annotations
@@ -37,8 +38,6 @@ def check(ctx) -> Finding:
             from pipeline.issue_fixes import placeholders
             for p_ in placeholders(text):
                 f.violations.append(f"«{e['title']}»: английская заглушка «{p_}»")
-            if re.search(r"£\s?\d+,\d{2}\b", text):
-                f.violations.append(f"«{e['title']}»: цена с запятой")
             if not re.search(r"£|бесплатно|цены на сайте|free", e["meta"], re.I):
                 f.violations.append(f"«{e['title']}»: нет цены или «цены на сайте»")
             ages = re.findall(r"\(([^)]*\d[^)]*)\)", e["title"])
@@ -53,6 +52,12 @@ def check(ctx) -> Finding:
             want = issue._n_ru(n, "программа", "программы", "программ").split()[1]
             if word != want:
                 f.violations.append(f"«{e['title']}»: «{n} {word}» — нужно «{n} {want}»")
+    # правка 3 после v14: цена с запятой — во всём выпуске (оба языка), не только в детских строках
+    for lang in ("ru", "en"):
+        for e in ctx.entries(lang):
+            m = re.search(r"£\s?\d+,\d{2}\b(?!\d)", f"{e['title']} {e['meta']} {e['blurb']} {e['why']}")
+            if m:
+                f.violations.append(f"«{e['title']}» ({lang}): цена с запятой «{m.group(0)}»")
     sw = ctx.result.get("sections_why") or {}
     need = sum(1 for v in sw.values() if v.startswith("нужно дополнить"))
     f.info.append(f"секций скрыто до дополнения данных: {need}")

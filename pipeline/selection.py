@@ -55,6 +55,27 @@ def nonevent_reason(title: str, summary: str | None = None, venue: str | None = 
     return None
 
 
+SCHOOL_RE = re.compile(r"\b(?:primary|infant|junior|nursery|secondary|high|grammar|community|c of e|ce|church of england)"
+                       r"\s+(?:school|academy)\b|\bacademy trust\b|\bsixth form\b|\bschool\b(?!\s+of\b)", re.I)
+SCHOOL_AUDIENCE_RE = re.compile(r"\b(?:parents?|carers?|parent/carer|pupils?|students?|year \d+|reception|pta|"
+                                r"governors?|families of)\b", re.I)
+ORGANISER_RE = re.compile(r"Organi[sz]ed by\s*(?:\|\s*)?(?:[A-Z]\s*\|\s*)?([^|]{3,80})")
+
+
+def school_event_reason(title: str, venue: str | None, page_text: str = "") -> str | None:
+    """Правка 10 после v14: «Parent/Carer coaching workshop» в Milton Road Primary School — организатор сама школа
+    (Eventbrite: «Organized by Milton Road Primary School»), занятие для родителей её учеников. Школьное мероприятие —
+    по правилу дней открытых дверей: не в выпуск. Признаки: площадка — школа, и организатор — школа (по странице) или в
+    названии родители / ученики / классы."""
+    if not SCHOOL_RE.search(venue or ""):
+        return None
+    m = ORGANISER_RE.search(page_text or "")
+    org = (m.group(1).strip() if m else "")
+    if (org and SCHOOL_RE.search(org)) or SCHOOL_AUDIENCE_RE.search(title or ""):
+        return "не событие: мероприятие школы для своих (родители и ученики этой школы)"
+    return None
+
+
 # --- частые регулярные события -----------------------------------------------------------------------------------
 
 REGULAR_RE = re.compile(r"\b(daily|every day|each day|every (monday|tuesday|wednesday|thursday|friday|saturday|sunday)|"
@@ -95,6 +116,26 @@ def frequent_regular(c: dict) -> str | None:
     return None
 
 
+SLUG_N_RE = re.compile(r"-(\d{1,3})/?$")
+
+
+def series_regular(dates: list[str], urls: list[str] | None = None, min_dates: int = 4, days: int = 31) -> str | None:
+    """Правка 7 после v14: одинаковое название на одной площадке у 4+ дат в течение месяца — регулярное, даже если у
+    каждой даты своя страница (Guided House Tour в Kettle's Yard). Второй признак — номер страницы серии у
+    museums.cam.ac.uk («guided-house-tour-27» — 27-я дата той же экскурсии)."""
+    ds = sorted({x[:10] for x in dates if x})
+    from datetime import date as _d
+    dd = [_d.fromisoformat(x) for x in ds]
+    for i in range(len(dd)):
+        n = sum(1 for y in dd[i:] if (y - dd[i]).days < days)
+        if n >= min_dates:
+            return f"частое регулярное (одно название на одной площадке — {n} дат за месяц, страницы разные)"
+    nums = [int(m.group(1)) for u in urls or [] for m in [SLUG_N_RE.search(u or "")] if m and "museums.cam.ac.uk" in (u or "")]
+    if len(ds) >= 3 and any(n >= 10 for n in nums):
+        return f"частое регулярное (серия: страница №{max(nums)} той же экскурсии, {len(ds)} дат в базе)"
+    return None
+
+
 # --- расплывчатые пункты ------------------------------------------------------------------------------------------
 
 VAGUE_RE = re.compile(r"\b(book events?|studio sunday|print shop open|community (evening )?classes|discovery sessions?|"
@@ -119,10 +160,10 @@ def vague_reason(c: dict) -> str | None:
 NEWS_EXCLUDE_RE = re.compile(r"\b(petrol|filling station|fuel|service station|garage forecourt|ev charging|"
                              r"medical (centre|center|practice)|gp (surgery|practice)|surgery\b|health centre|clinic|"
                              r"dental|dentist|pharmacy|chemist|optician|hospital|care home|funeral|crematorium|cemetery|"
-                             r"undertaker|vets?\b|veterinary|bank branch|estate agent|letting agent|solicitor|"
+                             r"undertaker|bereavement|vets?\b|veterinary|bank branch|estate agent|letting agent|solicitor|"
                              r"car wash|tyre|mot centre|storage)\b", re.I)
-NAMELESS_RE = re.compile(r"^(?:a |an |the )?new (pizzeria|pizza place|restaurant|caf[eé]|coffee shop|bar|pub|shop|store|"
-                         r"bakery|takeaway|deli|bistro)\b|^(?:новая|новый|новое) \w+$", re.I)
+NAMELESS_RE = re.compile(r"^(?:a |an |the )?new (pizzeria|pizza (?:place|restaurant)|restaurant|caf[eé]|coffee shop|bar|pub|"
+                         r"shop|store|bakery|takeaway|deli|bistro)\b|^(?:новая|новый|новое) \w+$|\(unnamed\)|\bunnamed\b", re.I)
 CLOSURE_STAGES = {"closed", "closing", "closure"}
 
 

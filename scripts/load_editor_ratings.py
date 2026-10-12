@@ -8,8 +8,8 @@ from_eid (оценка перенесена с другого события —
 Повторная загрузка того же файла заменяет записи (ключ: выпуск, версия, кандидат, кто, вид, рубрика).
 
 Формат файла разметки допускается гибкий: список записей или объект со списками (`ratings` / `items` / `candidates` /
-`events` и `rubrics` / `rubric_ratings`). Поля записи: id | cand_id | candidate_id; who | rater | by | author;
-rating | score | grade | value; comment | note | notes; rubric; from_eid | from_event_id. Неизвестные поля — в extra (JSON).
+`events` и `rubrics` / `rubric_ratings` / `rubric_feedback`). Поля записи: id | cand_id | candidate_id; who | rater | by | author;
+rating | v | score | grade | value; comment | note | notes; rubric; from_eid | from_event_id. Неизвестные поля — в extra (JSON).
 Оценки — не цель формулы важности (уточнение 11.10): они используются как контрольный набор качества.
 """
 
@@ -34,10 +34,10 @@ SCHEMA = """CREATE TABLE IF NOT EXISTS editor_ratings (
 )"""
 ID_KEYS = ("id", "cand_id", "candidate_id", "cid")
 WHO_KEYS = ("who", "rater", "by", "author", "user")
-RATING_KEYS = ("rating", "score", "grade", "value", "interest")
+RATING_KEYS = ("rating", "v", "score", "grade", "value", "interest")
 COMMENT_KEYS = ("comment", "note", "notes", "remark")
 FROM_KEYS = ("from_eid", "from_event_id", "from_id")
-KNOWN = set(ID_KEYS + WHO_KEYS + RATING_KEYS + COMMENT_KEYS + FROM_KEYS + ("rubric", "title", "kind"))
+KNOWN = set(ID_KEYS + WHO_KEYS + RATING_KEYS + COMMENT_KEYS + FROM_KEYS + ("rubric", "title"))
 
 
 def init(con) -> None:
@@ -62,7 +62,8 @@ def records(data, default_who: str | None) -> list[dict]:
         for r in items or []:
             if not isinstance(r, dict):
                 continue
-            out.append({"kind": r.get("kind") or kind, "who": _first(r, WHO_KEYS) or who or default_who, "raw": r})
+            # поле kind записи — вид кандидата (event, announcement…), а не вид оценки; вид оценки — по списку
+            out.append({"kind": r["kind"] if r.get("kind") in ("item", "rubric") else kind, "who": _first(r, WHO_KEYS) or who or default_who, "raw": r})
 
     if isinstance(data, list):
         add(data, "item")
@@ -73,7 +74,7 @@ def records(data, default_who: str | None) -> list[dict]:
         elif isinstance(data.get(k), dict):   # {"кто": [...]} — оценки по людям
             for who, items in data[k].items():
                 add(items, "item", who)
-    for k in ("rubrics", "rubric_ratings", "rubric_comments"):
+    for k in ("rubrics", "rubric_ratings", "rubric_comments", "rubric_feedback"):
         if isinstance(data.get(k), list):
             add(data[k], "rubric")
         elif isinstance(data.get(k), dict):
@@ -87,7 +88,7 @@ def load(con, path: Path, issue_date: str, version: str, who: str | None = None)
     init(con)
     data = json.loads(path.read_text())
     if isinstance(data, dict):
-        issue_date = data.get("issue_date") or issue_date
+        issue_date = data.get("issue_date") or data.get("issue") or issue_date
         version = data.get("version") or version
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     n = {"item": 0, "rubric": 0, "comments": 0, "skipped": 0}

@@ -904,6 +904,8 @@ TRANSLATION_FIXES = [
     (re.compile(r"тренировк\w* у сетки", re.I), "тренировки в крикетных «нэтах» (дорожки, огороженные сеткой)", None),
     (re.compile(r"\bcricket nets\b", re.I), "крикетные «нэты» (тренировочные дорожки в сетке)", None),
     (re.compile(r"\bhand-rolled bagels?\b", re.I), "бейглы ручной формовки", None),
+    # разметка v13 (Bridge Bagels): «руленые бейглы» — неверный перевод hand-rolled
+    (re.compile(r"рулен\w+ (?:вручную )?бейгл\w*|бейгл\w* рулен\w+", re.I), "бейглы ручной формовки", None),
     (re.compile(r"коммерческ\w+ (?:мероприяти\w*|занят\w*|танц\w*)", re.I), "занятия в стиле commercial (танцевальный стиль)",
      re.compile(r"\bcommercial\b", re.I)),
 ]
@@ -950,13 +952,42 @@ EXPLAIN = [
 ]
 
 
+NAME_BEFORE_RE = re.compile(r"(?:^|[^.!?]\s)(?:[A-ZА-ЯЁ][a-zа-яё]+\.?\s+)$")   # «William Morris», «Уильяма Морриса»
+NAME_AFTER_RE = re.compile(r"^\s*(?:&|and Co\b|и Ко\b|& Co\b)")
+
+
+def in_name(text: str, start: int, end: int) -> bool:
+    """Термин — часть имени (William Morris, Уильяма Морриса, Morris & Co), а не самостоятельное слово (правка 1 после
+    v14: «дизайны Морриса (английский народный танец)»)."""
+    before = text[max(0, start - 40):start]
+    if NAME_BEFORE_RE.search(before) and not re.search(r"(?:^|[.!?]\s+)[A-ZА-ЯЁ][a-zа-яё]+\s+$", before):
+        return True
+    return bool(NAME_AFTER_RE.match(text[end:end + 10]))
+
+
 def unexplained(it: dict, src: str) -> list[tuple[str, str]]:
-    """(термин, пояснение) — термин есть в русском тексте пункта, а пояснения нет."""
+    """(термин, пояснение) — термин есть в данных и в русском тексте пункта, а пояснения нет. Этап 7h: термин должен
+    стоять в данных сам по себе (morris dancing, а не William Morris) и в тексте — не частью имени."""
     b = f"{it.get('title_ru') or ''} {it.get('blurb_ru') or ''}"
+    blurb = it.get("blurb_ru") or ""
     out = []
     for src_rx, ru_rx, expl in EXPLAIN:
-        if (src_rx.search(src) or ru_rx.search(b)) and ru_rx.search(it.get("blurb_ru") or "") and expl not in b:
-            out.append((ru_rx.search(it.get("blurb_ru") or "").group(0), expl))
+        # нет данных-кандидатов (постоянные строки) — по тексту, но не часть имени
+        if not (src_rx.search(src) or (not src.strip() and ru_rx.search(blurb))) or expl in b:
+            continue
+        m = next((m for m in ru_rx.finditer(blurb) if not in_name(blurb, m.start(), m.end())), None)
+        if m:
+            out.append((m.group(0), expl))
+    return out
+
+
+def wrong_explanations(it: dict, src: str) -> list[str]:
+    """Пояснение из словаря стоит в тексте, а термина в этом смысле в данных нет (проверка 63, блокирующая)."""
+    b = f"{it.get('blurb_ru') or ''} {' '.join(it.get('knowledge_ru') or [])}"
+    out = []
+    for src_rx, ru_rx, expl in EXPLAIN:
+        if expl in b and not src_rx.search(src):
+            out.append(expl)
     return out
 
 
@@ -967,9 +998,13 @@ def fix_explain(result: dict, pools) -> list[Note]:
             if it.get("line") and not it.get("blurb_ru"):
                 continue
             src = " ".join(str(c.get(k) or "") for c in _cands(pools, it) for k in ("title", "summary"))
+            for expl in wrong_explanations({"blurb_ru": it.get("blurb_ru")}, src):   # правка 1 после v14
+                it["blurb_ru"] = re.sub(r"\s*\(" + re.escape(expl) + r"\)", "", it["blurb_ru"])
+                notes.append((f"“{it['title_en']}”: wrong explanation removed",
+                              f"«{it['title_ru']}»: убрано пояснение «{expl}» — не по контексту (часть имени)"))
             for term, expl in unexplained(it, src):
                 b = it["blurb_ru"]
-                i = b.find(term)
+                i = next((m.start() for m in re.finditer(re.escape(term), b) if not in_name(b, m.start(), m.end())), -1)
                 if i < 0:
                     continue
                 j = i + len(term)
@@ -987,15 +1022,55 @@ WHY_GENERIC_RU = re.compile(r"отличн\w+ (способ|возможност
 WHY_GENERIC_EN = re.compile(r"\b(great way|perfect (way|chance|for)|unmissable|don'?t miss|amazing|fantastic|wonderful|"
                             r"unforgettable|something for everyone|fun for all|vibrant|a must|great night out)\b", re.I)
 WHY_CONCRETE_RU = re.compile(r"\d|бесплатн|впервые|перв\w+ раз|последн|единствен|только здесь|традици|от \d+ лет|"
-                             r"детям|дети|с детьми|выступа|играет|игра\w+|исполн|ведёт|покажет|расскажет|[A-Z][a-z]+", re.I)
+                             r"детям|дети|детей|с детьми|дошкольн|подрост|десятилет|столет|век\w*\b|юбиле|выступа|играет|игра\w+|исполн|ведёт|покажет|расскажет|[A-Z][a-z]+", re.I)
 WHY_CONCRETE_EN = re.compile(r"\d|\bfree\b|\bfirst\b|\blast\b|\bonly\b|tradition|ages?\b|children|kids|perform|plays?\b|"
                              r"[A-Z][a-z]+ [A-Z]", re.I)
+
+
+# правка 2 после v14: цена или дата сами по себе — не причина (они уже в строке под названием)
+WHY_PRICE_RU = re.compile(r"^(?:вход\s+)?бесплатн\w*(?:\s+(?:вход|для всех|для посетителей))?$|^вход\s+(?:свободный|бесплатный)$", re.I)
+WHY_DATE_RU = re.compile(r"^(?:открывается|откроется|открыта|работает|идёт|продлится|проходит)\b.*"
+                         r"(?:\d|январ|феврал|март|апрел|ма[йя]|июн|июл|август|сентябр|октябр|ноябр|декабр)", re.I)
+WHY_PRICE_EN = re.compile(r"^(?:free(?: entry| admission| to attend| for all)?|entry is free|admission is free)$", re.I)
+WHY_DATE_EN = re.compile(r"^(?:opens|opening|runs|on until|open until|until|continues)\b.*(?:\d|jan|feb|mar|apr|may|jun|"
+                         r"jul|aug|sep|oct|nov|dec)", re.I)
+FREE_RU = re.compile(r"бесплатн", re.I)
+
+
+def _clauses(text: str) -> list[str]:
+    return [x.strip(" .") for x in re.split(r"[.;]\s*|,\s+(?=[а-яёa-z])", text or "") if x.strip(" .")]
+
+
+def clean_why(it: dict) -> tuple[str, str, str | None]:
+    """(why_ru, why_en, что убрано): части фразы, где только цена или дата, убираются; «бесплатно» при платной цене
+    или «цены на сайте» — противоречие строке цены, тоже убирается. Осталась только цена или дата — строки нет."""
+    ru, en = (it.get("why_ru") or "").strip(), (it.get("why_en") or "").strip()
+    price = (it.get("price_ru") or "").strip()
+    paid = bool(price) and not FREE_RU.search(price)   # «£32», «цены на сайте», «цена не указана»
+    note = None
+    if paid and FREE_RU.search(ru):
+        note = "противоречит строке цены"
+    keep_ru = [c for c in _clauses(ru) if not WHY_PRICE_RU.match(c) and not WHY_DATE_RU.match(c)
+               and not (paid and FREE_RU.search(c))]
+    keep_en = [c for c in _clauses(en) if not WHY_PRICE_EN.match(c) and not WHY_DATE_EN.match(c)
+               and not (paid and re.search(r"\bfree\b", c, re.I))]
+    if keep_ru == _clauses(ru) and not note:
+        return ru, en, None
+    note = note or "только цена или дата"
+
+    def join(parts):
+        return (". ".join(p[:1].upper() + p[1:] for p in parts) + ".") if parts else ""
+    if not keep_ru:
+        return "", "", note
+    return join(keep_ru), join(keep_en), note
 
 
 def why_problem(it: dict) -> str | None:
     ru, en = (it.get("why_ru") or "").strip(), (it.get("why_en") or "").strip()
     if not ru and not en:
         return None
+    if clean_why(it)[2]:
+        return clean_why(it)[2] if not clean_why(it)[0] else f"часть фразы — {clean_why(it)[2]}"
     if WHY_GENERIC_RU.search(ru) or WHY_GENERIC_EN.search(en):
         return "рекламная общая фраза"
     if not WHY_CONCRETE_RU.search(ru):
@@ -1012,6 +1087,11 @@ def fix_why_go(result: dict, pools) -> list[Note]:
             if it.get("line") or sec["rubric"] in ("cancelled",):
                 it["why_en"] = it["why_ru"] = ""
                 continue
+            ru, en, cut = clean_why(it)
+            if cut and ru:   # правка 2 после v14: цена, дата, противоречие цене — вон, конкретный факт остаётся
+                notes.append((f"“{it.get('title_en')}”: “why go” trimmed ({cut})",
+                              f"«{it.get('title_ru')}»: «Почему стоит пойти» — убрано: {cut} («{it['why_ru'][:70]}» → «{ru}»)"))
+                it["why_ru"], it["why_en"] = ru, en
             p = why_problem(it)
             if p:
                 notes.append((f"“{it.get('title_en')}”: “why go” removed ({p})",
@@ -1085,3 +1165,31 @@ def fix_stray_english(client, result: dict, pools, con) -> tuple[list[Note], flo
                               f"«{it['title_ru']}»: английские нарицательные слова переведены ({', '.join(words)})"))
                 it[f] = new
     return notes, cost
+
+
+def fix_broadcast(result: dict, pools) -> list[Note]:
+    """Правка 5 после v14 (проверка 64): трансляция — труппа по префиксу серии (RBO — Royal Ballet and Opera, Лондон),
+    а не по пометке «(MET Opera)» в названии; противоречащая пометка — из названия, чужая труппа — из текста."""
+    from . import broadcast
+    notes = []
+    for sec in result["sections"]:
+        for it in sec["items"]:
+            title = next((c.get("title") for c in _cands(pools, it)), None) or it.get("title_en")
+            if not broadcast.series_of(title):
+                continue
+            changed = []
+            for k in ("title_en", "title_ru"):
+                new = broadcast.clean_title(it.get(k))
+                if new != it.get(k):
+                    it[k] = new
+                    changed.append(k)
+            for k in ("blurb_en", "blurb_ru", "why_en", "why_ru"):
+                new = broadcast.fix_text(title, it.get(k), "en" if k.endswith("_en") else "ru")
+                if new != it.get(k):
+                    it[k] = new
+                    changed.append(k)
+            if changed:
+                notes.append((f"“{it.get('title_en')}”: broadcast company from the series prefix",
+                              f"«{it.get('title_ru')}»: трансляция — труппа по префиксу серии "
+                              f"({broadcast.SERIES[broadcast.series_of(title)][2]}), исправлено: {', '.join(changed)}"))
+    return notes

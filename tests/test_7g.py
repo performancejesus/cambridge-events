@@ -119,7 +119,10 @@ def test_placeholders_leagues_stray_english():
 def test_why_go_concrete_only():
     assert issue_fixes.why_problem({"why_ru": "Отличный способ провести вечер", "why_en": "A great way to spend an evening"})
     assert issue_fixes.why_problem({"why_ru": "Будет интересно", "why_en": "It will be interesting"}) == "нет конкретного факта"
-    assert issue_fixes.why_problem({"why_ru": "Бесплатно; подходит детям от 5 лет", "why_en": "Free; ages 5+"}) is None
+    # этап 7h (правка 2 после v14): цена — не причина; часть с ценой убирается, факт остаётся
+    assert issue_fixes.clean_why({"why_ru": "Бесплатно; подходит детям от 5 лет", "why_en": "Free; ages 5+"})[:2] == \
+        ("Подходит детям от 5 лет.", "Ages 5+.")
+    assert issue_fixes.why_problem({"why_ru": "Подходит детям от 5 лет.", "why_en": "Ages 5+."}) is None
     res = {"sections": [{"rubric": "weekdays", "items": [{"title_en": "X", "title_ru": "X", "why_ru": "Незабываемый вечер",
                                                           "why_en": "Unforgettable"}]}]}
     issue_fixes.fix_why_go(res, _pools({}))

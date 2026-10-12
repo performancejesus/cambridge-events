@@ -272,13 +272,15 @@ def store(con, p: dict, items: list[dict], now: str, today: str, lookup, zone_fo
 
 # --- рубрика «Научиться» ---
 
-LEARN_RE = re.compile(r"\b(life drawing|workshop|masterclass|master class|class(?:es)?|course|tasting|beginners?|"
+# этап 7h (итоги 7f: «дегустации — не мастер-классы»): tasting — не занятие; вечер рисования, crash course — занятие
+LEARN_RE = re.compile(r"\b(life drawing|drawing (?:evening|night|session)s?|crash course|workshop|masterclass|master class|"
+                      r"class(?:es)?|course|beginners?|"
                       r"learn to|taster session|wset|pottery|ceramics|calligraphy|crochet|knitting|embroidery|sewing|"
                       r"printmaking|lino ?cut|watercolou?r|sketching|cookery|baking|sourdough|stained glass|woodwork)\b", re.I)
 NOT_LEARN_RE = re.compile(r"\b(kids?|children|family|families|toddler|baby|half[- ]term|ages? \d|under \d+s|school|"
                           r"masterclass(?:es)? concert|exercise class|fitness|yoga|pilates|parkrun|run club|"
                           r"meeting|business|networking|webinar|online|virtual|cpd|career|talk|lecture|spotlight|tour|"
-                          r"concert|recital|exhibition|screening|performance)\b", re.I)
+                          r"concert|recital|exhibition|screening|performance|tasting|charcuterie)\b", re.I)
 VALUE_RE = re.compile(r"\b(выгодн|недорог|по хорошей цене|great value|bargain|cheap)\w*", re.I)
 EXPENSIVE = 200.0
 COURSE_AHEAD_DAYS = 21
@@ -293,7 +295,7 @@ def candidates(con: sqlite3.Connection, pools, w, used_events: set[int]) -> list
     if con.execute("SELECT 1 FROM sqlite_master WHERE name='courses'").fetchone():
         for r in con.execute("""SELECT * FROM courses WHERE status='active' AND date_start IS NOT NULL
                 AND coalesce(category,'') != 'sport' AND coalesce(places,'') != 'full'
-                AND ((kind IN ('workshop','tasting') AND date_start BETWEEN ? AND ?)
+                AND ((kind = 'workshop' AND date_start BETWEEN ? AND ?)
                   OR (kind='course' AND date_start BETWEEN ? AND ?))
                 AND coalesce(zone,'') != 'out_of_zone' ORDER BY date_start, time_start""", (s, e, s, ahead)):
             out.append({"cid": r["course_id"], "src": "course", "org": r["provider"], "org_key": r["provider_host"],

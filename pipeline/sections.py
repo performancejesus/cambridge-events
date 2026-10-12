@@ -235,6 +235,9 @@ def build_items(con: sqlite3.Connection, pools, w) -> tuple[list[dict], dict[str
                     start = f"new group from {r['date_start']}" if lang == "en" else f"новая группа с {r['date_start']}"
                 zone = "" if r["zone"] == "центр" else f" ({r['zone']})" if lang == "ru" else ""
                 item[f"title_{lang}"] = f"{r['provider']}: {t[f'title_{lang}']}"
+                if lang == "ru":   # правка 9 после v14: hockey в Британии — хоккей на траве
+                    from .glossary import hockey_ru
+                    item["title_ru"] = hockey_ru(item["title_ru"], f"{r['title']} {r['provider']} {r['category'] or ''}")
                 if c.get("home_ed"):   # этап 7g: пометка в строке
                     item[f"title_{lang}"] += " (home-educated children)" if lang == "en" else " (для детей на домашнем обучении)"
                 price = re.sub(r"(£\d+)[.,]00\b", r"\1", t[f"price_{lang}"])   # ровные суммы — без копеек

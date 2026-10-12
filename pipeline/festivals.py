@@ -82,7 +82,8 @@ def build_items(con, pools, result: dict, w) -> tuple[list[dict], dict[str, str]
         if not ok:
             why[r["rec_id"]] = reason
             continue
-        if r["event_id"] and r["event_id"] in placed:
+        run = getattr(pools, "running_festivals", {}).get(r["rec_id"])
+        if (r["event_id"] and r["event_id"] in placed) or (run and set(pools.candidates[run].get("event_ids", [])) & placed):
             why[r["rec_id"]] = "уже в выпуске полной карточкой"
             continue
         stage = r["stage"] or "ожидаем"

@@ -14,7 +14,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 
-from . import enrich, event_types, evergreen, kids, lineup, school_holidays, selection
+from . import broadcast, enrich, event_types, evergreen, kids, lineup, school_holidays, selection
 from .db import ROOT
 from .normalize import norm_title, norm_venue, title_similarity
 
@@ -77,6 +77,10 @@ FILM_RE = re.compile(r"\b(film|screening|cinema|documentary|movie|nt live|met op
                      r"encore screening)\b", re.I)
 TALK_RE = re.compile(r"\b(lecture|talk|talks|in conversation|q ?& ?a|book launch|panel|discussion|symposium|reading|"
                      r"seminar|meet the (author|director))\b", re.I)
+# этап 7h (разметка v13, итоги 7f): «Лекции и встречи» — и встречи с авторами в книжных, литературные салоны, поэзия
+MEETING_RE = re.compile(r"\b(an evening with|literary salon|poetry|poets?\b|author event|book (?:event|signing|tour|talk)|"
+                        r"in discussion|meet the author)\b", re.I)
+BOOKSHOP_RE = re.compile(r"\b(heffers|waterstones|toppings?|bookshop|book shop|books?ellers?)\b", re.I)
 PUBLIC_RE = re.compile(r"\b(open to (all|the public|everyone)|all welcome|everyone welcome|free and open|public lecture|"
                        r"members of the public|no booking required)\b", re.I)
 # этап 6d (аудит talks.cam): публичные — только эти два списка; Cabinet of Natural History — исследовательский семинар,
@@ -173,6 +177,7 @@ class Pools:
     duplicates: list[tuple[str, str, str]] = field(default_factory=list)  # (id1, id2, пояснение)
     sold_out: list[str] = field(default_factory=list)
     unverified_news: int = 0
+    running_festivals: dict = field(default_factory=dict)   # этап 7h: rec_id → кандидат-событие (фестиваль идёт в окне)
     links: list[tuple[list[str], str]] = field(default_factory=list)  # связанные события → один пункт
     blocked_kids: dict[str, list[str]] = field(default_factory=dict)   # каникулы → закрытые провайдеры («Ещё проверьте»)
     releases: list[dict] = field(default_factory=list)   # решения после 6c: новые фильмы в прокате UK (календарь релизов)
@@ -227,7 +232,7 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
     cats = _categories(con, e["event_id"])
     summary = _summary(con, e["event_id"])
     facts = {
-        "title": e["title"], "venue": e["venue_name"], "address": e["address"], "postcode": e["postcode"],
+        "title": broadcast.clean_title(e["title"]), "venue": e["venue_name"], "address": e["address"], "postcode": e["postcode"],
         "zone": e["zone"], "address_unknown": bool(e["address_unknown"]), "multi_venue": bool(e["multi_venue"]),
         "price_text": e["price_text"], "price_from": e["price_from"], "status": status, "sources": srcs,
         "categories": cats, "summary": summary, "source_type": e["source_type"],
@@ -254,7 +259,7 @@ def _event_facts(con, e: sqlite3.Row) -> dict:
     if city:   # этап 7d: кинотеатр округи (S182) — город в пометке
         facts["city"] = city
     if TALK_RE.search(e["title"]) or any(c.lower() in ("talk", "lecture", "lectures", "talks") for c in allcats) \
-            or (set(srcs) & {"S047"}):
+            or (set(srcs) & {"S047"}) or MEETING_RE.search(e["title"]) or BOOKSHOP_RE.search(e["venue_name"] or ""):
         facts["talk"] = True
         # правки после v5: публичные — из публичных списков talks.cam, других источников или с пометкой «open to all»
         only_talks = set(srcs) <= {"S047"}
@@ -438,6 +443,9 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
     excluded_rows = []
     for r in rows:
         why = _exclusion(r) or official_only_reason(con, r) or selection.nonevent_reason(r["title"], None, r["venue_name"])
+        if not why and selection.SCHOOL_RE.search(r["venue_name"] or ""):   # правка 10 после v14: школьные — для своих
+            from .page_times import cached_text
+            why = selection.school_event_reason(r["title"], r["venue_name"], cached_text(r["url"]))
         if why:
             excluded_rows.append(r)
             p.excluded[why].append(f"{r['title']} ({r['date_start']})")
@@ -476,6 +484,10 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
         # этап 7g: частые регулярные (экскурсии, прогулки, библиотеки) — «постоянное», не в недельный выпуск;
         # расплывчатые без страницы события — не берём, со страницей — модель раскрывает по page_facts
         why = selection.frequent_regular(facts) or selection.vague_reason(facts)
+        if not why and not set(facts.get("types") or []) & SERIES_EXEMPT_TYPES and not facts.get("film") \
+                and not SERIES_EXEMPT_RE.search(first["title"]):
+            ser = series_of_event(con, first, w)
+            why = selection.series_regular([x[0] for x in ser], [x[1] for x in ser])
         if why:
             p.excluded[why].append(f"{first['title']} ({first['date_start']})")
             continue
@@ -484,6 +496,7 @@ def build_pools(con: sqlite3.Connection, w: Window) -> Pools:
         p.candidates[f"E{first['event_id']}"] = facts
     _find_duplicates(p, excluded_rows)
     merge_duplicates(p)   # этап 7g: дубли — сильнее склейка (площадка + дата + похожее название или одна страница)
+    running_festivals(con, w, p)
     _links(p)
     _announcements(con, w, p)
     _quirky_marks(con, w, p)
@@ -813,6 +826,7 @@ def _kids_programmes(con, w: Window, p: Pools) -> None:
     for r in con.execute("SELECT provider_host, venue, address, postcode FROM kids_programmes WHERE coalesce(venue, '') != ''"):
         if not VAGUE_VENUE_RE.search(r["venue"]):
             venues[r["provider_host"]].add((r["venue"].strip(), r["address"], r["postcode"]))
+    orgs = provider_orgs(con)
     for k in con.execute("SELECT * FROM kids_programmes WHERE coalesce(kind, 'holiday') = 'holiday' "
                          "AND coalesce(status, 'active') = 'active' ORDER BY prog_id").fetchall():
         if k["source"] == "collector":
@@ -845,7 +859,8 @@ def _kids_programmes(con, w: Window, p: Pools) -> None:
         if not (venue or address) and len(venues.get(k["provider_host"], ())) == 1:
             venue, address, postcode = next(iter(venues[k["provider_host"]]))
         p.candidates[k["prog_id"]] = {
-            "kind": "programme", "title": selection.dup_age(k["title"]), "provider": k["provider"], "holiday": k["holiday"],
+            "kind": "programme", "title": selection.dup_age(k["title"]),
+            "provider": provider_name(k["provider"], k["provider_host"], orgs), "holiday": k["holiday"],
             "_dkey": dkey,
             "ages": k["ages"], "hours": k["hours"], "price_text": selection.fix_price_comma(k["price"]), "venue": venue,
             "address": address, "postcode": postcode, "zone": k["zone"], "places": k["places"],
@@ -1175,6 +1190,78 @@ def _date_conflict(c: dict) -> str | None:
         if a <= d(h["end"]) + timedelta(days=7) and b >= d(h["start"]) - timedelta(days=7):
             return None
     return f"дата на странице ({c['dates'][0][0]}) не совпадает с каникулами из названия — противоречие у провайдера"
+
+
+# серия одной площадки — не «регулярное», если это показы, концерты, спектакли, выставки и сезонное (тыквенная ферма)
+SERIES_EXEMPT_TYPES = selection.PERFORMANCE_TYPES | {"traditions_fairs_markets", "quirky_local"}
+SERIES_EXEMPT_RE = re.compile(r"\b(recital|concert|musical|screening|film|live|opera|ballet|pumpkin|fair|festival|"
+                              r"exhibition|show)\b", re.I)
+
+
+def running_festivals(con: sqlite3.Connection, w: Window, p: Pools) -> dict[str, str]:
+    """Правка 8 после v14: фестиваль из реестра, который идёт в окне выпуска (Cambridge Film Festival 22.10–1.11), —
+    карточка и кандидат в «Главное на выходные» (при любой оценке) или в тему недели, а не строка «Фестивалей».
+    rec_id → id кандидата-события."""
+    from . import festivals
+    ids = festivals.calendar_ids()
+    out = {}
+    for r in con.execute("SELECT rec_id, name, event_id, found_date, found_date_end FROM recurring_events "
+                         "WHERE found_date IS NOT NULL").fetchall():
+        if r["rec_id"] not in ids:
+            continue
+        a, b = r["found_date"][:10], (r["found_date_end"] or r["found_date"])[:10]
+        if not (a <= w.end.isoformat() and b >= w.issue.isoformat()):
+            continue
+        name = norm_title(r["name"])
+        cid = next((cid for cid, c in p.candidates.items() if c.get("kind") == "event" and (
+            (r["event_id"] and r["event_id"] in c.get("event_ids", [])) or
+            (name and norm_title(re.sub(r"\b20\d\d\b", "", c.get("title") or "")).strip() == name))), None)
+        if cid:
+            c = p.candidates[cid]
+            c["festival_running"], c["festival_rec_id"] = True, r["rec_id"]
+            c.pop("long_running", None)   # фестиваль на 11 дней — не «длительная выставка»
+            out[r["rec_id"]] = cid
+    p.running_festivals = out
+    return out
+
+
+def series_of_event(con: sqlite3.Connection, e, w: Window) -> list[tuple[str, str]]:
+    """(дата, ссылка) событий с тем же названием на той же площадке: месяц до выпуска — два месяца после (правка 7)."""
+    if not e["norm_title"] or not (e["venue_id"] or e["venue_name"]):
+        return []
+    lo, hi = (w.issue - timedelta(days=31)).isoformat(), (w.issue + timedelta(days=62)).isoformat()
+    rows = con.execute("""SELECT date_start, url FROM events WHERE norm_title=? AND date_start BETWEEN ? AND ?
+                          AND (venue_id=? OR (venue_id IS NULL AND venue_name=?)) AND coalesce(status, '') != 'cancelled'""",
+                       (e["norm_title"], lo, hi, e["venue_id"], e["venue_name"])).fetchall()
+    return [(r[0], r[1] or "") for r in rows]
+
+
+def provider_orgs(con: sqlite3.Connection) -> dict[str, str]:
+    """host → название организации-владельца сайта (таблица organizations), без пояснения в скобках."""
+    if not con.execute("SELECT name FROM sqlite_master WHERE name='organizations'").fetchone():
+        return {}
+    return {r[0]: re.sub(r"\s*\(.*\)$", "", r[1]).strip() for r in con.execute(
+        "SELECT host, name FROM organizations WHERE coalesce(host, '') != ''")}
+
+
+def provider_name(provider: str | None, host: str | None, orgs: dict[str, str]) -> str | None:
+    """Правка 4 после v14: бушкрафт в Wandlebury подписан «Cambridge University Botanic Garden», а организатор —
+    Cambridge Past, Present & Future (страница на cambridgeppf.org). Если в поле провайдера названа организация с
+    другого сайта, а у сайта страницы есть своя организация, провайдер — владелец страницы."""
+    own = orgs.get(host or "") or orgs.get(re.sub(r"^www\.", "", host or ""))
+    if not provider or not own:
+        return provider or own
+    def words(x):
+        return {w for w in re.findall(r"[a-z]{4,}", x.lower()) if w not in {"cambridge", "university", "club", "park"}}
+    def base(h):   # cam.ac.uk, botanic.cam.ac.uk → cam.ac.uk: одна организация-зонтик
+        parts = re.sub(r"^www\.", "", h or "").split(".")
+        return ".".join(parts[-3:] if len(parts) > 2 and parts[-2] in ("ac", "co", "org", "gov") else parts[-2:])
+    # другая организация названа в поле провайдера своими отличительными словами («Botanic Garden»), а не общими
+    # («University of Cambridge» — зонтик, не провайдер)
+    other = [n for h, n in orgs.items() if base(h) != base(host) and n.lower() in provider.lower() and words(n)]
+    if other and not (words(own) & words(provider)):
+        return own
+    return provider
 
 
 VAGUE_VENUE_RE = re.compile(r"\b(?:multiple|various|selected|several)\b|\blocations\b|\bonline\b|\btbc\b", re.I)
@@ -1605,7 +1692,11 @@ def when(c: dict, w: Window, lang: str) -> str:
     else:
         s = f"{_day(first, lang, weekday=False)} – {_day(last, lang, weekday=False, year=other_year)}"
     if time and len(c["dates"]) == 1 and first == last:
-        s += f", {time}"
+        s += (f", from {time}" if lang == "en" else f", с {time}") if c.get("show_time") else f", {time}"
+    if c.get("show_time") and first == last:   # правка 6 после v14: время самого шоу — со страницы события
+        a, b = c["show_time"]
+        s += (f", show about {a}–{b}" if lang == "en" else f", шоу около {a}–{b}") if b else \
+            (f", show about {a}" if lang == "en" else f", шоу около {a}")
     elif first == last and len(c["dates"]) > 1 and all(x[2] for x in c["dates"]):  # один день, два сеанса
         s += ", " + (" and " if lang == "en" else " и ").join(sorted(times))
     if c["kind"] == "tickets" and c.get("on_sale_date"):
@@ -1802,6 +1893,45 @@ def layout(result: dict, p: Pools, w: Window, lang: str) -> dict:
         if rel:   # решения после 6c: новые фильмы недели — из календаря релизов, первой строкой рубрики
             sec["groups"].insert(0, {"title": "", "items": rel})
         out["sections"].append(sec)
+    return polish_layout(out)
+
+
+PRICE_COMMA_RE = re.compile(r"£\s?(\d+),(\d{2})\b(?!\d)")
+
+
+ZONE_TWICE_RE = re.compile(r"\(([^()]{3,40})\)\s*·\s*\1(?=\s*·|\s*$)")
+YEAR_TWICE_RE = [   # «24 мая 2027 – 29 мая 2027» → «24–29 мая 2027»; «30 июля 2027 – 1 августа 2027» → «30 июля – 1 августа 2027»
+    (re.compile(r"\b(\d{1,2}) ([A-Za-zА-Яа-яё]+) (20\d\d) – (\d{1,2}) \2 \3\b"), r"\1–\4 \2 \3"),
+    (re.compile(r"\b(\d{1,2} [A-Za-zА-Яа-яё]+) (20\d\d) – (\d{1,2} [A-Za-zА-Яа-яё]+) \2\b"), r"\1 – \3 \2"),
+]
+SOURCE_NAMES = r"(?:Cambridge Independent|Cambridge News|Cambridge Evening News|Varsity|The Tab|Cambridge 105|" \
+               r"Visit Cambridge|What'?s On Cambridge|Ely Standard|Hunts Post|Peterborough Telegraph|Saffron Walden Reporter)"
+SOURCE_PAREN_RE = re.compile(r"\s*\((?:по данным |по сообщению |according to |via |source: |источник: )?" + SOURCE_NAMES + r"\)", re.I)
+
+
+def polish_text(t):
+    """Правки 3 и 9 после v14 — для всех полей всех рубрик: пенсы через точку («£45,20» → «£45.20»; «£1,200» — тысячи,
+    не трогаем); зона один раз («(до 30 мин) · до 30 мин»); год в диапазоне дат один раз; служебное «(Cambridge
+    Independent)» — название источника в тексте пункта — убирается."""
+    if not isinstance(t, str):
+        return t
+    t = PRICE_COMMA_RE.sub(r"£\1.\2", t)
+    t = ZONE_TWICE_RE.sub(r"(\1)", t)
+    for rx, rep in YEAR_TWICE_RE:
+        t = rx.sub(rep, t)
+    return SOURCE_PAREN_RE.sub("", t)
+
+
+def polish_layout(out: dict) -> dict:
+    for k in ("intro",):
+        out[k] = polish_text(out.get(k))
+    for sec in out["sections"]:
+        sec["intro"] = polish_text(sec.get("intro")) if sec.get("intro") else sec.get("intro")
+        for g in sec["groups"]:
+            for it in g["items"]:
+                for k in ("title", "meta", "blurb", "why", "kind", "facts"):
+                    if isinstance(it.get(k), str):
+                        it[k] = polish_text(it[k])
     return out
 
 
@@ -2003,6 +2133,10 @@ def render_editor_html(result: dict, p: Pools, w: Window, lang: str, editor: dic
             body.append(f'<section class="stub"><h2>{e(title)} — {hidden}</h2>')
         if rub == "theme" and result.get("theme_options"):   # правка 11 после v13: варианты темы — выбор редактора
             body.append(_theme_options_html(result, p, lang))
+        wy = (result.get("weekend_why") or {}).get(rub)
+        if wy:   # правка 12 после v14: почему в «Главном» меньше 10 пунктов
+            label = "Why fewer than 10" if lang == "en" else "Почему меньше 10"
+            body.append(f'<p class="src"><b>{e(label)}:</b> {e(wy[lang])}</p>')
         body.append(_cands_html(rows, lang, placed, items_n if rub not in ("holidays",) else None))
         body.append("</section>")
     nowhere = lists.get("nowhere", [])

@@ -37,7 +37,8 @@ Rubrics (`rubric` values; the input lists the ones available):
   theme a short title (`theme_title_en`, `theme_title_ru`) and one or two sentences of introduction
   (`theme_intro_en`, `theme_intro_ru`). No theme → no `theme` section and empty theme fields. Also give 2–3
   `theme_options` for the editor: the theme you chose first, then the other possible occasions of the period (each:
-  title, one sentence "why" in both languages, the candidate ids). The editor may pick another option. Look for links
+  title, one sentence "why" in both languages, the candidate ids). The editor may pick another option. In school-holiday
+  weeks (and the week before), include a seasonal option (Halloween and half-term, Christmas) when there are enough events. Look for links
   between the participants: when one candidate's people made another candidate (the director of a film speaks before its
   screening, an author talks about a book that is being staged, a tribute album's artists play the concert), say so
   and, if both are on the same day or form one visit, put both ids into one item ("screening + meet the director").
@@ -153,7 +154,9 @@ Rules:
 12. "Why go" (`why_en`, `why_ru`) — one short sentence under the card: only a concrete fact from the data — first /
    last time, a tradition of N years, only here, free, suits children from N, who performs or speaks. No advertising
    words ("a great way to…", "unmissable", «отличный способ», «незабываемый»). If there is no such fact, leave both
-   empty — never invent. It is checked against the sources like the description.
+   empty — never invent. It is checked against the sources like the description. Price or dates alone are not a
+   reason (they are already in the line under the title): never "Free.", "Free entry.", "Opens 23 October."; never
+   say "free" when the price is not free or not known.
 
 Fields of an item:
 - `ids` — candidate ids (usually one).
