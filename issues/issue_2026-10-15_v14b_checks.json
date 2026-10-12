@@ -1,0 +1,615 @@
+{
+ "issue_date": "2026-10-15",
+ "version": "v14b",
+ "send_allowed": true,
+ "blocking": [],
+ "checks": [
+  {
+   "rule": 1,
+   "title": "Проверенные факты (дни рождения, юбилеи, «первый / последний / единственный»)",
+   "level": "block",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«The Pickerel Inn»: переписано по источнику — «Исторический паб, основанный в 1608 году, вновь открылся после реконструкции — во дворе появилась всепогодная зона.» (в источнике: «Историчный паб, основанный в 1608 году»)",
+    "«The Pickerel Inn»: переписано по источнику — «A historic pub founded in 1608 has reopened after refurbishment with a new all-weather courtyard.» (в источнике нет — убрано)"
+   ]
+  },
+  {
+   "rule": 2,
+   "title": "Пересказ источника (тема недели, вступления, пункты из статей)",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 3,
+   "title": "Прошедшие события",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 4,
+   "title": "Отменённые и распроданные — не в обычных рубриках",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 5,
+   "title": "Доступ restricted — не в выпуске, никогда в «Успейте»",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 6,
+   "title": "Дедлайн записи прошёл — программа не в письме",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 7,
+   "title": "Ссылки отвечают, нет относительных ссылок на отсутствующие файлы",
+   "level": "block",
+   "status": "warn",
+   "details": [
+    "https://www.junction.co.uk/events/black-slate/ — не проверить: www.junction.co.uk: лимит 25 запросов в сутки",
+    "https://www.junction.co.uk/events/the-bluetones/ — не проверить: www.junction.co.uk: лимит 25 запросов в сутки",
+    "https://www.museums.cam.ac.uk/events/art-deception — не проверить: 403",
+    "https://www.eventbrite.co.uk/e/cambridge-street-photography-workshop-with-matt-hall-tickets-2002085756392 — не проверить: www.eventbrite.co.uk: лимит 150 запросов в сутки",
+    "https://www.eventbrite.co.uk/e/cambridge-art-class-tickets-1993449077854 — не проверить: www.eventbrite.co.uk: лимит 150 запросов в сутки",
+    "https://www.parkrun.org.uk/ — не проверить: 403",
+    "https://www.eventbrite.co.uk/e/cambridge-half-marathon-2027-tickets-1984751132064 — не проверить: www.eventbrite.co.uk: лимит 150 запросов в сутки",
+    "https://cambridgeliteraryfestival.com/whats-on — не проверить: cambridgeliteraryfestival.com: пауза до 2026-10-12T22:08:10+00:00 (после паузы главная: 403)",
+    "https://www.millroadwinterfair.org/ — не проверить: www.millroadwinterfair.org: пауза до 2026-10-12T20:22:45+00:00 (обрыв соединения: RemoteProtocolError: Server disconnect",
+    "https://www.museums.cam.ac.uk/events/studio-sunday-relaxed-session-24 — не проверить: 403",
+    "https://www.eventbrite.co.uk/e/october-half-term-2026-school-years-4-7-tickets-2001166771684 — не проверить: www.eventbrite.co.uk: лимит 150 запросов в сутки",
+    "https://www.skiddle.com/whats-on/Peterborough/The-White-Horse-Tilbrook/Kids-Halloween-Party/42673054/ — не проверить: 202",
+    "https://www.junction.co.uk/events/shelf-the-kids-show-2/ — не проверить: www.junction.co.uk: лимит 25 запросов в сутки",
+    "https://cambridgefoodies.me.uk/2026/08/17/catte-latte-cambridges-first-ever-cat-cafe-mill-road/ — не проверить: robots.txt не разрешает",
+    "https://cambridgefoodies.me.uk/2026/09/02/tripot-quayside-sharing-hotpots-at-your-table/ — не проверить: robots.txt не разрешает"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 8,
+   "title": "Смешанные алфавиты в русском тексте",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 9,
+   "title": "Имена людей и групп — латиницей",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Cambridge Film Festival 2026»: имена переписаны латиницей (Jesse Eisenberg)"
+   ]
+  },
+  {
+   "rule": 10,
+   "title": "Цена — из данных и из лучшего источника",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Pasadena Roof Orchestra»: цена в тексте модели не совпала с данными ([18.0]) — заменена на «£17»",
+    "«Organic Semiconductors: From OLED Displays to Quantum Applications»: «бесплатно» нет в данных — цена из лучшего источника: цены на сайте",
+    "«Legacies of the Windrush Exhibition»: «бесплатно» нет в данных — цена из лучшего источника: цены на сайте"
+   ]
+  },
+  {
+   "rule": 11,
+   "title": "Ссылка — на первоисточник",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Apple Day 2026»: ссылка — площадка / организатор (https://www.botanic.cam.ac.uk/whats-on/apple-day-2026/) вместо агрегатор (https://www.museums.cam.ac.uk/events/apple-day-2026)",
+    "«Peterborough Phantoms v Solway IHC»: ссылка — площадка / организатор (https://gophantoms.co.uk/gameday/2026-27-fixtures) вместо продавец билетов (https://iceaccount.co.uk/peterborough-phantoms)",
+    "«Peterborough Phantoms v Romford Raiders»: ссылка — площадка / организатор (https://gophantoms.co.uk/gameday/2026-27-fixtures) вместо продавец билетов (https://iceaccount.co.uk/peterborough-phantoms)"
+   ]
+  },
+  {
+   "rule": 12,
+   "title": "Тон без давления",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 13,
+   "title": "Отмены — одной строкой",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 14,
+   "title": "Многодневные события — диапазон; релизы — пятница",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 15,
+   "title": "Открытия: дата статьи — не дата открытия",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 16,
+   "title": "Детские события ночью — сверка времени",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Kids Halloween Party»: время 00:30 подозрительно для детского события — не показываем"
+   ]
+  },
+  {
+   "rule": 17,
+   "title": "Пустые описания (в том числе «Новое в городе»)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 18,
+   "title": "Дубли имён («Также в программе: X», когда X уже в тексте)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 19,
+   "title": "Заголовки без приписок статуса и даты",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 20,
+   "title": "Размер выпуска и рубрик (rubric_sizes)",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Arbury Social» дописан в «Новое в городе» (обязателен по правкам v5)",
+    "«Macbeth (MET Opera)» дописан в «На неделе: концерты, театр, комедия» (обязателен по правкам v5)",
+    "«Creative Street Photography Talk with Matt Hall» дописан в «Главное на выходные 17–18 октября» (обязателен по правкам v5)",
+    "«Cambridge Film Festival 2026» дописан в «Главное на выходные 24–25 октября» (обязателен по правкам v5)",
+    "«Halloween Half-Term at Audley End House and Gardens» дописан в «Главное на выходные 24–25 октября» (обязателен по правкам v5)",
+    "«Clare Hall's Ceramics Symposium» дописан в «Главное на выходные 24–25 октября» (обязателен по правкам v5)"
+   ]
+  },
+  {
+   "rule": 21,
+   "title": "«Главное на выходные» и «По графству» — пороги зон",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 22,
+   "title": "Разнообразие площадок; театр в «На неделе»",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 23,
+   "title": "Состав участников — полностью",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 24,
+   "title": "«Успейте купить» — с сигналом; ежегодные анонсы — «Объявлено» или «Фестивали»",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 25,
+   "title": "Повторы между выпусками (issue_items, 4 недели)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 26,
+   "title": "«Каникулы»: лимиты, дни каникул, зона, глоссарий",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 27,
+   "title": "Подборки — не событие",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 28,
+   "title": "Пропуски с оценкой не ниже выбранного — с причиной",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "причины пропуска дописаны отдельным запросом: 15 из 15"
+   ]
+  },
+  {
+   "rule": 29,
+   "title": "Факты из знаний модели — в список «проверить» (правки по v9)",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«Apple Day 2026»: «На мероприятии проходит дегустация и определение сортов яблок» — в «Факты из знаний модели (проверить)»",
+    "«Apple Day 2026»: «Мероприятие проходит в Cambridge University Botanic Garden» — в «Факты из знаний модели (проверить)»",
+    "«Cambridge United v Plymouth Argyle»: «Cambridge United играет против Plymouth Argyle» — в «Факты из знаний модели (проверить)»",
+    "«Cambridge United v Plymouth Argyle»: «Это домашний матч Cambridge United» — в «Факты из знаний модели (проверить)»",
+    "«Cambridge United v Plymouth Argyle»: «Матч проходит в League One» — в «Факты из знаний модели (проверить)»",
+    "«Macbeth»: «Это опера Верди Macbeth» — в «Факты из знаний модели (проверить)»",
+    "«Macbeth»: «Это прямая трансляция из Royal Ballet and Opera в Нью-Йорке» — в «Факты из знаний модели (проверить)»",
+    "«Graham Storey lecture with Eleanor Catton»: «Eleanor Catton — автор книг The Rehearsal, The Luminaries и Birnam Wood» — в «Факты из знаний модели (проверить)»",
+    "«Sunil Gupta: Life with a Camera, 1970 – Now»: «Работа Sunil Gupta охватывает период с 1970 по настоящее время» — в «Факты из знаний модели (проверить)»",
+    "«The Pickerel Inn»: «The Pickerel Inn — старейший паб Кембриджа» — в «Факты из знаний модели (проверить)»",
+    "«Tripots»: «Из зала открывается вид на реку» — в «Факты из знаний модели (проверить)»"
+   ]
+  },
+  {
+   "rule": 30,
+   "title": "Лига футбольного клуба — только подтверждённая",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 31,
+   "title": "Подтверждённые открытия (S148) — в «Новом в городе» (правки по v9)",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«The Beefy Boys»: вытеснено подтверждённым открытием (S148)"
+   ]
+  },
+  {
+   "rule": 32,
+   "title": "Семейные фильмы — кандидаты в «С детьми» (правки по v9)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 33,
+   "title": "«В колледжах» убрана: события колледжей — в тематических рубриках, без служб и дублей",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 34,
+   "title": "Cambridge Union: члены — одной строкой, открытые — пунктами",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 35,
+   "title": "Грамматика русских текстов (падежи, согласование) — вычитка",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 36,
+   "title": "«Новое в городе»: стадия открытия не противоречит описанию",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 37,
+   "title": "«В музеях и усадьбах»: 4–6 строк, ≤ 2 от места, без регулярных занятий и дублей",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 38,
+   "title": "Кино округи — только то, чего нет в Кембридже",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 39,
+   "title": "Ежегодные фестивали: анонс при новой дате или продаже, напоминание за 4–6 недель",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 40,
+   "title": "Необычные традиции: анонс, «Главное на выходные» с объяснением обычая",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 41,
+   "title": "«Научиться»: 4–6 строк, ≤ 2 от организатора, курсы со стартом в 3 недели, цена у дорогих",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 42,
+   "title": "«Секции: идёт набор»: только с набором, 2–4 строки, раз в 8 недель, открытые для всех",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 43,
+   "title": "Вступление — только о том, что есть в выпуске",
+   "level": "block",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "вступление переписано: нет в выпуске — «Leo Sayer»; «Simon Brodkin»; «Sacrewell»; «Wicken Fen до Sacrewell»; «Sacrewell» (было: «Две недели с громкими именами в Corn Exchange (Nish Kumar, Michael Palin, Leo Sayer, Simon Brodkin и Maisie Adam выступают в течение одного и того же периода), новые выставки в Fitzwilliam Museum, хэл»)"
+   ]
+  },
+  {
+   "rule": 44,
+   "title": "Названия событий — в оригинале, перевод — в описании",
+   "level": "fix",
+   "status": "fixed",
+   "details": [],
+   "fixed": [
+    "«WCB Comedy: Hal Cruttenden, Reginald D Hunter and Dan Antopolski»: название в оригинале вместо перевода «WCB Comedy: Hal Cruttenden, Reginald D Hunter и Dan Antopolski»",
+    "«The Bluetones: Expecting to Fly 30th Anniversary»: название в оригинале вместо перевода «The Bluetones: 30-летие Expecting to Fly»",
+    "«Graham Storey lecture with Eleanor Catton»: название в оригинале вместо перевода «Graham Storey lecture с Eleanor Catton»"
+   ]
+  },
+  {
+   "rule": 45,
+   "title": "Культурные реалии: Father Christmas, panto, Bonfire Night — без подмены",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 46,
+   "title": "Роли и порядок участников («хедлайнер», «на разогреве») — только из источника",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 47,
+   "title": "«Новое в городе» вне Кембриджа — городок в заголовке строки",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 48,
+   "title": "«Почему стоит пойти»: конкретный факт из источника, без рекламы",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 49,
+   "title": "Название пункта = заголовок страницы по ссылке (по кэшу)",
+   "level": "block",
+   "status": "warn",
+   "details": [
+    "«Graham Storey lecture with Eleanor Catton»: ссылка ведёт на страницу-список «What's On: What's On | WHAT'S ON»",
+    "«Misery and Beauty: Harry Becker's Portrait of East Anglian Farm Labour»: ссылка ведёт на страницу-список «What's On: What's On | WHAT'S ON»"
+   ],
+   "fixed": []
+  },
+  {
+   "rule": 50,
+   "title": "Одно место дважды в рубрике («Новое в городе» и другие)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 51,
+   "title": "Год в названии = год дат пункта",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 52,
+   "title": "Не события и частые регулярные — не в выпуске",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 53,
+   "title": "Дети: без взрослого и продлёнок, обязательные поля, Home Ed, строки программ",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 54,
+   "title": "Дубли в выпуске: одно событие / страница / площадка+дата+название — один раз",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 55,
+   "title": "Разнообразие: «Главное» ≤ 10 и ≤ 2 на категорию; ≤ 2 одного подвида в рубрике",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 56,
+   "title": "Тема недели: без повтора 8 недель, 2–3 варианта для редактора",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 57,
+   "title": "«Новое в городе»: только открытия, без закрытий и служебных мест, без повторов",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 58,
+   "title": "«Фестивали»: все ближайшие и в продаже; Pride и театральные — в реестре",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 59,
+   "title": "Расплывчатые пункты — раскрыты по странице или не взяты",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 60,
+   "title": "Незнакомое — с пояснением, перевод — по смыслу",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 61,
+   "title": "Состав рубрик 11.10: убранные не выводятся, редакторские — не в письме",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 62,
+   "title": "Каникулы: университетские и «для учеников школы» — не показываем; HAF — с пометкой",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 63,
+   "title": "Пояснение соответствует контексту (не к имени: William Morris ≠ morris dance)",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 64,
+   "title": "Трансляции: труппа по префиксу серии (RBO ≠ MET)",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 65,
+   "title": "Время пункта не противоречит описанию (вечерний показ ≠ 12:00)",
+   "level": "block",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 66,
+   "title": "Фестиваль в окне выпуска — карточкой, не строкой календаря",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 67,
+   "title": "Оформление: зона и год один раз, без названий источников, «хоккей на траве»",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  },
+  {
+   "rule": 68,
+   "title": "«Главное на выходные» < 10 — редактору объяснено почему",
+   "level": "fix",
+   "status": "pass",
+   "details": [],
+   "fixed": []
+  }
+ ]
+}

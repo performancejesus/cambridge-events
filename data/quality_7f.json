@@ -221,5 +221,485 @@
   "kids": 2,
   "museum": 2
  },
- "editor_comments": null
+ "editor_review": {
+  "by_kind": {
+   "dup": {
+    "marked": 20,
+    "caught": 17,
+    "left": [
+     {
+      "id": "H1322",
+      "title": "Skeleton Science",
+      "comment": "кажется, дубль в этом разделе",
+      "caught": false,
+      "how": "не похож по признакам склейки (разные даты или названия)"
+     },
+     {
+      "id": "H1327",
+      "title": "Evolution Expedition",
+      "comment": "не дубль ли? ",
+      "caught": false,
+      "how": "не похож по признакам склейки (разные даты или названия)"
+     },
+     {
+      "id": "K:stainedglassmuseum.com:e4944f5e",
+      "title": "Two Day Screen Printing on Glass Masterclass with James Cockerill",
+      "comment": "кажется дубль с предыдущим",
+      "caught": false,
+      "how": "не похож по признакам склейки (разные даты или названия)"
+     }
+    ],
+    "caught_how": [
+     [
+      "склейка дублей (площадка + дата + похожее название / одна ст",
+      7
+     ],
+     [
+      "не показывается",
+      5
+     ],
+     [
+      "отсеян до отбора",
+      2
+     ],
+     [
+      "склеен с «Simply Red»",
+      1
+     ]
+    ]
+   },
+   "explain": {
+    "marked": 8,
+    "caught": 7,
+    "left": [
+     {
+      "id": "E42",
+      "title": "Alice Cooper Devil on My Shoulder Book Tour",
+      "comment": "не понятно, это сам элис купер будет или нет",
+      "caught": false,
+      "how": "в словаре пояснений нет (для агрегатора «кто именно будет» — правило промпта, без проверки)"
+     }
+    ],
+    "caught_how": [
+     [
+      "пояснение",
+      5
+     ],
+     [
+      "словарь",
+      2
+     ]
+    ]
+   },
+   "unclear": {
+    "marked": 44,
+    "caught": 36,
+    "left": [
+     {
+      "id": "E2254",
+      "title": "Family Supper – 16 October",
+      "comment": "что это за событие, для кого? ",
+      "caught": false,
+      "how": "правила не ловят — нужен текст пункта по странице"
+     },
+     {
+      "id": "E2720",
+      "title": "saline",
+      "comment": "это музыка? ",
+      "caught": false,
+      "how": "правила не ловят — нужен текст пункта по странице"
+     },
+     {
+      "id": "F8",
+      "title": "Spirited Away (Subbed) (25th Anniversary)",
+      "comment": "не написано где",
+      "caught": false,
+      "how": "правила не ловят — нужен текст пункта по странице"
+     },
+     {
+      "id": "S:C:cambridge.gov.uk:1b983344",
+      "title": "Cambridge United Community Trust-Premier League Kicks",
+      "comment": "это событие, что это?",
+      "caught": false,
+      "how": "секция с полными полями — вопрос к содержанию «Cambridge United Community Trust-Premier League Kicks»"
+     },
+     {
+      "id": "S:C:davidlloyd.co.uk:2",
+      "title": "DL Kids classes - Sports Squad",
+      "comment": "не понятно что это",
+      "caught": false,
+      "how": "секция с полными полями — вопрос к содержанию «DL Kids classes - Sports Squad»"
+     },
+     {
+      "id": "S:C:davidlloyd.co.uk:3",
+      "title": "DL Kids classes - Lego Squad",
+      "comment": "не понятно что это",
+      "caught": false,
+      "how": "секция с полными полями — вопрос к содержанию «DL Kids classes - Lego Squad»"
+     },
+     {
+      "id": "S:C:davidlloyd.co.uk:4",
+      "title": "DL Kids classes - Action Squad",
+      "comment": "не понятно что это",
+      "caught": false,
+      "how": "секция с полными полями — вопрос к содержанию «DL Kids classes - Action Squad»"
+     },
+     {
+      "id": "S:C:papa.perse.co.uk:38c31167",
+      "title": "Musical Theatre Dance",
+      "comment": "это классы или что?",
+      "caught": false,
+      "how": "секция с полными полями — вопрос к содержанию «Musical Theatre Dance»"
+     }
+    ],
+    "caught_how": [
+     [
+      "нужно дополнить",
+      24
+     ],
+     [
+      "отсеян до отбора",
+      5
+     ],
+     [
+      "расплывчатый заголовок — раскрыть по странице или не брать",
+      3
+     ],
+     [
+      "взрослое занятие — не в детской рубрике",
+      2
+     ]
+    ]
+   },
+   "split": {
+    "marked": 5,
+    "caught": 0,
+    "left": [
+     {
+      "id": "C:cambridgeshire.gov.uk:1",
+      "title": "Cambridgeshire Council - Holiday Activities and Food (HAF) Programme —",
+      "comment": "это стоит разделить на события если возможно",
+      "caught": false,
+      "how": "разбивка сборной страницы (HAF, лагерь с проектами) не сделана; HAF — строка с пометкой"
+     },
+     {
+      "id": "C:eequ.org:1",
+      "title": "HAF Peterborough — Christmas Holiday HAF",
+      "comment": "это для детей?  стоит разделить события по возможности",
+      "caught": false,
+      "how": "разбивка сборной страницы (HAF, лагерь с проектами) не сделана; HAF — строка с пометкой"
+     },
+     {
+      "id": "C:peterborough.gov.uk:3",
+      "title": "Peterborough Council — Holiday Activities and Food (HAF) Programme - C",
+      "comment": "стоит разделить на события если это возможно",
+      "caught": false,
+      "how": "разбивка сборной страницы (HAF, лагерь с проектами) не сделана; HAF — строка с пометкой"
+     },
+     {
+      "id": "C:theoutdoorsproject.co.uk:a8ddbc08",
+      "title": "The Outdoors Project Cambridge & Royston — October Half Term Holiday C",
+      "comment": "надо ли разбирать на отдельные проекты?",
+      "caught": false,
+      "how": "разбивка сборной страницы (HAF, лагерь с проектами) не сделана; HAF — строка с пометкой"
+     },
+     {
+      "id": "S:C:stardustdanceacademy.com:10",
+      "title": "Street Dance & Hip Hop",
+      "comment": "надо раскрыть на отдельные venues",
+      "caught": false,
+      "how": "разбивка сборной страницы (HAF, лагерь с проектами) не сделана; HAF — строка с пометкой"
+     }
+    ],
+    "caught_how": []
+   },
+   "kids_age": {
+    "marked": 9,
+    "caught": 8,
+    "left": [
+     {
+      "id": "S:C:cambridge.gov.uk:12",
+      "title": "Bounce activity club",
+      "comment": "это для детей? ",
+      "caught": false,
+      "how": "секция с полными полями — вопрос к содержанию «Bounce activity club»"
+     }
+    ],
+    "caught_how": [
+     [
+      "нужно дополнить",
+      5
+     ],
+     [
+      "взрослое занятие — не в детской рубрике",
+      2
+     ],
+     [
+      "только для своих — не показывается",
+      1
+     ]
+    ]
+   },
+   "far": {
+    "marked": 6,
+    "caught": 6,
+    "left": [],
+    "caught_how": [
+     [
+      "программа вне зоны — не попадает даже в кандидаты",
+      6
+     ]
+    ]
+   },
+   "translate": {
+    "marked": 6,
+    "caught": 6,
+    "left": [],
+    "caught_how": [
+     [
+      "проверка 35",
+      2
+     ],
+     [
+      "словарь перевода",
+      2
+     ],
+     [
+      "отсеян до отбора",
+      1
+     ],
+     [
+      "расплывчатый заголовок («Guided Tour of the …») — раскрыть и",
+      1
+     ]
+    ]
+   },
+   "placement": {
+    "marked": 13,
+    "caught": 9,
+    "left": [
+     {
+      "id": "E1275",
+      "title": "A Very Superior Lady: The remarkable life and diaries of Annie Amos",
+      "comment": "лекции, встречи",
+      "caught": false,
+      "how": "не подходит в «talks»"
+     },
+     {
+      "id": "E2139",
+      "title": "Wild on the Water: Wildlife Photography by Punt",
+      "comment": "если это лекция - в лекции, если что-то вроде мастер-класса, то в мастер-класс ",
+      "caught": false,
+      "how": "не подходит в «talks/learn»"
+     },
+     {
+      "id": "E2669",
+      "title": "Fitness Pilates",
+      "comment": "ну это в спорт",
+      "caught": false,
+      "how": "категория «other», а нужна «class|sport»"
+     },
+     {
+      "id": "E2710",
+      "title": "27144 - Safe Driving with Virtual Reality and LoCITY - Funded by TfL",
+      "comment": "мастер классы?",
+      "caught": false,
+      "how": "не подходит в «learn»"
+     }
+    ],
+    "caught_how": [
+     [
+      "подходит в «talks»",
+      4
+     ],
+     [
+      "тэг volunteering → рубрика «Волонтёрство»",
+      1
+     ],
+     [
+      "категория «talk» → нужная рубрика",
+      1
+     ],
+     [
+      "не в рубрике «museums»",
+      1
+     ]
+    ]
+   },
+   "regular": {
+    "marked": 6,
+    "caught": 5,
+    "left": [
+     {
+      "id": "S:C:cambridgesouthhockeyclub.co.uk:61b0dafc",
+      "title": "U12 Girls Junior Hockey (years 6 & 7)",
+      "comment": "это регулярное занятие для всех или только учеников этой школы?",
+      "caught": false,
+      "how": "секция клуба (не школы) — вопрос редактора, не ошибка"
+     }
+    ],
+    "caught_how": [
+     [
+      "отсеян до отбора",
+      4
+     ],
+     [
+      "реже 4 раз в месяц (1 дат в базе) — по правилу не регулярное",
+      1
+     ]
+    ]
+   },
+   "public": {
+    "marked": 9,
+    "caught": 9,
+    "left": [],
+    "caught_how": [
+     [
+      "не публичная лекция — не в «Лекции и встречи»",
+      7
+     ],
+     [
+      "семинар talks.cam без пометки open to all — не в «Лекции»",
+      2
+     ]
+    ]
+   },
+   "nonevent": {
+    "marked": 11,
+    "caught": 11,
+    "left": [],
+    "caught_how": [
+     [
+      "отсеян до отбора",
+      10
+     ],
+     [
+      "событие музея (E-waste в Centre for Computing History) — по ",
+      1
+     ]
+    ]
+   },
+   "tour": {
+    "marked": 1,
+    "caught": 1,
+    "left": [],
+    "caught_how": [
+     [
+      "отсеян до отбора",
+      1
+     ]
+    ]
+   },
+   "diversity": {
+    "marked": 2,
+    "caught": 2,
+    "left": [],
+    "caught_how": [
+     [
+      "разнообразие",
+      2
+     ]
+    ]
+   },
+   "wraparound": {
+    "marked": 16,
+    "caught": 16,
+    "left": [],
+    "caught_how": [
+     [
+      "продлёнка или завтрак при школе — только для учеников этой ш",
+      15
+     ],
+     [
+      "нужно дополнить",
+      1
+     ]
+    ]
+   },
+   "adult": {
+    "marked": 4,
+    "caught": 4,
+    "left": [],
+    "caught_how": [
+     [
+      "взрослое занятие — не в детской рубрике",
+      4
+     ]
+    ]
+   },
+   "new_in_town": {
+    "marked": 14,
+    "caught": 14,
+    "left": [],
+    "caught_how": [
+     [
+      "«Новое в городе»",
+      14
+     ]
+    ]
+   }
+  },
+  "total": 174,
+  "caught": 151
+ },
+ "editor_comments": {
+  "dup": {
+   "marked": 18,
+   "caught_by_rules": 7,
+   "left": [
+    "A209",
+    "C:cambridgegymnastics.co.uk:eb2d92c3",
+    "C:cambridgeshire.gov.uk:5c894642",
+    "C:kidsclubely.co.uk:3",
+    "E244",
+    "E2982",
+    "H1322",
+    "H1327",
+    "K:stainedglassmuseum.com:e4944f5e",
+    "S:C:bjjcambridge.co.uk:510933dc",
+    "S:C:thefootballfunfactory.co.uk:953408f5"
+   ]
+  },
+  "unclear": {
+   "marked": 42,
+   "caught_by_rules": 15,
+   "left": [
+    "B:K:cufcfoundation.com:b4cda6a6",
+    "C:thefootballfunfactory.co.uk:7345356e",
+    "C:thefootballfunfactory.co.uk:746cc545",
+    "E2254",
+    "E2677",
+    "E2707",
+    "S:C:cambridge.gov.uk:1b983344",
+    "S:C:cambridgekungfu.com:f2ce0798",
+    "S:C:cambridgekungfu.com:fb97699b",
+    "S:C:davidlloyd.co.uk:2",
+    "S:C:davidlloyd.co.uk:3",
+    "S:C:davidlloyd.co.uk:4",
+    "S:C:formationsdance.co.uk:f579f88c",
+    "S:C:kidsclubely.co.uk:2",
+    "S:C:newboroughkidzclub.co.uk:08f56289",
+    "S:C:newboroughkidzclub.co.uk:1312a221",
+    "S:C:premier-education.com:16",
+    "S:C:premier-education.com:17",
+    "S:C:premier-education.com:24",
+    "S:C:premier-education.com:25"
+   ]
+  },
+  "nonevent": {
+   "marked": 4,
+   "caught_by_rules": 3,
+   "left": [
+    "E2677"
+   ]
+  },
+  "adult": {
+   "marked": 3,
+   "caught_by_rules": 1,
+   "left": [
+    "E2418",
+    "E2422"
+   ]
+  }
+ }
 }
