@@ -33,10 +33,11 @@ def series_of(title: str | None) -> str | None:
     return next((k for k, (rx, _, _) in SERIES.items() if rx.search(t)), None)
 
 
-def clean_title(title: str | None) -> str | None:
-    """«RBO 26-27: Macbeth (MET Opera)» → «RBO 26-27: Macbeth»: пометка другой труппы в скобках противоречит префиксу."""
-    s = series_of(title)
-    if not s:
+def clean_title(title: str | None, series: str | None = None) -> str | None:
+    """«RBO 26-27: Macbeth (MET Opera)» → «RBO 26-27: Macbeth»: пометка другой труппы в скобках противоречит префиксу.
+    series — серия кандидата, если в самом названии пункта префикса нет («Macbeth (Met Opera)» у кандидата RBO)."""
+    s = series or series_of(title)
+    if not s or not title:
         return title
     def other(m):
         return series_of(m.group(0).strip(" ()")) not in (None, s)

@@ -96,6 +96,7 @@ def test_broadcast_series():
     t = "RBO 26-27: Macbeth (MET Opera)"
     assert broadcast.series_of(t) == "rbo" and broadcast.clean_title(t) == "RBO 26-27: Macbeth"
     assert broadcast.clean_title("The MET 26/27 - Otello") == "The MET 26/27 - Otello"
+    assert broadcast.clean_title("Macbeth (Met Opera)", broadcast.series_of(t)) == "Macbeth"   # пункт модели без префикса
     txt = "Трансляция оперы Верди «Макбет» из нью-йоркской Metropolitan Opera — часть серии MET Opera."
     fixed = broadcast.fix_text(t, txt, "ru")
     assert "Metropolitan" not in fixed and "MET" not in fixed and "Royal Ballet and Opera (Лондон)" in fixed
@@ -114,6 +115,8 @@ def test_page_time():
     # время из списка есть на странице — не трогаем
     c2 = {"kind": "event", "dates": [("2026-10-20", "2026-10-20", "19:30")]}
     assert not page_times.apply(c2, page_times.page_time("Doors 7pm | 10:00 am – 5:00 pm box office"), "Tue 20 Oct, 7:30pm")
+    assert page_times.SHOWS_RU.sub("", "рассказ телеведущей — два вечерних показа.") == "рассказ телеведущей."
+    assert page_times.SHOWS_EN.sub("", "narrated by a TV presenter, in two evening shows.") == "narrated by a TV presenter."
     from tests.issue_rules.r65_time_context import EVENING_RU
     assert EVENING_RU.search("два вечерних показа")
 
@@ -208,3 +211,11 @@ def test_markup_rules():
     it = {"title_en": "Bridge Bagels", "title_ru": "Bridge Bagels", "blurb_ru": "Руленые бейглы в нью-йоркском стиле."}
     issue_fixes.fix_translation({"sections": [{"rubric": "new_in_town", "items": [it]}]})
     assert "ручной формовки" in it["blurb_ru"]
+
+
+def test_first_season_not_superlative():
+    """Блок v14b: «horses in their first season» — не «впервые»; «first time» в том же тексте — по-прежнему «впервые»."""
+    from tests.issue_rules.r01_verified_facts import classify
+    assert "super" not in classify("Racing for horses in their first season, as the juvenile division winds down.")
+    assert "super" in classify("The first time the show comes to Cambridge.")
+    assert "super" in classify("Впервые в Кембридже — первый сезон.")

@@ -1193,7 +1193,8 @@ def _date_conflict(c: dict) -> str | None:
 
 
 # серия одной площадки — не «регулярное», если это показы, концерты, спектакли, выставки и сезонное (тыквенная ферма)
-SERIES_EXEMPT_TYPES = selection.PERFORMANCE_TYPES | {"traditions_fairs_markets", "quirky_local"}
+# выставка в музее — один диапазон дат, а не серия отдельных; серия отдельных дат в музее — экскурсии (Guided House Tour)
+SERIES_EXEMPT_TYPES = (selection.PERFORMANCE_TYPES - {"museum_exhibition"}) | {"traditions_fairs_markets", "quirky_local"}
 SERIES_EXEMPT_RE = re.compile(r"\b(recital|concert|musical|screening|film|live|opera|ballet|pumpkin|fair|festival|"
                               r"exhibition|show)\b", re.I)
 

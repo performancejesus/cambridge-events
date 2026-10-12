@@ -99,7 +99,13 @@ def apply(c: dict, pt: dict, text: str = "") -> bool:
     return changed
 
 
+SHOWS_RU = re.compile(r"\s*[—,–-]?\s*(?:два|две|три|2|3) (?:вечерних |дневных )?(?:показа|шоу|сеанса|представления)\b", re.I)
+SHOWS_EN = re.compile(r",?\s*(?:in )?(?:two|three|2|3) (?:evening |daytime )?(?:shows|performances|screenings)\b", re.I)
+
+
 def fix(result: dict, pools) -> list[tuple[str, str]]:
+    """Время со страницы события; если показов стал один (склеены два времени из списков), «два вечерних показа» из
+    описания убирается."""
     notes = []
     for sec in result["sections"]:
         for it in sec["items"]:
@@ -111,6 +117,10 @@ def fix(result: dict, pools) -> list[tuple[str, str]]:
                 text = cached_text(it.get("url") or c.get("url"))
                 pt = page_time(text)
                 if apply(c, pt, text):
+                    if len({x[2] for x in c["dates"]}) == 1:
+                        for k, rx in (("blurb_ru", SHOWS_RU), ("blurb_en", SHOWS_EN)):
+                            if it.get(k) and rx.search(it[k]):
+                                it[k] = rx.sub("", it[k]).replace(" .", ".")
                     show = f", шоу около {c['show_time'][0]}–{c['show_time'][1]}" if c.get("show_time") else ""
                     notes.append((f"“{it.get('title_en')}”: time from the event page",
                                   f"«{it.get('title_ru')}»: время со страницы события — {' и '.join(x[2] for x in c['dates'] if x[2])}{show} "

@@ -25,7 +25,9 @@ def check(ctx) -> Finding:
         if r["rec_id"] not in ids:
             continue
         ok, why = festivals.due(r, ctx.w.issue)
-        if ok and f"R:{r['rec_id']}" not in shown and not (r["event_id"] and r["event_id"] in placed):
+        run = (getattr(ctx.pools, "running_festivals", {}) or {}).get(r["rec_id"])   # этап 7h: карточка фестиваля окна
+        card = run and set((ctx.pools.candidates.get(run) or {}).get("event_ids", [])) & placed
+        if ok and f"R:{r['rec_id']}" not in shown and not (r["event_id"] and r["event_id"] in placed) and not card:
             f.violations.append(f"«{r['name']}»: {why}, но нет ни в «Фестивалях», ни полной карточкой")
     f.info.append(f"строк в «Фестивалях»: {len(shown)}; фестивалей в реестре: {len(ids)}")
     return f

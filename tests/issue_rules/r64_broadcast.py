@@ -19,7 +19,8 @@ def check(ctx) -> Finding:
             continue
         for k in ("title_en", "title_ru", "blurb_en", "blurb_ru", "why_en", "why_ru"):
             wrong = broadcast.wrong_mentions(title, it.get(k)) or (
-                [it[k]] if k.startswith("title") and broadcast.clean_title(it.get(k)) != it.get(k) else [])
+                [it[k]] if k.startswith("title") and broadcast.clean_title(it.get(k), broadcast.series_of(title)) != it.get(k)
+                else [])
             if wrong:
                 f.violations.append(f"«{it.get('title_ru')}»: {k} — другая труппа «{wrong[0][:60]}»")
     return f

@@ -55,7 +55,9 @@ def classify(sent: str) -> set[str]:
         kinds.add("age")
     if MONTH_RE.search(sent) and ("age" in kinds or re.search(r"юбиле|годовщин|anniversar", sent, re.I)):
         kinds.add("month")
-    if SUPER_RE.search(sent) and not (SUPER_SKIP.search(sent) and not re.search(r"впервые|единствен|first|only", sent, re.I)):
+    # этап 7h: фразы-исключения («first season», «Первой лиги», «последние билеты») вырезаются, «впервые» ищется в остатке
+    # (раньше «first» внутри «first season» отменял исключение — блок v14b на Two-Year-Old Day)
+    if SUPER_RE.search(SUPER_SKIP.sub(" ", sent)):
         kinds.add("super")
     if FOUNDED_RE.search(sent):
         kinds.add("founded")

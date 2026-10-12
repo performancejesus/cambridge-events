@@ -1179,7 +1179,7 @@ def fix_broadcast(result: dict, pools) -> list[Note]:
                 continue
             changed = []
             for k in ("title_en", "title_ru"):
-                new = broadcast.clean_title(it.get(k))
+                new = broadcast.clean_title(it.get(k), broadcast.series_of(title))
                 if new != it.get(k):
                     it[k] = new
                     changed.append(k)
